@@ -5,7 +5,7 @@ const FPS = 30;
 const C = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'};
 const FONT = 'InterX, Inter, "Helvetica Neue", Arial, sans-serif';
 const PAL = {
-  valeopreco: {bg: '#0a0f1c', acc: '#2ee59d', warm: '#ffb020', ink: '#0a0f1c', tag: 'VALE O PREÇO?'},
+  valeopreco: {light: true, bg: '#f5eedc', acc: '#ffd84d', warm: '#e63946', ink: '#1b1b1f', tag: 'VALE O PREÇO?'},
   howitticks: {bg: '#0a0f1c', acc: '#22d3ee', warm: '#ff5c8a', ink: '#06222a', tag: 'HOW IT TICKS'},
   chartbound: {bg: '#0a0f1c', acc: '#ffc233', warm: '#ff5c5c', ink: '#201700', tag: 'CHARTBOUND'},
 };
@@ -22,6 +22,14 @@ const useFonts = () => {
 
 const Bg = ({p, block}) => {
   const f = useCurrentFrame();
+  if (p.light) {
+    return (
+      <AbsoluteFill style={{background: block ? p.warm : p.bg}}>
+        {!block && <AbsoluteFill style={{backgroundImage: 'repeating-linear-gradient(transparent 0 71px, rgba(27,27,31,.07) 71px 73px)', backgroundPosition: `0 ${f * 0.4}px`}} />}
+        {!block && <AbsoluteFill style={{background: 'radial-gradient(1200px 1200px at 50% 45%, transparent 55%, rgba(120,90,40,.16))'}} />}
+      </AbsoluteFill>
+    );
+  }
   return (
     <AbsoluteFill style={{background: block ? p.acc : p.bg}}>
       {!block && (
@@ -36,11 +44,11 @@ const Bg = ({p, block}) => {
 
 const Hud = ({p, total, block}) => {
   const f = useCurrentFrame();
-  const ink = block ? p.ink : '#ffffff';
+  const ink = p.light ? (block ? '#fff' : p.ink) : (block ? p.ink : '#ffffff');
   return (
     <>
       <div style={{position: 'absolute', top: 70, left: 64, fontFamily: FONT, fontWeight: 800, fontSize: 28, letterSpacing: 6, color: ink, opacity: 0.7}}>{p.tag}</div>
-      <div style={{position: 'absolute', bottom: 0, left: 0, height: 8, width: `${Math.min(f / total, 1) * 100}%`, background: block ? p.ink : p.acc}} />
+      <div style={{position: 'absolute', bottom: 0, left: 0, height: 8, width: `${Math.min(f / total, 1) * 100}%`, background: p.light ? p.warm : (block ? p.ink : p.acc)}} />
     </>
   );
 };
@@ -62,16 +70,16 @@ const Caps = ({sc, p, block}) => {
   const active = chunks.find((c) => t >= c[0].t0 && t < c[c.length - 1].t1 + 0.12) || null;
   if (!active) return null;
   return (
-    <div style={{position: 'absolute', left: 60, right: 60, top: 1380, textAlign: 'center', fontFamily: FONT, fontWeight: 800, fontSize: 70, lineHeight: 1.15, color: block ? p.ink : '#fff', textShadow: block ? 'none' : '0 4px 24px rgba(0,0,0,.6)'}}>
+    <div style={{position: 'absolute', left: 60, right: 60, top: 1380, textAlign: 'center', fontFamily: FONT, fontWeight: 800, fontSize: 70, lineHeight: 1.15, color: p.light ? (block ? '#fff' : p.ink) : (block ? p.ink : '#fff'), textShadow: p.light || block ? 'none' : '0 4px 24px rgba(0,0,0,.6)'}}>
       {active.map((w, i) => {
         const on = t >= w.t0 && t < w.t1;
-        return <span key={i} style={{color: on ? (block ? '#fff' : p.acc) : undefined, marginRight: 16, display: 'inline-block'}}>{w.w}</span>;
+        return <span key={i} style={{color: p.light ? (block ? '#fff' : p.ink) : (on ? (block ? '#fff' : p.acc) : undefined), background: p.light && !block && on ? p.acc : 'transparent', borderRadius: 10, padding: '0 8px', marginRight: 8, display: 'inline-block'}}>{w.w}</span>;
       })}
     </div>
   );
 };
 
-const Words = ({text, hl, size: want, color, hlColor, delay = 0}) => {
+const Words = ({text, hl, size: want, color, hlColor, delay = 0, marker}) => {
   const f = useCurrentFrame();
   const longest = Math.max(...text.split(' ').map((w) => w.length));
   const size = Math.min(want, 940 / (longest * 0.66));
@@ -86,7 +94,8 @@ const Words = ({text, hl, size: want, color, hlColor, delay = 0}) => {
     <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: `0 ${size * 0.28}px`, fontFamily: FONT, fontWeight: 900, fontSize: size, lineHeight: 1.02, letterSpacing: -size * 0.02, textAlign: 'center'}}>
       {toks.map((t, i) => {
         const s = spring({frame: f - delay - i * 3, fps: FPS, config: {damping: 16, stiffness: 240}});
-        return <span key={i} style={{display: 'inline-block', color: t.h ? hlColor : color, opacity: interpolate(s, [0, 0.5], [0, 1], C), transform: `translateY(${(1 - s) * 60}px) scale(${0.92 + 0.08 * s})`}}>{t.w}</span>;
+        const mk = marker && t.h ? Math.min(1, Math.max(0, (f - delay - 10 - i * 3) / 10)) : 0;
+        return <span key={i} style={{display: 'inline-block', color: marker && t.h ? '#1b1b1f' : t.h ? hlColor : color, backgroundImage: marker && t.h ? `linear-gradient(${hlColor}, ${hlColor})` : 'none', backgroundRepeat: 'no-repeat', backgroundSize: `${mk * 100}% 62%`, backgroundPosition: '0 86%', padding: '0 6px', opacity: interpolate(s, [0, 0.5], [0, 1], C), transform: `translateY(${(1 - s) * 60}px) scale(${0.92 + 0.08 * s})`}}>{t.w}</span>;
       })}
     </div>
   );
@@ -96,12 +105,42 @@ const fmt = (v) => Math.round(v).toLocaleString('pt-BR');
 
 const Kin = ({sc, p}) => (
   <AbsoluteFill style={{justifyContent: 'center', padding: '0 70px', top: -120}}>
-    <Words text={sc.text} hl={sc.hl} size={sc.size || 150} color="#fff" hlColor={p.acc} />
+    <Words text={sc.text} hl={sc.hl} size={sc.size || 150} color={p.light ? p.ink : '#fff'} hlColor={p.acc} marker={p.light} />
   </AbsoluteFill>
 );
 
 // duas barras comparando valores; a segunda cresce com contagem
+const Receipt = ({sc, p}) => {
+  const f = useCurrentFrame();
+  const a = sc.a, b = sc.b;
+  const inn = spring({frame: f, fps: FPS, config: {damping: 15, stiffness: 120}});
+  const v2 = interpolate(f, [26, 70], [a, b], {...C, easing: Easing.out(Easing.cubic)});
+  const row = (label, val, d, big) => (
+    <div style={{display: 'flex', alignItems: 'baseline', opacity: interpolate(f, [d, d + 8], [0, 1], C), margin: '26px 0'}}>
+      <span style={{fontFamily: MONO, fontWeight: 800, fontSize: 38, color: p.ink, textTransform: 'uppercase'}}>{label}</span>
+      <span style={{flex: 1, borderBottom: '5px dotted #1b1b1f55', margin: '0 14px', transform: 'translateY(-8px)'}} />
+      <span style={{fontFamily: FONT, fontWeight: 900, fontSize: big ? 104 : 84, color: big ? p.warm : p.ink, letterSpacing: -2}}>{sc.prefix}{fmt(val)}</span>
+    </div>
+  );
+  const stamp = spring({frame: f - 74, fps: FPS, config: {damping: 9, stiffness: 200}});
+  return (
+    <AbsoluteFill>
+      <div style={{position: 'absolute', top: 200, left: 60, right: 60}}><Words text={sc.text} hl={sc.hl} size={88} color={p.ink} hlColor={p.acc} marker /></div>
+      <div style={{position: 'absolute', left: 70, right: 70, top: 470, background: '#fffdf6', borderRadius: 14, padding: '40px 46px 54px', boxShadow: '0 30px 60px rgba(90,60,20,.22), 0 2px 0 rgba(0,0,0,.05)', transform: `rotate(-1.4deg) translateY(${(1 - inn) * 120}px)`, opacity: inn}}>
+        <div style={{fontFamily: MONO, fontWeight: 800, fontSize: 30, letterSpacing: 6, textAlign: 'center', color: '#1b1b1f88', borderBottom: '4px dashed #1b1b1f33', paddingBottom: 22}}>COMPROVANTE DE PODER DE COMPRA</div>
+        {row(sc.l1, a, 6)}
+        {row(sc.l2, v2, 20, true)}
+        <div style={{borderTop: '4px dashed #1b1b1f33', marginTop: 20, paddingTop: 22, fontFamily: MONO, fontWeight: 800, fontSize: 36, color: '#1b1b1f99', display: 'flex', justifyContent: 'space-between'}}>
+          <span>DIFERENÇA</span><span style={{color: p.warm}}>+ {sc.prefix}{fmt(v2 - a)}</span>
+        </div>
+        <div style={{position: 'absolute', right: 30, top: -50, transform: `rotate(12deg) scale(${0.4 + 0.6 * stamp})`, opacity: Math.min(1, stamp * 1.5), border: `10px solid ${p.warm}`, borderRadius: 18, padding: '4px 26px', color: p.warm, fontFamily: FONT, fontWeight: 900, fontSize: 88, letterSpacing: 4, background: '#fffdf6e6'}}>MAIS CARO</div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
 const Num = ({sc, p}) => {
+  if (p.light) return <Receipt sc={sc} p={p} />;
   const f = useCurrentFrame();
   const a = sc.a, b = sc.b, max = Math.max(a, b);
   const g1 = interpolate(f, [4, 26], [0, 1], {...C, easing: Easing.out(Easing.cubic)});
@@ -120,7 +159,7 @@ const Num = ({sc, p}) => {
   return (
     <AbsoluteFill>
       <div style={{position: 'absolute', top: 210, left: 60, right: 60}}>
-        <Words text={sc.text} hl={sc.hl} size={92} color="#fff" hlColor={p.acc} />
+        <Words text={sc.text} hl={sc.hl} size={92} color={p.light ? p.ink : '#fff'} hlColor={p.acc} marker={p.light} />
       </div>
       <div style={{position: 'absolute', left: 0, right: 0, top: 480, height: 800}}>
         {bar(110, a, g1, '#ffffff33', sc.l1, a * g1)}
@@ -136,8 +175,8 @@ const Stat = ({sc, p}) => {
   const s = spring({frame: f, fps: FPS, config: {damping: 14, stiffness: 160}});
   return (
     <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center', top: -140}}>
-      <div style={{fontFamily: FONT, fontWeight: 900, fontSize: 330, letterSpacing: -12, color: p.ink, lineHeight: 1, transform: `scale(${0.85 + 0.15 * s})`}}>{sc.prefix}{Math.round(v)}{sc.suffix}</div>
-      <div style={{fontFamily: FONT, fontWeight: 800, fontSize: 56, color: p.ink, opacity: 0.8, textAlign: 'center', padding: '0 90px', marginTop: 10}}>{sc.label}</div>
+      <div style={{fontFamily: FONT, fontWeight: 900, fontSize: 330, letterSpacing: -12, color: p.light ? '#fff' : p.ink, lineHeight: 1, transform: `scale(${0.85 + 0.15 * s})`}}>{sc.prefix}{Math.round(v)}{sc.suffix}</div>
+      <div style={{fontFamily: FONT, fontWeight: 800, fontSize: 56, color: p.light ? '#fff' : p.ink, opacity: 0.92, textAlign: 'center', padding: '0 90px', marginTop: 10}}>{sc.label}</div>
     </AbsoluteFill>
   );
 };

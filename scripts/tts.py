@@ -10,9 +10,9 @@ VOICES = {
     "howitticks": ("am_michael", "en-us", 1.0),
     "valeopreco": ("pf_dora", "pt-br", 1.0),
 }
-EDGE = {"valeopreco": "pt-BR-AntonioNeural"}  # voz neural natural; se a rede falhar, cai no Kokoro
+EDGE = {"valeopreco": "pt-BR-ThalitaMultilingualNeural"}  # voz neural natural; se a rede falhar, cai no Kokoro
 GOOGLE = {"valeopreco": ("pt-BR", "pt-BR-Chirp3-HD-Charon")}  # exige GCP_TTS_KEY; sem a chave, cai no edge/Kokoro
-EDGE_RATE = os.environ.get("EDGE_RATE", "-4%")
+EDGE_RATE = os.environ.get("EDGE_RATE", "+0%")
 MODEL = os.environ.get("KOKORO_DIR", ".cache/kokoro")
 TAIL = 0.28  # silêncio após a fala antes da próxima cena
 
@@ -71,25 +71,58 @@ def google_sentence(text, cfg):
 def edge_sentence(text, voice):
     """Uma frase via edge-tts. Retorna (samples 24k, [(palavra, t0, t1)]) com tempos reais de palavra."""
     import asyncio, subprocess, tempfile, edge_tts
-    async def go():
-        com = edge_tts.Communicate(text, voice, rate=EDGE_RATE, boundary="WordBoundary")
+    sb = []
+    async def go(bd="WordBoundary"):
+        com = edge_tts.Communicate(text, voice, rate=EDGE_RATE, boundary=bd)
         mp3, wb = b"", []
+        sb.clear()
         async for ch in com.stream():
             if ch["type"] == "audio":
                 mp3 += ch["data"]
+            elif ch["type"] == "SentenceBoundary":
+                sb.append((ch["text"], ch["offset"] / 1e7, (ch["offset"] + ch["duration"]) / 1e7))
             elif ch["type"] == "WordBoundary":
                 wb.append((ch["text"], ch["offset"] / 1e7, (ch["offset"] + ch["duration"]) / 1e7))
         return mp3, wb
     mp3, wb = asyncio.run(go())
+    if not wb:
+        mp3, wb = asyncio.run(go("SentenceBoundary"))
+        print("edge sem WordBoundary; frases:", len(sb))
     with tempfile.TemporaryDirectory() as d:
         open(f"{d}/a.mp3", "wb").write(mp3)
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", f"{d}/a.mp3", "-ac", "1", "-ar", "24000", f"{d}/a.wav"], check=True)
         x, _ = sf.read(f"{d}/a.wav", dtype="float32")
+    edge_sentence.last_sb = list(sb)
     return x, wb
 
 
 def speak(k, text, voice, lang, speed, edge_voice=None, google_cfg=None):
     """Frase a frase, com pausas naturais; limpa graves, nivela volume. Retorna (samples, sr, words)."""
+    if edge_voice and not google_cfg:
+        try:
+            smp, wb = edge_sentence(text.strip(), edge_voice)
+            sr = 24000
+            a0 = max(int(np.where(np.abs(smp) > 0.002)[0][0]) - int(0.06 * sr), 0)
+            smp = trim(smp, sr)
+            d = len(smp) / sr
+            if wb and len(wb) == len(text.split()):
+                words = [{"w": w, "t0": round(max(t0 - a0 / sr - 0.05, 0), 3), "t1": round(t1 - a0 / sr - 0.05, 3)} for w, t0, t1 in wb]
+            else:
+                sbs = getattr(edge_sentence, "last_sb", [])
+                raw = smp
+                words = []
+                if sbs:
+                    for stext, t0, t1 in sbs:
+                        i0, i1 = int(t0 * sr), min(int(t1 * sr), len(raw))
+                        words += word_times(stext.strip(), t1 - t0, t0 - a0 / sr, raw[i0:i1], sr)
+                if not sbs or sum(len(stext.split()) for stext, _, _ in sbs) != len(text.split()):
+                    words = word_times(text.strip(), d, 0.0, smp, sr)
+            x = sosfilt(butter(2, 70 / (sr / 2), btype="high", output="sos"), smp)
+            x = x * (0.11 / (np.sqrt(np.mean(x ** 2)) + 1e-9))
+            x = (np.tanh(x * 1.2) / np.tanh(1.2) * 0.95).astype(np.float32)
+            return x, sr, words
+        except Exception as e:
+            print("edge contínuo falhou, usando frase a frase:", repr(e)[:120])
     sents = [x for x in re.split(r"(?<=[.!?])\s+", text.strip()) if x]
     chunks, words, pos, sr = [], [], 0.0, 24000
     for i, snt in enumerate(sents):
