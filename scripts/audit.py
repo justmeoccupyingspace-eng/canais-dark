@@ -4,7 +4,7 @@ Mede por cena: erro de palavras (WER), desvio da legenda vs. fala real, ritmo (p
 import json, re, sys
 import numpy as np, soundfile as sf
 
-def norm(w): return re.sub(r"[^\wÀ-ÿ]", "", w.lower())
+def norm(w): return re.sub(r"[^\wÀ-ÿ]", "", w.lower().replace(".", ""))
 
 def wer(ref, hyp):
     r, h = [norm(w) for w in ref], [norm(w) for w in hyp]
@@ -38,6 +38,7 @@ def main(path):
         f = f0[~np.isnan(f0)]
         st = float((12 * np.log2(f / np.median(f))).std()) if len(f) > 20 else 0
         gaps = [b.start - a.end for a, b in zip(hw, hw[1:])]
+        if e > 0.1: print("   roteiro:", " ".join(w["w"] for w in ref), "\n   whisper:", " ".join(w.word.strip() for w in hw))
         rows.append((i, e, sync, rate, st, max(gaps) if gaps else 0))
         print(f"cena {i}: WER {e:.2f} | sync {'-' if sync is None else f'{sync*1000:.0f}ms'} | {rate:.2f} pal/s | pitch {st:.1f} st | maior pausa {rows[-1][5]:.2f}s", flush=True)
     if rows:

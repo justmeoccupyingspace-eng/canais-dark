@@ -64,6 +64,7 @@ jobs:
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_A: ${{ secrets.YT_REFRESH_A }}
           YT_REFRESH_B: ${{ secrets.YT_REFRESH_B }}
+          GDRIVE_REFRESH: ${{ secrets.GDRIVE_REFRESH }}
           MANUAL_CHANNEL: ${{ inputs.channel }}
           MANUAL_PRIVACY: ${{ inputs.privacy }}
           MANUAL_UPLOAD: ${{ inputs.upload }}
