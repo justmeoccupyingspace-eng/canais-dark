@@ -1,0 +1,16 @@
+{
+  "channel": "chartbound",
+  "publish": {"channel": "A", "privacy": "private"},
+  "title": "US home prices",
+  "yt": {
+    "title": "How much more expensive US homes got since {first_y} #Shorts",
+    "description": "Median sales price of houses sold in the United States, {first_y} to {last_y}.\nSource: U.S. Census Bureau and HUD, via FRED (series MSPUS), annual average.\nNarration is AI-generated.",
+    "tags": ["housing", "economics", "data", "charts"],
+    "lang": "en"
+  },
+  "scenes": [
+    {"type": "title", "text": "US home prices, in one chart", "sub": "Median sales price of houses sold", "narration": "How much more expensive did American homes get? One chart.", "duration": 3},
+    {"type": "chart", "kind": "line", "title": "Median US home price", "subtitle": "Dollars, annual average", "source": {"fred": "MSPUS", "from": 1990, "to": 2024, "step": 5, "round": 0}, "note": "Source: Census Bureau / HUD via FRED (MSPUS)", "caption": "Not adjusted for inflation.", "narration": "In {first_y}, the median home sold for about {first} dollars. By {last_y}, it was {last}.", "duration": 6},
+    {"type": "stat", "label": "Change in the nominal price", "value_from": "pct", "value": 0, "prefix": "+", "suffix": "%", "caption": "Source: FRED, MSPUS. Prices are not inflation-adjusted.", "narration": "That is an increase of {pct} percent, before adjusting for inflation.", "duration": 4}
+  ]
+}

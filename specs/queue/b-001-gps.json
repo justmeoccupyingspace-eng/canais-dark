@@ -1,0 +1,18 @@
+{
+  "channel": "howitticks",
+  "publish": {"channel": "B", "privacy": "private"},
+  "title": "How GPS works",
+  "yt": {
+    "title": "How GPS knows where you are #Shorts",
+    "description": "A 30-second look at how satellite navigation works.\nNarration is AI-generated.",
+    "tags": ["gps", "engineering", "physics", "how it works"],
+    "lang": "en"
+  },
+  "scenes": [
+    {"type": "title", "text": "How GPS knows where you are", "sub": "It is a timing problem", "narration": "How does your phone know where you are? It is really a timing problem.", "duration": 3},
+    {"type": "text", "text": "Each satellite broadcasts the exact time its signal left.", "narration": "Each GPS satellite continuously broadcasts its position and the exact time the signal was sent.", "duration": 4},
+    {"type": "text", "text": "Radio travels at the speed of light. Delay becomes distance.", "narration": "Radio waves travel at the speed of light, so the delay of the signal tells your phone how far away the satellite is.", "duration": 4},
+    {"type": "stat", "label": "Distance light travels in one nanosecond, in centimeters", "value": 30, "suffix": " cm", "caption": "A clock error of one billionth of a second is a thirty centimeter error.", "narration": "In one billionth of a second, light travels about thirty centimeters. So the clocks have to be extremely precise.", "duration": 5},
+    {"type": "text", "text": "Three distances fix a position. A fourth fixes your phone's clock.", "narration": "Three satellites are enough to fix a position in space. A fourth lets the receiver correct its own cheap clock.", "duration": 5}
+  ]
+}

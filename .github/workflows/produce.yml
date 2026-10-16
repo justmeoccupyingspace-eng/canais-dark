@@ -1,5 +1,8 @@
 name: produce
 on:
+  push:
+    branches: [main]
+    paths: ["specs/queue/*.json"]
   workflow_dispatch:
     inputs:
       spec:
@@ -21,9 +24,10 @@ on:
 jobs:
   produce:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
       - uses: actions/setup-node@v4
         with: {node-version: 22, cache: npm}
       - uses: actions/setup-python@v5
@@ -43,19 +47,27 @@ jobs:
       - run: pip install kokoro-onnx soundfile
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - run: npm ci --no-audit --no-fund
-      - name: Voz
-        run: python scripts/tts.py "${{ inputs.spec }}" public/build/spec.json
-      - name: Render
+      - name: Escolher specs
+        id: pick
         run: |
-          mkdir -p out
-          node scripts/render.mjs public/build/spec.json out/video.mp4
-      - uses: actions/upload-artifact@v4
-        with: {name: video, path: out/video.mp4, retention-days: 7}
-      - name: Upload YouTube
-        if: inputs.upload == 'true'
-        run: python scripts/upload.py "${{ inputs.channel }}" out/video.mp4 public/build/spec.json "${{ inputs.privacy }}"
+          if [ "${{ github.event_name }}" = "push" ]; then
+            git diff --name-only --diff-filter=A ${{ github.event.before }} ${{ github.sha }} -- 'specs/queue/*.json' > list.txt || true
+          else
+            echo "${{ inputs.spec }}" > list.txt
+          fi
+          cat list.txt
+          echo "n=$(grep -c . list.txt || true)" >> $GITHUB_OUTPUT
+      - name: Produzir
+        if: steps.pick.outputs.n != '0'
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_A: ${{ secrets.YT_REFRESH_A }}
           YT_REFRESH_B: ${{ secrets.YT_REFRESH_B }}
+          MANUAL_CHANNEL: ${{ inputs.channel }}
+          MANUAL_PRIVACY: ${{ inputs.privacy }}
+          MANUAL_UPLOAD: ${{ inputs.upload }}
+        run: bash scripts/produce.sh list.txt
+      - uses: actions/upload-artifact@v4
+        if: steps.pick.outputs.n != '0'
+        with: {name: videos, path: out/*.mp4, retention-days: 7}
