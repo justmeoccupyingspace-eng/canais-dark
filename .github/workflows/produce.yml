@@ -51,7 +51,7 @@ jobs:
         id: pick
         run: |
           if [ "${{ github.event_name }}" = "push" ]; then
-            git diff --name-only --diff-filter=A ${{ github.event.before }} ${{ github.sha }} -- 'specs/queue/*.json' > list.txt || true
+            git diff --no-renames --name-only --diff-filter=A ${{ github.event.before }} ${{ github.sha }} -- 'specs/queue/*.json' > list.txt || true
           else
             echo "${{ inputs.spec }}" > list.txt
           fi
