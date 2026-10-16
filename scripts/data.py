@@ -44,7 +44,13 @@ def main(src, dst):
             f, l = sc["data"][0]["y"], sc["data"][-1]["y"]
             ctx.update(first_y=years[0], last_y=years[-1], first=f, last=l,
                        pct=round((l / f - 1) * 100), times=round(l / f, 1))
-            ctx.update({k: f"{v:,}" if isinstance(v, (int, float)) and abs(v) >= 1000 else v for k, v in ctx.items()})
+            def fmt(k, v):
+                if k in ("first_y", "last_y"):
+                    return str(v)
+                if isinstance(v, float) and abs(v) >= 1000:
+                    v = round(v)
+                return f"{v:,}" if isinstance(v, (int, float)) and abs(v) >= 1000 else v
+            ctx.update({k: fmt(k, v) for k, v in ctx.items()})
     def sub(t):
         return t.format(**ctx) if isinstance(t, str) and "{" in t else t
     for sc in spec["scenes"]:
