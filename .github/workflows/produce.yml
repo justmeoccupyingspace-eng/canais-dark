@@ -21,6 +21,8 @@ on:
         description: "Enviar ao YouTube? (true/false)"
         required: true
         default: "true"
+permissions:
+  contents: write
 jobs:
   produce:
     runs-on: ubuntu-latest
@@ -72,3 +74,10 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: steps.pick.outputs.n != '0'
         with: {name: videos, path: out/*.mp4, retention-days: 7}
+      - name: Prévia na branch previews
+        if: steps.pick.outputs.n != '0'
+        run: |
+          mkdir -p /tmp/pv && cp out/*.mp4 /tmp/pv/
+          git config user.name "producer"; git config user.email "producer@users.noreply.github.com"
+          git checkout --orphan previews && git rm -rf . -q
+          cp /tmp/pv/*.mp4 . && git add *.mp4 && git commit -qm "previews" && git push -f origin previews
