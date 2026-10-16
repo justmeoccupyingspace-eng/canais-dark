@@ -1,0 +1,57 @@
+{
+ "channel": "chartbound",
+ "publish": {
+  "channel": "A",
+  "privacy": "private"
+ },
+ "title": "US income per person",
+ "yt": {
+  "title": "US income per person since {first_y}, in one chart #Shorts",
+  "description": "GDP per capita of the United States, {first_y} to {last_y}, in current US dollars (not adjusted for inflation).\nSource: World Bank, indicator NY.GDP.PCAP.CD.\nNarration is AI-generated.",
+  "tags": [
+   "economics",
+   "gdp",
+   "data",
+   "charts"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "title",
+   "text": "US income per person, in one chart",
+   "sub": "GDP per capita, current dollars",
+   "narration": "How much does the average American economy produce per person? One chart.",
+   "duration": 3
+  },
+  {
+   "type": "chart",
+   "kind": "line",
+   "title": "US GDP per person",
+   "subtitle": "Current US dollars",
+   "source": {
+    "worldbank": "NY.GDP.PCAP.CD",
+    "country": "USA",
+    "from": 1990,
+    "to": 2023,
+    "step": 5,
+    "round": 0
+   },
+   "note": "Source: World Bank (NY.GDP.PCAP.CD)",
+   "caption": "Not adjusted for inflation.",
+   "narration": "In {first_y}, it was about {first} dollars per person. By {last_y}, it was {last}.",
+   "duration": 6
+  },
+  {
+   "type": "stat",
+   "label": "Change in the nominal figure",
+   "value_from": "pct",
+   "value": 0,
+   "prefix": "+",
+   "suffix": "%",
+   "caption": "World Bank, NY.GDP.PCAP.CD. Prices are not inflation-adjusted.",
+   "narration": "That is an increase of {pct} percent, before adjusting for inflation.",
+   "duration": 4
+  }
+ ]
+}

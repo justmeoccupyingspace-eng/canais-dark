@@ -6,7 +6,7 @@ from collections import defaultdict
 
 def fred_annual(series, y0, y1):
     url = f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={series}&cosd={y0}-01-01&coed={y1}-12-31"
-    raw = urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=60).read().decode()
+    raw = urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=30).read().decode()
     by = defaultdict(list)
     for row in list(csv.reader(io.StringIO(raw)))[1:]:
         if len(row) < 2 or row[1] in ("", "."):
@@ -14,13 +14,28 @@ def fred_annual(series, y0, y1):
         by[int(row[0][:4])].append(float(row[1]))
     return {y: sum(v) / len(v) for y, v in sorted(by.items())}
 
+def worldbank_annual(ind, country, y0, y1):
+    url = f"https://api.worldbank.org/v2/country/{country}/indicator/{ind}?format=json&per_page=200&date={y0}:{y1}"
+    for attempt in range(3):
+        try:
+            data = json.load(urllib.request.urlopen(url, timeout=30))
+            break
+        except Exception as e:
+            if attempt == 2:
+                raise
+    rows = data[1] or []
+    return {int(r["date"]): float(r["value"]) for r in sorted(rows, key=lambda r: r["date"]) if r["value"] is not None}
+
 def main(src, dst):
     spec = json.load(open(src, encoding="utf-8"))
     ctx = {}
     for sc in spec["scenes"]:
         s = sc.get("source")
         if sc.get("type") == "chart" and s:
-            ann = fred_annual(s["fred"], s["from"], s["to"])
+            if "worldbank" in s:
+                ann = worldbank_annual(s["worldbank"], s.get("country", "USA"), s["from"], s["to"])
+            else:
+                ann = fred_annual(s["fred"], s["from"], s["to"])
             step = s.get("step", 1)
             years = [y for y in ann if (y - s["from"]) % step == 0]
             if years[-1] != max(ann):
