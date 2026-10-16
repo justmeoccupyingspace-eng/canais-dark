@@ -6,7 +6,7 @@ const C = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'};
 const FONT = 'InterX, Inter, "Helvetica Neue", Arial, sans-serif';
 const PAL = {
   valeopreco: {light: true, bg: '#f5eedc', acc: '#ffd84d', warm: '#e63946', ink: '#1b1b1f', tag: 'VALE O PREÇO?'},
-  howitticks: {bg: '#0a0f1c', acc: '#22d3ee', warm: '#ff5c8a', ink: '#06222a', tag: 'HOW IT TICKS'},
+  howitticks: {crt: true, bg: '#0b0d0a', acc: '#ffb000', warm: '#ff4d4d', ink: '#1a1000', tag: 'HOW IT TICKS'},
   chartbound: {bg: '#0a0f1c', acc: '#ffc233', warm: '#ff5c5c', ink: '#201700', tag: 'CHARTBOUND'},
 };
 
@@ -27,6 +27,14 @@ const Bg = ({p, block}) => {
       <AbsoluteFill style={{background: block ? p.warm : p.bg}}>
         {!block && <AbsoluteFill style={{backgroundImage: 'repeating-linear-gradient(transparent 0 71px, rgba(27,27,31,.07) 71px 73px)', backgroundPosition: `0 ${f * 0.4}px`}} />}
         {!block && <AbsoluteFill style={{background: 'radial-gradient(1200px 1200px at 50% 45%, transparent 55%, rgba(120,90,40,.16))'}} />}
+      </AbsoluteFill>
+    );
+  }
+  if (p.crt) {
+    return (
+      <AbsoluteFill style={{background: block ? p.acc : p.bg}}>
+        {!block && <AbsoluteFill style={{background: `radial-gradient(1000px 1000px at 50% 45%, ${p.acc}1c, transparent 70%)`}} />}
+        <AbsoluteFill style={{backgroundImage: `repeating-linear-gradient(rgba(0,0,0,${block ? 0.06 : 0.32}) 0 2px, transparent 2px 5px)`}} />
       </AbsoluteFill>
     );
   }
@@ -70,7 +78,7 @@ const Caps = ({sc, p, block}) => {
   const active = chunks.find((c) => t >= c[0].t0 && t < c[c.length - 1].t1 + 0.12) || null;
   if (!active) return null;
   return (
-    <div style={{position: 'absolute', left: 60, right: 60, top: 1460, textAlign: 'center', fontFamily: FONT, fontWeight: 800, fontSize: 70, lineHeight: 1.15, color: p.light ? (block ? '#fff' : p.ink) : (block ? p.ink : '#fff'), textShadow: p.light || block ? 'none' : '0 4px 24px rgba(0,0,0,.6)'}}>
+    <div style={{position: 'absolute', left: 60, right: 60, top: 1470, textAlign: 'center', fontFamily: FONT, fontWeight: 800, fontSize: 70, lineHeight: 1.15, color: p.light ? (block ? '#fff' : p.ink) : (block ? p.ink : '#fff'), textShadow: p.light || block ? 'none' : '0 4px 24px rgba(0,0,0,.6)'}}>
       {active.map((w, i) => {
         const on = t >= w.t0 && t < w.t1;
         return <span key={i} style={{color: p.light ? (block ? '#fff' : p.ink) : (on ? (block ? '#fff' : p.acc) : undefined), background: p.light && !block && on ? p.acc : 'transparent', borderRadius: 10, padding: '0 8px', marginRight: 8, display: 'inline-block'}}>{w.w}</span>;
@@ -248,7 +256,7 @@ const Grid = ({sc, p}) => {
   const f = useCurrentFrame();
   const flips = sc.hashdata.flips;
   const rows = interpolate(f, [10, 90], [0, 16], C);
-  const cell = 52, gap = 6, ox = (1080 - 16 * (cell + gap) + gap) / 2, oy = 470;
+  const cell = 46, gap = 5, ox = (1080 - 16 * (cell + gap) + gap) / 2, oy = 440;
   const count = flips.reduce((n, b, i) => n + (b && Math.floor(i / 16) < rows ? 1 : 0), 0);
   return (
     <AbsoluteFill>
@@ -258,7 +266,7 @@ const Grid = ({sc, p}) => {
         const v = interpolate(rows - r, [0, 1], [0, 1], C);
         return <div key={i} style={{position: 'absolute', left: ox + c * (cell + gap), top: oy + r * (cell + gap), width: cell, height: cell, borderRadius: 10, background: b ? p.warm : '#ffffff1f', opacity: v, transform: `scale(${0.6 + 0.4 * v})`}} />;
       })}
-      <div style={{position: 'absolute', top: 470 + 16 * (cell + gap) + 30, left: 0, right: 0, textAlign: 'center', fontFamily: FONT, fontWeight: 900, fontSize: 70, color: '#fff'}}><span style={{color: p.warm}}>{count}</span> / 256 flipped</div>
+      <div style={{position: 'absolute', top: 440 + 16 * (cell + gap) + 24, left: 0, right: 0, textAlign: 'center', fontFamily: FONT, fontWeight: 900, fontSize: 64, color: '#fff'}}><span style={{color: p.warm}}>{count}</span> / 256 flipped</div>
     </AbsoluteFill>
   );
 };

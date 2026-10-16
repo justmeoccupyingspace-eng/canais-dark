@@ -50,7 +50,7 @@
    "type": "grid",
    "text": "No pattern to follow",
    "hl": "No pattern",
-   "narration": "Every orange square is a bit that changed. There is no pattern to follow.",
+   "narration": "Every red square is a bit that changed. There is no pattern to follow.",
    "min_duration": 4.6
   },
   {

@@ -10,7 +10,7 @@ VOICES = {
     "howitticks": ("am_michael", "en-us", 1.0),
     "valeopreco": ("pf_dora", "pt-br", 1.0),
 }
-EDGE = {"valeopreco": "pt-BR-ThalitaMultilingualNeural"}  # voz neural natural; se a rede falhar, cai no Kokoro
+EDGE = {"valeopreco": "pt-BR-ThalitaMultilingualNeural", "howitticks": "en-US-AndrewMultilingualNeural", "chartbound": "en-US-AvaMultilingualNeural"}  # voz neural natural; se a rede falhar, cai no Kokoro
 GOOGLE = {"valeopreco": ("pt-BR", "pt-BR-Chirp3-HD-Charon")}  # exige GCP_TTS_KEY; sem a chave, cai no edge/Kokoro
 EDGE_RATE = os.environ.get("EDGE_RATE", "+0%")
 MODEL = os.environ.get("KOKORO_DIR", ".cache/kokoro")
