@@ -11,6 +11,7 @@ VOICES = {
     "valeopreco": ("pf_dora", "pt-br", 1.0),
 }
 EDGE = {"valeopreco": "pt-BR-AntonioNeural"}  # voz neural natural; se a rede falhar, cai no Kokoro
+GOOGLE = {"valeopreco": ("pt-BR", "pt-BR-Chirp3-HD-Charon")}  # exige GCP_TTS_KEY; sem a chave, cai no edge/Kokoro
 EDGE_RATE = os.environ.get("EDGE_RATE", "-4%")
 MODEL = os.environ.get("KOKORO_DIR", ".cache/kokoro")
 TAIL = 0.28  # silêncio após a fala antes da próxima cena
@@ -54,6 +55,19 @@ def word_times(text, total, offset=0.0, audio=None, sr=24000):
     return [{"w": w, "t0": round(max(offset + bounds[i] - LEAD, 0), 3), "t1": round(offset + bounds[i + 1] - LEAD, 3)} for i, w in enumerate(words)]
 
 
+def google_sentence(text, cfg):
+    """Uma frase via Google Cloud TTS (Chirp 3 HD). Retorna samples 24k mono."""
+    import base64, urllib.request
+    key = os.environ["GCP_TTS_KEY"]
+    body = json.dumps({"input": {"text": text}, "voice": {"languageCode": cfg[0], "name": cfg[1]},
+                       "audioConfig": {"audioEncoding": "LINEAR16", "sampleRateHertz": 24000}}).encode()
+    req = urllib.request.Request(f"https://texttospeech.googleapis.com/v1/text:synthesize?key={key}", data=body, headers={"Content-Type": "application/json"})
+    raw = base64.b64decode(json.load(urllib.request.urlopen(req, timeout=60))["audioContent"])
+    import io
+    x, _ = sf.read(io.BytesIO(raw), dtype="float32")
+    return x if x.ndim == 1 else x[:, 0]
+
+
 def edge_sentence(text, voice):
     """Uma frase via edge-tts. Retorna (samples 24k, [(palavra, t0, t1)]) com tempos reais de palavra."""
     import asyncio, subprocess, tempfile, edge_tts
@@ -74,13 +88,23 @@ def edge_sentence(text, voice):
     return x, wb
 
 
-def speak(k, text, voice, lang, speed, edge_voice=None):
+def speak(k, text, voice, lang, speed, edge_voice=None, google_cfg=None):
     """Frase a frase, com pausas naturais; limpa graves, nivela volume. Retorna (samples, sr, words)."""
     sents = [x for x in re.split(r"(?<=[.!?])\s+", text.strip()) if x]
     chunks, words, pos, sr = [], [], 0.0, 24000
     for i, snt in enumerate(sents):
         wb = None
-        if edge_voice:
+        if google_cfg:
+            try:
+                smp = google_sentence(snt, google_cfg)
+                sr = 24000
+                smp = trim(smp, sr)
+            except Exception as e:
+                print("google falhou, tentando edge:", repr(e)[:160])
+                google_cfg = None
+        if google_cfg:
+            pass
+        elif edge_voice:
             try:
                 smp, wb = edge_sentence(snt, edge_voice)
                 sr = 24000
@@ -92,7 +116,7 @@ def speak(k, text, voice, lang, speed, edge_voice=None):
                 print("edge falhou, usando kokoro:", repr(e)[:120])
                 edge_voice = None
                 wb = None
-        if not edge_voice:
+        if not edge_voice and not google_cfg:
             smp, sr = k.create(snt, voice=voice, speed=speed, lang=lang, trim=False)
             smp = trim(smp, sr)
         d = len(smp) / sr
@@ -137,7 +161,7 @@ def main(src, dst):
         text = sc.get("narration")
         if not text:
             continue
-        samples, sr, words = speak(k, text, voice, lang, speed, EDGE.get(spec["channel"]))
+        samples, sr, words = speak(k, text, voice, lang, speed, EDGE.get(spec["channel"]), GOOGLE.get(spec["channel"]) if os.environ.get("GCP_TTS_KEY") else None)
         dur = len(samples) / sr
         rel = f"audio/{name}/s{i}.wav"
         sf.write(f"public/{rel}", samples, sr)
