@@ -1,0 +1,70 @@
+{
+ "channel": "chartbound",
+ "title": "Demo",
+ "scenes": [
+  {
+   "type": "title",
+   "text": "The price of a loaf of bread, 1990\u20132020",
+   "sub": "US average, in dollars",
+   "duration": 3,
+   "narration": "The price of a loaf of bread, from nineteen ninety to twenty twenty."
+  },
+  {
+   "type": "chart",
+   "kind": "line",
+   "title": "Bread, per pound",
+   "subtitle": "US city average",
+   "data": [
+    {
+     "x": "1990",
+     "y": 0.7
+    },
+    {
+     "x": "1995",
+     "y": 0.86
+    },
+    {
+     "x": "2000",
+     "y": 0.99
+    },
+    {
+     "x": "2005",
+     "y": 1.04
+    },
+    {
+     "x": "2010",
+     "y": 1.37
+    },
+    {
+     "x": "2015",
+     "y": 1.46
+    },
+    {
+     "x": "2020",
+     "y": 1.54
+    }
+   ],
+   "note": "Source: BLS (demo data)",
+   "caption": "It more than doubled in thirty years.",
+   "duration": 5,
+   "narration": "Bread cost about seventy cents a pound in nineteen ninety. By twenty twenty, it was one fifty four."
+  },
+  {
+   "type": "stat",
+   "label": "Increase since 1990",
+   "value": 120,
+   "suffix": "%",
+   "caption": "Slower than rent, faster than wages in some years.",
+   "duration": 4,
+   "narration": "That is an increase of more than one hundred percent."
+  }
+ ],
+ "yt": {
+  "title": "Bread prices since 1990 #Shorts (pipeline test)",
+  "description": "Pipeline test, private.",
+  "tags": [
+   "economics"
+  ],
+  "lang": "en"
+ }
+}

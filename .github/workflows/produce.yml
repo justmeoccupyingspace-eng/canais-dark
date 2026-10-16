@@ -1,0 +1,61 @@
+name: produce
+on:
+  workflow_dispatch:
+    inputs:
+      spec:
+        description: "Arquivo em specs/ (ex.: specs/demo.json)"
+        required: true
+        default: "specs/demo.json"
+      channel:
+        description: "A = Chartbound, B = How It Ticks"
+        required: true
+        default: "A"
+      privacy:
+        description: "private | unlisted | public"
+        required: true
+        default: "private"
+      upload:
+        description: "Enviar ao YouTube? (true/false)"
+        required: true
+        default: "true"
+jobs:
+  produce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: 22, cache: npm}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - uses: actions/cache@v4
+        id: kcache
+        with:
+          path: .cache/kokoro
+          key: kokoro-v1.0
+      - name: Modelos de voz
+        if: steps.kcache.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p .cache/kokoro
+          B=https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0
+          curl -sSL -o .cache/kokoro/kokoro-v1.0.onnx $B/kokoro-v1.0.onnx
+          curl -sSL -o .cache/kokoro/voices-v1.0.bin $B/voices-v1.0.bin
+      - run: pip install kokoro-onnx soundfile
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: npm ci --no-audit --no-fund
+      - name: Voz
+        run: python scripts/tts.py "${{ inputs.spec }}" public/build/spec.json
+      - name: Render
+        run: |
+          mkdir -p out
+          node scripts/render.mjs public/build/spec.json out/video.mp4
+      - uses: actions/upload-artifact@v4
+        with: {name: video, path: out/video.mp4, retention-days: 7}
+      - name: Upload YouTube
+        if: inputs.upload == 'true'
+        run: python scripts/upload.py "${{ inputs.channel }}" out/video.mp4 public/build/spec.json "${{ inputs.privacy }}"
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_A: ${{ secrets.YT_REFRESH_A }}
+          YT_REFRESH_B: ${{ secrets.YT_REFRESH_B }}

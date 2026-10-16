@@ -1,0 +1,6 @@
+node_modules/
+out/
+.cache/
+public/audio/
+public/build/
+uploaded.json
