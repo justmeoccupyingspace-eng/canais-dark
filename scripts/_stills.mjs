@@ -1,0 +1,10 @@
+import {bundle} from '@remotion/bundler';
+import {renderStill, selectComposition} from '@remotion/renderer';
+import fs from 'node:fs';
+const spec = JSON.parse(fs.readFileSync(process.argv[2], 'utf8'));
+const frames = process.argv.slice(3).map(Number);
+const serveUrl = await bundle({entryPoint: '/home/claude/canais-dark/src/index.jsx', publicDir: '/home/claude/canais-dark/public'});
+const browserExecutable = process.env.CHROME_PATH;
+const composition = await selectComposition({serveUrl, id: 'Short', inputProps: {spec}, browserExecutable});
+for (const f of frames) await renderStill({composition, serveUrl, frame: f, output: `/tmp/st_${f}.png`, inputProps: {spec}, browserExecutable});
+console.log('ok', composition.durationInFrames);

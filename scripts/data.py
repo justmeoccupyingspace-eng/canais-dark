@@ -75,7 +75,7 @@ def compute_blocks(spec, ctx, raw):
         from num2words import num2words
         say = lambda v: num2words(int(round(v)), lang="pt_BR")
         raw.update(ipca_needed_say=say(amt * f) + " reais", ipca_amount_say=say(amt) + " reais", ipca_pct_say=say((f - 1) * 100),
-                   ipca_factor=round(f, 2), ipca_pct=round((f - 1) * 100), ipca_needed=brl(amt * f), ipca_amount=brl(amt),
+                   ipca_factor=round(f, 2), ipca_amount_n=amt, ipca_needed_n=round(amt * f), ipca_pct=round((f - 1) * 100), ipca_needed=brl(amt * f), ipca_amount=brl(amt),
                    ipca_from=f"{MESES[int(mo) - 1]} de {y}", ipca_to=f"{MESES[int(lm) - 1]} de {ly}")
         ctx.update({k: v for k, v in raw.items() if k.startswith("ipca")})
 
@@ -114,6 +114,8 @@ def main(src, dst):
         for k in ("narration", "caption", "text", "sub", "label", "title", "subtitle", "note", "hl", "big", "l1", "v1", "l2", "v2"):
             if k in sc:
                 sc[k] = sub(sc[k])
+        for k in [k for k in sc if k.endswith("_from") and k != "value_from"]:
+            sc[k[:-5]] = raw[sc[k]]
         if sc.get("type") == "stat" and "value_from" in sc:
             sc["value"] = raw[sc["value_from"]]
     if "yt" in spec:

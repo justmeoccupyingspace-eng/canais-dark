@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "@fontsource/anton": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
     "@remotion/bundler": "4.0.250",
     "@remotion/cli": "4.0.250",
     "@remotion/renderer": "4.0.250",

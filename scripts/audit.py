@@ -4,6 +4,15 @@ Mede por cena: erro de palavras (WER), desvio da legenda vs. fala real, ritmo (p
 import json, re, sys
 import numpy as np, soundfile as sf
 
+def num_to_words(t):
+    t = re.sub(r"R\s*\$\s*", "", t)
+    def rep(m):
+        from num2words import num2words
+        v = int(m.group(0).replace(".", "").replace(" ", ""))
+        return num2words(v, lang="pt_BR")
+    t = re.sub(r"\d[\d. ]*\d|\d", rep, t)
+    return t.replace("%", " por cento")
+
 def norm(w): return re.sub(r"[^\wÀ-ÿ]", "", w.lower().replace(".", ""))
 
 def wer(ref, hyp):
@@ -27,8 +36,9 @@ def main(path):
         x, sr = sf.read("public/" + sc["audio"], dtype="float32")
         segs, _ = m.transcribe(x if sr == 16000 else librosa.resample(x, orig_sr=sr, target_sr=16000), language=lang, word_timestamps=True)
         hw = [w for s in segs for w in s.words]
+        hyp_txt = num_to_words(" ".join(w.word for w in hw)).split() if lang == "pt" else [w.word for w in hw]
         ref = sc["words"]
-        e = wer([w["w"] for w in ref], [w.word for w in hw])
+        e = wer([w["w"] for w in ref], hyp_txt)
         sync = None
         if len(hw) == len(ref):
             sync = float(np.mean([abs(h.start - r["t0"]) for h, r in zip(hw, ref)]))

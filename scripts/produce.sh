@@ -14,8 +14,7 @@ while read -r f; do
   pv=$(python3 -c "import json,sys;d=json.load(open('$f'));print(d.get('publish',{}).get('privacy',''))")
   ch=${ch:-${MANUAL_CHANNEL:-A}}; pv=${pv:-${MANUAL_PRIVACY:-private}}
   if [ "$ch" = "C" ]; then
-    echo "canal C: sem upload no YouTube; enviando ao Drive"
-    python3 scripts/drive_up.py out/$n.mp4 || echo "drive falhou (vídeo segue no artefato)"
+    echo "canal C: sem upload no YouTube; vídeo vai para a branch previews"
   elif [ "${MANUAL_UPLOAD:-true}" != "false" ]; then
     python3 scripts/upload.py "$ch" out/$n.mp4 public/build/$n.json "$pv"
   fi

@@ -24,29 +24,28 @@
  },
  "scenes": [
   {
-   "type": "art",
-   "art": "bob-big",
-   "text": "Seu salário ENCOLHEU?",
-   "hl": "ENCOLHEU?",
-   "big": "?",
+   "type": "kin",
+   "text": "Seu salário encolheu?",
+   "hl": "encolheu?",
+   "size": 170,
    "narration": "Um salário de {ipca_amount_say} em {ipca_from}. Quanto ele precisa ser hoje para comprar o mesmo?",
    "min_duration": 5
   },
   {
-   "type": "art",
-   "art": "brl-compare",
+   "type": "num",
    "text": "Mesmo poder de compra",
    "hl": "poder de compra",
+   "prefix": "R$ ",
+   "a_from": "ipca_amount_n",
+   "b_from": "ipca_needed_n",
    "l1": "{ipca_from}",
-   "v1": "{ipca_amount}",
    "l2": "hoje",
-   "v2": "{ipca_needed}",
    "narration": "Na média dos preços medidos pelo IPCA, hoje ele precisa ser de {ipca_needed_say}.",
    "min_duration": 5
   },
   {
    "type": "stat",
-   "label": "Aumento dos preços no período (IPCA)",
+   "label": "de aumento nos preços no período (IPCA)",
    "value_from": "ipca_pct",
    "value": 0,
    "prefix": "+",
@@ -55,13 +54,13 @@
    "min_duration": 3.6
   },
   {
-   "type": "art",
-   "art": "bob-big",
-   "text": "E o SEU salário, acompanhou?",
-   "hl": "SEU",
-   "big": "?",
+   "type": "kin",
+   "text": "E o seu salário acompanhou?",
+   "hl": "seu",
+   "size": 160,
    "narration": "Se o seu salário não subiu isso, na média você compra menos. E o seu, acompanhou?",
    "min_duration": 4.4
   }
- ]
+ ],
+ "style": "clean"
 }

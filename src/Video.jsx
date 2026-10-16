@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {AbsoluteFill, Sequence, Audio, staticFile, useCurrentFrame, delayRender, continueRender} from 'remotion';
 import {THEMES} from './themes.js';
 import {ArtScene, ChartScene, StatScene} from './scenes.jsx';
+import {CleanVideo} from './clean.jsx';
 
 const FPS = 30;
 
@@ -39,7 +40,9 @@ const Top = ({theme, total}) => {
   );
 };
 
-export const Video = ({spec}) => {
+export const Video = ({spec}) => (spec.style === 'clean' ? <CleanVideo spec={spec} /> : <OldVideo spec={spec} />);
+
+const OldVideo = ({spec}) => {
   useFonts();
   const theme = THEMES[spec.channel] || THEMES.chartbound;
   let from = 0;
