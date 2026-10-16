@@ -13,11 +13,18 @@ const useFonts = () => {
   }, [h]);
 };
 
-const Paper = ({theme}) => (
-  <AbsoluteFill style={{background: theme.paper}}>
-    <AbsoluteFill style={{backgroundImage: 'radial-gradient(rgba(20,22,31,.10) 3px, transparent 3.5px)', backgroundSize: '54px 54px'}} />
-  </AbsoluteFill>
-);
+const Paper = ({theme}) => {
+  const f = useCurrentFrame();
+  const items = Array.from({length: 9}, (_, i) => ({x: (i * 137) % 1000 + 40, y0: (i * 311) % 1900, sp: 0.6 + (i % 4) * 0.35, sz: 34 + (i % 3) * 18}));
+  return (
+    <AbsoluteFill style={{background: theme.paper}}>
+      <AbsoluteFill style={{backgroundImage: 'radial-gradient(rgba(20,22,31,.10) 3px, transparent 3.5px)', backgroundSize: '54px 54px', backgroundPosition: `${f * 0.4}px ${f * 0.6}px`}} />
+      {items.map((it, i) => (
+        <div key={i} style={{position: 'absolute', left: it.x + Math.sin(f / 40 + i) * 20, top: ((it.y0 - f * it.sp * 2) % 2000 + 2000) % 2000 - 40, width: it.sz, height: it.sz, borderRadius: i % 2 ? '50%' : 8, border: '5px solid #14161f', background: i % 3 === 0 ? theme.acc : i % 3 === 1 ? theme.acc2 : 'transparent', opacity: 0.16, transform: `rotate(${f * (i % 2 ? 1 : -1)}deg)`}} />
+      ))}
+    </AbsoluteFill>
+  );
+};
 
 const Top = ({theme, total}) => {
   const f = useCurrentFrame();

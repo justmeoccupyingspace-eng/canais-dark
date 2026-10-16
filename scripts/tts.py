@@ -1,13 +1,14 @@
 """spec.json -> spec com áudio por cena + tempo de cada palavra (legenda). Uso: python scripts/tts.py specs/x.json public/build/x.json"""
 import json, os, re, sys
 import numpy as np
+from scipy.signal import butter, sosfilt
 import soundfile as sf
 from kokoro_onnx import Kokoro
 
 VOICES = {
-    "chartbound": ("af_heart", "en-us", 1.12),
-    "howitticks": ("am_michael", "en-us", 1.12),
-    "valeopreco": ("pf_dora", "pt-br", 1.12),
+    "chartbound": ("af_heart", "en-us", 1.04),
+    "howitticks": ("am_michael", "en-us", 1.04),
+    "valeopreco": ("pf_dora", "pt-br", 1.04),
 }
 MODEL = os.environ.get("KOKORO_DIR", ".cache/kokoro")
 TAIL = 0.28  # silêncio após a fala antes da próxima cena
@@ -22,7 +23,7 @@ def trim(samples, sr, thr=0.01):
     return samples[a:b]
 
 
-def word_times(text, total):
+def word_times(text, total, offset=0.0):
     """Distribui o tempo entre as palavras por nº de letras (+ pausa em pontuação)."""
     words = text.split()
     wt = []
@@ -32,9 +33,32 @@ def word_times(text, total):
     out, t = [], 0.0
     for w, x in zip(words, wt):
         d = total * x / s
-        out.append({"w": w, "t0": round(t, 3), "t1": round(t + d, 3)})
+        out.append({"w": w, "t0": round(offset + t, 3), "t1": round(offset + t + d, 3)})
         t += d
     return out
+
+
+def speak(k, text, voice, lang, speed):
+    """Frase a frase, com pausas naturais; limpa graves, nivela volume. Retorna (samples, sr, words)."""
+    sents = [x for x in re.split(r"(?<=[.!?])\s+", text.strip()) if x]
+    chunks, words, pos, sr = [], [], 0.0, 24000
+    for i, snt in enumerate(sents):
+        smp, sr = k.create(snt, voice=voice, speed=speed, lang=lang)
+        smp = trim(smp, sr)
+        d = len(smp) / sr
+        words += word_times(snt, d, pos)
+        chunks.append(smp)
+        pos += d
+        if i < len(sents) - 1:
+            gap = 0.30 if snt.endswith("?") else 0.20 if snt.endswith(".") else 0.12
+            chunks.append(np.zeros(int(gap * sr), dtype=smp.dtype))
+            pos += gap
+    x = np.concatenate(chunks)
+    x = sosfilt(butter(2, 70 / (sr / 2), btype="high", output="sos"), x)
+    rms = np.sqrt(np.mean(x ** 2)) + 1e-9
+    x = x * (0.11 / rms)  # nivela (~ -19 dBFS RMS)
+    x = np.tanh(x * 1.2) / np.tanh(1.2) * 0.95  # limitador suave
+    return x.astype(np.float32), sr, words
 
 
 def main(src, dst):
@@ -48,13 +72,12 @@ def main(src, dst):
         text = sc.get("narration")
         if not text:
             continue
-        samples, sr = k.create(text, voice=voice, speed=speed, lang=lang)
-        samples = trim(samples, sr)
+        samples, sr, words = speak(k, text, voice, lang, speed)
         dur = len(samples) / sr
         rel = f"audio/{name}/s{i}.wav"
         sf.write(f"public/{rel}", samples, sr)
         sc["audio"] = rel
-        sc["words"] = word_times(text, dur)
+        sc["words"] = words
         sc["duration"] = round(max(sc.get("min_duration", 0), dur + TAIL), 2)
     os.makedirs(os.path.dirname(dst), exist_ok=True)
     json.dump(spec, open(dst, "w", encoding="utf-8"), ensure_ascii=False, indent=1)

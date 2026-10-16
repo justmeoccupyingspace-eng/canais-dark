@@ -10,8 +10,9 @@ const Wrap = ({children}) => {
   const f = useCurrentFrame();
   const {durationInFrames: d} = useVideoConfig();
   const sc = interpolate(f, [0, 8], [1.05, 1], {...clamp, easing: Easing.out(Easing.cubic)});
+  const dx = interpolate(f, [0, 7], [90, 0], {...clamp, easing: Easing.out(Easing.cubic)});
   const op = interpolate(f, [0, 2, d - 2, d], [0, 1, 1, 0], clamp);
-  return <AbsoluteFill style={{opacity: op, transform: `scale(${sc})`}}>{children}</AbsoluteFill>;
+  return <AbsoluteFill style={{opacity: op, transform: `translateX(${dx}px) scale(${sc})`}}>{children}</AbsoluteFill>;
 };
 
 const Highlight = ({text, hl, theme}) => {
@@ -24,12 +25,23 @@ const Highlight = ({text, hl, theme}) => {
 const Headline = ({sc, theme}) => {
   const f = useCurrentFrame();
   const {fps} = useVideoConfig();
-  const s = spring({frame: f, fps, config: {damping: 12, stiffness: 160}});
   const text = sc.text || sc.title;
   if (!text) return null;
+  const hl = sc.hl && text.includes(sc.hl) ? sc.hl : null;
+  const parts = hl ? text.split(hl) : [text];
+  const tokens = [];
+  parts.forEach((part, i) => {
+    part.split(' ').filter(Boolean).forEach((w) => tokens.push({w, hl: false}));
+    if (hl && i < parts.length - 1) tokens.push({w: hl, hl: true});
+  });
   return (
-    <div style={{position: 'absolute', left: 50, right: 50, top: 150, textAlign: 'center', fontFamily: ANTON, fontSize: 92, lineHeight: 1.12, color: theme.ink, textTransform: 'uppercase', transform: `scale(${0.85 + 0.15 * s})`, opacity: s}}>
-      <Highlight text={text} hl={sc.hl} theme={theme} />
+    <div style={{position: 'absolute', left: 50, right: 50, top: 150, textAlign: 'center', fontFamily: ANTON, fontSize: 92, lineHeight: 1.12, color: theme.ink, textTransform: 'uppercase'}}>
+      {tokens.map((tk, i) => {
+        const s = spring({frame: f - i * 3, fps, config: {damping: 10, stiffness: 190}});
+        return (
+          <span key={i} style={{display: 'inline-block', margin: '0 12px', transform: `translateY(${(1 - s) * 50}px) scale(${0.6 + 0.4 * s})`, opacity: Math.min(1, s * 1.5), background: tk.hl ? theme.acc : 'transparent', padding: tk.hl ? '0 14px' : 0, borderRadius: 10}}>{tk.w}</span>
+        );
+      })}
     </div>
   );
 };
@@ -54,7 +66,7 @@ export const Karaoke = ({words, theme}) => {
           <span key={idx} style={{
             fontFamily: ANTON, fontSize: 118, lineHeight: 1.12, margin: '0 14px', textTransform: 'uppercase',
             color: on ? theme.acc : '#fff', WebkitTextStroke: '16px #14161f', paintOrder: 'stroke fill',
-            transform: `scale(${on ? 1.12 : 1})`, filter: on ? 'none' : 'none', opacity: idx > cur ? 0.0 : 1,
+            transform: `scale(${on ? 1 + 0.26 * Math.exp(-Math.max(0, t - w.t0) * 9) + 0.04 : 1}) rotate(${on ? Math.sin(idx * 2.1) * 2 : 0}deg)`, opacity: idx > cur ? 0.0 : 1,
           }}>{w.w.replace(/[.,;:!?]+$/, '')}</span>
         );
       })}

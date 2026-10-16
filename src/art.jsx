@@ -11,32 +11,73 @@ const useT = () => {
 };
 
 // ---------- personagem ----------
-export const Bob = ({x = 540, y = 760, s = 1, pose = 'idle', theme, mouth = 'smile', holdLeft = null}) => {
-  const {f} = useT();
-  const bob = Math.sin(f / 7) * 6;
-  const arms = {
-    idle: [[-70, 20], [70, 20]],
-    up: [[-95, -85], [95, -85]],
-    point: [[-70, 20], [120, -60]],
-    shock: [[-100, -40], [100, -40]],
-    hold: [[-80, -20], [80, -20]],
-    wave: [[-70, 20], [100 + Math.sin(f / 4) * 25, -100]],
-  }[pose] || [[-70, 20], [70, 20]];
+export const TalkCtx = React.createContext([]);
+const D2R = Math.PI / 180;
+const POSES = {
+  idle: {L: [14, 12], R: [14, 12]},
+  up: {L: [150, 8], R: [150, 8]},
+  point: {L: [14, 12], R: [96, 4]},
+  shock: {L: [105, -35], R: [105, -35]},
+  hold: {L: [20, 20], R: [48, 62]},
+  wave: {L: [14, 12], R: [150, 10]},
+};
+export const Bob = ({x = 540, y = 760, s = 1, pose = 'idle', theme, children}) => {
+  const {f, fps, t, pop} = useT();
+  const words = React.useContext(TalkCtx);
+  const p = pop(0, 9);
+  const target = POSES[pose] || POSES.idle;
+  const idle = POSES.idle;
+  const sway = Math.sin(f / 11);
+  const mix = (a, b) => a + (b - a) * p;
+  let La = [mix(idle.L[0], target.L[0]) + sway * 3, mix(idle.L[1], target.L[1])];
+  let Ra = [mix(idle.R[0], target.R[0]) - sway * 3, mix(idle.R[1], target.R[1])];
+  if (pose === 'wave') { Ra = [150 + Math.sin(f / 3) * 14, 10 + Math.sin(f / 3) * 30]; }
+  if (pose === 'shock') { La[0] += Math.sin(f * 0.9) * 2; Ra[0] += Math.sin(f * 0.9) * 2; }
+  const SH = [0, -110], L1 = 64, L2 = 58;
+  const arm = (side, [a1, a2]) => {
+    const e = [SH[0] + side * L1 * Math.sin(a1 * D2R), SH[1] + L1 * Math.cos(a1 * D2R)];
+    const h = [e[0] + side * L2 * Math.sin((a1 + a2) * D2R), e[1] + L2 * Math.cos((a1 + a2) * D2R)];
+    return {e, h};
+  };
+  const aL = arm(-1, La), aR = arm(1, Ra);
+  // entrada: salta de baixo com squash & stretch
+  const rise = (1 - p) * 420;
+  const squash = 1 + (1 - p) * 0.12 - Math.max(0, Math.sin(Math.min(f, 14) / 14 * Math.PI)) * 0.0;
+  // respiração e peso
+  const breathe = Math.sin(f / 13) * 3;
+  // cabeça: balanço + aceno a cada palavra
+  let nod = 0, speaking = false;
+  for (const w of words) {
+    if (t >= w.t0 && t < w.t1) speaking = true;
+    if (t >= w.t0) nod = 9 * Math.exp(-(t - w.t0) * 11);
+  }
+  const tilt = Math.sin(f / 23) * 3 + (speaking ? Math.sin(f / 5) * 1.5 : 0);
+  // piscar
+  const blink = f % 96 > 91;
+  const talk = speaking ? 0.25 + 0.75 * Math.abs(Math.sin(f * 0.95)) : 0;
+  const shocked = pose === 'shock';
+  const legSwing = Math.sin(f / 15) * 2;
+  const headY = -175 + breathe * 0.6 + nod;
   return (
-    <g transform={`translate(${x},${y + bob}) scale(${s})`}>
-      <path d="M0,-130 L0,-30" {...S} />
-      <path d="M0,-30 L-38,70 M0,-30 L38,70" {...S} />
-      <path d={`M0,-110 L${arms[0][0]},${-110 + arms[0][1] + 40}`} {...S} />
-      <path d={`M0,-110 L${arms[1][0]},${-110 + arms[1][1] + 40}`} {...S} />
-      <circle cx={0} cy={-175} r={52} fill="#fff" {...{stroke: S.stroke, strokeWidth: S.strokeWidth}} />
-      <circle cx={-18} cy={-185} r={6} fill="#14161f" />
-      <circle cx={18} cy={-185} r={6} fill="#14161f" />
-      {mouth === 'smile' && <path d="M-18,-155 Q0,-138 18,-155" {...S} strokeWidth={6} />}
-      {mouth === 'open' && <ellipse cx={0} cy={-150} rx={13} ry={17} fill="#14161f" />}
-      {mouth === 'flat' && <path d="M-14,-152 L14,-152" {...S} strokeWidth={6} />}
-      {/* chapéu */}
-      <path d="M-56,-205 Q0,-262 56,-205 Z" fill={theme.hat} stroke="#14161f" strokeWidth={8} strokeLinejoin="round" />
-      <path d="M-74,-205 L74,-205" {...S} />
+    <g transform={`translate(${x},${y + rise}) scale(${s}, ${s * squash})`}>
+      <ellipse cx={0} cy={72} rx={70 - (1 - p) * 30} ry={10} fill="#14161f" opacity={0.15 * p} />
+      <path d={`M0,${-130 + breathe} L0,-30`} {...S} />
+      <path d={`M0,-30 L${-38 + legSwing},70 M0,-30 L${38 - legSwing},70`} {...S} />
+      <path d={`M${SH[0]},${SH[1] + breathe} L${aL.e[0]},${aL.e[1]} L${aL.h[0]},${aL.h[1]}`} {...S} />
+      <path d={`M${SH[0]},${SH[1] + breathe} L${aR.e[0]},${aR.e[1]} L${aR.h[0]},${aR.h[1]}`} {...S} />
+      {children ? children({hand: aR.h, handL: aL.h}) : null}
+      <g transform={`rotate(${tilt} 0 -125) translate(0 ${headY + 175})`}>
+        <circle cx={0} cy={-175} r={52} fill="#fff" stroke="#14161f" strokeWidth={9} />
+        {blink
+          ? <><path d="M-26,-186 L-10,-186 M10,-186 L26,-186" {...S} strokeWidth={5} /></>
+          : <><circle cx={-18} cy={-185} r={shocked ? 8 : 6} fill="#14161f" /><circle cx={18} cy={-185} r={shocked ? 8 : 6} fill="#14161f" /></>}
+        {shocked && <path d="M-30,-208 L-8,-214 M30,-208 L8,-214" {...S} strokeWidth={5} />}
+        {talk > 0 || shocked
+          ? <ellipse cx={0} cy={-150} rx={shocked ? 14 : 11 + talk * 4} ry={shocked ? 18 : 4 + talk * 13} fill="#14161f" />
+          : <path d="M-18,-155 Q0,-138 18,-155" {...S} strokeWidth={6} />}
+        <path d="M-56,-205 Q0,-262 56,-205 Z" fill={theme.hat} stroke="#14161f" strokeWidth={8} strokeLinejoin="round" />
+        <path d="M-74,-205 L74,-205" {...S} />
+      </g>
     </g>
   );
 };
@@ -123,14 +164,13 @@ const ARTS = {
   // personagem chocado com placa grande
   'bob-big': ({sc, theme, p}) => (
     <>
-      <Bob x={540} y={800} s={1.7} pose="shock" mouth="open" theme={theme} />
+      <Bob x={540} y={800} s={1.7} pose="shock" theme={theme} />
       <Sign x={540} y={270} text={sc.big || '!'} theme={theme} scale={0.5 + 0.5 * p(4)} />
     </>
   ),
   'bob-phone': ({sc, theme, p, t}) => (
     <>
-      <Bob x={540} y={820} s={1.7} pose="hold" mouth="flat" theme={theme} />
-      <Phone x={660} y={750} s={1.1} theme={theme} rot={-10} />
+      <Bob x={540} y={820} s={1.7} pose="hold" theme={theme}>{({hand}) => <Phone x={hand[0] + 10} y={hand[1] - 30} s={0.75} theme={theme} rot={-8} />}</Bob>
       {[0, 1, 2].map((i) => (
         <text key={i} x={330 + i * 190} y={260 + Math.sin(t * 4 + i) * 20 + (i % 2) * 70} fontSize={150} fontWeight={900} fill={theme.acc2} stroke="#14161f" strokeWidth={8} paintOrder="stroke" fontFamily="Anton, Impact" opacity={Math.min(1, p(i * 5))}>?</text>
       ))}
@@ -146,8 +186,7 @@ const ARTS = {
           return <circle key={i} cx={820} cy={280} r={80 + kk * 560} fill="none" stroke={theme.acc} strokeWidth={10} opacity={1 - kk} />;
         })}
         <Label x={820} y={470} text="TIME 12:00:00.000" size={38} bg={theme.acc} />
-        <Bob x={290} y={880} s={1.6} pose="hold" theme={theme} />
-        <Phone x={405} y={830} s={1} theme={theme} rot={-8} />
+        <Bob x={290} y={880} s={1.6} pose="hold" theme={theme}>{({hand}) => <Phone x={hand[0] + 10} y={hand[1] - 30} s={0.75} theme={theme} rot={-8} />}</Bob>
       </>
     );
   },
@@ -159,8 +198,7 @@ const ARTS = {
         <Satellite x={x1} y={y1} s={1.5} />
         <path d={`M${x1},${y1} L${x2},${y2}`} {...S} strokeDasharray="4 22" strokeWidth={8} />
         <circle cx={x1 + (x2 - x1) * k} cy={y1 + (y2 - y1) * k} r={26} fill={theme.acc} stroke="#14161f" strokeWidth={7} />
-        <Bob x={260} y={1040} s={1.3} pose="point" theme={theme} />
-        <Phone x={370} y={1000} s={0.9} theme={theme} />
+        <Bob x={260} y={1040} s={1.3} pose="point" theme={theme}>{({handL}) => <Phone x={handL[0] - 5} y={handL[1] - 10} s={0.6} theme={theme} />}</Bob>
         <Label x={540} y={560} text="delay × speed of light" size={40} bg="#fff" />
         <Label x={540} y={650} text="= distance" size={52} bg={theme.acc} />
       </>
@@ -229,7 +267,7 @@ const ARTS = {
   ),
   'coins-grow': ({theme, p, t}) => (
     <>
-      <Bob x={300} y={900} s={1.5} pose="up" mouth="open" theme={theme} />
+      <Bob x={300} y={900} s={1.5} pose="up" theme={theme} />
       {[0, 1, 2].map((i) => <CoinStack key={i} x={600 + i * 170} y={900} n={Math.max(1, Math.round((i + 1) * 3 * Math.min(1, t / 1.5)))} theme={theme} w={140} />)}
     </>
   ),
@@ -239,8 +277,10 @@ export const Art = ({sc, theme}) => {
   const {f, fps, t, pop} = useT();
   const Comp = ARTS[sc.art] || ARTS['bob-big'];
   return (
-    <svg width={1080} height={1100} viewBox="0 0 1080 1100" style={{position: 'absolute', left: 0, top: 330, overflow: 'visible'}}>
-      <Comp sc={sc} theme={theme} p={pop} t={t} f={f} fps={fps} />
-    </svg>
+    <TalkCtx.Provider value={sc.words || []}>
+      <svg width={1080} height={1100} viewBox="0 0 1080 1100" style={{position: 'absolute', left: 0, top: 330, overflow: 'visible', transform: `scale(${1 + 0.05 * Math.min(t / 6, 1)})`, transformOrigin: '540px 500px'}}>
+        <Comp sc={sc} theme={theme} p={pop} t={t} f={f} fps={fps} />
+      </svg>
+    </TalkCtx.Provider>
   );
 };
