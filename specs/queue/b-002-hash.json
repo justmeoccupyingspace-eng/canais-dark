@@ -1,24 +1,81 @@
 {
-  "channel": "howitticks",
-  "publish": {"channel": "B", "privacy": "private"},
-  "title": "One letter changes the whole hash",
-  "compute": {"hash": {"a": "hello", "b": "hellp"}},
-  "yt": {
-    "title": "I changed ONE letter. {bits} of 256 bits flipped #Shorts",
-    "description": "We computed SHA-256 for the words \"{word_a}\" and \"{word_b}\" and compared them bit by bit. Everything shown is calculated by code, not drawn.\nNarration is AI-generated.",
-    "tags": ["sha256", "hash", "cryptography", "how it works"],
-    "lang": "en"
+ "channel": "howitticks",
+ "publish": {
+  "channel": "B",
+  "privacy": "private"
+ },
+ "title": "One letter changes the whole hash",
+ "compute": {
+  "hash": {
+   "a": "hello",
+   "b": "hellp"
+  }
+ },
+ "yt": {
+  "title": "I changed ONE letter. {bits} of 256 bits flipped #Shorts",
+  "description": "We computed SHA-256 for the words \"{word_a}\" and \"{word_b}\" and compared them bit by bit. Everything shown is calculated by code, not drawn.\nNarration is AI-generated.",
+  "tags": [
+   "sha256",
+   "hash",
+   "cryptography",
+   "how it works"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "One letter. Totally different.",
+   "hl": "One",
+   "size": 170,
+   "narration": "I changed one letter. Look at what happened to the fingerprint.",
+   "min_duration": 4.5
   },
-  "scenes": [
-    {"type": "art", "art": "hash-compare", "text": "ONE letter. Totally different.", "hl": "ONE",
-     "narration": "I changed one letter. Look at what happened to the fingerprint.", "min_duration": 4.5},
-    {"type": "art", "art": "hash-one", "text": "A hash is a fingerprint", "hl": "fingerprint",
-     "narration": "A hash turns any text into a fixed fingerprint, sixty four characters long.", "min_duration": 4},
-    {"type": "stat", "label": "Bits that flipped out of 256", "value_from": "bits", "value": 0,
-     "narration": "One letter flipped {bits} of the two hundred fifty six bits. About half.", "min_duration": 3.6},
-    {"type": "art", "art": "bitgrid", "text": "The flipped bits look random", "hl": "random",
-     "narration": "Every red square is a bit that changed. There is no pattern to follow.", "min_duration": 4.6},
-    {"type": "art", "art": "hash-one", "text": "Why passwords are stored this way", "hl": "passwords",
-     "narration": "That is why websites should store a fingerprint like this, not your password. So, what happens if I change one more letter?", "min_duration": 5}
-  ]
+  {
+   "type": "hashcmp",
+   "text": "hello vs hellp",
+   "hl": "hellp",
+   "narration": "The two words differ by a single character. Their fingerprints share almost nothing.",
+   "min_duration": 5
+  },
+  {
+   "type": "stat",
+   "label": "bits flipped out of 256",
+   "value_from": "bits",
+   "value": 0,
+   "narration": "One letter flipped {bits} of the two hundred fifty six bits. About half.",
+   "min_duration": 3.6
+  },
+  {
+   "type": "grid",
+   "text": "No pattern to follow",
+   "hl": "No pattern",
+   "narration": "Every orange square is a bit that changed. There is no pattern to follow.",
+   "min_duration": 4.6
+  },
+  {
+   "type": "hashbox",
+   "text": "A fixed fingerprint",
+   "hl": "fingerprint",
+   "narration": "A hash turns any text into a fingerprint of sixty four characters, always the same size.",
+   "min_duration": 4.5
+  },
+  {
+   "type": "kin",
+   "text": "That is why passwords are hashed",
+   "hl": "hashed",
+   "size": 140,
+   "narration": "That is why websites should store a fingerprint like this, not your password.",
+   "min_duration": 3.8
+  },
+  {
+   "type": "kin",
+   "text": "What if I change one more letter?",
+   "hl": "one more letter?",
+   "size": 140,
+   "narration": "So, what happens if I change one more letter?",
+   "min_duration": 3
+  }
+ ],
+ "style": "clean"
 }

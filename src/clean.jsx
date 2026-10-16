@@ -142,6 +142,88 @@ const Stat = ({sc, p}) => {
   );
 };
 
+const MONO = '"DejaVu Sans Mono", Menlo, Consolas, monospace';
+
+const HexLines = ({hex, other, x, y, size, p, reveal = 1}) => {
+  const lines = [hex.slice(0, 32), hex.slice(32)];
+  let n = 0;
+  return (
+    <div style={{position: 'absolute', left: 0, right: 0, top: y, textAlign: 'center', fontFamily: MONO, fontWeight: 700, fontSize: size, lineHeight: 1.35, letterSpacing: 1}}>
+      {lines.map((ln, li) => (
+        <div key={li}>
+          {ln.split('').map((c, i) => {
+            const idx = li * 32 + i;
+            const diff = other && other[idx] !== c;
+            const shown = idx < reveal * 64;
+            return <span key={i} style={{opacity: shown ? 1 : 0.0, color: diff && shown ? p.ink : '#ffffffcc', background: diff && shown ? p.warm : 'transparent', borderRadius: 6}}>{c}</span>;
+          })}
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const Chip = ({text, y, p, hlIndex = -1}) => (
+  <div style={{position: 'absolute', left: 0, right: 0, top: y, textAlign: 'center', fontFamily: MONO, fontWeight: 800, fontSize: 96}}>
+    <span style={{border: '4px solid #ffffff55', borderRadius: 22, padding: '8px 36px', color: '#fff', background: '#ffffff0d'}}>
+      {text.split('').map((c, i) => <span key={i} style={{color: i === hlIndex ? p.warm : '#fff'}}>{c}</span>)}
+    </span>
+  </div>
+);
+
+const firstDiff = (a, b) => { for (let i = 0; i < Math.max(a.length, b.length); i++) if (a[i] !== b[i]) return i; return -1; };
+
+const HashCmp = ({sc, p}) => {
+  const f = useCurrentFrame();
+  const h = sc.hashdata;
+  const t = f / FPS;
+  const a = interpolate(f, [0, 10], [0, 1], C), b = interpolate(f, [14, 24], [0, 1], C);
+  const rv = interpolate(t, [1.6, 3.2], [0, 1], C);
+  return (
+    <AbsoluteFill>
+      <div style={{position: 'absolute', top: 190, left: 60, right: 60}}><Words text={sc.text} hl={sc.hl} size={86} color="#fff" hlColor={p.acc} /></div>
+      <div style={{opacity: a}}><Chip text={h.a} y={450} p={p} /><HexLines hex={h.ha} y={600} size={40} p={p} /></div>
+      <div style={{opacity: b}}><Chip text={h.b} y={800} p={p} hlIndex={firstDiff(h.a, h.b)} /><HexLines hex={h.hb} other={h.ha} y={950} size={40} p={p} reveal={1} /></div>
+    </AbsoluteFill>
+  );
+};
+
+const HashBox = ({sc, p}) => {
+  const f = useCurrentFrame();
+  const h = sc.hashdata;
+  const type = interpolate(f, [30, 75], [0, 1], C);
+  const g = interpolate(f, [0, 12], [0, 1], C);
+  return (
+    <AbsoluteFill>
+      <div style={{position: 'absolute', top: 190, left: 60, right: 60}}><Words text={sc.text} hl={sc.hl} size={86} color="#fff" hlColor={p.acc} /></div>
+      <div style={{opacity: g}}>
+        <Chip text={h.a} y={470} p={p} />
+        <div style={{position: 'absolute', top: 640, left: 0, right: 0, textAlign: 'center', fontSize: 70, color: p.acc, fontFamily: FONT, fontWeight: 900}}>▼ SHA-256 ▼</div>
+      </div>
+      <HexLines hex={h.ha} y={800} size={44} p={p} reveal={type} />
+    </AbsoluteFill>
+  );
+};
+
+const Grid = ({sc, p}) => {
+  const f = useCurrentFrame();
+  const flips = sc.hashdata.flips;
+  const rows = interpolate(f, [10, 90], [0, 16], C);
+  const cell = 52, gap = 6, ox = (1080 - 16 * (cell + gap) + gap) / 2, oy = 470;
+  const count = flips.reduce((n, b, i) => n + (b && Math.floor(i / 16) < rows ? 1 : 0), 0);
+  return (
+    <AbsoluteFill>
+      <div style={{position: 'absolute', top: 190, left: 60, right: 60}}><Words text={sc.text} hl={sc.hl} size={86} color="#fff" hlColor={p.acc} /></div>
+      {flips.map((b, i) => {
+        const r = Math.floor(i / 16), c = i % 16;
+        const v = interpolate(rows - r, [0, 1], [0, 1], C);
+        return <div key={i} style={{position: 'absolute', left: ox + c * (cell + gap), top: oy + r * (cell + gap), width: cell, height: cell, borderRadius: 10, background: b ? p.warm : '#ffffff1f', opacity: v, transform: `scale(${0.6 + 0.4 * v})`}} />;
+      })}
+      <div style={{position: 'absolute', top: 470 + 16 * (cell + gap) + 30, left: 0, right: 0, textAlign: 'center', fontFamily: FONT, fontWeight: 900, fontSize: 70, color: '#fff'}}><span style={{color: p.warm}}>{count}</span> / 256 flipped</div>
+    </AbsoluteFill>
+  );
+};
+
 const SceneWrap = ({children}) => {
   const f = useCurrentFrame();
   const {durationInFrames: d} = useVideoConfig();
@@ -160,7 +242,7 @@ export const CleanVideo = ({spec}) => {
       <Sequence key={i} from={from} durationInFrames={dur}>
         <Bg p={p} block={block} />
         <SceneWrap>
-          {sc.type === 'num' ? <Num sc={sc} p={p} /> : sc.type === 'stat' ? <Stat sc={sc} p={p} /> : <Kin sc={sc} p={p} />}
+          {sc.type === 'num' ? <Num sc={sc} p={p} /> : sc.type === 'hashcmp' ? <HashCmp sc={sc} p={p} /> : sc.type === 'hashbox' ? <HashBox sc={sc} p={p} /> : sc.type === 'grid' ? <Grid sc={sc} p={p} /> : sc.type === 'stat' ? <Stat sc={sc} p={p} /> : <Kin sc={sc} p={p} />}
           <Caps sc={sc} p={p} block={block} />
         </SceneWrap>
         {sc.audio ? <Audio src={staticFile(sc.audio)} /> : null}

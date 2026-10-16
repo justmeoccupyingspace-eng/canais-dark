@@ -60,7 +60,7 @@ def compute_blocks(spec, ctx, raw):
         raw.update(bits=sum(flips), word_a=a, word_b=b)
         data = {"a": a, "b": b, "ha": ha, "hb": hb, "flips": flips}
         for sc in spec["scenes"]:
-            if sc.get("art") in ("hash-compare", "hash-one", "bitgrid"):
+            if sc.get("art") in ("hash-compare", "hash-one", "bitgrid") or sc.get("type") in ("hashcmp", "hashbox", "grid"):
                 sc["hashdata"] = data
     if "ipca" in c:
         i = c["ipca"]
