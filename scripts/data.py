@@ -29,6 +29,7 @@ def worldbank_annual(ind, country, y0, y1):
 def main(src, dst):
     spec = json.load(open(src, encoding="utf-8"))
     ctx = {}
+    raw = {}
     for sc in spec["scenes"]:
         s = sc.get("source")
         if sc.get("type") == "chart" and s:
@@ -50,15 +51,16 @@ def main(src, dst):
                 if isinstance(v, float) and abs(v) >= 1000:
                     v = round(v)
                 return f"{v:,}" if isinstance(v, (int, float)) and abs(v) >= 1000 else v
-            ctx.update({k: fmt(k, v) for k, v in ctx.items()})
+            raw.update({k: v for k, v in ctx.items() if k not in raw or not isinstance(v, str)})
+            ctx.update({k: fmt(k, v) for k, v in raw.items()})
     def sub(t):
         return t.format(**ctx) if isinstance(t, str) and "{" in t else t
     for sc in spec["scenes"]:
-        for k in ("narration", "caption", "text", "sub", "label", "title", "subtitle", "note"):
+        for k in ("narration", "caption", "text", "sub", "label", "title", "subtitle", "note", "hl"):
             if k in sc:
                 sc[k] = sub(sc[k])
         if sc.get("type") == "stat" and "value_from" in sc:
-            sc["value"] = ctx[sc["value_from"]]
+            sc["value"] = raw[sc["value_from"]]
     if "yt" in spec:
         for k in ("title", "description"):
             spec["yt"][k] = sub(spec["yt"].get(k, ""))

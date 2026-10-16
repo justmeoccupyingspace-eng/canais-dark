@@ -6,7 +6,7 @@
  },
  "title": "US income per person",
  "yt": {
-  "title": "US income per person since {first_y}, in one chart #Shorts",
+  "title": "US income per person is {times}x higher than in {first_y} (the catch) #Shorts",
   "description": "GDP per capita of the United States, {first_y} to {last_y}, in current US dollars (not adjusted for inflation).\nSource: World Bank, indicator NY.GDP.PCAP.CD.\nNarration is AI-generated.",
   "tags": [
    "economics",
@@ -19,10 +19,11 @@
  "scenes": [
   {
    "type": "title",
-   "text": "US income per person, in one chart",
-   "sub": "GDP per capita, current dollars",
-   "narration": "How much does the average American economy produce per person? One chart.",
-   "duration": 3
+   "text": "{times}x more per person than in {first_y}",
+   "hl": "{times}x",
+   "sub": "US GDP per capita",
+   "narration": "The US now produces {times} times more per person than in {first_y}. But there is a catch.",
+   "min_duration": 3
   },
   {
    "type": "chart",
@@ -38,20 +39,34 @@
     "round": 0
    },
    "note": "Source: World Bank (NY.GDP.PCAP.CD)",
-   "caption": "Not adjusted for inflation.",
-   "narration": "In {first_y}, it was about {first} dollars per person. By {last_y}, it was {last}.",
-   "duration": 6
+   "narration": "In {first_y}, it was about {first} dollars per person. By {last_y}, it had reached {last}.",
+   "prefix": "$",
+   "min_duration": 4.5,
+   "drawSeconds": 3.4
   },
   {
    "type": "stat",
-   "label": "Change in the nominal figure",
+   "label": "Increase in the nominal figure",
    "value_from": "pct",
    "value": 0,
    "prefix": "+",
    "suffix": "%",
-   "caption": "World Bank, NY.GDP.PCAP.CD. Prices are not inflation-adjusted.",
    "narration": "That is an increase of {pct} percent, before adjusting for inflation.",
-   "duration": 4
+   "min_duration": 3.5
+  },
+  {
+   "type": "text",
+   "text": "The catch: these are current dollars. Prices rose too.",
+   "hl": "Prices rose too.",
+   "narration": "The catch: these are current dollars, so part of that growth is just inflation.",
+   "min_duration": 3
+  },
+  {
+   "type": "text",
+   "text": "Follow for one chart at a time.",
+   "hl": "one chart",
+   "narration": "Follow for more charts like this.",
+   "min_duration": 2
   }
  ]
 }
