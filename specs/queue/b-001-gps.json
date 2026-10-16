@@ -19,43 +19,44 @@
  "scenes": [
   {
    "type": "title",
-   "text": "How GPS knows where you are",
-   "sub": "It is a timing problem",
+   "text": "How does GPS know where you are?",
    "narration": "Your phone has no idea where it is... until it checks the time. GPS is a timing problem.",
    "min_duration": 3,
-   "hl": "where you are"
+   "hl": "GPS",
+   "art": "bob-phone"
   },
   {
    "type": "text",
-   "text": "Each satellite broadcasts the exact time its signal left.",
+   "text": "Satellites broadcast the time",
    "narration": "Each GPS satellite continuously broadcasts its position and the exact time the signal was sent.",
    "min_duration": 3,
-   "n": "1",
-   "hl": "exact time"
+   "hl": "the time",
+   "art": "sat-signal"
   },
   {
    "type": "text",
-   "text": "Radio travels at the speed of light. Delay becomes distance.",
+   "text": "Delay becomes distance",
    "narration": "Radio waves travel at the speed of light, so the delay of the signal tells your phone how far away the satellite is.",
    "min_duration": 3,
-   "n": "2",
-   "hl": "Delay becomes distance."
+   "hl": "distance",
+   "art": "signal-travel"
   },
   {
    "type": "stat",
-   "label": "Distance light travels in one nanosecond, in centimeters",
    "value": 30,
    "suffix": " cm",
    "narration": "In one billionth of a second, light travels about thirty centimeters. So the clocks have to be extremely precise.",
-   "min_duration": 3
+   "min_duration": 3,
+   "text": "Light covers this in 1 nanosecond",
+   "label": "Light in 1 billionth of a second"
   },
   {
    "type": "text",
-   "text": "Three distances fix a position. A fourth fixes your phone's clock.",
+   "text": "3 satellites + 1 clock fix",
    "narration": "Three satellites are enough to fix a position in space. A fourth lets the receiver correct its own cheap clock.",
    "min_duration": 3,
-   "n": "3+1",
-   "hl": "A fourth"
+   "hl": "3 satellites",
+   "art": "trilat"
   }
  ]
 }

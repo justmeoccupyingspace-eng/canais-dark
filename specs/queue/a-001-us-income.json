@@ -19,11 +19,12 @@
  "scenes": [
   {
    "type": "title",
-   "text": "{times}x more per person than in {first_y}",
+   "text": "{times}x more per person since {first_y}",
    "hl": "{times}x",
-   "sub": "US GDP per capita",
    "narration": "The US now produces {times} times more per person than in {first_y}. But there is a catch.",
-   "min_duration": 3
+   "min_duration": 3,
+   "art": "bob-big",
+   "big": "{times}x"
   },
   {
    "type": "chart",
@@ -59,14 +60,16 @@
    "text": "The catch: these are current dollars. Prices rose too.",
    "hl": "Prices rose too.",
    "narration": "The catch: these are current dollars, so part of that growth is just inflation.",
-   "min_duration": 3
+   "min_duration": 3,
+   "art": "inflation"
   },
   {
    "type": "text",
-   "text": "Follow for one chart at a time.",
+   "text": "",
    "hl": "one chart",
    "narration": "Follow for more charts like this.",
-   "min_duration": 2
+   "min_duration": 2,
+   "art": "cta"
   }
  ]
 }

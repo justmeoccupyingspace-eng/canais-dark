@@ -1,105 +1,86 @@
 import React from 'react';
 import {AbsoluteFill, useCurrentFrame, useVideoConfig, interpolate, spring, Easing} from 'remotion';
+import {Art} from './art.jsx';
 
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'};
+const ANTON = 'Anton, Impact, "Arial Black", sans-serif';
 
-// entrada com "punch" (zoom leve) e saída curta
+// corte rápido: entra com leve zoom, sem fade longo
 const Wrap = ({children}) => {
   const f = useCurrentFrame();
   const {durationInFrames: d} = useVideoConfig();
-  const sc = interpolate(f, [0, 10], [1.07, 1], {...clamp, easing: Easing.out(Easing.cubic)});
-  const op = interpolate(f, [0, 4, d - 4, d], [0, 1, 1, 0], clamp);
+  const sc = interpolate(f, [0, 8], [1.05, 1], {...clamp, easing: Easing.out(Easing.cubic)});
+  const op = interpolate(f, [0, 2, d - 2, d], [0, 1, 1, 0], clamp);
   return <AbsoluteFill style={{opacity: op, transform: `scale(${sc})`}}>{children}</AbsoluteFill>;
 };
 
-const strokeText = '0 0 6px rgba(0,0,0,.9), 0 4px 16px rgba(0,0,0,.6)';
-
-// destaca o trecho `hl` dentro de `text`
-const Highlight = ({text, hl, color}) => {
+const Highlight = ({text, hl, theme}) => {
   if (!hl || !text.includes(hl)) return <>{text}</>;
   const [a, b] = text.split(hl);
-  return <>{a}<span style={{color, textShadow: `0 0 40px ${color}88`}}>{hl}</span>{b}</>;
+  return <>{a}<span style={{background: theme.acc, padding: '0 14px', borderRadius: 10, boxDecoration: 'clone'}}>{hl}</span>{b}</>;
 };
 
-// legenda palavra por palavra (karaoke)
+// cabeçalho: frase-chave da cena
+const Headline = ({sc, theme}) => {
+  const f = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const s = spring({frame: f, fps, config: {damping: 12, stiffness: 160}});
+  const text = sc.text || sc.title;
+  if (!text) return null;
+  return (
+    <div style={{position: 'absolute', left: 50, right: 50, top: 150, textAlign: 'center', fontFamily: ANTON, fontSize: 92, lineHeight: 1.12, color: theme.ink, textTransform: 'uppercase', transform: `scale(${0.85 + 0.15 * s})`, opacity: s}}>
+      <Highlight text={text} hl={sc.hl} theme={theme} />
+    </div>
+  );
+};
+
+// legenda: 1–3 palavras por vez, fonte de impacto, palavra atual em destaque
 export const Karaoke = ({words, theme}) => {
   const f = useCurrentFrame();
   const {fps} = useVideoConfig();
   if (!words || !words.length) return null;
   const t = f / fps;
-  const size = 4;
+  const size = 3;
   let cur = words.findIndex((w) => t >= w.t0 && t < w.t1);
   if (cur < 0) cur = t < words[0].t0 ? 0 : words.length - 1;
   const chunk = Math.floor(cur / size);
   const group = words.slice(chunk * size, chunk * size + size);
   return (
-    <div style={{position: 'absolute', left: 60, right: 60, bottom: 520, display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}>
+    <div style={{position: 'absolute', left: 40, right: 40, bottom: 400, display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}>
       {group.map((w, i) => {
         const idx = chunk * size + i;
         const on = idx === cur;
-        const spoken = idx < cur;
         return (
           <span key={idx} style={{
-            fontSize: 74, fontWeight: 900, lineHeight: 1.15, color: on ? theme.acc : '#fff', opacity: on || spoken ? 1 : 0.55,
-            margin: '4px 11px', transform: `scale(${on ? 1.14 : 1})`, textShadow: strokeText, WebkitTextStroke: '2px rgba(0,0,0,.55)', paintOrder: 'stroke fill',
-            transition: 'none',
-          }}>{w.w}</span>
+            fontFamily: ANTON, fontSize: 118, lineHeight: 1.12, margin: '0 14px', textTransform: 'uppercase',
+            color: on ? theme.acc : '#fff', WebkitTextStroke: '16px #14161f', paintOrder: 'stroke fill',
+            transform: `scale(${on ? 1.12 : 1})`, filter: on ? 'none' : 'none', opacity: idx > cur ? 0.0 : 1,
+          }}>{w.w.replace(/[.,;:!?]+$/, '')}</span>
         );
       })}
     </div>
   );
 };
 
-export const TitleScene = ({sc, theme, spec}) => {
-  const f = useCurrentFrame();
-  const {fps} = useVideoConfig();
-  const s = spring({frame: f, fps, config: {damping: 11, stiffness: 140}});
-  const text = sc.text || spec.title;
-  return (
-    <Wrap>
-      <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center', paddingBottom: 260}}>
-        <div style={{width: 220, height: 14, borderRadius: 7, background: `linear-gradient(90deg, ${theme.acc}, ${theme.acc2})`, marginBottom: 56, transform: `scaleX(${s})`}} />
-        <div style={{fontSize: 118, fontWeight: 900, lineHeight: 1.05, textAlign: 'center', padding: '0 60px', transform: `scale(${0.8 + 0.2 * s})`, textShadow: strokeText}}>
-          <Highlight text={text} hl={sc.hl} color={theme.acc} />
-        </div>
-        {sc.sub ? <div style={{fontSize: 48, marginTop: 44, color: theme.acc, textAlign: 'center', padding: '0 70px', fontWeight: 700, opacity: interpolate(f, [8, 20], [0, 1], clamp)}}>{sc.sub}</div> : null}
-      </AbsoluteFill>
-      <Karaoke words={sc.words} theme={theme} />
-    </Wrap>
-  );
-};
-
-export const TextScene = ({sc, theme}) => {
-  const f = useCurrentFrame();
-  const {fps} = useVideoConfig();
-  const s = spring({frame: f, fps, config: {damping: 12, stiffness: 120}});
-  return (
-    <Wrap>
-      <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center', paddingBottom: 300}}>
-        {sc.n ? <div style={{fontSize: 220, fontWeight: 900, color: theme.acc2, lineHeight: 1, marginBottom: 10, transform: `scale(${0.5 + 0.5 * s})`, textShadow: `0 0 60px ${theme.acc2}77`}}>{sc.n}</div> : null}
-        <div style={{margin: '0 56px', padding: '52px 48px', background: theme.panel, borderRadius: 44, border: `3px solid ${theme.acc}55`, backdropFilter: 'blur(6px)', transform: `translateY(${(1 - s) * 60}px)`}}>
-          <div style={{fontSize: 80, fontWeight: 800, lineHeight: 1.15, textAlign: 'center', textShadow: strokeText}}>
-            <Highlight text={sc.text} hl={sc.hl} color={theme.acc} />
-          </div>
-        </div>
-      </AbsoluteFill>
-      <Karaoke words={sc.words} theme={theme} />
-    </Wrap>
-  );
-};
+export const ArtScene = ({sc, theme, spec}) => (
+  <Wrap>
+    <Headline sc={sc} theme={theme} />
+    <Art sc={sc} theme={theme} />
+    <Karaoke words={sc.words} theme={theme} />
+  </Wrap>
+);
 
 export const StatScene = ({sc, theme}) => {
   const f = useCurrentFrame();
   const {fps} = useVideoConfig();
   const t = interpolate(f, [4, fps * 1.5], [0, 1], {...clamp, easing: Easing.out(Easing.cubic)});
   const done = interpolate(f, [fps * 1.5, fps * 1.5 + 8, fps * 1.5 + 18], [1, 1.12, 1], clamp);
-  const target = Number(sc.value);
-  const shown = (target * t).toLocaleString(sc.locale || 'en-US', {maximumFractionDigits: sc.decimals ?? 0});
+  const shown = (Number(sc.value) * t).toLocaleString(sc.locale || 'en-US', {maximumFractionDigits: sc.decimals ?? 0});
   return (
     <Wrap>
-      <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center', paddingBottom: 300}}>
-        <div style={{fontSize: 54, fontWeight: 700, opacity: 0.92, marginBottom: 34, textAlign: 'center', padding: '0 80px', textShadow: strokeText}}>{sc.label}</div>
-        <div style={{fontSize: 230, fontWeight: 900, color: theme.acc, transform: `scale(${done})`, textShadow: `0 0 80px ${theme.acc}99, ${strokeText}`, letterSpacing: -4}}>
+      <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center', paddingBottom: 380}}>
+        <div style={{fontFamily: ANTON, fontSize: 70, textAlign: 'center', padding: '0 70px', textTransform: 'uppercase', marginBottom: 24}}>{sc.label}</div>
+        <div style={{fontFamily: ANTON, fontSize: 300, lineHeight: 1, color: theme.acc, WebkitTextStroke: '14px #14161f', paintOrder: 'stroke fill', transform: `scale(${done})`}}>
           {sc.prefix || ''}{shown}{sc.suffix || ''}
         </div>
       </AbsoluteFill>
@@ -112,7 +93,7 @@ export const ChartScene = ({sc, theme}) => {
   const f = useCurrentFrame();
   const {fps} = useVideoConfig();
   const draw = interpolate(f, [8, fps * (sc.drawSeconds || 3)], [0, 1], {...clamp, easing: Easing.inOut(Easing.cubic)});
-  const W = 940, H = 760, padL = 175, padB = 70, padT = 30, padR = 50;
+  const W = 940, H = 800, padL = 175, padB = 70, padT = 30, padR = 50;
   const data = sc.data || [];
   const ys = data.map((d) => d.y);
   const yMin = sc.yMin ?? Math.min(0, ...ys);
@@ -140,62 +121,51 @@ export const ChartScene = ({sc, theme}) => {
     }
     acc += seg;
   });
-  const area = `${path} L${tip[0]},${py(Math.max(yMin, 0))} L${pts[0][0]},${py(Math.max(yMin, 0))} Z`;
   const ticks = 4;
   const pre = sc.prefix || '';
   const fmt = (v) => pre + (Math.abs(v) >= 1000 ? v.toLocaleString(sc.locale || 'en-US', {maximumFractionDigits: 0}) : String(Math.round(v * 10) / 10));
   const xEvery = Math.ceil(n / 6);
-  const gid = 'g' + (sc.title || '').length;
+  const base = py(Math.max(yMin, 0));
   return (
     <Wrap>
-      <AbsoluteFill style={{alignItems: 'center'}}>
-        <div style={{marginTop: 210, fontSize: 74, fontWeight: 900, textAlign: 'center', padding: '0 70px', lineHeight: 1.1, textShadow: strokeText}}>{sc.title}</div>
-        {sc.subtitle ? <div style={{fontSize: 40, marginTop: 14, color: theme.acc, fontWeight: 700}}>{sc.subtitle}</div> : null}
-        <div style={{marginTop: 36, background: theme.panel, borderRadius: 40, padding: '30px 10px 10px', border: `2px solid ${theme.acc}33`}}>
+      <Headline sc={{text: sc.title, hl: sc.hl}} theme={theme} />
+      <AbsoluteFill style={{alignItems: 'center', top: 330}}>
+        <div style={{background: '#fffdf6', borderRadius: 36, padding: '24px 10px 6px', border: '9px solid #14161f', boxShadow: '12px 12px 0 #14161f'}}>
           <svg width={W} height={H}>
-            <defs>
-              <linearGradient id={gid} x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor={theme.acc} stopOpacity="0.45" />
-                <stop offset="100%" stopColor={theme.acc} stopOpacity="0" />
-              </linearGradient>
-              <linearGradient id={gid + 'b'} x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor={theme.acc} />
-                <stop offset="100%" stopColor={theme.acc2} />
-              </linearGradient>
-            </defs>
             {Array.from({length: ticks + 1}, (_, k) => {
               const v = yMin + ((yMax - yMin) * k) / ticks;
               return (
                 <g key={k}>
-                  <line x1={padL} x2={W - padR} y1={py(v)} y2={py(v)} stroke="#fff" strokeWidth={1.5} opacity={0.18} />
-                  <text x={padL - 16} y={py(v) + 11} fill="#fff" opacity={0.85} fontSize={32} fontWeight={600} textAnchor="end">{fmt(v)}</text>
+                  <line x1={padL} x2={W - padR} y1={py(v)} y2={py(v)} stroke="#14161f" strokeWidth={2} opacity={0.2} />
+                  <text x={padL - 16} y={py(v) + 12} fill="#14161f" fontSize={34} fontWeight={800} textAnchor="end" fontFamily="Inter, Arial">{fmt(v)}</text>
                 </g>
               );
             })}
+            <path d={`M${padL},${padT} L${padL},${base} L${W - padR},${base}`} fill="none" stroke="#14161f" strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" />
             {data.map((d, i) => (i % xEvery === 0 || i === n - 1) ? (
-              <text key={i} x={px(i)} y={H - 22} fill="#fff" opacity={0.85} fontSize={32} fontWeight={600} textAnchor="middle">{d.x}</text>
+              <text key={i} x={px(i)} y={H - 22} fill="#14161f" fontSize={34} fontWeight={800} textAnchor="middle" fontFamily="Inter, Arial">{d.x}</text>
             ) : null)}
             {isBar
               ? data.map((d, i) => {
                   const local = interpolate(draw, [i / n, Math.min((i + 1.2) / n, 1)], [0, 1], clamp);
-                  const h = (py(Math.max(yMin, 0)) - py(d.y)) * local;
+                  const h = (base - py(d.y)) * local;
                   const hl = i === n - 1 || d.hl;
-                  return <rect key={i} x={px(i) - bw / 2} y={py(Math.max(yMin, 0)) - h} width={bw} height={Math.max(h, 0)} rx={10} fill={hl ? `url(#${gid}b)` : theme.muted} />;
+                  return <rect key={i} x={px(i) - bw / 2} y={base - h} width={bw} height={Math.max(h, 0)} fill={hl ? theme.acc2 : theme.acc} stroke="#14161f" strokeWidth={7} />;
                 })
               : (
                 <>
-                  <path d={area} fill={`url(#${gid})`} />
-                  <path d={path} fill="none" stroke={theme.acc} strokeWidth={11} strokeLinecap="round" strokeLinejoin="round" style={{filter: `drop-shadow(0 0 14px ${theme.acc})`}} />
-                  <circle cx={tip[0]} cy={tip[1]} r={20} fill="#fff" stroke={theme.acc} strokeWidth={8} />
-                  <g transform={`translate(${Math.min(tip[0], W - 150)}, ${Math.max(tip[1] - 62, 20)})`} opacity={draw > 0.02 ? 1 : 0}>
-                    <rect x={-95} y={-34} width={190} height={58} rx={29} fill={theme.acc} />
-                    <text x={0} y={7} textAnchor="middle" fontSize={34} fontWeight={900} fill="#10131f">{fmt(tipY)}</text>
+                  <path d={path} fill="none" stroke="#14161f" strokeWidth={22} strokeLinecap="round" strokeLinejoin="round" />
+                  <path d={path} fill="none" stroke={theme.acc2} strokeWidth={12} strokeLinecap="round" strokeLinejoin="round" />
+                  <circle cx={tip[0]} cy={tip[1]} r={22} fill={theme.acc} stroke="#14161f" strokeWidth={8} />
+                  <g transform={`translate(${Math.min(tip[0], W - 160)}, ${Math.max(tip[1] - 70, 24)})`} opacity={draw > 0.02 ? 1 : 0}>
+                    <rect x={-100} y={-36} width={200} height={62} rx={16} fill={theme.acc} stroke="#14161f" strokeWidth={6} />
+                    <text x={0} y={9} textAnchor="middle" fontSize={38} fill="#14161f" fontFamily={ANTON}>{fmt(tipY)}</text>
                   </g>
                 </>
               )}
           </svg>
         </div>
-        {sc.note ? <div style={{fontSize: 30, opacity: 0.7, marginTop: 16}}>{sc.note}</div> : null}
+        {sc.note ? <div style={{fontSize: 30, fontWeight: 700, opacity: 0.6, marginTop: 24, fontFamily: 'Inter, Arial'}}>{sc.note}</div> : null}
       </AbsoluteFill>
       <Karaoke words={sc.words} theme={theme} />
     </Wrap>
