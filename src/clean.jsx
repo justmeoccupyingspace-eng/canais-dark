@@ -70,7 +70,7 @@ const Caps = ({sc, p, block}) => {
   const active = chunks.find((c) => t >= c[0].t0 && t < c[c.length - 1].t1 + 0.12) || null;
   if (!active) return null;
   return (
-    <div style={{position: 'absolute', left: 60, right: 60, top: 1380, textAlign: 'center', fontFamily: FONT, fontWeight: 800, fontSize: 70, lineHeight: 1.15, color: p.light ? (block ? '#fff' : p.ink) : (block ? p.ink : '#fff'), textShadow: p.light || block ? 'none' : '0 4px 24px rgba(0,0,0,.6)'}}>
+    <div style={{position: 'absolute', left: 60, right: 60, top: 1460, textAlign: 'center', fontFamily: FONT, fontWeight: 800, fontSize: 70, lineHeight: 1.15, color: p.light ? (block ? '#fff' : p.ink) : (block ? p.ink : '#fff'), textShadow: p.light || block ? 'none' : '0 4px 24px rgba(0,0,0,.6)'}}>
       {active.map((w, i) => {
         const on = t >= w.t0 && t < w.t1;
         return <span key={i} style={{color: p.light ? (block ? '#fff' : p.ink) : (on ? (block ? '#fff' : p.acc) : undefined), background: p.light && !block && on ? p.acc : 'transparent', borderRadius: 10, padding: '0 8px', marginRight: 8, display: 'inline-block'}}>{w.w}</span>;
@@ -116,24 +116,24 @@ const Receipt = ({sc, p}) => {
   const inn = spring({frame: f, fps: FPS, config: {damping: 15, stiffness: 120}});
   const v2 = interpolate(f, [26, 70], [a, b], {...C, easing: Easing.out(Easing.cubic)});
   const row = (label, val, d, big) => (
-    <div style={{display: 'flex', alignItems: 'baseline', opacity: interpolate(f, [d, d + 8], [0, 1], C), margin: '26px 0'}}>
-      <span style={{fontFamily: MONO, fontWeight: 800, fontSize: 38, color: p.ink, textTransform: 'uppercase'}}>{label}</span>
+    <div style={{display: 'flex', alignItems: 'baseline', opacity: interpolate(f, [d, d + 8], [0, 1], C), margin: '38px 0'}}>
+      <span style={{fontFamily: MONO, fontWeight: 800, fontSize: 40, color: p.ink, textTransform: 'uppercase'}}>{label}</span>
       <span style={{flex: 1, borderBottom: '5px dotted #1b1b1f55', margin: '0 14px', transform: 'translateY(-8px)'}} />
-      <span style={{fontFamily: FONT, fontWeight: 900, fontSize: big ? 104 : 84, color: big ? p.warm : p.ink, letterSpacing: -2}}>{sc.prefix}{fmt(val)}</span>
+      <span style={{fontFamily: FONT, fontWeight: 900, fontSize: big ? 128 : 100, color: big ? p.warm : p.ink, letterSpacing: -2}}>{sc.prefix}{fmt(val)}</span>
     </div>
   );
   const stamp = spring({frame: f - 74, fps: FPS, config: {damping: 9, stiffness: 200}});
   return (
     <AbsoluteFill>
       <div style={{position: 'absolute', top: 200, left: 60, right: 60}}><Words text={sc.text} hl={sc.hl} size={88} color={p.ink} hlColor={p.acc} marker /></div>
-      <div style={{position: 'absolute', left: 70, right: 70, top: 470, background: '#fffdf6', borderRadius: 14, padding: '40px 46px 54px', boxShadow: '0 30px 60px rgba(90,60,20,.22), 0 2px 0 rgba(0,0,0,.05)', transform: `rotate(-1.4deg) translateY(${(1 - inn) * 120}px)`, opacity: inn}}>
-        <div style={{fontFamily: MONO, fontWeight: 800, fontSize: 30, letterSpacing: 6, textAlign: 'center', color: '#1b1b1f88', borderBottom: '4px dashed #1b1b1f33', paddingBottom: 22}}>COMPROVANTE DE PODER DE COMPRA</div>
+      <div style={{position: 'absolute', left: 70, right: 70, top: 520, background: '#fffdf6', borderRadius: 14, padding: '48px 44px 60px', boxShadow: '0 30px 60px rgba(90,60,20,.22), 0 2px 0 rgba(0,0,0,.05)', transform: `rotate(-1.4deg) translateY(${(1 - inn) * 120}px)`, opacity: inn}}>
+        <div style={{fontFamily: MONO, fontWeight: 800, fontSize: 32, letterSpacing: 4, textAlign: 'center', color: '#1b1b1f88', borderBottom: '4px dashed #1b1b1f33', paddingBottom: 22}}>COMPROVANTE DE PODER DE COMPRA</div>
         {row(sc.l1, a, 6)}
         {row(sc.l2, v2, 20, true)}
-        <div style={{borderTop: '4px dashed #1b1b1f33', marginTop: 20, paddingTop: 22, fontFamily: MONO, fontWeight: 800, fontSize: 36, color: '#1b1b1f99', display: 'flex', justifyContent: 'space-between'}}>
+        <div style={{borderTop: '4px dashed #1b1b1f33', marginTop: 20, paddingTop: 22, fontFamily: MONO, fontWeight: 800, fontSize: 44, color: '#1b1b1f99', display: 'flex', justifyContent: 'space-between'}}>
           <span>DIFERENÇA</span><span style={{color: p.warm}}>+ {sc.prefix}{fmt(v2 - a)}</span>
         </div>
-        <div style={{position: 'absolute', right: 30, top: -50, transform: `rotate(12deg) scale(${0.4 + 0.6 * stamp})`, opacity: Math.min(1, stamp * 1.5), border: `10px solid ${p.warm}`, borderRadius: 18, padding: '4px 26px', color: p.warm, fontFamily: FONT, fontWeight: 900, fontSize: 88, letterSpacing: 4, background: '#fffdf6e6'}}>MAIS CARO</div>
+        <div style={{position: 'absolute', right: 10, bottom: -168, transform: `rotate(-6deg) scale(${0.4 + 0.6 * stamp})`, opacity: Math.min(1, stamp * 1.5), border: `10px solid ${p.warm}`, borderRadius: 18, padding: '4px 26px', color: p.warm, fontFamily: FONT, fontWeight: 900, fontSize: 88, letterSpacing: 4, background: '#fffdf6e6'}}>MAIS CARO</div>
       </div>
     </AbsoluteFill>
   );
