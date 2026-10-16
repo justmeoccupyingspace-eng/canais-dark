@@ -72,7 +72,10 @@ def compute_blocks(spec, ctx, raw):
         y, mo = i["from"].split("-")
         ly, lm = ser[-1][0].split("-")
         amt = i.get("amount", 100)
-        raw.update(ipca_factor=round(f, 2), ipca_pct=round((f - 1) * 100), ipca_needed=brl(amt * f), ipca_amount=brl(amt),
+        from num2words import num2words
+        say = lambda v: num2words(int(round(v)), lang="pt_BR")
+        raw.update(ipca_needed_say=say(amt * f) + " reais", ipca_amount_say=say(amt) + " reais", ipca_pct_say=say((f - 1) * 100),
+                   ipca_factor=round(f, 2), ipca_pct=round((f - 1) * 100), ipca_needed=brl(amt * f), ipca_amount=brl(amt),
                    ipca_from=f"{MESES[int(mo) - 1]} de {y}", ipca_to=f"{MESES[int(lm) - 1]} de {ly}")
         ctx.update({k: v for k, v in raw.items() if k.startswith("ipca")})
 
@@ -108,7 +111,7 @@ def main(src, dst):
     def sub(t):
         return t.format(**ctx) if isinstance(t, str) and "{" in t else t
     for sc in spec["scenes"]:
-        for k in ("narration", "caption", "text", "sub", "label", "title", "subtitle", "note", "hl", "big"):
+        for k in ("narration", "caption", "text", "sub", "label", "title", "subtitle", "note", "hl", "big", "l1", "v1", "l2", "v2"):
             if k in sc:
                 sc[k] = sub(sc[k])
         if sc.get("type") == "stat" and "value_from" in sc:

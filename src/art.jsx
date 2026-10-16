@@ -1,5 +1,6 @@
 import React from 'react';
 import {HashCompare, HashOne, BitGrid} from './hasharts.jsx';
+import {BrlCompare} from './brlart.jsx';
 import {useCurrentFrame, useVideoConfig, interpolate, spring, Easing} from 'remotion';
 
 const C = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'};
@@ -95,6 +96,7 @@ const Label = ({x, y, text, size = 46, bg = '#fff', color = '#14161f'}) => {
 
 // ---------- composições ----------
 const ARTS = {
+  'brl-compare': BrlCompare,
   'hash-compare': HashCompare,
   'hash-one': HashOne,
   'bitgrid': BitGrid,

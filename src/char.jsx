@@ -51,10 +51,13 @@ const Head = ({kind, color, rot}) => {
   if (kind === 'pig') {
     return (
       <g>
-        <path d="M-42,-52 L-62,-92 L-14,-66 Z" fill={color} stroke={INK} strokeWidth={8} strokeLinejoin="round" />
-        <path d="M42,-52 L62,-92 L14,-66 Z" fill={color} stroke={INK} strokeWidth={8} strokeLinejoin="round" />
+        <ellipse cx={-48} cy={-50} rx={20} ry={26} transform="rotate(-28 -48 -50)" fill={color} stroke={INK} strokeWidth={8} />
+        <ellipse cx={48} cy={-50} rx={20} ry={26} transform="rotate(28 48 -50)" fill={color} stroke={INK} strokeWidth={8} />
         <circle r={64} fill={color} stroke={INK} strokeWidth={9} />
-        <rect x={-22} y={-76} width={44} height={9} rx={4} fill={INK} />
+        <rect x={-22} y={-78} width={44} height={9} rx={4} fill={INK} />
+        <ellipse cx={0} cy={22} rx={30} ry={21} fill="#ff7fa6" stroke={INK} strokeWidth={6} />
+        <ellipse cx={-10} cy={22} rx={4} ry={7} fill={INK} />
+        <ellipse cx={10} cy={22} rx={4} ry={7} fill={INK} />
       </g>
     );
   }
@@ -133,6 +136,7 @@ export const Char = ({x = 540, y = 800, s = 1.5, kind = 'coin', theme, pose = 'n
   const sh = [[-42, -118 + breathe], [42, -118 + breathe]];
   const hL = hand('L'), hR = hand('R');
 
+  const mY = kind === 'pig' ? 24 : 0;
   const mouthShape = (() => {
     const m = P.mouth;
     if (speaking && m !== 'big' && m !== 'o') {
@@ -185,7 +189,7 @@ export const Char = ({x = 540, y = 800, s = 1.5, kind = 'coin', theme, pose = 'n
           {kind === 'pig' && <ellipse cx={0} cy={-170} rx={0} ry={0} />}
           <circle cx={-44} cy={-168} r={9} fill="#ff6b8a" opacity={0.28} />
           <circle cx={44} cy={-168} r={9} fill="#ff6b8a" opacity={0.28} />
-          {mouthShape}
+          <g transform={`translate(0,${mY})`}>{mouthShape}</g>
         </g>
       </g>
     </g>

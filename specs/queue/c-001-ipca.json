@@ -1,0 +1,67 @@
+{
+ "channel": "valeopreco",
+ "publish": {
+  "channel": "C",
+  "privacy": "private"
+ },
+ "title": "Seu salário encolheu?",
+ "compute": {
+  "ipca": {
+   "from": "2019-01",
+   "amount": 3000
+  }
+ },
+ "yt": {
+  "title": "R$ 3.000 de {ipca_from} valem quanto hoje? #Shorts",
+  "description": "Cálculo com o IPCA (IBGE), série 433 do Banco Central (SGS): preços médios acumulados de {ipca_from} até {ipca_to}. O IPCA é uma média; o seu custo de vida pode ser diferente.\nNarração gerada por IA.",
+  "tags": [
+   "ipca",
+   "inflação",
+   "salário",
+   "finanças pessoais"
+  ],
+  "lang": "pt-BR"
+ },
+ "scenes": [
+  {
+   "type": "art",
+   "art": "bob-big",
+   "text": "Seu salário ENCOLHEU?",
+   "hl": "ENCOLHEU?",
+   "big": "?",
+   "narration": "Um salário de {ipca_amount_say} em {ipca_from}. Quanto ele precisa ser hoje para comprar o mesmo?",
+   "min_duration": 5
+  },
+  {
+   "type": "art",
+   "art": "brl-compare",
+   "text": "Mesmo poder de compra",
+   "hl": "poder de compra",
+   "l1": "{ipca_from}",
+   "v1": "{ipca_amount}",
+   "l2": "hoje",
+   "v2": "{ipca_needed}",
+   "narration": "Na média dos preços medidos pelo IPCA, hoje ele precisa ser de {ipca_needed_say}.",
+   "min_duration": 5
+  },
+  {
+   "type": "stat",
+   "label": "Aumento dos preços no período (IPCA)",
+   "value_from": "ipca_pct",
+   "value": 0,
+   "prefix": "+",
+   "suffix": "%",
+   "narration": "Os preços subiram {ipca_pct_say} por cento no período, segundo o IBGE.",
+   "min_duration": 3.6
+  },
+  {
+   "type": "art",
+   "art": "bob-big",
+   "text": "E o SEU salário, acompanhou?",
+   "hl": "SEU",
+   "big": "?",
+   "narration": "Se o seu salário não subiu isso, na média você compra menos. E o seu, acompanhou?",
+   "min_duration": 4.4
+  }
+ ]
+}

@@ -12,7 +12,9 @@ while read -r f; do
   ch=$(python3 -c "import json,sys;d=json.load(open('$f'));print(d.get('publish',{}).get('channel',''))")
   pv=$(python3 -c "import json,sys;d=json.load(open('$f'));print(d.get('publish',{}).get('privacy',''))")
   ch=${ch:-${MANUAL_CHANNEL:-A}}; pv=${pv:-${MANUAL_PRIVACY:-private}}
-  if [ "${MANUAL_UPLOAD:-true}" != "false" ]; then
+  if [ "$ch" = "C" ]; then
+    echo "canal C: sem upload automático; vídeo fica no artefato (out/$n.mp4)"
+  elif [ "${MANUAL_UPLOAD:-true}" != "false" ]; then
     python3 scripts/upload.py "$ch" out/$n.mp4 public/build/$n.json "$pv"
   fi
 done < "$1"
