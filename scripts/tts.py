@@ -72,7 +72,19 @@ def speak(k, text, voice, lang, speed):
     rms = np.sqrt(np.mean(x ** 2)) + 1e-9
     x = x * (0.11 / rms)  # nivela (~ -19 dBFS RMS)
     x = np.tanh(x * 1.2) / np.tanh(1.2) * 0.95  # limitador suave
-    return x.astype(np.float32), sr, words
+    x = x.astype(np.float32)
+    return x, sr, words
+
+
+def envelope(x, sr, fps=30):
+    """Volume da voz por quadro (0..1) para a boca do personagem."""
+    n = int(sr / fps)
+    m = len(x) // n
+    e = np.sqrt(np.mean(x[: m * n].reshape(m, n) ** 2, axis=1))
+    e = e / (np.percentile(e, 95) + 1e-9)
+    # suaviza
+    e = np.convolve(e, np.array([0.25, 0.5, 0.25]), mode="same")
+    return [round(float(v), 3) for v in np.clip(e, 0, 1)]
 
 
 def main(src, dst):
@@ -92,6 +104,7 @@ def main(src, dst):
         sf.write(f"public/{rel}", samples, sr)
         sc["audio"] = rel
         sc["words"] = words
+        sc["env"] = envelope(samples, sr)
         sc["duration"] = round(max(sc.get("min_duration", 0), dur + TAIL), 2)
     os.makedirs(os.path.dirname(dst), exist_ok=True)
     json.dump(spec, open(dst, "w", encoding="utf-8"), ensure_ascii=False, indent=1)

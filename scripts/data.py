@@ -1,7 +1,7 @@
 """Preenche cenas 'chart' com dados reais (FRED) e resolve {placeholders} na narração/legendas.
 Uso: python scripts/data.py spec.json spec_out.json
 Cena: {"type":"chart","source":{"fred":"MSPUS","from":1990,"to":2024,"step":5}} """
-import csv, io, json, sys, urllib.request
+import csv, hashlib, io, json, sys, urllib.request
 from collections import defaultdict
 
 def fred_annual(series, y0, y1):
@@ -25,6 +25,56 @@ def worldbank_annual(ind, country, y0, y1):
                 raise
     rows = data[1] or []
     return {int(r["date"]): float(r["value"]) for r in sorted(rows, key=lambda r: r["date"]) if r["value"] is not None}
+
+def ipca_series(first):
+    """IPCA variação mensal (BCB SGS 433). first='AAAA-MM'. Retorna [(AAAA-MM, %)]."""
+    y, m = first.split("-")
+    url = f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.433/dados?formato=json&dataInicial=01/{m}/{y}"
+    last = None
+    for i in range(3):
+        try:
+            rows = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=30))
+            break
+        except Exception:
+            if i == 2:
+                raise
+    out = []
+    for r in rows:
+        d, mo, yy = r["data"].split("/")
+        out.append((f"{yy}-{mo}", float(r["valor"])))
+    return out
+
+MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
+
+def brl(v):
+    return "R$ " + f"{round(v):,}".replace(",", ".")
+
+def compute_blocks(spec, ctx, raw):
+    c = spec.get("compute") or {}
+    if "hash" in c:
+        h = c["hash"]
+        a, b = h["a"], h["b"]
+        ha, hb = hashlib.sha256(a.encode()).hexdigest(), hashlib.sha256(b.encode()).hexdigest()
+        ba, bb = bin(int(ha, 16))[2:].zfill(256), bin(int(hb, 16))[2:].zfill(256)
+        flips = [x != y for x, y in zip(ba, bb)]
+        raw.update(bits=sum(flips), word_a=a, word_b=b)
+        data = {"a": a, "b": b, "ha": ha, "hb": hb, "flips": flips}
+        for sc in spec["scenes"]:
+            if sc.get("art") in ("hash-compare", "hash-one", "bitgrid"):
+                sc["hashdata"] = data
+    if "ipca" in c:
+        i = c["ipca"]
+        ser = ipca_series(i["from"]) if "series" not in i else i["series"]
+        ser = [(m, v) for m, v in ser if m > i["from"]]
+        f = 1.0
+        for _, v in ser:
+            f *= 1 + v / 100
+        y, mo = i["from"].split("-")
+        ly, lm = ser[-1][0].split("-")
+        amt = i.get("amount", 100)
+        raw.update(ipca_factor=round(f, 2), ipca_pct=round((f - 1) * 100), ipca_needed=brl(amt * f), ipca_amount=brl(amt),
+                   ipca_from=f"{MESES[int(mo) - 1]} de {y}", ipca_to=f"{MESES[int(lm) - 1]} de {ly}")
+        ctx.update({k: v for k, v in raw.items() if k.startswith("ipca")})
 
 def main(src, dst):
     spec = json.load(open(src, encoding="utf-8"))
@@ -53,6 +103,8 @@ def main(src, dst):
                 return f"{v:,}" if isinstance(v, (int, float)) and abs(v) >= 1000 else v
             raw.update({k: v for k, v in ctx.items() if k not in raw or not isinstance(v, str)})
             ctx.update({k: fmt(k, v) for k, v in raw.items()})
+    compute_blocks(spec, ctx, raw)
+    ctx.update({k: (v if not isinstance(v, (int, float)) or k in ('first_y','last_y') else v) for k, v in raw.items() if k not in ctx})
     def sub(t):
         return t.format(**ctx) if isinstance(t, str) and "{" in t else t
     for sc in spec["scenes"]:

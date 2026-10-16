@@ -20,7 +20,7 @@ const Wrap = ({children, intro}) => {
     <AbsoluteFill style={{opacity: op, transform: `translate(${dx + sx}px, ${sy}px) scale(${sc})`}}>
       {children}
       {intro ? <Burst /> : null}
-      {intro ? <AbsoluteFill style={{background: '#fff', opacity: interpolate(f, [0, 5], [0.9, 0], clamp), pointerEvents: 'none'}} /> : null}
+      {intro ? <AbsoluteFill style={{background: '#fff', opacity: interpolate(f, [0, 4], [0.55, 0], clamp), pointerEvents: 'none'}} /> : null}
     </AbsoluteFill>
   );
 };
@@ -63,11 +63,11 @@ const Headline = ({sc, theme, intro}) => {
     if (hl && i < parts.length - 1) tokens.push({w: hl, hl: true});
   });
   return (
-    <div style={{position: 'absolute', left: 50, right: 50, top: 150, textAlign: 'center', fontFamily: ANTON, fontSize: intro ? 112 : 92, lineHeight: 1.1, color: theme.ink, textTransform: 'uppercase'}}>
+    <div style={{position: 'absolute', left: 50, right: 50, top: 150, textAlign: 'center', fontFamily: ANTON, fontSize: intro ? 104 : 84, lineHeight: 1.08, color: theme.ink, textTransform: 'uppercase'}}>
       {tokens.map((tk, i) => {
-        const s = spring({frame: f - i * (intro ? 2 : 3), fps, config: {damping: intro ? 7 : 10, stiffness: intro ? 260 : 190}});
+        const s = spring({frame: f - i * (intro ? 1.5 : 3), fps, config: {damping: intro ? 15 : 10, stiffness: intro ? 320 : 190}});
         return (
-          <span key={i} style={{display: 'inline-block', margin: '0 12px', transform: `translateY(${(1 - s) * 50}px) scale(${(intro ? 0.2 : 0.6) + (intro ? 0.8 : 0.4) * s}) rotate(${intro ? (1 - s) * -8 : 0}deg)`, opacity: Math.min(1, s * 1.5), background: tk.hl ? theme.acc : 'transparent', padding: tk.hl ? '0 14px' : 0, borderRadius: 10}}>{tk.w}</span>
+          <span key={i} style={{display: 'inline-block', margin: '0 12px', transform: `translateY(${(1 - s) * 50}px) scale(${(intro ? 0.2 : 0.6) + (intro ? 0.8 : 0.4) * s}) rotate(${intro ? (1 - s) * -4 : 0}deg)`, opacity: Math.min(1, s * 1.5), background: tk.hl ? theme.acc : 'transparent', padding: tk.hl ? '0 14px' : 0, borderRadius: 10}}>{tk.w}</span>
         );
       })}
     </div>
@@ -80,15 +80,25 @@ export const Karaoke = ({words, theme}) => {
   const {fps} = useVideoConfig();
   if (!words || !words.length) return null;
   const t = f / fps;
-  const size = 3;
+  // agrupa palavras: até 3 palavras e ~16 letras por bloco
+  const chunks = [];
+  let curC = [], len = 0;
+  words.forEach((w, i) => {
+    const l = w.w.length;
+    if (curC.length && (curC.length >= 3 || len + l > 16)) { chunks.push(curC); curC = []; len = 0; }
+    curC.push(i); len += l;
+  });
+  if (curC.length) chunks.push(curC);
   let cur = words.findIndex((w) => t >= w.t0 && t < w.t1);
   if (cur < 0) cur = t < words[0].t0 ? 0 : words.length - 1;
-  const chunk = Math.floor(cur / size);
-  const group = words.slice(chunk * size, chunk * size + size);
+  const chunkIdx = chunks.findIndex((c) => c.includes(cur));
+  const idxs = chunks[Math.max(chunkIdx, 0)];
+  const group = idxs.map((i) => words[i]);
+  const chunk = 0;
   return (
     <div style={{position: 'absolute', left: 40, right: 40, bottom: 400, display: 'flex', flexWrap: 'wrap', justifyContent: 'center'}}>
       {group.map((w, i) => {
-        const idx = chunk * size + i;
+        const idx = idxs[i];
         const on = idx === cur;
         return (
           <span key={idx} style={{

@@ -1,4 +1,5 @@
 import React from 'react';
+import {HashCompare, HashOne, BitGrid} from './hasharts.jsx';
 import {useCurrentFrame, useVideoConfig, interpolate, spring, Easing} from 'remotion';
 
 const C = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'};
@@ -10,77 +11,10 @@ const useT = () => {
   return {f, fps, t: f / fps, pop: (d = 0, damping = 11) => spring({frame: f - d, fps, config: {damping, stiffness: 150}})};
 };
 
-// ---------- personagem ----------
-export const TalkCtx = React.createContext([]);
-const D2R = Math.PI / 180;
-const POSES = {
-  idle: {L: [14, 12], R: [14, 12]},
-  up: {L: [150, 8], R: [150, 8]},
-  point: {L: [14, 12], R: [96, 4]},
-  shock: {L: [105, -35], R: [105, -35]},
-  hold: {L: [20, 20], R: [48, 62]},
-  wave: {L: [14, 12], R: [150, 10]},
-};
-export const Bob = ({x = 540, y = 760, s = 1, pose = 'idle', theme, children}) => {
-  const {f, fps, t, pop} = useT();
-  const words = React.useContext(TalkCtx);
-  const p = pop(0, 9);
-  const target = POSES[pose] || POSES.idle;
-  const idle = POSES.idle;
-  const sway = Math.sin(f / 11);
-  const mix = (a, b) => a + (b - a) * p;
-  let La = [mix(idle.L[0], target.L[0]) + sway * 3, mix(idle.L[1], target.L[1])];
-  let Ra = [mix(idle.R[0], target.R[0]) - sway * 3, mix(idle.R[1], target.R[1])];
-  if (pose === 'wave') { Ra = [150 + Math.sin(f / 3) * 14, 10 + Math.sin(f / 3) * 30]; }
-  if (pose === 'shock') { La[0] += Math.sin(f * 0.9) * 2; Ra[0] += Math.sin(f * 0.9) * 2; }
-  const SH = [0, -110], L1 = 64, L2 = 58;
-  const arm = (side, [a1, a2]) => {
-    const e = [SH[0] + side * L1 * Math.sin(a1 * D2R), SH[1] + L1 * Math.cos(a1 * D2R)];
-    const h = [e[0] + side * L2 * Math.sin((a1 + a2) * D2R), e[1] + L2 * Math.cos((a1 + a2) * D2R)];
-    return {e, h};
-  };
-  const aL = arm(-1, La), aR = arm(1, Ra);
-  // entrada: salta de baixo com squash & stretch
-  const rise = (1 - p) * 420;
-  const squash = 1 + (1 - p) * 0.12 - Math.max(0, Math.sin(Math.min(f, 14) / 14 * Math.PI)) * 0.0;
-  // respiração e peso
-  const breathe = Math.sin(f / 13) * 3;
-  // cabeça: balanço + aceno a cada palavra
-  let nod = 0, speaking = false;
-  for (const w of words) {
-    if (t >= w.t0 && t < w.t1) speaking = true;
-    if (t >= w.t0) nod = 9 * Math.exp(-(t - w.t0) * 11);
-  }
-  const tilt = Math.sin(f / 23) * 3 + (speaking ? Math.sin(f / 5) * 1.5 : 0);
-  // piscar
-  const blink = f % 96 > 91;
-  const talk = speaking ? 0.25 + 0.75 * Math.abs(Math.sin(f * 0.95)) : 0;
-  const shocked = pose === 'shock';
-  const legSwing = Math.sin(f / 15) * 2;
-  const headY = -175 + breathe * 0.6 + nod;
-  return (
-    <g transform={`translate(${x},${y + rise}) scale(${s}, ${s * squash})`}>
-      <ellipse cx={0} cy={72} rx={70 - (1 - p) * 30} ry={10} fill="#14161f" opacity={0.15 * p} />
-      <path d={`M0,${-130 + breathe} L0,-30`} {...S} />
-      <path d={`M0,-30 L${-38 + legSwing},70 M0,-30 L${38 - legSwing},70`} {...S} />
-      <path d={`M${SH[0]},${SH[1] + breathe} L${aL.e[0]},${aL.e[1]} L${aL.h[0]},${aL.h[1]}`} {...S} />
-      <path d={`M${SH[0]},${SH[1] + breathe} L${aR.e[0]},${aR.e[1]} L${aR.h[0]},${aR.h[1]}`} {...S} />
-      {children ? children({hand: aR.h, handL: aL.h}) : null}
-      <g transform={`rotate(${tilt} 0 -125) translate(0 ${headY + 175})`}>
-        <circle cx={0} cy={-175} r={52} fill="#fff" stroke="#14161f" strokeWidth={9} />
-        {blink
-          ? <><path d="M-26,-186 L-10,-186 M10,-186 L26,-186" {...S} strokeWidth={5} /></>
-          : <><circle cx={-18} cy={-185} r={shocked ? 8 : 6} fill="#14161f" /><circle cx={18} cy={-185} r={shocked ? 8 : 6} fill="#14161f" /></>}
-        {shocked && <path d="M-30,-208 L-8,-214 M30,-208 L8,-214" {...S} strokeWidth={5} />}
-        {talk > 0 || shocked
-          ? <ellipse cx={0} cy={-150} rx={shocked ? 14 : 11 + talk * 4} ry={shocked ? 18 : 4 + talk * 13} fill="#14161f" />
-          : <path d="M-18,-155 Q0,-138 18,-155" {...S} strokeWidth={6} />}
-        <path d="M-56,-205 Q0,-262 56,-205 Z" fill={theme.hat} stroke="#14161f" strokeWidth={8} strokeLinejoin="round" />
-        <path d="M-74,-205 L74,-205" {...S} />
-      </g>
-    </g>
-  );
-};
+// ---------- personagem (v2, ver char.jsx) ----------
+import {Char, EnvCtx} from './char.jsx';
+const POSE_MAP = {idle: 'neutral', up: 'cheer', shock: 'shock', hold: 'neutral', point: 'point', wave: 'cheer'};
+export const Bob = ({pose = 'idle', s = 1.5, ...rest}) => <Char s={s * 0.9} pose={POSE_MAP[pose] || pose} kind={rest.theme.kind} {...rest} />;
 
 // ---------- props ----------
 export const Coin = ({x, y, r = 44, theme, label = '$'}) => (
@@ -161,6 +95,9 @@ const Label = ({x, y, text, size = 46, bg = '#fff', color = '#14161f'}) => {
 
 // ---------- composições ----------
 const ARTS = {
+  'hash-compare': HashCompare,
+  'hash-one': HashOne,
+  'bitgrid': BitGrid,
   // personagem chocado com placa grande
   'bob-big': ({sc, theme, p}) => (
     <>
@@ -277,10 +214,10 @@ export const Art = ({sc, theme}) => {
   const {f, fps, t, pop} = useT();
   const Comp = ARTS[sc.art] || ARTS['bob-big'];
   return (
-    <TalkCtx.Provider value={sc.words || []}>
-      <svg width={1080} height={1100} viewBox="0 0 1080 1100" style={{position: 'absolute', left: 0, top: 330, overflow: 'visible', transform: `scale(${1 + 0.05 * Math.min(t / 6, 1)})`, transformOrigin: '540px 500px'}}>
+    <EnvCtx.Provider value={{env: sc.env || [], words: sc.words || []}}>
+      <svg width={1080} height={1100} viewBox="0 0 1080 1100" style={{position: 'absolute', left: 0, top: 385, overflow: 'visible', transform: `scale(${1 + 0.05 * Math.min(t / 6, 1)})`, transformOrigin: '540px 500px'}}>
         <Comp sc={sc} theme={theme} p={pop} t={t} f={f} fps={fps} />
       </svg>
-    </TalkCtx.Provider>
+    </EnvCtx.Provider>
   );
 };
