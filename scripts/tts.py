@@ -10,6 +10,8 @@ VOICES = {
     "howitticks": ("am_michael", "en-us", 1.0),
     "valeopreco": ("pf_dora", "pt-br", 1.0),
 }
+EDGE = {"valeopreco": "pt-BR-AntonioNeural"}  # voz neural natural; se a rede falhar, cai no Kokoro
+EDGE_RATE = os.environ.get("EDGE_RATE", "-4%")
 MODEL = os.environ.get("KOKORO_DIR", ".cache/kokoro")
 TAIL = 0.28  # silêncio após a fala antes da próxima cena
 
@@ -52,15 +54,52 @@ def word_times(text, total, offset=0.0, audio=None, sr=24000):
     return [{"w": w, "t0": round(max(offset + bounds[i] - LEAD, 0), 3), "t1": round(offset + bounds[i + 1] - LEAD, 3)} for i, w in enumerate(words)]
 
 
-def speak(k, text, voice, lang, speed):
+def edge_sentence(text, voice):
+    """Uma frase via edge-tts. Retorna (samples 24k, [(palavra, t0, t1)]) com tempos reais de palavra."""
+    import asyncio, subprocess, tempfile, edge_tts
+    async def go():
+        com = edge_tts.Communicate(text, voice, rate=EDGE_RATE, boundary="WordBoundary")
+        mp3, wb = b"", []
+        async for ch in com.stream():
+            if ch["type"] == "audio":
+                mp3 += ch["data"]
+            elif ch["type"] == "WordBoundary":
+                wb.append((ch["text"], ch["offset"] / 1e7, (ch["offset"] + ch["duration"]) / 1e7))
+        return mp3, wb
+    mp3, wb = asyncio.run(go())
+    with tempfile.TemporaryDirectory() as d:
+        open(f"{d}/a.mp3", "wb").write(mp3)
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", f"{d}/a.mp3", "-ac", "1", "-ar", "24000", f"{d}/a.wav"], check=True)
+        x, _ = sf.read(f"{d}/a.wav", dtype="float32")
+    return x, wb
+
+
+def speak(k, text, voice, lang, speed, edge_voice=None):
     """Frase a frase, com pausas naturais; limpa graves, nivela volume. Retorna (samples, sr, words)."""
     sents = [x for x in re.split(r"(?<=[.!?])\s+", text.strip()) if x]
     chunks, words, pos, sr = [], [], 0.0, 24000
     for i, snt in enumerate(sents):
-        smp, sr = k.create(snt, voice=voice, speed=speed, lang=lang, trim=False)
-        smp = trim(smp, sr)
+        wb = None
+        if edge_voice:
+            try:
+                smp, wb = edge_sentence(snt, edge_voice)
+                sr = 24000
+                a0 = max(int(np.where(np.abs(smp) > 0.002)[0][0]) - int(0.06 * sr), 0)
+                smp = trim(smp, sr)
+                if wb and len(wb) != len(snt.split()):
+                    wb = None
+            except Exception as e:
+                print("edge falhou, usando kokoro:", repr(e)[:120])
+                edge_voice = None
+                wb = None
+        if not edge_voice:
+            smp, sr = k.create(snt, voice=voice, speed=speed, lang=lang, trim=False)
+            smp = trim(smp, sr)
         d = len(smp) / sr
-        words += word_times(snt, d, pos, smp, sr)
+        if wb:
+            words += [{"w": w, "t0": round(max(pos + t0 - a0 / sr - 0.05, 0), 3), "t1": round(pos + t1 - a0 / sr - 0.05, 3)} for w, t0, t1 in wb]
+        else:
+            words += word_times(snt, d, pos, smp, sr)
         chunks.append(smp)
         pos += d
         if i < len(sents) - 1:
@@ -98,7 +137,7 @@ def main(src, dst):
         text = sc.get("narration")
         if not text:
             continue
-        samples, sr, words = speak(k, text, voice, lang, speed)
+        samples, sr, words = speak(k, text, voice, lang, speed, EDGE.get(spec["channel"]))
         dur = len(samples) / sr
         rel = f"audio/{name}/s{i}.wav"
         sf.write(f"public/{rel}", samples, sr)
