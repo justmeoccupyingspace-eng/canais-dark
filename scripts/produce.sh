@@ -2,6 +2,7 @@
 # Para cada spec da lista: dados reais -> voz -> render -> upload. Spec pode trazer "publish": {"channel":"A","privacy":"private"}.
 set -euo pipefail
 mkdir -p out public/build
+python3 scripts/fx.py
 while read -r f; do
   [ -z "$f" ] && continue
   n=$(basename "$f" .json)
