@@ -198,7 +198,7 @@ const ARTS = {
         <Satellite x={x1} y={y1} s={1.5} />
         <path d={`M${x1},${y1} L${x2},${y2}`} {...S} strokeDasharray="4 22" strokeWidth={8} />
         <circle cx={x1 + (x2 - x1) * k} cy={y1 + (y2 - y1) * k} r={26} fill={theme.acc} stroke="#14161f" strokeWidth={7} />
-        <Bob x={260} y={1040} s={1.3} pose="point" theme={theme}>{({handL}) => <Phone x={handL[0] - 5} y={handL[1] - 10} s={0.6} theme={theme} />}</Bob>
+        <Bob x={260} y={1040} s={1.3} pose="point" theme={theme} />
         <Label x={540} y={560} text="delay × speed of light" size={40} bg="#fff" />
         <Label x={540} y={650} text="= distance" size={52} bg={theme.acc} />
       </>
