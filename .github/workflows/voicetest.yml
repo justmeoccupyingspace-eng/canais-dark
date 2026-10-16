@@ -1,0 +1,22 @@
+name: voicetest
+on:
+  push:
+    branches: [main]
+    paths: ["voicetest/trigger.txt"]
+permissions:
+  contents: write
+jobs:
+  v:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install edge-tts
+      - run: python voicetest/run.py
+      - name: Amostras na branch voices
+        run: |
+          mkdir -p /tmp/vv && cp out_v/*.mp3 /tmp/vv/
+          git config user.name producer; git config user.email producer@users.noreply.github.com
+          git checkout --orphan voices && git rm -rf . -q
+          cp /tmp/vv/*.mp3 . && git add *.mp3 && git commit -qm voices && git push -f origin voices
