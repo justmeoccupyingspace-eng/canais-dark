@@ -183,7 +183,7 @@ const Stat = ({sc, p}) => {
   const s = spring({frame: f, fps: FPS, config: {damping: 14, stiffness: 160}});
   return (
     <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center', top: -140}}>
-      <div style={{fontFamily: FONT, fontWeight: 900, fontSize: 330, letterSpacing: -12, color: p.light ? '#fff' : p.ink, lineHeight: 1, transform: `scale(${0.85 + 0.15 * s})`}}>{sc.prefix}{Math.round(v)}{sc.suffix}</div>
+      <div style={{fontFamily: FONT, fontWeight: 900, fontSize: 330, letterSpacing: -12, color: p.light ? '#fff' : p.ink, lineHeight: 1, transform: `scale(${0.85 + 0.15 * s})`}}>{sc.prefix}{sc.dec ? v.toFixed(sc.dec).replace('.', ',') : Math.round(v)}{sc.suffix}</div>
       <div style={{fontFamily: FONT, fontWeight: 800, fontSize: 56, color: p.light ? '#fff' : p.ink, opacity: 0.92, textAlign: 'center', padding: '0 90px', marginTop: 10}}>{sc.label}</div>
     </AbsoluteFill>
   );

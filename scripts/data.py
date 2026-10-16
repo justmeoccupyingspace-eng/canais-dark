@@ -62,6 +62,23 @@ def compute_blocks(spec, ctx, raw):
         for sc in spec["scenes"]:
             if sc.get("art") in ("hash-compare", "hash-one", "bitgrid") or sc.get("type") in ("hashcmp", "hashbox", "grid"):
                 sc["hashdata"] = data
+    if "terms" in c:
+        from num2words import num2words
+        first = min(t["from"] for t in c["terms"])
+        ser = c["terms"][0].get("series") or ipca_series(first)
+        last_m = ser[-1][0]
+        for n, t in enumerate(c["terms"], 1):
+            to = t.get("to") or last_m
+            vs = [v for m, v in ser if t["from"] <= m <= to]
+            f = 1.0
+            for v in vs:
+                f *= 1 + v / 100
+            avg = (f ** (12 / len(vs)) - 1) * 100
+            dec = f"{avg:.1f}".replace(".", ",")
+            raw.update({f"t{n}_name": t["name"], f"t{n}_avg": round(avg, 1), f"t{n}_avg_s": dec,
+                        f"t{n}_say": num2words(round(avg, 1), lang="pt_BR"), f"t{n}_acc": round((f - 1) * 100),
+                        f"t{n}_meses": len(vs)})
+        ctx.update({k: v for k, v in raw.items() if k.startswith("t") and k[1].isdigit()})
     if "ipca" in c:
         i = c["ipca"]
         ser = ipca_series(i["from"]) if "series" not in i else i["series"]

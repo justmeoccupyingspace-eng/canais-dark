@@ -1,0 +1,34 @@
+{
+ "channel": "valeopreco",
+ "publish": {"channel": "C", "privacy": "private"},
+ "title": "Inflação por governo",
+ "compute": {
+  "terms": [
+   {"name": "Dilma 2", "from": "2015-01", "to": "2016-08"},
+   {"name": "Temer", "from": "2016-09", "to": "2018-12"},
+   {"name": "Bolsonaro", "from": "2019-01", "to": "2022-12"},
+   {"name": "Lula 3", "from": "2023-01"}
+  ]
+ },
+ "yt": {
+  "title": "Inflação média por ano em cada governo #Shorts",
+  "description": "IPCA (IBGE), série 433 do Banco Central (SGS). Taxa média anual composta em cada período de governo. Sem juízo de valor: inflação é só um indicador, e cada período teve choques diferentes (pandemia, guerra, câmbio, clima).\\nNarração gerada por IA.",
+  "tags": ["ipca", "inflação", "governo", "economia brasileira"],
+  "lang": "pt-BR"
+ },
+ "scenes": [
+  {"type": "kin", "text": "Inflação por governo", "hl": "governo", "size": 160,
+   "narration": "Quanto os preços subiram por ano em cada governo? Sem opinião, só o dado do IBGE.", "min_duration": 5},
+  {"type": "stat", "label": "{t1_name}: inflação média por ano", "value_from": "t1_avg", "value": 0, "dec": 1, "suffix": "%",
+   "narration": "{t1_name}: {t1_say} por cento ao ano.", "min_duration": 3.4},
+  {"type": "stat", "label": "{t2_name}: inflação média por ano", "value_from": "t2_avg", "value": 0, "dec": 1, "suffix": "%",
+   "narration": "{t2_name}: {t2_say} por cento ao ano.", "min_duration": 3.4},
+  {"type": "stat", "label": "{t3_name}: inflação média por ano", "value_from": "t3_avg", "value": 0, "dec": 1, "suffix": "%",
+   "narration": "{t3_name}: {t3_say} por cento ao ano.", "min_duration": 3.4},
+  {"type": "stat", "label": "{t4_name}: inflação média por ano", "value_from": "t4_avg", "value": 0, "dec": 1, "suffix": "%",
+   "narration": "{t4_name}, até agora: {t4_say} por cento ao ano.", "min_duration": 3.4},
+  {"type": "kin", "text": "Quem é o culpado? Depende.", "hl": "Depende.", "size": 150,
+   "narration": "Cada período teve seus choques: pandemia, guerra, câmbio, seca. O que pesou mais no seu mês? Conta aqui.", "min_duration": 5.4}
+ ],
+ "style": "clean"
+}
