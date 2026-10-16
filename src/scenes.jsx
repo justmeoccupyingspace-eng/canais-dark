@@ -6,13 +6,41 @@ const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'};
 const ANTON = 'Anton, Impact, "Arial Black", sans-serif';
 
 // corte rápido: entra com leve zoom, sem fade longo
-const Wrap = ({children}) => {
+const Wrap = ({children, intro}) => {
   const f = useCurrentFrame();
   const {durationInFrames: d} = useVideoConfig();
-  const sc = interpolate(f, [0, 8], [1.05, 1], {...clamp, easing: Easing.out(Easing.cubic)});
-  const dx = interpolate(f, [0, 7], [90, 0], {...clamp, easing: Easing.out(Easing.cubic)});
-  const op = interpolate(f, [0, 2, d - 2, d], [0, 1, 1, 0], clamp);
-  return <AbsoluteFill style={{opacity: op, transform: `translateX(${dx}px) scale(${sc})`}}>{children}</AbsoluteFill>;
+  const sc = intro
+    ? interpolate(f, [0, 10], [1.4, 1], {...clamp, easing: Easing.out(Easing.exp)})
+    : interpolate(f, [0, 8], [1.05, 1], {...clamp, easing: Easing.out(Easing.cubic)});
+  const dx = intro ? 0 : interpolate(f, [0, 7], [90, 0], {...clamp, easing: Easing.out(Easing.cubic)});
+  const shake = intro ? Math.exp(-f / 5) * 26 : 0;
+  const sx = Math.sin(f * 2.7) * shake, sy = Math.cos(f * 3.1) * shake;
+  const op = interpolate(f, [0, 2, d - 2, d], [intro ? 1 : 0, 1, 1, 0], clamp);
+  return (
+    <AbsoluteFill style={{opacity: op, transform: `translate(${dx + sx}px, ${sy}px) scale(${sc})`}}>
+      {children}
+      {intro ? <Burst /> : null}
+      {intro ? <AbsoluteFill style={{background: '#fff', opacity: interpolate(f, [0, 5], [0.9, 0], clamp), pointerEvents: 'none'}} /> : null}
+    </AbsoluteFill>
+  );
+};
+
+// estouro de formas coloridas no começo
+const Burst = () => {
+  const f = useCurrentFrame();
+  const cols = ['#ffb800', '#ff4d4d', '#2f6bff', '#00c389', '#ff4d8d'];
+  return (
+    <AbsoluteFill style={{pointerEvents: 'none'}}>
+      {Array.from({length: 26}, (_, i) => {
+        const ang = (i / 26) * Math.PI * 2 + (i % 3) * 0.2;
+        const sp = 520 + (i % 5) * 140;
+        const k = 1 - Math.exp(-f / 7);
+        const x = 540 + Math.cos(ang) * sp * k, y = 760 + Math.sin(ang) * sp * k * 1.15 + f * f * 0.6;
+        const o = interpolate(f, [0, 4, 26, 38], [0, 1, 1, 0], clamp);
+        return <div key={i} style={{position: 'absolute', left: x, top: y, width: 26 + (i % 4) * 10, height: 26 + (i % 4) * 10, background: cols[i % 5], border: '5px solid #14161f', borderRadius: i % 2 ? '50%' : 6, opacity: o, transform: `rotate(${f * (8 + i)}deg)`}} />;
+      })}
+    </AbsoluteFill>
+  );
 };
 
 const Highlight = ({text, hl, theme}) => {
@@ -22,7 +50,7 @@ const Highlight = ({text, hl, theme}) => {
 };
 
 // cabeçalho: frase-chave da cena
-const Headline = ({sc, theme}) => {
+const Headline = ({sc, theme, intro}) => {
   const f = useCurrentFrame();
   const {fps} = useVideoConfig();
   const text = sc.text || sc.title;
@@ -35,11 +63,11 @@ const Headline = ({sc, theme}) => {
     if (hl && i < parts.length - 1) tokens.push({w: hl, hl: true});
   });
   return (
-    <div style={{position: 'absolute', left: 50, right: 50, top: 150, textAlign: 'center', fontFamily: ANTON, fontSize: 92, lineHeight: 1.12, color: theme.ink, textTransform: 'uppercase'}}>
+    <div style={{position: 'absolute', left: 50, right: 50, top: 150, textAlign: 'center', fontFamily: ANTON, fontSize: intro ? 112 : 92, lineHeight: 1.1, color: theme.ink, textTransform: 'uppercase'}}>
       {tokens.map((tk, i) => {
-        const s = spring({frame: f - i * 3, fps, config: {damping: 10, stiffness: 190}});
+        const s = spring({frame: f - i * (intro ? 2 : 3), fps, config: {damping: intro ? 7 : 10, stiffness: intro ? 260 : 190}});
         return (
-          <span key={i} style={{display: 'inline-block', margin: '0 12px', transform: `translateY(${(1 - s) * 50}px) scale(${0.6 + 0.4 * s})`, opacity: Math.min(1, s * 1.5), background: tk.hl ? theme.acc : 'transparent', padding: tk.hl ? '0 14px' : 0, borderRadius: 10}}>{tk.w}</span>
+          <span key={i} style={{display: 'inline-block', margin: '0 12px', transform: `translateY(${(1 - s) * 50}px) scale(${(intro ? 0.2 : 0.6) + (intro ? 0.8 : 0.4) * s}) rotate(${intro ? (1 - s) * -8 : 0}deg)`, opacity: Math.min(1, s * 1.5), background: tk.hl ? theme.acc : 'transparent', padding: tk.hl ? '0 14px' : 0, borderRadius: 10}}>{tk.w}</span>
         );
       })}
     </div>
@@ -75,8 +103,8 @@ export const Karaoke = ({words, theme}) => {
 };
 
 export const ArtScene = ({sc, theme, spec}) => (
-  <Wrap>
-    <Headline sc={sc} theme={theme} />
+  <Wrap intro={sc.intro}>
+    <Headline sc={sc} theme={theme} intro={sc.intro} />
     <Art sc={sc} theme={theme} />
     <Karaoke words={sc.words} theme={theme} />
   </Wrap>

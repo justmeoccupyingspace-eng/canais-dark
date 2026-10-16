@@ -49,6 +49,17 @@ def pop():
     return np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 18) * 0.7
 
 
+def hit():
+    n = int(0.9 * SR)
+    t = np.arange(n) / SR
+    f = 90 * np.exp(-t * 5) + 38
+    boom = np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 4.5)
+    nz = rng.standard_normal(n) * np.exp(-t * 28)
+    b, a = butter(2, 3000 / (SR / 2), btype="low")
+    nz = lfilter(b, a, nz)
+    return np.clip(boom * 0.9 + nz * 0.55, -1, 1) * 0.9
+
+
 def music(root, mode, bpm, seconds=60):
     """Pad suave + baixo pulsante + hi-hat leve. Loopável."""
     beat = 60 / bpm
@@ -98,6 +109,7 @@ if __name__ == "__main__":
     save("whoosh", whoosh())
     save("tick", tick())
     save("pop", pop())
+    save("hit", hit())
     save("music_chartbound", music(110.0, "minor", 104))
     save("music_howitticks", music(98.0, "minor", 96))
     save("music_valeopreco", music(130.8, "major", 112))

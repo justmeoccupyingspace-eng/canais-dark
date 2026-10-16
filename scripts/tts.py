@@ -6,36 +6,50 @@ import soundfile as sf
 from kokoro_onnx import Kokoro
 
 VOICES = {
-    "chartbound": ("af_heart", "en-us", 1.04),
-    "howitticks": ("am_michael", "en-us", 1.04),
-    "valeopreco": ("pf_dora", "pt-br", 1.04),
+    "chartbound": ("af_heart", "en-us", 1.0),
+    "howitticks": ("am_michael", "en-us", 1.0),
+    "valeopreco": ("pf_dora", "pt-br", 1.0),
 }
 MODEL = os.environ.get("KOKORO_DIR", ".cache/kokoro")
 TAIL = 0.28  # silêncio após a fala antes da próxima cena
 
 
-def trim(samples, sr, thr=0.01):
+def trim(samples, sr, thr=0.002):
+    """Corta silêncio nas pontas sem comer consoantes fracas (s, t, f)."""
     idx = np.where(np.abs(samples) > thr)[0]
     if len(idx) == 0:
         return samples
-    a = max(idx[0] - int(0.03 * sr), 0)
-    b = min(idx[-1] + int(0.08 * sr), len(samples))
+    a = max(idx[0] - int(0.06 * sr), 0)
+    b = min(idx[-1] + int(0.16 * sr), len(samples))
     return samples[a:b]
 
 
-def word_times(text, total, offset=0.0):
-    """Distribui o tempo entre as palavras por nº de letras (+ pausa em pontuação)."""
+def word_times(text, total, offset=0.0, audio=None, sr=24000):
+    """Tempo de cada palavra: peso por tamanho (números pesam mais) e, quando há áudio,
+    cada fronteira é encaixada no ponto de menor energia próximo (±90 ms)."""
     words = text.split()
     wt = []
     for w in words:
-        wt.append(len(re.sub(r"\W", "", w)) + 2 + (4 if re.search(r"[,;:]$", w) else 0) + (7 if re.search(r"[.!?]$", w) else 0))
-    s = sum(wt)
-    out, t = [], 0.0
-    for w, x in zip(words, wt):
-        d = total * x / s
-        out.append({"w": w, "t0": round(offset + t, 3), "t1": round(offset + t + d, 3)})
-        t += d
-    return out
+        core = re.sub(r"\W", "", w)
+        base = len(core) * 2.2 + 3 if re.search(r"\d", core) else len(core) + 2
+        wt.append(base + (4 if re.search(r"[,;:]$", w) else 0))
+    S = sum(wt)
+    bounds, t = [0.0], 0.0
+    for x in wt:
+        t += total * x / S
+        bounds.append(t)
+    bounds[-1] = total
+    if audio is not None and len(audio) > sr * 0.2:
+        n = int(0.02 * sr)
+        env = np.sqrt(np.convolve(audio ** 2, np.ones(n) / n, "same"))
+        win = int(0.09 * sr)
+        for i in range(1, len(bounds) - 1):
+            c = int(bounds[i] * sr)
+            lo, hi = max(c - win, 0), min(c + win, len(env) - 1)
+            snapped = (lo + int(np.argmin(env[lo:hi]))) / sr
+            bounds[i] = min(max(snapped, bounds[i - 1] + 0.05), total - 0.05 * (len(bounds) - 1 - i))
+    LEAD = 0.05  # legenda ligeiramente à frente da voz
+    return [{"w": w, "t0": round(max(offset + bounds[i] - LEAD, 0), 3), "t1": round(offset + bounds[i + 1] - LEAD, 3)} for i, w in enumerate(words)]
 
 
 def speak(k, text, voice, lang, speed):
@@ -43,14 +57,14 @@ def speak(k, text, voice, lang, speed):
     sents = [x for x in re.split(r"(?<=[.!?])\s+", text.strip()) if x]
     chunks, words, pos, sr = [], [], 0.0, 24000
     for i, snt in enumerate(sents):
-        smp, sr = k.create(snt, voice=voice, speed=speed, lang=lang)
+        smp, sr = k.create(snt, voice=voice, speed=speed, lang=lang, trim=False)
         smp = trim(smp, sr)
         d = len(smp) / sr
-        words += word_times(snt, d, pos)
+        words += word_times(snt, d, pos, smp, sr)
         chunks.append(smp)
         pos += d
         if i < len(sents) - 1:
-            gap = 0.30 if snt.endswith("?") else 0.20 if snt.endswith(".") else 0.12
+            gap = 0.34 if snt.endswith("?") else 0.24 if snt.endswith(".") else 0.14
             chunks.append(np.zeros(int(gap * sr), dtype=smp.dtype))
             pos += gap
     x = np.concatenate(chunks)
