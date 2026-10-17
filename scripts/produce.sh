@@ -3,7 +3,8 @@
 set -euo pipefail
 mkdir -p out public/build
 python3 scripts/fx.py
-while read -r f; do
+mapfile -t SPECS < "$1"
+for f in "${SPECS[@]}"; do
   [ -z "$f" ] && continue
   n=$(basename "$f" .json)
   python3 scripts/data.py "$f" public/build/$n.data.json
@@ -18,4 +19,4 @@ while read -r f; do
   elif [ "${MANUAL_UPLOAD:-true}" != "false" ]; then
     python3 scripts/upload.py "$ch" out/$n.mp4 public/build/$n.json "$pv"
   fi
-done < "$1"
+done
