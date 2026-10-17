@@ -1,0 +1,24 @@
+{
+ "channel": "howitticks",
+ "publish": {"channel": "B", "privacy": "public"},
+ "title": "We ran out of IP addresses",
+ "compute": {"ipv4": {}},
+ "yt": {
+  "title": "The internet ran out of addresses. Here is the math #Shorts",
+  "description": "IPv4 uses 32 bits: 2^32 addresses. World population from the World Bank (SP.POP.TOTL, {people_year}). Numbers are computed by code.\nNarration is AI-generated.",
+  "tags": ["ipv4", "ipv6", "networking", "how it works"],
+  "lang": "en"
+ },
+ "scenes": [
+  {"type": "kin", "text": "The internet ran out of addresses", "hl": "ran out", "size": 150,
+   "narration": "The internet ran out of addresses. Here is the math.", "min_duration": 4.4},
+  {"type": "num", "text": "IPv4 addresses vs people", "hl": "people", "en": true, "dec": 1, "suffix": "B",
+   "a_from": "ipv4_n", "b_from": "people_n", "l1": "IPv4", "l2": "People",
+   "narration": "An IPv4 address has thirty two bits. That gives only {ipv4_say} billion addresses. The world has about {people_say} billion people.", "min_duration": 7},
+  {"type": "stat", "label": "bits in an IPv6 address", "value": 128, "suffix": "",
+   "narration": "IPv6 fixes this with one hundred twenty eight bits. That is more addresses than grains of sand on Earth.", "min_duration": 5},
+  {"type": "kin", "text": "Your home shares one public IP", "hl": "shares", "size": 140,
+   "narration": "Until everyone switches, your router shares one public address between all your devices. That trick is called NAT.", "min_duration": 6.4}
+ ],
+ "style": "clean"
+}

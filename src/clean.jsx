@@ -158,7 +158,7 @@ const Num = ({sc, p}) => {
     const h = (v / max) * H * g;
     return (
       <div style={{position: 'absolute', left: x, bottom: 0, width: 400, textAlign: 'center'}}>
-        <div style={{fontFamily: FONT, fontWeight: 900, fontSize: 84, color: '#fff', marginBottom: 18, opacity: g}}>{sc.prefix}{fmt(shown)}</div>
+        <div style={{fontFamily: FONT, fontWeight: 900, fontSize: 84, color: '#fff', marginBottom: 18, opacity: g}}>{sc.prefix}{sc.dec ? shown.toLocaleString('en-US', {minimumFractionDigits: sc.dec, maximumFractionDigits: sc.dec}) : (sc.en ? Math.round(shown).toLocaleString('en-US') : fmt(shown))}{sc.suffix}</div>
         <div style={{height: h, background: col, borderRadius: '18px 18px 0 0'}} />
         <div style={{fontFamily: FONT, fontWeight: 800, fontSize: 38, letterSpacing: 2, color: '#ffffffaa', marginTop: 18, textTransform: 'uppercase'}}>{label}</div>
       </div>

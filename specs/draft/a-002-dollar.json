@@ -1,0 +1,24 @@
+{
+ "channel": "chartbound",
+ "publish": {"channel": "A", "privacy": "public"},
+ "title": "What happened to $100",
+ "compute": {"cpi": {"from": 2000, "amount": 100}},
+ "yt": {
+  "title": "$100 from {cpi_year} needs to be ${cpi_needed_n} today #Shorts",
+  "description": "US consumer prices (CPI-U, seasonally adjusted), {cpi_from} to {cpi_to}. Source: U.S. Bureau of Labor Statistics via FRED (CPIAUCSL). CPI is an average; your own costs may differ.\nNarration is AI-generated.",
+  "tags": ["inflation", "cpi", "economics", "dollar"],
+  "lang": "en"
+ },
+ "scenes": [
+  {"type": "kin", "text": "What happened to your $100?", "hl": "$100?", "size": 170,
+   "narration": "How much is one hundred dollars from the year {cpi_year} worth today?", "min_duration": 4.4},
+  {"type": "num", "text": "Same buying power", "hl": "buying power", "prefix": "$", "en": true,
+   "a_from": "cpi_amount_n", "b_from": "cpi_needed_n", "l1": "{cpi_year}", "l2": "today",
+   "narration": "To buy the same things, you now need about {cpi_needed_say} dollars.", "min_duration": 5},
+  {"type": "stat", "label": "higher consumer prices since {cpi_year}", "value_from": "cpi_pct", "value": 0, "prefix": "+", "suffix": "%",
+   "narration": "That is {cpi_pct_say} percent higher prices, according to the Bureau of Labor Statistics.", "min_duration": 3.8},
+  {"type": "kin", "text": "Did your pay keep up?", "hl": "pay", "size": 170,
+   "narration": "If your income did not grow that much, you can buy less. Did yours keep up?", "min_duration": 4.4}
+ ],
+ "style": "clean"
+}

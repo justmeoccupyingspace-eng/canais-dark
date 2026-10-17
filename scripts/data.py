@@ -46,6 +46,8 @@ def ipca_series(first):
 
 MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
 
+MESES_EN = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+
 def brl(v):
     return "R$ " + f"{round(v):,}".replace(",", ".")
 
@@ -79,6 +81,30 @@ def compute_blocks(spec, ctx, raw):
                         f"t{n}_say": num2words(round(avg, 1), lang="pt_BR"), f"t{n}_acc": round((f - 1) * 100),
                         f"t{n}_meses": len(vs)})
         ctx.update({k: v for k, v in raw.items() if k.startswith("t") and k[1].isdigit()})
+    if "cpi" in c:
+        from num2words import num2words
+        i = c["cpi"]
+        url = f"https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCSL&cosd={i['from']}-01-01"
+        rows = list(csv.reader(io.StringIO(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=30).read().decode())))[1:]
+        rows = [(r[0], float(r[1])) for r in rows if len(r) > 1 and r[1] not in ("", ".")]
+        f = rows[-1][1] / rows[0][1]
+        amt = i.get("amount", 100)
+        ly, lm = rows[-1][0].split("-")[:2]
+        raw.update(cpi_amount_n=amt, cpi_needed_n=round(amt * f), cpi_pct=round((f - 1) * 100),
+                   cpi_amount_say=num2words(amt, lang="en"), cpi_needed_say=num2words(round(amt * f), lang="en"),
+                   cpi_pct_say=num2words(round((f - 1) * 100), lang="en"), cpi_from=f"January {i['from']}",
+                   cpi_to=f"{MESES_EN[int(lm) - 1]} {ly}", cpi_year=i["from"])
+        ctx.update({k: v for k, v in raw.items() if k.startswith("cpi")})
+    if "ipv4" in c:
+        from num2words import num2words
+        pop = worldbank_annual("SP.POP.TOTL", "WLD", 2018, 2026)
+        py = max(pop)
+        addr = 2 ** 32 / 1e9
+        people = pop[py] / 1e9
+        raw.update(ipv4_n=round(addr, 1), people_n=round(people, 1), people_year=py, ipv4_ratio=round(people / addr, 1),
+                   ipv4_say=num2words(round(addr, 1), lang="en"), people_say=num2words(round(people, 1), lang="en"),
+                   ipv4_ratio_say=num2words(round(people / addr, 1), lang="en"))
+        ctx.update({k: v for k, v in raw.items() if k.startswith(("ipv4", "people"))})
     if "ipca" in c:
         i = c["ipca"]
         ser = ipca_series(i["from"]) if "series" not in i else i["series"]
