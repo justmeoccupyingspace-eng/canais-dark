@@ -1,0 +1,23 @@
+{
+ "channel": "howitticks",
+ "publish": {"channel": "B", "privacy": "public", "at": "2026-10-18T01:00:00Z"},
+ "title": "Why 0.1 plus 0.2 is not 0.3",
+ "compute": {"floatsum": {"a": 0.1, "b": 0.2, "target": 0.3}},
+ "yt": {
+  "title": "Why {f_a} + {f_b} is not {f_target} in code #Shorts",
+  "description": "Computed live in Python with IEEE 754 double precision floats: {f_a} + {f_b} = {f_sum}. Equal to {f_target}: {f_equal}.\nNarration is AI-generated.",
+  "tags": ["floating point", "ieee 754", "programming", "how it works"],
+  "lang": "en"
+ },
+ "scenes": [
+  {"type": "kin", "text": "0.1 + 0.2 is not 0.3", "hl": "not", "size": 160,
+   "narration": "In most programming languages, zero point one plus zero point two is not zero point three.", "min_duration": 4.6},
+  {"type": "stat", "label": "what the computer actually returns", "value_from": "f_sum", "value": 0, "as_str": true,
+   "narration": "The computer returns zero point three, followed by a long tail of zeros and a four. We computed this just now.", "min_duration": 6.5},
+  {"type": "kin", "text": "Computers count in base 2", "hl": "base 2", "size": 150,
+   "narration": "Computers store numbers in binary. Zero point one has no exact binary form, just like one third has no exact decimal form.", "min_duration": 7},
+  {"type": "kin", "text": "Compare with a tolerance", "hl": "tolerance", "size": 150,
+   "narration": "So never compare floats with equals. Check that the difference is tiny instead. For money, use integers.", "min_duration": 6.4}
+ ],
+ "style": "clean"
+}

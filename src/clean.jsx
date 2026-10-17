@@ -186,11 +186,13 @@ const Stat = ({sc, p}) => {
     : (sc.en ? Math.round(v).toLocaleString('en-US') : String(Math.round(v)));
   const dd = sc.dec || 0;
   const fullNum = sc.en ? Number(sc.value).toLocaleString('en-US', {minimumFractionDigits: dd, maximumFractionDigits: dd}) : (dd ? Number(sc.value).toFixed(dd).replace('.', ',') : String(Math.round(sc.value)));
-  const full = `${sc.prefix || ''}${fullNum}${sc.suffix || ''}`;
+  const strMode = typeof sc.str === 'string';
+  const full = strMode ? sc.str : `${sc.prefix || ''}${fullNum}${sc.suffix || ''}`;
+  const shown = strMode ? sc.str.slice(0, Math.ceil(interpolate(f, [4, 44], [1, sc.str.length], C))) : null;
   const size = Math.min(330, Math.floor(940 / (full.length * 0.62)));
   return (
     <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center', top: -140}}>
-      <div style={{fontFamily: FONT, fontWeight: 900, fontSize: size, letterSpacing: -size * 0.036, color: p.light ? '#fff' : p.ink, lineHeight: 1, whiteSpace: 'nowrap', transform: `scale(${0.85 + 0.15 * s})`}}>{sc.prefix}{num}{sc.suffix}</div>
+      <div style={{fontFamily: FONT, fontWeight: 900, fontSize: size, letterSpacing: -size * 0.036, color: p.light ? '#fff' : p.ink, lineHeight: 1, whiteSpace: 'nowrap', transform: `scale(${0.85 + 0.15 * s})`}}>{strMode ? shown : `${sc.prefix || ''}${num}${sc.suffix || ''}`}</div>
       <div style={{fontFamily: FONT, fontWeight: 800, fontSize: 56, color: p.light ? '#fff' : p.ink, opacity: 0.92, textAlign: 'center', padding: '0 90px', marginTop: 44}}>{sc.label}</div>
     </AbsoluteFill>
   );

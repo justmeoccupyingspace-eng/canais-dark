@@ -129,6 +129,13 @@ def compute_blocks(spec, ctx, raw):
                    wr_r1_say=num2words(round(r1), lang="en"), wr_a_t=round(A[y1] / 1e12, 1), wr_b_t=round(B[y1] / 1e12, 1),
                    wr_a_t_say=num2words(round(A[y1] / 1e12, 1), lang="en"), wr_b_t_say=num2words(round(B[y1] / 1e12, 1), lang="en"))
         ctx.update({k: v for k, v in raw.items() if k.startswith("wr_")})
+    if "floatsum" in c:
+        from num2words import num2words
+        fs = c["floatsum"]
+        v = fs["a"] + fs["b"]
+        raw.update(f_a=fs["a"], f_b=fs["b"], f_sum=repr(v), f_target=fs["target"], f_equal=str(v == fs["target"]).lower(),
+                   f_digits=len(repr(v)) - 2)
+        ctx.update({k: v2 for k, v2 in raw.items() if k.startswith("f_")})
     if "unix2038" in c:
         import datetime
         from num2words import num2words
@@ -217,7 +224,11 @@ def main(src, dst):
         for k in [k for k in sc if k.endswith("_from") and k != "value_from"]:
             sc[k[:-5]] = raw[sc[k]]
         if sc.get("type") == "stat" and "value_from" in sc:
-            sc["value"] = raw[sc["value_from"]]
+            if sc.get("as_str"):
+                sc["str"] = str(raw[sc["value_from"]])
+                sc["value"] = 0
+            else:
+                sc["value"] = raw[sc["value_from"]]
     if "yt" in spec:
         for k in ("title", "description"):
             spec["yt"][k] = sub(spec["yt"].get(k, ""))
