@@ -15,7 +15,7 @@
   {"type": "num", "text": "China as % of the US", "hl": "% of the US", "en": true, "suffix": "%",
    "a_from": "wr_r0", "b_from": "wr_r1", "l1": "{wr_from}", "l2": "{wr_to}",
    "narration": "In {wr_from}, China's economy was {wr_r0_say} percent the size of the United States. By {wr_to}, it was {wr_r1_say} percent.", "min_duration": 7},
-  {"type": "stat", "label": "trillion dollars: China's GDP in {wr_to}", "value_from": "wr_a_t", "value": 0, "dec": 1, "prefix": "$", "suffix": "T",
+  {"type": "stat", "label": "trillion dollars: China's GDP in {wr_to}", "en": true, "value_from": "wr_a_t", "value": 0, "dec": 1, "prefix": "$", "suffix": "T",
    "narration": "That is about {wr_a_t_say} trillion dollars, against {wr_b_t_say} trillion for the United States, in current dollars.", "min_duration": 6},
   {"type": "kin", "text": "Dollars hide a lot. Prices differ.", "hl": "Prices", "size": 140,
    "narration": "This uses market exchange rates. Adjusted for local prices, the gap looks different. What would you compare next?", "min_duration": 6.4}
