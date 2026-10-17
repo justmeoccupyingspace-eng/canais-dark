@@ -5,7 +5,7 @@
  "compute": {"minwage": {"from": "2019-01"}},
  "yt": {
   "title": "Salário mínimo x inflação desde {mw_from} #Shorts",
-  "description": "Salário mínimo (BCB SGS 1619) e IPCA (IBGE, SGS 433), de {mw_from} a {mw_to}.\\nNarração gerada por IA.",
+  "description": "Salário mínimo (BCB SGS 1619) e IPCA (IBGE, SGS 433), de {mw_from} a {mw_to}.\nNarração gerada por IA.",
   "tags": ["salário mínimo", "inflação", "ipca"],
   "lang": "pt-BR"
  },

@@ -5,7 +5,7 @@
  "compute": {"unix2038": {}},
  "yt": {
   "title": "Computers will break on {u_date}. Here is why #Shorts",
-  "description": "Unix time counts seconds since January 1, 1970. A signed 32-bit integer maxes out at {u_max} seconds, which is {u_date}, {u_time}. The date is computed by code.\\nNarration is AI-generated.",
+  "description": "Unix time counts seconds since January 1, 1970. A signed 32-bit integer maxes out at {u_max} seconds, which is {u_date}, {u_time}. The date is computed by code.\nNarration is AI-generated.",
   "tags": ["y2038", "unix", "programming", "how it works"],
   "lang": "en"
  },

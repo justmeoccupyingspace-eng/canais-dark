@@ -5,7 +5,7 @@
  "compute": {"wbratio": {"ind": "NY.GDP.MKTP.CD", "a": "CHN", "b": "USA", "from": 2000}},
  "yt": {
   "title": "China's economy was {wr_r0}% of America's in {wr_from}. Now? #Shorts",
-  "description": "GDP in current US dollars, China as a share of the United States, {wr_from} vs {wr_to}. Source: World Bank (NY.GDP.MKTP.CD). Exchange rates affect this comparison.\\nNarration is AI-generated.",
+  "description": "GDP in current US dollars, China as a share of the United States, {wr_from} vs {wr_to}. Source: World Bank (NY.GDP.MKTP.CD). Exchange rates affect this comparison.\nNarration is AI-generated.",
   "tags": ["economics", "china", "gdp", "data"],
   "lang": "en"
  },
