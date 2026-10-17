@@ -16,7 +16,7 @@ on:
       privacy:
         description: "private | unlisted | public"
         required: true
-        default: "private"
+        default: "public"
       upload:
         description: "Enviar ao YouTube? (true/false)"
         required: true

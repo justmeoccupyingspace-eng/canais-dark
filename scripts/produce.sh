@@ -12,7 +12,7 @@ while read -r f; do
   node scripts/render.mjs public/build/$n.json out/$n.mp4
   ch=$(python3 -c "import json,sys;d=json.load(open('$f'));print(d.get('publish',{}).get('channel',''))")
   pv=$(python3 -c "import json,sys;d=json.load(open('$f'));print(d.get('publish',{}).get('privacy',''))")
-  ch=${ch:-${MANUAL_CHANNEL:-A}}; pv=${pv:-${MANUAL_PRIVACY:-private}}
+  ch=${ch:-${MANUAL_CHANNEL:-A}}; pv=${pv:-${MANUAL_PRIVACY:-public}}
   if [ "$ch" = "C" ]; then
     echo "canal C: sem upload no YouTube; vídeo vai para a branch previews"
   elif [ "${MANUAL_UPLOAD:-true}" != "false" ]; then

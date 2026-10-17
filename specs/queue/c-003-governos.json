@@ -1,6 +1,6 @@
 {
  "channel": "valeopreco",
- "publish": {"channel": "C", "privacy": "private"},
+ "publish": {"channel": "C", "privacy": "public"},
  "title": "Inflação por governo v2",
  "compute": {
   "terms": [

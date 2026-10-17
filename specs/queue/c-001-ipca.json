@@ -2,7 +2,7 @@
  "channel": "valeopreco",
  "publish": {
   "channel": "C",
-  "privacy": "private"
+  "privacy": "public"
  },
  "title": "Seu salário encolheu?",
  "compute": {

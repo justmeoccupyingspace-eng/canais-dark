@@ -8,7 +8,7 @@ def access_token(refresh):
         "refresh_token": refresh, "grant_type": "refresh_token"}).encode()
     return json.load(urllib.request.urlopen(urllib.request.Request("https://oauth2.googleapis.com/token", data=data)))["access_token"]
 
-def main(which, video, specpath, privacy="private"):
+def main(which, video, specpath, privacy="public"):
     spec = json.load(open(specpath, encoding="utf-8"))
     tok = access_token(os.environ[f"YT_REFRESH_{which}"])
     meta = {

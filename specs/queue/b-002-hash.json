@@ -2,7 +2,7 @@
  "channel": "howitticks",
  "publish": {
   "channel": "B",
-  "privacy": "private"
+  "privacy": "public"
  },
  "title": "One letter changes the whole hash",
  "compute": {

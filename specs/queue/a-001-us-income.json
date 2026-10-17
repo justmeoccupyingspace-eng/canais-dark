@@ -2,7 +2,7 @@
  "channel": "chartbound",
  "publish": {
   "channel": "A",
-  "privacy": "private"
+  "privacy": "public"
  },
  "title": "US income per person",
  "yt": {
