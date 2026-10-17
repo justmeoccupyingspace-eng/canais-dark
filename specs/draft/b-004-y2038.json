@@ -1,0 +1,23 @@
+{
+ "channel": "howitticks",
+ "publish": {"channel": "B", "privacy": "public", "at": "2026-10-17T15:00:00Z"},
+ "title": "The year 2038 problem",
+ "compute": {"unix2038": {}},
+ "yt": {
+  "title": "Computers will break on {u_date}. Here is why #Shorts",
+  "description": "Unix time counts seconds since January 1, 1970. A signed 32-bit integer maxes out at {u_max} seconds, which is {u_date}, {u_time}. The date is computed by code.\\nNarration is AI-generated.",
+  "tags": ["y2038", "unix", "programming", "how it works"],
+  "lang": "en"
+ },
+ "scenes": [
+  {"type": "kin", "text": "Computers will break in {u_year}", "hl": "break", "size": 150,
+   "narration": "Some computers will break in {u_year}. Here is why.", "min_duration": 3.8},
+  {"type": "stat", "label": "the biggest number a signed 32 bit integer holds", "value_from": "u_max", "value": 0, "en": true,
+   "narration": "Many systems count seconds since nineteen seventy in a signed thirty two bit integer. The biggest number it holds is {u_max_say}.", "min_duration": 8},
+  {"type": "kin", "text": "{u_date}", "hl": "{u_year}", "size": 150,
+   "narration": "That many seconds after nineteen seventy is {u_date}, at {u_time}. One second later, the counter overflows.", "min_duration": 6},
+  {"type": "kin", "text": "It wraps back to 1901", "hl": "1901", "size": 150,
+   "narration": "It wraps around to a negative number, which reads as nineteen oh one. The fix is sixty four bit time, and most modern systems already use it.", "min_duration": 7.5}
+ ],
+ "style": "clean"
+}

@@ -117,6 +117,51 @@ def compute_blocks(spec, ctx, raw):
                    ipv4_say=num2words(round(addr, 1), lang="en"), people_say=num2words(round(people, 1), lang="en"),
                    ipv4_ratio_say=num2words(round(people / addr, 1), lang="en"))
         ctx.update({k: v for k, v in raw.items() if k.startswith(("ipv4", "people"))})
+    if "wbratio" in c:
+        from num2words import num2words
+        w = c["wbratio"]
+        A = worldbank_annual(w["ind"], w["a"], w["from"], w["from"] + 30)
+        B = worldbank_annual(w["ind"], w["b"], w["from"], w["from"] + 30)
+        ys = sorted(set(A) & set(B))
+        y0, y1 = ys[0], ys[-1]
+        r0, r1 = A[y0] / B[y0] * 100, A[y1] / B[y1] * 100
+        raw.update(wr_from=y0, wr_to=y1, wr_r0=round(r0), wr_r1=round(r1), wr_r0_say=num2words(round(r0), lang="en"),
+                   wr_r1_say=num2words(round(r1), lang="en"), wr_a_t=round(A[y1] / 1e12, 1), wr_b_t=round(B[y1] / 1e12, 1),
+                   wr_a_t_say=num2words(round(A[y1] / 1e12, 1), lang="en"), wr_b_t_say=num2words(round(B[y1] / 1e12, 1), lang="en"))
+        ctx.update({k: v for k, v in raw.items() if k.startswith("wr_")})
+    if "unix2038" in c:
+        import datetime
+        from num2words import num2words
+        mx = 2 ** 31 - 1
+        d = datetime.datetime.fromtimestamp(mx, datetime.timezone.utc)
+        raw.update(u_max=mx, u_max_say=num2words(mx, lang="en"), u_date=f"{MESES_EN[d.month - 1]} {d.day}, {d.year}",
+                   u_year=d.year, u_time=d.strftime("%H:%M:%S") + " UTC", u_bits=32)
+        ctx.update({k: v for k, v in raw.items() if k.startswith("u_")})
+    if "minwage" in c:
+        from num2words import num2words
+        m = c["minwage"]
+        y, mo = m["from"].split("-")
+        url = f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.1619/dados?formato=json&dataInicial=01/{mo}/{y}"
+        rows = None
+        for _ in range(3):
+            try:
+                rows = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=60))
+                break
+            except Exception as e:
+                print("sgs1619 falhou:", e)
+        a, b = float(rows[0]["valor"]), float(rows[-1]["valor"])
+        ly, lm = rows[-1]["data"].split("/")[2], rows[-1]["data"].split("/")[1]
+        ser = [(mm, v) for mm, v in ipca_series(m["from"]) if mm > m["from"]]
+        f = 1.0
+        for _, v in ser:
+            f *= 1 + v / 100
+        say = lambda v: num2words(int(round(v)), lang="pt_BR")
+        mw_pct, ip_pct = (b / a - 1) * 100, (f - 1) * 100
+        real = (b / a / f - 1) * 100
+        raw.update(mw_a=round(a), mw_b=round(b), mw_pct=round(mw_pct), ip_pct=round(ip_pct), mw_real=round(real),
+                   mw_a_say=say(a) + " reais", mw_b_say=say(b) + " reais", mw_pct_say=say(mw_pct), ip_pct_say=say(ip_pct), mw_real_say=say(real),
+                   mw_from=f"{MESES[int(mo) - 1]} de {y}", mw_to=f"{MESES[int(lm) - 1]} de {ly}")
+        ctx.update({k: v for k, v in raw.items() if k.startswith(("mw_", "ip_"))})
     if "ipca" in c:
         i = c["ipca"]
         ser = ipca_series(i["from"]) if "series" not in i else i["series"]

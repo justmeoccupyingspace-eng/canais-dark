@@ -22,6 +22,11 @@ def main(which, video, specpath, privacy="public"):
         "status": {"privacyStatus": privacy, "selfDeclaredMadeForKids": False,
                    "containsSyntheticMedia": True},
     }
+    at = os.environ.get("MANUAL_PUBLISH_AT") or spec.get("publish", {}).get("at")
+    if at:  # agendado: o YouTube exige private + publishAt (ISO 8601 UTC)
+        meta["status"]["privacyStatus"] = "private"
+        meta["status"]["publishAt"] = at
+        privacy = f"agendado para {at}"
     size = os.path.getsize(video)
     init = urllib.request.Request(
         "https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status",

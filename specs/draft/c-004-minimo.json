@@ -1,0 +1,23 @@
+{
+ "channel": "valeopreco",
+ "publish": {"channel": "C", "privacy": "public"},
+ "title": "Salário mínimo x inflação",
+ "compute": {"minwage": {"from": "2019-01"}},
+ "yt": {
+  "title": "Salário mínimo x inflação desde {mw_from} #Shorts",
+  "description": "Salário mínimo (BCB SGS 1619) e IPCA (IBGE, SGS 433), de {mw_from} a {mw_to}.\\nNarração gerada por IA.",
+  "tags": ["salário mínimo", "inflação", "ipca"],
+  "lang": "pt-BR"
+ },
+ "scenes": [
+  {"type": "kin", "text": "Salário mínimo ganhou da inflação?", "hl": "inflação?", "size": 150,
+   "narration": "O salário mínimo ganhou da inflação? Eu conferi nos dados oficiais.", "min_duration": 5},
+  {"type": "stat", "label": "de aumento no salário mínimo desde {mw_from}", "value_from": "mw_pct", "value": 0, "prefix": "+", "suffix": "%",
+   "narration": "De {mw_from} até hoje, o salário mínimo foi de {mw_a_say} para {mw_b_say}. Isso é {mw_pct_say} por cento a mais.", "min_duration": 6.4},
+  {"type": "stat", "label": "de aumento nos preços no período (IPCA)", "value_from": "ip_pct", "value": 0, "prefix": "+", "suffix": "%",
+   "narration": "No mesmo período, os preços subiram {ip_pct_say} por cento, segundo o IBGE.", "min_duration": 4.4},
+  {"type": "kin", "text": "Ganho real: +{mw_real}%", "hl": "+{mw_real}%", "size": 150,
+   "narration": "Descontada a inflação, o poder de compra do mínimo subiu cerca de {mw_real_say} por cento. E o seu salário, acompanhou?", "min_duration": 6.4}
+ ],
+ "style": "clean"
+}
