@@ -120,8 +120,8 @@ def compute_blocks(spec, ctx, raw):
     if "wbratio" in c:
         from num2words import num2words
         w = c["wbratio"]
-        A = worldbank_annual(w["ind"], w["a"], w["from"], w["from"] + 30)
-        B = worldbank_annual(w["ind"], w["b"], w["from"], w["from"] + 30)
+        A = worldbank_annual(w["ind"], w["a"], w["from"], w.get("to", w["from"] + 30))
+        B = worldbank_annual(w["ind"], w["b"], w["from"], w.get("to", w["from"] + 30))
         ys = sorted(set(A) & set(B))
         y0, y1 = ys[0], ys[-1]
         r0, r1 = A[y0] / B[y0] * 100, A[y1] / B[y1] * 100
