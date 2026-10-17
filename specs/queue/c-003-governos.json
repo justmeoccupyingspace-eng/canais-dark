@@ -1,7 +1,7 @@
 {
  "channel": "valeopreco",
  "publish": {"channel": "C", "privacy": "private"},
- "title": "Inflação por governo",
+ "title": "Inflação por governo v2",
  "compute": {
   "terms": [
    {"name": "Dilma 2", "from": "2015-01", "to": "2016-08"},
