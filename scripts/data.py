@@ -85,15 +85,27 @@ def compute_blocks(spec, ctx, raw):
         from num2words import num2words
         i = c["cpi"]
         url = f"https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCSL&cosd={i['from']}-01-01"
-        rows = list(csv.reader(io.StringIO(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=30).read().decode())))[1:]
-        rows = [(r[0], float(r[1])) for r in rows if len(r) > 1 and r[1] not in ("", ".")]
+        rows = None
+        annual = False
+        for _ in range(3):
+            try:
+                rows = list(csv.reader(io.StringIO(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=60).read().decode())))[1:]
+                rows = [(r[0], float(r[1])) for r in rows if len(r) > 1 and r[1] not in ("", ".")]
+                break
+            except Exception as e:
+                print("fred falhou:", e)
+        if not rows:
+            wb = worldbank_annual("FP.CPI.TOTL", "USA", i["from"], i["from"] + 40)
+            rows = [(f"{y}-12-01", v) for y, v in sorted(wb.items())]
+            annual = True
+            print("CPI via World Bank (anual)")
         f = rows[-1][1] / rows[0][1]
         amt = i.get("amount", 100)
         ly, lm = rows[-1][0].split("-")[:2]
         raw.update(cpi_amount_n=amt, cpi_needed_n=round(amt * f), cpi_pct=round((f - 1) * 100),
                    cpi_amount_say=num2words(amt, lang="en"), cpi_needed_say=num2words(round(amt * f), lang="en"),
-                   cpi_pct_say=num2words(round((f - 1) * 100), lang="en"), cpi_from=f"January {i['from']}",
-                   cpi_to=f"{MESES_EN[int(lm) - 1]} {ly}", cpi_year=i["from"])
+                   cpi_pct_say=num2words(round((f - 1) * 100), lang="en"), cpi_from=(str(i['from']) if annual else f"January {i['from']}"),
+                   cpi_to=(ly if annual else f"{MESES_EN[int(lm) - 1]} {ly}"), cpi_year=i["from"])
         ctx.update({k: v for k, v in raw.items() if k.startswith("cpi")})
     if "ipv4" in c:
         from num2words import num2words
