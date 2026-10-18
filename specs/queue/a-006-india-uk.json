@@ -50,10 +50,10 @@
   },
   {
    "type": "kin",
-   "text": "Above 100% means India is bigger",
-   "hl": "India",
+   "text": "Almost level with the UK",
+   "hl": "level",
    "size": 140,
-   "narration": "Above one hundred percent means India's economy is now larger than the United Kingdom's, in current dollars. Per person, the gap is still large. What would you compare next?",
+   "narration": "By {wr_to}, India's economy is about the same size as the United Kingdom's, in current dollars. Per person, the gap is still large. What would you compare next?",
    "min_duration": 7
   }
  ],
