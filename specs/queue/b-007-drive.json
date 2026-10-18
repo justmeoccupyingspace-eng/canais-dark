@@ -1,0 +1,53 @@
+{
+ "channel": "howitticks",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-20T01:00:00Z"
+ },
+ "title": "Why a 1 TB drive shows less",
+ "compute": {
+  "calc": {
+   "kind": "drive"
+  }
+ },
+ "yt": {
+  "title": "A 1 TB drive shows {c_gib} GB. Where did the rest go? #Shorts",
+  "description": "1 TB = 10^12 bytes. Operating systems often report in gibibytes (2^30 bytes): 10^12 / 2^30 = {c_gib}. The bytes did not go anywhere; the unit changed.\nNarration is AI-generated.",
+  "tags": [
+   "storage",
+   "terabyte",
+   "gibibyte",
+   "how it works"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "A 1 TB drive is not 1 TB",
+   "hl": "not",
+   "size": 160,
+   "narration": "You buy a one terabyte drive, plug it in, and your computer shows less. Where did the rest go?",
+   "min_duration": 4.6
+  },
+  {
+   "type": "stat",
+   "label": "what many systems show for 1 terabyte",
+   "value_from": "c_gib_str",
+   "value": 0,
+   "as_str": true,
+   "narration": "A terabyte is one trillion bytes. Many systems count in units of two to the thirty bytes, and label them G B. One trillion divided by that is about {c_gib_say}.",
+   "min_duration": 9
+  },
+  {
+   "type": "kin",
+   "text": "Nothing is missing",
+   "hl": "Nothing",
+   "size": 160,
+   "narration": "Nothing is missing. Drive makers use powers of ten. Operating systems often use powers of two. Same bytes, different unit.",
+   "min_duration": 7
+  }
+ ],
+ "style": "clean"
+}

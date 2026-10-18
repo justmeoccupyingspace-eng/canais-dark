@@ -136,6 +136,29 @@ def compute_blocks(spec, ctx, raw):
         raw.update(f_a=fs["a"], f_b=fs["b"], f_sum=repr(v), f_target=fs["target"], f_equal=str(v == fs["target"]).lower(),
                    f_digits=len(repr(v)) - 2)
         ctx.update({k: v2 for k, v2 in raw.items() if k.startswith("f_")})
+    if "calc" in c:
+        import math
+        from num2words import num2words
+        k = c["calc"]["kind"]
+        if k == "birthday":
+            def pb(n):
+                q = 1.0
+                for i in range(n):
+                    q *= (365 - i) / 365
+                return 1 - q
+            p23, p70 = pb(23) * 100, pb(70) * 100
+            raw.update(c_n=23, c_pairs=23 * 22 // 2, c_pairs_say=num2words(253, lang="en"), c_p=f"{p23:.1f}%",
+                       c_p_say=num2words(round(p23, 1), lang="en"), c_n2=70, c_p2_say=num2words(round(p70, 1), lang="en"))
+        elif k == "drive":
+            g = 10 ** 12 / 2 ** 30
+            raw.update(c_gib=f"{g:.1f}", c_gib_str=f"{g:.1f} GB", c_gib_say=num2words(round(g), lang="en"), c_lost=f"{1000 - g:.1f}")
+        elif k == "shuffle":
+            f = math.factorial(52)
+            d = len(str(f))
+            m = f / 10 ** (d - 1)
+            raw.update(c_sci=f"{m:.2f}e{d - 1}", c_digits=d, c_digits_say=num2words(d, lang="en"),
+                       c_m_say=num2words(round(m, 2), lang="en"), c_e_say=num2words(d - 1, lang="en"))
+        ctx.update({k2: v for k2, v in raw.items() if k2.startswith("c_")})
     if "unix2038" in c:
         import datetime
         from num2words import num2words

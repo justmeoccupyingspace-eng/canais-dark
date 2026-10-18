@@ -1,0 +1,53 @@
+{
+ "channel": "howitticks",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-19T01:00:00Z"
+ },
+ "title": "The birthday paradox",
+ "compute": {
+  "calc": {
+   "kind": "birthday"
+  }
+ },
+ "yt": {
+  "title": "23 people, {c_p} chance two share a birthday #Shorts",
+  "description": "Computed exactly: the probability that at least two of {c_n} people share a birthday is {c_p}. With {c_n2} people it passes 99.9%. Assumes 365 equally likely birthdays.\nNarration is AI-generated.",
+  "tags": [
+   "birthday paradox",
+   "probability",
+   "math",
+   "how it works"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "23 people. Over 50%.",
+   "hl": "50%",
+   "size": 170,
+   "narration": "Put twenty three people in a room. The chance that two of them share a birthday is over fifty percent.",
+   "min_duration": 4.6
+  },
+  {
+   "type": "stat",
+   "label": "chance two of {c_n} people share a birthday",
+   "value_from": "c_p",
+   "value": 0,
+   "as_str": true,
+   "narration": "We computed it exactly. It is {c_p_say} percent.",
+   "min_duration": 5
+  },
+  {
+   "type": "kin",
+   "text": "It is about pairs",
+   "hl": "pairs",
+   "size": 160,
+   "narration": "The trick is pairs, not people. Twenty three people make {c_pairs_say} pairs, and every pair is a chance to match. With seventy people, the chance is {c_p2_say} percent.",
+   "min_duration": 9
+  }
+ ],
+ "style": "clean"
+}

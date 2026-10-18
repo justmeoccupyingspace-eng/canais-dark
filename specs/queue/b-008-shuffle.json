@@ -1,0 +1,53 @@
+{
+ "channel": "howitticks",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-21T01:00:00Z"
+ },
+ "title": "Every shuffle is unique",
+ "compute": {
+  "calc": {
+   "kind": "shuffle"
+  }
+ },
+ "yt": {
+  "title": "Every card shuffle in history is probably unique #Shorts",
+  "description": "52! = 52 x 51 x ... x 1, computed exactly: {c_sci} (a {c_digits}-digit number). Assumes a fair shuffle.\nNarration is AI-generated.",
+  "tags": [
+   "shuffle",
+   "factorial",
+   "math",
+   "how it works"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "Every shuffle is unique",
+   "hl": "unique",
+   "size": 160,
+   "narration": "Shuffle a deck of cards properly, and you have almost certainly made an order that has never existed before.",
+   "min_duration": 5
+  },
+  {
+   "type": "stat",
+   "label": "ways to order 52 cards",
+   "value_from": "c_sci",
+   "value": 0,
+   "as_str": true,
+   "narration": "There are fifty two factorial possible orders. That number has {c_digits_say} digits. It is about {c_m_say} times ten to the power of {c_e_say}.",
+   "min_duration": 8
+  },
+  {
+   "type": "kin",
+   "text": "Too many to ever repeat",
+   "hl": "repeat",
+   "size": 150,
+   "narration": "Even if every person alive shuffled once a second since the Big Bang, we would cover a tiny fraction of them.",
+   "min_duration": 6.5
+  }
+ ],
+ "style": "clean"
+}

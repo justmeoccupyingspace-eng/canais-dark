@@ -1,0 +1,60 @@
+{
+ "channel": "chartbound",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-20T23:00:00Z"
+ },
+ "title": "Nigeria vs US population",
+ "compute": {
+  "wbratio": {
+   "ind": "SP.POP.TOTL",
+   "a": "NGA",
+   "b": "USA",
+   "from": 2000
+  }
+ },
+ "yt": {
+  "title": "Nigeria had {wr_r0}% of America's population in {wr_from}. Now? #Shorts",
+  "description": "Total population, Nigeria as a share of the United States, {wr_from} vs {wr_to}. Source: World Bank (SP.POP.TOTL).\nNarration is AI-generated.",
+  "tags": [
+   "economics",
+   "nigeria",
+   "population",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "Nigeria vs the US: population",
+   "hl": "Nigeria",
+   "size": 160,
+   "narration": "Nigeria is the most populous country in Africa. Here is how it compares with the United States, and how that changed.",
+   "min_duration": 4.6
+  },
+  {
+   "type": "num",
+   "text": "Nigeria as % of the US",
+   "hl": "% of the US",
+   "en": true,
+   "suffix": "%",
+   "a_from": "wr_r0",
+   "b_from": "wr_r1",
+   "l1": "{wr_from}",
+   "l2": "{wr_to}",
+   "narration": "In {wr_from}, Nigeria had {wr_r0_say} percent as many people as the United States. By {wr_to}, it had {wr_r1_say} percent.",
+   "min_duration": 7
+  },
+  {
+   "type": "kin",
+   "text": "Nigeria is closing the gap",
+   "hl": "Nigeria",
+   "size": 140,
+   "narration": "Nigeria is still smaller than the United States in population, but the gap keeps shrinking. Population shapes labor, demand, and growth. What would you compare next?",
+   "min_duration": 7
+  }
+ ],
+ "style": "clean"
+}

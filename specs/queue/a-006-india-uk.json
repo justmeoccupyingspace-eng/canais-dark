@@ -1,0 +1,61 @@
+{
+ "channel": "chartbound",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-19T23:00:00Z"
+ },
+ "title": "India vs UK economy",
+ "compute": {
+  "wbratio": {
+   "ind": "NY.GDP.MKTP.CD",
+   "a": "IND",
+   "b": "GBR",
+   "from": 2000
+  }
+ },
+ "yt": {
+  "title": "India's economy was {wr_r0}% of the UK's in {wr_from}. Now? #Shorts",
+  "description": "GDP in current US dollars, India as a share of the United Kingdom, {wr_from} vs {wr_to}. Source: World Bank (NY.GDP.MKTP.CD). Exchange rates affect this comparison.\nNarration is AI-generated.",
+  "tags": [
+   "economics",
+   "india",
+   "uk",
+   "gdp",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "India vs the UK: the economy",
+   "hl": "India",
+   "size": 160,
+   "narration": "India and the United Kingdom are two of the largest economies. Here is how the gap between them changed.",
+   "min_duration": 4.6
+  },
+  {
+   "type": "num",
+   "text": "India as % of the UK",
+   "hl": "% of the UK",
+   "en": true,
+   "suffix": "%",
+   "a_from": "wr_r0",
+   "b_from": "wr_r1",
+   "l1": "{wr_from}",
+   "l2": "{wr_to}",
+   "narration": "In {wr_from}, India's economy was {wr_r0_say} percent the size of the UK's. By {wr_to}, it was {wr_r1_say} percent.",
+   "min_duration": 7
+  },
+  {
+   "type": "kin",
+   "text": "Above 100% means India is bigger",
+   "hl": "India",
+   "size": 140,
+   "narration": "Above one hundred percent means India's economy is now larger than the United Kingdom's, in current dollars. Per person, the gap is still large. What would you compare next?",
+   "min_duration": 7
+  }
+ ],
+ "style": "clean"
+}
