@@ -167,7 +167,7 @@ def compute_blocks(spec, ctx, raw):
         sy, sm = (int(y), int(mo) + 1) if b["kind"] == "selic" else (int(y), int(mo))
         if sm == 13:
             sy, sm = sy + 1, 1
-        url = f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{code}/dados?formato=json&dataInicial=01/{sm:02d}/{sy}"
+        url = f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{code}/dados?formato=json&dataInicial=01/{sm:02d}/{sy}&dataFinal={__import__("datetime").date.today().strftime("%d/%m/%Y")}"
         rows = None
         for _ in range(3):
             try:
@@ -175,7 +175,7 @@ def compute_blocks(spec, ctx, raw):
                 break
             except Exception as e:
                 print("sgs falhou:", code, e)
-        assert rows, f"sem dados do BCB ({code})"
+        assert isinstance(rows, list) and rows, f"sem dados do BCB ({code}): {str(rows)[:200]}"
         ly, lm = rows[-1]["data"].split("/")[2], rows[-1]["data"].split("/")[1]
         ip = 1.0
         for mm, v in ipca_series(b["from"]):
