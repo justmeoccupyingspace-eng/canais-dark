@@ -183,9 +183,9 @@ const Stat = ({sc, p}) => {
   const s = spring({frame: f, fps: FPS, config: {damping: 14, stiffness: 160}});
   const num = sc.dec
     ? (sc.en ? v.toLocaleString('en-US', {minimumFractionDigits: sc.dec, maximumFractionDigits: sc.dec}) : v.toFixed(sc.dec).replace('.', ','))
-    : (sc.en ? Math.round(v).toLocaleString('en-US') : String(Math.round(v)));
+    : (sc.en ? Math.round(v).toLocaleString('en-US') : (sc.pt ? Math.round(v).toLocaleString('pt-BR') : String(Math.round(v))));
   const dd = sc.dec || 0;
-  const fullNum = sc.en ? Number(sc.value).toLocaleString('en-US', {minimumFractionDigits: dd, maximumFractionDigits: dd}) : (dd ? Number(sc.value).toFixed(dd).replace('.', ',') : String(Math.round(sc.value)));
+  const fullNum = sc.en ? Number(sc.value).toLocaleString('en-US', {minimumFractionDigits: dd, maximumFractionDigits: dd}) : (dd ? Number(sc.value).toFixed(dd).replace('.', ',') : (sc.pt ? Math.round(sc.value).toLocaleString('pt-BR') : String(Math.round(sc.value))));
   const strMode = typeof sc.str === 'string';
   const full = strMode ? sc.str : `${sc.prefix || ''}${fullNum}${sc.suffix || ''}`;
   const shown = strMode ? sc.str.slice(0, Math.ceil(interpolate(f, [4, 44], [1, sc.str.length], C))) : null;

@@ -159,6 +159,46 @@ def compute_blocks(spec, ctx, raw):
             raw.update(c_sci=f"{m:.2f}e{d - 1}", c_digits=d, c_digits_say=num2words(d, lang="en"),
                        c_m_say=num2words(round(m, 2), lang="en"), c_e_say=num2words(d - 1, lang="en"))
         ctx.update({k2: v for k2, v in raw.items() if k2.startswith("c_")})
+    if "bcb" in c:
+        from num2words import num2words
+        b = c["bcb"]
+        y, mo = b["from"].split("-")
+        code = {"selic": 4390, "usd": 1}[b["kind"]]
+        url = f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{code}/dados?formato=json&dataInicial=01/{mo}/{y}"
+        rows = None
+        for _ in range(3):
+            try:
+                rows = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=60))
+                break
+            except Exception as e:
+                print("sgs falhou:", code, e)
+        assert rows, "sem dados do BCB"
+        ly, lm = rows[-1]["data"].split("/")[2], rows[-1]["data"].split("/")[1]
+        ip = 1.0
+        for mm, v in ipca_series(b["from"]):
+            if mm > b["from"]:
+                ip *= 1 + v / 100
+        say = lambda v: num2words(int(round(v)), lang="pt_BR")
+        ip_pct = (ip - 1) * 100
+        raw.update(b_from=f"{MESES[int(mo) - 1]} de {y}", b_to=f"{MESES[int(lm) - 1]} de {ly}", b_ip_pct=round(ip_pct), b_ip_pct_say=say(ip_pct))
+        if b["kind"] == "selic":
+            f = 1.0
+            for r in rows:
+                dd, mm2, yy = r["data"].split("/")
+                if f"{yy}-{mm2}" > b["from"]:
+                    f *= 1 + float(r["valor"]) / 100
+            fin, need = 1000 * f, 1000 * ip
+            real = (f / ip - 1) * 100
+            assert real > 0, "Selic nao ganhou da inflacao; revisar texto"
+            raw.update(b_sel=round(fin), b_need=round(need), b_sel_pct=round((f - 1) * 100), b_real=round(real), b_real_say=say(real),
+                       b_sel_say=say(fin) + " reais", b_need_say=say(need) + " reais")
+        else:
+            u0, u1 = float(rows[0]["valor"]), float(rows[-1]["valor"])
+            up = (u1 / u0 - 1) * 100
+            cur = lambda v: num2words(round(v, 2), lang="pt_BR", to="currency")
+            raw.update(b_u0f=round(u0, 2), b_u1f=round(u1, 2), b_u0_say=cur(u0), b_u1_say=cur(u1), b_usd_pct=round(up), b_usd_pct_say=say(up),
+                       b_word="mais" if up > ip_pct else "menos")
+        ctx.update({k: v for k, v in raw.items() if k.startswith("b_")})
     if "unix2038" in c:
         import datetime
         from num2words import num2words

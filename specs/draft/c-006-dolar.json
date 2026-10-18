@@ -1,0 +1,63 @@
+{
+ "channel": "valeopreco",
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "title": "Dólar x inflação",
+ "compute": {
+  "bcb": {
+   "kind": "usd",
+   "from": "2019-01"
+  }
+ },
+ "yt": {
+  "title": "O dólar subiu {b_word} que a inflação desde {b_from} #Shorts",
+  "description": "Dólar comercial venda (BCB SGS 1) e IPCA (IBGE, SGS 433), de {b_from} a {b_to}.\nNarração gerada por IA.",
+  "tags": [
+   "dólar",
+   "inflação",
+   "ipca"
+  ],
+  "lang": "pt-BR"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "Dólar ou inflação: quem subiu mais?",
+   "hl": "quem",
+   "size": 150,
+   "narration": "O dólar subiu mais ou menos que a inflação desde {b_from}? Eu conferi nos dados oficiais.",
+   "min_duration": 5.4
+  },
+  {
+   "type": "stat",
+   "label": "o dólar em {b_from}",
+   "value_from": "b_u0f",
+   "value": 0,
+   "dec": 2,
+   "prefix": "R$ ",
+   "narration": "Em {b_from}, o dólar custava {b_u0_say}.",
+   "min_duration": 4.4
+  },
+  {
+   "type": "stat",
+   "label": "o dólar hoje",
+   "value_from": "b_u1f",
+   "value": 0,
+   "dec": 2,
+   "prefix": "R$ ",
+   "narration": "Hoje, custa {b_u1_say}.",
+   "min_duration": 4
+  },
+  {
+   "type": "kin",
+   "text": "Dólar +{b_usd_pct}%. Preços +{b_ip_pct}%.",
+   "hl": "+{b_ip_pct}%.",
+   "size": 140,
+   "narration": "O dólar subiu {b_usd_pct_say} por cento. Os preços, {b_ip_pct_say} por cento. Ou seja, o dólar subiu {b_word} que a inflação.",
+   "min_duration": 7.5
+  }
+ ],
+ "style": "clean"
+}

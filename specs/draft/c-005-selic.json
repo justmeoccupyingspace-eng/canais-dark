@@ -1,0 +1,63 @@
+{
+ "channel": "valeopreco",
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "title": "R$ 1.000 na Selic x inflação",
+ "compute": {
+  "bcb": {
+   "kind": "selic",
+   "from": "2019-01"
+  }
+ },
+ "yt": {
+  "title": "R$ 1.000 na Selic desde {b_from}: ganhou da inflação? #Shorts",
+  "description": "Selic acumulada (BCB SGS 4390) e IPCA (IBGE, SGS 433), de {b_from} a {b_to}. Não é recomendação de investimento.\nNarração gerada por IA.",
+  "tags": [
+   "selic",
+   "inflação",
+   "investimentos"
+  ],
+  "lang": "pt-BR"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "Seus R$ 1.000 ganharam da inflação?",
+   "hl": "inflação?",
+   "size": 150,
+   "narration": "Se você deixou mil reais rendendo na Selic em {b_from}, ganhou da inflação? Eu conferi nos dados oficiais.",
+   "min_duration": 5.4
+  },
+  {
+   "type": "stat",
+   "label": "viraram na Selic desde {b_from}",
+   "value_from": "b_sel",
+   "value": 0,
+   "prefix": "R$ ",
+   "pt": true,
+   "narration": "Esses mil reais viraram cerca de {b_sel_say} seguindo a taxa Selic.",
+   "min_duration": 5.4
+  },
+  {
+   "type": "stat",
+   "label": "era o necessário só para acompanhar os preços (IPCA)",
+   "value_from": "b_need",
+   "value": 0,
+   "prefix": "R$ ",
+   "pt": true,
+   "narration": "Para apenas acompanhar os preços, segundo o IBGE, precisavam ser {b_need_say}.",
+   "min_duration": 5.4
+  },
+  {
+   "type": "kin",
+   "text": "Ganho real: +{b_real}%",
+   "hl": "+{b_real}%",
+   "size": 150,
+   "narration": "Descontada a inflação, o dinheiro rendeu cerca de {b_real_say} por cento acima dos preços. Render mais que a inflação é o que importa. Onde o seu dinheiro está?",
+   "min_duration": 7
+  }
+ ],
+ "style": "clean"
+}
