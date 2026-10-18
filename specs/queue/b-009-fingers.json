@@ -1,0 +1,53 @@
+{
+ "channel": "howitticks",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-19T00:45:00Z"
+ },
+ "title": "Count to 1023 on your fingers",
+ "compute": {
+  "calc": {
+   "kind": "fingers"
+  }
+ },
+ "yt": {
+  "title": "You can count to {c_max} on your fingers #Shorts",
+  "description": "Each finger is one bit, up or down. 10 bits give 2^10 = {c_combos} combinations, from 0 to {c_max}.\nNarration is AI-generated.",
+  "tags": [
+   "binary",
+   "bits",
+   "math",
+   "how it works"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "Ten fingers. Not ten numbers.",
+   "hl": "Ten",
+   "size": 160,
+   "narration": "Most people count to ten on their fingers. Computers would count a lot higher.",
+   "min_duration": 4.6
+  },
+  {
+   "type": "stat",
+   "label": "the highest number you can show with 10 fingers",
+   "value_from": "c_max",
+   "value": 0,
+   "as_str": true,
+   "narration": "Treat each finger as a bit: up is one, down is zero. Ten fingers give {c_combos_say} combinations. The highest is {c_max_say}.",
+   "min_duration": 8
+  },
+  {
+   "type": "kin",
+   "text": "That is binary",
+   "hl": "binary",
+   "size": 170,
+   "narration": "That is how binary works. Every extra bit doubles what you can count.",
+   "min_duration": 5.4
+  }
+ ],
+ "style": "clean"
+}

@@ -1,0 +1,61 @@
+{
+ "channel": "chartbound",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-19T20:00:00Z"
+ },
+ "title": "Brazil vs Mexico economy",
+ "compute": {
+  "wbratio": {
+   "ind": "NY.GDP.MKTP.CD",
+   "a": "BRA",
+   "b": "MEX",
+   "from": 2000
+  }
+ },
+ "yt": {
+  "title": "Brazil's economy was {wr_r0}% of Mexico's in {wr_from}. Now? #Shorts",
+  "description": "GDP in current US dollars, Brazil as a share of Mexico, {wr_from} vs {wr_to}. Source: World Bank (NY.GDP.MKTP.CD). Exchange rates affect this comparison.\nNarration is AI-generated.",
+  "tags": [
+   "economics",
+   "brazil",
+   "mexico",
+   "gdp",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "Brazil vs Mexico: the economy",
+   "hl": "Brazil",
+   "size": 160,
+   "narration": "How does Brazil's economy compare with Mexico's? Here is how the gap changed.",
+   "min_duration": 4.6
+  },
+  {
+   "type": "num",
+   "text": "Brazil as % of Mexico",
+   "hl": "% of Mexico",
+   "en": true,
+   "suffix": "%",
+   "a_from": "wr_r0",
+   "b_from": "wr_r1",
+   "l1": "{wr_from}",
+   "l2": "{wr_to}",
+   "narration": "In {wr_from}, Brazil's economy was {wr_r0_say} percent the size of Mexico's. By {wr_to}, it was {wr_r1_say} percent.",
+   "min_duration": 7
+  },
+  {
+   "type": "kin",
+   "text": "Dollar GDP hides price differences",
+   "hl": "hides",
+   "size": 140,
+   "narration": "This uses market exchange rates, in current dollars. Adjusted for local prices, the gap can look different. What would you compare next?",
+   "min_duration": 7
+  }
+ ],
+ "style": "clean"
+}

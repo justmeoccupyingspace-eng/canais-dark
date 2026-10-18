@@ -1,0 +1,53 @@
+{
+ "channel": "howitticks",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-20T01:00:00Z"
+ },
+ "title": "How many colors your screen shows",
+ "compute": {
+  "calc": {
+   "kind": "colors"
+  }
+ },
+ "yt": {
+  "title": "Your screen shows {c_n} colors. Here is why #Shorts",
+  "description": "Each pixel mixes red, green and blue, 256 levels each: 256 x 256 x 256 = {c_n}.\nNarration is AI-generated.",
+  "tags": [
+   "rgb",
+   "color",
+   "math",
+   "how it works"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "Your screen shows millions of colors",
+   "hl": "millions",
+   "size": 150,
+   "narration": "Your screen can show millions of colors. Here is exactly how many, and why.",
+   "min_duration": 5
+  },
+  {
+   "type": "stat",
+   "label": "colors from 3 numbers",
+   "value_from": "c_n",
+   "value": 0,
+   "as_str": true,
+   "narration": "Every pixel mixes red, green, and blue. Each one has two hundred fifty six levels. Multiply them: {c_n_say} colors.",
+   "min_duration": 8
+  },
+  {
+   "type": "kin",
+   "text": "256 × 256 × 256",
+   "hl": "256",
+   "size": 170,
+   "narration": "Two fifty six, three times. One byte per color, three bytes per pixel.",
+   "min_duration": 5.4
+  }
+ ],
+ "style": "clean"
+}

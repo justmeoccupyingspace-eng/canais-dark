@@ -175,6 +175,18 @@ def compute_blocks(spec, ctx, raw):
         elif k == "drive":
             g = 10 ** 12 / 2 ** 30
             raw.update(c_gib=f"{g:.1f}", c_gib_str=f"{g:.1f} GB", c_gib_say=num2words(round(g), lang="en"), c_lost=f"{1000 - g:.1f}")
+        elif k == "fingers":
+            raw.update(c_max=f"{2 ** 10 - 1:,}", c_max_say=num2words(2 ** 10 - 1, lang="en"), c_combos=2 ** 10, c_combos_say=num2words(2 ** 10, lang="en"))
+        elif k == "password":
+            rate = 1e10
+            a, b2 = 26 ** 8, 94 ** 12
+            ta = a / rate
+            yb = b2 / rate / 31557600
+            raw.update(c_a_secs=round(ta), c_a_say=num2words(round(ta), lang="en"), c_a_str=f"{round(ta)} seconds",
+                       c_b_years=f"{yb / 1e6:.1f} million", c_b_say=num2words(round(yb / 1e6, 1), lang="en") + " million", c_b_str=f"{yb / 1e6:.1f}M years")
+        elif k == "colors":
+            n = 256 ** 3
+            raw.update(c_n=f"{n:,}", c_n_say=num2words(n, lang="en"))
         elif k == "shuffle":
             f = math.factorial(52)
             d = len(str(f))
