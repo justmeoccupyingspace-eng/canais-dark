@@ -48,6 +48,29 @@ MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "a
 
 MESES_EN = ["January","February","March","April","May","June","July","August","September","October","November","December"]
 
+def sgs_range(code, y0, m0, retries=4):
+    """Serie diaria/mensal do BCB em blocos anuais (a API falha com respostas grandes)."""
+    import datetime, time
+    today = datetime.date.today()
+    out = []
+    for yy in range(y0, today.year + 1):
+        d0 = datetime.date(yy, m0 if yy == y0 else 1, 1)
+        d1 = min(datetime.date(yy, 12, 31), today)
+        url = f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{code}/dados?formato=json&dataInicial={d0.strftime('%d/%m/%Y')}&dataFinal={d1.strftime('%d/%m/%Y')}"
+        for i in range(retries):
+            try:
+                rows = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=60))
+                if isinstance(rows, list):
+                    out += rows
+                    break
+                print("sgs erro", code, yy, str(rows)[:120])
+            except Exception as e:
+                print("sgs falhou", code, yy, e)
+            time.sleep(6 * (i + 1))
+        else:
+            raise RuntimeError(f"BCB SGS {code} {yy} indisponivel")
+    return out
+
 def brl(v):
     return "R$ " + f"{round(v):,}".replace(",", ".")
 
@@ -167,15 +190,8 @@ def compute_blocks(spec, ctx, raw):
         sy, sm = (int(y), int(mo) + 1) if b["kind"] == "selic" else (int(y), int(mo))
         if sm == 13:
             sy, sm = sy + 1, 1
-        url = f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{code}/dados?formato=json&dataInicial=01/{sm:02d}/{sy}&dataFinal={__import__("datetime").date.today().strftime("%d/%m/%Y")}"
-        rows = None
-        for _ in range(3):
-            try:
-                rows = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=60))
-                break
-            except Exception as e:
-                print("sgs falhou:", code, e)
-        assert isinstance(rows, list) and rows, f"sem dados do BCB ({code}): {str(rows)[:200]}"
+        rows = sgs_range(code, sy, sm)
+        assert rows, f"sem dados do BCB ({code})"
         ly, lm = rows[-1]["data"].split("/")[2], rows[-1]["data"].split("/")[1]
         ip = 1.0
         for mm, v in ipca_series(b["from"]):
