@@ -1,0 +1,60 @@
+{
+ "channel": "chartbound",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-22T23:00:00Z"
+ },
+ "title": "Indonesia vs Russia economy",
+ "compute": {
+  "wbratio": {
+   "ind": "NY.GDP.MKTP.CD",
+   "a": "IDN",
+   "b": "RUS",
+   "from": 2000
+  }
+ },
+ "yt": {
+  "title": "Indonesia went from {wr_r0}% to {wr_r1}% of Russia's economy #Shorts",
+  "description": "GDP in current US dollars, Indonesia as a share of Russia, {wr_from} vs {wr_to}. Source: World Bank (NY.GDP.MKTP.CD). Exchange rates affect this comparison.\nNarration is AI-generated.",
+  "tags": [
+   "economics",
+   "indonesia",
+   "economy",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "Indonesia vs Russia: the economy",
+   "hl": "Indonesia",
+   "size": 150,
+   "narration": "How does Indonesia's economy compare with Russia's? Here is how the gap changed.",
+   "min_duration": 4.8
+  },
+  {
+   "type": "num",
+   "text": "Indonesia as % of Russia",
+   "hl": "% of Russia",
+   "en": true,
+   "suffix": "%",
+   "a_from": "wr_r0",
+   "b_from": "wr_r1",
+   "l1": "{wr_from}",
+   "l2": "{wr_to}",
+   "narration": "In {wr_from}, Indonesia's economy was {wr_r0_say} percent the size of Russia's. By {wr_to}, it was {wr_r1_say} percent.",
+   "min_duration": 7
+  },
+  {
+   "type": "kin",
+   "text": "Dollar GDP hides price differences",
+   "hl": "hides",
+   "size": 140,
+   "narration": "This uses market exchange rates, in current dollars. Adjusted for local prices, the gap can look different. What would you compare next?",
+   "min_duration": 7
+  }
+ ],
+ "style": "clean"
+}

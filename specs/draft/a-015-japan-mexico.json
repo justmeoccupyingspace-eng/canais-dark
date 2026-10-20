@@ -1,0 +1,60 @@
+{
+ "channel": "chartbound",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-21T20:00:00Z"
+ },
+ "title": "Japan vs Mexico population",
+ "compute": {
+  "wbratio": {
+   "ind": "SP.POP.TOTL",
+   "a": "JPN",
+   "b": "MEX",
+   "from": 2000
+  }
+ },
+ "yt": {
+  "title": "Japan went from {wr_r0}% to {wr_r1}% of Mexico's population #Shorts",
+  "description": "Total population, Japan as a share of Mexico, {wr_from} vs {wr_to}. Source: World Bank (SP.POP.TOTL).\nNarration is AI-generated.",
+  "tags": [
+   "economics",
+   "japan",
+   "population",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "Japan vs Mexico: the population",
+   "hl": "Japan",
+   "size": 150,
+   "narration": "How does Japan's population compare with Mexico's? Here is how the gap changed.",
+   "min_duration": 4.8
+  },
+  {
+   "type": "num",
+   "text": "Japan as % of Mexico",
+   "hl": "% of Mexico",
+   "en": true,
+   "suffix": "%",
+   "a_from": "wr_r0",
+   "b_from": "wr_r1",
+   "l1": "{wr_from}",
+   "l2": "{wr_to}",
+   "narration": "In {wr_from}, Japan's population was {wr_r0_say} percent the size of Mexico's. By {wr_to}, it was {wr_r1_say} percent.",
+   "min_duration": 7
+  },
+  {
+   "type": "kin",
+   "text": "Small growth gaps compound",
+   "hl": "compound",
+   "size": 140,
+   "narration": "Population growth compounds over decades. Small differences in growth rates add up to big gaps. What would you compare next?",
+   "min_duration": 7
+  }
+ ],
+ "style": "clean"
+}

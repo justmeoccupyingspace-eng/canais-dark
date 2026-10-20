@@ -1,0 +1,53 @@
+{
+ "channel": "howitticks",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-23T17:00:00Z"
+ },
+ "title": "b-018-count",
+ "compute": {
+  "calc": {
+   "kind": "count1b"
+  }
+ },
+ "yt": {
+  "title": "Counting to 1 billion takes {c_y} years #Shorts",
+  "description": "1,000,000,000 seconds / 31,557,600 seconds per year = {c_y} years, counting one number per second without stopping.\nNarration is AI-generated.",
+  "tags": [
+   "billion",
+   "math",
+   "time",
+   "how it works"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "Count to 1 billion",
+   "hl": "billion",
+   "size": 160,
+   "narration": "How long would it take you to count to one billion?",
+   "min_duration": 4
+  },
+  {
+   "type": "stat",
+   "label": "counting one number per second, nonstop",
+   "value_from": "c_stat",
+   "value": 0,
+   "as_str": true,
+   "narration": "At one number per second, without sleeping, it takes about {c_y_say} years.",
+   "min_duration": 6
+  },
+  {
+   "type": "kin",
+   "text": "A billion is huge",
+   "hl": "huge",
+   "size": 170,
+   "narration": "Computers do this in seconds. That is why billions of operations feel instant to us.",
+   "min_duration": 5.4
+  }
+ ],
+ "style": "clean"
+}

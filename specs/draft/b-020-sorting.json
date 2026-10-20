@@ -1,0 +1,53 @@
+{
+ "channel": "howitticks",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-24T01:00:00Z"
+ },
+ "title": "b-020-sorting",
+ "compute": {
+  "calc": {
+   "kind": "sorting"
+  }
+ },
+ "yt": {
+  "title": "Smart sorting is {c_ratio}x faster on 1 million items #Shorts",
+  "description": "n log2 n vs n^2 steps for n = 1,000,000: about {c_stat}. Rough step counts, not timed benchmarks.\nNarration is AI-generated.",
+  "tags": [
+   "sorting",
+   "algorithms",
+   "big o",
+   "how it works"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "Same job. 50,000x more work.",
+   "hl": "50,000x",
+   "size": 150,
+   "narration": "Two programs sort the same list. One does fifty thousand times more work.",
+   "min_duration": 4.8
+  },
+  {
+   "type": "stat",
+   "label": "steps to sort 1 million items: smart vs naive",
+   "value_from": "c_stat",
+   "value": 0,
+   "as_str": true,
+   "narration": "Sorting one million items takes a smart algorithm about {c_nl_say} steps. A naive one takes about one trillion.",
+   "min_duration": 8
+  },
+  {
+   "type": "kin",
+   "text": "The algorithm matters",
+   "hl": "algorithm",
+   "size": 150,
+   "narration": "That is about {c_ratio_say} times more work. The choice of algorithm often matters more than faster hardware.",
+   "min_duration": 6.4
+  }
+ ],
+ "style": "clean"
+}

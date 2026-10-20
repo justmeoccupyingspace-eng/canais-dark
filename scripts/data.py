@@ -187,6 +187,37 @@ def compute_blocks(spec, ctx, raw):
         elif k == "colors":
             n = 256 ** 3
             raw.update(c_n=f"{n:,}", c_n_say=num2words(n, lang="en"))
+        elif k == "overflow":
+            raw.update(c_stat="255 + 1 = " + str((255 + 1) % 256), c_max=255, c_wrap=(255 + 1) % 256)
+        elif k == "binsearch":
+            n = 10 ** 9
+            st = math.ceil(math.log2(n))
+            raw.update(c_stat=f"{st} steps", c_steps=st, c_steps_say=num2words(st, lang="en"))
+        elif k == "fold":
+            km = 0.0001 * 2 ** 42 / 1000
+            raw.update(c_stat=f"{round(km):,} km", c_km_say=num2words(round(km), lang="en"), c_km=f"{round(km):,}")
+        elif k == "chess":
+            t = 2 ** 64 - 1
+            d = len(str(t))
+            raw.update(c_stat=f"{t / 10 ** (d - 1):.2f}e{d - 1}", c_say=num2words(round(t / 1e18, 1), lang="en") + " quintillion", c_t=f"{t:,}")
+        elif k == "hash32":
+            n = round(math.sqrt(2 * math.log(2) * 2 ** 32))
+            raw.update(c_stat=f"{n:,}", c_n_say=num2words(n, lang="en"), c_n=f"{n:,}", c_space=f"{2 ** 32:,}")
+        elif k == "ipv6mm":
+            a = 2 ** 128
+            mm2 = 510.1e6 * 1e12
+            r = a / mm2
+            raw.update(c_stat=f"{r / 10 ** int(math.log10(r)):.1f}e{int(math.log10(r))}", c_tot=f"{a:.2e}".replace("e+", "e"),
+                       c_r_say=num2words(round(r / 10 ** int(math.log10(r)), 1), lang="en"), c_r_exp_say=num2words(int(math.log10(r)), lang="en"))
+        elif k == "count1b":
+            y = 1e9 / 31557600
+            raw.update(c_stat=f"{y:.1f} years", c_y=f"{y:.1f}", c_y_say=num2words(round(y, 1), lang="en"))
+        elif k == "emoji":
+            raw.update(c_stat=f"{len(chr(0x1F600).encode())} bytes", c_b=len(chr(0x1F600).encode()), c_b_say=num2words(len(chr(0x1F600).encode()), lang="en"))
+        elif k == "sorting":
+            n = 10 ** 6
+            nl, n2 = n * math.log2(n), n * n
+            raw.update(c_stat=f"{nl / 1e6:.0f}M vs {n2 / 1e12:.0f}T", c_nl_say=num2words(round(nl / 1e6), lang="en") + " million", c_ratio_say=num2words(round(n2 / nl, -3), lang="en"), c_ratio=f"{round(n2 / nl, -3):,.0f}")
         elif k == "shuffle":
             f = math.factorial(52)
             d = len(str(f))

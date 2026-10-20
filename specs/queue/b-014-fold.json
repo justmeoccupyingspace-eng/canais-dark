@@ -1,0 +1,53 @@
+{
+ "channel": "howitticks",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-21T02:00:00Z"
+ },
+ "title": "b-014-fold",
+ "compute": {
+  "calc": {
+   "kind": "fold"
+  }
+ },
+ "yt": {
+  "title": "Fold paper 42 times and it passes the Moon #Shorts",
+  "description": "A 0.1 mm sheet doubled 42 times: 0.1 mm x 2^42 = {c_km} km. The Moon is about 384,400 km away on average. A thought experiment; real paper cannot be folded that many times.\nNarration is AI-generated.",
+  "tags": [
+   "exponential",
+   "math",
+   "moon",
+   "how it works"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "Fold paper 42 times",
+   "hl": "42",
+   "size": 160,
+   "narration": "Take a sheet of paper and imagine folding it forty two times.",
+   "min_duration": 4.4
+  },
+  {
+   "type": "stat",
+   "label": "thick, in theory: a 0.1 mm sheet doubled 42 times",
+   "value_from": "c_stat",
+   "value": 0,
+   "as_str": true,
+   "narration": "Paper is about a tenth of a millimeter thick, and every fold doubles it. After forty two folds, it would be about {c_km_say} kilometers thick.",
+   "min_duration": 8.5
+  },
+  {
+   "type": "kin",
+   "text": "Farther than the Moon",
+   "hl": "Moon",
+   "size": 160,
+   "narration": "The Moon is about three hundred eighty four thousand kilometers away. Doubling is powerful, even if no real paper can be folded that many times.",
+   "min_duration": 8
+  }
+ ],
+ "style": "clean"
+}

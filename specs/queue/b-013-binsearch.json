@@ -1,0 +1,53 @@
+{
+ "channel": "howitticks",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-21T00:00:00Z"
+ },
+ "title": "b-013-binsearch",
+ "compute": {
+  "calc": {
+   "kind": "binsearch"
+  }
+ },
+ "yt": {
+  "title": "How to find 1 name in 1 billion in {c_steps} steps #Shorts",
+  "description": "Binary search halves a sorted list each step: ceil(log2(1,000,000,000)) = {c_steps}.\nNarration is AI-generated.",
+  "tags": [
+   "binary search",
+   "algorithms",
+   "programming",
+   "how it works"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "1 billion names. 30 checks.",
+   "hl": "30",
+   "size": 160,
+   "narration": "How many checks does it take to find one name among a billion?",
+   "min_duration": 4.4
+  },
+  {
+   "type": "stat",
+   "label": "to find one item in a sorted list of 1 billion",
+   "value_from": "c_stat",
+   "value": 0,
+   "as_str": true,
+   "narration": "Checking one by one could take a billion steps. But in a sorted list, you can cut it in half every time. That takes at most {c_steps_say} steps.",
+   "min_duration": 8
+  },
+  {
+   "type": "kin",
+   "text": "Halve it. Repeat.",
+   "hl": "Halve",
+   "size": 170,
+   "narration": "This is binary search. Each check throws away half of what is left.",
+   "min_duration": 5.4
+  }
+ ],
+ "style": "clean"
+}

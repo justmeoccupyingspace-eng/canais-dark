@@ -1,0 +1,53 @@
+{
+ "channel": "howitticks",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-23T21:00:00Z"
+ },
+ "title": "b-019-emoji",
+ "compute": {
+  "calc": {
+   "kind": "emoji"
+  }
+ },
+ "yt": {
+  "title": "One emoji takes {c_b} bytes. A letter takes 1 #Shorts",
+  "description": "In UTF-8, the grinning face emoji (U+1F600) takes {c_b} bytes; a plain ASCII letter takes 1.\nNarration is AI-generated.",
+  "tags": [
+   "utf-8",
+   "unicode",
+   "emoji",
+   "how it works"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "One emoji is not one byte",
+   "hl": "emoji",
+   "size": 150,
+   "narration": "A letter and an emoji look equally small on screen. They are not.",
+   "min_duration": 4.4
+  },
+  {
+   "type": "stat",
+   "label": "an emoji in UTF 8, versus 1 byte for a letter",
+   "value_from": "c_stat",
+   "value": 0,
+   "as_str": true,
+   "narration": "In UTF eight, a plain letter takes one byte. A smiley emoji takes {c_b_say} bytes.",
+   "min_duration": 7
+  },
+  {
+   "type": "kin",
+   "text": "Unicode needs room",
+   "hl": "Unicode",
+   "size": 150,
+   "narration": "Unicode has to fit every language and symbol, so some characters need more bytes than others.",
+   "min_duration": 6
+  }
+ ],
+ "style": "clean"
+}

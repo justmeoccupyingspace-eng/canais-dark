@@ -1,0 +1,60 @@
+{
+ "channel": "chartbound",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-22T16:00:00Z"
+ },
+ "title": "Nigeria vs Brazil population",
+ "compute": {
+  "wbratio": {
+   "ind": "SP.POP.TOTL",
+   "a": "NGA",
+   "b": "BRA",
+   "from": 2000
+  }
+ },
+ "yt": {
+  "title": "Nigeria went from {wr_r0}% to {wr_r1}% of Brazil's population #Shorts",
+  "description": "Total population, Nigeria as a share of Brazil, {wr_from} vs {wr_to}. Source: World Bank (SP.POP.TOTL).\nNarration is AI-generated.",
+  "tags": [
+   "economics",
+   "nigeria",
+   "population",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "Nigeria vs Brazil: the population",
+   "hl": "Nigeria",
+   "size": 150,
+   "narration": "How does Nigeria's population compare with Brazil's? Here is how the gap changed.",
+   "min_duration": 4.8
+  },
+  {
+   "type": "num",
+   "text": "Nigeria as % of Brazil",
+   "hl": "% of Brazil",
+   "en": true,
+   "suffix": "%",
+   "a_from": "wr_r0",
+   "b_from": "wr_r1",
+   "l1": "{wr_from}",
+   "l2": "{wr_to}",
+   "narration": "In {wr_from}, Nigeria's population was {wr_r0_say} percent the size of Brazil's. By {wr_to}, it was {wr_r1_say} percent.",
+   "min_duration": 7
+  },
+  {
+   "type": "kin",
+   "text": "Small growth gaps compound",
+   "hl": "compound",
+   "size": 140,
+   "narration": "Population growth compounds over decades. Small differences in growth rates add up to big gaps. What would you compare next?",
+   "min_duration": 7
+  }
+ ],
+ "style": "clean"
+}

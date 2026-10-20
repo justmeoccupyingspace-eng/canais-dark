@@ -1,0 +1,53 @@
+{
+ "channel": "howitticks",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-22T21:00:00Z"
+ },
+ "title": "b-016-hash32",
+ "compute": {
+  "calc": {
+   "kind": "hash32"
+  }
+ },
+ "yt": {
+  "title": "A 32-bit hash collides after only {c_n} items #Shorts",
+  "description": "For a 32-bit hash ({c_space} values), 50% collision probability after about sqrt(2 ln2 x 2^32) = {c_n} items (birthday bound).\nNarration is AI-generated.",
+  "tags": [
+   "hash",
+   "collision",
+   "birthday paradox",
+   "how it works"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "Four billion values. Collides fast.",
+   "hl": "fast",
+   "size": 150,
+   "narration": "A thirty two bit hash has over four billion possible values. It still collides fast.",
+   "min_duration": 5
+  },
+  {
+   "type": "stat",
+   "label": "items until two likely share a hash",
+   "value_from": "c_stat",
+   "value": 0,
+   "as_str": true,
+   "narration": "After only about {c_n_say} items, there is a fifty percent chance that two share a value.",
+   "min_duration": 7
+  },
+  {
+   "type": "kin",
+   "text": "It is the birthday paradox",
+   "hl": "birthday",
+   "size": 150,
+   "narration": "It is the same birthday paradox. Collisions appear far sooner than the total number of values suggests.",
+   "min_duration": 6
+  }
+ ],
+ "style": "clean"
+}

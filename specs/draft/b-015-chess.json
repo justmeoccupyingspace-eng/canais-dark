@@ -1,0 +1,53 @@
+{
+ "channel": "howitticks",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-22T17:00:00Z"
+ },
+ "title": "b-015-chess",
+ "compute": {
+  "calc": {
+   "kind": "chess"
+  }
+ },
+ "yt": {
+  "title": "One grain doubled 64 times is 18.4 quintillion grains #Shorts",
+  "description": "Rice on a chessboard: 1 grain on the first square, doubled on each of 64 squares. Total 2^64 - 1 = {c_t}.\nNarration is AI-generated.",
+  "tags": [
+   "exponential",
+   "math",
+   "chessboard",
+   "how it works"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "1 grain. Doubled 64 times.",
+   "hl": "64",
+   "size": 150,
+   "narration": "Put one grain of rice on the first chess square, and double it on every square after.",
+   "min_duration": 5
+  },
+  {
+   "type": "stat",
+   "label": "grains in total on 64 squares",
+   "value_from": "c_stat",
+   "value": 0,
+   "as_str": true,
+   "narration": "Sixty four squares, doubling each time. The total is about {c_say} grains.",
+   "min_duration": 6.5
+  },
+  {
+   "type": "kin",
+   "text": "Doubling beats intuition",
+   "hl": "Doubling",
+   "size": 150,
+   "narration": "Our intuition handles adding well, but doubling grows faster than we expect.",
+   "min_duration": 5.4
+  }
+ ],
+ "style": "clean"
+}

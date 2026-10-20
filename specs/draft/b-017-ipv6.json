@@ -1,0 +1,53 @@
+{
+ "channel": "howitticks",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-23T01:00:00Z"
+ },
+ "title": "b-017-ipv6",
+ "compute": {
+  "calc": {
+   "kind": "ipv6mm"
+  }
+ },
+ "yt": {
+  "title": "IPv6 gives every square millimeter of Earth {c_stat} addresses #Shorts",
+  "description": "IPv6 has 2^128 = {c_tot} addresses. Earth surface area about 510.1 million km2. Divided evenly: {c_stat} addresses per square millimeter.\nNarration is AI-generated.",
+  "tags": [
+   "ipv6",
+   "networking",
+   "internet",
+   "how it works"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "IPv6 will not run out",
+   "hl": "IPv6",
+   "size": 160,
+   "narration": "IPv6 will not run out of addresses. Here is how big it really is.",
+   "min_duration": 4.6
+  },
+  {
+   "type": "stat",
+   "label": "addresses per square millimeter of Earth",
+   "value_from": "c_stat",
+   "value": 0,
+   "as_str": true,
+   "narration": "IPv6 has two to the one hundred twenty eight addresses. Spread over the whole surface of the Earth, that is about {c_r_say} times ten to the {c_r_exp_say} for every square millimeter.",
+   "min_duration": 10
+  },
+  {
+   "type": "kin",
+   "text": "IPv4 had only 4.3 billion",
+   "hl": "IPv4",
+   "size": 150,
+   "narration": "IPv4 had only about four point three billion. That is why it ran out.",
+   "min_duration": 5.4
+  }
+ ],
+ "style": "clean"
+}

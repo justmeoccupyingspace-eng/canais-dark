@@ -1,0 +1,53 @@
+{
+ "channel": "howitticks",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-20T21:00:00Z"
+ },
+ "title": "b-012-overflow",
+ "compute": {
+  "calc": {
+   "kind": "overflow"
+  }
+ },
+ "yt": {
+  "title": "255 + 1 = 0 in code #Shorts",
+  "description": "In an 8-bit unsigned integer the largest value is {c_max}; adding 1 wraps to {c_wrap}. This is integer overflow.\nNarration is AI-generated.",
+  "tags": [
+   "integer overflow",
+   "binary",
+   "programming",
+   "how it works"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "255 + 1 = 0",
+   "hl": "0",
+   "size": 170,
+   "narration": "In some programs, two fifty five plus one equals zero. Here is why.",
+   "min_duration": 4.6
+  },
+  {
+   "type": "stat",
+   "label": "what an 8 bit number does at its limit",
+   "value_from": "c_stat",
+   "value": 0,
+   "as_str": true,
+   "narration": "An eight bit unsigned number holds values from zero to two fifty five. Add one to the maximum, and it wraps around to zero.",
+   "min_duration": 7.5
+  },
+  {
+   "type": "kin",
+   "text": "It is called overflow",
+   "hl": "overflow",
+   "size": 150,
+   "narration": "That is called integer overflow. Programs must plan for it, or the counter silently restarts.",
+   "min_duration": 6.4
+  }
+ ],
+ "style": "clean"
+}

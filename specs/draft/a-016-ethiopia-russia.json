@@ -1,0 +1,60 @@
+{
+ "channel": "chartbound",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-21T23:00:00Z"
+ },
+ "title": "Ethiopia vs Russia population",
+ "compute": {
+  "wbratio": {
+   "ind": "SP.POP.TOTL",
+   "a": "ETH",
+   "b": "RUS",
+   "from": 2000
+  }
+ },
+ "yt": {
+  "title": "Ethiopia went from {wr_r0}% to {wr_r1}% of Russia's population #Shorts",
+  "description": "Total population, Ethiopia as a share of Russia, {wr_from} vs {wr_to}. Source: World Bank (SP.POP.TOTL).\nNarration is AI-generated.",
+  "tags": [
+   "economics",
+   "ethiopia",
+   "population",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "Ethiopia vs Russia: the population",
+   "hl": "Ethiopia",
+   "size": 150,
+   "narration": "How does Ethiopia's population compare with Russia's? Here is how the gap changed.",
+   "min_duration": 4.8
+  },
+  {
+   "type": "num",
+   "text": "Ethiopia as % of Russia",
+   "hl": "% of Russia",
+   "en": true,
+   "suffix": "%",
+   "a_from": "wr_r0",
+   "b_from": "wr_r1",
+   "l1": "{wr_from}",
+   "l2": "{wr_to}",
+   "narration": "In {wr_from}, Ethiopia's population was {wr_r0_say} percent the size of Russia's. By {wr_to}, it was {wr_r1_say} percent.",
+   "min_duration": 7
+  },
+  {
+   "type": "kin",
+   "text": "Small growth gaps compound",
+   "hl": "compound",
+   "size": 140,
+   "narration": "Population growth compounds over decades. Small differences in growth rates add up to big gaps. What would you compare next?",
+   "min_duration": 7
+  }
+ ],
+ "style": "clean"
+}
