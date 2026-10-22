@@ -1,0 +1,202 @@
+{
+ "channel": "loja",
+ "style": "promo",
+ "pal": "lilac",
+ "tag": "✨ PARA LASH DESIGNERS",
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "title": "Cliente que falta sem avisar? ✨",
+ "yt": {
+  "title": "Cliente que falta sem avisar? ✨",
+  "description": "Confirme os horários do dia em 1 toque e veja quem está na hora da manutenção. Link na bio.\n#lashdesigner #extensaodecilios #cilios #lashes #empreendedorismofeminino",
+  "tags": [],
+  "lang": "pt-BR"
+ },
+ "tiktok": "Confirme os horários do dia em 1 toque e veja quem está na hora da manutenção. Link na bio.\n#lashdesigner #extensaodecilios #cilios #lashes #empreendedorismofeminino",
+ "scenes": [
+  {
+   "type": "hook",
+   "emoji": "👁️",
+   "text": "Cliente que falta sem avisar?",
+   "hl": "sem avisar?",
+   "sub": "Horário vazio é dinheiro perdido.",
+   "narration": "Lash designer, cliente que falta sem avisar? Horário vazio é dinheiro perdido.",
+   "min_duration": 4.4
+  },
+  {
+   "type": "sheet",
+   "sheet": "Agenda do dia",
+   "sheetSub": "Seus horários em ordem",
+   "file": "Agenda_Lash_Designer.xlsx",
+   "emoji": "✨",
+   "tabs": [
+    "Início",
+    "Agenda do dia",
+    "Calendário",
+    "Agenda",
+    "Clientes",
+    "Financeiro",
+    "Quanto cobrar"
+   ],
+   "text": "Abra e veja o seu dia",
+   "hl": "o seu dia",
+   "top": 380,
+   "cols": [
+    {
+     "h": "Hora",
+     "w": 0.9,
+     "align": "center",
+     "kind": "bold"
+    },
+    {
+     "h": "Cliente",
+     "w": 1.7,
+     "type": 1
+    },
+    {
+     "h": "Serviço",
+     "w": 1.9
+    },
+    {
+     "h": "Confirmar",
+     "w": 1.6,
+     "kind": "link",
+     "align": "center"
+    }
+   ],
+   "rows": [
+    [
+     "09:00",
+     "Ana Paula",
+     "Fio a fio",
+     "💬 Confirmar"
+    ],
+    [
+     "11:00",
+     "Bruna Lima",
+     "Volume brasileiro",
+     "💬 Confirmar"
+    ],
+    [
+     "14:00",
+     "Carla Mendes",
+     "Manutenção",
+     "💬 Confirmar"
+    ],
+    [
+     "16:30",
+     "Daniela Rocha",
+     "Lash lifting",
+     "💬 Confirmar"
+    ]
+   ],
+   "focus": 1,
+   "focus_at": 3.2,
+   "tap": 3,
+   "total": [
+    "Previsto hoje",
+    470
+   ],
+   "narration": "A agenda do dia já vem em ordem, com o valor previsto. E cada horário tem um botão pra confirmar.",
+   "min_duration": 6.4
+  },
+  {
+   "type": "chat",
+   "text": "Confirmação em 1 toque",
+   "hl": "1 toque",
+   "name": "Bruna Lima",
+   "msg": "Oi Bruna! Passando para confirmar seu horário hoje às 11h. Posso confirmar?",
+   "reply": "Confirmadíssimo! Chego no horário 😍",
+   "time": "08:12",
+   "narration": "Um toque e a confirmação já vai escrita, com o nome e o horário certinho.",
+   "min_duration": 6.2
+  },
+  {
+   "type": "sheet",
+   "sheet": "Clientes",
+   "sheetSub": "Manutenção sem esquecer ninguém",
+   "file": "Agenda_Lash_Designer.xlsx",
+   "emoji": "✨",
+   "tabs": [
+    "Início",
+    "Agenda do dia",
+    "Calendário",
+    "Agenda",
+    "Clientes",
+    "Financeiro",
+    "Quanto cobrar"
+   ],
+   "text": "E quem já precisa de manutenção",
+   "hl": "manutenção",
+   "top": 380,
+   "cols": [
+    {
+     "h": "Cliente",
+     "w": 2.0,
+     "type": 1
+    },
+    {
+     "h": "Última",
+     "w": 1.1,
+     "align": "center"
+    },
+    {
+     "h": "Retorno",
+     "w": 1.15,
+     "align": "center"
+    },
+    {
+     "h": "Situação",
+     "w": 2.1,
+     "kind": "badge",
+     "align": "center"
+    }
+   ],
+   "rows": [
+    [
+     "Elaine Ferreira",
+     "30/09",
+     "21/10",
+     "Chamar hoje"
+    ],
+    [
+     "Fernanda Alves",
+     "03/10",
+     "24/10",
+     "Chamar esta semana"
+    ],
+    [
+     "Gabi Souza",
+     "12/10",
+     "02/11",
+     "Em dia"
+    ],
+    [
+     "Helena Dias",
+     "14/10",
+     "04/11",
+     "Já tem horário"
+    ]
+   ],
+   "narration": "Na aba clientes, ela calcula a manutenção de cada uma e mostra quem chamar hoje.",
+   "min_duration": 5.2
+  },
+  {
+   "type": "cta",
+   "emoji": "✨",
+   "product": "Agenda Lash Designer",
+   "product_sub": "Excel e Google Planilhas",
+   "bullets": [
+    "Agenda do dia com confirmação",
+    "Manutenção e aniversário das clientes",
+    "Calendário do mês",
+    "Financeiro e quanto cobrar"
+   ],
+   "price": "R$ 34,90",
+   "narration": "A Agenda Lash Designer está no link da bio. Você escolhe a sua, me chama no WhatsApp e recebe na hora.",
+   "min_duration": 6.4
+  }
+ ]
+}

@@ -1,0 +1,241 @@
+{
+ "channel": "loja",
+ "style": "promo",
+ "pal": "rose",
+ "tag": "📅 CONTAS EM DIA EM 2027",
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "title": "Já pagou juros por esquecer uma conta? 📅",
+ "yt": {
+  "title": "Já pagou juros por esquecer uma conta? 📅",
+  "description": "Todas as contas de 2027 num calendário: o que vence, o que já pagou e o que atrasou. Link na bio.\n#organizacaofinanceira #contas #planilha #financaspessoais #2027",
+  "tags": [],
+  "lang": "pt-BR"
+ },
+ "tiktok": "Todas as contas de 2027 num calendário: o que vence, o que já pagou e o que atrasou. Link na bio.\n#organizacaofinanceira #contas #planilha #financaspessoais #2027",
+ "scenes": [
+  {
+   "type": "hook",
+   "emoji": "📅",
+   "text": "Já pagou juros por esquecer uma conta?",
+   "hl": "esquecer",
+   "size": 92,
+   "narration": "Você já pagou juros só porque esqueceu de uma conta? Em 2027, não.",
+   "min_duration": 4.4
+  },
+  {
+   "type": "cal",
+   "text": "Todas as contas num calendário",
+   "hl": "num calendário",
+   "month": "Janeiro 2027",
+   "start": 5,
+   "file": "Calendario_de_Contas_2027.xlsx",
+   "sheet": "Calendário de contas",
+   "sheetSub": "Os dias de pagar, de longe",
+   "emoji": "📅",
+   "top": 340,
+   "counts": [
+    1,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "labels": [
+    "Academia\nR$ 99",
+    "",
+    "",
+    "",
+    "Aluguel\nR$ 1.100",
+    "",
+    "",
+    "",
+    "",
+    "2 contas\nR$ 580",
+    "",
+    "Água\nR$ 85",
+    "",
+    "",
+    "Internet\nR$ 100",
+    "",
+    "",
+    "",
+    "",
+    "2 contas\nR$ 705",
+    "",
+    "",
+    "",
+    "",
+    "Streaming\nR$ 45",
+    "",
+    "",
+    "Moto\nR$ 380",
+    "",
+    "",
+    ""
+   ],
+   "narration": "Você cadastra cada conta uma vez, com o dia e o valor. O calendário mostra os dias de pagar no mês inteiro.",
+   "min_duration": 6.2
+  },
+  {
+   "type": "sheet",
+   "sheet": "Paguei?",
+   "sheetSub": "Marque \"Pago\" e pronto",
+   "file": "Calendario_de_Contas_2027.xlsx",
+   "emoji": "✅",
+   "tabs": [
+    "Início",
+    "Calendário",
+    "Minhas contas",
+    "Paguei?",
+    "Feriados"
+   ],
+   "text": "O que venceu fica vermelho",
+   "hl": "vermelho",
+   "top": 380,
+   "cols": [
+    {
+     "h": "Conta",
+     "w": 1.8,
+     "type": 1
+    },
+    {
+     "h": "Dia",
+     "w": 0.7,
+     "align": "center"
+    },
+    {
+     "h": "Valor",
+     "w": 1.2,
+     "kind": "money",
+     "align": "center"
+    },
+    {
+     "h": "Jan",
+     "w": 1.3,
+     "kind": "badge",
+     "align": "center"
+    },
+    {
+     "h": "Fev",
+     "w": 1.3,
+     "kind": "badge",
+     "align": "center"
+    }
+   ],
+   "rows": [
+    [
+     "Aluguel",
+     "5",
+     1100,
+     "Pago",
+     "Pago"
+    ],
+    [
+     "Luz",
+     "10",
+     160,
+     "Pago",
+     "Pago"
+    ],
+    [
+     "Internet",
+     "15",
+     100,
+     "Pago",
+     "Atrasada"
+    ],
+    [
+     "Cartão",
+     "20",
+     650,
+     "Pago",
+     "Vence logo"
+    ],
+    [
+     "Moto",
+     "28",
+     380,
+     "Pago",
+     ""
+    ]
+   ],
+   "focus": 2,
+   "focus_at": 3.4,
+   "narration": "Pagou, marca pago. O que venceu e não foi pago fica vermelho, e o que está vencendo fica amarelo.",
+   "min_duration": 6.4
+  },
+  {
+   "type": "kpis",
+   "text": "E os feriados de 2027 já estão lá",
+   "hl": "feriados",
+   "size": 70,
+   "items": [
+    {
+     "label": "Contas por mês",
+     "value": 10
+    },
+    {
+     "label": "Total por mês",
+     "value": 3094,
+     "money": true
+    },
+    {
+     "label": "Feriados no ano",
+     "value": 13
+    },
+    {
+     "label": "Juros por esquecer",
+     "value": 0,
+     "money": true,
+     "hi": true
+    }
+   ],
+   "narration": "Com os feriados de 2027 marcados, pra você se planejar.",
+   "min_duration": 4
+  },
+  {
+   "type": "cta",
+   "emoji": "📅",
+   "product": "Calendário de Contas 2027",
+   "product_sub": "Excel e Google Planilhas",
+   "bullets": [
+    "Calendário de pagamentos por mês",
+    "Controle de pago e atrasado",
+    "Feriados de 2027",
+    "Rosé ou verde"
+   ],
+   "price": "R$ 14,90",
+   "narration": "O Calendário de Contas 2027 está no link da bio. Me chama no WhatsApp e recebe na hora.",
+   "min_duration": 6.4
+  }
+ ]
+}

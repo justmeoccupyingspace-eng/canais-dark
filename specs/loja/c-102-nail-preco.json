@@ -1,0 +1,170 @@
+{
+ "channel": "loja",
+ "style": "promo",
+ "pal": "rose",
+ "tag": "💅 PARA NAIL DESIGNERS",
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "title": "Você cobra certo pela sua unha? 💅",
+ "yt": {
+  "title": "Você cobra certo pela sua unha? 💅",
+  "description": "Descubra o preço mínimo de cada serviço: material, seu tempo e a maquininha. Link na bio.\n#naildesigner #manicure #precificacao #unhasdegel #empreendedorismofeminino",
+  "tags": [],
+  "lang": "pt-BR"
+ },
+ "tiktok": "Descubra o preço mínimo de cada serviço: material, seu tempo e a maquininha. Link na bio.\n#naildesigner #manicure #precificacao #unhasdegel #empreendedorismofeminino",
+ "scenes": [
+  {
+   "type": "hook",
+   "emoji": "🏷️",
+   "text": "Você cobra certo pela sua unha?",
+   "hl": "certo",
+   "sub": "Ou está pagando para trabalhar?",
+   "narration": "Você cobra certo pela sua unha? Ou está pagando pra trabalhar sem perceber?",
+   "min_duration": 4.4
+  },
+  {
+   "type": "kpis",
+   "text": "Primeiro: quanto vale 1 hora sua",
+   "hl": "1 hora sua",
+   "foot": "exemplo com R$ 3.000 de salário + custos do espaço",
+   "items": [
+    {
+     "label": "Custos + seu salário",
+     "value": 3800,
+     "money": true
+    },
+    {
+     "label": "Horas com cliente",
+     "value": 121,
+     "suffix": " h"
+    },
+    {
+     "label": "Taxa da maquininha",
+     "value": 3,
+     "suffix": "%"
+    },
+    {
+     "label": "1 hora sua vale",
+     "value": 31,
+     "money": true,
+     "hi": true
+    }
+   ],
+   "narration": "A planilha junta seus custos e o salário que você quer ter, e mostra quanto vale uma hora do seu trabalho.",
+   "min_duration": 6
+  },
+  {
+   "type": "sheet",
+   "sheet": "Quanto cobrar",
+   "sheetSub": "Preço que paga custos e o seu salário",
+   "file": "Agenda_Nail_Designer.xlsx",
+   "emoji": "🏷️",
+   "tabs": [
+    "Início",
+    "Agenda do dia",
+    "Calendário",
+    "Agenda",
+    "Clientes",
+    "Financeiro",
+    "Quanto cobrar"
+   ],
+   "text": "Depois, serviço por serviço",
+   "hl": "serviço por serviço",
+   "top": 380,
+   "cols": [
+    {
+     "h": "Serviço",
+     "w": 2.2,
+     "type": 1
+    },
+    {
+     "h": "Mínimo",
+     "w": 1.15,
+     "kind": "money",
+     "align": "center"
+    },
+    {
+     "h": "Você cobra",
+     "w": 1.25,
+     "kind": "money",
+     "align": "center"
+    },
+    {
+     "h": "Situação",
+     "w": 2.0,
+     "kind": "badge",
+     "align": "center"
+    }
+   ],
+   "rows": [
+    [
+     "Mão",
+     27,
+     25,
+     "Abaixo do custo"
+    ],
+    [
+     "Pé e mão",
+     54,
+     60,
+     "Pode subir"
+    ],
+    [
+     "Esmaltação em gel",
+     38,
+     70,
+     "Preço saudável"
+    ],
+    [
+     "Alongamento gel",
+     99,
+     160,
+     "Preço saudável"
+    ],
+    [
+     "Manutenção",
+     72,
+     70,
+     "Abaixo do custo"
+    ],
+    [
+     "Banho de gel",
+     52,
+     90,
+     "Preço saudável"
+    ]
+   ],
+   "focus": 0,
+   "focus_at": 3.6,
+   "narration": "Ela compara com o preço que você cobra hoje e avisa: abaixo do custo, pode subir, ou preço saudável.",
+   "min_duration": 6.6
+  },
+  {
+   "type": "hook",
+   "text": "Preço baixo não é estratégia",
+   "hl": "não é",
+   "sub": "É cansaço sem lucro.",
+   "size": 96,
+   "narration": "Preço baixo demais não é estratégia. É cansaço sem lucro.",
+   "min_duration": 3.6
+  },
+  {
+   "type": "cta",
+   "emoji": "💅",
+   "product": "Agenda Nail Designer",
+   "product_sub": "Excel e Google Planilhas",
+   "bullets": [
+    "Calculadora de quanto cobrar",
+    "Agenda do dia e calendário",
+    "Clientes com retorno no WhatsApp",
+    "Financeiro do mês"
+   ],
+   "price": "R$ 34,90",
+   "narration": "A calculadora vem dentro da Agenda Nail Designer. Está no link da bio: me chama no WhatsApp e recebe na hora.",
+   "min_duration": 6.4
+  }
+ ]
+}

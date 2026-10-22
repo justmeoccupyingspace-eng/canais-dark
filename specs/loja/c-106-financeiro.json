@@ -1,0 +1,227 @@
+{
+ "channel": "loja",
+ "style": "promo",
+ "pal": "rose",
+ "tag": "💸 SEU DINHEIRO ORGANIZADO",
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "title": "Pra onde foi o seu salário? 💸",
+ "yt": {
+  "title": "Pra onde foi o seu salário? 💸",
+  "description": "Lance os gastos pelo celular e veja o que passou do limite no mês. Link na bio.\n#financaspessoais #controlefinanceiro #planilha #organizacaofinanceira #dinheiro",
+  "tags": [],
+  "lang": "pt-BR"
+ },
+ "tiktok": "Lance os gastos pelo celular e veja o que passou do limite no mês. Link na bio.\n#financaspessoais #controlefinanceiro #planilha #organizacaofinanceira #dinheiro",
+ "scenes": [
+  {
+   "type": "hook",
+   "emoji": "💸",
+   "text": "Pra onde foi o seu salário?",
+   "hl": "salário?",
+   "sub": "Ele não some. Ele vai embora aos poucos.",
+   "narration": "Pra onde foi o seu salário? Ele não some de uma vez. Vai embora aos poucos.",
+   "min_duration": 4.6
+  },
+  {
+   "type": "sheet",
+   "sheet": "Resumo do mês",
+   "sheetSub": "Para onde foi o seu dinheiro",
+   "file": "Controle_Financeiro_Rose.xlsx",
+   "emoji": "📊",
+   "tabs": [
+    "Início",
+    "Lançamentos",
+    "Resumo do mês",
+    "Orçamento",
+    "Ano",
+    "Metas",
+    "Dívidas"
+   ],
+   "text": "Ela mostra onde passou do limite",
+   "hl": "passou do limite",
+   "top": 380,
+   "cols": [
+    {
+     "h": "Categoria",
+     "w": 1.8,
+     "type": 1
+    },
+    {
+     "h": "Gastou",
+     "w": 1.2,
+     "kind": "money",
+     "align": "center"
+    },
+    {
+     "h": "Limite",
+     "w": 1.1,
+     "kind": "money",
+     "align": "center"
+    },
+    {
+     "h": "Situação",
+     "w": 2.1,
+     "kind": "badge",
+     "align": "center"
+    }
+   ],
+   "rows": [
+    [
+     "Moradia",
+     1100,
+     1200,
+     "Quase no limite"
+    ],
+    [
+     "Mercado",
+     572,
+     700,
+     "Quase no limite"
+    ],
+    [
+     "Lazer",
+     235,
+     200,
+     "Passou do limite"
+    ],
+    [
+     "Transporte",
+     39,
+     300,
+     "Tranquilo"
+    ],
+    [
+     "Beleza",
+     70,
+     120,
+     "Tranquilo"
+    ],
+    [
+     "Assinaturas",
+     45,
+     80,
+     "Tranquilo"
+    ]
+   ],
+   "focus": 2,
+   "focus_at": 3.6,
+   "narration": "Você anota cada gasto em dez segundos. No fim, ela mostra categoria por categoria o que está tranquilo e o que passou do limite.",
+   "min_duration": 7
+  },
+  {
+   "type": "kpis",
+   "text": "E quanto sobrou de verdade",
+   "hl": "de verdade",
+   "foot": "valores de exemplo",
+   "items": [
+    {
+     "label": "Entrou",
+     "value": 3440,
+     "money": true
+    },
+    {
+     "label": "Saiu",
+     "value": 2594,
+     "money": true
+    },
+    {
+     "label": "Da renda gasta",
+     "value": 75,
+     "suffix": "%"
+    },
+    {
+     "label": "Sobrou",
+     "value": 846,
+     "money": true,
+     "hi": true
+    }
+   ],
+   "narration": "Entrou, saiu, e quanto sobrou de verdade.",
+   "min_duration": 4
+  },
+  {
+   "type": "sheet",
+   "sheet": "Metas",
+   "sheetSub": "Quanto guardar por mês",
+   "file": "Controle_Financeiro_Rose.xlsx",
+   "emoji": "🌱",
+   "tabs": [
+    "Início",
+    "Lançamentos",
+    "Resumo do mês",
+    "Orçamento",
+    "Ano",
+    "Metas",
+    "Dívidas"
+   ],
+   "text": "E quanto guardar para a sua meta",
+   "hl": "sua meta",
+   "top": 380,
+   "cols": [
+    {
+     "h": "Meta",
+     "w": 2.3,
+     "type": 1
+    },
+    {
+     "h": "Falta",
+     "w": 1.3,
+     "kind": "money",
+     "align": "center"
+    },
+    {
+     "h": "Por mês",
+     "w": 1.3,
+     "kind": "money",
+     "align": "center"
+    },
+    {
+     "h": "Pronto",
+     "w": 1.1,
+     "kind": "badge",
+     "align": "center"
+    }
+   ],
+   "rows": [
+    [
+     "Reserva de emergência",
+     7500,
+     417,
+     "17%"
+    ],
+    [
+     "Viagem",
+     2100,
+     263,
+     "30%"
+    ],
+    [
+     "Curso",
+     1500,
+     250,
+     "17%"
+    ]
+   ],
+   "narration": "Nas metas, você coloca o valor e o prazo, e ela diz quanto guardar por mês.",
+   "min_duration": 5
+  },
+  {
+   "type": "cta",
+   "emoji": "💸",
+   "product": "Controle Financeiro",
+   "product_sub": "Rosé, verde ou azul · Excel e Google Planilhas",
+   "bullets": [
+    "Lançamentos rápidos pelo celular",
+    "Alerta de limite por categoria",
+    "Metas: quanto guardar por mês",
+    "Plano para sair das dívidas"
+   ],
+   "price": "R$ 19,90",
+   "narration": "O Controle Financeiro está no link da bio, em três cores. Me chama no WhatsApp e recebe na hora.",
+   "min_duration": 6.4
+  }
+ ]
+}

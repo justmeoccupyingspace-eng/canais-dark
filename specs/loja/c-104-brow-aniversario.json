@@ -1,0 +1,151 @@
+{
+ "channel": "loja",
+ "style": "promo",
+ "pal": "terra",
+ "tag": "✨ PARA DESIGNERS DE SOBRANCELHA",
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "title": "Sua cliente faz aniversário e você nem sabe? 🎂",
+ "yt": {
+  "title": "Sua cliente faz aniversário e você nem sabe? 🎂",
+  "description": "A planilha mostra as aniversariantes do mês e já escreve a mensagem. Link na bio.\n#designdesobrancelhas #sobrancelhas #henna #browlamination #empreendedorismofeminino",
+  "tags": [],
+  "lang": "pt-BR"
+ },
+ "tiktok": "A planilha mostra as aniversariantes do mês e já escreve a mensagem. Link na bio.\n#designdesobrancelhas #sobrancelhas #henna #browlamination #empreendedorismofeminino",
+ "scenes": [
+  {
+   "type": "hook",
+   "emoji": "🎂",
+   "text": "Sua cliente faz aniversário e você nem sabe?",
+   "hl": "aniversário",
+   "size": 92,
+   "narration": "Sua cliente faz aniversário e você nem fica sabendo? Isso é cliente indo pra concorrência.",
+   "min_duration": 4.8
+  },
+  {
+   "type": "sheet",
+   "sheet": "Clientes",
+   "sheetSub": "Aniversário, retorno e preferências",
+   "file": "Agenda_Design_de_Sobrancelhas.xlsx",
+   "emoji": "✨",
+   "tabs": [
+    "Início",
+    "Agenda do dia",
+    "Calendário",
+    "Agenda",
+    "Clientes",
+    "Financeiro",
+    "Quanto cobrar"
+   ],
+   "text": "Ela mostra as aniversariantes",
+   "hl": "aniversariantes",
+   "top": 380,
+   "cols": [
+    {
+     "h": "Cliente",
+     "w": 2.0,
+     "type": 1
+    },
+    {
+     "h": "Preferência",
+     "w": 2.2
+    },
+    {
+     "h": "Aniversário",
+     "w": 1.7,
+     "kind": "badge",
+     "align": "center"
+    }
+   ],
+   "rows": [
+    [
+     "Ana Paula",
+     "Henna castanho médio",
+     "🎂 Este mês"
+    ],
+    [
+     "Bruna Lima",
+     "Quer encorpar",
+     ""
+    ],
+    [
+     "Carla Mendes",
+     "Lamination 45 dias",
+     "🎂 Hoje!"
+    ],
+    [
+     "Daniela Rocha",
+     "Só design",
+     ""
+    ],
+    [
+     "Elaine Ferreira",
+     "Teste de alergia ok",
+     "🎂 Este mês"
+    ]
+   ],
+   "focus": 2,
+   "focus_at": 3.4,
+   "tap": 2,
+   "narration": "Você cadastra o aniversário uma vez. Todo mês, a planilha marca quem faz aniversário. E quem é hoje.",
+   "min_duration": 6.2
+  },
+  {
+   "type": "chat",
+   "text": "E a mensagem já vem pronta",
+   "hl": "pronta",
+   "name": "Carla Mendes",
+   "msg": "Oi Carla! Feliz aniversário! Que tal um design caprichado pra comemorar? Tenho horários esta semana.",
+   "reply": "Aaah que fofa! Quero sim 🥰",
+   "time": "09:30",
+   "narration": "Um toque e a mensagem de parabéns já vai escrita. Ela se sente lembrada e volta.",
+   "min_duration": 6.4
+  },
+  {
+   "type": "kpis",
+   "text": "Tudo numa tela só",
+   "hl": "numa tela só",
+   "foot": "valores de exemplo",
+   "items": [
+    {
+     "label": "Atendimentos hoje",
+     "value": 7
+    },
+    {
+     "label": "Para chamar",
+     "value": 4
+    },
+    {
+     "label": "Aniversariantes",
+     "value": 3
+    },
+    {
+     "label": "Faturado no mês",
+     "value": 3260,
+     "money": true,
+     "hi": true
+    }
+   ],
+   "narration": "Na tela de início: atendimentos do dia, quem chamar, aniversariantes e o faturamento do mês.",
+   "min_duration": 5.2
+  },
+  {
+   "type": "cta",
+   "emoji": "✨",
+   "product": "Agenda Designer de Sobrancelhas",
+   "product_sub": "Excel e Google Planilhas",
+   "bullets": [
+    "Aniversariantes com mensagem pronta",
+    "Retorno de cada cliente",
+    "Agenda do dia e calendário",
+    "Financeiro e quanto cobrar"
+   ],
+   "price": "R$ 34,90",
+   "narration": "A Agenda Designer de Sobrancelhas está no link da bio. Você escolhe a sua, me chama no WhatsApp e recebe na hora.",
+   "min_duration": 6.4
+  }
+ ]
+}

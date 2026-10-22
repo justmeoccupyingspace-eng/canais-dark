@@ -9,9 +9,11 @@ VOICES = {
     "chartbound": ("af_heart", "en-us", 1.0),
     "howitticks": ("am_michael", "en-us", 1.0),
     "valeopreco": ("pf_dora", "pt-br", 1.0),
+    "loja": ("pf_dora", "pt-br", 1.0),
+    "lojam": ("pm_alex", "pt-br", 1.0),
 }
-EDGE = {"valeopreco": "pt-BR-ThalitaMultilingualNeural", "howitticks": "en-US-AndrewMultilingualNeural", "chartbound": "en-US-AvaMultilingualNeural"}  # voz neural natural; se a rede falhar, cai no Kokoro
-GOOGLE = {"valeopreco": ("pt-BR", "pt-BR-Chirp3-HD-Charon")}  # exige GCP_TTS_KEY; sem a chave, cai no edge/Kokoro
+EDGE = {"loja": "pt-BR-ThalitaMultilingualNeural", "lojam": "pt-BR-AntonioNeural", "valeopreco": "pt-BR-ThalitaMultilingualNeural", "howitticks": "en-US-AndrewMultilingualNeural", "chartbound": "en-US-AvaMultilingualNeural"}  # voz neural natural; se a rede falhar, cai no Kokoro
+GOOGLE = {"valeopreco": ("pt-BR", "pt-BR-Chirp3-HD-Charon"), "loja": ("pt-BR", "pt-BR-Chirp3-HD-Leda"), "lojam": ("pt-BR", "pt-BR-Chirp3-HD-Charon")}  # exige GCP_TTS_KEY; sem a chave, cai no edge/Kokoro
 EDGE_RATE = os.environ.get("EDGE_RATE", "+0%")
 MODEL = os.environ.get("KOKORO_DIR", ".cache/kokoro")
 TAIL = 0.28  # silêncio após a fala antes da próxima cena

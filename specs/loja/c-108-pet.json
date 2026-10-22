@@ -1,0 +1,165 @@
+{
+ "channel": "loja",
+ "style": "promo",
+ "pal": "sky",
+ "tag": "🐾 PARA BANHO E TOSA",
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "title": "Seu banho e tosa ainda é no caderno? 🐾",
+ "yt": {
+  "title": "Seu banho e tosa ainda é no caderno? 🐾",
+  "description": "Agenda do dia, tutores e pets, retorno do banho no WhatsApp e o caixa. Link na bio.\n#banhoetosa #petshop #tosador #pet #empreendedor",
+  "tags": [],
+  "lang": "pt-BR"
+ },
+ "tiktok": "Agenda do dia, tutores e pets, retorno do banho no WhatsApp e o caixa. Link na bio.\n#banhoetosa #petshop #tosador #pet #empreendedor",
+ "scenes": [
+  {
+   "type": "hook",
+   "emoji": "🐶",
+   "text": "Seu banho e tosa ainda é no caderno?",
+   "hl": "no caderno?",
+   "size": 96,
+   "narration": "Seu banho e tosa ainda é no caderno? Dá pra ser bem mais fácil.",
+   "min_duration": 4.2
+  },
+  {
+   "type": "sheet",
+   "sheet": "Agenda do dia",
+   "sheetSub": "Os horários de hoje em ordem",
+   "file": "Agenda_Banho_e_Tosa.xlsx",
+   "emoji": "🐾",
+   "tabs": [
+    "Início",
+    "Agenda do dia",
+    "Calendário",
+    "Agenda",
+    "Clientes",
+    "Financeiro",
+    "Quanto cobrar"
+   ],
+   "text": "O dia inteiro organizado",
+   "hl": "organizado",
+   "top": 380,
+   "cols": [
+    {
+     "h": "Hora",
+     "w": 0.9,
+     "align": "center",
+     "kind": "bold"
+    },
+    {
+     "h": "Tutor(a)",
+     "w": 1.7,
+     "type": 1
+    },
+    {
+     "h": "Serviço",
+     "w": 2.1
+    },
+    {
+     "h": "Status",
+     "w": 1.4,
+     "kind": "badge",
+     "align": "center"
+    }
+   ],
+   "rows": [
+    [
+     "08:00",
+     "Juliana",
+     "Banho e tosa higiênica",
+     "Concluído"
+    ],
+    [
+     "09:30",
+     "Ricardo",
+     "Banho porte grande",
+     "Concluído"
+    ],
+    [
+     "11:00",
+     "Patrícia",
+     "Tosa na tesoura",
+     "Agendado"
+    ],
+    [
+     "14:00",
+     "Camila",
+     "Banho porte médio",
+     "Agendado"
+    ],
+    [
+     "15:30",
+     "Sérgio",
+     "Hidratação de pelos",
+     "Agendado"
+    ]
+   ],
+   "total": [
+    "Previsto hoje",
+    390
+   ],
+   "narration": "Na agenda do dia você vê cada horário, o serviço e quanto vai entrar.",
+   "min_duration": 5.4
+  },
+  {
+   "type": "chat",
+   "text": "Na hora do banho, ela avisa",
+   "hl": "ela avisa",
+   "name": "Juliana Martins",
+   "msg": "Oi Juliana! Tudo bem? Já está na hora do banho do Thor. Quer que eu reserve um horário?",
+   "reply": "Quero! Sábado cedinho? 🐶",
+   "time": "10:20",
+   "narration": "E quando chega a hora do próximo banho, a mensagem já vai pronta, até com o nome do pet.",
+   "min_duration": 6.4
+  },
+  {
+   "type": "kpis",
+   "text": "E o caixa do mês",
+   "hl": "caixa",
+   "foot": "valores de exemplo",
+   "items": [
+    {
+     "label": "Faturamento",
+     "value": 6120,
+     "money": true
+    },
+    {
+     "label": "Banhos e tosas",
+     "value": 94
+    },
+    {
+     "label": "Ticket médio",
+     "value": 65,
+     "money": true
+    },
+    {
+     "label": "Lucro do mês",
+     "value": 4180,
+     "money": true,
+     "hi": true
+    }
+   ],
+   "narration": "No financeiro, faturamento, ticket médio e lucro, sem fazer conta.",
+   "min_duration": 4.2
+  },
+  {
+   "type": "cta",
+   "emoji": "🐾",
+   "product": "Agenda Banho & Tosa",
+   "product_sub": "Excel e Google Planilhas",
+   "bullets": [
+    "Agenda do dia e calendário",
+    "Tutores e pets com retorno",
+    "WhatsApp com o nome do pet",
+    "Caixa, despesas e lucro"
+   ],
+   "price": "R$ 34,90",
+   "narration": "A Agenda Banho & Tosa está no link da bio. Você escolhe a sua, me chama no WhatsApp e recebe na hora.",
+   "min_duration": 6.4
+  }
+ ]
+}

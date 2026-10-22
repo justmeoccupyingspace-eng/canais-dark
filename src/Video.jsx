@@ -3,6 +3,7 @@ import {AbsoluteFill, Sequence, Audio, staticFile, useCurrentFrame, delayRender,
 import {THEMES} from './themes.js';
 import {ArtScene, ChartScene, StatScene} from './scenes.jsx';
 import {CleanVideo} from './clean.jsx';
+import {PromoVideo} from './promo.jsx';
 
 const FPS = 30;
 
@@ -40,7 +41,7 @@ const Top = ({theme, total}) => {
   );
 };
 
-export const Video = ({spec}) => (spec.style === 'clean' ? <CleanVideo spec={spec} /> : <OldVideo spec={spec} />);
+export const Video = ({spec}) => (spec.style === 'promo' ? <PromoVideo spec={spec} /> : spec.style === 'clean' ? <CleanVideo spec={spec} /> : <OldVideo spec={spec} />);
 
 const OldVideo = ({spec}) => {
   useFonts();

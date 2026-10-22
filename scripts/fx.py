@@ -113,4 +113,5 @@ if __name__ == "__main__":
     save("music_chartbound", music(110.0, "minor", 104))
     save("music_howitticks", music(98.0, "minor", 96))
     save("music_valeopreco", music(130.8, "major", 112))
+    save("music_loja", music(174.6, "major", 92))
     print("fx ok")

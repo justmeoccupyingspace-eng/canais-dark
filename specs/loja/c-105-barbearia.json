@@ -1,0 +1,164 @@
+{
+ "channel": "lojam",
+ "style": "promo",
+ "pal": "barber",
+ "tag": "💈 PARA BARBEIROS",
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "title": "Barbeiro: quanto sobrou no fim do mês? 💈",
+ "yt": {
+  "title": "Barbeiro: quanto sobrou no fim do mês? 💈",
+  "description": "Agenda, retorno dos clientes no WhatsApp e o caixa da barbearia numa planilha. Link na bio.\n#barbearia #barbeiro #barber #degrade #empreendedor",
+  "tags": [],
+  "lang": "pt-BR"
+ },
+ "tiktok": "Agenda, retorno dos clientes no WhatsApp e o caixa da barbearia numa planilha. Link na bio.\n#barbearia #barbeiro #barber #degrade #empreendedor",
+ "scenes": [
+  {
+   "type": "hook",
+   "emoji": "💈",
+   "text": "Quanto sobrou no fim do mês?",
+   "hl": "sobrou",
+   "sub": "Não é o que entrou. É o que ficou.",
+   "narration": "Barbeiro, quanto sobrou no fim do mês? Não o que entrou. O que ficou.",
+   "min_duration": 4.4
+  },
+  {
+   "type": "kpis",
+   "text": "O caixa da barbearia na tela",
+   "hl": "na tela",
+   "foot": "valores de exemplo",
+   "items": [
+    {
+     "label": "Faturamento",
+     "value": 7840,
+     "money": true
+    },
+    {
+     "label": "Atendimentos",
+     "value": 138
+    },
+    {
+     "label": "Despesas",
+     "value": 2150,
+     "money": true
+    },
+    {
+     "label": "Lucro do mês",
+     "value": 5690,
+     "money": true,
+     "hi": true
+    }
+   ],
+   "narration": "A planilha soma cada corte concluído, desconta as despesas e mostra o lucro do mês.",
+   "min_duration": 5.4
+  },
+  {
+   "type": "sheet",
+   "sheet": "Clientes",
+   "sheetSub": "Quem já está na hora de voltar",
+   "file": "Agenda_Barbearia.xlsx",
+   "emoji": "💈",
+   "tabs": [
+    "Início",
+    "Agenda do dia",
+    "Calendário",
+    "Agenda",
+    "Clientes",
+    "Financeiro",
+    "Quanto cobrar"
+   ],
+   "text": "E avisa quem está sumido",
+   "hl": "sumido",
+   "top": 380,
+   "cols": [
+    {
+     "h": "Cliente",
+     "w": 2.0,
+     "type": 1
+    },
+    {
+     "h": "Último",
+     "w": 1.1,
+     "align": "center"
+    },
+    {
+     "h": "Visitas",
+     "w": 0.9,
+     "align": "center"
+    },
+    {
+     "h": "Situação",
+     "w": 2.1,
+     "kind": "badge",
+     "align": "center"
+    }
+   ],
+   "rows": [
+    [
+     "Rafael Costa",
+     "30/09",
+     "9",
+     "Chamar hoje"
+    ],
+    [
+     "Lucas Pereira",
+     "10/10",
+     "14",
+     "Em dia"
+    ],
+    [
+     "Marcos Oliveira",
+     "02/10",
+     "6",
+     "Chamar esta semana"
+    ],
+    [
+     "João Victor",
+     "15/10",
+     "11",
+     "Já tem horário"
+    ],
+    [
+     "Thiago Santos",
+     "18/10",
+     "22",
+     "Em dia"
+    ]
+   ],
+   "focus": 0,
+   "focus_at": 3.2,
+   "tap": 3,
+   "narration": "Cada serviço tem o seu retorno. Passou do prazo, aparece chamar hoje.",
+   "min_duration": 5.4
+  },
+  {
+   "type": "chat",
+   "text": "Um toque e já era",
+   "hl": "já era",
+   "name": "Rafael Costa",
+   "msg": "Fala Rafael! Beleza? Já tá na hora de dar um trato no visual. Quer que eu reserve um horário pra você?",
+   "reply": "Bora! Sábado 10h tem?",
+   "time": "10:05",
+   "narration": "Toca no botão e a mensagem já vai escrita. É cliente de volta na cadeira.",
+   "min_duration": 6
+  },
+  {
+   "type": "cta",
+   "emoji": "💈",
+   "product": "Agenda Barbearia",
+   "product_sub": "Excel e Google Planilhas",
+   "bullets": [
+    "Agenda do dia e calendário",
+    "Retorno dos clientes no WhatsApp",
+    "Caixa, despesas e lucro",
+    "Quanto cobrar por serviço"
+   ],
+   "price": "R$ 34,90",
+   "narration": "A Agenda Barbearia está no link da bio. Chama no WhatsApp e recebe na hora.",
+   "min_duration": 6.4
+  }
+ ]
+}
