@@ -10,11 +10,11 @@
  "title": "Já pagou juros por esquecer uma conta? 📅",
  "yt": {
   "title": "Já pagou juros por esquecer uma conta? 📅",
-  "description": "Todas as contas de 2027 num calendário: o que vence, o que já pagou e o que atrasou. Link na bio.\n#organizacaofinanceira #contas #planilha #financaspessoais #2027",
+  "description": "Todas as contas de 2027 num calendário: o que vence, o que já pagou e o que atrasou. Peça pelo WhatsApp da bio.\n#organizacaofinanceira #contas #planilha #financaspessoais #2027",
   "tags": [],
   "lang": "pt-BR"
  },
- "tiktok": "Todas as contas de 2027 num calendário: o que vence, o que já pagou e o que atrasou. Link na bio.\n#organizacaofinanceira #contas #planilha #financaspessoais #2027",
+ "tiktok": "Todas as contas de 2027 num calendário: o que vence, o que já pagou e o que atrasou. Peça pelo WhatsApp da bio.\n#organizacaofinanceira #contas #planilha #financaspessoais #2027",
  "scenes": [
   {
    "type": "hook",
@@ -234,8 +234,10 @@
     "Rosé ou verde"
    ],
    "price": "R$ 14,90",
-   "narration": "O Calendário de Contas 2027 está no link da bio. Me chama no WhatsApp e recebe na hora.",
-   "min_duration": 6.4
+   "narration": "Quer o Calendário de Contas 2027? Me chama no WhatsApp que está na bio e recebe na hora.",
+   "min_duration": 6.4,
+   "top_text": "WhatsApp na bio",
+   "button": "Chama no WhatsApp da bio 💬"
   }
  ]
 }

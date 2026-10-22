@@ -28,7 +28,7 @@ def main(path):
     import librosa
     from faster_whisper import WhisperModel
     spec = json.load(open(path, encoding="utf-8"))
-    lang = "pt" if spec["channel"] == "valeopreco" else "en"
+    lang = "pt" if spec["channel"] in ("valeopreco", "loja", "lojam") or spec.get("yt", {}).get("lang", "").startswith("pt") else "en"
     m = WhisperModel("small", compute_type="int8")
     rows = []
     for i, sc in enumerate(spec["scenes"]):

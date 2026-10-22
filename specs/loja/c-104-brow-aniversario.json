@@ -10,11 +10,11 @@
  "title": "Sua cliente faz aniversário e você nem sabe? 🎂",
  "yt": {
   "title": "Sua cliente faz aniversário e você nem sabe? 🎂",
-  "description": "A planilha mostra as aniversariantes do mês e já escreve a mensagem. Link na bio.\n#designdesobrancelhas #sobrancelhas #henna #browlamination #empreendedorismofeminino",
+  "description": "A planilha mostra as aniversariantes do mês e já escreve a mensagem. Peça pelo WhatsApp da bio.\n#designdesobrancelhas #sobrancelhas #henna #browlamination #empreendedorismofeminino",
   "tags": [],
   "lang": "pt-BR"
  },
- "tiktok": "A planilha mostra as aniversariantes do mês e já escreve a mensagem. Link na bio.\n#designdesobrancelhas #sobrancelhas #henna #browlamination #empreendedorismofeminino",
+ "tiktok": "A planilha mostra as aniversariantes do mês e já escreve a mensagem. Peça pelo WhatsApp da bio.\n#designdesobrancelhas #sobrancelhas #henna #browlamination #empreendedorismofeminino",
  "scenes": [
   {
    "type": "hook",
@@ -144,8 +144,10 @@
     "Financeiro e quanto cobrar"
    ],
    "price": "R$ 34,90",
-   "narration": "A Agenda Designer de Sobrancelhas está no link da bio. Você escolhe a sua, me chama no WhatsApp e recebe na hora.",
-   "min_duration": 6.4
+   "narration": "Quer a Agenda Designer de Sobrancelhas? Me chama no WhatsApp que está na bio. Você paga no Pix e recebe na hora.",
+   "min_duration": 6.4,
+   "top_text": "WhatsApp na bio",
+   "button": "Chama no WhatsApp da bio 💬"
   }
  ]
 }

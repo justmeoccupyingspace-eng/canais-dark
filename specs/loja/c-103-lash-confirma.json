@@ -10,11 +10,11 @@
  "title": "Cliente que falta sem avisar? ✨",
  "yt": {
   "title": "Cliente que falta sem avisar? ✨",
-  "description": "Confirme os horários do dia em 1 toque e veja quem está na hora da manutenção. Link na bio.\n#lashdesigner #extensaodecilios #cilios #lashes #empreendedorismofeminino",
+  "description": "Confirme os horários do dia em 1 toque e veja quem está na hora da manutenção. Peça pelo WhatsApp da bio.\n#lashdesigner #extensaodecilios #cilios #lashes #empreendedorismofeminino",
   "tags": [],
   "lang": "pt-BR"
  },
- "tiktok": "Confirme os horários do dia em 1 toque e veja quem está na hora da manutenção. Link na bio.\n#lashdesigner #extensaodecilios #cilios #lashes #empreendedorismofeminino",
+ "tiktok": "Confirme os horários do dia em 1 toque e veja quem está na hora da manutenção. Peça pelo WhatsApp da bio.\n#lashdesigner #extensaodecilios #cilios #lashes #empreendedorismofeminino",
  "scenes": [
   {
    "type": "hook",
@@ -195,8 +195,10 @@
     "Financeiro e quanto cobrar"
    ],
    "price": "R$ 34,90",
-   "narration": "A Agenda Lash Designer está no link da bio. Você escolhe a sua, me chama no WhatsApp e recebe na hora.",
-   "min_duration": 6.4
+   "narration": "Quer a Agenda Lash Designer? Me chama no WhatsApp que está na bio. Você paga no Pix e recebe na hora.",
+   "min_duration": 6.4,
+   "top_text": "WhatsApp na bio",
+   "button": "Chama no WhatsApp da bio 💬"
   }
  ]
 }

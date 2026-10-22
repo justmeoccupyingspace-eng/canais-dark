@@ -80,5 +80,6 @@ jobs:
         run: |
           mkdir -p /tmp/pv && cp out/*.mp4 /tmp/pv/
           git config user.name "producer"; git config user.email "producer@users.noreply.github.com"
-          git checkout --orphan previews && git rm -rf . -q
-          cp /tmp/pv/*.mp4 . && git add *.mp4 && git commit -qm "previews" && git push -f origin previews
+          B=previews; [ "${{ inputs.channel }}" = "C" ] && B=pv-${{ github.run_id }}
+          git checkout --orphan $B && git rm -rf . -q
+          cp /tmp/pv/*.mp4 . && git add *.mp4 && git commit -qm "previews" && git push -f origin $B

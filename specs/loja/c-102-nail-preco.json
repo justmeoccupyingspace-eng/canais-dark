@@ -10,11 +10,11 @@
  "title": "Você cobra certo pela sua unha? 💅",
  "yt": {
   "title": "Você cobra certo pela sua unha? 💅",
-  "description": "Descubra o preço mínimo de cada serviço: material, seu tempo e a maquininha. Link na bio.\n#naildesigner #manicure #precificacao #unhasdegel #empreendedorismofeminino",
+  "description": "Descubra o preço mínimo de cada serviço: material, seu tempo e a maquininha. Peça pelo WhatsApp da bio.\n#naildesigner #manicure #precificacao #unhasdegel #empreendedorismofeminino",
   "tags": [],
   "lang": "pt-BR"
  },
- "tiktok": "Descubra o preço mínimo de cada serviço: material, seu tempo e a maquininha. Link na bio.\n#naildesigner #manicure #precificacao #unhasdegel #empreendedorismofeminino",
+ "tiktok": "Descubra o preço mínimo de cada serviço: material, seu tempo e a maquininha. Peça pelo WhatsApp da bio.\n#naildesigner #manicure #precificacao #unhasdegel #empreendedorismofeminino",
  "scenes": [
   {
    "type": "hook",
@@ -163,8 +163,10 @@
     "Financeiro do mês"
    ],
    "price": "R$ 34,90",
-   "narration": "A calculadora vem dentro da Agenda Nail Designer. Está no link da bio: me chama no WhatsApp e recebe na hora.",
-   "min_duration": 6.4
+   "narration": "A calculadora vem dentro da Agenda Nail Designer. Me chama no WhatsApp que está na bio e recebe na hora.",
+   "min_duration": 6.4,
+   "top_text": "WhatsApp na bio",
+   "button": "Chama no WhatsApp da bio 💬"
   }
  ]
 }

@@ -10,7 +10,7 @@
  "title": "Nail: cliente sumiu",
  "yt": {
   "title": "Sua cliente de unha sumiu? 💅",
-  "description": "A planilha que lembra você de chamar cada cliente na hora do retorno, com a mensagem pronta no WhatsApp. Link na bio.\n#naildesigner #manicure #unhasdegel #agendamanicure #empreendedorismofeminino",
+  "description": "A planilha que lembra você de chamar cada cliente na hora do retorno, com a mensagem pronta no WhatsApp. Peça pelo WhatsApp da bio.\n#naildesigner #manicure #unhasdegel #agendamanicure #empreendedorismofeminino",
   "tags": [],
   "lang": "pt-BR"
  },
@@ -209,8 +209,11 @@
     "Financeiro e quanto cobrar"
    ],
    "price": "R$ 34,90",
-   "narration": "A Agenda Nail Designer está no link da bio. Você escolhe a sua, me chama no WhatsApp e recebe na hora.",
-   "min_duration": 6.4
+   "narration": "Quer a Agenda Nail Designer? Me chama no WhatsApp que está na bio. Você paga no Pix e recebe na hora.",
+   "min_duration": 6.4,
+   "top_text": "WhatsApp na bio",
+   "button": "Chama no WhatsApp da bio 💬"
   }
- ]
+ ],
+ "tiktok": "A planilha que lembra você de chamar cada cliente na hora do retorno, com a mensagem pronta no WhatsApp. Peça pelo WhatsApp da bio.\n#naildesigner #manicure #unhasdegel #agendamanicure #empreendedorismofeminino"
 }

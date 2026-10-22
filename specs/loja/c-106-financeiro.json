@@ -10,11 +10,11 @@
  "title": "Pra onde foi o seu salário? 💸",
  "yt": {
   "title": "Pra onde foi o seu salário? 💸",
-  "description": "Lance os gastos pelo celular e veja o que passou do limite no mês. Link na bio.\n#financaspessoais #controlefinanceiro #planilha #organizacaofinanceira #dinheiro",
+  "description": "Lance os gastos pelo celular e veja o que passou do limite no mês. Peça pelo WhatsApp da bio.\n#financaspessoais #controlefinanceiro #planilha #organizacaofinanceira #dinheiro",
   "tags": [],
   "lang": "pt-BR"
  },
- "tiktok": "Lance os gastos pelo celular e veja o que passou do limite no mês. Link na bio.\n#financaspessoais #controlefinanceiro #planilha #organizacaofinanceira #dinheiro",
+ "tiktok": "Lance os gastos pelo celular e veja o que passou do limite no mês. Peça pelo WhatsApp da bio.\n#financaspessoais #controlefinanceiro #planilha #organizacaofinanceira #dinheiro",
  "scenes": [
   {
    "type": "hook",
@@ -220,8 +220,10 @@
     "Plano para sair das dívidas"
    ],
    "price": "R$ 19,90",
-   "narration": "O Controle Financeiro está no link da bio, em três cores. Me chama no WhatsApp e recebe na hora.",
-   "min_duration": 6.4
+   "narration": "O Controle Financeiro vem em três cores. Me chama no WhatsApp que está na bio e recebe na hora.",
+   "min_duration": 6.4,
+   "top_text": "WhatsApp na bio",
+   "button": "Chama no WhatsApp da bio 💬"
   }
  ]
 }

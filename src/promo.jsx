@@ -34,7 +34,25 @@ const Star = ({x, y, r, color, o}) => (
   </svg>
 );
 
-const Bg = ({p}) => {
+const Flower = ({x, y, r, petal, center, rot = 0}) => (
+  <g transform={`translate(${x} ${y}) rotate(${rot})`}>
+    {[0, 1, 2, 3, 4].map((i) => <circle key={i} cx={Math.cos(i * 1.2566) * r * 0.62} cy={Math.sin(i * 1.2566) * r * 0.62} r={r * 0.5} fill={petal} />)}
+    <circle r={r * 0.33} fill={center} />
+  </g>
+);
+
+const Cluster = ({p, size = 260, rot = 0}) => (
+  <svg width={size} height={size} viewBox="0 0 120 120" style={{transform: `rotate(${rot}deg)`}}>
+    <ellipse cx="83" cy="64" rx="23" ry="10" fill="#A3BFA0" transform="rotate(200 60 64)" />
+    <ellipse cx="82" cy="64" rx="22" ry="10" fill="#A3BFA0" transform="rotate(-25 60 64)" />
+    <Flower x={60} y={60} r={30} petal={p.main} center="#C49A6C" rot={rot} />
+    <Flower x={94} y={86} r={18} petal={p.g2} center="#fff" />
+    <Flower x={28} y={88} r={15} petal="#fff" center="#C49A6C" />
+    <path d="M98 30 c-4 -8 -14 -4 -10 4 l10 10 l10 -10 c4 -8 -6 -12 -10 -4z" fill={p.main} />
+  </svg>
+);
+
+const Bg = ({p, deco}) => {
   const f = useCurrentFrame();
   const stars = [[130, 300, 16], [960, 250, 12], [900, 1350, 18], [110, 1180, 10], [560, 140, 9], [1000, 820, 9], [70, 760, 12]];
   return (
@@ -42,6 +60,12 @@ const Bg = ({p}) => {
       <div style={{position: 'absolute', width: 900, height: 900, borderRadius: '50%', left: -380 + Math.sin(f / 80) * 40, top: -260, background: p.g3, filter: 'blur(90px)', opacity: 0.8}} />
       <div style={{position: 'absolute', width: 800, height: 800, borderRadius: '50%', right: -360, top: 900 + Math.cos(f / 70) * 50, background: p.g2, filter: 'blur(110px)', opacity: 0.45}} />
       {stars.map(([x, y, r], i) => <Star key={i} x={x} y={y + Math.sin(f / 30 + i) * 6} r={r} color={p.main} o={0.25 + 0.35 * (0.5 + 0.5 * Math.sin(f / 18 + i * 1.7))} />)}
+      {deco === 'flowers' ? (
+        <>
+          <div style={{position: 'absolute', left: -70, bottom: 120, opacity: 0.9}}><Cluster p={p} size={300} rot={180 + Math.sin(f / 50) * 4} /></div>
+          <div style={{position: 'absolute', right: -90, top: 1290, opacity: 0.8}}><Cluster p={p} size={230} rot={Math.sin(f / 60) * 5} /></div>
+        </>
+      ) : null}
     </AbsoluteFill>
   );
 };
@@ -359,7 +383,8 @@ export const PromoVideo = ({spec}) => {
   let from = 0;
   const parts = spec.scenes.map((sc, i) => {
     const dur = Math.ceil((sc.duration || 4) * FPS);
-    const body = sc.type === 'sheet' ? <Sheet sc={sc} p={p} /> : sc.type === 'chat' ? <Chat sc={sc} p={p} /> : sc.type === 'kpis' ? <Kpis sc={sc} p={p} /> : sc.type === 'cal' ? <Cal sc={sc} p={p} /> : sc.type === 'cta' ? <Cta sc={sc} p={p} /> : <Hook sc={sc} p={p} />;
+    const ps = PALS[sc.pal] || p;
+    const body = sc.type === 'sheet' ? <Sheet sc={sc} p={ps} /> : sc.type === 'chat' ? <Chat sc={sc} p={p} /> : sc.type === 'kpis' ? <Kpis sc={sc} p={p} /> : sc.type === 'cal' ? <Cal sc={sc} p={ps} /> : sc.type === 'cta' ? <Cta sc={sc} p={p} /> : <Hook sc={sc} p={p} />;
     const el = (
       <Sequence key={i} from={from} durationInFrames={dur}>
         <SceneWrap>
@@ -377,7 +402,7 @@ export const PromoVideo = ({spec}) => {
   const f = useCurrentFrame();
   return (
     <AbsoluteFill style={{background: p.bg}}>
-      <Bg p={p} />
+      <Bg p={p} deco={spec.deco || (spec.pal === 'barber' || spec.pal === 'classic' || spec.pal === 'sky' ? 'stars' : 'flowers')} />
       {parts}
       {spec.tag ? <TopTag p={p} text={spec.tag} /> : null}
       <div style={{position: 'absolute', bottom: 0, left: 0, height: 8, width: `${Math.min(f / total, 1) * 100}%`, background: p.main}} />

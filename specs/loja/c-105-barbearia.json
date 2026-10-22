@@ -10,11 +10,11 @@
  "title": "Barbeiro: quanto sobrou no fim do mês? 💈",
  "yt": {
   "title": "Barbeiro: quanto sobrou no fim do mês? 💈",
-  "description": "Agenda, retorno dos clientes no WhatsApp e o caixa da barbearia numa planilha. Link na bio.\n#barbearia #barbeiro #barber #degrade #empreendedor",
+  "description": "Agenda, retorno dos clientes no WhatsApp e o caixa da barbearia numa planilha. Peça pelo WhatsApp da bio.\n#barbearia #barbeiro #barber #degrade #empreendedor",
   "tags": [],
   "lang": "pt-BR"
  },
- "tiktok": "Agenda, retorno dos clientes no WhatsApp e o caixa da barbearia numa planilha. Link na bio.\n#barbearia #barbeiro #barber #degrade #empreendedor",
+ "tiktok": "Agenda, retorno dos clientes no WhatsApp e o caixa da barbearia numa planilha. Peça pelo WhatsApp da bio.\n#barbearia #barbeiro #barber #degrade #empreendedor",
  "scenes": [
   {
    "type": "hook",
@@ -157,8 +157,10 @@
     "Quanto cobrar por serviço"
    ],
    "price": "R$ 34,90",
-   "narration": "A Agenda Barbearia está no link da bio. Chama no WhatsApp e recebe na hora.",
-   "min_duration": 6.4
+   "narration": "Quer a Agenda Barbearia? Chama no WhatsApp que está na bio. Pix e recebe na hora.",
+   "min_duration": 6.4,
+   "top_text": "WhatsApp na bio",
+   "button": "Chama no WhatsApp da bio 💬"
   }
  ]
 }

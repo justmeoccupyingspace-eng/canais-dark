@@ -10,11 +10,11 @@
  "title": "Seu banho e tosa ainda é no caderno? 🐾",
  "yt": {
   "title": "Seu banho e tosa ainda é no caderno? 🐾",
-  "description": "Agenda do dia, tutores e pets, retorno do banho no WhatsApp e o caixa. Link na bio.\n#banhoetosa #petshop #tosador #pet #empreendedor",
+  "description": "Agenda do dia, tutores e pets, retorno do banho no WhatsApp e o caixa. Peça pelo WhatsApp da bio.\n#banhoetosa #petshop #tosador #pet #empreendedor",
   "tags": [],
   "lang": "pt-BR"
  },
- "tiktok": "Agenda do dia, tutores e pets, retorno do banho no WhatsApp e o caixa. Link na bio.\n#banhoetosa #petshop #tosador #pet #empreendedor",
+ "tiktok": "Agenda do dia, tutores e pets, retorno do banho no WhatsApp e o caixa. Peça pelo WhatsApp da bio.\n#banhoetosa #petshop #tosador #pet #empreendedor",
  "scenes": [
   {
    "type": "hook",
@@ -158,8 +158,10 @@
     "Caixa, despesas e lucro"
    ],
    "price": "R$ 34,90",
-   "narration": "A Agenda Banho & Tosa está no link da bio. Você escolhe a sua, me chama no WhatsApp e recebe na hora.",
-   "min_duration": 6.4
+   "narration": "Quer a Agenda Banho & Tosa? Me chama no WhatsApp que está na bio. Você paga no Pix e recebe na hora.",
+   "min_duration": 6.4,
+   "top_text": "WhatsApp na bio",
+   "button": "Chama no WhatsApp da bio 💬"
   }
  ]
 }
