@@ -1,0 +1,111 @@
+{
+ "channel": "loja",
+ "style": "promo",
+ "pal": "concurso",
+ "tag": "CONCURSO TJSP · ESCREVENTE",
+ "tagIcon": "<svg viewBox=\"0 0 48 48\" width=\"100%\" fill=\"none\" stroke=\"#6B2236\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"11\" y=\"6\" width=\"28\" height=\"36\" rx=\"4\"/><path d=\"M7 13 h6 M7 21 h6 M7 29 h6 M7 37 h6 M19 15 h14 M19 22 h14 M19 29 h9\"/></svg>",
+ "motifs": [
+  "<svg viewBox=\"0 0 48 48\" width=\"100%\" fill=\"none\" stroke=\"#8C2F45\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"11\" y=\"6\" width=\"28\" height=\"36\" rx=\"4\"/><path d=\"M7 13 h6 M7 21 h6 M7 29 h6 M7 37 h6 M19 15 h14 M19 22 h14 M19 29 h9\"/></svg>",
+  "<svg viewBox=\"0 0 48 48\" width=\"100%\" fill=\"none\" stroke=\"#23365C\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M31 8 l9 9 L18 39 H9 v-9 Z M27 12 l9 9\"/></svg>",
+  "<svg viewBox=\"0 0 48 48\" width=\"100%\" fill=\"none\" stroke=\"#8C2F45\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"7\" y=\"7\" width=\"34\" height=\"34\" rx=\"8\"/><path d=\"M15 25 l6 6 l12-14\"/></svg>"
+ ],
+ "tail": 0.16,
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "title": "Questão TJSP: peculato culposo",
+ "yt": {
+  "title": "Questão TJSP: peculato culposo",
+  "description": "Questão no estilo VUNESP para o Escrevente TJSP. Qual você marcou? Apostila com resumos e 182 questões comentadas no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #direitopenal",
+  "tags": [],
+  "lang": "pt-BR"
+ },
+ "tiktok": "Questão no estilo VUNESP para o Escrevente TJSP. Qual você marcou? Apostila com resumos e 182 questões comentadas no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #direitopenal",
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "Você acertaria essa questão do TJSP?",
+   "hl": "acertaria",
+   "narration": "Você acertaria essa questão do concurso do TJ de São Paulo?",
+   "min_duration": 3.6,
+   "badge": "ESCREVENTE TJSP 2027",
+   "art": "<svg width=\"100%\" viewBox=\"0 0 260 230\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"#8C2F45\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n<path d=\"M130 22v168\"/><circle cx=\"130\" cy=\"18\" r=\"6\"/><path d=\"M48 52h164\"/><path d=\"M130 52c-10 0-14-10-14-10h28s-4 10-14 10\"/>\n<path d=\"M60 52 28 128\"/><path d=\"M60 52l32 76\"/><path d=\"M200 52l-32 76\"/><path d=\"M200 52l32 76\"/>\n<path d=\"M22 128h76c0 18-17 30-38 30s-38-12-38-30z\"/><path d=\"M162 128h76c0 18-17 30-38 30s-38-12-38-30z\"/>\n<path d=\"M98 200h64\"/><path d=\"M84 214h92\"/><path d=\"M112 190h36l6 10h-48z\"/>\n</svg>",
+   "artW": 300
+  },
+  {
+   "type": "quiz",
+   "label": "DIREITO PENAL · CP, ART. 312",
+   "q": "No peculato culposo, se o funcionário repara o dano antes da sentença irrecorrível, ele:",
+   "alts": [
+    "tem a pena reduzida de metade",
+    "tem a punibilidade extinta",
+    "recebe apenas uma atenuante",
+    "não tem benefício algum",
+    "recebe perdão judicial"
+   ],
+   "correct": 1,
+   "why": "CP, art. 312, § 3º",
+   "narration": "No peculato culposo, se o funcionário repara o dano antes da sentença irrecorrível, o que acontece? Pensa rápido.",
+   "extra": 4.4,
+   "revealFromEnd": 1.7,
+   "countdown": 3,
+   "capsTop": 1700
+  },
+  {
+   "type": "hook",
+   "text": "Resposta: letra B",
+   "hl": "letra B",
+   "narration": "Letra B. Reparou antes da sentença irrecorrível, extingue a punibilidade. Se for depois, a pena cai pela metade. É essa troca que a banca usa pra derrubar.",
+   "min_duration": 5,
+   "badge": "GABARITO COMENTADO",
+   "sub": "depois da sentença: pena reduzida de metade"
+  },
+  {
+   "type": "pages",
+   "imgs": [
+    "img/ap_cover.jpg",
+    "img/ap_resumo.jpg",
+    "img/ap_questao.jpg"
+   ],
+   "text": "182 questões como essa",
+   "hl": "como essa",
+   "pills": [
+    "Resumos de todas as matérias",
+    "Raio-X do edital",
+    "Plano de 20 semanas",
+    "Guia da redação"
+   ],
+   "narration": "Essa é uma das questões da apostila do Escrevente, todas com gabarito comentado artigo por artigo.",
+   "min_duration": 5.2
+  },
+  {
+   "type": "cta",
+   "kicker": "APOSTILA EM PDF",
+   "product": "Escrevente TJSP 2027",
+   "product_sub": "Guia de Estudos + Caderno de Questões",
+   "bullets": [
+    "Resumos de todas as matérias",
+    "182 questões com gabarito comentado",
+    "Raio-X do edital e redação",
+    "Plano de estudos até 14/03"
+   ],
+   "price": "R$ 39,90",
+   "price_note": "pagamento único no Pix · PDF na hora",
+   "icon": "<svg viewBox=\"0 0 48 48\" width=\"100%\" fill=\"none\" stroke=\"#6B2236\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"11\" y=\"6\" width=\"28\" height=\"36\" rx=\"4\"/><path d=\"M7 13 h6 M7 21 h6 M7 29 h6 M7 37 h6 M19 15 h14 M19 22 h14 M19 29 h9\"/></svg>",
+   "narration": "A apostila do Escrevente TJSP sai por trinta e nove e noventa, em PDF. Me chama no WhatsApp da bio.",
+   "min_duration": 6.6,
+   "top_text": "WhatsApp na bio",
+   "button": "Chama no WhatsApp da bio"
+  },
+  {
+   "type": "end",
+   "art": "<svg width=\"100%\" viewBox=\"0 0 260 230\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"#8C2F45\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n<path d=\"M130 22v168\"/><circle cx=\"130\" cy=\"18\" r=\"6\"/><path d=\"M48 52h164\"/><path d=\"M130 52c-10 0-14-10-14-10h28s-4 10-14 10\"/>\n<path d=\"M60 52 28 128\"/><path d=\"M60 52l32 76\"/><path d=\"M200 52l-32 76\"/><path d=\"M200 52l32 76\"/>\n<path d=\"M22 128h76c0 18-17 30-38 30s-38-12-38-30z\"/><path d=\"M162 128h76c0 18-17 30-38 30s-38-12-38-30z\"/>\n<path d=\"M98 200h64\"/><path d=\"M84 214h92\"/><path d=\"M112 190h36l6 10h-48z\"/>\n</svg>",
+   "artW": 230,
+   "duration": 2.6,
+   "nocaps": true,
+   "brand": "Vale o Preço?",
+   "line": "apostilas e planilhas prontas"
+  }
+ ]
+}
