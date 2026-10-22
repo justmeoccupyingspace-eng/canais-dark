@@ -1,6 +1,6 @@
 """Envia vídeo ao YouTube. Uso: python scripts/upload.py <A|B> video.mp4 spec.json [privacyStatus]
 Segredos via env: YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_A / YT_REFRESH_B"""
-import json, os, sys, urllib.parse, urllib.request
+import json, os, sys, urllib.error, urllib.parse, urllib.request
 
 def access_token(refresh):
     data = urllib.parse.urlencode({
@@ -33,7 +33,10 @@ def main(which, video, specpath, privacy="public"):
         data=json.dumps(meta).encode(), method="POST",
         headers={"Authorization": f"Bearer {tok}", "Content-Type": "application/json; charset=UTF-8",
                  "X-Upload-Content-Length": str(size), "X-Upload-Content-Type": "video/mp4"})
-    loc = urllib.request.urlopen(init).headers["Location"]
+    try:
+        loc = urllib.request.urlopen(init).headers["Location"]
+    except urllib.error.HTTPError as e:
+        print("upload init falhou:", e.code, e.read().decode(errors="replace")[:800]); raise
     up = urllib.request.Request(loc, data=open(video, "rb").read(), method="PUT",
                                 headers={"Content-Type": "video/mp4", "Content-Length": str(size)})
     res = json.load(urllib.request.urlopen(up))
