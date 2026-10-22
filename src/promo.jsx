@@ -486,22 +486,22 @@ const Quiz = ({sc, p}) => {
         <div style={{width: 96, height: 96, borderRadius: 48, border: `6px solid ${inCd ? p.main : p.soft}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: PF, fontWeight: 700, fontSize: 48, color: inCd ? p.main : p.muted, background: '#fff', transform: `scale(${inCd ? 1 + 0.08 * Math.sin(f / 3) : 1})`}}>{revealed ? '✓' : left}</div>
       </div>
       <div style={{position: 'absolute', top: 290, left: 60, right: 60, background: '#fff', borderRadius: 36, boxShadow: '0 30px 70px rgba(40,20,25,.16)', padding: '40px 44px', opacity: s, transform: `translateY(${(1 - s) * 80}px)`}}>
-        <div style={{fontFamily: PF, fontWeight: 600, fontSize: sc.qsize || 40, lineHeight: 1.3, color: p.ink}}>{sc.q}</div>
+        <div style={{fontFamily: PF, fontWeight: 600, fontSize: sc.qsize || 52, lineHeight: 1.28, color: p.ink}}>{sc.q}</div>
         <div style={{marginTop: 26}}>
           {sc.alts.map((a, i) => {
             const ok = i === sc.correct;
             const a0 = interpolate(f, [10 + i * 5, 18 + i * 5], [0, 1], C);
             const fade = revealed && !ok ? 1 - 0.65 * k : 1;
             return (
-              <div key={i} style={{display: 'flex', alignItems: 'flex-start', gap: 20, margin: '16px 0', padding: '16px 20px', borderRadius: 22, background: revealed && ok ? OK : (p.blush), opacity: a0 * fade, transform: `scale(${revealed && ok ? 1 + 0.04 * k : 1})`, boxShadow: revealed && ok ? '0 16px 34px rgba(63,138,98,.35)' : 'none'}}>
-                <span style={{flex: 'none', width: 56, height: 56, borderRadius: 28, background: revealed && ok ? '#fff' : navy, color: revealed && ok ? OK : '#fff', fontFamily: PF, fontWeight: 700, fontSize: 30, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{'ABCDE'[i]}</span>
-                <span style={{fontFamily: PF, fontWeight: 500, fontSize: sc.asize || 34, lineHeight: 1.25, color: revealed && ok ? '#fff' : p.ink, paddingTop: 6}}>{a}</span>
+              <div key={i} style={{display: 'flex', alignItems: 'flex-start', gap: 20, margin: '20px 0', padding: '22px 24px', borderRadius: 26, background: revealed && ok ? OK : (p.blush), opacity: a0 * fade, transform: `scale(${revealed && ok ? 1 + 0.04 * k : 1})`, boxShadow: revealed && ok ? '0 16px 34px rgba(63,138,98,.35)' : 'none'}}>
+                <span style={{flex: 'none', width: 68, height: 68, borderRadius: 34, background: revealed && ok ? '#fff' : navy, color: revealed && ok ? OK : '#fff', fontFamily: PF, fontWeight: 700, fontSize: 36, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{'ABCDE'[i]}</span>
+                <span style={{fontFamily: PF, fontWeight: 500, fontSize: sc.asize || 44, lineHeight: 1.22, color: revealed && ok ? '#fff' : p.ink, paddingTop: 6}}>{a}</span>
               </div>
             );
           })}
         </div>
       </div>
-      {revealed && sc.why ? <div style={{position: 'absolute', left: 70, right: 70, top: sc.whyTop || 1330, textAlign: 'center', fontFamily: SERIF, fontStyle: 'italic', fontSize: 38, color: p.deep, opacity: interpolate(f, [rv + 8, rv + 18], [0, 1], C)}}>{sc.why}</div> : null}
+      {revealed && sc.why ? <div style={{position: 'absolute', left: 70, right: 70, top: sc.whyTop || 1560, textAlign: 'center', fontFamily: SERIF, fontStyle: 'italic', fontSize: 38, color: p.deep, opacity: interpolate(f, [rv + 8, rv + 18], [0, 1], C)}}>{sc.why}</div> : null}
       {sc.alts.map((a, i) => <Sfx key={i} at={10 + i * 5} src="click" vol={0.14} />)}
       {[3, 2, 1].map((n) => <Sfx key={n} at={rv - n * FPS} src="tick" vol={0.3} />)}
       <Sfx at={rv} src="ding" vol={0.4} />
