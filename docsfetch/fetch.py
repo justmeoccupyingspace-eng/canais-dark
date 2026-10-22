@@ -1,7 +1,9 @@
 import os, re, sys, asyncio, json
 from playwright.async_api import async_playwright
 OUT = 'docs_out'; os.makedirs(OUT, exist_ok=True)
-items = [l.split(None, 1) for l in open('docsfetch/urls.txt') if l.strip()]
+import sys
+src = sys.argv[1] if len(sys.argv) > 1 else 'docsfetch/urls.txt'
+items = [l.split(None, 1) for l in open(src) if l.strip() and not l.startswith('#')]
 log = {}
 def pdf_text(path, dest):
     import subprocess
@@ -14,7 +16,8 @@ async def main():
         for key, url in items:
             url = url.strip()
             try:
-                if url.lower().split('?')[0].endswith('.pdf'):
+                if url.startswith('pdf:') or url.lower().split('?')[0].endswith('.pdf'):
+                    url = url[4:] if url.startswith('pdf:') else url
                     r = await ctx.request.get(url, timeout=120000)
                     open(f'{OUT}/{key}.pdf', 'wb').write(await r.body())
                     pdf_text(f'{OUT}/{key}.pdf', f'{OUT}/{key}.txt')

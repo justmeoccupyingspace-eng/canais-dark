@@ -2,7 +2,7 @@ name: fetchdocs
 on:
   push:
     branches: [main]
-    paths: ["docsfetch/urls.txt"]
+    paths: ["docsfetch/urls.txt", "docsfetch/urls2.txt"]
   workflow_dispatch: {}
 permissions:
   contents: write
@@ -15,10 +15,10 @@ jobs:
         with: {python-version: "3.12"}
       - run: sudo apt-get install -y poppler-utils >/dev/null
       - run: pip install playwright
-      - run: python docsfetch/fetch.py
+      - run: python docsfetch/fetch.py docsfetch/urls2.txt
       - name: Push docs branch
         run: |
           mkdir -p /tmp/dd && cp -r docs_out/* /tmp/dd/
           git config user.name producer; git config user.email producer@users.noreply.github.com
-          git checkout --orphan docs && git rm -rf . -q
-          cp -r /tmp/dd/* . && git add . && git commit -qm docs && git push -f origin docs
+          git checkout --orphan docs2 && git rm -rf . -q
+          cp -r /tmp/dd/* . && git add . && git commit -qm docs && git push -f origin docs2
