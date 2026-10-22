@@ -81,7 +81,16 @@ jobs:
           MANUAL_CHANNEL: ${{ inputs.channel }}
           MANUAL_PRIVACY: ${{ inputs.privacy }}
           MANUAL_UPLOAD: ${{ inputs.upload }}
-        run: bash scripts/produce.sh list.txt
+        run: |
+          set -o pipefail
+          bash scripts/produce.sh list.txt 2>&1 | tee produce.log
+      - name: Log da falha na branch logs-<run>
+        if: failure()
+        run: |
+          cp produce.log /tmp/produce.log || echo "sem log" > /tmp/produce.log
+          git config user.name producer; git config user.email producer@users.noreply.github.com
+          git checkout --orphan logs-${{ github.run_id }} && git rm -rf . -q
+          tail -c 60000 /tmp/produce.log > produce.log && git add produce.log && git commit -qm log && git push -f origin logs-${{ github.run_id }}
       - uses: actions/upload-artifact@v4
         if: steps.pick.outputs.n != '0'
         with: {name: videos, path: out/*.mp4, retention-days: 7}
