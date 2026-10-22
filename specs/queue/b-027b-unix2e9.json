@@ -1,0 +1,61 @@
+{
+ "channel": "howitticks",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-24T17:00:00Z"
+ },
+ "title": "Unix time hits 2 billion",
+ "compute": {
+  "calc": {
+   "kind": "unix2e9"
+  }
+ },
+ "yt": {
+  "title": "Unix time hits 2,000,000,000 seconds on {c_date} (UTC) #Shorts",
+  "description": "Unix time counts seconds since January 1, 1970 UTC. Python: datetime.fromtimestamp(2,000,000,000, UTC) = {c_date}, {c_time}. It passed 1,000,000,000 on {c_1e9}.\nNarration is AI-generated.",
+  "tags": [
+   "unix time",
+   "epoch",
+   "timestamps",
+   "how it works"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "Your computer counts seconds",
+   "hl": "seconds",
+   "size": 150,
+   "narration": "Many computers keep time as one big number: the seconds since January first, nineteen seventy.",
+   "min_duration": 5
+  },
+  {
+   "type": "stat",
+   "label": "the day that count reaches 2,000,000,000",
+   "value_from": "c_stat",
+   "value": 0,
+   "as_str": true,
+   "narration": "That count reaches two billion on {c_date_say}, at {c_time_say}.",
+   "min_duration": 7
+  },
+  {
+   "type": "kin",
+   "text": "1 billion was in {c_1e9}",
+   "hl": "1 billion",
+   "size": 120,
+   "narration": "It passed one billion on {c_1e9_say}. Two billion is still below the thirty two bit limit of about two point one four billion, so it fits. The real trouble is twenty thirty-eight, when that limit runs out.",
+   "min_duration": 8.5
+  },
+  {
+   "type": "kin",
+   "text": "Mark the date",
+   "hl": "Mark",
+   "size": 170,
+   "narration": "Mark the date. Where will you be when the clock hits two billion?",
+   "min_duration": 3.6
+  }
+ ],
+ "style": "clean"
+}
