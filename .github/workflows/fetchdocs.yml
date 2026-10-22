@@ -1,0 +1,24 @@
+name: fetchdocs
+on:
+  push:
+    branches: [main]
+    paths: ["docsfetch/urls.txt"]
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  f:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: sudo apt-get install -y poppler-utils >/dev/null
+      - run: pip install playwright && python -m playwright install --with-deps chromium >/dev/null
+      - run: python docsfetch/fetch.py
+      - name: Push docs branch
+        run: |
+          mkdir -p /tmp/dd && cp -r docs_out/* /tmp/dd/
+          git config user.name producer; git config user.email producer@users.noreply.github.com
+          git checkout --orphan docs && git rm -rf . -q
+          cp -r /tmp/dd/* . && git add . && git commit -qm docs && git push -f origin docs

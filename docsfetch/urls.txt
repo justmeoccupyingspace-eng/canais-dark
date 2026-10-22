@@ -1,0 +1,14 @@
+cf https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
+cp https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm
+cpp https://www.planalto.gov.br/ccivil_03/decreto-lei/del3689compilado.htm
+cpc https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm
+l9099 https://www.planalto.gov.br/ccivil_03/leis/l9099.htm
+l12153 https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12153.htm
+l8429 https://www.planalto.gov.br/ccivil_03/leis/l8429.htm
+l13146 https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm
+sp10261 https://www.al.sp.gov.br/repositorio/legislacao/lei/1968/lei-10261-28.10.1968.html
+lc1111 https://www.al.sp.gov.br/repositorio/legislacao/lei.complementar/2010/lei.complementar-1111-25.05.2010.html
+res850 https://esaj.tjsp.jus.br/gcn-frontend-vue/legislacao/find/196070
+res963 https://esaj.tjsp.jus.br/gcn-frontend-vue/legislacao/find/229313
+ritjsp https://www.tjsp.jus.br/Download/Portal/Biblioteca/Biblioteca/Legislacao/RegimentoInternoTJSP.pdf
+nscgj https://www.tjsp.jus.br/Corregedoria/Comunicados/NormasJudiciais
