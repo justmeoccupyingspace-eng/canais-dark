@@ -43,8 +43,18 @@ for tag, name, text in samples:
     try:
         open(p, "wb").write(google(name, text))
     except Exception as e:
-        rep.append(f"{tag}: ERRO {repr(e)[:120]}")
-for tag, v, text in [("F_edge_Francisca", "pt-BR-FranciscaNeural", TXT), ("F_edge_Thalita", "pt-BR-ThalitaMultilingualNeural", TXT), ("M_edge_Antonio", "pt-BR-AntonioNeural", TXT_M)]:
+        body = e.read().decode()[:400] if hasattr(e, "read") else ""
+        rep.append(f"{tag}: ERRO {repr(e)[:80]} {body}")
+        if "403" in repr(e):
+            break
+async def lv():
+    import edge_tts
+    return [v["ShortName"] for v in await edge_tts.list_voices() if v["Locale"] == "pt-BR"]
+try:
+    rep.append("edge pt-BR: " + ", ".join(asyncio.run(lv())))
+except Exception as e:
+    rep.append("edge list erro " + repr(e)[:80])
+for tag, v, text in [("F_edge_Francisca", "pt-BR-FranciscaNeural", TXT), ("F_edge_Thalita", "pt-BR-ThalitaMultilingualNeural", TXT), ("M_edge_Antonio", "pt-BR-AntonioNeural", TXT_M), ("M_edge_Antonio_lento", "pt-BR-AntonioNeural", TXT_M)]:
     try:
         asyncio.run(edge(v, text, f"out_v/{tag}.mp3"))
     except Exception as e:
@@ -71,7 +81,7 @@ def wer(r, h):
 import librosa
 print("\n".join(rep))
 for f in sorted(os.listdir("out_v")):
-    if not f.endswith(".mp3"):
+    if not f.endswith(".mp3") or os.path.getsize(f"out_v/{f}") < 1000:
         continue
     path = f"out_v/{f}"
     ref = TXT if f.startswith("F") else TXT_M
