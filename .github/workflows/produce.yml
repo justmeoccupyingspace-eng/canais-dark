@@ -47,13 +47,17 @@ jobs:
           curl -sSL -o .cache/kokoro/kokoro-v1.0.onnx $B/kokoro-v1.0.onnx
           curl -sSL -o .cache/kokoro/voices-v1.0.bin $B/voices-v1.0.bin
       - run: pip install kokoro-onnx soundfile scipy num2words edge-tts librosa faster-whisper
-      - name: ffmpeg e fontes (com timeout e nova tentativa)
+      - name: ffmpeg e fontes (apt com timeout; ffmpeg estatico do PyPI se o apt travar)
         run: |
-          for i in 1 2 3; do
-            timeout 240 sudo apt-get update -qq && timeout 300 sudo apt-get install -y -qq ffmpeg fonts-noto-color-emoji && break
-            echo "apt falhou/travou (tentativa $i)"; sleep 10
+          for i in 1 2; do
+            timeout 180 sudo apt-get update -qq && timeout 240 sudo apt-get install -y -qq ffmpeg fonts-noto-color-emoji && break
+            echo "apt falhou/travou (tentativa $i)"; sleep 5
           done
-          command -v ffmpeg
+          if ! command -v ffmpeg >/dev/null; then
+            pip install -q imageio-ffmpeg
+            sudo ln -sf "$(python -c 'import imageio_ffmpeg as m; print(m.get_ffmpeg_exe())')" /usr/local/bin/ffmpeg
+          fi
+          ffmpeg -version | head -1
       - run: npm ci --no-audit --no-fund
       - name: Escolher specs
         id: pick
