@@ -1,0 +1,25 @@
+name: voicetest2
+on:
+  push:
+    branches: [main]
+    paths: ["voicetest/gtrigger.txt"]
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  v:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install edge-tts faster-whisper librosa soundfile numpy
+      - run: python voicetest/gtest.py
+        env:
+          GCP_TTS_KEY: ${{ secrets.GCP_TTS_KEY }}
+      - name: Amostras na branch voices2
+        run: |
+          mkdir -p /tmp/vv && cp out_v/* /tmp/vv/
+          git config user.name producer; git config user.email producer@users.noreply.github.com
+          git checkout --orphan voices2 && git rm -rf . -q
+          cp /tmp/vv/* . && git add . && git commit -qm voices2 && git push -f origin voices2
