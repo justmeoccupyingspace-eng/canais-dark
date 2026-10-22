@@ -2,28 +2,37 @@
  "channel": "lojam",
  "style": "promo",
  "pal": "barber",
- "tag": "💈 PARA BARBEIROS",
+ "tag": "PLANILHA PARA BARBEIROS",
+ "tagIcon": "<svg viewBox=\"0 0 48 48\" width=\"100%\" fill=\"none\" stroke=\"#E6C98F\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M24 20 C19 15 11 17 8 22 C6 26 4 27 2 26 C3 31 9 33 15 31 C19 30 22 27 24 26 C26 27 29 30 33 31 C39 33 45 31 46 26 C44 27 42 26 40 22 C37 17 29 15 24 20Z\"/></svg>",
+ "motifs": [
+  "<svg viewBox=\"0 0 200 110\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M100 40 C88 26 64 26 48 40 C36 50 26 60 12 58 C6 57 3 52 6 46 C1 58 8 72 24 74 C46 77 64 66 80 60 C90 56 96 56 100 60 C104 56 110 56 120 60 C136 66 154 77 176 74 C192 72 199 58 194 46 C197 52 194 57 188 58 C174 60 164 50 152 40 C136 26 112 26 100 40Z\" fill=\"#8C6A3F\"/>\n<polygon points=\"184.0,15.0 185.3,20.7 191.0,22.0 185.3,23.3 184.0,29.0 182.7,23.3 177.0,22.0 182.7,20.7\" fill=\"#E6C98F\"/></svg>",
+  "<svg viewBox=\"0 0 48 48\" width=\"100%\" fill=\"none\" stroke=\"#8C6A3F\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"13\" cy=\"35\" r=\"6\"/><circle cx=\"35\" cy=\"35\" r=\"6\"/><path d=\"M17 31 L37 7 M31 31 L11 7\"/></svg>",
+  "<svg viewBox=\"0 0 48 48\" width=\"100%\" fill=\"none\" stroke=\"#E6C98F\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M24 20 C19 15 11 17 8 22 C6 26 4 27 2 26 C3 31 9 33 15 31 C19 30 22 27 24 26 C26 27 29 30 33 31 C39 33 45 31 46 26 C44 27 42 26 40 22 C37 17 29 15 24 20Z\"/></svg>"
+ ],
+ "tail": 0.16,
  "publish": {
   "channel": "C",
   "privacy": "public"
  },
- "title": "Barbeiro: quanto sobrou no fim do mês? 💈",
+ "title": "Barbeiro: quanto sobrou no fim do mês?",
  "yt": {
-  "title": "Barbeiro: quanto sobrou no fim do mês? 💈",
-  "description": "Agenda, retorno dos clientes no WhatsApp e o caixa da barbearia numa planilha. Peça pelo WhatsApp da bio.\n#barbearia #barbeiro #barber #degrade #empreendedor",
+  "title": "Barbeiro: quanto sobrou no fim do mês?",
+  "description": "Agenda, retorno dos clientes no WhatsApp e o caixa da barbearia numa planilha. Peça pelo WhatsApp da bio.\n#barbearia #barbeiro #barber #degrade #planilha",
   "tags": [],
   "lang": "pt-BR"
  },
- "tiktok": "Agenda, retorno dos clientes no WhatsApp e o caixa da barbearia numa planilha. Peça pelo WhatsApp da bio.\n#barbearia #barbeiro #barber #degrade #empreendedor",
+ "tiktok": "Agenda, retorno dos clientes no WhatsApp e o caixa da barbearia numa planilha. Peça pelo WhatsApp da bio.\n#barbearia #barbeiro #barber #degrade #planilha",
  "scenes": [
   {
    "type": "hook",
-   "emoji": "💈",
+   "art": "<svg viewBox=\"0 0 200 110\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M100 40 C88 26 64 26 48 40 C36 50 26 60 12 58 C6 57 3 52 6 46 C1 58 8 72 24 74 C46 77 64 66 80 60 C90 56 96 56 100 60 C104 56 110 56 120 60 C136 66 154 77 176 74 C192 72 199 58 194 46 C197 52 194 57 188 58 C174 60 164 50 152 40 C136 26 112 26 100 40Z\" fill=\"#E6C98F\"/>\n<polygon points=\"184.0,15.0 185.3,20.7 191.0,22.0 185.3,23.3 184.0,29.0 182.7,23.3 177.0,22.0 182.7,20.7\" fill=\"#F1DDAF\"/></svg>",
    "text": "Quanto sobrou no fim do mês?",
    "hl": "sobrou",
    "sub": "Não é o que entrou. É o que ficou.",
-   "narration": "Barbeiro, quanto sobrou no fim do mês? Não o que entrou. O que ficou.",
-   "min_duration": 4.4
+   "badge": "PLANILHA PRONTA",
+   "narration": "Barbeiro, quanto sobrou no fim do mês? Não o que entrou, o que ficou. Essa planilha te mostra.",
+   "min_duration": 5,
+   "artW": 520
   },
   {
    "type": "kpis",
@@ -52,7 +61,7 @@
      "hi": true
     }
    ],
-   "narration": "A planilha soma cada corte concluído, desconta as despesas e mostra o lucro do mês.",
+   "narration": "Ela soma cada corte concluído, desconta as despesas e mostra o lucro do mês, sem conta de cabeça.",
    "min_duration": 5.4
   },
   {
@@ -60,7 +69,7 @@
    "sheet": "Clientes",
    "sheetSub": "Quem já está na hora de voltar",
    "file": "Agenda_Barbearia.xlsx",
-   "emoji": "💈",
+   "icon": "<svg viewBox=\"0 0 48 48\" width=\"100%\" fill=\"none\" stroke=\"#8C6A3F\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"19\" cy=\"17\" r=\"7\"/><path d=\"M6 40 c1-8 7-12 13-12 s12 4 13 12\"/><circle cx=\"34\" cy=\"19\" r=\"5\"/><path d=\"M33 28 c5 0 9 4 9 10\"/></svg>",
    "tabs": [
     "Início",
     "Agenda do dia",
@@ -120,19 +129,14 @@
      "15/10",
      "11",
      "Já tem horário"
-    ],
-    [
-     "Thiago Santos",
-     "18/10",
-     "22",
-     "Em dia"
     ]
    ],
+   "narration": "E avisa quem está sumido: passou do prazo do corte, aparece chamar hoje.",
+   "min_duration": 5.2,
    "focus": 0,
-   "focus_at": 3.2,
+   "focus_at": 3,
    "tap": 3,
-   "narration": "Cada serviço tem o seu retorno. Passou do prazo, aparece chamar hoje.",
-   "min_duration": 5.4
+   "formula": "=SE(J8<=HOJE();\"Chamar hoje\";\"Em dia\")"
   },
   {
    "type": "chat",
@@ -146,8 +150,16 @@
    "min_duration": 6
   },
   {
+   "type": "devices",
+   "img": "img/barber.jpg",
+   "file": "Agenda_Barbearia.xlsx",
+   "text": "É uma planilha pronta",
+   "hl": "planilha pronta",
+   "narration": "É uma planilha pronta, no Excel ou no Google Planilhas.",
+   "min_duration": 5.5
+  },
+  {
    "type": "cta",
-   "emoji": "💈",
    "product": "Agenda Barbearia",
    "product_sub": "Excel e Google Planilhas",
    "bullets": [
@@ -157,10 +169,18 @@
     "Quanto cobrar por serviço"
    ],
    "price": "R$ 34,90",
-   "narration": "Quer a Agenda Barbearia? Chama no WhatsApp que está na bio. Pix e recebe na hora.",
-   "min_duration": 6.4,
+   "icon": "<svg viewBox=\"0 0 48 48\" width=\"100%\" fill=\"none\" stroke=\"#8C6A3F\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M24 20 C19 15 11 17 8 22 C6 26 4 27 2 26 C3 31 9 33 15 31 C19 30 22 27 24 26 C26 27 29 30 33 31 C39 33 45 31 46 26 C44 27 42 26 40 22 C37 17 29 15 24 20Z\"/></svg>",
+   "narration": "A Agenda Barbearia sai por trinta e quatro e noventa. Chama no WhatsApp da bio.",
+   "min_duration": 6.6,
    "top_text": "WhatsApp na bio",
-   "button": "Chama no WhatsApp da bio 💬"
+   "button": "Chama no WhatsApp da bio"
+  },
+  {
+   "type": "end",
+   "art": "<svg viewBox=\"0 0 200 110\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M100 40 C88 26 64 26 48 40 C36 50 26 60 12 58 C6 57 3 52 6 46 C1 58 8 72 24 74 C46 77 64 66 80 60 C90 56 96 56 100 60 C104 56 110 56 120 60 C136 66 154 77 176 74 C192 72 199 58 194 46 C197 52 194 57 188 58 C174 60 164 50 152 40 C136 26 112 26 100 40Z\" fill=\"#E6C98F\"/>\n<polygon points=\"184.0,15.0 185.3,20.7 191.0,22.0 185.3,23.3 184.0,29.0 182.7,23.3 177.0,22.0 182.7,20.7\" fill=\"#F1DDAF\"/></svg>",
+   "duration": 2.6,
+   "nocaps": true,
+   "artW": 330
   }
  ]
 }

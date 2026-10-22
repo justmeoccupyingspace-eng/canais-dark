@@ -16,7 +16,7 @@ EDGE = {"loja": "pt-BR-ThalitaMultilingualNeural", "lojam": "pt-BR-AntonioNeural
 GOOGLE = {"valeopreco": ("pt-BR", "pt-BR-Chirp3-HD-Charon"), "loja": ("pt-BR", "pt-BR-Chirp3-HD-Leda"), "lojam": ("pt-BR", "pt-BR-Chirp3-HD-Charon")}  # exige GCP_TTS_KEY; sem a chave, cai no edge/Kokoro
 EDGE_RATE = os.environ.get("EDGE_RATE", "+0%")
 MODEL = os.environ.get("KOKORO_DIR", ".cache/kokoro")
-TAIL = 0.28  # silêncio após a fala antes da próxima cena
+TAIL = float(os.environ.get("TTS_TAIL", "0.28"))  # silêncio após a fala antes da próxima cena
 
 
 def trim(samples, sr, thr=0.002):
@@ -100,6 +100,17 @@ def edge_sentence(text, voice):
 
 def speak(k, text, voice, lang, speed, edge_voice=None, google_cfg=None):
     """Frase a frase, com pausas naturais; limpa graves, nivela volume. Retorna (samples, sr, words)."""
+    if google_cfg and os.environ.get("TTS_WHOLE", "1") == "1":
+        try:  # cena inteira numa requisição: entonação contínua, sem emendas
+            sr = 24000
+            smp = trim(google_sentence(text.strip(), google_cfg), sr)
+            words = word_times(text.strip(), len(smp) / sr, 0.0, smp, sr)
+            x = sosfilt(butter(2, 70 / (sr / 2), btype="high", output="sos"), smp)
+            x = x * (0.11 / (np.sqrt(np.mean(x ** 2)) + 1e-9))
+            x = (np.tanh(x * 1.2) / np.tanh(1.2) * 0.95).astype(np.float32)
+            return x, sr, words
+        except Exception as e:
+            print("google inteiro falhou, indo frase a frase:", repr(e)[:160])
     if edge_voice and not google_cfg:
         try:
             smp, wb = edge_sentence(text.strip(), edge_voice)
@@ -203,7 +214,7 @@ def main(src, dst):
         sc["audio"] = rel
         sc["words"] = words
         sc["env"] = envelope(samples, sr)
-        sc["duration"] = round(max(sc.get("min_duration", 0), dur + TAIL), 2)
+        sc["duration"] = round(max(sc.get("min_duration", 0), dur + spec.get("tail", TAIL)), 2)
     os.makedirs(os.path.dirname(dst), exist_ok=True)
     json.dump(spec, open(dst, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print("tts ok", dst, round(sum(s.get("duration", 0) for s in spec["scenes"]), 1), "s")

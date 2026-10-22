@@ -60,6 +60,63 @@ def hit():
     return np.clip(boom * 0.9 + nz * 0.55, -1, 1) * 0.9
 
 
+def click():
+    n = int(0.035 * SR)
+    t = np.arange(n) / SR
+    nz = rng.standard_normal(n) * np.exp(-t * 260)
+    b, a = butter(2, [1800 / (SR / 2), 7000 / (SR / 2)], btype="band")
+    return lfilter(b, a, nz) * 0.5 + np.sin(2 * np.pi * 2400 * t) * np.exp(-t * 400) * 0.15
+
+
+def tap():
+    n = int(0.12 * SR)
+    t = np.arange(n) / SR
+    f = 900 * np.exp(-t * 30) + 300
+    return np.sin(2 * np.pi * np.cumsum(f) / SR) * np.exp(-t * 40) * 0.6
+
+
+def ding():
+    n = int(0.9 * SR)
+    t = np.arange(n) / SR
+    x = sum(np.sin(2 * np.pi * f * t) * a for f, a in [(1318.5, .5), (2637, .18), (1975.5, .12)]) * np.exp(-t * 5)
+    x2 = np.zeros(n)
+    d = int(0.09 * SR)
+    x2[d:] = (sum(np.sin(2 * np.pi * f * t[:n - d]) * a for f, a in [(1760, .45), (3520, .12)]) * np.exp(-t[:n - d] * 5))
+    return (x + x2) * 0.55
+
+
+def cash():
+    n = int(1.1 * SR)
+    t = np.arange(n) / SR
+    bell = sum(np.sin(2 * np.pi * f * t) * a for f, a in [(2093, .35), (2637, .25), (3136, .2), (4186, .1)]) * np.exp(-t * 4)
+    nz = rng.standard_normal(n) * np.exp(-t * 35) * 0.25
+    b, a = butter(2, [3000 / (SR / 2), 9000 / (SR / 2)], btype="band")
+    chk = np.zeros(n)
+    k = int(0.06 * SR)
+    chk[:k] = lfilter(b, a, rng.standard_normal(k)) * np.exp(-np.arange(k) / SR * 60) * 0.8
+    out = np.zeros(n)
+    off = int(0.07 * SR)
+    out[off:] = bell[:n - off]
+    return (out + lfilter(b, a, nz) + chk) * 0.6
+
+
+def sparkle():
+    n = int(1.4 * SR)
+    t = np.arange(n) / SR
+    out = np.zeros(n)
+    for i, f in enumerate([1568, 1976, 2349, 2637, 3136, 3951]):
+        s = int(i * 0.07 * SR)
+        tt = t[:n - s]
+        out[s:] += np.sin(2 * np.pi * f * tt) * np.exp(-tt * 6) * 0.22
+    return out
+
+
+def softwhoosh():
+    x = whoosh()
+    b, a = butter(2, 2500 / (SR / 2), btype="low")
+    return lfilter(b, a, x) * 0.8
+
+
 def music(root, mode, bpm, seconds=60):
     """Pad suave + baixo pulsante + hi-hat leve. Loopável."""
     beat = 60 / bpm
@@ -114,4 +171,6 @@ if __name__ == "__main__":
     save("music_howitticks", music(98.0, "minor", 96))
     save("music_valeopreco", music(130.8, "major", 112))
     save("music_loja", music(174.6, "major", 92))
+    for nm, fn in [("click", click), ("tap", tap), ("ding", ding), ("cash", cash), ("sparkle", sparkle), ("softwhoosh", softwhoosh)]:
+        save(nm, fn())
     print("fx ok")

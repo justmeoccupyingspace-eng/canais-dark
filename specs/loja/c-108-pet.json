@@ -2,35 +2,45 @@
  "channel": "loja",
  "style": "promo",
  "pal": "sky",
- "tag": "🐾 PARA BANHO E TOSA",
+ "tag": "PLANILHA PARA BANHO E TOSA",
+ "tagIcon": "<svg viewBox=\"0 0 48 48\" width=\"100%\" fill=\"none\" stroke=\"#2D5B7A\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M24 24 c-7 0 -11 8 -9 12 c2 4 6 2 9 2 s7 2 9 -2 c2 -4 -2 -12 -9 -12Z\"/><circle cx=\"12\" cy=\"21\" r=\"3.6\"/><circle cx=\"19\" cy=\"12\" r=\"3.8\"/><circle cx=\"29\" cy=\"12\" r=\"3.8\"/><circle cx=\"36\" cy=\"21\" r=\"3.6\"/></svg>",
+ "motifs": [
+  "<svg viewBox=\"0 0 48 48\" width=\"100%\" fill=\"none\" stroke=\"#4F8FBF\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M24 24 c-7 0 -11 8 -9 12 c2 4 6 2 9 2 s7 2 9 -2 c2 -4 -2 -12 -9 -12Z\"/><circle cx=\"12\" cy=\"21\" r=\"3.6\"/><circle cx=\"19\" cy=\"12\" r=\"3.8\"/><circle cx=\"29\" cy=\"12\" r=\"3.8\"/><circle cx=\"36\" cy=\"21\" r=\"3.6\"/></svg>",
+  "<svg viewBox=\"0 0 48 48\" width=\"100%\" fill=\"none\" stroke=\"#2D5B7A\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M24 24 c-7 0 -11 8 -9 12 c2 4 6 2 9 2 s7 2 9 -2 c2 -4 -2 -12 -9 -12Z\"/><circle cx=\"12\" cy=\"21\" r=\"3.6\"/><circle cx=\"19\" cy=\"12\" r=\"3.8\"/><circle cx=\"29\" cy=\"12\" r=\"3.8\"/><circle cx=\"36\" cy=\"21\" r=\"3.6\"/></svg>",
+  "<svg viewBox=\"0 0 48 48\" width=\"100%\" fill=\"none\" stroke=\"#4F8FBF\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M24 24 c-7 0 -11 8 -9 12 c2 4 6 2 9 2 s7 2 9 -2 c2 -4 -2 -12 -9 -12Z\"/><circle cx=\"12\" cy=\"21\" r=\"3.6\"/><circle cx=\"19\" cy=\"12\" r=\"3.8\"/><circle cx=\"29\" cy=\"12\" r=\"3.8\"/><circle cx=\"36\" cy=\"21\" r=\"3.6\"/></svg>"
+ ],
+ "tail": 0.16,
  "publish": {
   "channel": "C",
   "privacy": "public"
  },
- "title": "Seu banho e tosa ainda é no caderno? 🐾",
+ "title": "Seu banho e tosa ainda é no caderno?",
  "yt": {
-  "title": "Seu banho e tosa ainda é no caderno? 🐾",
-  "description": "Agenda do dia, tutores e pets, retorno do banho no WhatsApp e o caixa. Peça pelo WhatsApp da bio.\n#banhoetosa #petshop #tosador #pet #empreendedor",
+  "title": "Seu banho e tosa ainda é no caderno?",
+  "description": "Agenda do dia, tutores e pets, retorno do banho no WhatsApp e o caixa. Peça pelo WhatsApp da bio.\n#banhoetosa #petshop #tosador #pet #planilha",
   "tags": [],
   "lang": "pt-BR"
  },
- "tiktok": "Agenda do dia, tutores e pets, retorno do banho no WhatsApp e o caixa. Peça pelo WhatsApp da bio.\n#banhoetosa #petshop #tosador #pet #empreendedor",
+ "tiktok": "Agenda do dia, tutores e pets, retorno do banho no WhatsApp e o caixa. Peça pelo WhatsApp da bio.\n#banhoetosa #petshop #tosador #pet #planilha",
  "scenes": [
   {
    "type": "hook",
-   "emoji": "🐶",
+   "art": "<svg viewBox=\"0 0 130 130\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"#2D5B7A\" stroke-width=\"3\">\n<path d=\"M65 66 C42 66 30 92 38 106 C46 118 58 112 65 112 C72 112 84 118 92 106 C100 92 88 66 65 66Z\"/>\n<ellipse cx=\"30\" cy=\"58\" rx=\"10\" ry=\"13\"/><ellipse cx=\"50\" cy=\"34\" rx=\"10\" ry=\"14\"/><ellipse cx=\"80\" cy=\"34\" rx=\"10\" ry=\"14\"/><ellipse cx=\"100\" cy=\"58\" rx=\"10\" ry=\"13\"/><polygon points=\"112.0,12.0 113.1,16.9 118.0,18.0 113.1,19.1 112.0,24.0 110.9,19.1 106.0,18.0 110.9,16.9\" fill=\"#B8936A\"/></svg>",
    "text": "Seu banho e tosa ainda é no caderno?",
    "hl": "no caderno?",
-   "size": 96,
-   "narration": "Seu banho e tosa ainda é no caderno? Dá pra ser bem mais fácil.",
-   "min_duration": 4.2
+   "sub": null,
+   "badge": "PLANILHA PRONTA",
+   "narration": "Seu banho e tosa ainda é no caderno? Com essa planilha fica bem mais fácil.",
+   "min_duration": 4.4,
+   "size": 92,
+   "artW": 330
   },
   {
    "type": "sheet",
    "sheet": "Agenda do dia",
    "sheetSub": "Os horários de hoje em ordem",
    "file": "Agenda_Banho_e_Tosa.xlsx",
-   "emoji": "🐾",
+   "icon": "<svg viewBox=\"0 0 48 48\" width=\"100%\" fill=\"none\" stroke=\"#2D5B7A\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"24\" cy=\"24\" r=\"8\"/><path d=\"M37.0 24.0 L42.0 24.0\"/><path d=\"M33.2 33.2 L36.7 36.7\"/><path d=\"M24.0 37.0 L24.0 42.0\"/><path d=\"M14.8 33.2 L11.3 36.7\"/><path d=\"M11.0 24.0 L6.0 24.0\"/><path d=\"M14.8 14.8 L11.3 11.3\"/><path d=\"M24.0 11.0 L24.0 6.0\"/><path d=\"M33.2 14.8 L36.7 11.3\"/></svg>",
    "tabs": [
     "Início",
     "Agenda do dia",
@@ -52,7 +62,7 @@
     },
     {
      "h": "Tutor(a)",
-     "w": 1.7,
+     "w": 1.6,
      "type": 1
     },
     {
@@ -90,20 +100,14 @@
      "Camila",
      "Banho porte médio",
      "Agendado"
-    ],
-    [
-     "15:30",
-     "Sérgio",
-     "Hidratação de pelos",
-     "Agendado"
     ]
    ],
+   "narration": "Na agenda do dia você vê cada horário, o serviço e quanto vai entrar.",
+   "min_duration": 5.4,
    "total": [
     "Previsto hoje",
     390
-   ],
-   "narration": "Na agenda do dia você vê cada horário, o serviço e quanto vai entrar.",
-   "min_duration": 5.4
+   ]
   },
   {
    "type": "chat",
@@ -111,10 +115,10 @@
    "hl": "ela avisa",
    "name": "Juliana Martins",
    "msg": "Oi Juliana! Tudo bem? Já está na hora do banho do Thor. Quer que eu reserve um horário?",
-   "reply": "Quero! Sábado cedinho? 🐶",
+   "reply": "Quero! Sábado cedinho?",
    "time": "10:20",
-   "narration": "E quando chega a hora do próximo banho, a mensagem já vai pronta, até com o nome do pet.",
-   "min_duration": 6.4
+   "narration": "E quando chega a hora do próximo banho, a mensagem vai pronta, até com o nome do pet.",
+   "min_duration": 6.2
   },
   {
    "type": "kpis",
@@ -143,12 +147,20 @@
      "hi": true
     }
    ],
-   "narration": "No financeiro, faturamento, ticket médio e lucro, sem fazer conta.",
+   "narration": "No financeiro: faturamento, ticket médio e lucro do mês, sem fazer conta.",
    "min_duration": 4.2
   },
   {
+   "type": "devices",
+   "img": "img/pet.jpg",
+   "file": "Agenda_Banho_e_Tosa.xlsx",
+   "text": "É uma planilha pronta",
+   "hl": "planilha pronta",
+   "narration": "É uma planilha pronta, no Excel ou no Google Planilhas.",
+   "min_duration": 5.5
+  },
+  {
    "type": "cta",
-   "emoji": "🐾",
    "product": "Agenda Banho & Tosa",
    "product_sub": "Excel e Google Planilhas",
    "bullets": [
@@ -158,10 +170,18 @@
     "Caixa, despesas e lucro"
    ],
    "price": "R$ 34,90",
-   "narration": "Quer a Agenda Banho & Tosa? Me chama no WhatsApp que está na bio. Você paga no Pix e recebe na hora.",
-   "min_duration": 6.4,
+   "icon": "<svg viewBox=\"0 0 48 48\" width=\"100%\" fill=\"none\" stroke=\"#2D5B7A\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M24 24 c-7 0 -11 8 -9 12 c2 4 6 2 9 2 s7 2 9 -2 c2 -4 -2 -12 -9 -12Z\"/><circle cx=\"12\" cy=\"21\" r=\"3.6\"/><circle cx=\"19\" cy=\"12\" r=\"3.8\"/><circle cx=\"29\" cy=\"12\" r=\"3.8\"/><circle cx=\"36\" cy=\"21\" r=\"3.6\"/></svg>",
+   "narration": "A Agenda Banho e Tosa sai por trinta e quatro e noventa. Me chama no WhatsApp da bio.",
+   "min_duration": 6.6,
    "top_text": "WhatsApp na bio",
-   "button": "Chama no WhatsApp da bio 💬"
+   "button": "Chama no WhatsApp da bio"
+  },
+  {
+   "type": "end",
+   "art": "<svg viewBox=\"0 0 130 130\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"#2D5B7A\" stroke-width=\"3\">\n<path d=\"M65 66 C42 66 30 92 38 106 C46 118 58 112 65 112 C72 112 84 118 92 106 C100 92 88 66 65 66Z\"/>\n<ellipse cx=\"30\" cy=\"58\" rx=\"10\" ry=\"13\"/><ellipse cx=\"50\" cy=\"34\" rx=\"10\" ry=\"14\"/><ellipse cx=\"80\" cy=\"34\" rx=\"10\" ry=\"14\"/><ellipse cx=\"100\" cy=\"58\" rx=\"10\" ry=\"13\"/><polygon points=\"112.0,12.0 113.1,16.9 118.0,18.0 113.1,19.1 112.0,24.0 110.9,19.1 106.0,18.0 110.9,16.9\" fill=\"#B8936A\"/></svg>",
+   "duration": 2.6,
+   "nocaps": true,
+   "artW": 230
   }
  ]
 }
