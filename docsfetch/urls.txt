@@ -12,3 +12,4 @@ res850 https://esaj.tjsp.jus.br/gcn-frontend-vue/legislacao/find/196070
 res963 https://esaj.tjsp.jus.br/gcn-frontend-vue/legislacao/find/229313
 ritjsp https://www.tjsp.jus.br/Download/Portal/Biblioteca/Biblioteca/Legislacao/RegimentoInternoTJSP.pdf
 nscgj https://www.tjsp.jus.br/Corregedoria/Comunicados/NormasJudiciais
+# r2
