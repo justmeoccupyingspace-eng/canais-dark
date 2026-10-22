@@ -1,0 +1,19 @@
+name: ytunschedule
+on:
+  workflow_dispatch:
+    inputs:
+      ids: {description: "IDs separados por vírgula", required: true}
+      ch: {description: "A ou B", required: true, default: "B"}
+jobs:
+  u:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/ytunschedule.py
+        env:
+          IDS: ${{ inputs.ids }}
+          CH: ${{ inputs.ch }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_A: ${{ secrets.YT_REFRESH_A }}
+          YT_REFRESH_B: ${{ secrets.YT_REFRESH_B }}
