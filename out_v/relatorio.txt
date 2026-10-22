@@ -1,0 +1,13 @@
+F_chirp_Leda: ERRO <HTTPError 403: 'Forbidden'> {
+  "error": {
+    "code": 403,
+    "message": "Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+
+edge pt-BR: pt-BR-ThalitaMultilingualNeural, pt-BR-AntonioNeural, pt-BR-FranciscaNeural
+F_edge_Francisca             lang=pt p=0.99 | WER_pt=0.11 | pitch_desvio=3.59st | dur=18.9s
+F_edge_Thalita               lang=pt p=1.00 | WER_pt=0.13 | pitch_desvio=3.83st | dur=18.5s
+M_edge_Antonio               lang=pt p=1.00 | WER_pt=0.07 | pitch_desvio=6.76st | dur=18.9s
+M_edge_Antonio_lento         lang=pt p=1.00 | WER_pt=0.07 | pitch_desvio=6.81st | dur=18.9s
