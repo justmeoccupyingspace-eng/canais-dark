@@ -69,16 +69,17 @@ def wer(r, h):
 
 
 import librosa
+print("\n".join(rep))
 for f in sorted(os.listdir("out_v")):
     if not f.endswith(".mp3"):
         continue
     path = f"out_v/{f}"
     ref = TXT if f.startswith("F") else TXT_M
-    segs, info = m.transcribe(path)  # idioma automático: mede se soa português
-    hyp = " ".join(s.text for s in segs)
-    segs2, _ = m.transcribe(path, language="pt")
-    hyp2 = " ".join(s.text for s in segs2)
     y, sr = librosa.load(path, sr=16000)
+    segs, info = m.transcribe(y.astype(np.float32))  # idioma automático: mede se soa português
+    hyp = " ".join(s.text for s in segs)
+    segs2, _ = m.transcribe(y.astype(np.float32), language="pt")
+    hyp2 = " ".join(s.text for s in segs2)
     f0, vf, _ = librosa.pyin(y, fmin=60, fmax=400, sr=sr)
     f0 = f0[~np.isnan(f0)]
     st = 12 * np.log2(f0 / np.median(f0)) if len(f0) else np.array([0])
