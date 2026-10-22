@@ -1,0 +1,235 @@
+Tribunal de Justiça
+Estado de São Paulo
+Gestão do Conhecimento
+Acessibilidade
+Legislação
+Informações Gerais
+Matéria:
+Estadual
+Tipo da norma:
+RESOLUÇÃO
+Número da norma:
+963
+Ano:
+2025
+Órgão expedidor:
+ÓRGÃO ESPECIAL DO TRIBUNAL DE JUSTIÇA
+Fonte:
+DJE de 29/05/2025, p. 1
+Ementa
+Dispõe sobre a governança e utilização do sistema eproc nas unidades do Poder Judiciário do Estado de São Paulo e dá outras providências. (src)
+Inteiro Teor
+RESOLUÇÃO Nº 963/2025
+ 
+* Vide Provimento CSM nº 2.834/2026 
+ 
+Dispõe sobre a governança e utilização do sistema eproc nas unidades do Poder Judiciário do Estado de São Paulo e dá outras providências.
+ 
+O TRIBUNAL DE JUSTIÇA DO ESTADO DE SÃO PAULO, por seu ÓRGÃO ESPECIAL, no uso de suas atribuições legais,
+ 
+CONSIDERANDO o disposto no artigo 18 da Lei nº 11.419, de 19 de dezembro de 2006, que dispõe sobre a competência dos órgãos do Poder Judiciário para regulamentar a informatização do processo judicial no âmbito de suas competências;
+ 
+CONSIDERANDO a deliberação de 24 de julho de 2024, deste Órgão Especial, pela adesão do Tribunal de Justiça ao sistema eproc, que possui sistemática própria para tramitação, desenvolvimento e sustentação;
+ 
+CONSIDERANDO a necessidade de prever regulamentação específica para os processos digitais no novo sistema, a fim de garantir uniformidade, segurança e eficiência aos procedimentos adotados em todas as Unidades Judiciárias paulistas;
+ 
+RESOLVE:
+ 
+DAS DISPOSIÇÕES GERAIS
+ 
+Art. 1º - A presente Resolução dispõe sobre a governança e utilização do sistema eproc nas unidades do Poder Judiciário do Estado de São Paulo e dá outras providências.
+ 
+Art. 2º - São princípios para utilização, implementação, sustentação, desenvolvimento e evolução do sistema eproc no Tribunal de Justiça do Estado de São Paulo:
+I - aderência à versão nacional: o sistema será mantido em conformidade com a versão nacional, preservando o módulo base e prevenindo fragmentações que comprometam sua estabilidade, segurança e interoperabilidade;
+II - desenvolvimento colaborativo: serão priorizadas soluções que atendam às necessidades comuns da Justiça Estadual e Federal, favorecendo a sustentação e evolução do sistema de forma integrada e compartilhada;
+III - automação e simplificação: sempre que possível, as atividades serão automatizadas para aumentar a produtividade, precedidas pela revisão e eliminação de rotinas que não agreguem valor ao fluxo processual;
+IV - pragmatismo e efetividade: as definições de regras e evoluções seguirão a lógica do impacto amplo, priorizando soluções aplicáveis à maioria dos casos, sem foco em casos excepcionais ou preferências individuais;
+V - instrumentalidade e autonomia: a implementação e normatização devem favorecer a flexibilidade e autonomia, priorizando eficiência e alta produtividade, assegurada a rastreabilidade das ações dos usuários.
+Parágrafo único. O fomento e o zelo pela manutenção das diretrizes definidas neste artigo são de responsabilidade de todos os usuários do sistema eproc.
+ 
+DA GOVERNANÇA DO SISTEMA
+ 
+Art. 3º - A governança do sistema eproc no âmbito do Tribunal de Justiça do Estado de São Paulo objetivará:
+I - Manter o funcionamento do sistema eproc de acordo com suas características, diretrizes e princípios próprios;
+II - Zelar pelo caráter colaborativo de gestão e evolução do sistema; e
+III - Adotar as estratégias necessárias para a sustentação e o desenvolvimento do sistema.
+ 
+Art. 4º - A governança será exercida pelos seguintes órgãos:
+I - Comitê Gestor do eproc - Cge;
+II - Núcleo de Gestão Negocial - NGN; e
+III - Núcleo de Gestão Técnica - NGT.
+ 
+Art. 5º - O CGe será o órgão coordenador da governança do sistema eproc e atuará como interlocutor das demandas locais a serem incorporadas à versão nacional.
+§1º - O CGe será composto por, no mínimo, um Juiz assessor da Presidência, um Juiz assessor da Vice-Presidência e um juiz Assessor da Corregedoria Geral da Justiça.
+§2º - A composição, as atribuições e o funcionamento do CGe serão regulados por Provimento do Conselho Superior da Magistratura.
+ 
+Art. 6º - Incumbirá ao NGN subsidiar o CGe com as informações necessárias sobre as demandas levadas à decisão daquele, pela ótica negocial do sistema eproc.
+§ 1º - O NGN será integrado por, no mínimo, um representante da Secretaria de Governança de Sistemas, da Secretaria de Primeira Instância, da Secretaria Judiciária, da Secretaria de Gestão de Pessoas e da Corregedoria.
+§ 2º - A composição, as atribuições e o funcionamento do NGN serão regulados pela Presidência em ato próprio.
+ 
+Art. 7º - Incumbirá ao NGT subsidiar o CGe com as informações necessárias sobre as demandas levadas à decisão daquele, pela ótica tecnológica do sistema eproc.
+§1º - O NGT será integrado por, no mínimo, dois servidores da Secretaria de Tecnologia de Informações e um da Secretaria de Governança de Sistemas.
+§2º - A composição, as atribuições e o funcionamento do NGT serão regulados pela Presidência por meio de ato próprio.
+ 
+Art. 8º - A interlocução com as entidades externas para as questões relacionadas ao sistema eproc será realizada por meio de Comitê Interinstitucional, criado pela Presidência especificamente para tal fim, mediante ato próprio.
+Parágrafo único - Os usuários externos poderão apresentar demandas relacionadas ao sistema eproc exclusivamente por meio do Comitê Interinstitucional, que exercerá o primeiro filtro de pertinência e relevância.
+ 
+DA IMPLANTAÇÃO
+ 
+Art. 9º - A implantação do sistema eproc e a migração de processos do sistema legado serão realizadas de forma gradativa, por competências, em unidades judiciárias previamente definidas, conforme cronograma divulgado pela Presidência.
+ 
+Art. 10 - Implantado o sistema eproc em determinada competência de uma unidade judiciária, o ajuizamento de novos processos nessa competência será admitido exclusivamente por meio do eproc.
+§1º - Os processos em tramitação no sistema eproc somente admitirão o protocolo de petições intermediárias, incidentes e recursos por meio do próprio sistema.
+§2º - O cumprimento definitivo de sentença no sistema eproc será iniciado por petição inicial autônoma, observada a classe processual "Cumprimento de Sentença", que será vinculado ao principal, quando tramitar na mesma unidade.
+ 
+Art. 11 - Os processos ajuizados antes da implantação do sistema eproc, bem como os recursos, incidentes e processos dependentes ou conexos, continuarão tramitando no sistema legado até o seu encerramento, ressalvada a hipótese de migração.
+§1º - Os processos que tramitam no sistema legado somente admitirão o protocolo de petições intermediárias, incidentes e recursos pelo próprio sistema, salvo disposição em contrário regulamentada pela Presidência.
+§2º - O cumprimento definitivo de sentença oriundo de processo que tramitou no sistema legado deverá ser iniciado nesse mesmo sistema, até que seja disponibilizada, no eproc, a funcionalidade específica para essa finalidade, conforme regulamentação própria.
+ 
+Art. 12 - A migração de processos do sistema legado para o sistema eproc observará os procedimentos e regramentos estabelecidos em ato conjunto da Presidência e da Corregedoria.
+ 
+Art. 13 - Ato próprio da Presidência regulamentará a remessa de autos entre unidades judiciais, nos casos de incompetência, em que os autos devam ser remetidos a outro juízo ou instância que não disponha de sistema compatível.
+ 
+Art. 14 - A identificação do sistema processual correto e a prática do respectivo ato processual competem exclusivamente ao peticionante, sob pena de não produção dos respectivos efeitos jurídicos.
+ 
+DOS USUÁRIOS
+ 
+Art. 15 - São usuários do sistema eproc:
+I - Internos: magistrados, servidores, estagiários, servidores cedidos por outros órgãos, voluntários e outros auxiliares autorizados pelo Tribunal de Justiça do Estado de São Paulo;
+II - Externos: partes, advogados, procuradores, defensores públicos, membros do Ministério Público, policiais, peritos, tradutores, intérpretes, leiloeiros, administradores de recuperação judicial/falência e outros interessados ou intervenientes na relação jurídico-processual.
+Parágrafo único - Os usuários terão acesso às funcionalidades do sistema eproc de acordo com o perfil que lhes for atribuído.
+ 
+Art. 16 - O credenciamento dos usuários internos do sistema eproc será efetuado:
+I - Pela Secretaria de Governança de Sistemas - SGS, quanto aos servidores com perfil de gestor do sistema;
+II - Pela chefia que possua perfil de gestor do sistema, quanto aos demais usuários internos;
+§1º - É dever do usuário interno com perfil de gestor do sistema ou de seu substituto gerenciar o acesso dos magistrados e demais usuários internos que lhe estejam subordinados, bem como interrompê-lo após o encerramento do vínculo com a unidade em até 24 (vinte e quatro) horas, sob pena de responsabilidade.
+§2º - O usuário interno com perfil de gestor do sistema que for substituído na função deverá promover o credenciamento e habilitação do seu substituto nas funcionalidades inerentes à gerência do sistema eproc.
+§3º - A atribuição de perfil no sistema tem a exclusiva finalidade de permitir o acesso ao conjunto de funcionalidades a ele inerentes e não equivale ao reconhecimento de cargo ou função para qualquer outra finalidade de fato ou direito.
+ 
+Art. 17 - O credenciamento de usuários externos será oportunamente regulado pela Presidência em ato próprio, sem prejuízo do que consta nesta Resolução.
+Parágrafo único - A desabilitação do acesso de usuário externo ao sistema será feita por solicitação deste, pelo gerente responsável pelo seu credenciamento ou por determinação de autoridade administrativa ou judicial competente.
+ 
+Art. 18 - Os usuários do sistema eproc devem utilizá-lo de forma adequada, sem comprometer sua disponibilidade, desempenho ou segurança, observando as seguintes diretrizes gerais:
+I - resguardar o sigilo de suas credenciais de acesso, bem como de processos e documentos classificados como sigilosos;
+II - garantir que os dispositivos utilizados atendam aos requisitos técnicos do sistema, incluindo conexão na rede mundial de computadores estável e funcional;
+III - utilizar corretamente as funcionalidades do sistema, sem adulterar dados, manipular registros processuais ou comprometer a integridade das informações;
+IV - responsabilizar-se pelo uso adequado de registros audiovisuais para fins exclusivamente processuais, vedada a divulgação indevida de seu conteúdo;
+V - abster-se de práticas que causem sobrecarga ao sistema, incluindo o uso não autorizado, por usuários externos, de robôs de consulta;
+VI - comunicar imediatamente eventuais falhas ou vulnerabilidades identificadas, contribuindo para a segurança e continuidade do sistema.
+Parágrafo único - O descumprimento deste artigo sujeita o usuário às sanções administrativas, civis, criminais e processuais aplicáveis, inclusive aquelas previstas no art. 37 e seguintes desta Resolução.
+ 
+DO ACESSO
+ 
+Art. 19 - O sistema eproc será acessado por meio da rede mundial de computadores, no endereço eletrônico do Tribunal de Justiça do Estado de São Paulo.
+Parágrafo único - Os documentos e atos praticados pelos usuários serão assinados e certificados com a utilização de assinatura digital, baseada em certificado digital, ou de assinatura eletrônica, com uso de login e senha fornecidos no credenciamento do usuário, nos termos das alíneas "a" e "b" do inciso III do §2º do art. 1º da Lei n. 11.419, de 19 de dezembro de 2006.
+ 
+Art. 20 - O acesso ao sistema eproc para consulta ou movimentação processual será disponibilizado ininterruptamente, ressalvadas as hipóteses de indisponibilidade.
+Parágrafo único - Considera-se indisponibilidade a interrupção de acesso ao sistema decorrente de falha ou manutenção nos equipamentos e programas do Tribunal de Justiça do Estado de São Paulo, certificada pelo administrador do sistema eproc.
+ 
+Art. 21 - Os prazos que se vencerem no dia de indisponibilidade do sistema serão prorrogados para o dia útil seguinte à retomada do funcionamento, quando:
+I - a indisponibilidade for superior a 60 (sessenta) minutos, ininterruptos ou não, e ocorrer entre 12h00min e 23h00min;
+II - a indisponibilidade ocorrer por qualquer período entre 23h01min e 00h00min.
+§1º - A indisponibilidade ocorrida entre 00h01min e 11h59min dos dias de expediente forense e a ocorrida em feriados e finais de semana, por qualquer período, não produzirão o efeito do caput deste artigo.
+§2º - Quando tecnicamente possível, a ocorrência de indisponibilidade será certificada pelo administrador do sistema eproc, que providenciará o lançamento de evento em cada processo cujo prazo foi prorrogado.
+§3° - Não se aplica a regra prevista no caput deste artigo se a impossibilidade de acesso ao sistema decorrer de falha nos equipamentos ou programas dos usuários ou em suas conexões à rede mundial de computadores, ressalvada decisão judicial em contrário.
+ 
+DAS INTEGRAÇÕES
+ 
+Art. 22 - Os Órgãos e instituições públicas poderão submeter à análise do Tribunal pedido de integração do eproc com sistemas próprios de gestão de processos judiciais eletrônicos, por meio do MNI (Modelo Nacional de Interoperabilidade) ou outro padrão técnico que venha a ser adotado.
+ 
+Art. 23 - O sistema eproc também será utilizado como meio eletrônico de tramitação de comunicação de atos processuais e transmissão de peças processuais, sempre que possível.
+§1º - A pesquisa de informações e a inclusão ou exclusão de dados em cadastros, entre outras providências semelhantes, cujo cumprimento se realize via acesso a sistemas de terceiros, ocorrerão via integração destes ao sistema judicial.
+§2º - É vedada, para o cumprimento referido no §1º, a disponibilização de portais que demandem das unidades a digitação de dados ou outra atividade manual similar, salvo nos casos de absoluta impossibilidade técnica de integração, determinação do Conselho Nacional de Justiça e imposição legal ou regulamentar.
+§3º - Sempre que o uso de portais for admitido nos termos do §2º, sua manutenção será anualmente revisada para, se houver viabilidade técnica, providenciar sua substituição por integração direta ao sistema judicial.
+§ 4º - Cabe à Presidência a celebração de convênio, termo de cooperação ou outro instrumento similar, para o acesso, envio e obtenção de informações em sistemas de terceiros, quando necessário, observado o disposto neste artigo.
+ 
+DA PRÁTICA DE ATOS PROCESSUAIS
+ 
+Art. 24 - Caberá ao peticionante:
+I - preencher corretamente os campos obrigatórios do formulário eletrônico;
+II - qualificar corretamente todas as partes e seus representantes indicadas na petição, com as informações que dispuser, especialmente CPF ou CNPJ, nos termos do art. 15 da Lei nº 11.419/2006;
+III - classificar corretamente a petição de acordo com a classe, o assunto e o tipo processuais disponibilizados na tabela do sistema;
+IV - carregar, sob pena de rejeição, as peças essenciais da respectiva classe e documentos complementares:
+a) em conformidade com as especificações técnicas regulamentadas em Portaria da Presidência do Tribunal de Justiça do Estado de São Paulo;
+b) em formato legível e ajustado ao padrão de visualização, evitando zoom excessivo ou distorções;
+c) na ordem em que deverão aparecer no processo;
+d) nomeados de acordo com a listagem disponibilizada;
+e) livres de vírus ou ameaças que possam comprometer a integridade do sistema;
+V - Disponibilizar arquivos de áudio e vídeo testados previamente, garantindo sua qualidade e acessibilidade;
+VI - Revisar todas as informações antes do envio da petição ou documentos anexos, assumindo a responsabilidade por eventuais erros.
+§1º - Nos casos em que a petição ou quaisquer outros documentos devam ser firmados por mais de um signatário, o interessado anexará, junto à sua assinatura eletrônica, o arquivo com o texto do documento e um termo assinado por todos os que necessitam intervir, esclarecendo o fato.
+§2º - O descumprimento do disposto neste artigo poderá ensejar a aplicação das sanções previstas no art. 18, parágrafo único, sem prejuízo de eventuais consequências processuais.
+ 
+Art. 25 - As petições iniciais, incidentes, cartas, mandados, recursos e demais atos serão distribuídos automaticamente pelo sistema.
+§1º - A análise dos casos normativos de prevenção e outros filtros que não sejam realizados automaticamente pelo sistema observará o disposto em atos próprios.
+§2º - Se necessário, a redistribuição em primeiro grau será feita diretamente no sistema pelo juízo que a determinar.
+ 
+Art. 26 - Considera-se realizado o ato processual no dia e hora do seu envio ao sistema eproc.
+§1º - Quando o ato for praticado para atender prazo processual, será considerado tempestivo aquele transmitido integralmente até as 24 (vinte e quatro) horas do seu último dia.
+§2º - O eproc considerará o horário oficial de Brasília - DF.
+§3º - Não serão considerados para efeito de tempestividade o horário inicial da conexão do usuário à rede mundial de computadores, o horário inicial do acesso do usuário ao eproc ou os horários registrados pelos equipamentos do remetente.
+§4º - Nas petições intermediárias, será considerada como comprovante a impressão da tela do processo em que conste a juntada do documento.
+ 
+Art. 27 - Toda movimentação gerada no sistema eproc será registrada com a indicação da data e horário de sua realização e a identificação do usuário que lhe deu causa.
+§1º - É de exclusiva responsabilidade do usuário identificado a movimentação processual registrada no sistema.
+§2º - As anulações e retificações de eventos realizados por usuários internos deverão ser registradas no histórico do processo.
+§3º - Os documentos não pertinentes ao processo ou a ele indevidamente anexados poderão ser desentranhados por determinação judicial.
+ 
+Art. 28 - Os eventos registrados na movimentação ou registros do processo no sistema eproc equivalem à certificação da prática do ato processual para todos os fins de direito.
+§1º - Os eventos de abertura de conclusão, encaminhamento à publicação, publicação, disponibilização em diário eletrônico, distribuição de recurso, publicação de pauta e de trânsito em julgado, dentre outros realizados pelo sistema, não serão objeto de certificação manual pelas unidades judiciais, salvo eventual interrupção na funcionalidade de geração automática dos respectivos eventos e apenas durante tal período.
+§2º - É dispensado o envio por meio de mensagens eletrônicas de eventos realizados pelo sistema.
+ 
+Art. 29 - O recolhimento da taxa judiciária e demais despesas observará as regras parametrizadas do sistema e será disciplinado em atos próprios.
+ 
+DA CONSULTA E DO SIGILO
+ 
+Art. 30 - A consulta aos dados e documentos dos processos judiciais por meio da rede mundial de computadores observará o disposto na Resolução nº 121 de 05 de outubro de 2010 do Conselho Nacional de Justiça e regulamentação pertinente.
+ 
+Art. 31 - A emissão de certidões de distribuição será disciplinada por ato conjunto da Presidência e Corregedoria.
+Parágrafo único - Havendo necessidade das partes de documento comprobatório de qualquer evento do processo eletrônico, deverá fazer uso da funcionalidade "certidão narratória", que terá a mesma validade de certidão de objeto e pé para todos os fins de direito.
+ 
+Art. 32 - Os processos e os documentos no eproc que não sejam públicos poderão ser classificados segundo níveis de sigilo, conforme padronização do sistema.
+Parágrafo único - A indicação sigilo de processo ou documento poderá ser feita de ofício ou no momento do peticionamento, conforme a funcionalidade liberada para o respectivo perfil, sujeito a posterior ratificação pelo juízo.
+ 
+DOS PROCESSOS EM SEGUNDO GRAU
+ 
+Art. 33 - As apelações interpostas em processos eletrônicos que tramitam no sistema eproc serão processadas nos próprios autos, devendo o juízo de origem proceder à remessa eletrônica ao tribunal competente, depois do trâmite regular e providenciadas as necessárias alterações nos registros.
+ 
+Art. 34 - Os agravos de instrumento tirados de processos que tramitam pelo sistema eproc serão interpostos no sistema de primeiro grau, por intermédio do link apropriado, que os enviará automaticamente ao sistema de segundo grau do tribunal competente, onde serão processados em autos apartados com nova numeração.
+§1º - A parte agravante juntará apenas a petição inicial do agravo de instrumento com as suas razões, devendo indicar precisamente a decisão agravada, preferentemente por referência ao evento que a gerou, dispensada a juntada de quaisquer peças existentes no processo de primeiro grau.
+§2º - A parte agravante deverá demonstrar nas razões de agravo a tempestividade do recurso mediante a indicação do evento que gerou sua intimação.
+§3º - O sistema lançará automaticamente registro no processo de primeiro grau, que servirá como comprovação da interposição do agravo.
+§4º - Caso o agravante não seja parte do processo na origem, o agravo deverá ser interposto diretamente no sistema do tribunal competente, fazendo referência ao número do processo de primeiro grau.
+ 
+Art. 35 - Nos processos criminais, os recursos em sentido estrito que são julgados em segundo grau de jurisdição deverão tramitar em autos próprios, cabendo ao interessado providenciar sua distribuição por dependência ao processo originário.
+ 
+Art. 36 - Sem prejuízo do disposto neste Capítulo, a Presidência poderá, mediante ato próprio, regulamentar o processamento de feitos no Tribunal no sistema eproc, observadas as peculiaridades das diferentes matérias, notadamente da jurisdição criminal.
+Parágrafo único - Aplica-se, no que couber, o disposto neste Capítulo aos recursos interpostos e ações autônomas no Colégio Recursal.
+ 
+USO INADEQUADO DO SISTEMA
+ 
+Art. 37 - Compreende uso inadequado do sistema toda atividade que evidencie ataque cibernético, violação de dados ou uso desproporcional dos ativos computacionais, causando sobrecarga na sua infraestrutura ou redução significativa de sua disponibilidade, com prejuízo às partes e à atividade jurisdicional.
+Parágrafo único - Identificada utilização inadequada do sistema por qualquer usuário, proceder-se-á ao bloqueio preventivo do usuário, temporário e total.
+ 
+Art. 38 - Na hipótese do parágrafo único do artigo 37, a Secretaria de Tecnologia da Informação - STI deverá entrar em contato com o usuário bloqueado pelo e-mail fornecido no cadastro para que este, se for o caso, possa solicitar sua eventual reativação no sistema.
+Parágrafo único - Caso o usuário bloqueado seja advogado, procurador ou membro da Defensoria Pública ou do Ministério Público, deverá ser dirigida comunicação à respectiva Seccional da Ordem dos Advogados do Brasil ou à correspondente corregedoria, conforme o caso.
+ 
+Art. 39 - A Presidência do Tribunal de Justiça, mediante ato próprio, definirá procedimentos pelos quais se evite o comprometimento do desempenho do sistema eproc em razão de ferramentas de consulta automatizadas.
+Parágrafo único - A Presidência poderá avaliar, em ato próprio, a conveniência e oportunidade de cobrança pelo acesso massificado a dados existentes no sistema eproc, por meio de API, nos termos da Recomendação CNJ nº 74/2020, desde que não configure uso inadequado do sistema.
+ 
+DISPOSIÇÕES FINAIS E TRANSITÓRIAS
+ 
+Art. 40 - A tramitação dos processos eletrônicos no Sistema de Automação da Justiça - SAJ permanece regulamentada pela Resolução nº 551, de 08 de setembro de 2011, deste Órgão Especial.
+Parágrafo único - Até a edição de normas específicas para o eproc, as unidades poderão utilizar os manuais e informativos do sistema como referência para sua operacionalização.
+ 
+Art. 41 - Em caso de indisponibilidade absoluta do sistema eproc, devidamente certificada, e para o fim de evitar perecimento de direito ou ofensa à liberdade de locomoção, a petição poderá ser protocolizada em meio físico para distribuição manual, com posterior digitalização e inserção no sistema pelo juízo a que for distribuída.
+ 
+Art. 42 - Esta Resolução entra em vigor na data de sua publicação.
+ 
+Art. 43 - Revogam-se as disposições em contrário.
+ 
+REGISTRE-SE. PUBLIQUE-SE. CUMPRA-SE.
+ 
+São Paulo, 28 de maio de 2025.
+ 
+(a) FERNANDO ANTONIO TORRES GARCIA, Presidente do Tribunal de Justiça.

@@ -1,0 +1,79 @@
+                    Utilização da integração – Escritório Digital
+                            FAQ – Perguntas frequentes
+
+O que é o Escritório Digital?
+
+O Escritório Digital é um software desenvolvido pelo CNJ em parceria com a OAB para integrar
+os diferentes sistemas processuais dos tribunais brasileiros e permitir ao usuário externo uma
+única porta de acesso ao Judiciário.
+
+O que preciso para fazer para me cadastrar no Escritório Digital?
+
+Para ter acesso ao Escritório Digital, basta seguir as orientações disponiveis no site da
+plataforma, clique aqui.
+
+Quais são as regras para consulta de processos?
+
+A consulta deve ser realizada pelo número CNJ do processo (NNNNNNN-
+DD.AAAA.J.TR.OOOOO) e somente processos digitais estão disponíveis nesta integração.
+
+É possível consultar em processos incidentes, execuções e ações incidentais?
+
+Não, a integração não prevê a consulta destes tipos do processos, somente o processo
+principal estará disponível.
+
+Quais são os foros disponíveis para peticionamento?
+
+Todos os foros habilitados para peticionamento no portal e-SAJ.
+
+Como assino os documentos que serão protocolados?
+
+O documento deve ser enviado ao Escritório Digital com a assinatura digital. Para informações
+sobre assinadores compatíveis clique aqui.
+
+O Escritório Digital aceita dois modelos de assinatura, .P7s e .PDF, qual devo utilizar?
+
+O padrão de assinatura aceito pelo TJSP é o .PDF.
+
+É possível peticionar intermediárias em processos incidentes, execuções e ações incidentais?
+
+Não, a integração não prevê o peticionamento destes tipos do processos, somente o processo
+principal estará disponível.
+
+Quais são os tamanhos de documentos permitidos?
+
+Os tamanhos permitidos para os documentos enviados no peticionamento de iniciais e
+intermediárias são:
+
+        Tamanho de cada página do documento: 300 KB
+        Tamanho de cada documento: 1 MB
+Atenção: Somente a validação do tamanho de cada documento é realizada no Escritório
+Digital, mas se o tamanho de página for superior a 300 KB, o protocolo será rejeitado.
+
+Como funcionará o serviço de recebimento de avisos pendentes no Escritório Digital?
+
+As movimentações processuais, publicadas no Diário de Justiça do Estado de São Paulo, serão
+encaminhadas também para o Escritório Digital.
+
+Quais serão os prazos das intimações e citações recebidas no Escritório Digital?
+
+Os prazos do DJE serão mantidos.
+
+Como será feito o suporte ao sistema Escritório Digital?
+
+O suporte ao sistema Escritório Digital será feito pelo CNJ. No entanto, como existe uma
+relação de dependência, por conta da integração entre os sistemas, eventualmente algumas
+demandas de acesso (autenticação) devem chegar até os tribunais. Haverá também,
+principalmente nesse início de integração, muita demanda para a equipe de desenvolvimento
+de soluções dos tribunais e do CNJ, porque algumas vezes o acesso do Escritório Digital ao MNI
+exige alguns afinamentos.
+
+Como saber se o problema deve ser reportado ao CNJ ou ao TJSP?
+
+Via de regra, os erros que devem ser avaliados pela equipe de suporte do TJSP possuem uma
+indicação, por exemplo: [...] entre em contato com o Tribunal de Justiça em questão. Todos os
+demais erros apresentados devem ser avaliados pela equipe de suporte do CNJ.
+
+Atendimento aos advogados CNJ: (61) 2326-5353
+Atendimento aos advogados TJSP: (11) 3627-1919 ou (11) 3614-7950
+
