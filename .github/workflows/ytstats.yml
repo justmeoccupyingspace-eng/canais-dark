@@ -1,0 +1,25 @@
+name: ytstats
+on:
+  push:
+    branches: [main]
+    paths: ["scripts/ytstats.py"]
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  s:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/ytstats.py
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_A: ${{ secrets.YT_REFRESH_A }}
+          YT_REFRESH_B: ${{ secrets.YT_REFRESH_B }}
+      - name: Push stats branch
+        run: |
+          cp stats_out/yt.json /tmp/yt.json
+          git config user.name producer; git config user.email producer@users.noreply.github.com
+          git checkout --orphan stats && git rm -rf . -q
+          cp /tmp/yt.json . && git add . && git commit -qm stats && git push -f origin stats
