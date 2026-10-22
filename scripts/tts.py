@@ -214,7 +214,7 @@ def main(src, dst):
         sc["audio"] = rel
         sc["words"] = words
         sc["env"] = envelope(samples, sr)
-        sc["duration"] = round(max(sc.get("min_duration", 0), dur + spec.get("tail", TAIL)), 2)
+        sc["duration"] = round(max(sc.get("min_duration", 0), dur + spec.get("tail", TAIL) + sc.get("extra", 0)), 2)
     os.makedirs(os.path.dirname(dst), exist_ok=True)
     json.dump(spec, open(dst, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print("tts ok", dst, round(sum(s.get("duration", 0) for s in spec["scenes"]), 1), "s")

@@ -17,6 +17,7 @@ const PALS = {
   sage: {deep: '#3F5F50', main: '#6F9A84', soft: '#D5E5DB', blush: '#EEF5F0', ink: '#2C3F36', muted: '#76897F', g1: '#4F7362', g2: '#8CB29E', g3: '#D6E8DC', bg: '#F6FAF7'},
   barber: {dark: true, deep: '#232323', main: '#8C6A3F', soft: '#E6DACB', blush: '#F5F0EA', ink: '#1E1E1E', muted: '#7A746C', g1: '#1E1E1E', g2: '#463A2C', g3: '#8C6A3F', bg: '#1B1A19', text: '#F3EADF', hl: '#E6C98F', sub: '#CBBFAF'},
   sky: {deep: '#2D5B7A', main: '#4F8FBF', soft: '#D3E5F2', blush: '#EEF5FB', ink: '#1F3A4D', muted: '#6E8798', g1: '#2D5B7A', g2: '#5A96C4', g3: '#C8E2F2', bg: '#F6FAFD'},
+  concurso: {deep: '#6B2236', main: '#8C2F45', soft: '#F0D5D6', blush: '#FBF1EE', ink: '#1F2433', muted: '#6F6461', g1: '#8C2F45', g2: '#C47887', g3: '#F3DCD6', bg: '#FBF7F4', navy: '#23365C'},
   classic: {deep: '#1F3A2E', main: '#2F6F55', soft: '#CFE3D8', blush: '#EEF5F1', ink: '#1E2B25', muted: '#6B7D74', g1: '#1F3A2E', g2: '#2F6F55', g3: '#78AA8C', bg: '#F5F9F6'},
 };
 const OK = '#3F8A62', BAD = '#C0394B', WARN = '#C98A2E', WA = '#1E8E5A';
@@ -424,7 +425,7 @@ const Cta = ({sc, p}) => {
         <div style={{background: `linear-gradient(110deg, ${p.dark ? '#1d1b1a' : p.g1}, ${p.dark ? '#3a322b' : p.g2} 60%, ${p.dark ? '#5a4632' : p.g3})`, padding: '34px 40px', display: 'flex', alignItems: 'center', gap: 24}}>
           {sc.icon ? <div style={{flex: 'none', width: 96, height: 96, borderRadius: 48, background: 'rgba(255,255,255,.92)', display: 'flex', alignItems: 'center', justifyContent: 'center'}}><Svg html={sc.icon} style={{width: 60, height: 60}} /></div> : null}
           <div>
-            <div style={{fontFamily: PF, fontWeight: 700, fontSize: 22, letterSpacing: 4, color: p.dark ? '#E6C98F' : '#fff', opacity: 0.9}}>PLANILHA PRONTA</div>
+            <div style={{fontFamily: PF, fontWeight: 700, fontSize: 22, letterSpacing: 4, color: p.dark ? '#E6C98F' : '#fff', opacity: 0.9}}>{sc.kicker || 'PLANILHA PRONTA'}</div>
             <div style={{fontFamily: PF, fontWeight: 700, fontSize: 52, color: p.dark ? '#F3EADF' : '#fff', lineHeight: 1.08}}>{sc.product}</div>
             {sc.product_sub ? <div style={{fontFamily: SERIF, fontStyle: 'italic', fontSize: 30, color: '#fff', marginTop: 6}}>{sc.product_sub}</div> : null}
           </div>
@@ -465,6 +466,78 @@ const End = ({sc, p}) => {
   );
 };
 
+
+// Questão estilo prova: enunciado, 5 alternativas, contagem regressiva e revelação da correta.
+const Quiz = ({sc, p}) => {
+  const f = useCurrentFrame();
+  const {durationInFrames: dq} = useVideoConfig();
+  const rv = sc.revealFromEnd ? dq - Math.round(sc.revealFromEnd * FPS) : Math.round((sc.reveal || 5) * FPS);
+  const cd = Math.round((sc.countdown || 3) * FPS);
+  const s = spring({frame: f, fps: FPS, config: {damping: 15, stiffness: 120}});
+  const revealed = f >= rv;
+  const k = revealed ? spring({frame: f - rv, fps: FPS, config: {damping: 11, stiffness: 160}}) : 0;
+  const left = Math.max(0, Math.ceil((rv - f) / FPS));
+  const inCd = f >= rv - cd && f < rv;
+  const navy = p.navy || p.deep;
+  return (
+    <AbsoluteFill>
+      <div style={{position: 'absolute', top: 150, left: 60, right: 60, display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+        <div style={{fontFamily: PF, fontWeight: 700, fontSize: 26, letterSpacing: 3, color: '#fff', background: navy, borderRadius: 30, padding: '10px 24px'}}>{sc.label || 'QUESTÃO ESTILO VUNESP'}</div>
+        <div style={{width: 96, height: 96, borderRadius: 48, border: `6px solid ${inCd ? p.main : p.soft}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: PF, fontWeight: 700, fontSize: 48, color: inCd ? p.main : p.muted, background: '#fff', transform: `scale(${inCd ? 1 + 0.08 * Math.sin(f / 3) : 1})`}}>{revealed ? '✓' : left}</div>
+      </div>
+      <div style={{position: 'absolute', top: 290, left: 60, right: 60, background: '#fff', borderRadius: 36, boxShadow: '0 30px 70px rgba(40,20,25,.16)', padding: '40px 44px', opacity: s, transform: `translateY(${(1 - s) * 80}px)`}}>
+        <div style={{fontFamily: PF, fontWeight: 600, fontSize: sc.qsize || 40, lineHeight: 1.3, color: p.ink}}>{sc.q}</div>
+        <div style={{marginTop: 26}}>
+          {sc.alts.map((a, i) => {
+            const ok = i === sc.correct;
+            const a0 = interpolate(f, [10 + i * 5, 18 + i * 5], [0, 1], C);
+            const fade = revealed && !ok ? 1 - 0.65 * k : 1;
+            return (
+              <div key={i} style={{display: 'flex', alignItems: 'flex-start', gap: 20, margin: '16px 0', padding: '16px 20px', borderRadius: 22, background: revealed && ok ? OK : (p.blush), opacity: a0 * fade, transform: `scale(${revealed && ok ? 1 + 0.04 * k : 1})`, boxShadow: revealed && ok ? '0 16px 34px rgba(63,138,98,.35)' : 'none'}}>
+                <span style={{flex: 'none', width: 56, height: 56, borderRadius: 28, background: revealed && ok ? '#fff' : navy, color: revealed && ok ? OK : '#fff', fontFamily: PF, fontWeight: 700, fontSize: 30, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{'ABCDE'[i]}</span>
+                <span style={{fontFamily: PF, fontWeight: 500, fontSize: sc.asize || 34, lineHeight: 1.25, color: revealed && ok ? '#fff' : p.ink, paddingTop: 6}}>{a}</span>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      {revealed && sc.why ? <div style={{position: 'absolute', left: 70, right: 70, top: sc.whyTop || 1330, textAlign: 'center', fontFamily: SERIF, fontStyle: 'italic', fontSize: 38, color: p.deep, opacity: interpolate(f, [rv + 8, rv + 18], [0, 1], C)}}>{sc.why}</div> : null}
+      {sc.alts.map((a, i) => <Sfx key={i} at={10 + i * 5} src="click" vol={0.14} />)}
+      {[3, 2, 1].map((n) => <Sfx key={n} at={rv - n * FPS} src="tick" vol={0.3} />)}
+      <Sfx at={rv} src="ding" vol={0.4} />
+    </AbsoluteFill>
+  );
+};
+
+// Páginas do PDF em leque.
+const Pages = ({sc, p}) => {
+  const f = useCurrentFrame();
+  const imgs = sc.imgs || [];
+  const n = imgs.length;
+  return (
+    <AbsoluteFill>
+      <div style={{position: 'absolute', top: 160, left: 50, right: 50}}><Title text={sc.text} hl={sc.hl} size={sc.size || 76} p={p} /></div>
+      {imgs.map((im, i) => {
+        const s = spring({frame: f - 6 - i * 6, fps: FPS, config: {damping: 14, stiffness: 120}});
+        const mid = (n - 1) / 2;
+        const rot = (i - mid) * 7 * s;
+        const x = (i - mid) * 150 * s;
+        const y = Math.abs(i - mid) * 30 * s;
+        return (
+          <div key={i} style={{position: 'absolute', left: 540 - 250 + x, top: 470 + y + (1 - s) * 300, width: 500, height: 707, background: '#fff', borderRadius: 14, overflow: 'hidden', boxShadow: '0 30px 60px rgba(40,20,25,.25)', transform: `rotate(${rot}deg)`, transformOrigin: '50% 100%', opacity: s, zIndex: i === n - 1 ? 9 : i}}>
+            <Img src={staticFile(im)} style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top'}} />
+          </div>
+        );
+      })}
+      <div style={{position: 'absolute', left: 0, right: 0, top: 1250, display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 14, padding: '0 60px'}}>
+        {(sc.pills || []).map((t, i) => <div key={i} style={{fontFamily: PF, fontWeight: 600, fontSize: 30, color: p.deep, background: '#fff', border: `2px solid ${p.soft}`, borderRadius: 30, padding: '10px 24px', opacity: interpolate(f, [30 + i * 5, 38 + i * 5], [0, 1], C)}}>{t}</div>)}
+      </div>
+      {imgs.map((im, i) => <Sfx key={i} at={6 + i * 6} src="softwhoosh" vol={0.22} />)}
+      <Sfx at={30} src="pop" vol={0.3} />
+    </AbsoluteFill>
+  );
+};
+
 const SceneWrap = ({children}) => {
   const f = useCurrentFrame();
   const {durationInFrames: d} = useVideoConfig();
@@ -478,7 +551,7 @@ export const PromoVideo = ({spec}) => {
   const parts = spec.scenes.map((sc, i) => {
     const dur = Math.ceil((sc.duration || 4) * FPS);
     const ps = PALS[sc.pal] || p;
-    const T = {sheet: Sheet, chat: Chat, kpis: Kpis, cal: Cal, cta: Cta, devices: Devices, end: End}[sc.type] || Hook;
+    const T = {sheet: Sheet, chat: Chat, kpis: Kpis, cal: Cal, cta: Cta, devices: Devices, end: End, quiz: Quiz, pages: Pages}[sc.type] || Hook;
     const el = (
       <Sequence key={i} from={from} durationInFrames={dur}>
         <SceneWrap>
