@@ -25,8 +25,8 @@
  "scenes": [
   {
    "type": "hook",
-   "text": "Inscrições abertas: Escrevente TJSP",
-   "hl": "abertas",
+   "text": "Abriram as inscrições do Escrevente TJSP",
+   "hl": "inscrições",
    "narration": "Abriram as inscrições do concurso de Escrevente do TJ de São Paulo. Vão até dez de dezembro.",
    "min_duration": 4.6,
    "badge": "ESCREVENTE TJSP 2027",
