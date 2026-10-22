@@ -1,0 +1,61 @@
+{
+ "channel": "howitticks",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-24T21:00:00Z"
+ },
+ "title": "Sunlight is 8 minutes old",
+ "compute": {
+  "calc": {
+   "kind": "sunlight"
+  }
+ },
+ "yt": {
+  "title": "The sunlight you see left the Sun {c_stat} ago #Shorts",
+  "description": "Average Earth-Sun distance: 1 astronomical unit = 149,597,870,700 m (IAU 2012). Speed of light: 299,792,458 m/s (SI). Travel time: {c_secs} s. Moon: mean distance 384,400 km, about {c_moon} s.\nNarration is AI-generated.",
+  "tags": [
+   "speed of light",
+   "sun",
+   "physics",
+   "how it works"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "You are seeing the past",
+   "hl": "past",
+   "size": 160,
+   "narration": "When you see the Sun, you are not seeing it as it is right now.",
+   "min_duration": 4.2
+  },
+  {
+   "type": "stat",
+   "label": "for light to travel from the Sun to Earth",
+   "value_from": "c_stat",
+   "value": 0,
+   "as_str": true,
+   "narration": "Its light takes {c_say} to cross the average distance of about one hundred fifty million kilometers.",
+   "min_duration": 7
+  },
+  {
+   "type": "kin",
+   "text": "Even light needs time",
+   "hl": "light",
+   "size": 160,
+   "narration": "Light is the fastest thing there is, almost three hundred thousand kilometers every second. Space is just that big.",
+   "min_duration": 6
+  },
+  {
+   "type": "kin",
+   "text": "Moonlight: {c_moon} seconds old",
+   "hl": "{c_moon} seconds",
+   "size": 130,
+   "narration": "Moonlight is only about {c_moon_say} seconds old. How old is the light from the stars you saw last night?",
+   "min_duration": 6
+  }
+ ],
+ "style": "clean"
+}

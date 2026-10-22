@@ -1,0 +1,61 @@
+{
+ "channel": "chartbound",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-23T23:00:00Z"
+ },
+ "title": "India vs US economy",
+ "compute": {
+  "wbratio": {
+   "ind": "NY.GDP.MKTP.CD",
+   "a": "IND",
+   "b": "USA",
+   "from": 2000
+  }
+ },
+ "yt": {
+  "title": "India's economy was {wr_r0}% of America's in {wr_from}. Now? #Shorts",
+  "description": "GDP in current US dollars, India as a share of the United States, {wr_from} vs {wr_to}. Source: World Bank (NY.GDP.MKTP.CD). Exchange rates affect this comparison.\nNarration is AI-generated.",
+  "tags": [
+   "economics",
+   "india",
+   "united states",
+   "gdp",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "India vs the US: the economy",
+   "hl": "India",
+   "size": 160,
+   "narration": "India is the most populous country in the world. Here is how its economy compares with America's, and how that changed.",
+   "min_duration": 4.8
+  },
+  {
+   "type": "num",
+   "text": "India as % of the US",
+   "hl": "% of the US",
+   "en": true,
+   "suffix": "%",
+   "a_from": "wr_r0",
+   "b_from": "wr_r1",
+   "l1": "{wr_from}",
+   "l2": "{wr_to}",
+   "narration": "In {wr_from}, India's economy was {wr_r0_say} percent the size of America's. By {wr_to}, it was {wr_r1_say} percent.",
+   "min_duration": 7
+  },
+  {
+   "type": "kin",
+   "text": "Faster growth, smaller base",
+   "hl": "smaller base",
+   "size": 140,
+   "narration": "India grew faster, but from a much smaller base. And with far more people, the gap per person is even bigger. What would you compare next?",
+   "min_duration": 7
+  }
+ ],
+ "style": "clean"
+}

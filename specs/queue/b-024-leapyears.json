@@ -1,0 +1,61 @@
+{
+ "channel": "howitticks",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-23T17:00:00Z"
+ },
+ "title": "Only 97 leap years per 400",
+ "compute": {
+  "calc": {
+   "kind": "leapyears"
+  }
+ },
+ "yt": {
+  "title": "Only {c_n} of every 400 years are leap years #Shorts",
+  "description": "Gregorian calendar rule (every 4th year, except years divisible by 100 unless also divisible by 400), counted with Python's calendar module for 2001-2400: {c_n} leap years per 400 years, so the average calendar year is {c_avg} days (the tropical solar year is about 365.2422 days).\nNarration is AI-generated.",
+  "tags": [
+   "leap year",
+   "calendar",
+   "gregorian",
+   "how it works"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "Not every 4th year is a leap year",
+   "hl": "Not",
+   "size": 140,
+   "narration": "You learned that every fourth year is a leap year. That is not quite true.",
+   "min_duration": 4.4
+  },
+  {
+   "type": "kin",
+   "text": "1900: no. 2000: yes.",
+   "hl": "2000",
+   "size": 160,
+   "narration": "Years divisible by one hundred skip the leap day, unless they are divisible by four hundred. So nineteen hundred had no February twenty ninth. Two thousand did.",
+   "min_duration": 7.5
+  },
+  {
+   "type": "stat",
+   "label": "leap years in every 400-year cycle",
+   "value_from": "c_stat",
+   "value": 0,
+   "as_str": true,
+   "narration": "Count them over any four hundred years and you get {c_n_say} leap years, not one hundred.",
+   "min_duration": 5.5
+  },
+  {
+   "type": "kin",
+   "text": "Average year: {c_avg} days",
+   "hl": "{c_avg}",
+   "size": 120,
+   "narration": "That makes the average calendar year three hundred sixty five point two four two five days, very close to the real solar year. The next skipped leap day? Twenty one hundred.",
+   "min_duration": 8
+  }
+ ],
+ "style": "clean"
+}

@@ -1,0 +1,61 @@
+{
+ "channel": "chartbound",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-24T20:00:00Z"
+ },
+ "title": "Spain vs Italy economy",
+ "compute": {
+  "wbratio": {
+   "ind": "NY.GDP.MKTP.CD",
+   "a": "ESP",
+   "b": "ITA",
+   "from": 2000
+  }
+ },
+ "yt": {
+  "title": "Spain's economy was {wr_r0}% of Italy's in {wr_from}. Now? #Shorts",
+  "description": "GDP in current US dollars, Spain as a share of Italy, {wr_from} vs {wr_to}. Source: World Bank (NY.GDP.MKTP.CD). Both countries use the euro, so the dollar exchange rate largely cancels out of this ratio.\nNarration is AI-generated.",
+  "tags": [
+   "economics",
+   "spain",
+   "italy",
+   "gdp",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "Spain vs Italy: the economy",
+   "hl": "Spain",
+   "size": 160,
+   "narration": "Spain and Italy are two of the biggest economies in southern Europe. Here is how the gap between them changed.",
+   "min_duration": 4.8
+  },
+  {
+   "type": "num",
+   "text": "Spain as % of Italy",
+   "hl": "% of Italy",
+   "en": true,
+   "suffix": "%",
+   "a_from": "wr_r0",
+   "b_from": "wr_r1",
+   "l1": "{wr_from}",
+   "l2": "{wr_to}",
+   "narration": "In {wr_from}, Spain's economy was {wr_r0_say} percent the size of Italy's. By {wr_to}, it was {wr_r1_say} percent.",
+   "min_duration": 7
+  },
+  {
+   "type": "kin",
+   "text": "Spain is catching up",
+   "hl": "catching up",
+   "size": 150,
+   "narration": "Both countries use the euro, so the exchange rate barely moves this ratio. Spain's economy simply grew faster. What would you compare next?",
+   "min_duration": 7
+  }
+ ],
+ "style": "clean"
+}

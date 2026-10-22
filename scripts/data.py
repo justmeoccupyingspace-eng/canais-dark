@@ -218,6 +218,99 @@ def compute_blocks(spec, ctx, raw):
             n = 10 ** 6
             nl, n2 = n * math.log2(n), n * n
             raw.update(c_stat=f"{nl / 1e6:.0f}M vs {n2 / 1e12:.0f}T", c_nl_say=num2words(round(nl / 1e6), lang="en") + " million", c_ratio_say=num2words(round(n2 / nl, -3), lang="en"), c_ratio=f"{round(n2 / nl, -3):,.0f}")
+        elif k == "montyhall":
+            # enumera os 9 casos (porta do carro x primeira escolha); o apresentador sempre abre uma porta com cabra
+            wins_switch = wins_stay = 0
+            for car in range(3):
+                for pick in range(3):
+                    opened = next(d for d in range(3) if d != pick and d != car)
+                    switched = next(d for d in range(3) if d != pick and d != opened)
+                    wins_switch += switched == car
+                    wins_stay += pick == car
+            sw, st = wins_switch / 9 * 100, wins_stay / 9 * 100
+            raw.update(c_stat=f"{sw:.1f}%", c_sw=f"{sw:.1f}%", c_st=f"{st:.1f}%", c_sw_say=num2words(round(sw, 1), lang="en"),
+                       c_st_say=num2words(round(st, 1), lang="en"), c_cases=9, c_cases_win=wins_switch)
+        elif k == "counter64":
+            yr = 31557600  # ano juliano, 365,25 dias
+            y64 = 2 ** 64 / 1e9 / yr
+            s32 = 2 ** 32 / 1e9
+            raw.update(c_stat=f"{y64:.1f} years", c_y=f"{y64:.1f}", c_y_say=num2words(round(y64, 1), lang="en"),
+                       c_s32=f"{s32:.1f}", c_s32_say=num2words(round(s32, 1), lang="en"))
+        elif k == "unix2e9":
+            import datetime
+            d = datetime.datetime.fromtimestamp(2_000_000_000, datetime.timezone.utc)
+            d1 = datetime.datetime.fromtimestamp(1_000_000_000, datetime.timezone.utc)
+            raw.update(c_stat=f"{MESES_EN[d.month - 1][:3]} {d.day}, {d.year}", c_date=f"{MESES_EN[d.month - 1]} {d.day}, {d.year}",
+                       c_year=d.year, c_time=d.strftime("%H:%M:%S") + " UTC", c_date_say=f"{MESES_EN[d.month - 1]} {num2words(d.day, lang='en', to='ordinal')}, {num2words(d.year, lang='en', to='year')}",
+                       c_time_say=f"{num2words(d.hour, lang='en')} {num2words(d.minute, lang='en')} and {num2words(d.second, lang='en')} seconds, U T C",
+                       c_1e9=f"{MESES_EN[d1.month - 1]} {d1.day}, {d1.year}", c_1e9_say=f"{MESES_EN[d1.month - 1]} {num2words(d1.day, lang='en', to='ordinal')}, {num2words(d1.year, lang='en', to='year')}")
+        elif k == "leapyears":
+            import calendar
+            n = sum(calendar.isleap(y) for y in range(2001, 2401))
+            avg = 365 + n / 400
+            raw.update(c_stat=f"{n} of 400", c_n=n, c_n_say=num2words(n, lang="en"), c_avg=f"{avg:.4f}",
+                       c_1900=str(calendar.isleap(1900)).lower(), c_2000=str(calendar.isleap(2000)).lower())
+        elif k == "sunlight":
+            au, cl = 149_597_870_700, 299_792_458  # UA (IAU 2012) e c (SI), ambos exatos por definicao
+            t = au / cl
+            mi, se = int(t // 60), round(t % 60)
+            moon = 384_400_000 / cl  # distancia media Terra-Lua
+            raw.update(c_stat=f"{mi} min {se} s", c_secs=round(t, 1), c_min=mi, c_sec=se, c_moon=f"{moon:.1f}", c_moon_say=num2words(round(moon, 1), lang="en"),
+                       c_say=f"{num2words(mi, lang='en')} minutes and {num2words(se, lang='en')} seconds")
+        elif k == "gpsrel":
+            cl, gm = 299_792_458, 3.986004418e14  # c (SI) e GM da Terra (WGS 84)
+            re, r = 6_371_000, 26_560_000  # raio medio da Terra e raio da orbita GPS (m)
+            day = 86400
+            gr = gm / cl ** 2 * (1 / re - 1 / r) * day  # relogio no alto adianta (gravidade mais fraca)
+            v = math.sqrt(gm / r)
+            sr = v ** 2 / (2 * cl ** 2) * day  # relogio em movimento atrasa
+            net = (gr - sr) * 1e6
+            km = (gr - sr) * cl / 1000
+            raw.update(c_stat=f"{net:.1f} microseconds", c_us=f"{net:.1f}", c_us_say=num2words(round(net, 1), lang="en"),
+                       c_gr=f"{gr * 1e6:.1f}", c_sr=f"{sr * 1e6:.1f}", c_gr_say=num2words(round(gr * 1e6, 1), lang="en"),
+                       c_sr_say=num2words(round(sr * 1e6, 1), lang="en"), c_km=f"{km:.1f}", c_km_say=num2words(round(km, 1), lang="en"))
+        elif k == "cube":
+            n = math.factorial(8) * 3 ** 7 * math.factorial(12) * 2 ** 11 // 2
+            q = n / 1e18
+            raw.update(c_stat=f"{q:.0f} quintillion", c_n=f"{n:,}", c_q=f"{q:.0f}", c_q_say=num2words(round(q), lang="en"))
+        elif k == "luhn":
+            def ok(ds):
+                s = 0
+                for i, d in enumerate(reversed(ds)):
+                    if i % 2 == 1:
+                        d *= 2
+                        if d > 9:
+                            d -= 9
+                    s += d
+                return s % 10 == 0
+            import random
+            rnd = random.Random(7)
+            single = single_caught = trans = trans_caught = 0
+            for _ in range(2000):
+                base = [rnd.randrange(10) for _ in range(15)]
+                chk = next(c for c in range(10) if ok(base + [c]))
+                num = base + [chk]
+                for pos in range(16):
+                    for dg in range(10):
+                        if dg != num[pos]:
+                            alt = num[:]; alt[pos] = dg
+                            single += 1; single_caught += not ok(alt)
+                for pos in range(15):
+                    if num[pos] != num[pos + 1]:
+                        alt = num[:]; alt[pos], alt[pos + 1] = alt[pos + 1], alt[pos]
+                        trans += 1; trans_caught += not ok(alt)
+            ps, pt = single_caught / single * 100, trans_caught / trans * 100
+            raw.update(c_stat=f"{ps:.0f}%", c_single=f"{ps:.0f}%", c_single_say=num2words(round(ps), lang="en"),
+                       c_trans=f"{pt:.0f}%", c_trans_say=num2words(round(pt), lang="en"))
+        elif k == "ping":
+            cl = 299_792.458  # km/s
+            n_fiber = 1.468  # indice de grupo tipico de fibra monomodo em 1550 nm
+            dkm = 1000
+            rtt = 2 * dkm / (cl / n_fiber) * 1000
+            vac = 2 * dkm / cl * 1000
+            raw.update(c_stat=f"{rtt:.1f} ms", c_ms=f"{rtt:.1f}", c_ms_say=num2words(round(rtt, 1), lang="en"),
+                       c_vac=f"{vac:.1f}", c_vac_say=num2words(round(vac, 1), lang="en"), c_km=f"{dkm:,}", c_fkms=f"{cl / n_fiber:,.0f}",
+                       c_fkms_say=num2words(round(cl / n_fiber, -3), lang="en"))
         elif k == "shuffle":
             f = math.factorial(52)
             d = len(str(f))

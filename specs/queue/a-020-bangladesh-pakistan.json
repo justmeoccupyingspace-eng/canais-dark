@@ -1,0 +1,61 @@
+{
+ "channel": "chartbound",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-23T16:00:00Z"
+ },
+ "title": "Bangladesh vs Pakistan economy",
+ "compute": {
+  "wbratio": {
+   "ind": "NY.GDP.MKTP.CD",
+   "a": "BGD",
+   "b": "PAK",
+   "from": 2000
+  }
+ },
+ "yt": {
+  "title": "Bangladesh's economy was {wr_r0}% of Pakistan's in {wr_from}. Now? #Shorts",
+  "description": "GDP in current US dollars, Bangladesh as a share of Pakistan, {wr_from} vs {wr_to}. Source: World Bank (NY.GDP.MKTP.CD). Exchange rates affect this comparison.\nNarration is AI-generated.",
+  "tags": [
+   "economics",
+   "bangladesh",
+   "pakistan",
+   "gdp",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "Bangladesh vs Pakistan: the economy",
+   "hl": "Bangladesh",
+   "size": 150,
+   "narration": "Bangladesh and Pakistan were once one country. Here is how their economies compare, and how that changed.",
+   "min_duration": 4.8
+  },
+  {
+   "type": "num",
+   "text": "Bangladesh as % of Pakistan",
+   "hl": "% of Pakistan",
+   "en": true,
+   "suffix": "%",
+   "a_from": "wr_r0",
+   "b_from": "wr_r1",
+   "l1": "{wr_from}",
+   "l2": "{wr_to}",
+   "narration": "In {wr_from}, Bangladesh's economy was {wr_r0_say} percent the size of Pakistan's. By {wr_to}, it was {wr_r1_say} percent.",
+   "min_duration": 7
+  },
+  {
+   "type": "kin",
+   "text": "Above 100% means Bangladesh is bigger",
+   "hl": "Bangladesh",
+   "size": 140,
+   "narration": "Above one hundred percent means Bangladesh's economy is the larger one, in current dollars. Exchange rates move this a lot. What would you compare next?",
+   "min_duration": 7
+  }
+ ],
+ "style": "clean"
+}

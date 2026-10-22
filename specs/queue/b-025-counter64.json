@@ -1,0 +1,61 @@
+{
+ "channel": "howitticks",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-23T21:00:00Z"
+ },
+ "title": "A 64-bit counter lasts 584 years",
+ "compute": {
+  "calc": {
+   "kind": "counter64"
+  }
+ },
+ "yt": {
+  "title": "Counting 1 billion per second, a 64-bit counter lasts {c_y} years #Shorts",
+  "description": "2^64 / 10^9 counts per second / 31,557,600 seconds per year (365.25 days) = {c_y} years. A 32-bit counter at the same rate: 2^32 / 10^9 = {c_s32} seconds. Computed in Python.\nNarration is AI-generated.",
+  "tags": [
+   "64-bit",
+   "integer overflow",
+   "binary",
+   "how it works"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "This counter barely runs out",
+   "hl": "barely",
+   "size": 150,
+   "narration": "A computer counts one billion times every second. How long until its counter runs out?",
+   "min_duration": 4.6
+  },
+  {
+   "type": "stat",
+   "label": "for a 64-bit counter at 1 billion per second",
+   "value_from": "c_stat",
+   "value": 0,
+   "as_str": true,
+   "narration": "With sixty four bits, a counter can go past eighteen quintillion. At one billion per second, that lasts {c_y_say} years.",
+   "min_duration": 7.5
+  },
+  {
+   "type": "kin",
+   "text": "32 bits: gone in {c_s32} seconds",
+   "hl": "{c_s32} seconds",
+   "size": 140,
+   "narration": "With only thirty two bits, the same counter would overflow in {c_s32_say} seconds.",
+   "min_duration": 4.8
+  },
+  {
+   "type": "kin",
+   "text": "Every bit doubles the time",
+   "hl": "doubles",
+   "size": 150,
+   "narration": "Each extra bit doubles the range. That is why many systems now use sixty four bit counters for time and IDs. How fast could you overflow yours?",
+   "min_duration": 6.5
+  }
+ ],
+ "style": "clean"
+}

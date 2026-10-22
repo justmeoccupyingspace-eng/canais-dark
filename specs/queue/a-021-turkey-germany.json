@@ -1,0 +1,61 @@
+{
+ "channel": "chartbound",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-23T20:00:00Z"
+ },
+ "title": "Turkey vs Germany population",
+ "compute": {
+  "wbratio": {
+   "ind": "SP.POP.TOTL",
+   "a": "TUR",
+   "b": "DEU",
+   "from": 2000
+  }
+ },
+ "yt": {
+  "title": "Turkey had {wr_r0}% of Germany's population in {wr_from}. Now? #Shorts",
+  "description": "Total population, Turkey as a share of Germany, {wr_from} vs {wr_to}. Source: World Bank (SP.POP.TOTL).\nNarration is AI-generated.",
+  "tags": [
+   "population",
+   "turkey",
+   "germany",
+   "demographics",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "Turkey vs Germany: population",
+   "hl": "Turkey",
+   "size": 160,
+   "narration": "Germany has long been the most populous country in the European Union. Here is how Turkey compares, and how that changed.",
+   "min_duration": 4.8
+  },
+  {
+   "type": "num",
+   "text": "Turkey as % of Germany",
+   "hl": "% of Germany",
+   "en": true,
+   "suffix": "%",
+   "a_from": "wr_r0",
+   "b_from": "wr_r1",
+   "l1": "{wr_from}",
+   "l2": "{wr_to}",
+   "narration": "In {wr_from}, Turkey had {wr_r0_say} percent as many people as Germany. By {wr_to}, it had {wr_r1_say} percent.",
+   "min_duration": 7
+  },
+  {
+   "type": "kin",
+   "text": "Turkey has caught up",
+   "hl": "caught up",
+   "size": 150,
+   "narration": "Turkey's population grew much faster than Germany's. Population shapes labor, demand, and growth. What would you compare next?",
+   "min_duration": 7
+  }
+ ],
+ "style": "clean"
+}

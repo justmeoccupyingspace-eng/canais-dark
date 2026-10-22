@@ -1,0 +1,61 @@
+{
+ "channel": "chartbound",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-25T20:00:00Z"
+ },
+ "title": "Canada vs Russia economy",
+ "compute": {
+  "wbratio": {
+   "ind": "NY.GDP.MKTP.CD",
+   "a": "CAN",
+   "b": "RUS",
+   "from": 2000
+  }
+ },
+ "yt": {
+  "title": "Canada's economy was {wr_r0}% of Russia's in {wr_from}. Now? #Shorts",
+  "description": "GDP in current US dollars, Canada as a share of Russia, {wr_from} vs {wr_to}. Source: World Bank (NY.GDP.MKTP.CD). Exchange rates affect this comparison.\nNarration is AI-generated.",
+  "tags": [
+   "economics",
+   "canada",
+   "russia",
+   "gdp",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "Canada vs Russia: the economy",
+   "hl": "Canada",
+   "size": 160,
+   "narration": "Canada and Russia are the two largest countries on Earth by area. Here is how their economies compare, and how that changed.",
+   "min_duration": 4.8
+  },
+  {
+   "type": "num",
+   "text": "Canada as % of Russia",
+   "hl": "% of Russia",
+   "en": true,
+   "suffix": "%",
+   "a_from": "wr_r0",
+   "b_from": "wr_r1",
+   "l1": "{wr_from}",
+   "l2": "{wr_to}",
+   "narration": "In {wr_from}, Canada's economy was {wr_r0_say} percent the size of Russia's. By {wr_to}, it was {wr_r1_say} percent.",
+   "min_duration": 7
+  },
+  {
+   "type": "kin",
+   "text": "Oil and exchange rates swing both",
+   "hl": "Oil",
+   "size": 140,
+   "narration": "Both economies depend a lot on energy, so oil prices and exchange rates swing this comparison. What would you compare next?",
+   "min_duration": 7
+  }
+ ],
+ "style": "clean"
+}

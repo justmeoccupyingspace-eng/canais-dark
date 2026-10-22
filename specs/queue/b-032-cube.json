@@ -1,0 +1,61 @@
+{
+ "channel": "howitticks",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-26T01:00:00Z"
+ },
+ "title": "A 3x3 cube has 43 quintillion positions",
+ "compute": {
+  "calc": {
+   "kind": "cube"
+  }
+ },
+ "yt": {
+  "title": "A 3x3 puzzle cube has {c_q} quintillion positions #Shorts",
+  "description": "Positions reachable by turning a standard 3x3x3 puzzle cube: 8! x 3^7 x 12! x 2^11 / 2 = {c_n}, computed in Python. Any position can be solved in 20 moves or fewer (half-turn metric), proven in 2010 by Rokicki, Kociemba, Davidson and Dethridge.\nNarration is AI-generated.",
+  "tags": [
+   "puzzle cube",
+   "combinatorics",
+   "math",
+   "how it works"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "One small cube. Huge number.",
+   "hl": "Huge",
+   "size": 160,
+   "narration": "This little puzzle cube fits in your hand. Guess how many ways it can be scrambled.",
+   "min_duration": 4.6
+  },
+  {
+   "type": "stat",
+   "label": "positions of a 3 by 3 puzzle cube",
+   "value_from": "c_stat",
+   "value": 0,
+   "as_str": true,
+   "narration": "More than {c_q_say} quintillion. That is a forty three followed by eighteen more digits.",
+   "min_duration": 6.5
+  },
+  {
+   "type": "kin",
+   "text": "Corners times edges",
+   "hl": "edges",
+   "size": 150,
+   "narration": "Eight corners can be arranged and twisted. Twelve edges can be arranged and flipped. Multiply it all, then remove the states no turn can reach.",
+   "min_duration": 8
+  },
+  {
+   "type": "kin",
+   "text": "Yet 20 moves solve any of them",
+   "hl": "20 moves",
+   "size": 140,
+   "narration": "Yet every single one can be solved in twenty moves or fewer. That was proven in twenty ten, with a lot of computer time.",
+   "min_duration": 6.5
+  }
+ ],
+ "style": "clean"
+}
