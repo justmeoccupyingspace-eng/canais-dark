@@ -460,7 +460,9 @@ const End = ({sc, p}) => {
       {sc.art ? <Svg html={sc.art} style={{width: sc.artW || 300, marginBottom: 30, opacity: s}} /> : null}
       <div style={{fontFamily: PF, fontWeight: 700, fontSize: 92, color: txt(p), opacity: s, transform: `scale(${0.9 + 0.1 * s})`}}>{sc.brand || 'Vale o Preço?'}</div>
       <div style={{fontFamily: SERIF, fontStyle: 'italic', fontSize: 46, color: hlc(p), marginTop: 10, opacity: interpolate(f, [8, 18], [0, 1], C)}}>{sc.line || 'planilhas prontas para o seu negócio'}</div>
-      <div style={{marginTop: 50, display: 'flex', alignItems: 'center', gap: 16, background: WA, color: '#fff', fontFamily: PF, fontWeight: 700, fontSize: 40, borderRadius: 60, padding: '20px 42px', opacity: interpolate(f, [14, 24], [0, 1], C)}}><WaIcon s={44} />WhatsApp na bio</div>
+      {sc.pill === false ? null : typeof sc.pill === 'string'
+        ? <div style={{marginTop: 50, background: p.deep, color: '#fff', fontFamily: PF, fontWeight: 700, fontSize: 40, borderRadius: 60, padding: '20px 42px', opacity: interpolate(f, [14, 24], [0, 1], C)}}>{sc.pill}</div>
+        : <div style={{marginTop: 50, display: 'flex', alignItems: 'center', gap: 16, background: WA, color: '#fff', fontFamily: PF, fontWeight: 700, fontSize: 40, borderRadius: 60, padding: '20px 42px', opacity: interpolate(f, [14, 24], [0, 1], C)}}><WaIcon s={44} />WhatsApp na bio</div>}
       <Sfx at={0} src="sparkle" vol={0.32} />
     </AbsoluteFill>
   );

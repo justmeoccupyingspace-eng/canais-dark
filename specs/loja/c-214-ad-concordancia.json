@@ -1,0 +1,85 @@
+{
+ "channel": "loja",
+ "style": "promo",
+ "pal": "concurso",
+ "tag": "CONCURSO TJSP · ESCREVENTE",
+ "tagIcon": "<svg viewBox=\"0 0 48 48\" width=\"100%\" fill=\"none\" stroke=\"#6B2236\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"11\" y=\"6\" width=\"28\" height=\"36\" rx=\"4\"/><path d=\"M7 13 h6 M7 21 h6 M7 29 h6 M7 37 h6 M19 15 h14 M19 22 h14 M19 29 h9\"/></svg>",
+ "motifs": [
+  "<svg viewBox=\"0 0 48 48\" width=\"100%\" fill=\"none\" stroke=\"#8C2F45\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"11\" y=\"6\" width=\"28\" height=\"36\" rx=\"4\"/><path d=\"M7 13 h6 M7 21 h6 M7 29 h6 M7 37 h6 M19 15 h14 M19 22 h14 M19 29 h9\"/></svg>",
+  "<svg viewBox=\"0 0 48 48\" width=\"100%\" fill=\"none\" stroke=\"#23365C\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M31 8 l9 9 L18 39 H9 v-9 Z M27 12 l9 9\"/></svg>",
+  "<svg viewBox=\"0 0 48 48\" width=\"100%\" fill=\"none\" stroke=\"#8C2F45\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"7\" y=\"7\" width=\"34\" height=\"34\" rx=\"8\"/><path d=\"M15 25 l6 6 l12-14\"/></svg>"
+ ],
+ "tail": 0.16,
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "title": "Questão TJSP: faz ou fazem?",
+ "yt": {
+  "title": "Questão TJSP: faz ou fazem?",
+  "description": "Português do Escrevente TJSP: faz ou fazem? Comenta a letra! Siga para uma questão do TJSP por dia até a prova.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #portugues #concurseiro",
+  "tags": [],
+  "lang": "pt-BR"
+ },
+ "tiktok": "Português do Escrevente TJSP: faz ou fazem? Comenta a letra! Siga para uma questão do TJSP por dia até a prova.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #portugues #concurseiro",
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "Português do TJSP: você acerta essa?",
+   "hl": "você acerta",
+   "narration": "Questão de português do concurso do TJ de São Paulo. Você acerta essa?",
+   "min_duration": 3.6,
+   "badge": "ESCREVENTE TJSP 2027",
+   "art": "<svg width=\"100%\" viewBox=\"0 0 260 230\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"#8C2F45\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n<path d=\"M130 22v168\"/><circle cx=\"130\" cy=\"18\" r=\"6\"/><path d=\"M48 52h164\"/><path d=\"M130 52c-10 0-14-10-14-10h28s-4 10-14 10\"/>\n<path d=\"M60 52 28 128\"/><path d=\"M60 52l32 76\"/><path d=\"M200 52l-32 76\"/><path d=\"M200 52l32 76\"/>\n<path d=\"M22 128h76c0 18-17 30-38 30s-38-12-38-30z\"/><path d=\"M162 128h76c0 18-17 30-38 30s-38-12-38-30z\"/>\n<path d=\"M98 200h64\"/><path d=\"M84 214h92\"/><path d=\"M112 190h36l6 10h-48z\"/>\n</svg>",
+   "artW": 300
+  },
+  {
+   "type": "quiz",
+   "label": "LÍNGUA PORTUGUESA · CONCORDÂNCIA",
+   "q": "Assinale a frase que está de acordo com a norma-padrão:",
+   "alts": [
+    "Fazem dois anos que estudo para o TJSP.",
+    "Faz dois anos que estudo para o TJSP.",
+    "Haviam muitos candidatos na sala.",
+    "Houveram problemas na prova.",
+    "Devem haver vagas no interior."
+   ],
+   "correct": 1,
+   "why": "fazer (tempo) e haver (existir) não vão ao plural",
+   "narration": "Qual dessas frases está certa pela norma-padrão? Pensa rápido.",
+   "extra": 4.4,
+   "revealFromEnd": 1.7,
+   "countdown": 3,
+   "capsTop": 1700
+  },
+  {
+   "type": "hook",
+   "text": "Resposta: letra B",
+   "hl": "letra B",
+   "narration": "Letra B. Fazer indicando tempo e haver no sentido de existir são impessoais: ficam sempre no singular. Faz dois anos, havia candidatos, houve problemas, deve haver vagas.",
+   "min_duration": 6,
+   "badge": "GABARITO COMENTADO",
+   "sub": "faz dois anos · havia · houve · deve haver"
+  },
+  {
+   "type": "hook",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "narration": "Siga o perfil pra treinar uma questão do concurso do TJ por dia, até a prova.",
+   "min_duration": 4.2,
+   "badge": "ESCREVENTE TJSP 2027",
+   "art": "<svg width=\"100%\" viewBox=\"0 0 260 230\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"#8C2F45\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n<path d=\"M130 22v168\"/><circle cx=\"130\" cy=\"18\" r=\"6\"/><path d=\"M48 52h164\"/><path d=\"M130 52c-10 0-14-10-14-10h28s-4 10-14 10\"/>\n<path d=\"M60 52 28 128\"/><path d=\"M60 52l32 76\"/><path d=\"M200 52l-32 76\"/><path d=\"M200 52l32 76\"/>\n<path d=\"M22 128h76c0 18-17 30-38 30s-38-12-38-30z\"/><path d=\"M162 128h76c0 18-17 30-38 30s-38-12-38-30z\"/>\n<path d=\"M98 200h64\"/><path d=\"M84 214h92\"/><path d=\"M112 190h36l6 10h-48z\"/>\n</svg>",
+   "artW": 300
+  },
+  {
+   "type": "end",
+   "art": "<svg width=\"100%\" viewBox=\"0 0 260 230\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"#8C2F45\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n<path d=\"M130 22v168\"/><circle cx=\"130\" cy=\"18\" r=\"6\"/><path d=\"M48 52h164\"/><path d=\"M130 52c-10 0-14-10-14-10h28s-4 10-14 10\"/>\n<path d=\"M60 52 28 128\"/><path d=\"M60 52l32 76\"/><path d=\"M200 52l-32 76\"/><path d=\"M200 52l32 76\"/>\n<path d=\"M22 128h76c0 18-17 30-38 30s-38-12-38-30z\"/><path d=\"M162 128h76c0 18-17 30-38 30s-38-12-38-30z\"/>\n<path d=\"M98 200h64\"/><path d=\"M84 214h92\"/><path d=\"M112 190h36l6 10h-48z\"/>\n</svg>",
+   "artW": 230,
+   "duration": 2.6,
+   "nocaps": true,
+   "brand": "Vale o Preço?",
+   "line": "questões do Escrevente TJSP",
+   "pill": "1 questão por dia até a prova"
+  }
+ ]
+}
