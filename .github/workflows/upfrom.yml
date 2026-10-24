@@ -1,4 +1,5 @@
 name: upfrom
+run-name: upfrom ${{ inputs.name }}
 on:
   workflow_dispatch:
     inputs:
