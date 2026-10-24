@@ -30,7 +30,7 @@
    "text": "Your ping can never be zero",
    "hl": "never",
    "icon": "🎮",
-   "narration": "Even with perfect internet, your ping can never be zero.",
+   "narration": "Your ping can never be zero. Here's why.",
    "min_duration": 2.8
   },
   {
@@ -39,7 +39,7 @@
    "hl": "1/3 slower",
    "icon": "💡",
    "pose": "shrug",
-   "narration": "Inside fiber, light moves about {c_fkms_say} kilometers per second. A third slower than in space.",
+   "narration": "In fiber, light is a third slower than in space.",
    "min_duration": 3.4
   },
   {

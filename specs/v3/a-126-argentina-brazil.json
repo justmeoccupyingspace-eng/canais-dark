@@ -1,7 +1,7 @@
 {
  "channel": "chartbound",
  "style": "v3",
- "rate": "+6%",
+ "rate": "+9%",
  "title": "Argentina's economy was {wr_r0}% of Brazil's in {wr_from}. Now? #Shorts",
  "publish": {
   "channel": "A",
@@ -44,7 +44,7 @@
      "name": "Brazil"
     }
    ],
-   "narration": "In {wr_from}, Argentina's economy was only {wr_r0_say} percent the size of Brazil's.",
+   "narration": "In {wr_from}, Argentina was {wr_r0_say} percent of Brazil.",
    "min_duration": 3.2
   },
   {
@@ -75,7 +75,7 @@
    "hl": "Currency crashes",
    "icon": "📉",
    "pose": "shrug",
-   "narration": "Repeated currency crashes made its economy smaller in dollars.",
+   "narration": "Currency crashes shrank it in dollars.",
    "min_duration": 3.4
   },
   {

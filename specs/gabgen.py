@@ -37,7 +37,7 @@ V.append(q('c-301-sequencia', 'RACIOCÍNIO LÓGICO · SEQUÊNCIAS', '2, 3, 5, 8,
            'Sequência: 2, 3, 5, 8, 12, 17, ... Mantido o padrão, o 10º termo é:', ['38', '45', '47', '55', '57'], 'C',
            'Dois, três, cinco, oito, doze, dezessete. Qual é o décimo termo?',
            'Letra C: 47', 'Letra C, quarenta e sete!',
-           ('As diferenças crescem', 'crescem', ['+1, +2, +3, +4, +5...', '17 → 23 → 30 → 38', '38 + 9 = 47'],
+           ('As diferenças crescem', 'crescem', ['+1, +2, +3, +4, +5...', '17, 23, 30, 38...', '38 + 9 = 47'],
             'As diferenças crescem de um em um. Depois do dezessete vem vinte e três, trinta, trinta e oito. Mais nove: quarenta e sete.', ['diferenças', 'depois', 'mais']),
            ('38 é só o 9º termo', '9º termo', 'O trinta e oito é só o nono termo.'),
            '#raciociniologico', 'Raciocínio Lógico do Escrevente TJSP: qual é o 10º termo?'))
@@ -100,7 +100,7 @@ V.append(q('c-308-atalhos', 'INFORMÁTICA · WINDOWS', 'Qual atalho está certo?
            'No Windows 10 ou 11, a combinação de teclas está correta em:', ['Win+L abre as Configurações', 'Alt+Tab fecha a janela ativa', 'Win+E abre a caixa Executar', 'Win+Shift+S abre o histórico do Ctrl+C', 'Ctrl+Shift+Esc abre o Gerenciador de Tarefas'], 'E',
            'No Windows, qual destes atalhos está associado à função certa?',
            'Letra E: Ctrl+Shift+Esc', 'Letra E!',
-           ('Decora esses', 'Decora', [{'t': 'Ctrl+Shift+Esc → Gerenciador', 'hi': True}, 'Win+L → bloqueia a tela', 'Win+E → Explorador', 'Win+R → Executar', 'Win+V → histórico do Ctrl+C'],
+           ('Decora esses', 'Decora', [{'t': 'Ctrl+Shift+Esc: Gerenciador', 'hi': True}, 'Win+L: bloqueia a tela', 'Win+E: Explorador', 'Win+R: Executar', 'Win+V: histórico do Ctrl+C'],
             'Control shift esc abre o gerenciador de tarefas. Windows L bloqueia. Windows E, explorador. Windows R, executar. E Windows V, o histórico do control C.', ['control', 'windows', 'windows', 'windows', 'e']),
            None,
            '#informatica #windows', 'Informática do Escrevente TJSP: atalhos do Windows.', asize=40))

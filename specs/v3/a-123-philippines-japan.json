@@ -1,7 +1,7 @@
 {
  "channel": "chartbound",
  "style": "v3",
- "rate": "+6%",
+ "rate": "+9%",
  "title": "The Philippines had {wr_r0}% of Japan's population in {wr_from}. Now? #Shorts",
  "publish": {
   "channel": "A",
@@ -44,7 +44,7 @@
      "name": "Japan"
     }
    ],
-   "narration": "In {wr_from}, The Philippines had only {wr_r0_say} percent as many people as Japan.",
+   "narration": "In {wr_from}, the Philippines had {wr_r0_say} percent of Japan's people.",
    "min_duration": 3.2
   },
   {
@@ -74,7 +74,7 @@
    "hl": "shrinking.",
    "icon": "👶",
    "pose": "shrug",
-   "narration": "Japan's population is shrinking, while the Philippines keeps growing.",
+   "narration": "Japan is shrinking. The Philippines keeps growing.",
    "min_duration": 3.4
   },
   {

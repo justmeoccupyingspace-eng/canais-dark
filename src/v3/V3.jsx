@@ -247,7 +247,7 @@ export const stepTimes = (sc, dFrames) => {
     if (r.at != null) t = r.at;
     else if (r.cue) {
       const c = norm(r.cue.split(' ')[0]);
-      const w = words.find((w) => w.t0 >= last - 0.01 && norm(w.w).startsWith(c));
+      const w = words.find((w) => w.t0 > last + 0.05 && norm(w.w).startsWith(c));
       if (w) t = w.t0;
     }
     if (t == null) t = 0.25 + i * Math.max(0.5, (span * 0.75 - 0.25) / Math.max(1, n));
@@ -272,13 +272,13 @@ const Steps = ({sc, p}) => {
           <Words text={sc.text} hl={sc.hl} size={sc.size || 84} hlColor={p.acc} />
         </div>
       ) : null}
-      <div style={{position: 'absolute', top: sc.rowsTop || (sc.text ? 470 : 300), left: 56, right: 56, display: 'flex', flexDirection: 'column', gap: 22}}>
+      <div style={{position: 'absolute', top: sc.rowsTop || (sc.text ? Math.max(450, 770 - rows.length * 70) : 300), left: 56, right: 56, display: 'flex', flexDirection: 'column', gap: 22}}>
         {rows.map((r, i) => {
           const st = Math.round(times[i] * FPS);
           const s = spring({frame: f - st, fps: FPS, config: {damping: 13, stiffness: 210}});
           const on = i === hi;
           const want = r.size || sc.rowSize || (rows.length > 4 ? (on ? 64 : 58) : (on ? 80 : 70));
-          const fs = Math.min(want, Math.floor((r.icon ? 1450 : 1550) / Math.max(10, r.t.length)));
+          const fs = Math.max(Math.min(want, 54), Math.min(want, Math.floor(820 / (Math.max(8, r.t.length) * 0.6 + 1.25))));
           const glow = on ? interpolate(f - st, [0, 10, 30], [0, 1, 0.5], C) : 0;
           return (
             <div key={i} style={{display: 'flex', alignItems: 'center', gap: 22, background: on ? p.acc : 'rgba(255,255,255,.96)', borderRadius: 30, padding: on ? '28px 30px' : (rows.length > 4 ? '18px 26px' : '24px 28px'), opacity: f < st ? 0 : interpolate(s, [0, 0.3], [0, 1], C), transform: `translateX(${(1 - s) * -140}px) scale(${(0.86 + 0.14 * s) * (on ? 1 + 0.03 * Math.sin((f - st) / 6) * glow : 1)})`, boxShadow: on ? `0 0 ${50 * glow}px ${p.acc}, 0 16px 34px rgba(0,0,0,.35)` : '0 14px 30px rgba(0,0,0,.3)'}}>
@@ -312,6 +312,8 @@ const Quiz = ({sc, p}) => {
   const left = Math.max(0, Math.ceil((rv - f) / FPS));
   const inCd = f >= rv - (sc.countdown || 3) * FPS && f < rv;
   const card = spring({frame: f, fps: FPS, config: {damping: 15, stiffness: 160}});
+  const readEnd = d - Math.round((sc.extra || 4.6) * FPS);
+  const aStart = sc.altsAt != null ? Math.round(sc.altsAt * FPS) : Math.max(8, Math.round(readEnd * 0.45));
   return (
     <AbsoluteFill>
       <div style={{position: 'absolute', top: 150, left: 50, right: 50, display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
@@ -322,12 +324,12 @@ const Quiz = ({sc, p}) => {
         <div style={{fontFamily: FONT, fontWeight: 900, fontSize: sc.qsize || 56, lineHeight: 1.16, color: '#14121f', marginBottom: 26}}>{sc.q}</div>
         {(sc.alts || []).map((a, i) => {
           const ok = i === sc.correct;
-          const s = spring({frame: f - 8 - i * 4, fps: FPS, config: {damping: 15, stiffness: 220}});
+          const s = spring({frame: f - aStart - i * 7, fps: FPS, config: {damping: 14, stiffness: 220}});
           const bg = revealed ? (ok ? '#2bd47d' : '#f1f1f4') : '#f3f4f8';
           return (
-            <div key={i} style={{display: 'flex', alignItems: 'center', gap: 20, background: bg, borderRadius: 22, padding: '20px 20px', marginBottom: 14, opacity: revealed && !ok ? 0.45 : s, transform: `translateX(${(1 - s) * 60}px) scale(${ok ? 1 + 0.05 * k : 1})`}}>
-              <span style={{flex: '0 0 auto', width: 66, height: 66, borderRadius: '50%', background: revealed && ok ? '#ffffff' : p.bg1, color: revealed && ok ? '#1d8f52' : '#fff', fontFamily: FONT, fontWeight: 900, fontSize: 36, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{'ABCDE'[i]}</span>
-              <span style={{fontFamily: FONT, fontWeight: 800, fontSize: sc.asize || 48, lineHeight: 1.15, color: '#14121f'}}>{a}</span>
+            <div key={i} style={{display: 'flex', alignItems: 'center', gap: 20, background: bg, borderRadius: 22, padding: '20px 20px', marginBottom: 14, opacity: revealed && !ok ? 0.45 : 1, transform: `scale(${ok ? 1 + 0.05 * k : 1})`}}>
+              <span style={{flex: '0 0 auto', width: 66, height: 66, borderRadius: '50%', background: revealed && ok ? '#ffffff' : p.bg1, color: revealed && ok ? '#1d8f52' : '#fff', fontFamily: FONT, fontWeight: 900, fontSize: 36, display: 'flex', alignItems: 'center', justifyContent: 'center', opacity: 0.35 + 0.65 * Math.min(1, s), transform: `scale(${0.85 + 0.15 * s})`}}>{'ABCDE'[i]}</span>
+              <span style={{fontFamily: FONT, fontWeight: 800, fontSize: sc.asize || 48, lineHeight: 1.15, color: '#14121f', opacity: Math.min(1, s * 1.5), transform: `translateX(${(1 - s) * 50}px)`}}>{a}</span>
             </div>
           );
         })}
@@ -378,7 +380,7 @@ const Caps = ({spec, tl, p}) => {
   const active = chunks.find((c) => t >= c[0].t0 - 0.05 && t < c[c.length - 1].t1 + 0.1);
   if (!active) return null;
   const s = spring({frame: Math.round((t - active[0].t0) * FPS), fps: FPS, config: {damping: 14, stiffness: 300}});
-  const y = sc.capsY || (DEF[sc.type]?.pos === 'center' ? 1500 : 1180);
+  const y = sc.capsY || ((sc.mpos || DEF[sc.type]?.pos) === 'center' ? 1610 : 1180);
   return (
     <div style={{position: 'absolute', left: 50, right: 50, top: y, textAlign: 'center', fontFamily: FONT, fontWeight: 900, fontSize: 78, lineHeight: 1.08, transform: `scale(${0.9 + 0.1 * s})`}}>
       {active.map((w, j) => {
@@ -555,6 +557,7 @@ export const V3Video = ({spec}) => {
           <Audio src={staticFile(`audio/fx/${sc.sfx || SFX[sc.type] || 'whoosh'}.wav`)} volume={i === 0 ? 0.55 : 0.32} />
           {sc.type === 'steps' ? stepTimes(sc, tl[i].d).map((t, j) => <Sequence key={'st' + j} from={Math.round(t * FPS)}><Audio src={staticFile('audio/fx/pop.wav')} volume={0.42} /></Sequence>) : null}
           {sc.type === 'bars' ? (sc.vals || [0, 0]).map((_, j, a) => <Sequence key={'bp' + j} from={30 + j * (a.length > 2 ? 16 : 22) + (j === a.length - 1 ? 14 : 0)}><Audio src={staticFile('audio/fx/pop.wav')} volume={j === a.length - 1 ? 0.55 : 0.3} /></Sequence>) : null}
+          {sc.type === 'quiz' ? (sc.alts || []).map((_, j) => <Sequence key={'at' + j} from={(sc.altsAt != null ? Math.round(sc.altsAt * FPS) : Math.max(8, Math.round((tl[i].d - Math.round((sc.extra || 4.6) * FPS)) * 0.45))) + j * 7}><Audio src={staticFile('audio/fx/tap.wav')} volume={0.25} /></Sequence>) : null}
           {sc.type === 'quiz' ? [3, 2, 1].map((k) => <Sequence key={'tk' + k} from={Math.max(0, tl[i].d - Math.round((sc.revealFromEnd || 1.6) * FPS) - k * FPS)}><Audio src={staticFile('audio/fx/tick.wav')} volume={0.5} /></Sequence>) : null}
           {sc.type === 'quiz' ? <Sequence from={Math.max(0, tl[i].d - Math.round((sc.revealFromEnd || 1.6) * FPS))}><Audio src={staticFile('audio/fx/ding.wav')} volume={0.6} /></Sequence> : null}
         </Sequence>

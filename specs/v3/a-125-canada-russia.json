@@ -1,7 +1,7 @@
 {
  "channel": "chartbound",
  "style": "v3",
- "rate": "+6%",
+ "rate": "+9%",
  "title": "Canada's economy was {wr_r0}% of Russia's in {wr_from}. Now? #Shorts",
  "publish": {
   "channel": "A",
@@ -44,7 +44,7 @@
      "name": "Russia"
     }
    ],
-   "narration": "In {wr_from}, Canada's economy was only {wr_r0_say} percent the size of Russia's.",
+   "narration": "In {wr_from}, Canada was {wr_r0_say} percent of Russia.",
    "min_duration": 3.2
   },
   {
@@ -75,7 +75,7 @@
    "hl": "Oil",
    "icon": "🛢️",
    "pose": "shrug",
-   "narration": "Both run on energy, so oil prices and exchange rates swing this a lot.",
+   "narration": "Oil prices and exchange rates swing this a lot.",
    "min_duration": 3.4
   },
   {

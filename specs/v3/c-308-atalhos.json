@@ -53,24 +53,24 @@
    "hl": "Decora",
    "rows": [
     {
-     "t": "Ctrl+Shift+Esc → Gerenciador",
+     "t": "Ctrl+Shift+Esc: Gerenciador",
      "hi": true,
      "cue": "control"
     },
     {
-     "t": "Win+L → bloqueia a tela",
+     "t": "Win+L: bloqueia a tela",
      "cue": "windows"
     },
     {
-     "t": "Win+E → Explorador",
+     "t": "Win+E: Explorador",
      "cue": "windows"
     },
     {
-     "t": "Win+R → Executar",
+     "t": "Win+R: Executar",
      "cue": "windows"
     },
     {
-     "t": "Win+V → histórico do Ctrl+C",
+     "t": "Win+V: histórico do Ctrl+C",
      "cue": "e"
     }
    ],

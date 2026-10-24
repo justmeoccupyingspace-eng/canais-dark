@@ -30,7 +30,7 @@
    "text": "Without Einstein, GPS drifts {c_km} km a day",
    "hl": "{c_km} km",
    "icon": "🛰️",
-   "narration": "Without Einstein, your GPS would drift about {c_km_say} kilometers every day.",
+   "narration": "Without Einstein, your GPS would be useless in a day.",
    "min_duration": 3.2
   },
   {
@@ -41,7 +41,7 @@
     {
      "t": "Weaker gravity: +{c_gr} µs",
      "icon": "🪐",
-     "cue": "up"
+     "cue": "weaker"
     },
     {
      "t": "High speed: −{c_sr} µs",
@@ -53,7 +53,7 @@
      "cue": "net"
     }
    ],
-   "narration": "Up there, weaker gravity makes clocks run faster: plus {c_gr_say} microseconds a day. Their speed slows them by {c_sr_say}. Net: {c_us_say} microseconds ahead.",
+   "narration": "Up there, weaker gravity speeds the clocks up. Their speed slows them down. Net: {c_us_say} microseconds fast, every day.",
    "min_duration": 3.4
   },
   {

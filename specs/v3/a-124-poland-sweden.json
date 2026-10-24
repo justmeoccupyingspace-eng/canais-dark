@@ -1,7 +1,7 @@
 {
  "channel": "chartbound",
  "style": "v3",
- "rate": "+6%",
+ "rate": "+9%",
  "title": "Poland's economy was {wr_r0}% of Sweden's in {wr_from}. Now? #Shorts",
  "publish": {
   "channel": "A",
@@ -44,7 +44,7 @@
      "name": "Sweden"
     }
    ],
-   "narration": "In {wr_from}, Poland's economy was only {wr_r0_say} percent the size of Sweden's.",
+   "narration": "In {wr_from}, Poland was {wr_r0_say} percent of Sweden.",
    "min_duration": 3.2
   },
   {
@@ -75,7 +75,7 @@
    "hl": "per person,",
    "icon": "🧮",
    "pose": "shrug",
-   "narration": "But Poland has three and a half times the people, so per person Sweden is still richer.",
+   "narration": "But per person, Sweden is still richer.",
    "min_duration": 3.6
   },
   {

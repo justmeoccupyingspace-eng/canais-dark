@@ -30,7 +30,7 @@
    "text": "Your card's last digit is a typo trap",
    "hl": "typo trap",
    "icon": "💳",
-   "narration": "The last digit of your card number isn't random. It's a trap for typos.",
+   "narration": "Your card's last digit is a trap for typos.",
    "min_duration": 3
   },
   {
@@ -52,7 +52,7 @@
      "cue": "add"
     },
     {
-     "t": "Ends in 0 → valid",
+     "t": "Ends in 0, so valid",
      "cue": "it"
     }
    ],
