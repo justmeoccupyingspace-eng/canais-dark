@@ -1,0 +1,63 @@
+{
+ "channel": "chartbound",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-24T23:00:00Z"
+ },
+ "title": "Philippines vs Japan population",
+ "compute": {
+  "wbratio": {
+   "ind": "SP.POP.TOTL",
+   "a": "PHL",
+   "b": "JPN",
+   "from": 2000
+  }
+ },
+ "yt": {
+  "title": "The Philippines had 63% of Japan's population in 2000. Now? #Shorts",
+  "description": "Total population, the Philippines as a share of Japan, 2000 vs 2025. Source: World Bank (SP.POP.TOTL).\nNarration is AI-generated.",
+  "tags": [
+   "population",
+   "philippines",
+   "japan",
+   "demographics",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "The Philippines vs Japan: population",
+   "hl": "Philippines",
+   "size": 150,
+   "narration": "Japan has long been one of the most populous countries in Asia. Here is how the Philippines compares, and how that changed.",
+   "min_duration": 4.8
+  },
+  {
+   "type": "num",
+   "text": "Philippines as % of Japan",
+   "hl": "% of Japan",
+   "en": true,
+   "suffix": "%",
+   "a_from": "wr_r0",
+   "b_from": "wr_r1",
+   "l1": "2000",
+   "l2": "2025",
+   "narration": "In 2000, the Philippines had sixty-three percent as many people as Japan. By 2025, it had ninety-five percent.",
+   "min_duration": 7,
+   "a": 63,
+   "b": 95
+  },
+  {
+   "type": "kin",
+   "text": "The gap is closing fast",
+   "hl": "closing fast",
+   "size": 150,
+   "narration": "The Philippines keeps growing, while Japan's population is not. Population shapes labor, demand, and growth. What would you compare next?",
+   "min_duration": 7
+  }
+ ],
+ "style": "clean"
+}

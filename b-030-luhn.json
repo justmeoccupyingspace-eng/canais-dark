@@ -1,0 +1,62 @@
+{
+ "channel": "howitticks",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-25T17:00:00Z"
+ },
+ "title": "Card check digit catches typos",
+ "compute": {
+  "calc": {
+   "kind": "luhn"
+  }
+ },
+ "yt": {
+  "title": "Your card's last digit catches 100% of one-digit typos #Shorts",
+  "description": "Luhn mod-10 check digit (ISO/IEC 7812-1). We generated 2,000 random 16-digit test numbers with valid check digits, then tried every single-digit substitution (detected: 100%) and every swap of two different neighboring digits (detected: 98%; swapping 09 and 90 is the classic miss). No real card numbers were used.\nNarration is AI-generated.",
+  "tags": [
+   "luhn",
+   "checksum",
+   "check digit",
+   "how it works"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "The last digit is a checksum",
+   "hl": "checksum",
+   "size": 150,
+   "narration": "The last digit of a payment card number is not random. It is a check digit.",
+   "min_duration": 4.4
+  },
+  {
+   "type": "kin",
+   "text": "Double every second digit",
+   "hl": "Double",
+   "size": 150,
+   "narration": "Starting from the right, double every second digit, add up all the digits, and the total must end in zero. That is the Luhn check.",
+   "min_duration": 7.5
+  },
+  {
+   "type": "stat",
+   "label": "of single-digit typos detected",
+   "value_from": "c_stat",
+   "value": 0,
+   "as_str": true,
+   "narration": "We tried every possible one digit typo on two thousand random numbers. The check caught one hundred percent of them, and about ninety-eight percent of swapped neighbor digits.",
+   "min_duration": 8,
+   "str": "100%"
+  },
+  {
+   "type": "kin",
+   "text": "It catches typos, not fraud",
+   "hl": "typos",
+   "size": 150,
+   "narration": "So a form can warn you about a typo instantly, before anything is sent. It does not make a number secret or secure.",
+   "min_duration": 6
+  }
+ ],
+ "style": "clean"
+}

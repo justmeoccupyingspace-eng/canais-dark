@@ -1,0 +1,63 @@
+{
+ "channel": "chartbound",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-25T23:00:00Z"
+ },
+ "title": "Argentina vs Brazil economy",
+ "compute": {
+  "wbratio": {
+   "ind": "NY.GDP.MKTP.CD",
+   "a": "ARG",
+   "b": "BRA",
+   "from": 2000
+  }
+ },
+ "yt": {
+  "title": "Argentina's economy was 43% of Brazil's in 2000. Now? #Shorts",
+  "description": "GDP in current US dollars, Argentina as a share of Brazil, 2000 vs 2025. Source: World Bank (NY.GDP.MKTP.CD). Exchange rates affect this comparison.\nNarration is AI-generated.",
+  "tags": [
+   "economics",
+   "argentina",
+   "brazil",
+   "gdp",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "Argentina vs Brazil: the economy",
+   "hl": "Argentina",
+   "size": 160,
+   "narration": "Argentina and Brazil are the two biggest economies in South America. Here is how the gap between them changed.",
+   "min_duration": 4.8
+  },
+  {
+   "type": "num",
+   "text": "Argentina as % of Brazil",
+   "hl": "% of Brazil",
+   "en": true,
+   "suffix": "%",
+   "a_from": "wr_r0",
+   "b_from": "wr_r1",
+   "l1": "2000",
+   "l2": "2025",
+   "narration": "In 2000, Argentina's economy was forty-three percent the size of Brazil's. By 2025, it was thirty percent.",
+   "min_duration": 7,
+   "a": 43,
+   "b": 30
+  },
+  {
+   "type": "kin",
+   "text": "Exchange rates hit hard here",
+   "hl": "Exchange rates",
+   "size": 140,
+   "narration": "Argentina's currency has swung wildly, so dollar comparisons move a lot from year to year. What would you compare next?",
+   "min_duration": 7
+  }
+ ],
+ "style": "clean"
+}

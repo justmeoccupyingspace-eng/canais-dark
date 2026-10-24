@@ -1,0 +1,62 @@
+{
+ "channel": "howitticks",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-25T01:00:00Z"
+ },
+ "title": "GPS clocks gain 38 microseconds a day",
+ "compute": {
+  "calc": {
+   "kind": "gpsrel"
+  }
+ },
+ "yt": {
+  "title": "GPS clocks run 38.5 microseconds fast every day #Shorts",
+  "description": "Weak-field approximations: gravitational term GM/c^2 x (1/R_earth - 1/r_orbit), velocity term v^2/(2c^2), with GM = 3.986004418e14 m^3/s^2 (WGS 84), mean Earth radius 6,371 km, GPS orbit radius about 26,560 km, c = 299,792,458 m/s. Per day: +45.7 - 7.2 = 38.5 microseconds. Light covers about 11.5 km in that time. GPS satellite clocks are set to a slightly lower frequency before launch to compensate (N. Ashby, \"Relativity in the Global Positioning System\", Living Reviews in Relativity, 2003).\nNarration is AI-generated.",
+  "tags": [
+   "gps",
+   "relativity",
+   "einstein",
+   "how it works"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "GPS has a relativity problem",
+   "hl": "relativity",
+   "size": 140,
+   "narration": "The clocks on GPS satellites do not tick at the same rate as clocks on the ground.",
+   "min_duration": 4.6
+  },
+  {
+   "type": "kin",
+   "text": "Weaker gravity, faster clocks",
+   "hl": "faster",
+   "size": 140,
+   "narration": "Up there, gravity is weaker, so their clocks run faster, by about forty-five point seven microseconds a day. But they also move fast, which slows them by about seven point two.",
+   "min_duration": 8.5
+  },
+  {
+   "type": "stat",
+   "label": "gained per day by a GPS clock",
+   "value_from": "c_stat",
+   "value": 0,
+   "as_str": true,
+   "narration": "Net, each satellite clock gains about thirty-eight point five microseconds every day. We computed it from Einstein's formulas.",
+   "min_duration": 6.5,
+   "str": "38.5 microseconds"
+  },
+  {
+   "type": "kin",
+   "text": "Uncorrected: 11.5 km off per day",
+   "hl": "11.5 km",
+   "size": 120,
+   "narration": "In that time, light travels about eleven point five kilometers. Left uncorrected, positions would drift by kilometers every day, so engineers tune the satellite clocks before launch.",
+   "min_duration": 8.5
+  }
+ ],
+ "style": "clean"
+}

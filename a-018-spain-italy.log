@@ -1,0 +1,1 @@
+data ok {'wr_from': 2000, 'wr_to': 2025, 'wr_r0': 52, 'wr_r1': 75, 'wr_r0_say': 'fifty-two', 'wr_r1_say': 'seventy-five', 'wr_a_t': 1.9, 'wr_b_t': 2.6, 'wr_a_t_say': 'one point nine', 'wr_b_t_say': 'two point six', 'wr_d': 23, 'wr_d_say': 'twenty-three', 'wr_word': 'jumped', 'wr_sign': '+', 'wr_x': 1.4, 'wr_x_say': 'one point four'}

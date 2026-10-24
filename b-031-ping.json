@@ -1,0 +1,62 @@
+{
+ "channel": "howitticks",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-25T21:00:00Z"
+ },
+ "title": "Ping has a physics floor",
+ "compute": {
+  "calc": {
+   "kind": "ping"
+  }
+ },
+ "yt": {
+  "title": "1,000 km of fiber adds at least 9.8 ms of ping #Shorts",
+  "description": "Round trip time = 2 x distance / (c / n), with c = 299,792.458 km/s and a typical single-mode fiber group index n of about 1.468 at 1550 nm: 9.8 ms for 1,000 km (in a vacuum it would be 6.7 ms). Real paths add routing, queuing and longer cable routes.\nNarration is AI-generated.",
+  "tags": [
+   "ping",
+   "latency",
+   "fiber optics",
+   "how it works"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "Ping has a speed limit",
+   "hl": "speed limit",
+   "size": 150,
+   "narration": "No matter how good your internet is, a far away server has a minimum ping. Physics sets it.",
+   "min_duration": 4.8
+  },
+  {
+   "type": "kin",
+   "text": "Light is slower in glass",
+   "hl": "glass",
+   "size": 160,
+   "narration": "In optical fiber, light travels about a third slower than in a vacuum, roughly two hundred and four thousand kilometers per second.",
+   "min_duration": 6
+  },
+  {
+   "type": "stat",
+   "label": "round trip over 1,000 km of fiber",
+   "value_from": "c_stat",
+   "value": 0,
+   "as_str": true,
+   "narration": "Ping is a round trip. For a server one thousand kilometers away, that is at least nine point eight milliseconds, before any routing or processing.",
+   "min_duration": 7.5,
+   "str": "9.8 ms"
+  },
+  {
+   "type": "kin",
+   "text": "Closer servers win",
+   "hl": "Closer",
+   "size": 160,
+   "narration": "Real cables are not straight, so real pings are higher. That is why games and websites put servers close to you. How far is your favorite server?",
+   "min_duration": 7
+  }
+ ],
+ "style": "clean"
+}

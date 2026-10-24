@@ -1,0 +1,63 @@
+{
+ "channel": "chartbound",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-25T16:00:00Z"
+ },
+ "title": "Poland vs Sweden economy",
+ "compute": {
+  "wbratio": {
+   "ind": "NY.GDP.MKTP.CD",
+   "a": "POL",
+   "b": "SWE",
+   "from": 2000
+  }
+ },
+ "yt": {
+  "title": "Poland's economy was 66% of Sweden's in 2000. Now? #Shorts",
+  "description": "GDP in current US dollars, Poland as a share of Sweden, 2000 vs 2025. Source: World Bank (NY.GDP.MKTP.CD). Exchange rates affect this comparison.\nNarration is AI-generated.",
+  "tags": [
+   "economics",
+   "poland",
+   "sweden",
+   "gdp",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "kin",
+   "text": "Poland vs Sweden: the economy",
+   "hl": "Poland",
+   "size": 160,
+   "narration": "Sweden has long been one of the richest countries in Europe. Here is how Poland's economy compares, and how that changed.",
+   "min_duration": 4.8
+  },
+  {
+   "type": "num",
+   "text": "Poland as % of Sweden",
+   "hl": "% of Sweden",
+   "en": true,
+   "suffix": "%",
+   "a_from": "wr_r0",
+   "b_from": "wr_r1",
+   "l1": "2000",
+   "l2": "2025",
+   "narration": "In 2000, Poland's economy was sixty-six percent the size of Sweden's. By 2025, it was one hundred and fifty-five percent.",
+   "min_duration": 7,
+   "a": 66,
+   "b": 155
+  },
+  {
+   "type": "kin",
+   "text": "Total size is not wealth",
+   "hl": "not wealth",
+   "size": 150,
+   "narration": "Poland also has far more people, so per person the picture is very different. Total size is not the same as wealth. What would you compare next?",
+   "min_duration": 7
+  }
+ ],
+ "style": "clean"
+}
