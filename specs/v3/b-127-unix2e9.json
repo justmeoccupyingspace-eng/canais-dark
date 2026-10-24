@@ -57,7 +57,7 @@
    "type": "text",
    "text": "1 billion was {c_1e9}",
    "hl": "1 billion",
-   "icon": "📅",
+   "icon": "🗓️",
    "pose": "shrug",
    "narration": "One billion was {c_1e9_say}.",
    "min_duration": 2.8

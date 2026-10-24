@@ -1,7 +1,7 @@
 {
  "channel": "gabarito",
  "style": "v3",
- "rate": "+4%",
+ "rate": "+5%",
  "title": "Só uma tem a crase certa",
  "publish": {
   "channel": "C",
@@ -15,8 +15,8 @@
    "text": "Só uma tem a crase certa",
    "hl": "crase certa",
    "icon": "✍️",
-   "narration": "Português do concurso do TJ. Onde está a crase certa?",
-   "min_duration": 2.6
+   "narration": "Só uma dessas crases está certa.",
+   "min_duration": 2.0
   },
   {
    "type": "quiz",
@@ -40,20 +40,51 @@
   {
    "type": "text",
    "text": "Letra C: semelhante à do relator",
-   "hl": "à do relator",
-   "sub": "semelhante A + A [leitura] do relator",
+   "hl": "semelhante à do relator",
    "icon": "✅",
    "pose": "cheer",
-   "narration": "Letra C. Semelhante pede a preposição a, e tem um artigo escondido: à leitura do relator. Antes de todos, de estas e de Brasília, não tem crase.",
-   "min_duration": 3.6
+   "burst": true,
+   "narration": "Letra C!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Por que tem crase?",
+   "hl": "crase?",
+   "rows": [
+    {
+     "t": "Semelhante pede A (preposição)",
+     "cue": "semelhante"
+    },
+    {
+     "t": "+ a leitura (artigo escondido)",
+     "cue": "artigo"
+    },
+    {
+     "t": "a + a = à do relator",
+     "cue": "mais"
+    }
+   ],
+   "narration": "Semelhante pede a preposição a. E tem um artigo escondido: a leitura do relator. A mais a: crase.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "Antes de todos, estas e Brasília: sem crase",
+   "hl": "sem crase",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Antes de todos, de estas e de Brasília, não tem crase.",
+   "min_duration": 2.2
   },
   {
    "type": "end",
    "text": "Siga: 1 questão do TJSP por dia",
    "hl": "1 questão",
    "brand": "GABARITO DO DIA",
-   "narration": "Siga o Gabarito do Dia e treine uma por dia.",
-   "min_duration": 2.2
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
   }
  ]
 }

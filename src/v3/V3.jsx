@@ -27,6 +27,7 @@ const DEF = {
   big: {pose: 'cheer', pos: 'bottom'},
   text: {pose: 'idle', pos: 'bottom'},
   screen: {pose: 'pointUpL', pos: 'right'},
+  steps: {pose: 'pointUpL', pos: 'right'},
   quiz: {pose: 'think', pos: 'right'},
   answer: {pose: 'cheer', pos: 'bottom'},
   end: {pose: 'wave', pos: 'center'},
@@ -123,7 +124,7 @@ const Hook = ({sc, p, first}) => {
     <AbsoluteFill>
       <div style={{position: 'absolute', top: 175, left: 50, right: 50}}>
         <Kicker text={sc.kicker} p={p} instant={first} />
-        <Words text={sc.text} hl={sc.hl} size={sc.size || (vs ? 92 : 118)} hlColor={p.acc} instant={first} />
+        <Words text={sc.text} hl={sc.hl} size={sc.size || (vs ? 92 : sc.icon ? (sc.text.length > 26 ? 96 : 110) : 118)} hlColor={p.acc} instant={first} />
       </div>
       {vs ? (
         <div style={{position: 'absolute', top: 700, left: 0, right: 0, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 40}}>
@@ -141,7 +142,7 @@ const Hook = ({sc, p, first}) => {
           })}
         </div>
       ) : null}
-      {!vs && sc.icon ? <Icon icon={sc.icon} first={first} /> : null}
+      {!vs && sc.icon ? <Icon icon={sc.icon} first={first} p={p} top={sc.iconTop || 650} /> : null}
     </AbsoluteFill>
   );
 };
@@ -160,7 +161,7 @@ const BarsLabels = ({sc, p, layout}) => {
         const top = layout.basePy - c.hPx * g[i] - 104;
         return (
           <React.Fragment key={i}>
-            <div style={{position: 'absolute', left: c.px - 210, width: 420, top, textAlign: 'center', fontFamily: FONT, fontWeight: 900, fontSize: i === layout.cols.length - 1 ? 92 : 76, color: i === layout.cols.length - 1 ? p.acc : '#fff', opacity: Math.min(1, g[i] * 3), textShadow: '0 6px 20px rgba(0,0,0,.4)'}}>{fmtNum(shown, sc)}</div>
+            <div style={{position: 'absolute', left: c.px - 210, width: 420, top, textAlign: 'center', fontFamily: FONT, fontWeight: 900, fontSize: (i === layout.cols.length - 1 ? 92 : 76) * (layout.cols.length > 3 ? 0.78 : 1), color: i === layout.cols.length - 1 ? p.acc : '#fff', opacity: Math.min(1, g[i] * 3), textShadow: '0 6px 20px rgba(0,0,0,.4)'}}>{fmtNum(shown, sc)}</div>
             <div style={{position: 'absolute', left: c.px - 210, width: 420, top: layout.basePy + 14, textAlign: 'center', fontFamily: FONT, fontWeight: 900, fontSize: 40, color: '#ffffffd9', letterSpacing: 1}}>
               {c.flag ? <span style={{fontFamily: EMOJI, marginRight: 10}}>{c.flag}</span> : null}{c.label}
             </div>
@@ -209,19 +210,88 @@ const Burst = ({p, at = 0, y = 800, n = 26}) => {
 
 const TextScene = ({sc, p, first}) => (
   <AbsoluteFill>
-    <div style={{position: 'absolute', top: sc.sub ? 260 : 330, left: 60, right: 60}}>
+    {sc.burst ? <Burst p={p} at={2} y={560} n={34} /> : null}
+    <div style={{position: 'absolute', top: sc.icon ? 220 : (sc.sub ? 260 : 330), left: 60, right: 60}}>
       <Kicker text={sc.kicker} p={p} instant={first} />
       <Words text={sc.text} hl={sc.hl} size={sc.size || 104} hlColor={p.acc} instant={first} />
       {sc.sub ? <div style={{marginTop: 40, textAlign: 'center', fontFamily: FONT, fontWeight: 800, fontSize: 50, color: '#ffffffcc'}}>{sc.sub}</div> : null}
     </div>
-    {sc.icon ? <Icon icon={sc.icon} first={first} /> : null}
+    {sc.icon ? <Icon icon={sc.icon} first={first} p={p} top={sc.iconTop || 660} /> : null}
   </AbsoluteFill>
 );
 
-const Icon = ({icon, first}) => {
+const Icon = ({icon, first, p = PAL.howitticks, top = 640}) => {
   const f = useCurrentFrame();
-  const s = first ? 1 : spring({frame: f - 4, fps: FPS, config: {damping: 9, stiffness: 150}});
-  return <div style={{position: 'absolute', top: 690, left: 0, right: 0, textAlign: 'center', fontFamily: EMOJI, fontSize: 250, lineHeight: 1, transform: `scale(${0.4 + 0.6 * s}) translateY(${Math.sin(f / 10) * 12}px) rotate(${Math.sin(f / 14) * 6}deg)`, textShadow: '0 18px 30px rgba(0,0,0,.4)'}}>{icon}</div>;
+  const s = first ? 1 : spring({frame: f - 3, fps: FPS, config: {damping: 9, stiffness: 150}});
+  const ring = first ? 1 : interpolate(f, [3, 20], [0, 1], C);
+  return (
+    <div style={{position: 'absolute', top, left: 0, right: 0, height: 380, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+      <div style={{position: 'absolute', width: 420, height: 420, borderRadius: '50%', background: `radial-gradient(circle, ${p.acc}55 0%, ${p.acc}18 45%, transparent 70%)`, transform: `scale(${(0.6 + 0.4 * s) * (1 + 0.04 * Math.sin(f / 8))})`}} />
+      {!first ? <div style={{position: 'absolute', width: 300, height: 300, borderRadius: '50%', border: `10px solid ${p.acc}`, opacity: 1 - ring, transform: `scale(${0.6 + 0.9 * ring})`}} /> : null}
+      <div style={{fontFamily: EMOJI, fontSize: 300, lineHeight: 1, transform: `scale(${0.3 + 0.7 * s}) translateY(${Math.sin(f / 10) * 14}px) rotate(${Math.sin(f / 14) * 7}deg)`, textShadow: '0 22px 34px rgba(0,0,0,.45)'}}>{icon}</div>
+    </div>
+  );
+};
+
+
+// ---------- passos (explicação que se monta) ----------
+const norm = (w) => String(w).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]/g, '');
+export const stepTimes = (sc, dFrames) => {
+  const rows = sc.rows || [];
+  const n = rows.length;
+  const span = dFrames / FPS;
+  const words = sc.words || [];
+  let last = -1;
+  return rows.map((r, i) => {
+    let t = null;
+    if (r.at != null) t = r.at;
+    else if (r.cue) {
+      const c = norm(r.cue.split(' ')[0]);
+      const w = words.find((w) => w.t0 >= last - 0.01 && norm(w.w).startsWith(c));
+      if (w) t = w.t0;
+    }
+    if (t == null) t = 0.25 + i * Math.max(0.5, (span * 0.75 - 0.25) / Math.max(1, n));
+    t = i ? Math.max(t, last + 0.35) : Math.max(t, 0.15);
+    last = t;
+    return t;
+  });
+};
+
+const Steps = ({sc, p}) => {
+  const f = useCurrentFrame();
+  const {durationInFrames: d} = useVideoConfig();
+  const rows = sc.rows || [];
+  const times = stepTimes(sc, d);
+  const hiIdx = rows.findIndex((r) => r.hi);
+  const hi = hiIdx >= 0 ? hiIdx : (sc.result === false ? -1 : rows.length - 1);
+  return (
+    <AbsoluteFill>
+      {sc.text ? (
+        <div style={{position: 'absolute', top: 180, left: 50, right: 50}}>
+          <Kicker text={sc.kicker} p={p} />
+          <Words text={sc.text} hl={sc.hl} size={sc.size || 84} hlColor={p.acc} />
+        </div>
+      ) : null}
+      <div style={{position: 'absolute', top: sc.rowsTop || (sc.text ? 470 : 300), left: 56, right: 56, display: 'flex', flexDirection: 'column', gap: 22}}>
+        {rows.map((r, i) => {
+          const st = Math.round(times[i] * FPS);
+          const s = spring({frame: f - st, fps: FPS, config: {damping: 13, stiffness: 210}});
+          const on = i === hi;
+          const want = r.size || sc.rowSize || (rows.length > 4 ? (on ? 64 : 58) : (on ? 80 : 70));
+          const fs = Math.min(want, Math.floor((r.icon ? 1450 : 1550) / Math.max(10, r.t.length)));
+          const glow = on ? interpolate(f - st, [0, 10, 30], [0, 1, 0.5], C) : 0;
+          return (
+            <div key={i} style={{display: 'flex', alignItems: 'center', gap: 22, background: on ? p.acc : 'rgba(255,255,255,.96)', borderRadius: 30, padding: on ? '28px 30px' : (rows.length > 4 ? '18px 26px' : '24px 28px'), opacity: f < st ? 0 : interpolate(s, [0, 0.3], [0, 1], C), transform: `translateX(${(1 - s) * -140}px) scale(${(0.86 + 0.14 * s) * (on ? 1 + 0.03 * Math.sin((f - st) / 6) * glow : 1)})`, boxShadow: on ? `0 0 ${50 * glow}px ${p.acc}, 0 16px 34px rgba(0,0,0,.35)` : '0 14px 30px rgba(0,0,0,.3)'}}>
+              {r.icon ? <span style={{fontFamily: EMOJI, fontSize: fs * 1.1, lineHeight: 1, flex: '0 0 auto'}}>{r.icon}</span> : (
+                <span style={{width: 58, height: 58, borderRadius: '50%', background: on ? '#14121f' : p.bg1, color: '#fff', fontFamily: FONT, fontWeight: 900, fontSize: 32, display: 'flex', alignItems: 'center', justifyContent: 'center', flex: '0 0 auto'}}>{on ? '✓' : i + 1}</span>
+              )}
+              <span style={{fontFamily: FONT, fontWeight: 900, fontSize: fs, lineHeight: 1.1, color: '#14121f', letterSpacing: -fs * 0.01}}>{r.t}</span>
+            </div>
+          );
+        })}
+      </div>
+    </AbsoluteFill>
+  );
 };
 
 const ScreenTitle = ({sc, p}) => (
@@ -261,7 +331,16 @@ const Quiz = ({sc, p}) => {
             </div>
           );
         })}
+        <div style={{height: 16, borderRadius: 8, background: '#e7e9f0', marginTop: 8, overflow: 'hidden'}}>
+          <div style={{height: '100%', width: `${Math.max(0, 1 - f / rv) * 100}%`, background: inCd ? p.warm : p.bg1, borderRadius: 8}} />
+        </div>
       </div>
+      {revealed ? <Burst p={p} at={rv} y={760} n={30} /> : null}
+      <div style={{position: 'absolute', left: 560, top: 1290, width: 150, height: 150, borderRadius: '50%', background: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: FONT, fontWeight: 900, fontSize: 96, color: revealed ? '#1d8f52' : p.bg1, boxShadow: '0 12px 30px rgba(0,0,0,.35)', transform: `translateY(${Math.sin(f / 9) * 10}px) scale(${spring({frame: f - 12, fps: FPS, config: {damping: 10, stiffness: 160}})})`}}>{revealed ? '!' : '?'}</div>
+      <div style={{position: 'absolute', left: 690, top: 1440, width: 36, height: 36, borderRadius: '50%', background: '#fff', opacity: interpolate(f, [8, 14], [0, 1], C)}} />
+      {inCd || revealed ? (
+        <div style={{position: 'absolute', left: 50, top: 1500, fontFamily: FONT, fontWeight: 900, fontSize: 50, color: '#14121f', background: p.acc, borderRadius: 40, padding: '16px 30px', transform: `rotate(-3deg) scale(${spring({frame: f - (rv - (sc.countdown || 3) * FPS), fps: FPS, config: {damping: 10, stiffness: 200}})})`}}>{sc.cta || 'Comenta a letra'} <span style={{fontFamily: EMOJI}}>👇</span></div>
+      ) : null}
     </AbsoluteFill>
   );
 };
@@ -318,10 +397,11 @@ const barsLayout = (sc, p) => {
   const n = vals.length;
   const max = Math.max(...vals.map(Math.abs), 1e-9);
   const basePy = 1110, maxH = 520;
-  const span = n === 2 ? [270, 610] : n === 3 ? [200, 460, 720] : vals.map((_, i) => 160 + i * (600 / Math.max(1, n - 1)));
+  const span = n === 2 ? [270, 610] : n === 3 ? [200, 460, 720] : vals.map((_, i) => 180 + i * (680 / Math.max(1, n - 1)));
   const cols = vals.map((v, i) => ({v, v0: 0, hPx: Math.max(14, (v / max) * maxH), px: span[i], label: labels[i] || '', flag: flags[i] || null, color: i === n - 1 ? p.colB : p.colA}));
-  const grow = (f) => cols.map((_, i) => interpolate(f, [6 + i * 22, 30 + i * 22 + (i === n - 1 ? 14 : 0)], [0, 1], {...C, easing: Easing.out(Easing.cubic)}));
-  return {cols, basePy, grow, coins: sc.style === 'coins'};
+  const gap = n > 2 ? 16 : 22;
+  const grow = (f) => cols.map((_, i) => interpolate(f, [6 + i * gap, 30 + i * gap + (i === n - 1 ? 14 : 0)], [0, 1], {...C, easing: Easing.out(Easing.cubic)}));
+  return {cols, basePy, grow, coins: sc.style === 'coins', w: n <= 2 ? 1 : n === 3 ? 0.8 : 0.6, gap};
 };
 
 const Columns3D = ({layout, f}) => {
@@ -338,7 +418,7 @@ const Columns3D = ({layout, f}) => {
           return (
             <group key={i}>
               {Array.from({length: n}, (_, k) => (
-                <mesh key={k} geometry={geo.coin} position={[x + Math.sin(k * 1.7 + i) * 0.025, y0 + 0.045 + k * 0.095, 0]}>
+                <mesh key={k} geometry={geo.coin} scale={[layout.w, 1, layout.w]} position={[x + Math.sin(k * 1.7 + i) * 0.025 * layout.w, y0 + 0.045 + k * 0.095, 0]}>
                   <meshStandardMaterial color={i === layout.cols.length - 1 ? '#ffc233' : '#d9dee8'} metalness={0.55} roughness={0.3} />
                 </mesh>
               ))}
@@ -347,13 +427,13 @@ const Columns3D = ({layout, f}) => {
         }
         return (
           <group key={i}>
-            <mesh geometry={geo.col} position={[x, y0 + h / 2, 0]} scale={[1, h, 1]}><meshStandardMaterial color={c.color} roughness={0.35} /></mesh>
-            <mesh geometry={geo.cap} position={[x, y0 + h, 0]} scale={[1, 0.35, 1]}><meshStandardMaterial color={c.color} roughness={0.35} /></mesh>
+            <mesh geometry={geo.col} position={[x, y0 + h / 2, 0]} scale={[layout.w, h, layout.w]}><meshStandardMaterial color={c.color} roughness={0.35} /></mesh>
+            <mesh geometry={geo.cap} position={[x, y0 + h, 0]} scale={[layout.w, 0.35, layout.w]}><meshStandardMaterial color={c.color} roughness={0.35} /></mesh>
           </group>
         );
       })}
       <mesh position={[0, wy(layout.basePy) - 0.02, 0]} rotation={[-Math.PI / 2, 0, 0]}>
-        <circleGeometry args={[2.6, 64]} />
+        <circleGeometry args={[layout.cols.length > 2 ? 3.2 : 2.6, 64]} />
         <meshBasicMaterial color="#000000" transparent opacity={0.18} />
       </mesh>
     </group>
@@ -385,6 +465,8 @@ const Screen3D = ({sc, p, f}) => {
   );
 };
 
+const poseFor = (sc, i) => sc.pose || (sc.type === 'text' ? (i % 2 ? 'pointUp' : 'pointUpL') : (DEF[sc.type] || DEF.text).pose);
+
 const Stage = ({spec, tl, p}) => {
   const f = useCurrentFrame();
   const i = sceneAt(tl, f);
@@ -397,16 +479,17 @@ const Stage = ({spec, tl, p}) => {
   const posB = POS[sc.mpos || def.pos];
   const k = i === 0 ? 1 : spring({frame: lf, fps: FPS, config: {damping: 16, stiffness: 110}});
   const pos = posA.map((v, j) => v + (posB[j] - v) * k);
+  const hop = i === 0 ? 0 : Math.sin(Math.min(1, lf / 9) * Math.PI) * 0.16;
   // pose: segue a cena; no quiz vira "cheer" na revelação
-  let pose = sc.pose || def.pose;
+  let pose = poseFor(sc, i);
   if (sc.type === 'quiz' && lf >= tl[i].d - Math.round((sc.revealFromEnd || 1.6) * FPS)) pose = 'cheer';
-  const prevPose = prev ? (prev.pose || pdef.pose) : pose;
+  const prevPose = prev ? poseFor(prev, i - 1) : pose;
   // boca: fala quando há palavra ativa
   const t = lf / FPS;
   let talk = 0;
   if (sc.env && sc.env.length) talk = Math.min(1, (sc.env[lf] || 0) * 1.25);
   else if ((sc.words || []).some((w) => t >= w.t0 && t < w.t1)) talk = 0.35 + 0.65 * Math.abs(Math.sin(f * 0.95));
-  const look = pos[0] > 0.5 ? [-0.9, 0.5] : pos[0] < -0.5 ? [0.9, 0.5] : [0, 0];
+  const look = pos[0] > 0.5 ? [-0.9, 0.5] : pos[0] < -0.5 ? [0.9, 0.5] : (sc.icon || sc.type === 'big') ? [Math.sin(f / 40) * 0.25, 0.9] : [0, 0];
   const bars = sc.type === 'bars' ? barsLayout(sc, p) : null;
   return (
     <div style={{position: 'absolute', left: 0, top: 0, width: R3W, height: R3H, transform: `scale(${1080 / R3W})`, transformOrigin: '0 0'}}>
@@ -415,7 +498,7 @@ const Stage = ({spec, tl, p}) => {
       {bars ? <Columns3D layout={bars} f={lf} /> : null}
       {sc.type === 'screen' ? <Screen3D sc={sc} p={p} f={lf} /> : null}
       <Shadow position={[pos[0], pos[1] - 1.12 * pos[3] - 0.08, pos[2]]} scale={1.3 * pos[3]} opacity={0.35} />
-      <Mascot {...p.mascot} pose={pose} prevPose={prevPose} poseAt={tl[i].from} talk={talk} look={look} enter={-30} scale={pos[3]} position={[pos[0], pos[1], pos[2]]} />
+      <Mascot {...p.mascot} pose={pose} prevPose={prevPose} poseAt={tl[i].from} talk={talk} look={look} enter={-30} scale={pos[3]} position={[pos[0], pos[1] + hop, pos[2]]} />
     </ThreeCanvas>
     </div>
   );
@@ -431,19 +514,30 @@ const Hud = ({p, total}) => {
   );
 };
 
-const Layer2D = ({sc, p, first, tl, i}) => {
+const Punch = ({children, first, still}) => {
+  const f = useCurrentFrame();
+  const {durationInFrames: d} = useVideoConfig();
+  const k = first ? 1 : interpolate(f, [0, 7], [0, 1], {...C, easing: Easing.out(Easing.cubic)});
+  const drift = still ? 0 : 0.03 * Math.min(1, f / Math.max(1, d));
+  return <AbsoluteFill style={{transform: `scale(${1.06 - 0.06 * k + drift})`, opacity: first ? 1 : interpolate(f, [0, 3], [0, 1], C)}}>{children}</AbsoluteFill>;
+};
+
+const Layer2D = (props) => <Punch first={props.first} still={props.sc.type === 'quiz' || props.sc.type === 'bars'}><Layer2DInner {...props} /></Punch>;
+
+const Layer2DInner = ({sc, p, first, tl, i}) => {
   switch (sc.type) {
     case 'hook': return <Hook sc={sc} p={p} first={first} />;
     case 'bars': return <BarsLabels sc={sc} p={p} layout={barsLayout(sc, p)} />;
     case 'big': return <Big sc={sc} p={p} />;
     case 'screen': return <ScreenTitle sc={sc} p={p} />;
+    case 'steps': return <Steps sc={sc} p={p} />;
     case 'quiz': return <Quiz sc={sc} p={p} />;
     case 'end': return <End sc={sc} p={p} />;
     default: return <TextScene sc={sc} p={p} first={first} />;
   }
 };
 
-const SFX = {hook: 'hit', bars: 'whoosh', big: 'ding', text: 'softwhoosh', screen: 'click', quiz: 'whoosh', answer: 'ding', end: 'sparkle'};
+const SFX = {steps: 'softwhoosh', hook: 'hit', bars: 'whoosh', big: 'ding', text: 'softwhoosh', screen: 'click', quiz: 'whoosh', answer: 'ding', end: 'sparkle'};
 
 export const V3Video = ({spec}) => {
   useFonts();
@@ -459,7 +553,9 @@ export const V3Video = ({spec}) => {
           <Layer2D sc={sc} p={p} first={i === 0} tl={tl} i={i} />
           {sc.audio ? <Audio src={staticFile(sc.audio)} /> : null}
           <Audio src={staticFile(`audio/fx/${sc.sfx || SFX[sc.type] || 'whoosh'}.wav`)} volume={i === 0 ? 0.55 : 0.32} />
-          {sc.type === 'bars' ? <Sequence from={30 + (((sc.vals || [0, 0]).length) - 1) * 22}><Audio src={staticFile('audio/fx/pop.wav')} volume={0.5} /></Sequence> : null}
+          {sc.type === 'steps' ? stepTimes(sc, tl[i].d).map((t, j) => <Sequence key={'st' + j} from={Math.round(t * FPS)}><Audio src={staticFile('audio/fx/pop.wav')} volume={0.42} /></Sequence>) : null}
+          {sc.type === 'bars' ? (sc.vals || [0, 0]).map((_, j, a) => <Sequence key={'bp' + j} from={30 + j * (a.length > 2 ? 16 : 22) + (j === a.length - 1 ? 14 : 0)}><Audio src={staticFile('audio/fx/pop.wav')} volume={j === a.length - 1 ? 0.55 : 0.3} /></Sequence>) : null}
+          {sc.type === 'quiz' ? [3, 2, 1].map((k) => <Sequence key={'tk' + k} from={Math.max(0, tl[i].d - Math.round((sc.revealFromEnd || 1.6) * FPS) - k * FPS)}><Audio src={staticFile('audio/fx/tick.wav')} volume={0.5} /></Sequence>) : null}
           {sc.type === 'quiz' ? <Sequence from={Math.max(0, tl[i].d - Math.round((sc.revealFromEnd || 1.6) * FPS))}><Audio src={staticFile('audio/fx/ding.wav')} volume={0.6} /></Sequence> : null}
         </Sequence>
       ))}

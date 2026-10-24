@@ -43,11 +43,26 @@
    "min_duration": 3.2
   },
   {
-   "type": "text",
-   "text": "150 million km at light speed",
-   "hl": "light speed",
-   "icon": "💡",
-   "narration": "That's about one hundred fifty million kilometers, at almost three hundred thousand kilometers every second.",
+   "type": "steps",
+   "text": "The math",
+   "hl": "math",
+   "rows": [
+    {
+     "t": "Distance: 150 million km",
+     "icon": "☀️",
+     "cue": "the"
+    },
+    {
+     "t": "Light: 300,000 km per second",
+     "icon": "💡",
+     "cue": "light"
+    },
+    {
+     "t": "150,000,000 ÷ 300,000 ≈ 500 s",
+     "cue": "about"
+    }
+   ],
+   "narration": "The Sun is a hundred fifty million kilometers away. Light does three hundred thousand per second. That's about five hundred seconds.",
    "min_duration": 3.4
   },
   {

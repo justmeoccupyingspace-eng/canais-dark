@@ -1,7 +1,7 @@
 {
  "channel": "gabarito",
  "style": "v3",
- "rate": "+4%",
+ "rate": "+5%",
  "title": "Assistir O filme ou AO filme?",
  "publish": {
   "channel": "C",
@@ -15,8 +15,8 @@
    "text": "Assistir O filme ou AO filme?",
    "hl": "AO filme?",
    "icon": "🎬",
-   "narration": "Regência verbal: essa cai muito na VUNESP.",
-   "min_duration": 2.6
+   "narration": "Assistir o filme ou assistir ao filme?",
+   "min_duration": 2.0
   },
   {
    "type": "quiz",
@@ -40,20 +40,45 @@
   {
    "type": "text",
    "text": "Letra C: assistiram à palestra",
-   "hl": "assistiram à",
-   "sub": "assistir (ver) pede a preposição A",
-   "icon": "🎯",
+   "hl": "assistiram à palestra",
+   "icon": "✅",
    "pose": "cheer",
-   "narration": "Letra C. Assistir, no sentido de ver, pede a: assistiram à palestra. Aspirar a, obedecer a, e prefiro uma coisa a outra, sem do que.",
-   "min_duration": 3.6
+   "burst": true,
+   "narration": "Letra C!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Quem pede A",
+   "hl": "pede A",
+   "rows": [
+    {
+     "t": "Assistir (ver) A",
+     "cue": "assistir"
+    },
+    {
+     "t": "Aspirar (desejar) A",
+     "cue": "aspirar"
+    },
+    {
+     "t": "Obedecer A",
+     "cue": "obedecer"
+    },
+    {
+     "t": "Preferir X A Y, sem \"do que\"",
+     "cue": "prefere"
+    }
+   ],
+   "narration": "Assistir, no sentido de ver, pede a. Aspirar, no sentido de desejar, também. Obedecer a. E prefere-se uma coisa a outra, sem do que.",
+   "min_duration": 3.0
   },
   {
    "type": "end",
    "text": "Siga: 1 questão do TJSP por dia",
    "hl": "1 questão",
    "brand": "GABARITO DO DIA",
-   "narration": "Siga o Gabarito do Dia e treine uma por dia.",
-   "min_duration": 2.2
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
   }
  ]
 }

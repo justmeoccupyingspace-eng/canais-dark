@@ -1,7 +1,7 @@
 {
  "channel": "gabarito",
  "style": "v3",
- "rate": "+4%",
+ "rate": "+5%",
  "title": "Só brasileiro nato pode ser...",
  "publish": {
   "channel": "C",
@@ -15,8 +15,8 @@
    "text": "Só brasileiro nato pode ser...",
    "hl": "brasileiro nato",
    "icon": "🇧🇷",
-   "narration": "Qual desses cargos só um brasileiro nato pode ocupar?",
-   "min_duration": 2.6
+   "narration": "Só um desses cargos exige brasileiro nato.",
+   "min_duration": 2.0
   },
   {
    "type": "quiz",
@@ -41,19 +41,54 @@
    "type": "text",
    "text": "Letra B: Presidente da Câmara",
    "hl": "Presidente da Câmara",
-   "sub": "CF, art. 12, § 3º",
-   "icon": "🏛️",
+   "icon": "✅",
    "pose": "cheer",
-   "narration": "Letra B. O presidente da Câmara está na linha de sucessão da Presidência, por isso precisa ser nato. Senador, ministro do STJ e procurador-geral, não.",
-   "min_duration": 3.6
+   "burst": true,
+   "narration": "Letra B, presidente da Câmara!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Só nato (art. 12, § 3º)",
+   "hl": "Só nato",
+   "rows": [
+    {
+     "t": "Presidente e vice",
+     "cue": "presidente"
+    },
+    {
+     "t": "Pres. da Câmara e do Senado",
+     "cue": "presidentes"
+    },
+    {
+     "t": "Ministro do STF",
+     "cue": "ministros"
+    },
+    {
+     "t": "Diplomata, oficial militar, Min. da Defesa",
+     "cue": "diplomatas"
+    }
+   ],
+   "narration": "A lista é curta: presidente e vice, presidentes da Câmara e do Senado, ministros do Supremo, diplomatas, oficiais das Forças Armadas e o ministro da Defesa.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "Senador e ministro do STJ podem ser naturalizados",
+   "hl": "naturalizados",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Senador e ministro do STJ podem ser naturalizados.",
+   "min_duration": 2.2
   },
   {
    "type": "end",
    "text": "Siga: 1 questão do TJSP por dia",
    "hl": "1 questão",
    "brand": "GABARITO DO DIA",
-   "narration": "Siga o Gabarito do Dia e treine uma por dia.",
-   "min_duration": 2.2
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
   }
  ]
 }

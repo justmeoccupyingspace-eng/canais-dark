@@ -84,10 +84,13 @@ export const Mascot = ({color = '#ffb000', belly = '#ffe6a3', acc = 'antenna', p
   const lx = look[0] * 0.07, ly = look[1] * 0.06;
   const open = Math.max(0, Math.min(1, talk));
   const shock = pose === 'shock';
+  // gesticula enquanto fala: braços balançam e o corpo inclina de leve
+  const gest = open * Math.sin(f / 4.5) * 0.22;
+  const tilt = open * Math.sin(f / 7) * 0.06;
   const s = scale * Math.max(0.001, pop);
 
   return (
-    <group position={[position[0], position[1] + bob + jump, position[2]]} scale={[s / squash, s * squash, s]} rotation={[0, look[0] * 0.25, 0]}>
+    <group position={[position[0], position[1] + bob + jump, position[2]]} scale={[s / squash, s * squash, s]} rotation={[open * 0.05, look[0] * 0.25, tilt]}>
       {/* corpo */}
       <Toon geo={g.body} color={color} toon={toon} scale={[1, 1.1, 0.92]} outline={0.04} />
       <Toon geo={g.body} color={belly} toon={toon} position={[0, -0.42, 0.52]} scale={[0.5, 0.42, 0.42]} outline={0} />
@@ -118,11 +121,11 @@ export const Mascot = ({color = '#ffb000', belly = '#ffe6a3', acc = 'antenna', p
         <mesh geometry={g.smile} position={[0, 0.04, 0.9]} rotation={[0, 0, Math.PI]} scale={[mood === 'sad' ? 1 : 1, mood === 'sad' ? -1 : 1, 1]}><meshBasicMaterial color={INK} /></mesh>
       )}
       {/* braços */}
-      <group position={[-0.9, 0.0, 0.32]} rotation={[L[0], L[1], L[2]]}>
+      <group position={[-0.9, 0.0, 0.32]} rotation={[L[0], L[1], L[2] - gest]}>
         <Toon geo={g.arm} color={color} toon={toon} position={[0, -0.33, 0]} outline={0.03} />
         <Toon geo={g.hand} color={color} toon={toon} position={[0, -0.66, 0]} outline={0.03} />
       </group>
-      <group position={[0.9, 0.0, 0.32]} rotation={[R[0], R[1], R[2] + wave]}>
+      <group position={[0.9, 0.0, 0.32]} rotation={[R[0], R[1], R[2] + wave + gest * 0.8]}>
         <Toon geo={g.arm} color={color} toon={toon} position={[0, -0.33, 0]} outline={0.03} />
         <Toon geo={g.hand} color={color} toon={toon} position={[0, -0.66, 0]} outline={0.03} />
       </group>

@@ -1,7 +1,7 @@
 {
  "channel": "gabarito",
  "style": "v3",
- "rate": "+4%",
+ "rate": "+5%",
  "title": "Qual atalho está certo?",
  "publish": {
   "channel": "C",
@@ -15,8 +15,8 @@
    "text": "Qual atalho está certo?",
    "hl": "atalho",
    "icon": "⌨️",
-   "narration": "Informática vale nove questões no TJ. Qual desses atalhos está certo?",
-   "min_duration": 2.6
+   "narration": "Só um desses atalhos está certo.",
+   "min_duration": 2.0
   },
   {
    "type": "quiz",
@@ -41,19 +41,49 @@
    "type": "text",
    "text": "Letra E: Ctrl+Shift+Esc",
    "hl": "Ctrl+Shift+Esc",
-   "sub": "Win+L bloqueia · Win+E Explorador · Win+R Executar",
-   "icon": "🖥️",
+   "icon": "✅",
    "pose": "cheer",
-   "narration": "Letra E. Control, shift e esc abre direto o gerenciador de tarefas. Windows L bloqueia, Windows E abre o explorador e Windows R abre o executar.",
-   "min_duration": 3.6
+   "burst": true,
+   "narration": "Letra E!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Decora esses",
+   "hl": "Decora",
+   "rows": [
+    {
+     "t": "Ctrl+Shift+Esc → Gerenciador",
+     "hi": true,
+     "cue": "control"
+    },
+    {
+     "t": "Win+L → bloqueia a tela",
+     "cue": "windows"
+    },
+    {
+     "t": "Win+E → Explorador",
+     "cue": "windows"
+    },
+    {
+     "t": "Win+R → Executar",
+     "cue": "windows"
+    },
+    {
+     "t": "Win+V → histórico do Ctrl+C",
+     "cue": "e"
+    }
+   ],
+   "narration": "Control shift esc abre o gerenciador de tarefas. Windows L bloqueia. Windows E, explorador. Windows R, executar. E Windows V, o histórico do control C.",
+   "min_duration": 3.0
   },
   {
    "type": "end",
    "text": "Siga: 1 questão do TJSP por dia",
    "hl": "1 questão",
    "brand": "GABARITO DO DIA",
-   "narration": "Siga o Gabarito do Dia e treine uma por dia.",
-   "min_duration": 2.2
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
   }
  ]
 }

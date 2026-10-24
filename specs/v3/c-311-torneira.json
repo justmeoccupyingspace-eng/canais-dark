@@ -1,7 +1,7 @@
 {
  "channel": "gabarito",
  "style": "v3",
- "rate": "+4%",
+ "rate": "+5%",
  "title": "Quanto tempo pra encher?",
  "publish": {
   "channel": "C",
@@ -15,8 +15,8 @@
    "text": "Quanto tempo pra encher?",
    "hl": "encher?",
    "icon": "🚰",
-   "narration": "Questão de medidas do TJ. Quanto tempo essa torneira leva?",
-   "min_duration": 2.6
+   "narration": "Quanto tempo essa torneira leva?",
+   "min_duration": 2.0
   },
   {
    "type": "quiz",
@@ -41,19 +41,54 @@
    "type": "text",
    "text": "Letra B: 3 h 20 min",
    "hl": "3 h 20 min",
-   "sub": "2,4 m³ = 2.400 L → 200 min",
-   "icon": "⏱️",
+   "icon": "✅",
    "pose": "cheer",
-   "narration": "Letra B. Dois vírgula quatro metros cúbicos são dois mil e quatrocentos litros. Dividido por doze dá duzentos minutos: três horas e vinte. Três e trinta e três é a pegadinha.",
-   "min_duration": 3.6
+   "burst": true,
+   "narration": "Letra B, três horas e vinte!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Converte primeiro",
+   "hl": "Converte",
+   "rows": [
+    {
+     "t": "1 m³ = 1.000 litros",
+     "cue": "um"
+    },
+    {
+     "t": "2,4 m³ = 2.400 litros",
+     "cue": "então"
+    },
+    {
+     "t": "2.400 ÷ 12 = 200 min",
+     "cue": "dividido"
+    },
+    {
+     "t": "200 min = 3 h 20 min",
+     "cue": "ou"
+    }
+   ],
+   "narration": "Um metro cúbico tem mil litros. Então são dois mil e quatrocentos. Dividido por doze: duzentos minutos. Ou seja, três horas e vinte.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "3 h 33? Hora tem 60 minutos",
+   "hl": "60 minutos",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Três e trinta e três é a pegadinha: hora tem sessenta minutos.",
+   "min_duration": 2.2
   },
   {
    "type": "end",
    "text": "Siga: 1 questão do TJSP por dia",
    "hl": "1 questão",
    "brand": "GABARITO DO DIA",
-   "narration": "Siga o Gabarito do Dia e treine uma por dia.",
-   "min_duration": 2.2
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
   }
  ]
 }

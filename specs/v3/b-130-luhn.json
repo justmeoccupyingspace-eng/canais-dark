@@ -34,24 +34,30 @@
    "min_duration": 3
   },
   {
-   "type": "screen",
-   "text": "Double every second digit",
-   "hl": "Double",
-   "code": [
-    "4539 1488 0343 6467",
-    "double → add → total"
+   "type": "steps",
+   "text": "The Luhn check",
+   "hl": "Luhn",
+   "rows": [
+    {
+     "t": "4539 1488 0343 6467",
+     "icon": "💳",
+     "cue": "take"
+    },
+    {
+     "t": "Double every 2nd digit, from the right",
+     "cue": "from"
+    },
+    {
+     "t": "Add all the digits: 80",
+     "cue": "add"
+    },
+    {
+     "t": "Ends in 0 → valid",
+     "cue": "it"
+    }
    ],
-   "narration": "From the right, double every second digit, then add everything up.",
-   "min_duration": 3.4
-  },
-  {
-   "type": "text",
-   "text": "Total ends in 0? Valid.",
-   "hl": "Valid.",
-   "icon": "✅",
-   "pose": "cheer",
-   "narration": "If the total ends in zero, the number passes.",
-   "min_duration": 2.6
+   "narration": "Take a test number. From the right, double every second digit. Add all the digits up: eighty. It ends in zero, so it passes.",
+   "min_duration": 3.6
   },
   {
    "type": "big",

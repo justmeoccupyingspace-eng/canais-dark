@@ -51,25 +51,23 @@
    "type": "bars",
    "style": "coins",
    "kicker": "Poland as % of Sweden",
-   "text": "And today?",
-   "hl": "today?",
+   "text": "Now watch",
+   "hl": "watch",
    "en": true,
    "suffix": "%",
-   "a_from": "wr_r0",
-   "b_from": "wr_r1",
-   "l1": "{wr_from}",
-   "l2": "{wr_to}",
-   "narration": "Today? {wr_r1_say} percent. Poland passed Sweden.",
-   "min_duration": 4.2
+   "vals_from": "wr_v",
+   "labels_from": "wr_y",
+   "narration": "Then Poland kept climbing, all the way to {wr_r1_say} percent.",
+   "min_duration": 4.4
   },
   {
    "type": "big",
-   "text": "Poland is now",
-   "hl": "now",
-   "big": "{wr_r1}%",
-   "label": "of Sweden's economy",
-   "narration": "From two thirds of Sweden's economy to one and a half times its size.",
-   "min_duration": 3.2
+   "text": "Poland passed Sweden in",
+   "hl": "passed",
+   "big": "{wr_cross}",
+   "label": "and never looked back",
+   "narration": "It passed Sweden in {wr_cross}.",
+   "min_duration": 2.8
   },
   {
    "type": "text",

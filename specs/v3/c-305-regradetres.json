@@ -1,7 +1,7 @@
 {
  "channel": "gabarito",
  "style": "v3",
- "rate": "+4%",
+ "rate": "+5%",
  "title": "8 servidores, 18 dias. E com 12?",
  "publish": {
   "channel": "C",
@@ -15,8 +15,8 @@
    "text": "8 servidores, 18 dias. E com 12?",
    "hl": "E com 12?",
    "icon": "👥",
-   "narration": "Regra de três do concurso do TJ. Cuidado com a pegadinha.",
-   "min_duration": 2.6
+   "narration": "Regra de três com pegadinha. Acerta?",
+   "min_duration": 2.0
   },
   {
    "type": "quiz",
@@ -41,19 +41,50 @@
    "type": "text",
    "text": "Letra A: 12 dias",
    "hl": "12 dias",
-   "sub": "mais gente, menos dias: 8 × 18 = 12 × 12",
-   "icon": "⚖️",
+   "icon": "✅",
    "pose": "cheer",
-   "narration": "Letra A, doze dias. É inversamente proporcional: oito vezes dezoito dá cento e quarenta e quatro, dividido por doze dá doze. Quem marcou vinte e sete esqueceu de inverter.",
-   "min_duration": 3.6
+   "burst": true,
+   "narration": "Letra A, doze dias!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Mais gente, menos dias",
+   "hl": "menos dias",
+   "rows": [
+    {
+     "t": "Inversamente proporcional",
+     "cue": "inversamente"
+    },
+    {
+     "t": "8 × 18 = 144",
+     "cue": "oito"
+    },
+    {
+     "t": "144 ÷ 12 = 12 dias",
+     "cue": "dividido"
+    }
+   ],
+   "narration": "É inversamente proporcional. Oito vezes dezoito dá cento e quarenta e quatro. Dividido por doze: doze dias.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "27 dias? Esqueceu de inverter",
+   "hl": "inverter",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Quem marcou vinte e sete esqueceu de inverter.",
+   "min_duration": 2.2
   },
   {
    "type": "end",
    "text": "Siga: 1 questão do TJSP por dia",
    "hl": "1 questão",
    "brand": "GABARITO DO DIA",
-   "narration": "Siga o Gabarito do Dia e treine uma por dia.",
-   "min_duration": 2.2
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
   }
  ]
 }

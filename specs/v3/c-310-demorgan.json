@@ -1,7 +1,7 @@
 {
  "channel": "gabarito",
  "style": "v3",
- "rate": "+4%",
+ "rate": "+5%",
  "title": "Como negar uma frase com \"ou\"?",
  "publish": {
   "channel": "C",
@@ -15,8 +15,8 @@
    "text": "Como negar uma frase com \"ou\"?",
    "hl": "\"ou\"?",
    "icon": "🔀",
-   "narration": "Negação com ou. A VUNESP adora essa.",
-   "min_duration": 2.6
+   "narration": "Como negar uma frase com ou?",
+   "min_duration": 2.0
   },
   {
    "type": "quiz",
@@ -40,20 +40,51 @@
   {
    "type": "text",
    "text": "Letra E: não... E não...",
-   "hl": "E não",
-   "sub": "negar \"p ou q\" = \"não p e não q\"",
-   "icon": "🧩",
+   "hl": "não... E não...",
+   "icon": "✅",
    "pose": "cheer",
-   "narration": "Letra E. Pra negar o ou, você nega as duas partes e troca por e. A letra A seria a negação de uma frase com e.",
-   "min_duration": 3.6
+   "burst": true,
+   "narration": "Letra E!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Negar o \"ou\"",
+   "hl": "Negar",
+   "rows": [
+    {
+     "t": "Nega as duas partes",
+     "cue": "nega"
+    },
+    {
+     "t": "Troca OU por E",
+     "cue": "troca"
+    },
+    {
+     "t": "não adiada E não pediu vista",
+     "cue": "não"
+    }
+   ],
+   "narration": "Pra negar o ou: nega as duas partes e troca por e. Não foi adiada e não pediu vista.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "A letra A nega uma frase com \"e\"",
+   "hl": "com \"e\"",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "A letra A seria a negação de uma frase com e.",
+   "min_duration": 2.2
   },
   {
    "type": "end",
    "text": "Siga: 1 questão do TJSP por dia",
    "hl": "1 questão",
    "brand": "GABARITO DO DIA",
-   "narration": "Siga o Gabarito do Dia e treine uma por dia.",
-   "min_duration": 2.2
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
   }
  ]
 }

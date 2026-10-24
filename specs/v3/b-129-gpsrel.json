@@ -34,38 +34,44 @@
    "min_duration": 3.2
   },
   {
-   "type": "text",
-   "text": "Weaker gravity: clocks run faster",
-   "hl": "faster",
-   "icon": "⏩",
-   "narration": "In orbit, gravity is weaker, so satellite clocks tick faster: plus {c_gr_say} microseconds a day.",
-   "min_duration": 3.2
-  },
-  {
-   "type": "text",
-   "text": "High speed: clocks run slower",
-   "hl": "slower",
-   "icon": "🐢",
-   "pose": "shrug",
-   "narration": "But they also fly fast, and that slows them by {c_sr_say}.",
-   "min_duration": 2.8
+   "type": "steps",
+   "text": "Satellite clocks, per day",
+   "hl": "per day",
+   "rows": [
+    {
+     "t": "Weaker gravity: +{c_gr} µs",
+     "icon": "🪐",
+     "cue": "up"
+    },
+    {
+     "t": "High speed: −{c_sr} µs",
+     "icon": "🚀",
+     "cue": "their"
+    },
+    {
+     "t": "Net: +{c_us} µs every day",
+     "cue": "net"
+    }
+   ],
+   "narration": "Up there, weaker gravity makes clocks run faster: plus {c_gr_say} microseconds a day. Their speed slows them by {c_sr_say}. Net: {c_us_say} microseconds ahead.",
+   "min_duration": 3.4
   },
   {
    "type": "big",
-   "text": "Net, every day",
-   "hl": "every day",
-   "big": "+{c_us} µs",
-   "label": "ahead of clocks on the ground",
-   "narration": "Net result: {c_us_say} microseconds ahead every day.",
-   "min_duration": 3
+   "text": "Light covers that in",
+   "hl": "Light",
+   "big": "{c_km} km",
+   "label": "of error, every single day",
+   "narration": "Tiny, but light covers {c_km_say} kilometers in that time.",
+   "min_duration": 2.8
   },
   {
    "type": "text",
    "text": "So engineers pre-tune the clocks",
    "hl": "pre-tune",
    "icon": "🔧",
-   "narration": "Tiny, but light covers {c_km_say} kilometers in that time. So the clocks are tuned before launch.",
-   "min_duration": 3.4
+   "narration": "So the satellite clocks are tuned slow before launch.",
+   "min_duration": 2.6
   },
   {
    "type": "end",

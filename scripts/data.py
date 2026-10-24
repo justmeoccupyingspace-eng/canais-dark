@@ -154,6 +154,9 @@ def compute_blocks(spec, ctx, raw):
                    wr_d=abs(round(r1) - round(r0)), wr_d_say=num2words(abs(round(r1) - round(r0)), lang="en"),
                    wr_word=("jumped" if r1 > r0 else "dropped"), wr_sign=("+" if r1 >= r0 else "-"),
                    wr_x=round(max(r1, r0) / max(min(r1, r0), 1e-9), 1), wr_x_say=num2words(round(max(r1, r0) / max(min(r1, r0), 1e-9), 1), lang="en"))
+        pick = [y0] + [y for y in (y0 + 8, y0 + 16) if y in A and y in B and y < y1] + [y1]
+        cross = next((y for y in ys if (A[y] >= B[y]) != (A[y0] >= B[y0])), None)
+        raw.update(wr_v=[round(A[y] / B[y] * 100) for y in pick], wr_y=[str(y) for y in pick], wr_cross=cross or "")
         ctx.update({k: v for k, v in raw.items() if k.startswith("wr_")})
     if "floatsum" in c:
         from num2words import num2words
@@ -440,6 +443,8 @@ def main(src, dst):
         for k in ("narration", "caption", "text", "sub", "label", "title", "subtitle", "note", "hl", "big", "l1", "v1", "l2", "v2", "kicker"):
             if k in sc:
                 sc[k] = sub(sc[k])
+        for r in sc.get("rows", []):
+            r["t"] = sub(r.get("t", ""))
         for k in [k for k in sc if k.endswith("_from") and k != "value_from"]:
             sc[k[:-5]] = raw[sc[k]]
         if sc.get("type") == "stat" and "value_from" in sc:

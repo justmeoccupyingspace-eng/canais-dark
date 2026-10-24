@@ -49,17 +49,15 @@
   },
   {
    "type": "bars",
-   "kicker": "The Philippines as % of Japan",
-   "text": "And today?",
-   "hl": "today?",
+   "kicker": "Philippines as % of Japan",
+   "text": "Now watch",
+   "hl": "watch",
    "en": true,
    "suffix": "%",
-   "a_from": "wr_r0",
-   "b_from": "wr_r1",
-   "l1": "{wr_from}",
-   "l2": "{wr_to}",
-   "narration": "Today? {wr_r1_say} percent. Almost the same size.",
-   "min_duration": 4.2
+   "vals_from": "wr_v",
+   "labels_from": "wr_y",
+   "narration": "Then the gap kept shrinking. Today it's {wr_r1_say} percent. Almost the same size.",
+   "min_duration": 4.4
   },
   {
    "type": "big",

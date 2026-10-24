@@ -1,7 +1,7 @@
 {
  "channel": "gabarito",
  "style": "v3",
- "rate": "+4%",
+ "rate": "+5%",
  "title": "Até que altura a escada chega?",
  "publish": {
   "channel": "C",
@@ -15,8 +15,8 @@
    "text": "Até que altura a escada chega?",
    "hl": "altura",
    "icon": "🪜",
-   "narration": "Pitágoras no concurso do TJ. Até onde essa escada chega?",
-   "min_duration": 2.6
+   "narration": "Até que altura essa escada chega?",
+   "min_duration": 2.0
   },
   {
    "type": "quiz",
@@ -41,19 +41,50 @@
    "type": "text",
    "text": "Letra B: 2 metros",
    "hl": "2 metros",
-   "sub": "2,5² − 1,5² = 4 → √4 = 2",
-   "icon": "📐",
+   "icon": "✅",
    "pose": "cheer",
-   "narration": "Letra B. Pitágoras: dois e meio ao quadrado menos um e meio ao quadrado dá quatro. Raiz de quatro, dois metros. Quem marcou quatro esqueceu a raiz.",
-   "min_duration": 3.6
+   "burst": true,
+   "narration": "Letra B, dois metros!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Pitágoras",
+   "hl": "Pitágoras",
+   "rows": [
+    {
+     "t": "2,5² = h² + 1,5²",
+     "cue": "pitágoras"
+    },
+    {
+     "t": "6,25 − 2,25 = 4",
+     "cue": "seis"
+    },
+    {
+     "t": "h = √4 = 2 m",
+     "cue": "raiz"
+    }
+   ],
+   "narration": "Pitágoras: a escada é a hipotenusa. Seis e vinte e cinco menos dois e vinte e cinco dá quatro. Raiz de quatro: dois metros.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "4,0 m? Esqueceu a raiz",
+   "hl": "raiz",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Quem marcou quatro esqueceu a raiz.",
+   "min_duration": 2.2
   },
   {
    "type": "end",
    "text": "Siga: 1 questão do TJSP por dia",
    "hl": "1 questão",
    "brand": "GABARITO DO DIA",
-   "narration": "Siga o Gabarito do Dia e treine uma por dia.",
-   "min_duration": 2.2
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
   }
  ]
 }

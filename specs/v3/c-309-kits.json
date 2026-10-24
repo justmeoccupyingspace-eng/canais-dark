@@ -1,7 +1,7 @@
 {
  "channel": "gabarito",
  "style": "v3",
- "rate": "+4%",
+ "rate": "+5%",
  "title": "Quantos itens em cada kit?",
  "publish": {
   "channel": "C",
@@ -15,8 +15,8 @@
    "text": "Quantos itens em cada kit?",
    "hl": "cada kit?",
    "icon": "📦",
-   "narration": "MDC no concurso do TJ. Quantos itens vai ter cada kit?",
-   "min_duration": 2.6
+   "narration": "Quantos itens vai ter cada kit?",
+   "min_duration": 2.0
   },
   {
    "type": "quiz",
@@ -41,19 +41,50 @@
    "type": "text",
    "text": "Letra A: 21 itens",
    "hl": "21 itens",
-   "sub": "MDC = 24 kits → 5 + 7 + 9",
-   "icon": "🎁",
+   "icon": "✅",
    "pose": "cheer",
-   "narration": "Letra A. O MDC dá vinte e quatro kits, cada um com cinco cadernos, sete canetas e nove pastas: vinte e um itens. Vinte e quatro é o número de kits, não de itens.",
-   "min_duration": 3.6
+   "burst": true,
+   "narration": "Letra A, vinte e um itens!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Maior número de kits = MDC",
+   "hl": "MDC",
+   "rows": [
+    {
+     "t": "MDC(120, 168, 216) = 24 kits",
+     "cue": "mdc"
+    },
+    {
+     "t": "5 cadernos + 7 canetas + 9 pastas",
+     "cue": "cada"
+    },
+    {
+     "t": "5 + 7 + 9 = 21 itens",
+     "cue": "vinte"
+    }
+   ],
+   "narration": "O MDC dá vinte e quatro kits. Cada kit leva cinco cadernos, sete canetas e nove pastas: vinte e um itens.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "24 é o número de kits, não de itens",
+   "hl": "kits",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Vinte e quatro é o número de kits, não de itens.",
+   "min_duration": 2.2
   },
   {
    "type": "end",
    "text": "Siga: 1 questão do TJSP por dia",
    "hl": "1 questão",
    "brand": "GABARITO DO DIA",
-   "narration": "Siga o Gabarito do Dia e treine uma por dia.",
-   "min_duration": 2.2
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
   }
  ]
 }

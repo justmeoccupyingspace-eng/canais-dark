@@ -1,7 +1,7 @@
 {
  "channel": "gabarito",
  "style": "v3",
- "rate": "+4%",
+ "rate": "+5%",
  "title": "Que dia da semana caiu o dia 20?",
  "publish": {
   "channel": "C",
@@ -14,9 +14,9 @@
    "kicker": "Escrevente TJSP · VUNESP",
    "text": "Que dia da semana caiu o dia 20?",
    "hl": "dia 20?",
-   "icon": "📅",
-   "narration": "Essa questão de calendário derruba muita gente no TJ.",
-   "min_duration": 2.6
+   "icon": "🗓️",
+   "narration": "Essa de calendário derruba muita gente.",
+   "min_duration": 2.0
   },
   {
    "type": "quiz",
@@ -30,7 +30,7 @@
     "sexta-feira"
    ],
    "correct": 2,
-   "narration": "Um mês de trinta e um dias teve cinco sextas, cinco sábados e cinco domingos. O dia vinte caiu em que dia?",
+   "narration": "Um mês de trinta e um dias teve cinco sextas, cinco sábados e cinco domingos. O dia vinte caiu em quê?",
    "extra": 4.6,
    "revealFromEnd": 1.6,
    "countdown": 3,
@@ -41,19 +41,40 @@
    "type": "text",
    "text": "Letra C: quarta-feira",
    "hl": "quarta-feira",
-   "sub": "dia 1 = sexta · dia 20 = 19 dias depois",
-   "icon": "🗓️",
+   "icon": "✅",
    "pose": "cheer",
-   "narration": "Letra C. Os três dias que se repetem cinco vezes são os dias um, dois e três. Então o dia um foi sexta. Somando dezenove dias, cai numa quarta.",
-   "min_duration": 3.6
+   "burst": true,
+   "narration": "Letra C, quarta-feira!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "31 dias = 4 semanas + 3",
+   "hl": "+ 3",
+   "rows": [
+    {
+     "t": "Dias 1, 2 e 3 aparecem 5 vezes",
+     "cue": "dias"
+    },
+    {
+     "t": "Dia 1 = sexta",
+     "cue": "então"
+    },
+    {
+     "t": "Dia 20 = sexta + 19 = quarta",
+     "cue": "mais"
+    }
+   ],
+   "narration": "Trinta e um dias são quatro semanas e mais três dias. Os dias um, dois e três se repetem cinco vezes. Então o dia um foi sexta. Mais dezenove dias: quarta.",
+   "min_duration": 3.0
   },
   {
    "type": "end",
    "text": "Siga: 1 questão do TJSP por dia",
    "hl": "1 questão",
    "brand": "GABARITO DO DIA",
-   "narration": "Siga o Gabarito do Dia e treine uma por dia.",
-   "min_duration": 2.2
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
   }
  ]
 }

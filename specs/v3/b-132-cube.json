@@ -43,13 +43,32 @@
    "min_duration": 3
   },
   {
-   "type": "text",
-   "text": "8 corners × 12 edges",
-   "hl": "× 12 edges",
-   "icon": "🔢",
-   "pose": "shrug",
-   "narration": "Eight corners and twelve edges, each with positions and twists. Multiply it all.",
-   "min_duration": 3.2
+   "type": "steps",
+   "text": "Where it comes from",
+   "hl": "comes from",
+   "rows": [
+    {
+     "t": "8 corners: 8! × 3⁷",
+     "icon": "🔺",
+     "cue": "eight"
+    },
+    {
+     "t": "12 edges: 12! × 2¹¹",
+     "icon": "🔷",
+     "cue": "twelve"
+    },
+    {
+     "t": "÷ 2 (parity rule)",
+     "icon": "⚖️",
+     "cue": "divide"
+    },
+    {
+     "t": "= {c_q} quintillion",
+     "cue": "and"
+    }
+   ],
+   "narration": "Eight corners, each placed and twisted. Twelve edges, each placed and flipped. Divide by two for parity, and there it is.",
+   "min_duration": 3.6
   },
   {
    "type": "text",

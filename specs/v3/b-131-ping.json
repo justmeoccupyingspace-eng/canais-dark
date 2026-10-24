@@ -43,12 +43,26 @@
    "min_duration": 3.4
   },
   {
-   "type": "big",
-   "text": "1,000 km and back",
-   "hl": "and back",
-   "big": "{c_stat}",
-   "label": "minimum ping, before any routing",
-   "narration": "So a server one thousand kilometers away costs at least {c_ms_say} milliseconds.",
+   "type": "steps",
+   "text": "Server 1,000 km away",
+   "hl": "1,000 km",
+   "rows": [
+    {
+     "t": "There and back: 2,000 km",
+     "icon": "↔️",
+     "cue": "there"
+    },
+    {
+     "t": "÷ {c_fkms} km/s in glass",
+     "icon": "💡",
+     "cue": "divide"
+    },
+    {
+     "t": "= {c_ms} ms minimum",
+     "cue": "at"
+    }
+   ],
+   "narration": "There and back is two thousand kilometers. Divide by the speed in glass, and you get at least {c_ms_say} milliseconds.",
    "min_duration": 3.4
   },
   {

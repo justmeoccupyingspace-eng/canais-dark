@@ -13,7 +13,7 @@
    "type": "hook",
    "kicker": "Começou hoje",
    "text": "Inscrições abertas: Escrevente TJSP",
-   "hl": "Inscrições abertas:",
+   "hl": "abertas:",
    "icon": "📝",
    "narration": "Abriram hoje as inscrições do concurso de Escrevente do TJ de São Paulo.",
    "min_duration": 3
@@ -28,11 +28,28 @@
    "min_duration": 3.2
   },
   {
-   "type": "text",
-   "text": "Taxa de R$ 81, até 10 de dezembro",
-   "hl": "até 10 de dezembro",
-   "icon": "🗓️",
-   "narration": "A taxa é de oitenta e um reais, e as inscrições vão até dez de dezembro, no site da VUNESP.",
+   "type": "steps",
+   "text": "Anota as datas",
+   "hl": "datas",
+   "rows": [
+    {
+     "t": "Inscrições: até 10/12",
+     "icon": "📝",
+     "cue": "inscrições"
+    },
+    {
+     "t": "Taxa: R$ 81",
+     "icon": "💳",
+     "cue": "taxa"
+    },
+    {
+     "t": "Site da VUNESP",
+     "icon": "🌐",
+     "cue": "site"
+    }
+   ],
+   "result": false,
+   "narration": "As inscrições vão até dez de dezembro. A taxa é de oitenta e um reais, no site da VUNESP.",
    "min_duration": 3.2
   },
   {
@@ -41,8 +58,8 @@
    "hl": "interior e no litoral",
    "icon": "📍",
    "pose": "shrug",
-   "narration": "O edital é para o interior e o litoral: Campinas, Santos, Sorocaba, Ribeirão Preto e mais cinco regiões. A capital ficou de fora.",
-   "min_duration": 3.6
+   "narration": "As vagas são do interior e do litoral: Campinas, Santos, Sorocaba, Ribeirão Preto e mais. A capital ficou de fora.",
+   "min_duration": 3.2
   },
   {
    "type": "big",
@@ -58,8 +75,8 @@
    "text": "Siga: 1 questão do TJSP por dia",
    "hl": "1 questão",
    "brand": "GABARITO DO DIA",
-   "narration": "Siga o Gabarito do Dia e treine uma questão por dia até a prova.",
-   "min_duration": 2.4
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
   }
  ]
 }

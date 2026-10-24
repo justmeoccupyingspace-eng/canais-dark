@@ -51,16 +51,14 @@
    "type": "bars",
    "style": "coins",
    "kicker": "Canada as % of Russia",
-   "text": "And today?",
-   "hl": "today?",
+   "text": "Now watch",
+   "hl": "watch",
    "en": true,
    "suffix": "%",
-   "a_from": "wr_r0",
-   "b_from": "wr_r1",
-   "l1": "{wr_from}",
-   "l2": "{wr_to}",
-   "narration": "Today? Just {wr_r1_say} percent. Russia is now bigger.",
-   "min_duration": 4.2
+   "vals_from": "wr_v",
+   "labels_from": "wr_y",
+   "narration": "Then it swung hard. Today it's just {wr_r1_say} percent. Russia is bigger.",
+   "min_duration": 4.4
   },
   {
    "type": "big",
