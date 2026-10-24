@@ -1,0 +1,65 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+4%",
+ "title": "Inscrições abertas: Escrevente TJSP",
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "tiktok": "Inscrições do Escrevente TJSP abertas até 10/12: taxa de R$ 81 e prova em 14/03/2027. Vagas no interior e no litoral de SP. Amostra grátis da apostila no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #edital #inscricoesabertas",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Começou hoje",
+   "text": "Inscrições abertas: Escrevente TJSP",
+   "hl": "Inscrições abertas:",
+   "icon": "📝",
+   "narration": "Abriram hoje as inscrições do concurso de Escrevente do TJ de São Paulo.",
+   "min_duration": 3
+  },
+  {
+   "type": "big",
+   "text": "Salário inicial",
+   "hl": "Salário",
+   "big": "R$ 6.782",
+   "label": "com ensino médio, 40 h semanais",
+   "narration": "Salário inicial de seis mil setecentos e oitenta e dois reais, com ensino médio.",
+   "min_duration": 3.2
+  },
+  {
+   "type": "text",
+   "text": "Taxa de R$ 81, até 10 de dezembro",
+   "hl": "até 10 de dezembro",
+   "icon": "🗓️",
+   "narration": "A taxa é de oitenta e um reais, e as inscrições vão até dez de dezembro, no site da VUNESP.",
+   "min_duration": 3.2
+  },
+  {
+   "type": "text",
+   "text": "Vagas no interior e no litoral de SP",
+   "hl": "interior e no litoral",
+   "icon": "📍",
+   "pose": "shrug",
+   "narration": "O edital é para o interior e o litoral: Campinas, Santos, Sorocaba, Ribeirão Preto e mais cinco regiões. A capital ficou de fora.",
+   "min_duration": 3.6
+  },
+  {
+   "type": "big",
+   "text": "A prova é em",
+   "hl": "prova",
+   "big": "14/03",
+   "label": "faltam 137 dias",
+   "narration": "A prova é em catorze de março. Faltam cento e trinta e sete dias.",
+   "min_duration": 3
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Siga o Gabarito do Dia e treine uma questão por dia até a prova.",
+   "min_duration": 2.4
+  }
+ ]
+}

@@ -101,4 +101,4 @@ jobs:
           git config user.name "producer"; git config user.email "producer@users.noreply.github.com"
           B=previews; [ "${{ inputs.channel }}" = "C" ] && B=pv-${{ github.run_id }}
           git checkout --orphan $B && git rm -rf . -q
-          cp /tmp/pv/* . && git add . && git commit -qm "previews" && (git push -f origin $B || echo "previews: push concorrente ignorado (o upload ja foi feito)")
+          cp /tmp/pv/* . && git add -f -- *.mp4 *.json && git commit -qm "previews" && (git push -f origin $B || echo "previews: push concorrente ignorado (o upload ja foi feito)")

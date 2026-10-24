@@ -249,15 +249,15 @@ const Quiz = ({sc, p}) => {
         {inCd ? <span style={{fontFamily: FONT, fontWeight: 900, fontSize: 64, color: p.warm, width: 96, height: 96, borderRadius: '50%', border: `8px solid ${p.warm}`, display: 'flex', alignItems: 'center', justifyContent: 'center', transform: `scale(${1 + 0.15 * (1 - ((f % FPS) / FPS))})`}}>{left}</span> : null}
       </div>
       <div style={{position: 'absolute', top: 270, left: 44, right: 44, background: '#ffffff', borderRadius: 34, padding: '36px 36px 26px', boxShadow: '0 30px 70px rgba(0,0,0,.35)', transform: `translateY(${(1 - card) * 80}px)`, opacity: card}}>
-        <div style={{fontFamily: FONT, fontWeight: 900, fontSize: sc.qsize || 50, lineHeight: 1.18, color: '#14121f', marginBottom: 22}}>{sc.q}</div>
+        <div style={{fontFamily: FONT, fontWeight: 900, fontSize: sc.qsize || 56, lineHeight: 1.16, color: '#14121f', marginBottom: 26}}>{sc.q}</div>
         {(sc.alts || []).map((a, i) => {
           const ok = i === sc.correct;
           const s = spring({frame: f - 8 - i * 4, fps: FPS, config: {damping: 15, stiffness: 220}});
           const bg = revealed ? (ok ? '#2bd47d' : '#f1f1f4') : '#f3f4f8';
           return (
-            <div key={i} style={{display: 'flex', alignItems: 'center', gap: 18, background: bg, borderRadius: 20, padding: '14px 18px', marginBottom: 12, opacity: revealed && !ok ? 0.45 : s, transform: `translateX(${(1 - s) * 60}px) scale(${ok ? 1 + 0.05 * k : 1})`}}>
-              <span style={{flex: '0 0 auto', width: 58, height: 58, borderRadius: '50%', background: revealed && ok ? '#ffffff' : p.bg1, color: revealed && ok ? '#1d8f52' : '#fff', fontFamily: FONT, fontWeight: 900, fontSize: 32, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{'ABCDE'[i]}</span>
-              <span style={{fontFamily: FONT, fontWeight: 800, fontSize: sc.asize || 40, lineHeight: 1.15, color: '#14121f'}}>{a}</span>
+            <div key={i} style={{display: 'flex', alignItems: 'center', gap: 20, background: bg, borderRadius: 22, padding: '20px 20px', marginBottom: 14, opacity: revealed && !ok ? 0.45 : s, transform: `translateX(${(1 - s) * 60}px) scale(${ok ? 1 + 0.05 * k : 1})`}}>
+              <span style={{flex: '0 0 auto', width: 66, height: 66, borderRadius: '50%', background: revealed && ok ? '#ffffff' : p.bg1, color: revealed && ok ? '#1d8f52' : '#fff', fontFamily: FONT, fontWeight: 900, fontSize: 36, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{'ABCDE'[i]}</span>
+              <span style={{fontFamily: FONT, fontWeight: 800, fontSize: sc.asize || 48, lineHeight: 1.15, color: '#14121f'}}>{a}</span>
             </div>
           );
         })}

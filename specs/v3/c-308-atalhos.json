@@ -34,8 +34,8 @@
    "extra": 4.6,
    "revealFromEnd": 1.6,
    "countdown": 3,
-   "qsize": 50,
-   "asize": 36
+   "qsize": 56,
+   "asize": 40
   },
   {
    "type": "text",

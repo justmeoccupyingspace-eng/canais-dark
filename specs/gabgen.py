@@ -7,7 +7,7 @@ os.makedirs(OUT, exist_ok=True)
 TAGS = '#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro'
 
 
-def q(name, label, hook_text, hook_hl, hook_icon, hook_n, question, alts, letter, q_n, ans_text, ans_hl, ans_sub, ans_icon, ans_n, tags, caption, qsize=50, asize=42):
+def q(name, label, hook_text, hook_hl, hook_icon, hook_n, question, alts, letter, q_n, ans_text, ans_hl, ans_sub, ans_icon, ans_n, tags, caption, qsize=56, asize=48):
     correct = 'ABCDE'.index(letter)
     spec = {
         'channel': 'gabarito', 'style': 'v3', 'rate': '+4%', 'title': hook_text,
@@ -25,7 +25,7 @@ def q(name, label, hook_text, hook_hl, hook_icon, hook_n, question, alts, letter
 
 
 V = []
-V.append(q('c-301-sequencia', 'RACIOCÍNIO LÓGICO · SEQUÊNCIAS', 'Qual é o 10º número?', '10º número?', '🔢',
+V.append(q('c-301-sequencia', 'RACIOCÍNIO LÓGICO · SEQUÊNCIAS', '2, 3, 5, 8, 12, 17... e o 10º?', 'e o 10º?', '🔢',
            'Raciocínio lógico do concurso do TJ. Descobre o padrão?',
            'Sequência: 2, 3, 5, 8, 12, 17, ... Mantido o padrão, o 10º termo é:', ['38', '45', '47', '55', '57'], 'C',
            'Dois, três, cinco, oito, doze, dezessete. Qual é o décimo termo?',
@@ -52,7 +52,7 @@ V.append(q('c-304-nato', 'CONSTITUCIONAL · ART. 12', 'Só brasileiro nato pode 
            'Segundo a Constituição, qual destes cargos é privativo de brasileiro nato?',
            'Letra B: Presidente da Câmara', 'Presidente da Câmara', 'CF, art. 12, § 3º', '🏛️',
            'Letra B. O presidente da Câmara está na linha de sucessão da Presidência, por isso precisa ser nato. Senador, ministro do STJ e procurador-geral, não.',
-           '#direitoconstitucional', 'Constitucional do Escrevente TJSP: cargo privativo de brasileiro nato.', asize=38))
+           '#direitoconstitucional', 'Constitucional do Escrevente TJSP: cargo privativo de brasileiro nato.', asize=42))
 V.append(q('c-305-regradetres', 'MATEMÁTICA · REGRA DE TRÊS', '8 servidores, 18 dias. E com 12?', 'E com 12?', '👥',
            'Regra de três do concurso do TJ. Cuidado com a pegadinha.',
            '8 servidores digitalizam um arquivo em 18 dias. No mesmo ritmo, 12 servidores levarão:', ['12 dias', '14 dias', '22 dias', '27 dias', '30 dias'], 'A',
@@ -66,35 +66,35 @@ V.append(q('c-306-crase', 'PORTUGUÊS · CRASE', 'Só uma tem a crase certa', 'c
            'Em qual dessas frases a crase está correta?',
            'Letra C: semelhante à do relator', 'à do relator', 'semelhante A + A [leitura] do relator', '✅',
            'Letra C. Semelhante pede a preposição a, e tem um artigo escondido: à leitura do relator. Antes de todos, de estas e de Brasília, não tem crase.',
-           '#portugues #crase', 'Português do Escrevente TJSP: onde está a crase certa?', asize=38))
+           '#portugues #crase', 'Português do Escrevente TJSP: onde está a crase certa?', asize=42))
 V.append(q('c-307-regencia', 'PORTUGUÊS · REGÊNCIA', 'Assistir O filme ou AO filme?', 'AO filme?', '🎬',
            'Regência verbal: essa cai muito na VUNESP.',
            'De acordo com a norma-padrão, a regência verbal está correta em:', ['Prefiro estudar à noite do que de manhã.', 'Ele aspirava o cargo de chefia.', 'Assistiram à palestra sobre o edital.', 'Obedeceram o horário estabelecido.', 'Esqueci dos documentos em casa.'], 'C',
            'Em qual frase a regência verbal está correta?',
            'Letra C: assistiram à palestra', 'assistiram à', 'assistir (ver) pede a preposição A', '🎯',
            'Letra C. Assistir, no sentido de ver, pede a: assistiram à palestra. Aspirar a, obedecer a, e prefiro uma coisa a outra, sem do que.',
-           '#portugues', 'Português do Escrevente TJSP: regência verbal.', asize=38))
+           '#portugues', 'Português do Escrevente TJSP: regência verbal.', asize=42))
 V.append(q('c-308-atalhos', 'INFORMÁTICA · WINDOWS', 'Qual atalho está certo?', 'atalho', '⌨️',
            'Informática vale nove questões no TJ. Qual desses atalhos está certo?',
            'No Windows 10 ou 11, a combinação de teclas está correta em:', ['Win+L abre as Configurações', 'Alt+Tab fecha a janela ativa', 'Win+E abre a caixa Executar', 'Win+Shift+S abre o histórico do Ctrl+C', 'Ctrl+Shift+Esc abre o Gerenciador de Tarefas'], 'E',
            'No Windows, qual destes atalhos está associado à função certa?',
            'Letra E: Ctrl+Shift+Esc', 'Ctrl+Shift+Esc', 'Win+L bloqueia · Win+E Explorador · Win+R Executar', '🖥️',
            'Letra E. Control, shift e esc abre direto o gerenciador de tarefas. Windows L bloqueia, Windows E abre o explorador e Windows R abre o executar.',
-           '#informatica #windows', 'Informática do Escrevente TJSP: atalhos do Windows.', asize=36))
+           '#informatica #windows', 'Informática do Escrevente TJSP: atalhos do Windows.', asize=40))
 V.append(q('c-309-kits', 'MATEMÁTICA · MDC', 'Quantos itens em cada kit?', 'cada kit?', '📦',
            'MDC no concurso do TJ. Quantos itens vai ter cada kit?',
            '120 cadernos, 168 canetas e 216 pastas em kits idênticos, sem sobra, com o maior número de kits. Cada kit terá:', ['21 itens', '24 itens', '42 itens', '63 itens', '504 itens'], 'A',
            'Cento e vinte cadernos, cento e sessenta e oito canetas e duzentas e dezesseis pastas, no maior número de kits iguais. Quantos itens por kit?',
            'Letra A: 21 itens', '21 itens', 'MDC = 24 kits → 5 + 7 + 9', '🎁',
            'Letra A. O MDC dá vinte e quatro kits, cada um com cinco cadernos, sete canetas e nove pastas: vinte e um itens. Vinte e quatro é o número de kits, não de itens.',
-           '#matematica', 'Matemática do Escrevente TJSP: MDC.', qsize=46))
+           '#matematica', 'Matemática do Escrevente TJSP: MDC.', qsize=50))
 V.append(q('c-310-demorgan', 'RACIOCÍNIO LÓGICO · NEGAÇÃO', 'Como negar uma frase com "ou"?', '"ou"?', '🔀',
            'Negação com ou. A VUNESP adora essa.',
            'A negação de "A sessão foi adiada ou o relator pediu vista" é:', ['Não foi adiada ou o relator não pediu vista.', 'Foi adiada e o relator não pediu vista.', 'Se foi adiada, o relator não pediu vista.', 'Foi adiada ou o relator não pediu vista.', 'Não foi adiada e o relator não pediu vista.'], 'E',
            'Qual é a negação de: a sessão foi adiada ou o relator pediu vista?',
            'Letra E: não... E não...', 'E não', 'negar "p ou q" = "não p e não q"', '🧩',
            'Letra E. Pra negar o ou, você nega as duas partes e troca por e. A letra A seria a negação de uma frase com e.',
-           '#raciociniologico', 'Raciocínio Lógico do Escrevente TJSP: negação do "ou".', asize=34))
+           '#raciociniologico', 'Raciocínio Lógico do Escrevente TJSP: negação do "ou".', asize=38))
 V.append(q('c-311-torneira', 'MATEMÁTICA · MEDIDAS', 'Quanto tempo pra encher?', 'encher?', '🚰',
            'Questão de medidas do TJ. Quanto tempo essa torneira leva?',
            'Uma torneira despeja 12 litros por minuto num reservatório de 2,4 m³. Para encher tudo, leva:', ['20 minutos', '3 h 20 min', '3 h 33 min', '33 h 20 min', '200 horas'], 'B',
@@ -109,4 +109,19 @@ V.append(q('c-312-escada', 'MATEMÁTICA · PITÁGORAS', 'Até que altura a escad
            'Letra B: 2 metros', '2 metros', '2,5² − 1,5² = 4 → √4 = 2', '📐',
            'Letra B. Pitágoras: dois e meio ao quadrado menos um e meio ao quadrado dá quatro. Raiz de quatro, dois metros. Quem marcou quatro esqueceu a raiz.',
            '#matematica', 'Matemática do Escrevente TJSP: teorema de Pitágoras.'))
+
+# notícia: abertura das inscrições (28/10)
+spec = {'channel': 'gabarito', 'style': 'v3', 'rate': '+4%', 'title': 'Inscrições abertas: Escrevente TJSP',
+        'publish': {'channel': 'C', 'privacy': 'public'},
+        'tiktok': f"Inscrições do Escrevente TJSP abertas até 10/12: taxa de R$ 81 e prova em 14/03/2027. Vagas no interior e no litoral de SP. Amostra grátis da apostila no WhatsApp da bio.\n{TAGS} #edital #inscricoesabertas",
+        'scenes': [
+            {'type': 'hook', 'kicker': 'Começou hoje', 'text': 'Inscrições abertas: Escrevente TJSP', 'hl': 'Inscrições abertas:', 'icon': '📝', 'narration': 'Abriram hoje as inscrições do concurso de Escrevente do TJ de São Paulo.', 'min_duration': 3},
+            {'type': 'big', 'text': 'Salário inicial', 'hl': 'Salário', 'big': 'R$ 6.782', 'label': 'com ensino médio, 40 h semanais', 'narration': 'Salário inicial de seis mil setecentos e oitenta e dois reais, com ensino médio.', 'min_duration': 3.2},
+            {'type': 'text', 'text': 'Taxa de R$ 81, até 10 de dezembro', 'hl': 'até 10 de dezembro', 'icon': '🗓️', 'narration': 'A taxa é de oitenta e um reais, e as inscrições vão até dez de dezembro, no site da VUNESP.', 'min_duration': 3.2},
+            {'type': 'text', 'text': 'Vagas no interior e no litoral de SP', 'hl': 'interior e no litoral', 'icon': '📍', 'pose': 'shrug', 'narration': 'O edital é para o interior e o litoral: Campinas, Santos, Sorocaba, Ribeirão Preto e mais cinco regiões. A capital ficou de fora.', 'min_duration': 3.6},
+            {'type': 'big', 'text': 'A prova é em', 'hl': 'prova', 'big': '14/03', 'label': 'faltam 137 dias', 'narration': 'A prova é em catorze de março. Faltam cento e trinta e sete dias.', 'min_duration': 3},
+            {'type': 'end', 'text': 'Siga: 1 questão do TJSP por dia', 'hl': '1 questão', 'brand': 'GABARITO DO DIA', 'narration': 'Siga o Gabarito do Dia e treine uma questão por dia até a prova.', 'min_duration': 2.4},
+        ]}
+json.dump(spec, open(f'{OUT}/c-313-inscricoes.json', 'w'), ensure_ascii=False, indent=1)
+V.append('c-313-inscricoes')
 print('\n'.join(V))

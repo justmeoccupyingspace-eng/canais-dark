@@ -2,7 +2,7 @@
  "channel": "gabarito",
  "style": "v3",
  "rate": "+4%",
- "title": "Qual é o 10º número?",
+ "title": "2, 3, 5, 8, 12, 17... e o 10º?",
  "publish": {
   "channel": "C",
   "privacy": "public"
@@ -12,8 +12,8 @@
   {
    "type": "hook",
    "kicker": "Escrevente TJSP · VUNESP",
-   "text": "Qual é o 10º número?",
-   "hl": "10º número?",
+   "text": "2, 3, 5, 8, 12, 17... e o 10º?",
+   "hl": "e o 10º?",
    "icon": "🔢",
    "narration": "Raciocínio lógico do concurso do TJ. Descobre o padrão?",
    "min_duration": 2.6
@@ -34,8 +34,8 @@
    "extra": 4.6,
    "revealFromEnd": 1.6,
    "countdown": 3,
-   "qsize": 50,
-   "asize": 42
+   "qsize": 56,
+   "asize": 48
   },
   {
    "type": "text",
