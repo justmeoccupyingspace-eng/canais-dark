@@ -437,7 +437,7 @@ def main(src, dst):
     def sub(t):
         return t.format(**ctx) if isinstance(t, str) and "{" in t else t
     for sc in spec["scenes"]:
-        for k in ("narration", "caption", "text", "sub", "label", "title", "subtitle", "note", "hl", "big", "l1", "v1", "l2", "v2"):
+        for k in ("narration", "caption", "text", "sub", "label", "title", "subtitle", "note", "hl", "big", "l1", "v1", "l2", "v2", "kicker"):
             if k in sc:
                 sc[k] = sub(sc[k])
         for k in [k for k in sc if k.endswith("_from") and k != "value_from"]:

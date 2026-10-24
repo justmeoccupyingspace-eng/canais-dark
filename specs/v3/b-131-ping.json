@@ -1,0 +1,70 @@
+{
+ "channel": "howitticks",
+ "style": "v3",
+ "rate": "+6%",
+ "title": "Your ping can never be zero. Here's the limit #Shorts",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-25T21:00:00Z"
+ },
+ "compute": {
+  "calc": {
+   "kind": "ping"
+  }
+ },
+ "yt": {
+  "title": "Your ping can never be zero. Here's the limit #Shorts",
+  "description": "Minimum round-trip time over 1,000 km of optical fiber, from the refractive index of glass (~1.47).\nNarration is AI-generated.",
+  "tags": [
+   "internet",
+   "gaming",
+   "ping",
+   "physics"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "Your ping can never be zero",
+   "hl": "never",
+   "icon": "🎮",
+   "narration": "Even with perfect internet, your ping can never be zero.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "text",
+   "text": "In fiber, light is 1/3 slower",
+   "hl": "1/3 slower",
+   "icon": "💡",
+   "pose": "shrug",
+   "narration": "Inside fiber, light moves about {c_fkms_say} kilometers per second. A third slower than in space.",
+   "min_duration": 3.4
+  },
+  {
+   "type": "big",
+   "text": "1,000 km and back",
+   "hl": "and back",
+   "big": "{c_stat}",
+   "label": "minimum ping, before any routing",
+   "narration": "So a server one thousand kilometers away costs at least {c_ms_say} milliseconds.",
+   "min_duration": 3.4
+  },
+  {
+   "type": "text",
+   "text": "Real cables zigzag",
+   "hl": "zigzag",
+   "icon": "🌍",
+   "narration": "Real cables zigzag, so real pings are higher.",
+   "min_duration": 2.6
+  },
+  {
+   "type": "end",
+   "text": "How far is your server?",
+   "hl": "server?",
+   "narration": "How far away is your game server?",
+   "min_duration": 2.2
+  }
+ ]
+}

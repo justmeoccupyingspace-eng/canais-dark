@@ -1,0 +1,91 @@
+{
+ "channel": "chartbound",
+ "style": "v3",
+ "rate": "+6%",
+ "title": "Argentina's economy was {wr_r0}% of Brazil's in {wr_from}. Now? #Shorts",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-25T23:00:00Z"
+ },
+ "compute": {
+  "wbratio": {
+   "ind": "NY.GDP.MKTP.CD",
+   "a": "ARG",
+   "b": "BRA",
+   "from": 2000
+  }
+ },
+ "yt": {
+  "title": "Argentina's economy was {wr_r0}% of Brazil's in {wr_from}. Now? #Shorts",
+  "description": "Argentina as a share of Brazil, economy, {wr_from} vs {wr_to}. Source: World Bank (NY.GDP.MKTP.CD). Narration is AI-generated.\n#economics #data #argentina",
+  "tags": [
+   "economics",
+   "argentina",
+   "brazil",
+   "gdp",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "In {wr_from}",
+   "text": "Argentina's economy was {wr_r0}% of Brazil's",
+   "hl": "{wr_r0}%",
+   "vs": [
+    {
+     "flag": "🇦🇷",
+     "name": "Argentina"
+    },
+    {
+     "flag": "🇧🇷",
+     "name": "Brazil"
+    }
+   ],
+   "narration": "In {wr_from}, Argentina's economy was only {wr_r0_say} percent the size of Brazil's.",
+   "min_duration": 3.2
+  },
+  {
+   "type": "bars",
+   "style": "coins",
+   "kicker": "Argentina as % of Brazil",
+   "text": "And today?",
+   "hl": "today?",
+   "en": true,
+   "suffix": "%",
+   "a_from": "wr_r0",
+   "b_from": "wr_r1",
+   "l1": "{wr_from}",
+   "l2": "{wr_to}",
+   "narration": "Today? Only {wr_r1_say} percent.",
+   "min_duration": 4.2
+  },
+  {
+   "type": "big",
+   "text": "Argentina fell",
+   "hl": "fell",
+   "big": "-{wr_d} pts",
+   "label": "behind Brazil since {wr_from}",
+   "narration": "Argentina fell {wr_d_say} points behind.",
+   "min_duration": 3
+  },
+  {
+   "type": "text",
+   "text": "Currency crashes shrink dollar GDP",
+   "hl": "Currency crashes",
+   "icon": "📉",
+   "pose": "shrug",
+   "narration": "Repeated currency crashes made its economy smaller in dollars.",
+   "min_duration": 3.4
+  },
+  {
+   "type": "end",
+   "text": "Which two countries next?",
+   "hl": "next?",
+   "narration": "Which two countries should I compare next?",
+   "min_duration": 2.2
+  }
+ ]
+}

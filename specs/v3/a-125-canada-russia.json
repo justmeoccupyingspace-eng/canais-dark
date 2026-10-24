@@ -1,0 +1,91 @@
+{
+ "channel": "chartbound",
+ "style": "v3",
+ "rate": "+6%",
+ "title": "Canada's economy was {wr_r0}% of Russia's in {wr_from}. Now? #Shorts",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-25T20:00:00Z"
+ },
+ "compute": {
+  "wbratio": {
+   "ind": "NY.GDP.MKTP.CD",
+   "a": "CAN",
+   "b": "RUS",
+   "from": 2000
+  }
+ },
+ "yt": {
+  "title": "Canada's economy was {wr_r0}% of Russia's in {wr_from}. Now? #Shorts",
+  "description": "Canada as a share of Russia, economy, {wr_from} vs {wr_to}. Source: World Bank (NY.GDP.MKTP.CD). Narration is AI-generated.\n#economics #data #canada",
+  "tags": [
+   "economics",
+   "canada",
+   "russia",
+   "gdp",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "In {wr_from}",
+   "text": "Canada's economy was {wr_r0}% of Russia's",
+   "hl": "{wr_r0}%",
+   "vs": [
+    {
+     "flag": "🇨🇦",
+     "name": "Canada"
+    },
+    {
+     "flag": "🇷🇺",
+     "name": "Russia"
+    }
+   ],
+   "narration": "In {wr_from}, Canada's economy was only {wr_r0_say} percent the size of Russia's.",
+   "min_duration": 3.2
+  },
+  {
+   "type": "bars",
+   "style": "coins",
+   "kicker": "Canada as % of Russia",
+   "text": "And today?",
+   "hl": "today?",
+   "en": true,
+   "suffix": "%",
+   "a_from": "wr_r0",
+   "b_from": "wr_r1",
+   "l1": "{wr_from}",
+   "l2": "{wr_to}",
+   "narration": "Today? Just {wr_r1_say} percent. Russia is now bigger.",
+   "min_duration": 4.2
+  },
+  {
+   "type": "big",
+   "text": "Canada lost",
+   "hl": "lost",
+   "big": "-{wr_d} pts",
+   "label": "against Russia since {wr_from}",
+   "narration": "Canada lost {wr_d_say} points.",
+   "min_duration": 3
+  },
+  {
+   "type": "text",
+   "text": "Oil and exchange rates swing it",
+   "hl": "Oil",
+   "icon": "🛢️",
+   "pose": "shrug",
+   "narration": "Both run on energy, so oil prices and exchange rates swing this a lot.",
+   "min_duration": 3.4
+  },
+  {
+   "type": "end",
+   "text": "Did you expect that?",
+   "hl": "expect",
+   "narration": "Did you expect that?",
+   "min_duration": 2.2
+  }
+ ]
+}

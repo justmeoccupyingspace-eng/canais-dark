@@ -1,0 +1,81 @@
+{
+ "channel": "howitticks",
+ "style": "v3",
+ "rate": "+6%",
+ "title": "Your card's last digit catches {c_single} of typos #Shorts",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-25T17:00:00Z"
+ },
+ "compute": {
+  "calc": {
+   "kind": "luhn"
+  }
+ },
+ "yt": {
+  "title": "Your card's last digit catches {c_single} of typos #Shorts",
+  "description": "The Luhn check digit. We tested every one-digit typo and every adjacent swap on 2,000 random numbers. Test card numbers only.\nNarration is AI-generated.",
+  "tags": [
+   "math",
+   "cards",
+   "algorithm",
+   "luhn"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "Your card's last digit is a typo trap",
+   "hl": "typo trap",
+   "icon": "💳",
+   "narration": "The last digit of your card number isn't random. It's a trap for typos.",
+   "min_duration": 3
+  },
+  {
+   "type": "screen",
+   "text": "Double every second digit",
+   "hl": "Double",
+   "code": [
+    "4539 1488 0343 6467",
+    "double → add → total"
+   ],
+   "narration": "From the right, double every second digit, then add everything up.",
+   "min_duration": 3.4
+  },
+  {
+   "type": "text",
+   "text": "Total ends in 0? Valid.",
+   "hl": "Valid.",
+   "icon": "✅",
+   "pose": "cheer",
+   "narration": "If the total ends in zero, the number passes.",
+   "min_duration": 2.6
+  },
+  {
+   "type": "big",
+   "text": "One-digit typos caught",
+   "hl": "caught",
+   "big": "{c_single}",
+   "label": "we tested every one",
+   "narration": "We tried every single-digit typo. It caught {c_single_say} percent.",
+   "min_duration": 3.2
+  },
+  {
+   "type": "text",
+   "text": "Swapped neighbors: {c_trans} caught",
+   "hl": "{c_trans}",
+   "icon": "🔁",
+   "narration": "And about {c_trans_say} percent of swapped neighbors.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "end",
+   "text": "A typo check, not security",
+   "hl": "not security",
+   "narration": "It catches typos. It does not make your card safe.",
+   "min_duration": 2.2
+  }
+ ]
+}

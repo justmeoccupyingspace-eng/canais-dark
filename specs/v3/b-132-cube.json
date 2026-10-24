@@ -1,0 +1,71 @@
+{
+ "channel": "howitticks",
+ "style": "v3",
+ "rate": "+6%",
+ "title": "This small cube has {c_q} quintillion positions #Shorts",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-26T01:00:00Z"
+ },
+ "compute": {
+  "calc": {
+   "kind": "cube"
+  }
+ },
+ "yt": {
+  "title": "This small cube has {c_q} quintillion positions #Shorts",
+  "description": "Positions of a 3x3x3 puzzle cube: 8!·3^7·12!·2^11/2, computed. God's number (20) was proven in 2010.\nNarration is AI-generated.",
+  "tags": [
+   "math",
+   "puzzle",
+   "combinatorics",
+   "cube"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "This toy has {c_q} quintillion positions",
+   "hl": "{c_q} quintillion",
+   "icon": "🧩",
+   "narration": "A puzzle cube that fits in your hand can be scrambled in more ways than you'd believe.",
+   "min_duration": 3.2
+  },
+  {
+   "type": "big",
+   "text": "Exactly",
+   "hl": "Exactly",
+   "big": "{c_q} quintillion",
+   "label": "{c_n} positions",
+   "narration": "{c_q_say} quintillion positions.",
+   "min_duration": 3
+  },
+  {
+   "type": "text",
+   "text": "8 corners × 12 edges",
+   "hl": "× 12 edges",
+   "icon": "🔢",
+   "pose": "shrug",
+   "narration": "Eight corners and twelve edges, each with positions and twists. Multiply it all.",
+   "min_duration": 3.2
+  },
+  {
+   "type": "text",
+   "text": "Any of them: 20 moves or less",
+   "hl": "20 moves",
+   "icon": "🏆",
+   "pose": "cheer",
+   "narration": "Yet every single one can be solved in twenty moves or fewer. Proven in twenty ten.",
+   "min_duration": 3.4
+  },
+  {
+   "type": "end",
+   "text": "Can you solve one?",
+   "hl": "solve",
+   "narration": "Can you solve one?",
+   "min_duration": 2.2
+  }
+ ]
+}

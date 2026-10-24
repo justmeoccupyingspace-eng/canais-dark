@@ -1,0 +1,91 @@
+{
+ "channel": "chartbound",
+ "style": "v3",
+ "rate": "+6%",
+ "title": "Spain's economy was {wr_r0}% of Italy's in {wr_from}. Now? #Shorts",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-24T20:00:00Z"
+ },
+ "compute": {
+  "wbratio": {
+   "ind": "NY.GDP.MKTP.CD",
+   "a": "ESP",
+   "b": "ITA",
+   "from": 2000
+  }
+ },
+ "yt": {
+  "title": "Spain's economy was {wr_r0}% of Italy's in {wr_from}. Now? #Shorts",
+  "description": "Spain as a share of Italy, economy, {wr_from} vs {wr_to}. Source: World Bank (NY.GDP.MKTP.CD). Narration is AI-generated.\n#economics #data #spain",
+  "tags": [
+   "economics",
+   "spain",
+   "italy",
+   "gdp",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "In {wr_from}",
+   "text": "Spain's economy was {wr_r0}% of Italy's",
+   "hl": "{wr_r0}%",
+   "vs": [
+    {
+     "flag": "🇪🇸",
+     "name": "Spain"
+    },
+    {
+     "flag": "🇮🇹",
+     "name": "Italy"
+    }
+   ],
+   "narration": "In {wr_from}, Spain's economy was only {wr_r0_say} percent the size of Italy's.",
+   "min_duration": 3.2
+  },
+  {
+   "type": "bars",
+   "style": "coins",
+   "kicker": "Spain as % of Italy",
+   "text": "And today?",
+   "hl": "today?",
+   "en": true,
+   "suffix": "%",
+   "a_from": "wr_r0",
+   "b_from": "wr_r1",
+   "l1": "{wr_from}",
+   "l2": "{wr_to}",
+   "narration": "Today? It's {wr_r1_say} percent.",
+   "min_duration": 4.2
+  },
+  {
+   "type": "big",
+   "text": "Spain gained",
+   "hl": "gained",
+   "big": "+{wr_d} pts",
+   "label": "on Italy since {wr_from}",
+   "narration": "Spain gained {wr_d_say} points on Italy.",
+   "min_duration": 3
+  },
+  {
+   "type": "text",
+   "text": "Same euro. Faster growth.",
+   "hl": "Faster growth.",
+   "icon": "📈",
+   "pose": "shrug",
+   "narration": "And they share the euro, so this is not a currency trick. Spain simply grew faster.",
+   "min_duration": 3.4
+  },
+  {
+   "type": "end",
+   "text": "Which two countries next?",
+   "hl": "next?",
+   "narration": "Which two countries should I compare next?",
+   "min_duration": 2.2
+  }
+ ]
+}

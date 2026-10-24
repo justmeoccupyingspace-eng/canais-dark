@@ -1,0 +1,27 @@
+name: upfrom
+on:
+  workflow_dispatch:
+    inputs:
+      branch: {description: "branch pv-<run> com o mp4 e o json montado", required: true}
+      name: {description: "nome do spec (sem .json)", required: true}
+      ch: {description: "A ou B", required: true}
+      at: {description: "publishAt ISO UTC (vazio = usa o do spec)", required: false, default: ""}
+permissions:
+  contents: read
+jobs:
+  u:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          git fetch -q origin ${{ inputs.branch }}
+          git show origin/${{ inputs.branch }}:${{ inputs.name }}.mp4 > /tmp/v.mp4
+          git show origin/${{ inputs.branch }}:${{ inputs.name }}.json > /tmp/v.json
+          ls -la /tmp/v.mp4 /tmp/v.json
+          python3 scripts/upload.py ${{ inputs.ch }} /tmp/v.mp4 /tmp/v.json private
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_A: ${{ secrets.YT_REFRESH_A }}
+          YT_REFRESH_B: ${{ secrets.YT_REFRESH_B }}
+          MANUAL_PUBLISH_AT: ${{ inputs.at }}

@@ -1,0 +1,82 @@
+{
+ "channel": "howitticks",
+ "style": "v3",
+ "rate": "+6%",
+ "title": "Your computer hits 2,000,000,000 on {c_date} #Shorts",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-26T17:00:00Z"
+ },
+ "compute": {
+  "calc": {
+   "kind": "unix2e9"
+  }
+ },
+ "yt": {
+  "title": "Your computer hits 2,000,000,000 on {c_date} #Shorts",
+  "description": "Unix time reaches 2,000,000,000 seconds on May 18, 2033 03:33:20 UTC. Computed.\nNarration is AI-generated.",
+  "tags": [
+   "computers",
+   "unix",
+   "time",
+   "programming"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "Your computer is counting to 2 billion",
+   "hl": "2 billion",
+   "icon": "⏰",
+   "narration": "Your computer is quietly counting toward two billion.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "screen",
+   "text": "Seconds since Jan 1, 1970",
+   "hl": "since",
+   "code": [
+    "$ date +%s",
+    "1792848886"
+   ],
+   "narration": "Many computers store time as the seconds since January first, nineteen seventy.",
+   "min_duration": 3.4
+  },
+  {
+   "type": "big",
+   "text": "It hits 2,000,000,000 on",
+   "hl": "2,000,000,000",
+   "big": "{c_date}",
+   "label": "at {c_time}",
+   "narration": "That count hits two billion on {c_date_say}.",
+   "min_duration": 3.4
+  },
+  {
+   "type": "text",
+   "text": "1 billion was {c_1e9}",
+   "hl": "1 billion",
+   "icon": "📅",
+   "pose": "shrug",
+   "narration": "One billion was {c_1e9_say}.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "text",
+   "text": "The real deadline: 2038",
+   "hl": "2038",
+   "icon": "💥",
+   "pose": "shock",
+   "narration": "Two billion fits fine. The real trouble is twenty thirty-eight, when old thirty-two bit clocks overflow.",
+   "min_duration": 3.6
+  },
+  {
+   "type": "end",
+   "text": "Where will you be in 2033?",
+   "hl": "2033?",
+   "narration": "Where will you be when it hits two billion?",
+   "min_duration": 2.2
+  }
+ ]
+}

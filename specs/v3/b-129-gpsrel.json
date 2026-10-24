@@ -1,0 +1,78 @@
+{
+ "channel": "howitticks",
+ "style": "v3",
+ "rate": "+6%",
+ "title": "Without Einstein, GPS would drift {c_km} km a day #Shorts",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-25T01:00:00Z"
+ },
+ "compute": {
+  "calc": {
+   "kind": "gpsrel"
+  }
+ },
+ "yt": {
+  "title": "Without Einstein, GPS would drift {c_km} km a day #Shorts",
+  "description": "GPS satellite clocks gain about 38 microseconds per day from general and special relativity combined. Computed with Einstein's formulas.\nNarration is AI-generated.",
+  "tags": [
+   "gps",
+   "relativity",
+   "physics",
+   "einstein"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "Without Einstein, GPS drifts {c_km} km a day",
+   "hl": "{c_km} km",
+   "icon": "🛰️",
+   "narration": "Without Einstein, your GPS would drift about {c_km_say} kilometers every day.",
+   "min_duration": 3.2
+  },
+  {
+   "type": "text",
+   "text": "Weaker gravity: clocks run faster",
+   "hl": "faster",
+   "icon": "⏩",
+   "narration": "In orbit, gravity is weaker, so satellite clocks tick faster: plus {c_gr_say} microseconds a day.",
+   "min_duration": 3.2
+  },
+  {
+   "type": "text",
+   "text": "High speed: clocks run slower",
+   "hl": "slower",
+   "icon": "🐢",
+   "pose": "shrug",
+   "narration": "But they also fly fast, and that slows them by {c_sr_say}.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "big",
+   "text": "Net, every day",
+   "hl": "every day",
+   "big": "+{c_us} µs",
+   "label": "ahead of clocks on the ground",
+   "narration": "Net result: {c_us_say} microseconds ahead every day.",
+   "min_duration": 3
+  },
+  {
+   "type": "text",
+   "text": "So engineers pre-tune the clocks",
+   "hl": "pre-tune",
+   "icon": "🔧",
+   "narration": "Tiny, but light covers {c_km_say} kilometers in that time. So the clocks are tuned before launch.",
+   "min_duration": 3.4
+  },
+  {
+   "type": "end",
+   "text": "Einstein is in your pocket",
+   "hl": "pocket",
+   "narration": "Einstein is literally in your pocket.",
+   "min_duration": 2.2
+  }
+ ]
+}

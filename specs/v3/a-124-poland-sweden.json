@@ -1,0 +1,91 @@
+{
+ "channel": "chartbound",
+ "style": "v3",
+ "rate": "+6%",
+ "title": "Poland's economy was {wr_r0}% of Sweden's in {wr_from}. Now? #Shorts",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-25T16:00:00Z"
+ },
+ "compute": {
+  "wbratio": {
+   "ind": "NY.GDP.MKTP.CD",
+   "a": "POL",
+   "b": "SWE",
+   "from": 2000
+  }
+ },
+ "yt": {
+  "title": "Poland's economy was {wr_r0}% of Sweden's in {wr_from}. Now? #Shorts",
+  "description": "Poland as a share of Sweden, economy, {wr_from} vs {wr_to}. Source: World Bank (NY.GDP.MKTP.CD). Narration is AI-generated.\n#economics #data #poland",
+  "tags": [
+   "economics",
+   "poland",
+   "sweden",
+   "gdp",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "In {wr_from}",
+   "text": "Poland's economy was {wr_r0}% of Sweden's",
+   "hl": "{wr_r0}%",
+   "vs": [
+    {
+     "flag": "🇵🇱",
+     "name": "Poland"
+    },
+    {
+     "flag": "🇸🇪",
+     "name": "Sweden"
+    }
+   ],
+   "narration": "In {wr_from}, Poland's economy was only {wr_r0_say} percent the size of Sweden's.",
+   "min_duration": 3.2
+  },
+  {
+   "type": "bars",
+   "style": "coins",
+   "kicker": "Poland as % of Sweden",
+   "text": "And today?",
+   "hl": "today?",
+   "en": true,
+   "suffix": "%",
+   "a_from": "wr_r0",
+   "b_from": "wr_r1",
+   "l1": "{wr_from}",
+   "l2": "{wr_to}",
+   "narration": "Today? {wr_r1_say} percent. Poland passed Sweden.",
+   "min_duration": 4.2
+  },
+  {
+   "type": "big",
+   "text": "Poland is now",
+   "hl": "now",
+   "big": "{wr_r1}%",
+   "label": "of Sweden's economy",
+   "narration": "From two thirds of Sweden's economy to one and a half times its size.",
+   "min_duration": 3.2
+  },
+  {
+   "type": "text",
+   "text": "But per person, Sweden is still richer",
+   "hl": "per person,",
+   "icon": "🧮",
+   "pose": "shrug",
+   "narration": "But Poland has almost four times the people, so per person Sweden is still richer.",
+   "min_duration": 3.6
+  },
+  {
+   "type": "end",
+   "text": "Which two countries next?",
+   "hl": "next?",
+   "narration": "Which two countries should I compare next?",
+   "min_duration": 2.2
+  }
+ ]
+}

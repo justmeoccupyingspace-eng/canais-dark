@@ -1,0 +1,146 @@
+"""Gera os specs do formato v3 (mascote 3D). Uso: python3 specs/v3gen.py -> specs/v3/*.json"""
+import json, os
+
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'v3')
+os.makedirs(OUT, exist_ok=True)
+
+
+def save(name, spec):
+    json.dump(spec, open(f'{OUT}/{name}.json', 'w'), ensure_ascii=False, indent=1)
+    return name
+
+
+def end(text, hl, narration, sub=None):
+    d = {'type': 'end', 'text': text, 'hl': hl, 'narration': narration, 'min_duration': 2.2}
+    if sub:
+        d['sub'] = sub
+    return d
+
+
+# ---------------- Chartbound: comparações do Banco Mundial ----------------
+def wb(name, at, a, fa, b, fb, ind, metric, insight, title, tags):
+    gdp = ind == 'NY.GDP.MKTP.CD'
+    what = "economy" if gdp else "population"
+    poss = f"{a}'s economy" if gdp else f"{a}'s population"
+    hook_n = (f"In {{wr_from}}, {a}'s economy was only {{wr_r0_say}} percent the size of {b}'s." if gdp
+              else f"In {{wr_from}}, {a} had only {{wr_r0_say}} percent as many people as {b}.")
+    spec = {
+        'channel': 'chartbound', 'style': 'v3', 'rate': '+6%', 'title': title,
+        'publish': {'channel': 'A', 'privacy': 'public', 'at': at},
+        'compute': {'wbratio': {'ind': ind, 'a': insight['a3'], 'b': insight['b3'], 'from': 2000}},
+        'yt': {'title': title, 'description': f"{a} as a share of {b}, {what}, {{wr_from}} vs {{wr_to}}. Source: World Bank ({ind}). Narration is AI-generated.\n#economics #data #{a.lower().replace(' ', '')}", 'tags': tags, 'lang': 'en'},
+        'scenes': [
+            {'type': 'hook', 'kicker': 'In {wr_from}', 'text': (f"{a}'s economy was {{wr_r0}}% of {b}'s" if gdp else f"{a} had {{wr_r0}}% of {b}'s people"), 'hl': '{wr_r0}%',
+             'vs': [{'flag': fa, 'name': a if len(a) < 12 else insight.get('short_a', a)}, {'flag': fb, 'name': b}], 'narration': hook_n, 'min_duration': 3.2},
+            {'type': 'bars', **({'style': 'coins'} if gdp else {}), 'kicker': f"{a} as % of {b}", 'text': 'And today?', 'hl': 'today?', 'en': True, 'suffix': '%',
+             'a_from': 'wr_r0', 'b_from': 'wr_r1', 'l1': '{wr_from}', 'l2': '{wr_to}', 'narration': insight['bars_n'], 'min_duration': 4.2},
+            insight['big'],
+            insight['text'],
+            end(insight['end_text'], insight['end_hl'], insight['end_n']),
+        ],
+    }
+    return save(name, spec)
+
+
+V = []
+V.append(wb('a-118-spain-italy', '2026-10-24T20:00:00Z', 'Spain', '🇪🇸', 'Italy', '🇮🇹', 'NY.GDP.MKTP.CD', 'economy', {
+    'a3': 'ESP', 'b3': 'ITA',
+    'bars_n': "Today? It's {wr_r1_say} percent.",
+    'big': {'type': 'big', 'text': 'Spain gained', 'hl': 'gained', 'big': '+{wr_d} pts', 'label': 'on Italy since {wr_from}', 'narration': "Spain gained {wr_d_say} points on Italy.", 'min_duration': 3},
+    'text': {'type': 'text', 'text': 'Same euro. Faster growth.', 'hl': 'Faster growth.', 'icon': '📈', 'pose': 'shrug', 'narration': "And they share the euro, so this is not a currency trick. Spain simply grew faster.", 'min_duration': 3.4},
+    'end_text': 'Which two countries next?', 'end_hl': 'next?', 'end_n': 'Which two countries should I compare next?'},
+    "Spain's economy was {wr_r0}% of Italy's in {wr_from}. Now? #Shorts", ['economics', 'spain', 'italy', 'gdp', 'data']))
+
+V.append(wb('a-123-philippines-japan', '2026-10-24T23:00:00Z', 'The Philippines', '🇵🇭', 'Japan', '🇯🇵', 'SP.POP.TOTL', 'population', {
+    'a3': 'PHL', 'b3': 'JPN', 'short_a': 'Philippines',
+    'bars_n': "Today? {wr_r1_say} percent. Almost the same size.",
+    'big': {'type': 'big', 'text': 'The gap closed by', 'hl': 'closed', 'big': '+{wr_d} pts', 'label': 'in one generation', 'narration': "The gap closed by {wr_d_say} points.", 'min_duration': 3},
+    'text': {'type': 'text', 'text': 'Japan is shrinking. The Philippines keeps growing.', 'hl': 'shrinking.', 'icon': '👶', 'pose': 'shrug', 'narration': "Japan's population is shrinking, while the Philippines keeps growing.", 'min_duration': 3.4},
+    'end_text': 'Will it pass Japan?', 'end_hl': 'pass Japan?', 'end_n': 'So, will it pass Japan? Comment your guess.'},
+    "The Philippines had {wr_r0}% of Japan's population in {wr_from}. Now? #Shorts", ['population', 'philippines', 'japan', 'demographics', 'data']))
+
+V.append(wb('a-124-poland-sweden', '2026-10-25T16:00:00Z', 'Poland', '🇵🇱', 'Sweden', '🇸🇪', 'NY.GDP.MKTP.CD', 'economy', {
+    'a3': 'POL', 'b3': 'SWE',
+    'bars_n': "Today? {wr_r1_say} percent. Poland passed Sweden.",
+    'big': {'type': 'big', 'text': 'Poland is now', 'hl': 'now', 'big': '{wr_r1}%', 'label': "of Sweden's economy", 'narration': "From two thirds of Sweden's economy to one and a half times its size.", 'min_duration': 3.2},
+    'text': {'type': 'text', 'text': 'But per person, Sweden is still richer', 'hl': 'per person,', 'icon': '🧮', 'pose': 'shrug', 'narration': "But Poland has almost four times the people, so per person Sweden is still richer.", 'min_duration': 3.6},
+    'end_text': 'Which two countries next?', 'end_hl': 'next?', 'end_n': 'Which two countries should I compare next?'},
+    "Poland's economy was {wr_r0}% of Sweden's in {wr_from}. Now? #Shorts", ['economics', 'poland', 'sweden', 'gdp', 'data']))
+
+V.append(wb('a-125-canada-russia', '2026-10-25T20:00:00Z', 'Canada', '🇨🇦', 'Russia', '🇷🇺', 'NY.GDP.MKTP.CD', 'economy', {
+    'a3': 'CAN', 'b3': 'RUS',
+    'bars_n': "Today? Just {wr_r1_say} percent. Russia is now bigger.",
+    'big': {'type': 'big', 'text': 'Canada lost', 'hl': 'lost', 'big': '-{wr_d} pts', 'label': 'against Russia since {wr_from}', 'narration': "Canada lost {wr_d_say} points.", 'min_duration': 3},
+    'text': {'type': 'text', 'text': 'Oil and exchange rates swing it', 'hl': 'Oil', 'icon': '🛢️', 'pose': 'shrug', 'narration': "Both run on energy, so oil prices and exchange rates swing this a lot.", 'min_duration': 3.4},
+    'end_text': 'Did you expect that?', 'end_hl': 'expect', 'end_n': 'Did you expect that?'},
+    "Canada's economy was {wr_r0}% of Russia's in {wr_from}. Now? #Shorts", ['economics', 'canada', 'russia', 'gdp', 'data']))
+
+V.append(wb('a-126-argentina-brazil', '2026-10-25T23:00:00Z', 'Argentina', '🇦🇷', 'Brazil', '🇧🇷', 'NY.GDP.MKTP.CD', 'economy', {
+    'a3': 'ARG', 'b3': 'BRA',
+    'bars_n': "Today? Only {wr_r1_say} percent.",
+    'big': {'type': 'big', 'text': 'Argentina fell', 'hl': 'fell', 'big': '-{wr_d} pts', 'label': 'behind Brazil since {wr_from}', 'narration': "Argentina fell {wr_d_say} points behind.", 'min_duration': 3},
+    'text': {'type': 'text', 'text': 'Currency crashes shrink dollar GDP', 'hl': 'Currency crashes', 'icon': '📉', 'pose': 'shrug', 'narration': "Repeated currency crashes made its economy smaller in dollars.", 'min_duration': 3.4},
+    'end_text': 'Which two countries next?', 'end_hl': 'next?', 'end_n': 'Which two countries should I compare next?'},
+    "Argentina's economy was {wr_r0}% of Brazil's in {wr_from}. Now? #Shorts", ['economics', 'argentina', 'brazil', 'gdp', 'data']))
+
+
+# ---------------- How It Ticks ----------------
+def ht(name, at, kind, title, tags, scenes, desc):
+    spec = {'channel': 'howitticks', 'style': 'v3', 'rate': '+6%', 'title': title,
+            'publish': {'channel': 'B', 'privacy': 'public', 'at': at}, 'compute': {'calc': {'kind': kind}},
+            'yt': {'title': title, 'description': desc + "\nNarration is AI-generated.", 'tags': tags, 'lang': 'en'}, 'scenes': scenes}
+    return save(name, spec)
+
+
+V.append(ht('b-128-sunlight', '2026-10-24T21:00:00Z', 'sunlight', "You see the Sun as it was {c_stat} ago #Shorts", ['space', 'physics', 'sun', 'light'], [
+    {'type': 'hook', 'text': "You're seeing the Sun 8 minutes late", 'hl': '8 minutes late', 'icon': '☀️', 'narration': "Every time you look at the Sun, you're looking into the past.", 'min_duration': 3},
+    {'type': 'big', 'text': 'Sunlight needs', 'hl': 'needs', 'big': '{c_stat}', 'label': 'to reach your eyes', 'narration': "Its light needs {c_say} to reach you.", 'min_duration': 3.2},
+    {'type': 'text', 'text': '150 million km at light speed', 'hl': 'light speed', 'icon': '💡', 'narration': "That's about one hundred fifty million kilometers, at almost three hundred thousand kilometers every second.", 'min_duration': 3.4},
+    {'type': 'text', 'text': 'Even the Moon: {c_moon} s old', 'hl': '{c_moon} s', 'icon': '🌕', 'pose': 'shock', 'narration': "Even the Moon you see is {c_moon_say} seconds old.", 'min_duration': 3},
+    end('So how old is starlight?', 'starlight?', "So how old is the light from the stars?"),
+], "Light from the Sun takes about 8 minutes 19 seconds to reach Earth (mean distance 1 AU). Computed from the speed of light."))
+
+V.append(ht('b-129-gpsrel', '2026-10-25T01:00:00Z', 'gpsrel', "Without Einstein, GPS would drift {c_km} km a day #Shorts", ['gps', 'relativity', 'physics', 'einstein'], [
+    {'type': 'hook', 'text': 'Without Einstein, GPS drifts {c_km} km a day', 'hl': '{c_km} km', 'icon': '🛰️', 'narration': "Without Einstein, your GPS would drift about {c_km_say} kilometers every day.", 'min_duration': 3.2},
+    {'type': 'text', 'text': 'Weaker gravity: clocks run faster', 'hl': 'faster', 'icon': '⏩', 'narration': "In orbit, gravity is weaker, so satellite clocks tick faster: plus {c_gr_say} microseconds a day.", 'min_duration': 3.2},
+    {'type': 'text', 'text': 'High speed: clocks run slower', 'hl': 'slower', 'icon': '🐢', 'pose': 'shrug', 'narration': "But they also fly fast, and that slows them by {c_sr_say}.", 'min_duration': 2.8},
+    {'type': 'big', 'text': 'Net, every day', 'hl': 'every day', 'big': '+{c_us} µs', 'label': 'ahead of clocks on the ground', 'narration': "Net result: {c_us_say} microseconds ahead every day.", 'min_duration': 3},
+    {'type': 'text', 'text': 'So engineers pre-tune the clocks', 'hl': 'pre-tune', 'icon': '🔧', 'narration': "Tiny, but light covers {c_km_say} kilometers in that time. So the clocks are tuned before launch.", 'min_duration': 3.4},
+    end('Einstein is in your pocket', 'pocket', "Einstein is literally in your pocket."),
+], "GPS satellite clocks gain about 38 microseconds per day from general and special relativity combined. Computed with Einstein's formulas."))
+
+V.append(ht('b-130-luhn', '2026-10-25T17:00:00Z', 'luhn', "Your card's last digit catches {c_single} of typos #Shorts", ['math', 'cards', 'algorithm', 'luhn'], [
+    {'type': 'hook', 'text': "Your card's last digit is a typo trap", 'hl': 'typo trap', 'icon': '💳', 'narration': "The last digit of your card number isn't random. It's a trap for typos.", 'min_duration': 3},
+    {'type': 'screen', 'text': 'Double every second digit', 'hl': 'Double', 'code': ['4539 1488 0343 6467', 'double → add → total'], 'narration': "From the right, double every second digit, then add everything up.", 'min_duration': 3.4},
+    {'type': 'text', 'text': 'Total ends in 0? Valid.', 'hl': 'Valid.', 'icon': '✅', 'pose': 'cheer', 'narration': "If the total ends in zero, the number passes.", 'min_duration': 2.6},
+    {'type': 'big', 'text': 'One-digit typos caught', 'hl': 'caught', 'big': '{c_single}', 'label': 'we tested every one', 'narration': "We tried every single-digit typo. It caught {c_single_say} percent.", 'min_duration': 3.2},
+    {'type': 'text', 'text': 'Swapped neighbors: {c_trans} caught', 'hl': '{c_trans}', 'icon': '🔁', 'narration': "And about {c_trans_say} percent of swapped neighbors.", 'min_duration': 2.8},
+    end('A typo check, not security', 'not security', "It catches typos. It does not make your card safe."),
+], "The Luhn check digit. We tested every one-digit typo and every adjacent swap on 2,000 random numbers. Test card numbers only."))
+
+V.append(ht('b-131-ping', '2026-10-25T21:00:00Z', 'ping', "Your ping can never be zero. Here's the limit #Shorts", ['internet', 'gaming', 'ping', 'physics'], [
+    {'type': 'hook', 'text': 'Your ping can never be zero', 'hl': 'never', 'icon': '🎮', 'narration': "Even with perfect internet, your ping can never be zero.", 'min_duration': 2.8},
+    {'type': 'text', 'text': 'In fiber, light is 1/3 slower', 'hl': '1/3 slower', 'icon': '💡', 'pose': 'shrug', 'narration': "Inside fiber, light moves about {c_fkms_say} kilometers per second. A third slower than in space.", 'min_duration': 3.4},
+    {'type': 'big', 'text': '1,000 km and back', 'hl': 'and back', 'big': '{c_stat}', 'label': 'minimum ping, before any routing', 'narration': "So a server one thousand kilometers away costs at least {c_ms_say} milliseconds.", 'min_duration': 3.4},
+    {'type': 'text', 'text': 'Real cables zigzag', 'hl': 'zigzag', 'icon': '🌍', 'narration': "Real cables zigzag, so real pings are higher.", 'min_duration': 2.6},
+    end('How far is your server?', 'server?', "How far away is your game server?"),
+], "Minimum round-trip time over 1,000 km of optical fiber, from the refractive index of glass (~1.47)."))
+
+V.append(ht('b-132-cube', '2026-10-26T01:00:00Z', 'cube', "This small cube has {c_q} quintillion positions #Shorts", ['math', 'puzzle', 'combinatorics', 'cube'], [
+    {'type': 'hook', 'text': 'This toy has {c_q} quintillion positions', 'hl': '{c_q} quintillion', 'icon': '🧩', 'narration': "A puzzle cube that fits in your hand can be scrambled in more ways than you'd believe.", 'min_duration': 3.2},
+    {'type': 'big', 'text': 'Exactly', 'hl': 'Exactly', 'big': '{c_q} quintillion', 'label': '{c_n} positions', 'narration': "{c_q_say} quintillion positions.", 'min_duration': 3},
+    {'type': 'text', 'text': '8 corners × 12 edges', 'hl': '× 12 edges', 'icon': '🔢', 'pose': 'shrug', 'narration': "Eight corners and twelve edges, each with positions and twists. Multiply it all.", 'min_duration': 3.2},
+    {'type': 'text', 'text': 'Any of them: 20 moves or less', 'hl': '20 moves', 'icon': '🏆', 'pose': 'cheer', 'narration': "Yet every single one can be solved in twenty moves or fewer. Proven in twenty ten.", 'min_duration': 3.4},
+    end('Can you solve one?', 'solve', "Can you solve one?"),
+], "Positions of a 3x3x3 puzzle cube: 8!·3^7·12!·2^11/2, computed. God's number (20) was proven in 2010."))
+
+V.append(ht('b-127-unix2e9', '2026-10-26T17:00:00Z', 'unix2e9', "Your computer hits 2,000,000,000 on {c_date} #Shorts", ['computers', 'unix', 'time', 'programming'], [
+    {'type': 'hook', 'text': 'Your computer is counting to 2 billion', 'hl': '2 billion', 'icon': '⏰', 'narration': "Your computer is quietly counting toward two billion.", 'min_duration': 2.8},
+    {'type': 'screen', 'text': 'Seconds since Jan 1, 1970', 'hl': 'since', 'code': ['$ date +%s', '1792848886'], 'narration': "Many computers store time as the seconds since January first, nineteen seventy.", 'min_duration': 3.4},
+    {'type': 'big', 'text': 'It hits 2,000,000,000 on', 'hl': '2,000,000,000', 'big': '{c_date}', 'label': 'at {c_time}', 'narration': "That count hits two billion on {c_date_say}.", 'min_duration': 3.4},
+    {'type': 'text', 'text': '1 billion was {c_1e9}', 'hl': '1 billion', 'icon': '📅', 'pose': 'shrug', 'narration': "One billion was {c_1e9_say}.", 'min_duration': 2.8},
+    {'type': 'text', 'text': 'The real deadline: 2038', 'hl': '2038', 'icon': '💥', 'pose': 'shock', 'narration': "Two billion fits fine. The real trouble is twenty thirty-eight, when old thirty-two bit clocks overflow.", 'min_duration': 3.6},
+    end('Where will you be in 2033?', '2033?', "Where will you be when it hits two billion?"),
+], "Unix time reaches 2,000,000,000 seconds on May 18, 2033 03:33:20 UTC. Computed."))
+
+print('\n'.join(V))

@@ -1,0 +1,70 @@
+{
+ "channel": "howitticks",
+ "style": "v3",
+ "rate": "+6%",
+ "title": "You see the Sun as it was {c_stat} ago #Shorts",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-24T21:00:00Z"
+ },
+ "compute": {
+  "calc": {
+   "kind": "sunlight"
+  }
+ },
+ "yt": {
+  "title": "You see the Sun as it was {c_stat} ago #Shorts",
+  "description": "Light from the Sun takes about 8 minutes 19 seconds to reach Earth (mean distance 1 AU). Computed from the speed of light.\nNarration is AI-generated.",
+  "tags": [
+   "space",
+   "physics",
+   "sun",
+   "light"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "You're seeing the Sun 8 minutes late",
+   "hl": "8 minutes late",
+   "icon": "☀️",
+   "narration": "Every time you look at the Sun, you're looking into the past.",
+   "min_duration": 3
+  },
+  {
+   "type": "big",
+   "text": "Sunlight needs",
+   "hl": "needs",
+   "big": "{c_stat}",
+   "label": "to reach your eyes",
+   "narration": "Its light needs {c_say} to reach you.",
+   "min_duration": 3.2
+  },
+  {
+   "type": "text",
+   "text": "150 million km at light speed",
+   "hl": "light speed",
+   "icon": "💡",
+   "narration": "That's about one hundred fifty million kilometers, at almost three hundred thousand kilometers every second.",
+   "min_duration": 3.4
+  },
+  {
+   "type": "text",
+   "text": "Even the Moon: {c_moon} s old",
+   "hl": "{c_moon} s",
+   "icon": "🌕",
+   "pose": "shock",
+   "narration": "Even the Moon you see is {c_moon_say} seconds old.",
+   "min_duration": 3
+  },
+  {
+   "type": "end",
+   "text": "So how old is starlight?",
+   "hl": "starlight?",
+   "narration": "So how old is the light from the stars?",
+   "min_duration": 2.2
+  }
+ ]
+}

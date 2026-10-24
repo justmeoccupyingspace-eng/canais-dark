@@ -1,0 +1,90 @@
+{
+ "channel": "chartbound",
+ "style": "v3",
+ "rate": "+6%",
+ "title": "The Philippines had {wr_r0}% of Japan's population in {wr_from}. Now? #Shorts",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-24T23:00:00Z"
+ },
+ "compute": {
+  "wbratio": {
+   "ind": "SP.POP.TOTL",
+   "a": "PHL",
+   "b": "JPN",
+   "from": 2000
+  }
+ },
+ "yt": {
+  "title": "The Philippines had {wr_r0}% of Japan's population in {wr_from}. Now? #Shorts",
+  "description": "The Philippines as a share of Japan, population, {wr_from} vs {wr_to}. Source: World Bank (SP.POP.TOTL). Narration is AI-generated.\n#economics #data #thephilippines",
+  "tags": [
+   "population",
+   "philippines",
+   "japan",
+   "demographics",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "In {wr_from}",
+   "text": "The Philippines had {wr_r0}% of Japan's people",
+   "hl": "{wr_r0}%",
+   "vs": [
+    {
+     "flag": "🇵🇭",
+     "name": "Philippines"
+    },
+    {
+     "flag": "🇯🇵",
+     "name": "Japan"
+    }
+   ],
+   "narration": "In {wr_from}, The Philippines had only {wr_r0_say} percent as many people as Japan.",
+   "min_duration": 3.2
+  },
+  {
+   "type": "bars",
+   "kicker": "The Philippines as % of Japan",
+   "text": "And today?",
+   "hl": "today?",
+   "en": true,
+   "suffix": "%",
+   "a_from": "wr_r0",
+   "b_from": "wr_r1",
+   "l1": "{wr_from}",
+   "l2": "{wr_to}",
+   "narration": "Today? {wr_r1_say} percent. Almost the same size.",
+   "min_duration": 4.2
+  },
+  {
+   "type": "big",
+   "text": "The gap closed by",
+   "hl": "closed",
+   "big": "+{wr_d} pts",
+   "label": "in one generation",
+   "narration": "The gap closed by {wr_d_say} points.",
+   "min_duration": 3
+  },
+  {
+   "type": "text",
+   "text": "Japan is shrinking. The Philippines keeps growing.",
+   "hl": "shrinking.",
+   "icon": "👶",
+   "pose": "shrug",
+   "narration": "Japan's population is shrinking, while the Philippines keeps growing.",
+   "min_duration": 3.4
+  },
+  {
+   "type": "end",
+   "text": "Will it pass Japan?",
+   "hl": "pass Japan?",
+   "narration": "So, will it pass Japan? Comment your guess.",
+   "min_duration": 2.2
+  }
+ ]
+}

@@ -11,8 +11,9 @@ VOICES = {
     "valeopreco": ("pf_dora", "pt-br", 1.0),
     "loja": ("pf_dora", "pt-br", 1.0),
     "lojam": ("pm_alex", "pt-br", 1.0),
+    "gabarito": ("pf_dora", "pt-br", 1.0),
 }
-EDGE = {"loja": "pt-BR-FranciscaNeural", "lojam": "pt-BR-AntonioNeural", "valeopreco": "pt-BR-FranciscaNeural", "howitticks": "en-US-AndrewMultilingualNeural", "chartbound": "en-US-AvaMultilingualNeural"}  # voz neural natural; se a rede falhar, cai no Kokoro
+EDGE = {"gabarito": "pt-BR-FranciscaNeural", "loja": "pt-BR-FranciscaNeural", "lojam": "pt-BR-AntonioNeural", "valeopreco": "pt-BR-FranciscaNeural", "howitticks": "en-US-AndrewMultilingualNeural", "chartbound": "en-US-AvaMultilingualNeural"}  # voz neural natural; se a rede falhar, cai no Kokoro
 GOOGLE = {"valeopreco": ("pt-BR", "pt-BR-Chirp3-HD-Charon"), "loja": ("pt-BR", "pt-BR-Chirp3-HD-Leda"), "lojam": ("pt-BR", "pt-BR-Chirp3-HD-Charon")}  # exige GCP_TTS_KEY; sem a chave, cai no edge/Kokoro
 EDGE_RATE = os.environ.get("EDGE_RATE", "+0%")
 MODEL = os.environ.get("KOKORO_DIR", ".cache/kokoro")
@@ -197,7 +198,9 @@ def envelope(x, sr, fps=30):
 
 
 def main(src, dst):
+    global EDGE_RATE
     spec = json.load(open(src, encoding="utf-8"))
+    EDGE_RATE = spec.get("rate", EDGE_RATE)
     voice, lang, speed = VOICES[spec["channel"]]
     k = Kokoro(f"{MODEL}/kokoro-v1.0.onnx", f"{MODEL}/voices-v1.0.bin")
     name = os.path.splitext(os.path.basename(src))[0]
