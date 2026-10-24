@@ -146,10 +146,10 @@ spec = {'channel': 'gabarito', 'style': 'v3', 'rate': '+4%', 'title': 'Inscriç�
         'publish': {'channel': 'C', 'privacy': 'public'},
         'tiktok': f"Inscrições do Escrevente TJSP abertas até 10/12: taxa de R$ 81 e prova em 14/03/2027. Vagas no interior e no litoral de SP. Amostra grátis da apostila no WhatsApp da bio.\n{TAGS} #edital #inscricoesabertas",
         'scenes': [
-            {'type': 'hook', 'kicker': 'Começou hoje', 'text': 'Inscrições abertas: Escrevente TJSP', 'hl': 'abertas:', 'icon': '📝', 'narration': 'Abriram hoje as inscrições do concurso de Escrevente do TJ de São Paulo.', 'min_duration': 3},
-            {'type': 'big', 'text': 'Salário inicial', 'hl': 'Salário', 'big': 'R$ 6.782', 'label': 'com ensino médio, 40 h semanais', 'narration': 'Salário inicial de seis mil setecentos e oitenta e dois reais, com ensino médio.', 'min_duration': 3.2},
+            {'type': 'hook', 'kicker': 'Começou hoje', 'text': 'Inscrições abertas: Escrevente TJSP', 'hl': 'abertas:', 'icon': '📝', 'narration': 'Abriram as inscrições do Escrevente do TJ de São Paulo!', 'min_duration': 2.6},
+            {'type': 'big', 'text': 'Salário inicial', 'hl': 'Salário', 'big': 'R$ 6.782', 'label': 'com ensino médio, 40 h semanais', 'narration': 'Salário inicial de seis mil setecentos e oitenta e dois reais.', 'min_duration': 3.0},
             {'type': 'steps', 'text': 'Anota as datas', 'hl': 'datas', 'rows': [{'t': 'Inscrições: até 10/12', 'icon': '📝', 'cue': 'inscrições'}, {'t': 'Taxa: R$ 81', 'icon': '💳', 'cue': 'taxa'}, {'t': 'Site da VUNESP', 'icon': '🌐', 'cue': 'site'}], 'result': False, 'narration': 'As inscrições vão até dez de dezembro. A taxa é de oitenta e um reais, no site da VUNESP.', 'min_duration': 3.2},
-            {'type': 'text', 'text': 'Vagas no interior e no litoral de SP', 'hl': 'interior e no litoral', 'icon': '📍', 'pose': 'shrug', 'narration': 'As vagas são do interior e do litoral: Campinas, Santos, Sorocaba, Ribeirão Preto e mais. A capital ficou de fora.', 'min_duration': 3.2},
+            {'type': 'text', 'text': 'Vagas no interior e no litoral de SP', 'hl': 'interior e no litoral', 'icon': '📍', 'pose': 'shrug', 'narration': 'As vagas são do interior e do litoral. A capital ficou de fora.', 'min_duration': 3.0},
             {'type': 'big', 'text': 'A prova é em', 'hl': 'prova', 'big': '14/03', 'label': 'faltam 137 dias', 'narration': 'A prova é em catorze de março. Faltam cento e trinta e sete dias.', 'min_duration': 3},
             {'type': 'end', 'text': 'Siga: 1 questão do TJSP por dia', 'hl': '1 questão', 'brand': 'GABARITO DO DIA', 'narration': 'Segue: uma questão por dia até a prova.', 'min_duration': 2.0},
         ]}

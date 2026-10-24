@@ -15,8 +15,8 @@
    "text": "Inscrições abertas: Escrevente TJSP",
    "hl": "abertas:",
    "icon": "📝",
-   "narration": "Abriram hoje as inscrições do concurso de Escrevente do TJ de São Paulo.",
-   "min_duration": 3
+   "narration": "Abriram as inscrições do Escrevente do TJ de São Paulo!",
+   "min_duration": 2.6
   },
   {
    "type": "big",
@@ -24,8 +24,8 @@
    "hl": "Salário",
    "big": "R$ 6.782",
    "label": "com ensino médio, 40 h semanais",
-   "narration": "Salário inicial de seis mil setecentos e oitenta e dois reais, com ensino médio.",
-   "min_duration": 3.2
+   "narration": "Salário inicial de seis mil setecentos e oitenta e dois reais.",
+   "min_duration": 3.0
   },
   {
    "type": "steps",
@@ -58,8 +58,8 @@
    "hl": "interior e no litoral",
    "icon": "📍",
    "pose": "shrug",
-   "narration": "As vagas são do interior e do litoral: Campinas, Santos, Sorocaba, Ribeirão Preto e mais. A capital ficou de fora.",
-   "min_duration": 3.2
+   "narration": "As vagas são do interior e do litoral. A capital ficou de fora.",
+   "min_duration": 3.0
   },
   {
    "type": "big",
