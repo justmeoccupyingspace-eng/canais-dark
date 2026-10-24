@@ -1,0 +1,102 @@
+{
+ "channel": "chartbound",
+ "style": "v3",
+ "rate": "+9%",
+ "title": "Vietnam's economy was {wr_r0}% of The Philippines's in {wr_from}. Now? #Shorts",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-27T23:00:00Z"
+ },
+ "compute": {
+  "wbratio": {
+   "ind": "NY.GDP.MKTP.CD",
+   "a": "VNM",
+   "b": "PHL",
+   "from": 2000,
+   "an": "Vietnam",
+   "bn": "The Philippines"
+  }
+ },
+ "yt": {
+  "title": "Vietnam's economy was 37% of The Philippines's in 2000. Now? #Shorts",
+  "description": "Vietnam as a share of The Philippines, economy, 2000 vs 2025. Source: World Bank (NY.GDP.MKTP.CD).\nNarration is AI-generated.",
+  "tags": [
+   "economics",
+   "vietnam",
+   "the philippines",
+   "data",
+   "worldbank"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "In 2000",
+   "text": "Vietnam's economy was 37% of The Philippines's",
+   "hl": "37%",
+   "vs": [
+    {
+     "flag": "🇻🇳",
+     "name": "Vietnam"
+    },
+    {
+     "flag": "🇵🇭",
+     "name": "The Philippines"
+    }
+   ],
+   "narration": "In 2000, Vietnam was thirty-seven percent of The Philippines.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "bars",
+   "style": "coins",
+   "kicker": "Vietnam as % of The Philippines",
+   "text": "Now watch",
+   "hl": "watch",
+   "suffix": "%",
+   "vals_from": "wr_v",
+   "labels_from": "wr_y",
+   "narration": "Then Vietnam took off. Today: one hundred and six percent.",
+   "min_duration": 4.4,
+   "vals": [
+    37,
+    55,
+    81,
+    106
+   ],
+   "labels": [
+    "2000",
+    "2008",
+    "2016",
+    "2025"
+   ]
+  },
+  {
+   "type": "big",
+   "text": "Vietnam's economy grew",
+   "hl": "grew",
+   "big": "69 pts",
+   "label": "on the Philippines since 2000",
+   "narration": "Vietnam gained sixty-nine points.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "text",
+   "text": "Factories moved in",
+   "hl": "Factories",
+   "icon": "🏭",
+   "narration": "Electronics factories moved in. Exports exploded.",
+   "min_duration": 3.2,
+   "pose": "shrug"
+  },
+  {
+   "type": "end",
+   "text": "Which pair next?",
+   "hl": "next?",
+   "narration": "Which two countries should I compare next?",
+   "min_duration": 2.2
+  }
+ ]
+}

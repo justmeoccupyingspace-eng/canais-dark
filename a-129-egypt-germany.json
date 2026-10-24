@@ -1,0 +1,101 @@
+{
+ "channel": "chartbound",
+ "style": "v3",
+ "rate": "+9%",
+ "title": "Egypt had {wr_r0}% of Germany's population in {wr_from}. Now? #Shorts",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-28T23:00:00Z"
+ },
+ "compute": {
+  "wbratio": {
+   "ind": "SP.POP.TOTL",
+   "a": "EGY",
+   "b": "DEU",
+   "from": 2000,
+   "an": "Egypt",
+   "bn": "Germany"
+  }
+ },
+ "yt": {
+  "title": "Egypt had 89% of Germany's population in 2000. Now? #Shorts",
+  "description": "Egypt as a share of Germany, population, 2000 vs 2025. Source: World Bank (SP.POP.TOTL).\nNarration is AI-generated.",
+  "tags": [
+   "population",
+   "egypt",
+   "germany",
+   "data",
+   "worldbank"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "In 2000",
+   "text": "Egypt had 89% of Germany's people",
+   "hl": "89%",
+   "vs": [
+    {
+     "flag": "🇪🇬",
+     "name": "Egypt"
+    },
+    {
+     "flag": "🇩🇪",
+     "name": "Germany"
+    }
+   ],
+   "narration": "In 2000, Egypt had eighty-nine percent of Germany's people.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "bars",
+   "kicker": "Egypt as % of Germany",
+   "text": "Now watch",
+   "hl": "watch",
+   "suffix": "%",
+   "vals_from": "wr_v",
+   "labels_from": "wr_y",
+   "narration": "Then Egypt kept growing. Today: one hundred and forty-two percent.",
+   "min_duration": 4.4,
+   "vals": [
+    89,
+    105,
+    123,
+    142
+   ],
+   "labels": [
+    "2000",
+    "2008",
+    "2016",
+    "2025"
+   ]
+  },
+  {
+   "type": "big",
+   "text": "Egypt today",
+   "hl": "today",
+   "big": "118M",
+   "label": "people, vs 83M in Germany",
+   "narration": "That's one hundred and eighteen million people versus eighty-three million.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "text",
+   "text": "Almost all live along the Nile",
+   "hl": "the Nile",
+   "icon": "🌊",
+   "narration": "And almost all of them live along the Nile.",
+   "min_duration": 3.2,
+   "pose": "shrug"
+  },
+  {
+   "type": "end",
+   "text": "Which pair next?",
+   "hl": "next?",
+   "narration": "Which two countries should I compare next?",
+   "min_duration": 2.2
+  }
+ ]
+}

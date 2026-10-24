@@ -1,0 +1,102 @@
+{
+ "channel": "chartbound",
+ "style": "v3",
+ "rate": "+9%",
+ "title": "Indonesia's economy was {wr_r0}% of Brazil's in {wr_from}. Now? #Shorts",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-30T23:00:00Z"
+ },
+ "compute": {
+  "wbratio": {
+   "ind": "NY.GDP.MKTP.CD",
+   "a": "IDN",
+   "b": "BRA",
+   "from": 2000,
+   "an": "Indonesia",
+   "bn": "Brazil"
+  }
+ },
+ "yt": {
+  "title": "Indonesia's economy was 25% of Brazil's in 2000. Now? #Shorts",
+  "description": "Indonesia as a share of Brazil, economy, 2000 vs 2025. Source: World Bank (NY.GDP.MKTP.CD).\nNarration is AI-generated.",
+  "tags": [
+   "economics",
+   "indonesia",
+   "brazil",
+   "data",
+   "worldbank"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "In 2000",
+   "text": "Indonesia's economy was 25% of Brazil's",
+   "hl": "25%",
+   "vs": [
+    {
+     "flag": "🇮🇩",
+     "name": "Indonesia"
+    },
+    {
+     "flag": "🇧🇷",
+     "name": "Brazil"
+    }
+   ],
+   "narration": "In 2000, Indonesia was twenty-five percent of Brazil.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "bars",
+   "style": "coins",
+   "kicker": "Indonesia as % of Brazil",
+   "text": "Now watch",
+   "hl": "watch",
+   "suffix": "%",
+   "vals_from": "wr_v",
+   "labels_from": "wr_y",
+   "narration": "Then Indonesia kept closing in. Today: sixty-three percent.",
+   "min_duration": 4.4,
+   "vals": [
+    25,
+    30,
+    52,
+    63
+   ],
+   "labels": [
+    "2000",
+    "2008",
+    "2016",
+    "2025"
+   ]
+  },
+  {
+   "type": "big",
+   "text": "Indonesia gained",
+   "hl": "gained",
+   "big": "+38 pts",
+   "label": "on Brazil since 2000",
+   "narration": "Indonesia gained thirty-eight points.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "text",
+   "text": "280 million people, 17,000 islands",
+   "hl": "17,000 islands",
+   "icon": "🏝️",
+   "narration": "Two hundred eighty million people, across seventeen thousand islands.",
+   "min_duration": 3.2,
+   "pose": "shrug"
+  },
+  {
+   "type": "end",
+   "text": "Which pair next?",
+   "hl": "next?",
+   "narration": "Which two countries should I compare next?",
+   "min_duration": 2.2
+  }
+ ]
+}

@@ -1,0 +1,110 @@
+{
+ "channel": "chartbound",
+ "style": "v3",
+ "rate": "+9%",
+ "title": "Which has more people: DR Congo or Germany? #Shorts",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-26T16:00:00Z"
+ },
+ "compute": {
+  "wbratio": {
+   "ind": "SP.POP.TOTL",
+   "a": "COD",
+   "b": "DEU",
+   "from": 2000,
+   "an": "DR Congo",
+   "bn": "Germany"
+  }
+ },
+ "yt": {
+  "title": "Which has more people: DR Congo or Germany? #Shorts",
+  "description": "DR Congo vs Germany, population, 2000 to 2025. Source: World Bank (SP.POP.TOTL).\nNarration is AI-generated.",
+  "tags": [
+   "quiz",
+   "population",
+   "dr congo",
+   "germany",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Quick quiz",
+   "text": "More people: DR Congo or Germany?",
+   "hl": "More people:",
+   "vs": [
+    {
+     "flag": "🇨🇩",
+     "name": "DR Congo"
+    },
+    {
+     "flag": "🇩🇪",
+     "name": "Germany"
+    }
+   ],
+   "narration": "Which has more people: DR Congo or Germany? Most people get this wrong.",
+   "min_duration": 2.6
+  },
+  {
+   "type": "quiz",
+   "label": "GUESS",
+   "q": "Which has more people: DR Congo or Germany?",
+   "alts": [
+    "🇨🇩 DR Congo",
+    "🇩🇪 Germany"
+   ],
+   "correct_from": "wr_big",
+   "narration": "Lock in your answer.",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 64,
+   "asize": 60,
+   "cta": "Comment your guess",
+   "correct": 0
+  },
+  {
+   "type": "bars",
+   "kicker": "DR Congo as % of Germany",
+   "text": "It's DR Congo",
+   "hl": "DR Congo",
+   "suffix": "%",
+   "vals_from": "wr_v",
+   "labels_from": "wr_y",
+   "narration": "It's DR Congo. one hundred and thirteen million people versus eighty-three million.",
+   "min_duration": 4.4,
+   "vals": [
+    61,
+    78,
+    102,
+    135
+   ],
+   "labels": [
+    "2000",
+    "2008",
+    "2016",
+    "2025"
+   ]
+  },
+  {
+   "type": "text",
+   "text": "It doubled since 2000",
+   "hl": "doubled",
+   "icon": "👶",
+   "narration": "DR Congo has doubled since 2000. Germany barely moved.",
+   "min_duration": 3.2,
+   "pose": "shock"
+  },
+  {
+   "type": "end",
+   "text": "Did you get it right?",
+   "hl": "right?",
+   "narration": "Did you get it right? Comment below.",
+   "min_duration": 2.2
+  }
+ ]
+}

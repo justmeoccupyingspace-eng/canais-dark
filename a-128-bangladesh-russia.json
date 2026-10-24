@@ -1,0 +1,101 @@
+{
+ "channel": "chartbound",
+ "style": "v3",
+ "rate": "+9%",
+ "title": "Bangladesh had {wr_r0}% of Russia's population in {wr_from}. Now? #Shorts",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-26T23:00:00Z"
+ },
+ "compute": {
+  "wbratio": {
+   "ind": "SP.POP.TOTL",
+   "a": "BGD",
+   "b": "RUS",
+   "from": 2000,
+   "an": "Bangladesh",
+   "bn": "Russia"
+  }
+ },
+ "yt": {
+  "title": "Bangladesh had 92% of Russia's population in 2000. Now? #Shorts",
+  "description": "Bangladesh as a share of Russia, population, 2000 vs 2025. Source: World Bank (SP.POP.TOTL).\nNarration is AI-generated.",
+  "tags": [
+   "population",
+   "bangladesh",
+   "russia",
+   "data",
+   "worldbank"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "In 2000",
+   "text": "Bangladesh had 92% of Russia's people",
+   "hl": "92%",
+   "vs": [
+    {
+     "flag": "🇧🇩",
+     "name": "Bangladesh"
+    },
+    {
+     "flag": "🇷🇺",
+     "name": "Russia"
+    }
+   ],
+   "narration": "In 2000, Bangladesh had ninety-two percent of Russia's people.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "bars",
+   "kicker": "Bangladesh as % of Russia",
+   "text": "Now watch",
+   "hl": "watch",
+   "suffix": "%",
+   "vals_from": "wr_v",
+   "labels_from": "wr_y",
+   "narration": "Then Bangladesh kept growing while Russia shrank. Today: one hundred and twenty-two percent.",
+   "min_duration": 4.4,
+   "vals": [
+    92,
+    105,
+    111,
+    122
+   ],
+   "labels": [
+    "2000",
+    "2008",
+    "2016",
+    "2025"
+   ]
+  },
+  {
+   "type": "big",
+   "text": "Bangladesh today",
+   "hl": "today",
+   "big": "176M",
+   "label": "people, vs 144M in Russia",
+   "narration": "That's one hundred and seventy-six million people, in a country about the size of Iowa.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "text",
+   "text": "Russia is shrinking",
+   "hl": "shrinking",
+   "icon": "📉",
+   "narration": "Russia has fewer people than in 2000.",
+   "min_duration": 3.2,
+   "pose": "shrug"
+  },
+  {
+   "type": "end",
+   "text": "Which pair next?",
+   "hl": "next?",
+   "narration": "Which two countries should I compare next?",
+   "min_duration": 2.2
+  }
+ ]
+}

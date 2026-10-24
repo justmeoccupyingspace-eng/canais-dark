@@ -1,0 +1,1 @@
+data ok {'ws_v': [46.0, 54.0, 63.0, 72.0], 'ws_y': ['1960', '1980', '2000', '2024'], 'ws_y0': 1960, 'ws_y1': 2024, 'ws_v0': '46', 'ws_v1': '72', 'ws_v0_say': 'forty-six', 'ws_v1_say': 'seventy-two', 'ws_x': '1.6', 'ws_x_say': 'one point six', 'ws_d': '26', 'ws_d_say': 'twenty-six', 'ws_max_y': 2024, 'ws_min_y': 1960}

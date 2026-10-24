@@ -1,0 +1,98 @@
+{
+ "channel": "chartbound",
+ "style": "v3",
+ "rate": "+9%",
+ "title": "India's life expectancy: {ws_v0} to {ws_v1} years #Shorts",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-11-01T23:00:00Z"
+ },
+ "compute": {
+  "wbseries": {
+   "ind": "SP.DYN.LE00.IN",
+   "c": "IND",
+   "from": 1960,
+   "years": [
+    1960,
+    1980,
+    2000,
+    "last"
+   ],
+   "dec": 0,
+   "scale": 1
+  }
+ },
+ "yt": {
+  "title": "India's life expectancy: 46 to 72 years #Shorts",
+  "description": "Life expectancy at birth, India. Source: World Bank (SP.DYN.LE00.IN).\nNarration is AI-generated.",
+  "tags": [
+   "health",
+   "india",
+   "lifeexpectancy",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "India",
+   "text": "In 1960, Indians lived 46 years",
+   "hl": "46 years",
+   "icon": "🇮🇳",
+   "narration": "In 1960, the average Indian lived just forty-six years.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "bars",
+   "kicker": "Life expectancy, years",
+   "text": "Now watch",
+   "hl": "watch",
+   "prefix": "",
+   "suffix": " yrs",
+   "dec": 0,
+   "vals_from": "ws_v",
+   "labels_from": "ws_y",
+   "narration": "Today it's seventy-two.",
+   "min_duration": 4.6,
+   "vals": [
+    46.0,
+    54.0,
+    63.0,
+    72.0
+   ],
+   "labels": [
+    "1960",
+    "1980",
+    "2000",
+    "2024"
+   ]
+  },
+  {
+   "type": "big",
+   "text": "That is",
+   "hl": "That is",
+   "big": "+26",
+   "label": "years of life, on average",
+   "narration": "That's twenty-six extra years of life.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "text",
+   "text": "Vaccines, clean water, fewer famines",
+   "hl": "Vaccines,",
+   "icon": "💉",
+   "narration": "Vaccines, clean water and the end of big famines did most of it.",
+   "min_duration": 3.2,
+   "pose": "shrug"
+  },
+  {
+   "type": "end",
+   "text": "Which country next?",
+   "hl": "next?",
+   "narration": "Which country should I chart next?",
+   "min_duration": 2.2
+  }
+ ]
+}
