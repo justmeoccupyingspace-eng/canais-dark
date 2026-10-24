@@ -45,7 +45,7 @@ def wb(name, at, a, fa, b, fb, ind, metric, insight, title, tags):
 V = []
 V.append(wb('a-118-spain-italy', '2026-10-24T20:00:00Z', 'Spain', '🇪🇸', 'Italy', '🇮🇹', 'NY.GDP.MKTP.CD', 'economy', {
     'a3': 'ESP', 'b3': 'ITA',
-    'bars_n': "Then Spain kept closing in. Today it's {wr_r1_say} percent.",
+    'bars_n': "Then Spain closed in. Today it's {wr_r1_say} percent.",
     'big': {'type': 'big', 'text': 'Spain gained', 'hl': 'gained', 'big': '+{wr_d} pts', 'label': 'on Italy since {wr_from}', 'narration': "Spain gained {wr_d_say} points on Italy.", 'min_duration': 3},
     'text': {'type': 'text', 'text': 'Same euro. Faster growth.', 'hl': 'Faster growth.', 'icon': '📈', 'pose': 'shrug', 'narration': "And they share the euro, so this is not a currency trick. Spain simply grew faster.", 'min_duration': 3.4},
     'end_text': 'Which two countries next?', 'end_hl': 'next?', 'end_n': 'Which two countries should I compare next?'},
@@ -61,9 +61,9 @@ V.append(wb('a-123-philippines-japan', '2026-10-24T23:00:00Z', 'The Philippines'
 
 V.append(wb('a-124-poland-sweden', '2026-10-25T16:00:00Z', 'Poland', '🇵🇱', 'Sweden', '🇸🇪', 'NY.GDP.MKTP.CD', 'economy', {
     'a3': 'POL', 'b3': 'SWE',
-    'bars_n': "Then Poland kept climbing, all the way to {wr_r1_say} percent.",
-    'big': {'type': 'big', 'text': 'Poland passed Sweden in', 'hl': 'passed', 'big': '{wr_cross}', 'label': 'and never looked back', 'narration': "It passed Sweden in {wr_cross}.", 'min_duration': 2.8},
-    'text': {'type': 'text', 'text': 'But per person, Sweden is still richer', 'hl': 'per person,', 'icon': '🧮', 'pose': 'shrug', 'narration': "But Poland has almost four times the people, so per person Sweden is still richer.", 'min_duration': 3.6},
+    'bars_n': "Then Poland climbed, all the way to {wr_r1_say} percent.",
+    'big': {'type': 'big', 'text': 'Poland first passed Sweden in', 'hl': 'passed', 'big': '{wr_cross}', 'label': 'for the first time', 'narration': "It first passed Sweden in {wr_cross}.", 'min_duration': 2.8},
+    'text': {'type': 'text', 'text': 'But per person, Sweden is still richer', 'hl': 'per person,', 'icon': '🧮', 'pose': 'shrug', 'narration': "But Poland has three and a half times the people, so per person Sweden is still richer.", 'min_duration': 3.6},
     'end_text': 'Which two countries next?', 'end_hl': 'next?', 'end_n': 'Which two countries should I compare next?'},
     "Poland's economy was {wr_r0}% of Sweden's in {wr_from}. Now? #Shorts", ['economics', 'poland', 'sweden', 'gdp', 'data']))
 
@@ -77,7 +77,7 @@ V.append(wb('a-125-canada-russia', '2026-10-25T20:00:00Z', 'Canada', '🇨🇦',
 
 V.append(wb('a-126-argentina-brazil', '2026-10-25T23:00:00Z', 'Argentina', '🇦🇷', 'Brazil', '🇧🇷', 'NY.GDP.MKTP.CD', 'economy', {
     'a3': 'ARG', 'b3': 'BRA',
-    'bars_n': "Then it kept slipping. Today, only {wr_r1_say} percent.",
+    'bars_n': "Then it slipped. Today, only {wr_r1_say} percent.",
     'big': {'type': 'big', 'text': 'Argentina fell', 'hl': 'fell', 'big': '-{wr_d} pts', 'label': 'behind Brazil since {wr_from}', 'narration': "Argentina fell {wr_d_say} points behind.", 'min_duration': 3},
     'text': {'type': 'text', 'text': 'Currency crashes shrink dollar GDP', 'hl': 'Currency crashes', 'icon': '📉', 'pose': 'shrug', 'narration': "Repeated currency crashes made its economy smaller in dollars.", 'min_duration': 3.4},
     'end_text': 'Which two countries next?', 'end_hl': 'next?', 'end_n': 'Which two countries should I compare next?'},

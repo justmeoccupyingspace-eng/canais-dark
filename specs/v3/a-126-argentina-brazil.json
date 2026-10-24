@@ -57,7 +57,7 @@
    "suffix": "%",
    "vals_from": "wr_v",
    "labels_from": "wr_y",
-   "narration": "Then it kept slipping. Today, only {wr_r1_say} percent.",
+   "narration": "Then it slipped. Today, only {wr_r1_say} percent.",
    "min_duration": 4.4
   },
   {
