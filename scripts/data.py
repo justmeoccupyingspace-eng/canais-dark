@@ -16,14 +16,22 @@ def fred_annual(series, y0, y1):
 
 def worldbank_annual(ind, country, y0, y1):
     url = f"https://api.worldbank.org/v2/country/{country}/indicator/{ind}?format=json&per_page=200&date={y0}:{y1}"
-    for attempt in range(3):
+    import time
+    data = None
+    for attempt in range(5):
         try:
             data = json.load(urllib.request.urlopen(url, timeout=30))
-            break
+            if isinstance(data, list) and len(data) > 1:
+                break
         except Exception as e:
-            if attempt == 2:
+            if attempt == 4:
                 raise
-    rows = data[1] or []
+        time.sleep(3 + attempt * 3)
+        if attempt == 2:
+            url = url.replace(f"date={y0}:{y1}", f"date={y0}:2026")
+    rows = (data[1] if isinstance(data, list) and len(data) > 1 else None) or []
+    if not rows:
+        raise RuntimeError(f"World Bank sem dados: {ind} {country} -> {str(data)[:200]}")
     return {int(r["date"]): float(r["value"]) for r in sorted(rows, key=lambda r: r["date"]) if r["value"] is not None}
 
 def ipca_series(first):

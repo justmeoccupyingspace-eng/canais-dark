@@ -2,7 +2,7 @@
  "channel": "chartbound",
  "style": "v3",
  "rate": "+9%",
- "title": "Vietnam's economy was {wr_r0}% of The Philippines's in {wr_from}. Now? #Shorts",
+ "title": "Vietnam's economy was {wr_r0}% of the Philippines' in {wr_from}. Now? #Shorts",
  "publish": {
   "channel": "A",
   "privacy": "public",
@@ -19,7 +19,7 @@
   }
  },
  "yt": {
-  "title": "Vietnam's economy was {wr_r0}% of The Philippines's in {wr_from}. Now? #Shorts",
+  "title": "Vietnam's economy was {wr_r0}% of the Philippines' in {wr_from}. Now? #Shorts",
   "description": "Vietnam as a share of The Philippines, economy, {wr_from} vs {wr_to}. Source: World Bank (NY.GDP.MKTP.CD).\nNarration is AI-generated.",
   "tags": [
    "economics",
@@ -34,7 +34,7 @@
   {
    "type": "hook",
    "kicker": "In {wr_from}",
-   "text": "Vietnam's economy was {wr_r0}% of The Philippines's",
+   "text": "Vietnam's economy was {wr_r0}% of the Philippines'",
    "hl": "{wr_r0}%",
    "vs": [
     {
@@ -46,13 +46,13 @@
      "name": "The Philippines"
     }
    ],
-   "narration": "In {wr_from}, Vietnam was {wr_r0_say} percent of The Philippines.",
+   "narration": "In {wr_from}, Vietnam was {wr_r0_say} percent of the Philippines.",
    "min_duration": 3.0
   },
   {
    "type": "bars",
    "style": "coins",
-   "kicker": "Vietnam as % of The Philippines",
+   "kicker": "Vietnam as % of the Philippines",
    "text": "Now watch",
    "hl": "watch",
    "suffix": "%",

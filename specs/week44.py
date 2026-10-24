@@ -31,15 +31,17 @@ def B(name, at, kind, title, tags, desc, scenes):
 def ratio(name, at, a, fa, b, fb, a3, b3, gdp, bars_n, big, text, end_t, end_hl, end_n, short_a=None):
     ind = 'NY.GDP.MKTP.CD' if gdp else 'SP.POP.TOTL'
     sa = short_a or a
-    hook_text = f"{sa}'s economy was {{wr_r0}}% of {b}'s" if gdp else f"{sa} had {{wr_r0}}% of {b}'s people"
-    hook_n = f"In {{wr_from}}, {a.replace('The ', 'the ')} was {{wr_r0_say}} percent of {b}." if gdp else f"In {{wr_from}}, {a.replace('The ', 'the ')} had {{wr_r0_say}} percent of {b}'s people."
-    title = (f"{sa}'s economy was {{wr_r0}}% of {b}'s in {{wr_from}}. Now? #Shorts" if gdp else f"{sa} had {{wr_r0}}% of {b}'s population in {{wr_from}}. Now? #Shorts")
+    bl = b.replace('The ', 'the ')
+    bp = bl + ("'" if bl.endswith('s') else "'s")
+    hook_text = f"{sa}'s economy was {{wr_r0}}% of {bp}" if gdp else f"{sa} had {{wr_r0}}% of {bp} people"
+    hook_n = f"In {{wr_from}}, {a.replace('The ', 'the ')} was {{wr_r0_say}} percent of {bl}." if gdp else f"In {{wr_from}}, {a.replace('The ', 'the ')} had {{wr_r0_say}} percent of {bp} people."
+    title = (f"{sa}'s economy was {{wr_r0}}% of {bp} in {{wr_from}}. Now? #Shorts" if gdp else f"{sa} had {{wr_r0}}% of {bp} population in {{wr_from}}. Now? #Shorts")
     what = 'economy' if gdp else 'population'
     A(name, at, title, ['economics' if gdp else 'population', a.lower().replace('the ', ''), b.lower(), 'data', 'worldbank'],
       f"{a} as a share of {b}, {what}, {{wr_from}} vs {{wr_to}}. Source: World Bank ({ind}).",
       {'wbratio': {'ind': ind, 'a': a3, 'b': b3, 'from': 2000, 'an': sa, 'bn': b}},
       [{'type': 'hook', 'kicker': 'In {wr_from}', 'text': hook_text, 'hl': '{wr_r0}%', 'vs': [{'flag': fa, 'name': sa}, {'flag': fb, 'name': b}], 'narration': hook_n, 'min_duration': 3.0},
-       {'type': 'bars', **({'style': 'coins'} if gdp else {}), 'kicker': f"{sa} as % of {b}", 'text': 'Now watch', 'hl': 'watch', 'suffix': '%', 'vals_from': 'wr_v', 'labels_from': 'wr_y', 'narration': bars_n, 'min_duration': 4.4},
+       {'type': 'bars', **({'style': 'coins'} if gdp else {}), 'kicker': f"{sa} as % of {bl}", 'text': 'Now watch', 'hl': 'watch', 'suffix': '%', 'vals_from': 'wr_v', 'labels_from': 'wr_y', 'narration': bars_n, 'min_duration': 4.4},
        big, text, end(end_t, end_hl, end_n)])
 
 
@@ -48,7 +50,7 @@ def quiz(name, at, a, fa, b, fb, a3, b3, gdp, question, hook_text, hook_hl, reve
     A(name, at, f"{question} #Shorts", ['quiz', 'economics' if gdp else 'population', a.lower(), b.lower(), 'data'],
       f"{a} vs {b}, {'GDP (current US$)' if gdp else 'population'}, {{wr_from}} to {{wr_to}}. Source: World Bank ({ind}).",
       {'wbratio': {'ind': ind, 'a': a3, 'b': b3, 'from': 2000, 'an': a, 'bn': b}},
-      [{'type': 'hook', 'kicker': 'Quick quiz', 'text': hook_text, 'hl': hook_hl, 'vs': [{'flag': fa, 'name': a}, {'flag': fb, 'name': b}], 'narration': f"{question} Most people get this wrong.", 'min_duration': 2.6},
+      [{'type': 'hook', 'kicker': 'Quick quiz', 'text': hook_text, 'hl': hook_hl, 'vs': [{'flag': fa, 'name': a}, {'flag': fb, 'name': b}], 'narration': f"{question} Think fast.", 'min_duration': 2.6},
        {'type': 'quiz', 'label': 'GUESS', 'q': question, 'alts': [f"{fa} {a}", f"{fb} {b}"], 'correct_from': 'wr_big', 'narration': 'Lock in your answer.', 'extra': 4.6, 'revealFromEnd': 1.6, 'countdown': 3, 'qsize': 64, 'asize': 60, 'cta': 'Comment your guess'},
        {'type': 'bars', **({'style': 'coins'} if gdp else {}), 'kicker': f"{a} as % of {b}", 'text': "It's {wr_win}", 'hl': '{wr_win}', 'suffix': '%', 'vals_from': 'wr_v', 'labels_from': 'wr_y', 'narration': reveal_n, 'min_duration': 4.4},
        text, end(end_t, end_hl, end_n)])
@@ -134,7 +136,7 @@ ratio('a-132-mexico-russia', '2026-10-31T23:00:00Z', 'Mexico', '🇲🇽', 'Russ
 quiz('a-136-mexico-spain', '2026-11-01T16:00:00Z', 'Mexico', '🇲🇽', 'Spain', '🇪🇸', 'MEX', 'ESP', True,
      'Which economy is bigger: Mexico or Spain?', 'Bigger economy: Mexico or Spain?', 'Bigger economy:',
      "It's {wr_win}. Mexico is {wr_r1_say} percent of Spain.",
-     T('Per person, Spain is richer', 'Spain is richer', '🧮', "But Mexico has almost three times the people, so per person, Spain is richer.", 'shrug'),
+     T('With a third of the people', 'a third', '🧮', "And Spain does it with about a third of Mexico's people.", 'shrug'),
      'Did you get it right?', 'right?', 'Did you get it right? Comment below.')
 series('a-140-india-lifeexp', '2026-11-01T23:00:00Z', "India's life expectancy: {ws_v0} to {ws_v1} years #Shorts", ['health', 'india', 'lifeexpectancy', 'data'],
        "Life expectancy at birth, India. Source: World Bank (SP.DYN.LE00.IN).", 'SP.DYN.LE00.IN', 'IND', [1960, 1980, 2000, 'last'], 0, '', ' yrs', 1,

@@ -46,7 +46,7 @@
      "name": "Spain"
     }
    ],
-   "narration": "Which economy is bigger: Mexico or Spain? Most people get this wrong.",
+   "narration": "Which economy is bigger: Mexico or Spain? Think fast.",
    "min_duration": 2.6
   },
   {
@@ -80,10 +80,10 @@
   },
   {
    "type": "text",
-   "text": "Per person, Spain is richer",
-   "hl": "Spain is richer",
+   "text": "With a third of the people",
+   "hl": "a third",
    "icon": "🧮",
-   "narration": "But Mexico has almost three times the people, so per person, Spain is richer.",
+   "narration": "And Spain does it with about a third of Mexico's people.",
    "min_duration": 3.2,
    "pose": "shrug"
   },
