@@ -1,0 +1,59 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+4%",
+ "title": "Só uma tem a crase certa",
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "tiktok": "Português do Escrevente TJSP: onde está a crase certa? Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues #crase",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Só uma tem a crase certa",
+   "hl": "crase certa",
+   "icon": "✍️",
+   "narration": "Português do concurso do TJ. Onde está a crase certa?",
+   "min_duration": 2.6
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · CRASE",
+   "q": "Está correto o emprego do sinal indicativo de crase em:",
+   "alts": [
+    "Refiro-me àquelas normas e não à estas.",
+    "Ficaram frente à frente na sala.",
+    "Sua leitura é semelhante à do relator.",
+    "Fomos à Brasília para a audiência.",
+    "O juiz falou à todos sobre a decisão."
+   ],
+   "correct": 2,
+   "narration": "Em qual dessas frases a crase está correta?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 50,
+   "asize": 38
+  },
+  {
+   "type": "text",
+   "text": "Letra C: semelhante à do relator",
+   "hl": "à do relator",
+   "sub": "semelhante A + A [leitura] do relator",
+   "icon": "✅",
+   "pose": "cheer",
+   "narration": "Letra C. Semelhante pede a preposição a, e tem um artigo escondido: à leitura do relator. Antes de todos, de estas e de Brasília, não tem crase.",
+   "min_duration": 3.6
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Siga o Gabarito do Dia e treine uma por dia.",
+   "min_duration": 2.2
+  }
+ ]
+}

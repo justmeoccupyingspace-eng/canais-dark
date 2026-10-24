@@ -1,0 +1,59 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+4%",
+ "title": "Até que altura a escada chega?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "tiktok": "Matemática do Escrevente TJSP: teorema de Pitágoras. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #matematica",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Até que altura a escada chega?",
+   "hl": "altura",
+   "icon": "🪜",
+   "narration": "Pitágoras no concurso do TJ. Até onde essa escada chega?",
+   "min_duration": 2.6
+  },
+  {
+   "type": "quiz",
+   "label": "MATEMÁTICA · PITÁGORAS",
+   "q": "Escada de 2,5 m apoiada na parede, com o pé a 150 cm da parede. A altura atingida é:",
+   "alts": [
+    "1,0 m",
+    "2,0 m",
+    "2,5 m",
+    "cerca de 2,9 m",
+    "4,0 m"
+   ],
+   "correct": 1,
+   "narration": "Uma escada de dois metros e meio, com o pé a cento e cinquenta centímetros da parede. Que altura ela alcança?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 50,
+   "asize": 42
+  },
+  {
+   "type": "text",
+   "text": "Letra B: 2 metros",
+   "hl": "2 metros",
+   "sub": "2,5² − 1,5² = 4 → √4 = 2",
+   "icon": "📐",
+   "pose": "cheer",
+   "narration": "Letra B. Pitágoras: dois e meio ao quadrado menos um e meio ao quadrado dá quatro. Raiz de quatro, dois metros. Quem marcou quatro esqueceu a raiz.",
+   "min_duration": 3.6
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Siga o Gabarito do Dia e treine uma por dia.",
+   "min_duration": 2.2
+  }
+ ]
+}

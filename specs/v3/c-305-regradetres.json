@@ -1,0 +1,59 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+4%",
+ "title": "8 servidores, 18 dias. E com 12?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "tiktok": "Matemática do Escrevente TJSP: regra de três inversa. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #matematica",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "8 servidores, 18 dias. E com 12?",
+   "hl": "E com 12?",
+   "icon": "👥",
+   "narration": "Regra de três do concurso do TJ. Cuidado com a pegadinha.",
+   "min_duration": 2.6
+  },
+  {
+   "type": "quiz",
+   "label": "MATEMÁTICA · REGRA DE TRÊS",
+   "q": "8 servidores digitalizam um arquivo em 18 dias. No mesmo ritmo, 12 servidores levarão:",
+   "alts": [
+    "12 dias",
+    "14 dias",
+    "22 dias",
+    "27 dias",
+    "30 dias"
+   ],
+   "correct": 0,
+   "narration": "Oito servidores fazem o serviço em dezoito dias. Com doze servidores, quantos dias?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 50,
+   "asize": 42
+  },
+  {
+   "type": "text",
+   "text": "Letra A: 12 dias",
+   "hl": "12 dias",
+   "sub": "mais gente, menos dias: 8 × 18 = 12 × 12",
+   "icon": "⚖️",
+   "pose": "cheer",
+   "narration": "Letra A, doze dias. É inversamente proporcional: oito vezes dezoito dá cento e quarenta e quatro, dividido por doze dá doze. Quem marcou vinte e sete esqueceu de inverter.",
+   "min_duration": 3.6
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Siga o Gabarito do Dia e treine uma por dia.",
+   "min_duration": 2.2
+  }
+ ]
+}

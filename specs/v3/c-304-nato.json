@@ -1,0 +1,59 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+4%",
+ "title": "Só brasileiro nato pode ser...",
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "tiktok": "Constitucional do Escrevente TJSP: cargo privativo de brasileiro nato. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #direitoconstitucional",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Só brasileiro nato pode ser...",
+   "hl": "brasileiro nato",
+   "icon": "🇧🇷",
+   "narration": "Qual desses cargos só um brasileiro nato pode ocupar?",
+   "min_duration": 2.6
+  },
+  {
+   "type": "quiz",
+   "label": "CONSTITUCIONAL · ART. 12",
+   "q": "Segundo a Constituição Federal, é privativo de brasileiro nato o cargo de:",
+   "alts": [
+    "Ministro do STJ",
+    "Presidente da Câmara dos Deputados",
+    "Ministro da Justiça",
+    "Senador da República",
+    "Procurador-Geral da República"
+   ],
+   "correct": 1,
+   "narration": "Segundo a Constituição, qual destes cargos é privativo de brasileiro nato?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 50,
+   "asize": 38
+  },
+  {
+   "type": "text",
+   "text": "Letra B: Presidente da Câmara",
+   "hl": "Presidente da Câmara",
+   "sub": "CF, art. 12, § 3º",
+   "icon": "🏛️",
+   "pose": "cheer",
+   "narration": "Letra B. O presidente da Câmara está na linha de sucessão da Presidência, por isso precisa ser nato. Senador, ministro do STJ e procurador-geral, não.",
+   "min_duration": 3.6
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Siga o Gabarito do Dia e treine uma por dia.",
+   "min_duration": 2.2
+  }
+ ]
+}

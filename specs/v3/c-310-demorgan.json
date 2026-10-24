@@ -1,0 +1,59 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+4%",
+ "title": "Como negar uma frase com \"ou\"?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "tiktok": "Raciocínio Lógico do Escrevente TJSP: negação do \"ou\". Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #raciociniologico",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Como negar uma frase com \"ou\"?",
+   "hl": "\"ou\"?",
+   "icon": "🔀",
+   "narration": "Negação com ou. A VUNESP adora essa.",
+   "min_duration": 2.6
+  },
+  {
+   "type": "quiz",
+   "label": "RACIOCÍNIO LÓGICO · NEGAÇÃO",
+   "q": "A negação de \"A sessão foi adiada ou o relator pediu vista\" é:",
+   "alts": [
+    "Não foi adiada ou o relator não pediu vista.",
+    "Foi adiada e o relator não pediu vista.",
+    "Se foi adiada, o relator não pediu vista.",
+    "Foi adiada ou o relator não pediu vista.",
+    "Não foi adiada e o relator não pediu vista."
+   ],
+   "correct": 4,
+   "narration": "Qual é a negação de: a sessão foi adiada ou o relator pediu vista?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 50,
+   "asize": 34
+  },
+  {
+   "type": "text",
+   "text": "Letra E: não... E não...",
+   "hl": "E não",
+   "sub": "negar \"p ou q\" = \"não p e não q\"",
+   "icon": "🧩",
+   "pose": "cheer",
+   "narration": "Letra E. Pra negar o ou, você nega as duas partes e troca por e. A letra A seria a negação de uma frase com e.",
+   "min_duration": 3.6
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Siga o Gabarito do Dia e treine uma por dia.",
+   "min_duration": 2.2
+  }
+ ]
+}

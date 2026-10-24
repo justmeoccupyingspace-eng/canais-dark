@@ -1,0 +1,59 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+4%",
+ "title": "Qual atalho está certo?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "tiktok": "Informática do Escrevente TJSP: atalhos do Windows. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #informatica #windows",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Qual atalho está certo?",
+   "hl": "atalho",
+   "icon": "⌨️",
+   "narration": "Informática vale nove questões no TJ. Qual desses atalhos está certo?",
+   "min_duration": 2.6
+  },
+  {
+   "type": "quiz",
+   "label": "INFORMÁTICA · WINDOWS",
+   "q": "No Windows 10 ou 11, a combinação de teclas está correta em:",
+   "alts": [
+    "Win+L abre as Configurações",
+    "Alt+Tab fecha a janela ativa",
+    "Win+E abre a caixa Executar",
+    "Win+Shift+S abre o histórico do Ctrl+C",
+    "Ctrl+Shift+Esc abre o Gerenciador de Tarefas"
+   ],
+   "correct": 4,
+   "narration": "No Windows, qual destes atalhos está associado à função certa?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 50,
+   "asize": 36
+  },
+  {
+   "type": "text",
+   "text": "Letra E: Ctrl+Shift+Esc",
+   "hl": "Ctrl+Shift+Esc",
+   "sub": "Win+L bloqueia · Win+E Explorador · Win+R Executar",
+   "icon": "🖥️",
+   "pose": "cheer",
+   "narration": "Letra E. Control, shift e esc abre direto o gerenciador de tarefas. Windows L bloqueia, Windows E abre o explorador e Windows R abre o executar.",
+   "min_duration": 3.6
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Siga o Gabarito do Dia e treine uma por dia.",
+   "min_duration": 2.2
+  }
+ ]
+}

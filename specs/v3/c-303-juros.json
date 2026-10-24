@@ -1,0 +1,59 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+4%",
+ "title": "R$ 4.000 a 3% ao mês. Quanto vira?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "tiktok": "Matemática do Escrevente TJSP: juros simples. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #matematica",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "R$ 4.000 a 3% ao mês. Quanto vira?",
+   "hl": "Quanto vira?",
+   "icon": "💰",
+   "narration": "Juros simples no concurso do TJ. Quanto vira esse dinheiro?",
+   "min_duration": 2.6
+  },
+  {
+   "type": "quiz",
+   "label": "MATEMÁTICA · JUROS SIMPLES",
+   "q": "R$ 4.000,00 a juros simples de 3% ao mês, por 4 meses. O montante final é:",
+   "alts": [
+    "R$ 480,00",
+    "R$ 4.120,00",
+    "R$ 4.360,00",
+    "R$ 4.480,00",
+    "R$ 4.502,04"
+   ],
+   "correct": 3,
+   "narration": "Quatro mil reais, a juros simples de três por cento ao mês, durante quatro meses. Qual é o montante?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 50,
+   "asize": 42
+  },
+  {
+   "type": "text",
+   "text": "Letra D: R$ 4.480",
+   "hl": "R$ 4.480",
+   "sub": "juros = 4.000 × 0,03 × 4 = 480",
+   "icon": "📈",
+   "pose": "cheer",
+   "narration": "Letra D. Os juros são quatrocentos e oitenta, e o montante soma o capital: quatro mil quatrocentos e oitenta. Quem marcou quatrocentos e oitenta caiu na pegadinha.",
+   "min_duration": 3.6
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Siga o Gabarito do Dia e treine uma por dia.",
+   "min_duration": 2.2
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+4%",
+ "title": "Quanto tempo pra encher?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "tiktok": "Matemática do Escrevente TJSP: medidas e tempo. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #matematica",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Quanto tempo pra encher?",
+   "hl": "encher?",
+   "icon": "🚰",
+   "narration": "Questão de medidas do TJ. Quanto tempo essa torneira leva?",
+   "min_duration": 2.6
+  },
+  {
+   "type": "quiz",
+   "label": "MATEMÁTICA · MEDIDAS",
+   "q": "Uma torneira despeja 12 litros por minuto num reservatório de 2,4 m³. Para encher tudo, leva:",
+   "alts": [
+    "20 minutos",
+    "3 h 20 min",
+    "3 h 33 min",
+    "33 h 20 min",
+    "200 horas"
+   ],
+   "correct": 1,
+   "narration": "Doze litros por minuto, num reservatório de dois vírgula quatro metros cúbicos. Quanto tempo pra encher?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 50,
+   "asize": 42
+  },
+  {
+   "type": "text",
+   "text": "Letra B: 3 h 20 min",
+   "hl": "3 h 20 min",
+   "sub": "2,4 m³ = 2.400 L → 200 min",
+   "icon": "⏱️",
+   "pose": "cheer",
+   "narration": "Letra B. Dois vírgula quatro metros cúbicos são dois mil e quatrocentos litros. Dividido por doze dá duzentos minutos: três horas e vinte. Três e trinta e três é a pegadinha.",
+   "min_duration": 3.6
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Siga o Gabarito do Dia e treine uma por dia.",
+   "min_duration": 2.2
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+4%",
+ "title": "Que dia da semana caiu o dia 20?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "tiktok": "Raciocínio Lógico do Escrevente TJSP: que dia caiu o dia 20? Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #raciociniologico",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Que dia da semana caiu o dia 20?",
+   "hl": "dia 20?",
+   "icon": "📅",
+   "narration": "Essa questão de calendário derruba muita gente no TJ.",
+   "min_duration": 2.6
+  },
+  {
+   "type": "quiz",
+   "label": "RACIOCÍNIO LÓGICO · CALENDÁRIO",
+   "q": "Um mês de 31 dias teve cinco sextas, cinco sábados e cinco domingos. O dia 20 caiu em uma:",
+   "alts": [
+    "segunda-feira",
+    "terça-feira",
+    "quarta-feira",
+    "quinta-feira",
+    "sexta-feira"
+   ],
+   "correct": 2,
+   "narration": "Um mês de trinta e um dias teve cinco sextas, cinco sábados e cinco domingos. O dia vinte caiu em que dia?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 50,
+   "asize": 42
+  },
+  {
+   "type": "text",
+   "text": "Letra C: quarta-feira",
+   "hl": "quarta-feira",
+   "sub": "dia 1 = sexta · dia 20 = 19 dias depois",
+   "icon": "🗓️",
+   "pose": "cheer",
+   "narration": "Letra C. Os três dias que se repetem cinco vezes são os dias um, dois e três. Então o dia um foi sexta. Somando dezenove dias, cai numa quarta.",
+   "min_duration": 3.6
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Siga o Gabarito do Dia e treine uma por dia.",
+   "min_duration": 2.2
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+4%",
+ "title": "Assistir O filme ou AO filme?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "tiktok": "Português do Escrevente TJSP: regência verbal. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Assistir O filme ou AO filme?",
+   "hl": "AO filme?",
+   "icon": "🎬",
+   "narration": "Regência verbal: essa cai muito na VUNESP.",
+   "min_duration": 2.6
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · REGÊNCIA",
+   "q": "De acordo com a norma-padrão, a regência verbal está correta em:",
+   "alts": [
+    "Prefiro estudar à noite do que de manhã.",
+    "Ele aspirava o cargo de chefia.",
+    "Assistiram à palestra sobre o edital.",
+    "Obedeceram o horário estabelecido.",
+    "Esqueci dos documentos em casa."
+   ],
+   "correct": 2,
+   "narration": "Em qual frase a regência verbal está correta?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 50,
+   "asize": 38
+  },
+  {
+   "type": "text",
+   "text": "Letra C: assistiram à palestra",
+   "hl": "assistiram à",
+   "sub": "assistir (ver) pede a preposição A",
+   "icon": "🎯",
+   "pose": "cheer",
+   "narration": "Letra C. Assistir, no sentido de ver, pede a: assistiram à palestra. Aspirar a, obedecer a, e prefiro uma coisa a outra, sem do que.",
+   "min_duration": 3.6
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Siga o Gabarito do Dia e treine uma por dia.",
+   "min_duration": 2.2
+  }
+ ]
+}

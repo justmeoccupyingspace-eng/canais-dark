@@ -1,0 +1,59 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+4%",
+ "title": "Qual é o 10º número?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "tiktok": "Raciocínio Lógico do Escrevente TJSP: qual é o 10º termo? Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #raciociniologico",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Qual é o 10º número?",
+   "hl": "10º número?",
+   "icon": "🔢",
+   "narration": "Raciocínio lógico do concurso do TJ. Descobre o padrão?",
+   "min_duration": 2.6
+  },
+  {
+   "type": "quiz",
+   "label": "RACIOCÍNIO LÓGICO · SEQUÊNCIAS",
+   "q": "Sequência: 2, 3, 5, 8, 12, 17, ... Mantido o padrão, o 10º termo é:",
+   "alts": [
+    "38",
+    "45",
+    "47",
+    "55",
+    "57"
+   ],
+   "correct": 2,
+   "narration": "Dois, três, cinco, oito, doze, dezessete. Qual é o décimo termo?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 50,
+   "asize": 42
+  },
+  {
+   "type": "text",
+   "text": "Letra C: 47",
+   "hl": "47",
+   "sub": "as diferenças crescem: +1, +2, +3, +4...",
+   "icon": "🧠",
+   "pose": "cheer",
+   "narration": "Letra C, quarenta e sete. As diferenças crescem de um em um: mais seis, mais sete, mais oito, mais nove. O trinta e oito é só o nono termo.",
+   "min_duration": 3.6
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Siga o Gabarito do Dia e treine uma por dia.",
+   "min_duration": 2.2
+  }
+ ]
+}

@@ -11,6 +11,7 @@ const C = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'};
 const FONT = 'InterX, Inter, "Helvetica Neue", Arial, sans-serif';
 const EMOJI = '"Noto Color Emoji", "Apple Color Emoji", sans-serif';
 const PPU = 256; // pixels por unidade em z=0 (câmera fov 30 a z 14)
+const R3W = 720, R3H = 1280; // canvas 3D renderizado menor e ampliado (WebGL em software é caro)
 const wx = (px) => (px - 540) / PPU;
 const wy = (py) => (960 - py) / PPU;
 
@@ -65,7 +66,7 @@ const Bg = ({p}) => {
   return (
     <AbsoluteFill style={{background: `radial-gradient(1400px 1500px at 50% 40%, ${p.bg1}, ${p.bg2})`}}>
       {blobs.map(([x, y, r, c], i) => (
-        <div key={i} style={{position: 'absolute', left: x - r / 2 + Math.sin(f / (70 + i * 13) + i) * 60, top: y - r / 2 + Math.cos(f / (80 + i * 9) + i) * 50, width: r, height: r, borderRadius: '50%', background: c, opacity: 0.1, filter: 'blur(90px)'}} />
+        <div key={i} style={{position: 'absolute', left: x - r + Math.sin(f / (70 + i * 13) + i) * 60, top: y - r + Math.cos(f / (80 + i * 9) + i) * 50, width: r * 2, height: r * 2, background: `radial-gradient(circle, ${c}2e 0%, ${c}00 60%)`}} />
       ))}
       <AbsoluteFill style={{backgroundImage: 'radial-gradient(rgba(255,255,255,.07) 2px, transparent 2.5px)', backgroundSize: '46px 46px', backgroundPosition: `${f * 0.3}px ${f * 0.5}px`, opacity: 0.7}} />
     </AbsoluteFill>
@@ -220,7 +221,7 @@ const TextScene = ({sc, p, first}) => (
 const Icon = ({icon, first}) => {
   const f = useCurrentFrame();
   const s = first ? 1 : spring({frame: f - 4, fps: FPS, config: {damping: 9, stiffness: 150}});
-  return <div style={{position: 'absolute', top: 690, left: 0, right: 0, textAlign: 'center', fontFamily: EMOJI, fontSize: 250, lineHeight: 1, transform: `scale(${0.4 + 0.6 * s}) translateY(${Math.sin(f / 10) * 12}px) rotate(${Math.sin(f / 14) * 6}deg)`, filter: 'drop-shadow(0 20px 30px rgba(0,0,0,.45))'}}>{icon}</div>;
+  return <div style={{position: 'absolute', top: 690, left: 0, right: 0, textAlign: 'center', fontFamily: EMOJI, fontSize: 250, lineHeight: 1, transform: `scale(${0.4 + 0.6 * s}) translateY(${Math.sin(f / 10) * 12}px) rotate(${Math.sin(f / 14) * 6}deg)`, textShadow: '0 18px 30px rgba(0,0,0,.4)'}}>{icon}</div>;
 };
 
 const ScreenTitle = ({sc, p}) => (
@@ -408,13 +409,15 @@ const Stage = ({spec, tl, p}) => {
   const look = pos[0] > 0.5 ? [-0.9, 0.5] : pos[0] < -0.5 ? [0.9, 0.5] : [0, 0];
   const bars = sc.type === 'bars' ? barsLayout(sc, p) : null;
   return (
-    <ThreeCanvas width={1080} height={1920} camera={{fov: 30, position: [0, 0, 14]}} gl={{antialias: true, alpha: true}} style={{position: 'absolute', inset: 0}}>
+    <div style={{position: 'absolute', left: 0, top: 0, width: R3W, height: R3H, transform: `scale(${1080 / R3W})`, transformOrigin: '0 0'}}>
+    <ThreeCanvas width={R3W} height={R3H} camera={{fov: 30, position: [0, 0, 14]}} gl={{antialias: true, alpha: true}}>
       <Lights />
       {bars ? <Columns3D layout={bars} f={lf} /> : null}
       {sc.type === 'screen' ? <Screen3D sc={sc} p={p} f={lf} /> : null}
       <Shadow position={[pos[0], pos[1] - 1.12 * pos[3] - 0.08, pos[2]]} scale={1.3 * pos[3]} opacity={0.35} />
       <Mascot {...p.mascot} pose={pose} prevPose={prevPose} poseAt={tl[i].from} talk={talk} look={look} enter={-30} scale={pos[3]} position={[pos[0], pos[1], pos[2]]} />
     </ThreeCanvas>
+    </div>
   );
 };
 

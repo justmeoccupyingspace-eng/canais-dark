@@ -50,15 +50,15 @@ export const Mascot = ({color = '#ffb000', belly = '#ffe6a3', acc = 'antenna', p
   const f = useCurrentFrame();
   const toon = useToon();
   const g = useMemo(() => ({
-    body: new THREE.SphereGeometry(1, 64, 64),
-    eye: new THREE.SphereGeometry(0.25, 40, 40),
-    pupil: new THREE.SphereGeometry(0.14, 32, 32),
+    body: new THREE.SphereGeometry(1, 40, 32),
+    eye: new THREE.SphereGeometry(0.25, 24, 18),
+    pupil: new THREE.SphereGeometry(0.14, 20, 14),
     glint: new THREE.SphereGeometry(0.045, 16, 16),
-    cheek: new THREE.SphereGeometry(0.13, 24, 24),
+    cheek: new THREE.SphereGeometry(0.13, 16, 12),
     arm: new THREE.CapsuleGeometry(0.12, 0.48, 8, 16),
-    hand: new THREE.SphereGeometry(0.15, 24, 24),
-    foot: new THREE.SphereGeometry(0.26, 32, 32),
-    mouth: new THREE.SphereGeometry(0.16, 32, 32),
+    hand: new THREE.SphereGeometry(0.15, 16, 12),
+    foot: new THREE.SphereGeometry(0.26, 20, 14),
+    mouth: new THREE.SphereGeometry(0.16, 20, 14),
     smile: new THREE.TorusGeometry(0.17, 0.035, 12, 40, Math.PI),
     stick: new THREE.CylinderGeometry(0.035, 0.035, 0.45, 12),
     bulb: new THREE.SphereGeometry(0.11, 24, 24),

@@ -1,0 +1,59 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+4%",
+ "title": "Quantos itens em cada kit?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "tiktok": "Matemática do Escrevente TJSP: MDC. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #matematica",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Quantos itens em cada kit?",
+   "hl": "cada kit?",
+   "icon": "📦",
+   "narration": "MDC no concurso do TJ. Quantos itens vai ter cada kit?",
+   "min_duration": 2.6
+  },
+  {
+   "type": "quiz",
+   "label": "MATEMÁTICA · MDC",
+   "q": "120 cadernos, 168 canetas e 216 pastas em kits idênticos, sem sobra, com o maior número de kits. Cada kit terá:",
+   "alts": [
+    "21 itens",
+    "24 itens",
+    "42 itens",
+    "63 itens",
+    "504 itens"
+   ],
+   "correct": 0,
+   "narration": "Cento e vinte cadernos, cento e sessenta e oito canetas e duzentas e dezesseis pastas, no maior número de kits iguais. Quantos itens por kit?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 46,
+   "asize": 42
+  },
+  {
+   "type": "text",
+   "text": "Letra A: 21 itens",
+   "hl": "21 itens",
+   "sub": "MDC = 24 kits → 5 + 7 + 9",
+   "icon": "🎁",
+   "pose": "cheer",
+   "narration": "Letra A. O MDC dá vinte e quatro kits, cada um com cinco cadernos, sete canetas e nove pastas: vinte e um itens. Vinte e quatro é o número de kits, não de itens.",
+   "min_duration": 3.6
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Siga o Gabarito do Dia e treine uma por dia.",
+   "min_duration": 2.2
+  }
+ ]
+}
