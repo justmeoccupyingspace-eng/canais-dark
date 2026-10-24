@@ -63,12 +63,27 @@
    "min_duration": 2.8
   },
   {
-   "type": "text",
+   "type": "steps",
    "text": "The real deadline: 2038",
    "hl": "2038",
-   "icon": "💥",
-   "pose": "shock",
-   "narration": "Two billion fits fine. The real trouble is twenty thirty-eight, when old thirty-two bit clocks overflow.",
+   "rows": [
+    {
+     "t": "2,000,000,000 fits fine",
+     "icon": "✅",
+     "cue": "two"
+    },
+    {
+     "t": "Old 32-bit max: 2,147,483,647",
+     "icon": "🧱",
+     "cue": "old"
+    },
+    {
+     "t": "Jan 19, 2038: overflow",
+     "icon": "💥",
+     "cue": "that"
+    }
+   ],
+   "narration": "Two billion fits fine. But old 32-bit clocks max out at about two point one billion. That's January nineteenth, twenty thirty-eight.",
    "min_duration": 3.6
   },
   {

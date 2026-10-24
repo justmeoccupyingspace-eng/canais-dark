@@ -137,7 +137,7 @@ V.append(ht('b-127-unix2e9', '2026-10-26T17:00:00Z', 'unix2e9', "Your computer h
     {'type': 'screen', 'text': 'Seconds since Jan 1, 1970', 'hl': 'since', 'code': ['$ date +%s', '1792848886'], 'narration': "Many computers store time as the seconds since January first, nineteen seventy.", 'min_duration': 3.4},
     {'type': 'big', 'text': 'It hits 2,000,000,000 on', 'hl': '2,000,000,000', 'big': '{c_date}', 'label': 'at {c_time}', 'narration': "That count hits two billion on {c_date_say}.", 'min_duration': 3.4},
     {'type': 'text', 'text': '1 billion was {c_1e9}', 'hl': '1 billion', 'icon': '🗓️', 'pose': 'shrug', 'narration': "One billion was {c_1e9_say}.", 'min_duration': 2.8},
-    {'type': 'text', 'text': 'The real deadline: 2038', 'hl': '2038', 'icon': '💥', 'pose': 'shock', 'narration': "Two billion fits fine. The real trouble is twenty thirty-eight, when old thirty-two bit clocks overflow.", 'min_duration': 3.6},
+    {'type': 'steps', 'text': 'The real deadline: 2038', 'hl': '2038', 'rows': [{'t': '2,000,000,000 fits fine', 'icon': '✅', 'cue': 'two'}, {'t': 'Old 32-bit max: 2,147,483,647', 'icon': '🧱', 'cue': 'old'}, {'t': 'Jan 19, 2038: overflow', 'icon': '💥', 'cue': 'that'}], 'narration': "Two billion fits fine. But old 32-bit clocks max out at about two point one billion. That's January nineteenth, twenty thirty-eight.", 'min_duration': 3.6},
     end('Where will you be in 2033?', '2033?', "Where will you be when it hits two billion?"),
 ], "Unix time reaches 2,000,000,000 seconds on May 18, 2033 03:33:20 UTC. Computed."))
 
