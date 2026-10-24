@@ -36,11 +36,17 @@ def main(which, video, specpath, privacy="public"):
     try:
         loc = urllib.request.urlopen(init).headers["Location"]
     except urllib.error.HTTPError as e:
-        print("upload init falhou:", e.code, e.read().decode(errors="replace")[:800]); raise
+        body = e.read().decode(errors="replace")[:800]
+        print("upload init falhou:", e.code, body)
+        import re as _re
+        reason = _re.findall(r'"reason":\s*"([^"]+)"', body)
+        print(f"::error title=upload::{e.code} {','.join(reason) or body[:200].replace(chr(10), ' ')}")
+        raise
     up = urllib.request.Request(loc, data=open(video, "rb").read(), method="PUT",
                                 headers={"Content-Type": "video/mp4", "Content-Length": str(size)})
     res = json.load(urllib.request.urlopen(up))
     print("enviado:", res["id"], privacy)
+    print(f"::notice title=enviado::{res['id']}")
     open("uploaded.json", "w").write(json.dumps({"id": res["id"], "privacy": privacy}))
 
 if __name__ == "__main__":
