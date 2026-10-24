@@ -10,7 +10,7 @@
  },
  "compute": {
   "wbseries": {
-   "ind": "SP.DYN.TFR.IN",
+   "ind": "SP.DYN.TFRT.IN",
    "c": "KOR",
    "from": 1960,
    "years": [
@@ -25,7 +25,7 @@
  },
  "yt": {
   "title": "South Korea went from 6 kids per woman to {ws_v1} #Shorts",
-  "description": "Fertility rate (births per woman), South Korea. Source: World Bank (SP.DYN.TFR.IN).\nNarration is AI-generated.",
+  "description": "Fertility rate (births per woman), South Korea. Source: World Bank (SP.DYN.TFRT.IN).\nNarration is AI-generated.",
   "tags": [
    "population",
    "southkorea",

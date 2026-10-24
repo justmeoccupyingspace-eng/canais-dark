@@ -78,7 +78,7 @@ ratio('a-128-bangladesh-russia', '2026-10-26T23:00:00Z', 'Bangladesh', '🇧🇩
       T('Russia is shrinking', 'shrinking', '📉', "Russia has fewer people than in {wr_from}.", 'shrug'),
       'Which pair next?', 'next?', 'Which two countries should I compare next?')
 series('a-137-korea-fertility', '2026-10-27T16:00:00Z', "South Korea went from 6 kids per woman to {ws_v1} #Shorts", ['population', 'southkorea', 'fertility', 'data'],
-       "Fertility rate (births per woman), South Korea. Source: World Bank (SP.DYN.TFR.IN).", 'SP.DYN.TFR.IN', 'KOR', [1960, 1980, 2000, 'last'], 1, '', '', 1,
+       "Fertility rate (births per woman), South Korea. Source: World Bank (SP.DYN.TFRT.IN).", 'SP.DYN.TFRT.IN', 'KOR', [1960, 1980, 2000, 'last'], 1, '', '', 1,
        {'type': 'hook', 'kicker': 'South Korea', 'text': 'From 6 kids per woman to {ws_v1}', 'hl': '{ws_v1}', 'icon': '🇰🇷', 'narration': "In {ws_y0}, the average South Korean woman had {ws_v0_say} kids. Now?", 'min_duration': 3.0},
        ('Births per woman', 'Watch it fall'), 'fall', "Then it fell, and fell. Now it's {ws_v1_say}. The lowest in the world.",
        BIG('A stable population needs', 'needs', '2.1', 'kids per woman', "To stay the same size, a country needs about two point one."),
