@@ -1,0 +1,12 @@
+fx ok
+Traceback (most recent call last):
+  File "/home/runner/work/canais-dark/canais-dark/scripts/data.py", line 555, in <module>
+    main(*sys.argv[1:3])
+  File "/home/runner/work/canais-dark/canais-dark/scripts/data.py", line 525, in main
+    compute_blocks(spec, ctx, raw)
+  File "/home/runner/work/canais-dark/canais-dark/scripts/data.py", line 177, in compute_blocks
+    S = worldbank_annual(w["ind"], w["c"], w["from"], w.get("to", 2030))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/canais-dark/canais-dark/scripts/data.py", line 34, in worldbank_annual
+    raise RuntimeError(f"World Bank sem dados: {ind} {country} -> {str(data)[:200]}")
+RuntimeError: World Bank sem dados: SP.DYN.TFR.IN KOR -> [{'message': [{'id': '120', 'key': 'Invalid value', 'value': 'The provided parameter value is not valid'}]}]
