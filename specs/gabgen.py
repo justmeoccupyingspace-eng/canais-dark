@@ -141,6 +141,43 @@ V.append(q('c-312-escada', 'MATEMÁTICA · PITÁGORAS', 'Até que altura a escad
            ('4,0 m? Esqueceu a raiz', 'raiz', 'Quem marcou quatro esqueceu a raiz.'),
            '#matematica', 'Matemática do Escrevente TJSP: teorema de Pitágoras.'))
 
+V.append(q('c-314-excel', 'INFORMÁTICA · EXCEL', 'Qual erro do Excel é esse?', 'Excel', '📊',
+           'Quatro erros do Excel. Só um está certo.',
+           'Associa corretamente a mensagem de erro do Excel à sua causa mais comum:', ['#NOME?: célula excluída', '#REF!: nome de função errado', '#DIV/0!: divisão por zero ou célula vazia', '#VALOR!: PROCV não achou o valor', '#N/D: somar célula com texto'], 'C',
+           'Qual alternativa associa certo o erro do Excel à causa?',
+           'Letra C: #DIV/0!', 'Letra C!',
+           ('Decora esses', 'Decora', [{'t': '#DIV/0!: divisão por zero', 'hi': True}, '#NOME?: função escrita errada', '#REF!: célula excluída', '#N/D: PROCV não achou'],
+            'Divisão por zero dá div zero. Nome de função errado dá nome. Célula excluída dá ref. E PROCV que não acha dá N D.', ['divisão', 'nome', 'célula', 'procv']),
+           None,
+           '#informatica #excel', 'Informática do Escrevente TJSP: erros do Excel.', asize=40))
+V.append(q('c-315-pronome', 'PORTUGUÊS · COLOCAÇÃO PRONOMINAL', 'Me entregaram ou Entregaram-me?', 'Entregaram-me?', '✍️',
+           'Colocação pronominal: a VUNESP adora.',
+           'A colocação do pronome átono está de acordo com a norma-padrão em:', ['Me entregaram o processo ontem.', 'O servidor tinha entregado-lhe o documento.', 'Nunca esqueceram-se do prazo final.', 'Disseram que entregariam-me o parecer.', 'Entregar-lhe-emos os documentos amanhã.'], 'E',
+           'Em qual frase o pronome está bem colocado?',
+           'Letra E: Entregar-lhe-emos', 'Letra E!',
+           ('As regras que caem', 'caem', ['Não começa frase com pronome', 'Nunca depois do particípio', '"Nunca" e "que" puxam o pronome', 'Futuro no início: mesóclise'],
+            'Não se começa frase com pronome. Nunca depois do particípio. Palavras como nunca e que puxam o pronome pra antes. E com futuro no início, mesóclise.', ['não', 'nunca', 'palavras', 'futuro']),
+           ('Mesóclise ainda cai na prova', 'Mesóclise', 'Parece antigo, mas a mesóclise ainda cai na prova.'),
+           '#portugues', 'Português do Escrevente TJSP: colocação pronominal.', asize=42))
+V.append(q('c-316-mmc', 'MATEMÁTICA · MMC', '6, 8 e 10 dias. Quando coincidem?', 'Quando coincidem?', '⚙️',
+           'Três máquinas. Quando elas coincidem de novo?',
+           'Manutenção a cada 6, 8 e 10 dias. As três coincidiram numa segunda-feira. A próxima coincidência será numa:', ['quinta-feira, em 24 dias', 'quarta-feira, em 30 dias', 'sábado, em 40 dias', 'terça-feira, em 120 dias', 'sexta-feira, em 480 dias'], 'D',
+           'Manutenção a cada seis, oito e dez dias. Coincidiram numa segunda. Quando coincidem de novo?',
+           'Letra D: terça, em 120 dias', 'Letra D!',
+           ('Coincidir = MMC', 'MMC', ['MMC(6, 8, 10) = 120 dias', '120 = 17 semanas + 1 dia', 'Segunda + 1 = terça'],
+            'Coincidir é MMC: cento e vinte dias. Isso dá dezessete semanas e mais um dia. Segunda mais um: terça.', ['coincidir', 'isso', 'segunda']),
+           ('480 = 6 × 8 × 10 (produto, não MMC)', 'não MMC', 'Quem marcou quatrocentos e oitenta multiplicou tudo, e isso não é MMC.'),
+           '#matematica', 'Matemática do Escrevente TJSP: MMC.', asize=42))
+V.append(q('c-317-inafiancavel', 'CONSTITUCIONAL · ART. 5º', 'Inafiançável E imprescritível', 'imprescritível', '⚖️',
+           'Essa pegadinha da Constituição derruba muita gente.',
+           'Segundo a Constituição Federal, são crimes inafiançáveis e imprescritíveis:', ['racismo e ação de grupos armados contra o Estado Democrático', 'tortura, tráfico de drogas e terrorismo', 'terrorismo, tráfico de drogas e hediondos', 'racismo, terrorismo e hediondos', 'ação de grupos armados e hediondos'], 'A',
+           'Quais crimes são inafiançáveis e imprescritíveis?',
+           'Letra A: racismo e grupos armados', 'Letra A!',
+           ('Só dois são imprescritíveis', 'dois', ['Racismo (art. 5º, XLII)', 'Grupos armados (art. 5º, XLIV)', 'Tortura, tráfico, terrorismo e hediondos: inafiançáveis, mas prescrevem'],
+            'Só dois são imprescritíveis: racismo e ação de grupos armados. Tortura, tráfico, terrorismo e hediondos são inafiançáveis, mas prescrevem.', ['racismo', 'grupos', 'tortura']),
+           None,
+           '#direitoconstitucional', 'Constitucional do Escrevente TJSP: crimes imprescritíveis.', asize=40))
+
 # notícia: abertura das inscrições (28/10)
 spec = {'channel': 'gabarito', 'style': 'v3', 'rate': '+4%', 'title': 'Inscrições abertas: Escrevente TJSP',
         'publish': {'channel': 'C', 'privacy': 'public'},

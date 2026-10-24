@@ -1,0 +1,83 @@
+{
+ "channel": "howitticks",
+ "style": "v3",
+ "rate": "+6%",
+ "title": "Why texts stopped at {c_chars} characters #Shorts",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-30T01:00:00Z"
+ },
+ "compute": {
+  "calc": {
+   "kind": "sms"
+  }
+ },
+ "yt": {
+  "title": "Why texts stopped at {c_chars} characters #Shorts",
+  "description": "An SMS payload is 140 bytes (1,120 bits). GSM 7-bit text fits 160 characters; UCS-2 (needed for emoji) fits 70.\nNarration is AI-generated.",
+  "tags": [
+   "sms",
+   "texting",
+   "computers",
+   "phones"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "Why texts stopped at 160 characters",
+   "hl": "160",
+   "icon": "💬",
+   "narration": "Old text messages stopped at exactly one hundred sixty characters. Here's why.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "steps",
+   "text": "The math",
+   "hl": "math",
+   "rows": [
+    {
+     "t": "One SMS: 140 bytes",
+     "cue": "one",
+     "icon": "📦"
+    },
+    {
+     "t": "140 × 8 = {c_bits} bits",
+     "cue": "that"
+    },
+    {
+     "t": "÷ 7 bits per letter = {c_chars}",
+     "cue": "with"
+    }
+   ],
+   "narration": "One message carried a hundred forty bytes. That's one thousand one hundred twenty bits. With seven bits per letter: one sixty.",
+   "min_duration": 3.4
+  },
+  {
+   "type": "text",
+   "text": "Add one emoji: {c_ucs} characters",
+   "hl": "{c_ucs}",
+   "icon": "😅",
+   "narration": "Add a single emoji, and the limit drops to seventy.",
+   "min_duration": 3.2,
+   "pose": "shock"
+  },
+  {
+   "type": "text",
+   "text": "Emoji need 16 bits per character",
+   "hl": "16 bits",
+   "icon": "🔣",
+   "narration": "Because emoji switch the whole message to sixteen bits per character.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "end",
+   "text": "Did you know that?",
+   "hl": "know that?",
+   "narration": "Did you know that?",
+   "min_duration": 2.2
+  }
+ ]
+}

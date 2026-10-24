@@ -1,0 +1,91 @@
+{
+ "channel": "howitticks",
+ "style": "v3",
+ "rate": "+6%",
+ "title": "Your Wi-Fi uses the same frequency as your microwave #Shorts",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-29T01:00:00Z"
+ },
+ "compute": {
+  "calc": {
+   "kind": "wifi"
+  }
+ },
+ "yt": {
+  "title": "Your Wi-Fi uses the same frequency as your microwave #Shorts",
+  "description": "Microwave ovens run at about 2.45 GHz, inside the 2.4 GHz band Wi-Fi also uses. Wavelength = c / f.\nNarration is AI-generated.",
+  "tags": [
+   "wifi",
+   "microwave",
+   "physics",
+   "radio"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "Your Wi-Fi uses the same frequency as your microwave",
+   "hl": "same frequency",
+   "icon": "📶",
+   "narration": "Your Wi-Fi uses the same frequency as your microwave.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "big",
+   "text": "Both run near",
+   "hl": "Both",
+   "big": "2.4 GHz",
+   "label": "Wi-Fi band and microwave ovens",
+   "narration": "Both run near two point four gigahertz.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "steps",
+   "text": "Wave length",
+   "hl": "length",
+   "rows": [
+    {
+     "t": "λ = speed of light ÷ frequency",
+     "cue": "the"
+    },
+    {
+     "t": "300,000 km/s ÷ 2.45 GHz",
+     "cue": "three"
+    },
+    {
+     "t": "= {c_cm} cm per wave",
+     "cue": "about"
+    }
+   ],
+   "narration": "The wavelength is the speed of light divided by the frequency. That's about {c_cm_say} centimeters per wave.",
+   "min_duration": 3.4
+  },
+  {
+   "type": "text",
+   "text": "Door holes: a few mm. Waves: {c_cm} cm.",
+   "hl": "{c_cm} cm.",
+   "icon": "🍿",
+   "narration": "The holes in the door are tiny next to that, so the waves can't get out.",
+   "min_duration": 3.4,
+   "pose": "shrug"
+  },
+  {
+   "type": "text",
+   "text": "Wi-Fi: thousands of times weaker",
+   "hl": "weaker",
+   "icon": "📡",
+   "narration": "And your router is thousands of times weaker. It just carries data.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "end",
+   "text": "Ever noticed Wi-Fi drop?",
+   "hl": "drop?",
+   "narration": "Ever noticed your Wi-Fi drop when the microwave runs?",
+   "min_duration": 2.2
+  }
+ ]
+}

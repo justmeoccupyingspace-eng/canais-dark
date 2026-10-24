@@ -1,0 +1,86 @@
+{
+ "channel": "chartbound",
+ "style": "v3",
+ "rate": "+9%",
+ "title": "Japan's population peaked. Here's the chart #Shorts",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-31T16:00:00Z"
+ },
+ "compute": {
+  "wbseries": {
+   "ind": "SP.POP.TOTL",
+   "c": "JPN",
+   "from": 1960,
+   "years": [
+    1960,
+    1990,
+    2010,
+    "last"
+   ],
+   "dec": 0,
+   "scale": 1000000.0
+  }
+ },
+ "yt": {
+  "title": "Japan's population peaked. Here's the chart #Shorts",
+  "description": "Population, total, Japan. Source: World Bank (SP.POP.TOTL).\nNarration is AI-generated.",
+  "tags": [
+   "population",
+   "japan",
+   "demographics",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Japan",
+   "text": "Japan is losing people every year",
+   "hl": "losing people",
+   "icon": "🇯🇵",
+   "narration": "Japan is losing people every single year.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "bars",
+   "kicker": "Population, millions",
+   "text": "Up, then down",
+   "hl": "down",
+   "prefix": "",
+   "suffix": "M",
+   "dec": 0,
+   "vals_from": "ws_v",
+   "labels_from": "ws_y",
+   "narration": "It grew from {ws_v0_say} million to a peak around {ws_max_y}. Now it's {ws_v1_say} million.",
+   "min_duration": 4.6
+  },
+  {
+   "type": "big",
+   "text": "Peak year",
+   "hl": "Peak",
+   "big": "{ws_max_y}",
+   "label": "and falling since",
+   "narration": "The peak was around {ws_max_y}.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "text",
+   "text": "More deaths than births",
+   "hl": "deaths",
+   "icon": "👴",
+   "narration": "Now there are more deaths than births, every year.",
+   "min_duration": 3.2,
+   "pose": "shock"
+  },
+  {
+   "type": "end",
+   "text": "Who is next?",
+   "hl": "next?",
+   "narration": "Which country do you think is next?",
+   "min_duration": 2.2
+  }
+ ]
+}

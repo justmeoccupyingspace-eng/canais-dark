@@ -1,0 +1,90 @@
+{
+ "channel": "chartbound",
+ "style": "v3",
+ "rate": "+9%",
+ "title": "Vietnam's economy was {wr_r0}% of The Philippines's in {wr_from}. Now? #Shorts",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-27T23:00:00Z"
+ },
+ "compute": {
+  "wbratio": {
+   "ind": "NY.GDP.MKTP.CD",
+   "a": "VNM",
+   "b": "PHL",
+   "from": 2000,
+   "an": "Vietnam",
+   "bn": "The Philippines"
+  }
+ },
+ "yt": {
+  "title": "Vietnam's economy was {wr_r0}% of The Philippines's in {wr_from}. Now? #Shorts",
+  "description": "Vietnam as a share of The Philippines, economy, {wr_from} vs {wr_to}. Source: World Bank (NY.GDP.MKTP.CD).\nNarration is AI-generated.",
+  "tags": [
+   "economics",
+   "vietnam",
+   "the philippines",
+   "data",
+   "worldbank"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "In {wr_from}",
+   "text": "Vietnam's economy was {wr_r0}% of The Philippines's",
+   "hl": "{wr_r0}%",
+   "vs": [
+    {
+     "flag": "🇻🇳",
+     "name": "Vietnam"
+    },
+    {
+     "flag": "🇵🇭",
+     "name": "The Philippines"
+    }
+   ],
+   "narration": "In {wr_from}, Vietnam was {wr_r0_say} percent of The Philippines.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "bars",
+   "style": "coins",
+   "kicker": "Vietnam as % of The Philippines",
+   "text": "Now watch",
+   "hl": "watch",
+   "suffix": "%",
+   "vals_from": "wr_v",
+   "labels_from": "wr_y",
+   "narration": "Then Vietnam took off. Today: {wr_r1_say} percent.",
+   "min_duration": 4.4
+  },
+  {
+   "type": "big",
+   "text": "Vietnam's economy grew",
+   "hl": "grew",
+   "big": "{wr_d} pts",
+   "label": "on the Philippines since {wr_from}",
+   "narration": "Vietnam gained {wr_d_say} points.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "text",
+   "text": "Factories moved in",
+   "hl": "Factories",
+   "icon": "🏭",
+   "narration": "Electronics factories moved in. Exports exploded.",
+   "min_duration": 3.2,
+   "pose": "shrug"
+  },
+  {
+   "type": "end",
+   "text": "Which pair next?",
+   "hl": "next?",
+   "narration": "Which two countries should I compare next?",
+   "min_duration": 2.2
+  }
+ ]
+}

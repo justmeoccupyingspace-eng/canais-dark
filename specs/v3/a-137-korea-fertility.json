@@ -1,0 +1,86 @@
+{
+ "channel": "chartbound",
+ "style": "v3",
+ "rate": "+9%",
+ "title": "South Korea went from 6 kids per woman to {ws_v1} #Shorts",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-27T16:00:00Z"
+ },
+ "compute": {
+  "wbseries": {
+   "ind": "SP.DYN.TFR.IN",
+   "c": "KOR",
+   "from": 1960,
+   "years": [
+    1960,
+    1980,
+    2000,
+    "last"
+   ],
+   "dec": 1,
+   "scale": 1
+  }
+ },
+ "yt": {
+  "title": "South Korea went from 6 kids per woman to {ws_v1} #Shorts",
+  "description": "Fertility rate (births per woman), South Korea. Source: World Bank (SP.DYN.TFR.IN).\nNarration is AI-generated.",
+  "tags": [
+   "population",
+   "southkorea",
+   "fertility",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "South Korea",
+   "text": "From 6 kids per woman to {ws_v1}",
+   "hl": "{ws_v1}",
+   "icon": "🇰🇷",
+   "narration": "In {ws_y0}, the average South Korean woman had {ws_v0_say} kids. Now?",
+   "min_duration": 3.0
+  },
+  {
+   "type": "bars",
+   "kicker": "Births per woman",
+   "text": "Watch it fall",
+   "hl": "fall",
+   "prefix": "",
+   "suffix": "",
+   "dec": 1,
+   "vals_from": "ws_v",
+   "labels_from": "ws_y",
+   "narration": "Then it fell, and fell. Now it's {ws_v1_say}. The lowest in the world.",
+   "min_duration": 4.6
+  },
+  {
+   "type": "big",
+   "text": "A stable population needs",
+   "hl": "needs",
+   "big": "2.1",
+   "label": "kids per woman",
+   "narration": "To stay the same size, a country needs about two point one.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "text",
+   "text": "Each generation: about 1/3 the size",
+   "hl": "1/3",
+   "icon": "📉",
+   "narration": "At this rate, each generation is about a third the size of the last.",
+   "min_duration": 3.2,
+   "pose": "shock"
+  },
+  {
+   "type": "end",
+   "text": "What would fix it?",
+   "hl": "fix it?",
+   "narration": "What do you think would fix it?",
+   "min_duration": 2.2
+  }
+ ]
+}

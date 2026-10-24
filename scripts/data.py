@@ -154,10 +154,35 @@ def compute_blocks(spec, ctx, raw):
                    wr_d=abs(round(r1) - round(r0)), wr_d_say=num2words(abs(round(r1) - round(r0)), lang="en"),
                    wr_word=("jumped" if r1 > r0 else "dropped"), wr_sign=("+" if r1 >= r0 else "-"),
                    wr_x=round(max(r1, r0) / max(min(r1, r0), 1e-9), 1), wr_x_say=num2words(round(max(r1, r0) / max(min(r1, r0), 1e-9), 1), lang="en"))
+        an, bn = w.get("an", w["a"]), w.get("bn", w["b"])
+        big = 0 if A[y1] >= B[y1] else 1
+        raw.update(wr_big=big, wr_win=(an if big == 0 else bn), wr_lose=(bn if big == 0 else an),
+                   wr_a_m=round(A[y1] / 1e6), wr_b_m=round(B[y1] / 1e6), wr_a_m_say=num2words(round(A[y1] / 1e6), lang="en"), wr_b_m_say=num2words(round(B[y1] / 1e6), lang="en"),
+                   wr_a0_m=round(A[y0] / 1e6), wr_b0_m=round(B[y0] / 1e6))
         pick = [y0] + [y for y in (y0 + 8, y0 + 16) if y in A and y in B and y < y1] + [y1]
         cross = next((y for y in ys if (A[y] >= B[y]) != (A[y0] >= B[y0])), None)
         raw.update(wr_v=[round(A[y] / B[y] * 100) for y in pick], wr_y=[str(y) for y in pick], wr_cross=cross or "")
         ctx.update({k: v for k, v in raw.items() if k.startswith("wr_")})
+    if "wbseries" in c:
+        from num2words import num2words
+        w = c["wbseries"]
+        S = worldbank_annual(w["ind"], w["c"], w["from"], w.get("to", 2030))
+        ys = sorted(S)
+        pick = []
+        for y in w["years"]:
+            yy = ys[-1] if y == "last" else min(ys, key=lambda k: abs(k - y))
+            if yy not in pick:
+                pick.append(yy)
+        dec, scale = w.get("dec", 0), w.get("scale", 1)
+        vals = [round(S[y] / scale, dec) for y in pick]
+        f = lambda v: f"{v:,.{dec}f}"
+        sayv = lambda v: num2words(round(v, dec) if dec else int(round(v)), lang="en")
+        v0, v1 = vals[0], vals[-1]
+        x = v1 / v0 if v0 else 0
+        raw.update(ws_v=vals, ws_y=[str(y) for y in pick], ws_y0=pick[0], ws_y1=pick[-1], ws_v0=f(v0), ws_v1=f(v1), ws_v0_say=sayv(v0), ws_v1_say=sayv(v1),
+                   ws_x=f"{x:.1f}", ws_x_say=num2words(round(x, 1), lang="en"), ws_d=f(abs(v1 - v0)), ws_d_say=sayv(abs(v1 - v0)),
+                   ws_max_y=pick[vals.index(max(vals))], ws_min_y=pick[vals.index(min(vals))])
+        ctx.update({k: v for k, v in raw.items() if k.startswith("ws_")})
     if "floatsum" in c:
         from num2words import num2words
         fs = c["floatsum"]
@@ -317,6 +342,60 @@ def compute_blocks(spec, ctx, raw):
             raw.update(c_stat=f"{rtt:.1f} ms", c_ms=f"{rtt:.1f}", c_ms_say=num2words(round(rtt, 1), lang="en"),
                        c_vac=f"{vac:.1f}", c_vac_say=num2words(round(vac, 1), lang="en"), c_km=f"{dkm:,}", c_fkms=f"{cl / n_fiber:,.0f}",
                        c_fkms_say=num2words(round(cl / n_fiber, -3), lang="en"))
+        elif k == "mbps":
+            raw.update(c_mbs="12.5", c_mbs_say="twelve point five", c_gb_s=round(8e9 / 100e6), c_gb_s_say=num2words(round(8e9 / 100e6), lang="en"))
+        elif k == "wifi":
+            cl = 299_792_458
+            lam = cl / 2.45e9 * 100
+            raw.update(c_cm=f"{lam:.1f}", c_cm_say=num2words(round(lam, 1), lang="en"), c_wifi5=f"{cl / 5.5e9 * 100:.1f}")
+        elif k == "spin":
+            eq = 40_075.017 / (86_164.0905 / 3600)
+            ny = eq * math.cos(math.radians(40.71))
+            raw.update(c_eq=f"{eq:,.0f}", c_eq_say=num2words(round(eq, -1), lang="en"), c_ny=f"{ny:,.0f}", c_ny_say=num2words(round(ny, -1), lang="en"))
+        elif k == "thunder":
+            v = 343.0
+            raw.update(c_s_km=f"{1000 / v:.1f}", c_s_mi=f"{1609.344 / v:.1f}", c_s_km_say=num2words(round(1000 / v, 1), lang="en"))
+        elif k == "horizon":
+            R = 6_371_000
+            d = lambda h: math.sqrt(2 * R * h + h * h) / 1000
+            raw.update(c_h=f"{d(1.7):.1f}", c_h_say=num2words(round(d(1.7), 1), lang="en"), c_plane=f"{d(10_668):,.0f}", c_plane_say=num2words(round(d(10_668), -1), lang="en"))
+        elif k == "iss":
+            gm, r = 3.986004418e14, 6_371_000 + 420_000
+            T = 2 * math.pi * math.sqrt(r ** 3 / gm)
+            v = 2 * math.pi * r / T * 3.6
+            n = 86400 / T
+            raw.update(c_min=f"{T / 60:.0f}", c_min_say=num2words(round(T / 60), lang="en"), c_kmh=f"{v:,.0f}", c_kmh_say=num2words(round(v, -2), lang="en"),
+                       c_n=f"{n:.1f}", c_n_say=num2words(round(n, 1), lang="en"), c_n16=round(n))
+        elif k == "battery":
+            wh = 5.0 * 3.85
+            j = wh * 3600
+            h = j / (70 * 9.81)
+            raw.update(c_wh=f"{wh:.1f}", c_j=f"{j:,.0f}", c_j_say=num2words(round(j, -2), lang="en"), c_m=f"{h:.0f}", c_m_say=num2words(round(h), lang="en"), c_floors=round(h / 3.3))
+        elif k == "pixels":
+            a, b, e = 1920 * 1080, 3840 * 2160, 7680 * 4320
+            raw.update(c_fhd=f"{a / 1e6:.2f}", c_4k=f"{b / 1e6:.2f}", c_x4=b // a, c_x8=e // a)
+        elif k == "base64":
+            raw.update(c_pct=f"{(4 / 3 - 1) * 100:.0f}", c_10=f"{10 * 4 / 3:.1f}")
+        elif k == "sms":
+            bits = 140 * 8
+            raw.update(c_bits=f"{bits:,}", c_chars=bits // 7, c_ucs=bits // 16)
+        elif k == "orbit":
+            L = 2 * math.pi * 149_597_870.7
+            hrs = 365.256 * 24
+            v = L / hrs
+            raw.update(c_L=f"{L / 1e6:,.0f}", c_hrs=f"{hrs:,.0f}", c_v=f"{v:,.0f}", c_v_say=num2words(round(v, -3), lang="en"), c_kms=f"{v / 3600:.1f}",
+                       c_nyla=f"{3936 / (v / 3600) / 60:.1f}")
+        elif k == "lightyear":
+            ly = 9.4607e12
+            yrs = ly / 100 / 8766
+            raw.update(c_ly=f"{ly / 1e12:.2f}", c_myr=f"{yrs / 1e6:.1f}", c_myr_say=num2words(round(yrs / 1e6, 1), lang="en"), c_prox=f"{yrs * 4.24 / 1e6:.0f}", c_prox_say=num2words(round(yrs * 4.24 / 1e6), lang="en"))
+        elif k == "cdaudio":
+            bps = 44_100 * 16 * 2
+            mb = bps * 180 / 8 / 1e6
+            mp3 = 128_000 * 180 / 8 / 1e6
+            raw.update(c_mbps=f"{bps / 1e6:.2f}", c_mb=f"{mb:.1f}", c_mb_say=num2words(round(mb, 1), lang="en"), c_mp3=f"{mp3:.1f}", c_x=f"{mb / mp3:.0f}", c_x_say=num2words(round(mb / mp3), lang="en"))
+        elif k == "qr":
+            raw.update(c_digits="7,089", c_pct="30")
         elif k == "shuffle":
             f = math.factorial(52)
             d = len(str(f))
@@ -445,6 +524,11 @@ def main(src, dst):
                 sc[k] = sub(sc[k])
         for r in sc.get("rows", []):
             r["t"] = sub(r.get("t", ""))
+        for k in ("q", "label", "cta"):
+            if k in sc:
+                sc[k] = sub(sc[k])
+        if "alts" in sc:
+            sc["alts"] = [sub(a) for a in sc["alts"]]
         for k in [k for k in sc if k.endswith("_from") and k != "value_from"]:
             sc[k[:-5]] = raw[sc[k]]
         if sc.get("type") == "stat" and "value_from" in sc:

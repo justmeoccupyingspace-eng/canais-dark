@@ -1,0 +1,85 @@
+{
+ "channel": "howitticks",
+ "style": "v3",
+ "rate": "+6%",
+ "title": "Count after lightning, divide by 3: that's the km #Shorts",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-27T01:00:00Z"
+ },
+ "compute": {
+  "calc": {
+   "kind": "thunder"
+  }
+ },
+ "yt": {
+  "title": "Count after lightning, divide by 3: that's the km #Shorts",
+  "description": "Sound travels about 343 m/s in air at 20 °C, so it covers 1 km in about 2.9 s. Light arrives almost instantly.\nNarration is AI-generated.",
+  "tags": [
+   "physics",
+   "sound",
+   "lightning",
+   "weather"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "Count the seconds after lightning",
+   "hl": "seconds",
+   "icon": "⚡",
+   "narration": "Next storm, count the seconds after the lightning.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "steps",
+   "text": "Why it works",
+   "hl": "works",
+   "rows": [
+    {
+     "t": "Light: arrives instantly",
+     "cue": "light",
+     "icon": "💡"
+    },
+    {
+     "t": "Sound: 343 m per second",
+     "cue": "sound",
+     "icon": "🔊"
+    },
+    {
+     "t": "1 km = {c_s_km} seconds",
+     "cue": "one"
+    }
+   ],
+   "narration": "The light reaches you almost instantly. The sound crawls at three hundred forty three meters per second. One kilometer takes about three seconds.",
+   "min_duration": 3.4
+  },
+  {
+   "type": "big",
+   "text": "Seconds divided by 3 =",
+   "hl": "divided by 3",
+   "big": "km away",
+   "label": "divide by 5 for miles",
+   "narration": "So divide the seconds by three, and you get kilometers. By five for miles.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "text": "Under 10 seconds? Get inside.",
+   "hl": "Get inside.",
+   "icon": "🏠",
+   "narration": "Under ten seconds, it's close enough to hit you. Get inside.",
+   "min_duration": 3.2,
+   "pose": "shock"
+  },
+  {
+   "type": "end",
+   "text": "Try it next storm",
+   "hl": "next storm",
+   "narration": "Try it on the next storm.",
+   "min_duration": 2.2
+  }
+ ]
+}

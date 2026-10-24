@@ -1,0 +1,80 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Inafiançável E imprescritível",
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "tiktok": "Constitucional do Escrevente TJSP: crimes imprescritíveis. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #direitoconstitucional",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Inafiançável E imprescritível",
+   "hl": "imprescritível",
+   "icon": "⚖️",
+   "narration": "Essa pegadinha da Constituição derruba muita gente.",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "CONSTITUCIONAL · ART. 5º",
+   "q": "Segundo a Constituição Federal, são crimes inafiançáveis e imprescritíveis:",
+   "alts": [
+    "racismo e ação de grupos armados contra o Estado Democrático",
+    "tortura, tráfico de drogas e terrorismo",
+    "terrorismo, tráfico de drogas e hediondos",
+    "racismo, terrorismo e hediondos",
+    "ação de grupos armados e hediondos"
+   ],
+   "correct": 0,
+   "narration": "Quais crimes são inafiançáveis e imprescritíveis?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 40
+  },
+  {
+   "type": "text",
+   "text": "Letra A: racismo e grupos armados",
+   "hl": "racismo e grupos armados",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra A!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Só dois são imprescritíveis",
+   "hl": "dois",
+   "rows": [
+    {
+     "t": "Racismo (art. 5º, XLII)",
+     "cue": "racismo"
+    },
+    {
+     "t": "Grupos armados (art. 5º, XLIV)",
+     "cue": "grupos"
+    },
+    {
+     "t": "Tortura, tráfico, terrorismo e hediondos: inafiançáveis, mas prescrevem",
+     "cue": "tortura"
+    }
+   ],
+   "narration": "Só dois são imprescritíveis: racismo e ação de grupos armados. Tortura, tráfico, terrorismo e hediondos são inafiançáveis, mas prescrevem.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

@@ -1,0 +1,97 @@
+{
+ "channel": "chartbound",
+ "style": "v3",
+ "rate": "+9%",
+ "title": "Which has more people: Vietnam or Germany? #Shorts",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-30T16:00:00Z"
+ },
+ "compute": {
+  "wbratio": {
+   "ind": "SP.POP.TOTL",
+   "a": "VNM",
+   "b": "DEU",
+   "from": 2000,
+   "an": "Vietnam",
+   "bn": "Germany"
+  }
+ },
+ "yt": {
+  "title": "Which has more people: Vietnam or Germany? #Shorts",
+  "description": "Vietnam vs Germany, population, {wr_from} to {wr_to}. Source: World Bank (SP.POP.TOTL).\nNarration is AI-generated.",
+  "tags": [
+   "quiz",
+   "population",
+   "vietnam",
+   "germany",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Quick quiz",
+   "text": "More people: Vietnam or Germany?",
+   "hl": "More people:",
+   "vs": [
+    {
+     "flag": "🇻🇳",
+     "name": "Vietnam"
+    },
+    {
+     "flag": "🇩🇪",
+     "name": "Germany"
+    }
+   ],
+   "narration": "Which has more people: Vietnam or Germany? Most people get this wrong.",
+   "min_duration": 2.6
+  },
+  {
+   "type": "quiz",
+   "label": "GUESS",
+   "q": "Which has more people: Vietnam or Germany?",
+   "alts": [
+    "🇻🇳 Vietnam",
+    "🇩🇪 Germany"
+   ],
+   "correct_from": "wr_big",
+   "narration": "Lock in your answer.",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 64,
+   "asize": 60,
+   "cta": "Comment your guess"
+  },
+  {
+   "type": "bars",
+   "kicker": "Vietnam as % of Germany",
+   "text": "It's {wr_win}",
+   "hl": "{wr_win}",
+   "suffix": "%",
+   "vals_from": "wr_v",
+   "labels_from": "wr_y",
+   "narration": "It's {wr_win}. {wr_a_m_say} million versus {wr_b_m_say} million.",
+   "min_duration": 4.4
+  },
+  {
+   "type": "text",
+   "text": "Smaller country, more people",
+   "hl": "more people",
+   "icon": "🗺️",
+   "narration": "And Vietnam is even a bit smaller than Germany in area.",
+   "min_duration": 3.2,
+   "pose": "shrug"
+  },
+  {
+   "type": "end",
+   "text": "Did you get it right?",
+   "hl": "right?",
+   "narration": "Did you get it right? Comment below.",
+   "min_duration": 2.2
+  }
+ ]
+}

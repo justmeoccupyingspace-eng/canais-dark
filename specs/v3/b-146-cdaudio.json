@@ -1,0 +1,84 @@
+{
+ "channel": "howitticks",
+ "style": "v3",
+ "rate": "+6%",
+ "title": "A 3-minute song is {c_mb} MB. Your MP3 is {c_mp3} MB #Shorts",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-31T21:00:00Z"
+ },
+ "compute": {
+  "calc": {
+   "kind": "cdaudio"
+  }
+ },
+ "yt": {
+  "title": "A 3-minute song is {c_mb} MB. Your MP3 is {c_mp3} MB #Shorts",
+  "description": "CD audio: 44,100 samples/s × 16 bits × 2 channels = 1.41 Mbit/s; 180 s = 31.75 MB. MP3 at 128 kbps: 2.88 MB.\nNarration is AI-generated.",
+  "tags": [
+   "audio",
+   "mp3",
+   "music",
+   "compression"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "A 3-minute song is 32 MB. Your MP3 is 3 MB.",
+   "hl": "3 MB.",
+   "icon": "🎵",
+   "narration": "A three minute song is thirty two megabytes. Your MP3 is three.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "steps",
+   "text": "CD quality",
+   "hl": "CD",
+   "rows": [
+    {
+     "t": "44,100 samples per second",
+     "cue": "forty",
+     "icon": "🎚️"
+    },
+    {
+     "t": "× 16 bits × 2 channels",
+     "cue": "times"
+    },
+    {
+     "t": "× 180 s = {c_mb} MB",
+     "cue": "for"
+    }
+   ],
+   "narration": "Forty four thousand one hundred samples a second, times sixteen bits, times two channels. For three minutes: {c_mb_say} megabytes.",
+   "min_duration": 3.4
+  },
+  {
+   "type": "big",
+   "text": "An MP3 is",
+   "hl": "MP3",
+   "big": "{c_x}x",
+   "label": "smaller at 128 kbps",
+   "narration": "A typical MP3 is {c_x_say} times smaller.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "text",
+   "text": "It deletes sounds you can't hear",
+   "hl": "can't hear",
+   "icon": "👂",
+   "narration": "The trick: it deletes sounds your ear can't hear anyway.",
+   "min_duration": 3.2,
+   "pose": "shrug"
+  },
+  {
+   "type": "end",
+   "text": "Can you hear the difference?",
+   "hl": "difference?",
+   "narration": "Can you hear the difference?",
+   "min_duration": 2.2
+  }
+ ]
+}

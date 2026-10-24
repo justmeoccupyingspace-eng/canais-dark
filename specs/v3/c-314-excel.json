@@ -1,0 +1,85 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Qual erro do Excel é esse?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "tiktok": "Informática do Escrevente TJSP: erros do Excel. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #informatica #excel",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Qual erro do Excel é esse?",
+   "hl": "Excel",
+   "icon": "📊",
+   "narration": "Quatro erros do Excel. Só um está certo.",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "INFORMÁTICA · EXCEL",
+   "q": "Associa corretamente a mensagem de erro do Excel à sua causa mais comum:",
+   "alts": [
+    "#NOME?: célula excluída",
+    "#REF!: nome de função errado",
+    "#DIV/0!: divisão por zero ou célula vazia",
+    "#VALOR!: PROCV não achou o valor",
+    "#N/D: somar célula com texto"
+   ],
+   "correct": 2,
+   "narration": "Qual alternativa associa certo o erro do Excel à causa?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 40
+  },
+  {
+   "type": "text",
+   "text": "Letra C: #DIV/0!",
+   "hl": "#DIV/0!",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra C!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Decora esses",
+   "hl": "Decora",
+   "rows": [
+    {
+     "t": "#DIV/0!: divisão por zero",
+     "hi": true,
+     "cue": "divisão"
+    },
+    {
+     "t": "#NOME?: função escrita errada",
+     "cue": "nome"
+    },
+    {
+     "t": "#REF!: célula excluída",
+     "cue": "célula"
+    },
+    {
+     "t": "#N/D: PROCV não achou",
+     "cue": "procv"
+    }
+   ],
+   "narration": "Divisão por zero dá div zero. Nome de função errado dá nome. Célula excluída dá ref. E PROCV que não acha dá N D.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

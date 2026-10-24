@@ -1,0 +1,84 @@
+{
+ "channel": "howitticks",
+ "style": "v3",
+ "rate": "+6%",
+ "title": "You're spinning at {c_eq} km/h right now #Shorts",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-28T01:00:00Z"
+ },
+ "compute": {
+  "calc": {
+   "kind": "spin"
+  }
+ },
+ "yt": {
+  "title": "You're spinning at {c_eq} km/h right now #Shorts",
+  "description": "Earth's equatorial circumference (40,075 km) divided by one sidereal day (23 h 56 min). Speed scales with the cosine of latitude.\nNarration is AI-generated.",
+  "tags": [
+   "earth",
+   "physics",
+   "space",
+   "rotation"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "You're moving at {c_eq} km/h right now",
+   "hl": "{c_eq} km/h",
+   "icon": "🌍",
+   "narration": "Right now, you're moving at about {c_eq_say} kilometers per hour.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "steps",
+   "text": "Where that comes from",
+   "hl": "comes from",
+   "rows": [
+    {
+     "t": "Around the equator: 40,075 km",
+     "cue": "around",
+     "icon": "🌐"
+    },
+    {
+     "t": "One spin: 23 h 56 min",
+     "cue": "one",
+     "icon": "🕐"
+    },
+    {
+     "t": "40,075 ÷ 23.93 h = {c_eq} km/h",
+     "cue": "that"
+    }
+   ],
+   "narration": "Around the equator, Earth is forty thousand kilometers. One spin takes twenty three hours fifty six minutes. That's {c_eq_say} kilometers per hour.",
+   "min_duration": 3.4
+  },
+  {
+   "type": "text",
+   "text": "New York: {c_ny} km/h",
+   "hl": "{c_ny} km/h",
+   "icon": "🗽",
+   "narration": "Further north it's slower. In New York, about {c_ny_say}.",
+   "min_duration": 3.2,
+   "pose": "shrug"
+  },
+  {
+   "type": "text",
+   "text": "You don't feel it: no speed change",
+   "hl": "don't feel it",
+   "icon": "🛋️",
+   "narration": "You don't feel it, because the speed never changes.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "end",
+   "text": "Mind blown?",
+   "hl": "blown?",
+   "narration": "Mind blown?",
+   "min_duration": 2.2
+  }
+ ]
+}

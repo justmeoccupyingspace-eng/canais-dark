@@ -1,0 +1,84 @@
+{
+ "channel": "howitticks",
+ "style": "v3",
+ "rate": "+6%",
+ "title": "Up to {c_pct}% of a QR code can be damaged #Shorts",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-11-01T01:00:00Z"
+ },
+ "compute": {
+  "calc": {
+   "kind": "qr"
+  }
+ },
+ "yt": {
+  "title": "Up to {c_pct}% of a QR code can be damaged #Shorts",
+  "description": "QR codes use Reed–Solomon error correction; level H recovers up to ~30% of codewords. Version 40 holds up to 7,089 digits.\nNarration is AI-generated.",
+  "tags": [
+   "qrcode",
+   "math",
+   "errorcorrection",
+   "tech"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "A QR code still works with 30% torn off",
+   "hl": "30% torn off",
+   "icon": "✂️",
+   "narration": "You can damage up to thirty percent of a QR code, and it still scans.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "steps",
+   "text": "How",
+   "hl": "How",
+   "rows": [
+    {
+     "t": "Extra error-correction data",
+     "cue": "it",
+     "icon": "🧩"
+    },
+    {
+     "t": "Level H: recovers ~30%",
+     "cue": "at"
+    },
+    {
+     "t": "That's how logos fit inside",
+     "cue": "that"
+    }
+   ],
+   "narration": "It stores extra error correction data. At the highest level, it can rebuild about thirty percent. That's how logos fit in the middle.",
+   "min_duration": 3.4
+  },
+  {
+   "type": "big",
+   "text": "The biggest QR code holds",
+   "hl": "biggest",
+   "big": "{c_digits}",
+   "label": "digits",
+   "narration": "The biggest one holds seven thousand eighty nine digits.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "text",
+   "text": "Same math as CDs and space probes",
+   "hl": "space probes",
+   "icon": "🚀",
+   "narration": "The same math protects CDs and space probe signals.",
+   "min_duration": 3.2,
+   "pose": "shrug"
+  },
+  {
+   "type": "end",
+   "text": "Ever scanned a damaged one?",
+   "hl": "damaged",
+   "narration": "Ever scanned a damaged one?",
+   "min_duration": 2.2
+  }
+ ]
+}

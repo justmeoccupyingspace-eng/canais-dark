@@ -1,0 +1,94 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Me entregaram ou Entregaram-me?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "tiktok": "Português do Escrevente TJSP: colocação pronominal. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Me entregaram ou Entregaram-me?",
+   "hl": "Entregaram-me?",
+   "icon": "✍️",
+   "narration": "Colocação pronominal: a VUNESP adora.",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · COLOCAÇÃO PRONOMINAL",
+   "q": "A colocação do pronome átono está de acordo com a norma-padrão em:",
+   "alts": [
+    "Me entregaram o processo ontem.",
+    "O servidor tinha entregado-lhe o documento.",
+    "Nunca esqueceram-se do prazo final.",
+    "Disseram que entregariam-me o parecer.",
+    "Entregar-lhe-emos os documentos amanhã."
+   ],
+   "correct": 4,
+   "narration": "Em qual frase o pronome está bem colocado?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 42
+  },
+  {
+   "type": "text",
+   "text": "Letra E: Entregar-lhe-emos",
+   "hl": "Entregar-lhe-emos",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra E!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "As regras que caem",
+   "hl": "caem",
+   "rows": [
+    {
+     "t": "Não começa frase com pronome",
+     "cue": "não"
+    },
+    {
+     "t": "Nunca depois do particípio",
+     "cue": "nunca"
+    },
+    {
+     "t": "\"Nunca\" e \"que\" puxam o pronome",
+     "cue": "palavras"
+    },
+    {
+     "t": "Futuro no início: mesóclise",
+     "cue": "futuro"
+    }
+   ],
+   "narration": "Não se começa frase com pronome. Nunca depois do particípio. Palavras como nunca e que puxam o pronome pra antes. E com futuro no início, mesóclise.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "Mesóclise ainda cai na prova",
+   "hl": "Mesóclise",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Parece antigo, mas a mesóclise ainda cai na prova.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

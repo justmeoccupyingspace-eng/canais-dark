@@ -1,0 +1,75 @@
+{
+ "channel": "howitticks",
+ "style": "v3",
+ "rate": "+6%",
+ "title": "Right now you're flying at {c_v} km/h #Shorts",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-11-01T21:00:00Z"
+ },
+ "compute": {
+  "calc": {
+   "kind": "orbit"
+  }
+ },
+ "yt": {
+  "title": "Right now you're flying at {c_v} km/h #Shorts",
+  "description": "Earth's orbit: 2π × 1 AU ≈ 940 million km per sidereal year (365.256 days) ≈ 107,000 km/h ≈ 29.8 km/s.\nNarration is AI-generated.",
+  "tags": [
+   "space",
+   "earth",
+   "orbit",
+   "physics"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "Right now you're flying through space at 107,000 km/h",
+   "hl": "107,000 km/h",
+   "icon": "🚀",
+   "narration": "Right now, you're flying through space at a hundred seven thousand kilometers per hour.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "steps",
+   "text": "The math",
+   "hl": "math",
+   "rows": [
+    {
+     "t": "Earth's orbit: {c_L} million km",
+     "cue": "earth",
+     "icon": "☀️"
+    },
+    {
+     "t": "One year: {c_hrs} hours",
+     "cue": "one"
+    },
+    {
+     "t": "{c_L} M ÷ {c_hrs} = {c_v} km/h",
+     "cue": "that"
+    }
+   ],
+   "narration": "Earth's orbit is nine hundred forty million kilometers long. One year is eight thousand seven hundred sixty six hours. That's {c_v_say} kilometers per hour.",
+   "min_duration": 3.4
+  },
+  {
+   "type": "big",
+   "text": "Per second",
+   "hl": "second",
+   "big": "{c_kms} km",
+   "label": "New York to LA in {c_nyla} minutes",
+   "narration": "Thirty kilometers every second. New York to LA in about two minutes.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "end",
+   "text": "And you feel nothing",
+   "hl": "nothing",
+   "narration": "And you feel nothing.",
+   "min_duration": 2.2
+  }
+ ]
+}

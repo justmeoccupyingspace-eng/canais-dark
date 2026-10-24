@@ -1,0 +1,75 @@
+{
+ "channel": "howitticks",
+ "style": "v3",
+ "rate": "+6%",
+ "title": "Your phone battery could lift you {c_m} meters #Shorts",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-28T21:00:00Z"
+ },
+ "compute": {
+  "calc": {
+   "kind": "battery"
+  }
+ },
+ "yt": {
+  "title": "Your phone battery could lift you {c_m} meters #Shorts",
+  "description": "Typical 5,000 mAh phone battery at 3.85 V nominal = 19.25 Wh = 69,300 J. Lifting 70 kg: h = E / (m·g). Ideal, no losses.\nNarration is AI-generated.",
+  "tags": [
+   "battery",
+   "energy",
+   "physics",
+   "phone"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "Your phone battery could lift you {c_m} m",
+   "hl": "{c_m} m",
+   "icon": "🔋",
+   "narration": "Your phone battery holds enough energy to lift you {c_m_say} meters.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "steps",
+   "text": "The energy",
+   "hl": "energy",
+   "rows": [
+    {
+     "t": "5,000 mAh × 3.85 V = {c_wh} Wh",
+     "cue": "five",
+     "icon": "🔋"
+    },
+    {
+     "t": "{c_wh} Wh = {c_j} joules",
+     "cue": "that"
+    },
+    {
+     "t": "Lift 70 kg: E ÷ (m × g) = {c_m} m",
+     "cue": "lift"
+    }
+   ],
+   "narration": "Five thousand milliamp hours at three point eight five volts is nineteen watt hours. That's {c_j_say} joules. Lifting seventy kilos, that's {c_m_say} meters.",
+   "min_duration": 3.4
+  },
+  {
+   "type": "text",
+   "text": "That's a {c_floors}-floor building",
+   "hl": "{c_floors}-floor",
+   "icon": "🏢",
+   "narration": "That's a {c_floors} floor building. In theory, with zero losses.",
+   "min_duration": 3.2,
+   "pose": "shock"
+  },
+  {
+   "type": "end",
+   "text": "Charge it tonight",
+   "hl": "tonight",
+   "narration": "Charge it tonight with that in mind.",
+   "min_duration": 2.2
+  }
+ ]
+}

@@ -1,0 +1,86 @@
+{
+ "channel": "chartbound",
+ "style": "v3",
+ "rate": "+9%",
+ "title": "China's income per person grew {ws_x}x since {ws_y0} #Shorts",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-29T16:00:00Z"
+ },
+ "compute": {
+  "wbseries": {
+   "ind": "NY.GDP.PCAP.CD",
+   "c": "CHN",
+   "from": 1990,
+   "years": [
+    1990,
+    2000,
+    2010,
+    "last"
+   ],
+   "dec": 0,
+   "scale": 1
+  }
+ },
+ "yt": {
+  "title": "China's income per person grew {ws_x}x since {ws_y0} #Shorts",
+  "description": "GDP per capita (current US$), China. Source: World Bank (NY.GDP.PCAP.CD).\nNarration is AI-generated.",
+  "tags": [
+   "economics",
+   "china",
+   "gdppercapita",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "China",
+   "text": "Income per person: ${ws_v0} in {ws_y0}",
+   "hl": "${ws_v0}",
+   "icon": "🇨🇳",
+   "narration": "In {ws_y0}, China's income per person was {ws_v0_say} dollars a year.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "bars",
+   "kicker": "GDP per person, US$",
+   "text": "Now watch",
+   "hl": "watch",
+   "prefix": "$",
+   "suffix": "",
+   "dec": 0,
+   "vals_from": "ws_v",
+   "labels_from": "ws_y",
+   "narration": "Today it's {ws_v1_say} dollars.",
+   "min_duration": 4.6
+  },
+  {
+   "type": "big",
+   "text": "That is",
+   "hl": "That is",
+   "big": "{ws_x}x",
+   "label": "more in {ws_y1} than in {ws_y0}",
+   "narration": "That's {ws_x_say} times more.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "text",
+   "text": "Still below the US",
+   "hl": "below",
+   "icon": "🇺🇸",
+   "narration": "Still, America's income per person is about six times higher.",
+   "min_duration": 3.2,
+   "pose": "shrug"
+  },
+  {
+   "type": "end",
+   "text": "Which country next?",
+   "hl": "next?",
+   "narration": "Which country should I chart next?",
+   "min_duration": 2.2
+  }
+ ]
+}

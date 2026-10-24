@@ -1,0 +1,84 @@
+{
+ "channel": "howitticks",
+ "style": "v3",
+ "rate": "+6%",
+ "title": "Astronauts see {c_n16} sunrises a day #Shorts",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-30T21:00:00Z"
+ },
+ "compute": {
+  "calc": {
+   "kind": "iss"
+  }
+ },
+ "yt": {
+  "title": "Astronauts see {c_n16} sunrises a day #Shorts",
+  "description": "ISS at ~420 km altitude: orbital period from Kepler's third law (GM of Earth), ~93 minutes; ~15.5 orbits per day.\nNarration is AI-generated.",
+  "tags": [
+   "space",
+   "iss",
+   "orbit",
+   "physics"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "Astronauts see 16 sunrises a day",
+   "hl": "16 sunrises",
+   "icon": "🛰️",
+   "narration": "Astronauts on the space station see about sixteen sunrises every day.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "steps",
+   "text": "Why",
+   "hl": "Why",
+   "rows": [
+    {
+     "t": "Altitude: 420 km",
+     "cue": "it",
+     "icon": "🌍"
+    },
+    {
+     "t": "Speed: {c_kmh} km/h",
+     "cue": "at"
+    },
+    {
+     "t": "One lap: {c_min} minutes",
+     "cue": "one"
+    }
+   ],
+   "narration": "It flies four hundred twenty kilometers up, at {c_kmh_say} kilometers per hour. One lap takes {c_min_say} minutes.",
+   "min_duration": 3.4
+  },
+  {
+   "type": "big",
+   "text": "Laps per day",
+   "hl": "per day",
+   "big": "{c_n}",
+   "label": "sunrises and sunsets",
+   "narration": "That's {c_n_say} laps a day. A sunrise every lap.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "text",
+   "text": "They sleep with window covers",
+   "hl": "window covers",
+   "icon": "😴",
+   "narration": "So they keep a strict clock, and cover the windows to sleep.",
+   "min_duration": 3.2,
+   "pose": "shrug"
+  },
+  {
+   "type": "end",
+   "text": "Would you sleep up there?",
+   "hl": "up there?",
+   "narration": "Would you sleep up there?",
+   "min_duration": 2.2
+  }
+ ]
+}

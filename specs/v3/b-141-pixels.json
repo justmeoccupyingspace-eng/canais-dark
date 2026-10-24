@@ -1,0 +1,92 @@
+{
+ "channel": "howitticks",
+ "style": "v3",
+ "rate": "+6%",
+ "title": "4K isn't 2x 1080p. It's {c_x4}x #Shorts",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-29T21:00:00Z"
+ },
+ "compute": {
+  "calc": {
+   "kind": "pixels"
+  }
+ },
+ "yt": {
+  "title": "4K isn't 2x 1080p. It's {c_x4}x #Shorts",
+  "description": "1080p = 1920×1080 = 2,073,600 pixels; 4K UHD = 3840×2160 = 8,294,400; 8K = 7680×4320 = 33,177,600.\nNarration is AI-generated.",
+  "tags": [
+   "4k",
+   "tv",
+   "pixels",
+   "video"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "4K isn't twice 1080p",
+   "hl": "twice",
+   "icon": "📺",
+   "narration": "4K is not twice the pixels of 1080p.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "quiz",
+   "label": "GUESS",
+   "q": "4K has how many times the pixels of 1080p?",
+   "alts": [
+    "2x",
+    "4x",
+    "8x"
+   ],
+   "correct": 1,
+   "narration": "How many times the pixels of 1080p does 4K have?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 60,
+   "asize": 54,
+   "cta": "Comment your guess"
+  },
+  {
+   "type": "steps",
+   "text": "Count them",
+   "hl": "Count",
+   "rows": [
+    {
+     "t": "1080p: 1920 × 1080 = {c_fhd} M",
+     "cue": "ten"
+    },
+    {
+     "t": "4K: 3840 × 2160 = {c_4k} M",
+     "cue": "four"
+    },
+    {
+     "t": "{c_4k} ÷ {c_fhd} = {c_x4}x",
+     "cue": "exactly"
+    }
+   ],
+   "narration": "Ten eighty p is two million pixels. 4K is eight point three million. Exactly four times.",
+   "min_duration": 3.4
+  },
+  {
+   "type": "big",
+   "text": "And 8K vs 1080p?",
+   "hl": "8K",
+   "big": "{c_x8}x",
+   "label": "the pixels",
+   "narration": "And 8K? Sixteen times.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "end",
+   "text": "Can you see the difference?",
+   "hl": "difference?",
+   "narration": "Can you actually see the difference?",
+   "min_duration": 2.2
+  }
+ ]
+}

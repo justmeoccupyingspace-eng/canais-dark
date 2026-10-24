@@ -1,0 +1,86 @@
+{
+ "channel": "chartbound",
+ "style": "v3",
+ "rate": "+9%",
+ "title": "India's life expectancy: {ws_v0} to {ws_v1} years #Shorts",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-11-01T23:00:00Z"
+ },
+ "compute": {
+  "wbseries": {
+   "ind": "SP.DYN.LE00.IN",
+   "c": "IND",
+   "from": 1960,
+   "years": [
+    1960,
+    1980,
+    2000,
+    "last"
+   ],
+   "dec": 0,
+   "scale": 1
+  }
+ },
+ "yt": {
+  "title": "India's life expectancy: {ws_v0} to {ws_v1} years #Shorts",
+  "description": "Life expectancy at birth, India. Source: World Bank (SP.DYN.LE00.IN).\nNarration is AI-generated.",
+  "tags": [
+   "health",
+   "india",
+   "lifeexpectancy",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "India",
+   "text": "In {ws_y0}, Indians lived {ws_v0} years",
+   "hl": "{ws_v0} years",
+   "icon": "🇮🇳",
+   "narration": "In {ws_y0}, the average Indian lived just {ws_v0_say} years.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "bars",
+   "kicker": "Life expectancy, years",
+   "text": "Now watch",
+   "hl": "watch",
+   "prefix": "",
+   "suffix": " yrs",
+   "dec": 0,
+   "vals_from": "ws_v",
+   "labels_from": "ws_y",
+   "narration": "Today it's {ws_v1_say}.",
+   "min_duration": 4.6
+  },
+  {
+   "type": "big",
+   "text": "That is",
+   "hl": "That is",
+   "big": "+{ws_d}",
+   "label": "years of life, on average",
+   "narration": "That's {ws_d_say} extra years of life.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "text",
+   "text": "Vaccines, clean water, fewer famines",
+   "hl": "Vaccines,",
+   "icon": "💉",
+   "narration": "Vaccines, clean water and the end of big famines did most of it.",
+   "min_duration": 3.2,
+   "pose": "shrug"
+  },
+  {
+   "type": "end",
+   "text": "Which country next?",
+   "hl": "next?",
+   "narration": "Which country should I chart next?",
+   "min_duration": 2.2
+  }
+ ]
+}

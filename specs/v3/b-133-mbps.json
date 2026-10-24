@@ -1,0 +1,93 @@
+{
+ "channel": "howitticks",
+ "style": "v3",
+ "rate": "+6%",
+ "title": "Your 100 Mbps internet tops out at 12.5 MB/s #Shorts",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-26T21:00:00Z"
+ },
+ "compute": {
+  "calc": {
+   "kind": "mbps"
+  }
+ },
+ "yt": {
+  "title": "Your 100 Mbps internet tops out at 12.5 MB/s #Shorts",
+  "description": "Network speeds are sold in megabits per second; downloads show megabytes. 8 bits = 1 byte.\nNarration is AI-generated.",
+  "tags": [
+   "internet",
+   "bits",
+   "bytes",
+   "networking"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "Your 100 Mbps internet is not 100 MB/s",
+   "hl": "not 100 MB/s",
+   "icon": "🐌",
+   "narration": "Your hundred megabit internet will never download at a hundred megabytes.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "quiz",
+   "label": "GUESS",
+   "q": "You pay for 100 Mbps. Max download speed?",
+   "alts": [
+    "100 MB/s",
+    "12.5 MB/s",
+    "1 GB/s"
+   ],
+   "correct": 1,
+   "narration": "You pay for a hundred megabits. What is the max download speed?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 60,
+   "asize": 54,
+   "cta": "Comment your guess"
+  },
+  {
+   "type": "steps",
+   "text": "Bits vs bytes",
+   "hl": "bytes",
+   "rows": [
+    {
+     "t": "1 byte = 8 bits",
+     "cue": "one",
+     "icon": "🔢"
+    },
+    {
+     "t": "100 Mbps ÷ 8 = 12.5 MB/s",
+     "cue": "divide"
+    },
+    {
+     "t": "1 GB takes {c_gb_s} s",
+     "cue": "so"
+    }
+   ],
+   "narration": "One byte is eight bits. Divide a hundred by eight: twelve point five megabytes per second. So one gigabyte takes {c_gb_s_say} seconds.",
+   "min_duration": 3.4
+  },
+  {
+   "type": "text",
+   "text": "Small b = bits. Big B = bytes.",
+   "hl": "Big B",
+   "icon": "🔤",
+   "narration": "Small b means bits. Big B means bytes. Ads use the small one.",
+   "min_duration": 3.2,
+   "pose": "shrug"
+  },
+  {
+   "type": "end",
+   "text": "Check your next download",
+   "hl": "download",
+   "narration": "Check it on your next download.",
+   "min_duration": 2.2
+  }
+ ]
+}

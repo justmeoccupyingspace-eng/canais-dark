@@ -1,0 +1,93 @@
+{
+ "channel": "howitticks",
+ "style": "v3",
+ "rate": "+6%",
+ "title": "The horizon is only {c_h} km away #Shorts",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-27T21:00:00Z"
+ },
+ "compute": {
+  "calc": {
+   "kind": "horizon"
+  }
+ },
+ "yt": {
+  "title": "The horizon is only {c_h} km away #Shorts",
+  "description": "Distance to the horizon for eyes 1.7 m above sea level: sqrt(2Rh + h²) with R = 6,371 km. Ignores refraction.\nNarration is AI-generated.",
+  "tags": [
+   "earth",
+   "math",
+   "geometry",
+   "physics"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "How far away is the horizon?",
+   "hl": "horizon?",
+   "icon": "🌅",
+   "narration": "Standing on a beach, how far away is the horizon?",
+   "min_duration": 2.8
+  },
+  {
+   "type": "quiz",
+   "label": "GUESS",
+   "q": "On a beach, eyes 1.7 m up. The horizon is about:",
+   "alts": [
+    "5 km",
+    "50 km",
+    "500 km"
+   ],
+   "correct": 0,
+   "narration": "Eyes one point seven meters up. How far is the horizon?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 60,
+   "asize": 54,
+   "cta": "Comment your guess"
+  },
+  {
+   "type": "steps",
+   "text": "The math",
+   "hl": "math",
+   "rows": [
+    {
+     "t": "d = √(2 × R × h)",
+     "cue": "the"
+    },
+    {
+     "t": "R = 6,371 km · h = 1.7 m",
+     "cue": "earth",
+     "icon": "🌍"
+    },
+    {
+     "t": "d ≈ {c_h} km",
+     "cue": "about"
+    }
+   ],
+   "narration": "The distance is the square root of two times Earth's radius times your height. With Earth's radius and one point seven meters, that's about {c_h_say} kilometers.",
+   "min_duration": 3.4
+  },
+  {
+   "type": "text",
+   "text": "From a plane: {c_plane} km",
+   "hl": "{c_plane} km",
+   "icon": "✈️",
+   "narration": "From a plane at cruising height, it's {c_plane_say} kilometers.",
+   "min_duration": 3.2,
+   "pose": "shock"
+  },
+  {
+   "type": "end",
+   "text": "Did you guess right?",
+   "hl": "right?",
+   "narration": "Did you guess right?",
+   "min_duration": 2.2
+  }
+ ]
+}

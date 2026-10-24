@@ -1,0 +1,89 @@
+{
+ "channel": "chartbound",
+ "style": "v3",
+ "rate": "+9%",
+ "title": "Egypt had {wr_r0}% of Germany's population in {wr_from}. Now? #Shorts",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-28T23:00:00Z"
+ },
+ "compute": {
+  "wbratio": {
+   "ind": "SP.POP.TOTL",
+   "a": "EGY",
+   "b": "DEU",
+   "from": 2000,
+   "an": "Egypt",
+   "bn": "Germany"
+  }
+ },
+ "yt": {
+  "title": "Egypt had {wr_r0}% of Germany's population in {wr_from}. Now? #Shorts",
+  "description": "Egypt as a share of Germany, population, {wr_from} vs {wr_to}. Source: World Bank (SP.POP.TOTL).\nNarration is AI-generated.",
+  "tags": [
+   "population",
+   "egypt",
+   "germany",
+   "data",
+   "worldbank"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "In {wr_from}",
+   "text": "Egypt had {wr_r0}% of Germany's people",
+   "hl": "{wr_r0}%",
+   "vs": [
+    {
+     "flag": "🇪🇬",
+     "name": "Egypt"
+    },
+    {
+     "flag": "🇩🇪",
+     "name": "Germany"
+    }
+   ],
+   "narration": "In {wr_from}, Egypt had {wr_r0_say} percent of Germany's people.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "bars",
+   "kicker": "Egypt as % of Germany",
+   "text": "Now watch",
+   "hl": "watch",
+   "suffix": "%",
+   "vals_from": "wr_v",
+   "labels_from": "wr_y",
+   "narration": "Then Egypt kept growing. Today: {wr_r1_say} percent.",
+   "min_duration": 4.4
+  },
+  {
+   "type": "big",
+   "text": "Egypt today",
+   "hl": "today",
+   "big": "{wr_a_m}M",
+   "label": "people, vs {wr_b_m}M in Germany",
+   "narration": "That's {wr_a_m_say} million people versus {wr_b_m_say} million.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "text",
+   "text": "Almost all live along the Nile",
+   "hl": "the Nile",
+   "icon": "🌊",
+   "narration": "And almost all of them live along the Nile.",
+   "min_duration": 3.2,
+   "pose": "shrug"
+  },
+  {
+   "type": "end",
+   "text": "Which pair next?",
+   "hl": "next?",
+   "narration": "Which two countries should I compare next?",
+   "min_duration": 2.2
+  }
+ ]
+}

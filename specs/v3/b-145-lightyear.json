@@ -1,0 +1,84 @@
+{
+ "channel": "howitticks",
+ "style": "v3",
+ "rate": "+6%",
+ "title": "Driving one light-year takes {c_myr} million years #Shorts",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-11-02T01:00:00Z"
+ },
+ "compute": {
+  "calc": {
+   "kind": "lightyear"
+  }
+ },
+ "yt": {
+  "title": "Driving one light-year takes {c_myr} million years #Shorts",
+  "description": "One light-year ≈ 9.46 trillion km. At a constant 100 km/h: 94.6 billion hours ≈ 10.8 million years. Proxima Centauri: 4.24 ly.\nNarration is AI-generated.",
+  "tags": [
+   "space",
+   "lightyear",
+   "physics",
+   "astronomy"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "Driving one light-year: 10.8 million years",
+   "hl": "10.8 million years",
+   "icon": "🚗",
+   "narration": "If you could drive one light-year, it would take ten point eight million years.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "steps",
+   "text": "The math",
+   "hl": "math",
+   "rows": [
+    {
+     "t": "1 light-year = {c_ly} trillion km",
+     "cue": "one",
+     "icon": "💡"
+    },
+    {
+     "t": "Highway speed: 100 km/h",
+     "cue": "at"
+    },
+    {
+     "t": "= {c_myr} million years",
+     "cue": "that"
+    }
+   ],
+   "narration": "One light-year is nine point four six trillion kilometers. At a hundred kilometers per hour, that's {c_myr_say} million years.",
+   "min_duration": 3.4
+  },
+  {
+   "type": "text",
+   "text": "Nearest star: 4.24 light-years",
+   "hl": "4.24",
+   "icon": "⭐",
+   "narration": "And the nearest star is four point two four light-years away.",
+   "min_duration": 3.2,
+   "pose": "shrug"
+  },
+  {
+   "type": "big",
+   "text": "Drive there:",
+   "hl": "Drive",
+   "big": "{c_prox} M years",
+   "label": "non-stop, at 100 km/h",
+   "narration": "That's {c_prox_say} million years, without stopping.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "end",
+   "text": "Still want a road trip?",
+   "hl": "road trip?",
+   "narration": "Still want that road trip?",
+   "min_duration": 2.2
+  }
+ ]
+}

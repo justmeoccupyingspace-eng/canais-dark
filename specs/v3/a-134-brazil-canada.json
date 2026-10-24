@@ -1,0 +1,98 @@
+{
+ "channel": "chartbound",
+ "style": "v3",
+ "rate": "+9%",
+ "title": "Which economy is bigger: Brazil or Canada? #Shorts",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-28T16:00:00Z"
+ },
+ "compute": {
+  "wbratio": {
+   "ind": "NY.GDP.MKTP.CD",
+   "a": "BRA",
+   "b": "CAN",
+   "from": 2000,
+   "an": "Brazil",
+   "bn": "Canada"
+  }
+ },
+ "yt": {
+  "title": "Which economy is bigger: Brazil or Canada? #Shorts",
+  "description": "Brazil vs Canada, GDP (current US$), {wr_from} to {wr_to}. Source: World Bank (NY.GDP.MKTP.CD).\nNarration is AI-generated.",
+  "tags": [
+   "quiz",
+   "economics",
+   "brazil",
+   "canada",
+   "data"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Quick quiz",
+   "text": "Bigger economy: Brazil or Canada?",
+   "hl": "Bigger economy:",
+   "vs": [
+    {
+     "flag": "🇧🇷",
+     "name": "Brazil"
+    },
+    {
+     "flag": "🇨🇦",
+     "name": "Canada"
+    }
+   ],
+   "narration": "Which economy is bigger: Brazil or Canada? Most people get this wrong.",
+   "min_duration": 2.6
+  },
+  {
+   "type": "quiz",
+   "label": "GUESS",
+   "q": "Which economy is bigger: Brazil or Canada?",
+   "alts": [
+    "🇧🇷 Brazil",
+    "🇨🇦 Canada"
+   ],
+   "correct_from": "wr_big",
+   "narration": "Lock in your answer.",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 64,
+   "asize": 60,
+   "cta": "Comment your guess"
+  },
+  {
+   "type": "bars",
+   "style": "coins",
+   "kicker": "Brazil as % of Canada",
+   "text": "It's {wr_win}",
+   "hl": "{wr_win}",
+   "suffix": "%",
+   "vals_from": "wr_v",
+   "labels_from": "wr_y",
+   "narration": "It's {wr_win}. Brazil is {wr_r1_say} percent of Canada.",
+   "min_duration": 4.4
+  },
+  {
+   "type": "text",
+   "text": "5x the people, similar economy",
+   "hl": "similar",
+   "icon": "⚖️",
+   "narration": "Brazil has five times the people, but the economies are close in size.",
+   "min_duration": 3.2,
+   "pose": "shrug"
+  },
+  {
+   "type": "end",
+   "text": "Did you get it right?",
+   "hl": "right?",
+   "narration": "Did you get it right? Comment below.",
+   "min_duration": 2.2
+  }
+ ]
+}

@@ -1,0 +1,89 @@
+{
+ "channel": "chartbound",
+ "style": "v3",
+ "rate": "+9%",
+ "title": "Mexico had {wr_r0}% of Russia's population in {wr_from}. Now? #Shorts",
+ "publish": {
+  "channel": "A",
+  "privacy": "public",
+  "at": "2026-10-31T23:00:00Z"
+ },
+ "compute": {
+  "wbratio": {
+   "ind": "SP.POP.TOTL",
+   "a": "MEX",
+   "b": "RUS",
+   "from": 2000,
+   "an": "Mexico",
+   "bn": "Russia"
+  }
+ },
+ "yt": {
+  "title": "Mexico had {wr_r0}% of Russia's population in {wr_from}. Now? #Shorts",
+  "description": "Mexico as a share of Russia, population, {wr_from} vs {wr_to}. Source: World Bank (SP.POP.TOTL).\nNarration is AI-generated.",
+  "tags": [
+   "population",
+   "mexico",
+   "russia",
+   "data",
+   "worldbank"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "In {wr_from}",
+   "text": "Mexico had {wr_r0}% of Russia's people",
+   "hl": "{wr_r0}%",
+   "vs": [
+    {
+     "flag": "🇲🇽",
+     "name": "Mexico"
+    },
+    {
+     "flag": "🇷🇺",
+     "name": "Russia"
+    }
+   ],
+   "narration": "In {wr_from}, Mexico had {wr_r0_say} percent of Russia's people.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "bars",
+   "kicker": "Mexico as % of Russia",
+   "text": "Now watch",
+   "hl": "watch",
+   "suffix": "%",
+   "vals_from": "wr_v",
+   "labels_from": "wr_y",
+   "narration": "Then Mexico kept closing in. Today: {wr_r1_say} percent.",
+   "min_duration": 4.4
+  },
+  {
+   "type": "big",
+   "text": "Mexico today",
+   "hl": "today",
+   "big": "{wr_a_m}M",
+   "label": "people, vs {wr_b_m}M in Russia",
+   "narration": "That's {wr_a_m_say} million versus {wr_b_m_say} million.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "text",
+   "text": "Russia is 9x bigger in area",
+   "hl": "9x",
+   "icon": "🗺️",
+   "narration": "And Russia is about nine times bigger in area.",
+   "min_duration": 3.2,
+   "pose": "shrug"
+  },
+  {
+   "type": "end",
+   "text": "Which pair next?",
+   "hl": "next?",
+   "narration": "Which two countries should I compare next?",
+   "min_duration": 2.2
+  }
+ ]
+}

@@ -1,0 +1,90 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "6, 8 e 10 dias. Quando coincidem?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public"
+ },
+ "tiktok": "Matemática do Escrevente TJSP: MMC. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #matematica",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "6, 8 e 10 dias. Quando coincidem?",
+   "hl": "Quando coincidem?",
+   "icon": "⚙️",
+   "narration": "Três máquinas. Quando elas coincidem de novo?",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "MATEMÁTICA · MMC",
+   "q": "Manutenção a cada 6, 8 e 10 dias. As três coincidiram numa segunda-feira. A próxima coincidência será numa:",
+   "alts": [
+    "quinta-feira, em 24 dias",
+    "quarta-feira, em 30 dias",
+    "sábado, em 40 dias",
+    "terça-feira, em 120 dias",
+    "sexta-feira, em 480 dias"
+   ],
+   "correct": 3,
+   "narration": "Manutenção a cada seis, oito e dez dias. Coincidiram numa segunda. Quando coincidem de novo?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 42
+  },
+  {
+   "type": "text",
+   "text": "Letra D: terça, em 120 dias",
+   "hl": "terça, em 120 dias",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra D!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Coincidir = MMC",
+   "hl": "MMC",
+   "rows": [
+    {
+     "t": "MMC(6, 8, 10) = 120 dias",
+     "cue": "coincidir"
+    },
+    {
+     "t": "120 = 17 semanas + 1 dia",
+     "cue": "isso"
+    },
+    {
+     "t": "Segunda + 1 = terça",
+     "cue": "segunda"
+    }
+   ],
+   "narration": "Coincidir é MMC: cento e vinte dias. Isso dá dezessete semanas e mais um dia. Segunda mais um: terça.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "480 = 6 × 8 × 10 (produto, não MMC)",
+   "hl": "não MMC",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Quem marcou quatrocentos e oitenta multiplicou tudo, e isso não é MMC.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

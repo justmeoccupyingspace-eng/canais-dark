@@ -1,0 +1,84 @@
+{
+ "channel": "howitticks",
+ "style": "v3",
+ "rate": "+6%",
+ "title": "Email makes your attachments {c_pct}% bigger #Shorts",
+ "publish": {
+  "channel": "B",
+  "privacy": "public",
+  "at": "2026-10-31T01:00:00Z"
+ },
+ "compute": {
+  "calc": {
+   "kind": "base64"
+  }
+ },
+ "yt": {
+  "title": "Email makes your attachments {c_pct}% bigger #Shorts",
+  "description": "Email attachments are encoded as Base64 text: every 3 bytes become 4 characters (+33%, a bit more with line breaks).\nNarration is AI-generated.",
+  "tags": [
+   "email",
+   "base64",
+   "computers",
+   "encoding"
+  ],
+  "lang": "en"
+ },
+ "scenes": [
+  {
+   "type": "hook",
+   "text": "Email makes your attachments 33% bigger",
+   "hl": "33% bigger",
+   "icon": "📎",
+   "narration": "Email makes your attachments about thirty three percent bigger.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "steps",
+   "text": "Why",
+   "hl": "Why",
+   "rows": [
+    {
+     "t": "Email was built for text only",
+     "cue": "email",
+     "icon": "✉️"
+    },
+    {
+     "t": "Base64: 3 bytes → 4 letters",
+     "cue": "so"
+    },
+    {
+     "t": "4 ÷ 3 = +{c_pct}%",
+     "cue": "four"
+    }
+   ],
+   "narration": "Email was built for text only. So files are turned into letters: every three bytes become four characters. That's a third bigger.",
+   "min_duration": 3.4
+  },
+  {
+   "type": "text",
+   "text": "A 10 MB file sends as {c_10} MB",
+   "hl": "{c_10} MB",
+   "icon": "📦",
+   "narration": "So a ten megabyte file travels as thirteen point three.",
+   "min_duration": 3.2,
+   "pose": "shock"
+  },
+  {
+   "type": "text",
+   "text": "That's why limits hit early",
+   "hl": "early",
+   "icon": "🚫",
+   "narration": "That's why attachment limits hit earlier than you expect.",
+   "min_duration": 3.0,
+   "pose": "shrug"
+  },
+  {
+   "type": "end",
+   "text": "Use a link instead",
+   "hl": "link",
+   "narration": "For big files, send a link instead.",
+   "min_duration": 2.2
+  }
+ ]
+}
