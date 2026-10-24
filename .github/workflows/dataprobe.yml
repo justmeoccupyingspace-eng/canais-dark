@@ -1,0 +1,21 @@
+name: dataprobe
+on:
+  workflow_dispatch:
+    inputs:
+      specs: {description: "specs separados por espaço", required: true}
+permissions:
+  contents: write
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install num2words
+      - run: |
+          mkdir -p /tmp/probe
+          for s in ${{ inputs.specs }}; do n=$(basename $s .json); python3 scripts/data.py $s /tmp/probe/$n.json > /tmp/probe/$n.log 2>&1 || echo "falhou $s"; done
+          git config user.name producer; git config user.email producer@users.noreply.github.com
+          git checkout --orphan probe-${{ github.run_id }} && git rm -rf . -q
+          cp /tmp/probe/* . && git add . && git commit -qm probe && git push -f origin probe-${{ github.run_id }}

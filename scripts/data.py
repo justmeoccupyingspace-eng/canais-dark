@@ -150,7 +150,10 @@ def compute_blocks(spec, ctx, raw):
         r0, r1 = A[y0] / B[y0] * 100, A[y1] / B[y1] * 100
         raw.update(wr_from=y0, wr_to=y1, wr_r0=round(r0), wr_r1=round(r1), wr_r0_say=num2words(round(r0), lang="en"),
                    wr_r1_say=num2words(round(r1), lang="en"), wr_a_t=round(A[y1] / 1e12, 1), wr_b_t=round(B[y1] / 1e12, 1),
-                   wr_a_t_say=num2words(round(A[y1] / 1e12, 1), lang="en"), wr_b_t_say=num2words(round(B[y1] / 1e12, 1), lang="en"))
+                   wr_a_t_say=num2words(round(A[y1] / 1e12, 1), lang="en"), wr_b_t_say=num2words(round(B[y1] / 1e12, 1), lang="en"),
+                   wr_d=abs(round(r1) - round(r0)), wr_d_say=num2words(abs(round(r1) - round(r0)), lang="en"),
+                   wr_word=("jumped" if r1 > r0 else "dropped"), wr_sign=("+" if r1 >= r0 else "-"),
+                   wr_x=round(max(r1, r0) / max(min(r1, r0), 1e-9), 1), wr_x_say=num2words(round(max(r1, r0) / max(min(r1, r0), 1e-9), 1), lang="en"))
         ctx.update({k: v for k, v in raw.items() if k.startswith("wr_")})
     if "floatsum" in c:
         from num2words import num2words
