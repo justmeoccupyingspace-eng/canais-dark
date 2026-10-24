@@ -184,7 +184,7 @@ def compute_blocks(spec, ctx, raw):
         dec, scale = w.get("dec", 0), w.get("scale", 1)
         vals = [round(S[y] / scale, dec) for y in pick]
         f = lambda v: f"{v:,.{dec}f}"
-        sayv = lambda v: num2words(round(v, dec) if dec else int(round(v)), lang="en")
+        sayv = lambda v: num2words(int(round(v)) if (not dec or float(round(v, dec)).is_integer()) else round(v, dec), lang="en")
         v0, v1 = vals[0], vals[-1]
         x = v1 / v0 if v0 else 0
         raw.update(ws_v=vals, ws_y=[str(y) for y in pick], ws_y0=pick[0], ws_y1=pick[-1], ws_v0=f(v0), ws_v1=f(v1), ws_v0_say=sayv(v0), ws_v1_say=sayv(v1),
@@ -552,4 +552,8 @@ def main(src, dst):
     print("data ok", ctx)
 
 if __name__ == "__main__":
-    main(*sys.argv[1:3])
+    try:
+        main(*sys.argv[1:3])
+    except Exception as e:
+        print(f"::error title=data::{type(e).__name__}: {str(e)[:300]}")
+        raise
