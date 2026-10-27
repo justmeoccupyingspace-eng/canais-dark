@@ -58,7 +58,7 @@
    "view": {
     "lon": 19.5,
     "lat": 52,
-    "zoom": 4.2
+    "zoom": 6.5
    },
    "hl": [
     "POL"
@@ -68,11 +68,12 @@
      "at": "Japan was",
      "lon": 138,
      "lat": 37,
-     "zoom": 4.0,
-     "dur": 2.6,
+     "zoom": 6.0,
+     "dur": 3.0,
      "hl": [
       "JPN"
-     ]
+     ],
+     "dip": 0.8
     }
    ],
    "stats": [
@@ -310,6 +311,7 @@
    "act": 1,
    "type": "stats",
    "src": "World Bank · CPI inflation; unemployment (ILO)",
+   "title": "Year one of shock therapy",
    "narration": "Prices rose more than five hundred percent in a single year. Output fell. Unemployment went from officially zero, because communism didn't admit it existed, to double digits.",
    "stats": [
     {
@@ -351,6 +353,7 @@
    "act": 1,
    "type": "stats",
    "src": "Paris Club agreement, April 1991",
+   "title": "A rare break",
    "narration": "Poland also got a break that most countries never get. {p} In 1991, the governments it owed money to agreed to forgive half of that debt.",
    "stats": [
     {
@@ -482,9 +485,9 @@
    "src": "",
    "narration": "May first, 2004. Poland joins the European Union, and the slope of this chart changes.",
    "view": {
-    "lon": 15,
-    "lat": 51,
-    "zoom": 2.6
+    "lon": 14,
+    "lat": 50,
+    "zoom": 5.2
    },
    "fills": {
     "EU": [
@@ -609,10 +612,11 @@
    "narration": "Two: factories. German companies needed somewhere to build parts: close, cheap, skilled. Warsaw is a six-hour drive from Berlin. Even Toyota builds engines there. {p} Today, more than a quarter of everything Poland exports goes to Germany.",
    "view": {
     "lon": 17,
-    "lat": 52.2,
-    "zoom": 7.5
+    "lat": 52,
+    "zoom": 9.5
    },
-   "hl": [
+   "hl": [],
+   "hl2": [
     "POL",
     "DEU"
    ],
@@ -662,13 +666,15 @@
    "src": "",
    "narration": "Three: people. Around two million Poles left to work abroad, mostly in Britain and Ireland. They sent money home. {p} And then, slowly, a lot of them came back, with skills and savings.",
    "view": {
-    "lon": 5,
+    "lon": 6,
     "lat": 53,
-    "zoom": 3.6
+    "zoom": 6.0
    },
    "hl": [
     "POL",
-    "GBR",
+    "GBR"
+   ],
+   "hl2": [
     "IRL"
    ],
    "card": 3,
@@ -787,8 +793,8 @@
    "narration": "And then 2008. The global financial crisis. In 2009, every single economy in the European Union shrank. {p} Every one, {pp} except Poland. It grew. The press called it the green island. One green dot on a map of red.",
    "view": {
     "lon": 14,
-    "lat": 50.5,
-    "zoom": 2.5
+    "lat": 50,
+    "zoom": 5.0
    },
    "hl": [],
    "choro": {
@@ -914,6 +920,7 @@
     0,
     22
    ],
+   "wm": "tr",
    "narration": "Look at unemployment. 2002: twenty percent. One in five workers. {p} 2024: under three. {pp} That's not a recovery. That's a different country.",
    "keys": [
     {
@@ -1166,6 +1173,11 @@
    "start": 1980.0,
    "src": "World Bank · population ages 15–64, Japan",
    "fmt": "mil",
+   "y": [
+    60000000.0,
+    92000000.0
+   ],
+   "wm": "tr",
    "narration": "And underneath, something slower was happening. {p} Japan's working-age population peaked in the mid-nineties, and it has been shrinking ever since. {p} Remember that. It comes back.",
    "keys": [
     {
@@ -1272,6 +1284,7 @@
    "act": 3,
    "type": "stats",
    "src": "IMF WEO Oct 2026 · general government gross debt, % of GDP",
+   "title": "Meanwhile in Tokyo",
    "narration": "To keep things moving, Tokyo borrowed. A lot. {p} Japan's government debt is now more than twice the size of its entire economy, the highest in the rich world.",
    "stats": [
     {
@@ -1339,9 +1352,25 @@
   },
   {
    "act": 4,
-   "type": "cards",
+   "type": "lines",
+   "set": "ppp",
+   "fc": 2024,
+   "series": [
+    "POL",
+    "JPN"
+   ],
+   "years": [
+    1990,
+    2026
+   ],
+   "start": 2026.0,
+   "fmt": "usdk",
    "n": 0,
    "src": "World Bank (to 2024) · IMF WEO Oct 2026 (2026) · GDP per capita, PPP",
+   "cross": {
+    "at": "Poland passes",
+    "text": "2026"
+   },
    "cards": [
     {
      "t": "Per person ≠ per hour",
@@ -1541,12 +1570,7 @@
   {
    "act": 4,
    "type": "host",
-   "bg": "duel",
-   "set": "tfr",
-   "year": 2024,
-   "a": "POL",
-   "b": "JPN",
-   "fmt": "dec2",
+   "bg": "none",
    "narration": "Poland now has fewer children per woman than Japan. {p} Not as few as South Korea, at zero point seven five. {p} But fewer than Japan.",
    "items": [
     {
@@ -1596,11 +1620,12 @@
     0.8,
     2.3
    ],
+   "wm": "tr",
    "ref": {
     "value": 2.1,
     "label": "2.1 = population stays flat"
    },
-   "narration": "Part of Poland's miracle was a big, young workforce with nowhere to go but up. That workforce is now getting older. {p} Poland's population already peaked more than a decade ago, and it has been shrinking since. {p} The same math that shrank Japan is already running in Poland. <soft>It just started thirty years later.</soft>",
+   "narration": "Part of Poland's miracle was a big, young workforce with nowhere to go but up. That workforce is now getting older. {p} Poland's population already peaked, back in the late nineties, and it has been shrinking since. {p} The same math that shrank Japan is already running in Poland. <soft>It just started thirty years later.</soft>",
    "keys": [
     {
      "at": "Part of",
@@ -2088,12 +2113,12 @@
    "tol": 0.01
   },
   {
-   "say": "Poland population peaked >10 years ago",
+   "say": "Poland population peaked in the late nineties",
    "rule": "peak",
    "set": "pop",
    "iso": "POL",
-   "a": 1990,
-   "b": 2014
+   "a": 1996,
+   "b": 1999
   },
   {
    "say": "passed Greece, then Portugal",
@@ -2196,6 +2221,11 @@
    "act": 4,
    "track": "Clean Soul",
    "vol": 0.22
+  },
+  {
+   "shot": "s30",
+   "track": "Heartbreaking",
+   "vol": 0.2
   },
   {
    "act": 5,

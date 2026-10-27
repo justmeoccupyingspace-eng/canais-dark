@@ -242,6 +242,8 @@ def main(src, data_path, dst, fake=False):
         else:
             text = " ".join(for_tts(s["narration"]) for s in shots)
             try:
+                if os.environ.get("TTS_ENGINE") == "edge":
+                    raise RuntimeError("edge forçado (teste)")
                 x = gemini(text, v.get("name", "Charon"), v["style"], model)
                 eng = "gemini"
             except Exception as e:
@@ -297,19 +299,28 @@ def main(src, data_path, dst, fake=False):
         env[f0:f0 + m_] = e[: max(0, min(m_, nfr - f0))]
     env = env / (np.percentile(env[env > 0], 95) + 1e-9) if (env > 0).any() else env
     env = np.clip(np.convolve(env, [0.25, 0.5, 0.25], "same"), 0, 1)
-    # trilha por ato
-    music = []
+    # trilhas: âncora por ato ou por shot; cada uma vai até a próxima (+0.8 s de cruzamento) ou até um music_stop
+    starts = []
     for mu in spec.get("music", []):
-        a = mu["act"]
-        a_shots = [s for s in shots if s["act"] == a]
-        t_a = (a_shots[0]["t0"] - (0.6 if a else 0.0)) if a_shots else 0
-        nxt = [s for s in shots if s["act"] > a]
-        t_b = (nxt[0]["t0"] + 0.8) if nxt else total
-        for s in a_shots:
-            if s.get("music_stop", {}).get("t"):
-                t_b = s["music_stop"]["t"]
-        if mu.get("track"):
-            music.append(dict(file=mu["track"].replace(" ", "_") + ".mp3", title=mu["track"], t=round(max(0, t_a), 3), end=round(t_b, 3), vol=mu.get("vol", 0.25), seek=mu.get("seek", 0)))
+        if not mu.get("track"):
+            continue
+        if "shot" in mu:
+            sh_ = next(x for x in shots if x.get("id") == mu["shot"])
+            t_a = sh_["t0"] - 0.3
+        else:
+            a_shots = [x for x in shots if x["act"] == mu["act"]]
+            t_a = (a_shots[0]["t0"] - (0.6 if mu["act"] else 0.0)) if a_shots else 0
+        starts.append((max(0.0, t_a), mu))
+    starts.sort(key=lambda z: z[0])
+    stops = sorted(x["music_stop"]["t"] for x in shots if x.get("music_stop", {}).get("t") is not None)
+    music = []
+    for k, (t_a, mu) in enumerate(starts):
+        t_b = starts[k + 1][0] + 0.8 if k + 1 < len(starts) else total
+        for st in stops:
+            if t_a < st < t_b:
+                t_b = st
+                break
+        music.append(dict(file=mu["track"].replace(" ", "_") + ".mp3", title=mu["track"], t=round(t_a, 3), end=round(t_b, 3), vol=mu.get("vol", 0.25), seek=mu.get("seek", 0)))
     data = json.load(open(data_path))
     out = dict(spec, shots=shots, tracks=tracks, env=[round(float(x_), 3) for x_ in env], music=music, total=round(total, 3), data=data, voice_report=report)
     json.dump(out, open(dst, "w"), ensure_ascii=False)

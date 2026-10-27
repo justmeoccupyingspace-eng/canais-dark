@@ -17,9 +17,10 @@ const N = composition.durationInFrames;
 const t0 = Date.now();
 if (mode === 'video') {
   const [ci, nc, out] = [Number(rest[0]), Number(rest[1]), rest[2]];
-  const a = Math.floor((N * ci) / nc), b = Math.floor((N * (ci + 1)) / nc) - 1;
+  let a = Math.floor((N * ci) / nc), b = Math.floor((N * (ci + 1)) / nc) - 1;
+  if (process.env.FRAMES) [a, b] = process.env.FRAMES.split('-').map(Number);
   await renderMedia({composition, serveUrl, codec: 'h264', outputLocation: out, inputProps, browserExecutable, chromiumOptions, frameRange: [a, b], muted: true, crf: 19,
-    concurrency: Number(process.env.CONC || 3), x264Preset: 'medium', onProgress: ({progress}) => { if (Math.round(progress * 100) % 10 === 0) process.stdout.write(`\r${Math.round(progress * 100)}%`); }});
+    concurrency: Math.min(Number(process.env.CONC || 3), (await import('node:os')).cpus().length), x264Preset: 'medium', onProgress: ({progress}) => { if (Math.round(progress * 100) % 10 === 0) process.stdout.write(`\r${Math.round(progress * 100)}%`); }});
   console.log(`\nchunk ${ci}/${nc} frames ${a}-${b} em ${((Date.now() - t0) / 1000).toFixed(0)}s`);
 } else if (mode === 'audio') {
   await renderMedia({composition, serveUrl, codec: 'wav', outputLocation: rest[0], inputProps, browserExecutable, chromiumOptions});

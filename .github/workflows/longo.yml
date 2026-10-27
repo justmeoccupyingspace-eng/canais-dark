@@ -9,6 +9,7 @@ on:
       model: {description: "modelo TTS (vazio = gemini-3.8-flash-tts)", required: false, default: ""}
       chunks: {description: "pedaços paralelos de render", required: false, default: "8"}
       prep_run: {description: "reaproveitar o prep de outra execução (run id)", required: false, default: ""}
+      engine: {description: "gemini | edge (teste)", required: false, default: "gemini"}
 permissions:
   contents: write
   actions: read
@@ -69,6 +70,7 @@ jobs:
         env:
           GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
           TTS_MODEL: ${{ inputs.model }}
+          TTS_ENGINE: ${{ inputs.engine }}
         run: python scripts/ltts.py $J public/build/$ID.data.json public/build/$ID.json
       - uses: actions/upload-artifact@v4
         if: inputs.prep_run == '' && inputs.mode != 'data'
