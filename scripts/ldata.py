@@ -156,4 +156,12 @@ def main(src, dst):
 
 
 if __name__ == "__main__":
-    main(*sys.argv[1:3])
+    try:
+        main(*sys.argv[1:3])
+    except SystemExit:
+        raise
+    except Exception as e:
+        import traceback
+        tb = traceback.format_exc().strip().splitlines()
+        print(f"::error title=ldata::{repr(e)[:300]} | " + " | ".join(l.strip() for l in tb[-6:])[:900])
+        sys.exit(1)

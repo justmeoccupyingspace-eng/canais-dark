@@ -77,6 +77,7 @@ jobs:
         if: always()
         run: |
           mkdir -p /tmp/o && cp public/build/* /tmp/o/ 2>/dev/null || true
+          echo "${{ github.run_id }}" > /tmp/o/run.txt
           for w in public/audio/$ID/act*.wav; do [ -f "$w" ] && ffmpeg -v error -y -i "$w" -b:a 96k /tmp/o/$(basename ${w%.wav}).mp3; done || true
           [ -f /tmp/o/$ID.gates.json ] && python -c "import json;g=json.load(open('/tmp/o/$ID.gates.json'));[print('::notice title=voz::',r) for r in g['report']];print('::notice title=total::',round(g['total']/60,2),'min')" || true
           git config user.name producer; git config user.email producer@users.noreply.github.com
