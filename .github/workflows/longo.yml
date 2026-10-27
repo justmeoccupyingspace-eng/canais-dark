@@ -1,0 +1,146 @@
+name: longo
+run-name: longo ${{ inputs.spec }} ${{ inputs.mode }}
+on:
+  workflow_dispatch:
+    inputs:
+      spec: {description: "gerador do spec (specs/long/x.py)", required: true, default: "specs/long/a-L01.py"}
+      mode: {description: "data | prep | full", required: true, default: "full"}
+      voice: {description: "voz Gemini (vazio = a do spec)", required: false, default: ""}
+      model: {description: "modelo TTS (vazio = gemini-3.8-flash-tts)", required: false, default: ""}
+      chunks: {description: "pedaços paralelos de render", required: false, default: "8"}
+      prep_run: {description: "reaproveitar o prep de outra execução (run id)", required: false, default: ""}
+permissions:
+  contents: write
+  actions: read
+jobs:
+  prep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    outputs:
+      id: ${{ steps.s.outputs.id }}
+      chunks: ${{ steps.s.outputs.chunks }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: spec
+        id: s
+        run: |
+          python ${{ inputs.spec }}
+          J=${{ inputs.spec }}; J=${J%.py}.json
+          ID=$(python -c "import json;print(json.load(open('$J'))['id'])")
+          if [ -n "${{ inputs.voice }}" ]; then python -c "import json;d=json.load(open('$J'));d['voice']['name']='${{ inputs.voice }}';json.dump(d,open('$J','w'))"; fi
+          echo "J=$J" >> $GITHUB_ENV; echo "ID=$ID" >> $GITHUB_ENV
+          echo "id=$ID" >> $GITHUB_OUTPUT
+          python -c "import json;print(json.dumps(list(range(int('${{ inputs.chunks }}')))))" > /tmp/c; echo "chunks=$(cat /tmp/c)" >> $GITHUB_OUTPUT
+      - name: reaproveitar prep
+        if: inputs.prep_run != ''
+        uses: actions/download-artifact@v4
+        with: {name: prep, path: public, run-id: "${{ inputs.prep_run }}", github-token: "${{ secrets.GITHUB_TOKEN }}"}
+      - name: ffmpeg
+        if: inputs.prep_run == ''
+        run: |
+          for i in 1 2; do timeout 180 sudo apt-get update -qq && timeout 240 sudo apt-get install -y -qq ffmpeg && break; sleep 5; done
+          command -v ffmpeg || (pip install -q imageio-ffmpeg && sudo ln -sf "$(python -c 'import imageio_ffmpeg as m; print(m.get_ffmpeg_exe())')" /usr/local/bin/ffmpeg)
+      - if: inputs.prep_run == ''
+        run: pip install -q numpy scipy soundfile librosa num2words edge-tts faster-whisper
+      - name: dados (checa cada número falado)
+        if: inputs.prep_run == ''
+        run: mkdir -p public/build && python scripts/ldata.py $J public/build/$ID.data.json
+      - name: trilhas (CC-BY, incompetech) + efeitos
+        if: inputs.prep_run == '' && inputs.mode != 'data'
+        run: |
+          python scripts/fx.py
+          mkdir -p public/audio/music
+          python - <<'PY'
+          import json, os, subprocess, urllib.parse, urllib.request
+          spec = json.load(open(os.environ["J"]))
+          for m in spec.get("music", []):
+              t = m.get("track")
+              if not t: continue
+              f = "public/audio/music/" + t.replace(" ", "_")
+              url = "https://incompetech.com/music/royalty-free/mp3-royaltyfree/" + urllib.parse.quote(t) + ".mp3"
+              open(f + ".src.mp3", "wb").write(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=120).read())
+              subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", f + ".src.mp3", "-af", "loudnorm=I=-20:TP=-2:LRA=11", "-ar", "44100", "-b:a", "192k", f + ".mp3"], check=True)
+              os.remove(f + ".src.mp3"); print("trilha ok", t)
+          PY
+      - name: narração (Gemini) + alinhamento (Whisper) + timeline
+        if: inputs.prep_run == '' && inputs.mode != 'data'
+        env:
+          GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
+          TTS_MODEL: ${{ inputs.model }}
+        run: python scripts/ltts.py $J public/build/$ID.data.json public/build/$ID.json
+      - uses: actions/upload-artifact@v4
+        if: inputs.prep_run == '' && inputs.mode != 'data'
+        with: {name: prep, path: "public/build\npublic/audio", retention-days: 7}
+      - name: resumo na branch lprep-<run>
+        if: always()
+        run: |
+          mkdir -p /tmp/o && cp public/build/* /tmp/o/ 2>/dev/null || true
+          for w in public/audio/$ID/act*.wav; do [ -f "$w" ] && ffmpeg -v error -y -i "$w" -b:a 96k /tmp/o/$(basename ${w%.wav}).mp3; done || true
+          [ -f /tmp/o/$ID.gates.json ] && python -c "import json;g=json.load(open('/tmp/o/$ID.gates.json'));[print('::notice title=voz::',r) for r in g['report']];print('::notice title=total::',round(g['total']/60,2),'min')" || true
+          git config user.name producer; git config user.email producer@users.noreply.github.com
+          git checkout --orphan lprep-${{ github.run_id }} && git rm -rf . -q
+          cp /tmp/o/* . && git add . && git commit -qm lprep && git push -f origin lprep-${{ github.run_id }}
+  render:
+    needs: prep
+    if: inputs.mode == 'full'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        chunk: ${{ fromJson(needs.prep.outputs.chunks) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: 22, cache: npm}
+      - run: npm ci --no-audit --no-fund
+      - uses: actions/download-artifact@v4
+        with: {name: prep, path: public}
+      - name: render pedaço
+        run: |
+          mkdir -p out
+          CONC=4 node scripts/lrender.mjs public/build/${{ needs.prep.outputs.id }}.json video ${{ matrix.chunk }} ${{ inputs.chunks }} out/c${{ matrix.chunk }}.mp4
+      - uses: actions/upload-artifact@v4
+        with: {name: "chunk-${{ matrix.chunk }}", path: "out/c${{ matrix.chunk }}.mp4", retention-days: 3}
+  final:
+    needs: [prep, render]
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      ID: ${{ needs.prep.outputs.id }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: 22, cache: npm}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: npm ci --no-audit --no-fund
+      - run: for i in 1 2; do timeout 180 sudo apt-get update -qq && timeout 240 sudo apt-get install -y -qq ffmpeg && break; sleep 5; done
+      - uses: actions/download-artifact@v4
+        with: {name: prep, path: public}
+      - uses: actions/download-artifact@v4
+        with: {pattern: "chunk-*", path: out, merge-multiple: true}
+      - name: áudio + junção + loudness
+        run: |
+          node scripts/lrender.mjs public/build/$ID.json audio out/audio.wav
+          ls out/c*.mp4 | sort -V | sed "s|^|file '$PWD/|;s|$|'|" > out/list.txt
+          ffmpeg -v error -y -f concat -safe 0 -i out/list.txt -c copy out/video.mp4
+          ffmpeg -v error -y -i out/video.mp4 -i out/audio.wav -map 0:v -map 1:a -c:v copy -af "loudnorm=I=-14:TP=-1.5:LRA=11" -ar 48000 -c:a aac -b:a 192k -movflags +faststart out/$ID.mp4
+          ffmpeg -v error -y -i out/$ID.mp4 -vf scale=1280:-2 -c:v libx264 -crf 27 -preset veryfast -c:a aac -b:a 128k out/${ID}_720.mp4
+          ffprobe -v error -show_entries format=duration,size -of default=nw=1 out/$ID.mp4
+          mkdir -p out/sheet && ffmpeg -v error -y -i out/${ID}_720.mp4 -vf "fps=1/6,scale=480:-2,tile=6x8" -frames:v 1 out/sheet/sheet.jpg
+      - name: Drive (arquivo final para o Kauan assistir)
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          GDRIVE_REFRESH: ${{ secrets.GDRIVE_REFRESH }}
+        run: python scripts/drive_up.py out/$ID.mp4 | tee out/drive.txt; grep -o "drive ok.*" out/drive.txt | sed 's/^/::notice title=drive::/' || true
+        continue-on-error: true
+      - name: prévia 720p na branch long-<run>
+        run: |
+          mkdir -p /tmp/o && cp out/${ID}_720.mp4 out/sheet/sheet.jpg out/drive.txt /tmp/o/ 2>/dev/null; cp public/build/$ID.gates.json /tmp/o/ || true
+          git config user.name producer; git config user.email producer@users.noreply.github.com
+          git checkout --orphan long-${{ github.run_id }} && git rm -rf . -q
+          cp /tmp/o/* . && git add . && git commit -qm long && git push -f origin long-${{ github.run_id }}

@@ -47,7 +47,8 @@
      "at": "Twenty thousand",
      "pose": "shock"
     }
-   ]
+   ],
+   "id": "s00"
   },
   {
    "act": 0,
@@ -99,7 +100,8 @@
      "at": "Japan was",
      "pose": "pointL"
     }
-   ]
+   ],
+   "id": "s01"
   },
   {
    "act": 0,
@@ -147,7 +149,8 @@
      "at": "out-produces",
      "pose": "cheer"
     }
-   ]
+   ],
+   "id": "s02"
   },
   {
    "act": 0,
@@ -164,14 +167,35 @@
    ],
    "start": 2026.0,
    "fmt": "usdk",
-   "narration": "Nobody threw a party. Most people didn't notice. {p} <soft>And the number that explains how it happened... is the same number that could undo it.</soft> Let's go through the chart.",
+   "narration": "Nobody threw a party. Most people didn't notice. {p} This is the story of how a country that was poorer than Ukraine became richer than Japan. {p} <soft>And why the number that explains how it happened... is the same number that could undo it.</soft> Let's go through the chart.",
+   "items": [
+    {
+     "at": "poorer than Ukraine",
+     "text": "Poorer than Ukraine"
+    },
+    {
+     "at": "richer than Japan",
+     "text": "→ richer than Japan",
+     "color": "acc"
+    },
+    {
+     "at": "could undo it",
+     "text": "…and what could undo it",
+     "serif": true,
+     "size": 64
+    }
+   ],
    "react": [
     {
      "at": "Nobody",
      "pose": "shrug"
     },
     {
-     "at": "And the number",
+     "at": "poorer than Ukraine",
+     "pose": "shock"
+    },
+    {
+     "at": "And why the number",
      "pose": "think",
      "lean": 1
     },
@@ -179,7 +203,8 @@
      "at": "Let's go",
      "pose": "pointL"
     }
-   ]
+   ],
+   "id": "s03"
   },
   {
    "act": 1,
@@ -217,15 +242,21 @@
      "pose": "pointL",
      "nod": 1
     }
-   ]
+   ],
+   "id": "s04"
   },
   {
    "act": 1,
    "type": "list",
    "src": "",
    "title": "1 January 1990",
-   "narration": "And honestly, thirty was generous. Because on January first, 1990, Poland did something economists still argue about. It ripped the bandage off. {p} Price controls: gone. Subsidies to state factories: gone. The currency: let it float, let it fall. They called it shock therapy. {pp} The shock part was real.",
+   "narration": "And honestly, thirty was generous. In 1989, Solidarity won the first partly free election in the Soviet bloc. Months later, on January first, 1990, Poland did something economists still argue about. It ripped the bandage off. {p} Price controls: gone. Subsidies to state factories: gone. The currency: let it float, let it fall. They called it shock therapy. {pp} The shock part was real.",
    "items": [
+    {
+     "at": "Solidarity",
+     "kind": "bullet",
+     "text": "1989 · Solidarity wins"
+    },
     {
      "at": "January first",
      "kind": "date",
@@ -270,7 +301,8 @@
      "pose": "idle",
      "lean": 1
     }
-   ]
+   ],
+   "id": "s05"
   },
   {
    "act": 1,
@@ -310,7 +342,34 @@
      "at": "double digits",
      "pose": "pointL"
     }
-   ]
+   ],
+   "id": "s06"
+  },
+  {
+   "act": 1,
+   "type": "stats",
+   "src": "Paris Club agreement, April 1991",
+   "narration": "Poland also got a break that most countries never get. {p} In 1991, the governments it owed money to agreed to forgive half of that debt.",
+   "stats": [
+    {
+     "at": "forgive half",
+     "value": -50,
+     "fmt": "pct0s",
+     "label": "debt owed to foreign governments, 1991"
+    }
+   ],
+   "react": [
+    {
+     "at": "a break",
+     "pose": "idle",
+     "lean": 1
+    },
+    {
+     "at": "forgive half",
+     "pose": "cheer"
+    }
+   ],
+   "id": "s07"
   },
   {
    "act": 1,
@@ -322,7 +381,7 @@
     2024
    ],
    "src": "World Bank · real GDP growth, Poland",
-   "narration": "But watch the line. By 1992, Poland was growing again. And here is the stat that actually matters: from 1992 to 2019, Poland's economy grew every single year. Twenty-eight years. {p} No other country in the European Union can say that.",
+   "narration": "But watch the line. By 1992, Poland was growing again. And here is the stat that actually matters: from 1992 to 2019, Poland's economy grew every single year. Twenty-eight years. {p} No other country in the European Union can say that. Japan, over the same stretch, shrank in seven of those years.",
    "keys": [
     {
      "at": "But watch",
@@ -346,6 +405,10 @@
     "b": 2019,
     "text": "28 years · no recession"
    },
+   "kicker": {
+    "at": "Japan, over",
+    "text": "Japan, same years: 7 down years"
+   },
    "push": {
     "at": "Twenty-eight years"
    },
@@ -363,7 +426,8 @@
      "pose": "idle",
      "nod": 1
     }
-   ]
+   ],
+   "id": "s08"
   },
   {
    "act": 1,
@@ -377,6 +441,22 @@
    ],
    "start": 2024.0,
    "narration": "So how do you go from bread lines to no recessions? {p} Three things. And the first one has a date.",
+   "items": [
+    {
+     "at": "bread lines",
+     "text": "Bread lines"
+    },
+    {
+     "at": "no recessions",
+     "text": "→ no recessions",
+     "color": "acc"
+    },
+    {
+     "at": "Three things",
+     "text": "Three things.",
+     "serif": true
+    }
+   ],
    "react": [
     {
      "at": "So how",
@@ -391,7 +471,8 @@
      "at": "first one",
      "pose": "idle"
     }
-   ]
+   ],
+   "id": "s09"
   },
   {
    "act": 2,
@@ -449,13 +530,14 @@
      "at": "Poland joins",
      "pose": "cheer"
     }
-   ]
+   ],
+   "id": "s10"
   },
   {
    "act": 2,
    "type": "cards",
    "n": 1,
-   "src": "SGH Warsaw School of Economics · EU budget flows 2004–2023",
+   "src": "SGH Warsaw School of Economics · EU budget flows 2004–2023 · GDDKiA road network",
    "cards": [
     {
      "t": "Money",
@@ -470,7 +552,7 @@
      "s": "Out, then back"
     }
    ],
-   "narration": "One: money. Over the next twenty years, Poland becomes the biggest net recipient of EU funds in the whole bloc. Roads, rail, water, broadband. {p} More than a hundred and sixty billion euros more than it paid in.",
+   "narration": "One: money. Over the next twenty years, Poland becomes the biggest net recipient of EU funds in the whole bloc. Roads, rail, water, broadband. In 2004, Poland had under eight hundred kilometers of motorways and expressways. By 2025, almost five and a half thousand. {p} All told, more than a hundred and sixty billion euros more than it paid in.",
    "chips": [
     {
      "at": "Roads",
@@ -489,8 +571,15 @@
      "text": "Broadband"
     }
    ],
+   "km": {
+    "at": "In 2004, Poland",
+    "a": 781,
+    "b": 5468,
+    "at_b": "By 2025",
+    "label": "km of motorways & expressways"
+   },
    "stat": {
-    "at": "More than",
+    "at": "All told",
     "value": 161.8,
     "fmt": "eurb",
     "label": "net, 2004–2023"
@@ -501,16 +590,21 @@
      "pose": "pointUp"
     },
     {
-     "at": "More than",
+     "at": "By 2025",
+     "pose": "cheer"
+    },
+    {
+     "at": "All told",
      "pose": "shock"
     }
-   ]
+   ],
+   "id": "s11"
   },
   {
    "act": 2,
    "type": "globe",
    "src": "Statistics Poland (GUS) · exports by destination, 2025",
-   "narration": "Two: factories. German companies needed somewhere to build parts: close, cheap, skilled. Warsaw is a six-hour drive from Berlin. {p} Today, more than a quarter of everything Poland exports goes to Germany.",
+   "narration": "Two: factories. German companies needed somewhere to build parts: close, cheap, skilled. Warsaw is a six-hour drive from Berlin. Even Toyota builds engines there. {p} Today, more than a quarter of everything Poland exports goes to Germany.",
    "view": {
     "lon": 17,
     "lat": 52.2,
@@ -557,7 +651,8 @@
      "pose": "idle",
      "nod": 1
     }
-   ]
+   ],
+   "id": "s12"
   },
   {
    "act": 2,
@@ -633,7 +728,8 @@
      "at": "came back",
      "pose": "cheer"
     }
-   ]
+   ],
+   "id": "s13"
   },
   {
    "act": 2,
@@ -678,7 +774,8 @@
      "pose": "idle",
      "nod": 1
     }
-   ]
+   ],
+   "id": "s14"
   },
   {
    "act": 2,
@@ -753,7 +850,8 @@
      "at": "green island",
      "pose": "pointL"
     }
-   ]
+   ],
+   "id": "s15"
   },
   {
    "act": 2,
@@ -792,7 +890,8 @@
      "at": "home market",
      "pose": "pointL"
     }
-   ]
+   ],
+   "id": "s16"
   },
   {
    "act": 2,
@@ -854,7 +953,88 @@
      "pose": "idle",
      "nod": 1
     }
-   ]
+   ],
+   "id": "s17"
+  },
+  {
+   "act": 2,
+   "type": "lines",
+   "set": "pppwb",
+   "series": [
+    "POL",
+    "UKR"
+   ],
+   "years": [
+    1990,
+    2024
+   ],
+   "start": 1990.0,
+   "src": "World Bank · GDP per capita, PPP",
+   "fmt": "usdk",
+   "narration": "And if you think that's just geography, look next door. {p} In 1990, Ukraine was actually a bit richer than Poland. Similar factories, similar size, same Soviet past. {p} By 2013, before any war, Poland was more than twice as rich. Today, it's nearly three times.",
+   "keys": [
+    {
+     "at": "By 2013",
+     "year": 2013.0,
+     "dur": 3.0
+    },
+    {
+     "at": "Today, it's",
+     "year": 2024.0,
+     "dur": 2.0
+    }
+   ],
+   "labels": [
+    {
+     "at": "Ukraine was actually",
+     "iso": "UKR",
+     "year": 1990
+    },
+    {
+     "at": "Ukraine was actually",
+     "iso": "POL",
+     "year": 1990,
+     "delay": 0.6
+    },
+    {
+     "at": "more than twice",
+     "iso": "POL",
+     "year": 2013
+    },
+    {
+     "at": "more than twice",
+     "iso": "UKR",
+     "year": 2013,
+     "delay": 0.4
+    },
+    {
+     "at": "nearly three",
+     "iso": "POL",
+     "year": 2024
+    },
+    {
+     "at": "nearly three",
+     "iso": "UKR",
+     "year": 2024,
+     "delay": 0.4
+    }
+   ],
+   "react": [
+    {
+     "at": "look next door",
+     "pose": "pointL"
+    },
+    {
+     "at": "a bit richer",
+     "pose": "shock"
+    },
+    {
+     "at": "nearly three",
+     "pose": "idle",
+     "nod": 1
+    }
+   ],
+   "id": "s18"
   },
   {
    "act": 3,
@@ -888,7 +1068,8 @@
      "at": "barely",
      "pose": "shrug"
     }
-   ]
+   ],
+   "id": "s19"
   },
   {
    "act": 3,
@@ -963,7 +1144,57 @@
      "at": "Poland went",
      "pose": "pointL"
     }
-   ]
+   ],
+   "id": "s20"
+  },
+  {
+   "act": 3,
+   "type": "lines",
+   "set": "wap",
+   "series": [
+    "JPN"
+   ],
+   "years": [
+    1980,
+    2024
+   ],
+   "start": 1980.0,
+   "src": "World Bank · population ages 15–64, Japan",
+   "fmt": "mil",
+   "narration": "And underneath, something slower was happening. {p} Japan's working-age population peaked in the mid-nineties, and it has been shrinking ever since. {p} Remember that. It comes back.",
+   "keys": [
+    {
+     "at": "Japan's working-age",
+     "year": 1995.0,
+     "dur": 2.4
+    },
+    {
+     "at": "shrinking ever",
+     "year": 2024.0,
+     "dur": 2.6
+    }
+   ],
+   "peak": {
+    "at": "peaked",
+    "iso": "JPN",
+    "text": "peak"
+   },
+   "react": [
+    {
+     "at": "something slower",
+     "pose": "think"
+    },
+    {
+     "at": "peaked",
+     "pose": "pointL"
+    },
+    {
+     "at": "Remember that",
+     "pose": "idle",
+     "lean": 1
+    }
+   ],
+   "id": "s21"
   },
   {
    "act": 3,
@@ -1029,7 +1260,35 @@
      "at": "the yen",
      "pose": "pointL"
     }
-   ]
+   ],
+   "id": "s22"
+  },
+  {
+   "act": 3,
+   "type": "stats",
+   "src": "IMF WEO Oct 2026 · general government gross debt, % of GDP",
+   "narration": "To keep things moving, Tokyo borrowed. A lot. {p} Japan's government debt is now more than twice the size of its entire economy, the highest in the rich world.",
+   "stats": [
+    {
+     "at": "more than twice",
+     "set": "debt",
+     "iso": "JPN",
+     "year": 2025,
+     "fmt": "pct0",
+     "label": "Japan · government debt / GDP, 2025"
+    }
+   ],
+   "react": [
+    {
+     "at": "A lot",
+     "pose": "shrug"
+    },
+    {
+     "at": "more than twice",
+     "pose": "shock"
+    }
+   ],
+   "id": "s23"
   },
   {
    "act": 3,
@@ -1047,6 +1306,19 @@
    "start": 2024.0,
    "fmt": "usdk",
    "narration": "So part of this story is Poland running. {p} <soft>And part of it is Japan standing on an escalator going down.</soft>",
+   "items": [
+    {
+     "at": "Poland running",
+     "text": "Poland: running",
+     "color": "acc"
+    },
+    {
+     "at": "escalator",
+     "text": "Japan: on an escalator going down",
+     "serif": true,
+     "size": 66
+    }
+   ],
    "react": [
     {
      "at": "Poland running",
@@ -1057,7 +1329,8 @@
      "pose": "idle",
      "lean": 1
     }
-   ]
+   ],
+   "id": "s24"
   },
   {
    "act": 4,
@@ -1096,7 +1369,8 @@
      "at": "three catches",
      "pose": "pointUp"
     }
-   ]
+   ],
+   "id": "s25"
   },
   {
    "act": 4,
@@ -1145,7 +1419,8 @@
      "at": "four and a half",
      "pose": "shock"
     }
-   ]
+   ],
+   "id": "s26"
   },
   {
    "act": 4,
@@ -1196,7 +1471,8 @@
      "at": "twenty-five",
      "pose": "pointL"
     }
-   ]
+   ],
+   "id": "s27"
   },
   {
    "act": 4,
@@ -1254,7 +1530,8 @@
      "at": "one point one five",
      "pose": "shock"
     }
-   ]
+   ],
+   "id": "s28"
   },
   {
    "act": 4,
@@ -1265,13 +1542,35 @@
    "a": "POL",
    "b": "JPN",
    "fmt": "dec2",
-   "narration": "Poland now has fewer children per woman than Japan.",
+   "narration": "Poland now has fewer children per woman than Japan. {p} Not as few as South Korea, at zero point seven five. {p} But fewer than Japan.",
+   "items": [
+    {
+     "at": "fewer children",
+     "text": "Fewer babies than Japan",
+     "color": "acc"
+    },
+    {
+     "at": "South Korea",
+     "text": "South Korea: 0.75",
+     "size": 64
+    }
+   ],
    "react": [
     {
      "at": "Poland now",
      "pose": "shock"
+    },
+    {
+     "at": "South Korea",
+     "pose": "shrug"
+    },
+    {
+     "at": "But fewer",
+     "pose": "idle",
+     "nod": 1
     }
-   ]
+   ],
+   "id": "s29"
   },
   {
    "act": 4,
@@ -1296,7 +1595,7 @@
     "value": 2.1,
     "label": "2.1 = population stays flat"
    },
-   "narration": "Part of Poland's miracle was a big, young workforce with nowhere to go but up. That workforce is now getting older. {p} The same math that shrank Japan is already running in Poland. <soft>It just started thirty years later.</soft>",
+   "narration": "Part of Poland's miracle was a big, young workforce with nowhere to go but up. That workforce is now getting older. {p} Poland's population already peaked more than a decade ago, and it has been shrinking since. {p} The same math that shrank Japan is already running in Poland. <soft>It just started thirty years later.</soft>",
    "keys": [
     {
      "at": "Part of",
@@ -1325,7 +1624,8 @@
      "pose": "idle",
      "lean": 1
     }
-   ]
+   ],
+   "id": "s30"
   },
   {
    "act": 5,
@@ -1335,7 +1635,9 @@
     "POL",
     "JPN",
     "ESP",
-    "DEU"
+    "DEU",
+    "GRC",
+    "PRT"
    ],
    "years": [
     1990,
@@ -1346,9 +1648,11 @@
    "fmt": "usdk",
    "hidden": [
     "ESP",
-    "DEU"
+    "DEU",
+    "GRC",
+    "PRT"
    ],
-   "narration": "So here's the whole chart, start to finish. Thirty percent of Japan, to a hundred. {p} Spain is next: the IMF has the two basically tied this year, and Poland ahead next year. {p} Germany? No. Germany is still thirty percent ahead, and the gap isn't closing fast.",
+   "narration": "So here's the whole chart, start to finish. Thirty percent of Japan, to a hundred. Along the way, Poland quietly passed Greece, then Portugal. {p} Spain is next: the IMF has the two basically tied this year, and Poland ahead next year. {p} Germany? No. Germany is still thirty percent ahead, and the gap isn't closing fast.",
    "keys": [
     {
      "at": "So here's",
@@ -1358,6 +1662,16 @@
    ],
    "show": [
     {
+     "at": "passed Greece",
+     "iso": "GRC",
+     "until": "Spain is next"
+    },
+    {
+     "at": "then Portugal",
+     "iso": "PRT",
+     "until": "Spain is next"
+    },
+    {
      "at": "Spain is next",
      "iso": "ESP"
     },
@@ -1365,6 +1679,14 @@
      "at": "Germany?",
      "iso": "DEU"
     }
+   ],
+   "series_all": [
+    "POL",
+    "JPN",
+    "ESP",
+    "DEU",
+    "GRC",
+    "PRT"
    ],
    "labels": [
     {
@@ -1391,7 +1713,8 @@
      "at": "Germany? No",
      "pose": "shrug"
     }
-   ]
+   ],
+   "id": "s31"
   },
   {
    "act": 5,
@@ -1410,7 +1733,32 @@
    ],
    "start": 2027.0,
    "fmt": "usdk",
-   "narration": "But the real question isn't who Poland passes next. It's whether a country can keep climbing after its people stop multiplying. {pp} Japan mostly couldn't. Korea is trying. {p} Poland is about to find out.",
+   "narration": "But the real question isn't who Poland passes next. It's whether a country can keep climbing after its people stop multiplying. {pp} Japan mostly couldn't. {p} Poland does have a couple of cards Japan never played. Close to a million Ukrainians now live there under temporary protection, and many of them work. And Poland is still catching up, so it can grow by working smarter, not just by adding workers. {p} Will that be enough? Poland is about to find out.",
+   "items": [
+    {
+     "at": "real question",
+     "text": "Can you keep climbing…",
+     "size": 72
+    },
+    {
+     "at": "stop multiplying",
+     "text": "…when people stop multiplying?",
+     "serif": true,
+     "size": 60
+    },
+    {
+     "at": "Close to a million",
+     "text": "+ ~1M Ukrainians",
+     "color": "acc",
+     "size": 64
+    },
+    {
+     "at": "working smarter",
+     "text": "+ room to catch up",
+     "color": "acc",
+     "size": 64
+    }
+   ],
    "react": [
     {
      "at": "real question",
@@ -1422,11 +1770,20 @@
      "pose": "shrug"
     },
     {
+     "at": "a couple of cards",
+     "pose": "pointUp"
+    },
+    {
+     "at": "working smarter",
+     "pose": "cheer"
+    },
+    {
      "at": "about to find out",
      "pose": "idle",
      "nod": 1
     }
-   ]
+   ],
+   "id": "s32"
   },
   {
    "act": 5,
@@ -1474,7 +1831,8 @@
      "pose": "idle",
      "nod": 1
     }
-   ]
+   ],
+   "id": "s33"
   },
   {
    "act": 5,
@@ -1491,7 +1849,8 @@
      "at": "See you",
      "pose": "wave"
     }
-   ]
+   ],
+   "id": "s34"
   }
  ],
  "checks": [
@@ -1685,6 +2044,99 @@
    "year": 2027
   },
   {
+   "say": "Ukraine a bit richer in 1990",
+   "rule": "gt",
+   "set": "pppwb",
+   "a": "UKR",
+   "b": "POL",
+   "year": 1990
+  },
+  {
+   "say": "by 2013 more than twice",
+   "rule": "ratio",
+   "set": "pppwb",
+   "a": "POL",
+   "b": "UKR",
+   "year": 2013,
+   "min": 2.0,
+   "max": 3.0
+  },
+  {
+   "say": "today nearly three times",
+   "rule": "ratio",
+   "set": "pppwb",
+   "a": "POL",
+   "b": "UKR",
+   "year": 2024,
+   "min": 2.55,
+   "max": 3.0
+  },
+  {
+   "say": "Japan working-age peaked mid-nineties",
+   "rule": "peak",
+   "set": "wap",
+   "iso": "JPN",
+   "a": 1992,
+   "b": 1998
+  },
+  {
+   "say": "South Korea zero point seven five",
+   "set": "tfr",
+   "iso": "KOR",
+   "year": 2024,
+   "approx": 0.75,
+   "tol": 0.01
+  },
+  {
+   "say": "Poland population peaked >10 years ago",
+   "rule": "peak",
+   "set": "pop",
+   "iso": "POL",
+   "a": 1990,
+   "b": 2014
+  },
+  {
+   "say": "passed Greece, then Portugal",
+   "rule": "passorder",
+   "set": "ppp",
+   "a": "POL",
+   "order": [
+    "GRC",
+    "PRT"
+   ],
+   "by": 2026
+  },
+  {
+   "say": "Japan shrank in seven of 1992-2019",
+   "rule": "countneg",
+   "set": "growth",
+   "iso": "JPN",
+   "a": 1992,
+   "b": 2019,
+   "equal": 7
+  },
+  {
+   "say": "Japan debt more than twice GDP, highest in rich world",
+   "rule": "maxof",
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2025,
+   "min": 200,
+   "others": [
+    "USA",
+    "ITA",
+    "GRC",
+    "FRA",
+    "GBR",
+    "CAN",
+    "DEU",
+    "SGP",
+    "BEL",
+    "PRT",
+    "ESP"
+   ]
+  },
+  {
    "say": "Germany still thirty percent ahead",
    "rule": "ratio",
    "set": "ppp",
@@ -1703,33 +2155,33 @@
  "music": [
   {
    "act": 0,
-   "track": "",
-   "vol": 0.2
+   "track": "Investigations",
+   "vol": 0.25
   },
   {
    "act": 1,
-   "track": "",
-   "vol": 0.16
+   "track": "Deliberate Thought",
+   "vol": 0.22
   },
   {
    "act": 2,
-   "track": "",
-   "vol": 0.18
+   "track": "Floating Cities",
+   "vol": 0.24
   },
   {
    "act": 3,
-   "track": "",
-   "vol": 0.16
+   "track": "Lightless Dawn",
+   "vol": 0.26
   },
   {
    "act": 4,
-   "track": "",
-   "vol": 0.16
+   "track": "Clean Soul",
+   "vol": 0.22
   },
   {
    "act": 5,
-   "track": "",
-   "vol": 0.2
+   "track": "Inspired",
+   "vol": 0.25
   }
  ],
  "yt": {

@@ -46,7 +46,7 @@ const POSES = {
 
 // Mascote: corpo de ovo, olhos grandes com brilho, bochechas, braços de cápsula, acessório por canal.
 // props: color, belly, acc ('antenna' | 'glasses' | 'cap'), pose, talk (0..1), look ([-1..1, -1..1]), enter (frame de entrada)
-export const Mascot = ({color = '#ffb000', belly = '#ffe6a3', acc = 'antenna', pose = 'idle', prevPose, poseAt = 0, talk = 0, look = [0, 0], enter = 0, position = [0, 0, 0], scale = 1, mood = 'happy', accent = '#ff5d73'}) => {
+export const Mascot = ({color = '#ffb000', belly = '#ffe6a3', acc = 'antenna', pose = 'idle', prevPose, poseAt = 0, talk = 0, look = [0, 0], enter = 0, position = [0, 0, 0], scale = 1, mood = 'happy', accent = '#ff5d73', nod = 0, lean = 0, turn = 0}) => {
   const f = useCurrentFrame();
   const toon = useToon();
   const g = useMemo(() => ({
@@ -90,7 +90,7 @@ export const Mascot = ({color = '#ffb000', belly = '#ffe6a3', acc = 'antenna', p
   const s = scale * Math.max(0.001, pop);
 
   return (
-    <group position={[position[0], position[1] + bob + jump, position[2]]} scale={[s / squash, s * squash, s]} rotation={[open * 0.05, look[0] * 0.25, tilt]}>
+    <group position={[position[0], position[1] + bob + jump, position[2]]} scale={[s / squash, s * squash, s]} rotation={[open * 0.05 + lean * 0.22 + nod * 0.16, look[0] * 0.25 + turn, tilt]}>
       {/* corpo */}
       <Toon geo={g.body} color={color} toon={toon} scale={[1, 1.1, 0.92]} outline={0.04} />
       <Toon geo={g.body} color={belly} toon={toon} position={[0, -0.42, 0.52]} scale={[0.5, 0.42, 0.42]} outline={0} />

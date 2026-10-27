@@ -111,6 +111,30 @@ def sparkle():
     return out
 
 
+def riser(sec=2.4):
+    """sobe ruído filtrado + tom em glissando; termina seco no ponto da revelação."""
+    n = int(sec * SR)
+    t = np.arange(n) / SR
+    k = t / sec
+    noise = rng.standard_normal(n)
+    out = np.zeros(n)
+    for i in range(0, n, 1024):
+        f = 300 + 6000 * k[i] ** 2
+        b, a = butter(2, [f / (SR / 2), min(f * 1.6 / (SR / 2), 0.99)], btype="band")
+        out[i:i + 1024] = lfilter(b, a, noise[i:i + 1024])
+    out = out / (np.max(np.abs(out)) + 1e-9) * 0.5
+    tone = sum(np.sin(2 * np.pi * np.cumsum(f0 * 2 ** (2.2 * k)) / SR) * a for f0, a in [(110, 0.35), (220, 0.18), (330, 0.08)])
+    x = (out + tone) * k ** 2.2
+    x[-int(0.02 * SR):] *= np.linspace(1, 0, int(0.02 * SR))
+    return x / np.max(np.abs(x)) * 0.6
+
+
+def softhit():
+    x = hit()
+    b, a = butter(2, 1800 / (SR / 2), btype="low")
+    return lfilter(b, a, x) * 0.8
+
+
 def softwhoosh():
     x = whoosh()
     b, a = butter(2, 2500 / (SR / 2), btype="low")
@@ -171,6 +195,6 @@ if __name__ == "__main__":
     save("music_howitticks", music(98.0, "minor", 96))
     save("music_valeopreco", music(130.8, "major", 112))
     save("music_loja", music(174.6, "major", 92))
-    for nm, fn in [("click", click), ("tap", tap), ("ding", ding), ("cash", cash), ("sparkle", sparkle), ("softwhoosh", softwhoosh)]:
+    for nm, fn in [("click", click), ("tap", tap), ("ding", ding), ("cash", cash), ("sparkle", sparkle), ("softwhoosh", softwhoosh), ("riser", riser), ("softhit", softhit)]:
         save(nm, fn())
     print("fx ok")
