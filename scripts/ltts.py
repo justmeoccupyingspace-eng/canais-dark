@@ -322,11 +322,36 @@ def main(src, data_path, dst, fake=False):
                     mdl = hit[1]
                     print("cache de voz", a, mdl)
                 else:
-                    # mesmo modelo para todos os atos (timbre consistente)
-                    x, mdl = gemini(text, v.get("name", "Charon"), v["style"], [used_model] if used_model else models)
-                    hk = hashlib.sha1((text + v.get("name", "Charon") + v["style"] + mdl).encode()).hexdigest()[:16]
-                    sf.write(f"public/audio/ttscache/{hk}.wav", x, SR)
-                    time.sleep(float(os.environ.get("TTS_GAP", "20")))
+                    # ato longo vai em pedaços (grupos de shots ≤ MAXW palavras): respostas longas falham mais
+                    maxw = int(os.environ.get("MAXW", "210"))
+                    groups, cur, cw = [], [], 0
+                    for s_ in shots:
+                        n_ = len(plain(s_["narration"]).split())
+                        if cur and cw + n_ > maxw:
+                            groups.append(cur); cur, cw = [], 0
+                        cur.append(s_); cw += n_
+                    if cur:
+                        groups.append(cur)
+                    parts_ = []
+                    mdl = used_model
+                    for g_ in groups:
+                        tg = " ".join(for_tts(s_["narration"]) for s_ in g_)
+                        got = None
+                        for m_ in ([mdl] if mdl else models):
+                            hk = hashlib.sha1((tg + v.get("name", "Charon") + v["style"] + m_).encode()).hexdigest()[:16]
+                            if os.path.exists(f"public/audio/ttscache/{hk}.wav"):
+                                got = sf.read(f"public/audio/ttscache/{hk}.wav", dtype="float32")[0]
+                                mdl = m_
+                                print("cache de voz (pedaço)", a, m_)
+                                break
+                        if got is None:
+                            got, mdl = gemini(tg, v.get("name", "Charon"), v["style"], [mdl] if mdl else models)
+                            hk = hashlib.sha1((tg + v.get("name", "Charon") + v["style"] + mdl).encode()).hexdigest()[:16]
+                            sf.write(f"public/audio/ttscache/{hk}.wav", got, SR)
+                            time.sleep(float(os.environ.get("TTS_GAP", "20")))
+                        parts_.append(got)
+                        parts_.append(np.zeros(int(0.32 * SR), np.float32))
+                    x = np.concatenate(parts_[:-1])
                 used_model = mdl
                 eng = "gemini:" + mdl
             except Exception as e:

@@ -84,7 +84,7 @@ shots = [
          stat=dict(at="All told", value=161.8, fmt="eurb", label="net, 2004–2023"),
          react=[dict(at="One: money", pose="pointUp"), dict(at="By 2025", pose="cheer"), dict(at="All told", pose="shock")]),
     dict(act=2, type="globe", src="Statistics Poland (GUS) · exports by destination, 2025",
-         narration="Two: factories. German companies needed somewhere to build parts: close, cheap, skilled. Warsaw is a six-hour drive from Berlin. Even Toyota builds engines there. {p} Today, more than a quarter of everything Poland exports goes to Germany.",
+         narration="Two: factories. German companies needed somewhere nearby to build parts, with skilled workers and lower costs. Warsaw is a six-hour drive from Berlin. Even Toyota builds engines there. {p} Today, more than a quarter of everything Poland exports goes to Germany.",
          view=dict(lon=17, lat=52, zoom=9.5), hl=[], hl2=["POL", "DEU"], card=2,
          route=dict(at="Warsaw is", a=[13.40, 52.52], b=[21.01, 52.23], la="Berlin", lb="Warsaw", text="~6 h"),
          stats=[dict(at="more than a quarter", value=27, fmt="pct0", label="of Polish exports go to Germany")],
