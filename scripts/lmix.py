@@ -72,10 +72,10 @@ def main(src, dst):
         fr = np.arange(n) / SR * FPS  # quadro local
         g_idx = np.clip((f0 + fr).astype(int), 0, max(len(emax) - 1, 0))
         e = emax[g_idx] if len(emax) else np.zeros(n)
-        duck = 1 - 0.55 * np.minimum(1, e * 2.5)
+        duck = 1 - 0.5 * np.minimum(1, e * 2.5)
         durf = dur * FPS
         fade = np.clip(np.minimum(np.minimum(1, fr / 30), (durf - fr) / 36), 0, 1)
-        add(buf, x, m["t"], (m["vol"] * 2.2 * duck * fade).astype(np.float32))
+        add(buf, x, m["t"], (m["vol"] * 2.6 * duck * fade).astype(np.float32))
     cache = {}
     for t, f, v in events(spec):
         if f not in cache:

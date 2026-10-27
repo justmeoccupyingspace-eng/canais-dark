@@ -590,7 +590,7 @@ const Duel = ({sh, p, data, T, dim}) => {
         const k = ramp(T, d.t - 0.2, 1.0);
         const x = 300 + i * 600;
         return (
-          <div key={i} style={{position: 'absolute', left: x, top: 300, width: 540, height: 520, borderRadius: 32, background: '#0b1026cc', border: `3px solid ${colOf(p, d.iso)}66`, opacity: Math.max(0.25, s), transform: `translateY(${(1 - s) * 40}px)`, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 20}}>
+          <div key={i} style={{position: 'absolute', left: x, top: sh.cards ? 350 : 300, width: 540, height: 520, borderRadius: 32, background: '#0b1026cc', border: `3px solid ${colOf(p, d.iso)}66`, opacity: Math.max(0.25, s), transform: `translateY(${(1 - s) * 40}px)`, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 20}}>
             <Flag iso={d.iso} w={170} />
             <div style={{fontFamily: SANS, fontWeight: 800, fontSize: 48, color: '#fff'}}>{NAME[d.iso]}</div>
             <div style={{fontFamily: SANS, fontWeight: 900, fontSize: 118, color: colOf(p, d.iso), letterSpacing: -3, opacity: k > 0 ? 1 : 0.15}}>{k > 0 ? fmt(d.v * Easing.out(Easing.cubic)(k), sh.fmt) : '?'}</div>
@@ -853,9 +853,9 @@ const Music = ({spec}) => {
               const g = from + lf;
               let e = 0;
               for (let k = -6; k <= 6; k++) e = Math.max(e, env[g + k] || 0);
-              const duck = 1 - 0.55 * Math.min(1, e * 2.5);
+              const duck = 1 - 0.5 * Math.min(1, e * 2.5);
               const fade = Math.min(1, lf / 30, (dur - lf) / 36);
-              return m.vol * 2.2 * duck * Math.max(0, fade);
+              return m.vol * 2.6 * duck * Math.max(0, fade);
             }} />
           </Sequence>
         );
@@ -884,7 +884,7 @@ const ShotView = ({sh, idx, p, data}) => {
         {isHost ? <HostSay sh={sh} p={p} T={T} /> : null}
         {sh.cards && sh.type !== 'cards' && sh.type !== 'hbars' && !isHost ? <CardsRow sh={sh} p={p} T={T} /> : null}
       </AbsoluteFill>
-      {sh.type === 'list' || sh.type === 'duel' ? <Kicker text={sh.title} p={p} T={T} t0={sh.t0} /> : null}
+      {sh.type === 'list' || sh.type === 'duel' ? <Kicker text={sh.title} p={p} T={T} t0={sh.t0} y={sh.cards ? 290 : 92} x={sh.cards ? 300 : 120} /> : null}
       {sh.card ? <div style={{position: 'absolute', left: 120, top: 92, fontFamily: SANS, fontWeight: 900, fontSize: 36, color: '#0d1020', background: p.acc, padding: '6px 20px', borderRadius: 12}}>{sh.card} · {['Money', 'Factories', 'People'][sh.card - 1]}</div> : null}
       <Source text={sh.src} />
     </AbsoluteFill>

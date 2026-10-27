@@ -231,7 +231,7 @@
     "value": 100,
     "label": "Japan = 100%"
    },
-   "narration": "Here's where the line starts. Thirty percent. That's Poland's income as a share of Japan's, in 1990.",
+   "narration": "Here's where the line starts. Thirty percent. That's Poland's income as a share of Japan's, in 1990. And honestly, thirty was generous.",
    "labels": [
     {
      "at": "Thirty percent",
@@ -244,6 +244,10 @@
      "at": "Thirty percent",
      "pose": "pointL",
      "nod": 1
+    },
+    {
+     "at": "honestly",
+     "pose": "shrug"
     }
    ],
    "id": "s04"
@@ -253,7 +257,7 @@
    "type": "list",
    "src": "",
    "title": "1 January 1990",
-   "narration": "And honestly, thirty was generous. In 1989, Solidarity won the first partly free election in the Soviet bloc. Months later, on January first, 1990, Poland did something economists still argue about. It ripped the bandage off. {p} Price controls: gone. Subsidies to state factories: gone. The currency: let it float, let it fall. They called it shock therapy. {pp} The shock part was real.",
+   "narration": "In 1989, Solidarity won the first partly free election in the Soviet bloc. Months later, on January first, 1990, Poland did something economists still argue about. It ripped the bandage off. {p} Price controls: gone. Subsidies to state factories: gone. The currency: let it float, let it fall. They called it shock therapy. {pp} The shock part was real.",
    "items": [
     {
      "at": "Solidarity",
@@ -288,8 +292,8 @@
    ],
    "react": [
     {
-     "at": "honestly",
-     "pose": "shrug"
+     "at": "Solidarity",
+     "pose": "cheer"
     },
     {
      "at": "ripped",
@@ -357,7 +361,7 @@
    "narration": "Poland also got a break that most countries never get. {p} In 1991, the governments it owed money to agreed to forgive half of that debt.",
    "stats": [
     {
-     "at": "forgive half",
+     "at": "In 1991",
      "value": -50,
      "fmt": "pct0s",
      "label": "debt owed to foreign governments, 1991"
@@ -797,6 +801,37 @@
     "zoom": 5.0
    },
    "hl": [],
+   "fills": {
+    "EU": [
+     "AUT",
+     "BEL",
+     "DNK",
+     "FIN",
+     "FRA",
+     "DEU",
+     "GRC",
+     "IRL",
+     "ITA",
+     "LUX",
+     "NLD",
+     "PRT",
+     "ESP",
+     "SWE",
+     "GBR",
+     "CZE",
+     "EST",
+     "CYP",
+     "LVA",
+     "LTU",
+     "HUN",
+     "MLT",
+     "SVN",
+     "SVK",
+     "POL",
+     "BGR",
+     "ROU"
+    ]
+   },
    "choro": {
     "at": "In 2009",
     "set": "g2009",
@@ -869,6 +904,11 @@
    "title": "Why it held",
    "narration": "Why? Boring reasons, which are the best reasons. Banks that hadn't gone crazy. A currency, the zloty, that dropped about thirty percent and made Polish exports cheap at exactly the right moment. {p} And a home market of thirty-eight million people buying Polish stuff.",
    "items": [
+    {
+     "at": "Boring reasons",
+     "kind": "bullet",
+     "text": "Boring reasons (the best kind):"
+    },
     {
      "at": "Banks",
      "kind": "bullet",
