@@ -925,3 +925,37 @@ export const Long = ({spec}) => {
 };
 
 export const longDuration = (spec) => Math.max(FPS, Math.ceil((spec.total || 60) * FPS));
+
+// ---------------- thumbnail 1280x720 ----------------
+export const Thumb = ({spec}) => {
+  useFonts();
+  const p = PAL[spec.channel] || PAL.chartbound;
+  const data = spec.data || {};
+  const A = ser(data, 'ppp', 'POL'), B = ser(data, 'ppp', 'JPN');
+  const X = (y) => 60 + ((y - 1990) / 36) * 700;
+  const Y = (v) => 660 - (v / 64000) * 420;
+  const d = (pts) => pts.map(([y, v], i) => `${i ? 'L' : 'M'}${X(y)},${Y(v)}`).join('');
+  const cr = crossPoint(A, B);
+  return (
+    <AbsoluteFill style={{background: `radial-gradient(1000px 700px at 35% 55%, ${p.bg1}, ${p.bg2})`}}>
+      <svg width={1280} height={720} style={{position: 'absolute'}}>
+        <path d={d(B)} fill="none" stroke={p.warm} strokeWidth={14} strokeLinecap="round" strokeLinejoin="round" />
+        <path d={d(A)} fill="none" stroke={p.acc} strokeOpacity={0.3} strokeWidth={40} strokeLinecap="round" strokeLinejoin="round" />
+        <path d={d(A)} fill="none" stroke={p.acc} strokeWidth={16} strokeLinecap="round" strokeLinejoin="round" />
+        {cr ? <circle cx={X(cr[0])} cy={Y(cr[1])} r={30} fill="#fff" stroke={p.acc} strokeWidth={10} /> : null}
+      </svg>
+      <div style={{position: 'absolute', left: 60, top: 40, display: 'flex', gap: 18, alignItems: 'center'}}>
+        <Flag iso="POL" w={150} />
+        <div style={{fontFamily: SANS, fontWeight: 900, fontSize: 92, color: '#fff', letterSpacing: -3, textShadow: '0 8px 0 #000a'}}>&gt;</div>
+        <Flag iso="JPN" w={150} />
+      </div>
+      <div style={{position: 'absolute', left: 60, top: 170, fontFamily: SANS, fontWeight: 900, fontSize: 118, lineHeight: 0.95, color: p.acc, letterSpacing: -4, textShadow: '0 10px 0 #000b'}}>PASSED<br /><span style={{color: '#fff'}}>JAPAN?!</span></div>
+      <div style={{position: 'absolute', left: 600, top: 0, width: 640, height: 720}}>
+        <ThreeCanvas width={640} height={720} camera={{fov: 30, position: [0, 0, 14]}} gl={{antialias: true, alpha: true}}>
+          <Lights />
+          <Mascot {...p.mascot} pose="shock" prevPose="shock" poseAt={-60} talk={0} look={[-0.6, 0.2]} enter={-60} scale={1.9} position={[0.05, -0.85, 0]} turn={-0.2} />
+        </ThreeCanvas>
+      </div>
+    </AbsoluteFill>
+  );
+};

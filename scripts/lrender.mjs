@@ -25,6 +25,10 @@ if (mode === 'video') {
 } else if (mode === 'audio') {
   await renderMedia({composition, serveUrl, codec: 'wav', outputLocation: rest[0], inputProps, browserExecutable, chromiumOptions});
   console.log('audio ok', N, 'frames');
+} else if (mode === 'thumb') {
+  const c2 = await selectComposition({serveUrl, id: 'Thumb', inputProps, browserExecutable, chromiumOptions});
+  await renderStill({composition: c2, serveUrl, frame: 0, output: rest[0], imageFormat: 'jpeg', jpegQuality: 92, inputProps, browserExecutable, chromiumOptions});
+  console.log('thumb ok');
 } else if (mode === 'stills') {
   const pre = rest[0];
   const ts = rest[1].split(',').map(Number);
