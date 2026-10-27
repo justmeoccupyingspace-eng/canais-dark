@@ -5,6 +5,7 @@ on:
     inputs:
       voices: {description: "vozes separadas por vírgula", required: false, default: "Charon,Sadaltager,Algieba,Iapetus,Gacrux,Sulafat"}
       model: {description: "modelo TTS (vazio = mais novo)", required: false, default: ""}
+      tracks: {description: "trilhas incompetech (vírgula); vazio = lista padrão", required: false, default: ""}
 permissions:
   contents: write
 jobs:
@@ -15,12 +16,13 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: "3.12"}
       - run: sudo apt-get install -y -qq ffmpeg >/dev/null 2>&1 || true
-      - run: pip install -q faster-whisper librosa soundfile numpy
+      - run: pip install -q "av>=14" faster-whisper librosa soundfile numpy
       - run: python voicetest/ltest.py
         env:
           GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
           VOICES: ${{ inputs.voices }}
           TTS_MODEL: ${{ inputs.model }}
+          TRACKS: ${{ inputs.tracks }}
       - name: Amostras na branch lprobe-<run>
         if: always()
         run: |

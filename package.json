@@ -12,9 +12,13 @@
     "@remotion/cli": "4.0.250",
     "@remotion/renderer": "4.0.250",
     "@remotion/three": "^4.0.250",
+    "d3-geo": "^3.1.1",
+    "d3-shape": "^3.2.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "remotion": "4.0.250",
-    "three": "^0.169.0"
+    "three": "^0.169.0",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
   }
 }

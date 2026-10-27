@@ -1,0 +1,1748 @@
+{
+ "id": "a-L01-poland-japan",
+ "channel": "chartbound",
+ "w": 1920,
+ "h": 1080,
+ "fps": 30,
+ "acts": [
+  "Cold open",
+  "The hole",
+  "The climb",
+  "The other line",
+  "The catch",
+  "What's next"
+ ],
+ "shots": [
+  {
+   "act": 0,
+   "type": "duel",
+   "set": "ppp",
+   "year": 1990,
+   "a": "POL",
+   "b": "JPN",
+   "src": "IMF WEO Oct 2026 · GDP per capita, PPP",
+   "fmt": "usd0",
+   "title": "Output per person, 1990",
+   "narration": "In 1990, the average person in Poland produced about six thousand dollars of value a year. {p} The average person in Japan? {pp} Twenty thousand.",
+   "cues": [
+    {
+     "at": "six thousand",
+     "show": "a"
+    },
+    {
+     "at": "Twenty thousand",
+     "show": "b"
+    }
+   ],
+   "react": [
+    {
+     "at": "1990",
+     "pose": "idle"
+    },
+    {
+     "at": "Japan?",
+     "pose": "think"
+    },
+    {
+     "at": "Twenty thousand",
+     "pose": "shock"
+    }
+   ]
+  },
+  {
+   "act": 0,
+   "type": "globe",
+   "src": "World Bank · inflation, consumer prices",
+   "narration": "Poland was coming out of forty years of communism. Inflation was over five hundred percent. Shops had queues, but not much on the shelves. {p} Japan was the second-largest economy on Earth.",
+   "view": {
+    "lon": 19.5,
+    "lat": 52,
+    "zoom": 4.2
+   },
+   "hl": [
+    "POL"
+   ],
+   "keys": [
+    {
+     "at": "Japan was",
+     "lon": 138,
+     "lat": 37,
+     "zoom": 4.0,
+     "dur": 2.6,
+     "hl": [
+      "JPN"
+     ]
+    }
+   ],
+   "stats": [
+    {
+     "at": "five hundred",
+     "set": "infl",
+     "iso": "POL",
+     "year": 1990,
+     "fmt": "pct0",
+     "prefix": "+",
+     "label": "inflation, 1990",
+     "until": "Japan was"
+    }
+   ],
+   "react": [
+    {
+     "at": "communism",
+     "pose": "idle"
+    },
+    {
+     "at": "five hundred",
+     "pose": "shock"
+    },
+    {
+     "at": "Japan was",
+     "pose": "pointL"
+    }
+   ]
+  },
+  {
+   "act": 0,
+   "type": "lines",
+   "set": "ppp",
+   "series": [
+    "POL",
+    "JPN"
+   ],
+   "years": [
+    1990,
+    2027
+   ],
+   "start": 1990.0,
+   "src": "IMF WEO Oct 2026 · GDP per capita, PPP",
+   "fmt": "usdk",
+   "narration": "Thirty-six years later, the IMF put out a forecast that almost nobody read. {p} In 2026, for the first time ever, {pp} the average Pole out-produces the average Japanese.",
+   "keys": [
+    {
+     "at": "Thirty-six years",
+     "year": 2025.0,
+     "dur": 6.5
+    },
+    {
+     "at": "the average Pole",
+     "year": 2026.0,
+     "dur": 1.4
+    }
+   ],
+   "cross": {
+    "at": "out-produces"
+   },
+   "riser": {
+    "at": "In 2026"
+   },
+   "push": {
+    "at": "out-produces"
+   },
+   "react": [
+    {
+     "at": "Thirty-six",
+     "pose": "pointL"
+    },
+    {
+     "at": "out-produces",
+     "pose": "cheer"
+    }
+   ]
+  },
+  {
+   "act": 0,
+   "type": "host",
+   "bg": "lines",
+   "set": "ppp",
+   "series": [
+    "POL",
+    "JPN"
+   ],
+   "years": [
+    1990,
+    2027
+   ],
+   "start": 2026.0,
+   "fmt": "usdk",
+   "narration": "Nobody threw a party. Most people didn't notice. {p} <soft>And the number that explains how it happened... is the same number that could undo it.</soft> Let's go through the chart.",
+   "react": [
+    {
+     "at": "Nobody",
+     "pose": "shrug"
+    },
+    {
+     "at": "And the number",
+     "pose": "think",
+     "lean": 1
+    },
+    {
+     "at": "Let's go",
+     "pose": "pointL"
+    }
+   ]
+  },
+  {
+   "act": 1,
+   "type": "lines",
+   "set": "ratio",
+   "series": [
+    "POL"
+   ],
+   "years": [
+    1990,
+    2027
+   ],
+   "start": 1990.0,
+   "src": "IMF WEO Oct 2026 · GDP per capita, PPP · Poland as % of Japan",
+   "fmt": "pct0",
+   "y": [
+    0,
+    110
+   ],
+   "ref": {
+    "value": 100,
+    "label": "Japan = 100%"
+   },
+   "narration": "Here's where the line starts. Thirty percent. That's Poland's income as a share of Japan's, in 1990.",
+   "labels": [
+    {
+     "at": "Thirty percent",
+     "iso": "POL",
+     "year": 1990
+    }
+   ],
+   "react": [
+    {
+     "at": "Thirty percent",
+     "pose": "pointL",
+     "nod": 1
+    }
+   ]
+  },
+  {
+   "act": 1,
+   "type": "list",
+   "src": "",
+   "title": "1 January 1990",
+   "narration": "And honestly, thirty was generous. Because on January first, 1990, Poland did something economists still argue about. It ripped the bandage off. {p} Price controls: gone. Subsidies to state factories: gone. The currency: let it float, let it fall. They called it shock therapy. {pp} The shock part was real.",
+   "items": [
+    {
+     "at": "January first",
+     "kind": "date",
+     "text": "1 JAN 1990"
+    },
+    {
+     "at": "Price controls",
+     "kind": "strike",
+     "text": "Price controls"
+    },
+    {
+     "at": "Subsidies",
+     "kind": "strike",
+     "text": "Factory subsidies"
+    },
+    {
+     "at": "The currency",
+     "kind": "strike",
+     "text": "Fixed currency"
+    },
+    {
+     "at": "shock therapy",
+     "kind": "title",
+     "text": "SHOCK THERAPY"
+    }
+   ],
+   "react": [
+    {
+     "at": "honestly",
+     "pose": "shrug"
+    },
+    {
+     "at": "ripped",
+     "pose": "shock"
+    },
+    {
+     "at": "shock therapy",
+     "pose": "pointL"
+    },
+    {
+     "at": "The shock part",
+     "pose": "idle",
+     "lean": 1
+    }
+   ]
+  },
+  {
+   "act": 1,
+   "type": "stats",
+   "src": "World Bank · CPI inflation; unemployment (ILO)",
+   "narration": "Prices rose more than five hundred percent in a single year. Output fell. Unemployment went from officially zero, because communism didn't admit it existed, to double digits.",
+   "stats": [
+    {
+     "at": "five hundred",
+     "set": "infl",
+     "iso": "POL",
+     "year": 1990,
+     "fmt": "pct0",
+     "prefix": "+",
+     "label": "prices, 1990"
+    },
+    {
+     "at": "double digits",
+     "set": "unemp",
+     "iso": "POL",
+     "year": "max:1991-1995",
+     "fmt": "pct0",
+     "label": "unemployment, {year}",
+     "count_from": 0
+    }
+   ],
+   "react": [
+    {
+     "at": "Prices rose",
+     "pose": "shock"
+    },
+    {
+     "at": "officially zero",
+     "pose": "shrug"
+    },
+    {
+     "at": "double digits",
+     "pose": "pointL"
+    }
+   ]
+  },
+  {
+   "act": 1,
+   "type": "bars",
+   "set": "growth",
+   "iso": "POL",
+   "years": [
+    1990,
+    2024
+   ],
+   "src": "World Bank · real GDP growth, Poland",
+   "narration": "But watch the line. By 1992, Poland was growing again. And here is the stat that actually matters: from 1992 to 2019, Poland's economy grew every single year. Twenty-eight years. {p} No other country in the European Union can say that.",
+   "keys": [
+    {
+     "at": "But watch",
+     "year": 1992.0,
+     "dur": 1.6
+    },
+    {
+     "at": "from 1992",
+     "year": 2019.0,
+     "dur": 3.2
+    },
+    {
+     "at": "No other",
+     "year": 2024.0,
+     "dur": 1.5
+    }
+   ],
+   "bracket": {
+    "at": "Twenty-eight years",
+    "a": 1992,
+    "b": 2019,
+    "text": "28 years · no recession"
+   },
+   "push": {
+    "at": "Twenty-eight years"
+   },
+   "react": [
+    {
+     "at": "By 1992",
+     "pose": "pointL"
+    },
+    {
+     "at": "Twenty-eight years",
+     "pose": "cheer"
+    },
+    {
+     "at": "No other",
+     "pose": "idle",
+     "nod": 1
+    }
+   ]
+  },
+  {
+   "act": 1,
+   "type": "host",
+   "bg": "bars",
+   "set": "growth",
+   "iso": "POL",
+   "years": [
+    1990,
+    2024
+   ],
+   "start": 2024.0,
+   "narration": "So how do you go from bread lines to no recessions? {p} Three things. And the first one has a date.",
+   "react": [
+    {
+     "at": "So how",
+     "pose": "think",
+     "lean": 1
+    },
+    {
+     "at": "Three things",
+     "pose": "pointUp"
+    },
+    {
+     "at": "first one",
+     "pose": "idle"
+    }
+   ]
+  },
+  {
+   "act": 2,
+   "type": "globe",
+   "src": "",
+   "narration": "May first, 2004. Poland joins the European Union, and the slope of this chart changes.",
+   "view": {
+    "lon": 15,
+    "lat": 51,
+    "zoom": 2.6
+   },
+   "fills": {
+    "EU": [
+     "AUT",
+     "BEL",
+     "DNK",
+     "FIN",
+     "FRA",
+     "DEU",
+     "GRC",
+     "IRL",
+     "ITA",
+     "LUX",
+     "NLD",
+     "PRT",
+     "ESP",
+     "SWE",
+     "GBR"
+    ]
+   },
+   "seq": {
+    "at": "May first",
+    "isos": [
+     "CZE",
+     "EST",
+     "CYP",
+     "LVA",
+     "LTU",
+     "HUN",
+     "MLT",
+     "SVN",
+     "SVK",
+     "POL"
+    ],
+    "step": 0.22,
+    "color": "acc"
+   },
+   "hl": [],
+   "react": [
+    {
+     "at": "May first",
+     "pose": "pointL"
+    },
+    {
+     "at": "Poland joins",
+     "pose": "cheer"
+    }
+   ]
+  },
+  {
+   "act": 2,
+   "type": "cards",
+   "n": 1,
+   "src": "SGH Warsaw School of Economics · EU budget flows 2004–2023",
+   "cards": [
+    {
+     "t": "Money",
+     "s": "EU funds"
+    },
+    {
+     "t": "Factories",
+     "s": "Germany next door"
+    },
+    {
+     "t": "People",
+     "s": "Out, then back"
+    }
+   ],
+   "narration": "One: money. Over the next twenty years, Poland becomes the biggest net recipient of EU funds in the whole bloc. Roads, rail, water, broadband. {p} More than a hundred and sixty billion euros more than it paid in.",
+   "chips": [
+    {
+     "at": "Roads",
+     "text": "Roads"
+    },
+    {
+     "at": "rail",
+     "text": "Rail"
+    },
+    {
+     "at": "water",
+     "text": "Water"
+    },
+    {
+     "at": "broadband",
+     "text": "Broadband"
+    }
+   ],
+   "stat": {
+    "at": "More than",
+    "value": 161.8,
+    "fmt": "eurb",
+    "label": "net, 2004–2023"
+   },
+   "react": [
+    {
+     "at": "One: money",
+     "pose": "pointUp"
+    },
+    {
+     "at": "More than",
+     "pose": "shock"
+    }
+   ]
+  },
+  {
+   "act": 2,
+   "type": "globe",
+   "src": "Statistics Poland (GUS) · exports by destination, 2025",
+   "narration": "Two: factories. German companies needed somewhere to build parts: close, cheap, skilled. Warsaw is a six-hour drive from Berlin. {p} Today, more than a quarter of everything Poland exports goes to Germany.",
+   "view": {
+    "lon": 17,
+    "lat": 52.2,
+    "zoom": 7.5
+   },
+   "hl": [
+    "POL",
+    "DEU"
+   ],
+   "card": 2,
+   "route": {
+    "at": "Warsaw is",
+    "a": [
+     13.4,
+     52.52
+    ],
+    "b": [
+     21.01,
+     52.23
+    ],
+    "la": "Berlin",
+    "lb": "Warsaw",
+    "text": "~6 h"
+   },
+   "stats": [
+    {
+     "at": "more than a quarter",
+     "value": 27,
+     "fmt": "pct0",
+     "label": "of Polish exports go to Germany"
+    }
+   ],
+   "react": [
+    {
+     "at": "Two: factories",
+     "pose": "pointUp"
+    },
+    {
+     "at": "Warsaw is",
+     "pose": "pointL"
+    },
+    {
+     "at": "more than a quarter",
+     "pose": "idle",
+     "nod": 1
+    }
+   ]
+  },
+  {
+   "act": 2,
+   "type": "globe",
+   "src": "",
+   "narration": "Three: people. Around two million Poles left to work abroad, mostly in Britain and Ireland. They sent money home. {p} And then, slowly, a lot of them came back, with skills and savings.",
+   "view": {
+    "lon": 5,
+    "lat": 53,
+    "zoom": 3.6
+   },
+   "hl": [
+    "POL",
+    "GBR",
+    "IRL"
+   ],
+   "card": 3,
+   "flows": [
+    {
+     "at": "left to work",
+     "a": [
+      19.5,
+      52
+     ],
+     "b": [
+      [
+       -1.5,
+       52.5
+      ],
+      [
+       -8,
+       53.3
+      ]
+     ],
+     "n": 26,
+     "dur": 3.0
+    },
+    {
+     "at": "came back",
+     "a": [
+      [
+       -1.5,
+       52.5
+      ],
+      [
+       -8,
+       53.3
+      ]
+     ],
+     "b": [
+      19.5,
+      52
+     ],
+     "n": 16,
+     "dur": 3.0
+    }
+   ],
+   "stats": [
+    {
+     "at": "two million",
+     "value": 2,
+     "fmt": "m",
+     "label": "Poles abroad after 2004",
+     "until": "sent money"
+    }
+   ],
+   "react": [
+    {
+     "at": "Three: people",
+     "pose": "pointUp"
+    },
+    {
+     "at": "came back",
+     "pose": "cheer"
+    }
+   ]
+  },
+  {
+   "act": 2,
+   "type": "lines",
+   "set": "ppp",
+   "series": [
+    "POL",
+    "JPN"
+   ],
+   "years": [
+    1990,
+    2027
+   ],
+   "start": 2004.0,
+   "src": "IMF WEO Oct 2026 · GDP per capita, PPP",
+   "fmt": "usdk",
+   "fade": [
+    "JPN"
+   ],
+   "narration": "Look at the slope after 2004. {p} That's not luck. That's a supply chain.",
+   "keys": [
+    {
+     "at": "Look at",
+     "year": 2008.0,
+     "dur": 2.4
+    }
+   ],
+   "marks": [
+    {
+     "at": "Look at",
+     "year": 2004,
+     "label": "Joins EU"
+    }
+   ],
+   "react": [
+    {
+     "at": "Look at",
+     "pose": "pointL"
+    },
+    {
+     "at": "supply chain",
+     "pose": "idle",
+     "nod": 1
+    }
+   ]
+  },
+  {
+   "act": 2,
+   "type": "globe",
+   "src": "World Bank · real GDP growth, 2009",
+   "narration": "And then 2008. The global financial crisis. In 2009, every single economy in the European Union shrank. {p} Every one, {pp} except Poland. It grew. The press called it the green island. One green dot on a map of red.",
+   "view": {
+    "lon": 14,
+    "lat": 50.5,
+    "zoom": 2.5
+   },
+   "hl": [],
+   "choro": {
+    "at": "In 2009",
+    "set": "g2009",
+    "isos": [
+     "AUT",
+     "BEL",
+     "DNK",
+     "FIN",
+     "FRA",
+     "DEU",
+     "GRC",
+     "IRL",
+     "ITA",
+     "LUX",
+     "NLD",
+     "PRT",
+     "ESP",
+     "SWE",
+     "GBR",
+     "CZE",
+     "EST",
+     "CYP",
+     "LVA",
+     "LTU",
+     "HUN",
+     "MLT",
+     "SVN",
+     "SVK",
+     "POL",
+     "BGR",
+     "ROU"
+    ],
+    "step": 0.11,
+    "reveal_last": "except Poland",
+    "last": "POL"
+   },
+   "stats": [
+    {
+     "at": "It grew",
+     "set": "growth",
+     "iso": "POL",
+     "year": 2009,
+     "fmt": "pct1s",
+     "label": "Poland, 2009"
+    }
+   ],
+   "push": {
+    "at": "except Poland"
+   },
+   "react": [
+    {
+     "at": "financial crisis",
+     "pose": "shock"
+    },
+    {
+     "at": "except Poland",
+     "pose": "cheer"
+    },
+    {
+     "at": "green island",
+     "pose": "pointL"
+    }
+   ]
+  },
+  {
+   "act": 2,
+   "type": "list",
+   "src": "",
+   "title": "Why it held",
+   "narration": "Why? Boring reasons, which are the best reasons. Banks that hadn't gone crazy. A currency, the zloty, that dropped about thirty percent and made Polish exports cheap at exactly the right moment. {p} And a home market of thirty-eight million people buying Polish stuff.",
+   "items": [
+    {
+     "at": "Banks",
+     "kind": "bullet",
+     "text": "Cautious banks"
+    },
+    {
+     "at": "A currency",
+     "kind": "bullet",
+     "text": "Złoty −30% → cheap exports"
+    },
+    {
+     "at": "home market",
+     "kind": "bullet",
+     "text": "38 million at home"
+    }
+   ],
+   "checks_pop": "POL:2009",
+   "react": [
+    {
+     "at": "Why?",
+     "pose": "think"
+    },
+    {
+     "at": "Boring reasons",
+     "pose": "shrug"
+    },
+    {
+     "at": "home market",
+     "pose": "pointL"
+    }
+   ]
+  },
+  {
+   "act": 2,
+   "type": "lines",
+   "set": "unemp",
+   "series": [
+    "POL"
+   ],
+   "years": [
+    1991,
+    2024
+   ],
+   "start": 1991.0,
+   "src": "World Bank · unemployment rate (ILO)",
+   "fmt": "pct0",
+   "y": [
+    0,
+    22
+   ],
+   "narration": "Look at unemployment. 2002: twenty percent. One in five workers. {p} 2024: under three. {pp} That's not a recovery. That's a different country.",
+   "keys": [
+    {
+     "at": "Look at",
+     "year": 2002.0,
+     "dur": 2.2
+    },
+    {
+     "at": "2024",
+     "year": 2024.0,
+     "dur": 2.0
+    }
+   ],
+   "labels": [
+    {
+     "at": "twenty percent",
+     "iso": "POL",
+     "year": 2002
+    },
+    {
+     "at": "under three",
+     "iso": "POL",
+     "year": 2024
+    }
+   ],
+   "push": {
+    "at": "different country"
+   },
+   "react": [
+    {
+     "at": "twenty percent",
+     "pose": "shock"
+    },
+    {
+     "at": "under three",
+     "pose": "cheer"
+    },
+    {
+     "at": "different country",
+     "pose": "idle",
+     "nod": 1
+    }
+   ]
+  },
+  {
+   "act": 3,
+   "type": "lines",
+   "set": "ppp",
+   "series": [
+    "POL",
+    "JPN"
+   ],
+   "years": [
+    1990,
+    2027
+   ],
+   "start": 2024.0,
+   "src": "IMF WEO Oct 2026 · GDP per capita, PPP",
+   "fmt": "usdk",
+   "fade": [
+    "POL"
+   ],
+   "hl": "JPN",
+   "narration": "But a crossover has two lines. And the second one barely moved.",
+   "push": {
+    "at": "barely moved"
+   },
+   "react": [
+    {
+     "at": "two lines",
+     "pose": "pointL"
+    },
+    {
+     "at": "barely",
+     "pose": "shrug"
+    }
+   ]
+  },
+  {
+   "act": 3,
+   "type": "lines",
+   "set": "ppp",
+   "series": [
+    "POL",
+    "JPN"
+   ],
+   "years": [
+    1990,
+    2027
+   ],
+   "start": 2024.0,
+   "src": "IMF WEO Oct 2026 · GDP per capita, PPP",
+   "fmt": "usdk",
+   "fade": [
+    "POL"
+   ],
+   "hl": "JPN",
+   "narration": "In 1990, Japan's bubble popped. Stocks, land, everything. What followed got a name: the Lost Decade. Then the second Lost Decade. {p} In purchasing-power terms, Japan did grow, slowly. From twenty thousand to about fifty-four. {p} Poland went from six... to fifty-one.",
+   "bands": [
+    {
+     "at": "the Lost Decade",
+     "a": 1991,
+     "b": 2000,
+     "text": "Lost Decade"
+    },
+    {
+     "at": "second Lost",
+     "a": 2001,
+     "b": 2010,
+     "text": "…and another"
+    }
+   ],
+   "labels": [
+    {
+     "at": "From twenty",
+     "iso": "JPN",
+     "year": 1990
+    },
+    {
+     "at": "fifty-four",
+     "iso": "JPN",
+     "year": 2024
+    },
+    {
+     "at": "Poland went",
+     "iso": "POL",
+     "year": 1990
+    },
+    {
+     "at": "fifty-one",
+     "iso": "POL",
+     "year": 2024
+    }
+   ],
+   "unfade": {
+    "at": "Poland went",
+    "iso": "POL"
+   },
+   "react": [
+    {
+     "at": "bubble popped",
+     "pose": "shock"
+    },
+    {
+     "at": "Lost Decade",
+     "pose": "shrug"
+    },
+    {
+     "at": "Poland went",
+     "pose": "pointL"
+    }
+   ]
+  },
+  {
+   "act": 3,
+   "type": "lines",
+   "set": "nom",
+   "series": [
+    "POL",
+    "JPN"
+   ],
+   "years": [
+    1990,
+    2024
+   ],
+   "start": 2011.0,
+   "src": "World Bank · GDP per capita, current US$",
+   "fmt": "usdk",
+   "fade": [
+    "POL"
+   ],
+   "hl": "JPN",
+   "narration": "And in plain dollars, it's worse. In 2012, the average Japanese income was almost fifty thousand dollars. In 2024? {pp} Thirty-four. That's not Japan getting poorer at home. {p} That's the yen losing nearly half its value against the dollar.",
+   "keys": [
+    {
+     "at": "In 2012",
+     "year": 2012.0,
+     "dur": 0.8
+    },
+    {
+     "at": "In 2024?",
+     "year": 2024.0,
+     "dur": 2.4
+    }
+   ],
+   "labels": [
+    {
+     "at": "almost fifty",
+     "iso": "JPN",
+     "year": 2012
+    },
+    {
+     "at": "Thirty-four",
+     "iso": "JPN",
+     "year": 2024
+    }
+   ],
+   "fxbox": {
+    "at": "the yen",
+    "set": "fx",
+    "iso": "JPN",
+    "a": 2012,
+    "b": 2024
+   },
+   "react": [
+    {
+     "at": "plain dollars",
+     "pose": "think"
+    },
+    {
+     "at": "Thirty-four",
+     "pose": "shock"
+    },
+    {
+     "at": "the yen",
+     "pose": "pointL"
+    }
+   ]
+  },
+  {
+   "act": 3,
+   "type": "host",
+   "bg": "lines",
+   "set": "nom",
+   "series": [
+    "POL",
+    "JPN"
+   ],
+   "years": [
+    1990,
+    2024
+   ],
+   "start": 2024.0,
+   "fmt": "usdk",
+   "narration": "So part of this story is Poland running. {p} <soft>And part of it is Japan standing on an escalator going down.</soft>",
+   "react": [
+    {
+     "at": "Poland running",
+     "pose": "cheer"
+    },
+    {
+     "at": "escalator",
+     "pose": "idle",
+     "lean": 1
+    }
+   ]
+  },
+  {
+   "act": 4,
+   "type": "cards",
+   "n": 0,
+   "src": "IMF WEO Oct 2026 · GDP per capita, PPP",
+   "cards": [
+    {
+     "t": "Per person ≠ per hour",
+     "s": ""
+    },
+    {
+     "t": "Purchasing power ≠ pay",
+     "s": ""
+    },
+    {
+     "t": "The number",
+     "s": ""
+    }
+   ],
+   "narration": "Okay. Poland passes Japan in 2026. {p} Before you move to Warsaw: three catches.",
+   "reveal": {
+    "at": "three catches"
+   },
+   "react": [
+    {
+     "at": "Okay",
+     "pose": "cheer"
+    },
+    {
+     "at": "Before you",
+     "pose": "idle",
+     "lean": 1
+    },
+    {
+     "at": "three catches",
+     "pose": "pointUp"
+    }
+   ]
+  },
+  {
+   "act": 4,
+   "type": "hbars",
+   "n": 1,
+   "src": "OECD · average annual hours worked per worker, 2025",
+   "cards": [
+    {
+     "t": "Per person ≠ per hour",
+     "s": ""
+    },
+    {
+     "t": "Purchasing power ≠ pay",
+     "s": ""
+    },
+    {
+     "t": "The number",
+     "s": ""
+    }
+   ],
+   "narration": "One. Per person is not per hour. Poles work about seventeen hundred and eighty hours a year. The Japanese, about sixteen hundred. {p} That's four and a half extra weeks of full-time work, to make about the same.",
+   "bars": [
+    {
+     "at": "Poles work",
+     "iso": "POL",
+     "value": 1776,
+     "label": "Poland"
+    },
+    {
+     "at": "The Japanese",
+     "iso": "JPN",
+     "value": 1598,
+     "label": "Japan"
+    }
+   ],
+   "kicker": {
+    "at": "four and a half",
+    "text": "+4.5 weeks of work"
+   },
+   "react": [
+    {
+     "at": "One.",
+     "pose": "pointUp"
+    },
+    {
+     "at": "four and a half",
+     "pose": "shock"
+    }
+   ]
+  },
+  {
+   "act": 4,
+   "type": "duel",
+   "n": 2,
+   "set": "nom",
+   "year": 2024,
+   "a": "POL",
+   "b": "JPN",
+   "src": "World Bank · GDP per capita, current US$, 2024",
+   "fmt": "usd0",
+   "cards": [
+    {
+     "t": "Per person ≠ per hour",
+     "s": ""
+    },
+    {
+     "t": "Purchasing power ≠ pay",
+     "s": ""
+    },
+    {
+     "t": "The number",
+     "s": ""
+    }
+   ],
+   "title": "In actual dollars, 2024",
+   "narration": "Two. Purchasing power is not pay. These numbers are adjusted for the fact that a haircut in Krakow costs less than one in Osaka. {p} In actual dollars, Poland's income is still about twenty-five thousand. Japan's, thirty-four.",
+   "cues": [
+    {
+     "at": "twenty-five thousand",
+     "show": "a"
+    },
+    {
+     "at": "Japan's, thirty-four",
+     "show": "b"
+    }
+   ],
+   "react": [
+    {
+     "at": "Two.",
+     "pose": "pointUp"
+    },
+    {
+     "at": "haircut",
+     "pose": "shrug"
+    },
+    {
+     "at": "twenty-five",
+     "pose": "pointL"
+    }
+   ]
+  },
+  {
+   "act": 4,
+   "type": "duel",
+   "n": 3,
+   "set": "tfr",
+   "year": 2024,
+   "a": "POL",
+   "b": "JPN",
+   "src": "World Bank · fertility rate, births per woman, 2024",
+   "fmt": "dec2",
+   "cards": [
+    {
+     "t": "Per person ≠ per hour",
+     "s": ""
+    },
+    {
+     "t": "Purchasing power ≠ pay",
+     "s": ""
+    },
+    {
+     "t": "The number",
+     "s": ""
+    }
+   ],
+   "title": "Babies per woman, 2024",
+   "narration": "Three. And this is the one. {pp} Babies per woman. Poland, 2024: one point one four. {p} Japan, the country the entire world uses as the example of a shrinking society: {pp} one point one five.",
+   "cues": [
+    {
+     "at": "one point one four",
+     "show": "a"
+    },
+    {
+     "at": "one point one five",
+     "show": "b"
+    }
+   ],
+   "music_stop": {
+    "at": "Babies per woman"
+   },
+   "push": {
+    "at": "one point one five"
+   },
+   "react": [
+    {
+     "at": "this is the one",
+     "pose": "idle",
+     "lean": 1
+    },
+    {
+     "at": "one point one four",
+     "pose": "think"
+    },
+    {
+     "at": "one point one five",
+     "pose": "shock"
+    }
+   ]
+  },
+  {
+   "act": 4,
+   "type": "host",
+   "bg": "duel",
+   "set": "tfr",
+   "year": 2024,
+   "a": "POL",
+   "b": "JPN",
+   "fmt": "dec2",
+   "narration": "Poland now has fewer children per woman than Japan.",
+   "react": [
+    {
+     "at": "Poland now",
+     "pose": "shock"
+    }
+   ]
+  },
+  {
+   "act": 4,
+   "type": "lines",
+   "set": "tfr",
+   "series": [
+    "POL",
+    "JPN"
+   ],
+   "years": [
+    1990,
+    2024
+   ],
+   "start": 1990.0,
+   "src": "World Bank · fertility rate, births per woman",
+   "fmt": "dec2",
+   "y": [
+    0.8,
+    2.3
+   ],
+   "ref": {
+    "value": 2.1,
+    "label": "2.1 = population stays flat"
+   },
+   "narration": "Part of Poland's miracle was a big, young workforce with nowhere to go but up. That workforce is now getting older. {p} The same math that shrank Japan is already running in Poland. <soft>It just started thirty years later.</soft>",
+   "keys": [
+    {
+     "at": "Part of",
+     "year": 2024.0,
+     "dur": 7.0
+    }
+   ],
+   "labels": [
+    {
+     "at": "already running",
+     "iso": "POL",
+     "year": 2024
+    }
+   ],
+   "react": [
+    {
+     "at": "young workforce",
+     "pose": "cheer"
+    },
+    {
+     "at": "getting older",
+     "pose": "idle"
+    },
+    {
+     "at": "thirty years later",
+     "pose": "idle",
+     "lean": 1
+    }
+   ]
+  },
+  {
+   "act": 5,
+   "type": "lines",
+   "set": "ppp",
+   "series": [
+    "POL",
+    "JPN",
+    "ESP",
+    "DEU"
+   ],
+   "years": [
+    1990,
+    2027
+   ],
+   "start": 1990.0,
+   "src": "IMF WEO Oct 2026 · GDP per capita, PPP",
+   "fmt": "usdk",
+   "hidden": [
+    "ESP",
+    "DEU"
+   ],
+   "narration": "So here's the whole chart, start to finish. Thirty percent of Japan, to a hundred. {p} Spain is next: the IMF has the two basically tied this year, and Poland ahead next year. {p} Germany? No. Germany is still thirty percent ahead, and the gap isn't closing fast.",
+   "keys": [
+    {
+     "at": "So here's",
+     "year": 2027.0,
+     "dur": 4.5
+    }
+   ],
+   "show": [
+    {
+     "at": "Spain is next",
+     "iso": "ESP"
+    },
+    {
+     "at": "Germany?",
+     "iso": "DEU"
+    }
+   ],
+   "labels": [
+    {
+     "at": "Spain is next",
+     "iso": "ESP",
+     "year": 2026
+    },
+    {
+     "at": "Germany?",
+     "iso": "DEU",
+     "year": 2026
+    }
+   ],
+   "react": [
+    {
+     "at": "So here's",
+     "pose": "pointL"
+    },
+    {
+     "at": "Spain is next",
+     "pose": "cheer"
+    },
+    {
+     "at": "Germany? No",
+     "pose": "shrug"
+    }
+   ]
+  },
+  {
+   "act": 5,
+   "type": "host",
+   "bg": "lines",
+   "set": "ppp",
+   "series": [
+    "POL",
+    "JPN",
+    "ESP",
+    "DEU"
+   ],
+   "years": [
+    1990,
+    2027
+   ],
+   "start": 2027.0,
+   "fmt": "usdk",
+   "narration": "But the real question isn't who Poland passes next. It's whether a country can keep climbing after its people stop multiplying. {pp} Japan mostly couldn't. Korea is trying. {p} Poland is about to find out.",
+   "react": [
+    {
+     "at": "real question",
+     "pose": "think",
+     "lean": 1
+    },
+    {
+     "at": "Japan mostly",
+     "pose": "shrug"
+    },
+    {
+     "at": "about to find out",
+     "pose": "idle",
+     "nod": 1
+    }
+   ]
+  },
+  {
+   "act": 5,
+   "type": "lines",
+   "set": "ppp",
+   "series": [
+    "POL",
+    "JPN"
+   ],
+   "years": [
+    1990,
+    2027
+   ],
+   "start": 2027.0,
+   "src": "IMF WEO Oct 2026 · GDP per capita, PPP",
+   "fmt": "usdk",
+   "narration": "If you'd told someone standing in a Warsaw bread line in 1990 that their grandchildren would out-earn Tokyo... {p} they'd have laughed. {pp} The chart didn't.",
+   "labels": [
+    {
+     "at": "bread line",
+     "iso": "POL",
+     "year": 1990
+    },
+    {
+     "at": "out-earn Tokyo",
+     "iso": "POL",
+     "year": 2026
+    }
+   ],
+   "push": {
+    "at": "The chart didn't"
+   },
+   "slow": 1,
+   "react": [
+    {
+     "at": "bread line",
+     "pose": "idle"
+    },
+    {
+     "at": "laughed",
+     "pose": "cheer"
+    },
+    {
+     "at": "The chart didn't",
+     "pose": "idle",
+     "nod": 1
+    }
+   ]
+  },
+  {
+   "act": 5,
+   "type": "end",
+   "src": "",
+   "narration": "If you want the Korea version of this story, the one with the scariest number on Earth, it's right here. {p} I'm Chartbound. See you in the next one.",
+   "hold": 14,
+   "react": [
+    {
+     "at": "right here",
+     "pose": "pointL"
+    },
+    {
+     "at": "See you",
+     "pose": "wave"
+    }
+   ]
+  }
+ ],
+ "checks": [
+  {
+   "say": "six thousand",
+   "set": "ppp",
+   "iso": "POL",
+   "year": 1990,
+   "approx": 6000,
+   "tol": 0.08
+  },
+  {
+   "say": "Twenty thousand",
+   "set": "ppp",
+   "iso": "JPN",
+   "year": 1990,
+   "approx": 20000,
+   "tol": 0.08
+  },
+  {
+   "say": "Thirty percent",
+   "set": "ratio",
+   "iso": "POL",
+   "year": 1990,
+   "approx": 30,
+   "tol": 0.08
+  },
+  {
+   "say": "for the first time ever (2026)",
+   "rule": "cross",
+   "set": "ppp",
+   "a": "POL",
+   "b": "JPN",
+   "year": 2026
+  },
+  {
+   "say": "over five hundred percent",
+   "set": "infl",
+   "iso": "POL",
+   "year": 1990,
+   "min": 500
+  },
+  {
+   "say": "double digits",
+   "set": "unemp",
+   "iso": "POL",
+   "year": "max:1991-1995",
+   "min": 10
+  },
+  {
+   "say": "growing again by 1992",
+   "set": "growth",
+   "iso": "POL",
+   "year": 1992,
+   "min": 0
+  },
+  {
+   "say": "every year 1992-2019",
+   "rule": "allpos",
+   "set": "growth",
+   "iso": "POL",
+   "a": 1992,
+   "b": 2019
+  },
+  {
+   "say": "every EU economy shrank except Poland (2009)",
+   "rule": "onlypos",
+   "set": "g2009",
+   "iso": "POL"
+  },
+  {
+   "say": "thirty-eight million",
+   "set": "pop",
+   "iso": "POL",
+   "year": 2009,
+   "approx": 38000000.0,
+   "tol": 0.03
+  },
+  {
+   "say": "2002: twenty percent",
+   "set": "unemp",
+   "iso": "POL",
+   "year": 2002,
+   "approx": 20,
+   "tol": 0.06
+  },
+  {
+   "say": "2024: under three",
+   "set": "unemp",
+   "iso": "POL",
+   "year": 2024,
+   "max": 3
+  },
+  {
+   "say": "Japan from twenty thousand",
+   "set": "ppp",
+   "iso": "JPN",
+   "year": 1990,
+   "approx": 20000,
+   "tol": 0.08
+  },
+  {
+   "say": "to about fifty-four",
+   "set": "ppp",
+   "iso": "JPN",
+   "year": 2024,
+   "approx": 54000,
+   "tol": 0.05
+  },
+  {
+   "say": "Poland from six",
+   "set": "ppp",
+   "iso": "POL",
+   "year": 1990,
+   "approx": 6000,
+   "tol": 0.08
+  },
+  {
+   "say": "to fifty-one",
+   "set": "ppp",
+   "iso": "POL",
+   "year": 2024,
+   "approx": 51000,
+   "tol": 0.05
+  },
+  {
+   "say": "2012 almost fifty thousand",
+   "set": "nom",
+   "iso": "JPN",
+   "year": 2012,
+   "approx": 49000,
+   "tol": 0.04
+  },
+  {
+   "say": "2024 thirty-four",
+   "set": "nom",
+   "iso": "JPN",
+   "year": 2024,
+   "approx": 34000,
+   "tol": 0.04
+  },
+  {
+   "say": "yen lost nearly half",
+   "rule": "fxloss",
+   "set": "fx",
+   "iso": "JPN",
+   "a": 2012,
+   "b": 2024,
+   "min": 0.4,
+   "max": 0.52
+  },
+  {
+   "say": "Poland about twenty-five thousand",
+   "set": "nom",
+   "iso": "POL",
+   "year": 2024,
+   "approx": 25000,
+   "tol": 0.04
+  },
+  {
+   "say": "one point one four",
+   "set": "tfr",
+   "iso": "POL",
+   "year": 2024,
+   "approx": 1.14,
+   "tol": 0.005
+  },
+  {
+   "say": "one point one five",
+   "set": "tfr",
+   "iso": "JPN",
+   "year": 2024,
+   "approx": 1.15,
+   "tol": 0.005
+  },
+  {
+   "say": "Spain basically tied 2026",
+   "rule": "tied",
+   "set": "ppp",
+   "a": "POL",
+   "b": "ESP",
+   "year": 2026,
+   "tol": 0.01
+  },
+  {
+   "say": "Poland ahead of Spain 2027",
+   "rule": "gt",
+   "set": "ppp",
+   "a": "POL",
+   "b": "ESP",
+   "year": 2027
+  },
+  {
+   "say": "Germany still thirty percent ahead",
+   "rule": "ratio",
+   "set": "ppp",
+   "a": "DEU",
+   "b": "POL",
+   "year": 2026,
+   "min": 1.25,
+   "max": 1.36
+  }
+ ],
+ "voice": {
+  "model": "",
+  "name": "Charon",
+  "style": "You are the narrator of a data documentary on YouTube. Read the script below in a warm, curious, unhurried voice, with a little dry humor. Speak like you are telling a friend something surprising, not reading a report. Pause briefly before every number that matters, and let the big reveals land. Never sound like an advertisement."
+ },
+ "music": [
+  {
+   "act": 0,
+   "track": "",
+   "vol": 0.2
+  },
+  {
+   "act": 1,
+   "track": "",
+   "vol": 0.16
+  },
+  {
+   "act": 2,
+   "track": "",
+   "vol": 0.18
+  },
+  {
+   "act": 3,
+   "track": "",
+   "vol": 0.16
+  },
+  {
+   "act": 4,
+   "track": "",
+   "vol": 0.16
+  },
+  {
+   "act": 5,
+   "track": "",
+   "vol": 0.2
+  }
+ ],
+ "yt": {
+  "title": "Poland Just Passed Japan. Nobody Noticed.",
+  "description": "For the first time ever, the average Pole out-produces the average Japanese (IMF, GDP per capita at purchasing power, 2026). How Poland went from 30% of Japan to 100% in 36 years, why Japan barely moved, and the number that could undo it all.\n\nSources: IMF World Economic Outlook (Oct 2026); World Bank WDI (NY.GDP.PCAP.CD, FP.CPI.TOTL.ZG, SL.UEM.TOTL.ZS, NY.GDP.MKTP.KD.ZG, SP.DYN.TFRT.IN, SP.POP.TOTL, PA.NUS.FCRF); OECD hours worked (2025); SGH Warsaw School of Economics, Poland–EU budget flows 2004–2023; Statistics Poland (GUS).\n{music_credits}\nNarration is AI-generated.\n\n#economics #poland #japan #data",
+  "tags": [
+   "economics",
+   "poland",
+   "japan",
+   "gdp per capita",
+   "data",
+   "documentary"
+  ],
+  "lang": "en"
+ }
+}

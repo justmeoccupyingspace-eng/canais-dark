@@ -9,17 +9,23 @@ KEY = os.environ["GEMINI_KEY"]
 API = "https://generativelanguage.googleapis.com/v1beta"
 rep = []
 
-STYLE = ("You are the narrator of a data documentary on YouTube. Read the script below in a warm, curious, unhurried voice, "
-         "with a little dry humor. Speak like you are telling a friend something surprising, not reading a report. "
-         "Pause briefly before every number that matters, and let the big reveals land. Never sound like an advertisement.")
-TXT = ("In 1990, the average person in Poland produced about six thousand dollars of value a year. [short pause] "
+STYLES = {
+ "A": ("You are the narrator of a popular data documentary on YouTube. Read the script below at a brisk, conversational pace, "
+       "around 165 words per minute, like a smart friend telling you something surprising over coffee. Warm, curious, a little dry humor. "
+       "Keep the energy up and the sentences flowing; only pause where the script says [pause]. Never sound like an advertisement or an audiobook."),
+ "B": ("Narrate this like a top YouTube explainer host (think Johnny Harris or Wendover Productions): energetic, confident, quick, "
+       "about 170 words per minute, with punchy emphasis on numbers and a slight smile in the voice. Lean into questions. "
+       "No long pauses except where the script says [pause]."),
+}
+STYLE = STYLES[os.environ.get("STYLE", "A")]
+TXT = ("In 1990, the average person in Poland produced about six thousand dollars of value a year. "
        "The average person in Japan? [pause] Twenty thousand. "
-       "Poland was coming out of forty years of communism. Inflation was heading for six hundred percent. "
-       "Shops had queues, but not much on the shelves. [short pause] Japan was the second-largest economy on Earth. "
+       "Poland was coming out of forty years of communism. Inflation was over five hundred percent. "
+       "Shops had queues, but not much on the shelves. Japan was the second-largest economy on Earth. "
        "Thirty-six years later, the IMF put out a forecast that almost nobody read. "
-       "In 2026, for the first time ever, [pause] the average Pole out-produces the average Japanese. "
+       "In 2026, for the first time ever... the average Pole out-produces the average Japanese. "
        "Nobody threw a party. Most people didn't notice. "
-       "[softly] And the number that explains how it happened... is the same number that could undo it. "
+       "And the number that explains how it happened... is the same number that could undo it. "
        "Let's go through the chart.")
 PLAIN = re.sub(r"\[[^\]]*\]\s*", "", TXT)
 
@@ -67,6 +73,7 @@ model = os.environ.get("TTS_MODEL") or (cands[0] if cands else "gemini-2.5-flash
 rep.append(f"modelo usado: {model}")
 
 VOICES = os.environ.get("VOICES", "Charon,Sadaltager,Algieba,Iapetus,Gacrux,Sulafat").split(",")
+RUNS = [(v.split(":")[0], v.split(":")[1] if ":" in v else os.environ.get("STYLE", "A")) for v in VOICES]
 from faster_whisper import WhisperModel
 import librosa
 wm = WhisperModel("small", compute_type="int8")
@@ -86,8 +93,9 @@ def wer(r, h):
     return d[-1, -1] / max(len(r), 1)
 
 
-for v in VOICES:
-    tag = f"v_{v}"
+for v, sty in RUNS:
+    tag = f"v_{v}_{sty}"
+    STYLE = STYLES[sty]
     try:
         t0 = time.time()
         raw, mime, use = tts(model, v, TXT)
@@ -117,7 +125,7 @@ for v in VOICES:
     time.sleep(7)
 
 # 3) trilhas
-TRACKS = ["Cipher", "Hidden Agenda", "Lightless Dawn", "Deliberate Thought", "Investigations", "Clean Soul", "Inspired",
+TRACKS = os.environ.get("TRACKS", "").split(",") if os.environ.get("TRACKS") else ["Hidden Agenda", "Lightless Dawn", "Deliberate Thought", "Investigations", "Clean Soul", "Inspired",
           "Heartbreaking", "Long Note Four", "Dreamer", "Reawakening", "Impact Moderato", "Ice Flow", "Fearless First",
           "Floating Cities", "Blue Feather", "Ossuary 6 - Air", "Eastminster", "Thinking Music", "Lasting Hope"]
 os.makedirs("out_l/music", exist_ok=True)
@@ -128,14 +136,12 @@ for t in TRACKS:
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
         open(p, "wb").write(urllib.request.urlopen(req, timeout=60).read())
         y, s = librosa.load(p, sr=22050, mono=True)
-        tempo = librosa.beat.tempo(y=y, sr=s)[0]
+        tempo = float(librosa.feature.rhythm.tempo(y=y, sr=s)[0])
         cent = float(np.mean(librosa.feature.spectral_centroid(y=y, sr=s)))
         rms = librosa.feature.rms(y=y)[0]
         rep.append(f"music {t}: {len(y) / s:.0f}s, {tempo:.0f} bpm, centroide {cent:.0f} Hz, dinâmica p90/p10 {np.percentile(rms, 90) / (np.percentile(rms, 10) + 1e-6):.1f}x, {os.path.getsize(p) // 1024} KB")
     except Exception as e:
         rep.append(f"music {t}: ERRO {repr(e)[:100]}")
-        if os.path.exists(p):
-            os.remove(p)
 
 open("out_l/relatorio.txt", "w").write("\n".join(rep))
 print("\n".join(rep))
