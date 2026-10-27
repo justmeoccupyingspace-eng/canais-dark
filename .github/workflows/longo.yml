@@ -134,7 +134,17 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: "3.12"}
       - run: npm ci --no-audit --no-fund
-      - run: for i in 1 2; do timeout 180 sudo apt-get update -qq && timeout 240 sudo apt-get install -y -qq ffmpeg && break; sleep 5; done
+      - name: ffmpeg
+        run: |
+          for i in 1 2; do timeout 180 sudo apt-get update -qq && timeout 240 sudo apt-get install -y -qq ffmpeg && break; sleep 5; done
+          if ! command -v ffmpeg >/dev/null; then
+            pip install -q imageio-ffmpeg
+            sudo ln -sf "$(python -c 'import imageio_ffmpeg as m; print(m.get_ffmpeg_exe())')" /usr/local/bin/ffmpeg
+          fi
+          if ! command -v ffprobe >/dev/null; then
+            F=$(ls node_modules/@remotion/compositor-linux-x64*/ffprobe 2>/dev/null | head -1); [ -n "$F" ] && sudo ln -sf "$PWD/$F" /usr/local/bin/ffprobe || true
+          fi
+          ffmpeg -version | head -1
       - uses: actions/download-artifact@v4
         with: {name: prep, path: public}
       - uses: actions/download-artifact@v4
@@ -153,7 +163,7 @@ jobs:
           run ffmpeg -v error -y -f concat -safe 0 -i out/list.txt -c copy out/video.mp4
           run ffmpeg -v error -y -i out/video.mp4 -i out/audio.wav -map 0:v -map 1:a -c:v copy -af "loudnorm=I=-14:TP=-1.5:LRA=11" -ar 48000 -c:a aac -b:a 192k -movflags +faststart out/$ID.mp4
           run ffmpeg -v error -y -i out/$ID.mp4 -vf scale=1280:-2 -c:v libx264 -crf 27 -preset veryfast -c:a aac -b:a 128k out/${ID}_720.mp4
-          ffprobe -v error -show_entries format=duration,size -of default=nw=1 out/$ID.mp4
+          ffprobe -v error -show_entries format=duration,size -of default=nw=1 out/$ID.mp4 || true
           mkdir -p out/sheet && ffmpeg -v error -y -i out/${ID}_720.mp4 -vf "fps=1/6,scale=480:-2,tile=6x8" -frames:v 1 out/sheet/sheet.jpg
           node scripts/lrender.mjs public/build/$ID.json thumb out/sheet/thumb.jpg 2>&1 | tail -3 || true
       - name: Drive (arquivo final para o Kauan assistir)
