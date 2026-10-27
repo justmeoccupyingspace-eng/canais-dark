@@ -145,11 +145,14 @@ jobs:
         with: {pattern: "chunk-*", path: out, merge-multiple: true, run-id: "${{ inputs.chunks_run }}", github-token: "${{ secrets.GITHUB_TOKEN }}"}
       - name: áudio + junção + loudness
         run: |
-          pip install -q numpy soundfile && python scripts/lmix.py public/build/$ID.json out/audio.wav
+          run() { "$@" > /tmp/log.txt 2>&1 || { echo "::error title=final::$1 $2 falhou: $(tail -c 600 /tmp/log.txt | tr '\n' ' ')"; exit 1; }; cat /tmp/log.txt | tail -5; }
+          run pip install -q numpy soundfile
+          ls public/audio/music public/audio/fx | head -40
+          run python scripts/lmix.py public/build/$ID.json out/audio.wav
           ls out/c*.mp4 | sort -V | sed "s|^|file '$PWD/|;s|$|'|" > out/list.txt
-          ffmpeg -v error -y -f concat -safe 0 -i out/list.txt -c copy out/video.mp4
-          ffmpeg -v error -y -i out/video.mp4 -i out/audio.wav -map 0:v -map 1:a -c:v copy -af "loudnorm=I=-14:TP=-1.5:LRA=11" -ar 48000 -c:a aac -b:a 192k -movflags +faststart out/$ID.mp4
-          ffmpeg -v error -y -i out/$ID.mp4 -vf scale=1280:-2 -c:v libx264 -crf 27 -preset veryfast -c:a aac -b:a 128k out/${ID}_720.mp4
+          run ffmpeg -v error -y -f concat -safe 0 -i out/list.txt -c copy out/video.mp4
+          run ffmpeg -v error -y -i out/video.mp4 -i out/audio.wav -map 0:v -map 1:a -c:v copy -af "loudnorm=I=-14:TP=-1.5:LRA=11" -ar 48000 -c:a aac -b:a 192k -movflags +faststart out/$ID.mp4
+          run ffmpeg -v error -y -i out/$ID.mp4 -vf scale=1280:-2 -c:v libx264 -crf 27 -preset veryfast -c:a aac -b:a 128k out/${ID}_720.mp4
           ffprobe -v error -show_entries format=duration,size -of default=nw=1 out/$ID.mp4
           mkdir -p out/sheet && ffmpeg -v error -y -i out/${ID}_720.mp4 -vf "fps=1/6,scale=480:-2,tile=6x8" -frames:v 1 out/sheet/sheet.jpg
           node scripts/lrender.mjs public/build/$ID.json thumb out/sheet/thumb.jpg 2>&1 | tail -3 || true
