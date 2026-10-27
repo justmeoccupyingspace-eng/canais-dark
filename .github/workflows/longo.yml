@@ -73,7 +73,7 @@ jobs:
           TTS_ENGINE: ${{ inputs.engine }}
         run: python scripts/ltts.py $J public/build/$ID.data.json public/build/$ID.json
       - uses: actions/upload-artifact@v4
-        if: inputs.prep_run == '' && inputs.mode != 'data'
+        if: inputs.mode != 'data'
         with: {name: prep, path: "public/build\npublic/audio", retention-days: 7}
       - name: resumo na branch lprep-<run>
         if: always()
