@@ -25,26 +25,57 @@ def for_tts(t):
 
 
 # ---------- TTS ----------
-def gemini(text, voice, style, model):
+DEAD_MODELS = set()  # modelos que estouraram a cota diária nesta execução
+
+
+def gemini_once(text, voice, style, model):
     key = os.environ["GEMINI_KEY"]
     body = {"contents": [{"parts": [{"text": style + "\n\n" + text}]}],
             "generationConfig": {"responseModalities": ["AUDIO"], "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voice}}}}}
-    for i in range(4):
-        try:
-            req = urllib.request.Request(f"{API}/models/{model}:generateContent?key={key}", data=json.dumps(body).encode(), headers={"Content-Type": "application/json"})
-            r = json.load(urllib.request.urlopen(req, timeout=600))
-            part = r["candidates"][0]["content"]["parts"][0]["inlineData"]
-            sr = int(re.search(r"rate=(\d+)", part.get("mimeType", "rate=24000")).group(1))
-            x = np.frombuffer(base64.b64decode(part["data"]), dtype="<i2").astype(np.float32) / 32768
-            if sr != SR:
-                import librosa
-                x = librosa.resample(x, orig_sr=sr, target_sr=SR)
-            return x
-        except Exception as e:
-            body_err = e.read().decode()[:300] if hasattr(e, "read") else ""
-            print("gemini falhou", i, repr(e)[:100], body_err)
-            time.sleep(20 * (i + 1))
-    raise RuntimeError("gemini indisponível")
+    req = urllib.request.Request(f"{API}/models/{model}:generateContent?key={key}", data=json.dumps(body).encode(), headers={"Content-Type": "application/json"})
+    r = json.load(urllib.request.urlopen(req, timeout=900))
+    parts = [p for c in r.get("candidates", []) for p in c.get("content", {}).get("parts", []) if "inlineData" in p]
+    if not parts:
+        raise ValueError("resposta sem áudio: " + json.dumps(r)[:300])
+    chunks = []
+    for p in parts:
+        sr = int(re.search(r"rate=(\d+)", p["inlineData"].get("mimeType", "rate=24000")).group(1))
+        x = np.frombuffer(base64.b64decode(p["inlineData"]["data"]), dtype="<i2").astype(np.float32) / 32768
+        if sr != SR:
+            import librosa
+            x = librosa.resample(x, orig_sr=sr, target_sr=SR)
+        chunks.append(x)
+    return np.concatenate(chunks)
+
+
+def gemini(text, voice, style, models):
+    """tenta cada modelo; 429 de cota diária marca o modelo como esgotado e passa ao próximo; sem retentativa às cegas."""
+    for model in models:
+        if model in DEAD_MODELS:
+            continue
+        for i in range(2):
+            try:
+                x = gemini_once(text, voice, style, model)
+                return x, model
+            except Exception as e:
+                body_err = ""
+                try:
+                    body_err = e.read().decode()[:400] if hasattr(e, "read") else ""
+                except Exception:
+                    pass
+                code = getattr(e, "code", None)
+                msg = (repr(e)[:120] + " " + body_err.replace("\n", " "))[:400]
+                print(f"::warning title=gemini::{model} tentativa {i}: {msg}")
+                if code == 429 and "per day" in body_err:
+                    DEAD_MODELS.add(model)
+                    break
+                if code == 429:
+                    time.sleep(65)
+                    continue
+                if code and 400 <= code < 500:
+                    break
+                time.sleep(15)
+    raise RuntimeError("gemini indisponível em " + ", ".join(models))
 
 
 def edge(text, voice="en-US-AndrewMultilingualNeural"):
@@ -240,7 +271,8 @@ def main(src, data_path, dst, fake=False):
     outdir = f"public/audio/{name}"
     os.makedirs(outdir, exist_ok=True)
     v = spec["voice"]
-    model = v.get("model") or os.environ.get("TTS_MODEL", "gemini-3.8-flash-tts")
+    models = [m for m in (os.environ.get("TTS_MODEL") or v.get("model") or "gemini-3.8-flash-tts").split(",") if m]
+    used_model = None
     acts = sorted({s["act"] for s in spec["shots"]})
     tracks, words_all, report = [], [], []
     t_cursor = 0.0
@@ -276,15 +308,37 @@ def main(src, data_path, dst, fake=False):
             try:
                 if os.environ.get("TTS_ENGINE") == "edge":
                     raise RuntimeError("edge forçado (teste)")
-                x = gemini(text, v.get("name", "Charon"), v["style"], model)
-                eng = "gemini"
+                # cache por texto+voz+estilo: áudio já pago (cota) nunca é pedido de novo
+                import hashlib
+                os.makedirs("public/audio/ttscache", exist_ok=True)
+                hit = None
+                for mdl_ in ([used_model] if used_model else models):
+                    hk = hashlib.sha1((text + v.get("name", "Charon") + v["style"] + mdl_).encode()).hexdigest()[:16]
+                    if os.path.exists(f"public/audio/ttscache/{hk}.wav"):
+                        hit = (f"public/audio/ttscache/{hk}.wav", mdl_)
+                        break
+                if hit:
+                    x, _ = sf.read(hit[0], dtype="float32")
+                    mdl = hit[1]
+                    print("cache de voz", a, mdl)
+                else:
+                    # mesmo modelo para todos os atos (timbre consistente)
+                    x, mdl = gemini(text, v.get("name", "Charon"), v["style"], [used_model] if used_model else models)
+                    hk = hashlib.sha1((text + v.get("name", "Charon") + v["style"] + mdl).encode()).hexdigest()[:16]
+                    sf.write(f"public/audio/ttscache/{hk}.wav", x, SR)
+                    time.sleep(float(os.environ.get("TTS_GAP", "20")))
+                used_model = mdl
+                eng = "gemini:" + mdl
             except Exception as e:
+                if os.environ.get("TTS_ENGINE", "gemini") != "edge" and os.environ.get("ALLOW_EDGE", "0") != "1":
+                    print(f"::error title=tts::Gemini falhou no ato {a} e o fallback para Edge está desligado: {repr(e)[:200]}")
+                    sys.exit(1)
                 print("::warning title=tts::gemini falhou no ato", a, "— usando edge", repr(e)[:80])
                 x = edge(text)
                 eng = "edge"
-            if eng == "gemini":
+            if eng.startswith("gemini"):
                 x = tighten(x, float(os.environ.get("PAUSE_CAP", "0.55")))
-                x = tempo(x, float(os.environ.get("ATEMPO", "1.08")))
+                x = tempo(x, float(os.environ.get("ATEMPO") or ("1.08" if "3.8-flash-tts" in eng else "1.0")))
             x = clean(x)
             p = f"{outdir}/act{a}.wav"
             sf.write(p, x, SR)

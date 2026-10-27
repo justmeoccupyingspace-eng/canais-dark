@@ -269,9 +269,10 @@ spec = dict(id="a-L01-poland-japan", channel="chartbound", w=1920, h=1080, fps=3
                           "PPPPC": {"2026": {"POL": 60051, "JPN": 59712, "ESP": 60106, "DEU": 78664, "GRC": 47365, "PRT": 52980}},
                           "GGXWDG_NGDP": {"2025": {"JPN": 204.8, "ITA": 137.1, "GRC": 146.6, "FRA": 115.5, "CAN": 113.6, "DEU": 62.7, "KOR": 52.4}}},
             voice=dict(model="", name="Charon",
-                       style=("You are the narrator of a data documentary on YouTube. Read the script below in a warm, curious, unhurried voice, "
-                              "with a little dry humor. Speak like you are telling a friend something surprising, not reading a report. "
-                              "Pause briefly before every number that matters, and let the big reveals land. Never sound like an advertisement.")),
+                       style=("You are the narrator of a popular data documentary on YouTube. Read the script below in a warm, curious voice "
+                              "with a little dry humor, at a relaxed but engaged pace of about 145 words per minute, like a smart friend telling "
+                              "you something surprising. Let the big numbers land with a tiny pause before them. Keep the energy steady from the "
+                              "first sentence to the last. Never sound like an advertisement or an audiobook.")),
             music=[dict(act=0, track="Investigations", vol=0.25), dict(act=1, track="Deliberate Thought", vol=0.22), dict(act=2, track="Floating Cities", vol=0.24),
                    dict(act=3, track="Lightless Dawn", vol=0.26), dict(act=4, track="Clean Soul", vol=0.22), dict(shot="s30", track="Heartbreaking", vol=0.2),
                    dict(act=5, track="Inspired", vol=0.25)],

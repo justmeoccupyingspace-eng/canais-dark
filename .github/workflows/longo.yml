@@ -12,6 +12,7 @@ on:
       engine: {description: "gemini | edge (teste)", required: false, default: "gemini"}
       chunks_run: {description: "reaproveitar os pedaços renderizados de outra execução (run id)", required: false, default: ""}
       drive: {description: "subir o mp4 final no Drive (true/false)", required: false, default: "false"}
+      tts_cache_run: {description: "run id cujo cache de voz reaproveitar (economiza cota)", required: false, default: ""}
 permissions:
   contents: write
   actions: read
@@ -67,6 +68,11 @@ jobs:
               subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", f + ".src.mp3", "-af", "loudnorm=I=-20:TP=-2:LRA=11", "-ar", "44100", "-b:a", "192k", f + ".mp3"], check=True)
               os.remove(f + ".src.mp3"); print("trilha ok", t)
           PY
+      - name: cache de voz de outra execução
+        if: inputs.prep_run == '' && inputs.tts_cache_run != ''
+        uses: actions/download-artifact@v4
+        with: {name: ttscache, path: public/audio/ttscache, run-id: "${{ inputs.tts_cache_run }}", github-token: "${{ secrets.GITHUB_TOKEN }}"}
+        continue-on-error: true
       - name: narração (Gemini) + alinhamento (Whisper) + timeline
         if: inputs.prep_run == '' && inputs.mode != 'data'
         env:
@@ -74,6 +80,9 @@ jobs:
           TTS_MODEL: ${{ inputs.model }}
           TTS_ENGINE: ${{ inputs.engine }}
         run: python scripts/ltts.py $J public/build/$ID.data.json public/build/$ID.json
+      - uses: actions/upload-artifact@v4
+        if: always() && inputs.prep_run == '' && inputs.mode != 'data'
+        with: {name: ttscache, path: public/audio/ttscache, retention-days: 14, if-no-files-found: ignore}
       - uses: actions/upload-artifact@v4
         if: inputs.mode != 'data'
         with: {name: prep, path: "public/build\npublic/audio", retention-days: 7}

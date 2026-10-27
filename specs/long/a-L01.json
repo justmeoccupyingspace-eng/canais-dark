@@ -2234,7 +2234,7 @@
  "voice": {
   "model": "",
   "name": "Charon",
-  "style": "You are the narrator of a data documentary on YouTube. Read the script below in a warm, curious, unhurried voice, with a little dry humor. Speak like you are telling a friend something surprising, not reading a report. Pause briefly before every number that matters, and let the big reveals land. Never sound like an advertisement."
+  "style": "You are the narrator of a popular data documentary on YouTube. Read the script below in a warm, curious voice with a little dry humor, at a relaxed but engaged pace of about 145 words per minute, like a smart friend telling you something surprising. Let the big numbers land with a tiny pause before them. Keep the energy steady from the first sentence to the last. Never sound like an advertisement or an audiobook."
  },
  "music": [
   {
