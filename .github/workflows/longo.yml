@@ -13,6 +13,8 @@ on:
       chunks_run: {description: "reaproveitar os pedaços renderizados de outra execução (run id)", required: false, default: ""}
       drive: {description: "subir o mp4 final no Drive (true/false)", required: false, default: "false"}
       tts_cache_run: {description: "run id cujo cache de voz reaproveitar (economiza cota)", required: false, default: ""}
+      upload: {description: "subir no YouTube: A | B | vazio", required: false, default: ""}
+      at: {description: "publishAt ISO UTC (agendado)", required: false, default: ""}
 permissions:
   contents: write
   actions: read
@@ -159,6 +161,19 @@ jobs:
           GDRIVE_REFRESH: ${{ secrets.GDRIVE_REFRESH }}
         run: python scripts/drive_up.py out/$ID.mp4 | tee out/drive.txt; grep -o "drive ok.*" out/drive.txt | sed 's/^/::notice title=drive::/' || true
         continue-on-error: true
+      - name: YouTube (agendado) + thumbnail
+        if: inputs.upload != ''
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_A: ${{ secrets.YT_REFRESH_A }}
+          YT_REFRESH_B: ${{ secrets.YT_REFRESH_B }}
+          MANUAL_PUBLISH_AT: ${{ inputs.at }}
+        run: |
+          J=${{ inputs.spec }}; python $J >/dev/null; python scripts/lyt.py meta public/build/$ID.json out/yt.json ${J%.py}.json
+          python scripts/upload.py ${{ inputs.upload }} out/$ID.mp4 out/yt.json private
+          VID=$(python -c "import json;print(json.load(open('uploaded.json'))['id'])")
+          [ -f out/sheet/thumb.jpg ] && python scripts/lyt.py thumb ${{ inputs.upload }} $VID out/sheet/thumb.jpg || echo "sem thumb"
       - name: prévia 720p na branch long-<run>
         run: |
           mkdir -p /tmp/o

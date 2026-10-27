@@ -264,7 +264,7 @@ checks = [
 for i, sh in enumerate(shots):
     sh["id"] = f"s{i:02d}"
 
-spec = dict(id="a-L01-poland-japan", channel="chartbound", w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
+spec = dict(id="a-L01-poland-japan", channel="chartbound", chapter0="Poland passed Japan", w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
             imf_snapshot={"_source": "IMF World Economic Outlook, October 2026 (DataMapper PPPPC, GGXWDG_NGDP), lido em 27/10/2026",
                           "PPPPC": {"2026": {"POL": 60051, "JPN": 59712, "ESP": 60106, "DEU": 78664, "GRC": 47365, "PRT": 52980}},
                           "GGXWDG_NGDP": {"2025": {"JPN": 204.8, "ITA": 137.1, "GRC": 146.6, "FRA": 115.5, "CAN": 113.6, "DEU": 62.7, "KOR": 52.4}}},
@@ -279,7 +279,7 @@ spec = dict(id="a-L01-poland-japan", channel="chartbound", w=1920, h=1080, fps=3
             yt=dict(title="Poland Just Passed Japan. Nobody Noticed.",
                     description=("For the first time ever, the average Pole out-produces the average Japanese (IMF, GDP per capita at purchasing power, 2026). "
                                  "How Poland went from 30% of Japan to 100% in 36 years, why Japan barely moved, and the number that could undo it all.\n\n"
-                                 "Sources: IMF World Economic Outlook (Oct 2026); World Bank WDI (NY.GDP.PCAP.CD, FP.CPI.TOTL.ZG, SL.UEM.TOTL.ZS, NY.GDP.MKTP.KD.ZG, SP.DYN.TFRT.IN, SP.POP.TOTL, PA.NUS.FCRF); "
+                                 "Sources: IMF World Economic Outlook (Oct 2026); World Bank WDI (NY.GDP.PCAP.PP.CD, NY.GDP.PCAP.CD, FP.CPI.TOTL.ZG, SL.UEM.TOTL.ZS, NY.GDP.MKTP.KD.ZG, SP.DYN.TFRT.IN, SP.POP.TOTL, SP.POP.1564.TO, PA.NUS.FCRF); Paris Club (1991); Eurostat (temporary protection, Jan 2026); "
                                  "OECD hours worked (2025); SGH Warsaw School of Economics, Poland–EU budget flows 2004–2023; Statistics Poland (GUS).\n"
                                  "{music_credits}\nNarration is AI-generated.\n\n#economics #poland #japan #data"),
                     tags=["economics", "poland", "japan", "gdp per capita", "data", "documentary"], lang="en"))
