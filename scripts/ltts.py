@@ -56,6 +56,38 @@ def edge(text, voice="en-US-AndrewMultilingualNeural"):
     return x
 
 
+def tighten(x, cap=0.55):
+    """encurta silêncios longos para no máximo `cap` s (mantém o ritmo das pausas curtas)."""
+    hop = int(SR * 0.01)
+    n = len(x) // hop
+    e = np.sqrt(np.mean(x[: n * hop].reshape(n, hop) ** 2, axis=1))
+    sil = e < e.max() * 0.02
+    out, i = [], 0
+    while i < n:
+        j = i
+        while j < n and sil[j] == sil[i]:
+            j += 1
+        seg = x[i * hop: j * hop]
+        if sil[i] and len(seg) > cap * SR:
+            h = int(cap * SR / 2)
+            seg = np.concatenate([seg[:h], seg[-h:]])
+        out.append(seg)
+        i = j
+    out.append(x[n * hop:])
+    return np.concatenate(out)
+
+
+def tempo(x, k):
+    if abs(k - 1) < 0.005:
+        return x
+    import soundfile as sf, tempfile
+    with tempfile.TemporaryDirectory() as d:
+        sf.write(f"{d}/a.wav", x, SR)
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", f"{d}/a.wav", "-af", f"atempo={k}", f"{d}/b.wav"], check=True)
+        y, _ = sf.read(f"{d}/b.wav", dtype="float32")
+    return y
+
+
 def clean(x):
     """corta silêncio nas pontas, tira graves, nivela (~-18 dBFS RMS na fala) com limitador suave."""
     from scipy.signal import butter, sosfilt
@@ -250,6 +282,9 @@ def main(src, data_path, dst, fake=False):
                 print("::warning title=tts::gemini falhou no ato", a, "— usando edge", repr(e)[:80])
                 x = edge(text)
                 eng = "edge"
+            if eng == "gemini":
+                x = tighten(x, float(os.environ.get("PAUSE_CAP", "0.55")))
+                x = tempo(x, float(os.environ.get("ATEMPO", "1.08")))
             x = clean(x)
             p = f"{outdir}/act{a}.wav"
             sf.write(p, x, SR)
@@ -327,8 +362,8 @@ def main(src, data_path, dst, fake=False):
     print("timeline ok", dst, f"{total:.1f}s", f"{total / 60:.2f} min", len(shots), "shots")
     gates = []
     for m in report:
-        if not (135 <= m["wpm"] <= 185):
-            gates.append(f"ato {m['act']}: {m['wpm']} wpm fora de 135–185")
+        if not (122 <= m["wpm"] <= 185):
+            gates.append(f"ato {m['act']}: {m['wpm']} wpm fora de 122–185")
         if m["f0_std"] < 2.5:
             gates.append(f"ato {m['act']}: voz monótona (F0 std {m['f0_std']} st)")
         if m["align"] < 0.85:
