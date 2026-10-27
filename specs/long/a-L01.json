@@ -20,7 +20,7 @@
    "year": 1990,
    "a": "POL",
    "b": "JPN",
-   "src": "IMF WEO Oct 2026 · GDP per capita, PPP",
+   "src": "World Bank (to 2024) · IMF WEO Oct 2026 (2026) · GDP per capita, PPP",
    "fmt": "usd0",
    "title": "Output per person, 1990",
    "narration": "In 1990, the average person in Poland produced about six thousand dollars of value a year. {p} The average person in Japan? {pp} Twenty thousand.",
@@ -107,22 +107,23 @@
    "act": 0,
    "type": "lines",
    "set": "ppp",
+   "fc": 2024,
    "series": [
     "POL",
     "JPN"
    ],
    "years": [
     1990,
-    2027
+    2026
    ],
    "start": 1990.0,
-   "src": "IMF WEO Oct 2026 · GDP per capita, PPP",
+   "src": "World Bank (to 2024) · IMF WEO Oct 2026 (2026) · GDP per capita, PPP",
    "fmt": "usdk",
    "narration": "Thirty-six years later, the IMF put out a forecast that almost nobody read. {p} In 2026, for the first time ever, {pp} the average Pole out-produces the average Japanese.",
    "keys": [
     {
      "at": "Thirty-six years",
-     "year": 2025.0,
+     "year": 2024.0,
      "dur": 6.5
     },
     {
@@ -157,13 +158,14 @@
    "type": "host",
    "bg": "lines",
    "set": "ppp",
+   "fc": 2024,
    "series": [
     "POL",
     "JPN"
    ],
    "years": [
     1990,
-    2027
+    2026
    ],
    "start": 2026.0,
    "fmt": "usdk",
@@ -215,10 +217,10 @@
    ],
    "years": [
     1990,
-    2027
+    2026
    ],
    "start": 1990.0,
-   "src": "IMF WEO Oct 2026 · GDP per capita, PPP · Poland as % of Japan",
+   "src": "World Bank (to 2024) · IMF WEO Oct 2026 (2026) · GDP per capita, PPP · Poland as % of Japan",
    "fmt": "pct0",
    "y": [
     0,
@@ -735,16 +737,17 @@
    "act": 2,
    "type": "lines",
    "set": "ppp",
+   "fc": 2024,
    "series": [
     "POL",
     "JPN"
    ],
    "years": [
     1990,
-    2027
+    2026
    ],
    "start": 2004.0,
-   "src": "IMF WEO Oct 2026 · GDP per capita, PPP",
+   "src": "World Bank (to 2024) · IMF WEO Oct 2026 (2026) · GDP per capita, PPP",
    "fmt": "usdk",
    "fade": [
     "JPN"
@@ -1040,16 +1043,17 @@
    "act": 3,
    "type": "lines",
    "set": "ppp",
+   "fc": 2024,
    "series": [
     "POL",
     "JPN"
    ],
    "years": [
     1990,
-    2027
+    2026
    ],
    "start": 2024.0,
-   "src": "IMF WEO Oct 2026 · GDP per capita, PPP",
+   "src": "World Bank (to 2024) · IMF WEO Oct 2026 (2026) · GDP per capita, PPP",
    "fmt": "usdk",
    "fade": [
     "POL"
@@ -1075,16 +1079,17 @@
    "act": 3,
    "type": "lines",
    "set": "ppp",
+   "fc": 2024,
    "series": [
     "POL",
     "JPN"
    ],
    "years": [
     1990,
-    2027
+    2026
    ],
    "start": 2024.0,
-   "src": "IMF WEO Oct 2026 · GDP per capita, PPP",
+   "src": "World Bank (to 2024) · IMF WEO Oct 2026 (2026) · GDP per capita, PPP",
    "fmt": "usdk",
    "fade": [
     "POL"
@@ -1336,7 +1341,7 @@
    "act": 4,
    "type": "cards",
    "n": 0,
-   "src": "IMF WEO Oct 2026 · GDP per capita, PPP",
+   "src": "World Bank (to 2024) · IMF WEO Oct 2026 (2026) · GDP per capita, PPP",
    "cards": [
     {
      "t": "Per person ≠ per hour",
@@ -1631,6 +1636,7 @@
    "act": 5,
    "type": "lines",
    "set": "ppp",
+   "fc": 2024,
    "series": [
     "POL",
     "JPN",
@@ -1641,10 +1647,10 @@
    ],
    "years": [
     1990,
-    2027
+    2026
    ],
    "start": 1990.0,
-   "src": "IMF WEO Oct 2026 · GDP per capita, PPP",
+   "src": "World Bank (to 2024) · IMF WEO Oct 2026 (2026) · GDP per capita, PPP",
    "fmt": "usdk",
    "hidden": [
     "ESP",
@@ -1652,11 +1658,11 @@
     "GRC",
     "PRT"
    ],
-   "narration": "So here's the whole chart, start to finish. Thirty percent of Japan, to a hundred. Along the way, Poland quietly passed Greece, then Portugal. {p} Spain is next: the IMF has the two basically tied this year, and Poland ahead next year. {p} Germany? No. Germany is still thirty percent ahead, and the gap isn't closing fast.",
+   "narration": "So here's the whole chart, start to finish. Thirty percent of Japan, to a hundred. Along the way, Poland quietly passed Greece, then Portugal. {p} Spain is next: the IMF has the two basically tied this year. {p} Germany? No. Germany is still thirty percent ahead, and the gap isn't closing fast.",
    "keys": [
     {
      "at": "So here's",
-     "year": 2027.0,
+     "year": 2026.0,
      "dur": 4.5
     }
    ],
@@ -1721,6 +1727,7 @@
    "type": "host",
    "bg": "lines",
    "set": "ppp",
+   "fc": 2024,
    "series": [
     "POL",
     "JPN",
@@ -1729,9 +1736,9 @@
    ],
    "years": [
     1990,
-    2027
+    2026
    ],
-   "start": 2027.0,
+   "start": 2026.0,
    "fmt": "usdk",
    "narration": "But the real question isn't who Poland passes next. It's whether a country can keep climbing after its people stop multiplying. {pp} Japan mostly couldn't. {p} Poland does have a couple of cards Japan never played. Close to a million Ukrainians now live there under temporary protection, and many of them work. And Poland is still catching up, so it can grow by working smarter, not just by adding workers. {p} Will that be enough? Poland is about to find out.",
    "items": [
@@ -1789,16 +1796,17 @@
    "act": 5,
    "type": "lines",
    "set": "ppp",
+   "fc": 2024,
    "series": [
     "POL",
     "JPN"
    ],
    "years": [
     1990,
-    2027
+    2026
    ],
-   "start": 2027.0,
-   "src": "IMF WEO Oct 2026 · GDP per capita, PPP",
+   "start": 2026.0,
+   "src": "World Bank (to 2024) · IMF WEO Oct 2026 (2026) · GDP per capita, PPP",
    "fmt": "usdk",
    "narration": "If you'd told someone standing in a Warsaw bread line in 1990 that their grandchildren would out-earn Tokyo... {p} they'd have laughed. {pp} The chart didn't.",
    "labels": [
@@ -2036,14 +2044,6 @@
    "tol": 0.01
   },
   {
-   "say": "Poland ahead of Spain 2027",
-   "rule": "gt",
-   "set": "ppp",
-   "a": "POL",
-   "b": "ESP",
-   "year": 2027
-  },
-  {
    "say": "Ukraine a bit richer in 1990",
    "rule": "gt",
    "set": "pppwb",
@@ -2123,17 +2123,12 @@
    "year": 2025,
    "min": 200,
    "others": [
-    "USA",
     "ITA",
     "GRC",
     "FRA",
-    "GBR",
     "CAN",
     "DEU",
-    "SGP",
-    "BEL",
-    "PRT",
-    "ESP"
+    "KOR"
    ]
   },
   {
@@ -2147,6 +2142,30 @@
    "max": 1.36
   }
  ],
+ "imf_snapshot": {
+  "_source": "IMF World Economic Outlook, October 2026 (DataMapper PPPPC, GGXWDG_NGDP), lido em 27/10/2026",
+  "PPPPC": {
+   "2026": {
+    "POL": 60051,
+    "JPN": 59712,
+    "ESP": 60106,
+    "DEU": 78664,
+    "GRC": 47365,
+    "PRT": 52980
+   }
+  },
+  "GGXWDG_NGDP": {
+   "2025": {
+    "JPN": 204.8,
+    "ITA": 137.1,
+    "GRC": 146.6,
+    "FRA": 115.5,
+    "CAN": 113.6,
+    "DEU": 62.7,
+    "KOR": 52.4
+   }
+  }
+ },
  "voice": {
   "model": "",
   "name": "Charon",

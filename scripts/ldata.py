@@ -39,17 +39,15 @@ def imf(ind, isos, a, b):
     return {i: {int(y): float(x) for y, x in v.get(i, {}).items() if x is not None and a <= int(y) <= b} for i in isos}
 
 
-def build():
+def build(spec):
     S = {}
-    S["ppp"] = imf("PPPPC", ["POL", "JPN", "ESP", "DEU", "GRC", "PRT"], 1990, 2027)
-    for i, ser in S["ppp"].items():
-        if 1990 not in ser:  # IMF sem 1990 → completa com World Bank (mesma base PPP) por razão no 1º ano comum
-            w = wb("NY.GDP.PCAP.PP.CD", [i], 1990, 2024)[i]
-            y0 = min(ser)
-            k = ser[y0] / w[y0] if y0 in w else 1
-            for y in range(1990, y0):
-                if y in w:
-                    ser[y] = w[y] * k
+    # histórico: World Bank (API aberta) até o último ano; projeção: pontos do FMI (WEO) gravados no spec com fonte
+    snap = spec.get("imf_snapshot", {})
+    S["ppp"] = wb("NY.GDP.PCAP.PP.CD", ["POL", "JPN", "ESP", "DEU", "GRC", "PRT"], 1990, 2024)
+    for y, row in snap.get("PPPPC", {}).items():
+        for i, v in row.items():
+            if i in S["ppp"]:
+                S["ppp"][i][int(y)] = float(v)
     S["ratio"] = {"POL": {y: S["ppp"]["POL"][y] / S["ppp"]["JPN"][y] * 100 for y in S["ppp"]["POL"] if y in S["ppp"]["JPN"]}}
     S["pppwb"] = wb("NY.GDP.PCAP.PP.CD", ["POL", "UKR"], 1990, 2024)
     S["nom"] = wb("NY.GDP.PCAP.CD", ["POL", "JPN"], 1990, 2024)
@@ -62,7 +60,7 @@ def build():
     S["g2009"] = {i: g[i][2009] for i in EU27_2009 if 2009 in g.get(i, {})}
     S["pop"] = wb("SP.POP.TOTL", ["POL"], 1990, 2024)
     S["wap"] = wb("SP.POP.1564.TO", ["JPN"], 1980, 2024)
-    S["debt"] = imf("GGXWDG_NGDP", ["JPN", "USA", "ITA", "GRC", "FRA", "GBR", "CAN", "DEU", "SGP", "BEL", "PRT", "ESP"], 2025, 2025)
+    S["debt"] = {i: {int(y): float(v)} for y, row in snap.get("GGXWDG_NGDP", {}).items() for i, v in row.items()}
     return S
 
 
@@ -141,7 +139,7 @@ def check(S, c):
 
 def main(src, dst):
     spec = json.load(open(src))
-    S = build()
+    S = build(spec)
     bad = 0
     for c in spec.get("checks", []):
         ok, info = check(S, c)

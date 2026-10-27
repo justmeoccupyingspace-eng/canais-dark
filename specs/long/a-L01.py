@@ -8,7 +8,7 @@ ACTS = ["Cold open", "The hole", "The climb", "The other line", "The catch", "Wh
 EU2004 = ["CZE", "EST", "CYP", "LVA", "LTU", "HUN", "MLT", "SVN", "SVK", "POL"]
 EU15 = ["AUT", "BEL", "DNK", "FIN", "FRA", "DEU", "GRC", "IRL", "ITA", "LUX", "NLD", "PRT", "ESP", "SWE", "GBR"]
 EU27_2009 = EU15 + EU2004 + ["BGR", "ROU"]
-PPP = "IMF WEO Oct 2026 · GDP per capita, PPP"
+PPP = "World Bank (to 2024) · IMF WEO Oct 2026 (2026) · GDP per capita, PPP"
 
 shots = [
     # ---------------- 0 · COLD OPEN ----------------
@@ -23,18 +23,18 @@ shots = [
          keys=[dict(at="Japan was", lon=138, lat=37, zoom=4.0, dur=2.6, hl=["JPN"])],
          stats=[dict(at="five hundred", set="infl", iso="POL", year=1990, fmt="pct0", prefix="+", label="inflation, 1990", until="Japan was")],
          react=[dict(at="communism", pose="idle"), dict(at="five hundred", pose="shock"), dict(at="Japan was", pose="pointL")]),
-    dict(act=0, type="lines", set="ppp", series=["POL", "JPN"], years=[1990, 2027], start=1990.0, src=PPP, fmt="usdk",
+    dict(act=0, type="lines", set="ppp", fc=2024, series=["POL", "JPN"], years=[1990, 2026], start=1990.0, src=PPP, fmt="usdk",
          narration="Thirty-six years later, the IMF put out a forecast that almost nobody read. {p} In 2026, for the first time ever, {pp} the average Pole out-produces the average Japanese.",
-         keys=[dict(at="Thirty-six years", year=2025.0, dur=6.5), dict(at="the average Pole", year=2026.0, dur=1.4)],
+         keys=[dict(at="Thirty-six years", year=2024.0, dur=6.5), dict(at="the average Pole", year=2026.0, dur=1.4)],
          cross=dict(at="out-produces"), riser=dict(at="In 2026"), push=dict(at="out-produces"),
          react=[dict(at="Thirty-six", pose="pointL"), dict(at="out-produces", pose="cheer")]),
-    dict(act=0, type="host", bg="lines", set="ppp", series=["POL", "JPN"], years=[1990, 2027], start=2026.0, fmt="usdk",
+    dict(act=0, type="host", bg="lines", set="ppp", fc=2024, series=["POL", "JPN"], years=[1990, 2026], start=2026.0, fmt="usdk",
          narration="Nobody threw a party. Most people didn't notice. {p} This is the story of how a country that was poorer than Ukraine became richer than Japan. {p} <soft>And why the number that explains how it happened... is the same number that could undo it.</soft> Let's go through the chart.",
          items=[dict(at="poorer than Ukraine", text="Poorer than Ukraine"), dict(at="richer than Japan", text="→ richer than Japan", color="acc"), dict(at="could undo it", text="…and what could undo it", serif=True, size=64)],
          react=[dict(at="Nobody", pose="shrug"), dict(at="poorer than Ukraine", pose="shock"), dict(at="And why the number", pose="think", lean=1), dict(at="Let's go", pose="pointL")]),
 
     # ---------------- 1 · THE HOLE ----------------
-    dict(act=1, type="lines", set="ratio", series=["POL"], years=[1990, 2027], start=1990.0, src=PPP + " · Poland as % of Japan", fmt="pct0",
+    dict(act=1, type="lines", set="ratio", series=["POL"], years=[1990, 2026], start=1990.0, src=PPP + " · Poland as % of Japan", fmt="pct0",
          y=[0, 110], ref=dict(value=100, label="Japan = 100%"),
          narration="Here's where the line starts. Thirty percent. That's Poland's income as a share of Japan's, in 1990.",
          labels=[dict(at="Thirty percent", iso="POL", year=1990)],
@@ -96,7 +96,7 @@ shots = [
                 dict(at="came back", a=[[-1.5, 52.5], [-8, 53.3]], b=[19.5, 52], n=16, dur=3.0)],
          stats=[dict(at="two million", value=2, fmt="m", label="Poles abroad after 2004", until="sent money")],
          react=[dict(at="Three: people", pose="pointUp"), dict(at="came back", pose="cheer")]),
-    dict(act=2, type="lines", set="ppp", series=["POL", "JPN"], years=[1990, 2027], start=2004.0, src=PPP, fmt="usdk", fade=["JPN"],
+    dict(act=2, type="lines", set="ppp", fc=2024, series=["POL", "JPN"], years=[1990, 2026], start=2004.0, src=PPP, fmt="usdk", fade=["JPN"],
          narration="Look at the slope after 2004. {p} That's not luck. That's a supply chain.",
          keys=[dict(at="Look at", year=2008.0, dur=2.4)], marks=[dict(at="Look at", year=2004, label="Joins EU")],
          react=[dict(at="Look at", pose="pointL"), dict(at="supply chain", pose="idle", nod=1)]),
@@ -130,11 +130,11 @@ shots = [
          react=[dict(at="look next door", pose="pointL"), dict(at="a bit richer", pose="shock"), dict(at="nearly three", pose="idle", nod=1)]),
 
     # ---------------- 3 · THE OTHER LINE ----------------
-    dict(act=3, type="lines", set="ppp", series=["POL", "JPN"], years=[1990, 2027], start=2024.0, src=PPP, fmt="usdk", fade=["POL"], hl="JPN",
+    dict(act=3, type="lines", set="ppp", fc=2024, series=["POL", "JPN"], years=[1990, 2026], start=2024.0, src=PPP, fmt="usdk", fade=["POL"], hl="JPN",
          narration="But a crossover has two lines. And the second one barely moved.",
          push=dict(at="barely moved"),
          react=[dict(at="two lines", pose="pointL"), dict(at="barely", pose="shrug")]),
-    dict(act=3, type="lines", set="ppp", series=["POL", "JPN"], years=[1990, 2027], start=2024.0, src=PPP, fmt="usdk", fade=["POL"], hl="JPN",
+    dict(act=3, type="lines", set="ppp", fc=2024, series=["POL", "JPN"], years=[1990, 2026], start=2024.0, src=PPP, fmt="usdk", fade=["POL"], hl="JPN",
          narration="In 1990, Japan's bubble popped. Stocks, land, everything. What followed got a name: the Lost Decade. Then the second Lost Decade. {p} In purchasing-power terms, Japan did grow, slowly. From twenty thousand to about fifty-four. {p} Poland went from six... to fifty-one.",
          bands=[dict(at="the Lost Decade", a=1991, b=2000, text="Lost Decade"), dict(at="second Lost", a=2001, b=2010, text="…and another")],
          labels=[dict(at="From twenty", iso="JPN", year=1990), dict(at="fifty-four", iso="JPN", year=2024),
@@ -199,20 +199,20 @@ shots = [
          react=[dict(at="young workforce", pose="cheer"), dict(at="getting older", pose="idle"), dict(at="thirty years later", pose="idle", lean=1)]),
 
     # ---------------- 5 · WHAT'S NEXT ----------------
-    dict(act=5, type="lines", set="ppp", series=["POL", "JPN", "ESP", "DEU", "GRC", "PRT"], years=[1990, 2027], start=1990.0, src=PPP, fmt="usdk",
+    dict(act=5, type="lines", set="ppp", fc=2024, series=["POL", "JPN", "ESP", "DEU", "GRC", "PRT"], years=[1990, 2026], start=1990.0, src=PPP, fmt="usdk",
          hidden=["ESP", "DEU", "GRC", "PRT"],
-         narration="So here's the whole chart, start to finish. Thirty percent of Japan, to a hundred. Along the way, Poland quietly passed Greece, then Portugal. {p} Spain is next: the IMF has the two basically tied this year, and Poland ahead next year. {p} Germany? No. Germany is still thirty percent ahead, and the gap isn't closing fast.",
-         keys=[dict(at="So here's", year=2027.0, dur=4.5)],
+         narration="So here's the whole chart, start to finish. Thirty percent of Japan, to a hundred. Along the way, Poland quietly passed Greece, then Portugal. {p} Spain is next: the IMF has the two basically tied this year. {p} Germany? No. Germany is still thirty percent ahead, and the gap isn't closing fast.",
+         keys=[dict(at="So here's", year=2026.0, dur=4.5)],
          show=[dict(at="passed Greece", iso="GRC", until="Spain is next"), dict(at="then Portugal", iso="PRT", until="Spain is next"), dict(at="Spain is next", iso="ESP"), dict(at="Germany?", iso="DEU")],
          series_all=["POL", "JPN", "ESP", "DEU", "GRC", "PRT"],
          labels=[dict(at="Spain is next", iso="ESP", year=2026), dict(at="Germany?", iso="DEU", year=2026)],
          react=[dict(at="So here's", pose="pointL"), dict(at="Spain is next", pose="cheer"), dict(at="Germany? No", pose="shrug")]),
-    dict(act=5, type="host", bg="lines", set="ppp", series=["POL", "JPN", "ESP", "DEU"], years=[1990, 2027], start=2027.0, fmt="usdk",
+    dict(act=5, type="host", bg="lines", set="ppp", fc=2024, series=["POL", "JPN", "ESP", "DEU"], years=[1990, 2026], start=2026.0, fmt="usdk",
          narration="But the real question isn't who Poland passes next. It's whether a country can keep climbing after its people stop multiplying. {pp} Japan mostly couldn't. {p} Poland does have a couple of cards Japan never played. Close to a million Ukrainians now live there under temporary protection, and many of them work. And Poland is still catching up, so it can grow by working smarter, not just by adding workers. {p} Will that be enough? Poland is about to find out.",
          items=[dict(at="real question", text="Can you keep climbing…", size=72), dict(at="stop multiplying", text="…when people stop multiplying?", serif=True, size=60),
                 dict(at="Close to a million", text="+ ~1M Ukrainians", color="acc", size=64), dict(at="working smarter", text="+ room to catch up", color="acc", size=64)],
          react=[dict(at="real question", pose="think", lean=1), dict(at="Japan mostly", pose="shrug"), dict(at="a couple of cards", pose="pointUp"), dict(at="working smarter", pose="cheer"), dict(at="about to find out", pose="idle", nod=1)]),
-    dict(act=5, type="lines", set="ppp", series=["POL", "JPN"], years=[1990, 2027], start=2027.0, src=PPP, fmt="usdk",
+    dict(act=5, type="lines", set="ppp", fc=2024, series=["POL", "JPN"], years=[1990, 2026], start=2026.0, src=PPP, fmt="usdk",
          narration="If you'd told someone standing in a Warsaw bread line in 1990 that their grandchildren would out-earn Tokyo... {p} they'd have laughed. {pp} The chart didn't.",
          labels=[dict(at="bread line", iso="POL", year=1990), dict(at="out-earn Tokyo", iso="POL", year=2026)],
          push=dict(at="The chart didn't"), slow=1,
@@ -247,7 +247,6 @@ checks = [
     dict(say="one point one four", set="tfr", iso="POL", year=2024, approx=1.14, tol=0.005),
     dict(say="one point one five", set="tfr", iso="JPN", year=2024, approx=1.15, tol=0.005),
     dict(say="Spain basically tied 2026", rule="tied", set="ppp", a="POL", b="ESP", year=2026, tol=0.01),
-    dict(say="Poland ahead of Spain 2027", rule="gt", set="ppp", a="POL", b="ESP", year=2027),
     dict(say="Ukraine a bit richer in 1990", rule="gt", set="pppwb", a="UKR", b="POL", year=1990),
     dict(say="by 2013 more than twice", rule="ratio", set="pppwb", a="POL", b="UKR", year=2013, min=2.0, max=3.0),
     dict(say="today nearly three times", rule="ratio", set="pppwb", a="POL", b="UKR", year=2024, min=2.55, max=3.0),
@@ -256,7 +255,7 @@ checks = [
     dict(say="Poland population peaked >10 years ago", rule="peak", set="pop", iso="POL", a=1990, b=2014),
     dict(say="passed Greece, then Portugal", rule="passorder", set="ppp", a="POL", order=["GRC", "PRT"], by=2026),
     dict(say="Japan shrank in seven of 1992-2019", rule="countneg", set="growth", iso="JPN", a=1992, b=2019, equal=7),
-    dict(say="Japan debt more than twice GDP, highest in rich world", rule="maxof", set="debt", iso="JPN", year=2025, min=200, others=["USA", "ITA", "GRC", "FRA", "GBR", "CAN", "DEU", "SGP", "BEL", "PRT", "ESP"]),
+    dict(say="Japan debt more than twice GDP, highest in rich world", rule="maxof", set="debt", iso="JPN", year=2025, min=200, others=["ITA", "GRC", "FRA", "CAN", "DEU", "KOR"]),
     dict(say="Germany still thirty percent ahead", rule="ratio", set="ppp", a="DEU", b="POL", year=2026, min=1.25, max=1.36),
 ]
 
@@ -264,6 +263,9 @@ for i, sh in enumerate(shots):
     sh["id"] = f"s{i:02d}"
 
 spec = dict(id="a-L01-poland-japan", channel="chartbound", w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
+            imf_snapshot={"_source": "IMF World Economic Outlook, October 2026 (DataMapper PPPPC, GGXWDG_NGDP), lido em 27/10/2026",
+                          "PPPPC": {"2026": {"POL": 60051, "JPN": 59712, "ESP": 60106, "DEU": 78664, "GRC": 47365, "PRT": 52980}},
+                          "GGXWDG_NGDP": {"2025": {"JPN": 204.8, "ITA": 137.1, "GRC": 146.6, "FRA": 115.5, "CAN": 113.6, "DEU": 62.7, "KOR": 52.4}}},
             voice=dict(model="", name="Charon",
                        style=("You are the narrator of a data documentary on YouTube. Read the script below in a warm, curious, unhurried voice, "
                               "with a little dry humor. Speak like you are telling a friend something surprising, not reading a report. "

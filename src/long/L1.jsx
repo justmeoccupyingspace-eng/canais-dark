@@ -185,12 +185,12 @@ const Lines = ({sh, p, data, T, dim}) => {
     const out = [];
     for (let i = 0; i < pts.length; i++) {
       const [y, v] = pts[i];
-      if (y <= upto) out.push([X(y), Yp(v)]);
+      if (y <= upto) out.push([X(y), Yp(v), y]);
       else {
         if (i > 0 && upto > pts[i - 1][0]) {
           const [ya, va] = pts[i - 1];
           const k = (upto - ya) / (y - ya);
-          out.push([X(upto), Yp(va + (v - va) * k)]);
+          out.push([X(upto), Yp(va + (v - va) * k), upto]);
         }
         break;
       }
@@ -223,6 +223,12 @@ const Lines = ({sh, p, data, T, dim}) => {
             <text x={PL.x1} y={Yp(sh.ref.value) - 16} textAnchor="end" fontFamily={SANS} fontWeight={700} fontSize={26} fill="#ffffffb0">{sh.ref.label}</text>
           </g>
         ) : null}
+        {sh.fc && R > sh.fc + 0.05 ? (
+          <g opacity={Math.min(1, (R - sh.fc) * 2)}>
+            <rect x={X(sh.fc)} y={PL.y0} width={PL.x1 - X(sh.fc)} height={PL.y1 - PL.y0} fill="#ffffff" fillOpacity={0.05} />
+            <text x={(X(sh.fc) + PL.x1) / 2} y={PL.y0 + 34} textAnchor="middle" fontFamily={SANS} fontWeight={700} fontSize={24} fill="#ffffff90">IMF forecast</text>
+          </g>
+        ) : null}
         {(sh.bands || []).map((b, i) => {
           const a = ramp(T, b.t, 0.6);
           return a > 0 ? (
@@ -246,14 +252,20 @@ const Lines = ({sh, p, data, T, dim}) => {
           if (a <= 0.01) return null;
           const pts = path(S[iso], (sh.hidden || []).includes(iso) ? Y1 : R);
           if (pts.length < 1) return null;
-          const d = pts.map(([x, y], i) => `${i ? 'L' : 'M'}${x.toFixed(1)},${y.toFixed(1)}`).join('');
-          const area = pts.length > 1 ? `${d}L${pts[pts.length - 1][0]},${PL.y1}L${pts[0][0]},${PL.y1}Z` : '';
+          const fc = sh.fc ?? 1e9;
+          const solid = pts.filter((q) => q[2] <= fc);
+          const fcast = pts.filter((q) => q[2] >= fc);
+          const dd = (arr) => arr.map(([x, y], i) => `${i ? 'L' : 'M'}${x.toFixed(1)},${y.toFixed(1)}`).join('');
+          const d = dd(solid);
+          const df = fcast.length > 1 ? dd(fcast) : '';
+          const area = solid.length > 1 ? `${d}L${solid[solid.length - 1][0]},${PL.y1}L${solid[0][0]},${PL.y1}Z` : '';
           const w = iso === hero ? 8 : 6;
           return (
             <g key={iso} opacity={a}>
               {iso === hero && area ? <path d={area} fill={`url(#g${iso})`} /> : null}
               <path d={d} fill="none" stroke={colOf(p, iso)} strokeOpacity={0.22} strokeWidth={w * 3.2} strokeLinecap="round" strokeLinejoin="round" />
               <path d={d} fill="none" stroke={colOf(p, iso)} strokeWidth={w} strokeLinecap="round" strokeLinejoin="round" />
+              {df ? <path d={df} fill="none" stroke={colOf(p, iso)} strokeWidth={w} strokeDasharray="4 14" strokeLinecap="round" /> : null}
             </g>
           );
         })}
