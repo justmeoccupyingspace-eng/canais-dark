@@ -1,0 +1,74 @@
+{
+ "report": [
+  {
+   "dur": 45.4,
+   "wpm": 169,
+   "f0_std": 4.12,
+   "f0_p10_90": 10.6,
+   "pauses_05": 3,
+   "pause_total": 1.7,
+   "act": 0,
+   "engine": "edge",
+   "align": 0.961
+  },
+  {
+   "dur": 81.1,
+   "wpm": 149,
+   "f0_std": 4.64,
+   "f0_p10_90": 12.2,
+   "pauses_05": 2,
+   "pause_total": 1.0,
+   "act": 1,
+   "engine": "edge",
+   "align": 0.965
+  },
+  {
+   "dur": 121.2,
+   "wpm": 149,
+   "f0_std": 4.49,
+   "f0_p10_90": 11.7,
+   "pauses_05": 7,
+   "pause_total": 3.7,
+   "act": 2,
+   "engine": "edge",
+   "align": 0.957
+  },
+  {
+   "dur": 64.6,
+   "wpm": 151,
+   "f0_std": 4.42,
+   "f0_p10_90": 11.4,
+   "pauses_05": 1,
+   "pause_total": 0.5,
+   "act": 3,
+   "engine": "edge",
+   "align": 0.975
+  },
+  {
+   "dur": 74.2,
+   "wpm": 159,
+   "f0_std": 4.57,
+   "f0_p10_90": 11.9,
+   "pauses_05": 6,
+   "pause_total": 3.1,
+   "act": 4,
+   "engine": "edge",
+   "align": 0.923
+  },
+  {
+   "dur": 62.3,
+   "wpm": 173,
+   "f0_std": 4.28,
+   "f0_p10_90": 10.9,
+   "pauses_05": 3,
+   "pause_total": 1.6,
+   "act": 5,
+   "engine": "edge",
+   "align": 0.961
+  }
+ ],
+ "gates": [
+  "dura\u00e7\u00e3o 7.85 min < 8:05 (sem mid-roll)"
+ ],
+ "total": 470.951
+}
