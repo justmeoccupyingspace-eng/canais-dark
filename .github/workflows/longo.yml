@@ -140,7 +140,7 @@ jobs:
           ffmpeg -v error -y -i out/$ID.mp4 -vf scale=1280:-2 -c:v libx264 -crf 27 -preset veryfast -c:a aac -b:a 128k out/${ID}_720.mp4
           ffprobe -v error -show_entries format=duration,size -of default=nw=1 out/$ID.mp4
           mkdir -p out/sheet && ffmpeg -v error -y -i out/${ID}_720.mp4 -vf "fps=1/6,scale=480:-2,tile=6x8" -frames:v 1 out/sheet/sheet.jpg
-          node scripts/lrender.mjs public/build/$ID.json thumb out/sheet/thumb.jpg || true
+          node scripts/lrender.mjs public/build/$ID.json thumb out/sheet/thumb.jpg 2>&1 | tail -3 || true
       - name: Drive (arquivo final para o Kauan assistir)
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
@@ -150,7 +150,10 @@ jobs:
         continue-on-error: true
       - name: prévia 720p na branch long-<run>
         run: |
-          mkdir -p /tmp/o && cp out/${ID}_720.mp4 out/sheet/sheet.jpg out/sheet/thumb.jpg out/drive.txt /tmp/o/ 2>/dev/null; cp public/build/$ID.gates.json /tmp/o/ || true
+          mkdir -p /tmp/o
+          for f in out/${ID}_720.mp4 out/sheet/sheet.jpg out/sheet/thumb.jpg out/drive.txt public/build/$ID.gates.json; do [ -f "$f" ] && cp "$f" /tmp/o/ || echo "faltou $f"; done
+          sz=$(stat -c %s /tmp/o/${ID}_720.mp4 2>/dev/null || echo 0); echo "::notice title=preview::720p $((sz/1048576)) MB"
+          if [ "$sz" -gt 95000000 ]; then ffmpeg -v error -y -i out/${ID}_720.mp4 -vf scale=960:-2 -c:v libx264 -crf 30 -preset veryfast -c:a aac -b:a 96k /tmp/o/${ID}_720.mp4; fi
           git config user.name producer; git config user.email producer@users.noreply.github.com
           git checkout --orphan long-${{ github.run_id }} && git rm -rf . -q
           cp /tmp/o/* . && git add . && git commit -qm long && git push -f origin long-${{ github.run_id }}
