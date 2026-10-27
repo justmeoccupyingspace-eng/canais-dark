@@ -10,6 +10,7 @@ on:
       chunks: {description: "pedaços paralelos de render", required: false, default: "8"}
       prep_run: {description: "reaproveitar o prep de outra execução (run id)", required: false, default: ""}
       engine: {description: "gemini | edge (teste)", required: false, default: "gemini"}
+      chunks_run: {description: "reaproveitar os pedaços renderizados de outra execução (run id)", required: false, default: ""}
 permissions:
   contents: write
   actions: read
@@ -87,7 +88,7 @@ jobs:
           cp /tmp/o/* . && git add . && git commit -qm lprep && git push -f origin lprep-${{ github.run_id }}
   render:
     needs: prep
-    if: inputs.mode == 'full'
+    if: inputs.mode == 'full' && inputs.chunks_run == ''
     runs-on: ubuntu-latest
     timeout-minutes: 120
     strategy:
@@ -109,6 +110,7 @@ jobs:
         with: {name: "chunk-${{ matrix.chunk }}", path: "out/c${{ matrix.chunk }}.mp4", retention-days: 3}
   final:
     needs: [prep, render]
+    if: always() && inputs.mode == 'full' && needs.prep.result == 'success' && (needs.render.result == 'success' || inputs.chunks_run != '')
     runs-on: ubuntu-latest
     timeout-minutes: 60
     env:
@@ -124,7 +126,11 @@ jobs:
       - uses: actions/download-artifact@v4
         with: {name: prep, path: public}
       - uses: actions/download-artifact@v4
+        if: inputs.chunks_run == ''
         with: {pattern: "chunk-*", path: out, merge-multiple: true}
+      - uses: actions/download-artifact@v4
+        if: inputs.chunks_run != ''
+        with: {pattern: "chunk-*", path: out, merge-multiple: true, run-id: "${{ inputs.chunks_run }}", github-token: "${{ secrets.GITHUB_TOKEN }}"}
       - name: áudio + junção + loudness
         run: |
           pip install -q numpy soundfile && python scripts/lmix.py public/build/$ID.json out/audio.wav
