@@ -123,7 +123,8 @@ def check(S, c):
             firsts = []
             for o in c["order"]:
                 b = S[c["set"]][o]
-                ys = [y for y in sorted(a) if y in b and a[y] > b[y] and all(a.get(z, 0) > b.get(z, 1e18) for z in range(y, c["by"] + 1))]
+                common = [z for z in sorted(a) if z in b and z <= c["by"]]
+                ys = [y for y in common if all(a[z] > b[z] for z in common if z >= y)]
                 firsts.append(ys[0] if ys else None)
             ok = all(firsts) and firsts == sorted(firsts) and firsts[-1] <= c["by"]
             return ok, f"passou (de vez) em {dict(zip(c['order'], firsts))}"
