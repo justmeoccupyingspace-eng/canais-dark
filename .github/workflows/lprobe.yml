@@ -1,0 +1,31 @@
+name: lprobe
+run-name: lprobe ${{ inputs.voices }}
+on:
+  workflow_dispatch:
+    inputs:
+      voices: {description: "vozes separadas por vírgula", required: false, default: "Charon,Sadaltager,Algieba,Iapetus,Gacrux,Sulafat"}
+      model: {description: "modelo TTS (vazio = mais novo)", required: false, default: ""}
+permissions:
+  contents: write
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: sudo apt-get install -y -qq ffmpeg >/dev/null 2>&1 || true
+      - run: pip install -q faster-whisper librosa soundfile numpy
+      - run: python voicetest/ltest.py
+        env:
+          GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
+          VOICES: ${{ inputs.voices }}
+          TTS_MODEL: ${{ inputs.model }}
+      - name: Amostras na branch lprobe-<run>
+        if: always()
+        run: |
+          mkdir -p /tmp/vv && cp -r out_l/* /tmp/vv/ || true
+          grep -v "^   whisper" /tmp/vv/relatorio.txt | sed 's/^/::notice title=probe::/' | head -40 || true
+          git config user.name producer; git config user.email producer@users.noreply.github.com
+          git checkout --orphan lprobe-${{ github.run_id }} && git rm -rf . -q
+          cp -r /tmp/vv/* . && git add . && git commit -qm lprobe && git push -f origin lprobe-${{ github.run_id }}
