@@ -341,4 +341,12 @@ def main(src, data_path, dst, fake=False):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2], sys.argv[3], fake="--fake" in sys.argv)
+    try:
+        main(sys.argv[1], sys.argv[2], sys.argv[3], fake="--fake" in sys.argv)
+    except SystemExit:
+        raise
+    except Exception as e:
+        import traceback
+        tb = traceback.format_exc().strip().splitlines()
+        print(f"::error title=ltts::{repr(e)[:300]} | " + " | ".join(l.strip() for l in tb[-8:])[:1000])
+        sys.exit(1)
