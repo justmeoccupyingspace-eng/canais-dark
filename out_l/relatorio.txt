@@ -1,0 +1,31 @@
+modelos TTS: gemini-2.5-flash-preview-tts, gemini-2.5-pro-preview-tts, gemini-3.1-flash-tts-preview, gemini-3.8-flash-tts, gemini-3.8-flash-lite-tts
+todos (gemini): gemini-2.5-flash, gemini-2.5-pro, gemini-2.5-flash-preview-tts, gemini-2.5-pro-preview-tts, gemini-flash-latest, gemini-flash-lite-latest, gemini-pro-latest, gemini-2.5-flash-lite, gemini-2.5-flash-image, gemini-3-flash-preview, gemini-3.1-pro-preview, gemini-3.1-pro-preview-customtools, gemini-3.1-flash-lite-preview, gemini-3.1-flash-lite, gemini-3-pro-image-preview, gemini-3-pro-image, gemini-3.1-flash-image-preview, gemini-3.1-flash-image, gemini-3.1-flash-lite-image, gemini-nano-banana-2.1, gemini-3.5-flash, gemini-3.5-flash-lite, gemini-omni-flash-preview, gemini-omni-1.1-flash, gemini-3.5-transcribe, gemini-3.6-flash, gemini-3.7-flash, gemini-3.8-flash, gemini-4-argon, gemini-3.1-flash-tts-preview, gemini-3.8-flash-tts, gemini-3.8-flash-lite-tts, gemini-robotics-er-2-preview, gemini-2.5-computer-use-preview-10-2025, gemini-embedding-001, gemini-embedding-2-preview, gemini-embedding-2, gemini-3.5-transcribe-live, gemini-2.5-flash-native-audio-latest, gemini-2.5-flash-native-audio-preview-09-2025, gemini-2.5-flash-native-audio-preview-12-2025, gemini-3.1-flash-live-preview, gemini-3.8-live, gemini-3.8-live-extended-thinking, gemini-robotics-er-2-streaming-preview, gemini-3.5-live-translate-preview
+modelo usado: gemini-3.8-flash-tts
+v_Charon_A: ERRO TypeError("open() got an unexpected keyword argument 'metadata_errors'") 
+v_Charon_B: ERRO TypeError("open() got an unexpected keyword argument 'metadata_errors'") 
+v_Gacrux_A: ERRO TypeError("open() got an unexpected keyword argument 'metadata_errors'") 
+v_Gacrux_B: ERRO TypeError("open() got an unexpected keyword argument 'metadata_errors'") 
+v_Sadaltager_A: ERRO <HTTPError 429: 'Too Many Requests'> {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 10, model: gemini-3.8-flash-tts, description: Generate content requests per day limit exceeded on Free 
+v_Iapetus_B: ERRO TypeError("open() got an unexpected keyword argument 'metadata_errors'") 
+music Hidden Agenda: ERRO AttributeError('No librosa.feature attribute rhythm')
+music Lightless Dawn: ERRO AttributeError('No librosa.feature attribute rhythm')
+music Deliberate Thought: ERRO AttributeError('No librosa.feature attribute rhythm')
+music Investigations: ERRO AttributeError('No librosa.feature attribute rhythm')
+music Clean Soul: ERRO AttributeError('No librosa.feature attribute rhythm')
+music Inspired: ERRO AttributeError('No librosa.feature attribute rhythm')
+music Heartbreaking: ERRO AttributeError('No librosa.feature attribute rhythm')
+music Long Note Four: ERRO AttributeError('No librosa.feature attribute rhythm')
+music Dreamer: ERRO AttributeError('No librosa.feature attribute rhythm')
+music Reawakening: ERRO AttributeError('No librosa.feature attribute rhythm')
+music Impact Moderato: ERRO AttributeError('No librosa.feature attribute rhythm')
+music Ice Flow: ERRO AttributeError('No librosa.feature attribute rhythm')
+music Fearless First: ERRO AttributeError('No librosa.feature attribute rhythm')
+music Floating Cities: ERRO AttributeError('No librosa.feature attribute rhythm')
+music Blue Feather: ERRO AttributeError('No librosa.feature attribute rhythm')
+music Ossuary 6 - Air: ERRO AttributeError('No librosa.feature attribute rhythm')
+music Eastminster: ERRO AttributeError('No librosa.feature attribute rhythm')
+music Thinking Music: ERRO AttributeError('No librosa.feature attribute rhythm')
+music Lasting Hope: ERRO AttributeError('No librosa.feature attribute rhythm')
