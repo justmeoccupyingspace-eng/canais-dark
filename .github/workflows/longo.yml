@@ -127,7 +127,7 @@ jobs:
         with: {pattern: "chunk-*", path: out, merge-multiple: true}
       - name: áudio + junção + loudness
         run: |
-          node scripts/lrender.mjs public/build/$ID.json audio out/audio.wav
+          pip install -q numpy soundfile && python scripts/lmix.py public/build/$ID.json out/audio.wav
           ls out/c*.mp4 | sort -V | sed "s|^|file '$PWD/|;s|$|'|" > out/list.txt
           ffmpeg -v error -y -f concat -safe 0 -i out/list.txt -c copy out/video.mp4
           ffmpeg -v error -y -i out/video.mp4 -i out/audio.wav -map 0:v -map 1:a -c:v copy -af "loudnorm=I=-14:TP=-1.5:LRA=11" -ar 48000 -c:a aac -b:a 192k -movflags +faststart out/$ID.mp4
