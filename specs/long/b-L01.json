@@ -2,6 +2,7 @@
  "id": "b-L01-math-errors",
  "channel": "howitticks",
  "chapter0": "The missile that missed",
+ "min_total": 420,
  "w": 1920,
  "h": 1080,
  "fps": 30,
@@ -865,8 +866,8 @@
     "kicker": "NEXT VIDEO",
     "big": "931 GB",
     "color": "acc",
-    "title": "Your 1 TB drive isn't lying",
-    "sub": "where the other 69 GB went"
+    "title": "Where did 69 GB of my 1 TB drive go?",
+    "sub": "another number that isn't what it looks like"
    },
    "narration": "Next time: another number that isn't what it looks like. Why a one-terabyte drive only shows nine hundred thirty-one gigabytes. {p} Subscribe so you don't miss it. I'm How It Ticks. See you in the next one.",
    "cta": "Subscribe: how things really work",

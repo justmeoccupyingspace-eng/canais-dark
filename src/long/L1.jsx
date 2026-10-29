@@ -18,7 +18,7 @@ const ramp = (T, t0, dur = 0.6) => (t0 == null ? 0 : interpolate(T, [t0, t0 + du
 const sp = (T, t0, cfg = {damping: 14, stiffness: 170}) => (t0 == null ? 0 : spring({frame: (T - t0) * FPS, fps: FPS, config: cfg}));
 const on = (T, t0) => t0 != null && T >= t0;
 
-const NUM = {POL: '616', DEU: '276', JPN: '392', GBR: '826', IRL: '372', ESP: '724', FRA: '250', ITA: '380', NLD: '528', BEL: '056', LUX: '442', DNK: '208', GRC: '300', PRT: '620', AUT: '040', FIN: '246', SWE: '752', CZE: '203', SVK: '703', HUN: '348', SVN: '705', EST: '233', LVA: '428', LTU: '440', CYP: '196', MLT: '470', BGR: '100', ROU: '642', HRV: '191', KOR: '410', UKR: '804', CHN: '156', RUS: '643', BLR: '112'};
+const NUM = {POL: '616', DEU: '276', JPN: '392', GBR: '826', IRL: '372', ESP: '724', FRA: '250', ITA: '380', NLD: '528', BEL: '056', LUX: '442', DNK: '208', GRC: '300', PRT: '620', AUT: '040', FIN: '246', SWE: '752', CZE: '203', SVK: '703', HUN: '348', SVN: '705', EST: '233', LVA: '428', LTU: '440', CYP: '196', MLT: '470', BGR: '100', ROU: '642', HRV: '191', KOR: '410', UKR: '804', SAU: '682', IRQ: '368', KWT: '414', ISR: '376', USA: '840', CHN: '156', RUS: '643', BLR: '112'};
 const NAME = {POL: 'Poland', JPN: 'Japan', ESP: 'Spain', DEU: 'Germany', GRC: 'Greece', PRT: 'Portugal', UKR: 'Ukraine', KOR: 'South Korea', GBR: 'Britain', IRL: 'Ireland', CHN: 'China', ITA: 'Italy', USA: 'United States', HUN: 'Hungary', ISR: 'Israel', WLD: 'World', EUU: 'EU average', EU: 'EU average', LUX: 'Luxembourg', FRA: 'France', BEL: 'Belgium', NLD: 'Netherlands', DNK: 'Denmark', CHE: 'Switzerland', NOR: 'Norway'};
 const COUNTRIES = feature(world, world.objects.countries).features;
 const BYNUM = Object.fromEntries(COUNTRIES.map((c) => [c.id, c]));
@@ -816,7 +816,7 @@ const Globe = ({sh, p, data, T}) => {
   }
   view.zoom *= 1 + 0.04 * Math.sin(T / 6);
   const R = 300 * view.zoom;
-  const proj = geoOrthographic().scale(R).translate([820, 560]).rotate([-view.lon - (T - sh.t0) * 0.35, -view.lat]).clipAngle(90).precision(0.6);
+  const proj = geoOrthographic().scale(R).translate([820, 560]).rotate([-view.lon - (T - sh.t0) * 0.35 / Math.max(1, view.zoom / 3), -view.lat]).clipAngle(90).precision(0.6);
   const path = geoPath(proj);
   const fillOf = (iso) => {
     if (hl.includes(iso) || (sh.hl2 || []).includes(iso)) return p.acc;
@@ -1036,10 +1036,11 @@ const List = ({sh, p, T}) => (
     {(sh.items || []).map((it, i) => {
       const s = sp(T, it.t);
       if (s <= 0.001) return null;
-      const y = 250 + (sh.items || []).slice(0, i).reduce((acc, q) => acc + (q.kind === 'quote' ? 190 : q.kind === 'date' || q.kind === 'title' ? 0 : 118), 0);
+      const y = 250 + (sh.items || []).slice(0, i).reduce((acc, q) => acc + (q.kind === 'quote' ? 190 : q.kind === 'date' ? 0 : q.kind === 'title' ? 215 : 118), 0);
       if (it.kind === 'title') {
         const shake = Math.max(0, 1 - (T - it.t) / 0.5) * Math.sin(T * 60) * 8;
-        return <div key={i} style={{position: 'absolute', left: 700, top: 560, transform: `translate(-50%, -50%) rotate(-5deg) scale(${1.6 - 0.6 * s}) translateX(${shake}px)`, opacity: Math.min(1, s * 2), fontFamily: SANS, fontWeight: 900, fontSize: 150, color: p.warm, letterSpacing: -4, border: `10px solid ${p.warm}`, padding: '6px 40px', borderRadius: 24, whiteSpace: 'nowrap', background: '#0b1026e6'}}>{it.text}</div>;
+        const fs = Math.min(150, Math.round(1450 / (0.62 * Math.max(1, it.text.length))));
+        return <div key={i} style={{position: 'absolute', left: 760, top: Math.max(560, y + 105), transform: `translate(-50%, -50%) rotate(-5deg) scale(${1.6 - 0.6 * s}) translateX(${shake}px)`, opacity: Math.min(1, s * 2), fontFamily: SANS, fontWeight: 900, fontSize: fs, color: p.warm, letterSpacing: -4, border: `10px solid ${p.warm}`, padding: '6px 40px', borderRadius: 24, whiteSpace: 'nowrap', background: '#0b1026e6'}}>{it.text}</div>;
       }
       if (it.kind === 'date') {
         return (

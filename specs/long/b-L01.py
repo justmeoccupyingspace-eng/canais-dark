@@ -130,7 +130,7 @@ shots = [
          items=[dict(at="sixty-four bits", text="64 bits ≈ 292 billion years"), dict(at="forgotten code", text="…but old code is everywhere"), dict(at="lives in a box", text="Every number lives in a box.", color="acc"), dict(at="big enough", text="Check the box.", serif=True, size=72)],
          react=[dict(at="sixty-four", pose="cheer"), dict(at="forgotten code", pose="shrug"), dict(at="every number", pose="pointUp"), dict(at="big enough", pose="idle", nod=1)]),
     dict(act=5, type="end", src="",
-         next=dict(kicker="NEXT VIDEO", big="931 GB", color="acc", title="Your 1 TB drive isn't lying", sub="where the other 69 GB went"),
+         next=dict(kicker="NEXT VIDEO", big="931 GB", color="acc", title="Where did 69 GB of my 1 TB drive go?", sub="another number that isn't what it looks like"),
          narration="Next time: another number that isn't what it looks like. Why a one-terabyte drive only shows nine hundred thirty-one gigabytes. {p} Subscribe so you don't miss it. I'm How It Ticks. See you in the next one.",
          cta="Subscribe: how things really work",
          hold=14,
@@ -158,7 +158,7 @@ checks = [
 for i, sh in enumerate(shots):
     sh["id"] = f"s{i:02d}"
 
-spec = dict(id="b-L01-math-errors", channel="howitticks", chapter0="The missile that missed", w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
+spec = dict(id="b-L01-math-errors", channel="howitticks", chapter0="The missile that missed", min_total=420, w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
             datasets=[], snapshot=[],
             thumb=dict(kind="code", top="TINY ERRORS, HUGE COST", lines=[{"in": "0.1 + 0.2", "out": "0.30000000000000004", "bad": True}], sticker="−$370,000,000"),
             voice=dict(model="", name="Iapetus",

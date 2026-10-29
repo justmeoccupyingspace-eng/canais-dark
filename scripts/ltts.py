@@ -30,7 +30,10 @@ DEAD_MODELS = set()  # modelos que estouraram a cota diária nesta execução
 
 def gemini_once(text, voice, style, model):
     key = os.environ["GEMINI_KEY"]
-    body = {"contents": [{"parts": [{"text": style + "\n\n" + text}]}],
+    prompt = style + "\n\n" + text
+    if "3.8" in model:  # o 3.8 às vezes LÊ as instruções em voz alta: seções explícitas, só a transcrição é fala
+        prompt = "### DIRECTOR'S NOTES\n" + style + "\n\n#### TRANSCRIPT\n" + text
+    body = {"contents": [{"parts": [{"text": prompt}]}],
             "generationConfig": {"responseModalities": ["AUDIO"], "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voice}}}}}
     req = urllib.request.Request(f"{API}/models/{model}:generateContent?key={key}", data=json.dumps(body).encode(), headers={"Content-Type": "application/json"})
     r = json.load(urllib.request.urlopen(req, timeout=900))
@@ -213,6 +216,29 @@ def align(script_words, hyp):
     return list(zip(t0, t1)), matched / max(len(script_words), 1)
 
 
+def junk_spans(times, dur, lead=2.0, gap=2.5):
+    """trechos de fala fora do roteiro (ex.: o TTS lendo as instruções): antes da 1ª palavra, entre palavras e no fim.
+    As pausas reais já vêm limitadas a ~0,55 s pelo tighten, então qualquer buraco > 2,5 s não é pausa."""
+    sp_ = []
+    if times and times[0][0] > lead:
+        sp_.append((0.0, times[0][0] - 0.25))
+    for i in range(len(times) - 1):
+        if times[i + 1][0] - times[i][1] > gap:
+            sp_.append((times[i][1] + 0.25, times[i + 1][0] - 0.25))
+    if times and dur - times[-1][1] > gap:
+        sp_.append((times[-1][1] + 0.3, dur))
+    return sp_
+
+
+def excise(x, times, spans):
+    keep = np.ones(len(x), bool)
+    for a, b in spans:
+        keep[int(a * SR):int(b * SR)] = False
+    def sh(t):
+        return t - sum(min(max(0.0, t - a), b - a) for a, b in spans)
+    return x[keep], [(sh(t0), sh(t1)) for t0, t1 in times]
+
+
 def whisper_words(path):
     from faster_whisper import WhisperModel
     if not hasattr(whisper_words, "m"):
@@ -383,13 +409,19 @@ def main(src, data_path, dst, fake=False):
                 eng = "edge"
             if eng.startswith("gemini"):
                 x = tighten(x, float(os.environ.get("PAUSE_CAP", "0.55")))
-                x = tempo(x, float(os.environ.get("ATEMPO") or ("1.08" if "3.8-flash-tts" in eng else "1.0")))
+                x = tempo(x, float(os.environ.get("ATEMPO") or "1.0"))
             x = clean(x)
             p = f"{outdir}/act{a}.wav"
             sf.write(p, x, SR)
             hyp = whisper_words(p)
             times, ratio = align(script, hyp)
+            cuts = junk_spans(times, len(x) / SR)
+            if cuts:
+                x, times = excise(x, times, cuts)
+                sf.write(p, x, SR)
+                print(f"::warning title=tts::ato {a}: cortei {sum(b - a_ for a_, b in cuts):.1f} s de fala fora do roteiro em {len(cuts)} trecho(s)")
             m = metrics(x, len(script))
+            m["cut_s"] = round(sum(b - a_ for a_, b in cuts), 1)
             m.update(act=a, engine=eng, align=round(ratio, 3))
             report.append(m)
             print("ato", a, m)
@@ -467,8 +499,8 @@ def main(src, data_path, dst, fake=False):
             gates.append(f"ato {m['act']}: voz monótona (F0 std {m['f0_std']} st)")
         if m["align"] < 0.85:
             gates.append(f"ato {m['act']}: Whisper bateu só {m['align']:.0%} das palavras (TTS pulou/trocou texto?)")
-    if not fake and total < 8 * 60 + 5:
-        gates.append(f"duração {total / 60:.2f} min < 8:05 (sem mid-roll)")
+    if not fake and total < spec.get("min_total", 8 * 60 + 5):
+        gates.append(f"duração {total / 60:.2f} min < {spec.get('min_total', 485) / 60:.2f} min")
     for g in gates:
         print(f"::warning title=gate::{g}")
     json.dump(dict(report=report, gates=gates, total=total), open(dst.replace(".json", ".gates.json"), "w"), indent=1)
