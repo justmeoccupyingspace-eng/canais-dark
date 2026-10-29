@@ -43,11 +43,11 @@ export const Clip = ({c}) => {
         <OffthreadVideo src={staticFile(c.src)} startFrom={Math.round(c.t0 * fps)} style={{width: W, height: VH}} />
       </div>
       {g ? (
-        <div style={{position: 'absolute', left: 50, right: 50, top: vy + VH + 90, textAlign: 'center', fontWeight: 900, fontSize: 82, lineHeight: 1.1, color: '#fff',
-          textShadow: '0 6px 0 rgba(0,0,0,.55)'}}>
+        <div style={{position: 'absolute', left: 50, right: 50, top: vy + VH + 80, display: 'flex', flexWrap: 'wrap', justifyContent: 'center', columnGap: 22, rowGap: 4,
+          fontWeight: 900, fontSize: 78, lineHeight: 1.1, color: '#fff', textShadow: '0 6px 0 rgba(0,0,0,.55)'}}>
           {g.map((w, i) => {
             const on = T >= w.t0 - 0.03;
-            return <span key={i} style={{color: on ? (T <= w.t1 + 0.08 ? p.acc : '#fff') : '#ffffff55', marginRight: 22}}>{w.w.replace(/[.,;:]$/, '')}</span>;
+            return <span key={i} style={{color: on ? (T <= w.t1 + 0.08 ? p.acc : '#fff') : '#ffffff55'}}>{w.w.replace(/[.,;:]$/, '')}</span>;
           })}
         </div>
       ) : null}
