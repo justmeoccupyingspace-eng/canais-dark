@@ -39,7 +39,32 @@ def imf(ind, isos, a, b):
     return {i: {int(y): float(x) for y, x in v.get(i, {}).items() if x is not None and a <= int(y) <= b} for i in isos}
 
 
+def build_generic(spec):
+    """datasets no spec: {set, wb, isos, from, to} | {set, derive: mul|ratio|div, a:[set,iso], b:[set,iso], k} |
+    {set, wb, isos, year, flat: true}; snapshot: [{set, iso, year, value, src}] (fontes citadas, fora das APIs)."""
+    S = {}
+    for d in spec["datasets"]:
+        st = d["set"]
+        if "wb" in d and d.get("flat"):
+            g = wb(d["wb"], d["isos"], d["year"], d["year"])
+            S[st] = {i: g[i][d["year"]] for i in d["isos"] if d["year"] in g.get(i, {})}
+        elif "wb" in d:
+            got = wb(d["wb"], d["isos"], d.get("from", 1960), d.get("to", 2024))
+            S.setdefault(st, {}).update(got)
+        elif d.get("derive"):
+            (sa, ia), (sb, ib) = d["a"], d["b"]
+            A, B = S[sa][ia], S[sb][ib]
+            k = d.get("k", 1)
+            op = {"mul": lambda x, y: x * y * k, "ratio": lambda x, y: x / y * 100 * k, "div": lambda x, y: x / y * k}[d["derive"]]
+            S.setdefault(st, {})[d.get("iso", ia)] = {y: op(A[y], B[y]) for y in A if y in B and B[y]}
+    for p in spec.get("snapshot", []):
+        S.setdefault(p["set"], {}).setdefault(p["iso"], {})[int(p["year"])] = float(p["value"])
+    return S
+
+
 def build(spec):
+    if spec.get("datasets"):
+        return build_generic(spec)
     S = {}
     # histórico: World Bank (API aberta) até o último ano; projeção: pontos do FMI (WEO) gravados no spec com fonte
     snap = spec.get("imf_snapshot", {})
@@ -128,6 +153,19 @@ def check(S, c):
                 firsts.append(ys[0] if ys else None)
             ok = all(firsts) and firsts == sorted(firsts) and firsts[-1] <= c["by"]
             return ok, f"passou (de vez) em {dict(zip(c['order'], firsts))}"
+        if r == "lastrise":  # ano anterior mais recente em que a série subiu (antes de 'year')
+            ser = S[c["set"]][c["iso"]]
+            ys = sorted(y for y in ser if y < c["year"] and y - 1 in ser and ser[y] > ser[y - 1])
+            return (ys[-1] if ys else None) == c["equal"], f"última alta antes de {c['year']}: {ys[-1] if ys else None}"
+        if r == "avgratio":  # média de a1..b1 / média de a2..b2
+            ser = S[c["set"]][c["iso"]]
+            m1 = sum(ser[y] for y in range(c["a1"], c["b1"] + 1)) / (c["b1"] - c["a1"] + 1)
+            m2 = sum(ser[y] for y in range(c["a2"], c["b2"] + 1)) / (c["b2"] - c["a2"] + 1)
+            return c["min"] <= m1 / m2 <= c.get("max", 99), f"{m1:.0f} / {m2:.0f} = {m1 / m2:.2f}"
+        if r == "conv":  # valor em moeda local convertido pelo câmbio do ano
+            fx = S[c["set"]][c["iso"]][c["year"]]
+            v = c["local"] / fx
+            return c["min"] <= v <= c["max"], f"{c['local']:.4g} / {fx:.1f} = {v:.4g}"
         if r == "maxof":
             v = S[c["set"]][c["iso"]][c["year"]]
             others = {o: S[c["set"]].get(o, {}).get(c["year"]) for o in c["others"]}
