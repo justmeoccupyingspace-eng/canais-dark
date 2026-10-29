@@ -1,0 +1,53 @@
+{
+ "channel": "howitticks",
+ "long": "DJEANTgbtD0",
+ "longTitle": "Tiny Math Errors That Cost Lives and Millions",
+ "preview": "long-40915424631",
+ "timeline": "lprep-40912061814",
+ "timeline_file": "b-L01-math-errors.json",
+ "sources": "Sources: US GAO IMTEC-92-26 (1992); Ariane 501 Inquiry Board (1996); Vancouver Stock Exchange index history.",
+ "music_credits": "Music by Kevin MacLeod (incompetech.com), CC BY 4.0.",
+ "hashtags": "#engineering #programming #history",
+ "tags": [
+  "rounding error",
+  "patriot missile",
+  "ariane 5",
+  "floating point",
+  "engineering",
+  "shorts"
+ ],
+ "clips": [
+  {
+   "from": "s00",
+   "to": "s02",
+   "hook": "A *rounding error* killed 28 soldiers",
+   "title": "A tiny rounding error killed 28 soldiers #Shorts",
+   "desc": "Dhahran, 1991: the Patriot missile that never fired. The cause was one tenth.",
+   "at": "2026-10-30T01:30:00Z"
+  },
+  {
+   "from": "s10",
+   "to": "s10",
+   "hook": "A clock off by *0.34 s* made a missile miss",
+   "title": "0.34 seconds made a Patriot missile miss #Shorts",
+   "desc": "After 100 hours, the error added up to a third of a second, and 687 meters.",
+   "at": "2026-10-30T05:30:00Z"
+  },
+  {
+   "from": "s13",
+   "to": "s15",
+   "hook": "A *$370M* rocket destroyed by one number",
+   "title": "One number destroyed a $370 million rocket #Shorts",
+   "desc": "Ariane 5, flight 501: a 64-bit number squeezed into a 16-bit box.",
+   "at": "2026-10-30T14:00:00Z"
+  },
+  {
+   "from": "s17",
+   "to": "s19",
+   "hook": "This stock index lost *half its value*… by accident",
+   "title": "This stock market 'lost' half its value by accident #Shorts",
+   "desc": "Vancouver, 1982: the index was cut, not rounded, 3,000 times a day.",
+   "at": "2026-10-30T17:00:00Z"
+  }
+ ]
+}

@@ -1,0 +1,70 @@
+name: cortes
+on:
+  workflow_dispatch:
+    inputs:
+      cfg: {description: "specs/clips/<x>.json", required: true}
+      upload: {description: "subir no YouTube: A | B | vazio (só renderiza)", required: false, default: ""}
+      use_run: {description: "reaproveitar cortes renderizados de outra execução (run id)", required: false, default: ""}
+      only: {description: "índices a subir/renderizar (ex.: 0,2); vazio = todos", required: false, default: ""}
+permissions:
+  contents: write
+  actions: read
+jobs:
+  c:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: 20}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: fonte e timeline
+        run: |
+          CFG=${{ inputs.cfg }}
+          PV=$(python -c "import json;print(json.load(open('$CFG'))['preview'])"); TB=$(python -c "import json;print(json.load(open('$CFG'))['timeline'])"); TF=$(python -c "import json;print(json.load(open('$CFG'))['timeline_file'])")
+          git fetch -q origin "$PV" && F=$(git ls-tree --name-only FETCH_HEAD | grep _720.mp4) && mkdir -p public/clips && git show "FETCH_HEAD:$F" > public/clips/src.mp4
+          git fetch -q origin "$TB" && git show "FETCH_HEAD:$TF" > /tmp/tl.json
+          python scripts/clips.py $CFG /tmp/tl.json out/clips
+      - name: reaproveitar cortes
+        if: inputs.use_run != ''
+        uses: actions/download-artifact@v4
+        with: {name: clips, path: out/render, run-id: "${{ inputs.use_run }}", github-token: "${{ secrets.GITHUB_TOKEN }}"}
+      - if: inputs.use_run == ''
+        run: npm ci --no-audit --no-fund
+      - name: render
+        if: inputs.use_run == ''
+        run: |
+          mkdir -p out/render
+          N=$(ls out/clips/*.props.json | wc -l)
+          for i in $(seq 0 $((N-1))); do
+            if [ -n "${{ inputs.only }}" ] && ! echo ",${{ inputs.only }}," | grep -q ",$i,"; then continue; fi
+            node scripts/crender.mjs out/clips/$i.props.json out/render/$i.mp4 out/render/$i.jpg 6 || echo "::error title=corte::falhou o corte $i"
+          done
+          ls -la out/render
+      - uses: actions/upload-artifact@v4
+        if: inputs.use_run == ''
+        with: {name: clips, path: out/render, retention-days: 7}
+      - name: YouTube (agendado)
+        if: inputs.upload != ''
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_A: ${{ secrets.YT_REFRESH_A }}
+          YT_REFRESH_B: ${{ secrets.YT_REFRESH_B }}
+        run: |
+          N=$(ls out/clips/*.props.json | wc -l)
+          for i in $(seq 0 $((N-1))); do
+            if [ -n "${{ inputs.only }}" ] && ! echo ",${{ inputs.only }}," | grep -q ",$i,"; then continue; fi
+            [ -f out/render/$i.mp4 ] || { echo "::warning title=corte::sem out/render/$i.mp4"; continue; }
+            AT=$(python -c "import json;print(json.load(open('out/clips/at.json'))[$i])")
+            MANUAL_PUBLISH_AT="$AT" python scripts/upload.py ${{ inputs.upload }} out/render/$i.mp4 out/clips/$i.yt.json public || echo "::error title=corte::upload $i falhou"
+            [ -f uploaded.json ] && python -c "import json;print('::notice title=corte '+str($i)+'::'+json.load(open('uploaded.json'))['id']+' em $AT')" && rm -f uploaded.json
+          done
+      - name: prévias na branch cortes-<run>
+        if: always() && inputs.use_run == ''
+        run: |
+          mkdir -p /tmp/o && cp out/render/*.jpg out/clips/*.yt.json /tmp/o/ 2>/dev/null || true
+          for f in out/render/*.mp4; do [ -f "$f" ] && cp "$f" /tmp/o/; done
+          cd /tmp/o && git init -q -b cortes-${{ github.run_id }} && git config user.name producer && git config user.email producer@users.noreply.github.com
+          git add . && git commit -qm cortes && git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" cortes-${{ github.run_id }}

@@ -1,0 +1,53 @@
+{
+ "channel": "chartbound",
+ "long": "PP9J1_ZcpBo",
+ "longTitle": "South Korea's Scariest Number Just Went Up",
+ "preview": "long-40903156537",
+ "timeline": "lprep-40897865872",
+ "timeline_file": "a-L02-korea.json",
+ "sources": "Sources: World Bank WDI; Statistics Korea (KOSTAT).",
+ "music_credits": "Music by Kevin MacLeod (incompetech.com), CC BY 4.0.",
+ "hashtags": "#southkorea #birthrate #economics",
+ "tags": [
+  "south korea",
+  "birth rate",
+  "fertility rate",
+  "demographics",
+  "economics",
+  "shorts"
+ ],
+ "clips": [
+  {
+   "from": "s00",
+   "to": "s02",
+   "hook": "Korea's birth rate hit *0.72*. Then it went *UP*.",
+   "title": "South Korea had a million babies in 1970. Then this happened #Shorts",
+   "desc": "From 1 million births to 230,000, and then a twist nobody expected.",
+   "at": "2026-10-30T00:30:00Z"
+  },
+  {
+   "from": "s12",
+   "to": "s13",
+   "hook": "100 Korean adults → *13* grandchildren",
+   "title": "The scariest chart in economics #Shorts",
+   "desc": "At 0.72 babies per woman, every generation shrinks by almost two thirds.",
+   "at": "2026-10-30T04:30:00Z"
+  },
+  {
+   "from": "s16",
+   "to": "s17",
+   "hook": "South Korea's birth rate just went *UP*. Why?",
+   "title": "South Korea's birth rate went up for the first time in 9 years #Shorts",
+   "desc": "0.72 in 2023, 0.75 in 2024, 0.80 in 2025. What's behind the rebound.",
+   "at": "2026-10-30T13:00:00Z"
+  },
+  {
+   "from": "s18",
+   "to": "s18",
+   "hook": "A company pays *$70,000* per baby",
+   "title": "This Korean company pays $70,000 per baby #Shorts",
+   "desc": "Korea declared a demographic emergency. Here's what it's trying.",
+   "at": "2026-10-30T16:00:00Z"
+  }
+ ]
+}

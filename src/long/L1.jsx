@@ -11,7 +11,7 @@ import {PAL} from '../v3/V3.jsx';
 const FPS = 30;
 const C = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'};
 const IO = Easing.inOut(Easing.cubic);
-const SANS = 'InterL, InterX, Inter, "Helvetica Neue", Arial, sans-serif';
+export const SANS = 'InterL, InterX, Inter, "Helvetica Neue", Arial, sans-serif';
 const SERIF = 'LoraI, Georgia, serif';
 const MONO = 'JBMono, "DejaVu Sans Mono", monospace';
 const ramp = (T, t0, dur = 0.6) => (t0 == null ? 0 : interpolate(T, [t0, t0 + dur], [0, 1], {...C, easing: IO}));
@@ -87,7 +87,7 @@ const keyed = (T, v0, keys = [], field = 'year') => {
   return v;
 };
 
-const useFonts = () => {
+export const useFonts = () => {
   const [h] = useState(() => delayRender('fonts'));
   useEffect(() => {
     const L = [['InterL', '500', 'fonts/inter500.woff2'], ['InterL', '600', 'fonts/inter600.woff2'], ['InterL', '800', 'fonts/inter800.woff2'], ['InterL', '900', 'fonts/inter900.woff2'], ['LoraI', '400 700', 'fonts/Lora-Italic-Variable.ttf'], ['JBMono', '500', 'fonts/jbmono500.woff2'], ['JBMono', '800', 'fonts/jbmono800.woff2']];
