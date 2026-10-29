@@ -63,7 +63,7 @@ def build_generic(spec):
 
 
 def build(spec):
-    if spec.get("datasets"):
+    if "datasets" in spec:
         return build_generic(spec)
     S = {}
     # histórico: World Bank (API aberta) até o último ano; projeção: pontos do FMI (WEO) gravados no spec com fonte
@@ -153,6 +153,9 @@ def check(S, c):
                 firsts.append(ys[0] if ys else None)
             ok = all(firsts) and firsts == sorted(firsts) and firsts[-1] <= c["by"]
             return ok, f"passou (de vez) em {dict(zip(c['order'], firsts))}"
+        if r == "expr":  # conta em Python (expressões do próprio spec)
+            v = eval(c["expr"], {"__builtins__": __builtins__})
+            return v == c["equal"], f"{c['expr']} = {v!r}"
         if r == "lastrise":  # ano anterior mais recente em que a série subiu (antes de 'year')
             ser = S[c["set"]][c["iso"]]
             ys = sorted(y for y in ser if y < c["year"] and y - 1 in ser and ser[y] > ser[y - 1])

@@ -13,6 +13,7 @@ const C = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'};
 const IO = Easing.inOut(Easing.cubic);
 const SANS = 'InterL, InterX, Inter, "Helvetica Neue", Arial, sans-serif';
 const SERIF = 'LoraI, Georgia, serif';
+const MONO = 'JBMono, "DejaVu Sans Mono", monospace';
 const ramp = (T, t0, dur = 0.6) => (t0 == null ? 0 : interpolate(T, [t0, t0 + dur], [0, 1], {...C, easing: IO}));
 const sp = (T, t0, cfg = {damping: 14, stiffness: 170}) => (t0 == null ? 0 : spring({frame: (T - t0) * FPS, fps: FPS, config: cfg}));
 const on = (T, t0) => t0 != null && T >= t0;
@@ -43,6 +44,9 @@ export const fmt = (v, k) => {
     case 'int': return Math.round(v).toLocaleString('en-US');
     case 'krwT': return '₩' + v.toFixed(1) + 'T';
     case 'hours': return Math.round(v).toLocaleString('en-US') + ' h';
+    case 'usdM': return '$' + Math.round(v) + 'M';
+    case 'usdM+': return '>$' + Math.round(v) + 'M';
+    case 'dec3': return v.toFixed(3);
     default: return String(Math.round(v));
   }
 };
@@ -81,7 +85,7 @@ const keyed = (T, v0, keys = [], field = 'year') => {
 const useFonts = () => {
   const [h] = useState(() => delayRender('fonts'));
   useEffect(() => {
-    const L = [['InterL', '500', 'fonts/inter500.woff2'], ['InterL', '600', 'fonts/inter600.woff2'], ['InterL', '800', 'fonts/inter800.woff2'], ['InterL', '900', 'fonts/inter900.woff2'], ['LoraI', '400 700', 'fonts/Lora-Italic-Variable.ttf']];
+    const L = [['InterL', '500', 'fonts/inter500.woff2'], ['InterL', '600', 'fonts/inter600.woff2'], ['InterL', '800', 'fonts/inter800.woff2'], ['InterL', '900', 'fonts/inter900.woff2'], ['LoraI', '400 700', 'fonts/Lora-Italic-Variable.ttf'], ['JBMono', '500', 'fonts/jbmono500.woff2'], ['JBMono', '800', 'fonts/jbmono800.woff2']];
     Promise.all(L.map(([fam, w, u]) => new FontFace(fam, `url(${staticFile(u)})`, {weight: w, style: fam === 'LoraI' ? 'italic' : 'normal'}).load().then((f) => document.fonts.add(f))))
       .then(() => continueRender(h)).catch(() => continueRender(h));
   }, [h]);
@@ -457,6 +461,169 @@ const People = ({sh, p, T}) => {
         );
       })}
       <div style={{position: 'absolute', left: 120, top: 92, fontFamily: SANS, fontWeight: 900, fontSize: 36, color: '#0d1020', background: p.acc, padding: '6px 20px', borderRadius: 12}}>at {sh.tfr} babies per woman</div>
+    </AbsoluteFill>
+  );
+};
+
+// ---------------- KIT "COMO FUNCIONA" (How It Ticks) ----------------
+// terminal: linhas digitadas {at, in, out, note}
+const Code = ({sh, p, T}) => (
+  <AbsoluteFill>
+    <div style={{position: 'absolute', left: 150, top: 200, width: 1150, borderRadius: 22, overflow: 'hidden', background: '#0a0d14', border: '2px solid #ffffff22', boxShadow: '0 30px 80px rgba(0,0,0,.55)', opacity: sp(T, sh.t0)}}>
+      <div style={{height: 54, background: '#161b26', display: 'flex', alignItems: 'center', gap: 12, paddingLeft: 22}}>
+        {['#ff5f57', '#febc2e', '#28c840'].map((c) => <div key={c} style={{width: 16, height: 16, borderRadius: '50%', background: c}} />)}
+        <div style={{fontFamily: MONO, fontWeight: 500, fontSize: 22, color: '#ffffff70', marginLeft: 16}}>{sh.title || 'console'}</div>
+      </div>
+      <div style={{padding: '30px 36px', minHeight: 420}}>
+        {(sh.lines || []).map((l, i) => {
+          if (l.t == null || T < l.t) return null;
+          const n = Math.floor(Math.min(1, (T - l.t) / Math.max(0.35, l.in.length * 0.05)) * l.in.length);
+          const typed = l.in.slice(0, n);
+          const outOn = l.out != null && T > l.t + l.in.length * 0.05 + 0.5;
+          const caret = !outOn && Math.floor(T * 2) % 2 === 0;
+          return (
+            <div key={i} style={{marginBottom: 26}}>
+              <div style={{fontFamily: MONO, fontWeight: 800, fontSize: 52, color: '#ffffff'}}><span style={{color: p.acc}}>&gt; </span>{typed}{caret ? <span style={{color: p.acc}}>▌</span> : null}</div>
+              {outOn ? <div style={{fontFamily: MONO, fontWeight: 800, fontSize: 52, color: l.bad ? p.warm : p.acc2, marginTop: 6}}>{l.out}</div> : null}
+              {outOn && l.note ? <div style={{fontFamily: SANS, fontWeight: 700, fontSize: 28, color: '#ffffff90', marginTop: 6}}>{l.note}</div> : null}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  </AbsoluteFill>
+);
+
+// bits: expansão binária com registrador de N bits e o resto cortado
+const Bits = ({sh, p, T}) => {
+  const bits = sh.bits || '';
+  const reg = sh.reg || bits.length;
+  const t0 = sh.show?.t ?? sh.t0 + 0.3;
+  const shown = Math.floor(Math.max(0, (T - t0) / (sh.speed || 0.07)));
+  const chop = sh.chop && sh.chop.t != null ? ramp(T, sh.chop.t, 0.5) : 0;
+  const per = Math.min(30, bits.length);
+  const W = 44, G = 7, HB = 64;
+  const rows = Math.ceil(bits.length / per);
+  const yb = 400, yEnd = yb + rows * (HB + G);
+  const rep = sh.repeat;  // [início, tamanho] do padrão que se repete
+  return (
+    <AbsoluteFill>
+      <div style={{position: 'absolute', left: 150, top: 190, fontFamily: MONO, fontWeight: 800, fontSize: 80, color: '#fff', whiteSpace: 'nowrap'}}>{sh.label}</div>
+      {sh.sub ? <div style={{position: 'absolute', left: 154, top: 300, fontFamily: MONO, fontWeight: 500, fontSize: 40, color: '#ffffff80', whiteSpace: 'nowrap'}}>{sh.sub}</div> : null}
+      <div style={{position: 'absolute', left: 150, top: yb, width: per * (W + G), display: 'flex', flexWrap: 'wrap', gap: G}}>
+        {bits.split('').map((b, i) => {
+          if (i >= shown) return null;
+          const out = i >= reg;
+          const inRep = rep && i >= rep[0] && ((i - rep[0]) % (rep[1] * 2)) < rep[1];
+          return (
+            <div key={i} style={{width: W, height: HB, borderRadius: 8, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: MONO, fontWeight: 800, fontSize: 40,
+              background: out && chop > 0 ? `rgba(255,77,109,${0.22 * chop})` : inRep ? p.acc + '33' : '#ffffff12', color: out && chop > 0.5 ? p.warm : b === '1' ? p.acc : '#ffffffc0', opacity: out ? 1 - 0.55 * chop : 1, textDecoration: out && chop > 0.5 ? 'line-through' : 'none',
+              border: i === reg - 1 ? `2px solid ${p.acc2}` : '2px solid transparent'}}>{b}</div>
+          );
+        })}
+      </div>
+      {sh.chop && chop > 0 ? (
+        <div style={{position: 'absolute', left: 150 + (reg % per) * (W + G) - 5, top: yb - 20 + Math.floor(reg / per) * (HB + G), height: HB + 40, width: 6, background: p.warm, opacity: chop, borderRadius: 3}} />
+      ) : null}
+      {sh.reg && sh.regtext ? <Pill x={150} y={yEnd + 30} text={'◧ ' + sh.regtext.text} color={p.acc2} T={T} t0={sh.regtext.t} /> : null}
+      {sh.chop && chop > 0 ? <Pill x={150} y={yEnd + (sh.regtext ? 120 : 40)} text={sh.chop.text} color={p.warm} T={T} t0={sh.chop.t} /> : null}
+    </AbsoluteFill>
+  );
+};
+
+// contador gigante que estoura (ex.: 2,147,483,647 → −2,147,483,648)
+const Counter = ({sh, p, T}) => {
+  const t0 = sh.go?.t ?? sh.t0 + 0.3;
+  const k = ramp(T, t0, sh.dur || 2.5);
+  const from = sh.from, to = sh.to;
+  const v = Math.floor(from + (to - from) * Easing.out(Easing.cubic)(k));
+  const wrapped = sh.wrap && sh.wrap.t != null && T >= sh.wrap.t;
+  const shake = wrapped ? Math.max(0, 1 - (T - sh.wrap.t) / 0.6) * Math.sin(T * 70) * 10 : 0;
+  const txt = wrapped ? sh.wrap.value.toLocaleString('en-US').replace('-', '−') : v.toLocaleString('en-US');
+  return (
+    <AbsoluteFill>
+      <Rays p={p} T={T} t0={wrapped ? sh.wrap.t : null} />
+      <div style={{position: 'absolute', left: 150, top: 230, fontFamily: SANS, fontWeight: 800, fontSize: 40, color: '#ffffffb0'}}>{sh.title}</div>
+      <div style={{position: 'absolute', left: 150, top: 330, fontFamily: MONO, fontWeight: 800, fontSize: txt.length > 14 ? 120 : 150, color: wrapped ? p.warm : '#fff', letterSpacing: -4, transform: `translateX(${shake}px)`, textShadow: '0 12px 40px rgba(0,0,0,.5)'}}>{txt}</div>
+      {sh.unit ? <div style={{position: 'absolute', left: 156, top: 520, fontFamily: SANS, fontWeight: 700, fontSize: 36, color: '#ffffff90'}}>{sh.unit}</div> : null}
+      {wrapped && sh.wrap.text ? <Pill x={150} y={640} text={sh.wrap.text} color={p.warm} T={T} t0={sh.wrap.t + 0.3} /> : null}
+      {(sh.notes || []).map((n, i) => <Pill key={i} x={150} y={720 + i * 80} text={n.text} color={i % 2 ? p.acc2 : '#ffffff'} T={T} t0={n.t} />)}
+    </AbsoluteFill>
+  );
+};
+
+// radar: o relógio atrasa e a "janela" de rastreio sai de cima do míssil
+const Radar = ({sh, p, T}) => {
+  const H = keyed(T, sh.start ?? 0, sh.keys, 'hours');
+  const drift = (sh.perHour || 0.003433) * H;  // s
+  const shift = drift * (sh.speed || 1676) * (sh.gateScale || 1.2);  // m (com a escala da janela usada no relatório)
+  const m = shift / (sh.maxM || 700);
+  const cx = 640, cy = 560, R = 330;
+  const sweep = (T * 90) % 360;
+  const tx = cx + 60, ty = cy - 120;  // posição real do Scud
+  const gx = tx - m * 300, gy = ty + m * 120;  // onde o radar olha
+  return (
+    <AbsoluteFill>
+      <svg width={1920} height={1080} style={{position: 'absolute'}}>
+        <circle cx={cx} cy={cy} r={R} fill="#06120c" stroke={p.acc2} strokeOpacity={0.6} strokeWidth={3} />
+        {[0.33, 0.66].map((k) => <circle key={k} cx={cx} cy={cy} r={R * k} fill="none" stroke={p.acc2} strokeOpacity={0.2} strokeWidth={2} />)}
+        <line x1={cx - R} x2={cx + R} y1={cy} y2={cy} stroke={p.acc2} strokeOpacity={0.15} />
+        <line x1={cx} x2={cx} y1={cy - R} y2={cy + R} stroke={p.acc2} strokeOpacity={0.15} />
+        <path d={`M${cx},${cy} L${cx + R * Math.cos((sweep * Math.PI) / 180)},${cy + R * Math.sin((sweep * Math.PI) / 180)} A${R},${R} 0 0,0 ${cx + R * Math.cos(((sweep - 40) * Math.PI) / 180)},${cy + R * Math.sin(((sweep - 40) * Math.PI) / 180)} Z`} fill={p.acc2} fillOpacity={0.12} />
+        <rect x={gx - 70} y={gy - 70} width={140} height={140} fill="none" stroke={m > 0.6 ? p.warm : p.acc} strokeWidth={5} strokeDasharray="12 8" />
+        <circle cx={tx} cy={ty} r={14} fill={p.warm} />
+        <circle cx={tx} cy={ty} r={14 + 10 * Math.abs(Math.sin(T * 4))} fill="none" stroke={p.warm} strokeOpacity={0.6} strokeWidth={3} />
+        <text x={tx + 24} y={ty - 18} fontFamily={SANS} fontWeight={900} fontSize={30} fill={p.warm}>SCUD</text>
+        <text x={gx - 70} y={gy + 104} fontFamily={SANS} fontWeight={800} fontSize={26} fill={m > 0.6 ? p.warm : p.acc}>where the radar looks</text>
+      </svg>
+      <div style={{position: 'absolute', left: 1040, top: 270, display: 'flex', flexDirection: 'column', gap: 26}}>
+        {[[`${H.toFixed(0)} h`, 'running nonstop'], [`${drift.toFixed(4)} s`, 'clock error'], [`${Math.round(shift)} m`, 'off target']].map(([v, l], i) => (
+          <div key={i}>
+            <div style={{fontFamily: MONO, fontWeight: 800, fontSize: 72, color: i === 2 && m > 0.6 ? p.warm : '#fff', lineHeight: 1}}>{v}</div>
+            <div style={{fontFamily: SANS, fontWeight: 700, fontSize: 28, color: '#ffffff90'}}>{l}</div>
+          </div>
+        ))}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+// lançamento: foguete sobe com relógio T+ e explode no cue
+const Launch = ({sh, p, T}) => {
+  const t0 = sh.go?.t ?? sh.t0 + 0.5;
+  const boomT = sh.boom?.t;
+  const tl = Math.max(0, T - t0);
+  const clock = boomT != null && T >= boomT ? sh.boom.at_s : Math.min(sh.boom?.at_s ?? 37, tl * ((sh.boom?.at_s ?? 37) / Math.max(0.1, (boomT ?? t0 + 6) - t0)));
+  const k = Math.min(1, clock / (sh.boom?.at_s ?? 37));
+  const x = 520 + 420 * k * k, y = 900 - 640 * k;
+  const ang = -10 - 40 * k;
+  const boom = boomT != null && T >= boomT;
+  const bk = boom ? Math.min(1, (T - boomT) / 1.2) : 0;
+  return (
+    <AbsoluteFill style={{background: `linear-gradient(${mix('#0b1a3a', '#1d3b78', 1 - k)}, #06080f)`}}>
+      <svg width={1920} height={1080} style={{position: 'absolute'}}>
+        <path d={`M520,900 Q${520 + 100 * k},${900 - 320 * k} ${x},${y}`} fill="none" stroke="#ffffff" strokeOpacity={0.35} strokeWidth={10} strokeLinecap="round" />
+        {!boom ? (
+          <g transform={`translate(${x},${y}) rotate(${ang})`}>
+            <path d="M0,-70 C14,-50 16,-10 16,40 L-16,40 C-16,-10 -14,-50 0,-70 Z" fill="#f2f2f2" />
+            <path d="M-16,20 L-32,48 L-16,44 Z M16,20 L32,48 L16,44 Z" fill={p.warm} />
+            <path d={`M-10,42 Q0,${90 + 20 * Math.sin(T * 30)} 10,42 Z`} fill={p.acc} />
+          </g>
+        ) : (
+          <g>
+            {Array.from({length: 26}).map((_, i) => {
+              const a = (i / 26) * Math.PI * 2;
+              const d = 40 + 260 * bk * (0.6 + 0.4 * ((i * 7) % 5) / 5);
+              return <circle key={i} cx={x + Math.cos(a) * d} cy={y + Math.sin(a) * d + bk * bk * 60} r={18 * (1 - bk) + 4} fill={i % 3 ? p.acc : p.warm} opacity={1 - bk * 0.8} />;
+            })}
+            <circle cx={x} cy={y} r={120 * bk + 20} fill="#fff" opacity={0.6 * (1 - bk)} />
+          </g>
+        )}
+        <rect x={0} y={960} width={1920} height={120} fill="#05070c" />
+      </svg>
+      <div style={{position: 'absolute', left: 150, top: 150, fontFamily: MONO, fontWeight: 800, fontSize: 110, color: boom ? p.warm : '#fff'}}>T+{clock.toFixed(0).padStart(2, '0')} s</div>
+      {sh.title ? <div style={{position: 'absolute', left: 156, top: 290, fontFamily: SANS, fontWeight: 800, fontSize: 38, color: '#ffffffb0'}}>{sh.title}</div> : null}
+      {(sh.notes || []).map((n, i) => <Pill key={i} x={1000} y={600 + i * 90} text={n.text} color={i % 2 ? p.acc2 : '#ffffff'} T={T} t0={n.t} />)}
     </AbsoluteFill>
   );
 };
@@ -865,7 +1032,7 @@ const End = ({sh, p, data, T}) => {
           <div style={{position: 'absolute', left: 44, top: 320, fontFamily: SANS, fontWeight: 800, fontSize: 44, color: '#fff'}}>{nx.title}</div>
           <div style={{position: 'absolute', left: 44, top: 380, fontFamily: SANS, fontWeight: 600, fontSize: 30, color: '#ffffff90'}}>{nx.sub}</div>
         </div>
-        <div style={{position: 'absolute', left: 140, top: 760, opacity: sp(T, sh.t0 + 0.8), fontFamily: SANS, fontWeight: 900, fontSize: 44, color: '#0d1020', background: p.warm, padding: '14px 34px', borderRadius: 40}}>Subscribe for one chart a day</div>
+        <div style={{position: 'absolute', left: 140, top: 760, opacity: sp(T, sh.t0 + 0.8), fontFamily: SANS, fontWeight: 900, fontSize: 44, color: '#0d1020', background: p.warm, padding: '14px 34px', borderRadius: 40}}>{sh.cta || 'Subscribe for one chart a day'}</div>
       </AbsoluteFill>
     );
   }
@@ -1011,7 +1178,7 @@ const Music = ({spec}) => {
 
 // ---------------- composição ----------------
 const BarsAny = (props) => (props.sh.mode === 'abs' ? <BarsAbs {...props} /> : <Bars {...props} />);
-const VIEWS = {lines: Lines, bars: BarsAny, globe: Globe, stats: Stats, duel: Duel, list: List, cards: Cards, hbars: HBars, end: End, people: People};
+const VIEWS = {lines: Lines, bars: BarsAny, globe: Globe, stats: Stats, duel: Duel, list: List, cards: Cards, hbars: HBars, end: End, people: People, code: Code, bits: Bits, counter: Counter, radar: Radar, launch: Launch};
 
 const ShotView = ({sh, idx, p, data}) => {
   const f = useCurrentFrame();

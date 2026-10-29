@@ -1,0 +1,181 @@
+"""Gera specs/long/b-L01.json — How It Ticks longo #1: "Tiny Math Errors That Cost Lives and Millions".
+Fatos de fontes primárias (GAO IMTEC-92-26, Inquiry Board Ariane 501, Wikipedia/VSE, CBC 2014); contas conferidas em "checks" (regra expr)."""
+import json, os
+
+ACTS = ["Cold open", "Why computers can't count to 0.1", "The clock that drifted", "Too big to fit", "Death by a thousand cuts", "Still ticking"]
+GAO = "US GAO, IMTEC-92-26 (1992): Patriot Missile Defense, Software Problem Led to System Failure at Dhahran"
+B01 = "0001100110011001100110011001100110011001"  # 0.1 em binário, depois da vírgula
+
+shots = [
+    # ---------------- 0 · COLD OPEN ----------------
+    dict(act=0, type="globe", src=GAO,
+         narration="February twenty-fifth, 1991. Dhahran, Saudi Arabia. {p} An American Patriot missile battery is guarding a base. Its radar picks up an incoming Iraqi Scud missile. {pp} And then it does... nothing.",
+         view=dict(lon=48.0, lat=27.5, zoom=6.0), hl=[], hl2=["SAU"],
+         keys=[dict(at="Dhahran", lon=50.1, lat=26.3, zoom=18.0, dur=3.5)],
+         cities=[dict(at="Dhahran", name="Dhahran", lon=50.10, lat=26.29)],
+         react=[dict(at="February", pose="idle"), dict(at="incoming", pose="pointL"), dict(at="nothing", pose="shock")]),
+    dict(act=0, type="stats", src=GAO, title="February 25, 1991",
+         narration="The Scud hit an army barracks. Twenty-eight American soldiers were killed. {pp} The cause wasn't a broken part, and it wasn't a human mistake. {p} It was a number. {pp} One tenth.",
+         stats=[dict(at="Twenty-eight", value=28, fmt="int", label="American soldiers killed")],
+         kicker=dict(at="One tenth", text="0.1"),
+         react=[dict(at="barracks", pose="idle", lean=1), dict(at="a number", pose="think"), dict(at="One tenth", pose="pointUp")]),
+    dict(act=0, type="host", bg="none",
+         narration="This is a story about four tiny math errors. {p} A missile that missed. A rocket that blew itself up. A stock market that lost half its value for no reason. {p} And a bug that's still ticking inside billions of devices. {p} It all starts with something your computer gets wrong right now: zero point one, plus zero point two.",
+         items=[dict(at="A missile", text="A missile that missed"), dict(at="A rocket", text="A rocket that blew itself up"), dict(at="A stock market", text="A market that “lost” half its value"),
+                dict(at="still ticking", text="A bug that's still ticking", color="acc")],
+         react=[dict(at="four tiny", pose="pointUp"), dict(at="blew itself up", pose="shock"), dict(at="still ticking", pose="think"), dict(at="zero point one", pose="pointL")]),
+
+    # ---------------- 1 · 0.1 ----------------
+    dict(act=1, type="code", title="any programming console", src="IEEE 754 double precision (JavaScript, Python, Java, C...)",
+         narration="Open any programming console and type: zero point one, plus zero point two. {p} You'd expect zero point three. {pp} You get this. {p} Zero point three, then fifteen zeros, then a four.",
+         lines=[dict(at="Open any", **{"in": "0.1 + 0.2", "out": "0.30000000000000004", "bad": True, "note": "not 0.3"})],
+         react=[dict(at="Open any", pose="pointL"), dict(at="You get this", pose="shock"), dict(at="then a four", pose="shrug")]),
+    dict(act=1, type="code", title="the same problem, in decimal", src="",
+         narration="Your computer isn't broken. This is how almost every computer stores numbers, a standard called IEEE seven fifty-four, used by JavaScript, Python, Java and C. {p} And you already know the problem from school. {p} Try writing one third as a decimal. Zero point three three three three three... It never ends. {p} At some point you have to stop, and the moment you stop, you're slightly wrong.",
+         lines=[dict(at="Try writing", **{"in": "1 / 3", "out": "0.3333333333333333", "note": "the 3s never end, so you have to stop somewhere"})],
+         react=[dict(at="isn't broken", pose="idle"), dict(at="from school", pose="think"), dict(at="slightly wrong", pose="shrug")]),
+    dict(act=1, type="bits", src="Binary expansion of 1/10", label="0.1 in binary", sub="= 0.0001100110011…",
+         bits=B01, reg=32, repeat=[3, 4], speed=0.05,
+         show=dict(at="Computers count"), chop=dict(at="chops off", text="no room left: the rest is thrown away"),
+         narration="Computers count in binary, in ones and zeros. {p} And in binary, one tenth is just like one third: it never ends. {p} Zero point zero zero zero one one zero zero one one zero zero one one, forever. {p} So the computer keeps as many digits as it has room for, and chops off the rest.",
+         react=[dict(at="binary", pose="pointL"), dict(at="never ends", pose="shock"), dict(at="chops off", pose="idle", nod=1)]),
+    dict(act=1, type="code", title="how wrong is it?", src="",
+         narration="That chopped-off piece is the four at the end. {p} The error is tiny, about five hundred-quadrillionths. {p} Most of the time, nobody cares. {pp} Unless you add it up, millions of times. {p} Which is exactly what happened in Dhahran.",
+         lines=[dict(at="The error is tiny", **{"in": "0.1 + 0.2 - 0.3", "out": "5.551115123125783e-17", "note": "about 0.00000000000000005"})],
+         react=[dict(at="tiny", pose="idle"), dict(at="Unless", pose="think", lean=1), dict(at="Dhahran", pose="pointL")]),
+
+    dict(act=1, type="code", title="add one tenth, ten times", src="IEEE 754 double precision",
+         narration="Here's another way to see it. {p} Add one tenth to itself ten times. {p} You should get exactly one. {pp} You don't. {p} That's why banking software never stores money as fractions of a dollar. It counts whole cents, as integers, where there's nothing to chop.",
+         lines=[dict(at="Add one tenth", **{"in": "x = 0"}),
+                dict(at="ten times", **{"in": "for i in range(10): x += 0.1"}),
+                dict(at="You don't", **{"in": "x", "out": "0.9999999999999999", "bad": True, "note": "not 1"}),
+                dict(at="whole cents", **{"in": "10 * 10    # in cents", "out": "100", "note": "whole numbers: exact"})],
+         react=[dict(at="another way", pose="pointUp"), dict(at="You don't", pose="shock"), dict(at="whole cents", pose="idle", nod=1)]),
+
+    # ---------------- 2 · PATRIOT ----------------
+    dict(act=2, type="bits", src=GAO + " · bits after the binary point", label="0.1 inside the Patriot", sub="24-bit register",
+         bits=B01, reg=23, repeat=[3, 4], speed=0.045,
+         show=dict(at="To turn"), regtext=dict(at="twenty-four bits", text="what fits in the register"), chop=dict(at="got chopped", text="≈ 0.000000095 s lost on every tick"),
+         narration="The Patriot's computer kept time by counting tenths of a second. {p} To turn that count into seconds, it multiplied by one tenth, stored in a register only twenty-four bits long. {p} So one tenth got chopped. {p} Every tick, the clock lost about ninety-five billionths of a second.",
+         react=[dict(at="counting tenths", pose="think"), dict(at="twenty-four bits", pose="pointL"), dict(at="ninety-five billionths", pose="shrug")]),
+    dict(act=2, type="radar", src=GAO, start=0.0, perHour=0.003433, speed=1676, gateScale=1.194, maxM=700,
+         narration="To see why that mattered, you need to know how a Patriot tracks a target. {p} The radar spots a blip. Then it uses the time to predict where that blip should be a moment later, and it looks only inside a small window around that spot. {p} If the target shows up in the window, it's real: lock on. {p} If the window is empty, it's a false alarm: ignore it.",
+         react=[dict(at="how a Patriot", pose="think"), dict(at="small window", pose="pointL"), dict(at="lock on", pose="idle", nod=1), dict(at="ignore it", pose="shrug")]),
+    dict(act=2, type="radar", src=GAO + " · Appendix II", start=0.0, perHour=0.003433, speed=1676, gateScale=1.194, maxM=700,
+         narration="Ninety-five billionths of a second sounds like nothing. {p} But the battery had been running nonstop for over a hundred hours. That's three point six million ticks. {p} After a hundred hours, the clock was off by a third of a second. {p} A Scud travels about one point seven kilometers every second. {pp} The radar's tracking window had slid six hundred and eighty-seven meters away from where the missile actually was. {p} It looked, saw nothing, and decided there was no missile.",
+         keys=[dict(at="running nonstop", hours=8.0, dur=1.5), dict(at="three point six", hours=100.0, dur=6.0)],
+         react=[dict(at="sounds like nothing", pose="shrug"), dict(at="a third of a second", pose="think"), dict(at="six hundred and eighty-seven", pose="shock")]),
+    dict(act=2, type="list", src=GAO, title="Dhahran, February 1991",
+         narration="The worst part? {p} They knew. On February eleventh, Israeli data showed the tracking window drifting after just eight hours of nonstop running. {p} A corrected version of the software was released. {p} Then, on February twenty-first, the Army warned that very long run times could shift the window. {p} But it didn't say how long was too long. {pp} The fix reached Dhahran on February twenty-sixth. {p} One day too late.",
+         items=[dict(at="February eleventh", kind="bullet", text="Feb 11 · Israeli data: drift after 8 hours"),
+                dict(at="corrected version", kind="bullet", text="Feb 16 · fixed software released"),
+                dict(at="very long run times", kind="bullet", text="Feb 21 · warning: “very long run times”… how long?"),
+                dict(at="The fix reached", kind="strike", text="Feb 25 · Dhahran"),
+                dict(at="One day too late", kind="title", text="FIX ARRIVES FEB 26")],
+         react=[dict(at="They knew", pose="shock"), dict(at="corrected", pose="idle"), dict(at="how long was too long", pose="shrug"), dict(at="too late", pose="idle", lean=1)]),
+
+    # ---------------- 3 · OVERFLOW ----------------
+    dict(act=3, type="counter", src="CBC / BBC, 3–4 Dec 2014", title="YouTube views, Gangnam Style (2014)", unit="the biggest number a 32-bit counter can hold",
+         **{"from": 2147000000, "to": 2147483647}, dur=4.0,
+         go=dict(at="In 2014"), wrap=dict(at="One more view", value=-2147483648, text="one more view in a 32-bit counter"),
+         notes=[dict(at="sixty-four bits", text="YouTube moved to 64 bits in time")],
+         narration="The second kind of error isn't about tiny numbers. It's about big ones. {p} In 2014, Gangnam Style was about to pass two point one billion views, and YouTube noticed a problem. {p} Its view counter used a thirty-two-bit number, and the biggest number that fits is two billion, one hundred forty-seven million, four hundred eighty-three thousand, six hundred forty-seven. {p} One more view, and the counter wraps around to minus two billion. {p} YouTube switched to sixty-four bits just in time.",
+         react=[dict(at="big ones", pose="pointUp"), dict(at="One more view", pose="shock"), dict(at="just in time", pose="cheer")]),
+    dict(act=3, type="launch", src="Ariane 501 Inquiry Board report (19 July 1996)", title="Ariane 5 · flight 501 · 4 June 1996",
+         go=dict(at="lifts off"), boom=dict(at="blows itself up", at_s=37),
+         notes=[dict(at="four science", text="4 Cluster satellites on board")],
+         narration="Ariane 5 wasn't so lucky. {p} June fourth, 1996. Europe's new heavy rocket lifts off on its very first flight, carrying four science satellites. {p} Thirty-seven seconds later, it swings sideways, and blows itself up.",
+         react=[dict(at="wasn't so lucky", pose="shrug"), dict(at="lifts off", pose="pointUp"), dict(at="blows itself up", pose="shock")]),
+    dict(act=3, type="bits", src="Ariane 501 Inquiry Board report", label="64-bit number → 16-bit box", sub="horizontal bias (BH)",
+         bits="0100000011100110101001011000111101011100001010001111010111000011", reg=16, speed=0.03,
+         show=dict(at="It took"), chop=dict(at="too big", text="overflow: the value doesn't fit"),
+         narration="The cause? A piece of navigation code reused from the older Ariane 4. {p} It took a sixty-four-bit number, the rocket's horizontal bias, and squeezed it into a sixteen-bit box. {p} Ariane 5 flew faster than Ariane 4, the number was too big, {p} and the navigation computer crashed. Then the backup crashed too, for exactly the same reason.",
+         react=[dict(at="reused", pose="think"), dict(at="squeezed", pose="pointL"), dict(at="backup crashed", pose="shock")]),
+    dict(act=3, type="list", src="Ariane 501 Inquiry Board report (19 July 1996)", title="Ariane 501, second by second",
+         narration="What happened next took about two seconds. {p} With both navigation computers down, the flight computer read their error message as if it were real flight data. {p} It swung the engine nozzles all the way to one side. {p} The rocket turned sideways at high speed, the air started tearing it apart, and it triggered its own self-destruct.",
+         items=[dict(at="both navigation", kind="bullet", text="T+36.7 s · both navigation computers crash"),
+                dict(at="error message", kind="bullet", text="T+37 s · error message read as flight data"),
+                dict(at="engine nozzles", kind="bullet", text="T+37 s · nozzles swing to full deflection"),
+                dict(at="self-destruct", kind="strike", text="T+39 s · rocket breaks up, self-destructs")],
+         react=[dict(at="two seconds", pose="pointUp"), dict(at="error message", pose="think"), dict(at="tearing it apart", pose="shock")]),
+    dict(act=3, type="stats", src="Ariane 501 Inquiry Board report · estimated loss", title="The cruel detail",
+         narration="And here's the cruel detail. {p} That piece of code was only needed before liftoff. {p} On Ariane 5, after launch, it served no purpose at all. {pp} More than three hundred and seventy million dollars, lost to a number that didn't fit in a box nobody needed.",
+         stats=[dict(at="More than three hundred", value=370, fmt="usdM+", label="lost, rocket + satellites")],
+         react=[dict(at="cruel", pose="idle", lean=1), dict(at="no purpose", pose="shrug"), dict(at="More than three hundred", pose="shock")]),
+
+    # ---------------- 4 · VANCOUVER ----------------
+    dict(act=4, type="code", title="Vancouver Stock Exchange index, 1982", src="Vancouver Stock Exchange (Wikipedia; contemporary press)",
+         narration="Now the strangest one. {p} In January 1982, the Vancouver Stock Exchange launched a new index, starting at one thousand. {p} It was recalculated about three thousand times a day. {p} And every single time, the computer didn't round the result. {p} It just cut it off after three decimals.",
+         lines=[dict(at="starting at one", **{"in": "index = 1000.000", "out": "Jan 1982 · start"}),
+                dict(at="cut it off", **{"in": "999.87654 → ?", "out": "999.876   (cut, not rounded)", "bad": True})],
+         react=[dict(at="strangest", pose="think"), dict(at="three thousand", pose="pointL"), dict(at="cut it off", pose="shock")]),
+    dict(act=4, type="stats", src="Vancouver Stock Exchange (Wikipedia; contemporary press) · 1098.892 − 524.811", title="Lost to cutting, Jan 1982 → Nov 1983",
+         narration="Each cut was tiny, less than a thousandth of a point. {p} But three thousand cuts a day add up. {p} The index was quietly losing more than a point every trading day, while the actual stocks were doing fine. {pp} And nobody noticed, because a market going down slowly doesn't look like a bug. {p} It looks like a bad economy.",
+         stats=[dict(at="add up", value=574, fmt="int", label="index points that never existed")],
+         react=[dict(at="tiny", pose="idle"), dict(at="add up", pose="pointUp"), dict(at="nobody noticed", pose="think"), dict(at="bad economy", pose="shrug")]),
+    dict(act=4, type="duel", src="Vancouver Stock Exchange (Wikipedia; contemporary press)", title="Same market, November 1983",
+         left=dict(label="Reported", value=524.811, color="warm"), right=dict(label="Correct", value=1098.892, color="acc2"), fmt="dec3", badge="×2.1",
+         narration="After twenty-two months, by November 1983, the index read five hundred twenty-four point eight. {p} On paper, the market had lost almost half its value. {pp} When they finally recalculated it properly, the real number was one thousand ninety-eight point nine. {p} It had actually gone up.",
+         cues=[dict(at="five hundred twenty-four", show="a"), dict(at="one thousand ninety-eight", show="b")],
+         react=[dict(at="twenty-two months", pose="idle"), dict(at="lost almost half", pose="shock"), dict(at="actually gone up", pose="cheer")]),
+
+    # ---------------- 5 · 2038 ----------------
+    dict(act=5, type="counter", src="Unix time (seconds since 1 Jan 1970, signed 32-bit)", title="Unix clock, seconds since January 1, 1970", unit="last second that fits: 03:14:07 UTC, January 19, 2038",
+         **{"from": 2147480000, "to": 2147483647}, dur=4.0,
+         go=dict(at="Billions of computers"), wrap=dict(at="One second later", value=-2147483648, text="→ December 13, 1901"),
+         narration="And one of these errors is still ticking. {p} Billions of computers count time as seconds since January first, 1970. {p} In a thirty-two-bit number, that count runs out at three fourteen and seven seconds a.m., on January nineteenth, 2038. {p} One second later, the clock wraps around to December 1901.",
+         react=[dict(at="still ticking", pose="think"), dict(at="runs out", pose="pointL"), dict(at="December 1901", pose="shock")]),
+    dict(act=5, type="host", bg="none",
+         narration="Most modern systems already count in sixty-four bits, which lasts about two hundred and ninety-two billion years. {p} But old machines, embedded chips and forgotten code are everywhere, in cars, factories, routers and power systems, and many of them will still be running in 2038. {p} So the lesson isn't that computers are bad at math. {p} It's that every number lives in a box, {pp} and somebody has to check that the box is big enough.",
+         items=[dict(at="sixty-four bits", text="64 bits ≈ 292 billion years"), dict(at="forgotten code", text="…but old code is everywhere"), dict(at="lives in a box", text="Every number lives in a box.", color="acc"), dict(at="big enough", text="Check the box.", serif=True, size=72)],
+         react=[dict(at="sixty-four", pose="cheer"), dict(at="forgotten code", pose="shrug"), dict(at="every number", pose="pointUp"), dict(at="big enough", pose="idle", nod=1)]),
+    dict(act=5, type="end", src="",
+         next=dict(kicker="NEXT VIDEO", big="931 GB", color="acc", title="Your 1 TB drive isn't lying", sub="where the other 69 GB went"),
+         narration="Next time: another number that isn't what it looks like. Why a one-terabyte drive only shows nine hundred thirty-one gigabytes. {p} Subscribe so you don't miss it. I'm How It Ticks. See you in the next one.",
+         cta="Subscribe: how things really work",
+         hold=14,
+         react=[dict(at="one-terabyte", pose="pointL"), dict(at="See you", pose="wave")]),
+]
+
+checks = [
+    dict(say="0.1 + 0.2 = 0.30000000000000004", rule="expr", expr="repr(0.1 + 0.2)", equal="0.30000000000000004"),
+    dict(say="fifteen zeros then a four", rule="expr", expr="repr(0.1 + 0.2)[3:-1]", equal="0" * 15),
+    dict(say="0.1+0.2-0.3 = 5.55e-17", rule="expr", expr="repr(0.1 + 0.2 - 0.3)", equal="5.551115123125783e-17"),
+    dict(say="1/3 printed", rule="expr", expr="repr(1/3)", equal="0.3333333333333333"),
+    dict(say="0.1 binary digits shown", rule="expr", expr="''.join(str(int((0.1 * 2**k) % 2)) for k in range(1, 41))", equal=B01),
+    dict(say="chopped tenth error ≈ 0.000000095", rule="expr", expr="round((0.1 - (838860 / 2**23)) * 1e9, 1)", equal=95.4),
+    dict(say="100 hours = 3.6 million ticks", rule="expr", expr="100 * 3600 * 10", equal=3600000),
+    dict(say="drift after 100 h ≈ a third of a second (0.3433)", rule="expr", expr="round(3600000 * (0.1 - 838860 / 2**23), 4)", equal=0.3433),
+    dict(say="sum of ten 0.1 = 0.9999999999999999", rule="expr", expr="repr(__import__('functools').reduce(lambda a, b: a + b, [0.1] * 10, 0))", equal="0.9999999999999999"),
+    dict(say="Vancouver: 574 points lost, >1 point per trading day", rule="expr", expr="[round(1098.892 - 524.811), (1098.892 - 524.811) / (22 * 21) > 1]", equal=[574, True]),
+    dict(say="32-bit max 2,147,483,647", rule="expr", expr="2**31 - 1", equal=2147483647),
+    dict(say="2038-01-19 03:14:07 UTC", rule="expr", expr="__import__('datetime').datetime.utcfromtimestamp(2**31 - 1).isoformat()", equal="2038-01-19T03:14:07"),
+    dict(say="wraps to December 1901", rule="expr", expr="(__import__('datetime').datetime(1970, 1, 1) + __import__('datetime').timedelta(seconds=-2**31)).strftime('%Y-%m')", equal="1901-12"),
+    dict(say="64 bits ≈ 292 billion years", rule="expr", expr="round(2**63 / (365.25 * 86400) / 1e9)", equal=292),
+    dict(say="Vancouver: reported/correct ratio ~2.1, 'lost almost half'", rule="expr", expr="round(1098.892 / 524.811, 1)", equal=2.1),
+]
+
+for i, sh in enumerate(shots):
+    sh["id"] = f"s{i:02d}"
+
+spec = dict(id="b-L01-math-errors", channel="howitticks", chapter0="The missile that missed", w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
+            datasets=[], snapshot=[],
+            thumb=dict(kind="text", top="0.1 + 0.2 =", big="0.30000…4", line2="28 DEAD?!"),
+            voice=dict(model="", name="Iapetus",
+                       style=("You are the narrator of a popular engineering explainer channel on YouTube. Read the script below like a sharp, curious "
+                              "engineer telling a friend a story they won't believe: clear, warm, a little dry humor, at an engaged pace of about "
+                              "150 words per minute. Slow down slightly for numbers and let the big reveals land. Serious and respectful when talking "
+                              "about the soldiers who died. Never sound like an advertisement or an audiobook.")),
+            music=[dict(act=0, track="Hidden Agenda", vol=0.22), dict(act=1, track="Thinking Music", vol=0.22), dict(act=2, track="Ice Flow", vol=0.22),
+                   dict(act=3, track="Impact Moderato", vol=0.22), dict(act=4, track="Deliberate Thought", vol=0.22), dict(act=5, track="Floating Cities", vol=0.22)],
+            yt=dict(title="Tiny Math Errors That Cost Lives and Millions",
+                    description=("Why does 0.1 + 0.2 not equal 0.3 on a computer? The same kind of tiny error made a Patriot missile miss in 1991, "
+                                 "blew up Ariane 5 in 1996, and made the Vancouver Stock Exchange \"lose\" half its value. And one of these bugs is still ticking: 2038.\n\n"
+                                 "Sources: US GAO report IMTEC-92-26 (1992); Ariane 501 Inquiry Board report (1996); Vancouver Stock Exchange index history; "
+                                 "CBC/BBC (Dec 2014) on YouTube's 64-bit counter; IEEE 754 floating point.\n"
+                                 "{music_credits}\nNarration is AI-generated.\n\n#engineering #programming #floatingpoint #history"),
+                    tags=["floating point", "0.1 + 0.2", "patriot missile", "ariane 5", "integer overflow", "2038 problem", "programming", "engineering"], lang="en"))
+
+json.dump(spec, open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "b-L01.json"), "w"), ensure_ascii=False, indent=1)
+words = sum(len(s["narration"].replace("{p}", "").replace("{pp}", "").replace("<soft>", "").replace("</soft>", "").split()) for s in shots)
+print("shots", len(shots), "palavras", words, f"~{words / 145:.1f} min a 145 wpm")
