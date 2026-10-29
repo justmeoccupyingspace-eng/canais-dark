@@ -164,10 +164,17 @@ datasets = [
 ]
 snapshot = []
 
+clips = [
+    dict(**{"from": "s00", "to": "s01"}, hook="Ireland is 'richer' than America. *It isn't.*", title="Ireland is richer than the US on paper. Here's the catch #Shorts", desc="$113,000 of output per person, more than the US. So why doesn't it feel like it?"),
+    dict(**{"from": "s03", "to": "s04"}, hook="Ireland's economy grew *25%* in one year. How?", title="Ireland's economy 'grew' 25% in one year #Shorts", desc="2015: the year Paul Krugman called it leprechaun economics."),
+    dict(**{"from": "s08", "to": "s08"}, hook="Apple paid *0.005%* tax in Ireland", title="Apple's tax rate in Ireland was 0.005% #Shorts", desc="And Ireland fought for 8 years NOT to collect €13 billion."),
+    dict(**{"from": "s11", "to": "s12"}, hook="*45%* of Ireland's GDP doesn't stay in Ireland", title="Almost half of Ireland's GDP isn't really Irish #Shorts", desc="GDP vs GNI*: €110k vs €61k per person."),
+]
+
 for i, sh in enumerate(shots):
     sh["id"] = f"s{i:02d}"
 
-spec = dict(id="a-L03-ireland", channel="chartbound", chapter0="Richer than America?",
+spec = dict(id="a-L03-ireland", clips=clips, channel="chartbound", chapter0="Richer than America?",
             thumb=dict(set="gdppc", iso="IRL", years=[1990, 2024], flags=["IRL"], top="IRELAND", big="$113K", line2="EACH?!", color="#3ddc84"), w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
             datasets=datasets, snapshot=snapshot,
             voice=dict(model="", name="Charon",

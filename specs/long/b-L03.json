@@ -1,5 +1,35 @@
 {
  "id": "b-L03-gps-einstein",
+ "clips": [
+  {
+   "from": "s00",
+   "to": "s01",
+   "hook": "Without Einstein, GPS drifts *11 km a day*",
+   "title": "Without Einstein, GPS would be off by 11 km a day #Shorts",
+   "desc": "GPS satellite clocks run fast by 38 microseconds a day."
+  },
+  {
+   "from": "s09",
+   "to": "s09",
+   "hook": "They flew atomic clocks on planes to *test Einstein*",
+   "title": "They flew atomic clocks around the world to test Einstein #Shorts",
+   "desc": "Hafele & Keating, 1971."
+  },
+  {
+   "from": "s13",
+   "to": "s13",
+   "hook": "GPS clocks are set wrong *on purpose*",
+   "title": "GPS clocks are set wrong on purpose #Shorts",
+   "desc": "10.22999999543 MHz instead of 10.23 MHz."
+  },
+  {
+   "from": "s11",
+   "to": "s12",
+   "hook": "If GPS ignored Einstein, *this* would break",
+   "title": "What breaks if GPS ignores relativity #Shorts",
+   "desc": "Maps, cell towers and stock exchanges."
+  }
+ ],
  "channel": "howitticks",
  "chapter0": "Clocks that run fast",
  "min_total": 420,

@@ -144,10 +144,17 @@ checks = [
     dict(say="NTS-2: 442.5 vs 446.5 = <1% off", rule="expr", expr="abs(446.5 - 442.5) / 446.5 < 0.01", equal=True),
 ]
 
+clips = [
+    dict(**{"from": "s00", "to": "s01"}, hook="Without Einstein, GPS drifts *11 km a day*", title="Without Einstein, GPS would be off by 11 km a day #Shorts", desc="GPS satellite clocks run fast by 38 microseconds a day."),
+    dict(**{"from": "s09", "to": "s09"}, hook="They flew atomic clocks on planes to *test Einstein*", title="They flew atomic clocks around the world to test Einstein #Shorts", desc="Hafele & Keating, 1971."),
+    dict(**{"from": "s13", "to": "s13"}, hook="GPS clocks are set wrong *on purpose*", title="GPS clocks are set wrong on purpose #Shorts", desc="10.22999999543 MHz instead of 10.23 MHz."),
+    dict(**{"from": "s11", "to": "s12"}, hook="If GPS ignored Einstein, *this* would break", title="What breaks if GPS ignores relativity #Shorts", desc="Maps, cell towers and stock exchanges."),
+]
+
 for i, sh in enumerate(shots):
     sh["id"] = f"s{i:02d}"
 
-spec = dict(id="b-L03-gps-einstein", channel="howitticks", chapter0="Clocks that run fast", min_total=420, w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
+spec = dict(id="b-L03-gps-einstein", clips=clips, channel="howitticks", chapter0="Clocks that run fast", min_total=420, w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
             datasets=[], snapshot=[],
             thumb=dict(kind="text", top="WITHOUT EINSTEIN", big="+11 KM", line2="EVERY DAY", sticker="GPS"),
             voice=dict(model="", name="Iapetus",

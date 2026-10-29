@@ -1,5 +1,35 @@
 {
  "id": "b-L02-931gb",
+ "clips": [
+  {
+   "from": "s00",
+   "to": "s01",
+   "hook": "Your 1 TB drive shows *931 GB*. Who's lying?",
+   "title": "Why your 1 TB drive shows 931 GB #Shorts",
+   "desc": "69 GB missing? Not really."
+  },
+  {
+   "from": "s12",
+   "to": "s12",
+   "hook": "Your SSD hides *100 GB* on purpose",
+   "title": "Your SSD secretly holds more than 1 TB #Shorts",
+   "desc": "1,024 binary gigabytes of flash, sold as 1 TB."
+  },
+  {
+   "from": "s10",
+   "to": "s10",
+   "hook": "The floppy disk's *1.44 MB* was never 1.44 MB",
+   "title": "The 1.44 MB floppy disk was never 1.44 MB #Shorts",
+   "desc": "Half decimal, half binary."
+  },
+  {
+   "from": "s14",
+   "to": "s14",
+   "hook": "Your 1 Gbps internet is really *125 MB/s*",
+   "title": "Why your 1 Gbps internet downloads at 125 MB/s #Shorts",
+   "desc": "Little b, big B: a factor of eight."
+  }
+ ],
  "channel": "howitticks",
  "chapter0": "69 GB, gone?",
  "min_total": 420,

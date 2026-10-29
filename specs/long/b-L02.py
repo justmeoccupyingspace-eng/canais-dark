@@ -143,10 +143,17 @@ checks = [
     dict(say="first five powers of two", rule="expr", expr="repr([2**n for n in range(1, 6)])", equal="[2, 4, 8, 16, 32]"),
 ]
 
+clips = [
+    dict(**{"from": "s00", "to": "s01"}, hook="Your 1 TB drive shows *931 GB*. Who's lying?", title="Why your 1 TB drive shows 931 GB #Shorts", desc="69 GB missing? Not really."),
+    dict(**{"from": "s12", "to": "s12"}, hook="Your SSD hides *100 GB* on purpose", title="Your SSD secretly holds more than 1 TB #Shorts", desc="1,024 binary gigabytes of flash, sold as 1 TB."),
+    dict(**{"from": "s10", "to": "s10"}, hook="The floppy disk's *1.44 MB* was never 1.44 MB", title="The 1.44 MB floppy disk was never 1.44 MB #Shorts", desc="Half decimal, half binary."),
+    dict(**{"from": "s14", "to": "s14"}, hook="Your 1 Gbps internet is really *125 MB/s*", title="Why your 1 Gbps internet downloads at 125 MB/s #Shorts", desc="Little b, big B: a factor of eight."),
+]
+
 for i, sh in enumerate(shots):
     sh["id"] = f"s{i:02d}"
 
-spec = dict(id="b-L02-931gb", channel="howitticks", chapter0="69 GB, gone?", min_total=420, w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
+spec = dict(id="b-L02-931gb", clips=clips, channel="howitticks", chapter0="69 GB, gone?", min_total=420, w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
             datasets=[], snapshot=[],
             thumb=dict(kind="text", top="MY 1 TB DRIVE SAYS", big="931 GB", line2="WHY?!", sticker="69 GB GONE?"),
             voice=dict(model="", name="Iapetus",
