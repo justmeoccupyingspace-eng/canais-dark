@@ -1029,7 +1029,14 @@ const ShotView = ({sh, idx, p, data}) => {
         {View ? <View sh={isHost ? {...sh, type: sh.bg, keys: null, labels: null, cues: null, react: null} : sh} p={p} data={data} T={T} dim={isHost} /> : null}
         {isHost ? <HostSay sh={sh} p={p} T={T} /> : null}
         {sh.cards && sh.type !== 'cards' && sh.type !== 'hbars' && !isHost ? <CardsRow sh={sh} p={p} T={T} /> : null}
-        {sh.chips && sh.type !== 'cards' && !isHost ? sh.chips.map((c, i) => <Pill key={'ch' + i} x={150 + i * 470} y={sh.type === 'globe' ? 900 : 975} text={c.text} color={i % 2 ? p.acc2 : '#ffffff'} T={T} t0={c.t} />) : null}
+        {sh.chips && sh.type !== 'cards' && !isHost ? (
+          <div style={{position: 'absolute', left: 150, top: sh.type === 'globe' ? 880 : 950, display: 'flex', gap: 18}}>
+            {sh.chips.map((c, i) => {
+              const k = sp(T, c.t, {damping: 11, stiffness: 190});
+              return k > 0.001 ? <div key={'ch' + i} style={{opacity: Math.min(1, k * 1.4), transform: `scale(${0.6 + 0.4 * k})`, transformOrigin: 'left center', background: i % 2 ? p.acc2 : '#ffffff', color: '#0d1020', fontFamily: SANS, fontWeight: 900, fontSize: 34, padding: '8px 18px', borderRadius: 14, whiteSpace: 'nowrap', boxShadow: '0 10px 30px rgba(0,0,0,.4)'}}>{c.text}</div> : null;
+            })}
+          </div>
+        ) : null}
         {sh.kicker && !['bars', 'hbars'].includes(sh.type) && !isHost && sh.kicker.t != null ? <Pill x={1300} y={175} text={sh.kicker.text} color={p.acc} T={T} t0={sh.kicker.t} align="right" /> : null}
       </AbsoluteFill>
       {sh.type === 'list' || sh.type === 'duel' ? <Kicker text={sh.title} p={p} T={T} t0={sh.t0} y={sh.cards ? 290 : 92} x={sh.cards ? 300 : 120} /> : null}
@@ -1079,6 +1086,35 @@ export const Thumb = ({spec}) => {
   useFonts();
   const p = PAL[spec.channel] || PAL.chartbound;
   const data = spec.data || {};
+  const th = spec.thumb;
+  if (th) {
+    const pts = ser(data, th.set, th.iso).filter(([y]) => y >= th.years[0] && y <= th.years[1]);
+    const vmax = th.ymax || Math.max(...pts.map((q) => q[1])) * 1.1;
+    const X = (y) => 60 + ((y - th.years[0]) / (th.years[1] - th.years[0])) * 700;
+    const Y = (v) => 680 - (v / vmax) * 400;
+    const d = pts.map(([y, v], i) => `${i ? 'L' : 'M'}${X(y)},${Y(v)}`).join('');
+    const last = pts[pts.length - 1];
+    return (
+      <AbsoluteFill style={{background: `radial-gradient(1000px 700px at 35% 55%, ${p.bg1}, ${p.bg2})`}}>
+        <svg width={1280} height={720} style={{position: 'absolute'}}>
+          <path d={d} fill="none" stroke={th.color || '#ff8ad8'} strokeOpacity={0.3} strokeWidth={40} strokeLinecap="round" strokeLinejoin="round" />
+          <path d={d} fill="none" stroke={th.color || '#ff8ad8'} strokeWidth={16} strokeLinecap="round" strokeLinejoin="round" />
+          {last ? <circle cx={X(last[0])} cy={Y(last[1])} r={28} fill="#fff" stroke={p.acc} strokeWidth={10} /> : null}
+        </svg>
+        <div style={{position: 'absolute', left: 60, top: 40, display: 'flex', gap: 18, alignItems: 'center'}}>
+          {(th.flags || []).map((f) => <Flag key={f} iso={f} w={150} />)}
+          <div style={{fontFamily: SANS, fontWeight: 900, fontSize: 64, color: '#fff', textShadow: '0 6px 0 #000a'}}>{th.top}</div>
+        </div>
+        <div style={{position: 'absolute', left: 60, top: 170, fontFamily: SANS, fontWeight: 900, fontSize: 150, lineHeight: 0.92, color: p.acc, letterSpacing: -5, textShadow: '0 10px 0 #000b'}}>{th.big}<br /><span style={{color: '#fff', fontSize: 104}}>{th.line2}</span></div>
+        <div style={{position: 'absolute', left: 600, top: 0, width: 640, height: 720}}>
+          <ThreeCanvas width={640} height={720} camera={{fov: 30, position: [0, 0, 14]}} gl={{antialias: true, alpha: true}}>
+            <Lights />
+            <Mascot {...p.mascot} pose="shock" prevPose="shock" poseAt={-60} talk={0} look={[-0.6, 0.2]} enter={-60} scale={1.9} position={[0.05, -0.85, 0]} turn={-0.2} />
+          </ThreeCanvas>
+        </div>
+      </AbsoluteFill>
+    );
+  }
   const A = ser(data, 'ppp', 'POL'), B = ser(data, 'ppp', 'JPN');
   const X = (y) => 60 + ((y - 1990) / 36) * 700;
   const Y = (v) => 660 - (v / 64000) * 420;

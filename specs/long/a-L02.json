@@ -2,6 +2,21 @@
  "id": "a-L02-korea",
  "channel": "chartbound",
  "chapter0": "The lowest number on Earth",
+ "thumb": {
+  "set": "tfr",
+  "iso": "KOR",
+  "years": [
+   1960,
+   2025
+  ],
+  "ymax": 6.6,
+  "flags": [
+   "KOR"
+  ],
+  "top": "SOUTH KOREA",
+  "big": "0.72",
+  "line2": "WENT UP?!"
+ },
  "w": 1920,
  "h": 1080,
  "fps": 30,
@@ -747,7 +762,7 @@
     0,
     60000000.0
    ],
-   "narration": "In December 2024, Korea officially became a super-aged society: one in five people is now sixty-five or older. {p} And the official projection? {p} Fifty-one point seven million people today. {p} Thirty-six point two million by 2072. {p} And almost half of them would be sixty-five or older.",
+   "narration": "In December 2024, Korea officially became a super-aged society: one in five people is now sixty-five or older. {p} And the official projection? {p} About fifty-two million people today. {p} Thirty-six point two million by 2072. {p} And almost half of them would be sixty-five or older.",
    "keys": [
     {
      "at": "In December 2024",
@@ -762,7 +777,7 @@
    ],
    "labels": [
     {
-     "at": "Fifty-one point seven",
+     "at": "fifty-two million",
      "iso": "KOR",
      "year": 2024
     },
@@ -784,7 +799,7 @@
    ],
    "react": [
     {
-     "at": "Fifty-one",
+     "at": "fifty-two million",
      "pose": "pointL"
     },
     {
@@ -1145,7 +1160,7 @@
     "value": 2.1,
     "label": "2.1"
    },
-   "narration": "So can a government fix this? {p} Hungary tried harder than most: tax breaks, cheap loans, cash for families. {p} Its fertility rate rose from about one point two to almost one point six, {p} then slipped back. {pp} The only rich country comfortably above replacement is Israel, at around two point nine, {p} and demographers mostly credit culture and religion, not government checks.",
+   "narration": "So can a government fix this? {p} Hungary tried harder than most: tax breaks, cheap loans, cash for families. {p} Its fertility rate rose from about one point two to about one point six, {p} then slipped back. {pp} The only rich country comfortably above replacement is Israel, at around two point nine, {p} and demographers mostly credit culture and religion, not government checks.",
    "keys": [
     {
      "at": "Hungary tried",
@@ -1170,7 +1185,7 @@
      "year": 2011
     },
     {
-     "at": "almost one point six",
+     "at": "about one point six",
      "iso": "HUN",
      "year": 2021
     },
@@ -1427,11 +1442,11 @@
    "tol": 0.03
   },
   {
-   "say": "51.7 million today",
+   "say": "about 52 million today",
    "set": "pop",
    "iso": "KOR",
    "year": 2024,
-   "approx": 51700000.0,
+   "approx": 52000000.0,
    "tol": 0.01
   },
   {
@@ -1459,7 +1474,7 @@
    "tol": 0.04
   },
   {
-   "say": "Hungary almost 1.6 (2021)",
+   "say": "Hungary about 1.6 (2021)",
    "set": "tfr",
    "iso": "HUN",
    "year": 2021,
