@@ -230,7 +230,27 @@ def junk_spans(times, dur, lead=2.0, gap=2.5):
     return sp_
 
 
+def snap(x, t, lo, hi):
+    """move o ponto de corte para o trecho de 20 ms mais silencioso dentro de [lo, hi] (não deixa sobra de sílaba)."""
+    lo, hi = max(0.0, lo), min(len(x) / SR, hi)
+    if hi - lo < 0.04:
+        return t
+    n = int(0.02 * SR)
+    seg = x[int(lo * SR):int(hi * SR)]
+    k = len(seg) // n
+    if k < 2:
+        return t
+    e = np.sqrt(np.mean(seg[: k * n].reshape(k, n) ** 2, axis=1))
+    return lo + (int(np.argmin(e)) + 0.5) * n / SR
+
+
 def excise(x, times, spans):
+    ref = []
+    for a, b in spans:
+        a2 = snap(x, a, a - 0.23, a + 0.4) if a > 0 else 0.0
+        b2 = snap(x, b, b - 0.4, b + 0.2) if b < len(x) / SR else b
+        ref.append((min(a2, b2), max(a2, b2)))
+    spans = ref
     keep = np.ones(len(x), bool)
     for a, b in spans:
         keep[int(a * SR):int(b * SR)] = False
