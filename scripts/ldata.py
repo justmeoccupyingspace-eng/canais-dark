@@ -183,6 +183,12 @@ def check(S, c):
                 firsts.append(ys[0] if ys else None)
             ok = all(firsts) and firsts == sorted(firsts) and firsts[-1] <= c["by"]
             return ok, f"passou (de vez) em {dict(zip(c['order'], firsts))}"
+        if r == "rank":  # posição (1 = maior) entre os países listados no ano
+            vals = {i: S[c["set"]][i][c["year"]] for i in c["among"] if c["year"] in S[c["set"]].get(i, {})}
+            v = vals[c["iso"]]
+            rk = 1 + sum(1 for x in vals.values() if x > v)
+            ok = (rk == c["equal"]) if "equal" in c else (c.get("min", 1) <= rk <= c.get("max", 99))
+            return ok, f"{c['iso']} = {v:g}, posição {rk} de {len(vals)}"
         if r == "expr":  # conta em Python (expressões do próprio spec)
             v = eval(c["expr"], {"__builtins__": __builtins__})
             return v == c["equal"], f"{c['expr']} = {v!r}"

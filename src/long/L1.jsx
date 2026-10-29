@@ -47,6 +47,9 @@ export const fmt = (v, k) => {
     case 'usdM': return '$' + Math.round(v) + 'M';
     case 'usdM+': return '>$' + Math.round(v) + 'M';
     case 'dec3': return v.toFixed(3);
+    case 'pct1': return v.toFixed(1) + '%';
+    case 'pct3': return v.toFixed(3) + '%';
+    case 'eurk': return '€' + Math.round(v / 1000) + 'k';
     default: return String(Math.round(v));
   }
 };
