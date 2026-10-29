@@ -61,7 +61,7 @@
      "text": "the fix: relativity"
     }
    ],
-   "narration": "Only by about thirty-eight millionths of a second a day. {p} Sounds like nothing. {p} But if nobody corrected it, GPS would drift by about eleven kilometers, every single day. {pp} The fix comes from Albert Einstein, and from two ideas most people think only matter near black holes.",
+   "narration": "Only by about thirty-eight millionths of a second a day. {p} Sounds like nothing. {p} But if nobody corrected it, GPS would drift by about eleven kilometers, every single day. {pp} The fix comes from Albert Einstein, and from two ideas most people think only matter near black holes. {p} It might be the most useful thing relativity has ever done. {p} Let's see how a few billionths of a second decide whether your map puts you on the right street.",
    "react": [
     {
      "at": "thirty-eight millionths",
@@ -156,7 +156,7 @@
    "act": 1,
    "type": "orbit",
    "src": "Trilateration: 3 ranges fix a point; the 4th satellite solves the receiver clock error",
-   "narration": "With the distance to three satellites, your phone can pin down a single point. {p} But your phone has a cheap quartz clock, nowhere near an atomic one. {p} So it uses a fourth satellite to solve for the time as well. {p} Four satellites, four unknowns: where you are, in three dimensions, and what time it really is.",
+   "narration": "With the distance to three satellites, your phone can pin down a single point. {p} But your phone has a cheap quartz clock, nowhere near an atomic one. {p} So it uses a fourth satellite to solve for the time as well. {p} Four satellites, four unknowns: where you are, in three dimensions, and what time it really is. {p} Usually your phone can see more than four, and uses the extras to sharpen the fix.",
    "sats": 6,
    "link": {
     "at": "three satellites"
@@ -350,6 +350,54 @@
    "id": "s08"
   },
   {
+   "act": 2,
+   "type": "duel",
+   "src": "Hafele & Keating, Science 177 (1972) · flights of October 1971",
+   "title": "1971: four atomic clocks on airliners",
+   "left": {
+    "label": "flying east",
+    "value": -59,
+    "color": "acc2"
+   },
+   "right": {
+    "label": "flying west",
+    "value": 273,
+    "color": "warm"
+   },
+   "fmt": "nsec",
+   "badge": "AS PREDICTED",
+   "cues": [
+    {
+     "at": "Flying east",
+     "show": "a"
+    },
+    {
+     "at": "Flying west",
+     "show": "b"
+    }
+   ],
+   "narration": "If that sounds too weird to be real, it was tested with plane tickets. {p} In 1971, two physicists, Joseph Hafele and Richard Keating, flew four atomic clocks around the world on ordinary passenger jets, then compared them with clocks left on the ground. {p} Flying east, the clocks lost about fifty-nine billionths of a second. {p} Flying west, they gained about two hundred seventy-three. {pp} Within the error bars of what Einstein's theories predicted.",
+   "react": [
+    {
+     "at": "plane tickets",
+     "pose": "cheer"
+    },
+    {
+     "at": "four atomic clocks",
+     "pose": "pointL"
+    },
+    {
+     "at": "Flying east",
+     "pose": "think"
+    },
+    {
+     "at": "Einstein's theories predicted",
+     "pose": "pointUp"
+    }
+   ],
+   "id": "s09"
+  },
+  {
    "act": 3,
    "type": "code",
    "title": "38 µs, in distance",
@@ -389,7 +437,7 @@
      "pose": "shock"
     }
    ],
-   "id": "s09"
+   "id": "s10"
   },
   {
    "act": 3,
@@ -426,14 +474,57 @@
      "pose": "think"
     }
    ],
-   "id": "s10"
+   "id": "s11"
+  },
+  {
+   "act": 3,
+   "type": "list",
+   "src": "3GPP TDD phase sync (±1.5 µs) · EU MiFID II RTS 25 (HFT timestamps ≤100 µs from UTC)",
+   "title": "Who else runs on GPS time",
+   "narration": "And it's not just maps. {p} Many cell towers use GPS time to stay in sync with each other, to within about one and a half millionths of a second. {p} In Europe, high-frequency traders must time-stamp their trades to within a tenth of a millisecond of official time, and many firms get that time from satellites. {pp} A clock drifting thirty-eight microseconds a day would knock those cell towers out of sync in about an hour, and the traders within three days.",
+   "items": [
+    {
+     "at": "cell towers",
+     "kind": "bullet",
+     "text": "cell networks: in sync to ~1.5 µs"
+    },
+    {
+     "at": "high-frequency traders",
+     "kind": "bullet",
+     "text": "EU high-frequency trading: ≤100 µs from UTC"
+    },
+    {
+     "at": "in about an hour",
+     "kind": "title",
+     "text": "38 µs/DAY: TOWERS OUT OF SYNC IN ~1 HOUR"
+    }
+   ],
+   "react": [
+    {
+     "at": "not just maps",
+     "pose": "pointUp"
+    },
+    {
+     "at": "cell towers",
+     "pose": "pointL"
+    },
+    {
+     "at": "traders",
+     "pose": "think"
+    },
+    {
+     "at": "in about an hour",
+     "pose": "shock"
+    }
+   ],
+   "id": "s12"
   },
   {
    "act": 4,
    "type": "code",
    "title": "the factory setting",
    "src": "Misra, GPS World (2023) · Bahder, arXiv gr-qc/0306076",
-   "narration": "So how do you fix a clock that runs fast in space? {p} You make it run slow on the ground. {p} GPS clocks are built to tick at ten point two three megahertz. {p} But before launch, they're set to ten point two two nine nine nine nine nine nine nine five four three. {p} On the ground, that's slightly slow. In orbit, relativity speeds it up to exactly right.",
+   "narration": "So how do you fix a clock that runs fast in space? {p} You make it run slow on the ground. {p} GPS clocks are built to tick at ten point two three megahertz. {p} But before launch, they're set to ten point two two nine nine nine nine nine nine nine five four three. {p} On the ground, that's slightly slow. In orbit, relativity speeds it up to exactly right. {p} And ground stations still watch every satellite clock, and upload small corrections to each one, usually at least once a day.",
    "lines": [
     {
      "at": "ten point two three megahertz",
@@ -462,16 +553,20 @@
     {
      "at": "exactly right",
      "pose": "cheer"
+    },
+    {
+     "at": "ground stations",
+     "pose": "pointL"
     }
    ],
-   "id": "s11"
+   "id": "s13"
   },
   {
    "act": 4,
    "type": "list",
    "src": "Ashby, 'General relativity in the Global Positioning System' (APS Matters of Gravity, 1997)",
    "title": "NTS-2, June 1977",
-   "narration": "Not everyone believed it at first. {p} In June 1977, the first test satellite with a cesium clock, NTS-2, went up with a switch on board, so the correction could be turned on later. {p} For twenty days, engineers let the clock run uncorrected. {p} It ran fast by four hundred forty-two parts in a trillion. {p} Einstein predicted four hundred forty-six. {pp} Less than one percent off. Then they flipped the switch.",
+   "narration": "Not everyone believed it at first. And the skeptics weren't crazy: nobody had ever put a cesium clock in orbit before. {p} In June 1977, the first test satellite with a cesium clock, NTS-2, went up with a switch on board, so the correction could be turned on later. {p} For twenty days, engineers let the clock run uncorrected. {p} It ran fast by four hundred forty-two parts in a trillion. {p} Einstein predicted four hundred forty-six. {pp} Less than one percent off. Then they flipped the switch.",
    "items": [
     {
      "at": "In June 1977",
@@ -517,14 +612,14 @@
      "pose": "cheer"
     }
    ],
-   "id": "s12"
+   "id": "s14"
   },
   {
    "act": 5,
    "type": "list",
    "src": "Ashby, Living Reviews in Relativity (2003)",
    "title": "Corrections still running today",
-   "narration": "And that's not the only correction. {p} GPS orbits aren't perfect circles, so each clock speeds up and slows down a little as its height changes. Your receiver corrects for that too. {p} The Earth also rotates while the signal is in flight, adding another tiny shift. {p} Every position fix quietly accounts for all of it.",
+   "narration": "And that's not the only correction. {p} GPS orbits aren't perfect circles, so each clock speeds up and slows down a little as its height changes. Your receiver corrects for that too. {p} The Earth also rotates while the signal is in flight, adding another tiny shift. {p} Every position fix quietly accounts for all of it. {p} And it's not just GPS. Europe's Galileo, Russia's GLONASS and China's BeiDou all have to make the same relativity corrections.",
    "items": [
     {
      "at": "perfect circles",
@@ -540,6 +635,11 @@
      "at": "all of it",
      "kind": "title",
      "text": "CORRECTED EVERY FIX"
+    },
+    {
+     "at": "Galileo",
+     "kind": "bullet",
+     "text": "Galileo · GLONASS · BeiDou: same physics"
     }
    ],
    "react": [
@@ -561,7 +661,51 @@
      "nod": 1
     }
    ],
-   "id": "s13"
+   "id": "s15"
+  },
+  {
+   "act": 5,
+   "type": "list",
+   "src": "Penn State GEOG 862 · GPS.gov (Selective Availability, May 2000)",
+   "title": "Wrong on purpose, part two",
+   "narration": "And here's a twist. For years, GPS was also made wrong on purpose, for a different reason. {p} Until 2000, the US military deliberately jittered the satellite clocks for civilian users, a feature called Selective Availability. {p} Your position could be off by about a hundred meters. {p} On May second, 2000, it was switched off, and civilian GPS got about ten times more accurate overnight.",
+   "items": [
+    {
+     "at": "Selective Availability",
+     "kind": "bullet",
+     "text": "“Selective Availability”: jittered clocks"
+    },
+    {
+     "at": "about a hundred meters",
+     "kind": "bullet",
+     "text": "civilian error: ~100 m"
+    },
+    {
+     "at": "switched off",
+     "kind": "strike",
+     "text": "switched off: 2 May 2000"
+    },
+    {
+     "at": "ten times more accurate",
+     "kind": "title",
+     "text": "~10× MORE ACCURATE"
+    }
+   ],
+   "react": [
+    {
+     "at": "twist",
+     "pose": "pointUp"
+    },
+    {
+     "at": "deliberately",
+     "pose": "shock"
+    },
+    {
+     "at": "switched off",
+     "pose": "cheer"
+    }
+   ],
+   "id": "s16"
   },
   {
    "act": 5,
@@ -608,7 +752,7 @@
      "pose": "cheer"
     }
    ],
-   "id": "s14"
+   "id": "s17"
   },
   {
    "act": 5,
@@ -634,7 +778,7 @@
      "pose": "wave"
     }
    ],
-   "id": "s15"
+   "id": "s18"
   }
  ],
  "checks": [
@@ -712,6 +856,30 @@
    "rule": "expr",
    "expr": "round(4.465e-10 * 86400 * 1e6, 1)",
    "equal": 38.6
+  },
+  {
+   "say": "Hafele-Keating within error bars: E −59±10 vs −40±23; W +273±7 vs +275±21",
+   "rule": "expr",
+   "expr": "[abs(-59 - -40) <= 10 + 23, abs(273 - 275) <= 7 + 21]",
+   "equal": [
+    true,
+    true
+   ]
+  },
+  {
+   "say": "SA ~100 m → ~10 m: about ten times",
+   "rule": "expr",
+   "expr": "100 / 10",
+   "equal": 10.0
+  },
+  {
+   "say": "1.5 µs at 38 µs/day ≈ 1 hour; 100 µs ≈ 2.6 days",
+   "rule": "expr",
+   "expr": "[round(1.5 / (38 / 24), 1), round(100 / 38, 1)]",
+   "equal": [
+    0.9,
+    2.6
+   ]
   },
   {
    "say": "NTS-2: 442.5 vs 446.5 = <1% off",

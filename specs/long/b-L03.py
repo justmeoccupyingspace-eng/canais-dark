@@ -15,7 +15,7 @@ shots = [
     dict(act=0, type="counter", src="Uncorrected relativistic clock offset × speed of light", title="GPS error if nobody fixed the clocks", unit="kilometers off, after one day",
          **{"from": 0, "to": 11}, dur=5.0, go=dict(at="every single day"),
          notes=[dict(at="Albert Einstein", text="the fix: relativity")],
-         narration="Only by about thirty-eight millionths of a second a day. {p} Sounds like nothing. {p} But if nobody corrected it, GPS would drift by about eleven kilometers, every single day. {pp} The fix comes from Albert Einstein, and from two ideas most people think only matter near black holes.",
+         narration="Only by about thirty-eight millionths of a second a day. {p} Sounds like nothing. {p} But if nobody corrected it, GPS would drift by about eleven kilometers, every single day. {pp} The fix comes from Albert Einstein, and from two ideas most people think only matter near black holes. {p} It might be the most useful thing relativity has ever done. {p} Let's see how a few billionths of a second decide whether your map puts you on the right street.",
          react=[dict(at="thirty-eight millionths", pose="idle"), dict(at="eleven kilometers", pose="shock"), dict(at="Albert Einstein", pose="pointUp"), dict(at="black holes", pose="think")]),
 
     # ---------------- 1 · TIME IS DISTANCE ----------------
@@ -29,7 +29,7 @@ shots = [
                 dict(at="one millionth", **{"in": "299792458 * 1e-6   # meters in 1 µs", "out": "299.792458", "bad": True, "note": "≈ 300 m off"})],
          react=[dict(at="how fast", pose="think"), dict(at="thirty centimeters", pose="pointL"), dict(at="three hundred meters", pose="shock"), dict(at="timing system", pose="pointUp")]),
     dict(act=1, type="orbit", src="Trilateration: 3 ranges fix a point; the 4th satellite solves the receiver clock error",
-         narration="With the distance to three satellites, your phone can pin down a single point. {p} But your phone has a cheap quartz clock, nowhere near an atomic one. {p} So it uses a fourth satellite to solve for the time as well. {p} Four satellites, four unknowns: where you are, in three dimensions, and what time it really is.",
+         narration="With the distance to three satellites, your phone can pin down a single point. {p} But your phone has a cheap quartz clock, nowhere near an atomic one. {p} So it uses a fourth satellite to solve for the time as well. {p} Four satellites, four unknowns: where you are, in three dimensions, and what time it really is. {p} Usually your phone can see more than four, and uses the extras to sharpen the fix.",
          sats=6, link=dict(at="three satellites"), spheres=dict(at="pin down"), tag=dict(at="fourth satellite", text="4 satellites → x, y, z + time"),
          react=[dict(at="three satellites", pose="pointL"), dict(at="cheap quartz", pose="shrug"), dict(at="four unknowns", pose="pointUp")]),
 
@@ -57,6 +57,12 @@ shots = [
          narration="Put them together. {p} Minus seven for speed, plus forty-five for gravity. {pp} The satellite clocks gain about thirty-eight millionths of a second every day. {p} The two effects fight each other, and gravity wins.",
          react=[dict(at="Put them together", pose="think"), dict(at="Minus seven", pose="pointL"), dict(at="thirty-eight", pose="shock"), dict(at="gravity wins", pose="cheer")]),
 
+    dict(act=2, type="duel", src="Hafele & Keating, Science 177 (1972) · flights of October 1971", title="1971: four atomic clocks on airliners",
+         left=dict(label="flying east", value=-59, color="acc2"), right=dict(label="flying west", value=273, color="warm"), fmt="nsec", badge="AS PREDICTED",
+         cues=[dict(at="Flying east", show="a"), dict(at="Flying west", show="b")],
+         narration="If that sounds too weird to be real, it was tested with plane tickets. {p} In 1971, two physicists, Joseph Hafele and Richard Keating, flew four atomic clocks around the world on ordinary passenger jets, then compared them with clocks left on the ground. {p} Flying east, the clocks lost about fifty-nine billionths of a second. {p} Flying west, they gained about two hundred seventy-three. {pp} Within the error bars of what Einstein's theories predicted.",
+         react=[dict(at="plane tickets", pose="cheer"), dict(at="four atomic clocks", pose="pointL"), dict(at="Flying east", pose="think"), dict(at="Einstein's theories predicted", pose="pointUp")]),
+
     # ---------------- 3 · 11 KM ----------------
     dict(act=3, type="code", title="38 µs, in distance", src="c = 299,792,458 m/s",
          narration="Now turn that into distance. {p} Thirty-eight millionths of a second, times the speed of light, is about eleven thousand four hundred meters. {p} Eleven kilometers. {pp} After one day. {p} And the error doesn't reset. It keeps piling up: twenty-three kilometers after two days, about eighty after a week.",
@@ -69,14 +75,21 @@ shots = [
                 dict(at="phone networks and banks", text="Networks and banks use GPS time too", color="acc2")],
          react=[dict(at="wrong street", pose="shrug"), dict(at="wrong city", pose="shock"), dict(at="drift out of sync", pose="think")]),
 
+    dict(act=3, type="list", src="3GPP TDD phase sync (±1.5 µs) · EU MiFID II RTS 25 (HFT timestamps ≤100 µs from UTC)", title="Who else runs on GPS time",
+         narration="And it's not just maps. {p} Many cell towers use GPS time to stay in sync with each other, to within about one and a half millionths of a second. {p} In Europe, high-frequency traders must time-stamp their trades to within a tenth of a millisecond of official time, and many firms get that time from satellites. {pp} A clock drifting thirty-eight microseconds a day would knock those cell towers out of sync in about an hour, and the traders within three days.",
+         items=[dict(at="cell towers", kind="bullet", text="cell networks: in sync to ~1.5 µs"),
+                dict(at="high-frequency traders", kind="bullet", text="EU high-frequency trading: ≤100 µs from UTC"),
+                dict(at="in about an hour", kind="title", text="38 µs/DAY: TOWERS OUT OF SYNC IN ~1 HOUR")],
+         react=[dict(at="not just maps", pose="pointUp"), dict(at="cell towers", pose="pointL"), dict(at="traders", pose="think"), dict(at="in about an hour", pose="shock")]),
+
     # ---------------- 4 · THE FIX ----------------
     dict(act=4, type="code", title="the factory setting", src="Misra, GPS World (2023) · Bahder, arXiv gr-qc/0306076",
-         narration="So how do you fix a clock that runs fast in space? {p} You make it run slow on the ground. {p} GPS clocks are built to tick at ten point two three megahertz. {p} But before launch, they're set to ten point two two nine nine nine nine nine nine nine five four three. {p} On the ground, that's slightly slow. In orbit, relativity speeds it up to exactly right.",
+         narration="So how do you fix a clock that runs fast in space? {p} You make it run slow on the ground. {p} GPS clocks are built to tick at ten point two three megahertz. {p} But before launch, they're set to ten point two two nine nine nine nine nine nine nine five four three. {p} On the ground, that's slightly slow. In orbit, relativity speeds it up to exactly right. {p} And ground stations still watch every satellite clock, and upload small corrections to each one, usually at least once a day.",
          lines=[dict(at="ten point two three megahertz", **{"in": "f0 = 10.23e6   # Hz, the standard"}),
                 dict(at="before launch", **{"in": "f0 * (1 - 4.465e-10)", "out": "10229999.99543", "note": "Hz: set slow on purpose"})],
-         react=[dict(at="runs fast in space", pose="think"), dict(at="run slow on the ground", pose="pointUp"), dict(at="nine five four three", pose="shock"), dict(at="exactly right", pose="cheer")]),
+         react=[dict(at="runs fast in space", pose="think"), dict(at="run slow on the ground", pose="pointUp"), dict(at="nine five four three", pose="shock"), dict(at="exactly right", pose="cheer"), dict(at="ground stations", pose="pointL")]),
     dict(act=4, type="list", src="Ashby, 'General relativity in the Global Positioning System' (APS Matters of Gravity, 1997)", title="NTS-2, June 1977",
-         narration="Not everyone believed it at first. {p} In June 1977, the first test satellite with a cesium clock, NTS-2, went up with a switch on board, so the correction could be turned on later. {p} For twenty days, engineers let the clock run uncorrected. {p} It ran fast by four hundred forty-two parts in a trillion. {p} Einstein predicted four hundred forty-six. {pp} Less than one percent off. Then they flipped the switch.",
+         narration="Not everyone believed it at first. And the skeptics weren't crazy: nobody had ever put a cesium clock in orbit before. {p} In June 1977, the first test satellite with a cesium clock, NTS-2, went up with a switch on board, so the correction could be turned on later. {p} For twenty days, engineers let the clock run uncorrected. {p} It ran fast by four hundred forty-two parts in a trillion. {p} Einstein predicted four hundred forty-six. {pp} Less than one percent off. Then they flipped the switch.",
          items=[dict(at="In June 1977", kind="bullet", text="23 Jun 1977 · NTS-2: first cesium clock in orbit"),
                 dict(at="For twenty days", kind="bullet", text="20 days with the correction off"),
                 dict(at="four hundred forty-two", kind="bullet", text="measured: +442.5 parts per trillion"),
@@ -86,11 +99,19 @@ shots = [
 
     # ---------------- 5 · POCKET ----------------
     dict(act=5, type="list", src="Ashby, Living Reviews in Relativity (2003)", title="Corrections still running today",
-         narration="And that's not the only correction. {p} GPS orbits aren't perfect circles, so each clock speeds up and slows down a little as its height changes. Your receiver corrects for that too. {p} The Earth also rotates while the signal is in flight, adding another tiny shift. {p} Every position fix quietly accounts for all of it.",
+         narration="And that's not the only correction. {p} GPS orbits aren't perfect circles, so each clock speeds up and slows down a little as its height changes. Your receiver corrects for that too. {p} The Earth also rotates while the signal is in flight, adding another tiny shift. {p} Every position fix quietly accounts for all of it. {p} And it's not just GPS. Europe's Galileo, Russia's GLONASS and China's BeiDou all have to make the same relativity corrections.",
          items=[dict(at="perfect circles", kind="bullet", text="slightly oval orbits: clock rate wobbles"),
                 dict(at="Earth also rotates", kind="bullet", text="Earth rotates during the signal's trip"),
-                dict(at="all of it", kind="title", text="CORRECTED EVERY FIX")],
+                dict(at="all of it", kind="title", text="CORRECTED EVERY FIX"),
+                dict(at="Galileo", kind="bullet", text="Galileo · GLONASS · BeiDou: same physics")],
          react=[dict(at="not the only", pose="pointUp"), dict(at="perfect circles", pose="think"), dict(at="rotates", pose="pointL"), dict(at="all of it", pose="idle", nod=1)]),
+    dict(act=5, type="list", src="Penn State GEOG 862 · GPS.gov (Selective Availability, May 2000)", title="Wrong on purpose, part two",
+         narration="And here's a twist. For years, GPS was also made wrong on purpose, for a different reason. {p} Until 2000, the US military deliberately jittered the satellite clocks for civilian users, a feature called Selective Availability. {p} Your position could be off by about a hundred meters. {p} On May second, 2000, it was switched off, and civilian GPS got about ten times more accurate overnight.",
+         items=[dict(at="Selective Availability", kind="bullet", text="“Selective Availability”: jittered clocks"),
+                dict(at="about a hundred meters", kind="bullet", text="civilian error: ~100 m"),
+                dict(at="switched off", kind="strike", text="switched off: 2 May 2000"),
+                dict(at="ten times more accurate", kind="title", text="~10× MORE ACCURATE")],
+         react=[dict(at="twist", pose="pointUp"), dict(at="deliberately", pose="shock"), dict(at="switched off", pose="cheer")]),
     dict(act=5, type="host", bg="none",
          narration="So, the next time your phone finds you on a map, remember what's happening. {p} Clocks in orbit, running fast because gravity is weaker up there, and slow because they're moving, {p} set wrong on purpose, so they'd be right in space. {pp} Relativity isn't just for black holes. {p} It's in your pocket.",
          items=[dict(at="Clocks in orbit", text="Fast: weaker gravity"), dict(at="slow because", text="Slow: high speed"), dict(at="set wrong on purpose", text="Set wrong on purpose", color="acc"),
@@ -117,6 +138,9 @@ checks = [
     dict(say="23 km after 2 days, ~80 after a week", rule="expr", expr="[round(2 * 11.392), round(7 * 11.392)]", equal=[23, 80]),
     dict(say="factory frequency 10.22999999543 MHz", rule="expr", expr="round(10.23e6 * (1 - 4.465e-10), 5)", equal=10229999.99543),
     dict(say="offset matches ~38.6 µs/day", rule="expr", expr="round(4.465e-10 * 86400 * 1e6, 1)", equal=38.6),
+    dict(say="Hafele-Keating within error bars: E −59±10 vs −40±23; W +273±7 vs +275±21", rule="expr", expr="[abs(-59 - -40) <= 10 + 23, abs(273 - 275) <= 7 + 21]", equal=[True, True]),
+    dict(say="SA ~100 m → ~10 m: about ten times", rule="expr", expr="100 / 10", equal=10.0),
+    dict(say="1.5 µs at 38 µs/day ≈ 1 hour; 100 µs ≈ 2.6 days", rule="expr", expr="[round(1.5 / (38 / 24), 1), round(100 / 38, 1)]", equal=[0.9, 2.6]),
     dict(say="NTS-2: 442.5 vs 446.5 = <1% off", rule="expr", expr="abs(446.5 - 442.5) / 446.5 < 0.01", equal=True),
 ]
 
