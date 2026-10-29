@@ -18,11 +18,11 @@ const sp = (T, t0, cfg = {damping: 14, stiffness: 170}) => (t0 == null ? 0 : spr
 const on = (T, t0) => t0 != null && T >= t0;
 
 const NUM = {POL: '616', DEU: '276', JPN: '392', GBR: '826', IRL: '372', ESP: '724', FRA: '250', ITA: '380', NLD: '528', BEL: '056', LUX: '442', DNK: '208', GRC: '300', PRT: '620', AUT: '040', FIN: '246', SWE: '752', CZE: '203', SVK: '703', HUN: '348', SVN: '705', EST: '233', LVA: '428', LTU: '440', CYP: '196', MLT: '470', BGR: '100', ROU: '642', HRV: '191', KOR: '410', UKR: '804', CHN: '156', RUS: '643', BLR: '112'};
-const NAME = {POL: 'Poland', JPN: 'Japan', ESP: 'Spain', DEU: 'Germany', GRC: 'Greece', PRT: 'Portugal', UKR: 'Ukraine', KOR: 'South Korea', GBR: 'Britain', IRL: 'Ireland'};
+const NAME = {POL: 'Poland', JPN: 'Japan', ESP: 'Spain', DEU: 'Germany', GRC: 'Greece', PRT: 'Portugal', UKR: 'Ukraine', KOR: 'South Korea', GBR: 'Britain', IRL: 'Ireland', CHN: 'China', ITA: 'Italy', USA: 'United States', HUN: 'Hungary', ISR: 'Israel', WLD: 'World'};
 const COUNTRIES = feature(world, world.objects.countries).features;
 const BYNUM = Object.fromEntries(COUNTRIES.map((c) => [c.id, c]));
 
-const colOf = (p, iso) => ({POL: p.acc, JPN: p.warm, UKR: '#4aa8ff', ESP: '#c58bff', DEU: '#8fa3c7', GRC: '#5fd3ff', PRT: p.acc2, KOR: '#ff8ad8'}[iso] || '#ffffff');
+const colOf = (p, iso) => ({POL: p.acc, JPN: p.warm, UKR: '#4aa8ff', ESP: '#c58bff', DEU: '#8fa3c7', GRC: '#5fd3ff', PRT: p.acc2, KOR: '#ff8ad8', CHN: '#ff9f43', ITA: '#5fd3ff', USA: '#8fa3ff', HUN: p.acc, ISR: p.acc2, WLD: '#ffffff'}[iso] || '#ffffff');
 
 export const fmt = (v, k) => {
   if (v == null || Number.isNaN(v)) return '';
@@ -38,6 +38,10 @@ export const fmt = (v, k) => {
     case 'eurb': return '€' + v.toFixed(1) + 'B';
     case 'm': return Math.round(v) + ' million';
     case 'km': return Math.round(v).toLocaleString('en-US') + ' km';
+    case 'k0': return v >= 995000 ? (v / 1e6).toFixed(2).replace(/0$/, '') + 'M' : Math.round(v / 1000) + 'k';
+    case 'dec1': return v.toFixed(1);
+    case 'int': return Math.round(v).toLocaleString('en-US');
+    case 'krwT': return '₩' + v.toFixed(1) + 'T';
     case 'hours': return Math.round(v).toLocaleString('en-US') + ' h';
     default: return String(Math.round(v));
   }
@@ -155,6 +159,8 @@ const Flag = ({iso, w = 150}) => {
   if (iso === 'POL') return <div style={{...box, background: 'linear-gradient(#fff 0 50%, #dc143c 50% 100%)'}} />;
   if (iso === 'JPN') return <div style={{...box, background: '#fff'}}><div style={{position: 'absolute', left: w / 2 - h * 0.3, top: h * 0.2, width: h * 0.6, height: h * 0.6, borderRadius: '50%', background: '#bc002d'}} /></div>;
   if (iso === 'UKR') return <div style={{...box, background: 'linear-gradient(#0057b7 0 50%, #ffd700 50% 100%)'}} />;
+  if (iso === 'DEU') return <div style={{...box, background: 'linear-gradient(#000 0 33.3%, #dd0000 33.3% 66.6%, #ffce00 66.6% 100%)'}} />;
+  if (iso === 'KOR') return <div style={{...box, background: '#fff'}}><div style={{position: 'absolute', left: w / 2 - h * 0.25, top: h * 0.25, width: h * 0.5, height: h * 0.5, borderRadius: '50%', background: 'linear-gradient(#cd2e3a 0 50%, #0047a0 50% 100%)', transform: 'rotate(-34deg)'}} /></div>;
   return <div style={{...box, background: '#888'}} />;
 };
 
@@ -217,6 +223,15 @@ const Lines = ({sh, p, data, T, dim}) => {
           </g>
         ))}
         {yrs.map((y) => <text key={y} x={X(y)} y={PL.y1 + 46} textAnchor="middle" fontFamily={SANS} fontWeight={600} fontSize={26} fill="#ffffff70">{y}</text>)}
+        {(sh.refs || []).map((rf, i) => {
+          const a = ramp(T, rf.t, 0.6);
+          return a > 0 ? (
+            <g key={'rf' + i} opacity={a}>
+              <line x1={PL.x0} x2={PL.x0 + (PL.x1 - PL.x0) * a} y1={Yp(rf.value)} y2={Yp(rf.value)} stroke="#ffffff" strokeOpacity={0.7} strokeWidth={3} strokeDasharray="14 12" />
+              <text x={PL.x1} y={Yp(rf.value) - 16} textAnchor="end" fontFamily={SANS} fontWeight={800} fontSize={28} fill="#ffffffd0">{rf.label}</text>
+            </g>
+          ) : null;
+        })}
         {sh.ref ? (
           <g>
             <line x1={PL.x0} x2={PL.x1} y1={Yp(sh.ref.value)} y2={Yp(sh.ref.value)} stroke="#ffffff" strokeOpacity={0.55} strokeWidth={3} strokeDasharray="14 12" />
@@ -353,6 +368,99 @@ const FxBox = ({sh, p, data, T}) => {
   );
 };
 
+// ---------------- BARRAS ABSOLUTAS (ex.: nascimentos por ano) ----------------
+const BarsAbs = ({sh, p, data, T, dim}) => {
+  const [Y0, Y1] = sh.years;
+  const pts = ser(data, sh.set, sh.iso).filter(([y]) => y >= Y0 && y <= Y1);
+  const R = keyed(T, sh.start ?? Y1, sh.keys);
+  const vmax = Math.max(...pts.map((q) => q[1]), 1) * 1.12;
+  const x0 = 190, x1 = 1300, base = 880, hpx = 600;
+  const n = Y1 - Y0 + 1;
+  const bw = (x1 - x0) / n;
+  const X = (y) => x0 + (y - Y0) * bw;
+  const H = (v) => (v / vmax) * hpx;
+  const [ha, hb] = sh.hl || [0, -1];
+  const hlOn = sh.hltext ? ramp(T, sh.hltext.t, 0.6) : (sh.hl ? 1 : 0);
+  const ticks = niceTicks(0, vmax, 4).filter((v) => v > 0);
+  return (
+    <AbsoluteFill style={{opacity: dim ? 0.3 : 1}}>
+      <svg width={1920} height={1080} style={{position: 'absolute'}}>
+        {ticks.map((v) => (
+          <g key={v}>
+            <line x1={x0} x2={x1} y1={base - H(v)} y2={base - H(v)} stroke="#fff" strokeOpacity={0.08} strokeWidth={2} />
+            <text x={x0 - 16} y={base - H(v) + 9} textAnchor="end" fontFamily={SANS} fontWeight={600} fontSize={24} fill="#ffffff60">{fmt(v, sh.fmt)}</text>
+          </g>
+        ))}
+        <line x1={x0} x2={x1} y1={base} y2={base} stroke="#fff" strokeOpacity={0.4} strokeWidth={2} />
+        {pts.map(([y, v]) => {
+          const g = Math.max(0, Math.min(1, (R - y) + 1));
+          if (g <= 0) return null;
+          const h = H(v) * Easing.out(Easing.cubic)(g);
+          const inHl = y >= ha && y <= hb;
+          const col = inHl ? mix(p.acc2, p.acc, hlOn) : p.acc2;
+          const isLab = (sh.labels || []).some((l) => l.year === y && l.t != null && T >= l.t);
+          return <rect key={y} x={X(y) + bw * 0.12} width={bw * 0.76} y={base - h} height={Math.max(h, 2)} rx={3} fill={isLab ? '#ffffff' : col} fillOpacity={hb >= ha && !inHl && hlOn > 0 ? 1 - 0.5 * hlOn : 1} />;
+        })}
+        {pts.filter(([y]) => y % 10 === 0 || y === Y1).map(([y]) => <text key={y} x={X(y) + bw / 2} y={base + 44} textAnchor="middle" fontFamily={SANS} fontWeight={600} fontSize={24} fill="#ffffff70">{y}</text>)}
+      </svg>
+      {(sh.labels || []).map((l, i) => {
+        const pt = pts.find(([y]) => y === l.year);
+        if (!pt) return null;
+        return <Pill key={i} x={X(l.year) + bw / 2} y={base - H(pt[1]) - 50} text={fmt(pt[1], sh.fmt)} sub={String(l.year)} color={i % 2 ? p.acc : '#ffffff'} T={T} t0={l.t} align={X(l.year) > 1000 ? 'right' : 'left'} />;
+      })}
+      {sh.hltext && hlOn > 0 ? <div style={{position: 'absolute', left: (X(ha) + X(hb) + bw) / 2, top: 180, transform: 'translateX(-50%)', opacity: hlOn, fontFamily: SANS, fontWeight: 900, fontSize: 40, color: p.acc, whiteSpace: 'nowrap'}}>{sh.hltext.text}</div> : null}
+    </AbsoluteFill>
+  );
+};
+
+// ---------------- PESSOAS (gerações) ----------------
+const Person = ({x, y, s, col, a}) => (
+  <g transform={`translate(${x},${y}) scale(${s})`} opacity={a}>
+    <circle cx={0} cy={-14} r={7} fill={col} />
+    <path d="M -10 10 Q -10 -4 0 -4 Q 10 -4 10 10 Z" fill={col} />
+  </g>
+);
+
+const People = ({sh, p, T}) => {
+  const gens = sh.gens || [];
+  const cols = ['#ffffff', p.acc2, p.acc];
+  return (
+    <AbsoluteFill>
+      <svg width={1920} height={1080} style={{position: 'absolute'}}>
+        {gens.map((g, gi) => {
+          if (g.t == null) return null;
+          const perRow = 10;
+          const cx = 280 + gi * 400, top = 260;
+          const step = 34;
+          return (
+            <g key={gi}>
+              {Array.from({length: g.n}).map((_, k) => {
+                const r = Math.floor(k / perRow), c = k % perRow;
+                const st = g.t + (k / Math.max(g.n, 1)) * 0.9;
+                const a = ramp(T, st, 0.25);
+                if (a <= 0) return null;
+                return <Person key={k} x={cx - (perRow - 1) * step / 2 + c * step} y={top + r * 46} s={1.25 + 0.25 * (1 - a)} col={cols[gi % 3]} a={a} />;
+              })}
+            </g>
+          );
+        })}
+        {gens.slice(1).map((g, gi) => g.t != null ? <text key={gi} x={280 + gi * 400 + 200} y={330} textAnchor="middle" fontFamily={SANS} fontWeight={900} fontSize={60} fill="#ffffff70" opacity={ramp(T, g.t - 0.3, 0.4)}>→</text> : null)}
+      </svg>
+      {gens.map((g, gi) => {
+        if (g.t == null) return null;
+        const s = sp(T, g.t + 0.4);
+        return (
+          <div key={gi} style={{position: 'absolute', left: 280 + gi * 400 - 160, width: 320, top: 760, textAlign: 'center', opacity: s, transform: `translateY(${(1 - s) * 20}px)`}}>
+            <div style={{fontFamily: SANS, fontWeight: 900, fontSize: 110, lineHeight: 1, color: cols[gi % 3]}}>{Math.round(g.n * Math.min(1, ramp(T, g.t, 0.9) + 0.001))}</div>
+            <div style={{fontFamily: SANS, fontWeight: 700, fontSize: 34, color: '#ffffffc0'}}>{g.label}</div>
+          </div>
+        );
+      })}
+      <div style={{position: 'absolute', left: 120, top: 92, fontFamily: SANS, fontWeight: 900, fontSize: 36, color: '#0d1020', background: p.acc, padding: '6px 20px', borderRadius: 12}}>at {sh.tfr} babies per woman</div>
+    </AbsoluteFill>
+  );
+};
+
 // ---------------- BARRAS (crescimento anual) ----------------
 const Bars = ({sh, p, data, T, dim}) => {
   const [Y0, Y1] = sh.years;
@@ -473,6 +581,19 @@ const Globe = ({sh, p, data, T}) => {
         if (!xy) return null;
         return <div key={iso} style={{position: 'absolute', left: xy[0], top: xy[1] - 20, transform: 'translate(-50%, -50%)', fontFamily: SANS, fontWeight: 900, fontSize: 34, letterSpacing: 3, color: '#0d1020', background: '#ffffffe6', padding: '4px 14px', borderRadius: 10, whiteSpace: 'nowrap'}}>{(NAME[iso] || iso).toUpperCase()}</div>;
       })}
+      {(sh.cities || []).map((c, i) => {
+        const xy = proj([c.lon, c.lat]);
+        const a = sp(T, c.t ?? sh.t0);
+        if (!xy || a <= 0.01) return null;
+        const pulse = 1 + 0.3 * Math.abs(Math.sin(T * 3));
+        return (
+          <React.Fragment key={'c' + i}>
+            <div style={{position: 'absolute', left: xy[0] - 14 * pulse, top: xy[1] - 14 * pulse, width: 28 * pulse, height: 28 * pulse, borderRadius: '50%', border: `4px solid ${p.acc}`, opacity: a}} />
+            <div style={{position: 'absolute', left: xy[0] - 8, top: xy[1] - 8, width: 16, height: 16, borderRadius: '50%', background: p.acc, opacity: a}} />
+            <div style={{position: 'absolute', left: xy[0] + 26, top: xy[1] - 30, fontFamily: SANS, fontWeight: 900, fontSize: 44, color: '#fff', opacity: a, textShadow: '0 4px 14px #000c'}}>{c.name}</div>
+          </React.Fragment>
+        );
+      })}
       {sh.choro && sh.choro.t_last != null ? (() => {
         const c = BYNUM[NUM.POL];
         const xy = proj(geoCentroid(c));
@@ -579,8 +700,10 @@ const Rays = ({p, T, t0, x = 640, y = 520}) => {
 const Duel = ({sh, p, data, T, dim}) => {
   const cue = (w) => (sh.cues || []).find((c) => c.show === w);
   const vals = ['a', 'b'].map((w) => {
-    const pt = pickYear(ser(data, sh.set, sh[w]), sh.year);
     const c = cue(w);
+    const ex = w === 'a' ? sh.left : sh.right;
+    if (ex) return {label: ex.label, color: p[ex.color] || ex.color || '#fff', v: ex.value, t: c?.t ?? (dim ? -99 : sh.t0)};
+    const pt = pickYear(ser(data, sh.set, sh[w]), sh.year);
     return {iso: sh[w], v: pt[1], t: c?.t ?? (dim ? -99 : sh.t0)};
   });
   return (
@@ -591,18 +714,18 @@ const Duel = ({sh, p, data, T, dim}) => {
         const x = 300 + i * 600;
         return (
           <div key={i} style={{position: 'absolute', left: x, top: sh.cards ? 350 : 300, width: 540, height: 520, borderRadius: 32, background: '#0b1026cc', border: `3px solid ${colOf(p, d.iso)}66`, opacity: Math.max(0.25, s), transform: `translateY(${(1 - s) * 40}px)`, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 20}}>
-            <Flag iso={d.iso} w={170} />
-            <div style={{fontFamily: SANS, fontWeight: 800, fontSize: 48, color: '#fff'}}>{NAME[d.iso]}</div>
-            <div style={{fontFamily: SANS, fontWeight: 900, fontSize: 118, color: colOf(p, d.iso), letterSpacing: -3, opacity: k > 0 ? 1 : 0.15}}>{k > 0 ? fmt(d.v * Easing.out(Easing.cubic)(k), sh.fmt) : '?'}</div>
+            {d.iso ? <Flag iso={d.iso} w={170} /> : null}
+            <div style={{fontFamily: SANS, fontWeight: 800, fontSize: d.iso ? 48 : 60, color: '#fff'}}>{d.iso ? NAME[d.iso] : d.label}</div>
+            <div style={{fontFamily: SANS, fontWeight: 900, fontSize: String(fmt(d.v, sh.fmt)).length > 7 ? 96 : 118, color: d.iso ? colOf(p, d.iso) : d.color, letterSpacing: -3, opacity: k > 0 ? 1 : 0.15}}>{k > 0 ? fmt(d.v * Easing.out(Easing.cubic)(k), sh.fmt) : '?'}</div>
           </div>
         );
       })}
       {(() => {
         const tb = vals[1].t + 0.9;
         const s = sp(T, tb);
-        if (s <= 0.01 || sh.set === 'tfr' || !vals[0].v || !vals[1].v) return null;
+        if (s <= 0.01 || sh.set === 'tfr' || !vals[0].v || !vals[1].v || sh.badge === false) return null;
         const r = vals[1].v / vals[0].v;
-        return <div style={{position: 'absolute', left: 1440 - 170, top: 240, transform: `scale(${s}) rotate(-6deg)`, background: p.acc, color: '#0d1020', fontFamily: SANS, fontWeight: 900, fontSize: 52, padding: '10px 26px', borderRadius: 18, boxShadow: '0 12px 30px rgba(0,0,0,.4)'}}>×{r.toFixed(1)}</div>;
+        return <div style={{position: 'absolute', left: 1440 - 170, top: 240, transform: `scale(${s}) rotate(-6deg)`, background: sh.badge ? p.warm : p.acc, color: '#0d1020', fontFamily: SANS, fontWeight: 900, fontSize: 52, padding: '10px 26px', borderRadius: 18, boxShadow: '0 12px 30px rgba(0,0,0,.4)'}}>{sh.badge || '×' + r.toFixed(1)}</div>;
       })()}
     </AbsoluteFill>
   );
@@ -613,7 +736,7 @@ const List = ({sh, p, T}) => (
     {(sh.items || []).map((it, i) => {
       const s = sp(T, it.t);
       if (s <= 0.001) return null;
-      const y = 250 + i * 118;
+      const y = 250 + (sh.items || []).slice(0, i).reduce((acc, q) => acc + (q.kind === 'quote' ? 190 : q.kind === 'date' || q.kind === 'title' ? 0 : 118), 0);
       if (it.kind === 'title') {
         const shake = Math.max(0, 1 - (T - it.t) / 0.5) * Math.sin(T * 60) * 8;
         return <div key={i} style={{position: 'absolute', left: 700, top: 560, transform: `translate(-50%, -50%) rotate(-5deg) scale(${1.6 - 0.6 * s}) translateX(${shake}px)`, opacity: Math.min(1, s * 2), fontFamily: SANS, fontWeight: 900, fontSize: 150, color: p.warm, letterSpacing: -4, border: `10px solid ${p.warm}`, padding: '6px 40px', borderRadius: 24, whiteSpace: 'nowrap', background: '#0b1026e6'}}>{it.text}</div>;
@@ -624,6 +747,14 @@ const List = ({sh, p, T}) => (
             <div style={{background: p.warm, color: '#fff', fontFamily: SANS, fontWeight: 900, fontSize: 40, padding: '10px 0'}}>JANUARY</div>
             <div style={{fontFamily: SANS, fontWeight: 900, fontSize: 150, color: '#0d1020', lineHeight: 1.05}}>1</div>
             <div style={{fontFamily: SANS, fontWeight: 800, fontSize: 46, color: '#0d1020', paddingBottom: 14}}>1990</div>
+          </div>
+        );
+      }
+      if (it.kind === 'quote') {
+        return (
+          <div key={i} style={{position: 'absolute', left: 150, top: y + 10, maxWidth: 1180, opacity: s, transform: `translateX(${(1 - s) * -40}px)`}}>
+            <div style={{fontFamily: SERIF, fontStyle: 'italic', fontWeight: 600, fontSize: 58, lineHeight: 1.1, color: '#fff'}}>{it.text}</div>
+            {it.sub ? <div style={{fontFamily: SANS, fontWeight: 700, fontSize: 26, color: p.acc, marginTop: 8, letterSpacing: 2, textTransform: 'uppercase'}}>{it.sub}</div> : null}
           </div>
         );
       }
@@ -724,6 +855,20 @@ const HostSay = ({sh, p, T}) => (
 
 const End = ({sh, p, data, T}) => {
   const s = sp(T, sh.t0 + 0.2);
+  const nx = sh.next;
+  if (nx) {
+    return (
+      <AbsoluteFill>
+        <div style={{position: 'absolute', left: 140, top: 250, width: 820, height: 462, borderRadius: 28, background: `linear-gradient(135deg, ${p.bg1}, #0b1026)`, border: `3px solid ${p.acc}88`, opacity: s, transform: `scale(${0.9 + 0.1 * s})`, overflow: 'hidden'}}>
+          <div style={{position: 'absolute', left: 40, top: 30, fontFamily: SANS, fontWeight: 800, fontSize: 30, color: p.acc, letterSpacing: 3}}>{nx.kicker || 'UP NEXT'}</div>
+          <div style={{position: 'absolute', left: 40, top: 90, fontFamily: SANS, fontWeight: 900, fontSize: 210, color: p[nx.color] || nx.color || p.acc, letterSpacing: -6, lineHeight: 1}}>{nx.big}</div>
+          <div style={{position: 'absolute', left: 44, top: 320, fontFamily: SANS, fontWeight: 800, fontSize: 44, color: '#fff'}}>{nx.title}</div>
+          <div style={{position: 'absolute', left: 44, top: 380, fontFamily: SANS, fontWeight: 600, fontSize: 30, color: '#ffffff90'}}>{nx.sub}</div>
+        </div>
+        <div style={{position: 'absolute', left: 140, top: 760, opacity: sp(T, sh.t0 + 0.8), fontFamily: SANS, fontWeight: 900, fontSize: 44, color: '#0d1020', background: p.warm, padding: '14px 34px', borderRadius: 40}}>Subscribe for one chart a day</div>
+      </AbsoluteFill>
+    );
+  }
   const v = valAt(ser(data, 'tfr', 'KOR'), 2024);
   return (
     <AbsoluteFill>
@@ -865,7 +1010,8 @@ const Music = ({spec}) => {
 };
 
 // ---------------- composição ----------------
-const VIEWS = {lines: Lines, bars: Bars, globe: Globe, stats: Stats, duel: Duel, list: List, cards: Cards, hbars: HBars, end: End};
+const BarsAny = (props) => (props.sh.mode === 'abs' ? <BarsAbs {...props} /> : <Bars {...props} />);
+const VIEWS = {lines: Lines, bars: BarsAny, globe: Globe, stats: Stats, duel: Duel, list: List, cards: Cards, hbars: HBars, end: End, people: People};
 
 const ShotView = ({sh, idx, p, data}) => {
   const f = useCurrentFrame();
@@ -883,6 +1029,8 @@ const ShotView = ({sh, idx, p, data}) => {
         {View ? <View sh={isHost ? {...sh, type: sh.bg, keys: null, labels: null, cues: null, react: null} : sh} p={p} data={data} T={T} dim={isHost} /> : null}
         {isHost ? <HostSay sh={sh} p={p} T={T} /> : null}
         {sh.cards && sh.type !== 'cards' && sh.type !== 'hbars' && !isHost ? <CardsRow sh={sh} p={p} T={T} /> : null}
+        {sh.chips && sh.type !== 'cards' && !isHost ? sh.chips.map((c, i) => <Pill key={'ch' + i} x={150 + i * 470} y={sh.type === 'globe' ? 900 : 975} text={c.text} color={i % 2 ? p.acc2 : '#ffffff'} T={T} t0={c.t} />) : null}
+        {sh.kicker && !['bars', 'hbars'].includes(sh.type) && !isHost && sh.kicker.t != null ? <Pill x={1300} y={175} text={sh.kicker.text} color={p.acc} T={T} t0={sh.kicker.t} align="right" /> : null}
       </AbsoluteFill>
       {sh.type === 'list' || sh.type === 'duel' ? <Kicker text={sh.title} p={p} T={T} t0={sh.t0} y={sh.cards ? 290 : 92} x={sh.cards ? 300 : 120} /> : null}
       {sh.card ? <div style={{position: 'absolute', left: 120, top: 92, fontFamily: SANS, fontWeight: 900, fontSize: 36, color: '#0d1020', background: p.acc, padding: '6px 20px', borderRadius: 12}}>{sh.card} · {['Money', 'Factories', 'People'][sh.card - 1]}</div> : null}

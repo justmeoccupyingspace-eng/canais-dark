@@ -123,7 +123,7 @@
     0,
     6.5
    ],
-   "narration": "So Korea was having about a third of the babies it needs just to stay the same size. {p} And then, last year, something nobody expected happened. {pp} The number went up. {p} Is Korea's baby crisis over? <soft>To answer that, you need to see the scariest chart in economics.</soft>",
+   "narration": "One of the great economic success stories of the last century, with the fewest babies of any country on Earth. {p} Korea was having about a third of the babies it needs just to stay the same size. {p} And then, last year, something nobody expected happened. {pp} The number went up. {p} Is Korea's baby crisis over? <soft>To answer that, you need to see the scariest chart in economics.</soft>",
    "items": [
     {
      "at": "a third",
@@ -166,7 +166,7 @@
    "act": 1,
    "type": "globe",
    "src": "World Bank · fertility rate; GDP per capita (current US$)",
-   "narration": "Korea's story actually starts with too many babies. {p} In 1960, the average woman had about six children, {p} and South Korea was one of the poorest countries on Earth, poorer than most of Africa at the time. {p} The government decided families were simply too big.",
+   "narration": "Korea's story actually starts with too many babies. {p} In 1960, the average woman had about six children, {p} and South Korea was one of the poorest countries on Earth: about a hundred and sixty dollars of output per person, per year. {p} The government decided families were simply too big.",
    "view": {
     "lon": 127.8,
     "lat": 36.4,
@@ -338,6 +338,59 @@
   },
   {
    "act": 1,
+   "type": "lines",
+   "set": "ppp",
+   "series": [
+    "KOR",
+    "JPN"
+   ],
+   "years": [
+    1990,
+    2024
+   ],
+   "start": 1990.0,
+   "src": "World Bank · GDP per capita, PPP (current international $)",
+   "fmt": "usdk",
+   "hl": "KOR",
+   "narration": "Here's the strange part. {p} In the same decades that fertility collapsed, Korea got rich. Really rich. {p} Adjusted for prices, the average South Korean now produces more than the average Japanese. {p} Korea solved being poor. {pp} Then it ran out of children.",
+   "keys": [
+    {
+     "at": "Korea got rich",
+     "year": 2024.0,
+     "dur": 5.0
+    }
+   ],
+   "labels": [
+    {
+     "at": "more than the average",
+     "iso": "KOR",
+     "year": 2024
+    },
+    {
+     "at": "more than the average",
+     "iso": "JPN",
+     "year": 2024,
+     "delay": 0.5
+    }
+   ],
+   "react": [
+    {
+     "at": "strange part",
+     "pose": "think"
+    },
+    {
+     "at": "Really rich",
+     "pose": "cheer"
+    },
+    {
+     "at": "ran out",
+     "pose": "shrug"
+    }
+   ],
+   "id": "s06"
+  },
+  {
+   "act": 1,
    "type": "host",
    "bg": "lines",
    "set": "tfr",
@@ -386,7 +439,7 @@
      "pose": "shrug"
     }
    ],
-   "id": "s06"
+   "id": "s07"
   },
   {
    "act": 2,
@@ -407,7 +460,7 @@
      "s": "work and home"
     }
    ],
-   "narration": "So why aren't Koreans having kids? {p} Start with marriage. In Korea, more than ninety-five percent of babies are born to married couples. {p} And marriage is collapsing. In 2022, about a hundred and ninety-two thousand couples got married, {p} forty-two percent fewer than a decade earlier.",
+   "narration": "So why aren't Koreans having kids? {p} Start with marriage. In Korea, more than ninety-five percent of babies are born to married couples. {p} And marriage is collapsing. In 2022, about a hundred and ninety-two thousand couples got married, {p} forty-two percent fewer than a decade earlier. {p} There's even a word for young Koreans who've given up on dating, marriage and kids: the sampo generation. The give-up-three generation.",
    "stat": {
     "at": "a hundred and ninety-two",
     "value": 192500,
@@ -418,6 +471,10 @@
     {
      "at": "ninety-five percent",
      "text": "95%+ of births: married parents"
+    },
+    {
+     "at": "sampo",
+     "text": "삼포세대 · sampo"
     }
    ],
    "react": [
@@ -435,7 +492,7 @@
      "nod": 1
     }
    ],
-   "id": "s07"
+   "id": "s08"
   },
   {
    "act": 2,
@@ -479,13 +536,13 @@
      "pose": "shock"
     }
    ],
-   "id": "s08"
+   "id": "s09"
   },
   {
    "act": 2,
    "type": "hbars",
    "n": 3,
-   "src": "OECD · average annual hours worked per worker, 2025",
+   "src": "OECD · hours worked per worker, 2025 · gender wage gap, 2024",
    "cards": [
     {
      "t": "Marriage",
@@ -500,7 +557,7 @@
      "s": "work and home"
     }
    ],
-   "narration": "And then there's time. {p} Koreans work about eighteen hundred and thirty hours a year, among the longest in the rich world, {p} and at home, most of the second shift still falls on women. {p} For a lot of young Korean women, it feels like a choice between a career and a child. {p} More and more, they choose the career.",
+   "narration": "And then there's time. {p} Koreans work about eighteen hundred and thirty hours a year, among the longest in the rich world, {p} and at home, most of the second shift still falls on women. {p} On top of that, Korean women earn about twenty-nine percent less than men, one of the widest pay gaps in the OECD. {p} For a lot of young Korean women, it feels like a choice between a career and a child. {p} More and more, they choose the career.",
    "bars": [
     {
      "at": "eighteen hundred",
@@ -516,8 +573,8 @@
     }
    ],
    "kicker": {
-    "at": "career and a child",
-    "text": "career or child"
+    "at": "twenty-nine percent",
+    "text": "gender pay gap: 29% (OECD, 2024)"
    },
    "react": [
     {
@@ -534,13 +591,13 @@
      "nod": 1
     }
    ],
-   "id": "s09"
+   "id": "s10"
   },
   {
    "act": 2,
    "type": "globe",
-   "src": "Statistics Korea · regional fertility 2023",
-   "narration": "Seoul is where all of this peaks. {p} About half of all South Koreans live in the greater Seoul area, {p} and in 2023, Seoul's fertility rate was zero point five five. {pp} The capital is where Korea's future gets very, very small.",
+   "src": "Statistics Korea · regional fertility 2023 · births 2025",
+   "narration": "Seoul is where all of this peaks. {p} About half of all South Koreans live in the greater Seoul area, {p} and in 2023, Seoul's fertility rate was zero point five five. {p} Across the country, the average mother is now thirty-three point eight years old when she gives birth. {pp} The capital is where Korea's future gets very, very small.",
    "view": {
     "lon": 127.0,
     "lat": 37.4,
@@ -556,6 +613,12 @@
      "name": "Seoul",
      "lon": 126.98,
      "lat": 37.57
+    }
+   ],
+   "chips": [
+    {
+     "at": "thirty-three point eight",
+     "text": "average mother's age at birth: 33.8 (2025)"
     }
    ],
    "stats": [
@@ -576,7 +639,7 @@
      "pose": "shock"
     }
    ],
-   "id": "s10"
+   "id": "s11"
   },
   {
    "act": 3,
@@ -618,7 +681,7 @@
      "pose": "shock"
     }
    ],
-   "id": "s11"
+   "id": "s12"
   },
   {
    "act": 3,
@@ -663,7 +726,7 @@
      "pose": "idle"
     }
    ],
-   "id": "s12"
+   "id": "s13"
   },
   {
    "act": 3,
@@ -678,18 +741,18 @@
    ],
    "start": 1960.0,
    "fc": 2024,
-   "src": "World Bank (to 2024) · Statistics Korea projection (2072)",
+   "src": "World Bank (to 2024) · Statistics Korea projection (2072) · Ministry of the Interior (Dec 2024)",
    "fmt": "mil",
    "y": [
     0,
     60000000.0
    ],
-   "narration": "The official projection? {p} Fifty-one point seven million people today. {p} Thirty-six point two million by 2072. {p} And almost half of them would be sixty-five or older.",
+   "narration": "In December 2024, Korea officially became a super-aged society: one in five people is now sixty-five or older. {p} And the official projection? {p} Fifty-one point seven million people today. {p} Thirty-six point two million by 2072. {p} And almost half of them would be sixty-five or older.",
    "keys": [
     {
-     "at": "The official",
+     "at": "In December 2024",
      "year": 2024.0,
-     "dur": 3.0
+     "dur": 4.0
     },
     {
      "at": "Thirty-six point two",
@@ -713,6 +776,12 @@
     "at": "almost half",
     "text": "2072: 47.7% aged 65+"
    },
+   "chips": [
+    {
+     "at": "super-aged",
+     "text": "Dec 2024: 1 in 5 aged 65+"
+    }
+   ],
    "react": [
     {
      "at": "Fifty-one",
@@ -728,7 +797,7 @@
      "nod": 1
     }
    ],
-   "id": "s13"
+   "id": "s14"
   },
   {
    "act": 3,
@@ -771,7 +840,7 @@
      "lean": 1
     }
    ],
-   "id": "s14"
+   "id": "s15"
   },
   {
    "act": 4,
@@ -785,13 +854,13 @@
     2025
    ],
    "start": 2023.0,
-   "src": "World Bank · fertility rate, births per woman (2025: Statistics Korea)",
+   "src": "World Bank · fertility rate, births per woman (2025: Statistics Korea) · KOSTAT monthly births (Aug 2026)",
    "fmt": "dec2",
    "y": [
     0.6,
     1.4
    ],
-   "narration": "And then, the twist. {p} In 2024, Korea's fertility rate went up for the first time in nine years, to zero point seven five. {p} In 2025, it rose again, to zero point eight. {p} Births jumped almost seven percent, the biggest increase since 2007.",
+   "narration": "And then, the twist. {p} In 2024, Korea's fertility rate went up for the first time in nine years, to zero point seven five. {p} In 2025, it rose again, to zero point eight. {p} Births jumped almost seven percent, the biggest increase since 2007. {p} And it hasn't stopped. In the first half of 2026, births were up another fifteen percent, {p} the twenty-fourth month in a row of increases.",
    "keys": [
     {
      "at": "In 2024",
@@ -820,6 +889,16 @@
     "at": "almost seven",
     "text": "births +6.8% in 2025"
    },
+   "chips": [
+    {
+     "at": "first half of 2026",
+     "text": "H1 2026: +15.4%"
+    },
+    {
+     "at": "twenty-fourth month",
+     "text": "24 months up in a row"
+    }
+   ],
    "push": {
     "at": "the twist"
    },
@@ -837,7 +916,7 @@
      "pose": "cheer"
     }
    ],
-   "id": "s15"
+   "id": "s16"
   },
   {
    "act": 4,
@@ -886,19 +965,24 @@
      "nod": 1
     }
    ],
-   "id": "s16"
+   "id": "s17"
   },
   {
    "act": 4,
    "type": "list",
-   "src": "Korean presidential office (June 2024) · Booyoung Group (Feb 2024) · World Bank exchange rate",
+   "src": "Korean presidential office (June 2024) · parent pay (2024) · Booyoung Group (Feb 2024) · World Bank exchange rate",
    "title": "All hands on deck",
-   "narration": "And the country is now throwing everything at it. {p} In 2024, the president declared a national demographic emergency. {p} One construction company started paying employees a hundred million won for every baby. {p} That's about seventy thousand dollars.",
+   "narration": "And the country is now throwing everything at it. {p} In 2024, the president declared a national demographic emergency. {p} Parents of babies under one now get a million won a month. {p} One construction company started paying employees a hundred million won for every baby. {p} That's about seventy thousand dollars.",
    "items": [
     {
      "at": "demographic emergency",
      "kind": "bullet",
      "text": "2024 · “national demographic emergency”"
+    },
+    {
+     "at": "a million won a month",
+     "kind": "bullet",
+     "text": "₩1,000,000 a month for babies under 1"
     },
     {
      "at": "a hundred million won",
@@ -925,14 +1009,14 @@
      "pose": "pointL"
     }
    ],
-   "id": "s17"
+   "id": "s18"
   },
   {
    "act": 5,
    "type": "people",
    "tfr": 0.8,
    "src": "Generation ratio ≈ fertility ÷ 2",
-   "narration": "So, is it over? {p} Run the math again at zero point eight. {p} A hundred adults have about forty children. Those forty have sixteen. {pp} Better than thirteen. {p} Still a country that shrinks by more than half, every single generation.",
+   "narration": "So, is it over? {p} Run the math again at zero point eight. {p} A hundred adults have about forty children. Those forty have sixteen. {p} Even the best month so far, June 2026, came in at zero point eight eight. {pp} Better than thirteen grandchildren. {p} Still a country that shrinks by more than half, every single generation.",
    "gens": [
     {
      "at": "A hundred adults",
@@ -965,7 +1049,7 @@
      "nod": 1
     }
    ],
-   "id": "s18"
+   "id": "s19"
   },
   {
    "act": 5,
@@ -994,7 +1078,7 @@
     "value": 2.1,
     "label": "2.1"
    },
-   "narration": "And Korea isn't alone. {p} Japan is at one point one five. {p} China, around one. Italy, one point one eight. {p} Even the United States is down to about one point six.",
+   "narration": "And Korea isn't alone. {p} The world average is now about two point two, barely above replacement. {p} Japan is at one point one five. {p} China, around one. Italy, one point one eight. {p} Even the United States is down to about one point six.",
    "keys": [
     {
      "at": "Korea isn't alone",
@@ -1034,7 +1118,88 @@
      "pose": "shock"
     }
    ],
-   "id": "s19"
+   "id": "s20"
+  },
+  {
+   "act": 5,
+   "type": "lines",
+   "set": "tfr",
+   "series": [
+    "HUN",
+    "ISR",
+    "KOR"
+   ],
+   "years": [
+    2000,
+    2025
+   ],
+   "start": 2000.0,
+   "src": "World Bank · fertility rate, births per woman (2025: Statistics Korea)",
+   "fmt": "dec2",
+   "y": [
+    0.5,
+    3.2
+   ],
+   "hl": "HUN",
+   "ref": {
+    "value": 2.1,
+    "label": "2.1"
+   },
+   "narration": "So can a government fix this? {p} Hungary tried harder than most: tax breaks, cheap loans, cash for families. {p} Its fertility rate rose from about one point two to almost one point six, {p} then slipped back. {pp} The only rich country comfortably above replacement is Israel, at around two point nine, {p} and demographers mostly credit culture and religion, not government checks.",
+   "keys": [
+    {
+     "at": "Hungary tried",
+     "year": 2011.0,
+     "dur": 2.5
+    },
+    {
+     "at": "rose from",
+     "year": 2021.0,
+     "dur": 3.0
+    },
+    {
+     "at": "slipped back",
+     "year": 2024.0,
+     "dur": 1.5
+    }
+   ],
+   "labels": [
+    {
+     "at": "about one point two",
+     "iso": "HUN",
+     "year": 2011
+    },
+    {
+     "at": "almost one point six",
+     "iso": "HUN",
+     "year": 2021
+    },
+    {
+     "at": "slipped back",
+     "iso": "HUN",
+     "year": 2024
+    },
+    {
+     "at": "Israel",
+     "iso": "ISR",
+     "year": 2023
+    }
+   ],
+   "react": [
+    {
+     "at": "can a government",
+     "pose": "think"
+    },
+    {
+     "at": "slipped back",
+     "pose": "shrug"
+    },
+    {
+     "at": "Israel",
+     "pose": "pointL"
+    }
+   ],
+   "id": "s21"
   },
   {
    "act": 5,
@@ -1091,7 +1256,7 @@
      "lean": 1
     }
    ],
-   "id": "s20"
+   "id": "s22"
   },
   {
    "act": 5,
@@ -1116,7 +1281,7 @@
      "pose": "wave"
     }
    ],
-   "id": "s21"
+   "id": "s23"
   }
  ],
  "checks": [
@@ -1268,6 +1433,61 @@
    "year": 2024,
    "approx": 51700000.0,
    "tol": 0.01
+  },
+  {
+   "say": "about 160 dollars per person 1960",
+   "set": "gdppc",
+   "iso": "KOR",
+   "year": 1960,
+   "approx": 160,
+   "tol": 0.05
+  },
+  {
+   "say": "Korea produces more than Japan (PPP 2024)",
+   "rule": "gt",
+   "set": "ppp",
+   "a": "KOR",
+   "b": "JPN",
+   "year": 2024
+  },
+  {
+   "say": "Hungary about 1.2 (2011)",
+   "set": "tfr",
+   "iso": "HUN",
+   "year": 2011,
+   "approx": 1.2,
+   "tol": 0.04
+  },
+  {
+   "say": "Hungary almost 1.6 (2021)",
+   "set": "tfr",
+   "iso": "HUN",
+   "year": 2021,
+   "approx": 1.6,
+   "tol": 0.03
+  },
+  {
+   "say": "Hungary slipped back (2024 well below 1.6)",
+   "set": "tfr",
+   "iso": "HUN",
+   "year": 2024,
+   "max": 1.5
+  },
+  {
+   "say": "Israel around 2.9",
+   "set": "tfr",
+   "iso": "ISR",
+   "year": 2023,
+   "approx": 2.9,
+   "tol": 0.04
+  },
+  {
+   "say": "world about 2.2",
+   "set": "tfr",
+   "iso": "WLD",
+   "year": 2023,
+   "approx": 2.2,
+   "tol": 0.04
   }
  ],
  "datasets": [
@@ -1279,9 +1499,22 @@
     "JPN",
     "CHN",
     "ITA",
-    "USA"
+    "USA",
+    "HUN",
+    "ISR",
+    "WLD"
    ],
    "from": 1960,
+   "to": 2024
+  },
+  {
+   "set": "ppp",
+   "wb": "NY.GDP.PCAP.PP.CD",
+   "isos": [
+    "KOR",
+    "JPN"
+   ],
+   "from": 1990,
    "to": 2024
   },
   {
@@ -1349,6 +1582,20 @@
    "year": 2025,
    "value": 254457,
    "src": "Statistics Korea 2025 (Reuters, 25/02/2026)"
+  },
+  {
+   "set": "births",
+   "iso": "KOR",
+   "year": 2024,
+   "value": 238343,
+   "src": "Statistics Korea 2024"
+  },
+  {
+   "set": "births",
+   "iso": "KOR",
+   "year": 2023,
+   "value": 230028,
+   "src": "Statistics Korea 2023"
   },
   {
    "set": "pop",
