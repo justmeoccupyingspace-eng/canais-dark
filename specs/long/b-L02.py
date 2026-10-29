@@ -146,7 +146,7 @@ checks = [
 for i, sh in enumerate(shots):
     sh["id"] = f"s{i:02d}"
 
-spec = dict(id="b-L02-931gb", channel="howitticks", chapter0="69 GB, gone?", w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
+spec = dict(id="b-L02-931gb", channel="howitticks", chapter0="69 GB, gone?", min_total=420, w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
             datasets=[], snapshot=[],
             thumb=dict(kind="text", top="MY 1 TB DRIVE SAYS", big="931 GB", line2="WHY?!", sticker="69 GB GONE?"),
             voice=dict(model="", name="Iapetus",

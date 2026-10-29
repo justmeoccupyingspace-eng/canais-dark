@@ -147,7 +147,7 @@ checks = [
 for i, sh in enumerate(shots):
     sh["id"] = f"s{i:02d}"
 
-spec = dict(id="b-L03-gps-einstein", channel="howitticks", chapter0="Clocks that run fast", w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
+spec = dict(id="b-L03-gps-einstein", channel="howitticks", chapter0="Clocks that run fast", min_total=420, w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
             datasets=[], snapshot=[],
             thumb=dict(kind="text", top="WITHOUT EINSTEIN", big="+11 KM", line2="EVERY DAY", sticker="GPS"),
             voice=dict(model="", name="Iapetus",
