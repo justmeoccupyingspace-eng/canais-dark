@@ -39,6 +39,34 @@ def imf(ind, isos, a, b):
     return {i: {int(y): float(x) for y, x in v.get(i, {}).items() if x is not None and a <= int(y) <= b} for i in isos}
 
 
+ESTAT = "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/{ds}?format=JSON&lang=EN&{q}"
+ISO2 = {"AUT": "AT", "BEL": "BE", "BGR": "BG", "HRV": "HR", "CYP": "CY", "CZE": "CZ", "DNK": "DK", "EST": "EE", "FIN": "FI", "FRA": "FR",
+        "DEU": "DE", "GRC": "EL", "HUN": "HU", "IRL": "IE", "ITA": "IT", "LVA": "LV", "LTU": "LT", "LUX": "LU", "MLT": "MT", "NLD": "NL",
+        "POL": "PL", "PRT": "PT", "ROU": "RO", "SVK": "SK", "SVN": "SI", "ESP": "ES", "SWE": "SE", "NOR": "NO", "CHE": "CH", "ISL": "IS",
+        "GBR": "UK", "USA": "US", "JPN": "JP", "TUR": "TR", "EU": "EU27_2020", "EA": "EA20"}
+
+
+def eurostat(ds, filters, isos, a, b):
+    """JSON-stat da Eurostat → {iso3: {ano: valor}} (filtros fixam as outras dimensões)."""
+    q = [f"{k}={v}" for k, v in filters.items()] + [f"geo={ISO2.get(i, i)}" for i in isos] + [f"sinceTimePeriod={a}", f"untilTimePeriod={b}"]
+    d = fetch(ESTAT.format(ds=ds, q="&".join(q)))
+    ids, size = d["id"], d["size"]
+    idx = {k: d["dimension"][k]["category"]["index"] for k in ids}
+    inv = {k: {v: c for c, v in idx[k].items()} for k in ids}
+    back = {ISO2.get(i, i): i for i in isos}
+    out = {i: {} for i in isos}
+    for flat, val in d["value"].items():
+        flat, pos = int(flat), {}
+        for k, n in zip(reversed(ids), reversed(size)):
+            pos[k] = flat % n
+            flat //= n
+        if all(pos[k] == 0 for k in ids if k not in ("geo", "time") and size[ids.index(k)] == 1):
+            geo, yr = inv["geo"][pos["geo"]], inv["time"][pos["time"]]
+            if geo in back and val is not None:
+                out[back[geo]][int(yr[:4])] = float(val)
+    return out
+
+
 def build_generic(spec):
     """datasets no spec: {set, wb, isos, from, to} | {set, derive: mul|ratio|div, a:[set,iso], b:[set,iso], k} |
     {set, wb, isos, year, flat: true}; snapshot: [{set, iso, year, value, src}] (fontes citadas, fora das APIs)."""
@@ -48,6 +76,8 @@ def build_generic(spec):
         if "wb" in d and d.get("flat"):
             g = wb(d["wb"], d["isos"], d["year"], d["year"])
             S[st] = {i: g[i][d["year"]] for i in d["isos"] if d["year"] in g.get(i, {})}
+        elif "eurostat" in d:
+            S.setdefault(st, {}).update(eurostat(d["eurostat"], d.get("filters", {}), d["isos"], d.get("from", 2000), d.get("to", 2025)))
         elif "wb" in d:
             got = wb(d["wb"], d["isos"], d.get("from", 1960), d.get("to", 2024))
             S.setdefault(st, {}).update(got)

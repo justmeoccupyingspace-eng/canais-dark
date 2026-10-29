@@ -43,6 +43,9 @@ jobs:
         if: inputs.prep_run != ''
         uses: actions/download-artifact@v4
         with: {name: prep, path: public, run-id: "${{ inputs.prep_run }}", github-token: "${{ secrets.GITHUB_TOKEN }}"}
+      - name: correções de texto do spec na timeline reaproveitada
+        if: inputs.prep_run != ''
+        run: python scripts/lpatch.py $J public/build/$ID.json
       - name: ffmpeg
         if: inputs.prep_run == ''
         run: |

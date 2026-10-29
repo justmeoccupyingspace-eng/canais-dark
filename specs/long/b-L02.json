@@ -166,6 +166,43 @@
   },
   {
    "act": 1,
+   "type": "code",
+   "title": "1982",
+   "src": "Commodore 64 (1982): 64 KB of RAM",
+   "narration": "For decades, nobody minded. {p} When the Commodore 64 came out in 1982, its sixty-four kilobytes of memory meant sixty-five thousand, five hundred and thirty-six bytes, and everyone knew it. {p} At that size, the two meanings of kilo were only two point four percent apart.",
+   "lines": [
+    {
+     "at": "sixty-four kilobytes",
+     "in": "64 * 1024",
+     "out": "65536",
+     "note": "bytes of RAM in a Commodore 64"
+    },
+    {
+     "at": "two point four percent",
+     "in": "1024 / 1000",
+     "out": "1.024",
+     "note": "2.4% apart: who cares?"
+    }
+   ],
+   "react": [
+    {
+     "at": "nobody minded",
+     "pose": "shrug"
+    },
+    {
+     "at": "Commodore",
+     "pose": "pointL"
+    },
+    {
+     "at": "two point four",
+     "pose": "idle",
+     "nod": 1
+    }
+   ],
+   "id": "s04"
+  },
+  {
+   "act": 1,
    "type": "ladder",
    "src": "1.024ⁿ − 1 for n = 1…5",
    "title": "Same prefix, two meanings",
@@ -215,7 +252,7 @@
      "hot": true
     }
    ],
-   "narration": "The problem is that the small difference doesn't stay small. {p} At kilo, the binary version is two point four percent bigger. At mega, it's almost five percent. At giga, seven point four. {p} And at tera, the gap is ten percent. {pp} Every step up, the two meanings drift further apart.",
+   "narration": "The problem is that the small difference doesn't stay small. {p} At kilo, the binary version is two point four percent bigger. At mega, it's almost five percent. At giga, seven point four. {p} And at tera, the gap is ten percent. That's why a ten-terabyte drive shows up as just nine point oh nine. {pp} Every step up, the two meanings drift further apart.",
    "react": [
     {
      "at": "doesn't stay small",
@@ -234,7 +271,7 @@
      "pose": "shrug"
     }
    ],
-   "id": "s04"
+   "id": "s05"
   },
   {
    "act": 2,
@@ -280,14 +317,14 @@
      "pose": "shrug"
     }
    ],
-   "id": "s05"
+   "id": "s06"
   },
   {
    "act": 2,
    "type": "list",
    "src": "BIPM (SI prefixes, 1960); IEC 60027-2 Amd. 2 (1998); Apple, Mac OS X 10.6 (2009)",
    "title": "So who's right?",
-   "narration": "So who's right? {p} Technically, the drive makers. In the metric system, giga has meant one billion since 1960. {p} In 1998, the International Electrotechnical Commission even created new names for the binary units: kibibyte, mebibyte, gibibyte. {p} Almost nobody says them out loud. {p} Windows kept the old names. {p} And Apple went the other way: since 2009, a Mac counts storage in thousands.",
+   "narration": "So who's right? {p} Technically, the drive makers. In the metric system, giga has meant one billion since 1960. {p} In 1998, the International Electrotechnical Commission even created new names for the binary units: kibibyte, mebibyte, gibibyte. The “bi” means binary. {p} Almost nobody says them out loud. {p} Windows kept the old names. On Linux, the same command can show both: df dash h counts in binary, df dash capital H in decimal. {p} And Apple went the other way: since 2009, a Mac counts storage in thousands.",
    "items": [
     {
      "at": "since 1960",
@@ -303,6 +340,11 @@
      "at": "Windows kept",
      "kind": "bullet",
      "text": "Windows · binary math, “GB” label"
+    },
+    {
+     "at": "On Linux",
+     "kind": "bullet",
+     "text": "Linux · df -h → binary, df -H → decimal"
     },
     {
      "at": "Apple went",
@@ -328,7 +370,7 @@
      "pose": "pointUp"
     }
    ],
-   "id": "s06"
+   "id": "s07"
   },
   {
    "act": 2,
@@ -376,7 +418,7 @@
      "pose": "cheer"
     }
    ],
-   "id": "s07"
+   "id": "s08"
   },
   {
    "act": 3,
@@ -425,20 +467,20 @@
      "nod": 1
     }
    ],
-   "id": "s08"
+   "id": "s09"
   },
   {
    "act": 3,
    "type": "code",
    "title": "the 3.5-inch floppy disk",
    "src": "1.44 MB floppy: 2,880 sectors × 512 bytes",
-   "narration": "But the strangest gigabyte cousin is older. {p} The classic floppy disk said one point four four megabytes. {p} It held one million, four hundred seventy-four thousand, five hundred and sixty bytes. {p} That's fourteen forty times one thousand twenty-four. {p} So that megabyte was a thousand binary kilobytes. {pp} Half decimal, half binary. It's not a real megabyte in either system.",
+   "narration": "But the strangest gigabyte cousin is older. {p} The classic floppy disk said one point four four megabytes. {p} It held one million, four hundred seventy-four thousand, five hundred and sixty bytes. {p} Eighty tracks, two sides, eighteen sectors per track, five hundred and twelve bytes each. {p} That's fourteen forty times one thousand twenty-four. {p} So that megabyte was a thousand binary kilobytes. {pp} Half decimal, half binary. It's not a real megabyte in either system.",
    "lines": [
     {
-     "at": "It held",
-     "in": "1440 * 1024",
+     "at": "Eighty tracks",
+     "in": "80 * 2 * 18 * 512",
      "out": "1474560",
-     "note": "bytes on a “1.44 MB” floppy"
+     "note": "bytes on a “1.44 MB” floppy = 1440 × 1024"
     },
     {
      "at": "Half decimal",
@@ -462,7 +504,44 @@
      "pose": "shock"
     }
    ],
-   "id": "s09"
+   "id": "s10"
+  },
+  {
+   "act": 3,
+   "type": "code",
+   "title": "CDs and DVDs",
+   "src": "CD-R 80 min: 360,000 sectors × 2,048 B; DVD±R: 4,707,319,808 B",
+   "narration": "Discs couldn't agree either. {p} A CD's seven hundred megabytes are binary megabytes: about seven hundred thirty-seven million bytes. {p} But a DVD's four point seven gigabytes are decimal: four point seven billion bytes. {p} So the very same computer shows that DVD as four point three eight.",
+   "lines": [
+    {
+     "at": "seven hundred megabytes",
+     "in": "737280000 / 2**20",
+     "out": "703.125",
+     "note": "a “700 MB” CD: binary megabytes"
+    },
+    {
+     "at": "four point three eight",
+     "in": "4707319808 / 2**30",
+     "out": "4.384…",
+     "bad": true,
+     "note": "a “4.7 GB” DVD, as your PC shows it"
+    }
+   ],
+   "react": [
+    {
+     "at": "couldn't agree",
+     "pose": "shrug"
+    },
+    {
+     "at": "binary megabytes",
+     "pose": "pointL"
+    },
+    {
+     "at": "four point three eight",
+     "pose": "shock"
+    }
+   ],
+   "id": "s11"
   },
   {
    "act": 4,
@@ -507,14 +586,14 @@
      "nod": 1
     }
    ],
-   "id": "s10"
+   "id": "s12"
   },
   {
    "act": 4,
    "type": "list",
    "src": "TechTarget: SSD over-provisioning; Kingston: Understanding SSD Over-provisioning",
    "title": "What the hidden space does",
-   "narration": "Flash memory wears out. Each cell can only be erased so many times. {p} So the drive's controller keeps that hidden space for itself: to spread writes evenly across the chips, to clean up old data in the background, and to replace cells that die. {p} The industry calls this overprovisioning. {pp} Your drive isn't hiding space from you. {p} It's hiding it for you, so it lasts longer.",
+   "narration": "Flash memory wears out. Each cell can only be erased so many times. {p} So the drive's controller keeps that hidden space for itself: to spread writes evenly across the chips, to clean up old data in the background, and to replace cells that die. {p} The industry calls this overprovisioning. {pp} Your drive isn't hiding space from you. {p} It's hiding it for you, so it lasts longer. {p} You can even give it more: leave part of an SSD unpartitioned, and many drives will use that as extra spare space.",
    "items": [
     {
      "at": "spread writes",
@@ -535,6 +614,11 @@
      "at": "hiding it for you",
      "kind": "title",
      "text": "NOT FROM YOU. FOR YOU."
+    },
+    {
+     "at": "unpartitioned",
+     "kind": "bullet",
+     "text": "tip: unpartitioned space = extra spare"
     }
    ],
    "react": [
@@ -555,7 +639,7 @@
      "pose": "cheer"
     }
    ],
-   "id": "s11"
+   "id": "s13"
   },
   {
    "act": 5,
@@ -589,7 +673,7 @@
      "pose": "shock"
     }
    ],
-   "id": "s12"
+   "id": "s14"
   },
   {
    "act": 5,
@@ -619,13 +703,13 @@
      "pose": "shrug"
     }
    ],
-   "id": "s13"
+   "id": "s15"
   },
   {
    "act": 5,
    "type": "host",
    "bg": "none",
-   "narration": "So, your drive isn't lying. {p} The box speaks metric. Windows speaks binary, using metric words. {p} Nine hundred thirty-one gigabytes and one terabyte are the same trillion bytes, measured with two different rulers. {p} And the lesson goes way beyond hard drives: {pp} whenever you see a number, check the unit.",
+   "narration": "So, your drive isn't lying. {p} The box speaks metric. Windows speaks binary, using metric words. {p} Nine hundred thirty-one gigabytes and one terabyte are the same trillion bytes, measured with two different rulers. {p} The disc, the floppy, the RAM, the internet plan: every one of them is honest, in its own unit. {p} And the lesson goes way beyond hard drives: {pp} whenever you see a number, check the unit.",
    "items": [
     {
      "at": "The box speaks",
@@ -661,7 +745,7 @@
      "pose": "pointUp"
     }
    ],
-   "id": "s14"
+   "id": "s16"
   },
   {
    "act": 5,
@@ -691,7 +775,7 @@
      "pose": "wave"
     }
    ],
-   "id": "s15"
+   "id": "s17"
   }
  ],
  "checks": [
@@ -781,6 +865,33 @@
    "rule": "expr",
    "expr": "round(2**30 / 1e9, 2)",
    "equal": 1.07
+  },
+  {
+   "say": "Commodore 64: 65,536 bytes",
+   "rule": "expr",
+   "expr": "64 * 1024",
+   "equal": 65536
+  },
+  {
+   "say": "10 TB drive shows 9.09",
+   "rule": "expr",
+   "expr": "round(10**13 / 2**40, 2)",
+   "equal": 9.09
+  },
+  {
+   "say": "CD 700 'MB' = 737,280,000 B = 703 MiB",
+   "rule": "expr",
+   "expr": "[360000 * 2048, 360000 * 2048 / 2**20]",
+   "equal": [
+    737280000,
+    703.125
+   ]
+  },
+  {
+   "say": "DVD 4.7 GB shows as 4.38",
+   "rule": "expr",
+   "expr": "round(4707319808 / 2**30, 2)",
+   "equal": 4.38
   },
   {
    "say": "first five powers of two",

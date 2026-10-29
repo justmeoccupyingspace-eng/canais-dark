@@ -1030,7 +1030,14 @@ const CardsRow = ({sh, p, T}) => {
 const Cards = ({sh, p, data, T}) => (
   <AbsoluteFill>
     <CardsRow sh={sh} p={p} T={T} />
-    {(sh.chips || []).map((c, i) => <Pill key={i} x={150 + i * 290} y={390} text={c.text} color={i % 2 ? p.acc2 : '#ffffff'} T={T} t0={c.t} />)}
+    {sh.chips ? (
+      <div style={{position: 'absolute', left: 168, top: 360, display: 'flex', gap: 16, flexWrap: 'wrap', width: 1600}}>
+        {sh.chips.map((c, i) => (c.t == null || T < c.t - 0.05 ? null : (
+          <div key={i} style={{fontFamily: SANS, fontWeight: 900, fontSize: 40, color: '#0d1020', background: i % 2 ? p.acc2 : '#ffffff', padding: '8px 18px', borderRadius: 14,
+            opacity: sp(T, c.t), transform: `translateY(${(1 - sp(T, c.t)) * 14}px)`, boxShadow: '0 8px 24px rgba(0,0,0,.35)', whiteSpace: 'nowrap'}}>{c.text}</div>
+        )))}
+      </div>
+    ) : null}
     {sh.km && sh.km.t != null ? (() => {
       const s = sp(T, sh.km.t);
       const v = sh.km.a + (sh.km.b - sh.km.a) * ramp(T, sh.km.t_b ?? 1e9, 1.6);

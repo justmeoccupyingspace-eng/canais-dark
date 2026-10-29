@@ -489,7 +489,7 @@
     },
     {
      "at": "sampo",
-     "text": "삼포세대 · sampo"
+     "text": "“sampo” generation: gave up 3"
     }
    ],
    "react": [
@@ -538,7 +538,7 @@
    "chips": [
     {
      "at": "hagwons",
-     "text": "학원 · hagwon"
+     "text": "hagwon = cram school"
     }
    ],
    "react": [
