@@ -1170,8 +1170,10 @@ const End = ({sh, p, data, T}) => {
         <div style={{position: 'absolute', left: 140, top: 250, width: 820, height: 462, borderRadius: 28, background: `linear-gradient(135deg, ${p.bg1}, #0b1026)`, border: `3px solid ${p.acc}88`, opacity: s, transform: `scale(${0.9 + 0.1 * s})`, overflow: 'hidden'}}>
           <div style={{position: 'absolute', left: 40, top: 30, fontFamily: SANS, fontWeight: 800, fontSize: 30, color: p.acc, letterSpacing: 3}}>{nx.kicker || 'UP NEXT'}</div>
           <div style={{position: 'absolute', left: 40, top: 90, fontFamily: SANS, fontWeight: 900, fontSize: String(nx.big).length > 6 ? Math.round(1300 / String(nx.big).length) : 210, color: p[nx.color] || nx.color || p.acc, letterSpacing: -6, lineHeight: 1, whiteSpace: 'nowrap'}}>{nx.big}</div>
-          <div style={{position: 'absolute', left: 44, top: 320, fontFamily: SANS, fontWeight: 800, fontSize: 44, color: '#fff'}}>{nx.title}</div>
-          <div style={{position: 'absolute', left: 44, top: 380, fontFamily: SANS, fontWeight: 600, fontSize: 30, color: '#ffffff90'}}>{nx.sub}</div>
+          <div style={{position: 'absolute', left: 44, top: 318, width: 740, display: 'flex', flexDirection: 'column', gap: 8}}>
+            <div style={{fontFamily: SANS, fontWeight: 800, fontSize: String(nx.title).length > 30 ? 38 : 44, lineHeight: 1.12, color: '#fff'}}>{nx.title}</div>
+            <div style={{fontFamily: SANS, fontWeight: 600, fontSize: 28, color: '#ffffff90'}}>{nx.sub}</div>
+          </div>
         </div>
         <div style={{position: 'absolute', left: 140, top: 760, opacity: sp(T, sh.t0 + 0.8), fontFamily: SANS, fontWeight: 900, fontSize: 44, color: '#0d1020', background: p.warm, padding: '14px 34px', borderRadius: 40}}>{sh.cta || 'Subscribe for one chart a day'}</div>
       </AbsoluteFill>
