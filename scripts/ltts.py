@@ -299,7 +299,18 @@ def excise(x, times, spans):
         keep[int(a * SR):int(b * SR)] = False
     def sh(t):
         return t - sum(min(max(0.0, t - a), b - a) for a, b in spans)
-    return x[keep], [(sh(t0), sh(t1)) for t0, t1 in times]
+    y, nt = x[keep], [(sh(t0), sh(t1)) for t0, t1 in times]
+    # emenda no meio da fala ganha uma pausa natural (o corte some com o respiro entre frases)
+    joints = sorted(sh(a) for a, b in spans if a > 0 and b < len(x) / SR)
+    if joints:
+        gap = np.zeros(int(0.32 * SR), np.float32)
+        parts, last = [], 0
+        for j in joints:
+            parts += [y[last:int(j * SR)], gap]
+            last = int(j * SR)
+        y = np.concatenate(parts + [y[last:]])
+        nt = [(t0 + 0.32 * sum(1 for j in joints if j <= t0), t1 + 0.32 * sum(1 for j in joints if j <= t0)) for t0, t1 in nt]
+    return y, nt
 
 
 def whisper_words(path):
