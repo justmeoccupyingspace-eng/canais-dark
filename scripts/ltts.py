@@ -255,7 +255,7 @@ def onset(x, t_word, thr=-45.0):
     o mais perto do tempo do Whisper (que erra uns décimos)."""
     n = int(0.02 * SR)
     lo = max(0.0, t_word - 1.2)
-    e = frames_db(x, lo, min(len(x) / SR, t_word + 0.6), n)
+    e = frames_db(x, lo, min(len(x) / SR, t_word + 1.3), n)
     cands = [i for i in range(5, len(e)) if e[i] > thr and all(e[i - k] <= thr for k in range(1, 6))]
     if not cands:
         return None
