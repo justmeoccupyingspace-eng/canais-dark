@@ -3,7 +3,7 @@
 Rotina diária (cota Gemini zera ~07:00Z até 1/nov; depois ~08:00Z):
 1. ~07:10Z disparar `longo.yml` mode=full para o A (gemini-3.1-flash-tts-preview, Charon) e o B (gemini-3.8-flash-tts, Iapetus).
 2. Revisar preview (sheet, gates, loudness, frames com texto). Correção só de texto → `prep_run=<run>` (lpatch aplica sem gastar cota).
-3. Publicar no MESMO dia do render (decisão do Kauan, 29/10): A às 18:00Z, B às 20:00Z (`upload=A|B`, `at=`). Thumbnail: o Kauan sobe à mão até verificar o canal.
+3. Publicar no MESMO dia do render (decisão do Kauan, 29/10): A às 18:00Z, B às 20:00Z (`upload=A|B`, `at=`). Thumbnail: automática pela API (canais verificados em 29/10); conferir a anotação "thumbnail aplicada" no job final.
 4. Short do dia de cada canal = teaser do longo (mesmo tema, "vídeo completo no canal").
 
 Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (roteiro de ~1.150 palavras ≈ 7–9 pedidos).
