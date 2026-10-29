@@ -17,7 +17,7 @@ shots = [
          labels=[dict(at="per person", iso="IRL", year=2024), dict(at="United States", iso="USA", year=2024), dict(at="double Germany", iso="DEU", year=2024)],
          react=[dict(at="On paper", pose="pointL"), dict(at="United States", pose="shock"), dict(at="double Germany", pose="idle", nod=1), dict(at="Luxembourg", pose="shrug")]),
     dict(act=0, type="host", bg="lines", set="gdppc", series=["IRL", "USA", "DEU"], years=[1990, 2024], start=2024.0, fmt="usdk",
-         narration="But walk around Dublin and ask people if they feel richer than Americans. {pp} You'll get a laugh. {p} Prices are the second highest in the EU, after Denmark. And the average Irish household doesn't live twice as well as a German one. {p} So which is it? {p} Is Ireland rich? <soft>Or is something strange going on with the number?</soft>",
+         narration="But walk around Dublin and ask people if they feel richer than Americans. {pp} You'll get a laugh. {p} Prices are the third highest in the EU. And the average Irish household doesn't live twice as well as a German one. {p} So which is it? {p} Is Ireland rich? <soft>Or is something strange going on with the number?</soft>",
          items=[dict(at="richer than Americans", text="Richer than Americans?"), dict(at="a laugh", text="…not quite.", color="acc"), dict(at="strange going on", text="What's wrong with the number?", serif=True, size=66)],
          react=[dict(at="walk around Dublin", pose="think"), dict(at="a laugh", pose="cheer"), dict(at="So which", pose="shrug"), dict(at="strange", pose="pointL")]),
 
@@ -70,7 +70,7 @@ shots = [
 
     # ---------------- 3 · THE REAL NUMBER ----------------
     dict(act=3, type="host", bg="none",
-         narration="By 2017, even Ireland's own statisticians had had enough. {p} GDP had stopped describing the Irish economy. {p} So the Central Statistics Office invented a new number, just for Ireland. {pp} They call it modified gross national income, or GNI star.",
+         narration="By 2017, even Ireland's own statisticians had had enough. {p} GDP had stopped describing the Irish economy. {p} So the Central Statistics Office invented a new number, just for Ireland. {pp} They call it modified gross national income, or GNI star. {p} It's not perfect, but Ireland's own government now uses it to measure things like the national debt.",
          items=[dict(at="had had enough", text="GDP stopped making sense"), dict(at="invented a new number", text="So Ireland invented a new one:"), dict(at="GNI star", text="GNI*", serif=True, size=110, color="acc")],
          react=[dict(at="had had enough", pose="shrug"), dict(at="invented", pose="pointUp"), dict(at="GNI star", pose="cheer")]),
     dict(act=3, type="stack", src=CSO, title="Ireland, 2025: GDP vs GNI*", sub="€ billion, current prices",
@@ -81,23 +81,23 @@ shots = [
     dict(act=3, type="duel", src=CSO + " · population April 2025: 5,458,600 (CSO)", title="Per person, 2025",
          left=dict(label="GDP", value=110358, color="warm"), right=dict(label="GNI*", value=61188, color="acc2"), fmt="eurk",
          cues=[dict(at="GDP says", show="a"), dict(at="GNI star says", show="b")],
-         narration="Per person, that's a huge difference. {p} GDP says about a hundred and ten thousand euros per Irish resident. {p} GNI star says about sixty-one thousand. {pp} Still a rich country. {p} Just not the richest.",
+         narration="Per person, that's a huge difference. {p} GDP says about a hundred and ten thousand euros per Irish resident. {p} GNI star says about sixty-one thousand. {pp} Still a rich country. {p} Just not the richest. {p} In most rich countries, GDP and national income are within a few percent of each other. In Ireland, the gap is close to half.",
          badge="−45%",
          react=[dict(at="huge difference", pose="think"), dict(at="a hundred and ten", pose="pointL"), dict(at="sixty-one", pose="idle"), dict(at="Just not", pose="shrug")]),
 
     # ---------------- 4 · HOW THE IRISH LIVE ----------------
     dict(act=4, type="lines", set="gdpidx", series=["IRL", "LUX", "DEU"], years=[2000, 2024], start=2000.0, src=ESTAT + " · GDP", fmt="int", hl="IRL",
-         ref=dict(value=100, label="EU average = 100"),
-         narration="But even GNI star measures income, not living standards. {p} For that, Europe's statisticians have a better measure: actual individual consumption. {p} It counts everything households actually use: food, rent, cars, holidays, and public services like health and schools. {p} First, here's GDP per person, adjusted for prices. Ireland is more than twice the EU average.",
+         ref=dict(value=100, label="EU average = 100", pos="left"),
+         narration="But even GNI star measures income, not living standards. {p} For that, Europe's statisticians have a better measure: actual individual consumption. {p} It counts everything households actually use: food, rent, cars, holidays, and public services like health and schools. {p} First, here's GDP per person, adjusted for prices. Ireland is more than twice the EU average. Only Luxembourg is higher.",
          keys=[dict(at="First, here's", year=2024.0, dur=4.0)],
          labels=[dict(at="more than twice", iso="IRL", year=2024)],
          react=[dict(at="not living standards", pose="think"), dict(at="actual individual consumption", pose="pointUp"), dict(at="more than twice", pose="pointL")]),
     dict(act=4, type="lines", set="aic", series=["IRL", "LUX", "DEU"], years=[2000, 2024], start=2000.0, src=ESTAT + " · actual individual consumption", fmt="int", hl="IRL",
-         ref=dict(value=100, label="EU average = 100"),
-         narration="Now, here's what people actually consume. {pp} Ireland drops to ninety-nine. {p} Just below the EU average. {p} Below Germany, below France, below Belgium. {p} Back in 2006, at the height of the Celtic Tiger boom, it was a hundred and seventeen. {p} Today, the country with the second highest GDP per person in the EU sits in the middle of the pack for how its people actually live.",
+         ref=dict(value=100, label="EU average = 100", pos="left"),
+         narration="Now, here's what people actually consume. {pp} Ireland drops to ninety-nine. {p} Just below the EU average. {p} Below Germany, below France, below Belgium. {p} Back in 2006, at the height of the Celtic Tiger boom, it was a hundred and seventeen. {p} Today, the country with the second highest GDP per person in the EU ranks tenth for how its people actually live.",
          keys=[dict(at="Now, here's", year=2024.0, dur=5.0)],
          labels=[dict(at="Ireland drops", iso="IRL", year=2024), dict(at="Below Germany", iso="DEU", year=2024), dict(at="Back in 2006", iso="IRL", year=2006)],
-         react=[dict(at="actually consume", pose="pointL"), dict(at="Ireland drops", pose="shock"), dict(at="middle of the pack", pose="shrug")]),
+         react=[dict(at="actually consume", pose="pointL"), dict(at="Ireland drops", pose="shock"), dict(at="ranks tenth", pose="shrug")]),
     dict(act=4, type="host", bg="none",
          narration="That doesn't mean Irish people are poor. {p} Wages are high, and the multinationals do employ hundreds of thousands of people. {p} But the headline number is mostly about where giant companies keep their accounts. {pp} <soft>Not about how much richer the Irish are than everyone else.</soft>",
          items=[dict(at="are poor", text="Not poor."), dict(at="Wages are high", text="High wages, real jobs", color="acc2"), dict(at="where giant companies", text="GDP ≈ where companies keep their books", serif=True, size=56, color="acc")],
@@ -105,11 +105,12 @@ shots = [
 
     # ---------------- 5 · THE CATCH ----------------
     dict(act=5, type="list", src="CSO goods exports 2025 · Euronews (4 May 2026) · CSO quarterly national accounts Q1–Q2 2026", title="The catch",
-         narration="And that makes Ireland's official numbers wildly unstable. {p} In 2025, GDP grew twelve percent, while the domestic economy grew about five. {p} Pharmaceuticals drove it: exports of weight-loss drug ingredients, many rushed to the US ahead of new American tariffs. {p} Then, in early 2026, GDP fell about seven percent in three months, {p} and jumped ten percent in the next three. {pp} Meanwhile, the domestic economy just kept growing at a normal pace.",
+         narration="And that makes Ireland's official numbers wildly unstable. {p} In 2025, GDP grew twelve percent, while the domestic economy grew about five. {p} Pharmaceuticals drove it: exports of weight-loss drug ingredients, many rushed to the US ahead of new American tariffs. Exports to America jumped fifty-two percent. {p} Then, in early 2026, GDP fell about seven percent in three months, {p} and jumped ten percent in the next three. {pp} Meanwhile, the domestic economy just kept growing at a normal pace.",
          items=[dict(at="grew twelve percent", kind="bullet", text="2025 · GDP +12.3%"),
                 dict(at="about five", kind="bullet", text="domestic economy (MDD) +4.9%"),
                 dict(at="weight-loss drug", kind="bullet", text="pharma exports: +41%"),
-                dict(at="fell about seven", kind="strike", text="Q1 2026 · GDP ≈ −7%"),
+                dict(at="fifty-two percent", kind="bullet", text="exports to the US: +52%"),
+                dict(at="fell about seven", kind="bullet", text="Q1 2026 · GDP ≈ −7%"),
                 dict(at="jumped ten", kind="bullet", text="Q2 2026 · GDP +10.2%")],
          react=[dict(at="wildly unstable", pose="think"), dict(at="twelve percent", pose="pointL"), dict(at="weight-loss", pose="shock"), dict(at="fell about seven", pose="shock"), dict(at="normal pace", pose="shrug")]),
     dict(act=5, type="host", bg="none",
@@ -124,7 +125,7 @@ shots = [
          next=dict(kicker="WATCH NEXT", big="0.72", color="acc", title="South Korea's scariest number", sub="and why it just went up"),
          narration="If you want to see a country where the scariest number is real, watch our story on South Korea's birth rate. {p} I'm Chartbound. See you in the next one.",
          hold=14,
-         react=[dict(at="South Korea", pose="pointL"), dict(at="See you", pose="wave")]),
+         react=[dict(at="South Korea's birth rate", pose="pointL"), dict(at="See you", pose="wave")]),
 ]
 
 checks = [
@@ -132,8 +133,7 @@ checks = [
     dict(say="more than the United States", rule="gt", set="gdppc", a="IRL", b="USA", year=2024),
     dict(say="double Germany (~$56k)", set="gdppc", iso="DEU", year=2024, approx=56450, tol=0.01),
     dict(say="only Luxembourg higher in the EU (GDP per capita, PPS)", rule="rank", set="gdpidx", iso="IRL", year=2024, among=EU27, equal=2),
-    dict(say="prices second highest in the EU, after Denmark", rule="rank", set="pli", iso="IRL", year=2024, among=EU27, equal=2),
-    dict(say="Denmark is #1 on prices", rule="rank", set="pli", iso="DNK", year=2024, among=EU27, equal=1),
+    dict(say="prices third highest in the EU", rule="rank", set="pli", iso="IRL", year=2024, among=EU27, equal=3),
     dict(say="double Germany (ratio)", rule="ratio", set="gdppc", a="IRL", b="DEU", year=2024, min=1.95, max=2.1),
     dict(say="1990: poorer than EU average", rule="gt", set="gdppc", a="EUU", b="IRL", year=1990),
     dict(say="late 90s close to 10% a year (1997)", set="gdpg", iso="IRL", year=1997, min=9),
@@ -148,7 +148,7 @@ checks = [
     dict(say="below France", rule="gt", set="aic", a="FRA", b="IRL", year=2024),
     dict(say="below Belgium", rule="gt", set="aic", a="BEL", b="IRL", year=2024),
     dict(say="AIC 117 in 2006", set="aic", iso="IRL", year=2006, approx=117, tol=0.005),
-    dict(say="middle of the pack (AIC rank)", rule="rank", set="aic", iso="IRL", year=2024, among=EU27, min=9, max=18),
+    dict(say="ranks tenth (AIC 2024)", rule="rank", set="aic", iso="IRL", year=2024, among=EU27, equal=10),
     dict(say="GDP €602.4bn − GNI* €334.0bn = €268bn, ~45%", rule="expr", expr="[round(602.4 - 334.0), round((602.4 - 334.0) / 602.4 * 100)]", equal=[268, 45]),
     dict(say="per person €110k vs €61k (pop 5,458,600)", rule="expr", expr="[round(602.4e9 / 5458600 / 1000), round(334.0e9 / 5458600 / 1000)]", equal=[110, 61]),
     dict(say="badge −45%", rule="expr", expr="round((1 - 334.0 / 602.4) * 100)", equal=45),
@@ -168,7 +168,7 @@ for i, sh in enumerate(shots):
     sh["id"] = f"s{i:02d}"
 
 spec = dict(id="a-L03-ireland", channel="chartbound", chapter0="Richer than America?",
-            thumb=dict(set="gdppc", iso="IRL", years=[1990, 2024], flags=["IRL"], top="IRELAND", big="RICHEST?", line2="NOT REALLY"), w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
+            thumb=dict(set="gdppc", iso="IRL", years=[1990, 2024], flags=["IRL"], top="IRELAND", big="$113K", line2="EACH?!", color="#3ddc84"), w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
             datasets=datasets, snapshot=snapshot,
             voice=dict(model="", name="Charon",
                        style=("You are the narrator of a popular data documentary on YouTube. Read the script below in a warm, curious voice "

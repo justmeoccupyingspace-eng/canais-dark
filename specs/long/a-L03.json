@@ -13,8 +13,9 @@
    "IRL"
   ],
   "top": "IRELAND",
-  "big": "RICHEST?",
-  "line2": "NOT REALLY"
+  "big": "$113K",
+  "line2": "EACH?!",
+  "color": "#3ddc84"
  },
  "w": 1920,
  "h": 1080,
@@ -107,7 +108,7 @@
    ],
    "start": 2024.0,
    "fmt": "usdk",
-   "narration": "But walk around Dublin and ask people if they feel richer than Americans. {pp} You'll get a laugh. {p} Prices are the second highest in the EU, after Denmark. And the average Irish household doesn't live twice as well as a German one. {p} So which is it? {p} Is Ireland rich? <soft>Or is something strange going on with the number?</soft>",
+   "narration": "But walk around Dublin and ask people if they feel richer than Americans. {pp} You'll get a laugh. {p} Prices are the third highest in the EU. And the average Irish household doesn't live twice as well as a German one. {p} So which is it? {p} Is Ireland rich? <soft>Or is something strange going on with the number?</soft>",
    "items": [
     {
      "at": "richer than Americans",
@@ -534,7 +535,7 @@
    "act": 3,
    "type": "host",
    "bg": "none",
-   "narration": "By 2017, even Ireland's own statisticians had had enough. {p} GDP had stopped describing the Irish economy. {p} So the Central Statistics Office invented a new number, just for Ireland. {pp} They call it modified gross national income, or GNI star.",
+   "narration": "By 2017, even Ireland's own statisticians had had enough. {p} GDP had stopped describing the Irish economy. {p} So the Central Statistics Office invented a new number, just for Ireland. {pp} They call it modified gross national income, or GNI star. {p} It's not perfect, but Ireland's own government now uses it to measure things like the national debt.",
    "items": [
     {
      "at": "had had enough",
@@ -639,7 +640,7 @@
      "show": "b"
     }
    ],
-   "narration": "Per person, that's a huge difference. {p} GDP says about a hundred and ten thousand euros per Irish resident. {p} GNI star says about sixty-one thousand. {pp} Still a rich country. {p} Just not the richest.",
+   "narration": "Per person, that's a huge difference. {p} GDP says about a hundred and ten thousand euros per Irish resident. {p} GNI star says about sixty-one thousand. {pp} Still a rich country. {p} Just not the richest. {p} In most rich countries, GDP and national income are within a few percent of each other. In Ireland, the gap is close to half.",
    "badge": "−45%",
    "react": [
     {
@@ -680,9 +681,10 @@
    "hl": "IRL",
    "ref": {
     "value": 100,
-    "label": "EU average = 100"
+    "label": "EU average = 100",
+    "pos": "left"
    },
-   "narration": "But even GNI star measures income, not living standards. {p} For that, Europe's statisticians have a better measure: actual individual consumption. {p} It counts everything households actually use: food, rent, cars, holidays, and public services like health and schools. {p} First, here's GDP per person, adjusted for prices. Ireland is more than twice the EU average.",
+   "narration": "But even GNI star measures income, not living standards. {p} For that, Europe's statisticians have a better measure: actual individual consumption. {p} It counts everything households actually use: food, rent, cars, holidays, and public services like health and schools. {p} First, here's GDP per person, adjusted for prices. Ireland is more than twice the EU average. Only Luxembourg is higher.",
    "keys": [
     {
      "at": "First, here's",
@@ -732,9 +734,10 @@
    "hl": "IRL",
    "ref": {
     "value": 100,
-    "label": "EU average = 100"
+    "label": "EU average = 100",
+    "pos": "left"
    },
-   "narration": "Now, here's what people actually consume. {pp} Ireland drops to ninety-nine. {p} Just below the EU average. {p} Below Germany, below France, below Belgium. {p} Back in 2006, at the height of the Celtic Tiger boom, it was a hundred and seventeen. {p} Today, the country with the second highest GDP per person in the EU sits in the middle of the pack for how its people actually live.",
+   "narration": "Now, here's what people actually consume. {pp} Ireland drops to ninety-nine. {p} Just below the EU average. {p} Below Germany, below France, below Belgium. {p} Back in 2006, at the height of the Celtic Tiger boom, it was a hundred and seventeen. {p} Today, the country with the second highest GDP per person in the EU ranks tenth for how its people actually live.",
    "keys": [
     {
      "at": "Now, here's",
@@ -769,7 +772,7 @@
      "pose": "shock"
     },
     {
-     "at": "middle of the pack",
+     "at": "ranks tenth",
      "pose": "shrug"
     }
    ],
@@ -819,7 +822,7 @@
    "type": "list",
    "src": "CSO goods exports 2025 · Euronews (4 May 2026) · CSO quarterly national accounts Q1–Q2 2026",
    "title": "The catch",
-   "narration": "And that makes Ireland's official numbers wildly unstable. {p} In 2025, GDP grew twelve percent, while the domestic economy grew about five. {p} Pharmaceuticals drove it: exports of weight-loss drug ingredients, many rushed to the US ahead of new American tariffs. {p} Then, in early 2026, GDP fell about seven percent in three months, {p} and jumped ten percent in the next three. {pp} Meanwhile, the domestic economy just kept growing at a normal pace.",
+   "narration": "And that makes Ireland's official numbers wildly unstable. {p} In 2025, GDP grew twelve percent, while the domestic economy grew about five. {p} Pharmaceuticals drove it: exports of weight-loss drug ingredients, many rushed to the US ahead of new American tariffs. Exports to America jumped fifty-two percent. {p} Then, in early 2026, GDP fell about seven percent in three months, {p} and jumped ten percent in the next three. {pp} Meanwhile, the domestic economy just kept growing at a normal pace.",
    "items": [
     {
      "at": "grew twelve percent",
@@ -837,8 +840,13 @@
      "text": "pharma exports: +41%"
     },
     {
+     "at": "fifty-two percent",
+     "kind": "bullet",
+     "text": "exports to the US: +52%"
+    },
+    {
      "at": "fell about seven",
-     "kind": "strike",
+     "kind": "bullet",
      "text": "Q1 2026 · GDP ≈ −7%"
     },
     {
@@ -980,7 +988,7 @@
    "hold": 14,
    "react": [
     {
-     "at": "South Korea",
+     "at": "South Korea's birth rate",
      "pose": "pointL"
     },
     {
@@ -1054,7 +1062,7 @@
    "equal": 2
   },
   {
-   "say": "prices second highest in the EU, after Denmark",
+   "say": "prices third highest in the EU",
    "rule": "rank",
    "set": "pli",
    "iso": "IRL",
@@ -1088,44 +1096,7 @@
     "ESP",
     "SWE"
    ],
-   "equal": 2
-  },
-  {
-   "say": "Denmark is #1 on prices",
-   "rule": "rank",
-   "set": "pli",
-   "iso": "DNK",
-   "year": 2024,
-   "among": [
-    "AUT",
-    "BEL",
-    "BGR",
-    "HRV",
-    "CYP",
-    "CZE",
-    "DNK",
-    "EST",
-    "FIN",
-    "FRA",
-    "DEU",
-    "GRC",
-    "HUN",
-    "IRL",
-    "ITA",
-    "LVA",
-    "LTU",
-    "LUX",
-    "MLT",
-    "NLD",
-    "POL",
-    "PRT",
-    "ROU",
-    "SVK",
-    "SVN",
-    "ESP",
-    "SWE"
-   ],
-   "equal": 1
+   "equal": 3
   },
   {
    "say": "double Germany (ratio)",
@@ -1238,7 +1209,7 @@
    "tol": 0.005
   },
   {
-   "say": "middle of the pack (AIC rank)",
+   "say": "ranks tenth (AIC 2024)",
    "rule": "rank",
    "set": "aic",
    "iso": "IRL",
@@ -1272,8 +1243,7 @@
     "ESP",
     "SWE"
    ],
-   "min": 9,
-   "max": 18
+   "equal": 10
   },
   {
    "say": "GDP €602.4bn − GNI* €334.0bn = €268bn, ~45%",

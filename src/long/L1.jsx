@@ -19,11 +19,11 @@ const sp = (T, t0, cfg = {damping: 14, stiffness: 170}) => (t0 == null ? 0 : spr
 const on = (T, t0) => t0 != null && T >= t0;
 
 const NUM = {POL: '616', DEU: '276', JPN: '392', GBR: '826', IRL: '372', ESP: '724', FRA: '250', ITA: '380', NLD: '528', BEL: '056', LUX: '442', DNK: '208', GRC: '300', PRT: '620', AUT: '040', FIN: '246', SWE: '752', CZE: '203', SVK: '703', HUN: '348', SVN: '705', EST: '233', LVA: '428', LTU: '440', CYP: '196', MLT: '470', BGR: '100', ROU: '642', HRV: '191', KOR: '410', UKR: '804', CHN: '156', RUS: '643', BLR: '112'};
-const NAME = {POL: 'Poland', JPN: 'Japan', ESP: 'Spain', DEU: 'Germany', GRC: 'Greece', PRT: 'Portugal', UKR: 'Ukraine', KOR: 'South Korea', GBR: 'Britain', IRL: 'Ireland', CHN: 'China', ITA: 'Italy', USA: 'United States', HUN: 'Hungary', ISR: 'Israel', WLD: 'World'};
+const NAME = {POL: 'Poland', JPN: 'Japan', ESP: 'Spain', DEU: 'Germany', GRC: 'Greece', PRT: 'Portugal', UKR: 'Ukraine', KOR: 'South Korea', GBR: 'Britain', IRL: 'Ireland', CHN: 'China', ITA: 'Italy', USA: 'United States', HUN: 'Hungary', ISR: 'Israel', WLD: 'World', EUU: 'EU average', EU: 'EU average', LUX: 'Luxembourg', FRA: 'France', BEL: 'Belgium', NLD: 'Netherlands', DNK: 'Denmark', CHE: 'Switzerland', NOR: 'Norway'};
 const COUNTRIES = feature(world, world.objects.countries).features;
 const BYNUM = Object.fromEntries(COUNTRIES.map((c) => [c.id, c]));
 
-const colOf = (p, iso) => ({POL: p.acc, JPN: p.warm, UKR: '#4aa8ff', ESP: '#c58bff', DEU: '#8fa3c7', GRC: '#5fd3ff', PRT: p.acc2, KOR: '#ff8ad8', CHN: '#ff9f43', ITA: '#5fd3ff', USA: '#8fa3ff', HUN: p.acc, ISR: p.acc2, WLD: '#ffffff'}[iso] || '#ffffff');
+const colOf = (p, iso) => ({POL: p.acc, JPN: p.warm, UKR: '#4aa8ff', ESP: '#c58bff', DEU: '#8fa3c7', GRC: '#5fd3ff', PRT: p.acc2, KOR: '#ff8ad8', CHN: '#ff9f43', ITA: '#5fd3ff', USA: '#8fa3ff', HUN: p.acc, ISR: p.acc2, WLD: '#ffffff', IRL: '#3ddc84', EUU: '#c9d1e6', EU: '#c9d1e6', LUX: '#5fd3ff', FRA: '#8fa3ff', BEL: '#ffd166'}[iso] || '#ffffff');
 
 export const fmt = (v, k) => {
   if (v == null || Number.isNaN(v)) return '';
@@ -168,6 +168,7 @@ const Flag = ({iso, w = 150}) => {
   if (iso === 'UKR') return <div style={{...box, background: 'linear-gradient(#0057b7 0 50%, #ffd700 50% 100%)'}} />;
   if (iso === 'DEU') return <div style={{...box, background: 'linear-gradient(#000 0 33.3%, #dd0000 33.3% 66.6%, #ffce00 66.6% 100%)'}} />;
   if (iso === 'KOR') return <div style={{...box, background: '#fff'}}><div style={{position: 'absolute', left: w / 2 - h * 0.25, top: h * 0.25, width: h * 0.5, height: h * 0.5, borderRadius: '50%', background: 'linear-gradient(#cd2e3a 0 50%, #0047a0 50% 100%)', transform: 'rotate(-34deg)'}} /></div>;
+  if (iso === 'IRL') return <div style={{...box, background: 'linear-gradient(90deg, #169b62 0 33.3%, #fff 33.3% 66.6%, #ff883e 66.6% 100%)'}} />;
   return <div style={{...box, background: '#888'}} />;
 };
 
@@ -242,7 +243,7 @@ const Lines = ({sh, p, data, T, dim}) => {
         {sh.ref ? (
           <g>
             <line x1={PL.x0} x2={PL.x1} y1={Yp(sh.ref.value)} y2={Yp(sh.ref.value)} stroke="#ffffff" strokeOpacity={0.55} strokeWidth={3} strokeDasharray="14 12" />
-            <text x={PL.x1} y={Yp(sh.ref.value) - 16} textAnchor="end" fontFamily={SANS} fontWeight={700} fontSize={26} fill="#ffffffb0">{sh.ref.label}</text>
+            <text x={sh.ref.pos === 'left' ? PL.x0 + 12 : PL.x1} y={Yp(sh.ref.value) - 16} textAnchor={sh.ref.pos === 'left' ? 'start' : 'end'} fontFamily={SANS} fontWeight={700} fontSize={26} fill="#ffffffb0">{sh.ref.label}</text>
           </g>
         ) : null}
         {sh.fc && R > sh.fc + 0.05 ? (
@@ -894,7 +895,7 @@ const statValue = (st, data) => {
   return pickYear(pts, st.year).slice().reverse();
 };
 
-const StatCard = ({st, p, data, T, x, y, small, center}) => {
+const StatCard = ({st, p, data, T, x, y, small, center, multi}) => {
   if (st.t == null) return null;
   const [v, yr] = statValue(st, data);
   const s = sp(T, st.t, {damping: 12, stiffness: 160});
@@ -904,11 +905,11 @@ const StatCard = ({st, p, data, T, x, y, small, center}) => {
   const v0 = st.count_from ?? 0;
   const shown = v0 + (v - v0) * Easing.out(Easing.cubic)(k);
   const label = (st.label || '').replace('{year}', yr ?? '');
-  const size = small ? 120 : 210;
+  const size = small ? 120 : multi ? 150 : 210;
   return (
     <div style={{position: 'absolute', left: center ? '50%' : x, top: y, transform: `${center ? 'translateX(-50%) ' : ''}scale(${0.7 + 0.3 * s})`, transformOrigin: 'left center', opacity: Math.min(1, s * 1.5) * out, padding: small ? '20px 32px' : 0, borderRadius: 24, background: small ? '#0b1026d9' : 'transparent', border: small ? `2px solid ${p.acc}55` : 'none'}}>
       <div style={{fontFamily: SANS, fontWeight: 900, fontSize: size, lineHeight: 1, color: p.acc, letterSpacing: -size * 0.03, textShadow: '0 10px 40px rgba(0,0,0,.45)'}}>{st.prefix && v > 0 ? st.prefix : ''}{fmt(shown, st.fmt)}</div>
-      <div style={{fontFamily: SANS, fontWeight: 700, fontSize: small ? 30 : 44, color: '#ffffffd0', marginTop: 10}}>{label}</div>
+      <div style={{fontFamily: SANS, fontWeight: 700, fontSize: small ? 30 : multi ? 34 : 44, color: '#ffffffd0', marginTop: 10, maxWidth: multi ? 680 : 'none'}}>{label}</div>
     </div>
   );
 };
@@ -922,7 +923,7 @@ const Stats = ({sh, p, data, T}) => {
       <Rays p={p} T={T} t0={first} />
       {sh.title ? <div style={{position: 'absolute', left: 150, top: 470 - 290 * up, fontFamily: SERIF, fontStyle: 'italic', fontWeight: 600, fontSize: 96 - 46 * up, color: up > 0.5 ? '#ffffffb0' : '#fff', opacity: sp(T, sh.t0 + 0.1), transform: `translateY(${(1 - sp(T, sh.t0 + 0.1)) * 30}px)`, whiteSpace: 'nowrap'}}>{sh.title}</div> : null}
       {(sh.stats || []).map((st, i) => (
-        <StatCard key={i} st={st} p={p} data={data} T={T} x={n > 1 ? 150 + i * 620 : 220} y={n > 1 ? 330 : 300} />
+        <StatCard key={i} st={st} p={p} data={data} T={T} x={n > 1 ? 150 + i * 760 : 220} y={n > 1 ? 330 : 300} multi={n > 1} />
       ))}
     </AbsoluteFill>
   );
