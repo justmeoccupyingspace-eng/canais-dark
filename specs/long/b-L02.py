@@ -11,8 +11,9 @@ shots = [
     dict(act=0, type="stack", src="Drive sold as 1 TB = 1,000,000,000,000 bytes", title="Your new 1 TB drive", sub="what your PC shows",
          total=1000, segs=[dict(at="nine hundred thirty-one", value=931.32, text="931 GB", label="what Windows shows", color="acc"),
                           dict(at="Sixty-nine", value=68.68, text="69 GB?", label="gone?", color="warm", ghost=True)],
-         narration="You buy a one-terabyte drive. You plug it in. {p} And your computer says nine hundred thirty-one gigabytes. {pp} Sixty-nine gigabytes, gone. {p} So who's lying? The box, or your computer?",
-         react=[dict(at="You buy", pose="idle"), dict(at="nine hundred thirty-one", pose="pointL"), dict(at="gone", pose="shock"), dict(at="who's lying", pose="think")]),
+         narration="You buy a one-terabyte drive. You plug it in. {p} And your computer says nine hundred thirty-one gigabytes. {pp} Sixty-nine gigabytes, gone. {p} And it's not one bad drive. Every one-terabyte drive, from every brand, does the same thing on Windows. {p} So either the whole storage industry has been scamming us for decades, or something else is going on. {p} So who's lying? The box, or your computer?",
+         react=[dict(at="You buy", pose="idle"), dict(at="nine hundred thirty-one", pose="pointL"), dict(at="gone", pose="shock"), dict(at="scamming us", pose="shrug"), dict(at="who's lying", pose="think")],
+         kicker=dict(at="every brand", text="every brand · every 1 TB drive")),
     dict(act=0, type="host", bg="none",
          narration="Neither. Both numbers are correct. {p} They're counting in two different units, and both units are called a gigabyte. {p} And once you see how that happened, you'll spot the same trick in your RAM, in your internet bill, and inside your SSD, which actually holds more than one terabyte. {pp} You just can't use it.",
          items=[dict(at="Both numbers", text="Both numbers are correct"), dict(at="two different units", text="Two units, one name: “gigabyte”", color="acc"),
@@ -61,7 +62,7 @@ shots = [
     dict(act=2, type="duel", src="Same drive: 10¹² bytes", title="Same drive, same bytes",
          left=dict(label="On Windows", value=931, color="warm"), right=dict(label="On a Mac", value=1000, color="acc2"), fmt="int", badge="SAME BYTES",
          cues=[dict(at="Windows PC", show="a"), dict(at="on a Mac", show="b")],
-         narration="Same drive, same bytes. {p} Plug it into a Windows PC and it says nine hundred thirty-one gigabytes. {p} Plug it in on a Mac, and it says one thousand. {pp} The only thing that changed is the ruler.",
+         narration="Same drive, same bytes. {p} Plug it into a Windows PC and it says nine hundred thirty-one gigabytes. {p} Plug it in on a Mac, and it says one thousand. {pp} The only thing that changed is the ruler. {p} It's like measuring a room in feet, and then writing “meters” next to the number.",
          react=[dict(at="Same drive", pose="idle"), dict(at="Windows PC", pose="pointL"), dict(at="on a Mac", pose="pointL"), dict(at="ruler", pose="cheer")]),
 
     # ---------------- 3 · COURT ----------------
@@ -88,10 +89,10 @@ shots = [
     dict(act=4, type="stack", src="Inherent SSD over-provisioning: binary NAND vs decimal capacity (TechTarget, Kingston)", title="Inside a typical 1 TB SSD", sub="flash chips are built in binary sizes: 1,024 GiB",
          total=1099.51, segs=[dict(at="sold, and shown", value=1000, text="1,000 GB", label="what you can use", color="acc"),
                               dict(at="is hidden", value=99.51, text="≈100 GB", label="hidden spare", color="warm")],
-         narration="Now, the twist I promised. {p} Flash memory chips are built in binary sizes. A typical one-terabyte SSD contains one thousand and twenty-four binary gigabytes of flash. {p} That's about one thousand ninety-nine regular gigabytes. {p} But it's sold, and shown, as one terabyte. {pp} So about a hundred gigabytes is hidden. On purpose.",
-         react=[dict(at="twist", pose="pointUp"), dict(at="one thousand ninety-nine", pose="pointL"), dict(at="is hidden", pose="shock"), dict(at="On purpose", pose="idle", nod=1)]),
+         narration="Now, the twist I promised. {p} Flash memory chips are built in binary sizes. A typical one-terabyte SSD contains one thousand and twenty-four binary gigabytes of flash. {p} That's about one thousand ninety-nine regular gigabytes. {p} But it's sold, and shown, as one terabyte. {pp} So about a hundred gigabytes is hidden. On purpose. {p} Some drives go further: models sold as nine hundred sixty gigabytes hide even more, to last longer under heavy use.",
+         react=[dict(at="twist", pose="pointUp"), dict(at="one thousand ninety-nine", pose="pointL"), dict(at="is hidden", pose="shock"), dict(at="On purpose", pose="idle", nod=1), dict(at="nine hundred sixty", pose="pointUp")]),
     dict(act=4, type="list", src="TechTarget: SSD over-provisioning; Kingston: Understanding SSD Over-provisioning", title="What the hidden space does",
-         narration="Flash memory wears out. Each cell can only be erased so many times. {p} So the drive's controller keeps that hidden space for itself: to spread writes evenly across the chips, to clean up old data in the background, and to replace cells that die. {p} The industry calls this overprovisioning. {pp} Your drive isn't hiding space from you. {p} It's hiding it for you, so it lasts longer. {p} You can even give it more: leave part of an SSD unpartitioned, and many drives will use that as extra spare space.",
+         narration="Flash memory wears out. Each cell can only be erased so many times. {p} So the drive's controller keeps that hidden space for itself: to spread writes evenly across the chips, to clean up old data in the background, and to replace cells that die. {p} It's also part of why an SSD can slow down when it's almost full: there's less free space to juggle. {p} The industry calls this overprovisioning. {pp} Your drive isn't hiding space from you. {p} It's hiding it for you, so it lasts longer. {p} You can even give it more: leave part of an SSD unpartitioned, and many drives will use that as extra spare space.",
          items=[dict(at="spread writes", kind="bullet", text="wear leveling: spread writes evenly"),
                 dict(at="clean up old data", kind="bullet", text="garbage collection in the background"),
                 dict(at="replace cells", kind="bullet", text="spare blocks for cells that die"),
@@ -138,6 +139,7 @@ checks = [
     dict(say="10 TB drive shows 9.09", rule="expr", expr="round(10**13 / 2**40, 2)", equal=9.09),
     dict(say="CD 700 'MB' = 737,280,000 B = 703 MiB", rule="expr", expr="[360000 * 2048, 360000 * 2048 / 2**20]", equal=[737280000, 703.125]),
     dict(say="DVD 4.7 GB shows as 4.38", rule="expr", expr="round(4707319808 / 2**30, 2)", equal=4.38),
+    dict(say="960 GB model hides ~139 GB of 1,099.5", rule="expr", expr="round(1024 * 2**30 / 1e9 - 960)", equal=140),
     dict(say="first five powers of two", rule="expr", expr="repr([2**n for n in range(1, 6)])", equal="[2, 4, 8, 16, 32]"),
 ]
 

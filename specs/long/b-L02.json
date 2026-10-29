@@ -38,7 +38,7 @@
      "ghost": true
     }
    ],
-   "narration": "You buy a one-terabyte drive. You plug it in. {p} And your computer says nine hundred thirty-one gigabytes. {pp} Sixty-nine gigabytes, gone. {p} So who's lying? The box, or your computer?",
+   "narration": "You buy a one-terabyte drive. You plug it in. {p} And your computer says nine hundred thirty-one gigabytes. {pp} Sixty-nine gigabytes, gone. {p} And it's not one bad drive. Every one-terabyte drive, from every brand, does the same thing on Windows. {p} So either the whole storage industry has been scamming us for decades, or something else is going on. {p} So who's lying? The box, or your computer?",
    "react": [
     {
      "at": "You buy",
@@ -53,10 +53,18 @@
      "pose": "shock"
     },
     {
+     "at": "scamming us",
+     "pose": "shrug"
+    },
+    {
      "at": "who's lying",
      "pose": "think"
     }
    ],
+   "kicker": {
+    "at": "every brand",
+    "text": "every brand · every 1 TB drive"
+   },
    "id": "s00"
   },
   {
@@ -399,7 +407,7 @@
      "show": "b"
     }
    ],
-   "narration": "Same drive, same bytes. {p} Plug it into a Windows PC and it says nine hundred thirty-one gigabytes. {p} Plug it in on a Mac, and it says one thousand. {pp} The only thing that changed is the ruler.",
+   "narration": "Same drive, same bytes. {p} Plug it into a Windows PC and it says nine hundred thirty-one gigabytes. {p} Plug it in on a Mac, and it says one thousand. {pp} The only thing that changed is the ruler. {p} It's like measuring a room in feet, and then writing “meters” next to the number.",
    "react": [
     {
      "at": "Same drive",
@@ -566,7 +574,7 @@
      "color": "warm"
     }
    ],
-   "narration": "Now, the twist I promised. {p} Flash memory chips are built in binary sizes. A typical one-terabyte SSD contains one thousand and twenty-four binary gigabytes of flash. {p} That's about one thousand ninety-nine regular gigabytes. {p} But it's sold, and shown, as one terabyte. {pp} So about a hundred gigabytes is hidden. On purpose.",
+   "narration": "Now, the twist I promised. {p} Flash memory chips are built in binary sizes. A typical one-terabyte SSD contains one thousand and twenty-four binary gigabytes of flash. {p} That's about one thousand ninety-nine regular gigabytes. {p} But it's sold, and shown, as one terabyte. {pp} So about a hundred gigabytes is hidden. On purpose. {p} Some drives go further: models sold as nine hundred sixty gigabytes hide even more, to last longer under heavy use.",
    "react": [
     {
      "at": "twist",
@@ -584,6 +592,10 @@
      "at": "On purpose",
      "pose": "idle",
      "nod": 1
+    },
+    {
+     "at": "nine hundred sixty",
+     "pose": "pointUp"
     }
    ],
    "id": "s12"
@@ -593,7 +605,7 @@
    "type": "list",
    "src": "TechTarget: SSD over-provisioning; Kingston: Understanding SSD Over-provisioning",
    "title": "What the hidden space does",
-   "narration": "Flash memory wears out. Each cell can only be erased so many times. {p} So the drive's controller keeps that hidden space for itself: to spread writes evenly across the chips, to clean up old data in the background, and to replace cells that die. {p} The industry calls this overprovisioning. {pp} Your drive isn't hiding space from you. {p} It's hiding it for you, so it lasts longer. {p} You can even give it more: leave part of an SSD unpartitioned, and many drives will use that as extra spare space.",
+   "narration": "Flash memory wears out. Each cell can only be erased so many times. {p} So the drive's controller keeps that hidden space for itself: to spread writes evenly across the chips, to clean up old data in the background, and to replace cells that die. {p} It's also part of why an SSD can slow down when it's almost full: there's less free space to juggle. {p} The industry calls this overprovisioning. {pp} Your drive isn't hiding space from you. {p} It's hiding it for you, so it lasts longer. {p} You can even give it more: leave part of an SSD unpartitioned, and many drives will use that as extra spare space.",
    "items": [
     {
      "at": "spread writes",
@@ -892,6 +904,12 @@
    "rule": "expr",
    "expr": "round(4707319808 / 2**30, 2)",
    "equal": 4.38
+  },
+  {
+   "say": "960 GB model hides ~139 GB of 1,099.5",
+   "rule": "expr",
+   "expr": "round(1024 * 2**30 / 1e9 - 960)",
+   "equal": 140
   },
   {
    "say": "first five powers of two",
