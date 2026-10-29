@@ -1,0 +1,20 @@
+name: ytthumb
+on:
+  workflow_dispatch:
+    inputs:
+      ch: {description: "A ou B", required: true}
+      vid: {description: "ID do vídeo", required: true}
+      ref: {description: "branch com o thumb.jpg (ex.: long-<run>)", required: true}
+jobs:
+  t:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          git fetch -q origin "${{ inputs.ref }}" && git show "FETCH_HEAD:thumb.jpg" > /tmp/t.jpg && ls -la /tmp/t.jpg
+          python3 scripts/lyt.py thumb ${{ inputs.ch }} ${{ inputs.vid }} /tmp/t.jpg
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_A: ${{ secrets.YT_REFRESH_A }}
+          YT_REFRESH_B: ${{ secrets.YT_REFRESH_B }}
