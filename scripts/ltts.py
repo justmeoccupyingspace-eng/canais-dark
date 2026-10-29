@@ -244,11 +244,49 @@ def snap(x, t, lo, hi):
     return lo + (int(np.argmin(e)) + 0.5) * n / SR
 
 
+def frames_db(x, lo, hi, n):
+    seg = x[int(lo * SR):int(hi * SR)]
+    k = len(seg) // n
+    return 20 * np.log10(np.sqrt(np.mean(seg[: k * n].reshape(k, n) ** 2, axis=1)) + 1e-9) if k else np.array([])
+
+
+def onset(x, t_word, thr=-45.0):
+    """início real da fala que contém a 1ª palavra mantida: último ataque precedido de ≥100 ms de silêncio,
+    o mais perto do tempo do Whisper (que erra uns décimos)."""
+    n = int(0.02 * SR)
+    lo = max(0.0, t_word - 1.2)
+    e = frames_db(x, lo, min(len(x) / SR, t_word + 0.6), n)
+    cands = [i for i in range(5, len(e)) if e[i] > thr and all(e[i - k] <= thr for k in range(1, 6))]
+    if not cands:
+        return None
+    best = min(cands, key=lambda i: abs(lo + i * n / SR - t_word))
+    return lo + best * n / SR - 0.06
+
+
+def offset(x, t_word, thr=-45.0):
+    """fim real da fala mantida antes de um corte: 1º trecho de ≥100 ms de silêncio depois da palavra."""
+    n = int(0.02 * SR)
+    lo = max(0.0, t_word - 0.15)
+    e = frames_db(x, lo, min(len(x) / SR, t_word + 0.8), n)
+    for i in range(len(e) - 5):
+        if all(e[i + k] <= thr for k in range(5)):
+            return lo + i * n / SR + 0.06
+    return None
+
+
 def excise(x, times, spans):
     ref = []
     for a, b in spans:
-        a2 = snap(x, a, a - 0.23, a + 0.4) if a > 0 else 0.0
-        b2 = snap(x, b, b - 0.4, b + 0.2) if b < len(x) / SR else b
+        if a > 0:
+            prev = max((t1 for t0, t1 in times if t1 <= a + 0.3), default=a)
+            a2 = offset(x, prev) or snap(x, a, a - 0.23, a + 0.4)
+        else:
+            a2 = 0.0
+        if b < len(x) / SR:
+            nxt = min((t0 for t0, t1 in times if t0 >= b - 0.3), default=b)
+            b2 = onset(x, nxt) or snap(x, b, b - 0.4, b + 0.2)
+        else:
+            b2 = b
         ref.append((min(a2, b2), max(a2, b2)))
     spans = ref
     keep = np.ones(len(x), bool)
