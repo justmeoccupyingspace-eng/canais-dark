@@ -49,6 +49,7 @@ export const fmt = (v, k) => {
     case 'dec3': return v.toFixed(3);
     case 'pct1': return v.toFixed(1) + '%';
     case 'pct3': return v.toFixed(3) + '%';
+    case 'usec': return (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(Math.round(v)) + ' µs';
     case 'eurk': return '€' + Math.round(v / 1000) + 'k';
     default: return String(Math.round(v));
   }
@@ -658,6 +659,67 @@ const Stack = ({sh, p, T}) => {
   );
 };
 
+// órbita: Terra, anel de satélites, sinais até o celular e esferas de distância (GPS)
+const Orbit = ({sh, p, T}) => {
+  const cx = 640, cy = 580, RE = 165, RO = 395;
+  const n = sh.sats || 6;
+  const ph = (-62 * Math.PI) / 180;
+  const px = cx + RE * Math.cos(ph), py = cy + RE * Math.sin(ph);
+  const sats = Array.from({length: n}).map((_, i) => {
+    const a = (i / n) * Math.PI * 2 - Math.PI / 2 + (T - sh.t0) * 0.045;
+    return [cx + RO * Math.cos(a), cy + RO * 0.82 * Math.sin(a)];
+  });
+  const vis = sats.map((q, i) => [i, Math.hypot(q[0] - px, q[1] - py)]).sort((a, b) => a[1] - b[1]).slice(0, 4).map((x) => x[0]);
+  const lk = sh.link && sh.link.t != null ? ramp(T, sh.link.t, 0.8) : 0;
+  const sph = sh.spheres && sh.spheres.t != null ? ramp(T, sh.spheres.t, 1.2) : 0;
+  return (
+    <AbsoluteFill>
+      <svg width={1920} height={1080} style={{position: 'absolute'}}>
+        <defs>
+          <radialGradient id="earthG" cx="40%" cy="35%" r="70%"><stop offset="0%" stopColor="#3b82f6" /><stop offset="70%" stopColor="#1e3a8a" /><stop offset="100%" stopColor="#0b1530" /></radialGradient>
+        </defs>
+        <ellipse cx={cx} cy={cy} rx={RO} ry={RO * 0.82} fill="none" stroke="#ffffff" strokeOpacity={0.18} strokeWidth={3} strokeDasharray="10 12" />
+        <circle cx={cx} cy={cy} r={RE + 18} fill={p.acc2} opacity={0.08} />
+        <circle cx={cx} cy={cy} r={RE} fill="url(#earthG)" />
+        {[0.35, 0.7].map((k) => <ellipse key={k} cx={cx} cy={cy} rx={RE} ry={RE * k} fill="none" stroke="#ffffff" strokeOpacity={0.12} strokeWidth={2} />)}
+        {[0.4, 0.8].map((k) => <ellipse key={'v' + k} cx={cx} cy={cy} rx={RE * k} ry={RE} fill="none" stroke="#ffffff" strokeOpacity={0.12} strokeWidth={2} />)}
+        {vis.slice(0, 3).map((i) => {
+          const [sx, sy] = sats[i];
+          const r = Math.hypot(sx - px, sy - py);
+          return sph > 0 ? <circle key={'s' + i} cx={sx} cy={sy} r={r * sph} fill="none" stroke={p.acc} strokeOpacity={0.45} strokeWidth={3} /> : null;
+        })}
+        {vis.map((i, j) => {
+          const [sx, sy] = sats[i];
+          const k = Math.max(0, Math.min(1, lk * 1.6 - j * 0.2));
+          if (k <= 0) return null;
+          const ex = sx + (px - sx) * k, ey = sy + (py - sy) * k;
+          const pulse = ((T * 0.9 + j * 0.25) % 1);
+          return (
+            <g key={'l' + i}>
+              <line x1={sx} y1={sy} x2={ex} y2={ey} stroke={p.acc} strokeOpacity={0.7} strokeWidth={3} strokeDasharray="6 10" />
+              {k >= 1 ? <circle cx={sx + (px - sx) * pulse} cy={sy + (py - sy) * pulse} r={7} fill={p.acc} /> : null}
+            </g>
+          );
+        })}
+        {sats.map(([sx, sy], i) => (
+          <g key={i} transform={`translate(${sx},${sy})`}>
+            <rect x={-34} y={-8} width={24} height={16} rx={3} fill="#5fd3ff" opacity={0.9} />
+            <rect x={10} y={-8} width={24} height={16} rx={3} fill="#5fd3ff" opacity={0.9} />
+            <rect x={-10} y={-12} width={20} height={24} rx={5} fill="#e5e7eb" />
+            <circle cx={0} cy={0} r={4} fill={vis.includes(i) && lk > 0 ? p.acc : '#94a3b8'} />
+          </g>
+        ))}
+        <circle cx={px} cy={py} r={13} fill="#fff" />
+        <circle cx={px} cy={py} r={13 + 10 * Math.abs(Math.sin(T * 3))} fill="none" stroke="#fff" strokeOpacity={0.5} strokeWidth={3} />
+      </svg>
+      {sh.msg && sh.msg.t != null && T >= sh.msg.t ? (
+        <div style={{position: 'absolute', left: 1080, top: 250, maxWidth: 700, fontFamily: MONO, fontWeight: 800, fontSize: 34, color: '#0d1020', background: '#fff', padding: '16px 24px', borderRadius: 18, opacity: sp(T, sh.msg.t), boxShadow: '0 12px 30px rgba(0,0,0,.4)'}}>{sh.msg.text}</div>
+      ) : null}
+      {sh.tag && sh.tag.t != null ? <Pill x={1080} y={sh.msg ? 420 : 300} text={sh.tag.text} color={p.warm} T={T} t0={sh.tag.t} /> : null}
+    </AbsoluteFill>
+  );
+};
+
 // lançamento: foguete sobe com relógio T+ e explode no cue
 const Launch = ({sh, p, T}) => {
   const t0 = sh.go?.t ?? sh.t0 + 0.5;
@@ -1255,7 +1317,7 @@ const Music = ({spec}) => {
 
 // ---------------- composição ----------------
 const BarsAny = (props) => (props.sh.mode === 'abs' ? <BarsAbs {...props} /> : <Bars {...props} />);
-const VIEWS = {lines: Lines, bars: BarsAny, globe: Globe, stats: Stats, duel: Duel, list: List, cards: Cards, hbars: HBars, end: End, people: People, code: Code, bits: Bits, counter: Counter, radar: Radar, launch: Launch, ladder: Ladder, stack: Stack};
+const VIEWS = {lines: Lines, bars: BarsAny, globe: Globe, stats: Stats, duel: Duel, list: List, cards: Cards, hbars: HBars, end: End, people: People, code: Code, bits: Bits, counter: Counter, radar: Radar, launch: Launch, ladder: Ladder, stack: Stack, orbit: Orbit};
 
 const ShotView = ({sh, idx, p, data}) => {
   const f = useCurrentFrame();
