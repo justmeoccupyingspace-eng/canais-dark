@@ -60,6 +60,27 @@ for which in ("A", "B"):
             day = get("https://youtubeanalytics.googleapis.com/v2/reports", t, ids="channel==MINE", startDate=start, endDate=end,
                       metrics="views,subscribersGained", dimensions="day", sort="day")
             r["daily"] = day
+            import re as _re
+            r["long"] = {}
+            for v in r.get("videos", []):
+                m = _re.match(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?", v.get("dur") or "")
+                secs = (int(m.group(1) or 0) * 3600 + int(m.group(2) or 0) * 60 + int(m.group(3) or 0)) if m else 0
+                if secs < 180 or v.get("privacy") != "public":
+                    continue
+                L = {}
+                try:
+                    L["retention"] = get("https://youtubeanalytics.googleapis.com/v2/reports", t, ids="channel==MINE", startDate=start, endDate=end,
+                                         metrics="audienceWatchRatio,relativeRetentionPerformance", dimensions="elapsedVideoTimeRatio", filters="video==" + v["id"])
+                except Exception as e:
+                    L["retention_err"] = str(e)[:200]
+                try:
+                    L["traffic"] = get("https://youtubeanalytics.googleapis.com/v2/reports", t, ids="channel==MINE", startDate=start, endDate=end,
+                                       metrics="views,estimatedMinutesWatched", dimensions="insightTrafficSourceType", filters="video==" + v["id"], sort="-views")
+                    L["daily"] = get("https://youtubeanalytics.googleapis.com/v2/reports", t, ids="channel==MINE", startDate=start, endDate=end,
+                                     metrics="views,estimatedMinutesWatched,averageViewDuration,subscribersGained", dimensions="day", filters="video==" + v["id"], sort="day")
+                except Exception as e:
+                    L["traffic_err"] = str(e)[:200]
+                r["long"][v["id"]] = L
         except Exception as e:
             r["analytics_err"] = str(e)[:300]
     except Exception as e:
