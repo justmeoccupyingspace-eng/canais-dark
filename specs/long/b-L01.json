@@ -176,7 +176,7 @@
    "type": "code",
    "title": "the same problem, in decimal",
    "src": "",
-   "narration": "Your computer isn't broken. This is how almost every computer stores numbers, a standard called IEEE seven fifty-four, used by JavaScript, Python, Java and C. {p} And you already know the problem from school. {p} Try writing one third as a decimal. Zero point three three three three three... It never ends. {p} At some point you have to stop, and the moment you stop, you're slightly wrong.",
+   "narration": "Your computer isn't broken. This is how almost every computer stores numbers: a standard called IEEE seven fifty-four. {p} And you already know the problem from school. {p} Try writing one third as a decimal. Zero point three three three three three... It never ends. {p} At some point you have to stop, and the moment you stop, you're slightly wrong.",
    "lines": [
     {
      "at": "Try writing",
@@ -221,7 +221,7 @@
     "at": "chops off",
     "text": "no room left: the rest is thrown away"
    },
-   "narration": "Computers count in binary, in ones and zeros. {p} And in binary, one tenth is just like one third: it never ends. {p} Zero point zero zero zero one one zero zero one one zero zero one one, forever. {p} So the computer keeps as many digits as it has room for, and chops off the rest.",
+   "narration": "Computers count in binary, in ones and zeros. {p} And in binary, one tenth is just like one third: it never ends. {p} Zero point zero zero zero one one zero zero one one zero zero one one, forever. {p} So the computer keeps what fits, and chops off the rest.",
    "react": [
     {
      "at": "binary",
@@ -275,7 +275,7 @@
    "type": "code",
    "title": "add one tenth, ten times",
    "src": "IEEE 754 double precision",
-   "narration": "Here's another way to see it. {p} Add one tenth to itself ten times. {p} You should get exactly one. {pp} You don't. {p} That's why banking software never stores money as fractions of a dollar. It counts whole cents, as integers, where there's nothing to chop.",
+   "narration": "Here's another way to see it. {p} Add one tenth to itself ten times. {p} You should get exactly one. {pp} You don't. {p} That's why banking software counts money in whole cents, as integers, where there's nothing to chop.",
    "lines": [
     {
      "at": "Add one tenth",
@@ -982,10 +982,16 @@
  "datasets": [],
  "snapshot": [],
  "thumb": {
-  "kind": "text",
-  "top": "0.1 + 0.2 =",
-  "big": "0.30000…4",
-  "line2": "28 DEAD?!"
+  "kind": "code",
+  "top": "TINY ERRORS, HUGE COST",
+  "lines": [
+   {
+    "in": "0.1 + 0.2",
+    "out": "0.30000000000000004",
+    "bad": true
+   }
+  ],
+  "sticker": "−$370,000,000"
  },
  "voice": {
   "model": "",

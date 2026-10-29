@@ -39,8 +39,28 @@ def gemini_once(text, voice, style, model):
         raise ValueError("resposta sem áudio: " + json.dumps(r)[:300])
     chunks = []
     for p in parts:
-        sr = int(re.search(r"rate=(\d+)", p["inlineData"].get("mimeType", "rate=24000")).group(1))
-        x = np.frombuffer(base64.b64decode(p["inlineData"]["data"]), dtype="<i2").astype(np.float32) / 32768
+        mime = p["inlineData"].get("mimeType", "")
+        raw = base64.b64decode(p["inlineData"]["data"])
+        if not getattr(gemini_once, "said", False):
+            print(f"::notice title=gemini mime::{model} → {mime!r} ({len(raw)} bytes, head {raw[:4]!r})")
+            gemini_once.said = True
+        if raw[:4] == b"RIFF" or "wav" in mime or "mpeg" in mime or "mp3" in mime or "ogg" in mime or "flac" in mime:
+            import io
+            import soundfile as sf_
+            try:
+                x, sr = sf_.read(io.BytesIO(raw), dtype="float32", always_2d=False)
+            except Exception:  # mp3 sem suporte no libsndfile → ffmpeg
+                import subprocess, tempfile
+                with tempfile.NamedTemporaryFile(suffix=".bin") as tf:
+                    tf.write(raw); tf.flush()
+                    pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", tf.name, "-f", "s16le", "-ac", "1", "-ar", str(SR), "-"], capture_output=True, check=True).stdout
+                x, sr = np.frombuffer(pcm, dtype="<i2").astype(np.float32) / 32768, SR
+            if x.ndim > 1:
+                x = x.mean(axis=1)
+        else:
+            m = re.search(r"rate=(\d+)", mime)
+            sr = int(m.group(1)) if m else 24000
+            x = np.frombuffer(raw[: len(raw) // 2 * 2], dtype="<i2").astype(np.float32) / 32768
         if sr != SR:
             import librosa
             x = librosa.resample(x, orig_sr=sr, target_sr=SR)

@@ -31,13 +31,13 @@ shots = [
          lines=[dict(at="Open any", **{"in": "0.1 + 0.2", "out": "0.30000000000000004", "bad": True, "note": "not 0.3"})],
          react=[dict(at="Open any", pose="pointL"), dict(at="You get this", pose="shock"), dict(at="then a four", pose="shrug")]),
     dict(act=1, type="code", title="the same problem, in decimal", src="",
-         narration="Your computer isn't broken. This is how almost every computer stores numbers, a standard called IEEE seven fifty-four, used by JavaScript, Python, Java and C. {p} And you already know the problem from school. {p} Try writing one third as a decimal. Zero point three three three three three... It never ends. {p} At some point you have to stop, and the moment you stop, you're slightly wrong.",
+         narration="Your computer isn't broken. This is how almost every computer stores numbers: a standard called IEEE seven fifty-four. {p} And you already know the problem from school. {p} Try writing one third as a decimal. Zero point three three three three three... It never ends. {p} At some point you have to stop, and the moment you stop, you're slightly wrong.",
          lines=[dict(at="Try writing", **{"in": "1 / 3", "out": "0.3333333333333333", "note": "the 3s never end, so you have to stop somewhere"})],
          react=[dict(at="isn't broken", pose="idle"), dict(at="from school", pose="think"), dict(at="slightly wrong", pose="shrug")]),
     dict(act=1, type="bits", src="Binary expansion of 1/10", label="0.1 in binary", sub="= 0.0001100110011…",
          bits=B01, reg=32, repeat=[3, 4], speed=0.05,
          show=dict(at="Computers count"), chop=dict(at="chops off", text="no room left: the rest is thrown away"),
-         narration="Computers count in binary, in ones and zeros. {p} And in binary, one tenth is just like one third: it never ends. {p} Zero point zero zero zero one one zero zero one one zero zero one one, forever. {p} So the computer keeps as many digits as it has room for, and chops off the rest.",
+         narration="Computers count in binary, in ones and zeros. {p} And in binary, one tenth is just like one third: it never ends. {p} Zero point zero zero zero one one zero zero one one zero zero one one, forever. {p} So the computer keeps what fits, and chops off the rest.",
          react=[dict(at="binary", pose="pointL"), dict(at="never ends", pose="shock"), dict(at="chops off", pose="idle", nod=1)]),
     dict(act=1, type="code", title="how wrong is it?", src="",
          narration="That chopped-off piece is the four at the end. {p} The error is tiny, about five hundred-quadrillionths. {p} Most of the time, nobody cares. {pp} Unless you add it up, millions of times. {p} Which is exactly what happened in Dhahran.",
@@ -45,7 +45,7 @@ shots = [
          react=[dict(at="tiny", pose="idle"), dict(at="Unless", pose="think", lean=1), dict(at="Dhahran", pose="pointL")]),
 
     dict(act=1, type="code", title="add one tenth, ten times", src="IEEE 754 double precision",
-         narration="Here's another way to see it. {p} Add one tenth to itself ten times. {p} You should get exactly one. {pp} You don't. {p} That's why banking software never stores money as fractions of a dollar. It counts whole cents, as integers, where there's nothing to chop.",
+         narration="Here's another way to see it. {p} Add one tenth to itself ten times. {p} You should get exactly one. {pp} You don't. {p} That's why banking software counts money in whole cents, as integers, where there's nothing to chop.",
          lines=[dict(at="Add one tenth", **{"in": "x = 0"}),
                 dict(at="ten times", **{"in": "for i in range(10): x += 0.1"}),
                 dict(at="You don't", **{"in": "x", "out": "0.9999999999999999", "bad": True, "note": "not 1"}),
@@ -160,7 +160,7 @@ for i, sh in enumerate(shots):
 
 spec = dict(id="b-L01-math-errors", channel="howitticks", chapter0="The missile that missed", w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
             datasets=[], snapshot=[],
-            thumb=dict(kind="text", top="0.1 + 0.2 =", big="0.30000…4", line2="28 DEAD?!"),
+            thumb=dict(kind="code", top="TINY ERRORS, HUGE COST", lines=[{"in": "0.1 + 0.2", "out": "0.30000000000000004", "bad": True}], sticker="−$370,000,000"),
             voice=dict(model="", name="Iapetus",
                        style=("You are the narrator of a popular engineering explainer channel on YouTube. Read the script below like a sharp, curious "
                               "engineer telling a friend a story they won't believe: clear, warm, a little dry humor, at an engaged pace of about "

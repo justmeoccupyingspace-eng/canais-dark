@@ -588,6 +588,72 @@ const Radar = ({sh, p, T}) => {
   );
 };
 
+// escada: duas réguas (ex.: 1.000 vs 1.024) que se afastam a cada degrau
+const Ladder = ({sh, p, T}) => {
+  const rows = sh.rows || [];
+  const W = sh.w || 760, x0 = 420;
+  const rmax = Math.max(...rows.map((r) => r.b / r.a));
+  return (
+    <AbsoluteFill>
+      {sh.title ? <div style={{position: 'absolute', left: 150, top: 170, fontFamily: SANS, fontWeight: 800, fontSize: 46, color: '#ffffffd0', opacity: sp(T, sh.t0)}}>{sh.title}</div> : null}
+      <div style={{position: 'absolute', left: x0, top: 250, display: 'flex', gap: 34, fontFamily: SANS, fontWeight: 700, fontSize: 28, color: '#ffffffa0', opacity: sp(T, sh.t0 + 0.3)}}>
+        <span><span style={{display: 'inline-block', width: 22, height: 22, borderRadius: 5, background: '#ffffff55', marginRight: 10, verticalAlign: -3}} />{sh.la || 'decimal'}</span>
+        <span><span style={{display: 'inline-block', width: 22, height: 22, borderRadius: 5, background: p.acc, marginRight: 10, verticalAlign: -3}} />{sh.lb || 'binary'}</span>
+      </div>
+      {rows.map((r, i) => {
+        if (r.t == null || T < r.t - 0.1) return null;
+        const k = ramp(T, r.t, 0.8);
+        const y = 320 + i * 118;
+        const wb = W * (1 + (r.b / r.a - 1) * Easing.out(Easing.cubic)(k));
+        const hot = r.hot && T >= r.t;
+        return (
+          <div key={i} style={{position: 'absolute', left: 0, top: y, opacity: Math.min(1, k * 3)}}>
+            <div style={{position: 'absolute', left: 150, top: 2, width: 250, fontFamily: MONO, fontWeight: 800, fontSize: 46, color: '#fff'}}>{r.label}</div>
+            <div style={{position: 'absolute', left: x0, top: 0, width: wb, height: 64, borderRadius: 12, background: p.acc}} />
+            <div style={{position: 'absolute', left: x0, top: 0, width: W, height: 64, borderRadius: 12, background: '#3a3a44', display: 'flex', alignItems: 'center', paddingLeft: 20, fontFamily: MONO, fontWeight: 500, fontSize: 28, color: '#ffffffb0'}}>{r.text}</div>
+            <div style={{position: 'absolute', left: x0 + W * rmax + 30, top: 4, fontFamily: SANS, fontWeight: 900, fontSize: 52, color: hot ? p.warm : p.acc, whiteSpace: 'nowrap'}}>{r.gap}</div>
+          </div>
+        );
+      })}
+    </AbsoluteFill>
+  );
+};
+
+// pilha: uma barra dividida em partes (ex.: 931 GB visíveis + 69 GB "sumidos")
+const Stack = ({sh, p, T}) => {
+  const segs = sh.segs || [];
+  const total = sh.total || segs.reduce((a, g) => a + g.value, 0);
+  const W = 1300, x0 = 150, y0 = 420, H = 130;
+  let acc = 0;
+  return (
+    <AbsoluteFill>
+      {sh.title ? <div style={{position: 'absolute', left: 150, top: 200, fontFamily: SANS, fontWeight: 800, fontSize: 52, color: '#fff', opacity: sp(T, sh.t0)}}>{sh.title}</div> : null}
+      {sh.sub ? <div style={{position: 'absolute', left: 152, top: 272, fontFamily: SANS, fontWeight: 600, fontSize: 32, color: '#ffffff90', opacity: sp(T, sh.t0 + 0.3)}}>{sh.sub}</div> : null}
+      <div style={{position: 'absolute', left: x0, top: y0, width: W, height: H, borderRadius: 18, border: '3px solid #ffffff30', opacity: sp(T, sh.t0)}} />
+      {segs.map((g, i) => {
+        const x = x0 + (W * acc) / total;
+        acc += g.value;
+        if (g.t == null || T < g.t - 0.05) return null;
+        const k = Easing.out(Easing.cubic)(ramp(T, g.t, 0.9));
+        const w = (W * g.value) / total;
+        const col = p[g.color] || g.color || p.acc;
+        const narrow = w < 330;
+        return (
+          <div key={i}>
+            <div style={{position: 'absolute', left: x, top: y0, width: w * k, height: H, background: g.ghost ? 'transparent' : col, border: g.ghost ? `4px dashed ${col}` : 'none',
+              borderRadius: i === 0 ? '18px 0 0 18px' : i === segs.length - 1 ? '0 18px 18px 0' : 0, opacity: g.ghost ? 0.5 + 0.5 * Math.abs(Math.sin(T * 3)) : 1}} />
+            <div style={{position: 'absolute', ...(narrow ? {right: 1920 - (x + w), textAlign: 'right'} : {left: x}), top: y0 + H + 22, opacity: k, whiteSpace: 'nowrap'}}>
+              <div style={{fontFamily: SANS, fontWeight: 900, fontSize: 64, color: col, lineHeight: 1}}>{g.text}</div>
+              <div style={{fontFamily: SANS, fontWeight: 700, fontSize: 30, color: '#ffffff90', marginTop: 6}}>{g.label}</div>
+            </div>
+          </div>
+        );
+      })}
+      {sh.kicker && sh.kicker.t != null ? <Pill x={150} y={800} text={sh.kicker.text} color={p.warm} T={T} t0={sh.kicker.t} /> : null}
+    </AbsoluteFill>
+  );
+};
+
 // lançamento: foguete sobe com relógio T+ e explode no cue
 const Launch = ({sh, p, T}) => {
   const t0 = sh.go?.t ?? sh.t0 + 0.5;
@@ -1028,7 +1094,7 @@ const End = ({sh, p, data, T}) => {
       <AbsoluteFill>
         <div style={{position: 'absolute', left: 140, top: 250, width: 820, height: 462, borderRadius: 28, background: `linear-gradient(135deg, ${p.bg1}, #0b1026)`, border: `3px solid ${p.acc}88`, opacity: s, transform: `scale(${0.9 + 0.1 * s})`, overflow: 'hidden'}}>
           <div style={{position: 'absolute', left: 40, top: 30, fontFamily: SANS, fontWeight: 800, fontSize: 30, color: p.acc, letterSpacing: 3}}>{nx.kicker || 'UP NEXT'}</div>
-          <div style={{position: 'absolute', left: 40, top: 90, fontFamily: SANS, fontWeight: 900, fontSize: 210, color: p[nx.color] || nx.color || p.acc, letterSpacing: -6, lineHeight: 1}}>{nx.big}</div>
+          <div style={{position: 'absolute', left: 40, top: 90, fontFamily: SANS, fontWeight: 900, fontSize: String(nx.big).length > 6 ? Math.round(1300 / String(nx.big).length) : 210, color: p[nx.color] || nx.color || p.acc, letterSpacing: -6, lineHeight: 1, whiteSpace: 'nowrap'}}>{nx.big}</div>
           <div style={{position: 'absolute', left: 44, top: 320, fontFamily: SANS, fontWeight: 800, fontSize: 44, color: '#fff'}}>{nx.title}</div>
           <div style={{position: 'absolute', left: 44, top: 380, fontFamily: SANS, fontWeight: 600, fontSize: 30, color: '#ffffff90'}}>{nx.sub}</div>
         </div>
@@ -1178,7 +1244,7 @@ const Music = ({spec}) => {
 
 // ---------------- composição ----------------
 const BarsAny = (props) => (props.sh.mode === 'abs' ? <BarsAbs {...props} /> : <Bars {...props} />);
-const VIEWS = {lines: Lines, bars: BarsAny, globe: Globe, stats: Stats, duel: Duel, list: List, cards: Cards, hbars: HBars, end: End, people: People, code: Code, bits: Bits, counter: Counter, radar: Radar, launch: Launch};
+const VIEWS = {lines: Lines, bars: BarsAny, globe: Globe, stats: Stats, duel: Duel, list: List, cards: Cards, hbars: HBars, end: End, people: People, code: Code, bits: Bits, counter: Counter, radar: Radar, launch: Launch, ladder: Ladder, stack: Stack};
 
 const ShotView = ({sh, idx, p, data}) => {
   const f = useCurrentFrame();
@@ -1254,6 +1320,36 @@ export const Thumb = ({spec}) => {
   const p = PAL[spec.channel] || PAL.chartbound;
   const data = spec.data || {};
   const th = spec.thumb;
+  if (th && (th.kind === 'text' || th.kind === 'code')) {
+    return (
+      <AbsoluteFill style={{background: `radial-gradient(1000px 700px at 35% 55%, ${p.bg1}, ${p.bg2})`}}>
+        {th.top ? <div style={{position: 'absolute', left: 60, top: 46, fontFamily: SANS, fontWeight: 900, fontSize: 76, color: '#fff', textShadow: '0 6px 0 #000a', whiteSpace: 'nowrap'}}>{th.top}</div> : null}
+        {th.kind === 'code' ? (
+          <div style={{position: 'absolute', left: 50, top: 170, width: 800, borderRadius: 22, overflow: 'hidden', background: '#0a0d14', border: '3px solid #ffffff30', boxShadow: '0 20px 60px rgba(0,0,0,.6)'}}>
+            <div style={{height: 40, background: '#161b26', display: 'flex', gap: 10, alignItems: 'center', paddingLeft: 18}}>{['#ff5f57', '#febc2e', '#28c840'].map((c) => <div key={c} style={{width: 14, height: 14, borderRadius: '50%', background: c}} />)}</div>
+            <div style={{padding: '22px 30px'}}>
+              {(th.lines || []).map((l, i) => (
+                <div key={i} style={{marginBottom: 10}}>
+                  <div style={{fontFamily: MONO, fontWeight: 800, fontSize: 64, color: '#fff'}}><span style={{color: p.acc}}>&gt; </span>{l.in}</div>
+                  {l.out ? <div style={{fontFamily: MONO, fontWeight: 800, fontSize: l.out.length > 16 ? 50 : 72, color: l.bad ? p.warm : p.acc2}}>{l.out}</div> : null}
+                </div>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <div style={{position: 'absolute', left: 60, top: 150, fontFamily: SANS, fontWeight: 900, fontSize: 210, lineHeight: 0.9, color: p.acc, letterSpacing: -6, textShadow: '0 10px 0 #000b', whiteSpace: 'nowrap'}}>{th.big}
+            <div style={{color: '#fff', fontSize: 120, letterSpacing: -3}}>{th.line2}</div></div>
+        )}
+        {th.sticker ? <div style={{position: 'absolute', left: th.kind === 'code' ? 90 : 70, top: th.kind === 'code' ? 560 : 560, transform: 'rotate(-5deg)', background: p.warm, color: '#fff', fontFamily: SANS, fontWeight: 900, fontSize: 64, padding: '8px 28px', borderRadius: 16, boxShadow: '0 10px 0 #000a', whiteSpace: 'nowrap'}}>{th.sticker}</div> : null}
+        <div style={{position: 'absolute', left: 700, top: 40, width: 640, height: 720}}>
+          <ThreeCanvas width={640} height={720} camera={{fov: 30, position: [0, 0, 14]}} gl={{antialias: true, alpha: true}}>
+            <Lights />
+            <Mascot {...p.mascot} pose="shock" prevPose="shock" poseAt={-60} talk={0} look={[-0.6, 0.2]} enter={-60} scale={1.9} position={[0.25, -0.85, 0]} turn={-0.25} />
+          </ThreeCanvas>
+        </div>
+      </AbsoluteFill>
+    );
+  }
   if (th) {
     const pts = ser(data, th.set, th.iso).filter(([y]) => y >= th.years[0] && y <= th.years[1]);
     const vmax = th.ymax || Math.max(...pts.map((q) => q[1])) * 1.1;
