@@ -20,6 +20,17 @@ jobs:
       - name: Push stats branch
         run: |
           cp stats_out/yt.json /tmp/yt.json
+          git fetch -q origin stats && git show origin/stats:hist.jsonl > /tmp/hist.jsonl 2>/dev/null || touch /tmp/hist.jsonl
+          python3 -c "
+          import json, datetime
+          d = json.load(open('/tmp/yt.json'))
+          snap = {'t': datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%MZ')}
+          for k in ('A', 'B'):
+              ch = d.get(k, {})
+              snap[k] = {'subs': ch.get('channel', {}).get('stats', {}).get('subscriberCount'),
+                         'v': {v['id']: [v['views'], v['likes'], v['comments']] for v in ch.get('videos', []) if v.get('privacy') == 'public'}}
+          open('/tmp/hist.jsonl', 'a').write(json.dumps(snap) + chr(10))
+          "
           git config user.name producer; git config user.email producer@users.noreply.github.com
           git checkout --orphan stats && git rm -rf . -q
-          cp /tmp/yt.json . && git add . && git commit -qm stats && git push -f origin stats
+          cp /tmp/yt.json /tmp/hist.jsonl . && git add . && git commit -qm stats && git push -f origin stats

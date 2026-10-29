@@ -37,7 +37,12 @@ for which in ("A", "B"):
                              "upload": v["status"].get("uploadStatus"), "reject": v["status"].get("rejectionReason"),
                              "madeForKids": v["status"].get("madeForKids"), "dur": v["contentDetails"]["duration"],
                              "views": int(v["statistics"].get("viewCount", 0)), "likes": int(v["statistics"].get("likeCount", 0)),
-                             "comments": int(v["statistics"].get("commentCount", 0))})
+                             "comments": int(v["statistics"].get("commentCount", 0)),
+                             "detail": {"embeddable": v["status"].get("embeddable"), "license": v["status"].get("license"),
+                                        "synthetic": v["status"].get("containsSyntheticMedia"), "rating": v["contentDetails"].get("contentRating"),
+                                        "region": v["contentDetails"].get("regionRestriction"), "licensed": v["contentDetails"].get("licensedContent"),
+                                        "cat": v["snippet"].get("categoryId"), "lang": v["snippet"].get("defaultAudioLanguage"),
+                                        "tags": len(v["snippet"].get("tags", [])), "thumbs": sorted(v["snippet"].get("thumbnails", {}).keys())}})
         r["videos"] = sorted(vids, key=lambda x: x["published"])
         try:
             cm = get(API + "commentThreads", t, part="snippet", allThreadsRelatedToChannelId=ch["id"], maxResults=50, order="time")
