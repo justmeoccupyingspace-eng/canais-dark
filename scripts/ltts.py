@@ -259,7 +259,12 @@ def onset(x, t_word, thr=-45.0):
     cands = [i for i in range(5, len(e)) if e[i] > thr and all(e[i - k] <= thr for k in range(1, 6))]
     if not cands:
         return None
-    best = min(cands, key=lambda i: abs(lo + i * n / SR - t_word))
+
+    def loud(i):  # quadros de fala forte (> −30 dB) nos 0,5 s depois do ataque
+        return int(np.sum(e[i:i + 25] > -30.0))
+    # sobra curta (pouca fala forte) seguida de silêncio e mais fala = rabo do trecho cortado, não a 1ª palavra
+    longs = [i for i in cands if loud(i) >= 8 or i == cands[-1]]
+    best = min(longs, key=lambda i: abs(lo + i * n / SR - t_word))
     return lo + best * n / SR - 0.06
 
 
