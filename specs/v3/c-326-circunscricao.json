@@ -1,0 +1,85 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+4%",
+ "title": "Escolheu a circunscrição errada?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-06 12:30"
+ },
+ "tiktok": "Escrevente TJSP 2026: 50 circunscrições no interior e no litoral (capital fora), e não dá pra trocar depois da inscrição. Inscrições até 10/12. Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #edital #circunscricao #tjsp",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Antes de se inscrever",
+   "text": "Escolheu a circunscrição errada?",
+   "hl": "errada?",
+   "icon": "📍",
+   "narration": "Cuidado na hora de escolher a circunscrição do escrevente TJSP.",
+   "min_duration": 2.4
+  },
+  {
+   "type": "text",
+   "kicker": "Regra do edital",
+   "text": "Não dá pra trocar depois",
+   "hl": "trocar depois",
+   "icon": "🔒",
+   "pose": "shock",
+   "narration": "Pelo edital, não dá pra trocar depois da inscrição.",
+   "min_duration": 2.4
+  },
+  {
+   "type": "big",
+   "text": "São",
+   "hl": "São",
+   "big": "50",
+   "label": "circunscrições · da 2ª à 10ª região",
+   "narration": "São cinquenta circunscrições, da segunda à décima região administrativa.",
+   "min_duration": 2.6
+  },
+  {
+   "type": "steps",
+   "text": "Algumas delas",
+   "hl": "Algumas",
+   "rows": [
+    {
+     "t": "Campinas e Sorocaba",
+     "icon": "📍",
+     "cue": "campinas"
+    },
+    {
+     "t": "Santos e São José dos Campos",
+     "icon": "📍",
+     "cue": "santos"
+    },
+    {
+     "t": "Ribeirão Preto e Bauru",
+     "icon": "📍",
+     "cue": "ribeirão"
+    }
+   ],
+   "result": false,
+   "narration": "Tem Campinas e Sorocaba, Santos e São José dos Campos, Ribeirão Preto e Bauru, entre outras.",
+   "min_duration": 3.2
+  },
+  {
+   "type": "text",
+   "kicker": "Atenção",
+   "text": "A capital ficou de fora",
+   "hl": "capital",
+   "icon": "🏙️",
+   "pose": "shrug",
+   "narration": "E a capital ficou de fora deste edital.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

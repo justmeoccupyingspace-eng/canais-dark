@@ -1,0 +1,87 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Onde ou aonde você vai?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-05 19:30"
+ },
+ "tiktok": "Português do Escrevente TJSP: onde ou aonde? Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Onde ou aonde você vai?",
+   "hl": "aonde",
+   "icon": "✍️",
+   "narration": "Onde você vai ou aonde você vai?",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · ONDE OU AONDE",
+   "q": "De acordo com a norma-padrão, está correto o emprego de \"onde\" ou \"aonde\" em:",
+   "alts": [
+    "Aonde você estuda para o concurso?",
+    "Onde você vai depois da prova?",
+    "Aonde fica o fórum da cidade?",
+    "Aonde você quer chegar com isso?",
+    "A cidade aonde moro é pequena."
+   ],
+   "correct": 3,
+   "narration": "Em qual frase o onde ou aonde está certo?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 44
+  },
+  {
+   "type": "text",
+   "text": "Letra D: aonde quer chegar",
+   "hl": "aonde quer chegar",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra D!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Tem movimento?",
+   "hl": "movimento?",
+   "rows": [
+    {
+     "t": "Aonde: verbo com A (ir, chegar)",
+     "cue": "aonde"
+    },
+    {
+     "t": "Onde: lugar parado (estar, ficar, morar)",
+     "cue": "onde"
+    }
+   ],
+   "narration": "A pergunta é: tem movimento? Aonde vem com verbos que pedem a, como ir e chegar. Onde é lugar parado: estar, ficar, morar.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "\"Onde você vai?\" é o erro mais comum",
+   "hl": "mais comum",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Onde você vai é o erro mais comum. O certo é aonde.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

@@ -1,0 +1,87 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Vende-se casas ou vendem-se?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-07 19:30"
+ },
+ "tiktok": "Português do Escrevente TJSP: vende-se ou vendem-se? Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues #concordancia",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Vende-se casas ou vendem-se?",
+   "hl": "vendem-se?",
+   "icon": "✍️",
+   "narration": "Vende-se casas ou vendem-se casas?",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · VOZ PASSIVA",
+   "q": "A concordância está de acordo com a norma-padrão em:",
+   "alts": [
+    "Aluga-se salas comerciais.",
+    "Precisam-se de escreventes.",
+    "Consertam-se computadores.",
+    "Fez-se vários reparos no prédio.",
+    "Vende-se apartamentos no centro."
+   ],
+   "correct": 2,
+   "narration": "Em qual frase a concordância com se está certa?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 44
+  },
+  {
+   "type": "text",
+   "text": "Letra C: consertam-se computadores",
+   "hl": "consertam-se computadores",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra C!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Tem preposição?",
+   "hl": "preposição?",
+   "rows": [
+    {
+     "t": "Sem preposição: concorda (vendem-se casas)",
+     "cue": "sem"
+    },
+    {
+     "t": "Com preposição: singular (precisa-se de)",
+     "cue": "com"
+    }
+   ],
+   "narration": "Olha se tem preposição. Sem preposição, o verbo concorda: vendem-se casas, consertam-se computadores. Com preposição, fica no singular: precisa-se de escreventes.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "\"Precisam-se de\" está errado",
+   "hl": "errado",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Precisam-se de está errado: com de, fica precisa-se.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Por que, porque, porquê ou por quê?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-04 19:30"
+ },
+ "tiktok": "Português do Escrevente TJSP: os quatro porquês. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Por que, porque, porquê ou por quê?",
+   "hl": "porquê",
+   "icon": "✍️",
+   "narration": "Os quatro porquês. Acerta essa?",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · PORQUÊS",
+   "q": "O emprego do \"porquê\" está correto em:",
+   "alts": [
+    "Não sei porque ele faltou à prova.",
+    "Ele faltou por que estava doente.",
+    "Ninguém entendeu o porquê da decisão.",
+    "Você faltou porquê?",
+    "Por quê você não veio ontem?"
+   ],
+   "correct": 2,
+   "narration": "Em qual frase o porquê está certo?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 44
+  },
+  {
+   "type": "text",
+   "text": "Letra C: o porquê da decisão",
+   "hl": "o porquê da decisão",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra C!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Cada um no seu lugar",
+   "hl": "seu lugar",
+   "rows": [
+    {
+     "t": "Por que: pergunta (por qual motivo)",
+     "cue": "separado"
+    },
+    {
+     "t": "Porque: resposta (pois)",
+     "cue": "junto"
+    },
+    {
+     "t": "Porquê: com artigo (o motivo)",
+     "cue": "acento"
+    },
+    {
+     "t": "Por quê: no fim da frase",
+     "cue": "fim"
+    }
+   ],
+   "narration": "Por que, separado, é pergunta. Porque, junto, é resposta. Porquê com acento vem com artigo: o porquê. E por quê, separado e com acento, no fim da frase.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "\"Não sei por que\": pergunta escondida",
+   "hl": "pergunta escondida",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Não sei por que ele faltou: é uma pergunta escondida, então é separado.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

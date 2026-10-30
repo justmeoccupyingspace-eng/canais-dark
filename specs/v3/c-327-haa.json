@@ -1,0 +1,81 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Há dois anos ou a dois anos?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-06 19:30"
+ },
+ "tiktok": "Português do Escrevente TJSP: há ou a? Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Há dois anos ou a dois anos?",
+   "hl": "Há",
+   "icon": "✍️",
+   "narration": "Há dois anos ou a dois anos? Tem um teste rápido.",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · HÁ OU A",
+   "q": "Está correto o emprego de \"há\" ou \"a\" em:",
+   "alts": [
+    "Daqui há dois meses começa a prova.",
+    "Estudo para o concurso a dois anos.",
+    "O relator saiu há pouco.",
+    "O fórum fica há dois quarteirões.",
+    "Há partir de hoje, vou estudar."
+   ],
+   "correct": 2,
+   "narration": "Em qual frase o há ou a está certo?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 44
+  },
+  {
+   "type": "text",
+   "text": "Letra C: saiu há pouco",
+   "hl": "saiu há pouco",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra C!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Troca por \"faz\"",
+   "hl": "faz",
+   "rows": [
+    {
+     "t": "Deu certo com \"faz\"? É HÁ",
+     "cue": "troca"
+    },
+    {
+     "t": "Futuro ou distância: A",
+     "cue": "futuro"
+    },
+    {
+     "t": "Daqui a, a partir de",
+     "cue": "daqui"
+    }
+   ],
+   "narration": "Troca por faz. Saiu faz pouco? Funcionou: é há. Futuro ou distância é a sem h: daqui a dois meses, a dois quarteirões, a partir de hoje.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

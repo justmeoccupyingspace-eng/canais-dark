@@ -1,0 +1,84 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+4%",
+ "title": "Quanto ganha um Escrevente do TJSP?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-02 12:30"
+ },
+ "tiktok": "Salário do Escrevente TJSP 2026: R$ 6.782,54 iniciais, com ensino médio e 40 h semanais, mais auxílios. Edital é de cadastro de reserva. Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #salario #edital #tjsp",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Edital 2026",
+   "text": "Quanto ganha um Escrevente do TJSP?",
+   "hl": "Quanto ganha",
+   "icon": "💰",
+   "narration": "Quanto ganha um escrevente do TJ de São Paulo?",
+   "min_duration": 2.4
+  },
+  {
+   "type": "big",
+   "text": "Salário inicial",
+   "hl": "Salário",
+   "big": "R$ 6.782",
+   "label": "só com ensino médio · 40 h semanais",
+   "narration": "Salário inicial de seis mil setecentos e oitenta e dois reais. Só com ensino médio.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "steps",
+   "text": "E ainda tem",
+   "hl": "ainda tem",
+   "rows": [
+    {
+     "t": "Auxílio-alimentação",
+     "icon": "🍽️",
+     "cue": "alimentação"
+    },
+    {
+     "t": "Auxílio-saúde",
+     "icon": "🏥",
+     "cue": "saúde"
+    },
+    {
+     "t": "Auxílio-transporte",
+     "icon": "🚌",
+     "cue": "transporte"
+    }
+   ],
+   "result": false,
+   "narration": "E ainda tem auxílio para alimentação, para saúde e para transporte.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Atenção",
+   "text": "O edital é de cadastro de reserva",
+   "hl": "cadastro de reserva",
+   "icon": "📋",
+   "pose": "shrug",
+   "narration": "Atenção: o edital é de cadastro de reserva. Quem passa entra na fila de convocação.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "big",
+   "text": "Inscrições até",
+   "hl": "Inscrições",
+   "big": "10/12",
+   "label": "taxa de R$ 81 · site da VUNESP",
+   "narration": "As inscrições vão até dez de dezembro, no site da VUNESP.",
+   "min_duration": 2.6
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

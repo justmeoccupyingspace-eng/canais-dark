@@ -1,0 +1,87 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Senão ou se não?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-08 19:30"
+ },
+ "tiktok": "Português do Escrevente TJSP: senão ou se não? Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Senão ou se não?",
+   "hl": "se não?",
+   "icon": "✍️",
+   "narration": "Senão junto ou se não separado?",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · SENÃO OU SE NÃO",
+   "q": "Está correto o emprego de \"senão\" ou \"se não\" em:",
+   "alts": [
+    "Estude, se não vai reprovar.",
+    "Não fazia nada senão estudar.",
+    "Senão chover, irei à prova.",
+    "Não estudei, se não teria passado.",
+    "Senão houver vagas, haverá cadastro."
+   ],
+   "correct": 1,
+   "narration": "Em qual frase o senão ou se não está certo?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 44
+  },
+  {
+   "type": "text",
+   "text": "Letra B: nada senão estudar",
+   "hl": "nada senão estudar",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra B!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "O teste",
+   "hl": "teste",
+   "rows": [
+    {
+     "t": "Senão = caso contrário / a não ser",
+     "cue": "senão"
+    },
+    {
+     "t": "Se não = caso não",
+     "cue": "se"
+    }
+   ],
+   "narration": "Senão, junto, quer dizer caso contrário ou a não ser. Se não, separado, quer dizer caso não: se não chover.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "\"Estude, senão vai reprovar\": junto",
+   "hl": "junto",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Estude, senão vai reprovar: é caso contrário, então é junto.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

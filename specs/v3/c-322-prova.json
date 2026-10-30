@@ -1,0 +1,84 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+4%",
+ "title": "Como é a prova do Escrevente TJSP?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-04 12:30"
+ },
+ "tiktok": "Prova do Escrevente TJSP 2027: 70 questões em 3 blocos e redação. Precisa acertar metade de Português e de Direito e tirar 24 de 40 na redação. Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #edital #provatjsp #redacao",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Edital 2026",
+   "text": "Como é a prova do Escrevente TJSP?",
+   "hl": "Como é a prova",
+   "icon": "📝",
+   "narration": "Como é a prova do escrevente do TJ de São Paulo?",
+   "min_duration": 2.4
+  },
+  {
+   "type": "big",
+   "text": "Prova objetiva",
+   "hl": "objetiva",
+   "big": "70",
+   "label": "questões de múltipla escolha · 5 horas",
+   "narration": "São setenta questões de múltipla escolha, em até cinco horas.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "steps",
+   "text": "Três blocos",
+   "hl": "Três",
+   "rows": [
+    {
+     "t": "Português: elimina",
+     "icon": "✍️",
+     "cue": "português"
+    },
+    {
+     "t": "Direito: elimina",
+     "icon": "⚖️",
+     "cue": "direito"
+    },
+    {
+     "t": "Conhecimentos Gerais: só classifica",
+     "icon": "🧠",
+     "cue": "conhecimentos"
+    }
+   ],
+   "result": false,
+   "narration": "Três blocos: português e direito eliminam. Conhecimentos gerais só classifica.",
+   "min_duration": 3.2
+  },
+  {
+   "type": "text",
+   "kicker": "Pra não ser eliminado",
+   "text": "Acerte metade de Português e de Direito",
+   "hl": "metade",
+   "icon": "🎯",
+   "pose": "pointUp",
+   "narration": "Pra não ser eliminado, acerte pelo menos metade de português e de direito.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "big",
+   "text": "Redação",
+   "hl": "Redação",
+   "big": "24/40",
+   "label": "nota mínima · no mesmo dia, 14/03/2027",
+   "narration": "E tem redação, no mesmo dia: precisa de vinte e quatro de quarenta pontos.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

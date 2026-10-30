@@ -1,0 +1,85 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Às 13h ou as 13h?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-08 12:30"
+ },
+ "tiktok": "Português do Escrevente TJSP: crase antes de hora. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues #crase",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Às 13h ou as 13h?",
+   "hl": "Às 13h",
+   "icon": "✍️",
+   "narration": "Crase de novo, porque é a que mais cai.",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · CRASE",
+   "q": "O sinal indicativo de crase está correto em:",
+   "alts": [
+    "Começou à chover durante a prova.",
+    "Os portões fecham às 13h.",
+    "Entregou o documento à ele.",
+    "Fez a prova à lápis.",
+    "Ficou cara à cara com o fiscal."
+   ],
+   "correct": 1,
+   "narration": "Em qual frase a crase está certa?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 44
+  },
+  {
+   "type": "text",
+   "text": "Letra B: fecham às 13h",
+   "hl": "fecham às 13h",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra B!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Onde nunca tem crase",
+   "hl": "nunca",
+   "rows": [
+    {
+     "t": "Antes de verbo: a chover",
+     "cue": "nunca"
+    },
+    {
+     "t": "Antes de pronome pessoal: a ele",
+     "cue": "pessoal"
+    },
+    {
+     "t": "Antes de masculino: a lápis",
+     "cue": "masculina"
+    },
+    {
+     "t": "Palavras repetidas: cara a cara",
+     "cue": "nem"
+    }
+   ],
+   "narration": "Nunca tem crase antes de verbo, de pronome pessoal e de palavra masculina. Nem entre palavras repetidas. Mas hora marcada tem: às treze horas.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

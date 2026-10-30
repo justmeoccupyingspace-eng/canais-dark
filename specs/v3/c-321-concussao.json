@@ -1,0 +1,91 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Exigir propina é qual crime?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-03 19:30"
+ },
+ "tiktok": "Direito Penal do Escrevente TJSP: concussão ou corrupção passiva? Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #direitopenal",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Exigir propina é qual crime?",
+   "hl": "qual crime?",
+   "icon": "⚖️",
+   "narration": "O funcionário exigiu propina. Qual é o crime?",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "DIREITO PENAL · CRIMES CONTRA A ADM.",
+   "q": "O funcionário público que exige, para si, vantagem indevida, em razão da função, comete o crime de:",
+   "alts": [
+    "peculato",
+    "concussão",
+    "corrupção passiva",
+    "prevaricação",
+    "condescendência criminosa"
+   ],
+   "correct": 1,
+   "narration": "O funcionário público que exige vantagem indevida em razão da função comete qual crime?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 46
+  },
+  {
+   "type": "text",
+   "text": "Letra B: concussão",
+   "hl": "concussão",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra B, concussão!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "O verbo decide",
+   "hl": "verbo",
+   "rows": [
+    {
+     "t": "Exigir: concussão (art. 316)",
+     "cue": "quem"
+    },
+    {
+     "t": "Solicitar ou receber: corrupção passiva (art. 317)",
+     "cue": "exigir"
+    },
+    {
+     "t": "Apropriar-se: peculato (art. 312)",
+     "cue": "solicitar"
+    }
+   ],
+   "narration": "Quem decide é o verbo. Exigir é concussão. Solicitar ou receber é corrupção passiva. E se apropriar do que tem em razão do cargo é peculato.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "Solicitar não é exigir",
+   "hl": "não é exigir",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "A pegadinha clássica: solicitar não é exigir.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

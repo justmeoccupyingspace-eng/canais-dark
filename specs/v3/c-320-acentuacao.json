@@ -1,0 +1,95 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Ideia ou idéia? Voo ou vôo?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-03 12:30"
+ },
+ "tiktok": "Português do Escrevente TJSP: acentuação pelo acordo ortográfico. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues #acordoortografico",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Ideia ou idéia? Voo ou vôo?",
+   "hl": "Voo ou vôo?",
+   "icon": "✍️",
+   "narration": "Ideia com acento ou sem? O acordo ortográfico ainda pega muita gente.",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · ACENTUAÇÃO",
+   "q": "De acordo com o Acordo Ortográfico vigente, está correta a grafia em:",
+   "alts": [
+    "Tive uma idéia para o recurso.",
+    "O vôo atrasou duas horas.",
+    "Foi um esforço heróico.",
+    "Eles têm direito à vaga.",
+    "Ele sempre pára no sinal."
+   ],
+   "correct": 3,
+   "narration": "Qual grafia está certa pelo acordo ortográfico?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 44
+  },
+  {
+   "type": "text",
+   "text": "Letra D: eles têm",
+   "hl": "eles têm",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra D!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "O que caiu com o acordo",
+   "hl": "caiu",
+   "rows": [
+    {
+     "t": "Ideia, heroico: sem acento",
+     "cue": "ideia"
+    },
+    {
+     "t": "Voo, leem: sem acento",
+     "cue": "voo"
+    },
+    {
+     "t": "Para (verbo): sem acento",
+     "cue": "para"
+    },
+    {
+     "t": "Têm (plural): continua",
+     "cue": "mas"
+    }
+   ],
+   "narration": "Ideia e heroico perderam o acento. Voo e leem também. O para, do verbo parar, também. Mas o têm, no plural, continua com acento.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "Herói e papéis mantêm o acento",
+   "hl": "mantêm",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: herói e papéis continuam com acento, porque são oxítonas.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

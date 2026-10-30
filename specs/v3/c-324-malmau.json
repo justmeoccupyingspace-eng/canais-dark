@@ -1,0 +1,81 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Mal humor ou mau humor?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-05 12:30"
+ },
+ "tiktok": "Português do Escrevente TJSP: mal ou mau? Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Mal humor ou mau humor?",
+   "hl": "mau humor?",
+   "icon": "✍️",
+   "narration": "Mal ou mau? Tem um truque que nunca falha.",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · MAL OU MAU",
+   "q": "Está correto o emprego de \"mal\" ou \"mau\" em:",
+   "alts": [
+    "O servidor agiu mau com o colega.",
+    "Ele é um mal exemplo para os novatos.",
+    "Mau chegou, já foi chamado.",
+    "O réu estava de mau humor na audiência.",
+    "Aquele foi um ano mal para o comércio."
+   ],
+   "correct": 3,
+   "narration": "Em qual frase o mal ou mau está certo?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 44
+  },
+  {
+   "type": "text",
+   "text": "Letra D: de mau humor",
+   "hl": "de mau humor",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra D!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "O truque do contrário",
+   "hl": "contrário",
+   "rows": [
+    {
+     "t": "Mau: contrário de bom",
+     "cue": "truque"
+    },
+    {
+     "t": "Mal: contrário de bem",
+     "cue": "mau"
+    },
+    {
+     "t": "Mal também = assim que",
+     "cue": "mal"
+    }
+   ],
+   "narration": "O truque é o contrário. Mau é o contrário de bom: bom humor, mau humor. Mal é o contrário de bem. E mal também pode ser assim que.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

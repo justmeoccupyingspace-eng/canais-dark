@@ -1,0 +1,91 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Essa vírgula está errada?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-07 12:30"
+ },
+ "tiktok": "Português do Escrevente TJSP: vírgula entre sujeito e verbo. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues #pontuacao",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Essa vírgula está errada?",
+   "hl": "vírgula",
+   "icon": "✍️",
+   "narration": "A vírgula que mais reprova na VUNESP.",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · PONTUAÇÃO",
+   "q": "A vírgula está empregada de acordo com a norma-padrão em:",
+   "alts": [
+    "Os candidatos aprovados, serão convocados.",
+    "O juiz, analisou o processo com cuidado.",
+    "Em março, os candidatos farão a prova.",
+    "O edital prevê, cadastro de reserva.",
+    "Quem estudou, vai passar."
+   ],
+   "correct": 2,
+   "narration": "Em qual frase a vírgula está certa?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 42
+  },
+  {
+   "type": "text",
+   "text": "Letra C: Em março, os candidatos...",
+   "hl": "Em março, os candidatos...",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra C!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "A regra de ouro",
+   "hl": "ouro",
+   "rows": [
+    {
+     "t": "Nunca separe sujeito e verbo",
+     "cue": "regra"
+    },
+    {
+     "t": "Nunca separe verbo e complemento",
+     "cue": "nem"
+    },
+    {
+     "t": "Pode: termo deslocado no início",
+     "cue": "pode"
+    }
+   ],
+   "narration": "A regra de ouro: nunca separe sujeito e verbo. Nem verbo e complemento. Pode usar vírgula num termo deslocado pro início, como em março.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "\"Quem estudou\" é o sujeito: sem vírgula",
+   "hl": "sem vírgula",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: quem estudou é o sujeito inteiro. Então, sem vírgula.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}
