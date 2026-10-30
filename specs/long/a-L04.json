@@ -358,7 +358,7 @@
    },
    "kicker": {
     "at": "about a fifth",
-    "text": "2008–2010: GDP −21%"
+    "text": "2007–2010: GDP −22%"
    },
    "react": [
     {
@@ -733,7 +733,7 @@
    "src": "World Bank WDI · life expectancy at birth, male · OECD/European Observatory, Latvia Country Health Profile 2023",
    "fmt": "dec1",
    "hl": "LVA",
-   "narration": "And people in this region still die younger. {p} A Latvian man can expect to live about seventy-one and a half years. {p} The average man in the EU, seventy-nine. {p} Latvian women live almost ten years longer than Latvian men, one of the widest gaps in Europe. {p} Heart disease, heavy drinking and smoking hit men here especially hard.",
+   "narration": "And people in this region still die younger. {p} A Latvian man can expect to live about seventy-one and a half years. {p} The average man in the EU, seventy-nine. {p} Latvian women live almost ten years longer than Latvian men, the widest gap in the European Union. {p} Heart disease, heavy drinking and smoking hit men here especially hard.",
    "keys": [
     {
      "at": "die younger",
@@ -1252,12 +1252,12 @@
    "tol": 0.04
   },
   {
-   "say": "Latvia GDP −21% 2007→2010 (≈ a fifth)",
+   "say": "Latvia GDP −22% 2007→2010 (≈ a fifth)",
    "set": "gdpkidx",
    "iso": "LVA",
    "year": 2010,
-   "min": 77,
-   "max": 82
+   "min": 77.6,
+   "max": 78.5
   },
   {
    "say": "Latvia 2010 net migration ≈ −1.7% (almost two percent)",
@@ -1378,7 +1378,7 @@
    "max": 9.99
   },
   {
-   "say": "one of the widest gaps in the EU (top 3)",
+   "say": "the widest gap in the EU",
    "rule": "rank",
    "set": "lgap",
    "iso": "LVA",
@@ -1412,8 +1412,7 @@
     "ESP",
     "SWE"
    ],
-   "min": 1,
-   "max": 3
+   "equal": 1
   },
   {
    "say": "Lithuania net migration positive in 2019",
