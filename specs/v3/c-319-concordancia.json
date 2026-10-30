@@ -2,7 +2,7 @@
  "channel": "gabarito",
  "style": "v3",
  "rate": "+5%",
- "title": "\"Haviam\" ou \"havia\" candidatos?",
+ "title": "Haviam ou havia candidatos?",
  "publish": {
   "channel": "C",
   "privacy": "public",
@@ -13,7 +13,7 @@
   {
    "type": "hook",
    "kicker": "Escrevente TJSP · VUNESP",
-   "text": "\"Haviam\" ou \"havia\" candidatos?",
+   "text": "Haviam ou havia candidatos?",
    "hl": "havia",
    "icon": "✍️",
    "narration": "Haviam ou havia muitos candidatos? Essa a VUNESP adora.",

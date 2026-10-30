@@ -52,7 +52,7 @@ info('c-318-salario', '2026-11-02 12:30', 'Quanto ganha um Escrevente do TJSP?',
          {'type': 'text', 'kicker': 'Atenção', 'text': 'O edital é de cadastro de reserva', 'hl': 'cadastro de reserva', 'icon': '📋', 'pose': 'shrug', 'narration': 'Atenção: o edital é de cadastro de reserva. Quem passa entra na fila de convocação.', 'min_duration': 3.0},
          {'type': 'big', 'text': 'Inscrições até', 'hl': 'Inscrições', 'big': '10/12', 'label': 'taxa de R$ 81 · site da VUNESP', 'narration': 'As inscrições vão até dez de dezembro, no site da VUNESP.', 'min_duration': 2.6},
      ])
-q('c-319-concordancia', '2026-11-02 19:30', 'PORTUGUÊS · CONCORDÂNCIA', '"Haviam" ou "havia" candidatos?', 'havia', '✍️',
+q('c-319-concordancia', '2026-11-02 19:30', 'PORTUGUÊS · CONCORDÂNCIA', 'Haviam ou havia candidatos?', 'havia', '✍️',
   'Haviam ou havia muitos candidatos? Essa a VUNESP adora.',
   'Está de acordo com a norma-padrão a concordância verbal em:', ['Fazem dois anos que o edital não sai.', 'Haviam muitos candidatos na sala.', 'Devem haver novas vagas no ano que vem.', 'Existem muitas dúvidas sobre o edital.', 'Houveram problemas na inscrição.'], 'D',
   'Em qual frase a concordância está certa?',
@@ -139,7 +139,7 @@ q('c-327-haa', '2026-11-06 19:30', 'PORTUGUÊS · HÁ OU A', 'Há dois anos ou a
   'Está correto o emprego de "há" ou "a" em:', ['Daqui há dois meses começa a prova.', 'Estudo para o concurso a dois anos.', 'O relator saiu há pouco.', 'O fórum fica há dois quarteirões.', 'Há partir de hoje, vou estudar.'], 'C',
   'Em qual frase o há ou a está certo?',
   'Letra C: saiu há pouco', 'Letra C!',
-  ('Troca por "faz"', 'faz', ['Deu certo com "faz"? É HÁ', 'Futuro ou distância: A', 'Daqui a, a partir de'],
+  ('Troca por faz', 'faz', ['Deu certo com "faz"? É HÁ', 'Futuro ou distância: A', 'Daqui a, a partir de'],
    'Troca por faz. Saiu faz pouco? Funcionou: é há. Futuro ou distância é a sem h: daqui a dois meses, a dois quarteirões, a partir de hoje.', ['troca', 'futuro', 'daqui']),
   None,
   '#portugues', 'Português do Escrevente TJSP: há ou a?', asize=44)
