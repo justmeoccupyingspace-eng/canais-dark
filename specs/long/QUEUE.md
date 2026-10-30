@@ -26,8 +26,8 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 | A-L02 | South Korea's scariest number | publicado (PP9J1_ZcpBo) | 29/10 18:40Z |
 | A-L03 | Ireland is the richest country in Europe. It isn't. | agendado (EpQQtd0o78Q) · cortes 6z26Abz-OT4, ScvCTM6mp9s, uxy6Av-fHBw, MmF-8_Niq0I | 30/10 18:00Z |
 | A-L04 | Latvia Lost 30% of Its People. There Was No War. | roteiro + dados ok (52 checks) · teste visual edge run 41021249686 | 31/10 18:00Z |
-| A-L05 | Germany, sick man of Europe again? (PIB 2023–25) | ideia | 01/11 |
-| A-L06 | O iene que derreteu (JPY, juros BoJ) | ideia | |
+| A-L05 | ~~Germany, sick man of Europe~~ reprovado no filtro (Bloomberg 2,9 mi ago/26; DW 1,3 mi) | trocar | 01/11 |
+| A-L06 | ~~Iene~~ reprovado no filtro (Bloomberg 3,9 mi; ColdFusion 2,8 mi; Andrei Jikh 2,2 mi jul/26) | trocar | |
 
 ## B · How It Ticks
 | id | tema | estado | publicação |
