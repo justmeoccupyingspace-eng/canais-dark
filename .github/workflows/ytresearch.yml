@@ -1,0 +1,22 @@
+name: ytresearch
+run-name: ytresearch ${{ inputs.q }}
+on:
+  workflow_dispatch:
+    inputs:
+      q: {description: "arquivo de consultas (research/*.json)", required: true}
+permissions:
+  contents: write
+jobs:
+  r:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/ytresearch.py ${{ inputs.q }} /tmp/out.json
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_A: ${{ secrets.YT_REFRESH_A }}
+      - run: |
+          git config user.name producer; git config user.email producer@users.noreply.github.com
+          git checkout --orphan research-${{ github.run_id }} && git rm -rf . -q
+          cp /tmp/out.json research.json && git add research.json && git commit -qm research && git push -f origin research-${{ github.run_id }}

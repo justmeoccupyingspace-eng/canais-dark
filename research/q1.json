@@ -1,0 +1,132 @@
+{
+ "channels": [
+  "How It Ticks",
+  "Chartbound",
+  "How Things Tick",
+  "Chart Bound"
+ ],
+ "topics": [
+  {
+   "id": "gps_rel",
+   "q": "GPS relativity Einstein time dilation satellites",
+   "order": "viewCount",
+   "dur": "any",
+   "n": 25
+  },
+  {
+   "id": "gps_how",
+   "q": "how GPS works",
+   "order": "viewCount",
+   "dur": "any",
+   "n": 25
+  },
+  {
+   "id": "gps_recent",
+   "q": "how GPS works relativity",
+   "order": "viewCount",
+   "after": "2025-10-01T00:00:00Z",
+   "dur": "any",
+   "n": 25
+  },
+  {
+   "id": "tb931",
+   "q": "why 1TB hard drive shows 931GB",
+   "order": "viewCount",
+   "dur": "any",
+   "n": 25
+  },
+  {
+   "id": "matherr",
+   "q": "math errors that cost lives Patriot missile Ariane 5",
+   "order": "viewCount",
+   "dur": "any",
+   "n": 25
+  },
+  {
+   "id": "float",
+   "q": "0.1 + 0.2 floating point explained",
+   "order": "viewCount",
+   "dur": "any",
+   "n": 25
+  },
+  {
+   "id": "planes",
+   "q": "why planes don't fly in straight lines great circle",
+   "order": "viewCount",
+   "dur": "any",
+   "n": 25
+  },
+  {
+   "id": "qr",
+   "q": "how QR codes work error correction",
+   "order": "viewCount",
+   "dur": "any",
+   "n": 25
+  },
+  {
+   "id": "poland",
+   "q": "Poland economy richer than Japan",
+   "order": "viewCount",
+   "dur": "any",
+   "n": 25
+  },
+  {
+   "id": "poland_recent",
+   "q": "Poland economy",
+   "order": "viewCount",
+   "after": "2025-10-01T00:00:00Z",
+   "dur": "medium",
+   "n": 25
+  },
+  {
+   "id": "korea",
+   "q": "South Korea birth rate crisis",
+   "order": "viewCount",
+   "dur": "any",
+   "n": 25
+  },
+  {
+   "id": "korea_recent",
+   "q": "South Korea birth rate",
+   "order": "viewCount",
+   "after": "2025-10-01T00:00:00Z",
+   "dur": "any",
+   "n": 25
+  },
+  {
+   "id": "ireland",
+   "q": "Ireland GDP leprechaun economics",
+   "order": "viewCount",
+   "dur": "any",
+   "n": 25
+  },
+  {
+   "id": "latvia",
+   "q": "Latvia population decline",
+   "order": "viewCount",
+   "dur": "any",
+   "n": 25
+  },
+  {
+   "id": "bulgaria",
+   "q": "Bulgaria shrinking population emigration",
+   "order": "viewCount",
+   "dur": "any",
+   "n": 25
+  },
+  {
+   "id": "germany",
+   "q": "Germany sick man of Europe economy",
+   "order": "viewCount",
+   "dur": "any",
+   "n": 25
+  },
+  {
+   "id": "yen",
+   "q": "Japanese yen collapse explained",
+   "order": "viewCount",
+   "dur": "any",
+   "n": 25
+  }
+ ]
+}
