@@ -1352,7 +1352,7 @@ const ShotView = ({sh, idx, p, data}) => {
             })}
           </div>
         ) : null}
-        {sh.kicker && !['bars', 'hbars'].includes(sh.type) && !isHost && sh.kicker.t != null ? <Pill x={1300} y={175} text={sh.kicker.text} color={p.acc} T={T} t0={sh.kicker.t} align="right" /> : null}
+        {sh.kicker && !['bars', 'hbars', 'stack'].includes(sh.type) && !isHost && sh.kicker.t != null ? <Pill x={1300} y={175} text={sh.kicker.text} color={p.acc} T={T} t0={sh.kicker.t} align="right" /> : null}
       </AbsoluteFill>
       {sh.type === 'list' || sh.type === 'duel' ? <Kicker text={sh.title} p={p} T={T} t0={sh.t0} y={sh.cards ? 290 : 92} x={sh.cards ? 300 : 120} /> : null}
       {sh.card ? <div style={{position: 'absolute', left: 120, top: 92, fontFamily: SANS, fontWeight: 900, fontSize: 36, color: '#0d1020', background: p.acc, padding: '6px 20px', borderRadius: 12}}>{sh.card} · {['Money', 'Factories', 'People'][sh.card - 1]}</div> : null}
