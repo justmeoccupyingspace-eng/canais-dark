@@ -11,6 +11,14 @@ Rotina diária (cota Gemini zera ~07:00Z até 1/nov; depois ~08:00Z):
 
 Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (roteiro de ~1.150 palavras ≈ 7–9 pedidos).
 
+## Decisão 30/10 (pedido do Kauan: originalidade + RPM)
+- Pesquisa (research/q1.json, q2.json → branches research-41079941354 e research-41080248419): "How It Ticks" tem 19 canais com o mesmo nome (12 criados em 2026); temas do B dominados por gigantes (GPS: Veritasium/minutephysics; 931 GB: ThioJoe 1,1 mi + Short 2,4 mi; 0,1+0,2: Fireship 8,8 mi; QR: Veritasium 9,7 mi). "Chartbound" é nome único.
+- A (Chartbound): MANTÉM. Única tração real (Polônia 23 mil views, CTR 9,4%; Coreia 50% de retenção). Regras novas de pauta:
+  1. Antes de roteirizar, rodar ytresearch com o tema: se existe vídeo ≥500 mil views nos últimos 2 anos, só entra com dado novo (publicado há ≤60 dias) ou número calculado por nós que ninguém mostrou.
+  2. Título conferido contra os existentes (nada de "X Just Passed Y" igual aos clones).
+  3. Prioridade a dados recém-lançados (Eurostat, World Bank, institutos nacionais) e a ângulos com número próprio.
+- B (How It Ticks): PAUSADO a partir de 31/10 (nada de render novo; o canal fica, nada é apagado). B-L03 (GPS) cancelado. Esforço e cota concentrados no A até monetizar.
+
 ## A · Chartbound
 | id | tema | estado | publicação |
 |---|---|---|---|
@@ -26,6 +34,6 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 |---|---|---|---|
 | B-L01 | Tiny math errors that cost lives and millions | publicado (DJEANTgbtD0) | 29/10 18:40Z |
 | B-L02 | Where did 69 GB of my 1 TB drive go? | agendado (_SgVH8bGG5k) · cortes -rmnWT3Jz6w, 17341VgauLg, ZLsxAGFVY-k, 9EkUwdLL7wo | 30/10 20:00Z |
-| B-L03 | GPS só funciona por causa de Einstein (38 µs/dia ≈ 11 km) | roteiro ok · dados run 41021231037 | 31/10 20:00Z |
+| B-L03 | GPS só funciona por causa de Einstein | CANCELADO 30/10 (tema saturado: Veritasium, minutephysics) | — |
 | B-L04 | Por que aviões não voam em linha reta (círculo máximo, Globe) | ideia | 01/11 |
 | B-L05 | QR code rasgado que ainda lê (Reed–Solomon 7/15/25/30%) | ideia | |
