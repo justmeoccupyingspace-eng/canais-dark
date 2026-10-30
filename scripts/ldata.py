@@ -81,6 +81,18 @@ def build_generic(spec):
         elif "wb" in d:
             got = wb(d["wb"], d["isos"], d.get("from", 1960), d.get("to", 2024))
             S.setdefault(st, {}).update(got)
+        elif d.get("derive") == "idx":  # índice: valor / valor do ano-base × 100
+            for i in d["isos"]:
+                ser = S[d["src"]][i]
+                S.setdefault(st, {})[i] = {y: v / ser[d["base"]] * 100 + d.get("off", 0) for y, v in ser.items()}
+        elif d.get("derive") == "chg":  # plano: variação % entre os anos a e b
+            S[st] = {i: (S[d["src"]][i][d["b"]] / S[d["src"]][i][d["a"]] - 1) * 100 for i in d["isos"] if d["a"] in S[d["src"]].get(i, {}) and d["b"] in S[d["src"]][i]}
+        elif d.get("derive") == "sum":  # plano: soma da série entre os anos a e b
+            S[st] = {i: sum(v for y, v in S[d["src"]][i].items() if d["a"] <= y <= d["b"]) for i in d["isos"]}
+        elif d.get("derive") == "diff":  # anual: série a − série b (mesmo país)
+            for i in d["isos"]:
+                A, B = S[d["a"]][i], S[d["b"]][i]
+                S.setdefault(st, {})[i] = {y: A[y] - B[y] for y in A if y in B}
         elif d.get("derive"):
             (sa, ia), (sb, ib) = d["a"], d["b"]
             A, B = S[sa][ia], S[sb][ib]
@@ -120,6 +132,8 @@ def build(spec):
 
 
 def val(S, st, iso, year):
+    if isinstance(S[st].get(iso), (int, float)):  # conjunto plano {iso: valor}
+        return S[st][iso], year
     ser = S[st][iso] if isinstance(S[st].get(iso), dict) else S[st]
     if isinstance(year, str) and year.startswith("max:"):
         a, b = map(int, year[4:].split("-"))

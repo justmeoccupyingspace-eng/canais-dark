@@ -1,0 +1,2146 @@
+{
+ "id": "a-L04-shrinking",
+ "clips": [
+  {
+   "from": "s00",
+   "to": "s00",
+   "hook": "Latvia lost *30%* of its people. No war.",
+   "title": "Latvia lost 30% of its people. There was no war #Shorts",
+   "desc": "Japan is the famous shrinking country. It lost 3%. Latvia lost 30%."
+  },
+  {
+   "from": "s06",
+   "to": "s06",
+   "hook": "Why they left: *4x* the money",
+   "title": "Why millions left Eastern Europe, in one number #Shorts",
+   "desc": "In 2000 a German produced 4x what a Bulgarian did."
+  },
+  {
+   "from": "s10",
+   "to": "s11",
+   "hook": "*Two* funerals for every baby",
+   "title": "Bulgaria: two deaths for every birth #Shorts",
+   "desc": "And the census shows it's now the main reason the country is shrinking."
+  },
+  {
+   "from": "s15",
+   "to": "s15",
+   "hook": "More people moved *in*. It still shrank.",
+   "title": "35,000 more people moved in. Bulgaria still shrank #Shorts",
+   "desc": "Bulgaria 2025: migration turned positive, the population still fell."
+  }
+ ],
+ "channel": "chartbound",
+ "chapter0": "No war, no famine",
+ "thumb": {
+  "set": "pop",
+  "iso": "LVA",
+  "years": [
+   1990,
+   2024
+  ],
+  "flags": [
+   "LVA"
+  ],
+  "top": "LATVIA",
+  "big": "−30%",
+  "line2": "NO WAR.",
+  "color": "#ff5a6e"
+ },
+ "w": 1920,
+ "h": 1080,
+ "fps": 30,
+ "acts": [
+  "Cold open",
+  "The exit",
+  "Why they left",
+  "More funerals than births",
+  "The comeback",
+  "What comes next"
+ ],
+ "shots": [
+  {
+   "act": 0,
+   "type": "lines",
+   "set": "popchg",
+   "series": [
+    "JPN",
+    "BGR",
+    "LVA"
+   ],
+   "years": [
+    1990,
+    2024
+   ],
+   "start": 1990.0,
+   "y": [
+    -35,
+    10
+   ],
+   "src": "World Bank WDI · population (SP.POP.TOTL), change since 1990",
+   "fmt": "pct0s",
+   "hl": "LVA",
+   "ref": {
+    "value": 0,
+    "label": "1990 level",
+    "pos": "left"
+   },
+   "narration": "Japan is the world's most famous shrinking country. {p} But on this chart, it barely moves. Since its peak in 2010, Japan has lost about three percent of its people. {p} Now look at Latvia. {pp} Since 1990, Latvia has lost thirty percent of its population. {p} Bulgaria, more than a quarter. {p} No war. No famine. No plague. {pp} So where did everyone go?",
+   "keys": [
+    {
+     "at": "Japan is",
+     "year": 2024.0,
+     "dur": 6.0
+    }
+   ],
+   "labels": [
+    {
+     "at": "thirty percent",
+     "iso": "LVA",
+     "year": 2024
+    },
+    {
+     "at": "more than a quarter",
+     "iso": "BGR",
+     "year": 2024
+    }
+   ],
+   "react": [
+    {
+     "at": "Japan is",
+     "pose": "pointL"
+    },
+    {
+     "at": "barely moves",
+     "pose": "shrug"
+    },
+    {
+     "at": "Now look",
+     "pose": "pointL"
+    },
+    {
+     "at": "thirty percent",
+     "pose": "shock"
+    },
+    {
+     "at": "No war",
+     "pose": "think"
+    }
+   ],
+   "id": "s00"
+  },
+  {
+   "act": 0,
+   "type": "globe",
+   "src": "World Bank WDI · population change 1990–2024",
+   "view": {
+    "lon": 20,
+    "lat": 51,
+    "zoom": 4.4
+   },
+   "hl": [],
+   "choro": {
+    "at": "Here's every country",
+    "set": "chg",
+    "isos": [
+     "AUT",
+     "BEL",
+     "BGR",
+     "HRV",
+     "CYP",
+     "CZE",
+     "DNK",
+     "EST",
+     "FIN",
+     "FRA",
+     "DEU",
+     "GRC",
+     "HUN",
+     "IRL",
+     "ITA",
+     "LVA",
+     "LTU",
+     "LUX",
+     "MLT",
+     "NLD",
+     "POL",
+     "PRT",
+     "ROU",
+     "SVK",
+     "SVN",
+     "ESP",
+     "SWE",
+     "GBR",
+     "NOR",
+     "CHE",
+     "ISL",
+     "SRB",
+     "BIH",
+     "MDA",
+     "ALB",
+     "MKD",
+     "MNE",
+     "UKR",
+     "BLR"
+    ],
+    "step": 0.11,
+    "last": "LVA",
+    "reveal_last": "Latvia isn't alone",
+    "scale": 25
+   },
+   "narration": "And Latvia isn't alone. {p} Here's every country in Europe, colored by how much its population has changed since 1990. {p} Green grew. Red shrank. {p} Ukraine's losses are mostly the war. But look at the red band running from the Baltic Sea down to the Balkans. {pp} Lithuania. Bulgaria. Bosnia. Albania. Each lost more than a fifth of its people. {p} Romania and Croatia, almost as much.",
+   "react": [
+    {
+     "at": "Latvia isn't alone",
+     "pose": "pointL"
+    },
+    {
+     "at": "Green grew",
+     "pose": "idle",
+     "nod": 1
+    },
+    {
+     "at": "red band",
+     "pose": "shock"
+    },
+    {
+     "at": "a fifth",
+     "pose": "think"
+    },
+    {
+     "at": "almost as much",
+     "pose": "shrug"
+    }
+   ],
+   "id": "s01"
+  },
+  {
+   "act": 0,
+   "type": "host",
+   "bg": "lines",
+   "set": "popchg",
+   "series": [
+    "JPN",
+    "BGR",
+    "LVA"
+   ],
+   "years": [
+    1990,
+    2024
+   ],
+   "start": 2024.0,
+   "y": [
+    -35,
+    10
+   ],
+   "fmt": "pct0s",
+   "narration": "At its peak, Latvia had about two point six seven million people. {p} Today it has about one point eight six million. {p} That's around eight hundred thousand people gone, {pp} more than everyone who lives in the capital, Riga, today. {p} This is the story of Europe's vanishing countries: {p} why so many people left, why the numbers keep falling even now that people are coming back, <soft>and why the rest of Europe should be paying attention.</soft>",
+   "items": [
+    {
+     "at": "two point six seven",
+     "text": "2.67M → 1.86M"
+    },
+    {
+     "at": "eight hundred thousand",
+     "text": "−800,000 people",
+     "color": "acc"
+    },
+    {
+     "at": "Riga",
+     "text": "More than all of Riga",
+     "serif": true,
+     "size": 66
+    }
+   ],
+   "react": [
+    {
+     "at": "At its peak",
+     "pose": "idle"
+    },
+    {
+     "at": "eight hundred thousand",
+     "pose": "shock"
+    },
+    {
+     "at": "Riga",
+     "pose": "pointL"
+    },
+    {
+     "at": "paying attention",
+     "pose": "think"
+    }
+   ],
+   "id": "s02"
+  },
+  {
+   "act": 1,
+   "type": "bars",
+   "mode": "abs",
+   "set": "tfr",
+   "iso": "LVA",
+   "years": [
+    1980,
+    2005
+   ],
+   "start": 1979.0,
+   "fmt": "dec2",
+   "src": "World Bank WDI · fertility rate (births per woman)",
+   "narration": "It started with the end of the Soviet Union. {p} In 1991, Latvia, Lithuania and Estonia became independent again. Bulgaria and Romania had already thrown out their communist regimes two years earlier. {p} Freedom came with an economic collapse. Factories closed, savings vanished, prices exploded. {p} And people stopped having children. {p} In Latvia, births per woman fell from about two in 1990 to one point two five in 1995. {p} Bulgaria fell to almost exactly the same level.",
+   "keys": [
+    {
+     "at": "It started",
+     "year": 2005.0,
+     "dur": 7.0
+    }
+   ],
+   "hl": [
+    1990,
+    1995
+   ],
+   "hltext": {
+    "at": "births per woman fell",
+    "text": "2.0 → 1.25 in five years"
+   },
+   "labels": [
+    {
+     "at": "about two in 1990",
+     "year": 1990
+    },
+    {
+     "at": "one point two five",
+     "year": 1995
+    }
+   ],
+   "react": [
+    {
+     "at": "Soviet Union",
+     "pose": "think"
+    },
+    {
+     "at": "economic collapse",
+     "pose": "shock"
+    },
+    {
+     "at": "stopped having",
+     "pose": "shrug"
+    },
+    {
+     "at": "one point two five",
+     "pose": "pointL"
+    }
+   ],
+   "id": "s03"
+  },
+  {
+   "act": 1,
+   "type": "bars",
+   "set": "nmp",
+   "iso": "LVA",
+   "years": [
+    1995,
+    2024
+   ],
+   "start": 1994.0,
+   "src": "World Bank WDI · net migration as % of population, Latvia",
+   "narration": "Then the doors opened. {p} In 2004, the Baltic states joined the European Union. In 2007, Bulgaria and Romania followed. {p} Suddenly, a young Latvian could legally take a job in Dublin or London. Britain, Ireland and Sweden opened their job markets on day one. {p} When the 2008 financial crisis hit, Latvia's economy shrank by about a fifth. {pp} In 2010 alone, the country lost almost two percent of its population to emigration. {p} In a single year.",
+   "keys": [
+    {
+     "at": "Then the doors",
+     "year": 2024.0,
+     "dur": 8.0
+    }
+   ],
+   "bracket": {
+    "at": "In 2010 alone",
+    "a": 2009,
+    "b": 2010,
+    "text": "−1.7% of the population in 2010"
+   },
+   "kicker": {
+    "at": "about a fifth",
+    "text": "2008–2010: GDP −21%"
+   },
+   "react": [
+    {
+     "at": "doors opened",
+     "pose": "pointUp"
+    },
+    {
+     "at": "Dublin or London",
+     "pose": "cheer"
+    },
+    {
+     "at": "about a fifth",
+     "pose": "shock"
+    },
+    {
+     "at": "single year",
+     "pose": "shrug"
+    }
+   ],
+   "id": "s04"
+  },
+  {
+   "act": 1,
+   "type": "list",
+   "src": "World Bank WDI · net migration · Eurostat, EU citizens living in another EU country (2024)",
+   "title": "The great exit",
+   "narration": "Lithuania lost almost eighty thousand people to emigration in 2010 alone. {p} Romania, a much bigger country, lost about two point four million people to emigration between 1990 and 2024, by World Bank estimates. {p} Today, about three point one million Romanians live in other EU countries, mostly in Italy, Germany and Spain. {p} That's more than any other country in the EU.",
+   "items": [
+    {
+     "at": "almost eighty thousand",
+     "kind": "bullet",
+     "text": "Lithuania, 2010: −79,000 people (−2.5%)"
+    },
+    {
+     "at": "two point four million",
+     "kind": "bullet",
+     "text": "Romania, 1990–2024: −2.4 million, net"
+    },
+    {
+     "at": "three point one million",
+     "kind": "bullet",
+     "text": "3.1 million Romanians in other EU countries"
+    },
+    {
+     "at": "more than any other",
+     "kind": "title",
+     "text": "#1 IN THE EU"
+    }
+   ],
+   "react": [
+    {
+     "at": "almost eighty",
+     "pose": "shock"
+    },
+    {
+     "at": "much bigger",
+     "pose": "pointL"
+    },
+    {
+     "at": "three point one",
+     "pose": "think"
+    },
+    {
+     "at": "more than any other",
+     "pose": "pointUp"
+    }
+   ],
+   "id": "s05"
+  },
+  {
+   "act": 2,
+   "type": "duel",
+   "set": "gdppc",
+   "year": 2000,
+   "a": "BGR",
+   "b": "DEU",
+   "fmt": "usd0",
+   "src": "World Bank WDI · GDP per capita, PPP (current international $)",
+   "title": "Output per person, 2000",
+   "narration": "Why did so many people leave? {p} Mostly, money. {p} In 2000, the average Bulgarian produced about six thousand four hundred dollars of value a year, adjusted for prices. {p} The average German? {pp} About twenty-seven thousand. More than four times as much. {p} When a bus ticket can quadruple your income, a lot of people buy the ticket.",
+   "cues": [
+    {
+     "at": "six thousand four hundred",
+     "show": "a"
+    },
+    {
+     "at": "About twenty-seven",
+     "show": "b"
+    }
+   ],
+   "react": [
+    {
+     "at": "Mostly, money",
+     "pose": "shrug"
+    },
+    {
+     "at": "six thousand",
+     "pose": "pointL"
+    },
+    {
+     "at": "twenty-seven",
+     "pose": "shock"
+    },
+    {
+     "at": "bus ticket",
+     "pose": "cheer"
+    }
+   ],
+   "id": "s06"
+  },
+  {
+   "act": 2,
+   "type": "list",
+   "src": "World Bank, ECA Economic Update: Migration and Brain Drain (Fall 2019)",
+   "title": "Who left",
+   "narration": "And the people who left weren't a random sample. {p} They were mostly young, in their twenties and thirties. {p} Many had a degree. {p} In other words, exactly the people who would have been raising the next generation of children at home. {pp} Emigration didn't just take people away. <soft>It took their future kids with them.</soft>",
+   "items": [
+    {
+     "at": "mostly young",
+     "kind": "bullet",
+     "text": "young: twenties and thirties"
+    },
+    {
+     "at": "Many had a degree",
+     "kind": "bullet",
+     "text": "often with a degree"
+    },
+    {
+     "at": "next generation",
+     "kind": "bullet",
+     "text": "= the would-be parents"
+    },
+    {
+     "at": "future kids",
+     "kind": "title",
+     "text": "…and their future kids"
+    }
+   ],
+   "react": [
+    {
+     "at": "random sample",
+     "pose": "think"
+    },
+    {
+     "at": "mostly young",
+     "pose": "pointL"
+    },
+    {
+     "at": "next generation",
+     "pose": "shrug"
+    },
+    {
+     "at": "future kids",
+     "pose": "shock"
+    }
+   ],
+   "id": "s07"
+  },
+  {
+   "act": 2,
+   "type": "lines",
+   "set": "o65",
+   "series": [
+    "LVA",
+    "BGR",
+    "EUU"
+   ],
+   "years": [
+    1990,
+    2024
+   ],
+   "start": 1990.0,
+   "y": [
+    0,
+    28
+   ],
+   "src": "World Bank WDI · population ages 65+ (% of total)",
+   "fmt": "pct1",
+   "hl": "LVA",
+   "narration": "And the people who stayed got older. {p} In 1990, about one in eight Latvians was sixty-five or older. {p} Today, it's more than one in five. {p} In 1990, Latvia was younger than the EU average. Today, it has caught up. {p} Fewer young adults means fewer births, which means even fewer young adults twenty years later. {pp} It's a spiral, and it's very hard to get out of.",
+   "keys": [
+    {
+     "at": "got older",
+     "year": 2024.0,
+     "dur": 5.0
+    }
+   ],
+   "labels": [
+    {
+     "at": "one in eight",
+     "iso": "LVA",
+     "year": 1990
+    },
+    {
+     "at": "one in five",
+     "iso": "LVA",
+     "year": 2024
+    }
+   ],
+   "react": [
+    {
+     "at": "got older",
+     "pose": "idle"
+    },
+    {
+     "at": "one in eight",
+     "pose": "pointL"
+    },
+    {
+     "at": "one in five",
+     "pose": "shock"
+    },
+    {
+     "at": "spiral",
+     "pose": "think"
+    }
+   ],
+   "id": "s08"
+  },
+  {
+   "act": 3,
+   "type": "host",
+   "bg": "none",
+   "narration": "Quick favor: if you're finding this interesting, hit subscribe. It's free, and it's genuinely what keeps this channel going. {p} Now, here's the part most people miss. {pp} Today, emigration isn't the main reason these countries are shrinking.",
+   "items": [
+    {
+     "at": "hit subscribe",
+     "text": "Subscribe = more of these"
+    },
+    {
+     "at": "most people miss",
+     "text": "The part most people miss:",
+     "color": "acc2"
+    },
+    {
+     "at": "isn't the main reason",
+     "text": "It's not emigration anymore.",
+     "serif": true,
+     "size": 66,
+     "color": "acc"
+    }
+   ],
+   "react": [
+    {
+     "at": "Quick favor",
+     "pose": "wave"
+    },
+    {
+     "at": "most people miss",
+     "pose": "think"
+    },
+    {
+     "at": "isn't the main",
+     "pose": "pointUp"
+    }
+   ],
+   "id": "s09"
+  },
+  {
+   "act": 3,
+   "type": "duel",
+   "src": "NSI Bulgaria, population and demographic processes 2025 (via Novinite, 29 Apr 2026) · CSB Latvia, population 2024 (via Baltic Times, 2025)",
+   "title": "Bulgaria, 2025",
+   "left": {
+    "label": "Births",
+    "value": 50241,
+    "color": "acc2"
+   },
+   "right": {
+    "label": "Deaths",
+    "value": 99479,
+    "color": "warm"
+   },
+   "fmt": "int",
+   "badge": "×2",
+   "cues": [
+    {
+     "at": "about fifty thousand",
+     "show": "a"
+    },
+    {
+     "at": "almost a hundred thousand",
+     "show": "b"
+    }
+   ],
+   "narration": "In 2025, Bulgaria recorded about fifty thousand births. {p} And almost a hundred thousand deaths. {pp} Two funerals for every baby. {p} Latvia's numbers look almost the same: in 2024, about thirteen thousand babies, and more than twenty-six thousand deaths.",
+   "react": [
+    {
+     "at": "fifty thousand",
+     "pose": "idle"
+    },
+    {
+     "at": "hundred thousand",
+     "pose": "shock"
+    },
+    {
+     "at": "Two funerals",
+     "pose": "shrug"
+    },
+    {
+     "at": "Latvia's numbers",
+     "pose": "pointL"
+    }
+   ],
+   "id": "s10"
+  },
+  {
+   "act": 3,
+   "type": "stack",
+   "src": "NSI Bulgaria, 2021 census final results (via Sofia Globe, 3 Oct 2022)",
+   "title": "Bulgaria lost 845,000 people, 2011–2021",
+   "sub": "census to census",
+   "total": 845000,
+   "segs": [
+    {
+     "at": "three hundred forty-four",
+     "value": 344000,
+     "text": "344K",
+     "label": "emigration",
+     "color": "acc"
+    },
+    {
+     "at": "five hundred thousand",
+     "value": 501000,
+     "text": "501K",
+     "label": "deaths minus births",
+     "color": "warm"
+    }
+   ],
+   "narration": "Bulgaria's last census shows how the two forces compare. {p} Between 2011 and 2021, the country lost about eight hundred forty-five thousand people. {p} About three hundred forty-four thousand of them emigrated. {p} The other five hundred thousand or so were simply deaths outnumbering births. {pp} The biggest driver wasn't the airport anymore. <soft>It was the maternity ward, and the cemetery.</soft>",
+   "react": [
+    {
+     "at": "two forces",
+     "pose": "think"
+    },
+    {
+     "at": "eight hundred forty-five",
+     "pose": "shock"
+    },
+    {
+     "at": "three hundred forty-four",
+     "pose": "pointL"
+    },
+    {
+     "at": "five hundred thousand",
+     "pose": "pointL"
+    },
+    {
+     "at": "cemetery",
+     "pose": "shrug"
+    }
+   ],
+   "id": "s11"
+  },
+  {
+   "act": 3,
+   "type": "lines",
+   "set": "lem",
+   "series": [
+    "LVA",
+    "EUU"
+   ],
+   "years": [
+    1990,
+    2024
+   ],
+   "start": 1990.0,
+   "y": [
+    60,
+    85
+   ],
+   "src": "World Bank WDI · life expectancy at birth, male · OECD/European Observatory, Latvia Country Health Profile 2023",
+   "fmt": "dec1",
+   "hl": "LVA",
+   "narration": "And people in this region still die younger. {p} A Latvian man can expect to live about seventy-one and a half years. {p} The average man in the EU, seventy-nine. {p} Latvian women live almost ten years longer than Latvian men, one of the widest gaps in Europe. {p} Heart disease, heavy drinking and smoking hit men here especially hard.",
+   "keys": [
+    {
+     "at": "die younger",
+     "year": 2024.0,
+     "dur": 5.0
+    }
+   ],
+   "labels": [
+    {
+     "at": "seventy-one and a half",
+     "iso": "LVA",
+     "year": 2024
+    },
+    {
+     "at": "seventy-nine",
+     "iso": "EUU",
+     "year": 2024
+    }
+   ],
+   "react": [
+    {
+     "at": "die younger",
+     "pose": "think"
+    },
+    {
+     "at": "seventy-one",
+     "pose": "pointL"
+    },
+    {
+     "at": "almost ten years",
+     "pose": "shock"
+    },
+    {
+     "at": "heavy drinking",
+     "pose": "shrug"
+    }
+   ],
+   "id": "s12"
+  },
+  {
+   "act": 4,
+   "type": "bars",
+   "set": "nmp",
+   "iso": "LTU",
+   "years": [
+    1995,
+    2024
+   ],
+   "start": 1994.0,
+   "src": "World Bank WDI · net migration as % of population, Lithuania · Statistics Lithuania via LRT (24 Feb 2023)",
+   "narration": "But here's the twist. {p} In 2019, for the first time in about three decades, more people moved to Lithuania than left it. {p} Estonia had already turned the corner a few years earlier, and lately Latvia and Bulgaria have had years like that too. {p} Some of the newcomers are Lithuanians coming home, from Britain, Norway and Germany. {p} Others are Ukrainians and Belarusians, many of them fleeing war and repression.",
+   "keys": [
+    {
+     "at": "here's the twist",
+     "year": 2024.0,
+     "dur": 7.0
+    }
+   ],
+   "bracket": {
+    "at": "In 2019",
+    "a": 2019,
+    "b": 2023,
+    "text": "more arrivals than departures"
+   },
+   "react": [
+    {
+     "at": "twist",
+     "pose": "pointUp"
+    },
+    {
+     "at": "In 2019",
+     "pose": "cheer"
+    },
+    {
+     "at": "coming home",
+     "pose": "idle",
+     "nod": 1
+    },
+    {
+     "at": "fleeing war",
+     "pose": "think"
+    }
+   ],
+   "id": "s13"
+  },
+  {
+   "act": 4,
+   "type": "lines",
+   "set": "rel",
+   "series": [
+    "LTU",
+    "LVA",
+    "BGR"
+   ],
+   "years": [
+    2000,
+    2024
+   ],
+   "start": 2000.0,
+   "y": [
+    0,
+    110
+   ],
+   "src": "World Bank WDI · GDP per capita, PPP, as % of the EU average",
+   "fmt": "pct0",
+   "hl": "LTU",
+   "ref": {
+    "value": 100,
+    "label": "EU average",
+    "pos": "left"
+   },
+   "narration": "Part of the reason is that the money gap has shrunk. {p} In 2000, Lithuanians produced about thirty-eight percent as much per person as the EU average, adjusted for prices. {p} Today, it's about eighty-seven percent. {p} Latvia and Bulgaria have closed a big part of the gap too. {p} When home is almost as rich as abroad, {pp} <soft>coming back starts to make sense.</soft>",
+   "keys": [
+    {
+     "at": "Today, it's",
+     "year": 2024.0,
+     "dur": 5.0
+    }
+   ],
+   "labels": [
+    {
+     "at": "thirty-eight percent",
+     "iso": "LTU",
+     "year": 2000
+    },
+    {
+     "at": "eighty-seven",
+     "iso": "LTU",
+     "year": 2024
+    }
+   ],
+   "react": [
+    {
+     "at": "money gap",
+     "pose": "think"
+    },
+    {
+     "at": "thirty-eight",
+     "pose": "pointL"
+    },
+    {
+     "at": "eighty-seven",
+     "pose": "cheer"
+    },
+    {
+     "at": "make sense",
+     "pose": "idle",
+     "nod": 1
+    }
+   ],
+   "id": "s14"
+  },
+  {
+   "act": 4,
+   "type": "stats",
+   "src": "NSI Bulgaria, population and demographic processes 2025 (via Novinite, 29 Apr 2026)",
+   "title": "Bulgaria, 2025",
+   "narration": "And yet, look at Bulgaria in 2025. {p} About forty-five thousand people moved in. Fewer than ten thousand left. {p} That's a gain of about thirty-five thousand people. {p} And the population still fell, by fourteen thousand. {pp} Because deaths outnumbered births by even more.",
+   "stats": [
+    {
+     "at": "gain of about thirty-five",
+     "value": 35085,
+     "fmt": "int",
+     "label": "more people moved in than left"
+    },
+    {
+     "at": "still fell",
+     "value": -14153,
+     "fmt": "int",
+     "label": "population change"
+    }
+   ],
+   "react": [
+    {
+     "at": "look at Bulgaria",
+     "pose": "pointL"
+    },
+    {
+     "at": "thirty-five thousand",
+     "pose": "cheer"
+    },
+    {
+     "at": "still fell",
+     "pose": "shock"
+    },
+    {
+     "at": "by even more",
+     "pose": "shrug"
+    }
+   ],
+   "id": "s15"
+  },
+  {
+   "act": 5,
+   "type": "lines",
+   "set": "tfr",
+   "series": [
+    "LTU",
+    "LVA",
+    "EUU"
+   ],
+   "years": [
+    2000,
+    2024
+   ],
+   "start": 2000.0,
+   "y": [
+    0,
+    2.4
+   ],
+   "src": "World Bank WDI · fertility rate (births per woman)",
+   "fmt": "dec2",
+   "hl": "LTU",
+   "ref": {
+    "value": 2.1,
+    "label": "replacement level ≈ 2.1",
+    "pos": "left"
+   },
+   "narration": "The deeper problem is the same one South Korea has. {p} Lithuania's fertility rate is now about one point one children per woman. Latvia's, about one point two. The EU as a whole is at about one point three. {p} To keep a population stable without immigration, you need about two point one. {p} Both are now among the lowest in the European Union.",
+   "keys": [
+    {
+     "at": "deeper problem",
+     "year": 2024.0,
+     "dur": 5.0
+    }
+   ],
+   "labels": [
+    {
+     "at": "one point one",
+     "iso": "LTU",
+     "year": 2024
+    },
+    {
+     "at": "one point two",
+     "iso": "LVA",
+     "year": 2024
+    }
+   ],
+   "react": [
+    {
+     "at": "South Korea",
+     "pose": "pointL"
+    },
+    {
+     "at": "one point one",
+     "pose": "shock"
+    },
+    {
+     "at": "two point one",
+     "pose": "pointUp"
+    },
+    {
+     "at": "lowest",
+     "pose": "shrug"
+    }
+   ],
+   "id": "s16"
+  },
+  {
+   "act": 5,
+   "type": "lines",
+   "set": "projchg",
+   "series": [
+    "LVA",
+    "LTU",
+    "EU"
+   ],
+   "years": [
+    2025,
+    2100
+   ],
+   "start": 2025.0,
+   "y": [
+    -45,
+    5
+   ],
+   "src": "Eurostat proj_23np · EUROPOP2023, baseline projection",
+   "fmt": "pct0s",
+   "hl": "LVA",
+   "ref": {
+    "value": 0,
+    "label": "2025 level",
+    "pos": "left"
+   },
+   "narration": "Eurostat's baseline projection shows where this is heading. {p} By 2100, Latvia is projected to have about one point two million people. {p} That's more than a third fewer than today. {p} Lithuania, about one point eight million. {pp} Not gone. <soft>But a very different country.</soft>",
+   "keys": [
+    {
+     "at": "where this is heading",
+     "year": 2100.0,
+     "dur": 6.0
+    }
+   ],
+   "labels": [
+    {
+     "at": "one point two million",
+     "iso": "LVA",
+     "year": 2100
+    },
+    {
+     "at": "one point eight",
+     "iso": "LTU",
+     "year": 2100
+    }
+   ],
+   "react": [
+    {
+     "at": "heading",
+     "pose": "think"
+    },
+    {
+     "at": "one point two",
+     "pose": "pointL"
+    },
+    {
+     "at": "more than a third",
+     "pose": "shock"
+    },
+    {
+     "at": "Not gone",
+     "pose": "shrug"
+    }
+   ],
+   "id": "s17"
+  },
+  {
+   "act": 5,
+   "type": "host",
+   "bg": "none",
+   "narration": "None of this means Latvia or Bulgaria will disappear from the map. {p} But it does mean emptier villages, more schools closing, and fewer workers paying for more pensions. {p} And it's a preview. {pp} The European Union as a whole now has more deaths than births. {p} What hit the Baltics and the Balkans first, fast and loud, <soft>is coming more slowly for everyone else.</soft>",
+   "items": [
+    {
+     "at": "emptier villages",
+     "text": "Emptier villages"
+    },
+    {
+     "at": "more pensions",
+     "text": "Fewer workers, more pensions",
+     "color": "acc2"
+    },
+    {
+     "at": "a preview",
+     "text": "A preview for all of Europe",
+     "serif": true,
+     "size": 62,
+     "color": "acc"
+    }
+   ],
+   "react": [
+    {
+     "at": "None of this",
+     "pose": "idle"
+    },
+    {
+     "at": "emptier villages",
+     "pose": "shrug"
+    },
+    {
+     "at": "a preview",
+     "pose": "pointUp"
+    },
+    {
+     "at": "everyone else",
+     "pose": "think"
+    }
+   ],
+   "id": "s18"
+  },
+  {
+   "act": 5,
+   "type": "end",
+   "src": "",
+   "next": {
+    "kicker": "WATCH NEXT",
+    "big": "2026",
+    "color": "acc",
+    "title": "Poland just passed Japan",
+    "sub": "and nobody noticed"
+   },
+   "narration": "Not every country in the region took this path. {p} To see one that went a very different way, watch how Poland passed Japan. {p} I'm Chartbound. See you in the next one.",
+   "hold": 14,
+   "react": [
+    {
+     "at": "Poland passed Japan",
+     "pose": "pointL"
+    },
+    {
+     "at": "See you",
+     "pose": "wave"
+    }
+   ],
+   "id": "s19"
+  }
+ ],
+ "checks": [
+  {
+   "say": "Japan lost ~3% since its 2010 peak",
+   "set": "jp10",
+   "iso": "JPN",
+   "year": 2024,
+   "min": 96.3,
+   "max": 97.5
+  },
+  {
+   "say": "Japan peak in 2010",
+   "rule": "peak",
+   "set": "pop",
+   "iso": "JPN",
+   "a": 2008,
+   "b": 2010
+  },
+  {
+   "say": "Latvia −30% since 1990",
+   "set": "popchg",
+   "iso": "LVA",
+   "year": 2024,
+   "min": -31,
+   "max": -29
+  },
+  {
+   "say": "Bulgaria more than a quarter since 1990",
+   "set": "popchg",
+   "iso": "BGR",
+   "year": 2024,
+   "min": -28,
+   "max": -25.01
+  },
+  {
+   "say": "red band: Lithuania ≤ −20%",
+   "set": "chg",
+   "iso": "LTU",
+   "year": 0,
+   "max": -20
+  },
+  {
+   "say": "red band: Bulgaria ≤ −20%",
+   "set": "chg",
+   "iso": "BGR",
+   "year": 0,
+   "max": -20
+  },
+  {
+   "say": "Romania almost a fifth",
+   "set": "chg",
+   "iso": "ROU",
+   "year": 0,
+   "min": -20,
+   "max": -17
+  },
+  {
+   "say": "Croatia almost a fifth",
+   "set": "chg",
+   "iso": "HRV",
+   "year": 0,
+   "min": -20,
+   "max": -17
+  },
+  {
+   "say": "red band: Bosnia ≤ −20%",
+   "set": "chg",
+   "iso": "BIH",
+   "year": 0,
+   "max": -20
+  },
+  {
+   "say": "red band: Albania ≤ −20%",
+   "set": "chg",
+   "iso": "ALB",
+   "year": 0,
+   "max": -20
+  },
+  {
+   "say": "Latvia peak ≈ 2.67M",
+   "set": "pop",
+   "iso": "LVA",
+   "year": "max:1980-2000",
+   "approx": 2666000,
+   "tol": 0.006
+  },
+  {
+   "say": "Latvia today ≈ 1.86M",
+   "set": "pop",
+   "iso": "LVA",
+   "year": 2024,
+   "approx": 1866000,
+   "tol": 0.006
+  },
+  {
+   "say": "~800k gone > Riga 591,882 (CSB, 1 Jan 2025)",
+   "rule": "expr",
+   "expr": "2.666e6 - 1.866e6 > 591882",
+   "equal": true
+  },
+  {
+   "say": "Latvia TFR about two in 1990",
+   "set": "tfr",
+   "iso": "LVA",
+   "year": 1990,
+   "min": 1.95,
+   "max": 2.1
+  },
+  {
+   "say": "Latvia TFR 1.25 in 1995",
+   "set": "tfr",
+   "iso": "LVA",
+   "year": 1995,
+   "approx": 1.25,
+   "tol": 0.02
+  },
+  {
+   "say": "Bulgaria same level in 1995",
+   "rule": "tied",
+   "set": "tfr",
+   "a": "BGR",
+   "b": "LVA",
+   "year": 1995,
+   "tol": 0.04
+  },
+  {
+   "say": "Latvia GDP −21% 2007→2010 (≈ a fifth)",
+   "set": "gdpkidx",
+   "iso": "LVA",
+   "year": 2010,
+   "min": 77,
+   "max": 82
+  },
+  {
+   "say": "Latvia 2010 net migration ≈ −1.7% (almost two percent)",
+   "set": "nmp",
+   "iso": "LVA",
+   "year": 2010,
+   "min": -1.85,
+   "max": -1.6
+  },
+  {
+   "say": "Lithuania 2010 almost 80k",
+   "set": "netmig",
+   "iso": "LTU",
+   "year": 2010,
+   "min": -80000,
+   "max": -75000
+  },
+  {
+   "say": "Lithuania 2010 −2.5%",
+   "set": "nmp",
+   "iso": "LTU",
+   "year": 2010,
+   "min": -2.65,
+   "max": -2.4
+  },
+  {
+   "say": "Romania −2.4M net 1990–2024",
+   "set": "migsum",
+   "iso": "ROU",
+   "year": 0,
+   "min": -2450000,
+   "max": -2350000
+  },
+  {
+   "say": "Bulgaria 2000 ≈ $6,400 PPP",
+   "set": "gdppc",
+   "iso": "BGR",
+   "year": 2000,
+   "approx": 6424,
+   "tol": 0.02
+  },
+  {
+   "say": "Germany 2000 ≈ $27,000 PPP",
+   "set": "gdppc",
+   "iso": "DEU",
+   "year": 2000,
+   "min": 26500,
+   "max": 27600
+  },
+  {
+   "say": "more than four times",
+   "rule": "ratio",
+   "set": "gdppc",
+   "a": "DEU",
+   "b": "BGR",
+   "year": 2000,
+   "min": 4.0,
+   "max": 4.5
+  },
+  {
+   "say": "65+ about one in eight in 1990",
+   "set": "o65",
+   "iso": "LVA",
+   "year": 1990,
+   "min": 11.1,
+   "max": 13.3
+  },
+  {
+   "say": "65+ more than one in five today",
+   "set": "o65",
+   "iso": "LVA",
+   "year": 2024,
+   "min": 20.01
+  },
+  {
+   "say": "Bulgaria two funerals per baby (99,479 / 50,241)",
+   "rule": "expr",
+   "expr": "round(99479 / 50241, 1)",
+   "equal": 2.0
+  },
+  {
+   "say": "Latvia 2024: 12,887 births, 26,661 deaths",
+   "rule": "expr",
+   "expr": "[round(12887 / 1000), 26661 > 26000]",
+   "equal": [
+    13,
+    true
+   ]
+  },
+  {
+   "say": "census: 344k + 501k = 845k",
+   "rule": "expr",
+   "expr": "344 + 501",
+   "equal": 845
+  },
+  {
+   "say": "Latvian men ≈ 71.5 years",
+   "set": "lem",
+   "iso": "LVA",
+   "year": 2024,
+   "min": 71.3,
+   "max": 71.8
+  },
+  {
+   "say": "EU men ≈ 79",
+   "set": "lem",
+   "iso": "EUU",
+   "year": 2024,
+   "min": 78.6,
+   "max": 79.4
+  },
+  {
+   "say": "gap almost ten years",
+   "set": "lgap",
+   "iso": "LVA",
+   "year": 2024,
+   "min": 9.4,
+   "max": 9.99
+  },
+  {
+   "say": "one of the widest gaps in the EU (top 3)",
+   "rule": "rank",
+   "set": "lgap",
+   "iso": "LVA",
+   "year": 2024,
+   "among": [
+    "AUT",
+    "BEL",
+    "BGR",
+    "HRV",
+    "CYP",
+    "CZE",
+    "DNK",
+    "EST",
+    "FIN",
+    "FRA",
+    "DEU",
+    "GRC",
+    "HUN",
+    "IRL",
+    "ITA",
+    "LVA",
+    "LTU",
+    "LUX",
+    "MLT",
+    "NLD",
+    "POL",
+    "PRT",
+    "ROU",
+    "SVK",
+    "SVN",
+    "ESP",
+    "SWE"
+   ],
+   "min": 1,
+   "max": 3
+  },
+  {
+   "say": "Lithuania net migration positive in 2019",
+   "set": "netmig",
+   "iso": "LTU",
+   "year": 2019,
+   "min": 1
+  },
+  {
+   "say": "…first time in about three decades (1992–2018 all negative)",
+   "rule": "countneg",
+   "set": "netmig",
+   "iso": "LTU",
+   "a": 1992,
+   "b": 2018,
+   "equal": 27
+  },
+  {
+   "say": "Estonia turned positive earlier (2015)",
+   "set": "netmig",
+   "iso": "EST",
+   "year": 2015,
+   "min": 1
+  },
+  {
+   "say": "Latvia had a positive year (2022)",
+   "set": "netmig",
+   "iso": "LVA",
+   "year": 2022,
+   "min": 1
+  },
+  {
+   "say": "Bulgaria had a positive year (2022)",
+   "set": "netmig",
+   "iso": "BGR",
+   "year": 2022,
+   "min": 1
+  },
+  {
+   "say": "Lithuania 38% of EU in 2000",
+   "set": "rel",
+   "iso": "LTU",
+   "year": 2000,
+   "approx": 38.3,
+   "tol": 0.04
+  },
+  {
+   "say": "Lithuania 87% of EU today",
+   "set": "rel",
+   "iso": "LTU",
+   "year": 2024,
+   "approx": 87.3,
+   "tol": 0.025
+  },
+  {
+   "say": "Latvia closed a big part of the gap",
+   "set": "rel",
+   "iso": "LVA",
+   "year": 2024,
+   "min": 60
+  },
+  {
+   "say": "Bulgaria closed a big part of the gap",
+   "set": "rel",
+   "iso": "BGR",
+   "year": 2024,
+   "min": 60
+  },
+  {
+   "say": "Latvia younger than EU in 1990",
+   "rule": "gt",
+   "set": "o65",
+   "a": "EUU",
+   "b": "LVA",
+   "year": 1990
+  },
+  {
+   "say": "…caught up today",
+   "rule": "tied",
+   "set": "o65",
+   "a": "LVA",
+   "b": "EUU",
+   "year": 2024,
+   "tol": 0.03
+  },
+  {
+   "say": "EU TFR about 1.3",
+   "set": "tfr",
+   "iso": "EUU",
+   "year": 2024,
+   "min": 1.26,
+   "max": 1.36
+  },
+  {
+   "say": "Bulgaria 2025: 44,640 in − 9,555 out = 35,085; births − deaths + that = −14,153",
+   "rule": "expr",
+   "expr": "[44640 - 9555, 50241 - 99479 + 44640 - 9555]",
+   "equal": [
+    35085,
+    -14153
+   ]
+  },
+  {
+   "say": "Lithuania TFR ≈ 1.1",
+   "set": "tfr",
+   "iso": "LTU",
+   "year": 2024,
+   "approx": 1.11,
+   "tol": 0.04
+  },
+  {
+   "say": "Latvia TFR ≈ 1.2",
+   "set": "tfr",
+   "iso": "LVA",
+   "year": 2024,
+   "approx": 1.24,
+   "tol": 0.04
+  },
+  {
+   "say": "Lithuania among the lowest TFR in the EU",
+   "rule": "rank",
+   "set": "tfr",
+   "iso": "LTU",
+   "year": 2024,
+   "among": [
+    "AUT",
+    "BEL",
+    "BGR",
+    "HRV",
+    "CYP",
+    "CZE",
+    "DNK",
+    "EST",
+    "FIN",
+    "FRA",
+    "DEU",
+    "GRC",
+    "HUN",
+    "IRL",
+    "ITA",
+    "LVA",
+    "LTU",
+    "LUX",
+    "MLT",
+    "NLD",
+    "POL",
+    "PRT",
+    "ROU",
+    "SVK",
+    "SVN",
+    "ESP",
+    "SWE"
+   ],
+   "min": 23,
+   "max": 27
+  },
+  {
+   "say": "Latvia among the lowest TFR in the EU",
+   "rule": "rank",
+   "set": "tfr",
+   "iso": "LVA",
+   "year": 2024,
+   "among": [
+    "AUT",
+    "BEL",
+    "BGR",
+    "HRV",
+    "CYP",
+    "CZE",
+    "DNK",
+    "EST",
+    "FIN",
+    "FRA",
+    "DEU",
+    "GRC",
+    "HUN",
+    "IRL",
+    "ITA",
+    "LVA",
+    "LTU",
+    "LUX",
+    "MLT",
+    "NLD",
+    "POL",
+    "PRT",
+    "ROU",
+    "SVK",
+    "SVN",
+    "ESP",
+    "SWE"
+   ],
+   "min": 20,
+   "max": 27
+  },
+  {
+   "say": "Latvia 2100 ≈ 1.2M",
+   "set": "proj",
+   "iso": "LVA",
+   "year": 2100,
+   "approx": 1166000,
+   "tol": 0.04
+  },
+  {
+   "say": "more than a third fewer than today",
+   "set": "projchg",
+   "iso": "LVA",
+   "year": 2100,
+   "max": -33.4
+  },
+  {
+   "say": "Lithuania 2100 ≈ 1.8M",
+   "set": "proj",
+   "iso": "LTU",
+   "year": 2100,
+   "approx": 1776000,
+   "tol": 0.04
+  },
+  {
+   "say": "EU: more deaths than births (2024)",
+   "set": "natd",
+   "iso": "EUU",
+   "year": 2024,
+   "min": 0.01
+  }
+ ],
+ "datasets": [
+  {
+   "set": "pop",
+   "wb": "SP.POP.TOTL",
+   "isos": [
+    "ALB",
+    "AUT",
+    "BEL",
+    "BGR",
+    "BIH",
+    "BLR",
+    "CHE",
+    "CYP",
+    "CZE",
+    "DEU",
+    "DNK",
+    "ESP",
+    "EST",
+    "EUU",
+    "FIN",
+    "FRA",
+    "GBR",
+    "GRC",
+    "HRV",
+    "HUN",
+    "IRL",
+    "ISL",
+    "ITA",
+    "JPN",
+    "LTU",
+    "LUX",
+    "LVA",
+    "MDA",
+    "MKD",
+    "MLT",
+    "MNE",
+    "NLD",
+    "NOR",
+    "POL",
+    "PRT",
+    "ROU",
+    "SRB",
+    "SVK",
+    "SVN",
+    "SWE",
+    "UKR"
+   ],
+   "from": 1960,
+   "to": 2024
+  },
+  {
+   "set": "popchg",
+   "derive": "idx",
+   "src": "pop",
+   "isos": [
+    "JPN",
+    "BGR",
+    "LVA",
+    "LTU"
+   ],
+   "base": 1990,
+   "off": -100
+  },
+  {
+   "set": "jp10",
+   "derive": "idx",
+   "src": "pop",
+   "isos": [
+    "JPN"
+   ],
+   "base": 2010
+  },
+  {
+   "set": "chg",
+   "derive": "chg",
+   "src": "pop",
+   "isos": [
+    "AUT",
+    "BEL",
+    "BGR",
+    "HRV",
+    "CYP",
+    "CZE",
+    "DNK",
+    "EST",
+    "FIN",
+    "FRA",
+    "DEU",
+    "GRC",
+    "HUN",
+    "IRL",
+    "ITA",
+    "LVA",
+    "LTU",
+    "LUX",
+    "MLT",
+    "NLD",
+    "POL",
+    "PRT",
+    "ROU",
+    "SVK",
+    "SVN",
+    "ESP",
+    "SWE",
+    "GBR",
+    "NOR",
+    "CHE",
+    "ISL",
+    "SRB",
+    "BIH",
+    "MDA",
+    "ALB",
+    "MKD",
+    "MNE",
+    "UKR",
+    "BLR"
+   ],
+   "a": 1990,
+   "b": 2024
+  },
+  {
+   "set": "tfr",
+   "wb": "SP.DYN.TFRT.IN",
+   "isos": [
+    "AUT",
+    "BEL",
+    "BGR",
+    "CYP",
+    "CZE",
+    "DEU",
+    "DNK",
+    "ESP",
+    "EST",
+    "EUU",
+    "FIN",
+    "FRA",
+    "GRC",
+    "HRV",
+    "HUN",
+    "IRL",
+    "ITA",
+    "JPN",
+    "KOR",
+    "LTU",
+    "LUX",
+    "LVA",
+    "MLT",
+    "NLD",
+    "POL",
+    "PRT",
+    "ROU",
+    "SVK",
+    "SVN",
+    "SWE"
+   ],
+   "from": 1980,
+   "to": 2024
+  },
+  {
+   "set": "netmig",
+   "wb": "SM.POP.NETM",
+   "isos": [
+    "LVA",
+    "LTU",
+    "ROU",
+    "BGR",
+    "EST",
+    "HRV"
+   ],
+   "from": 1990,
+   "to": 2024
+  },
+  {
+   "set": "nmp",
+   "derive": "ratio",
+   "a": [
+    "netmig",
+    "LVA"
+   ],
+   "b": [
+    "pop",
+    "LVA"
+   ]
+  },
+  {
+   "set": "nmp",
+   "derive": "ratio",
+   "a": [
+    "netmig",
+    "LTU"
+   ],
+   "b": [
+    "pop",
+    "LTU"
+   ]
+  },
+  {
+   "set": "migsum",
+   "derive": "sum",
+   "src": "netmig",
+   "isos": [
+    "ROU",
+    "LVA",
+    "LTU",
+    "BGR"
+   ],
+   "a": 1990,
+   "b": 2024
+  },
+  {
+   "set": "gdppc",
+   "wb": "NY.GDP.PCAP.PP.CD",
+   "isos": [
+    "BGR",
+    "DEU",
+    "LTU",
+    "LVA",
+    "EUU"
+   ],
+   "from": 1990,
+   "to": 2024
+  },
+  {
+   "set": "rel",
+   "derive": "ratio",
+   "a": [
+    "gdppc",
+    "LTU"
+   ],
+   "b": [
+    "gdppc",
+    "EUU"
+   ]
+  },
+  {
+   "set": "rel",
+   "derive": "ratio",
+   "a": [
+    "gdppc",
+    "LVA"
+   ],
+   "b": [
+    "gdppc",
+    "EUU"
+   ]
+  },
+  {
+   "set": "rel",
+   "derive": "ratio",
+   "a": [
+    "gdppc",
+    "BGR"
+   ],
+   "b": [
+    "gdppc",
+    "EUU"
+   ]
+  },
+  {
+   "set": "gdpk",
+   "wb": "NY.GDP.MKTP.KD",
+   "isos": [
+    "LVA"
+   ],
+   "from": 2000,
+   "to": 2024
+  },
+  {
+   "set": "gdpkidx",
+   "derive": "idx",
+   "src": "gdpk",
+   "isos": [
+    "LVA"
+   ],
+   "base": 2007
+  },
+  {
+   "set": "o65",
+   "wb": "SP.POP.65UP.TO.ZS",
+   "isos": [
+    "LVA",
+    "BGR",
+    "EUU"
+   ],
+   "from": 1990,
+   "to": 2024
+  },
+  {
+   "set": "lem",
+   "wb": "SP.DYN.LE00.MA.IN",
+   "isos": [
+    "AUT",
+    "BEL",
+    "BGR",
+    "CYP",
+    "CZE",
+    "DEU",
+    "DNK",
+    "ESP",
+    "EST",
+    "EUU",
+    "FIN",
+    "FRA",
+    "GRC",
+    "HRV",
+    "HUN",
+    "IRL",
+    "ITA",
+    "LTU",
+    "LUX",
+    "LVA",
+    "MLT",
+    "NLD",
+    "POL",
+    "PRT",
+    "ROU",
+    "SVK",
+    "SVN",
+    "SWE"
+   ],
+   "from": 1990,
+   "to": 2024
+  },
+  {
+   "set": "lef",
+   "wb": "SP.DYN.LE00.FE.IN",
+   "isos": [
+    "AUT",
+    "BEL",
+    "BGR",
+    "CYP",
+    "CZE",
+    "DEU",
+    "DNK",
+    "ESP",
+    "EST",
+    "EUU",
+    "FIN",
+    "FRA",
+    "GRC",
+    "HRV",
+    "HUN",
+    "IRL",
+    "ITA",
+    "LTU",
+    "LUX",
+    "LVA",
+    "MLT",
+    "NLD",
+    "POL",
+    "PRT",
+    "ROU",
+    "SVK",
+    "SVN",
+    "SWE"
+   ],
+   "from": 1990,
+   "to": 2024
+  },
+  {
+   "set": "lgap",
+   "derive": "diff",
+   "a": "lef",
+   "b": "lem",
+   "isos": [
+    "AUT",
+    "BEL",
+    "BGR",
+    "HRV",
+    "CYP",
+    "CZE",
+    "DNK",
+    "EST",
+    "FIN",
+    "FRA",
+    "DEU",
+    "GRC",
+    "HUN",
+    "IRL",
+    "ITA",
+    "LVA",
+    "LTU",
+    "LUX",
+    "MLT",
+    "NLD",
+    "POL",
+    "PRT",
+    "ROU",
+    "SVK",
+    "SVN",
+    "ESP",
+    "SWE"
+   ]
+  },
+  {
+   "set": "cdr",
+   "wb": "SP.DYN.CDRT.IN",
+   "isos": [
+    "EUU"
+   ],
+   "from": 1990,
+   "to": 2024
+  },
+  {
+   "set": "cbr",
+   "wb": "SP.DYN.CBRT.IN",
+   "isos": [
+    "EUU"
+   ],
+   "from": 1990,
+   "to": 2024
+  },
+  {
+   "set": "natd",
+   "derive": "diff",
+   "a": "cdr",
+   "b": "cbr",
+   "isos": [
+    "EUU"
+   ]
+  },
+  {
+   "set": "proj",
+   "eurostat": "proj_23np",
+   "filters": {
+    "projection": "BSL",
+    "sex": "T",
+    "age": "TOTAL",
+    "unit": "PER"
+   },
+   "isos": [
+    "LVA",
+    "LTU",
+    "EU"
+   ],
+   "from": 2025,
+   "to": 2100
+  },
+  {
+   "set": "projchg",
+   "derive": "idx",
+   "src": "proj",
+   "isos": [
+    "LVA",
+    "LTU",
+    "EU"
+   ],
+   "base": 2025,
+   "off": -100
+  }
+ ],
+ "snapshot": [],
+ "voice": {
+  "model": "",
+  "name": "Charon",
+  "style": "You are the narrator of a popular data documentary on YouTube. Read the script below in a warm, curious voice with a little dry humor, at a relaxed but engaged pace of about 145 words per minute, like a smart friend telling you something surprising. Let the big numbers land with a tiny pause before them. Keep the energy steady from the first sentence to the last. Never sound like an advertisement or an audiobook."
+ },
+ "music": [
+  {
+   "act": 0,
+   "track": "Lightless Dawn",
+   "vol": 0.24
+  },
+  {
+   "act": 1,
+   "track": "Investigations",
+   "vol": 0.23
+  },
+  {
+   "act": 2,
+   "track": "Deliberate Thought",
+   "vol": 0.22
+  },
+  {
+   "act": 3,
+   "track": "Hidden Agenda",
+   "vol": 0.23
+  },
+  {
+   "act": 4,
+   "track": "Inspired",
+   "vol": 0.23
+  },
+  {
+   "act": 5,
+   "track": "Floating Cities",
+   "vol": 0.24
+  }
+ ],
+ "yt": {
+  "title": "Latvia Lost 30% of Its People. There Was No War.",
+  "description": "Japan is the world's famous shrinking country, but it has lost about 3% of its people since its peak. Latvia has lost 30% since 1990. Bulgaria, more than a quarter. Why the Baltics and the Balkans emptied out, why emigration is no longer the main reason, why people are now coming back, and what the projections say.\n\nSources: World Bank WDI (SP.POP.TOTL, SP.DYN.TFRT.IN, SM.POP.NETM, NY.GDP.PCAP.PP.CD, NY.GDP.MKTP.KD, SP.POP.65UP.TO.ZS, SP.DYN.LE00.MA.IN/FE.IN, SP.DYN.CBRT.IN, SP.DYN.CDRT.IN); Eurostat proj_23np (EUROPOP2023); NSI Bulgaria (2025 data; 2021 census); CSB Latvia; Statistics Lithuania; Eurostat/European Parliament (EU movers 2024); World Bank ECA Economic Update: Migration and Brain Drain (2019); OECD/European Observatory, Latvia Country Health Profile 2023.\n{music_credits}\nNarration is AI-generated.\n\n#latvia #bulgaria #population #demographics #data",
+  "tags": [
+   "latvia",
+   "bulgaria",
+   "lithuania",
+   "population decline",
+   "demographics",
+   "emigration",
+   "europe",
+   "data"
+  ],
+  "lang": "en"
+ }
+}

@@ -18,12 +18,12 @@ const ramp = (T, t0, dur = 0.6) => (t0 == null ? 0 : interpolate(T, [t0, t0 + du
 const sp = (T, t0, cfg = {damping: 14, stiffness: 170}) => (t0 == null ? 0 : spring({frame: (T - t0) * FPS, fps: FPS, config: cfg}));
 const on = (T, t0) => t0 != null && T >= t0;
 
-const NUM = {POL: '616', DEU: '276', JPN: '392', GBR: '826', IRL: '372', ESP: '724', FRA: '250', ITA: '380', NLD: '528', BEL: '056', LUX: '442', DNK: '208', GRC: '300', PRT: '620', AUT: '040', FIN: '246', SWE: '752', CZE: '203', SVK: '703', HUN: '348', SVN: '705', EST: '233', LVA: '428', LTU: '440', CYP: '196', MLT: '470', BGR: '100', ROU: '642', HRV: '191', KOR: '410', UKR: '804', SAU: '682', IRQ: '368', KWT: '414', ISR: '376', USA: '840', CHN: '156', RUS: '643', BLR: '112'};
-const NAME = {POL: 'Poland', JPN: 'Japan', ESP: 'Spain', DEU: 'Germany', GRC: 'Greece', PRT: 'Portugal', UKR: 'Ukraine', KOR: 'South Korea', GBR: 'Britain', IRL: 'Ireland', CHN: 'China', ITA: 'Italy', USA: 'United States', HUN: 'Hungary', ISR: 'Israel', WLD: 'World', EUU: 'EU average', EU: 'EU average', LUX: 'Luxembourg', FRA: 'France', BEL: 'Belgium', NLD: 'Netherlands', DNK: 'Denmark', CHE: 'Switzerland', NOR: 'Norway'};
+const NUM = {POL: '616', DEU: '276', JPN: '392', GBR: '826', IRL: '372', ESP: '724', FRA: '250', ITA: '380', NLD: '528', BEL: '056', LUX: '442', DNK: '208', GRC: '300', PRT: '620', AUT: '040', FIN: '246', SWE: '752', CZE: '203', SVK: '703', HUN: '348', SVN: '705', EST: '233', LVA: '428', LTU: '440', CYP: '196', MLT: '470', BGR: '100', ROU: '642', HRV: '191', KOR: '410', UKR: '804', SAU: '682', IRQ: '368', KWT: '414', ISR: '376', USA: '840', CHN: '156', RUS: '643', BLR: '112', SRB: '688', BIH: '070', MDA: '498', ALB: '008', MKD: '807', MNE: '499', NOR: '578', CHE: '756', ISL: '352'};
+const NAME = {POL: 'Poland', JPN: 'Japan', ESP: 'Spain', DEU: 'Germany', GRC: 'Greece', PRT: 'Portugal', UKR: 'Ukraine', KOR: 'South Korea', GBR: 'Britain', IRL: 'Ireland', CHN: 'China', ITA: 'Italy', USA: 'United States', HUN: 'Hungary', ISR: 'Israel', WLD: 'World', EUU: 'EU average', EU: 'EU average', LUX: 'Luxembourg', FRA: 'France', BEL: 'Belgium', NLD: 'Netherlands', DNK: 'Denmark', CHE: 'Switzerland', NOR: 'Norway', LVA: 'Latvia', LTU: 'Lithuania', EST: 'Estonia', BGR: 'Bulgaria', ROU: 'Romania', HRV: 'Croatia', SRB: 'Serbia', BIH: 'Bosnia', ALB: 'Albania', MDA: 'Moldova'};
 const COUNTRIES = feature(world, world.objects.countries).features;
 const BYNUM = Object.fromEntries(COUNTRIES.map((c) => [c.id, c]));
 
-const colOf = (p, iso) => ({POL: p.acc, JPN: p.warm, UKR: '#4aa8ff', ESP: '#c58bff', DEU: '#8fa3c7', GRC: '#5fd3ff', PRT: p.acc2, KOR: '#ff8ad8', CHN: '#ff9f43', ITA: '#5fd3ff', USA: '#8fa3ff', HUN: p.acc, ISR: p.acc2, WLD: '#ffffff', IRL: '#3ddc84', EUU: '#c9d1e6', EU: '#c9d1e6', LUX: '#5fd3ff', FRA: '#8fa3ff', BEL: '#ffd166'}[iso] || '#ffffff');
+const colOf = (p, iso) => ({POL: p.acc, JPN: p.warm, UKR: '#4aa8ff', ESP: '#c58bff', DEU: '#8fa3c7', GRC: '#5fd3ff', PRT: p.acc2, KOR: '#ff8ad8', CHN: '#ff9f43', ITA: '#5fd3ff', USA: '#8fa3ff', HUN: p.acc, ISR: p.acc2, WLD: '#ffffff', IRL: '#3ddc84', EUU: '#c9d1e6', EU: '#c9d1e6', LUX: '#5fd3ff', FRA: '#8fa3ff', BEL: '#ffd166', LVA: '#ff5a6e', BGR: '#ffb347', LTU: '#3ddc84', ROU: '#5fd3ff', EST: '#8fa3ff', HRV: '#c58bff'}[iso] || '#ffffff');
 
 export const fmt = (v, k) => {
   if (v == null || Number.isNaN(v)) return '';
@@ -170,6 +170,11 @@ const Flag = ({iso, w = 150}) => {
   if (iso === 'UKR') return <div style={{...box, background: 'linear-gradient(#0057b7 0 50%, #ffd700 50% 100%)'}} />;
   if (iso === 'DEU') return <div style={{...box, background: 'linear-gradient(#000 0 33.3%, #dd0000 33.3% 66.6%, #ffce00 66.6% 100%)'}} />;
   if (iso === 'KOR') return <div style={{...box, background: '#fff'}}><div style={{position: 'absolute', left: w / 2 - h * 0.25, top: h * 0.25, width: h * 0.5, height: h * 0.5, borderRadius: '50%', background: 'linear-gradient(#cd2e3a 0 50%, #0047a0 50% 100%)', transform: 'rotate(-34deg)'}} /></div>;
+  if (iso === 'LVA') return <div style={{...box, background: 'linear-gradient(#9e3039 0 40%, #fff 40% 60%, #9e3039 60% 100%)'}} />;
+  if (iso === 'BGR') return <div style={{...box, background: 'linear-gradient(#fff 0 33.3%, #00966e 33.3% 66.6%, #d62612 66.6% 100%)'}} />;
+  if (iso === 'LTU') return <div style={{...box, background: 'linear-gradient(#fdb913 0 33.3%, #006a44 33.3% 66.6%, #c1272d 66.6% 100%)'}} />;
+  if (iso === 'EST') return <div style={{...box, background: 'linear-gradient(#0072ce 0 33.3%, #000 33.3% 66.6%, #fff 66.6% 100%)'}} />;
+  if (iso === 'ROU') return <div style={{...box, background: 'linear-gradient(90deg, #002b7f 0 33.3%, #fcd116 33.3% 66.6%, #ce1126 66.6% 100%)'}} />;
   if (iso === 'IRL') return <div style={{...box, background: 'linear-gradient(90deg, #169b62 0 33.3%, #fff 33.3% 66.6%, #ff883e 66.6% 100%)'}} />;
   return <div style={{...box, background: '#888'}} />;
 };
@@ -863,7 +868,7 @@ const Globe = ({sh, p, data, T}) => {
           if (iso && choroAt[iso] != null) {
             const a = ramp(T, choroAt[iso], 0.3);
             const v = g2009[iso] ?? 0;
-            const target = v > 0 ? '#2fe39a' : mix('#7a2232', '#ff3b55', Math.min(1, -v / 10));
+            const target = v > 0 ? '#2fe39a' : mix('#7a2232', '#ff3b55', Math.min(1, -v / (sh.choro.scale || 10)));
             if (a > 0) fill = mix(fill, target, a);
           }
           const d = path(c);
@@ -895,9 +900,9 @@ const Globe = ({sh, p, data, T}) => {
         );
       })}
       {sh.choro && sh.choro.t_last != null ? (() => {
-        const c = BYNUM[NUM.POL];
-        const xy = proj(geoCentroid(c));
-        return xy ? <Burst x={xy[0]} y={xy[1]} T={T} t0={sh.choro.t_last} p={{...p, acc: '#2fe39a'}} r={150} /> : null;
+        const c = BYNUM[NUM[sh.choro.last || 'POL']];
+        const xy = c ? proj(geoCentroid(c)) : null;
+        return xy ? <Burst x={xy[0]} y={xy[1]} T={T} t0={sh.choro.t_last} p={{...p, acc: (g2009[sh.choro.last] ?? 1) > 0 ? '#2fe39a' : '#ff3b55'}} r={150} /> : null;
       })() : null}
       {(sh.stats || []).map((st, i) => <StatCard key={i} st={st} p={p} data={data} T={T} x={120} y={640 + i * 10} small />)}
     </AbsoluteFill>
