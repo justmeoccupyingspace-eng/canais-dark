@@ -217,7 +217,7 @@
      "note": "bytes of RAM in a Commodore 64"
     },
     {
-     "at": "two point four percent",
+     "at": "At that size",
      "in": "1024 / 1000",
      "out": "1.024",
      "note": "2.4% apart: who cares?"
@@ -559,7 +559,7 @@
      "note": "a “700 MB” CD: binary megabytes"
     },
     {
-     "at": "four point three eight",
+     "at": "So the very same",
      "in": "4707319808 / 2**30",
      "out": "4.384…",
      "bad": true,

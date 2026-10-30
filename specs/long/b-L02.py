@@ -33,7 +33,7 @@ shots = [
     dict(act=1, type="code", title="1982", src="Commodore 64 (1982): 64 KB of RAM",
          narration="For decades, nobody minded. {p} When the Commodore 64 came out in 1982, its sixty-four kilobytes of memory meant sixty-five thousand, five hundred and thirty-six bytes, and everyone knew it. {p} At that size, the two meanings of kilo were only two point four percent apart.",
          lines=[dict(at="sixty-four kilobytes", **{"in": "64 * 1024", "out": "65536", "note": "bytes of RAM in a Commodore 64"}),
-                dict(at="two point four percent", **{"in": "1024 / 1000", "out": "1.024", "note": "2.4% apart: who cares?"})],
+                dict(at="At that size", **{"in": "1024 / 1000", "out": "1.024", "note": "2.4% apart: who cares?"})],
          react=[dict(at="nobody minded", pose="shrug"), dict(at="Commodore", pose="pointL"), dict(at="two point four", pose="idle", nod=1)]),
     dict(act=1, type="ladder", src="1.024ⁿ − 1 for n = 1…5", title="Same prefix, two meanings", la="decimal (×1,000)", lb="binary (×1,024)",
          rows=[dict(at="At kilo", label="kilo", a=1, b=1.024, text="1,000 vs 1,024", gap="+2.4%"),
@@ -82,7 +82,7 @@ shots = [
     dict(act=3, type="code", title="CDs and DVDs", src="CD-R 80 min: 360,000 sectors × 2,048 B; DVD±R: 4,707,319,808 B",
          narration="Discs couldn't agree either. {p} A CD's seven hundred megabytes are binary megabytes: about seven hundred thirty-seven million bytes. {p} But a DVD's four point seven gigabytes are decimal: four point seven billion bytes. {p} So the very same computer shows that DVD as four point three eight.",
          lines=[dict(at="seven hundred megabytes", **{"in": "737280000 / 2**20", "out": "703.125", "note": "a “700 MB” CD: binary megabytes"}),
-                dict(at="four point three eight", **{"in": "4707319808 / 2**30", "out": "4.384…", "bad": True, "note": "a “4.7 GB” DVD, as your PC shows it"})],
+                dict(at="So the very same", **{"in": "4707319808 / 2**30", "out": "4.384…", "bad": True, "note": "a “4.7 GB” DVD, as your PC shows it"})],
          react=[dict(at="couldn't agree", pose="shrug"), dict(at="binary megabytes", pose="pointL"), dict(at="four point three eight", pose="shock")]),
 
     # ---------------- 4 · HIDDEN 100 GB ----------------
