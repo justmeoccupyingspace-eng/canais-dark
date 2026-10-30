@@ -16,8 +16,8 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 |---|---|---|---|
 | A-L01 | Poland passed Japan | publicado | 27/10 |
 | A-L02 | South Korea's scariest number | publicado (PP9J1_ZcpBo) | 29/10 18:40Z |
-| A-L03 | Ireland is the richest country in Europe. It isn't. | roteiro + dados ok | 30/10 18:00Z |
-| A-L04 | Bulgaria/Latvia: os países que estão sumindo (pop. WB) | ideia | 31/10 |
+| A-L03 | Ireland is the richest country in Europe. It isn't. | render 30/10 (run 41019367353) | 30/10 18:00Z |
+| A-L04 | Latvia Lost 30% of Its People. There Was No War. | roteiro + dados ok (52 checks) · teste visual edge run 41021249686 | 31/10 18:00Z |
 | A-L05 | Germany, sick man of Europe again? (PIB 2023–25) | ideia | 01/11 |
 | A-L06 | O iene que derreteu (JPY, juros BoJ) | ideia | |
 
@@ -25,7 +25,7 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 | id | tema | estado | publicação |
 |---|---|---|---|
 | B-L01 | Tiny math errors that cost lives and millions | publicado (DJEANTgbtD0) | 29/10 18:40Z |
-| B-L02 | Where did 69 GB of my 1 TB drive go? | roteiro ok | 30/10 20:00Z |
-| B-L03 | GPS só funciona por causa de Einstein (38 µs/dia ≈ 11 km) | roteiro ok | 31/10 |
+| B-L02 | Where did 69 GB of my 1 TB drive go? | render 30/10 (run 41019369747) | 30/10 20:00Z |
+| B-L03 | GPS só funciona por causa de Einstein (38 µs/dia ≈ 11 km) | roteiro ok · dados run 41021231037 | 31/10 20:00Z |
 | B-L04 | Por que aviões não voam em linha reta (círculo máximo, Globe) | ideia | 01/11 |
 | B-L05 | QR code rasgado que ainda lê (Reed–Solomon 7/15/25/30%) | ideia | |
