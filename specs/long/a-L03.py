@@ -89,7 +89,7 @@ shots = [
     dict(act=4, type="lines", set="gdpidx", series=["IRL", "LUX", "DEU"], years=[2000, 2024], start=2000.0, src=ESTAT + " · GDP", fmt="int", hl="IRL",
          ref=dict(value=100, label="EU average = 100", pos="left"),
          narration="But even GNI star measures income, not living standards. {p} For that, Europe's statisticians have a better measure: actual individual consumption. {p} It counts everything households actually use: food, rent, cars, holidays, and public services like health and schools. {p} First, here's GDP per person, adjusted for prices. Ireland is more than twice the EU average. Only Luxembourg is higher.",
-         keys=[dict(at="First, here's", year=2024.0, dur=4.0)],
+         keys=[dict(at="For that", year=2024.0, dur=12.0)],
          labels=[dict(at="more than twice", iso="IRL", year=2024)],
          react=[dict(at="not living standards", pose="think"), dict(at="actual individual consumption", pose="pointUp"), dict(at="more than twice", pose="pointL")]),
     dict(act=4, type="lines", set="aic", series=["IRL", "LUX", "DEU"], years=[2000, 2024], start=2000.0, src=ESTAT + " · actual individual consumption", fmt="int", hl="IRL",
