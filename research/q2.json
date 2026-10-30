@@ -1,0 +1,118 @@
+{
+ "channels": [
+  "Numbers Desk",
+  "The Data Desk",
+  "Plain Numbers",
+  "Real Numbers",
+  "Fine Print",
+  "Ledger Room",
+  "Hard Numbers",
+  "Ticked"
+ ],
+ "topics": [
+  {
+   "id": "econ_recent",
+   "q": "economy explained",
+   "order": "viewCount",
+   "after": "2026-08-01T00:00:00Z",
+   "dur": "medium",
+   "n": 25
+  },
+  {
+   "id": "econ_long_recent",
+   "q": "why this country economy",
+   "order": "viewCount",
+   "after": "2026-08-01T00:00:00Z",
+   "dur": "long",
+   "n": 25
+  },
+  {
+   "id": "passes_recent",
+   "q": "just passed overtook economy GDP",
+   "order": "viewCount",
+   "after": "2026-05-01T00:00:00Z",
+   "dur": "any",
+   "n": 25
+  },
+  {
+   "id": "cpi",
+   "q": "CPI inflation report explained",
+   "order": "viewCount",
+   "after": "2026-08-01T00:00:00Z",
+   "dur": "any",
+   "n": 25
+  },
+  {
+   "id": "jobs",
+   "q": "jobs report explained",
+   "order": "viewCount",
+   "after": "2026-08-01T00:00:00Z",
+   "dur": "any",
+   "n": 25
+  },
+  {
+   "id": "housing",
+   "q": "housing affordability data explained",
+   "order": "viewCount",
+   "after": "2026-05-01T00:00:00Z",
+   "dur": "medium",
+   "n": 25
+  },
+  {
+   "id": "us_states",
+   "q": "US states ranked data",
+   "order": "viewCount",
+   "after": "2026-05-01T00:00:00Z",
+   "dur": "any",
+   "n": 25
+  },
+  {
+   "id": "healthcare",
+   "q": "why is healthcare so expensive in America",
+   "order": "viewCount",
+   "after": "2026-05-01T00:00:00Z",
+   "dur": "medium",
+   "n": 25
+  },
+  {
+   "id": "disaster",
+   "q": "engineering disaster explained",
+   "order": "viewCount",
+   "after": "2026-05-01T00:00:00Z",
+   "dur": "medium",
+   "n": 25
+  },
+  {
+   "id": "fail_soft",
+   "q": "software bug disaster explained",
+   "order": "viewCount",
+   "after": "2026-05-01T00:00:00Z",
+   "dur": "any",
+   "n": 25
+  },
+  {
+   "id": "tariffs",
+   "q": "tariffs explained data",
+   "order": "viewCount",
+   "after": "2026-08-01T00:00:00Z",
+   "dur": "medium",
+   "n": 25
+  },
+  {
+   "id": "prices",
+   "q": "why prices are so high explained",
+   "order": "viewCount",
+   "after": "2026-08-01T00:00:00Z",
+   "dur": "medium",
+   "n": 25
+  },
+  {
+   "id": "pension",
+   "q": "pension retirement crisis explained",
+   "order": "viewCount",
+   "after": "2026-05-01T00:00:00Z",
+   "dur": "medium",
+   "n": 25
+  }
+ ]
+}
