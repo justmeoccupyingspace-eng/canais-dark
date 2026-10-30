@@ -1,0 +1,55 @@
+{
+ "channel": "chartbound",
+ "long": "EpQQtd0o78Q",
+ "longTitle": "Ireland Is the Richest Country in Europe. It Isn't.",
+ "preview": "long-41022458558",
+ "timeline": "lprep-41019367353",
+ "timeline_file": "a-L03-ireland.json",
+ "sources": "Sources: World Bank WDI (NY.GDP.PCAP.CD, NY.GDP.MKTP.KD.ZG, SP.POP.TOTL); Eurostat prc_ppp_ind (AIC and GDP per capita in PPS); CSO Ireland Annual National Accounts 2025; Irish Fiscal Advisory Council (2025); Revenue/Irish Times (Jan 2026); Irish Examiner (Sep 2016).",
+ "music_credits": "Music by Kevin MacLeod (incompetech.com), CC BY 4.0.",
+ "hashtags": "#ireland #gdp #economics #data #tax",
+ "tags": [
+  "ireland",
+  "gdp",
+  "leprechaun economics",
+  "gni star",
+  "corporate tax",
+  "economics",
+  "data",
+  "shorts"
+ ],
+ "clips": [
+  {
+   "from": "s00",
+   "to": "s01",
+   "hook": "Ireland is 'richer' than America. *It isn't.*",
+   "title": "Ireland is richer than the US on paper. Here's the catch #Shorts",
+   "desc": "$113,000 of output per person, more than the US. So why doesn't it feel like it?",
+   "at": "2026-10-30T22:00:00Z"
+  },
+  {
+   "from": "s03",
+   "to": "s04",
+   "hook": "Ireland's economy grew *25%* in one year. How?",
+   "title": "Ireland's economy 'grew' 25% in one year #Shorts",
+   "desc": "2015: the year Paul Krugman called it leprechaun economics.",
+   "at": "2026-10-31T01:00:00Z"
+  },
+  {
+   "from": "s08",
+   "to": "s08",
+   "hook": "Apple paid *0.005%* tax in Ireland",
+   "title": "Apple's tax rate in Ireland was 0.005% #Shorts",
+   "desc": "And Ireland fought for 8 years NOT to collect €13 billion.",
+   "at": "2026-10-31T12:00:00Z"
+  },
+  {
+   "from": "s11",
+   "to": "s12",
+   "hook": "*45%* of Ireland's GDP doesn't stay in Ireland",
+   "title": "Almost half of Ireland's GDP isn't really Irish #Shorts",
+   "desc": "GDP vs GNI*: €110k vs €61k per person.",
+   "at": "2026-10-31T15:00:00Z"
+  }
+ ]
+}
