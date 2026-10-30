@@ -23,7 +23,7 @@ const NAME = {POL: 'Poland', JPN: 'Japan', ESP: 'Spain', DEU: 'Germany', GRC: 'G
 const COUNTRIES = feature(world, world.objects.countries).features;
 const BYNUM = Object.fromEntries(COUNTRIES.map((c) => [c.id, c]));
 
-const colOf = (p, iso) => ({POL: p.acc, JPN: p.warm, UKR: '#4aa8ff', ESP: '#c58bff', DEU: '#8fa3c7', GRC: '#5fd3ff', PRT: p.acc2, KOR: '#ff8ad8', CHN: '#ff9f43', ITA: '#5fd3ff', USA: '#8fa3ff', HUN: p.acc, ISR: p.acc2, WLD: '#ffffff', IRL: '#3ddc84', EUU: '#c9d1e6', EU: '#c9d1e6', LUX: '#5fd3ff', FRA: '#8fa3ff', BEL: '#ffd166', LVA: '#ff5a6e', BGR: '#ffb347', LTU: '#3ddc84', ROU: '#5fd3ff', EST: '#8fa3ff', HRV: '#c58bff'}[iso] || '#ffffff');
+const colOf = (p, iso) => ({POL: p.acc, JPN: p.warm, UKR: '#4aa8ff', ESP: '#c58bff', DEU: '#8fa3c7', GRC: '#5fd3ff', PRT: p.acc2, KOR: '#ff8ad8', CHN: '#ff9f43', ITA: '#5fd3ff', USA: '#8fa3ff', HUN: p.acc, ISR: p.acc2, WLD: '#ffffff', IRL: '#3ddc84', EUU: '#c9d1e6', EU: '#c9d1e6', LUX: '#5fd3ff', FRA: '#8fa3ff', BEL: '#ffd166', LVA: '#ff8ad8', BGR: '#ffb347', LTU: '#3ddc84', ROU: '#5fd3ff', EST: '#8fa3ff', HRV: '#c58bff'}[iso] || '#ffffff');
 
 export const fmt = (v, k) => {
   if (v == null || Number.isNaN(v)) return '';
@@ -1435,8 +1435,10 @@ export const Thumb = ({spec}) => {
   if (th) {
     const pts = ser(data, th.set, th.iso).filter(([y]) => y >= th.years[0] && y <= th.years[1]);
     const vmax = th.ymax || Math.max(...pts.map((q) => q[1])) * 1.1;
+    const vmin = th.ymin ?? 0;
+    const [bt, bb] = th.band || [280, 680];
     const X = (y) => 60 + ((y - th.years[0]) / (th.years[1] - th.years[0])) * 700;
-    const Y = (v) => 680 - (v / vmax) * 400;
+    const Y = (v) => bb - ((v - vmin) / (vmax - vmin)) * (bb - bt);
     const d = pts.map(([y, v], i) => `${i ? 'L' : 'M'}${X(y)},${Y(v)}`).join('');
     const last = pts[pts.length - 1];
     return (

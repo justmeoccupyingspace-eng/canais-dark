@@ -34,7 +34,7 @@ def patch(tl, sp, path, log, words=None):
                         tl[k], tl[CUEKEYS[k]] = v, round(t + sp.get("delay", 0), 3)
                         log.append(f"{path}.{k}: deixa → {v!r} @ {tl[CUEKEYS[k]]}s")
                 continue
-            if isinstance(v, str):
+            if isinstance(v, (str, int, float)):  # textos e números do spec (tempos calculados não vêm do spec)
                 if tl.get(k) != v:
                     log.append(f"{path}.{k}: {tl.get(k)!r} → {v!r}")
                     tl[k] = v

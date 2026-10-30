@@ -39,6 +39,12 @@
    1990,
    2024
   ],
+  "ymin": 1840000.0,
+  "ymax": 2690000.0,
+  "band": [
+   470,
+   690
+  ],
   "flags": [
    "LVA"
   ],
@@ -97,11 +103,6 @@
     {
      "at": "thirty percent",
      "iso": "LVA",
-     "year": 2024
-    },
-    {
-     "at": "more than a quarter",
-     "iso": "BGR",
      "year": 2024
     }
    ],
@@ -848,9 +849,9 @@
    "narration": "Part of the reason is that the money gap has shrunk. {p} In 2000, Lithuanians produced about thirty-eight percent as much per person as the EU average, adjusted for prices. {p} Today, it's about eighty-seven percent. {p} Latvia and Bulgaria have closed a big part of the gap too. {p} When home is almost as rich as abroad, {pp} <soft>coming back starts to make sense.</soft>",
    "keys": [
     {
-     "at": "Today, it's",
+     "at": "In 2000, Lithuanians",
      "year": 2024.0,
-     "dur": 5.0
+     "dur": 9.0
     }
    ],
    "labels": [
@@ -965,11 +966,6 @@
      "at": "one point one",
      "iso": "LTU",
      "year": 2024
-    },
-    {
-     "at": "one point two",
-     "iso": "LVA",
-     "year": 2024
     }
    ],
    "react": [
@@ -1030,11 +1026,6 @@
     {
      "at": "one point two million",
      "iso": "LVA",
-     "year": 2100
-    },
-    {
-     "at": "one point eight",
-     "iso": "LTU",
      "year": 2100
     }
    ],
