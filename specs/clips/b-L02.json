@@ -1,0 +1,56 @@
+{
+ "channel": "howitticks",
+ "long": "_SgVH8bGG5k",
+ "longTitle": "Where Did 69 GB of My 1 TB Drive Go?",
+ "preview": "long-41022533533",
+ "timeline": "lprep-41019369747",
+ "timeline_file": "b-L02-931gb.json",
+ "sources": "Sources: BIPM SI prefixes; IEC 60027-2 Amendment 2 (1998); Apple Mac OS X 10.6 (2009); Western Digital settlement (2006) and Seagate settlement (2007) press coverage; SSD over-provisioning (TechTarget, Kingston).",
+ "music_credits": "Music by Kevin MacLeod (incompetech.com), CC BY 4.0.",
+ "hashtags": "#engineering #computers #storage #ssd",
+ "tags": [
+  "1tb 931gb",
+  "gigabyte vs gibibyte",
+  "hard drive capacity",
+  "ssd overprovisioning",
+  "binary vs decimal",
+  "kibibyte",
+  "computer science",
+  "engineering",
+  "shorts"
+ ],
+ "clips": [
+  {
+   "from": "s00",
+   "to": "s01",
+   "hook": "Your 1 TB drive shows *931 GB*. Who's lying?",
+   "title": "Why your 1 TB drive shows 931 GB #Shorts",
+   "desc": "69 GB missing? Not really.",
+   "at": "2026-10-30T23:00:00Z"
+  },
+  {
+   "from": "s12",
+   "to": "s12",
+   "hook": "Your SSD hides *100 GB* on purpose",
+   "title": "Your SSD secretly holds more than 1 TB #Shorts",
+   "desc": "1,024 binary gigabytes of flash, sold as 1 TB.",
+   "at": "2026-10-31T02:00:00Z"
+  },
+  {
+   "from": "s10",
+   "to": "s10",
+   "hook": "The floppy disk's *1.44 MB* was never 1.44 MB",
+   "title": "The 1.44 MB floppy disk was never 1.44 MB #Shorts",
+   "desc": "Half decimal, half binary.",
+   "at": "2026-10-31T13:00:00Z"
+  },
+  {
+   "from": "s14",
+   "to": "s14",
+   "hook": "Your 1 Gbps internet is really *125 MB/s*",
+   "title": "Why your 1 Gbps internet downloads at 125 MB/s #Shorts",
+   "desc": "Little b, big B: a factor of eight.",
+   "at": "2026-10-31T16:00:00Z"
+  }
+ ]
+}
