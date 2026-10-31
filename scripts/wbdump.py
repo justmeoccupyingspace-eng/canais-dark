@@ -13,6 +13,8 @@ for ind in q["ind"]:
         except Exception as e:
             print("retry", i, ind, repr(e)[:80]); time.sleep(3 + 4 * i)
     s = {}
+    if not isinstance(d, list) or len(d) < 2:
+        out[ind] = {"error": str(d)[:300]}; print("sem dados", ind, str(d)[:200]); continue
     for r in (d[1] or []):
         if r["value"] is not None:
             s.setdefault(r["countryiso3code"], {})[r["date"]] = r["value"]
@@ -26,4 +28,4 @@ for e in q.get("estat", []):  # {"name","ds","filters"} via ldata.eurostat (isos
     except Exception as ex:
         out[e["name"]] = {"error": repr(ex)[:300]}
 json.dump(out, open(sys.argv[2], "w"), indent=0)
-print({k: len(v["data"]) for k, v in out.items()})
+print({k: len(v.get("data", {})) for k, v in out.items()})
