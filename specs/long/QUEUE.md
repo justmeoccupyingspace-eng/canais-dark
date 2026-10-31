@@ -50,8 +50,14 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 | A-L02 | South Korea's scariest number | publicado (PP9J1_ZcpBo) | 29/10 18:40Z |
 | A-L03 | Ireland is the richest country in Europe. It isn't. | agendado (EpQQtd0o78Q) · cortes 6z26Abz-OT4, ScvCTM6mp9s, uxy6Av-fHBw, MmF-8_Niq0I | 30/10 18:00Z |
 | A-L04 | Latvia Lost 30% of Its People. There Was No War. | roteiro + dados ok (52 checks) · teste visual edge run 41021249686 | 31/10 18:00Z |
-| A-L05 | ~~Germany, sick man of Europe~~ reprovado no filtro (Bloomberg 2,9 mi ago/26; DW 1,3 mi) | trocar | 01/11 |
-| A-L06 | ~~Iene~~ reprovado no filtro (Bloomberg 3,9 mi; ColdFusion 2,8 mi; Andrei Jikh 2,2 mi jul/26) | trocar | |
+| A-L05 | Saudi Arabia Is No Richer Than in 1990 (Golfo: PIB real por pessoa, mesma produção de petróleo p/ o dobro de gente, média que mistura cidadão e migrante, Noruega) | roteiro + dados ok (2º slot; voz Charon no gemini-3.8-flash-tts) | 31/10 23:00Z |
+| A-L06 | Portugal ficou para trás do Leste (Polônia passou Portugal em PPP 2025; continuação do hit da Polônia) | banco: filtro ok (q3), número próprio | |
+| A-L07 | Turquia mais rica por pessoa que México e Argentina apesar da inflação (US$ nominal 2024) | banco: tema Turquia saturado, ângulo próprio ok | |
+| A-L08 | Vietnã passou a Indonésia (PPP e nominal, 2025) | banco: Vietnã tem concorrência (Statrys 941 mil); ângulo da ultrapassagem é novo | |
+| A-L09 | Espanha passou o Japão em PIB por pessoa nominal (2024) | banco | |
+| ~~Germany~~ / ~~Iene~~ | reprovados no filtro | — | |
+
+Ferramentas de pauta: `mine.yml` (sem input = garimpo de ultrapassagens/quem subiu/quem caiu no WDI; com `dump` = séries do WDI para explorar) → branch mine-<run>. O datamapper do IMF bloqueia os runners (403): para projeção do WEO, snapshot com fonte.
 
 ## B · How It Ticks
 | id | tema | estado | publicação |
