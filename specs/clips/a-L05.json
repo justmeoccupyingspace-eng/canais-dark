@@ -1,0 +1,40 @@
+{
+ "channel": "chartbound",
+ "long": "s7VEEc8S61c",
+ "longTitle": "Saudi Arabia Is No Richer Than in 1990",
+ "preview": "long-41179800420",
+ "timeline": "lprep-41179800420",
+ "timeline_file": "a-L05-gulf.json",
+ "sources": "Sources: World Bank WDI (NY.GDP.PCAP.PP.KD, SP.POP.TOTL, NY.GDP.MKTP.KD, SM.POP.TOTL.ZS, NY.GDP.PETR.RT.ZS, ); Saudi Ministry of Human Resources (HRSD, Dec 2025) and GASTAT Labour Force Survey; IMF crude oil production via FRED (KWTNGDPMOMBD, SAUNGDPMOMBD); PACI/CSB Kuwait population by nationality (via Gulf Labour Markets, Migration and Population programme); GAStat Saudi Arabia (population 2024); Kuwait Central Statistics Administration wages (via AGBI, March 2025); Norsk Petroleum and NBIM (Government Pension Fund Global); Kuwait Investment Authority.",
+ "music_credits": "Music by Kevin MacLeod (incompetech.com), CC BY 4.0.",
+ "hashtags": "#saudiarabia #kuwait #uae #oil #economics #data",
+ "tags": [
+  "saudi arabia",
+  "kuwait",
+  "uae",
+  "qatar",
+  "gulf economy",
+  "oil",
+  "gdp per capita",
+  "norway oil fund",
+  "shorts"
+ ],
+ "clips": [
+  {
+   "from": "s00",
+   "to": "s00",
+   "hook": "Saudi Arabia: *no richer* than in 1990",
+   "title": "Saudi Arabia is no richer per person than in 1990 #Shorts",
+   "desc": "The average American's output rose by three quarters. The average Saudi's didn't move.",
+   "at": "2026-11-01T13:00:00Z"
+  },
+  {
+   "from": "s03",
+   "to": "s03",
+   "hook": "Kuwait: *−40%* per person",
+   "title": "Kuwait was richer than America. Then this happened #Shorts",
+   "desc": "Output per person, adjusted for prices: almost $80k in 2006, about $48k in 2025.",
+   "at": "2026-11-01T16:00:00Z"
+  }
+ ]
+}

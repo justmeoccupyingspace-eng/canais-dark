@@ -1,0 +1,56 @@
+{
+ "channel": "chartbound",
+ "long": "LinIPuj7wDI",
+ "longTitle": "Latvia Lost 30% of Its People. There Was No War.",
+ "preview": "long-41179794199",
+ "timeline": "lprep-41179794199",
+ "timeline_file": "a-L04-shrinking.json",
+ "sources": "Sources: World Bank WDI (SP.POP.TOTL, SP.DYN.TFRT.IN, SM.POP.NETM, NY.GDP.PCAP.PP.CD, NY.GDP.MKTP.KD, SP.POP.65UP.TO.ZS, SP.DYN.LE00.MA.IN/FE.IN, SP.DYN.CBRT.IN, SP.DYN.CDRT.IN); Eurostat proj_23np (EUROPOP2023); NSI Bulgaria (2025 data; 2021 census); CSB Latvia; Statistics Lithuania; Eurostat/European Parliament (EU movers 2024); World Bank ECA Economic Update: Migration and Brain Drain (2019); OECD/European Observatory, Latvia Country Health Profile 2023.",
+ "music_credits": "Music by Kevin MacLeod (incompetech.com), CC BY 4.0.",
+ "hashtags": "#latvia #bulgaria #population #demographics #data",
+ "tags": [
+  "latvia",
+  "bulgaria",
+  "lithuania",
+  "population decline",
+  "demographics",
+  "emigration",
+  "europe",
+  "data",
+  "shorts"
+ ],
+ "clips": [
+  {
+   "from": "s00",
+   "to": "s00",
+   "hook": "Latvia lost *30%* of its people. No war.",
+   "title": "Latvia lost 30% of its people. There was no war #Shorts",
+   "desc": "Japan is the famous shrinking country. It lost 3%. Latvia lost 30%.",
+   "at": "2026-10-31T22:00:00Z"
+  },
+  {
+   "from": "s06",
+   "to": "s06",
+   "hook": "Why they left: *4x* the money",
+   "title": "Why millions left Eastern Europe, in one number #Shorts",
+   "desc": "In 2000 a German produced 4x what a Bulgarian did.",
+   "at": "2026-11-01T01:00:00Z"
+  },
+  {
+   "from": "s10",
+   "to": "s11",
+   "hook": "*Two* funerals for every baby",
+   "title": "Bulgaria: two deaths for every birth #Shorts",
+   "desc": "And the census shows it's now the main reason the country is shrinking.",
+   "at": "2026-11-01T12:00:00Z"
+  },
+  {
+   "from": "s15",
+   "to": "s15",
+   "hook": "More people moved *in*. It still shrank.",
+   "title": "35,000 more people moved in. Bulgaria still shrank #Shorts",
+   "desc": "Bulgaria 2025: migration turned positive, the population still fell.",
+   "at": "2026-11-01T15:00:00Z"
+  }
+ ]
+}
