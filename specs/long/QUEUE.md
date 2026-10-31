@@ -19,6 +19,17 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
   3. Prioridade a dados recém-lançados (Eurostat, World Bank, institutos nacionais) e a ângulos com número próprio.
 - B (How It Ticks): PAUSADO a partir de 31/10 (nada de render novo; o canal fica, nada é apagado). B-L03 (GPS) cancelado. Esforço e cota concentrados no A até monetizar.
 
+## Telas finais / cards (estado 31/10 01:40Z)
+- Poland (XGmxZPO8lx8): tela final → Korea + inscrição; cards: Korea 7:21, Ireland 4:47 ("Europe's richest? Not really").
+- Korea (PP9J1_ZcpBo): tela final → Poland + inscrição.
+- Ireland (EpQQtd0o78Q): tela final → Korea (bate com o "watch next 0.72" do outro) + inscrição; card Poland 5:30.
+- B-L02 (_SgVH8bGG5k): tela final → B-L01 (bate com o "watch next 0.1+0.2") + inscrição.
+- Regra: o vídeo da tela final tem que ser o mesmo do "WATCH NEXT" renderizado no outro; setar no Studio no dia da publicação.
+
+## TikTok C (alerta 31/10)
+- Template escuro (gabgen) zerou: MDC 29/10 19:30, negação 30/10 12:30, Pitágoras 30/10 19:30 = 0 views (MDC com 27 h). Antes: 107–219 por post. Template claro do Kauan segue com views (111, 34).
+- Agendados c-318…c-331 (02–08/11, 12:30/19:30) são todos template escuro. Se 31/10 12:30 (Excel) e 19:30 (colocação) também ficarem em 0 após 3 h, o template está sendo filtrado → trocar visual/áudio antes de 02/11 (agendado no TikTok não edita, só apaga — apagar é do Kauan).
+
 ## A · Chartbound
 | id | tema | estado | publicação |
 |---|---|---|---|
