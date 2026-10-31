@@ -94,7 +94,7 @@ shots = [
 
     # ---------------- 6 · WHAT COMES NEXT ----------------
     dict(act=6, type="stats", src="Chartbound calculation from World Bank WDI: GDP per capita PPP (constant 2021 $) 2013 vs 2025; population growth 2015–2025", title="Back to the 2013 peak by 2030",
-         narration="So how far is the climb back? {p} The average South African now produces about seven percent less than at the 2013 peak. {p} With the population still growing, getting back there by 2030 would take economic growth of almost three percent a year. {pp} Outside a pandemic rebound, South Africa hasn't grown that fast since 2011. Indonesia has averaged about five percent a year for a decade.",
+         narration="So how far is the climb back? {p} The average South African now produces about seven percent less than at the 2013 peak. {p} With the population still growing, getting back there by 2030 would take economic growth of almost three percent a year. {pp} Outside a pandemic rebound, South Africa hasn't grown that fast since 2011. Indonesia has grown about five percent in every normal year of the past decade.",
          stats=[dict(at="about seven percent less", value=-7.4, fmt="pct1s", label="output per person vs the 2013 peak"), dict(at="almost three percent", value=2.9, fmt="pct1", label="growth a year needed to get back by 2030")],
          react=[dict(at="climb back", pose="think"), dict(at="seven percent", pose="pointL"), dict(at="almost three percent", pose="shock"), dict(at="since 2011", pose="shrug")]),
     dict(act=6, type="host", bg="none",
@@ -123,7 +123,6 @@ checks = [
     dict(say="debt service > health (National Treasury Budget 2025)", rule="expr", expr="True", equal=True),
     dict(say="Zuma president 2009–2018", rule="expr", expr="[2009, 2018]", equal=[2009, 2018]),
     dict(say="UNAIDS: ~7.7–8M PLHIV, ~6M on ART", rule="expr", expr="True", equal=True),
-    dict(say="Indonesia ≈5%/yr 2016–2025 (sum 10 years excl. none)", set="idsum", iso="IDN", year=0, min=10 * 4.3, max=10 * 5.3),
     dict(say="world's top producer of platinum, manganese, chrome (USGS)", rule="expr", expr="True", equal=True),
     dict(say="LE 2024 (66.3) above every year 1960–2023", set="le60", iso="ZAF", year="max:1960-2023", max=66.30),
     dict(say="Operation Vulindlela (2020–): private electricity & rail access", rule="expr", expr="True", equal=True),
@@ -210,6 +209,8 @@ for y in range(2014, 2026):
 for y in range(2012, 2026):
     if y != 2021:
         checks.append(dict(say=f"{y} growth < 2.9% (only the 2021 rebound beat it since 2011)", set="gdpg", iso="ZAF", year=y, max=2.89))
+for y in (2016, 2017, 2018, 2019, 2022, 2023, 2024, 2025):
+    checks.append(dict(say=f"Indonesia {y} ≈ 5%", set="idg", iso="IDN", year=y, min=4.85, max=5.35))
 snapshot = []
 
 clips = [
