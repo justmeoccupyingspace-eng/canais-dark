@@ -55,6 +55,10 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 | A-L07 | Turkey Caught Up With Greece. Despite 50% Inflation. (PPP 2025 empatado; nominal 1,45×) | roteiro + checks ok (41184357770), 1.266 palavras, voz 3.8 · tela final → A-L06 | 01/11 23:00Z (cortes A2) |
 | A-L08 | Vietnã passou a Indonésia (PPP e nominal, 2025) | banco: Vietnã tem concorrência (Statrys 941 mil); ângulo da ultrapassagem é novo | |
 | A-L09 | Espanha passou o Japão em PIB por pessoa nominal (2024) | banco | |
+| A-L10 | Mexico Is Being Passed by Everyone (PPP: China 2023, Tailândia e Azerbaijão 2025; nominal: Turquia, Cazaquistão, Sérvia 2024–25) | banco: filtro ok (q6, nada ≥500 mil), número próprio | |
+| A-L11 | South Africa passada por Indonésia (PPP 2023) e Vietnã (2024); Filipinas no PIB total | banco: "How South Africa Became 3rd World" 739 mil (abr/26) → só entra com as ultrapassagens (número nosso) | |
+| A-L12 | Bulgária: do mais pobre da UE ao euro (jan/26), 0,31→0,49 dos EUA desde 2010 | banco: filtro ok (q6; maior longo 78 mil) | |
+| ~~Rússia > Itália/Canadá~~ · ~~Singapura > Noruega~~ · ~~Geórgia~~ | fora: tema de guerra / Singapura saturada / busca ambígua | — | |
 | ~~Germany~~ / ~~Iene~~ | reprovados no filtro | — | |
 
 Ferramentas de pauta: `mine.yml` (sem input = garimpo de ultrapassagens/quem subiu/quem caiu no WDI; com `dump` = séries do WDI para explorar) → branch mine-<run>. O datamapper do IMF bloqueia os runners (403): para projeção do WEO, snapshot com fonte.
