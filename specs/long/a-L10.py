@@ -16,9 +16,9 @@ WAGE = "CONASAMI: general minimum wage 88.36 pesos/day (2018) → 278.80 (2025)"
 shots = [
     # ---------------- 0 · COLD OPEN ----------------
     dict(act=0, type="lines", set="ppp", series=["MEX", "TUR", "POL", "CHN", "THA"], years=[2000, 2025], start=2000.0, y=[0, 60000], src=PPP, fmt="usdk0", hl="MEX",
-         narration="Since 2000, at least twenty-one countries have passed Mexico in output per person, adjusted for prices, and stayed ahead. {p} Poland in 2002. Argentina, despite all its crises, in 2005. Turkey in 2008. Then Romania, Bulgaria, Serbia. {p} China in 2023. And in 2025, Thailand and Azerbaijan. {p} Back in 2000, the average Mexican was richer than the average Pole, Turk, Thai or Chinese. {pp} Mexico isn't collapsing. It's barely moving. After inflation, the average Mexican produces only about seven percent more than in 2000. The world average grew about seventy.",
+         narration="Since 2000, at least twenty-one countries have passed Mexico in output per person, adjusted for prices, and stayed ahead. {p} Poland in 2002. Argentina, despite all its crises, in 2005. Turkey in 2008. Then Romania, Bulgaria, Serbia. {p} China in 2023. And in 2025, Thailand and Azerbaijan. {p} Back in 2000, the average Mexican was richer than the average Pole, Turk, Thai or Chinese. {pp} Mexico isn't collapsing. It's barely moving. After inflation, the average Mexican produces only about seven percent more than in 2000. The world average grew about seventy. {p} Today, Mexico's output per person sits almost exactly at the world average, about twenty-six thousand dollars a year.",
          keys=[dict(at="Poland in 2002", year=2008.0, dur=5.0), dict(at="China in 2023", year=2025.0, dur=5.0)],
-         labels=[dict(at="Poland in 2002", iso="POL", year=2002), dict(at="Turkey in 2008", iso="TUR", year=2008), dict(at="China in 2023", iso="CHN", year=2023), dict(at="Thailand and Azerbaijan", iso="THA", year=2025)],
+         labels=[dict(at="Poland in 2002", iso="POL", year=2002), dict(at="Turkey in 2008", iso="TUR", year=2008), dict(at="China in 2023", iso="CHN", year=2023)],
          react=[dict(at="twenty-one countries", pose="shock"), dict(at="Poland in 2002", pose="pointL"), dict(at="China in 2023", pose="shock"), dict(at="barely moving", pose="shrug"), dict(at="about seventy", pose="pointUp")]),
     dict(act=0, type="host", bg="lines", set="ppp", series=["MEX", "TUR", "POL", "CHN", "THA"], years=[2000, 2025], start=2025.0, y=[0, 60000], fmt="usdk0",
          narration="And Mexico has a lot going for it. {p} A two-thousand-mile border with the biggest economy on Earth. A free-trade deal with it since 1994. Factory wages that are a fraction of American ones. More than a hundred and thirty million people. When that trade deal began, many expected Mexico to close the gap with its northern neighbors fast. {p} Today, America buys more goods from Mexico than from any other country, including China. {p} So why is everyone else pulling ahead? {pp} <soft>The answer hides in one number.</soft>",
@@ -32,18 +32,18 @@ shots = [
          labels=[dict(at="a hundred and sixty-six", iso="MEX", year=2000), dict(at="Four times as much", iso="MEX", year=2025)],
          react=[dict(at="good news", pose="cheer"), dict(at="six hundred and sixty-five", pose="shock"), dict(at="cars, auto parts", pose="pointL"), dict(at="almost twice", pose="pointUp")]),
     dict(act=1, type="stats", src=CRS + " · " + WB + " · FDI net inflows (% of GDP)", title="US goods imports from Mexico, 2025",
-         narration="And almost all of it goes north. {p} In 2025, the United States bought about five hundred and thirty-five billion dollars of goods from Mexico, more than from China, more than from Canada. Mexico first overtook China as America's top supplier in 2023, and it has stayed there. Foreign companies keep investing about two and a half percent of Mexico's GDP every year. {pp} If you've bought a pickup truck or a flat-screen TV in America, there's a good chance it crossed that border.",
+         narration="And almost all of it goes north. {p} In 2025, the United States bought about five hundred and thirty-five billion dollars of goods from Mexico, more than from China, more than from Canada. Mexico first overtook China as America's top supplier in 2023, and it has stayed there. Foreign companies keep investing about two and a half percent of Mexico's GDP every year. {pp} If you've bought a pickup truck or a flat-screen TV in America, there's a good chance it crossed that border. {p} Mexico sold the US almost two hundred billion dollars more than it bought from it.",
          stats=[dict(at="five hundred and thirty-five", value=535, fmt="usdB0", label="bought by the US from Mexico, 2025"), dict(at="more than from China", value=1, fmt="rank", label="among America's suppliers")],
          react=[dict(at="goes north", pose="pointUp"), dict(at="five hundred and thirty-five", pose="shock"), dict(at="more than from Canada", pose="pointL"), dict(at="crossed that border", pose="idle")]),
 
     # ---------------- 2 · THE NUMBER ----------------
     dict(act=2, type="lines", set="prod", series=["TUR", "POL", "CHN", "MEX"], years=[2000, 2025], start=2000.0, y=[0, 105000], src=WB + " · GDP per person employed (constant 2021 PPP $)", fmt="usdk0", hl="MEX",
          narration="Now the number. Take everything Mexico produces, and divide it by the number of people who work. {p} In 2000, the average Mexican worker produced about fifty-four thousand dollars a year, adjusted for prices. That was more than a Polish worker, and more than a Turkish one. {p} By 2025, about forty-eight thousand. Down about ten percent in twenty-five years. Over the same period, workers across Latin America gained about fifteen percent. Even Brazil's gained more than a fifth. That's not a rounding error. It's twenty-five years of going nowhere. {pp} Polish and Turkish workers now produce about twice as much. And China's workers have caught up, almost to the dollar.",
-         keys=[dict(at="In 2000", year=2000.0, dur=2.0), dict(at="By 2025", year=2025.0, dur=7.0)],
-         labels=[dict(at="fifty-four thousand", iso="MEX", year=2000), dict(at="forty-eight thousand", iso="MEX", year=2025), dict(at="about twice as much", iso="POL", year=2025)],
+         keys=[dict(at="In 2000", year=2000.0, dur=2.0), dict(at="By 2025", year=2025.0, dur=5.0)],
+         labels=[dict(at="fifty-four thousand", iso="MEX", year=2000), dict(at="Down about ten", iso="MEX", year=2025), dict(at="about twice as much", iso="POL", year=2025)],
          react=[dict(at="Now the number", pose="pointUp"), dict(at="fifty-four thousand", pose="pointL"), dict(at="Down about ten", pose="shock"), dict(at="almost to the dollar", pose="shock")]),
     dict(act=2, type="host", bg="lines", set="prod", series=["TUR", "POL", "CHN", "MEX"], years=[2000, 2025], start=2025.0, y=[0, 105000], fmt="usdk0",
-         narration="Think about how strange that is. {p} Exports quadrupled. Factories boomed. Foreign companies poured in. {p} And yet the average worker produces less than a generation ago. All of Mexico's growth since 2000 came from adding more workers, not from each worker producing more. Mexico's population grew by more than thirty million in that time. {p} How is that even possible? {pp} <soft>Because there isn't one Mexico. There are two.</soft>",
+         narration="Think about how strange that is. {p} Exports quadrupled. Factories boomed. Foreign companies poured in. {p} And yet the average worker produces less than a generation ago. All of Mexico's growth since 2000 came from adding more workers, not from each worker producing more. Mexico's population grew by more than thirty million in that time. It's like running hard on a treadmill. {p} How is that even possible? {pp} <soft>Because there isn't one Mexico. There are two.</soft>",
          items=[dict(at="Exports quadrupled", text="Exports ×4", color="acc2"), dict(at="produces less", text="Output per worker −10%", color="acc"), dict(at="There are two", text="Two Mexicos", serif=True, size=70)],
          react=[dict(at="how strange", pose="think"), dict(at="Exports quadrupled", pose="cheer"), dict(at="produces less", pose="shock"), dict(at="There are two", pose="pointUp")]),
 
@@ -153,6 +153,9 @@ checks += [
     dict(say="PISA 2022: Mexico math 395, near OECD bottom", rule="expr", expr="True", equal=True),
     dict(say="Mexico's export line climbs most in $ (2000→2025)", rule="expr", expr="(664.8 - 166.4) > (413.9 - 31.7) and (664.8 - 166.4) > (273.4 - 27.8)", equal=True),
     dict(say="> 13M fewer poor", rule="expr", expr="round((126.2e6 * 0.419 - 132.3e6 * 0.296) / 1e6, 1) > 13", equal=True),
+    dict(say="MEX ≈ world average (PPP pc 2025)", rule="ratio", set="pppw", a="MEX", b="WLD", year=2025, min=0.98, max=1.03),
+    dict(say="MEX ≈ $26k", set="pppw", iso="MEX", year=2025, min=25500, max=26400),
+    dict(say="US deficit with Mexico ≈ $197 bn (534.8 − 337.9, CRS)", rule="expr", expr="round(534.8 - 337.9)", equal=197),
     dict(say="women LFP < half (2025)", set="flfp", iso="MEX", year=2025, max=49.99),
     dict(say="below OECD average", rule="gt", set="flfp", a="OED", b="MEX", year=2025),
 ]
@@ -175,6 +178,7 @@ datasets = [
     dict(set="rem", wb="BX.TRF.PWKR.CD.DT", isos=["MEX"], **{"from": 2020, "to": 2025}),
     dict(set="remg", wb="BX.TRF.PWKR.DT.GD.ZS", isos=["MEX"], **{"from": 2020, "to": 2025}),
     dict(set="gdpg", wb="NY.GDP.MKTP.KD.ZG", isos=["MEX"], **{"from": 2020, "to": 2025}),
+    dict(set="pppw", wb="NY.GDP.PCAP.PP.CD", isos=["MEX", "WLD"], **{"from": 2025, "to": 2025}),
     dict(set="popm", wb="SP.POP.TOTL", isos=["MEX"], **{"from": 2000, "to": 2025}),
     dict(set="popchg", derive="chg", src="popm", isos=["MEX"], a=2000, b=2025),
     dict(set="prodchg", derive="chg", src="prod", isos=["MEX"], a=2000, b=2025),

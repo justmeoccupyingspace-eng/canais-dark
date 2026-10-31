@@ -88,7 +88,7 @@
    "src": "World Bank WDI · GDP per capita, PPP (current international $)",
    "fmt": "usdk0",
    "hl": "MEX",
-   "narration": "Since 2000, at least twenty-one countries have passed Mexico in output per person, adjusted for prices, and stayed ahead. {p} Poland in 2002. Argentina, despite all its crises, in 2005. Turkey in 2008. Then Romania, Bulgaria, Serbia. {p} China in 2023. And in 2025, Thailand and Azerbaijan. {p} Back in 2000, the average Mexican was richer than the average Pole, Turk, Thai or Chinese. {pp} Mexico isn't collapsing. It's barely moving. After inflation, the average Mexican produces only about seven percent more than in 2000. The world average grew about seventy.",
+   "narration": "Since 2000, at least twenty-one countries have passed Mexico in output per person, adjusted for prices, and stayed ahead. {p} Poland in 2002. Argentina, despite all its crises, in 2005. Turkey in 2008. Then Romania, Bulgaria, Serbia. {p} China in 2023. And in 2025, Thailand and Azerbaijan. {p} Back in 2000, the average Mexican was richer than the average Pole, Turk, Thai or Chinese. {pp} Mexico isn't collapsing. It's barely moving. After inflation, the average Mexican produces only about seven percent more than in 2000. The world average grew about seventy. {p} Today, Mexico's output per person sits almost exactly at the world average, about twenty-six thousand dollars a year.",
    "keys": [
     {
      "at": "Poland in 2002",
@@ -116,11 +116,6 @@
      "at": "China in 2023",
      "iso": "CHN",
      "year": 2023
-    },
-    {
-     "at": "Thailand and Azerbaijan",
-     "iso": "THA",
-     "year": 2025
     }
    ],
    "react": [
@@ -279,7 +274,7 @@
    "type": "stats",
    "src": "Congressional Research Service IF11175 (13 Aug 2026): US goods imports from Mexico $534.8 bn in 2025, first among US suppliers · World Bank WDI · FDI net inflows (% of GDP)",
    "title": "US goods imports from Mexico, 2025",
-   "narration": "And almost all of it goes north. {p} In 2025, the United States bought about five hundred and thirty-five billion dollars of goods from Mexico, more than from China, more than from Canada. Mexico first overtook China as America's top supplier in 2023, and it has stayed there. Foreign companies keep investing about two and a half percent of Mexico's GDP every year. {pp} If you've bought a pickup truck or a flat-screen TV in America, there's a good chance it crossed that border.",
+   "narration": "And almost all of it goes north. {p} In 2025, the United States bought about five hundred and thirty-five billion dollars of goods from Mexico, more than from China, more than from Canada. Mexico first overtook China as America's top supplier in 2023, and it has stayed there. Foreign companies keep investing about two and a half percent of Mexico's GDP every year. {pp} If you've bought a pickup truck or a flat-screen TV in America, there's a good chance it crossed that border. {p} Mexico sold the US almost two hundred billion dollars more than it bought from it.",
    "stats": [
     {
      "at": "five hundred and thirty-five",
@@ -346,7 +341,7 @@
     {
      "at": "By 2025",
      "year": 2025.0,
-     "dur": 7.0
+     "dur": 5.0
     }
    ],
    "labels": [
@@ -356,7 +351,7 @@
      "year": 2000
     },
     {
-     "at": "forty-eight thousand",
+     "at": "Down about ten",
      "iso": "MEX",
      "year": 2025
     },
@@ -407,7 +402,7 @@
     105000
    ],
    "fmt": "usdk0",
-   "narration": "Think about how strange that is. {p} Exports quadrupled. Factories boomed. Foreign companies poured in. {p} And yet the average worker produces less than a generation ago. All of Mexico's growth since 2000 came from adding more workers, not from each worker producing more. Mexico's population grew by more than thirty million in that time. {p} How is that even possible? {pp} <soft>Because there isn't one Mexico. There are two.</soft>",
+   "narration": "Think about how strange that is. {p} Exports quadrupled. Factories boomed. Foreign companies poured in. {p} And yet the average worker produces less than a generation ago. All of Mexico's growth since 2000 came from adding more workers, not from each worker producing more. Mexico's population grew by more than thirty million in that time. It's like running hard on a treadmill. {p} How is that even possible? {pp} <soft>Because there isn't one Mexico. There are two.</soft>",
    "items": [
     {
      "at": "Exports quadrupled",
@@ -1493,6 +1488,30 @@
    "equal": true
   },
   {
+   "say": "MEX ≈ world average (PPP pc 2025)",
+   "rule": "ratio",
+   "set": "pppw",
+   "a": "MEX",
+   "b": "WLD",
+   "year": 2025,
+   "min": 0.98,
+   "max": 1.03
+  },
+  {
+   "say": "MEX ≈ $26k",
+   "set": "pppw",
+   "iso": "MEX",
+   "year": 2025,
+   "min": 25500,
+   "max": 26400
+  },
+  {
+   "say": "US deficit with Mexico ≈ $197 bn (534.8 − 337.9, CRS)",
+   "rule": "expr",
+   "expr": "round(534.8 - 337.9)",
+   "equal": 197
+  },
+  {
    "say": "women LFP < half (2025)",
    "set": "flfp",
    "iso": "MEX",
@@ -1723,6 +1742,16 @@
     "MEX"
    ],
    "from": 2020,
+   "to": 2025
+  },
+  {
+   "set": "pppw",
+   "wb": "NY.GDP.PCAP.PP.CD",
+   "isos": [
+    "MEX",
+    "WLD"
+   ],
+   "from": 2025,
    "to": 2025
   },
   {
