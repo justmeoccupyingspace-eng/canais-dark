@@ -9,7 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python3 scripts/mine.py /tmp/mine.json
+      - run: |
+          set -o pipefail
+          python3 scripts/mine.py /tmp/mine.json 2>&1 | tee /tmp/log || { echo "::error title=mine::$(tail -c 1500 /tmp/log | tr '\n' ' ')"; exit 1; }
       - run: |
           git config user.name producer; git config user.email producer@users.noreply.github.com
           git checkout --orphan mine-${{ github.run_id }} && git rm -rf . -q
