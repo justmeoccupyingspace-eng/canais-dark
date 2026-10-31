@@ -18,6 +18,7 @@ def main(which, video, specpath, privacy="public"):
             "tags": spec["yt"].get("tags", []),
             "categoryId": spec["yt"].get("categoryId", "27"),
             "defaultLanguage": spec["yt"].get("lang", "en"),
+            "defaultAudioLanguage": spec["yt"].get("lang", "en"),
         },
         "status": {"privacyStatus": privacy, "selfDeclaredMadeForKids": False,
                    "containsSyntheticMedia": True},
