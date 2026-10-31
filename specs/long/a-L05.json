@@ -49,8 +49,8 @@
    "SAU"
   ],
   "top": "SAUDI ARABIA",
-  "big": "$65K → $63K",
-  "line2": "SINCE 1990",
+  "big": "$65K",
+  "line2": "→ $63K",
   "color": "#3ddc84"
  },
  "w": 1920,
@@ -149,11 +149,14 @@
    "type": "globe",
    "src": "World Bank WDI · GDP per capita, PPP (constant 2021 international $)",
    "view": {
-    "lon": 48,
-    "lat": 25,
-    "zoom": 4.2
+    "lon": 51,
+    "lat": 25.5,
+    "zoom": 9.5
    },
    "hl": [],
+   "hl2": [
+    "SAU"
+   ],
    "seq": {
     "at": "Kuwait.",
     "isos": [
@@ -595,11 +598,6 @@
      "year": 2025
     },
     {
-     "at": "multiplied by six",
-     "iso": "ARE",
-     "year": 2025
-    },
-    {
      "at": "almost seven",
      "iso": "QAT",
      "year": 2025
@@ -745,11 +743,6 @@
      "year": 2024
     },
     {
-     "at": "two in three",
-     "iso": "KWT",
-     "year": 2024
-    },
-    {
      "at": "two in five",
      "iso": "SAU",
      "year": 2024
@@ -827,7 +820,7 @@
    "act": 4,
    "type": "host",
    "bg": "none",
-   "narration": "So when you divide Kuwait's economy by everyone who lives there, you're averaging a citizen's salary with a cleaner's. {p} Add millions of low-paid workers, and the average can fall even if nobody's pay goes down. {pp} It's the mirror image of Ireland, where GDP per person is inflated by money that isn't really Irish.",
+   "narration": "So when you divide Kuwait's economy by everyone who lives there, you're averaging a citizen's salary with a cleaner's. {p} Add millions of low-paid workers, and the average can fall even if nobody's pay goes down. {p} It's like a company whose average salary drops because it hired a thousand interns. Nobody took a pay cut. {pp} It's the mirror image of Ireland, where GDP per person is inflated by money that isn't really Irish.",
    "items": [
     {
      "at": "averaging a citizen's",
@@ -885,15 +878,15 @@
    "badge": "−40%",
    "cues": [
     {
-     "at": "Since 2005",
+     "at": "two point six barrels",
      "show": "a"
     },
     {
-     "at": "down about forty",
+     "at": "about one point five",
      "show": "b"
     }
    ],
-   "narration": "But even counting only citizens, the oil is stretched thinner. {p} Since 2005, the number of Kuwaiti citizens has grown by more than half. {p} So oil output per citizen is down about forty percent. {pp} The average is misleading. <soft>But the squeeze is real.</soft>",
+   "narration": "But even counting only citizens, the oil is stretched thinner. {p} Since 2005, the number of Kuwaiti citizens has grown by more than half. {p} In 2005, each citizen had about two point six barrels a day behind them. By 2024, about one point five. {p} Oil output per citizen is down about forty percent. {pp} The average is misleading. <soft>But the squeeze is real.</soft>",
    "react": [
     {
      "at": "stretched thinner",
@@ -993,11 +986,6 @@
    ],
    "labels": [
     {
-     "at": "less than the average Saudi",
-     "iso": "NOR",
-     "year": 1990
-    },
-    {
      "at": "ninety-five thousand",
      "iso": "NOR",
      "year": 2025
@@ -1025,22 +1013,35 @@
   },
   {
    "act": 5,
-   "type": "stats",
+   "type": "list",
    "src": "Norsk Petroleum, Management of revenues (fund value end-2025); NBIM (first transfer 1996; ~1.5% of listed companies)",
-   "title": "Norway's oil fund, end of 2025",
+   "title": "Norway's oil fund",
    "narration": "The difference is what Norway did with the money. {p} Since 1996, it has moved its oil income into a fund invested abroad, and the government may spend only the expected real return, about three percent a year. {p} Today the fund owns, on average, about one and a half percent of every listed company on Earth. {p} At the end of 2025, the fund was worth about twenty-one trillion kroner. {pp} About three point eight million kroner for every person in Norway.",
-   "stats": [
+   "items": [
+    {
+     "at": "Since 1996",
+     "kind": "bullet",
+     "text": "Since 1996: oil money → fund abroad"
+    },
+    {
+     "at": "about three percent",
+     "kind": "bullet",
+     "text": "Spend only ~3% a year"
+    },
+    {
+     "at": "one and a half percent",
+     "kind": "bullet",
+     "text": "Owns ~1.5% of every listed company"
+    },
     {
      "at": "twenty-one trillion",
-     "value": 21.3,
-     "fmt": "nokT",
-     "label": "total value"
+     "kind": "bullet",
+     "text": "NOK 21.3 trillion (end of 2025)"
     },
     {
      "at": "three point eight million",
-     "value": 3.8,
-     "fmt": "nokM",
-     "label": "per person in Norway"
+     "kind": "title",
+     "text": "NOK 3.8M PER PERSON"
     }
    ],
    "react": [
