@@ -1,0 +1,85 @@
+{
+ "channels": [],
+ "topics": [
+  {
+   "id": "alb1",
+   "q": "Albania economy boom",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  },
+  {
+   "id": "alb2",
+   "q": "Albania richer than",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  },
+  {
+   "id": "grc1",
+   "q": "Greece poorer than Poland Romania",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  },
+  {
+   "id": "grc2",
+   "q": "Greece second poorest EU country",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  },
+  {
+   "id": "arg1",
+   "q": "Argentina poorer than Costa Rica",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  },
+  {
+   "id": "arg2",
+   "q": "Argentina GDP per capita decline",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  },
+  {
+   "id": "pan1",
+   "q": "Panama richest country Latin America",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  },
+  {
+   "id": "dom1",
+   "q": "Dominican Republic economy growth miracle",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  },
+  {
+   "id": "bgr2",
+   "q": "Bulgaria joins euro 2026 economy",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  },
+  {
+   "id": "pol2",
+   "q": "Poland richer than Greece",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  }
+ ]
+}
