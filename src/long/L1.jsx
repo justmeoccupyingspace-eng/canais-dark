@@ -35,6 +35,7 @@ export const fmt = (v, k) => {
     case 'usdB0': return '$' + Math.round(v) + 'B';
     case 'pctx': return Math.round(v * 100) + '%';
     case 'rank': return '#' + Math.round(v);
+    case 'yr': return String(Math.round(v));
     case 'mbd': return v.toFixed(1) + 'M b/d';
     case 'x1': return (v / 100).toFixed(1) + '×';
     case 'nokT': return 'NOK ' + v.toFixed(1) + 'T';

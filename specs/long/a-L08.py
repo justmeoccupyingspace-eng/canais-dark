@@ -65,7 +65,7 @@ shots = [
          react=[dict(at="biggest piles", pose="pointL"), dict(at="almost a third", pose="shock"), dict(at="until they don't", pose="shrug"), dict(at="three years in a row", pose="think")]),
     dict(act=3, type="stats", src=NICKEL + " · Indonesia's raw nickel ore export ban (in force 1 Jan 2020)", title="Indonesia's new bet: nickel",
          narration="Now Indonesia is betting on a new rock: nickel, for electric car batteries. {p} In 2020, it banned exports of raw nickel ore, to force companies to process it at home. Later, it tried the same trick with bauxite. {p} It worked. In 2025, about two of every three tons of nickel mined on Earth came from Indonesia. {pp} But smelters are built with money, not with millions of workers.",
-         stats=[dict(at="two of every three", value=67, fmt="pct0", label="of the world's mined nickel, 2025"), dict(at="In 2020", value=2020, fmt="int", label="raw ore export ban")],
+         stats=[dict(at="In 2020", value=2020, fmt="yr", label="raw nickel ore export ban"), dict(at="two of every three", value=67, fmt="pct0", label="of the world's mined nickel, 2025")],
          react=[dict(at="a new rock", pose="pointUp"), dict(at="banned exports", pose="think"), dict(at="two of every three", pose="shock"), dict(at="not with millions", pose="shrug")]),
 
     # ---------------- 4 · THE PEOPLE ----------------
