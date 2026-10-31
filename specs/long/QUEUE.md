@@ -50,6 +50,8 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 
 ## TikTok C (alerta 31/10)
 - Template escuro (gabgen) zerou: MDC 29/10 19:30, negação 30/10 12:30, Pitágoras 30/10 19:30 = 0 views (MDC com 27 h). Antes: 107–219 por post. Template claro do Kauan segue com views (111, 34).
+- Checagem 31/10 15:40 BRT: Excel 31/10 12:30 = 0 views após 3 h → 4º zero seguido do escuro (MDC 29/10 19:30, negação e Pitágoras 30/10, Excel 31/10). Os do Kauan (claro, 20:00) seguem com 112–116. Os dois têm o selo "Conteúdo promocional", então não é isso. Nenhum aviso em Notificações. Antes de 29/10 o escuro dava 107–748 → hipótese: a série escura (mesmo visual, mascote e música em todo post) caiu em filtro de conteúdo repetitivo.
+- Preparado: paleta clara 'gabaritoclaro' no V3 (fundo rosa, texto escuro, mascote rosa, música diferente) e as 14 da semana 45 renderizadas em versão clara (specs/v3/c-3xx-*-claro.json, branches pv-<run>). Trocar os agendados = Kauan apaga os escuros; eu reagendo os claros no Chrome dele com o OK.
 - Agendados c-318…c-331 (02–08/11, 12:30/19:30) são todos template escuro. Se 31/10 12:30 (Excel) e 19:30 (colocação) também ficarem em 0 após 3 h, o template está sendo filtrado → trocar visual/áudio antes de 02/11 (agendado no TikTok não edita, só apaga — apagar é do Kauan).
 
 ## A · Chartbound
