@@ -1,7 +1,9 @@
 name: mine
-run-name: mine pautas
+run-name: mine ${{ inputs.dump != '' && 'dump' || 'pautas' }}
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      dump: {description: "JSON p/ wbdump (vazio = garimpo)", required: false, default: ""}
 permissions:
   contents: write
 jobs:
@@ -11,7 +13,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: |
           set -o pipefail
-          python3 scripts/mine.py /tmp/mine.json 2>&1 | tee /tmp/log || { echo "::error title=mine::$(tail -c 1500 /tmp/log | tr '\n' ' ')"; exit 1; }
+          if [ -n '${{ inputs.dump }}' ]; then python3 scripts/wbdump.py '${{ inputs.dump }}' /tmp/mine.json 2>&1 | tee /tmp/log; else python3 scripts/mine.py /tmp/mine.json 2>&1 | tee /tmp/log; fi || { echo "::error title=mine::$(tail -c 1500 /tmp/log | tr '\n' ' ')"; exit 1; }
       - run: |
           git config user.name producer; git config user.email producer@users.noreply.github.com
           git checkout --orphan mine-${{ github.run_id }} && git rm -rf . -q
