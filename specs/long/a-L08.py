@@ -17,10 +17,18 @@ shots = [
          keys=[dict(at="Even adjusted", year=1990.0, dur=2.0), dict(at="In 2025", year=2025.0, dur=7.0)],
          labels=[dict(at="two and a half times", iso="IDN", year=1990), dict(at="Vietnam passed it", iso="VNM", year=2025)],
          react=[dict(at="In 1990", pose="idle"), dict(at="less than a hundred", pose="shock"), dict(at="almost six times", pose="pointL"), dict(at="Vietnam passed it", pose="pointUp"), dict(at="six dollars", pose="shrug")]),
+    dict(act=0, type="list", src="US trade embargo on Vietnam lifted 3 Feb 1994 · Doi Moi reforms (1986) · " + WB + " · population", title="On paper",
+         narration="Vietnam had just come out of decades of war, and America kept a trade embargo on it until 1994. {p} In 1986, its Communist leaders had given up on central planning, with reforms they called Doi Moi, renovation. But in 1990, the results were still hard to see. {p} Indonesia had been growing fast since the late 1960s. It has oil, gas, coal, nickel, and almost three times as many people. {p} On paper, this race wasn't close.",
+         items=[dict(at="decades of war", kind="bullet", text="Vietnam: decades of war"),
+                dict(at="trade embargo", kind="bullet", text="US embargo until 1994"),
+                dict(at="oil, gas", kind="bullet", text="Indonesia: oil, gas, coal, nickel"),
+                dict(at="almost three times", kind="bullet", text="Indonesia: 3× the people"),
+                dict(at="wasn't close", kind="title", text="NOT A FAIR RACE")],
+         react=[dict(at="decades of war", pose="think"), dict(at="Doi Moi", pose="pointL"), dict(at="oil, gas", pose="pointL"), dict(at="wasn't close", pose="shrug")]),
     dict(act=0, type="host", bg="lines", set="ppp", series=["IDN", "VNM"], years=[1990, 2025], start=2025.0, y=[0, 20000], fmt="usdk0",
-         narration="Vietnam had just come out of decades of war, and America kept a trade embargo on it until 1994. {p} In 1986, its Communist leaders had given up on central planning, with reforms they called Doi Moi, renovation. But in 1990, the results were still hard to see. {p} Indonesia had been growing fast since the late 1960s. It has oil, gas, coal, nickel, and almost three times as many people. {p} On paper, this race wasn't close. {p} So how did the poorer country win? {pp} <soft>And is Indonesia really losing?</soft>",
-         items=[dict(at="trade embargo", text="US embargo until 1994", color="acc"), dict(at="almost three times", text="Indonesia: 3× the people", color="acc2"), dict(at="really losing", text="Is Indonesia losing?", serif=True, size=66)],
-         react=[dict(at="decades of war", pose="think"), dict(at="oil, gas", pose="pointL"), dict(at="wasn't close", pose="shrug"), dict(at="really losing", pose="pointUp")]),
+         narration="So how did the poorer country win? {pp} <soft>And is Indonesia really losing?</soft>",
+         items=[dict(at="poorer country win", text="How did the poorer one win?", color="acc2"), dict(at="really losing", text="Is Indonesia losing?", serif=True, size=66)],
+         react=[dict(at="poorer country win", pose="think"), dict(at="really losing", pose="pointUp")]),
 
     # ---------------- 1 · TWO SPEEDS ----------------
     dict(act=1, type="lines", set="rpcx", series=["PHL", "THA", "IDN", "VNM"], years=[1990, 2025], start=1990.0, y=[50, 700], src=WB + " · GDP per capita, PPP (constant 2021 international $), 1990 = 1×", fmt="x1", hl="VNM",
@@ -237,9 +245,9 @@ snapshot = []
 
 clips = [
     dict(**{"from": "s00", "to": "s00"}, hook="$99 a person → *passed Indonesia*", title="Vietnam made $99 a person in 1990. Now it's passed Indonesia #Shorts", desc="In 1990 Indonesia was almost 6× richer per person. In 2025 Vietnam passed it (World Bank)."),
-    dict(**{"from": "s04", "to": "s04"}, hook="A third of the people, *more exports*", title="Vietnam exports more than Indonesia with a third of the people #Shorts", desc="Exports ≈ 98% of Vietnam's GDP vs 23% in Indonesia (World Bank, 2025)."),
-    dict(**{"from": "s09", "to": "s09"}, hook="2 of every 3 tons of *nickel*", title="Indonesia now mines 2 of every 3 tons of nickel on Earth #Shorts", desc="After banning raw ore exports in 2020 (USGS 2026)."),
-    dict(**{"from": "s11", "to": "s11"}, hook="Vietnam's *secret weapon*", title="Why Vietnamese workers beat richer countries #Shorts", desc="World Bank Human Capital Index: Vietnam 0.69, Indonesia 0.54."),
+    dict(**{"from": "s05", "to": "s05"}, hook="A third of the people, *more exports*", title="Vietnam exports more than Indonesia with a third of the people #Shorts", desc="Exports ≈ 98% of Vietnam's GDP vs 23% in Indonesia (World Bank, 2025)."),
+    dict(**{"from": "s10", "to": "s10"}, hook="2 of every 3 tons of *nickel*", title="Indonesia now mines 2 of every 3 tons of nickel on Earth #Shorts", desc="After banning raw ore exports in 2020 (USGS 2026)."),
+    dict(**{"from": "s12", "to": "s12"}, hook="Vietnam's *secret weapon*", title="Why Vietnamese workers beat richer countries #Shorts", desc="World Bank Human Capital Index: Vietnam 0.69, Indonesia 0.54."),
 ]
 
 for i, sh in enumerate(shots):

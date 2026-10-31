@@ -30,6 +30,8 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 
 ## Aprendizados de pauta
 - Coreia (A-L02): 99 views em ~2,3 dias, CTR 2,4% apesar de 50% de retenção. Tema mais batido do nicho (Kurzgesagt 15,9 mi + dezenas de vídeos "Korea is dying"); título "Scariest Number" soa igual aos clones. Retenção boa não salva CTR baixo: o filtro de saturação (regra 1) vale também para tema "do momento". A Polônia funcionou por ser número novo (IMF out/26) que ninguém tinha mostrado.
+- Retenção Polônia (Analytics até 28/10, 3,2 mil views; 95% Browse/início): 63% aos 30 s, 51% em 0:52, 31% em 1:30 e daí plano (29% no meio, 24% em 90%, 15% no fim); duração média 2:35 de 8:45. Maiores quedas: 0:21 (−12 pts, globo da abertura s01), 0:26 (−9, entrada do gráfico do FMI), 0:47 (−7, host sem dado s03), 1:03 e 1:19. Quem passa de 1:30 fica até o fim.
+  → Regras: nada de globo nos primeiros 60 s; gráfico com o número-gancho já no 1º quadro; intro de host curta. Teste em 02/11: A-L08 com a intro dividida (lista + host de 2 frases) × A-L09 com host longo; comparar retenção aos 60 s quando o Analytics liberar (~3 dias).
 - Shorts: os templated antigos (Etiópia 746, Egito ~790) superam os cortes do longo (5–135). Cortes não são o canal de descoberta; servem de vitrine para o longo.
 
 ## Telas finais / cards (estado 31/10 01:40Z)

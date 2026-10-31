@@ -9,22 +9,22 @@
    "desc": "In 1990 Indonesia was almost 6× richer per person. In 2025 Vietnam passed it (World Bank)."
   },
   {
-   "from": "s04",
-   "to": "s04",
+   "from": "s05",
+   "to": "s05",
    "hook": "A third of the people, *more exports*",
    "title": "Vietnam exports more than Indonesia with a third of the people #Shorts",
    "desc": "Exports ≈ 98% of Vietnam's GDP vs 23% in Indonesia (World Bank, 2025)."
   },
   {
-   "from": "s09",
-   "to": "s09",
+   "from": "s10",
+   "to": "s10",
    "hook": "2 of every 3 tons of *nickel*",
    "title": "Indonesia now mines 2 of every 3 tons of nickel on Earth #Shorts",
    "desc": "After banning raw ore exports in 2020 (USGS 2026)."
   },
   {
-   "from": "s11",
-   "to": "s11",
+   "from": "s12",
+   "to": "s12",
    "hook": "Vietnam's *secret weapon*",
    "title": "Why Vietnamese workers beat richer countries #Shorts",
    "desc": "World Bank Human Capital Index: Vietnam 0.69, Indonesia 0.54."
@@ -138,6 +138,59 @@
   },
   {
    "act": 0,
+   "type": "list",
+   "src": "US trade embargo on Vietnam lifted 3 Feb 1994 · Doi Moi reforms (1986) · World Bank WDI · population",
+   "title": "On paper",
+   "narration": "Vietnam had just come out of decades of war, and America kept a trade embargo on it until 1994. {p} In 1986, its Communist leaders had given up on central planning, with reforms they called Doi Moi, renovation. But in 1990, the results were still hard to see. {p} Indonesia had been growing fast since the late 1960s. It has oil, gas, coal, nickel, and almost three times as many people. {p} On paper, this race wasn't close.",
+   "items": [
+    {
+     "at": "decades of war",
+     "kind": "bullet",
+     "text": "Vietnam: decades of war"
+    },
+    {
+     "at": "trade embargo",
+     "kind": "bullet",
+     "text": "US embargo until 1994"
+    },
+    {
+     "at": "oil, gas",
+     "kind": "bullet",
+     "text": "Indonesia: oil, gas, coal, nickel"
+    },
+    {
+     "at": "almost three times",
+     "kind": "bullet",
+     "text": "Indonesia: 3× the people"
+    },
+    {
+     "at": "wasn't close",
+     "kind": "title",
+     "text": "NOT A FAIR RACE"
+    }
+   ],
+   "react": [
+    {
+     "at": "decades of war",
+     "pose": "think"
+    },
+    {
+     "at": "Doi Moi",
+     "pose": "pointL"
+    },
+    {
+     "at": "oil, gas",
+     "pose": "pointL"
+    },
+    {
+     "at": "wasn't close",
+     "pose": "shrug"
+    }
+   ],
+   "id": "s01"
+  },
+  {
+   "act": 0,
    "type": "host",
    "bg": "lines",
    "set": "ppp",
@@ -155,16 +208,11 @@
     20000
    ],
    "fmt": "usdk0",
-   "narration": "Vietnam had just come out of decades of war, and America kept a trade embargo on it until 1994. {p} In 1986, its Communist leaders had given up on central planning, with reforms they called Doi Moi, renovation. But in 1990, the results were still hard to see. {p} Indonesia had been growing fast since the late 1960s. It has oil, gas, coal, nickel, and almost three times as many people. {p} On paper, this race wasn't close. {p} So how did the poorer country win? {pp} <soft>And is Indonesia really losing?</soft>",
+   "narration": "So how did the poorer country win? {pp} <soft>And is Indonesia really losing?</soft>",
    "items": [
     {
-     "at": "trade embargo",
-     "text": "US embargo until 1994",
-     "color": "acc"
-    },
-    {
-     "at": "almost three times",
-     "text": "Indonesia: 3× the people",
+     "at": "poorer country win",
+     "text": "How did the poorer one win?",
      "color": "acc2"
     },
     {
@@ -176,23 +224,15 @@
    ],
    "react": [
     {
-     "at": "decades of war",
+     "at": "poorer country win",
      "pose": "think"
-    },
-    {
-     "at": "oil, gas",
-     "pose": "pointL"
-    },
-    {
-     "at": "wasn't close",
-     "pose": "shrug"
     },
     {
      "at": "really losing",
      "pose": "pointUp"
     }
    ],
-   "id": "s01"
+   "id": "s02"
   },
   {
    "act": 1,
@@ -263,7 +303,7 @@
      "pose": "cheer"
     }
    ],
-   "id": "s02"
+   "id": "s03"
   },
   {
    "act": 1,
@@ -331,7 +371,7 @@
      "pose": "shrug"
     }
    ],
-   "id": "s03"
+   "id": "s04"
   },
   {
    "act": 2,
@@ -397,7 +437,7 @@
      "pose": "cheer"
     }
    ],
-   "id": "s04"
+   "id": "s05"
   },
   {
    "act": 2,
@@ -433,7 +473,7 @@
      "pose": "shock"
     }
    ],
-   "id": "s05"
+   "id": "s06"
   },
   {
    "act": 2,
@@ -476,7 +516,7 @@
      "pose": "pointUp"
     }
    ],
-   "id": "s06"
+   "id": "s07"
   },
   {
    "act": 3,
@@ -515,7 +555,7 @@
      "pose": "pointUp"
     }
    ],
-   "id": "s07"
+   "id": "s08"
   },
   {
    "act": 3,
@@ -580,7 +620,7 @@
      "pose": "think"
     }
    ],
-   "id": "s08"
+   "id": "s09"
   },
   {
    "act": 3,
@@ -620,7 +660,7 @@
      "pose": "shrug"
     }
    ],
-   "id": "s09"
+   "id": "s10"
   },
   {
    "act": 4,
@@ -685,7 +725,7 @@
      "pose": "cheer"
     }
    ],
-   "id": "s10"
+   "id": "s11"
   },
   {
    "act": 4,
@@ -727,7 +767,7 @@
      "pose": "shock"
     }
    ],
-   "id": "s11"
+   "id": "s12"
   },
   {
    "act": 5,
@@ -778,7 +818,7 @@
      "pose": "think"
     }
    ],
-   "id": "s12"
+   "id": "s13"
   },
   {
    "act": 5,
@@ -842,7 +882,7 @@
      "pose": "pointUp"
     }
    ],
-   "id": "s13"
+   "id": "s14"
   },
   {
    "act": 6,
@@ -908,7 +948,7 @@
      "pose": "shrug"
     }
    ],
-   "id": "s14"
+   "id": "s15"
   },
   {
    "act": 6,
@@ -956,7 +996,7 @@
      "pose": "cheer"
     }
    ],
-   "id": "s15"
+   "id": "s16"
   },
   {
    "act": 6,
@@ -981,7 +1021,7 @@
      "pose": "wave"
     }
    ],
-   "id": "s16"
+   "id": "s17"
   }
  ],
  "checks": [
