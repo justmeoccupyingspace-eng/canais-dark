@@ -17,5 +17,13 @@ for ind in q["ind"]:
         if r["value"] is not None:
             s.setdefault(r["countryiso3code"], {})[r["date"]] = r["value"]
     out[ind] = {"name": (d[1] or [{}])[0].get("indicator", {}).get("value"), "data": s}
+for e in q.get("estat", []):  # {"name","ds","filters"} via ldata.eurostat (isos ISO3)
+    sys.path.insert(0, "scripts")
+    from ldata import eurostat
+    try:
+        g = eurostat(e["ds"], e.get("filters", {}), q["isos"], q.get("from", 1990), q.get("to", 2026))
+        out[e["name"]] = {"name": e["ds"] + " " + json.dumps(e.get("filters", {})), "data": {i: {str(y): v for y, v in d.items()} for i, d in g.items() if d}}
+    except Exception as ex:
+        out[e["name"]] = {"error": repr(ex)[:300]}
 json.dump(out, open(sys.argv[2], "w"), indent=0)
 print({k: len(v["data"]) for k, v in out.items()})
