@@ -1,0 +1,5 @@
+{"channels": [], "topics": [
+ {"id": "plpt1", "q": "Poland passed Portugal", "order": "viewCount", "after": "2024-10-31T00:00:00Z", "dur": "any", "n": 12},
+ {"id": "plpt2", "q": "Poland richer than Portugal", "order": "viewCount", "after": "2024-10-31T00:00:00Z", "dur": "any", "n": 12},
+ {"id": "plpt3", "q": "Poland overtakes Portugal GDP per capita", "order": "relevance", "after": "2024-10-31T00:00:00Z", "dur": "any", "n": 12}
+]}
