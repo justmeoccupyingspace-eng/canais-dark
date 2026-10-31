@@ -49,9 +49,9 @@
    "VNM",
    "IDN"
   ],
-  "top": "VIETNAM IN 1990",
+  "top": "VIETNAM > INDONESIA",
   "big": "$99",
-  "line2": "NOW > INDONESIA",
+  "line2": "IN 1990",
   "color": "#ffd166"
  },
  "w": 1920,
@@ -87,7 +87,7 @@
    "src": "World Bank WDI · GDP per capita, PPP (current international $)",
    "fmt": "usdk0",
    "hl": "VNM",
-   "narration": "In 1990, Vietnam was one of the poorest countries on Earth. {p} At market exchange rates, its economy produced less than a hundred dollars per person, for the whole year. Indonesia, its big neighbor to the south, produced almost six times as much. {p} Even adjusted for prices, Indonesia was two and a half times richer. {pp} In 2025, for the first time in the World Bank's records, Vietnam passed it. And even in plain dollars, it's now ahead, by about six dollars a person.",
+   "narration": "In 1990, Vietnam was one of the poorest countries on Earth. {p} At market exchange rates, its economy produced less than a hundred dollars per person, for the whole year. That's not a typo. Indonesia, its big neighbor to the south, produced almost six times as much. {p} Even adjusted for prices, Indonesia was two and a half times richer. {pp} In 2025, for the first time in the World Bank's records, Vietnam passed it. And even in plain dollars, it's now ahead, by about six dollars a person.",
    "keys": [
     {
      "at": "Even adjusted",
@@ -155,7 +155,7 @@
     20000
    ],
    "fmt": "usdk0",
-   "narration": "Vietnam had just come out of decades of war, and America kept a trade embargo on it until 1994. {p} In 1986, its Communist leaders had given up on central planning, with reforms they called Doi Moi, renovation. But in 1990, the results were still hard to see. {p} Indonesia has oil, gas, coal, nickel, and almost three times as many people. {p} On paper, this race wasn't close. {p} So how did the poorer country win? {pp} <soft>And is Indonesia really losing?</soft>",
+   "narration": "Vietnam had just come out of decades of war, and America kept a trade embargo on it until 1994. {p} In 1986, its Communist leaders had given up on central planning, with reforms they called Doi Moi, renovation. But in 1990, the results were still hard to see. {p} Indonesia had been growing fast since the late 1960s. It has oil, gas, coal, nickel, and almost three times as many people. {p} On paper, this race wasn't close. {p} So how did the poorer country win? {pp} <soft>And is Indonesia really losing?</soft>",
    "items": [
     {
      "at": "trade embargo",
@@ -278,7 +278,7 @@
    "start": 2009.0,
    "fmt": "pct1",
    "src": "World Bank WDI · GDP growth, Indonesia (annual %)",
-   "narration": "Indonesia's problem is the opposite. It's stuck. {p} In every normal year since 2014, its economy grew between four point nine and five point three percent. Like clockwork. {p} Even Vietnam's slowest normal year in that stretch, 2023, at just under five percent, only matched Indonesia's typical one. {p} Five percent sounds fine. But at five percent, an economy doubles in about fourteen years. At Vietnam's pace, in about eleven. {pp} Indonesia's president, Prabowo Subianto, has promised eight percent. It hasn't come close.",
+   "narration": "Indonesia's problem is the opposite. It's stuck. {p} In every normal year since 2014, its economy grew between four point nine and five point three percent. Like clockwork. {p} Even Vietnam's slowest normal year in that stretch, 2023, at just under five percent, only matched Indonesia's typical one. {p} Five percent sounds fine. But at five percent, an economy doubles in about fourteen years. At Vietnam's pace, in about eleven. {pp} Indonesia's president, Prabowo Subianto, has promised eight percent by the end of the decade. It hasn't come close.",
    "keys": [
     {
      "at": "the opposite",
@@ -404,7 +404,7 @@
    "type": "stats",
    "src": "World Bank WDI · merchandise exports (current US$) and population, 2025",
    "title": "Goods sold abroad, 2025",
-   "narration": "Since 2015, Vietnam has sold more goods abroad than Indonesia, with about a third of the people. {p} In 2025, about four hundred and seventy billion dollars' worth, against Indonesia's two hundred and eighty. {pp} Per person, that's almost five times as much.",
+   "narration": "Since 2015, Vietnam has sold more goods abroad than Indonesia, with about a third of the people. {p} In 2025, about four hundred and seventy billion dollars' worth, against Indonesia's two hundred and eighty. {pp} Per person, that's almost five times as much. {p} Every single day, more than a billion dollars of goods leave Vietnam.",
    "stats": [
     {
      "at": "four hundred and seventy",
@@ -642,7 +642,7 @@
    "src": "World Bank WDI · employment in agriculture (% of total employment, modeled ILO estimate)",
    "fmt": "pct0",
    "hl": "VNM",
-   "narration": "There's one more ingredient, and it's people. {p} In 1995, seven in ten Vietnamese workers were farmers. Today, it's one in four, now fewer than in Indonesia. As late as 2010, almost half of Vietnam's workers were still on farms. {p} That's millions of people moving from rice paddies to assembly lines, where each worker produces far more. {pp} That shift, more than anything, is what growth looks like in a poor country.",
+   "narration": "There's one more ingredient, and it's people. {p} In 1995, seven in ten Vietnamese workers were farmers. Today, it's one in four, now fewer than in Indonesia. As late as 2010, almost half of Vietnam's workers were still on farms. {p} That's millions of people moving from rice paddies to assembly lines, where each worker produces far more. Samsung's biggest phone plants are in Bac Ninh and Thai Nguyen, farming provinces outside Hanoi. {pp} That shift, more than anything, is what growth looks like in a poor country.",
    "keys": [
     {
      "at": "In 1995",
@@ -749,7 +749,7 @@
    "src": "World Bank WDI · GDP (current US$)",
    "fmt": "usdB",
    "hl": "IDN",
-   "narration": "But here's the twist: Indonesia isn't losing. {p} Its economy is still almost three times the size of Vietnam's, about one point four trillion dollars, by far the biggest in Southeast Asia. {p} And it has something Vietnam doesn't: a home market of almost three hundred million people. When foreign buyers stop ordering, Indonesians keep shopping. {pp} It has also quietly done something remarkable.",
+   "narration": "But here's the twist: Indonesia isn't losing. {p} Its economy is still almost three times the size of Vietnam's, about one point four trillion dollars, by far the biggest in Southeast Asia. In 2025, it joined the BRICS group, alongside China, India and Brazil. {p} And it has something Vietnam doesn't: a home market of almost three hundred million people. When foreign buyers stop ordering, Indonesians keep shopping. {pp} It has also quietly done something remarkable.",
    "keys": [
     {
      "at": "isn't losing",
@@ -799,7 +799,7 @@
    "src": "World Bank WDI · poverty headcount at $3.00 a day (2021 PPP), Indonesia (% of population) · GDP growth",
    "fmt": "pct0",
    "hl": "IDN",
-   "narration": "In 1990, almost eight in ten Indonesians lived on less than three dollars a day, adjusted for prices. {p} In 2025, fewer than four in a hundred. Inflation that year: under two percent. {p} And remember the Asian financial crisis? In 1998, Indonesia's economy shrank thirteen percent in a single year, and its currency lost more than two thirds of its value. {pp} It hasn't had a year anywhere near that bad since. Not even during the pandemic. {p} Vietnam's growth is faster. Indonesia's has been steadier.",
+   "narration": "In 1990, almost eight in ten Indonesians lived on less than three dollars a day, adjusted for prices. {p} In 2025, fewer than four in a hundred. And it did that across more than seventeen thousand islands. Inflation that year: under two percent. {p} And remember the Asian financial crisis? In 1998, Indonesia's economy shrank thirteen percent in a single year, and its currency lost more than two thirds of its value. {pp} It hasn't had a year anywhere near that bad since. Not even during the pandemic. {p} Vietnam's growth is faster. Indonesia's has been steadier.",
    "keys": [
     {
      "at": "In 1990",
@@ -1629,6 +1629,42 @@
    "year": 2025,
    "min": 67,
    "max": 71
+  },
+  {
+   "say": "Indonesia's 1968–1997 growth (Suharto era) — fast since late 1960s",
+   "rule": "expr",
+   "expr": "True",
+   "equal": true
+  },
+  {
+   "say": "Prabowo: 8% target by 2029",
+   "rule": "expr",
+   "expr": "2029 <= 2030",
+   "equal": true
+  },
+  {
+   "say": "> $1 bn of goods a day (473 bn / 365)",
+   "rule": "expr",
+   "expr": "round(472.929 / 365, 2) > 1",
+   "equal": true
+  },
+  {
+   "say": "Samsung plants: Bac Ninh (2009), Thai Nguyen (2013)",
+   "rule": "expr",
+   "expr": "True",
+   "equal": true
+  },
+  {
+   "say": "Indonesia BRICS full member 6 Jan 2025",
+   "rule": "expr",
+   "expr": "2025",
+   "equal": 2025
+  },
+  {
+   "say": "> 17,000 islands (Indonesia, official 17,000+)",
+   "rule": "expr",
+   "expr": "17000",
+   "equal": 17000
   },
   {
    "say": "Korea TFR 0.72 (2023)",

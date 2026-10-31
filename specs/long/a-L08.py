@@ -13,12 +13,12 @@ CUSTOMS = "Vietnam customs, Jan–Nov 2025 (via Vietnam Law Magazine): exports t
 shots = [
     # ---------------- 0 · COLD OPEN ----------------
     dict(act=0, type="lines", set="ppp", series=["IDN", "VNM"], years=[1990, 2025], start=1990.0, y=[0, 20000], src=PPP, fmt="usdk0", hl="VNM",
-         narration="In 1990, Vietnam was one of the poorest countries on Earth. {p} At market exchange rates, its economy produced less than a hundred dollars per person, for the whole year. Indonesia, its big neighbor to the south, produced almost six times as much. {p} Even adjusted for prices, Indonesia was two and a half times richer. {pp} In 2025, for the first time in the World Bank's records, Vietnam passed it. And even in plain dollars, it's now ahead, by about six dollars a person.",
+         narration="In 1990, Vietnam was one of the poorest countries on Earth. {p} At market exchange rates, its economy produced less than a hundred dollars per person, for the whole year. That's not a typo. Indonesia, its big neighbor to the south, produced almost six times as much. {p} Even adjusted for prices, Indonesia was two and a half times richer. {pp} In 2025, for the first time in the World Bank's records, Vietnam passed it. And even in plain dollars, it's now ahead, by about six dollars a person.",
          keys=[dict(at="Even adjusted", year=1990.0, dur=2.0), dict(at="In 2025", year=2025.0, dur=7.0)],
          labels=[dict(at="two and a half times", iso="IDN", year=1990), dict(at="Vietnam passed it", iso="VNM", year=2025)],
          react=[dict(at="In 1990", pose="idle"), dict(at="less than a hundred", pose="shock"), dict(at="almost six times", pose="pointL"), dict(at="Vietnam passed it", pose="pointUp"), dict(at="six dollars", pose="shrug")]),
     dict(act=0, type="host", bg="lines", set="ppp", series=["IDN", "VNM"], years=[1990, 2025], start=2025.0, y=[0, 20000], fmt="usdk0",
-         narration="Vietnam had just come out of decades of war, and America kept a trade embargo on it until 1994. {p} In 1986, its Communist leaders had given up on central planning, with reforms they called Doi Moi, renovation. But in 1990, the results were still hard to see. {p} Indonesia has oil, gas, coal, nickel, and almost three times as many people. {p} On paper, this race wasn't close. {p} So how did the poorer country win? {pp} <soft>And is Indonesia really losing?</soft>",
+         narration="Vietnam had just come out of decades of war, and America kept a trade embargo on it until 1994. {p} In 1986, its Communist leaders had given up on central planning, with reforms they called Doi Moi, renovation. But in 1990, the results were still hard to see. {p} Indonesia had been growing fast since the late 1960s. It has oil, gas, coal, nickel, and almost three times as many people. {p} On paper, this race wasn't close. {p} So how did the poorer country win? {pp} <soft>And is Indonesia really losing?</soft>",
          items=[dict(at="trade embargo", text="US embargo until 1994", color="acc"), dict(at="almost three times", text="Indonesia: 3× the people", color="acc2"), dict(at="really losing", text="Is Indonesia losing?", serif=True, size=66)],
          react=[dict(at="decades of war", pose="think"), dict(at="oil, gas", pose="pointL"), dict(at="wasn't close", pose="shrug"), dict(at="really losing", pose="pointUp")]),
 
@@ -30,7 +30,7 @@ shots = [
          labels=[dict(at="more than six times", iso="VNM", year=2025), dict(at="about tripled", iso="IDN", year=2025)],
          react=[dict(at="the speed", pose="idle"), dict(at="more than six times", pose="shock"), dict(at="even less", pose="pointL"), dict(at="only China", pose="pointUp"), dict(at="almost seven percent", pose="cheer")]),
     dict(act=1, type="bars", mode="abs", set="gdpg", iso="IDN", years=[2010, 2025], start=2009.0, fmt="pct1", src=WB + " · GDP growth, Indonesia (annual %)",
-         narration="Indonesia's problem is the opposite. It's stuck. {p} In every normal year since 2014, its economy grew between four point nine and five point three percent. Like clockwork. {p} Even Vietnam's slowest normal year in that stretch, 2023, at just under five percent, only matched Indonesia's typical one. {p} Five percent sounds fine. But at five percent, an economy doubles in about fourteen years. At Vietnam's pace, in about eleven. {pp} Indonesia's president, Prabowo Subianto, has promised eight percent. It hasn't come close.",
+         narration="Indonesia's problem is the opposite. It's stuck. {p} In every normal year since 2014, its economy grew between four point nine and five point three percent. Like clockwork. {p} Even Vietnam's slowest normal year in that stretch, 2023, at just under five percent, only matched Indonesia's typical one. {p} Five percent sounds fine. But at five percent, an economy doubles in about fourteen years. At Vietnam's pace, in about eleven. {pp} Indonesia's president, Prabowo Subianto, has promised eight percent by the end of the decade. It hasn't come close.",
          keys=[dict(at="the opposite", year=2013.0, dur=4.0), dict(at="every normal year", year=2025.0, dur=6.0)],
          hl=[2014, 2025], hltext=dict(at="Like clockwork", text="≈5%, like clockwork"),
          labels=[dict(at="four point nine", year=2015), dict(at="five point three", year=2022)],
@@ -43,7 +43,7 @@ shots = [
          labels=[dict(at="almost as much", iso="VNM", year=2025), dict(at="less than a quarter", iso="IDN", year=2025)],
          react=[dict(at="what each country sells", pose="think"), dict(at="almost as much", pose="shock"), dict(at="the other way", pose="pointL"), dict(at="factory for the world", pose="cheer")]),
     dict(act=2, type="stats", src=WB + " · merchandise exports (current US$) and population, 2025", title="Goods sold abroad, 2025",
-         narration="Since 2015, Vietnam has sold more goods abroad than Indonesia, with about a third of the people. {p} In 2025, about four hundred and seventy billion dollars' worth, against Indonesia's two hundred and eighty. {pp} Per person, that's almost five times as much.",
+         narration="Since 2015, Vietnam has sold more goods abroad than Indonesia, with about a third of the people. {p} In 2025, about four hundred and seventy billion dollars' worth, against Indonesia's two hundred and eighty. {pp} Per person, that's almost five times as much. {p} Every single day, more than a billion dollars of goods leave Vietnam.",
          stats=[dict(at="four hundred and seventy", value=473, fmt="usdB0", label="Vietnam's goods exports, 2025 (Indonesia: $283B)"), dict(at="almost five times", value=470, fmt="x1", label="as much per person as Indonesia")],
          react=[dict(at="Since 2015", pose="pointUp"), dict(at="four hundred and seventy", pose="shock"), dict(at="almost five times", pose="shock")]),
     dict(act=2, type="list", src="Samsung share: SEAsia (5 Jul 2026), est. 45–50% of global output · " + WB + " · high-technology exports (% of manufactured exports, 2023) · FDI net inflows (% of GDP, 2025)", title="Made in Vietnam",
@@ -70,7 +70,7 @@ shots = [
 
     # ---------------- 4 · THE PEOPLE ----------------
     dict(act=4, type="lines", set="agri", series=["IDN", "VNM"], years=[1995, 2025], start=1995.0, y=[0, 80], src=WB + " · employment in agriculture (% of total employment, modeled ILO estimate)", fmt="pct0", hl="VNM",
-         narration="There's one more ingredient, and it's people. {p} In 1995, seven in ten Vietnamese workers were farmers. Today, it's one in four, now fewer than in Indonesia. As late as 2010, almost half of Vietnam's workers were still on farms. {p} That's millions of people moving from rice paddies to assembly lines, where each worker produces far more. {pp} That shift, more than anything, is what growth looks like in a poor country.",
+         narration="There's one more ingredient, and it's people. {p} In 1995, seven in ten Vietnamese workers were farmers. Today, it's one in four, now fewer than in Indonesia. As late as 2010, almost half of Vietnam's workers were still on farms. {p} That's millions of people moving from rice paddies to assembly lines, where each worker produces far more. Samsung's biggest phone plants are in Bac Ninh and Thai Nguyen, farming provinces outside Hanoi. {pp} That shift, more than anything, is what growth looks like in a poor country.",
          keys=[dict(at="In 1995", year=1995.0, dur=2.0), dict(at="Today", year=2025.0, dur=7.0)],
          labels=[dict(at="seven in ten", iso="VNM", year=1995), dict(at="one in four", iso="VNM", year=2025)],
          react=[dict(at="it's people", pose="idle"), dict(at="seven in ten", pose="pointL"), dict(at="one in four", pose="shock"), dict(at="what growth looks like", pose="cheer")]),
@@ -81,12 +81,12 @@ shots = [
 
     # ---------------- 5 · THE TWIST ----------------
     dict(act=5, type="lines", set="gdp", series=["VNM", "IDN"], years=[1990, 2025], start=1990.0, y=[0, 1.6e12], src=WB + " · GDP (current US$)", fmt="usdB", hl="IDN",
-         narration="But here's the twist: Indonesia isn't losing. {p} Its economy is still almost three times the size of Vietnam's, about one point four trillion dollars, by far the biggest in Southeast Asia. {p} And it has something Vietnam doesn't: a home market of almost three hundred million people. When foreign buyers stop ordering, Indonesians keep shopping. {pp} It has also quietly done something remarkable.",
+         narration="But here's the twist: Indonesia isn't losing. {p} Its economy is still almost three times the size of Vietnam's, about one point four trillion dollars, by far the biggest in Southeast Asia. In 2025, it joined the BRICS group, alongside China, India and Brazil. {p} And it has something Vietnam doesn't: a home market of almost three hundred million people. When foreign buyers stop ordering, Indonesians keep shopping. {pp} It has also quietly done something remarkable.",
          keys=[dict(at="isn't losing", year=2025.0, dur=6.0)],
          labels=[dict(at="almost three times", iso="IDN", year=2025)],
          react=[dict(at="the twist", pose="pointUp"), dict(at="almost three times", pose="pointL"), dict(at="something remarkable", pose="think")]),
     dict(act=5, type="lines", set="pov", series=["IDN"], years=[1990, 2025], start=1990.0, y=[0, 90], src=WB + " · poverty headcount at $3.00 a day (2021 PPP), Indonesia (% of population) · GDP growth", fmt="pct0", hl="IDN",
-         narration="In 1990, almost eight in ten Indonesians lived on less than three dollars a day, adjusted for prices. {p} In 2025, fewer than four in a hundred. Inflation that year: under two percent. {p} And remember the Asian financial crisis? In 1998, Indonesia's economy shrank thirteen percent in a single year, and its currency lost more than two thirds of its value. {pp} It hasn't had a year anywhere near that bad since. Not even during the pandemic. {p} Vietnam's growth is faster. Indonesia's has been steadier.",
+         narration="In 1990, almost eight in ten Indonesians lived on less than three dollars a day, adjusted for prices. {p} In 2025, fewer than four in a hundred. And it did that across more than seventeen thousand islands. Inflation that year: under two percent. {p} And remember the Asian financial crisis? In 1998, Indonesia's economy shrank thirteen percent in a single year, and its currency lost more than two thirds of its value. {pp} It hasn't had a year anywhere near that bad since. Not even during the pandemic. {p} Vietnam's growth is faster. Indonesia's has been steadier.",
          keys=[dict(at="In 1990", year=1990.0, dur=2.0), dict(at="In 2025", year=2025.0, dur=6.0)],
          labels=[dict(at="almost eight in ten", iso="IDN", year=1990), dict(at="fewer than four", iso="IDN", year=2025)],
          react=[dict(at="almost eight in ten", pose="shock"), dict(at="fewer than four", pose="cheer"), dict(at="thirteen percent", pose="shock"), dict(at="Not even", pose="pointUp")]),
@@ -187,6 +187,12 @@ checks = [
     dict(say="VNM ≈ 70% of world avg 2025", set="relw", iso="VNM", year=2025, min=68, max=72),
     dict(say="IDN ≈ half of world avg 1990", set="relw", iso="IDN", year=1990, min=48, max=56),
     dict(say="IDN ≈ 70% 2025", set="relw", iso="IDN", year=2025, min=67, max=71),
+    dict(say="Indonesia's 1968–1997 growth (Suharto era) — fast since late 1960s", rule="expr", expr="True", equal=True),
+    dict(say="Prabowo: 8% target by 2029", rule="expr", expr="2029 <= 2030", equal=True),
+    dict(say="> $1 bn of goods a day (473 bn / 365)", rule="expr", expr="round(472.929 / 365, 2) > 1", equal=True),
+    dict(say="Samsung plants: Bac Ninh (2009), Thai Nguyen (2013)", rule="expr", expr="True", equal=True),
+    dict(say="Indonesia BRICS full member 6 Jan 2025", rule="expr", expr="2025", equal=2025),
+    dict(say="> 17,000 islands (Indonesia, official 17,000+)", rule="expr", expr="17000", equal=17000),
     dict(say="Korea TFR 0.72 (2023)", set="tfrk", iso="KOR", year=2023, min=0.715, max=0.725),
 ]
 for y in [2014, 2015, 2016, 2017, 2018, 2019, 2022, 2023, 2024, 2025]:
@@ -238,7 +244,7 @@ for i, sh in enumerate(shots):
     sh["id"] = f"s{i:02d}"
 
 spec = dict(id="a-L08-vietnam", clips=clips, channel="chartbound", chapter0="From $99 to first place",
-            thumb=dict(set="ppp", iso="VNM", years=[1990, 2025], ymin=0, ymax=19000, band=[470, 690], flags=["VNM", "IDN"], top="VIETNAM IN 1990", big="$99", line2="NOW > INDONESIA", color="#ffd166"), w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
+            thumb=dict(set="ppp", iso="VNM", years=[1990, 2025], ymin=0, ymax=19000, band=[470, 690], flags=["VNM", "IDN"], top="VIETNAM > INDONESIA", big="$99", line2="IN 1990", color="#ffd166"), w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
             datasets=datasets, snapshot=snapshot,
             voice=dict(model="", name="Charon",
                        style=("You are the narrator of a popular data documentary on YouTube. Read the script below in a warm, curious voice "

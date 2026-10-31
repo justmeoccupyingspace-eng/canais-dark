@@ -48,7 +48,7 @@ shots = [
          ref=dict(value=100, label="2000 = 100", pos="left"),
          narration="Meanwhile, Turkey's economy more than tripled. {p} That's growth of almost five percent a year, on average, for a quarter of a century. Between 2002 and 2007 alone, it averaged about seven percent. {p} And it happened even as the population grew from about sixty-five million to about eighty-six million. {p} More people, and much more output per person. {p} Turkey is also young: about one in five Turks is under fifteen. In Greece, about one in seven. {p} In total, Turkey's economy is now almost six times the size of Greece's.",
          keys=[dict(at="more than tripled", year=2025.0, dur=6.0)],
-         labels=[dict(at="more than tripled", iso="TUR", year=2025)],
+         labels=[dict(at="Between 2002", iso="TUR", year=2025)],
          react=[dict(at="more than tripled", pose="cheer"), dict(at="almost five percent", pose="pointL"), dict(at="eighty-six million", pose="think"), dict(at="much more output", pose="pointUp")]),
     dict(act=2, type="list", src=WB + " · Turkish crisis of 2001 · EU customs union with Türkiye (1995)", title="What powered it",
          narration="Part of it was simply starting from far behind: poorer countries can grow fast by copying what richer ones already do. {p} Part of it was a customs union with the European Union, in place since the mid-1990s, which turned Turkey into a workshop for Europe: cars, fridges, televisions, clothes. Its exports grew more than sevenfold in dollars between 2000 and 2025. {p} And part of it was a huge construction boom: roads, airports, bridges, and millions of new apartments. {p} Istanbul, a city of more than fifteen million people, became one of the biggest economic hubs between Europe and Asia.",
@@ -63,7 +63,7 @@ shots = [
          narration="Quick favor: if you're finding this interesting, hit subscribe. It's free, and it's genuinely what keeps this channel going. {p} Now, the part that makes this so strange: {pp} the inflation.",
          items=[dict(at="hit subscribe", text="Subscribe = more of these"), dict(at="so strange", text="The strange part:", color="acc2"), dict(at="the inflation", text="The inflation.", serif=True, size=72, color="acc")],
          react=[dict(at="Quick favor", pose="wave"), dict(at="so strange", pose="think"), dict(at="the inflation", pose="pointUp")]),
-    dict(act=3, type="bars", mode="abs", set="cpi", iso="TUR", years=[1995, 2025], start=1994.0, fmt="int", src=WB + " · inflation, consumer prices (annual %)",
+    dict(act=3, type="bars", mode="abs", set="cpi", iso="TUR", years=[1995, 2025], start=1995.0, fmt="int", src=WB + " · inflation, consumer prices (annual %)",
          narration="High inflation isn't new in Turkey. {p} In the 1990s, prices rose by eighty or ninety percent a year. {p} Prices rose so much that in 2005 Turkey knocked six zeros off its currency: one million old lira became one new lira. {p} After a crisis in 2001 and tough reforms, inflation fell to single digits for over a decade. {p} And then it came back. {pp} Seventy-two percent in 2022. Fifty-eight percent in 2024.",
          keys=[dict(at="isn't new", year=1999.0, dur=4.0), dict(at="single digits", year=2016.0, dur=5.0), dict(at="it came back", year=2025.0, dur=4.0)],
          hl=[2004, 2016], hltext=dict(at="single digits", text="2004–2016: under 10% most years"),
@@ -226,7 +226,7 @@ for i, sh in enumerate(shots):
     sh["id"] = f"s{i:02d}"
 
 spec = dict(id="a-L07-turkey", clips=clips, channel="chartbound", chapter0="A tie",
-            thumb=dict(set="ppp", iso="TUR", years=[2000, 2025], ymin=5000, ymax=48000, band=[470, 690], flags=["TUR", "GRC"], top="TURKEY = GREECE", big="$45K", line2="50% INFLATION", color="#ff5a6e"), w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
+            thumb=dict(set="ppp", iso="TUR", years=[2000, 2025], ymin=5000, ymax=48000, band=[470, 690], flags=["TUR", "GRC"], top="TURKEY = GREECE", big="50%", line2="INFLATION", color="#ff5a6e"), w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
             datasets=datasets, snapshot=snapshot,
             voice=dict(model="", name="Charon",
                        style=("You are the narrator of a popular data documentary on YouTube. Read the script below in a warm, curious voice "

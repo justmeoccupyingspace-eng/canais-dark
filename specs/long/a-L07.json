@@ -50,8 +50,8 @@
    "GRC"
   ],
   "top": "TURKEY = GREECE",
-  "big": "$45K",
-  "line2": "50% INFLATION",
+  "big": "50%",
+  "line2": "INFLATION",
   "color": "#ff5a6e"
  },
  "w": 1920,
@@ -412,7 +412,7 @@
    ],
    "labels": [
     {
-     "at": "more than tripled",
+     "at": "Between 2002",
      "iso": "TUR",
      "year": 2025
     }
@@ -534,7 +534,7 @@
     1995,
     2025
    ],
-   "start": 1994.0,
+   "start": 1995.0,
    "fmt": "int",
    "src": "World Bank WDI · inflation, consumer prices (annual %)",
    "narration": "High inflation isn't new in Turkey. {p} In the 1990s, prices rose by eighty or ninety percent a year. {p} Prices rose so much that in 2005 Turkey knocked six zeros off its currency: one million old lira became one new lira. {p} After a crisis in 2001 and tough reforms, inflation fell to single digits for over a decade. {p} And then it came back. {pp} Seventy-two percent in 2022. Fifty-eight percent in 2024.",
