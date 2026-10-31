@@ -261,14 +261,14 @@ spec = dict(id="a-L06-portugal", clips=clips, channel="chartbound", chapter0="Th
                               "first sentence to the last. Never sound like an advertisement or an audiobook.")),
             music=[dict(act=0, track="Lightless Dawn", vol=0.24), dict(act=1, track="Investigations", vol=0.23), dict(act=2, track="Deliberate Thought", vol=0.22),
                    dict(act=3, track="Hidden Agenda", vol=0.23), dict(act=4, track="Inspired", vol=0.23), dict(act=5, track="Floating Cities", vol=0.24)],
-            yt=dict(title="Portugal Was Richer Than Eastern Europe. Not Anymore.",
+            yt=dict(title="Poland Just Passed Portugal. Again.",
                     description=("In 1995 the average Portuguese produced almost twice as much as the average Pole, adjusted for prices. Poland pulled ahead in the 2020–2022 pandemic years, Portugal clawed back in 2023, and in 2025 Poland passed it again. Slovenia, Czechia and Lithuania have been ahead for years, "
                                  "and Romanians already consume slightly more per head. Why Portugal stood still for 25 years (school, the China and EU-enlargement shocks, the 2011 bailout), what it means for wages, "
                                  "and the twist: longer lives, budget surpluses and a comeback since 2022.\n\n"
                                  "Sources: World Bank WDI (NY.GDP.PCAP.PP.CD, NY.GDP.PCAP.PP.KD, NE.GDI.FTOT.ZS, SM.POP.NETM, SP.DYN.LE00.IN, NY.GDP.MKTP.KD.ZG); "
                                  "Eurostat (prc_ppp_ind, edat_lfse_03, earn_mw_cur, gov_10dd_edpt1); European Commission (financial assistance to Portugal); WTO; EU enlargement 2004.\n"
-                                 "{music_credits}\nNarration is AI-generated.\n\n#portugal #poland #europe #economics #data"),
-                    tags=["portugal", "poland", "eastern europe", "romania", "europe economy", "gdp per capita", "minimum wage", "economics", "data"], lang="en"))
+                                 "{music_credits}\nNarration is AI-generated.\n\n#poland #portugal #europe #economics #data"),
+                    tags=["poland", "portugal", "poland economy", "eastern europe", "romania", "europe economy", "gdp per capita", "minimum wage", "economics", "data"], lang="en"))
 
 json.dump(spec, open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "a-L06.json"), "w"), ensure_ascii=False, indent=1)
 clean = lambda t: t.replace("{p}", "").replace("{pp}", "").replace("<soft>", "").replace("</soft>", "").split()
