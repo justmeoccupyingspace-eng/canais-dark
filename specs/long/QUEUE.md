@@ -42,7 +42,8 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 ## Calendário de render (2 longos/dia; voz 3.1 ≥1.115 palavras, 3.8 ≥1.270)
 - 01/11: A-L06 (3.1, 18:00Z) + A-L07 (3.8, 23:00Z) — tarefa agendada 07:15Z.
 - 02/11: A-L09 (3.1, 18:00Z) + A-L08 (3.8, 23:00Z).
-- 03/11: A-L10 (3.1, 18:00Z) + A-L11 África do Sul (3.8, a escrever).
+- 03/11: A-L10 (3.1, 18:00Z) + A-L11 África do Sul (3.8, 23:00Z).
+- Banco após 03/11: A-L12 Bulgária + novas pautas (garimpar 01/11).
 - Antes de cada render: teste visual grátis (engine=edge) e checagem de títulos de stats ≤34 caracteres, stats na ordem da fala, miniatura com line2 ≤10 caracteres (senão o mascote cobre).
 
 ## TikTok C (alerta 31/10)
@@ -62,7 +63,7 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 | A-L08 | Vietnam Overtook Indonesia. With a Third of the People. | pronto: checks ok, 1.279 palavras, voz 3.8, teste visual ok · tela final → Coreia | 02/11 23:00Z (cortes A2) |
 | A-L09 | In 2012, Japan Was 74% Richer Than Spain. Now Spain Is Ahead. | pronto: checks ok (1ª vez desde 1960), 1.141 palavras, voz 3.1 · tela final → Polônia | 02/11 18:00Z |
 | A-L10 | Mexico Exports 4x More Than in 2000. Its Workers Produce Less. (21 países passaram; PIB por trabalhador −10%) | pronto: checks ok, 1.110 palavras, voz 3.1 · tela final → A-L07 | 03/11 18:00Z |
-| A-L11 | South Africa passada por Indonésia (PPP 2023) e Vietnã (2024); Filipinas no PIB total | banco: "How South Africa Became 3rd World" 739 mil (abr/26) → só entra com as ultrapassagens (número nosso) | |
+| A-L11 | South Africans Are Poorer Than in 2008. Here's Why. (Egito 2019, Indonésia 2023, Vietnã 2024 passaram em PPP; pico real em 2013) | pronto: checks ok, ~1.270 palavras, voz 3.8 · tela final → A-L08 | 03/11 23:00Z (cortes A2) |
 | A-L12 | Bulgária: do mais pobre da UE ao euro (jan/26), 0,31→0,49 dos EUA desde 2010 | banco: filtro ok (q6; maior longo 78 mil) | |
 | ~~Rússia > Itália/Canadá~~ · ~~Singapura > Noruega~~ · ~~Geórgia~~ | fora: tema de guerra / Singapura saturada / busca ambígua | — | |
 | ~~Germany~~ / ~~Iene~~ | reprovados no filtro | — | |

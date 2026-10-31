@@ -613,7 +613,7 @@
    "src": "World Bank WDI · intentional homicides (per 100,000 people) · PSIRA (registered active security officers) vs SAPS and SANDF",
    "fmt": "dec1",
    "hl": "ZAF",
-   "narration": "Then there's crime. {p} In 2022, South Africa recorded about forty-four murders per hundred thousand people. That's more than eight times the world average. And it has been rising, from about twenty-nine in 2011. {p} Companies and families pay for private protection. South Africa has more private security guards than police officers and soldiers combined. {pp} Every rand spent on guards and razor wire is a rand not spent on machines or wages. And crime is one reason so many skilled South Africans, doctors, engineers, accountants, have moved to London, Sydney and Toronto.",
+   "narration": "Then there's crime. {p} In 2022, South Africa recorded about forty-four murders per hundred thousand people. That's more than eight times the world average. And it has been rising, from about twenty-nine in 2011. Cash-van heists and construction-site extortion gangs have become routine headlines. {p} Companies and families pay for private protection. South Africa has more private security guards than police officers and soldiers combined. {pp} Every rand spent on guards and razor wire is a rand not spent on machines or wages. And crime is one reason so many skilled South Africans, doctors, engineers, accountants, have moved to London, Sydney and Toronto.",
    "keys": [
     {
      "at": "Then there's crime",
@@ -823,7 +823,7 @@
    "type": "stats",
    "src": "Chartbound calculation from World Bank WDI: GDP per capita PPP (constant 2021 $) 2013 vs 2025; population growth 2015–2025",
    "title": "Back to the 2013 peak by 2030",
-   "narration": "So how far is the climb back? {p} The average South African now produces about seven percent less than at the 2013 peak. {p} With the population still growing, getting back there by 2030 would take economic growth of almost three percent a year. {pp} Outside a pandemic rebound, South Africa hasn't grown that fast since 2011. Indonesia has grown about five percent in every normal year of the past decade.",
+   "narration": "So how far is the climb back? {p} The average South African now produces about seven percent less than at the 2013 peak. {p} With the population still growing, getting back there by 2030 would take economic growth of almost three percent a year. {pp} Outside a pandemic rebound, South Africa hasn't grown that fast since 2011. Indonesia has grown about five percent in every normal year of the past decade. It's a high bar, but not an impossible one.",
    "stats": [
     {
      "at": "about seven percent less",
