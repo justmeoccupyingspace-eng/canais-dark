@@ -159,7 +159,7 @@
     55000
    ],
    "fmt": "usdk0",
-   "narration": "Japan: the bullet trains, the robots, and companies everyone knows, like Toyota, Sony and Nintendo. {p} Spain: one of Europe's biggest tourist destinations, a housing crash that left entire towns of empty apartments, and for years, Europe's worst unemployment. {p} Thirteen years later, the ranking is the other way around. How did that flip? {pp} There are two reasons. <soft>Only one of them is about Spain.</soft>",
+   "narration": "Japan: the bullet trains, the robots, and companies everyone knows, like Toyota, Sony and Nintendo. {p} Spain: one of Europe's biggest tourist destinations, a housing crash that left entire towns of empty apartments, and for years, Europe's worst unemployment. {p} Thirteen years later, the ranking is the other way around: measured in dollars, the average Spaniard now produces more. How did that flip? {pp} There are two reasons. <soft>Only one of them is about Spain.</soft>",
    "items": [
     {
      "at": "bullet trains",
@@ -530,7 +530,7 @@
    "type": "stats",
    "src": "INE Frontur (3 Feb 2026): 96.8 million international tourists in Spain, 2025 · JNTO (Jan 2026): 42.7 million visitors to Japan, 2025 · INE tourism satellite account (12.6% of GDP, 2024) · Red Eléctrica (55.5% renewable electricity, 2025)",
    "title": "International tourists, 2025",
-   "narration": "In 2025, Spain welcomed almost ninety-seven million foreign tourists, a new record. Only France gets more. {p} Japan had a record year too: almost forty-three million. {pp} Spain, with about forty percent of Japan's population, received more than twice as many visitors. {p} Tourism brings in money from abroad, and jobs that don't need a university degree, exactly what Spain needed after the crash. Tourism is now about an eighth of Spain's entire economy. {p} And the same sun powers the country: in 2025, more than half of Spain's electricity came from renewables.",
+   "narration": "In 2025, Spain welcomed almost ninety-seven million foreign tourists, a new record. Only France gets more. That's about two tourists for every person who lives in Spain. {p} Japan had a record year too: almost forty-three million. {pp} Spain, with about forty percent of Japan's population, received more than twice as many visitors. {p} Tourism brings in money from abroad, and jobs that don't need a university degree, exactly what Spain needed after the crash. Tourism is now about an eighth of Spain's entire economy. {p} And the same sun powers the country: in 2025, more than half of Spain's electricity came from renewables.",
    "stats": [
     {
      "at": "almost ninety-seven million",
@@ -585,7 +585,7 @@
    "src": "World Bank WDI · GDP per capita, PPP (current international $)",
    "fmt": "usdk0",
    "hl": "ESP",
-   "narration": "And it's not just the exchange rate. {p} Adjust for what things actually cost in each country, and Spain has been ahead of Japan every year since 2022. {p} In 2025, by about eight percent: the average Spaniard now produces about sixty thousand dollars' worth a year, at those prices. {pp} In 1990, by that same measure, Japan was about half again as rich.",
+   "narration": "And it's not just the exchange rate. {p} Adjust for what things actually cost in each country, and Spain has been ahead of Japan every year since 2022. {p} In 2025, by about eight percent: the average Spaniard now produces about sixty thousand dollars' worth a year, at those prices. That's a slightly bigger lead than in plain dollars. {pp} In 1990, by that same measure, Japan was about half again as rich.",
    "keys": [
     {
      "at": "Adjust for",
@@ -1482,6 +1482,18 @@
    "iso": "JPN",
    "year": 2025,
    "max": 58.99
+  },
+  {
+   "say": "≈2 tourists per resident (96.8M / 49.4M)",
+   "rule": "expr",
+   "expr": "round(96.8 / 49.355, 1)",
+   "equal": 2.0
+  },
+  {
+   "say": "PPP lead (≈8%) > nominal lead (≈7.4%)",
+   "rule": "expr",
+   "expr": "59867.69 / 55421.88 > 38627.25 / 35951.04",
+   "equal": true
   },
   {
    "say": "JPN 65+ 2025 ≈ 30%",

@@ -18,7 +18,7 @@ shots = [
          labels=[dict(at="forty-nine and a half", iso="JPN", year=2012), dict(at="twenty-eight and a half", iso="ESP", year=2012), dict(at="pulled further ahead", iso="ESP", year=2025)],
          react=[dict(at="In 2012", pose="idle"), dict(at="seventy-five percent", pose="pointL"), dict(at="brutal crisis", pose="think"), dict(at="Spain passed Japan", pose="shock"), dict(at="never happened", pose="pointUp")]),
     dict(act=0, type="host", bg="lines", set="usd", series=["JPN", "ESP"], years=[1990, 2025], start=2025.0, y=[0, 55000], fmt="usdk0",
-         narration="Japan: the bullet trains, the robots, and companies everyone knows, like Toyota, Sony and Nintendo. {p} Spain: one of Europe's biggest tourist destinations, a housing crash that left entire towns of empty apartments, and for years, Europe's worst unemployment. {p} Thirteen years later, the ranking is the other way around. How did that flip? {pp} There are two reasons. <soft>Only one of them is about Spain.</soft>",
+         narration="Japan: the bullet trains, the robots, and companies everyone knows, like Toyota, Sony and Nintendo. {p} Spain: one of Europe's biggest tourist destinations, a housing crash that left entire towns of empty apartments, and for years, Europe's worst unemployment. {p} Thirteen years later, the ranking is the other way around: measured in dollars, the average Spaniard now produces more. How did that flip? {pp} There are two reasons. <soft>Only one of them is about Spain.</soft>",
          items=[dict(at="bullet trains", text="Japan: trains, robots, brands", color="acc2"), dict(at="worst unemployment", text="Spain: beaches, unemployment", color="acc"), dict(at="Only one", text="Two reasons. One is Spain.", serif=True, size=60)],
          react=[dict(at="bullet trains", pose="pointL"), dict(at="worst unemployment", pose="shrug"), dict(at="How did that flip", pose="think"), dict(at="Only one", pose="pointUp")]),
 
@@ -59,11 +59,11 @@ shots = [
          items=[dict(at="hit subscribe", text="Subscribe = more of these"), dict(at="actually selling", text="What does Spain sell?", color="acc2"), dict(at="sunshine", text="Sunshine.", serif=True, size=76, color="acc")],
          react=[dict(at="Quick favor", pose="wave"), dict(at="actually selling", pose="think"), dict(at="sunshine", pose="cheer")]),
     dict(act=3, type="stats", src=TOUR + " · INE tourism satellite account (12.6% of GDP, 2024) · Red Eléctrica (55.5% renewable electricity, 2025)", title="International tourists, 2025",
-         narration="In 2025, Spain welcomed almost ninety-seven million foreign tourists, a new record. Only France gets more. {p} Japan had a record year too: almost forty-three million. {pp} Spain, with about forty percent of Japan's population, received more than twice as many visitors. {p} Tourism brings in money from abroad, and jobs that don't need a university degree, exactly what Spain needed after the crash. Tourism is now about an eighth of Spain's entire economy. {p} And the same sun powers the country: in 2025, more than half of Spain's electricity came from renewables.",
+         narration="In 2025, Spain welcomed almost ninety-seven million foreign tourists, a new record. Only France gets more. That's about two tourists for every person who lives in Spain. {p} Japan had a record year too: almost forty-three million. {pp} Spain, with about forty percent of Japan's population, received more than twice as many visitors. {p} Tourism brings in money from abroad, and jobs that don't need a university degree, exactly what Spain needed after the crash. Tourism is now about an eighth of Spain's entire economy. {p} And the same sun powers the country: in 2025, more than half of Spain's electricity came from renewables.",
          stats=[dict(at="almost ninety-seven million", value=96800000, fmt="k0", label="tourists in Spain, 2025"), dict(at="almost forty-three million", value=42700000, fmt="k0", label="visitors to Japan, 2025")],
          react=[dict(at="ninety-seven million", pose="shock"), dict(at="forty-three million", pose="pointL"), dict(at="more than twice", pose="pointUp"), dict(at="after the crash", pose="think")]),
     dict(act=3, type="lines", set="pppx", series=["JPN", "ESP"], years=[1990, 2025], start=1990.0, y=[0, 65000], src=WB + " · GDP per capita, PPP (current international $)", fmt="usdk0", hl="ESP",
-         narration="And it's not just the exchange rate. {p} Adjust for what things actually cost in each country, and Spain has been ahead of Japan every year since 2022. {p} In 2025, by about eight percent: the average Spaniard now produces about sixty thousand dollars' worth a year, at those prices. {pp} In 1990, by that same measure, Japan was about half again as rich.",
+         narration="And it's not just the exchange rate. {p} Adjust for what things actually cost in each country, and Spain has been ahead of Japan every year since 2022. {p} In 2025, by about eight percent: the average Spaniard now produces about sixty thousand dollars' worth a year, at those prices. That's a slightly bigger lead than in plain dollars. {pp} In 1990, by that same measure, Japan was about half again as rich.",
          keys=[dict(at="Adjust for", year=2022.0, dur=5.0), dict(at="In 2025", year=2025.0, dur=3.0)],
          labels=[dict(at="every year since 2022", iso="ESP", year=2022), dict(at="about eight percent", iso="ESP", year=2025)],
          react=[dict(at="not just the exchange rate", pose="pointUp"), dict(at="since 2022", pose="pointL"), dict(at="eight percent", pose="cheer"), dict(at="half again", pose="think")]),
@@ -171,6 +171,8 @@ checks = [
     dict(say="BoJ first hike in 17 years (Mar 2024 vs Feb 2007)", rule="expr", expr="2024 - 2007", equal=17),
     dict(say="JPN working-age 2000 ≈ 68%", set="wa", iso="JPN", year=2000, min=67.5, max=68.5),
     dict(say="JPN working-age 2025 < 59%", set="wa", iso="JPN", year=2025, max=58.99),
+    dict(say="≈2 tourists per resident (96.8M / 49.4M)", rule="expr", expr="round(96.8 / 49.355, 1)", equal=2.0),
+    dict(say="PPP lead (≈8%) > nominal lead (≈7.4%)", rule="expr", expr="59867.69 / 55421.88 > 38627.25 / 35951.04", equal=True),
     dict(say="JPN 65+ 2025 ≈ 30%", set="old", iso="JPN", year=2025, min=29.5, max=30.5),
 ]
 
