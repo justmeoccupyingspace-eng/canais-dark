@@ -77,7 +77,7 @@ shots = [
          keys=[dict(at="In 2025", year=2025.0, dur=6.0)],
          labels=[dict(at="four hundred and forty", iso="PRT", year=2005), dict(at="two hundred and ten", iso="POL", year=2005), dict(at="about eleven hundred", iso="POL", year=2025)],
          react=[dict(at="In 2005", pose="idle"), dict(at="Less than half", pose="pointL"), dict(at="two extra payments", pose="think"), dict(at="eleven hundred", pose="shock"), dict(at="Both now higher", pose="shrug")]),
-    dict(act=3, type="stats", src="Observatório da Emigração (via Expresso / Essential Business, 12 Jan 2024)", title="Born in Portugal, aged 15–39, living abroad",
+    dict(act=3, type="stats", src="Observatório da Emigração (via Expresso / Essential Business, 12 Jan 2024)", title="Young Portuguese living abroad",
          narration="No wonder so many leave. {p} By the Emigration Observatory's estimate, around eight hundred and fifty thousand people born in Portugal, aged fifteen to thirty-nine, live abroad. {pp} That's about thirty percent of that whole generation.",
          stats=[dict(at="eight hundred and fifty thousand", value=850000, fmt="k0", label="young Portuguese living abroad"), dict(at="about thirty percent", value=30, fmt="pct0", label="of everyone born in Portugal, aged 15–39")],
          react=[dict(at="so many leave", pose="think"), dict(at="eight hundred and fifty", pose="shock"), dict(at="thirty percent", pose="shock")]),
