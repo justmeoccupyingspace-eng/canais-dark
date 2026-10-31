@@ -402,7 +402,7 @@
     "label": "2000 = 100",
     "pos": "left"
    },
-   "narration": "Meanwhile, Turkey's economy more than tripled. {p} That's growth of almost five percent a year, every year, for a quarter of a century. {p} And it happened even as the population grew from about sixty-five million to about eighty-six million. {p} More people, and much more output per person. {p} Turkey is also young: about one in five Turks is under fifteen. In Greece, about one in seven. {p} In total, Turkey's economy is now almost six times the size of Greece's.",
+   "narration": "Meanwhile, Turkey's economy more than tripled. {p} That's growth of almost five percent a year, on average, for a quarter of a century. Between 2002 and 2007 alone, it averaged about seven percent. {p} And it happened even as the population grew from about sixty-five million to about eighty-six million. {p} More people, and much more output per person. {p} Turkey is also young: about one in five Turks is under fifteen. In Greece, about one in seven. {p} In total, Turkey's economy is now almost six times the size of Greece's.",
    "keys": [
     {
      "at": "more than tripled",
@@ -672,7 +672,7 @@
      "show": "b"
     }
    ],
-   "narration": "So who paid for it? {p} Imagine a Turkish family that kept ten thousand lira in savings in 2018. In dollars, that was worth about two thousand and seventy. {p} By 2025, the same ten thousand lira bought about two hundred and fifty dollars. {p} No wonder so many Turks rushed into dollars, gold and property to protect themselves. {pp} Prices in Turkey rose almost ninefold over those seven years.",
+   "narration": "So who paid for it? {p} Imagine a Turkish family that kept ten thousand lira in savings in 2018. In dollars, that was worth about two thousand and seventy. {p} By 2025, the same ten thousand lira bought about two hundred and fifty dollars. Almost nine dollars of every ten, gone. {p} No wonder so many Turks rushed into dollars, gold and property to protect themselves. {pp} Prices in Turkey rose almost ninefold over those seven years.",
    "react": [
     {
      "at": "who paid",
@@ -782,7 +782,7 @@
    "act": 5,
    "type": "host",
    "bg": "none",
-   "narration": "So which number is right? {p} Both, for different questions. {p} Dollars at market rates tell you what a country can buy from the rest of the world: an iPhone, a plane ticket, an imported car. {p} Prices adjusted for local costs tell you how people live day to day, because a haircut, a meal or rent in Istanbul costs far less than in Athens. {pp} By that measure, Turkey now out-produces China, Mexico, Brazil and Argentina per person. {p} It's even slightly ahead of an EU member, Bulgaria. {p} That's why economists compare living standards with prices adjusted, and buying power abroad with market rates. {pp} <soft>For daily life, Turks and Greeks are now neck and neck.</soft>",
+   "narration": "So which number is right? {p} Both, for different questions. {p} Dollars at market rates tell you what a country can buy from the rest of the world: an iPhone, a plane ticket, an imported car. {p} Prices adjusted for local costs tell you how people live day to day, because a haircut, a meal or rent in Istanbul costs far less than in Athens. {pp} By that measure, Turkey now out-produces China, Mexico, Brazil and Argentina per person. {p} It's even slightly ahead of an EU member, Bulgaria. {p} That's why economists compare living standards with prices adjusted, and buying power abroad with market rates. The World Bank does the adjusting with price surveys run in almost every country on Earth. {pp} <soft>For daily life, Turks and Greeks are now neck and neck.</soft>",
    "items": [
     {
      "at": "market rates",
@@ -1411,6 +1411,20 @@
    "equal": true
   },
   {
+   "say": "2002–2007 average growth ≈ 7%",
+   "set": "g0207",
+   "iso": "TUR",
+   "year": 0,
+   "min": 39,
+   "max": 45
+  },
+  {
+   "say": "almost 9 of every 10 dollars gone (−88%)",
+   "rule": "expr",
+   "expr": "round((1 - 4.83 / 39.45) * 10, 1)",
+   "equal": 8.8
+  },
+  {
    "say": "Turkey 2025 inflation ≈ 35%",
    "set": "cpi",
    "iso": "TUR",
@@ -1672,6 +1686,25 @@
     "MEX"
    ],
    "base": 2007
+  },
+  {
+   "set": "gdpgt",
+   "wb": "NY.GDP.MKTP.KD.ZG",
+   "isos": [
+    "TUR"
+   ],
+   "from": 2000,
+   "to": 2025
+  },
+  {
+   "set": "g0207",
+   "derive": "sum",
+   "src": "gdpgt",
+   "isos": [
+    "TUR"
+   ],
+   "a": 2002,
+   "b": 2007
   },
   {
    "set": "cpisum",
