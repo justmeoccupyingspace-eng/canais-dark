@@ -6,7 +6,7 @@
    "to": "s00",
    "hook": "Poland just passed *Portugal*",
    "title": "Portugal was twice as rich as Poland. Not anymore #Shorts",
-   "desc": "In 1995 the average Portuguese produced almost twice what a Pole did. In 2025 the lines crossed."
+   "desc": "In 1995 the average Portuguese produced almost twice what a Pole did. In 2025 Poland passed Portugal again."
   },
   {
    "from": "s06",
@@ -85,12 +85,17 @@
    "src": "World Bank WDI · GDP per capita, PPP (current international $)",
    "fmt": "usdk0",
    "hl": "POL",
-   "narration": "In 1995, the average person in Portugal produced almost twice as much as the average person in Poland, adjusted for prices. {p} Portugal had been in the European Union for almost a decade. Poland had just escaped communism. {p} Thirty years later, the lines have crossed. {pp} In 2025, for the first time, the average Pole out-produced the average Portuguese, by about two percent.",
+   "narration": "In 1995, the average person in Portugal produced almost twice as much as the average person in Poland, adjusted for prices. {p} Portugal had been in the European Union for almost a decade. Poland had just escaped communism. {p} In 2020, when the pandemic emptied Portugal's hotels, Poland briefly pulled ahead. Portugal bounced back. {pp} In 2025, Poland passed it again, by about two percent, and this time no pandemic was needed.",
    "keys": [
     {
-     "at": "Thirty years later",
+     "at": "In 2020",
+     "year": 2020.0,
+     "dur": 5.0
+    },
+    {
+     "at": "bounced back",
      "year": 2025.0,
-     "dur": 6.0
+     "dur": 4.0
     }
    ],
    "labels": [
@@ -100,7 +105,12 @@
      "year": 1995
     },
     {
-     "at": "for the first time",
+     "at": "briefly pulled ahead",
+     "iso": "POL",
+     "year": 2020
+    },
+    {
+     "at": "passed it again",
      "iso": "POL",
      "year": 2025
     }
@@ -119,11 +129,11 @@
      "pose": "think"
     },
     {
-     "at": "lines have crossed",
+     "at": "briefly pulled ahead",
      "pose": "shock"
     },
     {
-     "at": "out-produced",
+     "at": "passed it again",
      "pose": "pointUp"
     }
    ],
@@ -134,22 +144,22 @@
    "type": "list",
    "src": "World Bank WDI · GDP per capita, PPP (current international $) · Eurostat prc_ppp_ind (actual individual consumption per head, PPS, 2024)",
    "title": "Who passed Portugal",
-   "narration": "Poland isn't the first. {p} Slovenia got there in 2003. Czechia in 2007. Malta in 2009. Lithuania in 2018. {p} And three more are within about five percent: Estonia, Romania and Croatia. {pp} By one measure of how people actually live, what they consume per person, Romanians are already slightly ahead.",
+   "narration": "Poland isn't the first. {p} Slovenia has been ahead for good since 2003. Czechia since 2007. Malta since 2009. Lithuania since 2018. {p} And three more are within about five percent: Estonia, Romania and Croatia. {pp} By one measure of how people actually live, what they consume per person, Romanians are already slightly ahead.",
    "items": [
     {
-     "at": "Slovenia got there",
+     "at": "Slovenia has been",
      "kind": "bullet",
-     "text": "Slovenia · 2003"
+     "text": "Slovenia · since 2003"
     },
     {
-     "at": "Czechia in 2007",
+     "at": "Czechia since 2007",
      "kind": "bullet",
-     "text": "Czechia · 2007"
+     "text": "Czechia · since 2007"
     },
     {
-     "at": "Lithuania in 2018",
+     "at": "Lithuania since 2018",
      "kind": "bullet",
-     "text": "Lithuania · 2018"
+     "text": "Lithuania · since 2018"
     },
     {
      "at": "isn't the first",
@@ -168,7 +178,7 @@
      "pose": "pointUp"
     },
     {
-     "at": "Lithuania in 2018",
+     "at": "Lithuania since 2018",
      "pose": "pointL"
     },
     {
@@ -1221,32 +1231,72 @@
    "equal": 9
   },
   {
-   "say": "Poland passed Portugal for the first time in 2025",
+   "say": "Poland first pulled ahead in 2020",
    "rule": "cross",
+   "set": "ppp",
+   "a": "POL",
+   "b": "PRT",
+   "year": 2020
+  },
+  {
+   "say": "Portugal back ahead 2021",
+   "rule": "gt",
+   "set": "ppp",
+   "a": "PRT",
+   "b": "POL",
+   "year": 2021
+  },
+  {
+   "say": "Portugal back ahead 2022",
+   "rule": "gt",
+   "set": "ppp",
+   "a": "PRT",
+   "b": "POL",
+   "year": 2022
+  },
+  {
+   "say": "Portugal back ahead 2023",
+   "rule": "gt",
+   "set": "ppp",
+   "a": "PRT",
+   "b": "POL",
+   "year": 2023
+  },
+  {
+   "say": "Portugal back ahead 2024",
+   "rule": "gt",
+   "set": "ppp",
+   "a": "PRT",
+   "b": "POL",
+   "year": 2024
+  },
+  {
+   "say": "Poland ahead again 2025",
+   "rule": "gt",
    "set": "ppp",
    "a": "POL",
    "b": "PRT",
    "year": 2025
   },
   {
-   "say": "Slovenia passed in 2003",
-   "rule": "cross",
+   "say": "Slovenia ahead for good since 2003",
+   "rule": "since",
    "set": "ppp",
    "a": "SVN",
    "b": "PRT",
    "year": 2003
   },
   {
-   "say": "Czechia passed in 2007",
-   "rule": "cross",
+   "say": "Czechia since 2007",
+   "rule": "since",
    "set": "ppp",
    "a": "CZE",
    "b": "PRT",
    "year": 2007
   },
   {
-   "say": "Lithuania passed in 2018",
-   "rule": "cross",
+   "say": "Lithuania since 2018",
+   "rule": "since",
    "set": "ppp",
    "a": "LTU",
    "b": "PRT",
@@ -1659,8 +1709,8 @@
    "max": 102.5
   },
   {
-   "say": "Malta passed in 2009",
-   "rule": "cross",
+   "say": "Malta since 2009",
+   "rule": "since",
    "set": "ppp",
    "a": "MLT",
    "b": "PRT",
@@ -2201,7 +2251,7 @@
  ],
  "yt": {
   "title": "Portugal Was Richer Than Eastern Europe. Not Anymore.",
-  "description": "In 1995 the average Portuguese produced almost twice as much as the average Pole, adjusted for prices. In 2025, for the first time, Poland pulled ahead. Slovenia, Czechia and Lithuania got there earlier, and Romanians already consume slightly more per head. Why Portugal stood still for 25 years (school, the China and EU-enlargement shocks, the 2011 bailout), what it means for wages, and the twist: longer lives, budget surpluses and a comeback since 2022.\n\nSources: World Bank WDI (NY.GDP.PCAP.PP.CD, NY.GDP.PCAP.PP.KD, NE.GDI.FTOT.ZS, SM.POP.NETM, SP.DYN.LE00.IN, NY.GDP.MKTP.KD.ZG); Eurostat (prc_ppp_ind, edat_lfse_03, earn_mw_cur, gov_10dd_edpt1); European Commission (financial assistance to Portugal); WTO; EU enlargement 2004.\n{music_credits}\nNarration is AI-generated.\n\n#portugal #poland #europe #economics #data",
+  "description": "In 1995 the average Portuguese produced almost twice as much as the average Pole, adjusted for prices. Poland briefly pulled ahead in the 2020 pandemic year, and in 2025 it passed Portugal again. Slovenia, Czechia and Lithuania have been ahead for years, and Romanians already consume slightly more per head. Why Portugal stood still for 25 years (school, the China and EU-enlargement shocks, the 2011 bailout), what it means for wages, and the twist: longer lives, budget surpluses and a comeback since 2022.\n\nSources: World Bank WDI (NY.GDP.PCAP.PP.CD, NY.GDP.PCAP.PP.KD, NE.GDI.FTOT.ZS, SM.POP.NETM, SP.DYN.LE00.IN, NY.GDP.MKTP.KD.ZG); Eurostat (prc_ppp_ind, edat_lfse_03, earn_mw_cur, gov_10dd_edpt1); European Commission (financial assistance to Portugal); WTO; EU enlargement 2004.\n{music_credits}\nNarration is AI-generated.\n\n#portugal #poland #europe #economics #data",
   "tags": [
    "portugal",
    "poland",

@@ -13,18 +13,18 @@ EC = "European Commission, financial assistance to Portugal (2011–2014): €78
 shots = [
     # ---------------- 0 · COLD OPEN ----------------
     dict(act=0, type="lines", set="ppp", series=["PRT", "POL"], years=[1995, 2025], start=1995.0, y=[0, 60000], src=PPP, fmt="usdk0", hl="POL",
-         narration="In 1995, the average person in Portugal produced almost twice as much as the average person in Poland, adjusted for prices. {p} Portugal had been in the European Union for almost a decade. Poland had just escaped communism. {p} Thirty years later, the lines have crossed. {pp} In 2025, for the first time, the average Pole out-produced the average Portuguese, by about two percent.",
-         keys=[dict(at="Thirty years later", year=2025.0, dur=6.0)],
-         labels=[dict(at="almost twice", iso="PRT", year=1995), dict(at="for the first time", iso="POL", year=2025)],
-         react=[dict(at="In 1995", pose="idle"), dict(at="almost twice", pose="pointL"), dict(at="escaped communism", pose="think"), dict(at="lines have crossed", pose="shock"), dict(at="out-produced", pose="pointUp")]),
+         narration="In 1995, the average person in Portugal produced almost twice as much as the average person in Poland, adjusted for prices. {p} Portugal had been in the European Union for almost a decade. Poland had just escaped communism. {p} In 2020, when the pandemic emptied Portugal's hotels, Poland briefly pulled ahead. Portugal bounced back. {pp} In 2025, Poland passed it again, by about two percent, and this time no pandemic was needed.",
+         keys=[dict(at="In 2020", year=2020.0, dur=5.0), dict(at="bounced back", year=2025.0, dur=4.0)],
+         labels=[dict(at="almost twice", iso="PRT", year=1995), dict(at="briefly pulled ahead", iso="POL", year=2020), dict(at="passed it again", iso="POL", year=2025)],
+         react=[dict(at="In 1995", pose="idle"), dict(at="almost twice", pose="pointL"), dict(at="escaped communism", pose="think"), dict(at="briefly pulled ahead", pose="shock"), dict(at="passed it again", pose="pointUp")]),
     dict(act=0, type="list", src=PPP + " · Eurostat prc_ppp_ind (actual individual consumption per head, PPS, 2024)", title="Who passed Portugal",
-         narration="Poland isn't the first. {p} Slovenia got there in 2003. Czechia in 2007. Malta in 2009. Lithuania in 2018. {p} And three more are within about five percent: Estonia, Romania and Croatia. {pp} By one measure of how people actually live, what they consume per person, Romanians are already slightly ahead.",
-         items=[dict(at="Slovenia got there", kind="bullet", text="Slovenia · 2003"),
-                dict(at="Czechia in 2007", kind="bullet", text="Czechia · 2007"),
-                dict(at="Lithuania in 2018", kind="bullet", text="Lithuania · 2018"),
+         narration="Poland isn't the first. {p} Slovenia has been ahead for good since 2003. Czechia since 2007. Malta since 2009. Lithuania since 2018. {p} And three more are within about five percent: Estonia, Romania and Croatia. {pp} By one measure of how people actually live, what they consume per person, Romanians are already slightly ahead.",
+         items=[dict(at="Slovenia has been", kind="bullet", text="Slovenia · since 2003"),
+                dict(at="Czechia since 2007", kind="bullet", text="Czechia · since 2007"),
+                dict(at="Lithuania since 2018", kind="bullet", text="Lithuania · since 2018"),
                 dict(at="isn't the first", kind="bullet", text="Poland · 2025"),
                 dict(at="within about five percent", kind="title", text="NEXT: EE · RO · HR")],
-         react=[dict(at="isn't the first", pose="pointUp"), dict(at="Lithuania in 2018", pose="pointL"), dict(at="three more", pose="shock"), dict(at="already slightly ahead", pose="shrug")]),
+         react=[dict(at="isn't the first", pose="pointUp"), dict(at="Lithuania since 2018", pose="pointL"), dict(at="three more", pose="shock"), dict(at="already slightly ahead", pose="shrug")]),
     dict(act=0, type="host", bg="lines", set="ppp", series=["PRT", "POL"], years=[1995, 2025], start=2025.0, y=[0, 60000], fmt="usdk0",
          narration="Portugal isn't poor. It's a rich, safe, beautiful country that a lot of people dream of moving to. {p} But for twenty-five years, it barely got richer, while its neighbors to the east sprinted. {p} This isn't a story about a country failing. It's about standing still while everyone around you runs. {p} So what happened to Portugal? {pp} <soft>And is it as bad as it looks?</soft>",
          items=[dict(at="isn't poor", text="Not poor. Not growing.", color="acc2"), dict(at="barely got richer", text="25 years of almost nothing", color="acc"), dict(at="as bad as it looks", text="As bad as it looks?", serif=True, size=66)],
@@ -134,10 +134,15 @@ shots = [
 checks = [
     dict(say="Portugal ≈ almost twice Poland in 1995", rule="ratio", set="ppp", a="PRT", b="POL", year=1995, min=1.75, max=1.99),
     dict(say="EU member since 1986 → 1995 almost a decade", rule="expr", expr="1995 - 1986", equal=9),
-    dict(say="Poland passed Portugal for the first time in 2025", rule="cross", set="ppp", a="POL", b="PRT", year=2025),
-    dict(say="Slovenia passed in 2003", rule="cross", set="ppp", a="SVN", b="PRT", year=2003),
-    dict(say="Czechia passed in 2007", rule="cross", set="ppp", a="CZE", b="PRT", year=2007),
-    dict(say="Lithuania passed in 2018", rule="cross", set="ppp", a="LTU", b="PRT", year=2018),
+    dict(say="Poland first pulled ahead in 2020", rule="cross", set="ppp", a="POL", b="PRT", year=2020),
+    dict(say="Portugal back ahead 2021", rule="gt", set="ppp", a="PRT", b="POL", year=2021),
+    dict(say="Portugal back ahead 2022", rule="gt", set="ppp", a="PRT", b="POL", year=2022),
+    dict(say="Portugal back ahead 2023", rule="gt", set="ppp", a="PRT", b="POL", year=2023),
+    dict(say="Portugal back ahead 2024", rule="gt", set="ppp", a="PRT", b="POL", year=2024),
+    dict(say="Poland ahead again 2025", rule="gt", set="ppp", a="POL", b="PRT", year=2025),
+    dict(say="Slovenia ahead for good since 2003", rule="since", set="ppp", a="SVN", b="PRT", year=2003),
+    dict(say="Czechia since 2007", rule="since", set="ppp", a="CZE", b="PRT", year=2007),
+    dict(say="Lithuania since 2018", rule="since", set="ppp", a="LTU", b="PRT", year=2018),
     dict(say="Estonia within ~5%", set="relprt", iso="EST", year=2025, min=95, max=99.99),
     dict(say="Romania within ~5% (≈96%)", set="relprt", iso="ROU", year=2025, min=95, max=97.5),
     dict(say="Croatia within ~5% (≈96%)", set="relprt", iso="HRV", year=2025, min=95, max=97.5),
@@ -186,7 +191,7 @@ checks = [
     dict(say="growth > EU in 2025", rule="gt", set="gdpg", a="PRT", b="EUU", year=2025),
     dict(say="net immigration every year since 2017", rule="allpos", set="netmig", iso="PRT", a=2017, b=2024),
     dict(say="Poland ahead by about 2% (2025)", set="relpol", iso="POL", year=2025, min=101.5, max=102.5),
-    dict(say="Malta passed in 2009", rule="cross", set="ppp", a="MLT", b="PRT", year=2009),
+    dict(say="Malta since 2009", rule="since", set="ppp", a="MLT", b="PRT", year=2009),
     dict(say="1990→2000 Portugal +29%", set="rpc90x", iso="PRT", year=2000, min=28, max=30),
     dict(say="1990→2000 EU +20%", set="rpc90x", iso="EUU", year=2000, min=19, max=21),
     dict(say="Portugal 85% of EU in 2000 (Eurostat GDP PPS)", set="gdppps", iso="PRT", year=2000, min=84.5, max=85.5),
@@ -233,7 +238,7 @@ datasets = [
 snapshot = []
 
 clips = [
-    dict(**{"from": "s00", "to": "s00"}, hook="Poland just passed *Portugal*", title="Portugal was twice as rich as Poland. Not anymore #Shorts", desc="In 1995 the average Portuguese produced almost twice what a Pole did. In 2025 the lines crossed."),
+    dict(**{"from": "s00", "to": "s00"}, hook="Poland just passed *Portugal*", title="Portugal was twice as rich as Poland. Not anymore #Shorts", desc="In 1995 the average Portuguese produced almost twice what a Pole did. In 2025 Poland passed Portugal again."),
     dict(**{"from": "s06", "to": "s06"}, hook="The real reason: *school*", title="Why Portugal fell behind Eastern Europe, in one chart #Shorts", desc="In 2000, fewer than 1 in 5 Portuguese adults had finished high school. In Poland, 4 in 5."),
     dict(**{"from": "s10", "to": "s10"}, hook="Polish minimum wage > *Portugal's*", title="Poland's minimum wage is now higher than Portugal's #Shorts", desc="2005: €210 vs €437. 2025: €1,100 vs €1,015 (Eurostat)."),
     dict(**{"from": "s14", "to": "s14"}, hook="Portugal's *secret* advantage", title="The one thing Portugal does better than Poland #Shorts", desc="Three budget surpluses in a row, and debt falling fast."),
@@ -253,7 +258,7 @@ spec = dict(id="a-L06-portugal", clips=clips, channel="chartbound", chapter0="Th
             music=[dict(act=0, track="Lightless Dawn", vol=0.24), dict(act=1, track="Investigations", vol=0.23), dict(act=2, track="Deliberate Thought", vol=0.22),
                    dict(act=3, track="Hidden Agenda", vol=0.23), dict(act=4, track="Inspired", vol=0.23), dict(act=5, track="Floating Cities", vol=0.24)],
             yt=dict(title="Portugal Was Richer Than Eastern Europe. Not Anymore.",
-                    description=("In 1995 the average Portuguese produced almost twice as much as the average Pole, adjusted for prices. In 2025, for the first time, Poland pulled ahead. Slovenia, Czechia and Lithuania got there earlier, "
+                    description=("In 1995 the average Portuguese produced almost twice as much as the average Pole, adjusted for prices. Poland briefly pulled ahead in the 2020 pandemic year, and in 2025 it passed Portugal again. Slovenia, Czechia and Lithuania have been ahead for years, "
                                  "and Romanians already consume slightly more per head. Why Portugal stood still for 25 years (school, the China and EU-enlargement shocks, the 2011 bailout), what it means for wages, "
                                  "and the twist: longer lives, budget surpluses and a comeback since 2022.\n\n"
                                  "Sources: World Bank WDI (NY.GDP.PCAP.PP.CD, NY.GDP.PCAP.PP.KD, NE.GDI.FTOT.ZS, SM.POP.NETM, SP.DYN.LE00.IN, NY.GDP.MKTP.KD.ZG); "
