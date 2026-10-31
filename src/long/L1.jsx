@@ -412,14 +412,17 @@ const BarsAbs = ({sh, p, data, T, dim}) => {
   const pts = ser(data, sh.set, sh.iso).filter(([y]) => y >= Y0 && y <= Y1);
   const R = keyed(T, sh.start ?? Y1, sh.keys);
   const vmax = Math.max(...pts.map((q) => q[1]), 1) * 1.12;
-  const x0 = 190, x1 = 1300, base = 880, hpx = 600;
+  const vmin = Math.min(0, ...pts.map((q) => q[1])) * 1.12;  // valores negativos descem abaixo do zero
+  const x0 = 190, x1 = 1300, hpx = 600;
+  const Yv = (v) => 880 - ((v - vmin) / (vmax - vmin)) * hpx;
+  const base = Yv(0);
   const n = Y1 - Y0 + 1;
   const bw = (x1 - x0) / n;
   const X = (y) => x0 + (y - Y0) * bw;
-  const H = (v) => (v / vmax) * hpx;
+  const H = (v) => base - Yv(v);
   const [ha, hb] = sh.hl || [0, -1];
   const hlOn = sh.hltext ? ramp(T, sh.hltext.t, 0.6) : (sh.hl ? 1 : 0);
-  const ticks = niceTicks(0, vmax, 4).filter((v) => v > 0);
+  const ticks = niceTicks(vmin, vmax, 4).filter((v) => v !== 0 && v > vmin && v < vmax);
   return (
     <AbsoluteFill style={{opacity: dim ? 0.3 : 1}}>
       <svg width={1920} height={1080} style={{position: 'absolute'}}>
@@ -435,16 +438,16 @@ const BarsAbs = ({sh, p, data, T, dim}) => {
           if (g <= 0) return null;
           const h = H(v) * Easing.out(Easing.cubic)(g);
           const inHl = y >= ha && y <= hb;
-          const col = inHl ? mix(p.acc2, p.acc, hlOn) : p.acc2;
+          const col = v < 0 ? '#ff5a6e' : inHl ? mix(p.acc2, p.acc, hlOn) : p.acc2;
           const isLab = (sh.labels || []).some((l) => l.year === y && l.t != null && T >= l.t);
-          return <rect key={y} x={X(y) + bw * 0.12} width={bw * 0.76} y={base - h} height={Math.max(h, 2)} rx={3} fill={isLab ? '#ffffff' : col} fillOpacity={hb >= ha && !inHl && hlOn > 0 ? 1 - 0.5 * hlOn : 1} />;
+          return <rect key={y} x={X(y) + bw * 0.12} width={bw * 0.76} y={h >= 0 ? base - h : base} height={Math.max(Math.abs(h), 2)} rx={3} fill={isLab ? '#ffffff' : col} fillOpacity={hb >= ha && !inHl && hlOn > 0 ? 1 - 0.5 * hlOn : 1} />;
         })}
         {pts.filter(([y]) => y % 10 === 0 || y === Y1).map(([y]) => <text key={y} x={X(y) + bw / 2} y={base + 44} textAnchor="middle" fontFamily={SANS} fontWeight={600} fontSize={24} fill="#ffffff70">{y}</text>)}
       </svg>
       {(sh.labels || []).map((l, i) => {
         const pt = pts.find(([y]) => y === l.year);
         if (!pt) return null;
-        return <Pill key={i} x={X(l.year) + bw / 2} y={base - H(pt[1]) - 50} text={fmt(pt[1], sh.fmt)} sub={String(l.year)} color={i % 2 ? p.acc : '#ffffff'} T={T} t0={l.t} align={X(l.year) > 1000 ? 'right' : 'left'} />;
+        return <Pill key={i} x={X(l.year) + bw / 2} y={pt[1] >= 0 ? base - H(pt[1]) - 50 : base - H(pt[1]) + 14} text={fmt(pt[1], sh.fmt)} sub={String(l.year)} color={i % 2 ? p.acc : '#ffffff'} T={T} t0={l.t} align={X(l.year) > 1000 ? 'right' : 'left'} />;
       })}
       {sh.hltext && hlOn > 0 ? <div style={{position: 'absolute', left: (X(ha) + X(hb) + bw) / 2, top: 180, transform: 'translateX(-50%)', opacity: hlOn, fontFamily: SANS, fontWeight: 900, fontSize: 40, color: p.acc, whiteSpace: 'nowrap'}}>{sh.hltext.text}</div> : null}
     </AbsoluteFill>

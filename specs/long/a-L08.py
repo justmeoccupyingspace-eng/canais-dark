@@ -6,7 +6,7 @@ import json, os
 ACTS = ["Cold open", "Two speeds", "The factory", "The rocks", "The people", "The twist", "What comes next"]
 WB = "World Bank WDI"
 PPP = WB + " · GDP per capita, PPP (current international $)"
-ASIA_BIG = ["CHN", "IND", "IDN", "PAK", "BGD", "JPN", "PHL", "VNM", "IRN", "TUR", "THA", "MMR", "KOR"]  # Ásia, >50 milhões de habitantes
+ASIA_BIG = ["CHN", "JPN", "IND", "KOR", "IDN", "TUR", "SAU", "THA", "ISR", "ARE", "SGP", "PHL", "VNM", "MYS", "BGD", "PAK", "HKG", "IRN"]  # economias asiáticas com PIB > US$300 bi (2025); Mianmar (oficial, pouco confiável) fica fora
 NICKEL = "USGS Mineral Commodity Summaries 2026 · nickel mine production 2025: Indonesia 2.6 Mt of 3.9 Mt world"
 CUSTOMS = "Vietnam customs, Jan–Nov 2025 (via Vietnam Law Magazine): exports to the US $138.6 bn of >$430 bn total"
 
@@ -25,7 +25,7 @@ shots = [
     # ---------------- 1 · TWO SPEEDS ----------------
     dict(act=1, type="lines", set="rpcx", series=["PHL", "THA", "IDN", "VNM"], years=[1990, 2025], start=1990.0, y=[50, 700], src=WB + " · GDP per capita, PPP (constant 2021 international $), 1990 = 1×", fmt="x1", hl="VNM",
          ref=dict(value=100, label="1990 level", pos="left"),
-         narration="Start with the speed. {p} Since 1990, output per person in Vietnam has grown more than six times, after inflation. Indonesia's has about tripled. Thailand's and the Philippines', even less. {p} Among the big countries of Asia, only China grew faster. {p} In 1990, the average Vietnamese produced about a fifth of the world average, adjusted for prices. Today, about seventy percent. Indonesia went from about half, to about the same seventy. {pp} Vietnam's economy has grown almost seven percent a year, on average, for thirty-five years. In 2025 alone, it grew eight percent.",
+         narration="Start with the speed. {p} Since 1990, output per person in Vietnam has grown more than six times, after inflation. Indonesia's has about tripled. Thailand's and the Philippines', even less. {p} Among Asia's big economies, only China grew faster. {p} In 1990, the average Vietnamese produced about a fifth of the world average, adjusted for prices. Today, about seventy percent. Indonesia went from about half, to about the same seventy. {pp} Vietnam's economy has grown almost seven percent a year, on average, for thirty-five years. In 2025 alone, it grew eight percent.",
          keys=[dict(at="Since 1990", year=2025.0, dur=7.0)],
          labels=[dict(at="more than six times", iso="VNM", year=2025), dict(at="about tripled", iso="IDN", year=2025)],
          react=[dict(at="the speed", pose="idle"), dict(at="more than six times", pose="shock"), dict(at="even less", pose="pointL"), dict(at="only China", pose="pointUp"), dict(at="almost seven percent", pose="cheer")]),
@@ -121,7 +121,7 @@ checks = [
     dict(say="Indonesia about tripled", set="rpcx", iso="IDN", year=2025, min=290, max=330),
     dict(say="Thailand even less", set="rpcx", iso="THA", year=2025, max=289),
     dict(say="Philippines even less", set="rpcx", iso="PHL", year=2025, max=289),
-    dict(say="among big Asian countries only China grew faster", rule="rank", set="bigx", iso="VNM", year=2025, among=ASIA_BIG, equal=2),
+    dict(say="among big Asian economies (GDP > $300 bn) only China grew faster", rule="rank", set="bigx", iso="VNM", year=2025, among=ASIA_BIG, equal=2),
     dict(say="China first", rule="rank", set="bigx", iso="CHN", year=2025, among=ASIA_BIG, equal=1),
     dict(say="Vietnam ~7%/yr average 1990–2025 (sum of 36 years)", set="g9025", iso="VNM", year=0, min=36 * 6.5, max=36 * 6.99),
     dict(say="5% doubles in ~14 years", rule="expr", expr="round(__import__('math').log(2) / __import__('math').log(1.05))", equal=14),
@@ -155,11 +155,11 @@ checks = [
     dict(say="HCI IDN 0.54", set="hci", iso="IDN", year=2020, min=0.535, max=0.545),
     dict(say="VNM beats Malaysia", rule="gt", set="hci", a="VNM", b="MYS", year=2020),
     dict(say="VNM beats Thailand", rule="gt", set="hci", a="VNM", b="THA", year=2020),
-    dict(say="Malaysia far richer (2020, PPP)", rule="ratio", set="ppp", a="MYS", b="VNM", year=2020, min=2.0),
-    dict(say="Thailand far richer (2020, PPP)", rule="ratio", set="ppp", a="THA", b="VNM", year=2020, min=1.5),
+    dict(say="Malaysia far richer (2020, PPP)", rule="ratio", set="ppp", a="MYS", b="VNM", year=2020, min=2.0, max=9),
+    dict(say="Thailand far richer (2020, PPP)", rule="ratio", set="ppp", a="THA", b="VNM", year=2020, min=1.5, max=9),
     dict(say="IDN GDP almost 3× VNM (2025)", rule="ratio", set="gdp", a="IDN", b="VNM", year=2025, min=2.7, max=2.99),
     dict(say="IDN GDP ≈ $1.4T", set="gdp", iso="IDN", year=2025, min=1.4e12, max=1.49e12),
-    dict(say="biggest in Southeast Asia (vs THA)", rule="ratio", set="gdp", a="IDN", b="THA", year=2025, min=2),
+    dict(say="biggest in Southeast Asia (vs THA)", rule="ratio", set="gdp", a="IDN", b="THA", year=2025, min=2, max=9),
     dict(say="poverty 1990 almost 8 in 10", set="pov", iso="IDN", year=1990, min=75, max=79.99),
     dict(say="poverty 2025 < 4 in 100", set="pov", iso="IDN", year=2025, max=3.99),
     dict(say="1998 −13%", set="gdpg", iso="IDN", year=1998, min=-13.5, max=-12.5),

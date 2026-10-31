@@ -221,7 +221,7 @@
     "label": "1990 level",
     "pos": "left"
    },
-   "narration": "Start with the speed. {p} Since 1990, output per person in Vietnam has grown more than six times, after inflation. Indonesia's has about tripled. Thailand's and the Philippines', even less. {p} Among the big countries of Asia, only China grew faster. {p} In 1990, the average Vietnamese produced about a fifth of the world average, adjusted for prices. Today, about seventy percent. Indonesia went from about half, to about the same seventy. {pp} Vietnam's economy has grown almost seven percent a year, on average, for thirty-five years. In 2025 alone, it grew eight percent.",
+   "narration": "Start with the speed. {p} Since 1990, output per person in Vietnam has grown more than six times, after inflation. Indonesia's has about tripled. Thailand's and the Philippines', even less. {p} Among Asia's big economies, only China grew faster. {p} In 1990, the average Vietnamese produced about a fifth of the world average, adjusted for prices. Today, about seventy percent. Indonesia went from about half, to about the same seventy. {pp} Vietnam's economy has grown almost seven percent a year, on average, for thirty-five years. In 2025 alone, it grew eight percent.",
    "keys": [
     {
      "at": "Since 1990",
@@ -1081,25 +1081,30 @@
    "max": 289
   },
   {
-   "say": "among big Asian countries only China grew faster",
+   "say": "among big Asian economies (GDP > $300 bn) only China grew faster",
    "rule": "rank",
    "set": "bigx",
    "iso": "VNM",
    "year": 2025,
    "among": [
     "CHN",
-    "IND",
-    "IDN",
-    "PAK",
-    "BGD",
     "JPN",
+    "IND",
+    "KOR",
+    "IDN",
+    "TUR",
+    "SAU",
+    "THA",
+    "ISR",
+    "ARE",
+    "SGP",
     "PHL",
     "VNM",
-    "IRN",
-    "TUR",
-    "THA",
-    "MMR",
-    "KOR"
+    "MYS",
+    "BGD",
+    "PAK",
+    "HKG",
+    "IRN"
    ],
    "equal": 2
   },
@@ -1111,18 +1116,23 @@
    "year": 2025,
    "among": [
     "CHN",
-    "IND",
-    "IDN",
-    "PAK",
-    "BGD",
     "JPN",
+    "IND",
+    "KOR",
+    "IDN",
+    "TUR",
+    "SAU",
+    "THA",
+    "ISR",
+    "ARE",
+    "SGP",
     "PHL",
     "VNM",
-    "IRN",
-    "TUR",
-    "THA",
-    "MMR",
-    "KOR"
+    "MYS",
+    "BGD",
+    "PAK",
+    "HKG",
+    "IRN"
    ],
    "equal": 1
   },
@@ -1377,7 +1387,8 @@
    "a": "MYS",
    "b": "VNM",
    "year": 2020,
-   "min": 2.0
+   "min": 2.0,
+   "max": 9
   },
   {
    "say": "Thailand far richer (2020, PPP)",
@@ -1386,7 +1397,8 @@
    "a": "THA",
    "b": "VNM",
    "year": 2020,
-   "min": 1.5
+   "min": 1.5,
+   "max": 9
   },
   {
    "say": "IDN GDP almost 3× VNM (2025)",
@@ -1413,7 +1425,8 @@
    "a": "IDN",
    "b": "THA",
    "year": 2025,
-   "min": 2
+   "min": 2,
+   "max": 9
   },
   {
    "say": "poverty 1990 almost 8 in 10",
@@ -1875,18 +1888,23 @@
    "wb": "NY.GDP.PCAP.PP.KD",
    "isos": [
     "CHN",
-    "IND",
-    "IDN",
-    "PAK",
-    "BGD",
     "JPN",
+    "IND",
+    "KOR",
+    "IDN",
+    "TUR",
+    "SAU",
+    "THA",
+    "ISR",
+    "ARE",
+    "SGP",
     "PHL",
     "VNM",
-    "IRN",
-    "TUR",
-    "THA",
-    "MMR",
-    "KOR"
+    "MYS",
+    "BGD",
+    "PAK",
+    "HKG",
+    "IRN"
    ],
    "from": 1990,
    "to": 2025
@@ -1897,18 +1915,23 @@
    "src": "big",
    "isos": [
     "CHN",
-    "IND",
-    "IDN",
-    "PAK",
-    "BGD",
     "JPN",
+    "IND",
+    "KOR",
+    "IDN",
+    "TUR",
+    "SAU",
+    "THA",
+    "ISR",
+    "ARE",
+    "SGP",
     "PHL",
     "VNM",
-    "IRN",
-    "TUR",
-    "THA",
-    "MMR",
-    "KOR"
+    "MYS",
+    "BGD",
+    "PAK",
+    "HKG",
+    "IRN"
    ],
    "base": 1990,
    "off": 0

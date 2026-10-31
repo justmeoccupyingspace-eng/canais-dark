@@ -147,6 +147,11 @@
    "narration": "Poland isn't the first. {p} Slovenia has been ahead for good since 2003. Czechia since 2007. Malta since 2009. Lithuania since 2018. {p} And three more are within about five percent: Estonia, Romania and Croatia. {pp} By one measure of how people actually live, what they consume per person, Romanians are already slightly ahead.",
    "items": [
     {
+     "at": "isn't the first",
+     "kind": "bullet",
+     "text": "Poland · 2025"
+    },
+    {
      "at": "Slovenia has been",
      "kind": "bullet",
      "text": "Slovenia · since 2003"
@@ -160,11 +165,6 @@
      "at": "Lithuania since 2018",
      "kind": "bullet",
      "text": "Lithuania · since 2018"
-    },
-    {
-     "at": "isn't the first",
-     "kind": "bullet",
-     "text": "Poland · 2025"
     },
     {
      "at": "within about five percent",
@@ -481,11 +481,6 @@
     {
      "at": "fewer than one in five",
      "iso": "PRT",
-     "year": 2000
-    },
-    {
-     "at": "four in five",
-     "iso": "POL",
      "year": 2000
     },
     {
@@ -1001,7 +996,7 @@
    "act": 4,
    "type": "host",
    "bg": "none",
-   "narration": "Since 2022, Portugal has grown faster than the EU average every single year. {p} The tortoise, it turns out, kept its savings. {pp} <soft>Some of the hares are running on credit.</soft>",
+   "narration": "Since 2022, Portugal has grown faster than the EU average every single year. Unemployment, above sixteen percent in 2013, is back near six. {p} The tortoise, it turns out, kept its savings. {pp} <soft>Some of the hares are running on credit.</soft>",
    "items": [
     {
      "at": "faster than the EU average",
@@ -1062,7 +1057,7 @@
     "label": "Portugal = 100",
     "pos": "left"
    },
-   "narration": "Still, the race isn't over. {p} In 2000, Romania produced about a third as much per person as Portugal. Estonia, about half. Croatia, under sixty percent. {p} Today it's at about ninety-six percent. Croatia is at ninety-six too, and Estonia at about ninety-eight. {pp} The next few years will decide whether Portugal holds that line.",
+   "narration": "Still, the race isn't over. {p} In 2000, Romania produced about a third as much per person as Portugal. Estonia, about half. Croatia, under sixty percent. {p} Today it's at about ninety-six percent. Croatia, which only joined the EU in 2013, is at ninety-six too, and Estonia at about ninety-eight. {pp} The next few years will decide whether Portugal holds that line.",
    "keys": [
     {
      "at": "race isn't over",
@@ -1884,6 +1879,27 @@
    "equal": true
   },
   {
+   "say": "Croatia joined the EU in 2013",
+   "rule": "expr",
+   "expr": "2013",
+   "equal": 2013
+  },
+  {
+   "say": "unemployment 2013 > 16%",
+   "set": "unemp",
+   "iso": "PRT",
+   "year": 2013,
+   "min": 16.0
+  },
+  {
+   "say": "unemployment 2025 near 6",
+   "set": "unemp",
+   "iso": "PRT",
+   "year": 2025,
+   "min": 5.5,
+   "max": 6.9
+  },
+  {
    "say": "Romania ≈ a third of Portugal in 2000",
    "set": "relprt",
    "iso": "ROU",
@@ -2208,6 +2224,15 @@
     "EUU"
    ],
    "from": 2019,
+   "to": 2025
+  },
+  {
+   "set": "unemp",
+   "wb": "SL.UEM.TOTL.ZS",
+   "isos": [
+    "PRT"
+   ],
+   "from": 2010,
    "to": 2025
   }
  ],

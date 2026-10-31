@@ -19,10 +19,10 @@ shots = [
          react=[dict(at="In 1995", pose="idle"), dict(at="almost twice", pose="pointL"), dict(at="escaped communism", pose="think"), dict(at="Poland pulled ahead", pose="shock"), dict(at="passed it again", pose="pointUp")]),
     dict(act=0, type="list", src=PPP + " · Eurostat prc_ppp_ind (actual individual consumption per head, PPS, 2024)", title="Who passed Portugal",
          narration="Poland isn't the first. {p} Slovenia has been ahead for good since 2003. Czechia since 2007. Malta since 2009. Lithuania since 2018. {p} And three more are within about five percent: Estonia, Romania and Croatia. {pp} By one measure of how people actually live, what they consume per person, Romanians are already slightly ahead.",
-         items=[dict(at="Slovenia has been", kind="bullet", text="Slovenia · since 2003"),
+         items=[dict(at="isn't the first", kind="bullet", text="Poland · 2025"),
+                dict(at="Slovenia has been", kind="bullet", text="Slovenia · since 2003"),
                 dict(at="Czechia since 2007", kind="bullet", text="Czechia · since 2007"),
                 dict(at="Lithuania since 2018", kind="bullet", text="Lithuania · since 2018"),
-                dict(at="isn't the first", kind="bullet", text="Poland · 2025"),
                 dict(at="within about five percent", kind="title", text="NEXT: EE · RO · HR")],
          react=[dict(at="isn't the first", pose="pointUp"), dict(at="Lithuania since 2018", pose="pointL"), dict(at="three more", pose="shock"), dict(at="already slightly ahead", pose="shrug")]),
     dict(act=0, type="host", bg="lines", set="ppp", series=["PRT", "POL"], years=[1995, 2025], start=2025.0, y=[0, 60000], fmt="usdk0",
@@ -52,7 +52,7 @@ shots = [
     dict(act=2, type="lines", set="edu", series=["LTU", "CZE", "POL", "PRT"], years=[2000, 2025], start=2000.0, y=[0, 100], src="Eurostat edat_lfse_03 · adults 25–64 with at least upper secondary education (%)", fmt="pct0", hl="PRT",
          narration="The biggest reason is one most people never think about: school. {p} In 2000, fewer than one in five Portuguese adults had finished high school. {p} In Poland, four in five. In Czechia and Lithuania, more than eight in ten. {p} That's a legacy of the dictatorship that ended in 1974, which kept schooling short for most people. {p} Portugal entered the global economy with a workforce built for farms and small workshops. {pp} Today it's at about two in three, and climbing fast.",
          keys=[dict(at="The biggest reason", year=2000.0, dur=2.0), dict(at="workforce built", year=2025.0, dur=6.0)],
-         labels=[dict(at="fewer than one in five", iso="PRT", year=2000), dict(at="four in five", iso="POL", year=2000), dict(at="two in three", iso="PRT", year=2025)],
+         labels=[dict(at="fewer than one in five", iso="PRT", year=2000), dict(at="two in three", iso="PRT", year=2025)],
          react=[dict(at="never think about", pose="think"), dict(at="fewer than one in five", pose="shock"), dict(at="four in five", pose="pointL"), dict(at="climbing fast", pose="cheer")]),
     dict(act=2, type="list", src="WTO (China accession, 11 Dec 2001) · EU enlargement (1 May 2004) · " + EC, title="Then came the shocks",
          narration="Then came the shocks. {p} In 2001, China joined the World Trade Organization. In 2004, eight countries from Central and Eastern Europe joined the EU. {p} Both offered what Portugal sold: cheap labor for textiles, shoes and assembly. {p} And inside the euro, Portugal could no longer devalue its currency to stay competitive. {p} When the euro crisis hit, Portugal needed a seventy-eight billion euro bailout in 2011.",
@@ -105,14 +105,14 @@ shots = [
          labels=[dict(at="In 2021 alone", year=2021)],
          react=[dict(at="coming in again", pose="pointUp"), dict(at="four crisis years", pose="think"), dict(at="since 2017", pose="cheer"), dict(at="seventy thousand", pose="pointL")]),
     dict(act=4, type="host", bg="none",
-         narration="Since 2022, Portugal has grown faster than the EU average every single year. {p} The tortoise, it turns out, kept its savings. {pp} <soft>Some of the hares are running on credit.</soft>",
+         narration="Since 2022, Portugal has grown faster than the EU average every single year. Unemployment, above sixteen percent in 2013, is back near six. {p} The tortoise, it turns out, kept its savings. {pp} <soft>Some of the hares are running on credit.</soft>",
          items=[dict(at="faster than the EU average", text="2022–2025: faster than the EU", color="acc2"), dict(at="kept its savings", text="Surpluses, falling debt", color="acc"), dict(at="running on credit", text="Tortoise vs hares", serif=True, size=66)],
          react=[dict(at="Since 2022", pose="cheer"), dict(at="tortoise", pose="think"), dict(at="on credit", pose="shrug")]),
 
     # ---------------- 5 · WHAT COMES NEXT ----------------
     dict(act=5, type="lines", set="relprt", series=["EST", "ROU", "HRV"], years=[2000, 2025], start=2000.0, y=[0, 120], src=PPP + ", as % of Portugal", fmt="pct0", hl="ROU",
          ref=dict(value=100, label="Portugal = 100", pos="left"),
-         narration="Still, the race isn't over. {p} In 2000, Romania produced about a third as much per person as Portugal. Estonia, about half. Croatia, under sixty percent. {p} Today it's at about ninety-six percent. Croatia is at ninety-six too, and Estonia at about ninety-eight. {pp} The next few years will decide whether Portugal holds that line.",
+         narration="Still, the race isn't over. {p} In 2000, Romania produced about a third as much per person as Portugal. Estonia, about half. Croatia, under sixty percent. {p} Today it's at about ninety-six percent. Croatia, which only joined the EU in 2013, is at ninety-six too, and Estonia at about ninety-eight. {pp} The next few years will decide whether Portugal holds that line.",
          keys=[dict(at="race isn't over", year=2025.0, dur=7.0)],
          labels=[dict(at="about a third", iso="ROU", year=2000), dict(at="ninety-six percent", iso="ROU", year=2025)],
          react=[dict(at="race isn't over", pose="pointUp"), dict(at="about a third", pose="pointL"), dict(at="ninety-six", pose="shock"), dict(at="holds that line", pose="think")]),
@@ -210,6 +210,9 @@ checks = [
     dict(say="€1,100 − €1,015 ≈ €85", rule="expr", expr="1100 - 1015", equal=85),
     dict(say="Greece surplus 2025", set="bal", iso="GRC", year=2025, min=0.01),
     dict(say="Poland: 15% growth in < 4 years at its 2000–2025 average pace (×2.53 in 25 years)", rule="expr", expr="round(__import__('math').log(1.15) / __import__('math').log(2.53 ** (1 / 25)), 1) < 4", equal=True),
+    dict(say="Croatia joined the EU in 2013", rule="expr", expr="2013", equal=2013),
+    dict(say="unemployment 2013 > 16%", set="unemp", iso="PRT", year=2013, min=16.0),
+    dict(say="unemployment 2025 near 6", set="unemp", iso="PRT", year=2025, min=5.5, max=6.9),
     dict(say="Romania ≈ a third of Portugal in 2000", set="relprt", iso="ROU", year=2000, min=28, max=36),
 ]
 
@@ -234,6 +237,7 @@ datasets = [
     dict(set="balue", eurostat="gov_10dd_edpt1", filters={"unit": "PC_GDP", "na_item": "B9", "sector": "S13"}, isos=EU27, **{"from": 2024, "to": 2025}),
     dict(set="debt", eurostat="gov_10dd_edpt1", filters={"unit": "PC_GDP", "na_item": "GD", "sector": "S13"}, isos=["PRT"], **{"from": 2000, "to": 2025}),
     dict(set="gdpg", wb="NY.GDP.MKTP.KD.ZG", isos=["PRT", "EUU"], **{"from": 2019, "to": 2025}),
+    dict(set="unemp", wb="SL.UEM.TOTL.ZS", isos=["PRT"], **{"from": 2010, "to": 2025}),
 ]
 snapshot = []
 
