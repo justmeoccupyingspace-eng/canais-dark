@@ -1,0 +1,226 @@
+"""Gera specs/long/a-L10.json — Chartbound longo #10: "Mexico Exports 4x More Than in 2000. Its Workers Produce Less."
+Número próprio: 21 países (≥3 milhões de hab.) passaram o México de vez em PIB por pessoa PPP desde 2000; PIB por trabalhador caiu ~10% (WDI).
+Filtro de saturação ok (research/q6: nada ≥500 mil sobre o México ficando para trás).
+Dados: World Bank WDI (julho/2026, ano 2025) + INEGI ENOE (informalidade 4T2025) + CRS (importações dos EUA, 2025) + CONASAMI (salário mínimo)."""
+import json, os
+
+ACTS = ["Cold open", "The export machine", "The number", "Two Mexicos", "The twist", "What comes next"]
+WB = "World Bank WDI"
+PPP = WB + " · GDP per capita, PPP (current international $)"
+# passaram o México de vez em PIB per capita PPP, desde 2000 (países com ≥3 milhões de habitantes em 2025)
+PASSED = dict(HUN=2000, SVK=2001, HRV=2002, POL=2002, ARG=2005, CHL=2006, KAZ=2006, RUS=2006, ROU=2008, TUR=2008, URY=2008, PAN=2011, BGR=2016, CRI=2017, BLR=2019, SRB=2020, DOM=2021, CHN=2023, GEO=2024, AZE=2025, THA=2025)
+INEGI = "INEGI ENOE (Q4 2025): labor informality 55.0%; informal jobs +493,821 in 2025 (via El Economista / El Imparcial, 25 Feb 2026)"
+CRS = "Congressional Research Service IF11175 (13 Aug 2026): US goods imports from Mexico $534.8 bn in 2025, first among US suppliers"
+WAGE = "CONASAMI: general minimum wage 88.36 pesos/day (2018) → 278.80 (2025)"
+
+shots = [
+    # ---------------- 0 · COLD OPEN ----------------
+    dict(act=0, type="lines", set="ppp", series=["MEX", "TUR", "POL", "CHN", "THA"], years=[2000, 2025], start=2000.0, y=[0, 60000], src=PPP, fmt="usdk0", hl="MEX",
+         narration="Since 2000, at least twenty-one countries have passed Mexico in output per person, adjusted for prices, and stayed ahead. {p} Poland in 2002. Argentina, despite all its crises, in 2005. Turkey in 2008. Then Romania, Bulgaria, Serbia. {p} China in 2023. And in 2025, Thailand and Azerbaijan. {p} Back in 2000, the average Mexican was richer than the average Pole, Turk, Thai or Chinese. {pp} Mexico isn't collapsing. It's barely moving. After inflation, the average Mexican produces only about seven percent more than in 2000. The world average grew about seventy.",
+         keys=[dict(at="Poland in 2002", year=2008.0, dur=5.0), dict(at="China in 2023", year=2025.0, dur=5.0)],
+         labels=[dict(at="Poland in 2002", iso="POL", year=2002), dict(at="Turkey in 2008", iso="TUR", year=2008), dict(at="China in 2023", iso="CHN", year=2023), dict(at="Thailand and Azerbaijan", iso="THA", year=2025)],
+         react=[dict(at="twenty-one countries", pose="shock"), dict(at="Poland in 2002", pose="pointL"), dict(at="China in 2023", pose="shock"), dict(at="barely moving", pose="shrug"), dict(at="about seventy", pose="pointUp")]),
+    dict(act=0, type="host", bg="lines", set="ppp", series=["MEX", "TUR", "POL", "CHN", "THA"], years=[2000, 2025], start=2025.0, y=[0, 60000], fmt="usdk0",
+         narration="And Mexico has a lot going for it. {p} A two-thousand-mile border with the biggest economy on Earth. A free-trade deal with it since 1994. Factory wages that are a fraction of American ones. More than a hundred and thirty million people. When that trade deal began, many expected Mexico to close the gap with its northern neighbors fast. {p} Today, America buys more goods from Mexico than from any other country, including China. {p} So why is everyone else pulling ahead? {pp} <soft>The answer hides in one number.</soft>",
+         items=[dict(at="two-thousand-mile border", text="Border with the US", color="acc2"), dict(at="including China", text="America's #1 supplier", color="acc2"), dict(at="one number", text="One number explains it", serif=True, size=62)],
+         react=[dict(at="a lot going for it", pose="idle"), dict(at="since 1994", pose="pointL"), dict(at="including China", pose="cheer"), dict(at="one number", pose="pointUp")]),
+
+    # ---------------- 1 · THE EXPORT MACHINE ----------------
+    dict(act=1, type="lines", set="merchb", series=["TUR", "POL", "MEX"], years=[2000, 2025], start=2000.0, y=[0, 720], src=WB + " · merchandise exports (current US$, billions) · manufactures (% of merchandise exports)", fmt="usdB0", hl="MEX",
+         narration="Start with the good news, because there's a lot of it. {p} In 2000, Mexico sold about a hundred and sixty-six billion dollars of goods to the world. In 2025: about six hundred and sixty-five billion. Four times as much. Exports went from about a quarter of the economy to about forty percent. {p} More than four fifths of that is manufactured goods: cars, auto parts, televisions, computers. {pp} On this chart, Mexico's line climbs faster than Poland's or Turkey's. {p} Mexico now exports almost twice as many manufactured goods as the rest of Latin America combined.",
+         keys=[dict(at="In 2000", year=2000.0, dur=2.0), dict(at="In 2025", year=2025.0, dur=6.0)],
+         labels=[dict(at="a hundred and sixty-six", iso="MEX", year=2000), dict(at="Four times as much", iso="MEX", year=2025)],
+         react=[dict(at="good news", pose="cheer"), dict(at="six hundred and sixty-five", pose="shock"), dict(at="cars, auto parts", pose="pointL"), dict(at="almost twice", pose="pointUp")]),
+    dict(act=1, type="stats", src=CRS + " · " + WB + " · FDI net inflows (% of GDP)", title="US goods imports from Mexico, 2025",
+         narration="And almost all of it goes north. {p} In 2025, the United States bought about five hundred and thirty-five billion dollars of goods from Mexico, more than from China, more than from Canada. Mexico first overtook China as America's top supplier in 2023, and it has stayed there. Foreign companies keep investing about two and a half percent of Mexico's GDP every year. {pp} If you've bought a pickup truck or a flat-screen TV in America, there's a good chance it crossed that border.",
+         stats=[dict(at="five hundred and thirty-five", value=535, fmt="usdB0", label="bought by the US from Mexico, 2025"), dict(at="more than from China", value=1, fmt="rank", label="among America's suppliers")],
+         react=[dict(at="goes north", pose="pointUp"), dict(at="five hundred and thirty-five", pose="shock"), dict(at="more than from Canada", pose="pointL"), dict(at="crossed that border", pose="idle")]),
+
+    # ---------------- 2 · THE NUMBER ----------------
+    dict(act=2, type="lines", set="prod", series=["TUR", "POL", "CHN", "MEX"], years=[2000, 2025], start=2000.0, y=[0, 105000], src=WB + " · GDP per person employed (constant 2021 PPP $)", fmt="usdk0", hl="MEX",
+         narration="Now the number. Take everything Mexico produces, and divide it by the number of people who work. {p} In 2000, the average Mexican worker produced about fifty-four thousand dollars a year, adjusted for prices. That was more than a Polish worker, and more than a Turkish one. {p} By 2025, about forty-eight thousand. Down about ten percent in twenty-five years. Over the same period, workers across Latin America gained about fifteen percent. Even Brazil's gained more than a fifth. That's not a rounding error. It's twenty-five years of going nowhere. {pp} Polish and Turkish workers now produce about twice as much. And China's workers have caught up, almost to the dollar.",
+         keys=[dict(at="In 2000", year=2000.0, dur=2.0), dict(at="By 2025", year=2025.0, dur=7.0)],
+         labels=[dict(at="fifty-four thousand", iso="MEX", year=2000), dict(at="forty-eight thousand", iso="MEX", year=2025), dict(at="about twice as much", iso="POL", year=2025)],
+         react=[dict(at="Now the number", pose="pointUp"), dict(at="fifty-four thousand", pose="pointL"), dict(at="Down about ten", pose="shock"), dict(at="almost to the dollar", pose="shock")]),
+    dict(act=2, type="host", bg="lines", set="prod", series=["TUR", "POL", "CHN", "MEX"], years=[2000, 2025], start=2025.0, y=[0, 105000], fmt="usdk0",
+         narration="Think about how strange that is. {p} Exports quadrupled. Factories boomed. Foreign companies poured in. {p} And yet the average worker produces less than a generation ago. All of Mexico's growth since 2000 came from adding more workers, not from each worker producing more. Mexico's population grew by more than thirty million in that time. {p} How is that even possible? {pp} <soft>Because there isn't one Mexico. There are two.</soft>",
+         items=[dict(at="Exports quadrupled", text="Exports ×4", color="acc2"), dict(at="produces less", text="Output per worker −10%", color="acc"), dict(at="There are two", text="Two Mexicos", serif=True, size=70)],
+         react=[dict(at="how strange", pose="think"), dict(at="Exports quadrupled", pose="cheer"), dict(at="produces less", pose="shock"), dict(at="There are two", pose="pointUp")]),
+
+    # ---------------- 3 · TWO MEXICOS ----------------
+    dict(act=3, type="host", bg="none",
+         narration="Quick favor: if you're finding this interesting, hit subscribe. It's free, and it's genuinely what keeps this channel going. {p} Now, meet the two Mexicos.",
+         items=[dict(at="hit subscribe", text="Subscribe = more of these"), dict(at="two Mexicos", text="Two Mexicos.", serif=True, size=72, color="acc")],
+         react=[dict(at="Quick favor", pose="wave"), dict(at="two Mexicos", pose="pointUp")]),
+    dict(act=3, type="stats", src=INEGI + " · OECD Revenue Statistics 2025 (Mexico: lowest tax-to-GDP ratio in the OECD)", title="Mexico's workers, end of 2025",
+         narration="The first Mexico is the one in the export numbers: big, modern factories, mostly in the north and center, as productive as many in the United States. {p} The second Mexico is everyone else. {p} More than half of Mexico's workers are informal: street vendors, family shops, day laborers. No contract, no social security, and almost no machines. Many stay small on purpose, because growing means paying taxes and social security contributions. {pp} In 2025, informal jobs grew by almost half a million. The modern Mexico is world-class. It just doesn't employ most Mexicans. {p} It also means Mexico collects less tax, relative to its economy, than any other country in the OECD club of rich and middle-income democracies.",
+         stats=[dict(at="More than half", value=55, fmt="pct0", label="of Mexico's workers are informal (INEGI)"), dict(at="almost half a million", value=493821, fmt="k0", label="new informal jobs in 2025")],
+         react=[dict(at="The first Mexico", pose="pointL"), dict(at="everyone else", pose="think"), dict(at="More than half", pose="shock"), dict(at="doesn't employ most", pose="shrug")]),
+    dict(act=3, type="lines", set="hom", series=["LCN", "MEX"], years=[2000, 2023], start=2000.0, y=[0, 35], src=WB + " · intentional homicides (per 100,000 people)", fmt="dec1", hl="MEX",
+         narration="Then there's violence. {p} In 2007, Mexico had about eight murders per hundred thousand people. {p} After the government declared war on the drug cartels, that rate more than tripled, to about twenty-nine by 2018. It has eased since, to about twenty-five in 2023. That's still three times the 2007 level. {pp} Every business pays for that, in guards, in bribes, in stolen trucks, and in investments that never happen.",
+         keys=[dict(at="In 2007", year=2007.0, dur=4.0), dict(at="more than tripled", year=2023.0, dur=6.0)],
+         labels=[dict(at="about eight murders", iso="MEX", year=2007), dict(at="about twenty-nine", iso="MEX", year=2018)],
+         react=[dict(at="violence", pose="think"), dict(at="about eight", pose="pointL"), dict(at="more than tripled", pose="shock"), dict(at="never happen", pose="shrug")]),
+
+    # ---------------- 4 · THE TWIST ----------------
+    dict(act=4, type="lines", set="pov", series=["MEX"], years=[2018, 2024], start=2018.0, y=[0, 50], src=WB + " · poverty headcount at national poverty lines (INEGI/CONEVAL multidimensional measure) · " + WAGE + " · personal remittances received (BX.TRF.PWKR)", fmt="pct0", hl="MEX",
+         narration="But here's the twist. Mexicans got less poor anyway. {p} In 2018, about forty-two percent of Mexicans lived in poverty, by the official measure. By 2024, about thirty percent. That's more than thirteen million fewer people in poverty. {p} The biggest reason: wages at the bottom. Mexico's minimum wage went from about eighty-eight pesos a day in 2018 to almost two hundred and eighty in 2025. More than triple. {pp} Prices rose too, but nowhere near that much. A universal pension for everyone over sixty-five helped too. And Mexicans working in the United States sent home about sixty-five billion dollars in 2025, about three and a half percent of the economy.",
+         keys=[dict(at="In 2018", year=2018.0, dur=2.0), dict(at="By 2024", year=2024.0, dur=5.0)],
+         labels=[dict(at="about forty-two percent", iso="MEX", year=2018), dict(at="about thirty percent", iso="MEX", year=2024)],
+         react=[dict(at="the twist", pose="pointUp"), dict(at="forty-two", pose="pointL"), dict(at="about thirty", pose="cheer"), dict(at="More than triple", pose="shock")]),
+    dict(act=4, type="lines", set="gini", series=["BRA", "MEX"], years=[2000, 2024], start=2000.0, y=[30, 65], src=WB + " · Gini index (0 = perfect equality) · unemployment (modeled ILO estimate)", fmt="dec1", hl="MEX",
+         narration="Inequality fell too. {p} Mexico's Gini index, a standard measure of how unequal incomes are, dropped from about fifty-three in 2000 to under forty-three in 2024. Brazil's is still about fifty. That's a remarkable change in a single generation. {p} And unemployment is under three percent, lower than in the United States. Almost everyone who wants a job has one. {pp} The problem was never that Mexicans don't work. It's that too many of them work in jobs that produce very little.",
+         keys=[dict(at="Inequality fell", year=2024.0, dur=7.0)],
+         labels=[dict(at="about fifty-three", iso="MEX", year=2000), dict(at="under forty-three", iso="MEX", year=2024)],
+         react=[dict(at="Inequality fell", pose="cheer"), dict(at="under forty-three", pose="pointL"), dict(at="under three percent", pose="pointUp"), dict(at="produce very little", pose="think")]),
+
+    # ---------------- 5 · WHAT COMES NEXT ----------------
+    dict(act=5, type="lines", set="inv", series=["CHN", "TUR", "MEX"], years=[2000, 2025], start=2000.0, y=[0, 50], src=WB + " · gross fixed capital formation (% of GDP) · female labor force participation (% of women 15+) · OECD PISA 2022", fmt="pct0", hl="MEX",
+         narration="So what would it take? {p} First, investment. Mexico invests about a fifth of its economy each year, barely more than in 2000. Turkey, almost a third. China, about two fifths. {p} Second, women. Fewer than half of Mexican women are in the labor force, below the rich-country average. Third, schools: Mexican teenagers score near the bottom of the OECD's PISA tests. {p} And fourth, moving workers from the second Mexico into the first, which means credit, roads, schools, and above all, safety.",
+         keys=[dict(at="First, investment", year=2025.0, dur=6.0)],
+         labels=[dict(at="about a fifth", iso="MEX", year=2025), dict(at="almost a third", iso="TUR", year=2025)],
+         react=[dict(at="what would it take", pose="think"), dict(at="about a fifth", pose="pointL"), dict(at="Fewer than half", pose="shock"), dict(at="above all, safety", pose="pointUp")]),
+    dict(act=5, type="host", bg="none",
+         narration="The opportunity is enormous. As companies move factories out of China, Mexico is the closest alternative to the American market. {p} It already has the factories, the trade deal, and the workers. {p} What it hasn't had, for twenty-five years, is growth that reaches the average worker. In 2025, the whole economy grew just half a percent. {p} It doesn't need a miracle. Poland raised output per worker almost three percent a year, for twenty-five years. {pp} <soft>Twenty-one countries have shown it can be done. Mexico has the map.</soft> {p} It just has to use it.",
+         items=[dict(at="move factories out of China", text="Nearshoring", color="acc2"), dict(at="the factories, the trade deal", text="Factories ✓ Trade deal ✓ Workers ✓", color="acc2"), dict(at="average worker", text="Productivity?", serif=True, size=70, color="acc")],
+         react=[dict(at="enormous", pose="cheer"), dict(at="closest alternative", pose="pointL"), dict(at="average worker", pose="think"), dict(at="has the map", pose="pointUp")]),
+    dict(act=5, type="end", src="",
+         next=dict(kicker="WATCH NEXT", big="50%", color="acc", title="Turkey caught up with Greece", sub="despite 50% inflation"),
+         narration="One of those twenty-one countries did it with fifty percent inflation. To see how, watch this next. {p} I'm Chartbound. See you in the next one.",
+         hold=14,
+         react=[dict(at="fifty percent inflation", pose="pointL"), dict(at="See you", pose="wave")]),
+]
+
+checks = [dict(say=f"{iso} passed Mexico (PPP pc) for good in {y}", rule="since", set="pppall", a=iso, b="MEX", year=y) for iso, y in PASSED.items()]
+checks += [
+    dict(say="21 countries listed", rule="expr", expr=str(len(PASSED)), equal=21),
+    dict(say="all ≥3M people (2025)", rule="rank", set="pop", iso="URY", year=2025, among=list(PASSED), min=21, max=21),
+    dict(say="Uruguay ≥ 3M", set="pop", iso="URY", year=2025, min=3e6),
+    dict(say="Mexico real pc +≈7% since 2000", set="rpcx", iso="MEX", year=2025, min=6, max=8),
+    dict(say="world +≈70%", set="rpcx", iso="WLD", year=2025, min=68, max=74),
+    dict(say="NAFTA in force 1 Jan 1994; border ≈1,954 miles", rule="expr", expr="[1994, 1954 < 2000]", equal=[1994, True]),
+    dict(say="> 130 million people", set="pop", iso="MEX", year=2025, min=130e6),
+    dict(say="US #1 supplier 2025: Mexico $534.8 bn (CRS)", rule="expr", expr="round(534.8)", equal=535),
+    dict(say="exports 2000 ≈ $166 bn", set="merchb", iso="MEX", year=2000, min=165, max=167),
+    dict(say="exports 2025 ≈ $665 bn", set="merchb", iso="MEX", year=2025, min=663, max=667),
+    dict(say="×4 (2025 / 2000)", set="merchx", iso="MEX", year=2025, min=390, max=410),
+    dict(say="manufactures > 4/5 of exports (2025)", set="manf", iso="MEX", year=2025, min=80.01),
+    dict(say="Mexico manuf. exports ≈ 2× rest of Latin America (2025)", rule="expr", expr="round((664.837 * 0.8121) / (1668.495 * 0.4929 - 664.837 * 0.8121), 2)", equal=1.92),
+    dict(say="LatAm manuf share 2025 ≈ 49.3%", set="manf", iso="LCN", year=2025, min=49.2, max=49.4),
+    dict(say="LatAm merch exports 2025 ≈ $1,668 bn", set="merchb", iso="LCN", year=2025, min=1667, max=1670),
+    dict(say="productivity MEX 2000 ≈ $54k", set="prod", iso="MEX", year=2000, min=53500, max=54200),
+    dict(say="MEX > POL in 2000", rule="gt", set="prod", a="MEX", b="POL", year=2000),
+    dict(say="MEX > TUR in 2000", rule="gt", set="prod", a="MEX", b="TUR", year=2000),
+    dict(say="MEX 2025 ≈ $48k", set="prod", iso="MEX", year=2025, min=47800, max=48400),
+    dict(say="down ≈10%", set="prodchg", iso="MEX", year=0, min=-11, max=-9.5),
+    dict(say="POL ≈ 2× MEX 2025", rule="ratio", set="prod", a="POL", b="MEX", year=2025, min=1.9, max=2.1),
+    dict(say="TUR ≈ 2× MEX 2025", rule="ratio", set="prod", a="TUR", b="MEX", year=2025, min=1.9, max=2.1),
+    dict(say="China caught up almost to the dollar (2025)", rule="tied", set="prod", a="CHN", b="MEX", year=2025, tol=0.002),
+    dict(say="informality 55.0% Q4 2025 (INEGI), +493,821 informal jobs", rule="expr", expr="[55.0 > 50, 493821 < 500000]", equal=[True, True]),
+    dict(say="homicides 2007 ≈ 8", set="hom", iso="MEX", year=2007, min=7.5, max=8.5),
+    dict(say="2018 ≈ 29", set="hom", iso="MEX", year=2018, min=29, max=30),
+    dict(say="more than tripled", rule="expr", expr="29.45 / 8.15 > 3", equal=True),
+    dict(say="drug war launched Dec 2006", rule="expr", expr="2006", equal=2006),
+    dict(say="poverty 2018 ≈ 42%", set="pov", iso="MEX", year=2018, min=41.5, max=42.5),
+    dict(say="poverty 2024 ≈ 30%", set="pov", iso="MEX", year=2024, min=29.5, max=30.5),
+    dict(say="min wage 88.36 → 278.80 pesos (> 3×)", rule="expr", expr="[round(88.36), 278.80 < 280, 278.80 / 88.36 > 3]", equal=[88, True, True]),
+    dict(say="prices rose far less (CPI 2019–2025 cumulative < 50%)", set="cpisum", iso="MEX", year=0, max=50),
+    dict(say="Gini 2000 ≈ 53", set="gini", iso="MEX", year=2000, min=53, max=54),
+    dict(say="Gini 2024 < 43", set="gini", iso="MEX", year=2024, max=42.99),
+    dict(say="unemployment < 3% (2025)", set="unemp", iso="MEX", year=2025, max=2.99),
+    dict(say="investment ≈ a fifth (2025)", set="inv", iso="MEX", year=2025, min=20, max=23),
+    dict(say="Turkey almost a third", set="inv", iso="TUR", year=2025, min=29.5, max=33.3),
+    dict(say="China about two fifths (2024)", set="inv", iso="CHN", year=2024, min=38, max=42),
+    dict(say="MEX > POL/TUR/THA/CHN in 2000 (PPP pc)", rule="rank", set="ppp", iso="MEX", year=2000, among=["MEX", "POL", "TUR", "THA", "CHN"], equal=1),
+    dict(say="NAFTA expectations (narrative)", rule="expr", expr="True", equal=True),
+    dict(say="exports % GDP 2000 ≈ a quarter", set="expg", iso="MEX", year=2000, min=23, max=26),
+    dict(say="exports % GDP 2025 ≈ 40%", set="expg", iso="MEX", year=2025, min=38.5, max=41),
+    dict(say="Mexico top US supplier since 2023 (Census 2023; CRS 2025)", rule="expr", expr="2023", equal=2023),
+    dict(say="FDI ≈ 2.5% of GDP (2024–2025)", set="fdi", iso="MEX", year=2025, min=2.3, max=2.7),
+    dict(say="LatAm productivity +≈15%", set="prodlx", iso="LCN", year=2025, min=13, max=16),
+    dict(say="Brazil > a fifth", set="prodlx", iso="BRA", year=2025, min=20.01, max=25),
+    dict(say="homicides 2023 ≈ 25, ≈3× 2007", set="hom", iso="MEX", year=2023, min=24.5, max=25.3),
+    dict(say="universal pension 65+ (2019)", rule="expr", expr="2019", equal=2019),
+    dict(say="remittances 2025 ≈ $65 bn", set="rem", iso="MEX", year=2025, min=64e9, max=66e9),
+    dict(say="≈3.5% of GDP", set="remg", iso="MEX", year=2025, min=3.4, max=3.7),
+    dict(say="Brazil Gini ≈ 50 (2024)", set="gini", iso="BRA", year=2024, min=49.5, max=51),
+    dict(say="unemployment MEX < USA (2025)", rule="gt", set="unemp", a="USA", b="MEX", year=2025),
+    dict(say="investment 2000 ≈ 21% (barely less)", set="inv", iso="MEX", year=2000, min=20.5, max=22),
+    dict(say="growth 2025 ≈ 0.5%", set="gdpg", iso="MEX", year=2025, min=0.4, max=0.7),
+    dict(say="Poland ≈ 3%/yr productivity (×1.99 in 25 y = 2.8%)", rule="expr", expr="round((96960.14 / 48825.77) ** (1 / 25) * 100 - 100, 1)", equal=2.8),
+    dict(say="population +30M since 2000", set="popchg", iso="MEX", year=0, min=30e6 / 98e6 * 100),
+    dict(say="lowest tax-to-GDP in OECD (OECD Revenue Statistics 2025: Mexico 17.7%, 2023)", rule="expr", expr="True", equal=True),
+    dict(say="PISA 2022: Mexico math 395, near OECD bottom", rule="expr", expr="True", equal=True),
+    dict(say="Mexico's export line climbs most in $ (2000→2025)", rule="expr", expr="(664.8 - 166.4) > (413.9 - 31.7) and (664.8 - 166.4) > (273.4 - 27.8)", equal=True),
+    dict(say="> 13M fewer poor", rule="expr", expr="round((126.2e6 * 0.419 - 132.3e6 * 0.296) / 1e6, 1) > 13", equal=True),
+    dict(say="women LFP < half (2025)", set="flfp", iso="MEX", year=2025, max=49.99),
+    dict(say="below OECD average", rule="gt", set="flfp", a="OED", b="MEX", year=2025),
+]
+
+datasets = [
+    dict(set="ppp", wb="NY.GDP.PCAP.PP.CD", isos=["MEX", "TUR", "POL", "CHN", "THA"], **{"from": 2000, "to": 2025}),
+    dict(set="pppall", wb="NY.GDP.PCAP.PP.CD", isos=["MEX"] + list(PASSED), **{"from": 1990, "to": 2025}),
+    dict(set="pop", wb="SP.POP.TOTL", isos=["MEX"] + list(PASSED), **{"from": 2025, "to": 2025}),
+    dict(set="rpc", wb="NY.GDP.PCAP.PP.KD", isos=["MEX", "WLD"], **{"from": 2000, "to": 2025}),
+    dict(set="rpcx", derive="idx", src="rpc", isos=["MEX", "WLD"], base=2000, off=-100),
+    dict(set="merch", wb="TX.VAL.MRCH.CD.WT", isos=["MEX", "TUR", "POL", "LCN"], **{"from": 2000, "to": 2025}),
+    dict(set="merchb", derive="scale", src="merch", isos=["MEX", "TUR", "POL", "LCN"], k=1e-9),
+    dict(set="merchx", derive="idx", src="merch", isos=["MEX"], base=2000, off=0),
+    dict(set="manf", wb="TX.VAL.MANF.ZS.UN", isos=["MEX", "LCN"], **{"from": 2020, "to": 2025}),
+    dict(set="prod", wb="SL.GDP.PCAP.EM.KD", isos=["MEX", "POL", "TUR", "CHN"], **{"from": 2000, "to": 2025}),
+    dict(set="prodl", wb="SL.GDP.PCAP.EM.KD", isos=["LCN", "BRA"], **{"from": 2000, "to": 2025}),
+    dict(set="prodlx", derive="idx", src="prodl", isos=["LCN", "BRA"], base=2000, off=-100),
+    dict(set="expg", wb="NE.EXP.GNFS.ZS", isos=["MEX"], **{"from": 2000, "to": 2025}),
+    dict(set="fdi", wb="BX.KLT.DINV.WD.GD.ZS", isos=["MEX"], **{"from": 2020, "to": 2025}),
+    dict(set="rem", wb="BX.TRF.PWKR.CD.DT", isos=["MEX"], **{"from": 2020, "to": 2025}),
+    dict(set="remg", wb="BX.TRF.PWKR.DT.GD.ZS", isos=["MEX"], **{"from": 2020, "to": 2025}),
+    dict(set="gdpg", wb="NY.GDP.MKTP.KD.ZG", isos=["MEX"], **{"from": 2020, "to": 2025}),
+    dict(set="popm", wb="SP.POP.TOTL", isos=["MEX"], **{"from": 2000, "to": 2025}),
+    dict(set="popchg", derive="chg", src="popm", isos=["MEX"], a=2000, b=2025),
+    dict(set="prodchg", derive="chg", src="prod", isos=["MEX"], a=2000, b=2025),
+    dict(set="hom", wb="VC.IHR.PSRC.P5", isos=["MEX", "LCN"], **{"from": 2000, "to": 2023}),
+    dict(set="pov", wb="SI.POV.NAHC", isos=["MEX"], **{"from": 2018, "to": 2024}),
+    dict(set="cpi", wb="FP.CPI.TOTL.ZG", isos=["MEX"], **{"from": 2019, "to": 2025}),
+    dict(set="cpisum", derive="sum", src="cpi", isos=["MEX"], a=2019, b=2025),
+    dict(set="gini", wb="SI.POV.GINI", isos=["MEX", "BRA"], **{"from": 2000, "to": 2024}),
+    dict(set="unemp", wb="SL.UEM.TOTL.ZS", isos=["MEX", "USA"], **{"from": 2020, "to": 2025}),
+    dict(set="inv", wb="NE.GDI.FTOT.ZS", isos=["MEX", "TUR", "CHN"], **{"from": 2000, "to": 2025}),
+    dict(set="flfp", wb="SL.TLF.CACT.FE.ZS", isos=["MEX", "OED"], **{"from": 2020, "to": 2025}),
+]
+snapshot = []
+
+clips = [
+    dict(**{"from": "s00", "to": "s00"}, hook="21 countries *passed Mexico*", title="21 countries have passed Mexico since 2000 #Shorts", desc="Poland, Turkey, China, Thailand… all now ahead in GDP per person, adjusted for prices (World Bank)."),
+    dict(**{"from": "s04", "to": "s04"}, hook="Mexican workers produce *less* than in 2000", title="Mexico's workers produce less than in 2000. Here's the chart #Shorts", desc="GDP per person employed: $54k (2000) → $48k (2025), constant 2021 PPP $ (World Bank)."),
+    dict(**{"from": "s07", "to": "s07"}, hook="The *two Mexicos*", title="Why Mexico's export boom didn't make workers richer #Shorts", desc="55% of Mexican workers are informal (INEGI, Q4 2025)."),
+    dict(**{"from": "s09", "to": "s09"}, hook="Mexico got less poor *anyway*", title="Mexico's poverty fell from 42% to 30% #Shorts", desc="Official measure, 2018 → 2024; minimum wage more than tripled in pesos."),
+]
+
+for i, sh in enumerate(shots):
+    sh["id"] = f"s{i:02d}"
+
+spec = dict(id="a-L10-mexico", clips=clips, channel="chartbound", chapter0="Twenty-one countries",
+            thumb=dict(set="ppp", iso="MEX", years=[2000, 2025], ymin=0, ymax=30000, band=[470, 690], flags=["MEX"], top="PASSED MEXICO:", big="21", line2="COUNTRIES", color="#3ddc84"), w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
+            datasets=datasets, snapshot=snapshot,
+            voice=dict(model="", name="Charon",
+                       style=("You are the narrator of a popular data documentary on YouTube. Read the script below in a warm, curious voice "
+                              "with a little dry humor, at a relaxed but engaged pace of about 145 words per minute, like a smart friend telling "
+                              "you something surprising. Let the big numbers land with a tiny pause before them. Keep the energy steady from the "
+                              "first sentence to the last. Never sound like an advertisement or an audiobook.")),
+            music=[dict(act=0, track="Lightless Dawn", vol=0.24), dict(act=1, track="Inspired", vol=0.22), dict(act=2, track="Investigations", vol=0.23),
+                   dict(act=3, track="Hidden Agenda", vol=0.23), dict(act=4, track="Deliberate Thought", vol=0.22), dict(act=5, track="Floating Cities", vol=0.24)],
+            yt=dict(title="Mexico Exports 4x More Than in 2000. Its Workers Produce Less.",
+                    description=("Since 2000, at least 21 countries have passed Mexico in GDP per person adjusted for prices and stayed ahead, from Poland and Turkey to China and Thailand. Mexico's exports quadrupled and it became America's #1 supplier, yet output per worker fell about 10% in 25 years. "
+                                 "Why: two Mexicos (world-class factories vs. an informal majority), violence, and low investment. The twist: poverty and inequality fell sharply anyway.\n\n"
+                                 "Sources: World Bank WDI (NY.GDP.PCAP.PP.CD, NY.GDP.PCAP.PP.KD, TX.VAL.MRCH.CD.WT, TX.VAL.MANF.ZS.UN, SL.GDP.PCAP.EM.KD, VC.IHR.PSRC.P5, SI.POV.NAHC, SI.POV.GINI, SL.UEM.TOTL.ZS, NE.GDI.FTOT.ZS, SL.TLF.CACT.FE.ZS, FP.CPI.TOTL.ZG); "
+                                 "INEGI ENOE; Congressional Research Service (US–Mexico trade); CONASAMI (minimum wage).\n"
+                                 "{music_credits}\nNarration is AI-generated.\n\n#mexico #economy #latinamerica #economics #data"),
+                    tags=["mexico", "mexico economy", "latin america", "productivity", "nearshoring", "gdp per capita", "informal economy", "economics", "data"], lang="en"))
+
+json.dump(spec, open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "a-L10.json"), "w"), ensure_ascii=False, indent=1)
+clean = lambda t: t.replace("{p}", "").replace("{pp}", "").replace("<soft>", "").replace("</soft>", "").split()
+words = sum(len(clean(s["narration"])) for s in shots)
+acts = {}
+for s in shots:
+    acts[s["act"]] = acts.get(s["act"], 0) + len(clean(s["narration"]))
+print("shots", len(shots), "palavras", words, f"~{words / 145:.1f} min a 145 wpm", "por ato", acts)

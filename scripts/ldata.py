@@ -87,6 +87,9 @@ def build_generic(spec):
                 S.setdefault(st, {})[i] = {y: v / ser[d["base"]] * 100 + d.get("off", 0) for y, v in ser.items()}
         elif d.get("derive") == "chg":  # plano: variação % entre os anos a e b
             S[st] = {i: (S[d["src"]][i][d["b"]] / S[d["src"]][i][d["a"]] - 1) * 100 for i in d["isos"] if d["a"] in S[d["src"]].get(i, {}) and d["b"] in S[d["src"]][i]}
+        elif d.get("derive") == "scale":  # anual: série × k (ex.: dólares → bilhões)
+            for i in d["isos"]:
+                S.setdefault(st, {})[i] = {y: v * d["k"] for y, v in S[d["src"]][i].items()}
         elif d.get("derive") == "sum":  # plano: soma da série entre os anos a e b
             S[st] = {i: sum(v for y, v in S[d["src"]][i].items() if d["a"] <= y <= d["b"]) for i in d["isos"]}
         elif d.get("derive") == "diff":  # anual: série a − série b (mesmo país)
