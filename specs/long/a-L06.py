@@ -13,10 +13,10 @@ EC = "European Commission, financial assistance to Portugal (2011–2014): €78
 shots = [
     # ---------------- 0 · COLD OPEN ----------------
     dict(act=0, type="lines", set="ppp", series=["PRT", "POL"], years=[1995, 2025], start=1995.0, y=[0, 60000], src=PPP, fmt="usdk0", hl="POL",
-         narration="In 1995, the average person in Portugal produced almost twice as much as the average person in Poland, adjusted for prices. {p} Portugal had been in the European Union for almost a decade. Poland had just escaped communism. {p} In 2020, when the pandemic emptied Portugal's hotels, Poland briefly pulled ahead. Portugal bounced back. {pp} In 2025, Poland passed it again, by about two percent, and this time no pandemic was needed.",
-         keys=[dict(at="In 2020", year=2020.0, dur=5.0), dict(at="bounced back", year=2025.0, dur=4.0)],
-         labels=[dict(at="almost twice", iso="PRT", year=1995), dict(at="briefly pulled ahead", iso="POL", year=2020), dict(at="passed it again", iso="POL", year=2025)],
-         react=[dict(at="In 1995", pose="idle"), dict(at="almost twice", pose="pointL"), dict(at="escaped communism", pose="think"), dict(at="briefly pulled ahead", pose="shock"), dict(at="passed it again", pose="pointUp")]),
+         narration="In 1995, the average person in Portugal produced almost twice as much as the average person in Poland, adjusted for prices. {p} Portugal had been in the European Union for almost a decade. Poland had just escaped communism. {p} In 2020, when the pandemic emptied Portugal's hotels, Poland pulled ahead. Portugal clawed its way back in 2023. {pp} In 2025, Poland passed it again, by about two percent, and this time no pandemic was needed.",
+         keys=[dict(at="In 2020", year=2020.0, dur=5.0), dict(at="clawed its way back", year=2025.0, dur=4.0)],
+         labels=[dict(at="almost twice", iso="PRT", year=1995), dict(at="Poland pulled ahead", iso="POL", year=2020), dict(at="passed it again", iso="POL", year=2025)],
+         react=[dict(at="In 1995", pose="idle"), dict(at="almost twice", pose="pointL"), dict(at="escaped communism", pose="think"), dict(at="Poland pulled ahead", pose="shock"), dict(at="passed it again", pose="pointUp")]),
     dict(act=0, type="list", src=PPP + " · Eurostat prc_ppp_ind (actual individual consumption per head, PPS, 2024)", title="Who passed Portugal",
          narration="Poland isn't the first. {p} Slovenia has been ahead for good since 2003. Czechia since 2007. Malta since 2009. Lithuania since 2018. {p} And three more are within about five percent: Estonia, Romania and Croatia. {pp} By one measure of how people actually live, what they consume per person, Romanians are already slightly ahead.",
          items=[dict(at="Slovenia has been", kind="bullet", text="Slovenia · since 2003"),
@@ -135,8 +135,8 @@ checks = [
     dict(say="Portugal ≈ almost twice Poland in 1995", rule="ratio", set="ppp", a="PRT", b="POL", year=1995, min=1.75, max=1.99),
     dict(say="EU member since 1986 → 1995 almost a decade", rule="expr", expr="1995 - 1986", equal=9),
     dict(say="Poland first pulled ahead in 2020", rule="cross", set="ppp", a="POL", b="PRT", year=2020),
-    dict(say="Portugal back ahead 2021", rule="gt", set="ppp", a="PRT", b="POL", year=2021),
-    dict(say="Portugal back ahead 2022", rule="gt", set="ppp", a="PRT", b="POL", year=2022),
+    dict(say="Poland still ahead 2021", rule="gt", set="ppp", a="POL", b="PRT", year=2021),
+    dict(say="Poland still ahead 2022", rule="gt", set="ppp", a="POL", b="PRT", year=2022),
     dict(say="Portugal back ahead 2023", rule="gt", set="ppp", a="PRT", b="POL", year=2023),
     dict(say="Portugal back ahead 2024", rule="gt", set="ppp", a="PRT", b="POL", year=2024),
     dict(say="Poland ahead again 2025", rule="gt", set="ppp", a="POL", b="PRT", year=2025),
@@ -258,7 +258,7 @@ spec = dict(id="a-L06-portugal", clips=clips, channel="chartbound", chapter0="Th
             music=[dict(act=0, track="Lightless Dawn", vol=0.24), dict(act=1, track="Investigations", vol=0.23), dict(act=2, track="Deliberate Thought", vol=0.22),
                    dict(act=3, track="Hidden Agenda", vol=0.23), dict(act=4, track="Inspired", vol=0.23), dict(act=5, track="Floating Cities", vol=0.24)],
             yt=dict(title="Portugal Was Richer Than Eastern Europe. Not Anymore.",
-                    description=("In 1995 the average Portuguese produced almost twice as much as the average Pole, adjusted for prices. Poland briefly pulled ahead in the 2020 pandemic year, and in 2025 it passed Portugal again. Slovenia, Czechia and Lithuania have been ahead for years, "
+                    description=("In 1995 the average Portuguese produced almost twice as much as the average Pole, adjusted for prices. Poland pulled ahead in the 2020–2022 pandemic years, Portugal clawed back in 2023, and in 2025 Poland passed it again. Slovenia, Czechia and Lithuania have been ahead for years, "
                                  "and Romanians already consume slightly more per head. Why Portugal stood still for 25 years (school, the China and EU-enlargement shocks, the 2011 bailout), what it means for wages, "
                                  "and the twist: longer lives, budget surpluses and a comeback since 2022.\n\n"
                                  "Sources: World Bank WDI (NY.GDP.PCAP.PP.CD, NY.GDP.PCAP.PP.KD, NE.GDI.FTOT.ZS, SM.POP.NETM, SP.DYN.LE00.IN, NY.GDP.MKTP.KD.ZG); "
