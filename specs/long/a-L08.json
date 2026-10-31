@@ -587,7 +587,7 @@
    "type": "stats",
    "src": "USGS Mineral Commodity Summaries 2026 · nickel mine production 2025: Indonesia 2.6 Mt of 3.9 Mt world · Indonesia's raw nickel ore export ban (in force 1 Jan 2020)",
    "title": "Indonesia's new bet: nickel",
-   "narration": "Now Indonesia is betting on a new rock: nickel, for electric car batteries. {p} In 2020, it banned exports of raw nickel ore, to force companies to process it at home. Later, it tried the same trick with bauxite. {p} It worked. In 2025, about two of every three tons of nickel mined on Earth came from Indonesia. {pp} But smelters are built with money, not with millions of workers.",
+   "narration": "Now Indonesia is betting on a new rock: nickel, for electric car batteries. {p} In 2020, it banned exports of raw nickel ore, to force companies to process it at home. Later, it tried the same trick with bauxite. {p} It worked. In 2025, about two of every three tons of nickel mined on Earth came from Indonesia. {pp} Chinese companies built most of those smelters. But smelters are built with money, not with millions of workers.",
    "stats": [
     {
      "at": "In 2020",
@@ -799,7 +799,7 @@
    "src": "World Bank WDI · poverty headcount at $3.00 a day (2021 PPP), Indonesia (% of population) · GDP growth",
    "fmt": "pct0",
    "hl": "IDN",
-   "narration": "In 1990, almost eight in ten Indonesians lived on less than three dollars a day, adjusted for prices. {p} In 2025, fewer than four in a hundred. And it did that across more than seventeen thousand islands. Inflation that year: under two percent. {p} And remember the Asian financial crisis? In 1998, Indonesia's economy shrank thirteen percent in a single year, and its currency lost more than two thirds of its value. {pp} It hasn't had a year anywhere near that bad since. Not even during the pandemic. {p} Vietnam's growth is faster. Indonesia's has been steadier.",
+   "narration": "In 1990, almost eight in ten Indonesians lived on less than three dollars a day, adjusted for prices. {p} In 2025, fewer than four in a hundred. And it did that across more than seventeen thousand islands. Inflation that year: under two percent. {p} And remember the Asian financial crisis? In 1998, Indonesia's economy shrank thirteen percent in a single year, and its currency lost more than two thirds of its value. {pp} It hasn't had a year anywhere near that bad since. Not even during the pandemic. In 2009, while much of the world was in recession, it grew more than four and a half percent. {p} Vietnam's growth is faster. Indonesia's has been steadier.",
    "keys": [
     {
      "at": "In 1990",
@@ -1665,6 +1665,20 @@
    "rule": "expr",
    "expr": "17000",
    "equal": 17000
+  },
+  {
+   "say": "IDN 2009 growth > 4.5%",
+   "set": "gdpg",
+   "iso": "IDN",
+   "year": 2009,
+   "min": 4.5,
+   "max": 4.9
+  },
+  {
+   "say": "Chinese firms built most Indonesian nickel smelters (Tsingshan, IMIP; widely reported)",
+   "rule": "expr",
+   "expr": "True",
+   "equal": true
   },
   {
    "say": "Korea TFR 0.72 (2023)",

@@ -39,6 +39,12 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 - B-L02 (_SgVH8bGG5k): tela final → B-L01 (bate com o "watch next 0.1+0.2") + inscrição.
 - Regra: o vídeo da tela final tem que ser o mesmo do "WATCH NEXT" renderizado no outro; setar no Studio no dia da publicação.
 
+## Calendário de render (2 longos/dia; voz 3.1 ≥1.115 palavras, 3.8 ≥1.270)
+- 01/11: A-L06 (3.1, 18:00Z) + A-L07 (3.8, 23:00Z) — tarefa agendada 07:15Z.
+- 02/11: A-L09 (3.1, 18:00Z) + A-L08 (3.8, 23:00Z).
+- 03/11: A-L10 (3.1, 18:00Z) + A-L11 África do Sul (3.8, a escrever).
+- Antes de cada render: teste visual grátis (engine=edge) e checagem de títulos de stats ≤34 caracteres, stats na ordem da fala, miniatura com line2 ≤10 caracteres (senão o mascote cobre).
+
 ## TikTok C (alerta 31/10)
 - Template escuro (gabgen) zerou: MDC 29/10 19:30, negação 30/10 12:30, Pitágoras 30/10 19:30 = 0 views (MDC com 27 h). Antes: 107–219 por post. Template claro do Kauan segue com views (111, 34).
 - Agendados c-318…c-331 (02–08/11, 12:30/19:30) são todos template escuro. Se 31/10 12:30 (Excel) e 19:30 (colocação) também ficarem em 0 após 3 h, o template está sendo filtrado → trocar visual/áudio antes de 02/11 (agendado no TikTok não edita, só apaga — apagar é do Kauan).
@@ -53,9 +59,9 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 | A-L05 | Saudi Arabia Is No Richer Than in 1990 (Golfo) | agendado (s7VEEc8S61c, voz Charon no 3.8, 8:02) · cortes TZSIH-yJFQI, wdyKVv2WiXo | 31/10 23:00Z |
 | A-L06 | Portugal Was Richer Than Eastern Europe. Not Anymore. (Polônia à frente em PPP 2025; Eslovênia/Chéquia/Malta/Lituânia de vez) | roteiro + checks ok (41183488650), 1.124 palavras, voz 3.1 · tela final → Polônia | 01/11 18:00Z |
 | A-L07 | Turkey Caught Up With Greece. Despite 50% Inflation. (PPP 2025 empatado; nominal 1,45×) | roteiro + checks ok (41184357770), 1.266 palavras, voz 3.8 · tela final → A-L06 | 01/11 23:00Z (cortes A2) |
-| A-L08 | Vietnã passou a Indonésia (PPP e nominal, 2025) | banco: Vietnã tem concorrência (Statrys 941 mil); ângulo da ultrapassagem é novo | |
-| A-L09 | Espanha passou o Japão em PIB por pessoa nominal (2024) | banco | |
-| A-L10 | Mexico Is Being Passed by Everyone (PPP: China 2023, Tailândia e Azerbaijão 2025; nominal: Turquia, Cazaquistão, Sérvia 2024–25) | banco: filtro ok (q6, nada ≥500 mil), número próprio | |
+| A-L08 | Vietnam Overtook Indonesia. With a Third of the People. | pronto: checks ok, 1.279 palavras, voz 3.8, teste visual ok · tela final → Coreia | 02/11 23:00Z (cortes A2) |
+| A-L09 | In 2012, Japan Was 74% Richer Than Spain. Now Spain Is Ahead. | pronto: checks ok (1ª vez desde 1960), 1.141 palavras, voz 3.1 · tela final → Polônia | 02/11 18:00Z |
+| A-L10 | Mexico Exports 4x More Than in 2000. Its Workers Produce Less. (21 países passaram; PIB por trabalhador −10%) | pronto: checks ok, 1.110 palavras, voz 3.1 · tela final → A-L07 | 03/11 18:00Z |
 | A-L11 | South Africa passada por Indonésia (PPP 2023) e Vietnã (2024); Filipinas no PIB total | banco: "How South Africa Became 3rd World" 739 mil (abr/26) → só entra com as ultrapassagens (número nosso) | |
 | A-L12 | Bulgária: do mais pobre da UE ao euro (jan/26), 0,31→0,49 dos EUA desde 2010 | banco: filtro ok (q6; maior longo 78 mil) | |
 | ~~Rússia > Itália/Canadá~~ · ~~Singapura > Noruega~~ · ~~Geórgia~~ | fora: tema de guerra / Singapura saturada / busca ambígua | — | |

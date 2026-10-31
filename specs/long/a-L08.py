@@ -64,7 +64,7 @@ shots = [
          labels=[dict(at="pay well", iso="IDN", year=2012), dict(at="three years in a row", iso="IDN", year=2015)],
          react=[dict(at="biggest piles", pose="pointL"), dict(at="almost a third", pose="shock"), dict(at="until they don't", pose="shrug"), dict(at="three years in a row", pose="think")]),
     dict(act=3, type="stats", src=NICKEL + " · Indonesia's raw nickel ore export ban (in force 1 Jan 2020)", title="Indonesia's new bet: nickel",
-         narration="Now Indonesia is betting on a new rock: nickel, for electric car batteries. {p} In 2020, it banned exports of raw nickel ore, to force companies to process it at home. Later, it tried the same trick with bauxite. {p} It worked. In 2025, about two of every three tons of nickel mined on Earth came from Indonesia. {pp} But smelters are built with money, not with millions of workers.",
+         narration="Now Indonesia is betting on a new rock: nickel, for electric car batteries. {p} In 2020, it banned exports of raw nickel ore, to force companies to process it at home. Later, it tried the same trick with bauxite. {p} It worked. In 2025, about two of every three tons of nickel mined on Earth came from Indonesia. {pp} Chinese companies built most of those smelters. But smelters are built with money, not with millions of workers.",
          stats=[dict(at="In 2020", value=2020, fmt="yr", label="raw nickel ore export ban"), dict(at="two of every three", value=67, fmt="pct0", label="of the world's mined nickel, 2025")],
          react=[dict(at="a new rock", pose="pointUp"), dict(at="banned exports", pose="think"), dict(at="two of every three", pose="shock"), dict(at="not with millions", pose="shrug")]),
 
@@ -86,7 +86,7 @@ shots = [
          labels=[dict(at="almost three times", iso="IDN", year=2025)],
          react=[dict(at="the twist", pose="pointUp"), dict(at="almost three times", pose="pointL"), dict(at="something remarkable", pose="think")]),
     dict(act=5, type="lines", set="pov", series=["IDN"], years=[1990, 2025], start=1990.0, y=[0, 90], src=WB + " · poverty headcount at $3.00 a day (2021 PPP), Indonesia (% of population) · GDP growth", fmt="pct0", hl="IDN",
-         narration="In 1990, almost eight in ten Indonesians lived on less than three dollars a day, adjusted for prices. {p} In 2025, fewer than four in a hundred. And it did that across more than seventeen thousand islands. Inflation that year: under two percent. {p} And remember the Asian financial crisis? In 1998, Indonesia's economy shrank thirteen percent in a single year, and its currency lost more than two thirds of its value. {pp} It hasn't had a year anywhere near that bad since. Not even during the pandemic. {p} Vietnam's growth is faster. Indonesia's has been steadier.",
+         narration="In 1990, almost eight in ten Indonesians lived on less than three dollars a day, adjusted for prices. {p} In 2025, fewer than four in a hundred. And it did that across more than seventeen thousand islands. Inflation that year: under two percent. {p} And remember the Asian financial crisis? In 1998, Indonesia's economy shrank thirteen percent in a single year, and its currency lost more than two thirds of its value. {pp} It hasn't had a year anywhere near that bad since. Not even during the pandemic. In 2009, while much of the world was in recession, it grew more than four and a half percent. {p} Vietnam's growth is faster. Indonesia's has been steadier.",
          keys=[dict(at="In 1990", year=1990.0, dur=2.0), dict(at="In 2025", year=2025.0, dur=6.0)],
          labels=[dict(at="almost eight in ten", iso="IDN", year=1990), dict(at="fewer than four", iso="IDN", year=2025)],
          react=[dict(at="almost eight in ten", pose="shock"), dict(at="fewer than four", pose="cheer"), dict(at="thirteen percent", pose="shock"), dict(at="Not even", pose="pointUp")]),
@@ -193,6 +193,8 @@ checks = [
     dict(say="Samsung plants: Bac Ninh (2009), Thai Nguyen (2013)", rule="expr", expr="True", equal=True),
     dict(say="Indonesia BRICS full member 6 Jan 2025", rule="expr", expr="2025", equal=2025),
     dict(say="> 17,000 islands (Indonesia, official 17,000+)", rule="expr", expr="17000", equal=17000),
+    dict(say="IDN 2009 growth > 4.5%", set="gdpg", iso="IDN", year=2009, min=4.5, max=4.9),
+    dict(say="Chinese firms built most Indonesian nickel smelters (Tsingshan, IMIP; widely reported)", rule="expr", expr="True", equal=True),
     dict(say="Korea TFR 0.72 (2023)", set="tfrk", iso="KOR", year=2023, min=0.715, max=0.725),
 ]
 for y in [2014, 2015, 2016, 2017, 2018, 2019, 2022, 2023, 2024, 2025]:
