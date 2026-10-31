@@ -1,0 +1,16 @@
+name: mine
+run-name: mine pautas
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  m:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/mine.py /tmp/mine.json
+      - run: |
+          git config user.name producer; git config user.email producer@users.noreply.github.com
+          git checkout --orphan mine-${{ github.run_id }} && git rm -rf . -q
+          cp /tmp/mine.json mine.json && git add mine.json && git commit -qm mine && git push -f origin mine-${{ github.run_id }}
