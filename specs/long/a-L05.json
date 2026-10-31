@@ -1140,38 +1140,32 @@
   },
   {
    "act": 6,
-   "type": "lines",
-   "set": "flfp",
-   "series": [
-    "SAU"
-   ],
-   "years": [
-    2000,
-    2024
-   ],
-   "start": 2000.0,
-   "y": [
-    0,
-    45
-   ],
-   "src": "World Bank WDI · labor force participation, female (% of women 15+, ILO modeled) · GASTAT Labour Force Survey Q1 2025 (via Argaam, 29 Jun 2025)",
-   "fmt": "pct0",
-   "hl": "SAU",
-   "narration": "Saudi Arabia is trying to change the math. {p} Since 2016, its Vision 2030 plan has pushed citizens into jobs once filled by foreigners. {p} The share of Saudi women in the workforce has roughly doubled since 2017. {p} And unemployment among Saudi citizens hit a record low of about six percent in early 2025, beating the plan's target of seven. {p} That's part of why its output per person is now back near its 1990 level, after two decades well below it.",
-   "keys": [
+   "type": "duel",
+   "src": "Saudi Ministry of Human Resources (HRSD), Progress of the Saudi labor market (Dec 2025) · GASTAT Labour Force Survey Q1 2025 (via Argaam, 29 Jun 2025)",
+   "title": "Saudi women in the labor force",
+   "fmt": "pct1",
+   "left": {
+    "label": "2017",
+    "value": 17.0,
+    "color": "acc2"
+   },
+   "right": {
+    "label": "Q1 2025",
+    "value": 36.3,
+    "color": "acc"
+   },
+   "badge": "×2",
+   "cues": [
     {
-     "at": "Since 2016",
-     "year": 2024.0,
-     "dur": 7.0
+     "at": "from seventeen percent",
+     "show": "a"
+    },
+    {
+     "at": "about thirty-six",
+     "show": "b"
     }
    ],
-   "labels": [
-    {
-     "at": "roughly doubled",
-     "iso": "SAU",
-     "year": 2024
-    }
-   ],
+   "narration": "Saudi Arabia is trying to change the math. {p} Since 2016, its Vision 2030 plan has pushed citizens into jobs once filled by foreigners. {p} The share of Saudi women in the workforce has more than doubled, from seventeen percent in 2017 to about thirty-six percent in early 2025. {p} And unemployment among Saudi citizens hit a record low of about six percent, beating the plan's target of seven. {p} That's part of why its output per person is now back near its 1990 level, after two decades well below it.",
    "react": [
     {
      "at": "change the math",
@@ -1182,7 +1176,11 @@
      "pose": "pointUp"
     },
     {
-     "at": "roughly doubled",
+     "at": "more than doubled",
+     "pose": "cheer"
+    },
+    {
+     "at": "record low",
      "pose": "cheer"
     },
     {
@@ -1769,12 +1767,13 @@
    "max": 6.99
   },
   {
-   "say": "Saudi women in workforce roughly doubled since 2017",
-   "set": "flfp17",
-   "iso": "SAU",
-   "year": 2024,
-   "min": 175,
-   "max": 230
+   "say": "Saudi women in workforce 17% (2017) → 36.3% (Q1 2025): more than doubled (HRSD)",
+   "rule": "expr",
+   "expr": "[round(36.3 / 17, 1) > 2, round(36.3)]",
+   "equal": [
+    true,
+    36
+   ]
   },
   {
    "say": "Saudi back near 1990 level in 2025",
@@ -1987,24 +1986,6 @@
    ],
    "from": 2000,
    "to": 2021
-  },
-  {
-   "set": "flfp",
-   "wb": "SL.TLF.CACT.FE.ZS",
-   "isos": [
-    "SAU"
-   ],
-   "from": 2000,
-   "to": 2024
-  },
-  {
-   "set": "flfp17",
-   "derive": "idx",
-   "src": "flfp",
-   "isos": [
-    "SAU"
-   ],
-   "base": 2017
   }
  ],
  "snapshot": [
@@ -2286,7 +2267,7 @@
  ],
  "yt": {
   "title": "Saudi Arabia Is No Richer Than in 1990",
-  "description": "In 1990 the average Saudi produced about 1.5 times as much as the average American, adjusted for prices. Today, a little less than in 1990, while the American number rose by three quarters. Kuwait is almost 40% below its 2006 peak; the Emirates more than a third below 1990. Why the Gulf's oil states got poorer per person: the same oil shared by far more people, averages that mix citizens with millions of low-paid migrant workers, and the country that did it differently, Norway.\n\nSources: World Bank WDI (NY.GDP.PCAP.PP.KD, SP.POP.TOTL, NY.GDP.MKTP.KD, SM.POP.TOTL.ZS, NY.GDP.PETR.RT.ZS, SL.TLF.CACT.FE.ZS); IMF crude oil production via FRED (KWTNGDPMOMBD, SAUNGDPMOMBD); PACI/CSB Kuwait population by nationality (via Gulf Labour Markets, Migration and Population programme); GAStat Saudi Arabia (population 2024); Kuwait Central Statistics Administration wages (via AGBI, March 2025); Norsk Petroleum and NBIM (Government Pension Fund Global); Kuwait Investment Authority.\n{music_credits}\nNarration is AI-generated.\n\n#saudiarabia #kuwait #uae #oil #economics #data",
+  "description": "In 1990 the average Saudi produced about 1.5 times as much as the average American, adjusted for prices. Today, a little less than in 1990, while the American number rose by three quarters. Kuwait is almost 40% below its 2006 peak; the Emirates more than a third below 1990. Why the Gulf's oil states got poorer per person: the same oil shared by far more people, averages that mix citizens with millions of low-paid migrant workers, and the country that did it differently, Norway.\n\nSources: World Bank WDI (NY.GDP.PCAP.PP.KD, SP.POP.TOTL, NY.GDP.MKTP.KD, SM.POP.TOTL.ZS, NY.GDP.PETR.RT.ZS, ); Saudi Ministry of Human Resources (HRSD, Dec 2025) and GASTAT Labour Force Survey; IMF crude oil production via FRED (KWTNGDPMOMBD, SAUNGDPMOMBD); PACI/CSB Kuwait population by nationality (via Gulf Labour Markets, Migration and Population programme); GAStat Saudi Arabia (population 2024); Kuwait Central Statistics Administration wages (via AGBI, March 2025); Norsk Petroleum and NBIM (Government Pension Fund Global); Kuwait Investment Authority.\n{music_credits}\nNarration is AI-generated.\n\n#saudiarabia #kuwait #uae #oil #economics #data",
   "tags": [
    "saudi arabia",
    "kuwait",

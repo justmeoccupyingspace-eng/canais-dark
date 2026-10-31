@@ -125,11 +125,11 @@ shots = [
          react=[dict(at="big funds too", pose="idle", nod=1), dict(at="oldest in the world", pose="pointUp"), dict(at="more than half", pose="shock"), dict(at="Norway saved", pose="pointL"), dict(at="built with it", pose="shrug")]),
 
     # ---------------- 5 · WHAT COMES NEXT ----------------
-    dict(act=6, type="lines", set="flfp", series=["SAU"], years=[2000, 2024], start=2000.0, y=[0, 45], src=WB + " · labor force participation, female (% of women 15+, ILO modeled) · " + GASTAT_LFS, fmt="pct0", hl="SAU",
-         narration="Saudi Arabia is trying to change the math. {p} Since 2016, its Vision 2030 plan has pushed citizens into jobs once filled by foreigners. {p} The share of Saudi women in the workforce has roughly doubled since 2017. {p} And unemployment among Saudi citizens hit a record low of about six percent in early 2025, beating the plan's target of seven. {p} That's part of why its output per person is now back near its 1990 level, after two decades well below it.",
-         keys=[dict(at="Since 2016", year=2024.0, dur=7.0)],
-         labels=[dict(at="roughly doubled", iso="SAU", year=2024)],
-         react=[dict(at="change the math", pose="think"), dict(at="Vision 2030", pose="pointUp"), dict(at="roughly doubled", pose="cheer"), dict(at="back near", pose="idle", nod=1)]),
+    dict(act=6, type="duel", src="Saudi Ministry of Human Resources (HRSD), Progress of the Saudi labor market (Dec 2025) · " + GASTAT_LFS, title="Saudi women in the labor force", fmt="pct1",
+         left=dict(label="2017", value=17.0, color="acc2"), right=dict(label="Q1 2025", value=36.3, color="acc"), badge="×2",
+         cues=[dict(at="from seventeen percent", show="a"), dict(at="about thirty-six", show="b")],
+         narration="Saudi Arabia is trying to change the math. {p} Since 2016, its Vision 2030 plan has pushed citizens into jobs once filled by foreigners. {p} The share of Saudi women in the workforce has more than doubled, from seventeen percent in 2017 to about thirty-six percent in early 2025. {p} And unemployment among Saudi citizens hit a record low of about six percent, beating the plan's target of seven. {p} That's part of why its output per person is now back near its 1990 level, after two decades well below it.",
+         react=[dict(at="change the math", pose="think"), dict(at="Vision 2030", pose="pointUp"), dict(at="more than doubled", pose="cheer"), dict(at="record low", pose="cheer"), dict(at="back near", pose="idle", nod=1)]),
     dict(act=6, type="host", bg="none",
          narration="But the clock is ticking. {p} Nobody knows exactly when the world's demand for oil will stop growing. {p} Saudi Arabia, the Emirates and Qatar are racing to build tourism, finance and tech industries before that day comes. {p} Some of it is working. Much of it is still paid for by oil. {p} When demand does stop growing, the countries that saved will be fine. {pp} The ones that spent will need a new answer to an old question: <soft>what happens to a country when the oil stops paying?</soft>",
          items=[dict(at="clock is ticking", text="The clock is ticking", color="acc"), dict(at="countries that saved", text="Saved → fine", color="acc2"), dict(at="oil stops paying", text="When the oil stops paying…", serif=True, size=62)],
@@ -205,7 +205,7 @@ checks = [
     dict(say="fund NOK 21,300 bn ≈ 21 trillion; 3.8M per person (Norsk Petroleum)", rule="expr", expr="round(21300 / 1000)", equal=21),
     dict(say="Kuwait oil rents 2012 > half of GDP", set="oilr", iso="KWT", year=2012, min=50.01),
     dict(say="Norway oil rents 2012 < 7%", set="oilr", iso="NOR", year=2012, max=6.99),
-    dict(say="Saudi women in workforce roughly doubled since 2017", set="flfp17", iso="SAU", year=2024, min=175, max=230),
+    dict(say="Saudi women in workforce 17% (2017) → 36.3% (Q1 2025): more than doubled (HRSD)", rule="expr", expr="[round(36.3 / 17, 1) > 2, round(36.3)]", equal=[True, 36]),
     dict(say="Saudi back near 1990 level in 2025", set="rpc90", iso="SAU", year=2025, min=95),
     dict(say="…after two decades well below it (2000 and 2010 < 90% of 1990)", set="rpc90", iso="SAU", year=2010, max=90),
     dict(say="…2000 also well below", set="rpc90", iso="SAU", year=2000, max=90),
@@ -229,8 +229,6 @@ datasets = [
     dict(set="gdpkx", derive="idx", src="gdpk", isos=["QAT"], base=2000),
     dict(set="mig", wb="SM.POP.TOTL.ZS", isos=["QAT", "ARE", "KWT", "SAU"], **{"from": 1990, "to": 2024}),
     dict(set="oilr", wb="NY.GDP.PETR.RT.ZS", isos=GULF + ["NOR"], **{"from": 2000, "to": 2021}),
-    dict(set="flfp", wb="SL.TLF.CACT.FE.ZS", isos=["SAU"], **{"from": 2000, "to": 2024}),
-    dict(set="flfp17", derive="idx", src="flfp", isos=["SAU"], base=2017),
 ]
 snapshot = [dict(set="brent", iso="BRENT", year=y, value=v, src="IMF via FRED POILBREUSDA") for y, v in {1992: 19.36, 1993: 17.08, 1994: 15.96, 1995: 17.2, 1996: 20.81, 1997: 19.31, 1998: 13.13, 1999: 18.11, 2000: 28.85, 2001: 24.71, 2002: 25.12, 2003: 28.78, 2004: 38.23, 2005: 54.68, 2006: 65.6, 2007: 72.65, 2008: 97.33, 2009: 61.58, 2010: 79.81, 2011: 111.54, 2012: 112.01, 2013: 108.96, 2014: 99.35, 2015: 53.02, 2016: 45.08, 2017: 54.89, 2018: 71.61, 2019: 64.2, 2020: 43.33, 2021: 70.83, 2022: 99.0, 2023: 82.32, 2024: 79.91, 2025: 68.32}.items()]
 
@@ -258,7 +256,7 @@ spec = dict(id="a-L05-gulf", clips=clips, channel="chartbound", chapter0="Richer
                     description=("In 1990 the average Saudi produced about 1.5 times as much as the average American, adjusted for prices. Today, a little less than in 1990, while the American number rose by three quarters. "
                                  "Kuwait is almost 40% below its 2006 peak; the Emirates more than a third below 1990. Why the Gulf's oil states got poorer per person: the same oil shared by far more people, "
                                  "averages that mix citizens with millions of low-paid migrant workers, and the country that did it differently, Norway.\n\n"
-                                 "Sources: World Bank WDI (NY.GDP.PCAP.PP.KD, SP.POP.TOTL, NY.GDP.MKTP.KD, SM.POP.TOTL.ZS, NY.GDP.PETR.RT.ZS, SL.TLF.CACT.FE.ZS); "
+                                 "Sources: World Bank WDI (NY.GDP.PCAP.PP.KD, SP.POP.TOTL, NY.GDP.MKTP.KD, SM.POP.TOTL.ZS, NY.GDP.PETR.RT.ZS, ); Saudi Ministry of Human Resources (HRSD, Dec 2025) and GASTAT Labour Force Survey; "
                                  "IMF crude oil production via FRED (KWTNGDPMOMBD, SAUNGDPMOMBD); PACI/CSB Kuwait population by nationality (via Gulf Labour Markets, Migration and Population programme); "
                                  "GAStat Saudi Arabia (population 2024); Kuwait Central Statistics Administration wages (via AGBI, March 2025); Norsk Petroleum and NBIM (Government Pension Fund Global); Kuwait Investment Authority.\n"
                                  "{music_credits}\nNarration is AI-generated.\n\n#saudiarabia #kuwait #uae #oil #economics #data"),
