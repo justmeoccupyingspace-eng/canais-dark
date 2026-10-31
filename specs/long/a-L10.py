@@ -105,7 +105,7 @@ checks += [
     dict(say="exports 2025 ≈ $665 bn", set="merchb", iso="MEX", year=2025, min=663, max=667),
     dict(say="×4 (2025 / 2000)", set="merchx", iso="MEX", year=2025, min=390, max=410),
     dict(say="manufactures > 4/5 of exports (2025)", set="manf", iso="MEX", year=2025, min=80.01),
-    dict(say="Mexico manuf. exports ≈ 2× rest of Latin America (2025)", rule="expr", expr="round((664.837 * 0.8121) / (1668.495 * 0.4929 - 664.837 * 0.8121), 2)", equal=1.92),
+    dict(say="Mexico manuf. exports ≈ 2× rest of Latin America (2025)", rule="expr", expr="round((664.837 * 0.8121) / (1668.495 * 0.4929 - 664.837 * 0.8121), 2)", equal=1.91),
     dict(say="LatAm manuf share 2025 ≈ 49.3%", set="manf", iso="LCN", year=2025, min=49.2, max=49.4),
     dict(say="LatAm merch exports 2025 ≈ $1,668 bn", set="merchb", iso="LCN", year=2025, min=1667, max=1670),
     dict(say="productivity MEX 2000 ≈ $54k", set="prod", iso="MEX", year=2000, min=53500, max=54200),

@@ -1123,7 +1123,7 @@
    "say": "Mexico manuf. exports ≈ 2× rest of Latin America (2025)",
    "rule": "expr",
    "expr": "round((664.837 * 0.8121) / (1668.495 * 0.4929 - 664.837 * 0.8121), 2)",
-   "equal": 1.92
+   "equal": 1.91
   },
   {
    "say": "LatAm manuf share 2025 ≈ 49.3%",
