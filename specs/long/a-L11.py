@@ -14,7 +14,7 @@ shots = [
     dict(act=0, type="lines", set="ppp", series=["VNM", "IDN", "EGY", "ZAF"], years=[1994, 2025], start=1994.0, y=[0, 21000], src=PPP + " · GDP (current US$), 1994", fmt="usdk0", hl="ZAF",
          narration="In 1994, when Nelson Mandela became president, South Africa had the biggest economy in Africa, bigger than Nigeria's and Egypt's put together. The country had just held its first election in which people of all races could vote. {p} Adjusted for prices, the average South African produced about sixty percent more than the average Indonesian, and about four times as much as the average Vietnamese. {p} Egypt passed South Africa in 2019. Indonesia, in 2023. Vietnam, in 2024. {pp} And after inflation, the average South African today produces less than in 2008.",
          keys=[dict(at="Egypt passed", year=2019.0, dur=3.0), dict(at="Indonesia, in 2023", year=2025.0, dur=5.0)],
-         labels=[dict(at="sixty percent more", iso="ZAF", year=1994), dict(at="Egypt passed", iso="EGY", year=2019), dict(at="Indonesia, in 2023", iso="IDN", year=2023), dict(at="Vietnam, in 2024", iso="VNM", year=2024)],
+         labels=[dict(at="sixty percent more", iso="ZAF", year=1994), dict(at="Vietnam, in 2024", iso="VNM", year=2024)],
          react=[dict(at="Nelson Mandela", pose="idle"), dict(at="sixty percent more", pose="pointL"), dict(at="Egypt passed", pose="shock"), dict(at="Vietnam, in 2024", pose="shock"), dict(at="less than in 2008", pose="shrug")]),
     dict(act=0, type="host", bg="lines", set="ppp", series=["VNM", "IDN", "EGY", "ZAF"], years=[1994, 2025], start=2025.0, y=[0, 21000], fmt="usdk0",
          narration="This is a country with Africa's biggest stock exchange, its top-ranked universities, and most of the world's platinum. Its factories build cars for BMW, Mercedes, Toyota and Volkswagen. {p} In 2010, it hosted the football World Cup. Last year, it hosted the first G20 summit ever held in Africa. {p} So how does a country like that go backwards, while half of Asia races past it? {pp} <soft>It isn't one thing. It's several, and they feed each other.</soft>",
@@ -224,7 +224,7 @@ for i, sh in enumerate(shots):
     sh["id"] = f"s{i:02d}"
 
 spec = dict(id="a-L11-south-africa", clips=clips, channel="chartbound", chapter0="Passed",
-            thumb=dict(set="ppp", iso="ZAF", years=[1994, 2025], ymin=0, ymax=17000, band=[470, 690], flags=["ZAF"], top="SOUTH AFRICA", big="32%", line2="JOBLESS", color="#ff5a6e"), w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
+            thumb=dict(set="unemp", iso="ZAF", years=[1994, 2025], ymin=0, ymax=40, band=[470, 690], flags=["ZAF"], top="SOUTH AFRICA", big="32%", line2="JOBLESS", color="#ff5a6e"), w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
             datasets=datasets, snapshot=snapshot,
             voice=dict(model="", name="Charon",
                        style=("You are the narrator of a popular data documentary on YouTube. Read the script below in a warm, curious voice "

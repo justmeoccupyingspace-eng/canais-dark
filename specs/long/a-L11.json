@@ -33,14 +33,14 @@
  "channel": "chartbound",
  "chapter0": "Passed",
  "thumb": {
-  "set": "ppp",
+  "set": "unemp",
   "iso": "ZAF",
   "years": [
    1994,
    2025
   ],
   "ymin": 0,
-  "ymax": 17000,
+  "ymax": 40,
   "band": [
    470,
    690
@@ -106,16 +106,6 @@
      "at": "sixty percent more",
      "iso": "ZAF",
      "year": 1994
-    },
-    {
-     "at": "Egypt passed",
-     "iso": "EGY",
-     "year": 2019
-    },
-    {
-     "at": "Indonesia, in 2023",
-     "iso": "IDN",
-     "year": 2023
     },
     {
      "at": "Vietnam, in 2024",
