@@ -19,6 +19,15 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
   3. Prioridade a dados recém-lançados (Eurostat, World Bank, institutos nacionais) e a ângulos com número próprio.
 - B (How It Ticks): PAUSADO a partir de 31/10 (nada de render novo; o canal fica, nada é apagado). B-L03 (GPS) cancelado. Esforço e cota concentrados no A até monetizar.
 
+## Decisão 30/10 23:00 (Kauan)
+- How It Ticks parado de vez até o Chartbound monetizar; depois disso, Claude decide se recria/reaproveita o slot com outro tema (autonomia total de administração).
+- Chartbound recebe o esforço que ia para o B:
+  1. Banco de pautas aprovadas no filtro de saturação (meta: ≥5 sempre prontas), cada uma com número próprio ou dado recém-lançado.
+  2. Teste A/B nativo do Studio (3 miniaturas) em todo longo novo, a partir do A-L04.
+  3. Cota TTS do modelo do B (gemini-3.8-flash-tts) passa a servir de reserva do A (refações sem perder o dia).
+  4. 2º longo por dia só quando o banco tiver ≥3 pautas aprovadas; reavaliar semanalmente por views/hora nas primeiras 48 h.
+- Exclusão: Claude deixa privado (reversível) e lista; apagar de vez é com o Kauan.
+
 ## Aprendizados de pauta
 - Coreia (A-L02): 99 views em ~2,3 dias, CTR 2,4% apesar de 50% de retenção. Tema mais batido do nicho (Kurzgesagt 15,9 mi + dezenas de vídeos "Korea is dying"); título "Scariest Number" soa igual aos clones. Retenção boa não salva CTR baixo: o filtro de saturação (regra 1) vale também para tema "do momento". A Polônia funcionou por ser número novo (IMF out/26) que ninguém tinha mostrado.
 - Shorts: os templated antigos (Etiópia 746, Egito ~790) superam os cortes do longo (5–135). Cortes não são o canal de descoberta; servem de vitrine para o longo.
