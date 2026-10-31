@@ -104,7 +104,15 @@ def gemini(text, voice, style, models):
 def edge(text, voice="en-US-AndrewMultilingualNeural"):
     import asyncio, tempfile, edge_tts, soundfile as sf
     with tempfile.TemporaryDirectory() as d:
-        asyncio.run(edge_tts.Communicate(re.sub(r"\[[^\]]*\]", "", text), voice, rate="+4%").save(f"{d}/a.mp3"))
+        for i in range(5):  # o serviço do edge às vezes devolve NoAudioReceived; tenta de novo com espera
+            try:
+                asyncio.run(edge_tts.Communicate(re.sub(r"\[[^\]]*\]", "", text), voice, rate="+4%").save(f"{d}/a.mp3"))
+                break
+            except Exception as e:
+                if i == 4:
+                    raise
+                print(f"::warning title=edge::tentativa {i}: {repr(e)[:80]}")
+                time.sleep(10 + 15 * i)
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", f"{d}/a.mp3", "-ac", "1", "-ar", str(SR), f"{d}/a.wav"], check=True)
         x, _ = sf.read(f"{d}/a.wav", dtype="float32")
     return x
