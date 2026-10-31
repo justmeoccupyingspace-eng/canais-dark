@@ -50,8 +50,8 @@
    "JPN"
   ],
   "top": "SPAIN > JAPAN",
-  "big": "FIRST",
-  "line2": "TIME EVER",
+  "big": "1ST",
+  "line2": "SINCE 1960",
   "color": "#ffd166"
  },
  "w": 1920,
@@ -682,14 +682,14 @@
     {
      "at": "five hundred and sixty trillion",
      "value": 561.75,
-     "fmt": "dec1",
-     "label": "trillion yen, net, end of 2025"
+     "fmt": "yenT",
+     "label": "net foreign assets, end of 2025"
     },
     {
      "at": "three point seven trillion",
      "value": 3.75,
-     "fmt": "dec2",
-     "label": "trillion US dollars"
+     "fmt": "usdT",
+     "label": "in US dollars (third in the world)"
     }
    ],
    "react": [

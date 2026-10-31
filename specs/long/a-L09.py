@@ -75,7 +75,7 @@ shots = [
          react=[dict(at="feel sorry", pose="shrug"), dict(at="one in four", pose="shock"), dict(at="one in twenty-five", pose="pointL"), dict(at="six times", pose="shock")]),
     dict(act=4, type="stats", src=NIIP, title="What Japan owns abroad, net",
          narration="And Japan is sitting on a mountain of savings. {p} Japanese families, companies and the government own about five hundred and sixty trillion yen more abroad than foreigners own in Japan. {p} That's about three point seven trillion dollars, a record, and the third biggest pile on Earth, after Germany and China. {pp} Interest and dividends from all of it flow home every year, and a weak yen makes them worth more in yen.",
-         stats=[dict(at="five hundred and sixty trillion", value=561.75, fmt="dec1", label="trillion yen, net, end of 2025"), dict(at="three point seven trillion", value=3.75, fmt="dec2", label="trillion US dollars")],
+         stats=[dict(at="five hundred and sixty trillion", value=561.75, fmt="yenT", label="net foreign assets, end of 2025"), dict(at="three point seven trillion", value=3.75, fmt="usdT", label="in US dollars (third in the world)")],
          react=[dict(at="mountain of savings", pose="pointUp"), dict(at="five hundred and sixty", pose="shock"), dict(at="third biggest", pose="pointL"), dict(at="worth more in yen", pose="think")]),
     dict(act=4, type="host", bg="none",
          narration="And here's the uncomfortable math for Spain. {p} If the yen went back to where it was in 2019, about a hundred and ten to the dollar, Japan would jump straight back ahead, by more than ten thousand dollars a person. {p} Japan's overall unemployment is about two and a half percent. Spain's is four times that. And both countries live about as long as anyone on Earth: around eighty-four years. {pp} <soft>Spain's lead is real, but it's fragile.</soft>",
@@ -214,7 +214,7 @@ for i, sh in enumerate(shots):
     sh["id"] = f"s{i:02d}"
 
 spec = dict(id="a-L09-spain-japan", clips=clips, channel="chartbound", chapter0="The flip",
-            thumb=dict(set="usd", iso="ESP", years=[1990, 2025], ymin=0, ymax=52000, band=[470, 690], flags=["ESP", "JPN"], top="SPAIN > JAPAN", big="FIRST", line2="TIME EVER", color="#ffd166"), w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
+            thumb=dict(set="usd", iso="ESP", years=[1990, 2025], ymin=0, ymax=52000, band=[470, 690], flags=["ESP", "JPN"], top="SPAIN > JAPAN", big="1ST", line2="SINCE 1960", color="#ffd166"), w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks,
             datasets=datasets, snapshot=snapshot,
             voice=dict(model="", name="Charon",
                        style=("You are the narrator of a popular data documentary on YouTube. Read the script below in a warm, curious voice "
