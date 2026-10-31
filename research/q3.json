@@ -1,0 +1,101 @@
+{
+ "channels": [],
+ "topics": [
+  {
+   "id": "portugal1",
+   "q": "Portugal economy poorer than Eastern Europe",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "portugal2",
+   "q": "why is Portugal so poor",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "vietnam1",
+   "q": "Vietnam overtakes Indonesia economy",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "vietnam2",
+   "q": "Vietnam economy richer",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "kuwait1",
+   "q": "Kuwait economy getting poorer",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "kuwait2",
+   "q": "gulf countries richer than America oil GDP per capita",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "turkey1",
+   "q": "Turkey richer than Mexico GDP per capita inflation",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "turkey2",
+   "q": "Turkey economy inflation explained",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "serbia1",
+   "q": "Serbia economy growth richer",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "spainjp",
+   "q": "Spain richer than Japan GDP per capita",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "romania1",
+   "q": "Romania economy growth explained",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "greece1",
+   "q": "Greece economy poorer than Poland",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  }
+ ]
+}
