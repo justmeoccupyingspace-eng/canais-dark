@@ -1,0 +1,45 @@
+{
+ "channels": [],
+ "topics": [
+  {
+   "id": "trgr1",
+   "q": "Turkey vs Greece economy",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "trgr2",
+   "q": "Turkey richer than Greece",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "tur3",
+   "q": "Turkey economy growing despite inflation",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "tur4",
+   "q": "Turkey GDP per capita",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "mex1",
+   "q": "Mexico economy stagnation why Mexico not growing",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  }
+ ]
+}
