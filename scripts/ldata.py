@@ -159,6 +159,10 @@ def check(S, c):
             a, b = S[c["set"]][c["a"]], S[c["set"]][c["b"]]
             first = min(y for y in a if y in b and a[y] > b[y] and y > 1990)
             return first == c["year"], f"primeiro ano {c['a']}>{c['b']}: {first} ({a[first]:.0f} vs {b[first]:.0f})"
+        if r == "first":  # primeiro ano (em toda a série) em que a > b
+            a, b = S[c["set"]][c["a"]], S[c["set"]][c["b"]]
+            first = min((y for y in a if y in b and a[y] > b[y]), default=None)
+            return first == c["year"], f"primeiro ano {c['a']}>{c['b']} desde {min(y for y in a if y in b)}: {first}"
         if r == "since":  # a > b em todos os anos a partir de 'year' (e não no ano anterior)
             a, b = S[c["set"]][c["a"]], S[c["set"]][c["b"]]
             ys = sorted(y for y in a if y in b)
