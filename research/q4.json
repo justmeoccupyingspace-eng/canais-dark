@@ -1,0 +1,61 @@
+{
+ "channels": [],
+ "topics": [
+  {
+   "id": "saudi1",
+   "q": "Saudi Arabia economy getting poorer",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "saudi2",
+   "q": "Saudi Arabia GDP per capita",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "uae1",
+   "q": "UAE richer than America GDP per capita",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "gulf1",
+   "q": "gulf states oil economy explained",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "gulf2",
+   "q": "why oil countries are getting poorer",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "kuwait3",
+   "q": "Kuwait economy explained",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "qatar1",
+   "q": "Qatar economy explained richest country",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  }
+ ]
+}
