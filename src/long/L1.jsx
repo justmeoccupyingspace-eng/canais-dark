@@ -19,11 +19,11 @@ const sp = (T, t0, cfg = {damping: 14, stiffness: 170}) => (t0 == null ? 0 : spr
 const on = (T, t0) => t0 != null && T >= t0;
 
 const NUM = {POL: '616', DEU: '276', JPN: '392', GBR: '826', IRL: '372', ESP: '724', FRA: '250', ITA: '380', NLD: '528', BEL: '056', LUX: '442', DNK: '208', GRC: '300', PRT: '620', AUT: '040', FIN: '246', SWE: '752', CZE: '203', SVK: '703', HUN: '348', SVN: '705', EST: '233', LVA: '428', LTU: '440', CYP: '196', MLT: '470', BGR: '100', ROU: '642', HRV: '191', KOR: '410', UKR: '804', SAU: '682', IRQ: '368', KWT: '414', ISR: '376', USA: '840', CHN: '156', RUS: '643', BLR: '112', SRB: '688', BIH: '070', MDA: '498', ALB: '008', MKD: '807', MNE: '499', NOR: '578', CHE: '756', ISL: '352', ARE: '784', QAT: '634', OMN: '512', BHR: '048', BRN: '096', YEM: '887', JOR: '400', IRN: '364'};
-const NAME = {POL: 'Poland', JPN: 'Japan', ESP: 'Spain', DEU: 'Germany', GRC: 'Greece', PRT: 'Portugal', UKR: 'Ukraine', KOR: 'South Korea', GBR: 'Britain', IRL: 'Ireland', CHN: 'China', ITA: 'Italy', USA: 'United States', HUN: 'Hungary', ISR: 'Israel', WLD: 'World', EUU: 'EU average', EU: 'EU average', LUX: 'Luxembourg', FRA: 'France', BEL: 'Belgium', NLD: 'Netherlands', DNK: 'Denmark', CHE: 'Switzerland', NOR: 'Norway', LVA: 'Latvia', LTU: 'Lithuania', EST: 'Estonia', BGR: 'Bulgaria', ROU: 'Romania', HRV: 'Croatia', SRB: 'Serbia', BIH: 'Bosnia', ALB: 'Albania', MDA: 'Moldova', SAU: 'Saudi Arabia', KWT: 'Kuwait', ARE: 'UAE', QAT: 'Qatar', OMN: 'Oman', BHR: 'Bahrain', BRN: 'Brunei'};
+const NAME = {POL: 'Poland', JPN: 'Japan', ESP: 'Spain', DEU: 'Germany', GRC: 'Greece', PRT: 'Portugal', UKR: 'Ukraine', KOR: 'South Korea', GBR: 'Britain', IRL: 'Ireland', CHN: 'China', ITA: 'Italy', USA: 'United States', HUN: 'Hungary', ISR: 'Israel', WLD: 'World', EUU: 'EU average', EU: 'EU average', LUX: 'Luxembourg', FRA: 'France', BEL: 'Belgium', NLD: 'Netherlands', DNK: 'Denmark', CHE: 'Switzerland', NOR: 'Norway', LVA: 'Latvia', LTU: 'Lithuania', EST: 'Estonia', BGR: 'Bulgaria', ROU: 'Romania', HRV: 'Croatia', SRB: 'Serbia', BIH: 'Bosnia', ALB: 'Albania', MDA: 'Moldova', CZE: 'Czechia', SVN: 'Slovenia', SVK: 'Slovakia', MLT: 'Malta', SAU: 'Saudi Arabia', KWT: 'Kuwait', ARE: 'UAE', QAT: 'Qatar', OMN: 'Oman', BHR: 'Bahrain', BRN: 'Brunei'};
 const COUNTRIES = feature(world, world.objects.countries).features;
 const BYNUM = Object.fromEntries(COUNTRIES.map((c) => [c.id, c]));
 
-const colOf = (p, iso) => ({POL: p.acc, JPN: p.warm, UKR: '#4aa8ff', ESP: '#c58bff', DEU: '#8fa3c7', GRC: '#5fd3ff', PRT: p.acc2, KOR: '#ff8ad8', CHN: '#ff9f43', ITA: '#5fd3ff', USA: '#8fa3ff', HUN: p.acc, ISR: p.acc2, WLD: '#ffffff', IRL: '#3ddc84', EUU: '#c9d1e6', EU: '#c9d1e6', LUX: '#5fd3ff', FRA: '#8fa3ff', BEL: '#ffd166', LVA: '#ff8ad8', BGR: '#ffb347', LTU: '#3ddc84', ROU: '#5fd3ff', EST: '#8fa3ff', HRV: '#c58bff', SAU: '#3ddc84', KWT: '#ff5a6e', ARE: '#ffd166', QAT: '#c58bff', OMN: '#ff9f43', BRN: '#ff8ad8', BHR: '#5fd3ff', NOR: '#5fd3ff'}[iso] || '#ffffff');
+const colOf = (p, iso) => ({POL: p.acc, JPN: p.warm, UKR: '#4aa8ff', ESP: '#c58bff', DEU: '#8fa3c7', GRC: '#5fd3ff', PRT: p.acc2, KOR: '#ff8ad8', CHN: '#ff9f43', ITA: '#5fd3ff', USA: '#8fa3ff', HUN: p.acc, ISR: p.acc2, WLD: '#ffffff', IRL: '#3ddc84', EUU: '#c9d1e6', EU: '#c9d1e6', LUX: '#5fd3ff', FRA: '#8fa3ff', BEL: '#ffd166', LVA: '#ff8ad8', BGR: '#ffb347', LTU: '#3ddc84', ROU: '#5fd3ff', EST: '#8fa3ff', HRV: '#c58bff', SAU: '#3ddc84', KWT: '#ff5a6e', ARE: '#ffd166', QAT: '#c58bff', OMN: '#ff9f43', BRN: '#ff8ad8', BHR: '#5fd3ff', NOR: '#5fd3ff', CZE: '#ff9f43', SVN: '#c58bff'}[iso] || '#ffffff');
 
 export const fmt = (v, k) => {
   if (v == null || Number.isNaN(v)) return '';
@@ -57,6 +57,7 @@ export const fmt = (v, k) => {
     case 'nsec': return (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(Math.round(v)) + ' ns';
     case 'usec': return (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(Math.round(v)) + ' µs';
     case 'eurk': return '€' + Math.round(v / 1000) + 'k';
+    case 'eur0': return '€' + Math.round(v).toLocaleString('en-US');
     default: return String(Math.round(v));
   }
 };
@@ -181,6 +182,7 @@ const Flag = ({iso, w = 150}) => {
   if (iso === 'EST') return <div style={{...box, background: 'linear-gradient(#0072ce 0 33.3%, #000 33.3% 66.6%, #fff 66.6% 100%)'}} />;
   if (iso === 'ROU') return <div style={{...box, background: 'linear-gradient(90deg, #002b7f 0 33.3%, #fcd116 33.3% 66.6%, #ce1126 66.6% 100%)'}} />;
   if (iso === 'IRL') return <div style={{...box, background: 'linear-gradient(90deg, #169b62 0 33.3%, #fff 33.3% 66.6%, #ff883e 66.6% 100%)'}} />;
+  if (iso === 'PRT') return <div style={{...box, background: 'linear-gradient(90deg, #006600 0 40%, #ff0000 40% 100%)'}}><div style={{position: 'absolute', left: w * 0.4 - h * 0.2, top: h * 0.3, width: h * 0.4, height: h * 0.4, borderRadius: '50%', border: `${h * 0.06}px solid #ffcc00`, boxSizing: 'border-box'}} /></div>;
   if (iso === 'SAU') return <div style={{...box, background: '#006c35'}}><div style={{position: 'absolute', left: w * 0.22, top: h * 0.66, width: w * 0.56, height: h * 0.06, background: '#fff', borderRadius: 3}} /><div style={{position: 'absolute', left: w * 0.26, top: h * 0.26, width: w * 0.48, height: h * 0.22, borderTop: `${h * 0.05}px dotted #fff`, borderBottom: `${h * 0.05}px dotted #fff`, opacity: 0.85}} /></div>;
   if (iso === 'KWT') return <div style={{...box, background: 'linear-gradient(#007a3d 0 33.3%, #fff 33.3% 66.6%, #ce1126 66.6% 100%)'}}><div style={{position: 'absolute', left: 0, top: 0, width: w * 0.25, height: h, background: '#000', clipPath: 'polygon(0 0, 100% 33.3%, 100% 66.6%, 0 100%)'}} /></div>;
   if (iso === 'ARE') return <div style={{...box, background: 'linear-gradient(#00732f 0 33.3%, #fff 33.3% 66.6%, #000 66.6% 100%)'}}><div style={{position: 'absolute', left: 0, top: 0, width: w * 0.25, height: h, background: '#ff0000'}} /></div>;
