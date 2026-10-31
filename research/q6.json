@@ -1,0 +1,85 @@
+{
+ "channels": [],
+ "topics": [
+  {
+   "id": "mex2",
+   "q": "Mexico economy falling behind",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "mex3",
+   "q": "Mexico GDP per capita passed",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "zaf1",
+   "q": "South Africa economy decline GDP per capita",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "zaf2",
+   "q": "Vietnam richer than South Africa",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "bgr1",
+   "q": "Bulgaria economy growth euro",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "geo1",
+   "q": "Georgia economy boom",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "rus1",
+   "q": "Russia economy bigger than Italy Canada",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "sgp1",
+   "q": "Singapore richer than Norway",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "ghana1",
+   "q": "Ghana richer than India",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  },
+  {
+   "id": "chn1",
+   "q": "China richer than Mexico per capita",
+   "order": "viewCount",
+   "after": "2024-10-31T00:00:00Z",
+   "dur": "any",
+   "n": 15
+  }
+ ]
+}
