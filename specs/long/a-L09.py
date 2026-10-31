@@ -74,7 +74,7 @@ shots = [
          narration="But don't feel sorry for Japan just yet. {p} Look at young people looking for work. {p} In Spain, about one in four can't find a job. {pp} In Japan, about one in twenty-five. {p} A young Spaniard is more than six times as likely to be unemployed. {p} Japan has the opposite problem: it can't find enough workers.",
          react=[dict(at="feel sorry", pose="shrug"), dict(at="one in four", pose="shock"), dict(at="one in twenty-five", pose="pointL"), dict(at="six times", pose="shock")]),
     dict(act=4, type="stats", src=NIIP, title="What Japan owns abroad, net",
-         narration="And Japan is sitting on a mountain of savings. {p} Japanese families, companies and the government own about five hundred and sixty trillion yen more abroad than foreigners own in Japan. {p} That's about three point seven trillion dollars, a record, and the third biggest pile on Earth, after Germany and China. {pp} A weak yen makes all of that worth more back home.",
+         narration="And Japan is sitting on a mountain of savings. {p} Japanese families, companies and the government own about five hundred and sixty trillion yen more abroad than foreigners own in Japan. {p} That's about three point seven trillion dollars, a record, and the third biggest pile on Earth, after Germany and China. {pp} Interest and dividends from all of it flow home every year, and a weak yen makes them worth more in yen.",
          stats=[dict(at="five hundred and sixty trillion", value=561.75, fmt="dec1", label="trillion yen, net, end of 2025"), dict(at="three point seven trillion", value=3.75, fmt="dec2", label="trillion US dollars")],
          react=[dict(at="mountain of savings", pose="pointUp"), dict(at="five hundred and sixty", pose="shock"), dict(at="third biggest", pose="pointL"), dict(at="worth more back home", pose="think")]),
     dict(act=4, type="host", bg="none",
@@ -84,7 +84,7 @@ shots = [
 
     # ---------------- 5 · WHAT COMES NEXT ----------------
     dict(act=5, type="lines", set="old", series=["KOR", "ESP", "ITA", "JPN"], years=[1990, 2025], start=1990.0, y=[0, 32], src=WB + " · population aged 65+ (% of total) · fertility rate (births per woman)", fmt="pct0", hl="ESP",
-         narration="And Spain faces Japan's problem, just later. {p} Spanish women now have about one point one children on average. That's even fewer than in Japan. {p} People sixty-five and over are now more than a fifth of Spain's population. {p} That's where Japan was around 2007. Today it's at thirty percent. {pp} Without immigrants, Spain would already be shrinking. {p} South Korea and Italy are on the same road, and Korea is moving down it fastest of all.",
+         narration="And Spain faces Japan's problem, just later. {p} Spanish women now have about one point one children on average. That's even fewer than in Japan. {p} People sixty-five and over are now more than a fifth of Spain's population. {p} That's where Japan was around 2007. Today it's at thirty percent, and the share of Japanese of working age has fallen from sixty-eight percent in 2000 to under fifty-nine. {pp} Without immigrants, Spain would already be shrinking. {p} South Korea and Italy are on the same road, and Korea is moving down it fastest of all.",
          keys=[dict(at="just later", year=2007.0, dur=6.0), dict(at="more than a fifth", year=2025.0, dur=5.0)],
          labels=[dict(at="around 2007", iso="JPN", year=2007), dict(at="more than a fifth", iso="ESP", year=2025), dict(at="thirty percent", iso="JPN", year=2025)],
          react=[dict(at="just later", pose="think"), dict(at="one point one", pose="shock"), dict(at="more than a fifth", pose="pointL"), dict(at="already be shrinking", pose="shrug")]),
@@ -169,12 +169,15 @@ checks = [
     dict(say="ESP PPP 2025 ≈ $60k", set="pppx", iso="ESP", year=2025, min=59000, max=60999),
     dict(say="Spain 2nd most visited after France (UN Tourism)", rule="expr", expr="True", equal=True),
     dict(say="BoJ first hike in 17 years (Mar 2024 vs Feb 2007)", rule="expr", expr="2024 - 2007", equal=17),
+    dict(say="JPN working-age 2000 ≈ 68%", set="wa", iso="JPN", year=2000, min=67.5, max=68.5),
+    dict(say="JPN working-age 2025 < 59%", set="wa", iso="JPN", year=2025, max=58.99),
     dict(say="JPN 65+ 2025 ≈ 30%", set="old", iso="JPN", year=2025, min=29.5, max=30.5),
 ]
 
 datasets = [
     dict(set="usd", wb="NY.GDP.PCAP.CD", isos=["ESP", "JPN", "ITA"], **{"from": 1990, "to": 2025}),
     dict(set="usd60", wb="NY.GDP.PCAP.CD", isos=["ESP", "JPN", "KOR"], **{"from": 1960, "to": 2025}),
+    dict(set="wa", wb="SP.POP.1564.TO.ZS", isos=["JPN"], **{"from": 2000, "to": 2025}),
     dict(set="le", wb="SP.DYN.LE00.IN", isos=["ESP", "JPN"], **{"from": 2020, "to": 2024}),
     dict(set="pppx", wb="NY.GDP.PCAP.PP.CD", isos=["ESP", "JPN"], **{"from": 1990, "to": 2025}),
     dict(set="fx", wb="PA.NUS.FCRF", isos=["JPN"], **{"from": 2005, "to": 2025}),
