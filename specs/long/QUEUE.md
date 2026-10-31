@@ -44,7 +44,7 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 - 02/11: A-L09 (3.1, 18:00Z) + A-L08 (3.8, 23:00Z).
 - 03/11: A-L10 (3.1, 18:00Z) + A-L11 África do Sul (3.8, 23:00Z).
 - Banco após 03/11: A-L12 Bulgária + novas pautas (garimpar 01/11).
-- Antes de cada render: teste visual grátis (engine=edge) e checagem de títulos de stats ≤34 caracteres, stats na ordem da fala, miniatura com line2 ≤10 caracteres (senão o mascote cobre).
+- Antes de cada render: validar deixas (todo 'at' existe na fala), teste visual grátis (engine=edge) e checagem de títulos de stats ≤34 caracteres, stats na ordem da fala, miniatura com line2 ≤10 caracteres (senão o mascote cobre).
 
 ## TikTok C (alerta 31/10)
 - Template escuro (gabgen) zerou: MDC 29/10 19:30, negação 30/10 12:30, Pitágoras 30/10 19:30 = 0 views (MDC com 27 h). Antes: 107–219 por post. Template claro do Kauan segue com views (111, 34).
@@ -61,9 +61,9 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 | A-L06 | Portugal Was Richer Than Eastern Europe. Not Anymore. (Polônia à frente em PPP 2025; Eslovênia/Chéquia/Malta/Lituânia de vez) | roteiro + checks ok (41183488650), 1.124 palavras, voz 3.1 · tela final → Polônia | 01/11 18:00Z |
 | A-L07 | Turkey Caught Up With Greece. Despite 50% Inflation. (PPP 2025 empatado; nominal 1,45×) | roteiro + checks ok (41184357770), 1.266 palavras, voz 3.8 · tela final → A-L06 | 01/11 23:00Z (cortes A2) |
 | A-L08 | Vietnam Overtook Indonesia. With a Third of the People. | pronto: checks ok, 1.279 palavras, voz 3.8, teste visual ok · tela final → Coreia | 02/11 23:00Z (cortes A2) |
-| A-L09 | In 2012, Japan Was 74% Richer Than Spain. Now Spain Is Ahead. | pronto: checks ok (1ª vez desde 1960), 1.141 palavras, voz 3.1 · tela final → Polônia | 02/11 18:00Z |
-| A-L10 | Mexico Exports 4x More Than in 2000. Its Workers Produce Less. (21 países passaram; PIB por trabalhador −10%) | pronto: checks ok, 1.110 palavras, voz 3.1 · tela final → A-L07 | 03/11 18:00Z |
-| A-L11 | South Africans Are Poorer Than in 2008. Here's Why. (Egito 2019, Indonésia 2023, Vietnã 2024 passaram em PPP; pico real em 2013) | pronto: checks ok, ~1.270 palavras, voz 3.8 · tela final → A-L08 | 03/11 23:00Z (cortes A2) |
+| A-L09 | In 2012, Japan Was 74% Richer Than Spain. Now Spain Is Ahead. | pronto: checks ok (1ª vez desde 1960), 1.141 palavras, voz 3.1, teste visual ok · tela final → Polônia | 02/11 18:00Z |
+| A-L10 | Mexico Exports 4x More Than in 2000. Its Workers Produce Less. (21 países passaram; PIB por trabalhador −10%) | pronto: checks ok, 1.110 palavras, voz 3.1, teste visual ok · tela final → A-L07 | 03/11 18:00Z |
+| A-L11 | South Africans Are Poorer Than in 2008. Here's Why. (Egito 2019, Indonésia 2023, Vietnã 2024 passaram em PPP; pico real em 2013) | pronto: checks ok, ~1.270 palavras, voz 3.8, teste visual ok · tela final → A-L08 | 03/11 23:00Z (cortes A2) |
 | A-L12 | Bulgária: do mais pobre da UE ao euro (jan/26), 0,31→0,49 dos EUA desde 2010 | banco: filtro ok (q6; maior longo 78 mil) | |
 | A-L13 | Albânia mais rica por pessoa que México (PPP 2024) e Brasil (nominal 2024) | banco: q7 ok (TLDR 115 mil; nada ≥500 mil) | |
 | A-L14 | Grécia passada por Polônia (nominal 2024), Croácia (2025), Romênia (PPP) — da riqueza ao penúltimo lugar da UE | banco: q7 ok (concorrente de 24/10/26 com 19 mil) · espaçar do A-L07 | |
