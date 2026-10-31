@@ -49,8 +49,8 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 | A-L01 | Poland passed Japan | publicado | 27/10 |
 | A-L02 | South Korea's scariest number | publicado (PP9J1_ZcpBo) | 29/10 18:40Z |
 | A-L03 | Ireland is the richest country in Europe. It isn't. | agendado (EpQQtd0o78Q) · cortes 6z26Abz-OT4, ScvCTM6mp9s, uxy6Av-fHBw, MmF-8_Niq0I | 30/10 18:00Z |
-| A-L04 | Latvia Lost 30% of Its People. There Was No War. | roteiro + dados ok (52 checks) · teste visual edge run 41021249686 | 31/10 18:00Z |
-| A-L05 | Saudi Arabia Is No Richer Than in 1990 (Golfo: PIB real por pessoa, mesma produção de petróleo p/ o dobro de gente, média que mistura cidadão e migrante, Noruega) | roteiro + dados ok (2º slot; voz Charon no gemini-3.8-flash-tts) | 31/10 23:00Z |
+| A-L04 | Latvia Lost 30% of Its People. There Was No War. | agendado (LinIPuj7wDI) · cortes 9NsLyIXALV4, xAsXXbTTBAY, APX7b0usW5M, ScuyYnuARNU | 31/10 18:00Z |
+| A-L05 | Saudi Arabia Is No Richer Than in 1990 (Golfo) | agendado (s7VEEc8S61c, voz Charon no 3.8, 8:02) · cortes TZSIH-yJFQI, wdyKVv2WiXo | 31/10 23:00Z |
 | A-L06 | Portugal ficou para trás do Leste (Polônia passou Portugal em PPP 2025; continuação do hit da Polônia) | banco: filtro ok (q3), número próprio | |
 | A-L07 | Turquia mais rica por pessoa que México e Argentina apesar da inflação (US$ nominal 2024) | banco: tema Turquia saturado, ângulo próprio ok | |
 | A-L08 | Vietnã passou a Indonésia (PPP e nominal, 2025) | banco: Vietnã tem concorrência (Statrys 941 mil); ângulo da ultrapassagem é novo | |
