@@ -37,7 +37,7 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 - Depois que o A-L06 sair (01/11 18:00Z): trocar tela final + card do Poland (ainda +500 views/h) de Korea para o A-L06. Maior alavanca de tráfego para os novos.
 - Shorts: os templated antigos (Etiópia 746, Egito ~790) superam os cortes do longo (5–135). Cortes não são o canal de descoberta; servem de vitrine para o longo.
 
-## Telas finais / cards (estado 31/10 01:40Z)
+## Telas finais / cards (estado 31/10 01:40Z; 01/11: A-L06 → Poland + inscrição; A-L07 → A-L06 + inscrição; Poland → A-L06 pendente p/ 18:15Z)
 - Poland (XGmxZPO8lx8): tela final → Korea + inscrição; cards: Korea 7:21, Ireland 4:47 ("Europe's richest? Not really").
 - Korea (PP9J1_ZcpBo): tela final → Poland + inscrição.
 - Ireland (EpQQtd0o78Q): tela final → Korea (bate com o "watch next 0.72" do outro) + inscrição; card Poland 5:30.
@@ -70,7 +70,7 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 | A-L04 | Latvia Lost 30% of Its People. There Was No War. | agendado (LinIPuj7wDI) · cortes 9NsLyIXALV4, xAsXXbTTBAY, APX7b0usW5M, ScuyYnuARNU | 31/10 18:00Z |
 | A-L05 | Saudi Arabia Is No Richer Than in 1990 (Golfo) | agendado (s7VEEc8S61c, voz Charon no 3.8, 8:02) · cortes TZSIH-yJFQI, wdyKVv2WiXo | 31/10 23:00Z |
 | A-L06 | Poland Just Passed Portugal. Again. (título trocado 31/10 para o público polonês; era "Portugal Was Richer…") | agendado (aaBU1S0wwpM, render 41284184197, 8:23) · cortes 2gl7fS3Ebm0, BMxSpCNgTYQ, Big4NErU6u0, Wc82qjCvjFk · tela final → Polônia | 01/11 18:00Z |
-| A-L07 | Turkey Caught Up With Greece. Despite 50% Inflation. (PPP 2025 empatado; nominal 1,45×) | render 41284189217 deu 7:59 (corte de 24,5 s de fala fora do roteiro no ato 0) → +34 palavras no ato 3 e WATCH NEXT corrigido; re-render 41286294903 com cache de voz · tela final → A-L06 | 01/11 23:00Z (cortes A2) |
+| A-L07 | Turkey Caught Up With Greece. Despite 50% Inflation. | agendado (dJbN7cO1Rnc, render 41286294903, 8:06; 1º render deu 7:59 → +34 palavras no ato 3, WATCH NEXT corrigido) · cortes A2 zfDCacC3I9I, wxEb-427bJg · tela final → A-L06 | 01/11 23:00Z |
 | A-L08 | Vietnam Overtook Indonesia. With a Third of the People. | pronto: checks ok, 1.279 palavras, voz 3.8, teste visual ok · tela final → Coreia | 02/11 23:00Z (cortes A2) |
 | A-L09 | In 2012, Japan Was 74% Richer Than Spain. Now Spain Is Ahead. | pronto: checks ok (1ª vez desde 1960), 1.141 palavras, voz 3.1, teste visual ok · tela final → Polônia | 02/11 18:00Z |
 | A-L10 | Mexico Exports 4x More Than in 2000. Its Workers Produce Less. (21 países passaram; PIB por trabalhador −10%) | pronto: checks ok, 1.110 palavras, voz 3.1, teste visual ok · tela final → A-L07 | 03/11 18:00Z |
