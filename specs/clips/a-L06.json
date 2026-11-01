@@ -1,0 +1,56 @@
+{
+ "channel": "chartbound",
+ "long": "aaBU1S0wwpM",
+ "longTitle": "Poland Just Passed Portugal. Again.",
+ "preview": "long-41284184197",
+ "timeline": "lprep-41284184197",
+ "timeline_file": "a-L06-portugal.json",
+ "sources": "Sources: World Bank WDI (NY.GDP.PCAP.PP.CD, NY.GDP.PCAP.PP.KD, NE.GDI.FTOT.ZS, SM.POP.NETM, SP.DYN.LE00.IN, NY.GDP.MKTP.KD.ZG); Eurostat (prc_ppp_ind, edat_lfse_03, earn_mw_cur, gov_10dd_edpt1); European Commission (financial assistance to Portugal); WTO; EU enlargement 2004.",
+ "music_credits": "Music by Kevin MacLeod (incompetech.com), CC BY 4.0.",
+ "hashtags": "#poland #portugal #europe #economics #data",
+ "tags": [
+  "poland",
+  "portugal",
+  "poland economy",
+  "eastern europe",
+  "romania",
+  "europe economy",
+  "gdp per capita",
+  "minimum wage",
+  "shorts"
+ ],
+ "clips": [
+  {
+   "from": "s00",
+   "to": "s00",
+   "hook": "Poland just passed *Portugal*",
+   "title": "Portugal was twice as rich as Poland. Not anymore #Shorts",
+   "desc": "In 1995 the average Portuguese produced almost twice what a Pole did. In 2025 Poland passed Portugal again.",
+   "at": "2026-11-01T22:00:00Z"
+  },
+  {
+   "from": "s06",
+   "to": "s06",
+   "hook": "The real reason: *school*",
+   "title": "Why Portugal fell behind Eastern Europe, in one chart #Shorts",
+   "desc": "In 2000, fewer than 1 in 5 Portuguese adults had finished high school. In Poland, 4 in 5.",
+   "at": "2026-11-02T01:00:00Z"
+  },
+  {
+   "from": "s10",
+   "to": "s10",
+   "hook": "Polish minimum wage > *Portugal's*",
+   "title": "Poland's minimum wage is now higher than Portugal's #Shorts",
+   "desc": "2005: €210 vs €437. 2025: €1,100 vs €1,015 (Eurostat).",
+   "at": "2026-11-02T12:00:00Z"
+  },
+  {
+   "from": "s14",
+   "to": "s14",
+   "hook": "Portugal's *secret* advantage",
+   "title": "The one thing Portugal does better than Poland #Shorts",
+   "desc": "Three budget surpluses in a row, and debt falling fast.",
+   "at": "2026-11-02T15:00:00Z"
+  }
+ ]
+}
