@@ -62,6 +62,14 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 - Decisão após o teste: c-315 claro >0 views (≥30) → agendar c-320…c-331 claros 03–08/11 12:00/19:00 (+ c-316 01/11 12:00, c-317 01/11 18:30 se o Kauan apagou os escuros desses dias). Claro também 0 → problema é da conta/série, não do visual: parar de agendar duplicatas e testar formato diferente (sem mascote/sem TTS, estilo do Kauan).
 - Agendados c-318…c-331 (02–08/11, 12:30/19:30) são todos template escuro. Se 31/10 12:30 (Excel) e 19:30 (colocação) também ficarem em 0 após 3 h, o template está sendo filtrado → trocar visual/áudio antes de 02/11 (agendado no TikTok não edita, só apaga — apagar é do Kauan).
 
+## TikTok C: funil para o WhatsApp (decisão do Kauan 01/11 16:53 — sem canal de histórias; foco em vender a apostila)
+- Kauan NÃO quer o canal de histórias animadas (pesquisa em /home/claude/reports/Rota de retorno mais rápida.md). Seguir: TikTok → WhatsApp → apostila; YouTube segue o calendário (veredito do A-L06/A-L07 em 04/11).
+- 01/11: comentário-CTA ("Quer a amostra grátis da apostila... Chama no WhatsApp da bio e manda AMOSTRA.") postado no c-315 e no c-316. Fixar comentário NÃO existe no TikTok web (só "Excluir"). Repetir em cada post claro publicado (nas checagens).
+- Bio: tentativa de trocar para "1 questão do Escrevente TJSP por dia. Amostra grátis: WhatsApp 11 91729-1381" falhou 2x no web ("Algo deu errado"); bio atual já tem o WhatsApp. Não insistir.
+- Semana 46 (próximo lote, c-332+): cena final com CTA de venda ("Amostra grátis da apostila: WhatsApp na bio", fala "Quer a amostra grátis? Chama no WhatsApp da bio.") em vez de só "Siga"; mais posts de edital/prazo ("faltam X dias para o fim das inscrições", 10/12), salário e circunscrição do interior (2ª–10ª RAJ), que trazem candidato novo.
+- Instagram @gabaritododia (liberado pelo Kauan para concursos): 4 posts, 0 seguidores em 01/11. Plano: repostar os vídeos claros como Reels (1/dia) — Reels alcança não seguidores e o IG aceita link clicável do WhatsApp na bio sem mínimo de seguidores (TikTok exige 1.000).
+- Números 01/11 ~17h: c-315 claro 94 views/7 curtidas (24 h); c-316 claro 78 em 5 h; posts do Kauan 108–163. Perfil: 89 seguidores, 164 curtidas.
+
 ## A · Chartbound
 | id | tema | estado | publicação |
 |---|---|---|---|
