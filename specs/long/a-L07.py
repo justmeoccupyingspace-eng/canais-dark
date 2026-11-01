@@ -60,9 +60,9 @@ shots = [
 
     # ---------------- 3 · THE INFLATION ----------------
     dict(act=3, type="host", bg="none",
-         narration="Quick favor: if you're finding this interesting, hit subscribe. It's free, and it's genuinely what keeps this channel going. {p} Now, the part that makes this so strange: {pp} the inflation.",
+         narration="Quick favor: if you're finding this interesting, hit subscribe. It's free, and it's genuinely what keeps this channel going. {p} So far, this sounds like a pure success story: an economy that more than tripled, exports up more than sevenfold. {p} Look only at those numbers, and you'd think Turkey had found the perfect recipe. {pp} Now, the part that makes this so strange: {pp} the inflation.",
          items=[dict(at="hit subscribe", text="Subscribe = more of these"), dict(at="so strange", text="The strange part:", color="acc2"), dict(at="the inflation", text="The inflation.", serif=True, size=72, color="acc")],
-         react=[dict(at="Quick favor", pose="wave"), dict(at="so strange", pose="think"), dict(at="the inflation", pose="pointUp")]),
+         react=[dict(at="Quick favor", pose="wave"), dict(at="pure success story", pose="cheer"), dict(at="perfect recipe", pose="shrug"), dict(at="so strange", pose="think"), dict(at="the inflation", pose="pointUp")]),
     dict(act=3, type="bars", mode="abs", set="cpi", iso="TUR", years=[1995, 2025], start=1995.0, fmt="int", src=WB + " · inflation, consumer prices (annual %)",
          narration="High inflation isn't new in Turkey. {p} In the 1990s, prices rose by eighty or ninety percent a year. {p} Prices rose so much that in 2005 Turkey knocked six zeros off its currency: one million old lira became one new lira. {p} After a crisis in 2001 and tough reforms, inflation fell to single digits for over a decade. {p} And then it came back. {pp} Seventy-two percent in 2022. Fifty-eight percent in 2024.",
          keys=[dict(at="isn't new", year=1999.0, dur=4.0), dict(at="single digits", year=2016.0, dur=5.0), dict(at="it came back", year=2025.0, dur=4.0)],
@@ -109,7 +109,7 @@ shots = [
          items=[dict(at="isn't that inflation is fine", text="Inflation ≠ fine", color="acc"), dict(at="stability alone", text="Stability ≠ growth", color="acc2"), dict(at="burning its own money", text="Growth without the burn?", serif=True, size=60)],
          react=[dict(at="inflation is fine", pose="shrug"), dict(at="stability alone", pose="think"), dict(at="keeps building", pose="pointUp"), dict(at="burning its own money", pose="think")]),
     dict(act=6, type="end", src="",
-         next=dict(kicker="WATCH NEXT", big="1995", color="acc", title="Portugal was richer than Eastern Europe", sub="Not anymore."),
+         next=dict(kicker="WATCH NEXT", big="2025", color="acc", title="Poland just passed Portugal", sub="Again."),
          narration="Turkey isn't the only country that has caught a richer neighbor. To see Eastern Europe overtake Portugal, watch the next video. {p} I'm Chartbound. See you in the next one.",
          hold=14,
          react=[dict(at="overtake Portugal", pose="pointL"), dict(at="See you", pose="wave")]),

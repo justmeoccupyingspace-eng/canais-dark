@@ -489,7 +489,7 @@
    "act": 3,
    "type": "host",
    "bg": "none",
-   "narration": "Quick favor: if you're finding this interesting, hit subscribe. It's free, and it's genuinely what keeps this channel going. {p} Now, the part that makes this so strange: {pp} the inflation.",
+   "narration": "Quick favor: if you're finding this interesting, hit subscribe. It's free, and it's genuinely what keeps this channel going. {p} So far, this sounds like a pure success story: an economy that more than tripled, exports up more than sevenfold. {p} Look only at those numbers, and you'd think Turkey had found the perfect recipe. {pp} Now, the part that makes this so strange: {pp} the inflation.",
    "items": [
     {
      "at": "hit subscribe",
@@ -512,6 +512,14 @@
     {
      "at": "Quick favor",
      "pose": "wave"
+    },
+    {
+     "at": "pure success story",
+     "pose": "cheer"
+    },
+    {
+     "at": "perfect recipe",
+     "pose": "shrug"
     },
     {
      "at": "so strange",
@@ -931,10 +939,10 @@
    "src": "",
    "next": {
     "kicker": "WATCH NEXT",
-    "big": "1995",
+    "big": "2025",
     "color": "acc",
-    "title": "Portugal was richer than Eastern Europe",
-    "sub": "Not anymore."
+    "title": "Poland just passed Portugal",
+    "sub": "Again."
    },
    "narration": "Turkey isn't the only country that has caught a richer neighbor. To see Eastern Europe overtake Portugal, watch the next video. {p} I'm Chartbound. See you in the next one.",
    "hold": 14,
