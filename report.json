@@ -1,0 +1,26 @@
+{
+ "Gacrux": {
+  "dur": 23.7,
+  "wpm": 132,
+  "f0_std": 5.88,
+  "f0_p10_90": 14.6,
+  "pauses_05": 0,
+  "pause_total": 0
+ },
+ "Sadaltager": {
+  "dur": 55.9,
+  "wpm": 56,
+  "f0_std": 4.39,
+  "f0_p10_90": 10.9,
+  "pauses_05": 9,
+  "pause_total": 7.0
+ },
+ "Algieba": {
+  "dur": 23.7,
+  "wpm": 132,
+  "f0_std": 6.33,
+  "f0_p10_90": 17.5,
+  "pauses_05": 4,
+  "pause_total": 2.2
+ }
+}
