@@ -1,0 +1,2839 @@
+R E S E A R C H & A N A LY S I S
+
+
+
+
+      Changes in U.S. Family Finances
+                  from 2022 to 2025
+Evidence from the Survey of Consumer Finances
+
+
+                                                       October 2026
+
+
+
+
+             BOARD OF GOVERNORS OF THE
+              F E D E R A L R E S E RV E S Y S T E M
+                                 The Federal Reserve is the central bank of
+                                 the United States. It performs five key
+                                 functions to promote the effective operation
+                                 of the U.S. economy and, more generally,
+                                 the public interest.
+
+
+The Federal Reserve
+
+■ conducts the nation’s monetary policy to promote maximum employment
+  and stable prices in the U.S. economy;
+
+■ promotes the stability of the financial system and seeks to minimize
+  and contain systemic risks through active monitoring and engagement in
+  the U.S. and abroad;
+
+■ promotes the safety and soundness of individual financial institutions
+  and monitors their impact on the financial system as a whole;
+
+■ fosters payment and settlement system safety and efficiency through
+  services to the banking industry and U.S. government that facilitate
+  U.S.-dollar transactions and payments; and
+
+■ promotes consumer protection and community development through
+  consumer-focused supervision and examination, research and analysis of
+  emerging consumer issues and trends, community economic development
+  activities, and administration of consumer laws and regulations.
+
+To learn more about us, visit www.federalreserve.gov/aboutthefed.htm.
+                                                                                                                                         i
+
+
+
+
+Contents
+
+Acknowledgments ........................................................................................................... iii
+Executive Summary ......................................................................................................... 1
+
+Income ............................................................................................................................... 5
+   Income by Family Characteristics ......................................................................................... 6
+   Box 1. Family Expenditures across Income and Wealth ......................................................... 9
+
+Net Worth ........................................................................................................................ 11
+   Net Worth by Family Characteristics ................................................................................... 11
+
+Assets .............................................................................................................................. 15
+   Financial Assets .............................................................................................................. 16
+   Box 2. Retirement Plan Participation ................................................................................. 17
+   Box 3. Public and Private Business Equity .......................................................................... 19
+   Nonfinancial Assets ......................................................................................................... 21
+   Box 4. Net Housing Wealth and Housing Affordability .......................................................... 22
+
+Debt .................................................................................................................................. 25
+   Debt Holdings by Type ...................................................................................................... 26
+   Box 5. Student Loans over the Usual Income Distribution ................................................... 27
+
+Financial Vulnerability ................................................................................................... 29
+   Debt Burden .................................................................................................................... 29
+   Credit Market Experiences ................................................................................................ 31
+
+References ...................................................................................................................... 33
+
+Appendix A: The Data in This Report and Statistical Measures ........................... 39
+   Definition of “Family” ....................................................................................................... 39
+   Statistical Measures ........................................................................................................ 40
+   Adjustment for Inflation .................................................................................................... 40
+   Asset and Liability Categories ........................................................................................... 41
+   Measures of Debt Burden and Credit Market Experiences ................................................... 45
+   Percentiles of the Distributions of Income and Net Worth .................................................... 47
+   Racial and Ethnic Identification ......................................................................................... 48
+   Educational Attainment Classifications .............................................................................. 50
+   Age Classifications .......................................................................................................... 51
+
+Appendix B: Description of the Survey and Survey Procedures ............................ 53
+   Sampling ......................................................................................................................... 53
+   The Interviews and Survey Questionnaire ........................................................................... 55
+   Weighting ........................................................................................................................ 56
+   Sources of Error ............................................................................................................... 56
+   Benchmarking and Comparison with External Data ............................................................. 57
+                                                                                                  iii
+
+
+
+
+Acknowledgments
+
+This report was prepared by staff in the Federal Reserve Board’s Division of Research and
+Statistics (R&S).
+
+
+R&S develops and presents economic and financial data and analysis for use by the Board of
+Governors, the Federal Open Market Committee, and other Federal Reserve System officials. It
+also fosters a broader understanding of issues relating to economic policy by conducting eco-
+nomic and statistical research and by supplying data and analyses for public release. R&S staff
+members Aditya Aladangady, Jesse Bricker, Andrew C. Chang, Sarena Goodman, Gina Li,
+Kevin B. Moore, Sarah Reber, Alice Henriques Volz, and Richard A. Windle prepared this report
+with assistance from Payton Crawford, Eve Devens, and Jack Duncan.
+
+
+Mention or display of a trademark, product, or firm in this report does not constitute an
+endorsement or criticism by the Board of Governors, the Federal Open Market Committee, or
+Federal Reserve System and does not imply approval or disapproval to the benefit or detriment of
+other trademarks, products, or firms.
+
+
+If you have questions about this report, contact alice.h.volz@frb.gov.
+
+
+Please cite this report as Aladangady, Aditya, Jesse Bricker, Andrew C. Chang, Sarena Goodman,
+Gina Li, Kevin B. Moore, Sarah Reber, Alice Henriques Volz, and Richard A. Windle (2026).
+Changes in U.S. Family Finances from 2022 to 2025: Evidence from the Survey of Consumer
+Finances. Washington: Board of Governors of the Federal Reserve System, October,
+https://doi.org/10.17016/8799.1.
+
+
+Please cite use of Survey of Consumer Finances data as Board of Governors of the Federal
+Reserve System. Division of Research and Statistics, Microeconomic Surveys (2026). “Survey of
+Consumer Finances,” https://doi.org/10.17016/datasets.001.
+                                                                                                                                1
+
+
+
+
+Executive Summary
+
+The Federal Reserve Board’s triennial Survey of Consumer Finances (SCF) collects information
+about U.S. family income, net worth, balance sheet components, credit use, and other financial
+outcomes.1 The Federal Reserve has sponsored the modern version of this survey of U.S. families
+every three years since 1989.2
+
+
+As context for the survey results, over the three years between the 2022 and 2025 surveys, real
+gross domestic product grew at an annual rate of around 2½ percent, the civilian unemployment
+rate rose from 3.7 percent to 4.2 percent, and the annual rate of change in the consumer price
+index averaged 3.6 percent.3 Against this backdrop of moderate economic expansion and elevated
+inflation, the 2025 SCF indicates that while most families experienced moderate increases in
+income and net worth, an increasing subset of families appear to have been experiencing finan-
+cial stress.
+
+
+Key findings in this report include the following:
+
+
+Income
+• Real median family income, which is measured for the year before the survey, rose 7 percent
+    between the 2022 to 2025 surveys, while real mean family income fell 6 percent.4
+• Families in the lower ends of the income and net worth distributions saw modest increases in
+    median and mean income, while families in the upper ends saw declines. These patterns indi-
+    cate that income inequality decreased slightly between surveys.
+• Median income generally exhibited broad-based gains across families with different characteris-
+    tics, while changes in mean income showed less of a consistent pattern. For example, while all
+    age groups saw growth in median income, with particularly strong growth among the oldest
+    families, mean income remained about unchanged for some age groups while sharply declining
+    for others. The main exception to the general growth in median income is for families grouped
+    by race or ethnicity, where Black non-Hispanic families and Asian families experienced declines
+    in median and mean income.
+
+1
+  See appendix A and B for a general description of the SCF data as well as key technical aspects of the survey.
+2
+  The SCF has been conducted in a consistent manner since 1989. Earlier surveys covered related content but used a dif-
+  ferent survey methodology. Results from previous surveys are available on the Federal Reserve Board’s Survey of Con-
+  sumer Finances website (https://doi.org/10.17016/datasets.001).
+3
+  Changes in aggregate statistics throughout this report are measured from March to March or first quarter to first
+  quarter of the respective survey years, which is just before the beginning of the field period for each survey, unless oth-
+  erwise indicated.
+4
+  In this report, all dollar amounts from the SCF are adjusted to 2025 dollars using the “current methods” version of the
+  consumer price index for all urban consumers (CPI-U-RS), unless otherwise noted.
+2   Changes in U.S. Family Finances from 2022 to 2025
+
+
+
+
+    Net Worth
+    • Between 2022 and 2025, real median net worth (wealth) rose by 2 percent, while real mean
+      net worth rose more, by 7 percent. On balance, wealth inequality appears little changed
+      since 2022.
+    • In contrast to income, changes in wealth largely reinforced existing patterns of wealth inequality
+      by family characteristics. Families that typically have less wealth (such as young families,
+      renters, and families without a high school diploma) saw median and, oftentimes, mean wealth
+      declines. Meanwhile, compared with families in other groups, families that typically have more
+      wealth (such as families at the top of the income distribution, older families, and those at the
+      upper end of the wealth distribution) saw some of the largest median and mean wealth gains.
+
+
+    Assets
+    • The homeownership rate was 66 percent in 2025, about unchanged from 2022. For families
+      that owned a home, the median net housing value (the value of a home minus home-secured
+      debt) rose to $230,000 in 2025 from $218,900 in 2022. Housing affordability remained near
+      its historical low, as the median home was worth more than 4.5 times the median
+      family income.
+    • Retirement plan participation, which includes account-type plans, individual retirement
+      accounts, or defined benefit plans, was up slightly between 2022 and 2025 at around 65 per-
+      cent. For families with account-type plans, mean and median balances rose. For younger fami-
+      lies, retirement plan participation across plan types continued to increase.
+    • Participation in the stock market declined slightly from 58 percent in 2022 to 56 percent in
+      2025. The decrease in participation was driven by families outside the top 10 percent of the
+      income distribution. Conditional on holding stock, median stock holdings grew 36 percent from
+      $56,900 in 2022 to $77,400 in 2025.
+    • In 2025, more than 15 percent of all families owned a privately held business, a slight increase
+      from 2022. This increase in privately held businesses was driven by families in the bottom
+      90 percent of income. That said, only 8 percent of families in the bottom half of the income dis-
+      tribution and 40 percent of families in the top decile of the income distribution owned a pri-
+      vately held business. Conditional on owning a business, the mean value was lower in 2025
+      than in 2022 for families in the bottom 90 percent of income and was about unchanged for the
+      top 10 percent.
+                                                                                   Executive Summary   3
+
+
+
+
+Debt
+• Despite an environment of rising interest rates on loans to households, the fraction of families
+  with any type of debt remained about stable at 77 percent. Median and mean debt outstanding
+  remained unchanged.
+• Total debt secured by a primary residence increased between 2022 and 2025. While about
+  42 percent of families in both 2022 and 2025 had debt secured by their primary residence,
+  among these families the median amount of this debt increased from $170,200 to $183,600,
+  and the mean increased from $232,500 to $239,700.
+• Total credit card debt also increased. While the share of families with credit card debt—families
+  with a balance on their credit cards after their last payment—was about unchanged at 45 per-
+  cent, median credit card debt increased $150 to $3,100 and mean credit card debt rose
+  $1,300 to $8,000.
+• The share of families that had student debt in 2025 was 20 percent, down 2 percentage points
+  from 2022. Among families with student debt, median and mean balances also declined 5 and
+  16 percent, to $25,600 and $43,000, respectively.
+
+
+Financial Vulnerability
+• Borrowers look less financially fragile when their debts are scaled to their assets rather than to
+  their income. For debtors, the median leverage ratio—a family’s total debt relative to its total
+  assets—was 26.9 percent, continuing the steady decline seen since the 2013 survey. However,
+  the median debt payment-to-income ratio was 15.4 percent, up 2.0 percentage points from
+  2022, which is an increase that may be related to the concurrent increase in interest rates for
+  mortgages and consumer loans. The total debt-to-income ratio also increased from 89.4 per-
+  cent in 2022 to 94.9 percent in 2025.
+• The fraction of families with debt payment-to-income ratios greater than 40 percent, which are
+  families with particularly high debt payment obligations relative to their incomes, increased from
+  6.5 to 8.6 percent, a level last seen in the 2013 survey.
+• Families’ propensity to stay current on their financial obligations worsened between 2022 and
+  2025. Families were more likely to be behind on their financial obligations than at any point
+  since the 2010 survey. Between the 2022 and 2025 surveys, the share of families that
+  reported being behind on loan payments sharply increased from about 12 percent to almost
+  20 percent. Furthermore, more than 8 percent reported being two months late or more, up from
+  5 percent in 2022.
+                                                                                                                           5
+
+
+
+
+Income
+
+Between the 2022 and 2025 surveys, real                           Figure 1. Change in median and mean family
+median income, which is measured for the                          incomes, 2019–25 surveys
+year before the survey, rose 7 percent
+(figure 1), from $76,900 in 2021 to $82,200                            Percent
+                                                                  15
+in 2024 (table 1). Real mean income, in con-                      12
+trast, fell 6 percent from $155,300 in 2021                        9
+                                                                   6
+to $145,200 in 2024.                                               3
+                                                                   0
+                                                                  −3
+The rise in median income combined with the                       −6
+fall in mean income indicates that the income                     −9
+                                                                                 2019–22               2022–25
+distribution narrowed between the 2022 and                                                 Median   Mean
+
+2025 surveys. The narrowing in the 2025
+                                                                  Note: Income is measured for the calendar year before
+survey partially unwound the widening that                        the survey year. Changes are based on inflation-
+                                                                  adjusted dollars.
+occurred in the income distribution between
+the 2019 and 2022 surveys. Taking a longer
+view, median income has risen 11 percent
+since the 2019 survey, while mean income has risen 8 percent, consistent with a decline in
+income inequality over this time period.
+
+
+The SCF is designed to capture families across the net worth (wealth) distribution, including fami-
+lies that have extremely high wealth. As a consequence, the SCF also captures the small set of
+families with extremely high income, since families with high wealth are likely to have high income.
+
+
+Generally, when data include very large values for a relatively small part of the population—as is
+the case for income, net worth, and many of the other items considered in this report—estimates
+of the median are often statistically less sensitive to such very large values than are estimates of
+the mean. At the same time, means are generally more useful for comparing across population
+subgroups, because every member of the group contributes equally to the overall average. In the
+case of income, changes in mean income are more affected than changes in median income by
+shifts in the income of families with extremely high income. Indeed, between the 2022 and 2025
+surveys, the fall in mean income was driven by a decline for families at the top of the income dis-
+tribution. In fact, excluding families in the top 1 percent of income indicates that, between the
+2022 and 2025 surveys, mean income declined only 1 percent.5
+
+
+5
+    Families with high income tend to have income from components that are volatile and can take very large values, pri-
+    marily capital gains and business income. Changes in these components can have a notable impact on the direction of
+6   Changes in U.S. Family Finances from 2022 to 2025
+
+
+
+
+    The SCF income measure reflects a family’s before-tax and inflation-adjusted income for the full
+    calendar year preceding the survey year. This measure aggregates reported income from specific
+    sources, most of which correspond to items on an income tax form.6 The SCF also includes ques-
+    tions to measure a family’s “usual income” because, in any given year, a family’s income may
+    reflect a recent spell of unemployment, a bonus from an employer, a capital loss or gain on invest-
+    ments, or other transitory factors.7 In the 2022 survey, 28 percent of families reported that their
+    income was unusual, a jump of 5 percentage points that was likely due to the COVID-19 pandemic
+    economy and the associated pandemic-related policies that were put into place. In the 2025
+    survey, 23 percent of families reported that their income was unusual, which was a return to the
+    pre-pandemic share.8
+
+
+    The SCF also includes a question that asks whether families have a good idea of their income for
+    the next year, as a way to measure families’ uncertainty over their future income. The share of
+    families that did not have a good idea of their income for the next year has continued to increase
+    since the 2019 survey, to a new SCF high of 37 percent in 2025.9
+
+
+    Income by Family Characteristics
+    The 2025 survey reveals typical patterns in income levels across demographic groups, largely con-
+    sistent with previous surveys (table 1).10 Across age groups, income shows a life-cycle pattern,
+    rising to a peak for families in one of the middle age groups and then declining for those that are
+    older and increasingly likely to be retired.11 Income also shows a strong positive association with
+    education; in particular, income among families with a college degree tends to be substantially
+
+
+       change for mean income, without changing the median. The more moderate decline in mean income when excluding
+       families in the top 1 percent of income is consistent with families at the top of the income distribution driving the overall
+       decline in mean income.
+     6
+       The sources of income collected in the survey include wages, self-employment and business income, taxable and tax-
+       exempt interest, dividends, realized capital gains, unemployment insurance, food stamps and other related support pro-
+       grams provided by the government, pensions and withdrawals from retirement accounts, Social Security, alimony and
+       other support payments, and miscellaneous sources.
+     7
+       Usual income is measured in the survey after income has been reported when respondents indicate their income in the
+       survey reference year was unusually high or low compared with what they would expect in a “normal year.”
+     8
+       Since the introduction of the usual income concept in the 1992 survey, the Global Financial Crisis–era 2010 survey had
+       the highest percentage of families report that their income was unusual—31 percent. In both 2010 and 2022, as in all
+       other survey years, the share of families that reported lower-than-usual income was larger than the share that reported
+       higher-than-usual income. In the 2025 survey, both the share of families that reported lower-than-usual income and
+       those families that reported higher-than-usual income stepped back to around their pre-COVID levels from the 2016 and
+       2019 surveys.
+     9
+       A discussion of this measure and other economic uncertainty measures, along with results from the 2019 and 2022
+       surveys, can be found in Aditya Aladangady, Andrew C. Chang, and Jacob Krimmel (2025).
+    10
+       Tabulated data from the survey beyond that presented in this report are available on the Board’s website at
+       https://doi.org/10.17016/datasets.001. This information includes some alternative versions of the tables in this
+       report, including tables that match the structure used in earlier versions of this publication. For those who wish to make
+       further alternative calculations, this website provides a variety of data files, a data visualization tool, and access to
+       online tabulation software that may be used to create customized tables based on the variables analyzed in this report.
+    11
+       In this report, unless otherwise noted, family characteristics refer to the characteristics of the reference person. For
+       example, families younger than age 35 refers to families where the reference person is younger than age 35. One
+       exception is grouping families by race or ethnicity, which uses the characteristics of the survey respondent. Appendix A
+       explains the designation of the reference person used in this report.
+                                                                                                               Income   7
+
+
+
+
+Table 1. Before-tax median and mean family income, by selected characteristics of families,
+2022 and 2025 surveys
+Thousands of 2025 dollars, except as noted
+
+                                                      Median income                          Mean income
+
+               Family characteristic                                    Percent                              Percent
+                                             2022         2025          change     2022          2025        change
+                                                                      2022–2025                            2022–2025
+All families                                  76.9         82.2            7       155.3         145.2          −6
+                                              (1.3)        (1.1)                     (4.6)        (2.4)
+Percentile of usual income
+Less than 20                                  23.7         24.6           4         24.6          26.5              8
+20–39.9                                       49.1         50.5           3         49.6          51.2              3
+40–59.9                                       77.9         83.1           7         80.1          84.6              6
+60–79.9                                      126.6        129.2           2        133.4         131.9          −1
+80–89.9                                      207.0        201.3          −3        220.3         211.6          −4
+90–100                                       414.0        387.2          −6        757.0         652.0         −14
+Age of reference person (years)
+Less than 35                                  66.2         67.8           2         90.5          89.0          −2
+35–44                                         94.0         97.0           3        186.0         139.8         −25
+45–54                                        100.5        108.9           8        187.6         187.1              0
+55–64                                         89.7         92.4           3        192.5         197.6              3
+65–74                                         66.6         69.4           4        156.0         138.4         −11
+75 or more                                    53.8         66.8          24        118.1         125.1           6
+Education of reference person
+No high school diploma                        35.4         36.3           3         46.2          52.3          13
+High school diploma                           58.0         60.6           5         81.0          82.7           2
+Some college                                  65.7         69.0           5         94.6          95.9           1
+College degree                               128.9        129.2           0        265.0         232.9         −12
+Race or ethnicity of respondent
+White non-Hispanic                            88.7         95.3           7        180.8         170.6          −6
+Black or African-American non-Hispanic        50.3         49.4          −2         77.7          73.5          −5
+Hispanic or Latino                            51.1         66.8          31         78.3          94.8          21
+Other or Multiple Race                        74.7         80.8           8        147.8         149.0              1
+  Asian                                      134.2        129.9          −3        257.0         255.9              0
+  Other (non-Asian) or Multiple Race          62.9         66.9           6         96.4         103.2              7
+Housing Status
+Owner                                        102.9        108.9           6        194.8         184.6          −5
+Renter or other                               46.3         50.3           9         78.5          70.3         −10
+Urbanicity
+Metropolitan statistical area (MSA)           80.3         84.2           5        166.2         153.5          −8
+Non-MSA                                       62.5         67.5           8         90.4          88.3          −2
+Percentile of net worth
+Less than 25                                  37.9         38.9           3         47.7          49.2              3
+25–49.9                                       65.2         67.7           4         76.5          79.7              4
+50–74.9                                       91.0         97.6           7        106.2         109.6              3
+75–89.9                                      153.8        152.0          −1        185.5         184.3          −1
+90–100                                       329.5        309.5          −6        698.4         579.7         −17
+Note: Income is measured for the year before the survey year. See appendix A and B for details on standard errors
+(shown in parentheses below the first row of data for the means and medians).
+8   Changes in U.S. Family Finances from 2022 to 2025
+
+
+
+
+    higher than for those with less schooling. Mean income among families with a college degree in
+    the 2025 survey was 2.4 times that of families with some college. Among families grouped by
+    race or ethnicity, income among families identified as White non-Hispanic or Asian was substan-
+    tially higher than for Black non-Hispanic, Hispanic, and other (non-Asian) or multiple race fami-
+    lies.12 Income was also considerably higher for homeowners and for families living in a metro-
+    politan statistical area (MSA) than for non-homeowners and families living in non-MSAs.13 Finally,
+    family income is positively correlated with net worth.
+
+
+    Altogether, the 2025 survey income data, compared with the 2022 survey, show that median
+    income generally rose within each family characteristic, while mean income exhibited less consis-
+    tent changes. For example, median income rose for families in the lower parts of the usual income
+    and net worth distributions, rose for families across all age groups, and rose especially for fami-
+    lies aged 75 or older and for Hispanic families.14 At the same time, mean income rose for some,
+    such as families with no high school diploma, while declining for many others, including families in
+    several age groups, families with a college degree, and families across urbanicity and housing
+    status. In particular, mean income declined 25 percent for families aged 35 to 44, driven by
+    declines in capital gains income.
+
+
+    The exceptions to the general pattern of a rise in median income were for Black non-Hispanic fami-
+    lies, Asian families, and families toward the top of the usual income and net worth distributions.
+    For these families, both median and mean income fell.
+
+
+    To complement analyses that examine income, which measures financial resources flowing to
+    families, the 2025 survey includes new questions on how families use their financial resources.
+    Specifically, the 2025 survey includes new questions about families’ total spending over the past
+    12 months and their hypothetical rates of spending, saving, and paying down debt if the family
+    were to unexpectedly receive one month’s worth of the family’s usual income. See box 1 for addi-
+    tional details on the distribution of spending and how that distribution varies based on usual
+    income.15
+
+
+
+
+    12
+       Appendix A provides information on racial and ethnic identification in the SCF.
+    13
+       In this report, a family is considered a homeowner if at least one person in the family owns at least some part of the
+       family’s primary residence.
+    14
+       Families aged 75 and older also saw notable increases in net worth. Increases in income could be driven by changes in
+       composition for this age group, but retirement income growth seems to play a key role, consistent with the drivers of net
+       worth growth; see the Net Worth section for more details.
+    15
+       Two FEDS Notes released concurrently with this report further examine the new 2025 SCF questions on spending
+       patterns, hypothetical rates of spending, saving, and propensity to pay down debt out of unexpected income
+       (Aditya Aladangady, Jesse Bricker, Andrew C. Chang, Sarena Goodman, and Gina Li, 2026a, 2026c).
+                                                                                                                              Income   9
+
+
+
+
+Box 1. Family Expenditures across Income and Wealth
+The 2025 Survey of Consumer Finances (SCF) added new questions on total nonhousing expenditures,
+as well as a new question on vacation spending. Along with existing questions on food, housing, and
+automobile expenditures, these questions provide more comprehensive measures of family spending.1
+With respect to total nonhousing expenditure (hereafter “total spending,” for short), families spent
+$48,700, on average, over the previous 12 months. Median total spending was $33,700 over the same
+period.2
+
+Average total spending was substantially higher for families with higher usual income. Spending among
+families in the bottom quintile of the usual income distribution was $17,600, 7.2 percent of overall
+spending. Total spending increased steadily up the income distribution to $68,700 among families in
+the 80th to 90th percentiles of usual income (figure A). Total expenditures were highly concentrated
+among households in the top decile of usual income, who spent an average of $138,800, nearly
+double the spending of the 80th to 90th percentiles, and accounted for 28.5 percent of overall
+spending.
+
+
+    Figure A. Average spending, by usual income group, 2025 survey
+
+          Thousands of 2025 dollars
+    150
+    120
+     90
+     60
+     30
+      0
+                Total             0–19.9       20–39.9         40–59.9            60–79.9          80–89.9           90–100
+                                                   Percentile of usual income
+
+
+Income alone may not drive spending, as families with substantial wealth may finance spending even
+when incomes are low or volatile. However, in practice, the distribution of spending across wealth
+groups paints a similar picture to the one presented across income, with the wealthiest families doing
+the bulk of spending. Average total spending over the previous 12 months was $23,400 among fami-
+lies in the bottom quintile of wealth and rose steadily across wealth groups, reaching $68,800 for fami-
+lies in the 80th to 90th percentiles. Families in the top decile, however, spent an average of $136,000
+for the year, accounting for 27.9 percent of aggregate spending.
+
+                                                                                                                     (continued)
+
+1
+  The FEDS Note by Aditya Aladangady, Jesse Bricker, Andrew C. Chang, Sarena Goodman, and Gina Li (2026c) provides further details
+  on the new questions, a comparison of spending estimates from the SCF to other sources, as well as the composition and
+  distribution of expenditures.
+2
+  Aggregate spending across all families over the previous 12 months was $6.61 trillion. While this measure of spending is different
+  in concept and coverage from other sources, this figure aligns broadly with survey-based measures from the Consumer Expenditures
+  Survey and Panel Study of Income Dynamics, though it is lower than measures of nonhousing expenditures from national accounts.
+10   Changes in U.S. Family Finances from 2022 to 2025
+
+
+
+
+       Box 1—continued
+         Figure B. Average spending, by net worth group, 2025 survey
+
+              Thousands of 2025 dollars
+        150
+        120
+         90
+         60
+         30
+          0
+                     Total            0–19.9   20–39.9          40–59.9         60–79.9   80–89.9   90–100
+                                                      Percentile of net worth
+
+
+       For particular spending categories, families spent an average of $7,700 (median of $6,000) on food at
+       home and $3,500 (median of $2,400) on food away from home. Food spending provides a sense of
+       family’s routine spending, and vacation expenditures capture a more discretionary form of spending
+       that may vary more across families. While vacation spending across all families averaged $4,200 over
+       the past year (median $1,000), 39 percent of families—primarily younger families, those with limited
+       income and wealth, and those with health issues—spent nothing on vacations in the past 12 months.
+       Among those that had vacation expenditures, spending averaged $7,000 (median $3,500) and was
+       much higher among families with higher income and wealth. Notably, vacation expenditures account for
+       an increasing share of total spending across both the income and wealth distributions—consistent with
+       vacations being luxury spending—whereas food accounts for a declining share.
+                                                                                                                              11
+
+
+
+
+Net Worth
+
+Median and mean inflation-adjusted net                             Figure 2. Change in median and mean family
+worth—the difference between families’                             net worth, 2019–25 surveys
+assets and liabilities—increased between the
+2022 and 2025 surveys (figure 2).16 Specifi-                            Percent
+                                                                   40
+cally, real median net worth increased 2 per-                      35
+                                                                   30
+cent to $215,900 and real mean net worth
+                                                                   25
+rose 7 percent to $1,241,500 (table 2).                            20
+                                                                   15
+These changes continued the recent trend of                        10
+growth that started between the 2013 and                            5
+                                                                    0
+2016 surveys. However, the growth in both                                         2019–22                2022–25
+median and mean net worth between 2022                                                      Median    Mean
+
+and 2025 was slower compared with this
+recent trend, and in particular was much
+                                                                   Note: Changes are based on inflation-adjusted dollars.
+slower than the growth between 2019 and
+2022 (figure 2).17 On balance, there is little
+change in wealth inequality between surveys.
+
+
+Net Worth by Family Characteristics
+Higher-income families tend to have higher net worth, as these families generally save more,
+which can result in a feedback effect of higher income from the accumulated assets. Furthermore,
+net worth tends to increase and then plateau (or decline) over the life cycle, reflecting changes in
+savings behavior that occur with age as individuals save for retirement throughout their working
+career and then spend those savings in retirement. Finally, net worth differs by family characteris-
+tics that include educational attainment, race or ethnic background, housing status, and urba-
+nicity. These cross-sectional differences in net worth across families generally mirror patterns
+seen in income, but the gaps are larger. For example, families in which the reference person had a
+college degree had 1.9 times the median income of those with some college but almost 3 times
+the median net worth.
+
+
+16
+   The SCF captures a family’s net worth as of the time of the interview. See appendix A for details. Net worth alone does
+   not fully capture a family’s economic situation and might miss key ways by which families share resources with each
+   other. The 2025 SCF added new questions that measure the breadth of a family’s informal network. A FEDS Note
+   released concurrently with this report analyzes informal networks, including the provision and receipt of financial sup-
+   port and time (Aditya Aladangady, Jesse Bricker, Andrew C. Chang, Sarena Goodman, and Gina Li, 2026b).
+17
+   To provide more information about historical changes in wealth, the changes between the 2019 to 2022 surveys
+   reflected, in part, the substantial disruptions in the economy due to the COVID-19 pandemic and subsequent economic
+   recovery. Between the 2016 and 2019 surveys, median and mean net worth increased by 17.6 and 1.7 percent,
+   respectively.
+12   Changes in U.S. Family Finances from 2022 to 2025
+
+
+
+
+      Table 2. Family median and mean net worth, by selected characteristics of families,
+      2022 and 2025 surveys
+      Thousands of 2025 dollars, except as noted
+
+                                                              Median net worth                          Mean net worth
+
+                     Family characteristic                                         Percent                                 Percent
+                                                   2022            2025            change    2022           2025           change
+                                                                                 2022–2025                               2022–2025
+      All families                                  211.1           215.9              2     1,164.1        1,241.5            7
+                                                      (8.2)          (6.4)                     (25.4)         (31.0)
+      Percentile of usual income
+      Less than 20                                   15.3            14.4            −6       141.9          136.8           −4
+      20–39.9                                        77.7            77.1            −1       239.4          266.8           11
+      40–59.9                                       174.4           188.2            8        421.7          442.6           5
+      60–79.9                                       336.1           362.5            8         696.9          798.2          15
+      80–89.9                                       817.5           814.6            0       1,384.0        1,441.6           4
+      90–100                                       2,797.5        3,669.9            31      7,255.3        7,681.9          6
+      Age of reference person (years)
+      Less than 35                                   42.7            33.0           −23       200.8          135.4          −33
+      35–44                                         148.4           155.6             5       601.5          681.9           13
+      45–54                                         270.6           253.7            −6      1,067.9        1,244.5          17
+      55–64                                         398.9           411.9             3      1,714.7        1,878.0          10
+      65–74                                         448.6           431.3            −4      1,963.9        1,897.6          −3
+      75 or more                                    367.3           504.9            37      1,777.4        1,962.2          10
+      Education of reference person
+      No high school diploma                         41.6            18.6           −55       192.1          294.3           53
+      High school diploma                           116.9           106.7            −9       452.3          470.6            4
+      Some college                                  149.3           181.0            21        592.2          661.2          12
+      College degree                                508.5           505.4            −1      2,192.4        2,263.3           3
+      Race or ethnicity of respondent
+      White non-Hispanic                            311.9           332.1            6       1,496.2        1,694.7          13
+      Black or African-American non-Hispanic         49.1            36.8           −25       231.4          242.4            5
+      Hispanic or Latino                             67.4            79.6            18       248.9          334.1           34
+      Other or Multiple Race                        145.5           205.0            41        930.0        1,029.1          11
+        Asian                                       586.6           677.6            16      1,999.3        2,218.1          11
+        Other (non-Asian) or Multiple Race           68.8            97.5            42       426.2          519.4           22
+      Housing status
+      Owner                                         433.6           458.9            6       1,675.3        1,812.9          8
+      Renter or other                                11.4            10.6            −7       169.6          153.5           −9
+      Urbanicity
+      Metropolitan statistical area (MSA)           218.0           231.3             6      1,240.0        1,337.7           8
+      Non-MSA                                       160.2           150.1            −6        713.7          577.1         −19
+      Percentile of net worth
+      Less than 25                                     3.8            1.7           −56         –5.8           –4.3          26
+      25–49.9                                       102.1           100.9            −1       108.2          109.1           1
+      50–74.9                                       389.9           405.7             4       408.9          432.5           6
+      75–89.9                                      1,134.0        1,267.5            12      1,206.4        1,397.5          16
+      90–100                                       4,152.7        4,935.2            19      8,547.5        8,975.2          5
+      Note: Net worth is the difference between families’ gross assets and their liabilities. See appendix A and B for defini-
+      tions of asset and liability categories used in the Survey of Consumer Finances as well as details on standard errors
+      (shown in parentheses below the first row of data for the medians and means).
+                                                                                                                   Net Worth      13
+
+
+
+
+Between the 2022 and 2025 surveys, grouping families by usual income revealed that lower-
+income families saw some declines in their wealth, while higher-income families experienced
+gains. For families with usual income in the lowest quintile, median and mean net worth fell 6 and
+4 percent, respectively. In contrast, families closer to the middle of the usual income distribution,
+between the 40th and 80th percentiles of usual income, saw median and mean net worth grow
+5 to 15 percent. For families in the top decile of the usual income distribution, family median net
+worth grew 31 percent to $3,669,900, while mean net worth rose less strongly, by 6 percent. The
+pattern of changes in net worth across the usual income distribution stood in contrast to 2019 to
+2022, where net worth saw broad-based growth across the distribution.
+
+
+Net worth declined substantially for the youngest families, while exhibiting large gains for the
+oldest. Families younger than 35 saw median net worth decrease 23 percent to $33,000 and
+mean net worth fall 33 percent to $135,400. These declines in net worth among young families
+are primarily driven by the unwinding of business equity gains between 2019 and 2022. In con-
+trast, families older than 75 saw substantial gains in both median and mean net worth (37 per-
+cent and 10 percent, respectively). The rise in net worth for the oldest age group is so large rela-
+tive to younger age groups that, in contrast with the previous few survey years, families aged 75
+or older had the largest net worth, exceeding levels by families that are nearly or recently retired
+(which saw some declines).18 For families in the remaining age groups, changes in median net
+worth ranged from some declines to modest gains, while mean net worth mostly grew.
+
+
+Grouping families by educational attainment, median net worth generally changed more, in percent
+terms, than mean net worth across education groups. Families with no high school diploma experi-
+enced the largest percent changes in median and mean net worth, with median net worth falling
+55 percent while mean net worth rose 53 percent. The fall in median net worth for these families
+was their largest percent decline recorded in the modern SCF, undoing the gain these families saw
+between 2019 and 2022. Families with a high school diploma saw the same pattern of changes
+of median and mean net worth as those with no high school diploma, though the size of the
+changes were less extreme. The declines in median net worth and increases in mean net worth
+imply that wealth inequality within these groups increased. In contrast, families with some college
+education but no degree saw the largest gains in median and mean net worth, while families with
+a college degree had more stable median and mean net worth. On net, the substantial gap in
+mean net worth between families with and without a college degree remained about constant
+between surveys.
+
+
+
+
+18
+     The 2025 SCF recorded an increase in the share of families greater than age 75 (see appendix A, table A.5). While the
+     demographic composition of families in the greater-than-age-75 group, in theory, could explain this increase in net worth,
+     in this instance, the increase in net worth was primarily driven by an increase in the value of retirement accounts.
+     Retirement accounts for families under 65 are discussed further in box 2.
+14   Changes in U.S. Family Finances from 2022 to 2025
+
+
+
+
+     Median and mean net worth increased between 2022 and 2025 for all types of families when
+     grouped by race or ethnicity, with the exception of Black non-Hispanic families. Black non-Hispanic
+     families experienced a large decline in median net worth (25 percent) but some gains in mean net
+     worth (5 percent). This decline stands in contrast to increases seen since the 2013 survey.
+     Largely due to this decline, in 2025, median wealth for White non-Hispanic families was nine
+     times that for Black non-Hispanic families, which is the largest ratio recorded since 2016. His-
+     panic or Latino families saw considerable net worth gains, with an 18 percent increase in median
+     net worth and a 34 percent increase in mean net worth. Despite the large proportional growth in
+     net worth, median wealth for White non-Hispanic families was a bit more than four times that for
+     Hispanic or Latino families, though the White–Hispanic median wealth ratio was the smallest on
+     record in the modern SCF.
+
+
+     Between 2022 and 2025, the median and mean net worth of homeowners grew 6 percent to
+     $458,900 and 8 percent to $1,812,900, respectively. Renters or other non-homeowners saw
+     declines in median and mean net worth of 7 percent to $10,600 and 9 percent to $153,500,
+     respectively. Families living in MSAs saw growth in median and mean net worth, while those living
+     in non-MSAs saw declines, widening the substantial gap in net worth between families by
+     urbanicity.
+
+
+     Median net worth declined for the lower end of the net worth distribution while increasing on the
+     upper end. The largest percent changes for both median and mean net worth were for the bottom
+     quartile, which saw a large decline in the median but an increase in the mean. Families in the
+     75th to 90th percentiles saw substantial gains in both median and mean net worth. As was the
+     case in previous surveys, there are substantial differences in the level of net worth of each of
+     these groups. Among families in the bottom quartile, median net worth was $3,800 in 2022 and
+     $1,700 in 2025, and mean net worth was negative $5,800 in 2022 and negative $4,300 in
+     2025. Among families in the top decile, median net worth was $4,152,700 in 2022 and
+     $4,935,200 in 2025, and mean net worth was $8,547,500 in 2022 and $8,975,200 in 2025.
+     Median and mean net worth for the top decile were approximately four to six times that of the next
+     highest percentile group, reflecting concentration of wealth at the top of the distribution.
+                                                                                                                             15
+
+
+
+
+Assets
+
+In 2025, virtually all families owned some type of asset, little changed from 2022 (table 3).
+Conditional on holding at least one asset, median total asset holdings were about unchanged at
+$362,900 in 2025. The conditional mean value of families’ total assets rose 6 percent to
+$1,386,600. These changes were driven by increases in the value of both financial and nonfinan-
+cial asset holdings, notably equities and real estate.
+
+
+ Table 3. Holding and values of assets, 2022 and 2025 surveys
+ Thousands of 2025 dollars, except as noted
+
+                                     Percent holding       Conditional median value            Conditional mean value
+
+            Balance sheet item                                                 Percent                            Percent
+                                     2022      2025    2022       2025         change     2022       2025         change
+                                                                             2022–2025                          2022–2025
+ Any asset                           99.7       99.5   364.0      362.9               0   1,307.1    1,386.6            6
+ Types of financial asset
+ Any financial asset                 99.0       98.9    42.7       44.2               4    559.6      637.6             14
+ Transaction accounts                98.6       98.7     8.8         8.2          −6        68.4        62.9            −8
+ Certificates of deposit              6.5       10.7    28.5       35.0           23       108.6      112.7             4
+ Savings bonds                        6.4        5.4     2.2         1.0         −54        39.0        18.7        −52
+ Bonds                                1.1        1.3   230.3      140.0          −39      1,051.9     810.5         −23
+ Stocks                              21.0       19.0    16.4       30.0           83       442.0      524.3             19
+ Pooled investment funds             11.5       11.1   164.2      200.0           22      1,051.6    1,148.1            9
+ Retirement accounts                 54.3       54.9    95.2      106.0           11       365.7      451.1             23
+ Cash value life insurance           16.1       15.2    10.6       12.0           13        60.6        61.7            2
+ Other managed assets                 6.2        6.8   153.2      154.0               1    566.7      745.5             32
+ Other                                9.4        9.7     6.6         7.5          14        89.8      103.2             15
+ Types of nonfinancial asset
+ Any nonfinancial asset              92.3       90.8   308.1      326.8               6    811.5      824.5             2
+ Vehicles                            86.6       84.2    30.3       26.0          −14        43.9        38.0        −13
+ Primary residence                   66.1       65.6   353.7      375.0               6    515.5      534.0             4
+ Other residential property          12.9       13.8   246.2      280.0           14       568.1      559.2             −2
+ Equity in nonresidential property    5.9        7.1   136.8      135.0           −1       511.9      550.9             8
+ Business equity                     14.6       15.4    98.5       75.4          −23      1,775.6    1,566.6        −12
+ Other                                7.4        8.0    21.9       22.0               1    104.1      109.9             6
+
+ Note: See appendix A for definitions of asset categories used in the Survey of Consumer Finances.
+16   Changes in U.S. Family Finances from 2022 to 2025
+
+
+
+
+     Financial Assets
+     Overall, 98.9 percent of families in 2025 owned at least one financial asset—which includes
+     transaction accounts, certificates of deposit, savings bonds, other bonds, stocks, pooled invest-
+     ment funds, retirement accounts, cash value life insurance, and other managed assets—little
+     changed from 2022.19 The conditional median value of all financial assets held by families rose
+     4 percent to $44,200 in 2025. The conditional mean value increased 14 percent to $637,600.
+     The large difference between median and mean values reflects the disproportionate share of
+     financial assets held by some families.
+
+
+     Transaction accounts—which include checking accounts, savings accounts, money market
+     accounts, call accounts, and prepaid debit cards—remained the most commonly held category of
+     financial asset in 2025, with an ownership rate of 98.7 percent, about unchanged from 2022.20
+     The conditional median value of transaction accounts fell 6 percent between 2022 and 2025 to
+     $8,200. The conditional mean value of transaction accounts in 2025 was $62,900, down 8 per-
+     cent from 2022.
+
+
+     The second-most commonly held type of financial asset continued to be retirement accounts—
+     which include individual retirement accounts and certain employer-sponsored accounts, such as
+     401(k), 403(b), and thrift savings accounts (for a discussion of retirement plan participation, see
+     box 2). Such accounts were held by 54.9 percent of families in 2025, up 0.6 percentage point
+     since 2022. The conditional median value of retirement accounts increased 11 percent between
+     2022 and 2025 to $106,000, while the conditional mean value rose 23 percent to $451,100
+     in 2025.
+
+
+     Direct ownership of stocks fell between 2022 and 2025—from 21 percent of families to 19 per-
+     cent. In 2022, the SCF showed direct ownership of stock increased 6 percentage points from
+     2019, which was the largest between-survey change in ownership on record. The 2025 SCF sug-
+     gests that while part of this 2022 increase in direct ownership of stock was temporary, the 2025
+     direct stock ownership rate is still well above the 2019 rate of 15.2 percent. Furthermore, condi-
+     tional median stock holdings also rebounded from $16,400 to $30,000, which almost erased the
+     fall in median stock holdings between 2019 and 2022. Conditional mean direct stock holdings
+
+
+
+
+     19
+          See appendix A for detailed definitions of SCF asset and liability categories.
+     20
+          Since 2016, the SCF asks families whether they have used online banking in the past 12 months. In 2025, more fami-
+          lies reported using online banking, from 85 percent of families in 2022 to 88 percent in 2025. Despite the rise in the
+          use of online banking, the percent of families that visited a local bank branch remained steady at 66 percent, which
+          suggests that online banking remains an imperfect substitute for services provided by local bank branches. On the point
+          of imperfect substitution between online banking and local bank branches, see Elliot Anenberg, Andrew C. Chang,
+          Serafin Grundl, Kevin B. Moore, and Richard Windle (2018).
+                                                                                                        Assets   17
+
+
+
+
+Box 2. Retirement Plan Participation
+Retirement plan participation can increase families’ net worth and, thus, provide future financial secu-
+rity through lower taxes on savings, a guaranteed income in retirement, increased compensation from
+employer contributions, or all the above. A family is considered as participating in a retirement plan if it
+has any of the following: an individual retirement account (IRA); an account-type, defined contribution
+(DC) pension through an employer, which includes both 401(k)s and 403(b)s; or a defined benefit (DB)
+pension through a current or former employer. The following discussion only includes families with a ref-
+erence person aged 64 or younger to capture families who generally have not retired.
+
+Overall plan participation is 65.1 percent in 2025, up slightly from 64.4 percent in 2022. Plan partici-
+pation is highest among older families, or those closest to retirement (figure A). In 2025, around
+70 percent of families aged 45 to 64 and 66 percent of families aged 35 to 44 participated, similar or
+slightly higher compared to rates in 2016. From 2010 through 2019, those closer to retirement age
+saw falling retirement participation before rebounding in recent years, while families in the middle age
+range (aged 35 to 44) saw modest gains. Meanwhile, younger families (those under age 35) have
+notably increased their participation over the past 15 years.
+
+
+ Figure A. Participation in any retirement plan, by age group, 2010–2025 surveys
+
+       Share of families
+ 0.8
+
+ 0.7
+
+ 0.6
+
+ 0.5
+
+ 0.4
+                2010        2013            2016              2019            2022            2025
+                                                      Year
+                           Less than 35       35–44          45–54        55–64
+
+
+
+DC and IRA plans are much more common than DB plans, with enrollment rising from around 50 per-
+cent among the youngest families to around 65 percent for the oldest families in 2025. While all fami-
+lies across the age distribution experienced some gains in DC and IRA participation in the past decade,
+the starkest increase came from families in the youngest age group, where participation jumped from
+42 percent in 2016 to near 50 percent in 2025. Meanwhile, DB plans are held by around one-fourth of
+families. While DB participation declined some among near-retirement-aged families over the past
+decade, enrollment increased among all other age groups since 2016. Altogether, while the strong
+increase in overall plan participation among younger families seen in figure A is largely driven by the
+rise of DC and IRA plans, DB plans remain important, even for younger families.
+
+Higher-income families have higher participation rates within all age groups and plan types (not shown),
+though there are some notable shifts among the youngest and oldest families. In the past decade,
+lower-income families represent an increasing share of overall retirement plan participation among
+those under age 35, shrinking the participation gap by income in this age group. In contrast, DB plan
+participation declines for older families are driven by those with lower income.
+
+                                                                                                (continued)
+18   Changes in U.S. Family Finances from 2022 to 2025
+
+
+
+
+        Box 2—continued
+        For many families, the assets held in IRAs and DC plans are among the most important components of
+        their balance sheets and are a significant determinant of their future retirement security. These assets
+        grow through employee contributions, employer contributions, and increased valuations of assets held
+        in these accounts. Between 2022 and 2025, among families that have these assets, the average com-
+        bined balance increased for all age groups, except for the youngest families (table A). Median values,
+        though, increased for all age groups (not shown). Overall, these recent increases are part of a
+        longer-run trend in growing retirement account balances over the past decade, highlighting the
+        increasing role of these retirement plans in families’ balance sheets.
+
+
+         Table A. Mean retirement savings among those with an individual retirement account or
+         a defined contribution plan, by age group, 2016–2025 surveys
+         Thousands of dollars, except where noted
+
+                                                    2016        2019              2022              2025
+         Less than 35                                43.8        38.3              53.8              48.4
+         35–44                                      135.2       167.5             154.8             182.4
+         45–54                                      291.3       323.1             342.7             415.8
+         55–64                                      504.8       518.2             588.5             670.2
+
+
+
+
+     rose 19 percent to $524,300. For more discussion on stock ownership and historical trends, see
+     box 3 on private and public business equity. Stocks may also be indirectly held in pooled invest-
+     ment funds and other managed assets, which were held by 11.1 percent and 6.8 percent of fami-
+     lies, respectively.
+
+
+     Ownership of other types of financial assets is less common (though cash value life insurance is
+     held by 15.2 percent of families), but there were some noticeable shifts between 2022 and 2025.
+     The share of families with certificates of deposit jumped from 6.5 percent to 10.7 percent, with
+     median and mean balances increasing 23 percent and 4 percent, respectively. This large increase
+     likely reflects the increased returns to holding such an asset in 2025, compared with 2022.
+     Directly held bonds, aside from U.S. government savings bonds, were held by 1.3 percent of fami-
+     lies. Their conditional median and mean values declined between 2022 and 2025 but still
+     remained high. The conditional median of the value of these directly held bonds declined 39 per-
+     cent to $140,000, and the conditional mean declined 23 percent to $810,500. For U.S. govern-
+     ment savings bonds, which are held by 5.4 percent of families, conditional median savings bond
+     values decreased from $2,200 to $1,000, and conditional mean holdings also fell from $39,000
+     to $18,700.
+                                                                                                                                      Assets   19
+
+
+
+
+Box 3. Public and Private Business Equity
+Publicly traded equities and private business equity are two distinct asset classes through which fami-
+lies invest their wealth. Relative to other asset classes, both represent high-risk, high-return invest-
+ments. Generally speaking, however, private business equity is less liquid and more highly concen-
+trated but offers greater operational control than publicly traded equities. This box summarizes
+families’ ownership and holdings of each type of business equity over the past three surveys.1
+
+Figure A illustrates that a majority of families hold equity—61 percent in 2025—and that doing so
+through publicly traded equities is far more common than through private business equity for families
+at all income levels. Equity ownership rises sharply with income. In 2025, nearly all families in the top
+decile and a large majority of families in the next 40 percent held publicly traded equities, compared
+with roughly one-third of families in the bottom half. For private businesses, these figures shrink signifi-
+cantly, ranging from 8 percent in the bottom half of the distribution to 40 percent in the top decile.
+
+
+    Figure A. Families with business assets, by usual income group, 2025 survey
+
+          Percent
+    100
+    80
+    60
+    40
+    20
+      0
+                       Total                         0–49.9                                50–89.9                     90–100
+                                                         Percentile of usual income
+                     Any business assets          Publicly traded equity (directly or indirectly held)   Private business equity
+
+    Note: Key identifies bars from left to right.
+
+
+The following two figures focus on the trends in holdings of publicly traded equities and in private busi-
+ness equity in recent surveys, respectively. The 2025 survey showed a slight decline in stock owner-
+ship to 56 percent from 58 percent in 2022, though still larger than the 53 percent in 2019 (figure B,
+left bars). Participation in the stock market in 2025 rose with usual income groups: 31 percent of fami-
+lies in the bottom half of the distribution held stock, compared with 77 percent of families in the upper-
+middle group and 97 percent of families in the top decile. The bottom half accounted for nearly all of
+the overall decline in participation between 2022 and 2025.
+
+Though the share of families with public equities declined a bit in 2025, the real value of these equity
+holdings rose for each income group, in line with the rise in public equity markets. Among those who
+held stocks, the real mean increase was around $13,000 for the bottom half (a 15 percent increase
+from 2022), $72,000 for the upper-middle group (a 30 percent increase), and $367,000 for the top
+decile (a 16 percent increase).
+
+                                                                                                                               (continued)
+
+1
+    For this analysis, families hold publicly traded equities directly through individual stocks, mutual funds, hedge funds, and exchange-
+    traded funds, or indirectly through retirement accounts and other pooled investments (for example, pooled investment funds and
+    other managed assets). Indirect holdings, particularly through tax-deferred retirement accounts, are much more common than direct
+    holdings, and are usually less liquid than direct holdings. Private business equity includes sole proprietorships, limited partnerships,
+    other types of partnerships, subchapter S corporations and other types of corporations that are not publicly traded, limited liability
+    companies, and other types of private businesses. If the family surveyed lived on a farm or ranch that was used at least in part for
+    agricultural business, the value of that part, net of the corresponding share of associated debts, is included with other business
+    assets. This definition excludes the 5 percent of Survey of Consumer Finances (SCF) families in which the reference person is
+    self-employed but does not report a business interest.
+20   Changes in U.S. Family Finances from 2022 to 2025
+
+
+
+
+       Box 3—continued
+           Figure B. Families with direct and indirect holdings of stock, by usual income group,
+           2019–2025 surveys
+
+                 Percent
+           100
+            80
+            60
+            40
+            20
+             0
+                            Total                          0–49.9                        50–89.9                        90–100
+                                                                           Year
+                                                            2019           2022          2025
+
+           Note: Key identifies bars from left to right.
+
+
+
+       In 2025, 15 percent of families owned a privately held business, slightly larger than the value reported
+       in 2022 (figure C).2 This increase was fully driven by families in the bottom 90 percent, as ownership in
+       the top decile declined. Nonetheless, business ownership remained positively correlated with usual
+       income. Unlike holdings of publicly traded stock, the real value of privately held business declined
+       between the 2022 and 2025 surveys for income groups in the bottom 90 percent.3 Among those with
+       such a business, the real mean decrease was around $59,000 for the bottom half (a 18 percent
+       decrease from 2022) and $128,000 for the upper-middle group (a 22 percent decrease). For the top
+       decile, there was a real mean increase of around $98,000 (a 2 percent increase from 2022).
+
+
+           Figure C. Families with private business, by usual income group, 2019-2025 surveys
+
+                 Percent
+            50
+            40
+            30
+            20
+            10
+             0
+                             Total                         0–49.9                        50–89.9                        90–100
+                                                               Percentile of usual income
+                                                            2019            2022            2025
+
+           Note: Key identifies bars from left to right.
+
+
+
+       2
+         In this discussion, a family is considered a business owner if the family reported owning a business. This includes businesses
+         wholly owned or partially owned and includes any business investments that are not publicly traded. It does not include the
+         5 percent of SCF families in which the reference person is self-employed but does not report a business interest.
+       3
+         This diverging pattern between public and private equity mirrors that of household holdings in the Financial Accounts of the United
+         States (B.101.h table).
+                                                                                                                Assets    21
+
+
+
+
+Nonfinancial Assets
+The fraction of families reporting ownership of a nonfinancial asset—a broad category that
+includes vehicles, residential or nonresidential real estate, and equity in a business—remained
+high in 2025 at 90.8 percent, though down a bit from 92.3 percent in 2022.
+
+
+The most commonly held type of nonfinancial asset in 2025 was a vehicle. In 2025, 84.2 percent
+of families owned a vehicle, a notable decrease from 86.6 percent in 2022, and below vehicle
+ownership rates before the COVID-19 pandemic of around 85 percent. The conditional median and
+mean values of families’ vehicles declined 14 and 13 percent, respectively, to $26,000 at the
+median and $38,000 at the mean. This decline in overall vehicle ownership was driven by families
+in the bottom 20 percent of the usual income distribution, where the ownership rate fell from
+66.4 to 59.4 percent, which is the lowest vehicle ownership rate for this group in the past
+20 years.
+
+
+Ownership of primary residences was about unchanged, with rates at 66.1 percent in 2022 and
+65.6 percent in 2025. Homeownership rates have still, on net, rebounded from their recent low of
+63.7 percent in 2016 but remain about 3.5 percentage points below their peak in 2004 (for a dis-
+cussion of housing wealth and affordability, see box 4).21 Overall, the conditional median value
+increased 6 percent to $375,000, and the conditional mean value increased 4 percent to
+$534,000.22 In addition to ownership of primary residences, 13.8 percent of families in 2025
+reported owning other residential property, such as second homes or time shares, up slightly from
+12.9 percent in 2022. The conditional median value of other real estate increased 14 percent to
+$280,000.
+
+
+Ownership of equity in nonresidential property was 7.1 percent in 2025, an increase from 5.9 per-
+cent in 2022, and conditional median and mean values of equity in nonresidential property were
+$135,000 and $550,900, respectively.
+
+
+Ownership of (private) business equity was 15.4 percent in 2025, up almost 1 percentage point
+from 2022 (for a more detailed discussion of business ownership, see box 3). The conditional
+median value fell 23 percent to $75,400, while the conditional mean value also decreased
+12 percent to $1,566,600. The large differences between the median and mean values reflect the
+small fraction of privately held businesses with very high valuations.
+
+
+
+
+21
+   The homeownership rate in 1989 was 63.9 percent. It rose to a peak of 69.1 percent in 2004. Across families grouped
+   by percentile of usual income, there are large differences in homeownership rates, which tend to increase with usual
+   income in all years.
+22
+   The CoreLogic House Price Index went up 12 percent over the same time period (Cotality, Inc. 2026).
+22   Changes in U.S. Family Finances from 2022 to 2025
+
+
+
+
+       Box 4. Net Housing Wealth and Housing Affordability
+       The overall homeownership rate between the 2022 and 2025 surveys was about stable at 66 percent
+       (table 3, primary residences). The homeownership rate for the bottom usual income group was also
+       about unchanged. The upper-middle usual income group saw a slight decline in homeownership from
+       80 percent to 78 percent, while the top decile saw an increase from 89 percent to 92 percent.
+
+       For families that own their primary residence, real housing wealth rose slightly between 2022 and
+       2025, remaining at a record high after surpassing its pre–Global Financial Crisis peak in 2022. The
+       median net housing value—defined as the home’s value minus any debts secured by the home (that is,
+       outstanding mortgages, home equity loans, and home equity lines of credit)—increased 5 percent
+       between 2022 and 2025, from $218,900 to $230,000, continuing the rise since 2013 (figure A).1 The
+       mean net housing value increased 4 percent between 2022 and 2025 from $367,000 to $380,400.
+       The growth rates in the median and mean net housing values from 2022 to 2025, though positive,
+       were much slower than the between-survey growth rates seen since 2013. By comparison, median and
+       mean net housing wealth grew at average rates of 26 percent and 19 percent, respectively, between
+       the three surveys before 2025.2 Conditional on owning a home, median and mean net housing values
+       grew most for families between the 40th and 60th percentiles of the usual income distribution, while
+       families between the 20th and 40th percentiles saw declines in median and mean net housing wealth.
+
+
+           Figure A. Net housing values among families that own their primary residence,
+           2001–2025 surveys
+
+                 Thousands of 2025 dollars
+           400
+           350
+           300
+           250
+           200
+           150
+           100
+            50
+             0
+                     2001           2004     2007          2010         2013          2016         2019         2022         2025
+                                                               Mean                  Median
+
+
+
+       While rising home values can benefit existing homeowners, they can make houses unaffordable for
+       would-be homebuyers. Figure B plots the ratio of the median nominal home value to median nominal
+       family income, which is one metric for housing affordability, from 2001 through 2025. After the Global
+       Financial Crisis, this ratio declined sharply before bottoming out at 3.5 in 2016. Despite recent income
+       gains, the median home was worth more than 4.5 times median family income in 2025, about
+       unchanged from the previous high in 2022.
+
+                                                                                                                            (continued)
+
+       1
+         Survey respondents are asked to report the value of their home. Only primary residences are included. Debts on the home include
+         any mortgages or home equity loans against the primary residence.
+       2
+         The growth rates in median (mean) housing value between 2013 and 2016, 2016 and 2019, and 2019 and 2022 surveys were
+         21 (20) percent, 13 (8) percent, and 44 (27) percent, respectively.
+                                                                                                                            Assets   23
+
+
+
+
+Box 4—continued
+    Figure B. Housing affordability, 2001–2025 surveys
+
+           Ratio of median housing value among families that own their primary residence to median income
+     5.0
+
+     4.5
+
+     4.0
+
+     3.5
+
+     3.0
+
+     2.5
+               2001           2004          2007           2010           2013           2016          2019   2022   2025
+
+
+
+This ratio is one metric for housing affordability that quantifies how expensive the purchase price of a
+home is relative to income. An alternative metric for affordability is how much monthly income a family
+would need to devote to housing. In 2025, the monthly required payment for a 30-year fixed rate mort-
+gage that would cover 80 percent of the purchase price of the median home and includes annual prop-
+erty taxes that are 1 percent of the home’s value (0.083 percent monthly) was about 33 percent of
+monthly median family income, which is an all-time high in the modern Survey of Consumer Finances
+and was up from 26 percent in 2022.3 This 7 percentage point increase was driven mostly by the
+increase in interest rates over this period, though part of the increase was due to higher house prices.4
+
+3
+  This paragraph uses the contract rate on 30-year fixed-rate conventional home mortgage commitments published by the Federal
+  Home Loan Mortgage Corporation in March of the respective survey years.
+4
+  Potential homeownership costs can also include money spent on maintenance, insurance, and homeowner association fees. These
+  costs are excluded from the calculation in this paragraph.
+                                                                                                                                25
+
+
+
+
+Debt
+
+To provide context for this section, between 2022 and 2025, market interest rates for major types
+of household debt increased: The average interest rate on a 30-year fixed-rate mortgage rose
+from 4.2 percent to 6.7 percent, the average new vehicle loan interest rate increased from
+4.9 percent to 7.7 percent, and the average credit card interest rate increased from 14.6 percent
+to 21.4 percent.23
+
+
+In the SCF, the share of families holding any type of debt remained stable at around 77 percent
+between 2022 and 2025 (table 4).24 The conditional median and mean values of debt also
+remained about stable at $88,100 and $179,100, respectively.
+
+
+ Table 4. Holding and values of debt items, 2022 and 2025 surveys
+ Thousands of 2025 dollars, except as noted
+
+                                     Percent holding          Conditional median value            Conditional mean value
+
+             Types of debts                                                         Percent                          Percent
+                                    2022       2025       2022       2025           change    2022      2025         change
+                                                                                  2022–2025                        2022–2025
+  Any debt                           77.4       77.0       87.8       88.1               0    179.3      179.1             0
+  Secured by residential property
+     Primary residence               42.2       42.0      170.2      183.6               8    232.5      239.7             3
+     Other                            4.4        4.4      133.5      148.6            11      265.4      255.1             −4
+  Lines of credit not secured by
+     residential property             1.6        1.9        3.3         3.2           −2      138.7       53.9         −61
+  Installment loans
+     Student loans                   21.8       20.0       26.8       25.6            −5       51.0       43.0         −16
+     Vehicle loans                   34.7       32.1       16.8       17.0               1     23.2       23.1             0
+     Other installment loans         18.5       24.2        2.5         2.0          −19       11.3       10.7             −6
+  Credit card balances               45.2       44.7        3.0         3.1              5      6.7        8.0             19
+  Other                               5.1        5.0        4.7         5.4           15       50.0       53.7             7
+
+  Note: See appendix A for definitions of liability categories used in the SCF.
+
+
+
+
+23
+   Changes in the mortgage interest rate are measured from March to March of the respective survey years using the con-
+   tract rate on 30-year fixed-rate conventional home mortgage commitments published by the Federal Home Loan Mort-
+   gage Corporation, while changes in the vehicle loan and credit card interest rates are measured from the first quarter to
+   the first quarter of the respective survey years using the G.19 data on nonseasonally adjusted commercial bank interest
+   rates for new 48 month auto loans and credit card plans (Board of Governors of the Federal Reserve System, 2026f).
+24
+   See appendix A for a detailed definition of SCF liability categories.
+26   Changes in U.S. Family Finances from 2022 to 2025
+
+
+
+
+     Debt Holdings by Type
+     About 42 percent of families in 2025 held debt secured by a primary residence, about unchanged
+     from 2022. As discussed in the Nonfinancial Assets section, 65.6 percent of families in 2025
+     owned their principal residence. These numbers imply that almost two-thirds of homeowners have
+     home-secured debt, while just over one-third of homeowners own their home free of debt. For
+     those with home-secured debt, median and mean balances rose between 2022 and 2025, with
+     the median increasing 8 percent to $183,600 and the mean increasing 3 percent to $239,700.
+
+
+     Credit card debt (which excludes balances paid in full) continued to be the most widely held type
+     of debt in 2025, with 44.7 percent of families reporting a credit card balance after their last pay-
+     ment, down from 45.2 percent in 2022. Of those with credit card debt, the median family owed
+     $3,100 in 2025, up 5 percent from 2022.
+
+
+     In 2025, 32.1 percent of families held vehicle loans, down 2.6 percentage points since 2022. The
+     conditional median balance on vehicle loans increased 1 percent to $17,000, while the conditional
+     mean remained about unchanged at $23,100.
+
+
+     The fraction of families that had student debt declined 1.8 percentage points to 20.0 percent. In
+     addition, the conditional median and mean balances on this debt declined between 2022 and
+     2025. Median balances decreased from $26,800 to $25,600, and mean balances decreased
+     from $51,000 to $43,000. For a discussion of the distribution of student debt, see box 5.
+
+
+     In 2025, 24.2 percent of families held other installment loans, up 5.7 percentage points from
+     2022. These loans include personal loans, often associated with purchases of furniture, appli-
+     ances, and other durable goods, although the category also includes other loans, such as medical
+     debt and back taxes. The conditional median and mean installment loan balances declined $500
+     and $600, respectively.
+
+
+     Since 2022, SCF has asked explicitly whether families used buy now, pay later (BNPL) plans,
+     which are a type of other installment loan. BNPL plans allow a buyer to split the cost of a pur-
+     chase into (typically four to six) equal installments. The growing popularity of BNPL, which is typi-
+     cally used for smaller purchases, explains nearly all the growth in the percentage of families with
+     other installment loans in 2025. Twelve percent of families reported a balance on a BNPL plan in
+     the 2025 survey, up from 7 percent in the 2022 survey. Among families with a BNPL balance in
+     2025, the respective median and mean balances were $400 and $1,400.
+                                                                                                                                         Debt   27
+
+
+
+
+ Box 5. Student Loans over the Usual Income Distribution
+ Student loans help borrowers finance education to increase their future earnings. However, elevated
+ delinquency rates over the past couple of decades signal increased repayment distress, at least on
+ outstanding loans (Federal Reserve Bank of New York, 2026).1 The Survey of Consumer Finances (SCF)
+ offers a unique perspective on families’ capacity to repay their student loans because it captures stu-
+ dent loan balances alongside income and wealth. While this information sheds light on borrowers’
+ ability to repay the debt that is still outstanding, it leaves an incomplete picture of student borrowers’
+ overall capacity to repay because, like other balance sheet data, it excludes loans that have already
+ been resolved through repayment, forgiveness, or discharge. To complement the data it typically col-
+ lects, the 2025 SCF introduced new questions on resolved student loans that shed light on how often
+ full resolution occurs and for which segments of the income distribution, providing a more complete pic-
+ ture of repayment capacity.2
+
+ Focusing first on balance sheet holdings, figure A illustrates how the distribution of outstanding student
+ debt has evolved over the past quarter century. Such debt has consistently skewed toward high-income
+ families—who tend to borrow larger amounts for higher education but also have ample capacity to
+ repay their debt—with the top two quintiles accounting for 51 percent of outstanding debt in 2001 and
+ 55 percent in 2025.3 Nevertheless, over those years, as student borrowing became more widespread,
+ educational costs rose, and repayment rates declined, debt shifted from the top to the fourth quintile,
+ with the top quintile’s share falling from 30 percent to 25 percent. Notably, over half of this rebal-
+ ancing, as well as a similar-sized shift from the middle into the second quintile, occurred between
+
+                                                                                                                            (continued)
+
+
+    Figure A. Distribution of student debt across usual income quintiles, 2001–2025 surveys
+    (select years)
+
+          Share of aggregate debt within a given year
+    1.0
+
+
+    0.8
+
+
+    0.6
+
+
+    0.4
+
+
+    0.2
+
+
+    0.0
+                    2001                        2007                 2013                     2019                      2025
+
+                0–19.9 (bottom quintile)                20–39.9     40–59.9             60–79.9               80–100 (top quintile)
+
+
+    Note: Key identifies usual income quintiles in the order that they appear, with the lowest quintile on the top and
+    the highest quintile on the bottom.
+
+
+
+1
+  Outstanding loans reflect new borrowing, loans being amortized, and loans facing repayment headwinds. Unlike other consumer
+  loans, most student loans are broadly available to borrowers with fixed pricing, which can lead to vastly different resolution rates
+  across the distribution of borrowers.
+2
+  New to the 2025 SCF, all respondents were asked: “Have [you/FAMILY MEMBERS] had student loans in the past? This includes
+  public or private loans that were paid off or forgiven. This can include student loans that [you/FAMILY MEMBERS] paid off on
+  someone else’s behalf.”
+3
+  The bottom quintile’s share has remained modest, peaking in 2013 at 14 percent, and has since declined.
+28   Changes in U.S. Family Finances from 2022 to 2025
+
+
+
+
+       Box 5—continued
+       2019 and 2025, amid targeted debt relief and broad payment pauses.4 Altogether, while a sizable por-
+       tion of outstanding student debt remains well positioned to be repaid, the drift toward families with
+       lower financial capacity implies increased repayment risk.
+
+       That said, figure B reveals that student borrowing rates rise more with income than balance sheet data
+       alone suggest. Across all families that have ever borrowed, complete loan resolution has been the pre-
+       dominant outcome; however, resolution is less common among lower-income borrowers.5 Among top-
+       quintile families, 19 percent had student debt in 2025 but 61 percent had borrowed. Among bottom-
+       quintile families, 11 percent had student debt and 25 percent had borrowed. Indeed, those in the top
+       quintile are about 20 percentage points more likely to have resolved any of their loans—and all of their
+       loans—than those in all other income groups, suggesting that the outstanding debt in figure B masks
+       an underlying distribution over all borrowers that is even more concentrated among higher-income fami-
+       lies.6 Thus, more complete evaluations of student loan repayment capacity should account for ongoing
+       loan resolution alongside outstanding debt.
+
+
+           Figure B. Families with existing or past student debt, by usual income quintile, 2025 survey
+
+                 Share
+           0.8
+
+           0.7
+
+           0.6
+
+           0.5
+
+           0.4
+
+           0.3
+
+           0.2
+
+           0.1
+
+           0.0
+                  0–19.9 (bottom quintile)       20–39.9                40–59.9                  60–79.9              80–100 (top quintile)
+                                             Existing student debt   Past student debt      Existing or past student debt
+
+           Note: Key identifies bars from left to right.
+
+
+
+       4
+         The zero percent interest rate that accompanied the payment pauses could help explain why higher earners’ debt shares shrank, as
+         it asymmetrically benefited borrowers with higher balances. Further, more-liquid families may have been more apt to make voluntary
+         principal paydowns during the pause.
+       5
+         The denominator for this calculation includes recent borrowers who belong to larger cohorts and are early in their repayment
+         lifecycle, when full loan resolution is naturally rare.
+       6
+         The sole exception is that families that have borrowed in the top usual income quintile are 12 percentage points more likely to have
+         resolved all of their student loans than those in the bottom, though these groups also have the largest difference in borrowing rates.
+                                                                                                                            29
+
+
+
+
+Financial Vulnerability
+
+The SCF data can be used to measure a family’s financial debt burden. In addition, the SCF col-
+lects various measures of respondents’ recent experiences with credit markets, such as informa-
+tion on credit applications and payment behavior.25 Understanding the extent of debt obligations
+and the ways families interact with credit markets provides a window into a family’s financial vul-
+nerabilities and offers indicators of potential financial distress.
+
+
+Debt Burden
+The ability of individual families to service their loans is a function of many factors, including the
+level of their loan payments and the income and assets they have available to meet those pay-
+ments. In planning their borrowing, families make assumptions about their future ability to repay
+their loans. Problems may occur when events turn out to be contrary to those assumptions. If eco-
+nomic shocks are sufficiently large and prevalent, a broad pattern of default, restraint in spending,
+and financial distress in the wider economy might ensue.
+
+
+The SCF data can be used to construct three measures of debt burdens: leverage ratios, debt-to-
+income ratios, and payment-to-income ratios. Leverage ratios compare the amount of total debt to
+total asset values, debt-to-income ratios compare the amount of debt relative to income, and
+payment-to-income ratios compare payments made to service the debt relative to income. All three
+ratios can be constructed either in aggregate or as a median among debtors.26
+
+
+The aggregate leverage ratio ticked down, while the aggregate debt-to-income and payment-to-
+income ratios increased between 2022 and 2025. In contrast, all three measures decreased
+between 2019 to 2022 (table 5).27 In 2025, the median leverage ratio for debtors was 26.9 per-
+cent, continuing the steady decline seen since the 2013 survey. The median debt-to-income ratio
+for debtors, though, was 94.8, about unchanged since 2022, and the median debt payment-to-
+income ratio for debtors was 15.4 percent, rising back up to its 2019 level.28
+
+
+
+25
+   The SCF also asks about families’ shopping and decisionmaking related to borrowing and investing services. Families’
+   intensity of shopping for borrowing or investing services remained stable at a moderate level from 2022 to 2025. In
+   general, in 2025, families relied most heavily on the internet, personal connections, and business professionals for
+   both borrowing and investing information, unchanged from 2022.
+26
+   The aggregate is defined as the total amount of debt held (or payments) divided by the total assets held (or income)
+   among all families. The median for debtors is defined as the median of each individual family’s ratio among those car-
+   rying debt only.
+27
+   For definitions of the components of table 5, see appendix A.
+28
+   An alternative aggregate version of debt payment-to-income ratios is the debt service ratio. See Daniel Ringo (2024)
+   and Board of Governors of the Federal Reserve System (2026b). A discussion of how this measure compares with the
+   one presented here can be found in appendix A.
+30   Changes in U.S. Family Finances from 2022 to 2025
+
+
+
+
+      Table 5. Debt burdens and credit market experiences, 2013–2025 surveys
+      Percent or thousands of 2025 dollars
+
+                    Measure of debt burden/
+                                                          2013       2016           2019           2022      2025
+                 Interaction with credit markets
+      Debt burden
+      Leverage ratio
+        Aggregate                                          14.6      12.1            12.6          10.7      10.0
+        Median for debtors                                 38.6      36.4            33.9          29.2      26.9
+      Debt to income ratio
+        Aggregate                                         104.5      92.6           101.2          89.4      94.9
+        Median for debtors                                107.3      95.1            95.7          95.1      94.8
+      Payment to income ratio
+        Aggregate                                          12.0      10.8            11.8           9.9      11.9
+        Median for debtors                                 15.9      14.7            15.3          13.4      15.4
+        Fraction with payment to income ratio
+          greater than 40 percent                           8.2       7.0             7.4           6.5       8.6
+      Credit market experiences
+      Credit constrained
+        Turned down for credit (past year)                  n.a.     10.8            10.7          10.1      10.1
+        Did not apply for credit for fear of
+          being turned down (past year)                     n.a.     14.4            12.7          12.9      13.5
+        Either turned down for credit or
+           feared denial (past year)                        n.a.     20.8            18.4          18.4      18.7
+        Either turned down for credit or
+           feared denial (past 5 years)                    27.6       n.a.            n.a.          n.a.      n.a.
+      Late on payments
+        Late on payments                                   14.9      13.5            12.3          12.2      19.6
+        Late on payments by 2 months or more                6.9       5.8             4.6           4.9       8.2
+      Took out a payday loan in past year                   4.2       3.4             2.8           2.1       2.6
+      Declared bankruptcy in past 5 years                   4.1       3.0             2.0           1.3       1.4
+      Had foreclosure start in past 5 years                 n.a.      2.1             1.3            .5        .7
+      Use credit cards for convenience only/
+        do not carry a balance                             64.0      57.5            56.0          55.7      55.8
+
+      Note: See appendix A for a description of the measures of debt burden and credit market experiences.
+      n.a. Not available (relevant data not collected).
+
+
+
+     An important indicator of potential financial distress is the proportion of families with particularly
+     large debt burdens. In 2025, 8.6 percent of families had payment-to-income ratios greater than
+     40 percent, the largest share since 2010.
+
+
+     The differences in the three ratios likely reflect the relatively stronger growth of assets than
+     income from 2022 to 2025. The leverage ratio compares debt to the value of total family assets;
+     as seen in table 3, the strong stock market performance and increases in house values during
+     this period boosted family assets. While a declining leverage ratio provides some signal of
+                                                                                                   Financial Vulnerability   31
+
+
+
+
+improvement in debt burdens, families may have money tied in illiquid assets that may not easily
+be drawn down to finance debts. Meanwhile, the increases in the aggregate debt-to-income and
+payment-to-income ratios likely reflect, as shown in table 1, the fact that some families experi-
+enced drops in their incomes. Altogether, these measures suggest that despite the overall growth
+in family assets, some families may be increasingly less likely to be able to service their loans.
+
+
+Credit Market Experiences
+The SCF asks several questions that attempt to capture whether families are credit constrained,
+two of which are (1) whether the family was turned down for credit over the past 12 months and
+(2) whether the family decided not to apply for credit during the past 12 months for fear of being
+turned down.29 In 2025, 10.1 percent of families responded “yes” to the first question,
+unchanged from 2022. The share of families who responded “yes” to the second question rose
+between 2022 and 2025, increasing slightly from 12.9 to 13.5 percent.
+
+
+Families’ propensity to stay current on their financial obligations worsened sharply between 2022
+and 2025, consistent with the increases in the aggregate debt-to-income and payment-to-income
+ratios and further signaling increasing financial vulnerability among some families. Families were
+more likely to be behind on such obligations than in any of the past four surveys, or since 2016.
+Specifically, families that had any debt at the time of their interview are asked whether they were
+behind on any of their loan payments in the preceding year. In 2025, 19.6 percent of families
+reported being late on payments, a sharp increase from 12.2 percent in 2022. The share of fami-
+lies that reported being 60 days late or more was 8.2 percent, more than a 3 percentage point
+increase since 2022.
+
+
+The SCF asks respondents whether anyone in the family took out a payday loan in the past year.
+Payday loans are unsecured loans that are typically small and short term, and they generally carry
+interest rates far exceeding those for conventional forms of credit. In 2025, 2.6 percent
+of families reported taking out a payday loan, slightly higher than the 2.1 percent of families
+in 2022.
+
+
+Additional measures of financial distress that the SCF collects are whether families have declared
+bankruptcy or experienced a foreclosure. In 2025, 1.4 percent of families reported having
+declared bankruptcy in the past five years, which is largely unchanged from 2022. Seven-tenths of
+a percent of families reported having foreclosure proceedings brought against properties they
+owned in the past five years, a slight increase from 0.5 percent in 2022.30
+
+
+29
+   This 12-month time frame differs from analogous questions in surveys before 2016, which had asked families about
+   their experiences with credit constraints over the past five years. Consequently, table 5 reports data on credit con-
+   straints over the past 12 months starting in 2016.
+30
+   The SCF began asking about foreclosure experiences starting with the 2016 survey.
+32   Changes in U.S. Family Finances from 2022 to 2025
+
+
+
+
+     Finally, between 2022 and 2025, the share of families that used a credit card exclusively for con-
+     venience (that is, they did not carry a balance) remained steady at 55.8 percent, which is about
+     the same share as the past two surveys and a noticeably lower share than in 2013.
+                                                                                                     33
+
+
+
+
+References
+
+Aladangady, Aditya, Jesse Bricker, Andrew C. Chang, Sarena Goodman, Jacob Krimmel,
+Kevin B. Moore, Sarah Reber, Alice Henriques Volz, and Richard A. Windle (2023). Changes in U.S.
+Family Finances from 2019 to 2022: Evidence from the Survey of Consumer Finances. Washington:
+Board of Governors of the Federal Reserve System, October, https://doi.org/10.17016/8799.
+
+
+Aladangady, Aditya, Jesse Bricker, Andrew C. Chang, Sarena Goodman, and Gina Li (2026a).
+“Heterogeneity in the Marginal Propensity to Consume Among U.S. Households,” FEDS Notes.
+Washington: Board of Governors of the Federal Reserve System, October 9, https://doi.org/
+10.17016/2380-7172.4197.
+
+
+--------(2026b). “Informal Support Networks in the Survey of Consumer Finances,” FEDS Notes.
+Washington: Board of Governors of the Federal Reserve System, October 9, https://doi.org/
+10.17016/2380-7172.4195.
+
+
+--------(2026c). “Measuring Spending in the Survey of Consumer Finances,” FEDS Notes. Wash-
+ington: Board of Governors of the Federal Reserve System, October 9, https://doi.org/10.17016/
+2380-7172.4198.
+
+
+Aladangady, Aditya, Andrew C. Chang, and Jacob Krimmel (2025). “Greater Wealth, Greater
+Uncertainty: Changes in Racial Inequality in the Survey of Consumer Finances,” Journal of
+Economic Inequality, vol. 23 (1), pp. 91–118.
+
+
+American Association for Public Opinion Research (2015). Standard Definitions: Final Dispositions
+of Case Codes and Outcome Rates for Surveys. Eighth Edition. Lenexa, Kan.: AAPOR.
+
+
+Anenberg, Elliot, Andrew C. Chang, Serafin Grundl, Kevin B. Moore, and Richard Windle (2018).
+“The Branch Puzzle: Why Are there Still Bank Branches?” FEDS Notes. Washington: Board of
+Governors of the Federal Reserve System, August 20, https://doi.org/10.17016/2380-
+7172.2206.
+
+
+Batty, Michael, Jesse Bricker, Joseph Briggs, Elizabeth Holmquist, Susan McIntosh, Kevin Moore,
+Eric Nielsen, Sarah Reber, Molly Shatto, Kamila Sommer, Tom Sweeney, and Alice Henriques Volz
+(2019). “Introducing the Distributional Financial Accounts of the United States,” Finance and Eco-
+nomics Discussion Series 2019-017. Washington: Board of Governors of the Federal Reserve
+System, March, https://dx.doi.org/10.17016/FEDS.2019.017.
+34   Changes in U.S. Family Finances from 2022 to 2025
+
+
+
+
+     Bledsoe, Ryan, and Gerhard Fries (2002). “Editing the 2001 Survey of Consumer Finances,” in
+     Proceedings of the Section on Survey Research Methods, 2002 Annual Meetings of The American
+     Statistical Association (New York: American Statistical Association).
+
+
+     Board of Governors of the Federal Reserve System (2026a). Economic Well-Being of U.S. House-
+     holds in 2025. Washington: Board of Governors of the Federal Reserve System. https://doi.org/
+     10.17016/8960.2.
+
+
+     --------(2026b). “Household Debt Service Ratios.” https://www.federalreserve.gov/releases/DSR/
+     about.htm.
+
+
+     --------(2026c). “Survey of Household Economics and Decisionmaking [dataset].” https://doi.org/
+     10.17016/datasets.002.
+
+
+     --------(2026d). “Codebook for the 2025 Survey of Consumer Finances.” Division of Research and
+     Statistics, Microeconomic Surveys.
+
+
+     --------(2026e). “Survey of Consumer Finances.” Division of Research and Statistics, Microeconomic
+     Surveys. https://doi.org/10.17016/datasets.001.
+
+
+     --------(2026f). Statistical Release G.19, “Consumer Credit” (September 8),
+     https://www.federalreserve.gov/releases/g19/20260908/.
+
+
+     --------(2026g). Statistical Release Z.1, “Financial Accounts of the United States” (June 11),
+     https://www.federalreserve.gov/releases/z1.
+
+
+     Bricker, Jesse, Sarena Goodman, Kevin B. Moore, Sarah Reber, Alice Henriques Volz, and
+     Richard Windle (2023). “U.S. Families Experiences of the COVID-19 Pandemic: Evidence from
+     the Survey of Consumer Finances,” FEDS Notes. Washington: Board of Governors of the
+     Federal Reserve System, October 18, https://doi.org/10.17016/2380-7172.3406.
+
+
+     Bricker, Jesse, Alice Henriques, Jacob Krimmel, and John Sabelhaus (2016). “Measuring Income
+     and Wealth at the Top Using Administrative and Survey Data,” Brookings Papers on Economic
+     Activity, Spring, pp. 261–331, https://www.brookings.edu/articles/measuring-income-and-wealth-
+     at-the-top-using-administrative-and-survey-data/.
+                                                                                          References   35
+
+
+
+
+Bricker, Jesse, Alice Henriques, and Kevin Moore (2017). “Updates to the Sampling of Wealthy
+Families in the Survey of Consumer Finances,” Finance and Economics Discussion Series 2017-
+114. Washington: Board of Governors of the Federal Reserve System, November, https://doi.org/
+10.17016/FEDS.2017.114.
+
+
+Chang, Andrew C., Joanne W. Hsu, Sarah J. Pack, and Michael G. Palumbo (2018). “Where’s the
+Money Going? The Importance of Accounting for Rent Payments in Measuring a Household’s
+Financial Obligations,” FEDS Notes. Washington: Board of Governors of the Federal Reserve
+System, June 20. https://doi.org/10.17016/2380-7172.2213.
+
+
+Cotality, Inc. (2026). Private-Label Loan, Home Equity Servicing and HPI Data.
+
+
+Dettling, Lisa J., Sebastian J. Devlin-Foltz, Jacob Krimmel, Sarah J. Pack, and Jeffrey P. Thompson
+(2015). “Comparing Micro and Macro Sources for Household Accounts in the United States:
+Evidence from the Survey of Consumer Finances,” Finance and Economics Discussion Series
+2015-086. Washington: Board of Governors of the Federal Reserve System, June,
+http://dx.doi.org/10.17016/FEDS.2015.086.
+
+
+Dynan, Karen, Kathleen Johnson, and Karen Pence (2003). “Recent Changes to a Measure of
+U.S. Household Debt Service,” Federal Reserve Bulletin, vol. 89 (October), pp. 417–26.
+www.federalreserve.gov/pubs/bulletin/2003/1003lead.pdf.
+
+
+Executive Office of the President, Office of Management and Budget (2000). “Provisional Guidance
+on the Implementation of the 1997 Standards for Federal Data on Race and Ethnicity,” guidance
+document, Washington: EOP, December 15.
+
+
+Federal Reserve Bank of New York (2026). Quarterly Report on Household Debt and Credit.
+New York: Federal Reserve Bank of New York, Center for Microeconomic Data, August,
+https://www.newyorkfed.org/microeconomics/hhdc.
+
+
+Flood, Sarah, Miriam King, Renae Rodgers, Steven Ruggles, J. Robert Warren, Daniel Backman,
+Etienne Breton, Grace Cooper, Julia A. Rivera Drew, Stephanie Richards, David Van Riper, and
+Kari C.W. Williams (2025). “IPUMS CPS: Version 13.0 [dataset],” Minneapolis, MN: IPUMS,
+https://doi.org/10.18128/D030. V13.0.
+
+
+Goodman, Sarena, Gina Li, Kevin B. Moore, and Alice Henriques Volz (2024). “The COVID-19
+Pandemic and Family Economic Well-being: Evidence from the Survey of Consumer Finances,”
+Finance and Economics Discussion Series 2024-068. Washington: Board of Governors of the
+Federal Reserve System, August, https://doi.org/10.17016/FEDS.2024.068.
+36   Changes in U.S. Family Finances from 2022 to 2025
+
+
+
+
+     Henriques, Alice M., and Joanne W. Hsu (2013). “Analysis of Wealth Using Micro and Macro Data:
+     A Comparison of the Survey of Consumer Finances and Flow of Funds Accounts,” Finance and
+     Economics Discussion Series 2013-46. Washington: Board of Governors of the Federal Reserve
+     System, May, https://www.federalreserve.gov/pubs/feds/2013/201346/201346pap.pdf.
+
+
+     Kennickell, Arthur B. (1998). “Multiple Imputation in the Survey of Consumer Finances,” working
+     paper. Washington: Board of Governors of the Federal Reserve System, September,
+     www.federalreserve.gov/econresdata/scf/scf_workingpapers.htm.
+
+
+     --------(1999). “Revisions to the SCF Weighting Methodology: Accounting for Race/Ethnicity and
+     Homeownership,” working paper. Washington: Board of Governors of the
+     Federal Reserve System, January, www.federalreserve.gov/econresdata/scf/
+     scf_workingpapers.htm.
+
+
+     --------(2000). “Revisions to the Variance Estimation Procedure for the SCF,” working paper.
+     Washington: Board of Governors of the Federal Reserve System, October, www.federalreserve.gov/
+     econresdata/scf/scf_workingpapers.htm.
+
+
+     Moore, Kevin B., and Karen M. Pence (2021). “Improving the Measurement of Racial Disparities in
+     the Survey of Consumer Finances,” FEDS Notes. Washington: Board of Governors of the
+     Federal Reserve System, June 21, https://doi.org/10.17016/2380-7172.2945.
+
+
+     Office of Management and Budget (2024). “Revisions to OMB’s Statistical Policy Directive No.15:
+     Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity,” Federal
+     Register, vol. 89 (March 29), pp. 22182-96, https://www.federalregister.gov/documents/2024/
+     03/29/2024-06469/revisions-to-ombs-statistical-policy-directive-no-15-standards-for-maintaining-
+     collecting-and.
+
+
+     Ringo, Daniel (2024). “Introducing a Credit Bureau-Based Measure of U.S. Household Debt
+     Service,” FEDS Notes. Washington: Board of Governors of the Federal Reserve System,
+     September 4, https://doi.org/10.17016/2380-7172.3615.
+
+
+     Social Security Administration (2026). “Online Social Security Handbook: Your Basic Guide to the
+     Social Security Programs,” Publication 65-008. https://www.ssa.gov/OP_Home/handbook/.
+
+
+     Stewart, Kenneth J., and Stephen B. Reed (1999). “Consumer Price Index Research Series Using
+     Current Methods, 1978–98,” Monthly Labor Review, vol. 122 (June), pp. 29–38.
+                                                                                          References   37
+
+
+
+
+U.S. Census Bureau (2024). "Intercensal Population Estimates of the Resident Population for the
+United States, Regions, States, District of Columbia and Puerto Rico: April 1, 2010 to April 1,
+2020 (NST-EST2020INT-POP)." National Intercensal Population Totals: 2010-2020, November,
+https://www.census.gov/data/tables/time-series/demo/popest/intercensal-2010-2020-
+national.html.
+
+
+--------(2026). "Monthly Population Estimates for the United States: April 1, 2020 to December 1,
+2026 (NA-EST2025-POP)."National Population Totals and Components of Change: 2020–2025,
+January, https://www.census.gov/data/tables/time-series/demo/popest/2020s-national-
+total.html.
+                                                                                                                               39
+
+
+
+
+Appendix A: The Data in This Report and
+Statistical Measures
+
+This report draws principally on the final data from the 2025 and 2022 Survey of Consumer
+Finances (SCF). In the 2025 survey, 4,367 families were interviewed, and in the 2022 survey,
+4,602 families were interviewed.31 To provide a larger context, some information is also included
+from the final versions of earlier surveys.32 Differences between estimates from earlier
+surveys—as reported here and as reported in previous Federal Reserve Bulletin articles and SCF
+reports—are attributable to additional statistical processing, correction of minor data errors, revi-
+sions to the survey weights, conceptual changes in the definitions of variables used in the
+articles, and adjustments for inflation.
+
+
+The survey collects information on families’ income before taxes for the calendar year preceding
+the survey year. Otherwise, the bulk of these data cover the status of families as of the time of
+the interview, including detailed information on their balance sheets and use of financial services
+as well as on their pensions, labor force participation, and demographic characteristics. Most of
+the core survey questionnaire has changed in only minor ways relevant to this report since 1989.
+However, when the questionnaire has been modified at various points to enhance and update the
+survey, every effort has been made to ensure the maximum degree of comparability of the data
+over time. We provide information on key definitions and about how demographic and economic
+groups are constructed for this report.
+
+
+Definition of “Family”
+The definition of “family” used throughout this report differs from that typically used in other gov-
+ernment studies and is more comparable with the U.S. Census Bureau definition of
+“households”—which can include one-person families—than with its use of “families.” In the SCF,
+a household unit is divided into a primary economic unit (PEU)—the family—and everyone else in
+the household. The PEU is intended to be the economically dominant single person or couple
+(whether married or living together as partners) and all other persons in the household who are
+financially interdependent with that economically dominant person or couple.
+
+
+
+
+31
+   For a detailed discussion of the 2022 survey as well as additional references to earlier surveys, see Aditya Aladangady,
+   Jesse Bricker, Andrew C. Chang, Sarena Goodman, Jacob Krimmel, Kevin B. Moore, Sarah Reber, Alice Henriques Volz,
+   and Richard A. Windle (2023).
+32
+   Additional information about the survey, links to previous Federal Reserve Bulletin articles, which describe SCF waves up
+   through 2019, and links to SCF reports, which describe SCF waves after 2019, are available on the Board’s website at
+   https://doi.org/10.17016/datasets.001.
+40   Changes in U.S. Family Finances from 2022 to 2025
+
+
+
+
+     This report also designates a reference person within the PEU, not to convey a judgment about
+     how an individual family is structured but as a means of organizing the data consistently. For
+     example, the age and educational classifications ascribed to families throughout this report
+     describe the age and education of the reference person. If a couple is economically dominant in
+     the PEU, the reference person is the male in a mixed-sex couple or the older person in a same-sex
+     couple. If a single person is economically dominant, that person is designated as the family refer-
+     ence person in this report. Note that the term “reference person” is a new descriptor as of the
+     2019 survey, replacing the outdated “household head” terminology used in previous surveys.
+
+
+     Statistical Measures
+     The principal detailed tables (tables 1 through 4) describing income, net worth, and asset and
+     debt holdings focus on the percentage of various groups that have such items and the median and
+     mean holding for those that have them.33
+
+
+     One limitation of using the median as a descriptive device is that medians are not additive—that
+     is, the sum of the medians of two items for the same population is generally not equal to the
+     median of the sum (for example, median assets minus median liabilities will generally not equal
+     median net worth). In contrast, means for a common population are additive. In the context of this
+     report, where a comparable median and mean are given, the gain or loss of the mean relative to
+     the median may usually be taken as indicative of the relative change at the top of the distribution;
+     for example, when the mean exhibits larger growth than the median, it is typically taken to indicate
+     that the values in the upper part of the distribution rose more than those in the lower part of the
+     distribution.
+
+
+     To provide a measure of the statistical significance of the developments discussed in this report,
+     standard errors caused by sampling and imputation for missing data are given for selected esti-
+     mates. Space limits prevent the inclusion of standard errors for all estimates. Although the statis-
+     tical significance of the results generally is not addressed, the report highlights findings that are
+     significant or are interesting in a broader context. Standard errors for all estimates in tables 1 and
+     2 are available on the SCF website.
+
+
+     Adjustment for Inflation
+     Unless otherwise specified, this report adjusts all dollar amounts from the SCF to 2025 dollars
+     using the “current methods” version of the consumer price index (CPI) for all urban consumers. In
+     an ongoing effort to improve accuracy, the U.S. Bureau of Labor Statistics has introduced several
+     revisions to its CPI methodology. The current-methods index attempts to extend these changes to
+
+     33
+          The median of a distribution is defined as the value at which equal parts of the population considered have values that
+          are larger or smaller.
+                                                       Appendix A: The Data in This Report and Statistical Measures          41
+
+
+
+
+earlier years to obtain a series as consistent as possible with current practices in the official
+CPI.34 Table A.1 includes the adjustments made to assets and liabilities, which are valued at the
+time of the interview, to convert them to 2025 dollars and to adjust family income, which is col-
+lected for the calendar year preceding the survey year (2024), to 2025 dollars.
+
+
+ Table A.1. Inflation-adjustments to 2025 dollars for assets, debts, and income
+
+                                                  Adjustment factor
+               Survey year                                                              Adjustment factor for income
+                                                for assets and debts
+ 2010                                                 1.4947                                      1.5189
+ 2013                                                 1.3930                                      1.4140
+ 2016                                                 1.3498                                      1.3672
+ 2019                                                 1.2686                                      1.2916
+ 2022                                                 1.0944                                      1.1829
+ 2025                                                 1.0000                                      1.0270
+
+
+
+
+Asset and Liability Categories
+The specific concepts of asset and liability categories in the SCF are tied to the survey question
+wording and associated field interviewer instructions, both of which can be found in the SCF code-
+book for the year(s) in question.35 What follows is a general exposition of the asset and liability
+categories reported in the tables.
+
+
+Financial Assets
+Transaction accounts include checking, savings, and money market deposit accounts; money
+market funds (MMFs); call or cash accounts at brokerages; and prepaid debit cards. Call accounts
+include those that hold money received from the sale of securities until the money is reinvested.
+The savings account category includes tax-preferred accounts such as medical or health savings
+accounts and Coverdell or 529 education accounts. Prepaid debit cards, collected in the SCF for
+the first time in 2016, include reloadable prepaid debit cards, government benefit cards, and
+some online payment services and mobile apps that include an account feature that allow families
+to receive and store money (such as Venmo, CashApp, Paypal, and the apps for Starbucks
+and Apple).
+
+
+Certificates of deposit are accounts held for a set period of time that must be cashed or renewed
+at the maturity date. Savings bonds include only U.S. government issues; recent series include EE
+
+
+34
+     For technical information about the construction of this index, see Kenneth J. Stewart and Stephen B. Reed (1999).
+35
+     Codebooks for each SCF wave can be found on the Board’s website at https://doi.org/10.17016/datasets.001 (Board
+     of Governors of the Federal Reserve System, 2026d, 2026e). SAS code that generates the asset and liability categories
+     is available on the Board’s website at https://www.federalreserve.gov/econres/files/bulletin.macro.txt. A web-based
+     application for analyzing SCF data can be found at https://sda.berkeley.edu/sdaweb/analysis/?dataset=scfcomb.
+42   Changes in U.S. Family Finances from 2022 to 2025
+
+
+
+
+     and I, and older bonds may be series E, H, and HH. Other bonds include only those held directly
+     (not part of a managed investment account or bond fund) and include corporate and mortgage-
+     backed bonds; federal, state, and local government bonds; and foreign bonds. Stocks include pub-
+     licly traded stocks that are directly held—that is, corporate equities not held as part of a managed
+     investment account, mutual fund, or retirement account.
+
+
+     Pooled investment funds include stock funds, tax-free bond funds, government bond funds, other
+     bond funds, and any combinations thereof but exclude MMFs and indirectly held mutual funds.
+     These funds include all other types of directly held pooled investments, such as traditional
+     open-end and closed-end mutual funds, exchange-traded funds, real estate investment trusts, and
+     hedge funds.
+
+
+     Retirement accounts include individual retirement accounts, Keogh accounts, and certain
+     employer-sponsored accounts, such as 401(k), 403(b), thrift savings accounts from current or
+     past jobs; other current job plans from which loans or withdrawals can be made; and accounts
+     from past jobs from which the family expects to receive the account balance in the future. This
+     definition of employer-sponsored plans is intended to confine the analysis to accounts that are
+     portable across jobs and for which families will ultimately have the option to withdraw the balance.
+     Usually, such accounts may be invested in virtually any asset, including stocks, bonds, pooled
+     investment funds, options, and real estate. In principle, employer-sponsored plans may be
+     invested in a similarly broad way, but, in practice, a person’s choices for investment are some-
+     times limited to a narrower set of assets.36
+
+
+     Cash value life insurance is the current (nonzero) value of any life insurance policies with a cash
+     value that can be withdrawn. The survey measures the value of such policies according to their
+     current cash value, not their death benefit. In this report, the cash value is included as an asset
+     only when the cash value at the time of the interview was nonzero. This designation excludes term
+     life insurance policies, which provide only a death benefit.
+
+
+     Other managed assets include personal annuities and trusts with an equity interest and managed
+     investment accounts. Annuities may be those in which the family has an equity interest in the
+     asset or in which the family possesses an entitlement only to a stream of income. The wealth fig-
+
+
+
+
+     36
+          Although tax-deferred retirement assets are clearly an important element in retirement planning, families may hold a
+          variety of other assets intended, at least in part, to finance retirement. Two common and important types of retirement
+          plans are not included in the assets described in this section: Social Security (the federally funded Old-Age, Survivors,
+          and Disability Insurance program (OASDI)) and employer-sponsored defined-benefit plans. OASDI is well described else-
+          where, and it covers the great majority of the population (see Social Security Administration, 2026). The retirement
+          income provided by defined-benefit plans is typically based on workers’ salaries and years of work with an employer, a
+          group of employers, or a union. Future income streams from OASDI and defined-benefit plans cannot be easily trans-
+          lated into a current value because valuation depends critically on assumptions about future events and conditions—
+          work decisions, earnings, inflation rates, discount rates, mortality, and so on.
+                                                      Appendix A: The Data in This Report and Statistical Measures              43
+
+
+
+
+ures in this report include only the annuities in which the family has an equity interest.37 The
+trusts or managed investment accounts included in other managed assets are those in which
+families have an equity interest and for which components were not separately reported. Typically,
+such accounts are those in which the ownership is complicated or the management is undertaken
+by a professional.38
+
+
+Other financial assets include oil and gas leases, futures contracts, royalties, proceeds from law-
+suits or estates in settlement, cryptocurrency, and loans made to others. One specific financial
+asset excluded from this category is employment-related stock options.39 Because such options
+are typically not publicly traded or their execution is otherwise constrained, their value is uncertain
+until the exercise date; until then, meaningful valuation would require complex assumptions about
+the future behavior of stock prices.
+
+
+Nonfinancial Assets
+Vehicles include cars, vans, sport utility vehicles, trucks, motor homes, recreational vehicles,
+motorcycles, boats, airplanes, and helicopters.40 Primary residences include mobile homes and
+their sites, the parts of farms and ranches not used for farming or ranching business, condo-
+miniums, cooperatives, townhouses, other single-family homes, and other permanent dwellings.
+Other residential property includes second homes, time shares, one- to four-family rental proper-
+ties, and other types of residential properties. It also includes outstanding balances on loans that
+the family may have made to finance the sale of properties the family previously owned and that
+are still owed to the family.
+
+
+Nonresidential real estate includes the following types of properties unless they are owned
+through a business: commercial property, rental property with five or more units, farmland and
+ranch land, undeveloped land, and all other types of nonresidential real estate. Most often, non-
+residential real estate properties are functionally more like a business than a residential property.
+They may have several owners, they are typically worth a considerable amount, and they often
+carry large mortgages, which appear to be paid from the revenues from the property, not the fami-
+
+
+
+
+37
+   In 2025, 5.5 percent of families reported having any type of annuity, and of these families, 77.1 percent reported having
+   an equity interest.
+38
+   In 2025, 92.8 percent of families with trusts or managed investment accounts had an equity interest in such an
+   account. The survey encourages respondents who have trusts or managed investment accounts held in relatively
+   common investments to report the components separately. Of the 6.9 percent of families that reported having any kind
+   of trust or managed investment account in 2025, 60.6 percent of them reported at least one of the component assets
+   separately. Of families that detailed the components in 2025, 85.9 percent reported some type of financial asset,
+   20.0 percent reported a primary residence, 15.5 percent reported other real estate, 3.0 percent reported a business,
+   and 4.1 percent reported another type of asset.
+39
+   Stock options are generally excluded in the accounting in this report, except for stock option retirement plans, which are
+   included in pensions.
+40
+   Of families owning any type of vehicle in 2025, 99.9 percent had a car, van, sport utility vehicle, motorcycle, or truck.
+   The remaining types of vehicles were held by 10.1 percent of families.
+44   Changes in U.S. Family Finances from 2022 to 2025
+
+
+
+
+     ly’s other income. As in the case of privately owned businesses, the value of the property in this
+     analysis is taken to be the net value.
+
+
+     Business equity includes net worth in the following forms of business: sole proprietorships, lim-
+     ited partnerships, other types of partnerships, S corporations and other types of corporations that
+     are not publicly traded, limited liability companies, and other types of private businesses. If the
+     family lived on a farm or ranch used at least in part for agricultural business, then the value of
+     that part, net of the corresponding share of associated debts, is included with other business
+     assets. In the survey, self-employment status and business ownership are independently
+     determined.
+
+
+     Other nonfinancial assets include, but are not limited to, commodities—such as livestock, gold,
+     silver, and other precious metals—jewelry, antiques, art, cemetery plots, vehicles that have signifi-
+     cant value but are not in running condition, and other collections of value.
+
+
+     Liabilities
+     Debt secured by residential property consists of first-lien and junior-lien mortgages and home
+     equity lines of credit (HELOCs) secured by the primary residence. For purposes of this report, first-
+     and junior-lien mortgages consist only of closed-end loans—that is, loans typically with a one-time
+     extension of credit, a set frequency of repayments, and a required repayment size that may be
+     fixed or vary over time in accordance with a pre-specified agreement or with changes in a given
+     market interest rate.41 As a type of open-ended credit, HELOCs typically allow credit extensions at
+     the borrower’s discretion subject to a prearranged limit and allow repayments at the borrower’s dis-
+     cretion subject to a prearranged minimum size and frequency.
+
+
+     Lines of credit not secured by residential property are any lines of credit except HELOCs and bor-
+     rowing on credit cards.
+
+
+     The term “installment loan” describes closed-end consumer loans—that is, loans that typically
+     have fixed payments and a fixed term. The most common examples are education loans; automo-
+     bile loans; personal loans; and loans for furniture, appliances, and other durable goods. Other
+     installment loans include all closed-end consumer loans that are not for education or a vehicle—
+     that is, loans that typically have fixed payments and a fixed term. Beginning with the 2022 survey,
+     balances on buy now, pay later payment plans—a type of short-term loan, usually for consumer
+     goods, that allows an individual to spread payment for a purchase over several installments—are
+     included with other installment loans.
+
+
+     41
+          Of all families, 40.3 percent had a first-lien mortgage in 2025 (40.6 percent in 2022), 2.1 percent had a junior-lien
+          mortgage (1.2 percent in 2022), 6.6 percent had a HELOC (6.9 percent in 2022), and 3.7 percent had a HELOC with an
+          outstanding balance (3.5 percent in 2022).
+                                                     Appendix A: The Data in This Report and Statistical Measures            45
+
+
+
+
+Credit card balances consist of balances on bank-type cards (such as Visa, MasterCard, and
+Discover as well as Optima and other American Express cards that routinely allow holders to carry
+a balance), store cards or charge accounts, care cards, gasoline company cards, so-called travel
+and entertainment cards (such as Diners Club cards that do not routinely allow holders to carry a
+balance), other credit cards, and revolving store accounts that are not tied to a credit card. Bal-
+ances exclude purchases made after paying the most recent bill.
+
+
+The “other” debt category comprises loans on cash value life insurance policies, loans against
+pension accounts, borrowing on margin accounts, and a miscellaneous category largely composed
+of personal loans not explicitly categorized elsewhere.
+
+
+Finally, the SCF measure of liabilities excludes debt owed by family-owned businesses and debt
+owed on nonresidential real estate; in this report, such debt is netted against the corre-
+sponding assets.
+
+
+Measures of Debt Burden and Credit Market Experiences
+The SCF includes several questions designed to capture information about respondents’ debt bur-
+dens and interactions with credit markets. The specific concepts addressed in the SCF are neces-
+sarily tied to the survey question wording and associated field interviewer instructions, which can
+be found in the SCF codebook for the year(s) in question.42 What follows is a general exposition of
+the debt burden and credit market experience measures reported in the tables.
+
+
+Leverage ratios compare total debt with total assets. The aggregate version of this measure is the
+sum of all debts for all families, divided by the sum of all assets for all families. The median for
+debtors is the median of each individual family’s leverage ratio and is calculated for those with
+positive values of total debt only, with families that have zero or negative assets assumed to have
+an above-median leverage ratio.
+
+
+The aggregate debt-to-income ratio is the sum of liabilities for all SCF families, divided by the total
+income for all SCF families. The median for debtors is the 50th percentile among all individual
+families’ debt-to-income ratios among families with positive values of total debt only, with families
+that have zero or negative income assumed to have an above-median debt-to-income ratio.
+
+
+Payment-to-income ratios measure total debt payments relative to total income.43 The aggregate
+version of this measure is the sum of all debt payments for all SCF families, divided by total
+
+
+42
+   Codebooks for each SCF wave can be found on the Board’s website at https://doi.org/10.17016/datasets.001
+   (Board of Governors of the Federal Reserve System, 2026d, 2026e).
+43
+   The definition of payment-to-income ratio in the SCF includes only debt payments, not payments on leases or rental pay-
+   ments. That said, the SCF collects information on vehicle lease payments and rent on primary residences. Therefore,
+46   Changes in U.S. Family Finances from 2022 to 2025
+
+
+
+
+     income for all SCF families. The median for debtors is the 50th percentile of an individual family’s
+     payment-to-income ratio and is calculated for those with positive values of total debt only. For the
+     purposes of the calculation of payment-to-income ratios, the relatively small share of families with
+     income that was less than or equal to $3,047 (or, $1200 in annual income in 1989 dollars) were
+     assigned that amount of income.
+
+
+     The aggregate measure of the payment-to-income ratio referenced in this report can differ from
+     other published measures that are conceptually similar, such as the debt service ratio described
+     by Daniel Ringo (2024), for several reasons.44 First, the type of debt included in conceptually
+     similar measures can be different. The debt service ratio includes only debts reported by a loan
+     servicer to the credit bureau Equifax, whereas the survey includes, in principle, debts from all
+     sources. Second, the income measures may be different. The debt service ratio uses an estimate
+     of disposable personal income from the national income and product accounts for the period con-
+     current with the estimated payments as the denominator of the ratio, whereas the survey measure
+     uses total before-tax income reported by survey families for the preceding year; the differences in
+     these two income measures are complex. Third, the estimated required payments for a given type
+     of debt may be different. The debt service ratio includes scheduled payments due to the loan ser-
+     vicer. For credit cards, the scheduled payment is the minimum required payment, and for mort-
+     gages, the scheduled payment is the total due to the loan servicer including escrow payments; the
+     survey measure of payments is directly asked of the survey respondents but may also include pay-
+     ments of taxes and insurance on real estate loans. Fourth, measurement error between published
+     measures may differ. The survey measures of payments and income are based on the responses
+     of a sample of respondents; they may be affected both by sampling error and by various types of
+     response errors. The debt service ratio calculation is affected by potential errors in credit bureau
+     data that can arise due to duplicate tradelines, data entry errors, and the presence of
+     co-borrowers.
+
+
+     The SCF asks multiple questions intended to capture whether families are credit constrained,
+     which is broadly defined as having difficulty accessing credit.45 One question asks the respondent
+     whether the respondent or the spouse or partner applied for particular types of credit in the past
+     year. Among those that answer in the affirmative, a follow-up question asks the respondent
+     whether a lender declined an application for credit or provided less credit than was sought at any
+     point in the past year. Among those that answer in the negative, a follow-up question probes the
+     rationale behind the decision not to apply for credit in the past year and, among other choices,
+
+
+
+        the SCF can be used to create a broader measure of a family’s payments that includes leases and rental payments.
+        See, for example, Andrew C. Chang, Joanne W. Hsu, Sarah J. Pack, and Michael G. Palumbo (2018).
+     44
+        See Board of Governors of the Federal Reserve System (2026b) to download data on the debt service ratio. Before
+        2024, the debt service ratio was calculated following Karen Dynan, Kathleen Johnson, and Karen Pence (2003).
+     45
+        Before 2016, these questions had asked families about their experiences over the past five years, rather than over the
+        past year.
+                                             Appendix A: The Data in This Report and Statistical Measures   47
+
+
+
+
+offers “you did not think you would get approved” as a possibility. A combination of these ques-
+tions is used to measure overall credit constraints.
+
+
+Delinquency on debt obligations is captured by asking families that have any debt at the time of
+their interview whether they have been behind in any of their loan payments in the preceding year.
+The survey asks if respondents have been behind at all and, for respondents who report they have
+been behind, whether they have been behind for two months or more.
+
+
+Payday loans are defined as loans that are meant to be repaid in full out of the respondent’s next
+paycheck; they are unsecured loans that are typically small, short term, and carry above-average
+interest rates.
+
+
+Bankruptcy behavior over the past five years is based on a series of retrospective questions that
+ask whether the respondent or the partner or spouse has ever declared bankruptcy and, if so, the
+most recent year.
+
+
+Foreclosure experience over the past five years is based on a series of retrospective questions
+that ask whether the respondent or the partner or spouse has ever had a foreclosure proceeding
+brought against an owned property and, if so, the most recent year.
+
+
+Finally, convenience use of credit cards is determined using questions on whether a respondent
+had positive balances after the most recent payment for bank-type cards (such as Visa, Master-
+Card, and Discover as well as Optima and other American Express cards that routinely allow
+holders to carry a balance), store cards, gasoline company cards, and other credit cards.
+
+
+Percentiles of the Distributions of Income and Net Worth
+Throughout this report, references are made to various percentile groups of the distributions of
+income or net worth. For a given characteristic, a percentile can be used to define a family’s rank
+relative to other families. For example, the 10th percentile of the distribution of usual income is
+the amount of income received by a family for which less than 10 percent of other families have
+lower usual incomes and 90 percent have higher usual incomes. Table A.2 includes the percen-
+tiles of the distributions of usual income and net worth used to define the income and net worth
+groups in the Executive Summary, tables 1 and 2, and boxes 1 through 5 in this report.
+
+
+The groups that are created when a distribution is divided at every 10th percentile are commonly
+referred to as deciles. Similarly, when a distribution is divided at every 20th (25th) percentile, the
+groups are known as quintiles (quartiles). Families in the first income decile, for example, are
+those with income below the 10th percentile.
+48   Changes in U.S. Family Finances from 2022 to 2025
+
+
+
+
+      Table A.2. Distribution of usual income and net worth by survey year, selected percentiles
+
+                                                                            Survey year
+                      Item
+                                           2010          2013        2016                 2019       2022        2025
+      Percentile of usual income
+      20                                    36,500        32,500      34,200               36,000     37,900      40,100
+      40                                    60,800        56,500      58,800               60,700     65,100      66,800
+      50                                    75,900        70,700      74,500               77,500     80,300      84,200
+      60                                    94,200        88,000      93,800               95,600    100,500     103,600
+      80                                   151,900       145,600     150,400              161,500    167,600     174,400
+      90                                   227,800       215,500     239,100              239,000    268,500     248,500
+      Percentile of net worth
+      25                                    12,400        12,200      13,700               15,700     29,600      27,900
+      50                                   115,500       113,100     131,300              154,400    211,100     215,900
+      75                                   450,900       441,900     498,200              512,300    721,100     812,800
+      90                                  1,423,700     1,311,700   1,601,300        1,548,000      2,120,900   2,539,200
+
+
+
+
+     Racial and Ethnic Identification
+     In this report, for continuity, we have classified families based on self-identified race and ethnicity.
+     Before 2022, the SCF only collected the race and ethnicity of the survey respondent. Beginning
+     with the 2022 survey, race and ethnicity were collected for both the respondent and the spouse
+     or partner.
+
+
+     For greater comparability with previous surveys, in most instances this report groups families into
+     four classifications based on the respondent’s answers to the racial identification question: White
+     non-Hispanic, Black non-Hispanic, Hispanic or Latino, and other or multiple race. The “other or
+     multiple race” classification includes respondents identifying as Asian, American Indian, Alaska
+     Native, Native Hawaiian, Pacific Islander, or other race and all respondents reporting more than
+     one racial identification.
+
+
+     Because of the racial and ethnic oversampling built into the survey design starting in 2022,
+     tables 1 and 2 break out Asian families as a separate racial or ethnic classification. Asian fami-
+     lies were about 4 percent of 2025 families, and “other (non-Asian) or multiple race” families were
+     almost 10 percent.
+
+
+     In 2025, the SCF added a separate category of “Middle Eastern or North African” to the racial
+     identification questions for both the respondent and the spouse or partner.46 In previous SCFs,
+     the category of White non-Hispanic included those identifying as Middle Eastern or North African.
+
+
+     46
+          See Office of Management and Budget (2024).
+                                                      Appendix A: The Data in This Report and Statistical Measures             49
+
+
+
+
+Due to sample size and disclosure concerns, the option of Middle Eastern or North African is com-
+bined with White non-Hispanic in this report and in the public release SCF data, which keeps the
+resulting 2025 White non-Hispanic classification in this report consistent with previous SCF
+articles.47
+
+
+The questions underlying the method of classification used in the survey were also changed in
+1998, 2004, and 2025. Starting in 1998, SCF respondents were allowed to report more than one
+racial identification; in surveys before then, only one response was recorded. For maximum com-
+parability with earlier data, respondents reporting multiple racial identifications were asked to
+report their strongest racial identification first. In this report, respondents reporting multiple racial
+identifications in the surveys starting with 1998 are classified as “other or multiple race.” In the
+2025 SCF, when classifying families according to the racial identification of the respondent,
+9.1 percent of families reported more than one racial identification, up from 7.2 percent in 2022,
+6.8 percent in 2019, 6.1 percent in 2013, 5.4 percent in 2007, and 2.3 percent in 2004. The
+public release data set includes the ethnic identification and racial identification variables,
+enabling the construction of alternative classifications.
+
+
+Beginning with the 2004 survey, the question on racial identification was preceded by a question
+on whether respondents consider themselves Hispanic or Latino in culture or origin; previously,
+such ethnic identification was captured only to the extent that it was reported as a response to
+the question on racial identification. Because of revisions to the Office of Management and Bud-
+get’s Statistical Policy Directive No. 15, in the 2025 SCF, the question on whether respondents
+consider themselves Hispanic or Latino in culture or origin was removed, so ethnic identification
+was captured only to the extent that it was a response to the question on racial identification.
+
+
+The racial classifications in this report ignore the information on whether respondents consider
+themselves Hispanic or Latino in culture or origin available in the surveys from 2004 to 2022,
+again to allow greater comparability with pre-2004 and 2025 SCF data.48
+
+
+Starting in 2022 and continuing in 2025, the survey asked about the country of origin and number
+of years living in the U.S. for both the respondent and spouse or partner. This information is
+included in the microdata but is not detailed in this report.
+
+
+The evolution of the racial and ethnic composition of the survey population represents important
+context for interpreting statistics describing the experiences of families by race or ethnicity over
+
+
+47
+   Articles for years before the 2016 SCF reported data that classified all families into two groups: White non-Hispanic and
+   non-White or Hispanic. Since 2016, for classifications that use a total of four racial groups the non-White or Hispanic
+   group has been split into three classifications (Black non-Hispanic, Hispanic or Latino, and other or multiple race).
+48
+   For a comprehensive discussion of standards for defining race and ethnicity, see Executive Office of the President,
+   Office of Management and Budget (2000).
+50   Changes in U.S. Family Finances from 2022 to 2025
+
+
+
+
+     time. Table A.3 displays the share of the SCF population each racial or ethnic group has repre-
+     sented in each survey since 2010 using current survey classifications.
+
+
+      Table A.3. Distribution of SCF families across racial or ethnic categories, 2010–2025
+
+                                                                           Survey year
+             Race or ethnicity of respondent
+                                                2010   2013        2016              2019       2022   2025
+      White non-Hispanic                        67.5     67.2       64.7                 64.9   66.8   60.6
+      Black or African American non-Hispanic    13.0     13.3       14.6                 14.2   11.5   13.9
+      Hispanic or Latino                         9.7      9.6       10.2                  9.6    9.4   11.8
+      Other or multiple race                     9.9      9.9       10.5                 11.3   12.3   13.7
+
+
+
+
+     Educational Attainment Classifications
+     In this report, the educational attainment of a family refers to the highest degree obtained by the
+     reference person. Beginning with the 2016 survey, the SCF modified its educational attainment
+     question to align the SCF more closely with other household surveys, including the census and
+     Current Population Survey (CPS). For surveys before 2016, respondents were asked to list the
+     highest grade of school or year of college completed, and follow-up questions asked the respon-
+     dent about the type of degree obtained. Starting with the 2016 survey, the first educational attain-
+     ment question asks about the highest degree obtained, and follow-up questions ask respondents
+     who report a high school degree whether it was obtained by getting a General Educational Devel-
+     opment certificate or completing another equivalency program. Follow-up questions also ask
+     respondents who report some college about the number of years of college. It is possible this
+     change may have prompted changes in reporting, although the educational attainment of SCF
+     families was similar to that of CPS families in both 2013 and 2016.
+
+
+     Table A.4 displays the share of the SCF population each education group has represented in each
+     survey since 2010 using current survey classifications.
+
+
+      Table A.4. Distribution of educational attainment of the reference person, 2010–2025
+      Percent
+
+                                                                           Survey year
+                Education of reference person
+                                                2010   2013        2016              2019       2022   2025
+      No high school diploma                    12.0     11.0       12.7                 10.7    9.2    8.5
+      High school diploma                       32.2     31.3       26.0                 24.5   23.7   24.4
+      Some college                              25.1     25.7       27.3                 28.5   27.1   26.0
+      College degree or higher                  30.8     32.0       34.0                 36.3   40.1   41.1
+                                                  Appendix A: The Data in This Report and Statistical Measures   51
+
+
+
+
+Age Classifications
+In this report, the age of a family refers to the age of the reference person. Table A.5 displays the
+share of the SCF population each age group has represented in each survey since 2010 using cur-
+rent survey classifications.
+
+
+ Table A.5. Age distribution of reference person, 2010–2025
+ Percent
+
+                                                                          Survey year
+         Age of reference person (years)
+                                           2010       2013        2016              2019       2022   2025
+ Less than 35                              21.0        20.8        20.3                 20.9   20.0   19.6
+ 35–44                                     18.2        17.3        16.8                 16.6   17.0   17.3
+ 45–54                                     21.1        19.6        18.3                 17.2   16.4   16.2
+ 55–64                                     17.5        18.7        19.2                 18.8   18.4   17.2
+ 65–75                                     11.5        12.9        14.1                 15.3   16.1   16.3
+ 75 or more                                10.7        10.7        11.2                 11.3   12.0   13.4
+                                                                                                                              53
+
+
+
+
+Appendix B: Description of the Survey
+and Survey Procedures
+
+Data from the Survey of Consumer Finances (SCF) are the basis of the analysis presented in
+this report. The SCF is a triennial interview survey of U.S. families sponsored by the Board of
+Governors of the Federal Reserve System with the cooperation of the U.S. Department of the
+Treasury.49 Since 1992, data for the SCF have been collected by NORC at the University of
+Chicago (formerly, the National Opinion Research Center), a social science and survey research
+organization. Although the majority of the data are collected between April and December of each
+survey year, a small fraction of data are collected in the first part of the next calendar year. For the
+2025 SCF, about one-seventh of the interviews were conducted between January and May 2026.
+This fraction was smaller than the analogous fraction from the 2022 survey.
+
+
+The SCF data used here are derived from the final internal version of the survey information. Data
+from the 2025 survey, suitably altered to protect the privacy of respondents, along with additional
+tabulations of data from the surveys beginning with 1989, are expected to be available in
+October 2026 on the Federal Reserve Board’s website.50
+
+
+Sampling
+The survey is designed to provide a core set of data on family income, assets, and liabilities. The
+need to measure financial characteristics imposes special requirements on the sample design for
+the survey. The SCF is designed to provide reliable information on both attributes that are broadly
+distributed in the population (such as homeownership) and attributes that are highly concentrated
+in a relatively small part of the population (such as closely held businesses). The major aspects of
+the sample design that address this requirement have been largely constant since 1989.
+
+
+The SCF combines two techniques for random sampling. First, a standard multistage, area-
+probability sample (a geographically based random sample) is selected to provide good coverage
+of characteristics, such as homeownership, vehicles, and checking accounts, that are broadly dis-
+tributed in the population.
+
+
+
+
+49
+   Since 2013, the Federal Reserve Board has also sponsored the Survey of Household Economics and Decisionmaking,
+   which is an annual survey that examines the financial lives of U.S. adults and their families (Board of Governors of the
+   Federal Reserve System 2026a, 2026c).
+50
+   Data from the 2025 Survey of Consumer Finances, links to the data used in this report for earlier periods, and links to
+   working papers describing statistical methodologies are available on the Board’s website at https://doi.org/10.17016/
+   datasets.001 (Board of Governors of the Federal Reserve System, 2026e).
+54   Changes in U.S. Family Finances from 2022 to 2025
+
+
+
+
+     Starting in 2022, the area-probability sample oversamples families predicted to be likely Black
+     non-Hispanic, Hispanic, or Asian.51 In 2025, the sampling rate for families predicted to be likely
+     Black non-Hispanic or Hispanic was about twice as high, and for Asian families was about three
+     times as high, relative to the respective rates from a simple random sample solely based on
+     geography.
+
+
+     Second, a supplemental sample is selected to disproportionately include wealthy families, which
+     hold a relatively large share of such thinly held assets as closely held businesses and tax-exempt
+     bonds. Called the “list sample,” this group is drawn from a list of statistical records derived from
+     tax returns. These records are used under strict rules governing confidentiality, the rights of poten-
+     tial respondents to refuse participation in the survey, and the types of information that can be
+     made available. Persons listed by Forbes magazine as being among the wealthiest 400 people in
+     the U.S. are excluded from sampling.52
+
+
+                                                                        Of the 4,367 interviews completed for the
+      Table B.1. Number of families represented in
+      the SCF, 2010–2025                                                2025 SCF, 3,188 were from the area-
+      Millions
+                                                                        probability sample, and 1,179 were from the
+                                                Number of               list sample; for 2022, 3,298 were from the
+                                                 families
+                     Year                                               area-probability sample, and 1,304 were from
+                                               represented
+                                                (millions)              the list sample. Table B.1 contains the
+       2010                                       117.6
+                                                                        number of families represented in total by the
+       2013                                       122.5
+                                                                        surveys considered in this report.
+       2016                                       126.0
+       2019                                       128.6
+       2022                                       131.3                 Overall population growth between 2022 and
+       2025                                       135.0                 2025 was 2.3 percent, up from the 1.1 per-
+                                                                        cent growth between 2019 and 2022.53 The
+                                                                        number of U.S. families represented in the
+     SCF—which is designed to match estimates from the Current Population Survey—increased
+     2.8 percent between 2022 and 2025, also a higher rate relative to the 2.1 percent rate experi-
+     enced between 2019 and 2022. With the population growing at a slightly slower rate than family
+     formation, the average number of persons per family barely changed, from 2.54 people in 2022 to
+     2.53 in 2025.
+
+
+
+
+     51
+        For more information, see Kevin B. Moore and Karen M. Pence (2021).
+     52
+        For more information, see Jesse Bricker, Alice Henriques, Jacob Krimmel, and John Sabelhaus (2016); and
+        Jesse Bricker, Alice Henriques, and Kevin Moore (2017).
+     53
+        The statistics for population in this paragraph are for the resident U.S. population as of July for the years indicated
+        (U.S. Census Bureau 2024, 2026).
+                                                       Appendix B: Description of the Survey and Survey Procedures             55
+
+
+
+
+The Interviews and Survey Questionnaire
+Although questions have been modified and new questions added over time, the core of the
+survey questionnaire, which covers family income, assets, and liabilities, has changed in only
+minor ways since 1989. Changes to the questionnaire generally include instances in which the
+structure was altered to accommodate changes in financial behaviors, changes in types of finan-
+cial arrangements available to families, and changes in regulations covering data collection.
+
+
+In 2016, interview sections on educational attainment, education loans, payment methods, and
+financial institutions were revised, and additional questions addressing financial literacy among
+respondents, parental educational attainment, and decisions under hypothetical financial situa-
+tions were included.54 For all changes, every effort has been made to ensure the maximum degree
+of comparability of the data over time. Except where noted in the report, the data are highly com-
+parable over time.
+
+
+The generosity of families in giving their time for interviews has been crucial to the ongoing suc-
+cess of the SCF. In the 2025 SCF, the median interview length was about 120 minutes; the
+increase over the 2022 SCF (110 minutes) was primarily due to the addition of the new questions
+on families’ actual spending over the last year, families’ hypothetical rates of spending, saving,
+and paying down debt due to unexpected income, and families’ informal support networks.55 The
+addition to interview length from these new questions was partially offset by the removal of the
+module about experiences during the COVID-19 pandemic that was added for the 2022 survey and
+the removal of some questions regarding families’ financial institutions.56 In some particularly
+complicated cases, the amount of time needed was more than three hours. The role of the inter-
+viewers in this effort is also critical. Without their dedication and perseverance, the survey would
+not be possible.
+
+
+In 2025, the majority of interviews were completed by telephone, although in-person interviews
+were allowed if the respondent preferred that method.57 Each interviewer used a program running
+on a tablet to administer the survey and collect the data.
+
+
+
+
+54
+   A detailed list of all changes to the questionnaire in 2016 is available on the Board’s website at
+   https://www.federalreserve.gov/econres/files/2016_scf_changes.txt.
+55
+   See box 1 of this report, and the three FEDS Notes released concurrently with this report (Aditya Aladangady,
+   Jesse Bricker, Andrew C. Chang, Sarena Goodman, and Gina Li, 2026a, 2026b, 2026c).
+56
+   The SCF codebook has a summary of the questionnaire changes, with a detailed list of questionnaire changes for 2025
+   available on the Board’s website at https://www.federalreserve.gov/econres/files/2025_scf_changes.txt. The removed
+   COVID-19 module asked about families’ experiences in the COVID-19 pandemic related to employment, financial
+   struggles, government transfers, childcare, and health outcomes. A discussion of the COVID-19 questions and the
+   results from the 2022 SCF can be found in Jesse Bricker, Sarena Goodman, Kevin Moore, Sarah Reber, Alice Henriques
+   Volz, and Richard Windle (2023); and Sarena Goodman, Gina Li, Kevin Moore, and Alice Henriques Volz (2024).
+57
+   Historically, the majority of interviews were completed in person, though telephone interviews accounted for the majority
+   of completions in the 2022 survey.
+56   Changes in U.S. Family Finances from 2022 to 2025
+
+
+
+
+     The use of computer-assisted personal interviewing has the great advantage of enforcing system-
+     atic collection of data across all cases. The computer program developed to collect the data for
+     the SCF was tailored to allow the collection of partial information in the form of ranges whenever a
+     respondent either did not know or did not want to reveal an exact dollar figure.
+
+
+     The response rate in the area-probability sample is higher than that in the list sample. In 2025,
+     about 45 percent of families selected for the area-probability sample completed interviews, up
+     from 42 percent in 2022.58 The list sample has targets for completed cases by wealth stratum,
+     which determines the response rates for this sample somewhat by construction. The overall
+     completion rate in 2025 for the list sample was around 24 percent, down from 27 percent in
+     2022. The strata containing the likely wealthiest families, about half of the list sample, had a
+     completion rate of around 18 percent, down from 20 percent in 2022.
+
+
+     Weighting
+     To provide a measure of the frequency with which families similar to the sample families could be
+     expected to be found in the population of all families, an analysis weight is computed for each
+     case, accounting for both the systematic properties of the sample design and differential patterns
+     of nonresponse. The SCF response rates are lower than some other major government surveys,
+     and analysis of the data confirms that the tendency to refuse participation is highly correlated with
+     net worth. However, unlike other surveys, which almost certainly also have differential nonre-
+     sponse by wealthy households, the SCF has the means to adjust for such nonresponse. Much of
+     SCF research is devoted to the evaluation of nonresponse, which allows for continuous improve-
+     ment in the analysis weights of the survey that adjust for nonresponse.59
+
+
+     Sources of Error
+     Errors may be introduced into survey results at many stages. Sampling error—the variability
+     expected in estimates based on a sample instead of a census—is a particularly important source
+     of error. Such error can be reduced either by increasing the size of a sample or, as is done in the
+     SCF, by designing the sample to reduce important sources of variability. Sampling error can be
+     estimated, and for this report, we use replication methods to do so.
+
+
+     Replication methods draw samples, called replicates, from the set of actual respondents in a way
+     that incorporates the important dimensions of the original sample design. In the SCF, weights
+
+
+     58
+        The area-probability response rate corresponds to the American Association for Public Opinion Research (2015)’s
+        response rate 1. In the SCF, families must answer all critical questions in the survey for an interview to be complete.
+        The SCF codebook denotes which questions are critical (Board of Governors of the Federal Reserve System 2026d).
+        There is no SCF standard for partial completes.
+     59
+        The weights used in this report are adjusted for differential rates of nonresponse across groups. See
+        Arthur B. Kennickell (1999).
+                                                      Appendix B: Description of the Survey and Survey Procedures            57
+
+
+
+
+were computed for all of the cases in each of the replicates.60 Every value for which standard
+errors are reported in this report is a weighted statistic estimated using the replicate samples. To
+estimate the overall standard error, a measure of the variability of these estimates is combined
+with a measure of the variability because of imputation for missing data.
+
+
+Other errors include those that interviewers may introduce by failing to follow the survey protocol
+or misunderstanding a respondent’s answers. SCF interviewers are given lengthy, project-specific
+training and ongoing coaching to minimize such problems. Respondents may introduce error by
+interpreting a question in a sense different from that intended by the survey. For the SCF, exten-
+sive pretesting of questions and thorough review of the data tend to reduce this source of error.61
+
+
+Nonresponse—either complete nonresponse to the survey or nonresponse to selected items
+within the survey—may be another important source of error. As noted in more detail previously,
+the SCF uses weighting to adjust for differential nonresponse to the survey. To address missing
+information on individual questions within the interview, the SCF uses statistical methods to
+impute missing data; the technique makes multiple estimates of missing data to allow for an esti-
+mate of the uncertainty attributable to this type of nonresponse.62
+
+
+Benchmarking and Comparison with External Data
+As part of the general reconciliations required for this report, the survey data were compared with
+many external estimates.63 One particularly important comparison is between the SCF and the
+Federal Reserve’s Statistical Release Z.1, “Financial Accounts of the United States,” for the
+household sector.64 This comparison suggests that when the definitions of the variables in the
+two sources are adjusted to a common conceptual basis across multiple asset and debt catego-
+ries, the estimates of totals in the two systems tend to be close and show similar growth rates.65
+
+
+In general, the median values for income and net worth in the SCF are most comparable with
+analogous values in other household surveys. However, because of the special dual-frame design
+of the SCF sample, different units of observation, and differences in other methodological
+aspects, the SCF and other surveys are unlikely to produce identical estimates.
+
+
+60
+   See Arthur B. Kennickell (2000).
+61
+   For a description of the review process, see Ryan Bledsoe and Gerhard Fries (2002).
+62
+   See Arthur B. Kennickell (1998).
+63
+   For more details on comparing SCF estimates to those from other data sources, see Lisa J. Dettling,
+   Sebastian J. Devlin-Foltz, Jacob Krimmel, Sarah J. Pack, and Jeffrey P. Thompson (2015).
+64
+   See Michael Batty, Jesse Bricker, Joseph Briggs, Elizabeth Holmquist, Susan McIntosh, Kevin Moore, Eric Nielsen,
+   Sarah Reber, Molly Shatto, Kamila Sommer, Tom Sweeney, and Alice Henriques Volz (2019); and Board of Governors of
+   the Federal Reserve System (2026g).
+65
+   For details on how these comparisons are structured and the results of comparisons for earlier surveys, see
+   Alice M. Henriques and Joanne W. Hsu (2013); Lisa J. Dettling, Sebastian J. Devlin-Foltz, Jacob Krimmel, Sarah J. Pack,
+   and Jeffrey P. Thompson (2015); and Michael Batty, Jesse Bricker, Joseph Briggs, Elizabeth Holmquist, Susan McIntosh,
+   Kevin Moore, Eric Nielsen, Sarah Reber, Molly Shatto, Kamila Sommer, Tom Sweeney, and Alice Henriques Volz (2019).
+58   Changes in U.S. Family Finances from 2022 to 2025
+
+
+
+
+     Family income measures help highlight the issues that can arise when comparing SCF medians
+     and means against other survey estimates. Over the 2022–25 period, estimates of inflation-
+     adjusted household income for the previous year from the CPS of the U.S. Census Bureau show
+     an increase in both the median (2.8 percent) and the mean (2.0 percent).66 The growth in the
+     median is smaller than the corresponding increase in the SCF, and the growth in the mean is
+     notably different as the SCF showed a decline (table 1).67
+
+
+     The medians for 2025 are similar in the SCF ($82,200) and the CPS ($85,800). Typically, the SCF
+     shows a higher level of mean income than the CPS; for 2025, the SCF yields an estimate of
+     $145,200, while the CPS yields an estimate of $124,200. One difference that is relevant for com-
+     paring both the growth and level of income is that a CPS household can contain more people than
+     a corresponding SCF family. If the SCF measure is expanded to include the income of household
+     members not included in the SCF definition of a family, the median rises 7.1 percent over the
+     period (from $81,500 in 2022 to $87,300 in 2025), while the mean decreases 5.6 percent (from
+     $159,600 in 2022 to $150,800 in 2025). The substantial difference in the level of mean income
+     between the SCF and CPS, which increases after reconciling household size, is likely largely due to
+     the fact the CPS does not fully capture households at the upper end of the income distribution.
+
+
+
+
+     66
+        See Sarah Flood, Miriam King, Renae Rodgers, Steven Ruggles, J. Robert Warren, Daniel Backman, Etienne Breton,
+        Grace Cooper, Julia A. Rivera Drew, Stephanie Richards, David Van Riper, and Kari C.W. Williams (2025).
+     67
+        The opposite-signed mean income changes between the SCF and CPS may reflect a variety of differences between the
+        two surveys, as outlined in this appendix. One notable difference between the SCF and CPS is the difference in their
+        sampling designs. In particular, because the SCF is designed to capture families with very high wealth through the list
+        sample, and because of the positive association between income and wealth, it similarly captures very high-income
+        families. In contrast, the CPS, due to finite samples and sampling variation, is less likely to include very high-income
+        families. Aligning mean SCF income more closely with the CPS by removing SCF families above the maximum income
+        recorded in the CPS shows that mean SCF income increased slightly between 2022 and 2025. This exercise suggests
+        that the difference in mean income changes across the surveys is driven, at least in large part, by the fact that the CPS
+        does not capture very high-income families.
+Find other Federal Reserve Board publications at www.federalreserve.gov/publications/default.htm,
+  or visit our website to learn more about the Board and how to connect with us on social media.
+
+
+
+
+                                     www.federalreserve.gov
+                                             1026
+
