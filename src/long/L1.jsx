@@ -1359,9 +1359,40 @@ const Music = ({spec}) => {
   );
 };
 
+// ---------------- RANK (barras horizontais genéricas: percentis, faixas) ----------------
+const Rank = ({sh, p, T}) => {
+  const bars = sh.bars || [];
+  const vmax = sh.vmax || Math.max(...bars.map((b) => Math.abs(b.value)));
+  const n = bars.length;
+  const rowH = Math.min(118, 640 / Math.max(1, n));
+  const top = sh.title ? 300 : 230;
+  const W = sh.w || 1080;
+  return (
+    <AbsoluteFill>
+      {sh.title ? <div style={{position: 'absolute', left: 150, top: 150, fontFamily: SANS, fontWeight: 900, fontSize: 52, color: '#fff', opacity: sp(T, sh.t0)}}>{sh.title}</div> : null}
+      {sh.sub ? <div style={{position: 'absolute', left: 152, top: 222, fontFamily: SANS, fontWeight: 600, fontSize: 30, color: '#ffffff90', opacity: sp(T, sh.t0 + 0.3)}}>{sh.sub}</div> : null}
+      {bars.map((b, i) => {
+        const k = ramp(T, b.t ?? sh.t0, 1.0);
+        if (k <= 0.001) return null;
+        const hl = b.hl || sh.hl === i;
+        const col = hl ? p.acc : b.color ? (p[b.color] || b.color) : '#c9d6ea';
+        const w = Math.max(6, W * (Math.abs(b.value) / vmax)) * Easing.out(Easing.cubic)(k);
+        return (
+          <div key={i} style={{position: 'absolute', left: 150, top: top + i * rowH, height: rowH - 18, display: 'flex', alignItems: 'center', gap: 26, opacity: Math.min(1, k * 3)}}>
+            <div style={{width: 300, textAlign: 'right', fontFamily: SANS, fontWeight: 800, fontSize: Math.min(40, rowH * 0.42), color: hl ? p.acc : '#ffffffd8'}}>{b.label}</div>
+            <div style={{width: w, height: Math.min(64, rowH * 0.56), borderRadius: 12, background: col, boxShadow: hl ? `0 0 30px ${p.acc}66` : 'none'}} />
+            <div style={{fontFamily: SANS, fontWeight: 900, fontSize: Math.min(54, rowH * 0.52), color: col}}>{fmt(b.value * (sh.count === false ? 1 : k), sh.fmt || 'usd0')}</div>
+          </div>
+        );
+      })}
+      {sh.kicker && sh.kicker.t != null ? <Pill x={150} y={960} text={sh.kicker.text} color={p.acc} T={T} t0={sh.kicker.t} /> : null}
+    </AbsoluteFill>
+  );
+};
+
 // ---------------- composição ----------------
 const BarsAny = (props) => (props.sh.mode === 'abs' ? <BarsAbs {...props} /> : <Bars {...props} />);
-const VIEWS = {lines: Lines, bars: BarsAny, globe: Globe, stats: Stats, duel: Duel, list: List, cards: Cards, hbars: HBars, end: End, people: People, code: Code, bits: Bits, counter: Counter, radar: Radar, launch: Launch, ladder: Ladder, stack: Stack, orbit: Orbit};
+const VIEWS = {rank: Rank, lines: Lines, bars: BarsAny, globe: Globe, stats: Stats, duel: Duel, list: List, cards: Cards, hbars: HBars, end: End, people: People, code: Code, bits: Bits, counter: Counter, radar: Radar, launch: Launch, ladder: Ladder, stack: Stack, orbit: Orbit};
 
 const ShotView = ({sh, idx, p, data}) => {
   const f = useCurrentFrame();
