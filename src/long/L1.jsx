@@ -1414,7 +1414,7 @@ export const Long = ({spec}) => {
           </Sequence>
         );
       })}
-      <Host spec={spec} p={p} f={f} />
+      {p.noHost || spec.host === false ? null : <Host spec={spec} p={p} f={f} />}
       <Chapter spec={spec} p={p} T={T} />
       <Brand p={p} />
       <Grain T={T} />

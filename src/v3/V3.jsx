@@ -19,6 +19,7 @@ let INK = '#fff';
 export const PAL = {
   chartbound: {bg1: '#1b2b5c', bg2: '#060a1a', acc: '#ffc233', acc2: '#3ee0b5', warm: '#ff5c6c', colA: '#7f93ff', colB: '#ffc233', tag: 'CHARTBOUND', mascot: {color: '#33d6aa', belly: '#e6fff6', acc: 'glasses', accent: '#ff7a8a'}, music: 'music_chartbound.wav'},
   howitticks: {bg1: '#3a2606', bg2: '#0b0803', acc: '#ffb000', acc2: '#41d3ff', warm: '#ff4d6d', colA: '#6f7a8a', colB: '#ffb000', tag: 'HOW IT TICKS', mascot: {color: '#ffb000', belly: '#fff1c9', acc: 'antenna', accent: '#ff5d73'}, music: 'music_howitticks.wav'},
+  nesteggatlas: {bg1: '#12302e', bg2: '#06100f', acc: '#f2c14e', acc2: '#7fd4b0', warm: '#ff6b5e', colA: '#9fb3d1', colB: '#f2c14e', tag: 'NEST EGG ATLAS', noHost: true, mascot: {color: '#f2c14e', belly: '#fff4d1', acc: 'glasses', accent: '#ff6b5e'}, music: 'music_chartbound.mp3'},
   gabaritoclaro: {bg1: '#fff4f2', bg2: '#f4d3db', acc: '#ffb703', acc2: '#b9e6ff', warm: '#ff4d6d', colA: '#7c5cff', colB: '#ffb703', tag: 'GABARITO DO DIA', ink: '#1f1b2e', dot: 'rgba(31,27,46,.06)', chip: '#2b2350', num: '#d6336c', mascot: {color: '#ff8fab', belly: '#fff0f3', acc: 'cap', accent: '#7c5cff'}, music: 'music_valeopreco.wav'},
   gabarito: {bg1: '#26386a', bg2: '#0d1530', acc: '#ffc83d', acc2: '#7fd1ff', warm: '#ff6b6b', colA: '#7f93ff', colB: '#ffc83d', tag: 'GABARITO DO DIA', mascot: {color: '#ffc83d', belly: '#fff4d1', acc: 'cap', accent: '#ff7a7a'}, music: 'music_loja.wav'},
 };
