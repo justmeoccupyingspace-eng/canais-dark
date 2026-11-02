@@ -71,6 +71,16 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 - 01/11 20:45 BRT: CTA postado também no c-317. c-316 96 views, c-317 47 em ~3 h; post do Kauan 01/11 19:00 (Lei 9.099) 13. YouTube 23:42Z: A-L06 16 views em 5,7 h (Polônia teve 13 nas 1as 13 h), A-L07 público às 23:00Z, Letônia 103, Polônia 47,7 mil, 91 inscritos.
 - Números 01/11 ~17h: c-315 claro 94 views/7 curtidas (24 h); c-316 claro 78 em 5 h; posts do Kauan 108–163. Perfil: 89 seguidores, 164 curtidas.
 
+## Plano de correção do Chartbound (01/11 21:45, pedido do Kauan "como vai arrumar")
+- Feito 01/11 21:50: comentário fixado no Poland (XGmxZPO8lx8) com link do A-L06 + "Which country should Poland pass next?". YouTube já sugere o A-L07 (Turkey = Greece) ao lado do Poland.
+- Tema: só "vitória de país grande" com número novo. 02/11 Espanha×Japão + Vietnã×Indonésia (ok). 03/11: sai A-L10 México e A-L11 África do Sul; entra A-L14 Polônia/Croácia > Grécia (roteiro em 02/11) e A-L12 Bulgária se ficar pronto.
+- Embalagem: teste A/B de 3 miniaturas no Studio em cada longo novo a partir do A-L06; meta de clique ≥5%.
+- Retenção: número-gancho no 1º quadro, sem globo, intro curta (teste A-L08 × A-L09).
+- Inscrito: pedido de inscrição amarrado à série + pergunta de próximo país; playlist "Who passed whom".
+- Cortar: Shorts templated novos (risco "inauthentic content" na revisão do YPP); cortes do longo continuam.
+- Se a veia polonesa confirmar (04/11): faixa de áudio em polonês nos vídeos da Polônia (cota grátis de voz).
+- Gatilhos: 04/11 (≥5 mil em 72 h = veia confirmada); 15/11 (todos <1 mil → 3 longos/semana); 15/12 (<500 inscritos → regra antiga perdida, manutenção).
+
 ## A · Chartbound
 | id | tema | estado | publicação |
 |---|---|---|---|
