@@ -49,7 +49,7 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 - 01/11: A-L06 (3.1, 18:00Z) + A-L07 (3.8, 23:00Z) — feito.
 - 02/11: A-L09 Espanha×Japão (3.1, 18:00Z) + A-L08 Vietnã×Indonésia (3.8, 23:00Z) — já prontos e dentro do filtro; último dia com 2. Cortes: 2 por longo (A-L09 19:00/22:00 BRT, A-L08 +1d 10:00/13:00).
 - 03/11: A-L14 Polônia/Croácia > Grécia (18:00Z), roteiro em 02/11. Sem 2º longo (Bulgária nota ~7: país pequeno).
-- 04/11+: A-L17 Polônia > Espanha (conferir dado: Euronews 26/02/2026, Tusk; FMI/Eurostat PPP), depois o melhor do banco pelo filtro. Cota de voz que sobra → faixa de áudio em polonês se 04/11 confirmar.
+- 04/11+: A-L17 Polônia > Espanha (conferir dado: Euronews 26/02/2026, Tusk; FMI/Eurostat PPP), depois o melhor do banco pelo filtro. Cota de voz que sobra → canal B (Nest Egg Atlas, 3.8); faixa polonesa só se ainda sobrar.
 - Rebaixados (prontos, fora do filtro: tema negativo): A-L10 México, A-L11 África do Sul — só se T1 falhar em 15/11 ou para preencher buraco.
 - Antes de cada render: validar deixas (todo 'at' existe na fala), teste visual grátis (engine=edge) e checagem de títulos de stats ≤34 caracteres, stats na ordem da fala, miniatura com line2 ≤10 caracteres (senão o mascote cobre).
 
