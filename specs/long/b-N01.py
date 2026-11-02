@@ -153,7 +153,7 @@ for i, sh in enumerate(shots):
 spec = dict(id="b-N01-networth-age", clips=clips, channel="nesteggatlas", chapter0="The new numbers", host=False,
             thumb=dict(kind="text", top="NET WORTH AT 65–74", big="$431k", line2="IS THE MIDDLE", sticker="WHERE DO YOU RANK?"),
             w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks, datasets=[], snapshot=snapshot,
-            voice=dict(model="", name="Gacrux",
+            voice=dict(model="", name="Algieba",
                        style=("You are the narrator of a calm, trustworthy personal-finance documentary for Americans in their fifties, sixties and seventies. "
                               "Read the script below in a warm, mature, unhurried voice, at about 138 words per minute, like a respected public-radio journalist "
                               "explaining numbers to a friend. Let each dollar figure land with a short pause before it. Sound reassuring and clear, never salesy, "
