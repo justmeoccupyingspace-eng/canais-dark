@@ -49,6 +49,7 @@ export const fmt = (v, k) => {
     case 'dec2': return v.toFixed(2);
     case 'mil': return (v / 1e6).toFixed(1) + 'M';
     case 'eurb': return '€' + v.toFixed(1) + 'B';
+    case 'eurb0': return '€' + Math.round(v) + 'B';
     case 'm': return Math.round(v) + ' million';
     case 'km': return Math.round(v).toLocaleString('en-US') + ' km';
     case 'k0': return v >= 995000 ? (v / 1e6).toFixed(2).replace(/0$/, '') + 'M' : Math.round(v / 1000) + 'k';
@@ -205,6 +206,7 @@ const Flag = ({iso, w = 150}) => {
   if (iso === 'ZAF') return <div style={{...box, background: 'linear-gradient(#de3831 0 50%, #002395 50% 100%)'}}><div style={{position: 'absolute', inset: 0, background: '#fff', clipPath: 'polygon(0 0, 20% 0, 56% 38%, 100% 38%, 100% 62%, 56% 62%, 20% 100%, 0 100%)'}} /><div style={{position: 'absolute', inset: 0, background: '#007a4d', clipPath: 'polygon(0 4%, 13% 4%, 52% 44%, 100% 44%, 100% 56%, 52% 56%, 13% 96%, 0 96%)'}} /><div style={{position: 'absolute', inset: 0, background: '#ffb612', clipPath: 'polygon(0 14%, 38% 50%, 0 86%)'}} /><div style={{position: 'absolute', inset: 0, background: '#000', clipPath: 'polygon(0 21%, 30% 50%, 0 79%)'}} /></div>;
   if (iso === 'MEX') return <div style={{...box, background: 'linear-gradient(90deg, #006847 0 33.3%, #fff 33.3% 66.6%, #ce1126 66.6% 100%)'}}><div style={{position: 'absolute', left: w / 2 - h * 0.13, top: h * 0.37, width: h * 0.26, height: h * 0.26, borderRadius: '50%', background: '#8c6b2e'}} /></div>;
   if (iso === 'VNM') return <div style={{...box, background: '#da251d'}}><div style={{position: 'absolute', left: w / 2 - h * 0.3, top: h * 0.2, width: h * 0.6, height: h * 0.6, background: '#ffff00', clipPath: 'polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)'}} /></div>;
+  if (iso === 'HRV') return <div style={{...box, background: 'linear-gradient(#ff0000 0 33.3%, #fff 33.3% 66.6%, #171796 66.6% 100%)'}}><div style={{position: 'absolute', left: w / 2 - h * 0.13, top: h * 0.22, width: h * 0.26, height: h * 0.32, borderRadius: '0 0 40% 40%', background: 'repeating-conic-gradient(#ff0000 0 25%, #fff 0 50%) 0 0 / ' + (h * 0.104) + 'px ' + (h * 0.107) + 'px', border: '2px solid #171796'}} /></div>;
   if (iso === 'IDN') return <div style={{...box, background: 'linear-gradient(#ce1126 0 50%, #fff 50% 100%)'}} />;
   return <div style={{...box, background: '#888'}} />;
 };
