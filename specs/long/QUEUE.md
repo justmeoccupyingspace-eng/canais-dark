@@ -135,14 +135,15 @@ Ferramentas de pauta: `mine.yml` (sem input = garimpo de ultrapassagens/quem sub
 
 | id | tema | estado | publicação |
 |---|---|---|---|
-| B-N01 | Net Worth at 55, 65 and 75: The Fed's New Numbers (Where Do You Rank?) — percentis 55–64/65–74/75+ dos microdados SCF 2025 | pronto 02/11: 1.288 palavras, voz Algieba (3.8; teste voiceB 41462323111: Algieba 132 wpm, variação de tom 6,3, pausas naturais; Gacrux 132 wpm sem pausas; Sadaltager leu as instruções), 42 checks ok (scf.yml run 41441226994 → research/scf2025.json; medianas batem com a Tabela 2), sem mascote (PAL nesteggatlas.noHost), view rank nova · teste visual edge 41442007352 | 03/11 15:00Z |
-| B-N02 | How Many Retirees Actually Have $1 Million? (New Fed Data) | banco | 04/11 |
+| B-N01 | Net Worth at 55, 65 and 75: The Fed's New Numbers (Where Do You Rank?) — percentis 55–64/65–74/75+ dos microdados SCF 2025 | pronto 02/11: 1.288 palavras, voz Algieba (3.8; teste voiceB 41462323111: Algieba 132 wpm, variação de tom 6,3, pausas naturais; Gacrux 132 wpm sem pausas; Sadaltager leu as instruções), 42 checks ok (scf.yml run 41441226994 → research/scf2025.json; medianas batem com a Tabela 2), sem mascote (PAL nesteggatlas.noHost), view rank nova · teste visual edge 41442007352 | 02/11 18:30Z (Kauan pediu hoje; render 41477075491 com gemini-2.5-flash-preview-tts, cota do 3.8/3.1 esgotada) |
+| B-N02 | How Many Retirees Actually Have $1 Million? (New Fed Data) | roteiro 03/11 | 03/11 18:30Z |
 | B-N03 | Social Security at 62 vs 67 vs 70: What People Actually Get (SSA + COLA 2027 de 3,6%) | banco | |
 | B-N04 | What Retirees Actually Spend Each Month (BLS CE 65+) | banco | |
 | B-N05 | The Income That Puts You in the Top 10% of Retirees (Censo CPS ASEC) | banco | |
 
 - 02/11 12:20Z FEITO no Studio: nome "Nest Egg Atlas", @nesteggatlas (livre), descrição nova, banner e avatar (out/brandB/). Canal tinha 6 inscritos, 63 envios (todos de tecnologia; Shorts até 1.220 views, longos 3 views).
-- 03/11 ANTES de subir o B-N01: ytchan.yml ch=B mode=private ids=<research/chanB_public_ids.txt> (48 públicos → privados). NÃO usar all=1 depois do upload (pegaria o B-N01 agendado).
+- 02/11 16:00Z FEITO (pedido do Kauan "apaga ou deixa privado"): 48 vídeos antigos públicos → privados (ytchan run 41476758663). Nada apagado. NÃO usar all=1 com vídeo agendado no canal.
+- Cota de voz: gemini-2.5-flash-preview-tts funciona com Algieba (126 wpm, tom 4,4) como 3ª opção; 2.5-pro dá 429.
 
 ## B · How It Ticks (arquivado 01/11 — vídeos ficam privados no lançamento do Nest Egg Atlas)
 | id | tema | estado | publicação |
