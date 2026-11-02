@@ -1004,16 +1004,16 @@
    "src": "",
    "next": {
     "kicker": "WATCH NEXT",
-    "big": "0.72",
+    "big": "74%",
     "color": "acc",
-    "title": "South Korea's scariest number",
-    "sub": "where low birth rates lead"
+    "title": "Japan was 74% richer than Spain",
+    "sub": "Now Spain is ahead."
    },
-   "narration": "Want to see where falling birth rates lead? South Korea is already there. Watch this next. {p} I'm Chartbound. See you in the next one.",
+   "narration": "Vietnam isn't alone. In 2012, Japan was seventy-four percent richer than Spain. Now Spain is ahead. Watch this next. {p} I'm Chartbound. See you in the next one.",
    "hold": 14,
    "react": [
     {
-     "at": "South Korea",
+     "at": "Spain is ahead",
      "pose": "pointL"
     },
     {

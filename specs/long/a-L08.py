@@ -110,10 +110,10 @@ shots = [
          items=[dict(at="just one country", text="≈ ⅓ of exports → USA", color="acc"), dict(at="harder to break", text="Slower, but sturdier", color="acc2"), dict(at="sprinter", text="Sprinter vs marathon", serif=True, size=66)],
          react=[dict(at="customers abroad", pose="think"), dict(at="the United States", pose="pointL"), dict(at="harder to break", pose="idle", nod=1), dict(at="sprinter", pose="pointUp"), dict(at="already won", pose="cheer")]),
     dict(act=6, type="end", src="",
-         next=dict(kicker="WATCH NEXT", big="0.72", color="acc", title="South Korea's scariest number", sub="where low birth rates lead"),
-         narration="Want to see where falling birth rates lead? South Korea is already there. Watch this next. {p} I'm Chartbound. See you in the next one.",
+         next=dict(kicker="WATCH NEXT", big="74%", color="acc", title="Japan was 74% richer than Spain", sub="Now Spain is ahead."),
+         narration="Vietnam isn't alone. In 2012, Japan was seventy-four percent richer than Spain. Now Spain is ahead. Watch this next. {p} I'm Chartbound. See you in the next one.",
          hold=14,
-         react=[dict(at="South Korea", pose="pointL"), dict(at="See you", pose="wave")]),
+         react=[dict(at="Spain is ahead", pose="pointL"), dict(at="See you", pose="wave")]),
 ]
 
 checks = [
