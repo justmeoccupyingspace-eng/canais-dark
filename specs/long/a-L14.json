@@ -387,7 +387,7 @@
    "type": "stats",
    "src": "European Stability Mechanism: Greek programmes 2010, 2012, 2015 (EU loans + IMF ≈ €289 billion, the largest financial assistance package in history) · Eurostat gov_10dd_edpt1 (general government gross debt, % of GDP)",
    "title": "The Greek rescue",
-   "narration": "To avoid bankruptcy, Greece took three rescue packages from the rest of Europe and the IMF, in 2010, 2012 and 2015: almost two hundred and ninety billion euros in loans. {p} It was the largest financial rescue in history. {p} In return, Greece had to cut pensions and wages, raise taxes, and sell state assets. {pp} Even so, its government debt kept climbing, to more than two hundred percent of the economy by 2020.",
+   "narration": "To avoid bankruptcy, Greece took three rescue packages from the rest of Europe and the IMF, in 2010, 2012 and 2015: almost two hundred and ninety billion euros in loans. {p} It was the largest financial rescue in history. {p} In return, Greece had to cut pensions and wages, raise taxes, and sell state assets. {p} In the summer of 2015, banks closed for three weeks, and people could take out only sixty euros a day. {pp} Even so, its government debt kept climbing, to more than two hundred percent of the economy by 2020.",
    "stats": [
     {
      "at": "two hundred and ninety billion",
@@ -1360,6 +1360,15 @@
    "rule": "expr",
    "expr": "round(141.8 + 61.9 + 52.9 + 32.1)",
    "equal": 289
+  },
+  {
+   "say": "2015: banks closed 29 Jun–20 Jul (3 weeks), €60/day ATM limit (Bank of Greece / Greek government decree)",
+   "rule": "expr",
+   "expr": "[21, 60]",
+   "equal": [
+    21,
+    60
+   ]
   },
   {
    "say": "GRC debt 2020 > 200%",

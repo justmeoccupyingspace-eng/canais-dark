@@ -49,7 +49,7 @@ shots = [
 
     # ---------------- 2 · THE RESCUE ----------------
     dict(act=2, type="stats", src=ESM + " · " + "Eurostat gov_10dd_edpt1 (general government gross debt, % of GDP)", title="The Greek rescue",
-         narration="To avoid bankruptcy, Greece took three rescue packages from the rest of Europe and the IMF, in 2010, 2012 and 2015: almost two hundred and ninety billion euros in loans. {p} It was the largest financial rescue in history. {p} In return, Greece had to cut pensions and wages, raise taxes, and sell state assets. {pp} Even so, its government debt kept climbing, to more than two hundred percent of the economy by 2020.",
+         narration="To avoid bankruptcy, Greece took three rescue packages from the rest of Europe and the IMF, in 2010, 2012 and 2015: almost two hundred and ninety billion euros in loans. {p} It was the largest financial rescue in history. {p} In return, Greece had to cut pensions and wages, raise taxes, and sell state assets. {p} In the summer of 2015, banks closed for three weeks, and people could take out only sixty euros a day. {pp} Even so, its government debt kept climbing, to more than two hundred percent of the economy by 2020.",
          stats=[dict(at="two hundred and ninety billion", value=289, fmt="eurb0", label="in rescue loans, 2010–2018"), dict(at="more than two hundred percent", value=209.4, fmt="pct0", label="government debt, % of GDP, 2020")],
          react=[dict(at="avoid bankruptcy", pose="think"), dict(at="two hundred and ninety", pose="shock"), dict(at="cut pensions", pose="shrug"), dict(at="two hundred percent", pose="shock")]),
     dict(act=2, type="lines", set="gfcf", series=["EUU", "POL", "HRV", "GRC"], years=[2000, 2025], start=2000.0, y=[0, 32], src=WB + " · gross fixed capital formation (% of GDP)", fmt="pct0", hl="GRC",
@@ -138,6 +138,7 @@ checks = [
     dict(say="GRC 2011 almost −10%", set="gdpg", iso="GRC", year=2011, min=-10.0, max=-9.0),
     dict(say="Poland the only EU economy that grew in 2009", rule="onlypos", set="g09", iso="POL"),
     dict(say="rescue ≈ €289 bn (ESM)", rule="expr", expr="round(141.8 + 61.9 + 52.9 + 32.1)", equal=289),
+    dict(say="2015: banks closed 29 Jun–20 Jul (3 weeks), €60/day ATM limit (Bank of Greece / Greek government decree)", rule="expr", expr="[21, 60]", equal=[21, 60]),
     dict(say="GRC debt 2020 > 200%", set="debt", iso="GRC", year=2020, min=200),
     dict(say="GRC/POL/EU gfcf ≈ 23% in 2008", rule="expr", expr="all(22.5 <= v <= 23.5 for v in [23.3, 23.2, 23.0])", equal=True),
     dict(say="GRC gfcf 2016 ≈ 11%", set="gfcf", iso="GRC", year=2016, min=10.5, max=11.9),
