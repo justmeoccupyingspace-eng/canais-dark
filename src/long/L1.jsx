@@ -1489,12 +1489,14 @@ export const Thumb = ({spec}) => {
             <div style={{color: '#fff', fontSize: 120, letterSpacing: -3}}>{th.line2}</div></div>
         )}
         {th.sticker ? <div style={{position: 'absolute', left: th.kind === 'code' ? 90 : 70, top: th.kind === 'code' ? 560 : 560, transform: 'rotate(-5deg)', background: p.warm, color: '#fff', fontFamily: SANS, fontWeight: 900, fontSize: 64, padding: '8px 28px', borderRadius: 16, boxShadow: '0 10px 0 #000a', whiteSpace: 'nowrap'}}>{th.sticker}</div> : null}
+        {p.noHost ? null : (
         <div style={{position: 'absolute', left: 700, top: 40, width: 640, height: 720}}>
           <ThreeCanvas width={640} height={720} camera={{fov: 30, position: [0, 0, 14]}} gl={{antialias: true, alpha: true}}>
             <Lights />
             <Mascot {...p.mascot} pose="shock" prevPose="shock" poseAt={-60} talk={0} look={[-0.6, 0.2]} enter={-60} scale={1.9} position={[0.25, -0.85, 0]} turn={-0.25} />
           </ThreeCanvas>
         </div>
+        )}
       </AbsoluteFill>
     );
   }
