@@ -21,12 +21,12 @@ shots = [
          labels=[dict(at="almost thirty-two", iso="GRC", year=2008), dict(at="about fourteen thousand", iso="POL", year=2008), dict(at="for the first time", iso="POL", year=2024), dict(at="by a hair", iso="HRV", year=2025)],
          react=[dict(at="In 2008", pose="idle"), dict(at="more than twice", pose="pointL"), dict(at="Poland passed Greece", pose="shock"), dict(at="by a hair", pose="pointUp")]),
     dict(act=0, type="list", src=PPS + ", 2000–2024", title="Who passed Greece (adjusted for prices)",
-         narration="Adjusted for prices, it's even more dramatic. {p} In 2008, Greece was richer than thirteen other EU countries. {p} Since then, twelve of them have passed it: Czechia and Malta in 2010. Portugal, Slovakia and Slovenia in 2011. Estonia and Lithuania in 2012. Poland and Hungary in 2015. Latvia and Romania in 2018. Croatia in 2019. {pp} Today, by this measure, only one country in the European Union is poorer than Greece: Bulgaria.",
+         narration="Adjusted for prices, it's even more dramatic. {p} In 2008, Greece was richer than thirteen other EU countries. {p} Since then, twelve of them have passed it: Czechia and Malta in 2010. Portugal, Slovakia and Slovenia in 2011. Estonia in 2012. Lithuania in 2013. Poland and Hungary in 2015. Romania and Croatia in 2019. Latvia in 2020. {pp} Today, by this measure, only one country in the European Union is poorer than Greece: Bulgaria.",
          items=[dict(at="Czechia and Malta", kind="bullet", text="2010 · Czechia, Malta"),
                 dict(at="Portugal, Slovakia", kind="bullet", text="2011 · Portugal, Slovakia, Slovenia"),
-                dict(at="Estonia and Lithuania", kind="bullet", text="2012 · Estonia, Lithuania"),
+                dict(at="Estonia in 2012", kind="bullet", text="2012–13 · Estonia, Lithuania"),
                 dict(at="Poland and Hungary", kind="bullet", text="2015 · Poland, Hungary"),
-                dict(at="Latvia and Romania", kind="bullet", text="2018 · Latvia, Romania · 2019 · Croatia"),
+                dict(at="Romania and Croatia", kind="bullet", text="2019–20 · Romania, Croatia, Latvia"),
                 dict(at="only one country", kind="title", text="STILL BEHIND: BULGARIA")],
          react=[dict(at="even more dramatic", pose="pointUp"), dict(at="thirteen", pose="think"), dict(at="twelve of them", pose="shock"), dict(at="Bulgaria", pose="shrug")]),
     dict(act=0, type="host", bg="lines", set="usd", series=["GRC", "HRV", "POL"], years=[1995, 2025], start=2025.0, y=[0, 34000], fmt="usdk0",
@@ -42,7 +42,7 @@ shots = [
          labels=[dict(at="about a quarter", iso="GRC", year=2013), dict(at="about eight percent", iso="GRC", year=2025), dict(at="eighty-four", iso="POL", year=2025)],
          react=[dict(at="nobody believed", pose="think"), dict(at="more than double", pose="shock"), dict(at="Greece fell furthest", pose="shock"), dict(at="about a quarter", pose="pointL"), dict(at="eighty-four", pose="pointUp")]),
     dict(act=1, type="lines", set="unemp", series=["POL", "GRC"], years=[2000, 2025], start=2000.0, y=[0, 30], src=WB + " · unemployment, total and youth (% of labor force, modeled ILO estimate) · GDP growth (annual %)", fmt="pct0", hl="GRC",
-         narration="Then came the jobs. {p} In 2013, more than one in four Greeks who wanted work couldn't find it: about twenty-eight percent. Among young people, almost six in ten. {p} The economy shrank for five years in a row, from 2009 to 2013. In 2011 alone, by almost ten percent. {pp} Poland, meanwhile, did something no other country in the European Union managed: in 2009, the worst year of the global financial crisis, its economy still grew. Every other EU economy shrank.",
+         narration="Then came the jobs. {p} In 2013, more than one in four Greeks who wanted work couldn't find it: about twenty-eight percent. Among young people, almost six in ten. Imagine a whole generation leaving school with almost no jobs to go to. {p} The economy shrank for five years in a row, from 2009 to 2013. In 2011 alone, by almost ten percent. {pp} Poland, meanwhile, did something no other country in the European Union managed: in 2009, the worst year of the global financial crisis, its economy still grew. Every other EU economy shrank.",
          keys=[dict(at="In 2013", year=2013.0, dur=4.0), dict(at="Poland, meanwhile", year=2025.0, dur=6.0)],
          labels=[dict(at="about twenty-eight", iso="GRC", year=2013), dict(at="still grew", iso="POL", year=2009)],
          react=[dict(at="the jobs", pose="think"), dict(at="twenty-eight", pose="shock"), dict(at="six in ten", pose="shock"), dict(at="still grew", pose="cheer")]),
@@ -69,7 +69,7 @@ shots = [
          labels=[dict(at="seven hundred and ninety", iso="GRC", year=2008), dict(at="three hundred and forty", iso="POL", year=2008), dict(at="about eleven hundred", iso="POL", year=2025), dict(at="nine hundred and seventy", iso="HRV", year=2025)],
          react=[dict(at="In 2008", pose="idle"), dict(at="more than a fifth", pose="shock"), dict(at="kept rising", pose="pointL"), dict(at="eleven hundred", pose="cheer")]),
     dict(act=3, type="stats", src=WB + " · population, total (SP.POP.TOTL)", title="Greece's population since 2011",
-         narration="And many Greeks voted with their feet. {p} Since 2011, Greece's population has fallen by almost seven hundred thousand people, about one in sixteen. {p} Many of those who left were young and educated, and went to work in Germany, Britain and the Netherlands. {pp} A country that loses its young workers loses its future taxpayers too.",
+         narration="And many Greeks voted with their feet. {p} Since 2011, Greece's population has fallen by almost seven hundred thousand people, about one in sixteen. {p} Many of those who left were young and educated, and went to work in Germany, Britain and the Netherlands. {pp} A country that loses its young workers loses its future taxpayers too. And fewer workers means slower growth, which makes catching up even harder.",
          stats=[dict(at="almost seven hundred thousand", value=690937, fmt="k0", label="fewer people in Greece since 2011"), dict(at="about one in sixteen", value=6.2, fmt="pct1", label="of the population")],
          react=[dict(at="voted with their feet", pose="shrug"), dict(at="seven hundred thousand", pose="shock"), dict(at="young and educated", pose="think"), dict(at="future taxpayers", pose="pointUp")]),
 
@@ -90,12 +90,12 @@ shots = [
 
     # ---------------- 5 · WHAT COMES NEXT ----------------
     dict(act=5, type="lines", set="ppp", series=["GRC", "ROU", "BGR"], years=[2000, 2025], start=2000.0, y=[0, 56000], src=PPP + " · " + PPS, fmt="usdk0", hl="BGR",
-         narration="So who's next? {p} Adjusted for prices, Bulgaria is the only EU country still behind Greece. And by the World Bank's measure, it's now within about two percent. {p} In 2000, Greece produced almost three times as much per person as Bulgaria, at those prices. {pp} If Bulgaria keeps growing faster, Greece could soon be last in the European Union. Romania already passed it, back in 2018. {p} And Bulgaria just joined the euro, in January 2026: the same club Greece joined twenty-five years earlier.",
+         narration="So who's next? {p} Adjusted for prices, Bulgaria is the only EU country still behind Greece. And by the World Bank's measure, it's now within about two percent. {p} In 2000, Greece produced almost three times as much per person as Bulgaria, at those prices. {pp} If Bulgaria keeps growing faster, Greece could soon be last in the European Union. Romania already passed it, back in 2019. {p} And Bulgaria just joined the euro, in January 2026: the same club Greece joined twenty-five years earlier.",
          keys=[dict(at="In 2000", year=2000.0, dur=3.0), dict(at="If Bulgaria keeps", year=2025.0, dur=6.0)],
-         labels=[dict(at="within about two percent", iso="BGR", year=2025), dict(at="almost three times", iso="GRC", year=2000), dict(at="back in 2018", iso="ROU", year=2018)],
+         labels=[dict(at="within about two percent", iso="BGR", year=2025), dict(at="almost three times", iso="GRC", year=2000), dict(at="back in 2019", iso="ROU", year=2019)],
          react=[dict(at="who's next", pose="think"), dict(at="two percent", pose="shock"), dict(at="three times", pose="pointL"), dict(at="last in the European Union", pose="shock")]),
     dict(act=5, type="host", bg="none",
-         narration="So is Poland really richer than Greece now? {p} In dollars, yes, since 2024. Adjusted for prices, yes, since 2015. {p} In how long people live, Greece is still clearly ahead. {p} But the bigger story isn't Greece falling. It's Eastern Europe rising. {p} Twenty years ago, these countries were the EU's poor relatives. Today, they're passing the old South, one by one. {pp} <soft>Which country do you think Poland passes next?</soft> Tell me in the comments.",
+         narration="So is Poland really richer than Greece now? {p} In dollars, yes, since 2024. Adjusted for prices, yes, since 2015. {p} In how long people live, Greece is still clearly ahead. {p} But the bigger story isn't Greece falling. It's Eastern Europe rising. {p} Twenty years ago, these countries were the EU's poor relatives. Today, they're passing the old South, one by one. Portugal and Greece have already been passed. Others may be next. {pp} <soft>Which country do you think Poland passes next?</soft> Tell me in the comments.",
          items=[dict(at="In dollars, yes", text="Dollars: Poland ✓ (2024)", color="acc2"), dict(at="Adjusted for prices", text="Prices: Poland ✓ (2015)", color="acc2"), dict(at="Greece is still clearly ahead", text="Life expectancy: Greece ✓", color="acc"), dict(at="one by one", text="East passing South", serif=True, size=62)],
          react=[dict(at="really richer", pose="think"), dict(at="since 2024", pose="pointL"), dict(at="clearly ahead", pose="shrug"), dict(at="Eastern Europe rising", pose="cheer"), dict(at="passes next", pose="pointUp")]),
     dict(act=5, type="end", src="",
@@ -120,7 +120,7 @@ checks = [
     dict(say="Greece 26th of 27 in 2024 (PPS) — second-to-last", rule="rank", set="gdppps", iso="GRC", year=2024, among=EU27, equal=26),
     dict(say="Bulgaria still behind Greece (PPS 2024)", rule="gt", set="gdppps", a="GRC", b="BGR", year=2024),
 ] + [dict(say=f"{iso} ahead of Greece since {y} (PPS)", rule="since", set="gdppps", a=iso, b="GRC", year=y) for iso, y in
-     [("CZE", 2010), ("MLT", 2010), ("PRT", 2011), ("SVK", 2011), ("SVN", 2011), ("EST", 2012), ("LTU", 2012), ("POL", 2015), ("HUN", 2015), ("LVA", 2018), ("ROU", 2018), ("HRV", 2019)]] + [
+     [("CZE", 2010), ("MLT", 2010), ("PRT", 2011), ("SVK", 2011), ("SVN", 2011), ("EST", 2012), ("LTU", 2013), ("POL", 2015), ("HUN", 2015), ("LVA", 2020), ("ROU", 2019), ("HRV", 2019)]] + [
     dict(say="Poland in communism in the 1980s (1989 transition)", rule="expr", expr="1989 > 1980", equal=True),
     dict(say="deficit 2009 revised to more than double (Oct 2009: ~6% → 12.5%; later 15.4%)", rule="expr", expr="12.5 / 6.0 > 2", equal=True),
     dict(say="GRC real output per person 2013 down about a quarter vs 2008", set="rpcx08", iso="GRC", year=2013, min=-28, max=-23),

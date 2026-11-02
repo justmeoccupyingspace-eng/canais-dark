@@ -129,7 +129,7 @@
    "type": "list",
    "src": "Eurostat prc_ppp_ind · GDP per capita in PPS (EU27 = 100), 2000–2024",
    "title": "Who passed Greece (adjusted for prices)",
-   "narration": "Adjusted for prices, it's even more dramatic. {p} In 2008, Greece was richer than thirteen other EU countries. {p} Since then, twelve of them have passed it: Czechia and Malta in 2010. Portugal, Slovakia and Slovenia in 2011. Estonia and Lithuania in 2012. Poland and Hungary in 2015. Latvia and Romania in 2018. Croatia in 2019. {pp} Today, by this measure, only one country in the European Union is poorer than Greece: Bulgaria.",
+   "narration": "Adjusted for prices, it's even more dramatic. {p} In 2008, Greece was richer than thirteen other EU countries. {p} Since then, twelve of them have passed it: Czechia and Malta in 2010. Portugal, Slovakia and Slovenia in 2011. Estonia in 2012. Lithuania in 2013. Poland and Hungary in 2015. Romania and Croatia in 2019. Latvia in 2020. {pp} Today, by this measure, only one country in the European Union is poorer than Greece: Bulgaria.",
    "items": [
     {
      "at": "Czechia and Malta",
@@ -142,9 +142,9 @@
      "text": "2011 · Portugal, Slovakia, Slovenia"
     },
     {
-     "at": "Estonia and Lithuania",
+     "at": "Estonia in 2012",
      "kind": "bullet",
-     "text": "2012 · Estonia, Lithuania"
+     "text": "2012–13 · Estonia, Lithuania"
     },
     {
      "at": "Poland and Hungary",
@@ -152,9 +152,9 @@
      "text": "2015 · Poland, Hungary"
     },
     {
-     "at": "Latvia and Romania",
+     "at": "Romania and Croatia",
      "kind": "bullet",
-     "text": "2018 · Latvia, Romania · 2019 · Croatia"
+     "text": "2019–20 · Romania, Croatia, Latvia"
     },
     {
      "at": "only one country",
@@ -337,7 +337,7 @@
    "src": "World Bank WDI · unemployment, total and youth (% of labor force, modeled ILO estimate) · GDP growth (annual %)",
    "fmt": "pct0",
    "hl": "GRC",
-   "narration": "Then came the jobs. {p} In 2013, more than one in four Greeks who wanted work couldn't find it: about twenty-eight percent. Among young people, almost six in ten. {p} The economy shrank for five years in a row, from 2009 to 2013. In 2011 alone, by almost ten percent. {pp} Poland, meanwhile, did something no other country in the European Union managed: in 2009, the worst year of the global financial crisis, its economy still grew. Every other EU economy shrank.",
+   "narration": "Then came the jobs. {p} In 2013, more than one in four Greeks who wanted work couldn't find it: about twenty-eight percent. Among young people, almost six in ten. Imagine a whole generation leaving school with almost no jobs to go to. {p} The economy shrank for five years in a row, from 2009 to 2013. In 2011 alone, by almost ten percent. {pp} Poland, meanwhile, did something no other country in the European Union managed: in 2009, the worst year of the global financial crisis, its economy still grew. Every other EU economy shrank.",
    "keys": [
     {
      "at": "In 2013",
@@ -624,7 +624,7 @@
    "type": "stats",
    "src": "World Bank WDI · population, total (SP.POP.TOTL)",
    "title": "Greece's population since 2011",
-   "narration": "And many Greeks voted with their feet. {p} Since 2011, Greece's population has fallen by almost seven hundred thousand people, about one in sixteen. {p} Many of those who left were young and educated, and went to work in Germany, Britain and the Netherlands. {pp} A country that loses its young workers loses its future taxpayers too.",
+   "narration": "And many Greeks voted with their feet. {p} Since 2011, Greece's population has fallen by almost seven hundred thousand people, about one in sixteen. {p} Many of those who left were young and educated, and went to work in Germany, Britain and the Netherlands. {pp} A country that loses its young workers loses its future taxpayers too. And fewer workers means slower growth, which makes catching up even harder.",
    "stats": [
     {
      "at": "almost seven hundred thousand",
@@ -834,7 +834,7 @@
    "src": "World Bank WDI · GDP per capita, PPP (current international $) · Eurostat prc_ppp_ind · GDP per capita in PPS (EU27 = 100)",
    "fmt": "usdk0",
    "hl": "BGR",
-   "narration": "So who's next? {p} Adjusted for prices, Bulgaria is the only EU country still behind Greece. And by the World Bank's measure, it's now within about two percent. {p} In 2000, Greece produced almost three times as much per person as Bulgaria, at those prices. {pp} If Bulgaria keeps growing faster, Greece could soon be last in the European Union. Romania already passed it, back in 2018. {p} And Bulgaria just joined the euro, in January 2026: the same club Greece joined twenty-five years earlier.",
+   "narration": "So who's next? {p} Adjusted for prices, Bulgaria is the only EU country still behind Greece. And by the World Bank's measure, it's now within about two percent. {p} In 2000, Greece produced almost three times as much per person as Bulgaria, at those prices. {pp} If Bulgaria keeps growing faster, Greece could soon be last in the European Union. Romania already passed it, back in 2019. {p} And Bulgaria just joined the euro, in January 2026: the same club Greece joined twenty-five years earlier.",
    "keys": [
     {
      "at": "In 2000",
@@ -859,9 +859,9 @@
      "year": 2000
     },
     {
-     "at": "back in 2018",
+     "at": "back in 2019",
      "iso": "ROU",
-     "year": 2018
+     "year": 2019
     }
    ],
    "react": [
@@ -888,7 +888,7 @@
    "act": 5,
    "type": "host",
    "bg": "none",
-   "narration": "So is Poland really richer than Greece now? {p} In dollars, yes, since 2024. Adjusted for prices, yes, since 2015. {p} In how long people live, Greece is still clearly ahead. {p} But the bigger story isn't Greece falling. It's Eastern Europe rising. {p} Twenty years ago, these countries were the EU's poor relatives. Today, they're passing the old South, one by one. {pp} <soft>Which country do you think Poland passes next?</soft> Tell me in the comments.",
+   "narration": "So is Poland really richer than Greece now? {p} In dollars, yes, since 2024. Adjusted for prices, yes, since 2015. {p} In how long people live, Greece is still clearly ahead. {p} But the bigger story isn't Greece falling. It's Eastern Europe rising. {p} Twenty years ago, these countries were the EU's poor relatives. Today, they're passing the old South, one by one. Portugal and Greece have already been passed. Others may be next. {pp} <soft>Which country do you think Poland passes next?</soft> Tell me in the comments.",
    "items": [
     {
      "at": "In dollars, yes",
@@ -1179,12 +1179,12 @@
    "year": 2012
   },
   {
-   "say": "LTU ahead of Greece since 2012 (PPS)",
+   "say": "LTU ahead of Greece since 2013 (PPS)",
    "rule": "since",
    "set": "gdppps",
    "a": "LTU",
    "b": "GRC",
-   "year": 2012
+   "year": 2013
   },
   {
    "say": "POL ahead of Greece since 2015 (PPS)",
@@ -1203,20 +1203,20 @@
    "year": 2015
   },
   {
-   "say": "LVA ahead of Greece since 2018 (PPS)",
+   "say": "LVA ahead of Greece since 2020 (PPS)",
    "rule": "since",
    "set": "gdppps",
    "a": "LVA",
    "b": "GRC",
-   "year": 2018
+   "year": 2020
   },
   {
-   "say": "ROU ahead of Greece since 2018 (PPS)",
+   "say": "ROU ahead of Greece since 2019 (PPS)",
    "rule": "since",
    "set": "gdppps",
    "a": "ROU",
    "b": "GRC",
-   "year": 2018
+   "year": 2019
   },
   {
    "say": "HRV ahead of Greece since 2019 (PPS)",
