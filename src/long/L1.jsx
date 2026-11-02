@@ -1465,6 +1465,55 @@ export const Thumb = ({spec}) => {
       </AbsoluteFill>
     );
   }
+  if (th && th.v === 'duel') {
+    // variante A/B "duelo" (formato da miniatura do Polônia × Japão): duas linhas se cruzando + bandeiras + mascote
+    const yr = (pts) => pts.filter(([y]) => y >= th.years[0] && y <= th.years[1]);
+    const A = yr(ser(data, th.set, th.iso)), B = yr(ser(data, th.set, th.vs));
+    const vmax = th.ymax || Math.max(...A.concat(B).map((q) => q[1])) * 1.1;
+    const vmin = th.ymin ?? 0;
+    const X = (y) => 60 + ((y - th.years[0]) / (th.years[1] - th.years[0])) * 700;
+    const [bt, bb] = th.band || [430, 690];
+    const Y = (v) => bb - ((v - vmin) / (vmax - vmin)) * (bb - bt);
+    const d = (pts) => pts.map(([y, v], i) => `${i ? 'L' : 'M'}${X(y)},${Y(v)}`).join('');
+    const cr = crossPoint(A, B) || A[A.length - 1];
+    const long = Math.max((th.big || '').length, (th.line2 || '').length);
+    return (
+      <AbsoluteFill style={{background: `radial-gradient(1000px 700px at 35% 55%, ${p.bg1}, ${p.bg2})`}}>
+        <svg width={1280} height={720} style={{position: 'absolute'}}>
+          <path d={d(B)} fill="none" stroke={p.warm} strokeWidth={14} strokeLinecap="round" strokeLinejoin="round" />
+          <path d={d(A)} fill="none" stroke={p.acc} strokeOpacity={0.3} strokeWidth={40} strokeLinecap="round" strokeLinejoin="round" />
+          <path d={d(A)} fill="none" stroke={p.acc} strokeWidth={16} strokeLinecap="round" strokeLinejoin="round" />
+          {cr ? <circle cx={X(cr[0])} cy={Y(cr[1])} r={30} fill="#fff" stroke={p.acc} strokeWidth={10} /> : null}
+        </svg>
+        <div style={{position: 'absolute', left: 60, top: 40, display: 'flex', gap: 18, alignItems: 'center'}}>
+          <Flag iso={th.iso} w={150} />
+          <div style={{fontFamily: SANS, fontWeight: 900, fontSize: 92, color: '#fff', letterSpacing: -3, textShadow: '0 8px 0 #000a'}}>{th.sym || '>'}</div>
+          <Flag iso={th.vs} w={150} />
+        </div>
+        <div style={{position: 'absolute', left: 60, top: 170, fontFamily: SANS, fontWeight: 900, fontSize: long > 8 ? 100 : 118, lineHeight: 0.95, color: p.acc, letterSpacing: -4, textShadow: '0 10px 0 #000b', whiteSpace: 'nowrap'}}>{th.big}<br /><span style={{color: '#fff'}}>{th.line2}</span></div>
+        <div style={{position: 'absolute', left: 600, top: 0, width: 640, height: 720}}>
+          <ThreeCanvas width={640} height={720} camera={{fov: 30, position: [0, 0, 14]}} gl={{antialias: true, alpha: true}}>
+            <Lights />
+            <Mascot {...p.mascot} pose="shock" prevPose="shock" poseAt={-60} talk={0} look={[-0.6, 0.2]} enter={-60} scale={1.9} position={[0.05, -0.85, 0]} turn={-0.2} />
+          </ThreeCanvas>
+        </div>
+      </AbsoluteFill>
+    );
+  }
+  if (th && th.v === 'flags') {
+    // variante A/B "bandeiras" (sem mascote): duelo de bandeiras grande + uma frase
+    return (
+      <AbsoluteFill style={{background: `radial-gradient(1000px 700px at 50% 45%, ${p.bg1}, ${p.bg2})`}}>
+        <div style={{position: 'absolute', left: 0, right: 0, top: 70, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 44}}>
+          <Flag iso={th.iso} w={400} />
+          <div style={{fontFamily: SANS, fontWeight: 900, fontSize: 210, color: '#fff', textShadow: '0 10px 0 #000a'}}>{th.sym || '>'}</div>
+          <Flag iso={th.vs} w={400} />
+        </div>
+        <div style={{position: 'absolute', left: 0, right: 0, top: 420, textAlign: 'center', fontFamily: SANS, fontWeight: 900, fontSize: (th.big || '').length > 11 ? 120 : 160, color: p.acc, letterSpacing: -4, textShadow: '0 10px 0 #000b', whiteSpace: 'nowrap'}}>{th.big}</div>
+        {th.line2 ? <div style={{position: 'absolute', left: 0, right: 0, top: 600, textAlign: 'center', fontFamily: SANS, fontWeight: 900, fontSize: 64, color: '#fff', textShadow: '0 6px 0 #000a', whiteSpace: 'nowrap'}}>{th.line2}</div> : null}
+      </AbsoluteFill>
+    );
+  }
   if (th) {
     const pts = ser(data, th.set, th.iso).filter(([y]) => y >= th.years[0] && y <= th.years[1]);
     const vmax = th.ymax || Math.max(...pts.map((q) => q[1])) * 1.1;
