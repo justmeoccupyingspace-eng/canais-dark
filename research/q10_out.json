@@ -1,0 +1,2253 @@
+{
+ "channels": {
+  "Nest Egg Atlas": {
+   "total_results": 39,
+   "exact_or_contains": [],
+   "top": [
+    {
+     "title": "BadlandsChugs",
+     "handle": "@badlandschugs",
+     "created": "2012-09-26",
+     "subs": 3690000,
+     "videos": 1392,
+     "views": 462688154,
+     "country": "US"
+    },
+    {
+     "title": "Neebs Gaming",
+     "handle": "@neebsgaming",
+     "created": "2014-03-16",
+     "subs": 2410000,
+     "videos": 3297,
+     "views": 1472969574,
+     "country": "US"
+    },
+    {
+     "title": "MoistCr1TiKaL Gaming",
+     "handle": "@moistcr1tikalgamingofficial",
+     "created": "2025-06-10",
+     "subs": 1140000,
+     "videos": 1085,
+     "views": 224357415,
+     "country": "US"
+    },
+    {
+     "title": "Crypto expat",
+     "handle": "@cryptoexpat",
+     "created": "2019-11-14",
+     "subs": 19800,
+     "videos": 290,
+     "views": 1131853,
+     "country": "AU"
+    },
+    {
+     "title": "Dragon Adventures",
+     "handle": "@dragonadventuresrblx",
+     "created": "2025-03-27",
+     "subs": 12200,
+     "videos": 107,
+     "views": 2743634,
+     "country": null
+    },
+    {
+     "title": "Paradox Atlas",
+     "handle": "@paradoxatlasfilms",
+     "created": "2026-03-03",
+     "subs": 11300,
+     "videos": 90,
+     "views": 7428302,
+     "country": "US"
+    },
+    {
+     "title": "Bald Eagles Live Web Cams & News",
+     "handle": "@baldeagleslivewebcamsandnews",
+     "created": "2022-11-25",
+     "subs": 5390,
+     "videos": 208,
+     "views": 1139215,
+     "country": "US"
+    },
+    {
+     "title": "Ondabebe",
+     "handle": "@ondabebe",
+     "created": "2021-10-22",
+     "subs": 3730,
+     "videos": 952,
+     "views": 1226143,
+     "country": "CA"
+    },
+    {
+     "title": "BirdWorld",
+     "handle": "@birdworld-o9i",
+     "created": "2025-12-16",
+     "subs": 1390,
+     "videos": 274,
+     "views": 293826,
+     "country": "US"
+    },
+    {
+     "title": "Wild Atlas",
+     "handle": "@wildatlas_worlld",
+     "created": "2008-10-26",
+     "subs": 1110,
+     "videos": 27,
+     "views": 197198,
+     "country": "US"
+    },
+    {
+     "title": "jamal ihya",
+     "handle": "@jamalihya2621",
+     "created": "2020-09-19",
+     "subs": 933,
+     "videos": 19,
+     "views": 96147,
+     "country": "MA"
+    },
+    {
+     "title": "Wildlife Nesting",
+     "handle": "@wildlifenesting",
+     "created": "2026-09-02",
+     "subs": 850,
+     "videos": 94,
+     "views": 1050757,
+     "country": "PK"
+    },
+    {
+     "title": "النحال الصياد",
+     "handle": "@النحالالصياد",
+     "created": "2014-06-07",
+     "subs": 805,
+     "videos": 28,
+     "views": 283818,
+     "country": null
+    },
+    {
+     "title": "TwistedTwigs",
+     "handle": "@twistedtwigsgaming",
+     "created": "2012-12-24",
+     "subs": 197,
+     "videos": 184,
+     "views": 64082,
+     "country": "US"
+    },
+    {
+     "title": "secochan",
+     "handle": "@secochan",
+     "created": "2018-01-10",
+     "subs": 184,
+     "videos": 67,
+     "views": 124510,
+     "country": "DE"
+    }
+   ]
+  },
+  "Retiree Ledger": {
+   "total_results": 11017,
+   "exact_or_contains": [
+    {
+     "title": "The Retiree Ledger",
+     "handle": "@theretireeledger",
+     "created": "2026-10-23",
+     "subs": 1,
+     "videos": 13,
+     "views": 218,
+     "country": "MX"
+    }
+   ],
+   "top": [
+    {
+     "title": "The Old Money Ledger",
+     "handle": "@theoldmoneyledgerofficial",
+     "created": "2024-04-13",
+     "subs": 43300,
+     "videos": 6,
+     "views": 657,
+     "country": "US"
+    },
+    {
+     "title": "PsychLedger",
+     "handle": "@psychledger1",
+     "created": "2025-08-08",
+     "subs": 18400,
+     "videos": 42,
+     "views": 29356,
+     "country": "US"
+    },
+    {
+     "title": "Freedom Ledger",
+     "handle": "@freedomledger2",
+     "created": "2026-05-17",
+     "subs": 11800,
+     "videos": 12,
+     "views": 205276,
+     "country": "US"
+    },
+    {
+     "title": "Charlisse Leger-Walker",
+     "handle": "@charlisse.legerwalker",
+     "created": "2015-05-28",
+     "subs": 10400,
+     "videos": 79,
+     "views": 1393949,
+     "country": "US"
+    },
+    {
+     "title": "Ledger - Topic",
+     "handle": null,
+     "created": "2013-12-23",
+     "subs": 7890,
+     "videos": 0,
+     "views": 8865942,
+     "country": null
+    },
+    {
+     "title": "The Cabin Ledger",
+     "handle": "@thecabinledger",
+     "created": "2015-08-25",
+     "subs": 1960,
+     "videos": 36,
+     "views": 345528,
+     "country": "US"
+    },
+    {
+     "title": "The Wealth Ledger",
+     "handle": "@thewealthledger-us",
+     "created": "2026-06-01",
+     "subs": 1260,
+     "videos": 26,
+     "views": 191987,
+     "country": "US"
+    },
+    {
+     "title": "MAGNIFIED LEDGER",
+     "handle": "@magnifiedledger",
+     "created": "2025-01-12",
+     "subs": 1170,
+     "videos": 6,
+     "views": 231,
+     "country": "US"
+    },
+    {
+     "title": "Unspoken Ledger ",
+     "handle": "@unspoken_ledger",
+     "created": "2026-10-03",
+     "subs": 1110,
+     "videos": 12,
+     "views": 335691,
+     "country": "US"
+    },
+    {
+     "title": "Mark Ledger",
+     "handle": "@markledger",
+     "created": "2021-10-07",
+     "subs": 1090,
+     "videos": 158,
+     "views": 584763,
+     "country": "US"
+    },
+    {
+     "title": "The Success Ledger",
+     "handle": "@thesuccessledger_official",
+     "created": "2014-01-27",
+     "subs": 587,
+     "videos": 291,
+     "views": 18433,
+     "country": null
+    },
+    {
+     "title": "The British Ledger",
+     "handle": "@thebritishledger-4u",
+     "created": "2026-08-12",
+     "subs": 305,
+     "videos": 35,
+     "views": 35750,
+     "country": "GB"
+    },
+    {
+     "title": "Grans Ledger",
+     "handle": "@gransledger",
+     "created": "2025-10-31",
+     "subs": 282,
+     "videos": 1,
+     "views": 11,
+     "country": "US"
+    },
+    {
+     "title": "THE LESSON LEDGER",
+     "handle": "@thelessonsledger",
+     "created": "2026-05-05",
+     "subs": 249,
+     "videos": 21,
+     "views": 18340,
+     "country": "US"
+    },
+    {
+     "title": "Rank & Ledger",
+     "handle": "@rankandledger",
+     "created": "2021-08-16",
+     "subs": 234,
+     "videos": 161,
+     "views": 103749,
+     "country": "SE"
+    }
+   ]
+  },
+  "Retirement Percentile": {
+   "total_results": 13,
+   "exact_or_contains": [],
+   "top": [
+    {
+     "title": "Dani Kilani",
+     "handle": "@danikilani",
+     "created": "2020-05-03",
+     "subs": 1910,
+     "videos": 33,
+     "views": 150558,
+     "country": "CA"
+    },
+    {
+     "title": "Narayan commerce Hazaribag  ",
+     "handle": "@naweensir_1m",
+     "created": "2017-08-26",
+     "subs": 1530,
+     "videos": 668,
+     "views": 110484,
+     "country": null
+    },
+    {
+     "title": "Goodwill Commerce By Dr. Mahesh sir ",
+     "handle": "@goodwillcoachingcentercommerce",
+     "created": "2025-05-05",
+     "subs": 182,
+     "videos": 66,
+     "views": 4743,
+     "country": "IN"
+    },
+    {
+     "title": "Kristin H",
+     "handle": "@kristinhess2370",
+     "created": "2014-08-05",
+     "subs": 148,
+     "videos": 94,
+     "views": 46695,
+     "country": null
+    },
+    {
+     "title": "Yash Mishra (MBBS)",
+     "handle": "@yashmishrambbs",
+     "created": "2025-08-31",
+     "subs": 130,
+     "videos": 70,
+     "views": 135012,
+     "country": "IN"
+    },
+    {
+     "title": "Equigai",
+     "handle": "@equigai",
+     "created": "2021-02-03",
+     "subs": 86,
+     "videos": 14,
+     "views": 1958,
+     "country": "IN"
+    },
+    {
+     "title": "Capital Mindset",
+     "handle": "@thecapitalmindsetofficial",
+     "created": "2026-02-16",
+     "subs": 80,
+     "videos": 147,
+     "views": 65517,
+     "country": "US"
+    },
+    {
+     "title": "Quantum Portfolio Analytics",
+     "handle": "@quantumportfolioanalytics",
+     "created": "2026-07-06",
+     "subs": 20,
+     "videos": 320,
+     "views": 15823,
+     "country": null
+    },
+    {
+     "title": "Bitcoin Calculator Tools",
+     "handle": "@bitcoincalculatortools",
+     "created": "2026-05-02",
+     "subs": 15,
+     "videos": 12,
+     "views": 398,
+     "country": null
+    },
+    {
+     "title": "News Channel",
+     "handle": "@socialmediaviral798",
+     "created": "2023-07-27",
+     "subs": 6,
+     "videos": 23,
+     "views": 1651,
+     "country": null
+    },
+    {
+     "title": "Zenovex Finance",
+     "handle": "@zenovex_finance",
+     "created": "2026-10-13",
+     "subs": 6,
+     "videos": 113,
+     "views": 11997,
+     "country": null
+    },
+    {
+     "title": "Money Made Simple",
+     "handle": "@moneymadesimple-o2k",
+     "created": "2025-12-31",
+     "subs": 5,
+     "videos": 13,
+     "views": 117,
+     "country": null
+    },
+    {
+     "title": "Plot Your Wealth",
+     "handle": "@plotyourwealth",
+     "created": "2026-09-10",
+     "subs": 5,
+     "videos": 27,
+     "views": 3019,
+     "country": "US"
+    }
+   ]
+  },
+  "Silver Ledger": {
+   "total_results": 10775,
+   "exact_or_contains": [
+    {
+     "title": "Silver Ledger",
+     "handle": "@silverledgermoney",
+     "created": "2025-10-16",
+     "subs": 195,
+     "videos": 0,
+     "views": 0,
+     "country": "US"
+    },
+    {
+     "title": "The Silver Ledger",
+     "handle": "@thesilverledger",
+     "created": "2009-07-12",
+     "subs": 126,
+     "videos": 42,
+     "views": 9392,
+     "country": "US"
+    },
+    {
+     "title": "The Silver Ledger",
+     "handle": "@silverledgerhq",
+     "created": "2013-10-27",
+     "subs": 22,
+     "videos": 5,
+     "views": 3891,
+     "country": null
+    },
+    {
+     "title": "Silver Ledger",
+     "handle": "@silverledger-r4c",
+     "created": "2016-01-17",
+     "subs": 9,
+     "videos": 5,
+     "views": 1298,
+     "country": null
+    },
+    {
+     "title": "The Silver Ledger",
+     "handle": "@thesilverledge",
+     "created": "2026-07-04",
+     "subs": 6,
+     "videos": 36,
+     "views": 2547,
+     "country": "US"
+    },
+    {
+     "title": "Silver Ledger",
+     "handle": "@silverledger",
+     "created": "2025-09-16",
+     "subs": 1,
+     "videos": 3,
+     "views": 34,
+     "country": null
+    },
+    {
+     "title": "The Silver Ledger",
+     "handle": "@thesilverledger1",
+     "created": "2025-05-08",
+     "subs": 1,
+     "videos": 3,
+     "views": 31,
+     "country": "US"
+    },
+    {
+     "title": "The Silver Ledger",
+     "handle": "@thesilverledger-89",
+     "created": "2026-08-30",
+     "subs": 1,
+     "videos": 13,
+     "views": 372,
+     "country": "PK"
+    },
+    {
+     "title": "Silver Ledger",
+     "handle": "@silver-ledger",
+     "created": "2018-06-28",
+     "subs": 0,
+     "videos": 2,
+     "views": 30,
+     "country": "US"
+    },
+    {
+     "title": "Silver Ledger",
+     "handle": "@silverledger-c",
+     "created": "2026-10-15",
+     "subs": 0,
+     "videos": 11,
+     "views": 455,
+     "country": "BR"
+    },
+    {
+     "title": "SILVER LEDGER",
+     "handle": "@silverledgertv",
+     "created": "2026-03-07",
+     "subs": 0,
+     "videos": 1,
+     "views": 5,
+     "country": null
+    },
+    {
+     "title": "The Silver Ledger",
+     "handle": "@silverledgerfinance",
+     "created": "2026-09-25",
+     "subs": 0,
+     "videos": 4,
+     "views": 7,
+     "country": "US"
+    }
+   ],
+   "top": [
+    {
+     "title": "The Freedom Report",
+     "handle": "@freedomreport",
+     "created": "2018-11-27",
+     "subs": 51800,
+     "videos": 889,
+     "views": 6459980,
+     "country": "US"
+    },
+    {
+     "title": "The Gray Ledger",
+     "handle": "@thegrayledgerofficial",
+     "created": "2025-11-07",
+     "subs": 21700,
+     "videos": 4,
+     "views": 417286,
+     "country": "US"
+    },
+    {
+     "title": "The Sovereign Ledger",
+     "handle": "@thesovereignledgeroriginal",
+     "created": "2026-03-26",
+     "subs": 5920,
+     "videos": 21,
+     "views": 380777,
+     "country": "BD"
+    },
+    {
+     "title": "James Silver",
+     "handle": "@jamessilverrr",
+     "created": "2025-03-23",
+     "subs": 1260,
+     "videos": 504,
+     "views": 438217,
+     "country": null
+    },
+    {
+     "title": "The Merchant's Ledger",
+     "handle": "@the_merchants_ledger",
+     "created": "2007-08-15",
+     "subs": 1180,
+     "videos": 82,
+     "views": 150780,
+     "country": null
+    },
+    {
+     "title": "Laker TV",
+     "handle": "@lakertvkingston",
+     "created": "2015-04-03",
+     "subs": 1000,
+     "videos": 395,
+     "views": 91874,
+     "country": "US"
+    },
+    {
+     "title": "UNSOLVED LEDGER",
+     "handle": "@un-solved-ledger",
+     "created": "2024-11-19",
+     "subs": 789,
+     "videos": 76,
+     "views": 40637,
+     "country": "US"
+    },
+    {
+     "title": "Currency Insider",
+     "handle": "@currencyinsider_786",
+     "created": "2021-08-09",
+     "subs": 464,
+     "videos": 132,
+     "views": 35845,
+     "country": "US"
+    },
+    {
+     "title": "Justin | The Global Ledger",
+     "handle": "@thegloballedgershow",
+     "created": "2025-11-21",
+     "subs": 344,
+     "videos": 139,
+     "views": 22310,
+     "country": null
+    },
+    {
+     "title": "Silver Ledger",
+     "handle": "@silverledgermoney",
+     "created": "2025-10-16",
+     "subs": 195,
+     "videos": 0,
+     "views": 0,
+     "country": "US"
+    },
+    {
+     "title": "The Silver Ledger",
+     "handle": "@thesilverledger",
+     "created": "2009-07-12",
+     "subs": 126,
+     "videos": 42,
+     "views": 9392,
+     "country": "US"
+    },
+    {
+     "title": "The Hidden Ledger",
+     "handle": "@thehidden-f6m",
+     "created": "2025-06-18",
+     "subs": 86,
+     "videos": 0,
+     "views": 0,
+     "country": null
+    },
+    {
+     "title": "SilverFlake",
+     "handle": "@silverflake1454",
+     "created": "2013-07-30",
+     "subs": 26,
+     "videos": 8,
+     "views": 1542,
+     "country": "CA"
+    },
+    {
+     "title": "Beyond the Ledger",
+     "handle": "@beyondtheledgers",
+     "created": "2025-11-03",
+     "subs": 24,
+     "videos": 36,
+     "views": 1988,
+     "country": "US"
+    },
+    {
+     "title": "The Silver Ledger",
+     "handle": "@silverledgerhq",
+     "created": "2013-10-27",
+     "subs": 22,
+     "videos": 5,
+     "views": 3891,
+     "country": null
+    }
+   ]
+  },
+  "Golden Years Data": {
+   "total_results": 17477,
+   "exact_or_contains": [],
+   "top": [
+    {
+     "title": "CoryxKenshin",
+     "handle": "@coryxkenshin",
+     "created": "2009-04-27",
+     "subs": 24800000,
+     "videos": 1753,
+     "views": 10127546507,
+     "country": "US"
+    },
+    {
+     "title": "Magnet Brains",
+     "handle": "@magnetbrainseducation",
+     "created": "2016-06-13",
+     "subs": 14600000,
+     "videos": 61363,
+     "views": 3994503028,
+     "country": "IN"
+    },
+    {
+     "title": "滇西小哥 Dianxi Xiaoge",
+     "handle": "@dianxixiaoge",
+     "created": "2018-07-25",
+     "subs": 12500000,
+     "videos": 941,
+     "views": 4828656181,
+     "country": "US"
+    },
+    {
+     "title": "Johnny Harris",
+     "handle": "@johnnyharris",
+     "created": "2011-06-08",
+     "subs": 8010000,
+     "videos": 523,
+     "views": 1265066002,
+     "country": "US"
+    },
+    {
+     "title": "The Why Files",
+     "handle": "@thewhyfiles",
+     "created": "2020-09-16",
+     "subs": 6030000,
+     "videos": 530,
+     "views": 1322194658,
+     "country": "US"
+    },
+    {
+     "title": "Asmongold TV  ",
+     "handle": "@asmontv",
+     "created": "2019-12-09",
+     "subs": 4740000,
+     "videos": 7685,
+     "views": 6152073678,
+     "country": "US"
+    },
+    {
+     "title": "Chris Williamson",
+     "handle": "@chriswillx",
+     "created": "2018-02-12",
+     "subs": 4490000,
+     "videos": 4860,
+     "views": 1303209658,
+     "country": "US"
+    },
+    {
+     "title": "Caleb Hammer",
+     "handle": "@calebhammer",
+     "created": "2020-05-20",
+     "subs": 4050000,
+     "videos": 5091,
+     "views": 4816624548,
+     "country": "US"
+    },
+    {
+     "title": "Amelia Dimoldenberg",
+     "handle": "@ameliadimoldenberg",
+     "created": "2014-03-24",
+     "subs": 3460000,
+     "videos": 554,
+     "views": 1169227440,
+     "country": "GB"
+    },
+    {
+     "title": "Predictive History",
+     "handle": "@predictivehistory",
+     "created": "2023-06-20",
+     "subs": 2960000,
+     "videos": 195,
+     "views": 110450911,
+     "country": "CA"
+    },
+    {
+     "title": "BattleBots",
+     "handle": "@battlebots",
+     "created": "2006-09-11",
+     "subs": 2540000,
+     "videos": 912,
+     "views": 778715166,
+     "country": "US"
+    },
+    {
+     "title": "Taskmaster",
+     "handle": "@taskmaster",
+     "created": "2019-10-03",
+     "subs": 2380000,
+     "videos": 1811,
+     "views": 1831398161,
+     "country": "GB"
+    },
+    {
+     "title": "The United Stand",
+     "handle": "@unitedstand",
+     "created": "2014-08-06",
+     "subs": 2320000,
+     "videos": 14698,
+     "views": 1999624635,
+     "country": "GB"
+    },
+    {
+     "title": "Glenn Beck",
+     "handle": "@glennbeck",
+     "created": "2006-03-05",
+     "subs": 1910000,
+     "videos": 6844,
+     "views": 757428700,
+     "country": "US"
+    },
+    {
+     "title": "MUNMUN DUTTA",
+     "handle": "@munmundutta5317",
+     "created": "2020-11-08",
+     "subs": 1880000,
+     "videos": 138,
+     "views": 360541030,
+     "country": "IN"
+    }
+   ]
+  },
+  "Retire by the Data": {
+   "total_results": 17526,
+   "exact_or_contains": [],
+   "top": [
+    {
+     "title": "DataExpert",
+     "handle": "@eczachly_",
+     "created": "2013-01-25",
+     "subs": 265000,
+     "videos": 232,
+     "views": 8108405,
+     "country": "US"
+    },
+    {
+     "title": "Retire SMART",
+     "handle": "@retiresmartllc",
+     "created": "2021-08-19",
+     "subs": 69300,
+     "videos": 1274,
+     "views": 2146552,
+     "country": "US"
+    },
+    {
+     "title": "Even Better Retirement",
+     "handle": "@evenbetterretirement",
+     "created": "2016-02-03",
+     "subs": 59100,
+     "videos": 89,
+     "views": 5929657,
+     "country": "US"
+    },
+    {
+     "title": "Retire With Zero",
+     "handle": "@retirewithzero",
+     "created": "2019-02-26",
+     "subs": 25500,
+     "videos": 340,
+     "views": 2449950,
+     "country": "US"
+    },
+    {
+     "title": "The Retirement & Money Show",
+     "handle": "@retirementandmoney",
+     "created": "2021-09-21",
+     "subs": 15600,
+     "videos": 237,
+     "views": 2414799,
+     "country": "GB"
+    },
+    {
+     "title": "Best Places to Retire",
+     "handle": "@bestplacestoretireusa",
+     "created": "2026-06-04",
+     "subs": 6550,
+     "videos": 4,
+     "views": 16,
+     "country": "TR"
+    },
+    {
+     "title": "Retire Abroad After 60",
+     "handle": "@retireabroadafter60",
+     "created": "2026-04-07",
+     "subs": 5980,
+     "videos": 34,
+     "views": 776109,
+     "country": "US"
+    },
+    {
+     "title": "Think And Retire - David Das, Ph.D.",
+     "handle": "@thinkandretire",
+     "created": "2018-07-26",
+     "subs": 2630,
+     "videos": 227,
+     "views": 157213,
+     "country": "CA"
+    },
+    {
+     "title": "Affordable Retirement Abroad",
+     "handle": "@affordableretirementabroad",
+     "created": "2025-04-30",
+     "subs": 2600,
+     "videos": 85,
+     "views": 200720,
+     "country": "US"
+    },
+    {
+     "title": "Retirement Income Solved",
+     "handle": "@retirementincomesolved",
+     "created": "2020-08-26",
+     "subs": 1940,
+     "videos": 12,
+     "views": 1274,
+     "country": "GB"
+    },
+    {
+     "title": "The Retirement Show",
+     "handle": "@theretirementshow-tv",
+     "created": "2025-12-26",
+     "subs": 1270,
+     "videos": 17,
+     "views": 75,
+     "country": "US"
+    },
+    {
+     "title": "Retire Without Borders",
+     "handle": "@retirewithoutborders",
+     "created": "2025-02-06",
+     "subs": 1000,
+     "videos": 191,
+     "views": 72684,
+     "country": "US"
+    },
+    {
+     "title": "The Retirement Aussie",
+     "handle": "@theretirementaussie",
+     "created": "2026-02-07",
+     "subs": 850,
+     "videos": 25,
+     "views": 85902,
+     "country": "BR"
+    },
+    {
+     "title": "Retire Smart",
+     "handle": "@retiresmart-official",
+     "created": "2025-11-08",
+     "subs": 524,
+     "videos": 36,
+     "views": 74692,
+     "country": "US"
+    },
+    {
+     "title": "Retire in Paradise",
+     "handle": "@retireinparadise",
+     "created": "2025-09-23",
+     "subs": 470,
+     "videos": 29,
+     "views": 72506,
+     "country": "US"
+    }
+   ]
+  }
+ },
+ "topics": {
+  "rank": {
+   "q": "where do you rank retirement wealth",
+   "order": "viewCount",
+   "after": "2025-11-01T00:00:00Z",
+   "total_results": 1000000,
+   "videos": [
+    {
+     "title": "The #1 Wealth Killer No One Talks About in South Africa",
+     "id": "fufQ6Ir3SMY",
+     "published": "2026-08-28",
+     "views": 1105433,
+     "dur_s": 922,
+     "channel": "Family Wealth",
+     "subs": 55000,
+     "ch_created": "2024-06-06",
+     "ch_videos": 250,
+     "ratio": 20.1
+    },
+    {
+     "title": "The 6 Wealth Tiers in Retirement (Where Do You Rank?)",
+     "id": "E9YmtNGyUu4",
+     "published": "2026-04-26",
+     "views": 402211,
+     "dur_s": 1013,
+     "channel": "Income Over Wealth",
+     "subs": 12000,
+     "ch_created": "2026-02-22",
+     "ch_videos": 75,
+     "ratio": 33.52
+    },
+    {
+     "title": "14 Years of Advising $3M+ Retirees in 18 Minutes",
+     "id": "qp4D03w0eIU",
+     "published": "2026-08-30",
+     "views": 756776,
+     "dur_s": 1068,
+     "channel": "Nick Davis, CFP®",
+     "subs": 100000,
+     "ch_created": "2022-07-08",
+     "ch_videos": 342,
+     "ratio": 7.57
+    },
+    {
+     "title": "The Six Levels of INCOME in Retirement",
+     "id": "tyK4yc_gr94",
+     "published": "2026-06-08",
+     "views": 362160,
+     "dur_s": 974,
+     "channel": "Holy Schmidt!",
+     "subs": 480000,
+     "ch_created": "2019-06-01",
+     "ch_videos": 1106,
+     "ratio": 0.75
+    },
+    {
+     "title": "Net Worth & Income of Top 1%, 5%, 10%, and 25% of Retirees (2026 Update)",
+     "id": "kZHQqigfI0Y",
+     "published": "2026-01-07",
+     "views": 313535,
+     "dur_s": 742,
+     "channel": "Eric at The PeakFP",
+     "subs": 85300,
+     "ch_created": "2022-01-11",
+     "ch_videos": 421,
+     "ratio": 3.68
+    },
+    {
+     "title": "The 6 Levels of Retirement Wealth — Where Do You Fall?",
+     "id": "XoPuQl2CxRE",
+     "published": "2026-02-21",
+     "views": 308975,
+     "dur_s": 1192,
+     "channel": "Kevin Lum, CFP®",
+     "subs": 228000,
+     "ch_created": "2020-08-04",
+     "ch_videos": 205,
+     "ratio": 1.36
+    },
+    {
+     "title": "THE 5 BEST and WORST States For Retirement Taxes In 2026",
+     "id": "Ce6Kwoa17Qs",
+     "published": "2026-06-23",
+     "views": 290318,
+     "dur_s": 1612,
+     "channel": "Toby Mathis Esq | Tax Planning & Asset Protection ",
+     "subs": 671000,
+     "ch_created": "2014-09-08",
+     "ch_videos": 1291,
+     "ratio": 0.43
+    },
+    {
+     "title": "The Actual Net Worth in Retirement to Be Considered Wealthy (2026)",
+     "id": "ZXtUXlW1efU",
+     "published": "2026-02-21",
+     "views": 249952,
+     "dur_s": 795,
+     "channel": "Even Better Retirement",
+     "subs": 59100,
+     "ch_created": "2016-02-03",
+     "ch_videos": 89,
+     "ratio": 4.23
+    },
+    {
+     "title": "7 Levels of Wealth in Retirement in 2026: Where are you?",
+     "id": "gYfIUEjSwd0",
+     "published": "2026-05-31",
+     "views": 179611,
+     "dur_s": 1564,
+     "channel": "Nick Davis, CFP®",
+     "subs": 100000,
+     "ch_created": "2022-07-08",
+     "ch_videos": 342,
+     "ratio": 1.8
+    },
+    {
+     "title": "6 Levels of Retirement Wealth - Which One Are You In?",
+     "id": "k1x7buyXM2k",
+     "published": "2026-03-24",
+     "views": 121110,
+     "dur_s": 1245,
+     "channel": "Erin Talks Money | Erin Moriarity",
+     "subs": 445000,
+     "ch_created": "2007-10-21",
+     "ch_videos": 2855,
+     "ratio": 0.27
+    },
+    {
+     "title": "7 Levels of Wealth in Canadian Retirement: $250k to $30M",
+     "id": "GnjpWIJNQts",
+     "published": "2026-02-20",
+     "views": 117662,
+     "dur_s": 1500,
+     "channel": "Willems Wealth Planning Group ",
+     "subs": 13000,
+     "ch_created": "2015-01-12",
+     "ch_videos": 288,
+     "ratio": 9.05
+    },
+    {
+     "title": "The 6 Wealth Levels Where Money Stops Being A Worry",
+     "id": "PqfGo5cmXG4",
+     "published": "2026-10-01",
+     "views": 167301,
+     "dur_s": 890,
+     "channel": "Dean Finance",
+     "subs": 640,
+     "ch_created": "2026-01-10",
+     "ch_videos": 32,
+     "ratio": 261.41
+    },
+    {
+     "title": "Is the 4% rule enough for retirement today?",
+     "id": "5Z97glrm0YU",
+     "published": "2026-10-21",
+     "views": 169278,
+     "dur_s": 326,
+     "channel": "Eric Kearney - Retirement Wealth Advisors ",
+     "subs": 22100,
+     "ch_created": "2015-05-18",
+     "ch_videos": 645,
+     "ratio": 7.66
+    },
+    {
+     "title": "Your Life At Every Retirement Wealth Level ($500K to $5M+)",
+     "id": "w-4fVfPr9K8",
+     "published": "2026-07-22",
+     "views": 81272,
+     "dur_s": 809,
+     "channel": "Daniel Masuda Lehrman, CFP®",
+     "subs": 11700,
+     "ch_created": "2024-01-22",
+     "ch_videos": 224,
+     "ratio": 6.95
+    },
+    {
+     "title": "Why Retirement is India’s Biggest Crisis (And How to Fix It) ft. Swarup Mohanty",
+     "id": "oEobn3r883o",
+     "published": "2026-06-13",
+     "views": 72525,
+     "dur_s": 2846,
+     "channel": "Wealth By Motilal Oswal",
+     "subs": 15100,
+     "ch_created": "2025-10-06",
+     "ch_videos": 206,
+     "ratio": 4.8
+    },
+    {
+     "title": "The 5 Retirement Wealth Levels Most People Don't Know Exist",
+     "id": "j72gSdbc5Ts",
+     "published": "2026-02-10",
+     "views": 71280,
+     "dur_s": 703,
+     "channel": "Taylor Demars, CFP®",
+     "subs": 28200,
+     "ch_created": "2011-09-30",
+     "ch_videos": 114,
+     "ratio": 2.53
+    },
+    {
+     "title": "When a Retiree is Considered Wealthy",
+     "id": "W-cQ90FFbi0",
+     "published": "2026-04-09",
+     "views": 66003,
+     "dur_s": 830,
+     "channel": "Matty Invests",
+     "subs": 15200,
+     "ch_created": "2025-12-31",
+     "ch_videos": 125,
+     "ratio": 4.34
+    },
+    {
+     "title": "Americans Are Saving Less Than Ever… So Why Are Retirement Accounts Booming?",
+     "id": "yYJCtTCzWa4",
+     "published": "2026-06-23",
+     "views": 55773,
+     "dur_s": 1498,
+     "channel": "Erin Talks Money | Erin Moriarity",
+     "subs": 445000,
+     "ch_created": "2007-10-21",
+     "ch_videos": 2855,
+     "ratio": 0.13
+    },
+    {
+     "title": "The 6 Levels of Retirement Wealth — Which Level Are You Actually At?",
+     "id": "PdNIlnv6AZk",
+     "published": "2026-05-14",
+     "views": 56734,
+     "dur_s": 1280,
+     "channel": "Rob Gariano, CFP®",
+     "subs": 5150,
+     "ch_created": "2025-04-09",
+     "ch_videos": 68,
+     "ratio": 11.02
+    },
+    {
+     "title": "Your Life At Every Retirement Wealth Level ($500K to $5M+)",
+     "id": "4DrRsyBfjs8",
+     "published": "2026-08-03",
+     "views": 56745,
+     "dur_s": 1758,
+     "channel": "Tom - Lazy Investor",
+     "subs": 100000,
+     "ch_created": "2025-08-20",
+     "ch_videos": 516,
+     "ratio": 0.57
+    },
+    {
+     "title": "5 Levels of Retirement Wealth - Which One Are You In?",
+     "id": "MQlZkliLC90",
+     "published": "2026-07-31",
+     "views": 46614,
+     "dur_s": 613,
+     "channel": "John Iammarino - Securus Financial",
+     "subs": 1020,
+     "ch_created": "2013-04-15",
+     "ch_videos": 294,
+     "ratio": 45.7
+    },
+    {
+     "title": "Retirement Wipeout: ‘Think Like A Central Banker’ Or Risk Losing Your Wealth | Devlyn Steele",
+     "id": "z_Oi5v0gd_k",
+     "published": "2026-09-05",
+     "views": 72612,
+     "dur_s": 3311,
+     "channel": "David Lin ",
+     "subs": 339000,
+     "ch_created": "2023-02-23",
+     "ch_videos": 1556,
+     "ratio": 0.21
+    },
+    {
+     "title": "The 6 Levels of Retirement Wealth in America — Where Do You Rank?",
+     "id": "ytmi3Nl8kmo",
+     "published": "2026-09-01",
+     "views": 54110,
+     "dur_s": 907,
+     "channel": "American Finance with Liam",
+     "subs": 4060,
+     "ch_created": "2024-01-27",
+     "ch_videos": 104,
+     "ratio": 13.33
+    },
+    {
+     "title": "What Counts as Rich in Retirement: 5 Wealth Levels for Canadians",
+     "id": "QIbChJ4iKK0",
+     "published": "2026-06-10",
+     "views": 30814,
+     "dur_s": 536,
+     "channel": "Danny & Charles - Zenith Private Wealth Counsel",
+     "subs": 913,
+     "ch_created": "2025-03-20",
+     "ch_videos": 311,
+     "ratio": 33.75
+    },
+    {
+     "title": "The 6 Levels of Retirement Wealth in South Africa. Where Do You Stand?",
+     "id": "M1hsG-Yljds",
+     "published": "2026-07-10",
+     "views": 34618,
+     "dur_s": 1101,
+     "channel": "Family Wealth",
+     "subs": 55000,
+     "ch_created": "2024-06-06",
+     "ch_videos": 250,
+     "ratio": 0.63
+    }
+   ]
+  },
+  "ssage": {
+   "q": "average social security benefit by age claiming 62 67 70",
+   "order": "viewCount",
+   "after": "2025-11-01T00:00:00Z",
+   "total_results": 39621,
+   "videos": [
+    {
+     "title": "Social Security at 62 vs 70. The Math Will Surprise You.",
+     "id": "7j2HIaE3rL4",
+     "published": "2026-08-20",
+     "views": 2413217,
+     "dur_s": 971,
+     "channel": "Trevor Phibbs, CFP®",
+     "subs": 13000,
+     "ch_created": "2024-06-12",
+     "ch_videos": 20,
+     "ratio": 185.63
+    },
+    {
+     "title": "How to Get a $3,500/Month Social Security Benefit",
+     "id": "YnqlvIFxLV8",
+     "published": "2026-04-21",
+     "views": 906461,
+     "dur_s": 881,
+     "channel": "Erin Talks Money | Erin Moriarity",
+     "subs": 445000,
+     "ch_created": "2007-10-21",
+     "ch_videos": 2855,
+     "ratio": 2.04
+    },
+    {
+     "title": "Social Security at 62 vs 70: The Math Everyone Gets Wrong",
+     "id": "FpnHmouqYl4",
+     "published": "2026-05-04",
+     "views": 680853,
+     "dur_s": 2810,
+     "channel": "The Retirement Nerds",
+     "subs": 335000,
+     "ch_created": "2020-08-27",
+     "ch_videos": 548,
+     "ratio": 2.03
+    },
+    {
+     "title": "5 Really Good Reasons to File for Social Security at 62",
+     "id": "6Fl-d4-iR7E",
+     "published": "2026-03-18",
+     "views": 651495,
+     "dur_s": 899,
+     "channel": "Covenant Wealth Advisors",
+     "subs": 13200,
+     "ch_created": "2019-02-18",
+     "ch_videos": 101,
+     "ratio": 49.36
+    },
+    {
+     "title": "Taking Social Security at 62",
+     "id": "moQO-QKnw1Q",
+     "published": "2026-05-18",
+     "views": 861973,
+     "dur_s": 107,
+     "channel": "Dan the Budget Man",
+     "subs": 4670,
+     "ch_created": "2016-03-28",
+     "ch_videos": 137,
+     "ratio": 184.58
+    },
+    {
+     "title": "Where Your Social Security Check Ranks (The Data May Surprise You...)",
+     "id": "19HmM9Xejy8",
+     "published": "2026-03-31",
+     "views": 477631,
+     "dur_s": 606,
+     "channel": "The UnRetired - with RJ",
+     "subs": 74200,
+     "ch_created": "2025-02-25",
+     "ch_videos": 230,
+     "ratio": 6.44
+    },
+    {
+     "title": "Why You SHOULD Retire and Take Social Security at Age 62 (6 Reasons)",
+     "id": "-9BCsqdziG0",
+     "published": "2026-05-23",
+     "views": 353446,
+     "dur_s": 1364,
+     "channel": "Jeremy Finger, CFP®, CIMA®, CEPA",
+     "subs": 22700,
+     "ch_created": "2025-01-24",
+     "ch_videos": 107,
+     "ratio": 15.57
+    },
+    {
+     "title": "When Is The Best Time To Start Claiming Social Security?",
+     "id": "WiHA1ee1Qos",
+     "published": "2025-11-14",
+     "views": 194598,
+     "dur_s": 714,
+     "channel": "Retire Early with Melanie & Keith",
+     "subs": 13300,
+     "ch_created": "2025-07-28",
+     "ch_videos": 197,
+     "ratio": 14.63
+    },
+    {
+     "title": "Why Millionaires Should Take Social Security at 62 (Your Advisor Won't Tell You This)",
+     "id": "LWEnCeROKTc",
+     "published": "2026-05-09",
+     "views": 138761,
+     "dur_s": 1122,
+     "channel": "Kyle Kuyat CFP®",
+     "subs": 8450,
+     "ch_created": "2023-05-23",
+     "ch_videos": 155,
+     "ratio": 16.42
+    },
+    {
+     "title": "62, 67 o 70 — ¿A Qué Edad Deberías Reclamar Tu Seguro Social?",
+     "id": "NHAws-vdWZ4",
+     "published": "2026-07-08",
+     "views": 156717,
+     "dur_s": 1018,
+     "channel": "Teresita Espinoza: Hablemos De Dinero",
+     "subs": 48400,
+     "ch_created": "2021-08-25",
+     "ch_videos": 796,
+     "ratio": 3.24
+    },
+    {
+     "title": "Why Claiming Social Security at 70 Can Double Your Withdrawal Rate",
+     "id": "5TnhZkhVTvc",
+     "published": "2026-04-29",
+     "views": 65889,
+     "dur_s": 1177,
+     "channel": "Erin Talks Money | Erin Moriarity",
+     "subs": 445000,
+     "ch_created": "2007-10-21",
+     "ch_videos": 2855,
+     "ratio": 0.15
+    },
+    {
+     "title": "When Should You Claim Social Security If You Have A Pension",
+     "id": "0km6T_lXj9U",
+     "published": "2026-07-25",
+     "views": 61094,
+     "dur_s": 816,
+     "channel": "Cole Krilich",
+     "subs": 17500,
+     "ch_created": "2026-01-15",
+     "ch_videos": 72,
+     "ratio": 3.49
+    },
+    {
+     "title": "5 REALLY GOOD Reasons to File for Social Security at 62",
+     "id": "s58Ua2beOpc",
+     "published": "2026-07-07",
+     "views": 24761,
+     "dur_s": 803,
+     "channel": "The UnRetired - with RJ",
+     "subs": 74200,
+     "ch_created": "2025-02-25",
+     "ch_videos": 230,
+     "ratio": 0.33
+    },
+    {
+     "title": "Social Security at 62 vs 67 vs 70: The Real Math Will Surprise You",
+     "id": "prxZgnXrOgo",
+     "published": "2026-10-13",
+     "views": 47637,
+     "dur_s": 1083,
+     "channel": "Retiree Math",
+     "subs": 9830,
+     "ch_created": "2026-10-09",
+     "ch_videos": 19,
+     "ratio": 4.85
+    },
+    {
+     "title": "6 Signs You're Already in the Top 10% of Retirees",
+     "id": "0eCcQaP6KDo",
+     "published": "2026-10-16",
+     "views": 27031,
+     "dur_s": 916,
+     "channel": "The Wise Future",
+     "subs": 9350,
+     "ch_created": "2025-04-13",
+     "ch_videos": 88,
+     "ratio": 2.89
+    },
+    {
+     "title": "Breaking: Congress Just Passed a Social Security Bill—What It Means for You?",
+     "id": "di44SjM73yI",
+     "published": "2026-10-20",
+     "views": 29060,
+     "dur_s": 666,
+     "channel": "Fred Harrison",
+     "subs": 337,
+     "ch_created": "2026-09-19",
+     "ch_videos": 26,
+     "ratio": 86.23
+    },
+    {
+     "title": "Want a Top 10% Social Security Benefit? Here’s What It Takes",
+     "id": "yTfaDL4YOGU",
+     "published": "2026-09-15",
+     "views": 30647,
+     "dur_s": 610,
+     "channel": "Scott Caufield, CFA, CPA",
+     "subs": 6280,
+     "ch_created": "2021-07-06",
+     "ch_videos": 235,
+     "ratio": 4.88
+    },
+    {
+     "title": "Over 62: New Bill Social Security $2,170 INCREASES to $4,188  Do You Qualify?",
+     "id": "W1LeLayG0Ck",
+     "published": "2026-10-23",
+     "views": 11805,
+     "dur_s": 523,
+     "channel": "Fred Harrison",
+     "subs": 337,
+     "ch_created": "2026-09-19",
+     "ch_videos": 26,
+     "ratio": 35.03
+    },
+    {
+     "title": "When Should You Claim Social Security? 62, 67, or 70?",
+     "id": "eZmDH_0YtoE",
+     "published": "2026-04-12",
+     "views": 7983,
+     "dur_s": 525,
+     "channel": "Mitlin Financial Inc®",
+     "subs": 2150,
+     "ch_created": "2012-11-21",
+     "ch_videos": 1644,
+     "ratio": 3.71
+    },
+    {
+     "title": "$2,170 Social Security Check: Your November Pay Dates + New Bill",
+     "id": "q1oiv5ztPtc",
+     "published": "2026-10-22",
+     "views": 10817,
+     "dur_s": 813,
+     "channel": "Wise Flys",
+     "subs": 249000,
+     "ch_created": "2017-07-18",
+     "ch_videos": 1794,
+     "ratio": 0.04
+    },
+    {
+     "title": "New Social Security Law: What Changes at 62, 67 & 70",
+     "id": "CtVmroENxic",
+     "published": "2026-10-21",
+     "views": 8679,
+     "dur_s": 238,
+     "channel": "SeniorLiving.Org",
+     "subs": 87200,
+     "ch_created": "2020-04-15",
+     "ch_videos": 1363,
+     "ratio": 0.1
+    },
+    {
+     "title": "5 Reasons to Wait Until 70 for Social Security (Most Retirees Get This Wrong)",
+     "id": "IWMLZzMH9XE",
+     "published": "2026-04-15",
+     "views": 9031,
+     "dur_s": 616,
+     "channel": "Covenant Wealth Advisors",
+     "subs": 13200,
+     "ch_created": "2019-02-18",
+     "ch_videos": 101,
+     "ratio": 0.68
+    },
+    {
+     "title": "Average Social Security At Every Age vs $5,181 Maximum (2026)",
+     "id": "THZ1ZHVSoF8",
+     "published": "2026-03-07",
+     "views": 7952,
+     "dur_s": 515,
+     "channel": "Mike's Financial Edge",
+     "subs": 35500,
+     "ch_created": "2019-12-07",
+     "ch_videos": 210,
+     "ratio": 0.22
+    },
+    {
+     "title": "Congress Just Voted on Full Retirement Age — Here’s What Changes",
+     "id": "tsWZjyqTDhs",
+     "published": "2026-09-30",
+     "views": 6113,
+     "dur_s": 612,
+     "channel": "Money Instructor",
+     "subs": 167000,
+     "ch_created": "2014-02-06",
+     "ch_videos": 1071,
+     "ratio": 0.04
+    },
+    {
+     "title": "Social Security at 62 vs 67 vs 70: The Math Will Surprise You",
+     "id": "zrb0VFW2QOo",
+     "published": "2026-09-21",
+     "views": 5244,
+     "dur_s": 801,
+     "channel": "Retirement Keystone",
+     "subs": 109,
+     "ch_created": "2022-12-09",
+     "ch_videos": 23,
+     "ratio": 48.11
+    }
+   ]
+  },
+  "incpct": {
+   "q": "retirement income percentiles top 10 percent retirees",
+   "order": "viewCount",
+   "after": "2025-11-01T00:00:00Z",
+   "total_results": 221999,
+   "videos": [
+    {
+     "title": "Net Worth & Income of Top 1%, 5%, 10%, and 25% of Retirees (2026 Update)",
+     "id": "kZHQqigfI0Y",
+     "published": "2026-01-07",
+     "views": 313535,
+     "dur_s": 742,
+     "channel": "Eric at The PeakFP",
+     "subs": 85300,
+     "ch_created": "2022-01-11",
+     "ch_videos": 421,
+     "ratio": 3.68
+    },
+    {
+     "title": "The Actual Net Worth in Retirement to Be Considered Wealthy (2026)",
+     "id": "ZXtUXlW1efU",
+     "published": "2026-02-21",
+     "views": 249952,
+     "dur_s": 795,
+     "channel": "Even Better Retirement",
+     "subs": 59100,
+     "ch_created": "2016-02-03",
+     "ch_videos": 89,
+     "ratio": 4.23
+    },
+    {
+     "title": "Net Worth and Income of the Top 1%, 5%, 10%, and 25% in Canada (2026 Update)",
+     "id": "-S5B05KmKGk",
+     "published": "2026-08-15",
+     "views": 75738,
+     "dur_s": 1333,
+     "channel": "Shawn Todd",
+     "subs": 5040,
+     "ch_created": "2024-09-30",
+     "ch_videos": 32,
+     "ratio": 15.03
+    },
+    {
+     "title": "How Much the Top 10% Actually Make in Retirement",
+     "id": "xzEuGLwGcuU",
+     "published": "2026-05-30",
+     "views": 2794,
+     "dur_s": 1197,
+     "channel": "Income Over Wealth",
+     "subs": 12000,
+     "ch_created": "2026-02-22",
+     "ch_videos": 75,
+     "ratio": 0.23
+    },
+    {
+     "title": "What Monthly Income Puts You in the Top 10% of American Retirees?",
+     "id": "ZaWAm2N5W7U",
+     "published": "2026-08-08",
+     "views": 194,
+     "dur_s": 690,
+     "channel": "POV Wealth Mindset",
+     "subs": 7,
+     "ch_created": "2026-07-25",
+     "ch_videos": 13,
+     "ratio": 27.71
+    }
+   ]
+  },
+  "scf": {
+   "q": "federal reserve survey of consumer finances 2025 results",
+   "order": "viewCount",
+   "after": "2026-06-01T00:00:00Z",
+   "total_results": 13142,
+   "videos": [
+    {
+     "title": "Average Retirement Savings by Age: The Fed's New Numbers (Are You Behind?)",
+     "id": "3RzZ5bnQWBU",
+     "published": "2026-10-25",
+     "views": 13185,
+     "dur_s": 1131,
+     "channel": "Retire With Beth",
+     "subs": 105,
+     "ch_created": "2026-10-07",
+     "ch_videos": 18,
+     "ratio": 125.57
+    },
+    {
+     "title": "The Real Net Worth Of Most 50-Year-Olds (And Why You're Probably Ahead)",
+     "id": "ErdQRbVvKWc",
+     "published": "2026-10-25",
+     "views": 5624,
+     "dur_s": 1008,
+     "channel": "Scott Finance",
+     "subs": 799,
+     "ch_created": "2026-09-29",
+     "ch_videos": 30,
+     "ratio": 7.04
+    },
+    {
+     "title": "Average U.S. Family: $1.24 Million. Typical Family: $215,900",
+     "id": "ndOGhIhchzY",
+     "published": "2026-10-26",
+     "views": 1233,
+     "dur_s": 40,
+     "channel": "Finance and Chill",
+     "subs": 4,
+     "ch_created": "2026-10-20",
+     "ch_videos": 12,
+     "ratio": 308.25
+    },
+    {
+     "title": "Are you in the top 1%？Source: Federal Reserve SCF (via DQYDJ)",
+     "id": "HpDLLnAGAeo",
+     "published": "2026-07-28",
+     "views": 1330,
+     "dur_s": 12,
+     "channel": "Johnney Zhang",
+     "subs": 1130,
+     "ch_created": "2024-01-05",
+     "ch_videos": 338,
+     "ratio": 1.18
+    },
+    {
+     "title": "Net Worth By Age (2026): Are You in the Top Half?",
+     "id": "1PwCY8UydDI",
+     "published": "2026-10-17",
+     "views": 1682,
+     "dur_s": 496,
+     "channel": "Fair Figures",
+     "subs": 9,
+     "ch_created": "2026-10-11",
+     "ch_videos": 23,
+     "ratio": 186.89
+    },
+    {
+     "title": "How Wealthy Are You Compared to Most Retirees? Check This Retirement Number",
+     "id": "Lj98FmrYRCw",
+     "published": "2026-10-24",
+     "views": 1140,
+     "dur_s": 573,
+     "channel": "Math After Fifty",
+     "subs": 6,
+     "ch_created": "2026-10-22",
+     "ch_videos": 8,
+     "ratio": 190.0
+    },
+    {
+     "title": "Why Your Friends Turn On You When You Quietly Get Rich | Machiavelli",
+     "id": "8606gw8o0VU",
+     "published": "2026-10-21",
+     "views": 322,
+     "dur_s": 1574,
+     "channel": "Dark Psych ",
+     "subs": 694,
+     "ch_created": "2024-11-10",
+     "ch_videos": 31,
+     "ratio": 0.46
+    },
+    {
+     "title": "How Many Retirees Actually Have $1 Million? I Checked the Fed Data Against My Street",
+     "id": "gPlyp5mht5Y",
+     "published": "2026-10-13",
+     "views": 329,
+     "dur_s": 1203,
+     "channel": "Maple Street Money",
+     "subs": 16,
+     "ch_created": "2026-01-08",
+     "ch_videos": 7,
+     "ratio": 20.56
+    },
+    {
+     "title": "$1.46 Million to Retire? One Couple Needs $885K",
+     "id": "dv8CBdAZhLM",
+     "published": "2026-10-28",
+     "views": 195,
+     "dur_s": 915,
+     "channel": "Retire Wiser",
+     "subs": 5,
+     "ch_created": "2026-10-11",
+     "ch_videos": 13,
+     "ratio": 39.0
+    },
+    {
+     "title": "How to Build Wealth From Nothing (The 4 Moves Nobody Teaches)",
+     "id": "mKStXSY7xls",
+     "published": "2026-10-17",
+     "views": 101,
+     "dur_s": 433,
+     "channel": "The Money Reset",
+     "subs": 2,
+     "ch_created": "2026-09-27",
+     "ch_videos": 18,
+     "ratio": 50.5
+    },
+    {
+     "title": "The $38 Million Wealth Gap Behind America's Richer Quarter",
+     "id": "30nuAiOXmB0",
+     "published": "2026-09-06",
+     "views": 39,
+     "dur_s": 1609,
+     "channel": "TheRawMatch",
+     "subs": 2,
+     "ch_created": "2026-07-11",
+     "ch_videos": 16,
+     "ratio": 19.5
+    },
+    {
+     "title": "Net Worth by Age: The New 2025 Fed Data Is Out – Where Do You Stand?",
+     "id": "WbZwt3CwlWM",
+     "published": "2026-10-21",
+     "views": 90,
+     "dur_s": 533,
+     "channel": "Real Numbers",
+     "subs": 5,
+     "ch_created": "2026-10-17",
+     "ch_videos": 20,
+     "ratio": 18.0
+    },
+    {
+     "title": "Net Worth by Age: What the New Fed Survey Shows | Money Code #12",
+     "id": "-EQVe__P6hw",
+     "published": "2026-10-27",
+     "views": 80,
+     "dur_s": 528,
+     "channel": "Apex Wealth Codes",
+     "subs": 1,
+     "ch_created": "2026-10-03",
+     "ch_videos": 15,
+     "ratio": 80.0
+    },
+    {
+     "title": "The Fed Just Asked Americans How Much They Actually Spend — 1 in 4 Save Nothing",
+     "id": "PMZwKDEdFgU",
+     "published": "2026-10-23",
+     "views": 23,
+     "dur_s": 506,
+     "channel": "Compound Corner",
+     "subs": 2,
+     "ch_created": "2026-10-09",
+     "ch_videos": 27,
+     "ratio": 11.5
+    },
+    {
+     "title": "Can More Wealth Ease U.S. Loan Payments? ｜ Home Value vs Cash, Oct 2026 #Debt #Wealth #Loans",
+     "id": "oycPR-3_Evs",
+     "published": "2026-10-12",
+     "views": 17,
+     "dur_s": 49,
+     "channel": "Asset Guardian Global",
+     "subs": 18,
+     "ch_created": "2026-09-08",
+     "ch_videos": 437,
+     "ratio": 0.94
+    },
+    {
+     "title": "Average Net Worth by Age: Are You Behind?",
+     "id": "ziGuYapbDs4",
+     "published": "2026-10-05",
+     "views": 13,
+     "dur_s": 727,
+     "channel": "Money Unboxed TV",
+     "subs": 10,
+     "ch_created": "2026-10-03",
+     "ch_videos": 15,
+     "ratio": 1.3
+    },
+    {
+     "title": "Does Rising U.S. Wealth Mean Easier Loan Payments? | Fed 2025 SCF (2026.10.12 checked)",
+     "id": "_ub-ZkSvdA0",
+     "published": "2026-10-12",
+     "views": 37,
+     "dur_s": 583,
+     "channel": "Asset Guardian Global",
+     "subs": 18,
+     "ch_created": "2026-09-08",
+     "ch_videos": 437,
+     "ratio": 2.06
+    },
+    {
+     "title": "US Net Worth by Age: Why the Average Is Nearly 6x the Typical Family",
+     "id": "fzVzATmEkw4",
+     "published": "2026-10-28",
+     "views": 40,
+     "dur_s": 555,
+     "channel": "The Deep Files",
+     "subs": 6,
+     "ch_created": "2026-07-25",
+     "ch_videos": 25,
+     "ratio": 6.67
+    },
+    {
+     "title": "10 Hidden Signs Someone Has Real Wealth",
+     "id": "J0KSPVnJfRQ",
+     "published": "2026-09-20",
+     "views": 9,
+     "dur_s": 1243,
+     "channel": "Simple Money Lessons",
+     "subs": 622,
+     "ch_created": "2022-12-30",
+     "ch_videos": 34,
+     "ratio": 0.01
+    },
+    {
+     "title": "The Typical Household at 45 to 54 Has $253,700. Are You Ahead?",
+     "id": "SlHKk00yNPw",
+     "published": "2026-10-10",
+     "views": 13,
+     "dur_s": 956,
+     "channel": "Smart Money Sense",
+     "subs": 425,
+     "ch_created": "2023-08-30",
+     "ch_videos": 177,
+     "ratio": 0.03
+    },
+    {
+     "title": "Survey of Consumer Finances 2025: how the typical US family compares",
+     "id": "oxuvTR6sEu4",
+     "published": "2026-10-29",
+     "views": 13,
+     "dur_s": 53,
+     "channel": "Money Charted",
+     "subs": 940,
+     "ch_created": "2026-10-11",
+     "ch_videos": 142,
+     "ratio": 0.01
+    },
+    {
+     "title": "Why Real Millionaires Intentionally Look Middle Class.",
+     "id": "J5LDa96scyo",
+     "published": "2026-06-21",
+     "views": 6,
+     "dur_s": 537,
+     "channel": "Brutal Calculus",
+     "subs": 6,
+     "ch_created": "2026-03-13",
+     "ch_videos": 34,
+     "ratio": 1.0
+    },
+    {
+     "title": "What Is Net Worth? How to Calculate Yours",
+     "id": "Yuwsy1aj8_I",
+     "published": "2026-10-07",
+     "views": 6,
+     "dur_s": 538,
+     "channel": "Night Ferry",
+     "subs": 9,
+     "ch_created": "2026-09-17",
+     "ch_videos": 310,
+     "ratio": 0.67
+    },
+    {
+     "title": "The 25 Times Rule for Retiring at 45",
+     "id": "Y5lAIbUjOTo",
+     "published": "2026-10-22",
+     "views": 8,
+     "dur_s": 48,
+     "channel": "Stratified Wealth",
+     "subs": 4,
+     "ch_created": "2012-10-04",
+     "ch_videos": 108,
+     "ratio": 2.0
+    },
+    {
+     "title": "Why 75-Year-Olds Are America's Richest Generation | Net Worth by Age Explained",
+     "id": "S1omZ7jj10M",
+     "published": "2026-10-23",
+     "views": 3,
+     "dur_s": 178,
+     "channel": "Millionaire Math",
+     "subs": 8,
+     "ch_created": "2026-10-11",
+     "ch_videos": 14,
+     "ratio": 0.38
+    }
+   ]
+  },
+  "retcost": {
+   "q": "how much retirees actually spend per month data",
+   "order": "viewCount",
+   "after": "2025-11-01T00:00:00Z",
+   "total_results": 721429,
+   "videos": [
+    {
+     "title": "How Many Retirees In The USA Have $2 Million (it's not what you think!)",
+     "id": "xJlv2rwKIp8",
+     "published": "2026-04-16",
+     "views": 526064,
+     "dur_s": 667,
+     "channel": "The UnRetired - with RJ",
+     "subs": 74200,
+     "ch_created": "2025-02-25",
+     "ch_videos": 230,
+     "ratio": 7.09
+    },
+    {
+     "title": "Shocking Financial Stats About the Typical American in 2026 (Income, Debt, Housing & Retirement)",
+     "id": "WnRQCDBL_sA",
+     "published": "2026-02-19",
+     "views": 524895,
+     "dur_s": 1771,
+     "channel": "Erin Talks Money | Erin Moriarity",
+     "subs": 445000,
+     "ch_created": "2007-10-21",
+     "ch_videos": 2855,
+     "ratio": 1.18
+    },
+    {
+     "title": "Why You’ll Never Actually Spend Your Retirement Savings",
+     "id": "IYaFO7FGBwc",
+     "published": "2026-07-06",
+     "views": 449430,
+     "dur_s": 1131,
+     "channel": "James Shack",
+     "subs": 283000,
+     "ch_created": "2014-05-25",
+     "ch_videos": 127,
+     "ratio": 1.59
+    },
+    {
+     "title": "75% of Millionaires Live on This Income in Retirement (Real Numbers)",
+     "id": "47oDt4oHJ0k",
+     "published": "2026-05-21",
+     "views": 370106,
+     "dur_s": 1193,
+     "channel": "Erin Talks Money | Erin Moriarity",
+     "subs": 445000,
+     "ch_created": "2007-10-21",
+     "ch_videos": 2855,
+     "ratio": 0.83
+    },
+    {
+     "title": "Net Worth & Income of Top 1%, 5%, 10%, and 25% of Retirees (2026 Update)",
+     "id": "kZHQqigfI0Y",
+     "published": "2026-01-07",
+     "views": 313535,
+     "dur_s": 742,
+     "channel": "Eric at The PeakFP",
+     "subs": 85300,
+     "ch_created": "2022-01-11",
+     "ch_videos": 421,
+     "ratio": 3.68
+    },
+    {
+     "title": "How Much Can You (Actually) Spend in Retirement with £250k/£500k/£1m?",
+     "id": "-EGrPGUBGn0",
+     "published": "2026-07-27",
+     "views": 318645,
+     "dur_s": 1103,
+     "channel": "James Shack",
+     "subs": 283000,
+     "ch_created": "2014-05-25",
+     "ch_videos": 127,
+     "ratio": 1.13
+    },
+    {
+     "title": "How Much Could I Actually Spend If I Retire at 56 with Just $1.1M?",
+     "id": "18hHh_OK7Es",
+     "published": "2026-01-10",
+     "views": 250036,
+     "dur_s": 974,
+     "channel": "Even Better Retirement",
+     "subs": 59100,
+     "ch_created": "2016-02-03",
+     "ch_videos": 89,
+     "ratio": 4.23
+    },
+    {
+     "title": "$3,000 vs $5,000 vs $10,000 a Month in Retirement - How Much Do You REALLY Need to Retire?",
+     "id": "jHZuH1ulxnI",
+     "published": "2026-02-03",
+     "views": 205024,
+     "dur_s": 1134,
+     "channel": "Erin Talks Money | Erin Moriarity",
+     "subs": 445000,
+     "ch_created": "2007-10-21",
+     "ch_videos": 2855,
+     "ratio": 0.46
+    },
+    {
+     "title": "The Retirement Spending Smile Is Dead (Here’s What the Data Actually Shows)",
+     "id": "IOPWlBtsPNU",
+     "published": "2026-02-26",
+     "views": 182144,
+     "dur_s": 1156,
+     "channel": "Erin Talks Money | Erin Moriarity",
+     "subs": 445000,
+     "ch_created": "2007-10-21",
+     "ch_videos": 2855,
+     "ratio": 0.41
+    },
+    {
+     "title": "How Many Retirees Actually Have $1 Million: Federal Reserve Data",
+     "id": "U46mhfql7Tg",
+     "published": "2026-06-13",
+     "views": 173069,
+     "dur_s": 1144,
+     "channel": "Uncle John Financial ",
+     "subs": 46700,
+     "ch_created": "2025-12-30",
+     "ch_videos": 58,
+     "ratio": 3.71
+    },
+    {
+     "title": "What Monthly Income Actually Puts You Ahead of Most American Retirees",
+     "id": "4z-oeJlMTBU",
+     "published": "2026-08-04",
+     "views": 95616,
+     "dur_s": 892,
+     "channel": "American Finance with Liam",
+     "subs": 4060,
+     "ch_created": "2024-01-27",
+     "ch_videos": 104,
+     "ratio": 23.55
+    },
+    {
+     "title": "Real Numbers vs. Headlines: How Many Retirees Actually Need Long-Term Care?",
+     "id": "mb1VPz-neRM",
+     "published": "2025-12-03",
+     "views": 34314,
+     "dur_s": 1280,
+     "channel": "Erin Talks Money | Erin Moriarity",
+     "subs": 445000,
+     "ch_created": "2007-10-21",
+     "ch_videos": 2855,
+     "ratio": 0.08
+    },
+    {
+     "title": "How Many Retirees Actually Have $1 Million? Federal Reserve Data",
+     "id": "VLzBzbkOr0A",
+     "published": "2026-09-27",
+     "views": 37395,
+     "dur_s": 675,
+     "channel": "Old Man Miller Finance",
+     "subs": 976,
+     "ch_created": "2026-08-25",
+     "ch_videos": 25,
+     "ratio": 38.31
+    },
+    {
+     "title": "Once Retirees See This Data, They Stop Worrying About Spending",
+     "id": "d-2bgpG8AIg",
+     "published": "2025-11-29",
+     "views": 20277,
+     "dur_s": 615,
+     "channel": "Tom Josten, CFP®",
+     "subs": 3070,
+     "ch_created": "2025-06-12",
+     "ch_videos": 90,
+     "ratio": 6.6
+    },
+    {
+     "title": "How Many Retirees Actually Have $5,000 a Month? (Federal Reserve Data)",
+     "id": "KMSbAP0vy04",
+     "published": "2026-10-12",
+     "views": 35986,
+     "dur_s": 1189,
+     "channel": "Tom – Lazy Real Estate",
+     "subs": 1410,
+     "ch_created": "2021-08-12",
+     "ch_videos": 88,
+     "ratio": 25.52
+    },
+    {
+     "title": "$2M Pays $10,470 a Month. Most Retirees Spend $7,500.",
+     "id": "BbvwYIwlyzc",
+     "published": "2026-10-11",
+     "views": 40918,
+     "dur_s": 2000,
+     "channel": "Tom - Lazy Investor",
+     "subs": 100000,
+     "ch_created": "2025-08-20",
+     "ch_videos": 516,
+     "ratio": 0.41
+    },
+    {
+     "title": "What American Retirees Actually Receive Each Month From All 3 Income Sources",
+     "id": "jUi_qfpsl0s",
+     "published": "2026-10-09",
+     "views": 29920,
+     "dur_s": 1498,
+     "channel": "Ask Uncle Vern",
+     "subs": 604,
+     "ch_created": "2026-06-14",
+     "ch_videos": 53,
+     "ratio": 49.54
+    },
+    {
+     "title": "The Real Numbers: How Much Do Canadian Retirees Bring In Each Month",
+     "id": "Q0PsymcoLVc",
+     "published": "2026-05-05",
+     "views": 16853,
+     "dur_s": 615,
+     "channel": "Retire with Scott and Chase of Raymond James Ltd",
+     "subs": 164,
+     "ch_created": "2026-04-09",
+     "ch_videos": 155,
+     "ratio": 102.76
+    },
+    {
+     "title": "Here’s Exactly What Retirees Spend Each Year (Real Data)",
+     "id": "oO-Ap6MuvlA",
+     "published": "2026-05-13",
+     "views": 30015,
+     "dur_s": 60,
+     "channel": "Erin Talks Money | Erin Moriarity",
+     "subs": 445000,
+     "ch_created": "2007-10-21",
+     "ch_videos": 2855,
+     "ratio": 0.07
+    },
+    {
+     "title": "How Many Retirees Actually Have $5,000 a Month? (Federal Reserve Data)",
+     "id": "Ynl0SiaAk3Y",
+     "published": "2026-10-06",
+     "views": 18932,
+     "dur_s": 678,
+     "channel": "Old Man Miller Finance",
+     "subs": 976,
+     "ch_created": "2026-08-25",
+     "ch_videos": 25,
+     "ratio": 19.4
+    },
+    {
+     "title": "How Many Canadian Retirees ACTUALLY Have $500K or More?",
+     "id": "4db9pBA5gB8",
+     "published": "2026-08-14",
+     "views": 13372,
+     "dur_s": 437,
+     "channel": "Beaches Financial Group - Bellwether Family Wealth",
+     "subs": 7190,
+     "ch_created": "2022-02-04",
+     "ch_videos": 263,
+     "ratio": 1.86
+    },
+    {
+     "title": "How Many Retirees Actually Have a Pension? (Federal Reserve Data)",
+     "id": "rZzMO8XTbgg",
+     "published": "2026-10-27",
+     "views": 23607,
+     "dur_s": 521,
+     "channel": "Old Man Miller Finance",
+     "subs": 976,
+     "ch_created": "2026-08-25",
+     "ch_videos": 25,
+     "ratio": 24.19
+    },
+    {
+     "title": "Most People Retire On THIS Much",
+     "id": "CJZSeJcUDts",
+     "published": "2026-10-25",
+     "views": 15871,
+     "dur_s": 2252,
+     "channel": "Tom - Lazy Income",
+     "subs": 2670,
+     "ch_created": "2016-10-28",
+     "ch_videos": 78,
+     "ratio": 5.94
+    },
+    {
+     "title": "What American Retirees Actually Spend Each Month (The Real 2026 Numbers)",
+     "id": "V8kdmJBD4c8",
+     "published": "2026-10-12",
+     "views": 8036,
+     "dur_s": 1419,
+     "channel": "Ask Uncle Vern",
+     "subs": 604,
+     "ch_created": "2026-06-14",
+     "ch_videos": 53,
+     "ratio": 13.3
+    },
+    {
+     "title": "How Much Do Retirees Actually Spend Each Month? | Government Data",
+     "id": "HOU4nIneQy0",
+     "published": "2026-10-04",
+     "views": 1183,
+     "dur_s": 1196,
+     "channel": "Smart Living with Dawn and Jerry",
+     "subs": 22,
+     "ch_created": "2026-10-02",
+     "ch_videos": 11,
+     "ratio": 53.77
+    }
+   ]
+  }
+ }
+}

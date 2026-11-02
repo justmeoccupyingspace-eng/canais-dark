@@ -114,7 +114,27 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 
 Ferramentas de pauta: `mine.yml` (sem input = garimpo de ultrapassagens/quem subiu/quem caiu no WDI; com `dump` = séries do WDI para explorar) → branch mine-<run>. O datamapper do IMF bloqueia os runners (403): para projeção do WEO, snapshot com fonte.
 
-## B · How It Ticks
+## B · Nest Egg Atlas (ex-How It Ticks) — decisão 01/11 22:40 BRT (Kauan: "volta a usar a cota no outro canal, muda o tema, público fixo, máximo RPM")
+- Público fixo: americanos de 55 a 75 anos, perto de se aposentar ou aposentados. Tema: o dinheiro da aposentadoria em dados oficiais — "onde você está" (percentis por idade, renda, estado).
+- RPM (estimativas de terceiros, US$/mil views): aposentadoria 12–18 médio (OutlierKit, jun/2026), finanças pessoais 8–20 (Peeksy, abr/2026); Q4 +30–60%. Polônia 0,60 vs EUA 5,11 na amostra de música da Dynamoi → o público do Chartbound paga ~8× menos.
+- Evidência de que canal novo entra (q9/q10, research-41371308058 e -41371483680): Retiree Math (criado 09/10/26) 350 mil em "How Wealthy Are You Compared to Most Retirees?"; Income Over Wealth (fev/26) 402 mil "6 Wealth Tiers in Retirement (Where Do You Rank?)"; Dean Finance (640 inscritos) 167 mil; Uncle John Financial (dez/25) 184 mil "401(k) Balances by Age: Federal Reserve Survey Data"; Trevor Phibbs (13 mil inscritos) 2,4 mi "Social Security at 62 vs 70". Contra: formato "anúncio do IRS/limite do 401k" está morto (dezenas de canais IA com 0–100 views); vários canais IA criados em set–out/26 com <2 mil views → corrida do ouro, distribuição muito desigual.
+- Nossa vantagem: dado oficial com gráfico de verdade + número calculado por nós (microdados do SCF 2025, publicado pelo Fed em 09/10/2026; SSA; BLS; Censo). Os concorrentes citam o resumo; nós mostramos o percentil exato por idade.
+- Regra dura: nada de urgência falsa nem boato ("checks stopping", "born before 1967", "new bill gives $4,188"). Sempre "educational, not financial advice" na descrição. Sem mascote: visual limpo, texto grande, ritmo ~140 wpm.
+- Filtro de pauta (0–2 cada, entra com ≥8/10): 1) é o dinheiro do espectador na aposentadoria; 2) ele se posiciona (onde estou?); 3) dado oficial recente + cálculo nosso; 4) prova de demanda: canal <50 mil inscritos com ≥100 mil views no ângulo nos últimos 12 meses; 5) vale por 6 meses ou mais.
+- Cadência: 1 longo/dia a partir de 03/11, 15:00Z (12:00 BRT = 10:00 ET), na cota do modelo que o Chartbound não usar (Chartbound 3.1 / B 3.8); até 10 pedidos → pode ir a ~12 min. 2 cortes (17:00 e 21:00 BRT). Faixa polonesa do Chartbound só com sobra de cota.
+- Lançamento (02/11): renomear canal e @ no Studio (nome e @ "Nest Egg Atlas"/@nesteggatlas, sem concorrente com esse nome no q10), descrição, banner e avatar novos; antes do 1º vídeo, deixar PRIVADOS os vídeos antigos de tecnologia (B-L01, B-L02 + cortes + Shorts) — reversível, Kauan avisado 01/11.
+- Testes: B1 formato "onde você está" × "quantos têm X" (views 7 dias) · B2 miniatura número+barra de percentil × só texto (clique) · B3 duração 8 × 12 min (retenção e RPM depois do YPP) · B4 horário 15:00Z × 20:00Z.
+- Datas: 15/11 (~12 longos: mediana <500 views em 7 dias e nenhum ≥5 mil → trocar formato) · 15/12 (ritmo de inscritos e horas para o YPP) · regra nova do YPP em 01/02/2027.
+
+| id | tema | estado | publicação |
+|---|---|---|---|
+| B-N01 | Net Worth by Age: The Fed's New 2025 Numbers (Where Do You Rank?) — percentis 55–64/65–74/75+ dos microdados SCF 2025 | roteiro 02/11 | 03/11 15:00Z |
+| B-N02 | How Many Retirees Actually Have $1 Million? (New Fed Data) | banco | 04/11 |
+| B-N03 | Social Security at 62 vs 67 vs 70: What People Actually Get (SSA + COLA 2027 de 3,6%) | banco | |
+| B-N04 | What Retirees Actually Spend Each Month (BLS CE 65+) | banco | |
+| B-N05 | The Income That Puts You in the Top 10% of Retirees (Censo CPS ASEC) | banco | |
+
+## B · How It Ticks (arquivado 01/11 — vídeos ficam privados no lançamento do Nest Egg Atlas)
 | id | tema | estado | publicação |
 |---|---|---|---|
 | B-L01 | Tiny math errors that cost lives and millions | publicado (DJEANTgbtD0) | 29/10 18:40Z |
