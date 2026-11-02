@@ -82,6 +82,13 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 - Se a veia polonesa confirmar (04/11): faixa de áudio em polonês nos vídeos da Polônia (cota grátis de voz).
 - Gatilhos: 04/11 (≥5 mil em 72 h = veia confirmada); 15/11 (todos <1 mil → 3 longos/semana); 15/12 (<500 inscritos → regra antiga perdida, manutenção).
 
+## Execução 02/11 (11:30Z)
+- Teste A/B de miniatura ativo (3 versões: mascote atual × MAPA estilo Polônia × bandeiras sem mascote) em A-L06, A-L07, A-L08; A-L09 com mascote × duelo de linhas × bandeiras (criado antes do mapa). Variantes em src/long/L1.jsx (thumb.v = map | duel | flags); arquivos em out/thumbs/.
+- A miniatura atual do Polônia × Japão é um MAPA (Polônia em vermelho), não o duelo de linhas do roteiro original → hipótese T2 = mapa.
+- Telas finais: A-L09 → Polônia × Japão (elemento sobre o card WATCH NEXT) + card 7:05 "Poland passed Japan too"; A-L08 → A-L09 + card 6:50 "Spain passed Japan too".
+- Playlist "Who Passed Whom" criada (PLRrtWo-xNj6Q, pública, 5 vídeos).
+- Números 11:50Z: A-L06 60 views em 18 h, A-L07 5 views em 13 h (fraco; veredito 04/11).
+
 ## Linha de foco (01/11 22:30 BRT; doc "Canais Dark — Plano Operacional", seção "Linha de foco do Chartbound")
 - Foco único: "quem está passando quem" — país em ascensão acaba de passar um mais rico/famoso, contado pelo lado de quem subiu. Série principal: Leste Europeu passando Sul/Oeste (Polônia primeiro). Controle: Turquia, Vietnã, Filipinas, Índia, Nigéria, Espanha.
 - Filtro (0–2 cada, entra com ≥8/10): 1) país que sobe tem público grande que assiste em inglês; 2) orgulho, nunca derrota; 3) dado ≤60 dias ou cálculo nosso; 4) nenhum concorrente ≥500 mil views em 2 anos na mesma ultrapassagem; 5) rivalidade (o lado ultrapassado também comenta).
@@ -105,7 +112,7 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 | A-L11 | (REBAIXADO 01/11: tema negativo) South Africans Are Poorer Than in 2008. Here's Why. (Egito 2019, Indonésia 2023, Vietnã 2024 passaram em PPP; pico real em 2013) | pronto: checks ok, ~1.270 palavras, voz 3.8, teste visual ok · tela final → A-L08 | — |
 | A-L12 | Bulgária: do mais pobre da UE ao euro (jan/26), 0,31→0,49 dos EUA desde 2010 | banco: filtro ok (q6; maior longo 78 mil) | |
 | A-L13 | Albânia mais rica por pessoa que México (PPP 2024) e Brasil (nominal 2024) | banco: q7 ok (TLDR 115 mil; nada ≥500 mil) | |
-| A-L14 | Grécia passada por Polônia (nominal 2024), Croácia (2025), Romênia (PPP) — da riqueza ao penúltimo lugar da UE | roteiro 02/11 (q7 ok; concorrente de 24/10/26 com 19 mil) | 03/11 18:00Z |
+| A-L14 | In 2008, Greece Was Twice as Rich as Poland. Now It's Behind. (Polônia 2024 e Croácia 2025 passaram em US$; 12 de 13 passaram em PPS; só a Bulgária atrás) | pronto 02/11: 1.149 palavras, voz 3.1, 75 checks ok (run data 41440904303), teste visual edge 41441072459 · miniatura mapa · WATCH NEXT → A-L06 | 03/11 18:00Z |
 | A-L15 | Argentina passada por Costa Rica e Sérvia (PPP 2024); Sérvia também no nominal 2025 | banco: q7 ok (Econ 38 mil) | |
 | A-L16 | República Dominicana: passou o México (PPP 2021), crescimento mais longo da América Latina | banco: q7 ok (nada ≥2 mil) | |
 | A-L17 | Polônia passou a Espanha (renda por pessoa; Tusk usou como discurso, Euronews 26/02/2026) — série Polônia | banco: conferir dado (FMI/Eurostat PPP) + saturação (ytresearch) | 04/11 18:00Z se passar |
