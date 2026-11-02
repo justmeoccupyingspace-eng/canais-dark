@@ -97,11 +97,6 @@
      "at": "for the first time",
      "iso": "POL",
      "year": 2024
-    },
-    {
-     "at": "by a hair",
-     "iso": "HRV",
-     "year": 2025
     }
    ],
    "react": [
@@ -265,6 +260,11 @@
    },
    "narration": "Greece's crash began with a number nobody believed. {p} In late 2009, a new government admitted that the budget deficit was far bigger than reported: more than double the official figure. {p} Lenders panicked, and Greece could no longer borrow. {pp} Ireland, Portugal, Spain and Cyprus all needed help in those years too. But Greece fell furthest: one of the deepest peacetime collapses of any rich country since the Second World War. {p} By 2013, Greek output per person, after inflation, was down about a quarter from 2008. {p} It still hasn't fully recovered: in 2025, it was about eight percent below its 2008 level. {p} Poland's grew about eighty-four percent.",
    "keys": [
+    {
+     "at": "In late 2009",
+     "year": 2009.0,
+     "dur": 3.0
+    },
     {
      "at": "By 2013",
      "year": 2013.0,
@@ -728,6 +728,11 @@
    "narration": "And Greece's comeback has quietly begun. {p} Since 2021, the Greek economy has grown faster than the EU average every single year. {p} Its government now runs a budget surplus: in 2025, about two percent of the economy. Poland ran a deficit of about seven percent, one of the largest in the EU. {pp} And Greek debt is falling: from more than two hundred percent of the economy in 2020, to about a hundred and forty-five percent in 2025. Still the highest in the EU, but down by more than sixty points in five years.",
    "keys": [
     {
+     "at": "quietly begun",
+     "year": 2015.0,
+     "dur": 4.0
+    },
+    {
      "at": "more than two hundred percent",
      "year": 2020.0,
      "dur": 4.0
@@ -826,7 +831,7 @@
     2000,
     2025
    ],
-   "start": 2000.0,
+   "start": 2025.0,
    "y": [
     0,
     56000
@@ -835,18 +840,6 @@
    "fmt": "usdk0",
    "hl": "BGR",
    "narration": "So who's next? {p} Adjusted for prices, Bulgaria is the only EU country still behind Greece. And by the World Bank's measure, it's now within about two percent. {p} In 2000, Greece produced almost three times as much per person as Bulgaria, at those prices. {pp} If Bulgaria keeps growing faster, Greece could soon be last in the European Union. Romania already passed it, back in 2019. {p} And Bulgaria just joined the euro, in January 2026: the same club Greece joined twenty-five years earlier.",
-   "keys": [
-    {
-     "at": "In 2000",
-     "year": 2000.0,
-     "dur": 3.0
-    },
-    {
-     "at": "If Bulgaria keeps",
-     "year": 2025.0,
-     "dur": 6.0
-    }
-   ],
    "labels": [
     {
      "at": "within about two percent",
