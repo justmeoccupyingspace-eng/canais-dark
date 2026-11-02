@@ -1,7 +1,7 @@
 import React, {useEffect, useMemo, useState} from 'react';
 import {AbsoluteFill, Sequence, Audio, Img, staticFile, useCurrentFrame, interpolate, spring, Easing, delayRender, continueRender} from 'remotion';
 import {ThreeCanvas} from '@remotion/three';
-import {geoOrthographic, geoPath, geoGraticule10, geoInterpolate, geoCentroid} from 'd3-geo';
+import {geoOrthographic, geoNaturalEarth1, geoPath, geoGraticule10, geoInterpolate, geoCentroid} from 'd3-geo';
 import {feature} from 'topojson-client';
 import world from 'world-atlas/countries-50m.json';
 import {Mascot, Shadow, Lights} from '../three/Mascot.jsx';
@@ -18,7 +18,7 @@ const ramp = (T, t0, dur = 0.6) => (t0 == null ? 0 : interpolate(T, [t0, t0 + du
 const sp = (T, t0, cfg = {damping: 14, stiffness: 170}) => (t0 == null ? 0 : spring({frame: (T - t0) * FPS, fps: FPS, config: cfg}));
 const on = (T, t0) => t0 != null && T >= t0;
 
-const NUM = {POL: '616', DEU: '276', JPN: '392', GBR: '826', IRL: '372', ESP: '724', FRA: '250', ITA: '380', NLD: '528', BEL: '056', LUX: '442', DNK: '208', GRC: '300', PRT: '620', AUT: '040', FIN: '246', SWE: '752', CZE: '203', SVK: '703', HUN: '348', SVN: '705', EST: '233', LVA: '428', LTU: '440', CYP: '196', MLT: '470', BGR: '100', ROU: '642', HRV: '191', KOR: '410', UKR: '804', SAU: '682', IRQ: '368', KWT: '414', ISR: '376', USA: '840', CHN: '156', RUS: '643', BLR: '112', SRB: '688', BIH: '070', MDA: '498', ALB: '008', MKD: '807', MNE: '499', NOR: '578', CHE: '756', ISL: '352', ARE: '784', QAT: '634', OMN: '512', BHR: '048', BRN: '096', YEM: '887', JOR: '400', IRN: '364', VNM: '704', IDN: '360', PHL: '608', THA: '764', MYS: '458', IND: '356', BGD: '050', MMR: '104', KHM: '116', LAO: '418'};
+const NUM = {TUR: '792', POL: '616', DEU: '276', JPN: '392', GBR: '826', IRL: '372', ESP: '724', FRA: '250', ITA: '380', NLD: '528', BEL: '056', LUX: '442', DNK: '208', GRC: '300', PRT: '620', AUT: '040', FIN: '246', SWE: '752', CZE: '203', SVK: '703', HUN: '348', SVN: '705', EST: '233', LVA: '428', LTU: '440', CYP: '196', MLT: '470', BGR: '100', ROU: '642', HRV: '191', KOR: '410', UKR: '804', SAU: '682', IRQ: '368', KWT: '414', ISR: '376', USA: '840', CHN: '156', RUS: '643', BLR: '112', SRB: '688', BIH: '070', MDA: '498', ALB: '008', MKD: '807', MNE: '499', NOR: '578', CHE: '756', ISL: '352', ARE: '784', QAT: '634', OMN: '512', BHR: '048', BRN: '096', YEM: '887', JOR: '400', IRN: '364', VNM: '704', IDN: '360', PHL: '608', THA: '764', MYS: '458', IND: '356', BGD: '050', MMR: '104', KHM: '116', LAO: '418'};
 const NAME = {POL: 'Poland', JPN: 'Japan', ESP: 'Spain', DEU: 'Germany', GRC: 'Greece', PRT: 'Portugal', UKR: 'Ukraine', KOR: 'South Korea', GBR: 'Britain', IRL: 'Ireland', CHN: 'China', ITA: 'Italy', USA: 'United States', HUN: 'Hungary', ISR: 'Israel', WLD: 'World', EUU: 'EU average', EU: 'EU average', LUX: 'Luxembourg', FRA: 'France', BEL: 'Belgium', NLD: 'Netherlands', DNK: 'Denmark', CHE: 'Switzerland', NOR: 'Norway', LVA: 'Latvia', LTU: 'Lithuania', EST: 'Estonia', BGR: 'Bulgaria', ROU: 'Romania', HRV: 'Croatia', SRB: 'Serbia', BIH: 'Bosnia', ALB: 'Albania', MDA: 'Moldova', CZE: 'Czechia', TUR: 'Turkey', MEX: 'Mexico', ARG: 'Argentina', SVN: 'Slovenia', SVK: 'Slovakia', MLT: 'Malta', SAU: 'Saudi Arabia', KWT: 'Kuwait', ARE: 'UAE', QAT: 'Qatar', OMN: 'Oman', BHR: 'Bahrain', BRN: 'Brunei', ZAF: 'South Africa', EGY: 'Egypt', SSF: 'Sub-Saharan Africa', VNM: 'Vietnam', IDN: 'Indonesia', LCN: 'Latin America', OED: 'OECD', PHL: 'Philippines', THA: 'Thailand', MYS: 'Malaysia', IND: 'India', BGD: 'Bangladesh'};
 const COUNTRIES = feature(world, world.objects.countries).features;
 const BYNUM = Object.fromEntries(COUNTRIES.map((c) => [c.id, c]));
@@ -1497,6 +1497,33 @@ export const Thumb = ({spec}) => {
             <Mascot {...p.mascot} pose="shock" prevPose="shock" poseAt={-60} talk={0} look={[-0.6, 0.2]} enter={-60} scale={1.9} position={[0.05, -0.85, 0]} turn={-0.2} />
           </ThreeCanvas>
         </div>
+      </AbsoluteFill>
+    );
+  }
+  if (th && th.v === 'map') {
+    // variante A/B "mapa" (formato da miniatura atual do Polônia × Japão): país que subiu aceso, o ultrapassado em segundo tom
+    const isoOf = Object.fromEntries(Object.entries(NUM).map(([k, v]) => [v, k]));
+    const proj = th.proj === 'ne'
+      ? geoNaturalEarth1().scale(th.scale || 260).translate([th.cx || 820, th.cy || 400]).rotate([-(th.lon || 0), 0])
+      : geoOrthographic().scale(th.scale || 1400).translate([th.cx || 820, th.cy || 380]).rotate([-th.lon, -th.lat]).clipAngle(90);
+    const path = geoPath(proj);
+    const c1 = th.c1 || '#ff3b55', c2 = th.c2 || '#8fa2e0';
+    const pin = (iso) => { const c = BYNUM[NUM[iso]]; const xy = c ? proj(geoCentroid(c)) : null; return xy; };
+    return (
+      <AbsoluteFill style={{background: '#070c22'}}>
+        <svg width={1280} height={720} style={{position: 'absolute'}}>
+          <rect width={1280} height={720} fill="#0b1433" />
+          {COUNTRIES.map((c) => {
+            const iso = isoOf[c.id];
+            const fill = iso === th.iso ? c1 : iso === th.vs ? c2 : '#22325f';
+            const d = path(c);
+            return d ? <path key={c.id} d={d} fill={fill} stroke="#0a1230" strokeWidth={iso === th.iso || iso === th.vs ? 2 : 0.8} /> : null;
+          })}
+        </svg>
+        {[th.iso, th.vs].map((iso) => { const xy = pin(iso); return xy ? <div key={iso} style={{position: 'absolute', left: xy[0] - 45, top: xy[1] - 30}}><Flag iso={iso} w={90} /></div> : null; })}
+        <div style={{position: 'absolute', left: 0, top: 0, width: 640, height: 720, background: 'linear-gradient(90deg, #070c22ee 0%, #070c22aa 60%, #070c2200 100%)'}} />
+        <div style={{position: 'absolute', left: 56, top: 60, fontFamily: SANS, fontWeight: 900, fontSize: 60, color: '#fff', textShadow: '0 6px 0 #000a', whiteSpace: 'nowrap'}}>{th.top}</div>
+        <div style={{position: 'absolute', left: 56, top: 150, fontFamily: SANS, fontWeight: 900, fontSize: (th.big || '').length > 7 ? 120 : 150, lineHeight: 0.92, color: p.acc, letterSpacing: -5, textShadow: '0 10px 0 #000b', whiteSpace: 'nowrap'}}>{th.big}<br /><span style={{color: '#fff', fontSize: 96}}>{th.line2}</span></div>
       </AbsoluteFill>
     );
   }
