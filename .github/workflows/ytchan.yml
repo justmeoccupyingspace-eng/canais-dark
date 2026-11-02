@@ -1,0 +1,30 @@
+name: ytchan
+run-name: ytchan ${{ inputs.ch }} ${{ inputs.mode }}
+on:
+  workflow_dispatch:
+    inputs:
+      ch: {description: "A ou B", required: true, default: "B"}
+      mode: {description: "list | private", required: true, default: "list"}
+      ids: {description: "IDs (vírgula) para deixar privados", required: false, default: ""}
+      all: {description: "1 = todos os públicos/agendados viram privados", required: false, default: ""}
+permissions:
+  contents: write
+jobs:
+  c:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/ytchan.py /tmp/chan.json
+        env:
+          CH: ${{ inputs.ch }}
+          MODE: ${{ inputs.mode }}
+          IDS: ${{ inputs.ids }}
+          ALL: ${{ inputs.all }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_A: ${{ secrets.YT_REFRESH_A }}
+          YT_REFRESH_B: ${{ secrets.YT_REFRESH_B }}
+      - run: |
+          git config user.name producer; git config user.email producer@users.noreply.github.com
+          git checkout --orphan chan-${{ github.run_id }} && git rm -rf . -q
+          cp /tmp/chan.json . && git add . && git commit -qm chan && git push -f origin chan-${{ github.run_id }}
