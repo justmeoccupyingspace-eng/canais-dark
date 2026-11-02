@@ -135,7 +135,7 @@ Ferramentas de pauta: `mine.yml` (sem input = garimpo de ultrapassagens/quem sub
 
 | id | tema | estado | publicação |
 |---|---|---|---|
-| B-N01 | Net Worth at 55, 65 and 75: The Fed's New Numbers (Where Do You Rank?) — percentis 55–64/65–74/75+ dos microdados SCF 2025 | pronto 02/11: 1.288 palavras, voz Algieba (3.8; teste voiceB 41462323111: Algieba 132 wpm, variação de tom 6,3, pausas naturais; Gacrux 132 wpm sem pausas; Sadaltager leu as instruções), 42 checks ok (scf.yml run 41441226994 → research/scf2025.json; medianas batem com a Tabela 2), sem mascote (PAL nesteggatlas.noHost), view rank nova · teste visual edge 41442007352 | 02/11 18:30Z (Kauan pediu hoje; render 41477075491 com gemini-2.5-flash-preview-tts, cota do 3.8/3.1 esgotada) |
+| B-N01 | Net Worth at 55, 65 and 75: The Fed's New Numbers (Where Do You Rank?) | agendado (OS94QbIKvWw, render 41477075491 gemini-2.5-flash-preview-tts/Algieba, 8:15) · cortes e7hQSkqSnnM (20:30Z), Ou6IdtVIiMI (03/11 00:00Z) · tela final: inscrição + 'melhor para o espectador' sobre o card COMING NEXT | 02/11 18:30Z |
 | B-N02 | How Many Retirees Actually Have $1 Million? (New Fed Data) | roteiro 03/11 | 03/11 18:30Z |
 | B-N03 | Social Security at 62 vs 67 vs 70: What People Actually Get (SSA + COLA 2027 de 3,6%) | banco | |
 | B-N04 | What Retirees Actually Spend Each Month (BLS CE 65+) | banco | |
