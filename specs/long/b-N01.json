@@ -90,6 +90,12 @@
    "narration": "But the typical household hides a huge spread. {p} About one in three households over fifty-five is worth a million dollars or more. {p} And about six percent of households aged fifty-five to sixty-four are worth nothing at all, or less than nothing. {pp} So in this video, we'll build the full ladder for each age group, from the bottom ten percent to the top one percent, straight from the Fed's own public data, so you can see exactly where you stand. {p} <soft>One note before we start: this is education, not financial advice.</soft>",
    "items": [
     {
+     "at": "huge spread",
+     "text": "A huge spread",
+     "serif": true,
+     "size": 60
+    },
+    {
      "at": "one in three",
      "text": "1 in 3 over 55: $1M or more",
      "color": "acc"
@@ -277,13 +283,13 @@
     {
      "at": "almost two million",
      "value": 1897600.0,
-     "fmt": "usd0",
+     "fmt": "usdkm",
      "label": "average (mean) net worth"
     },
     {
      "at": "a much better yardstick",
      "value": 431300.0,
-     "fmt": "usd0",
+     "fmt": "usdkm",
      "label": "middle (median) household"
     }
    ],
@@ -343,7 +349,7 @@
     {
      "at": "two hundred and forty-five thousand",
      "value": 245000,
-     "fmt": "usd0",
+     "fmt": "usdkm",
      "label": "median home equity"
     }
    ],
@@ -388,13 +394,13 @@
     {
      "at": "two hundred and thirty-nine thousand",
      "value": 239000.0,
-     "fmt": "usd0",
+     "fmt": "usdkm",
      "label": "median, ages 55–64"
     },
     {
      "at": "two hundred and fifty-seven thousand",
      "value": 257000.0,
-     "fmt": "usd0",
+     "fmt": "usdkm",
      "label": "median, ages 65–74"
     }
    ],
@@ -407,6 +413,12 @@
    "bg": "none",
    "narration": "So here's a quick cheat sheet. {p} If you're between fifty-five and seventy-four, and your household is worth more than about four hundred and thirty thousand dollars, you're above the middle for your age. {p} Around one point three to one point four million puts you in the top quarter. {p} About three and a half million and up: the top ten percent. {p} At seventy-five and older, the middle is a bit higher: about five hundred and five thousand. {pp} One last number that surprised me: the typical household in these age groups has only about ten thousand dollars in checking and savings accounts. {p} Most of the wealth is locked in the house and in retirement accounts.",
    "items": [
+    {
+     "at": "quick cheat sheet",
+     "text": "Cheat sheet, ages 55–74",
+     "serif": true,
+     "size": 56
+    },
     {
      "at": "above the middle",
      "text": "Above the middle: $430k+",
@@ -438,7 +450,7 @@
    "narration": "If this was useful, consider subscribing. We take one money question that matters in retirement, and answer it with real data, no hype. {p} And tell me in the comments: which number surprised you most?",
    "items": [
     {
-     "at": "consider subscribing",
+     "at": "If this was useful",
      "text": "Real data. No hype.",
      "color": "acc"
     },

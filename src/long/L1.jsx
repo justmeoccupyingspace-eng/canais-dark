@@ -50,6 +50,7 @@ export const fmt = (v, k) => {
     case 'mil': return (v / 1e6).toFixed(1) + 'M';
     case 'eurb': return '€' + v.toFixed(1) + 'B';
     case 'eurb0': return '€' + Math.round(v) + 'B';
+    case 'usdkm': return Math.abs(v) >= 1e6 ? '$' + (v / 1e6).toFixed(Math.abs(v) >= 1e7 ? 0 : 1) + 'M' : '$' + Math.round(v / 1000) + 'k';
     case 'm': return Math.round(v) + ' million';
     case 'km': return Math.round(v).toLocaleString('en-US') + ' km';
     case 'k0': return v >= 995000 ? (v / 1e6).toFixed(2).replace(/0$/, '') + 'M' : Math.round(v / 1000) + 'k';
@@ -1215,7 +1216,7 @@ const End = ({sh, p, data, T}) => {
             <div style={{fontFamily: SANS, fontWeight: 600, fontSize: 28, color: '#ffffff90'}}>{nx.sub}</div>
           </div>
         </div>
-        <div style={{position: 'absolute', left: 140, top: 760, opacity: sp(T, sh.t0 + 0.8), fontFamily: SANS, fontWeight: 900, fontSize: 44, color: '#0d1020', background: p.warm, padding: '14px 34px', borderRadius: 40}}>{sh.cta || 'Subscribe for one chart a day'}</div>
+        <div style={{position: 'absolute', left: 140, top: 760, opacity: sp(T, sh.t0 + 0.8), fontFamily: SANS, fontWeight: 900, fontSize: 44, color: '#0d1020', background: p.warm, padding: '14px 34px', borderRadius: 40}}>{sh.cta || p.cta || 'Subscribe for one chart a day'}</div>
       </AbsoluteFill>
     );
   }
@@ -1364,28 +1365,30 @@ const Rank = ({sh, p, T}) => {
   const bars = sh.bars || [];
   const vmax = sh.vmax || Math.max(...bars.map((b) => Math.abs(b.value)));
   const n = bars.length;
-  const rowH = Math.min(118, 640 / Math.max(1, n));
-  const top = sh.title ? 300 : 230;
-  const W = sh.w || 1080;
+  const rowH = Math.min(132, 620 / Math.max(1, n));
+  const blockH = n * rowH;
+  const top = Math.max(sh.title ? 330 : 240, 300 + (660 - blockH) / 2);
+  const W = sh.w || 860;
   return (
     <AbsoluteFill>
-      {sh.title ? <div style={{position: 'absolute', left: 150, top: 150, fontFamily: SANS, fontWeight: 900, fontSize: 52, color: '#fff', opacity: sp(T, sh.t0)}}>{sh.title}</div> : null}
-      {sh.sub ? <div style={{position: 'absolute', left: 152, top: 222, fontFamily: SANS, fontWeight: 600, fontSize: 30, color: '#ffffff90', opacity: sp(T, sh.t0 + 0.3)}}>{sh.sub}</div> : null}
+      {sh.title ? <div style={{position: 'absolute', left: 150, top: 120, fontFamily: SANS, fontWeight: 900, fontSize: 68, color: '#fff', opacity: sp(T, sh.t0), letterSpacing: -1}}>{sh.title}</div> : null}
+      {sh.sub ? <div style={{position: 'absolute', left: 153, top: 212, fontFamily: SANS, fontWeight: 600, fontSize: 34, color: '#ffffff99', opacity: sp(T, sh.t0 + 0.3)}}>{sh.sub}</div> : null}
       {bars.map((b, i) => {
         const k = ramp(T, b.t ?? sh.t0, 1.0);
         if (k <= 0.001) return null;
         const hl = b.hl || sh.hl === i;
         const col = hl ? p.acc : b.color ? (p[b.color] || b.color) : '#c9d6ea';
-        const w = Math.max(6, W * (Math.abs(b.value) / vmax)) * Easing.out(Easing.cubic)(k);
+        const w = Math.max(8, W * (Math.abs(b.value) / vmax)) * Easing.out(Easing.cubic)(k);
+        const fs = Math.min(46, rowH * 0.4);
         return (
-          <div key={i} style={{position: 'absolute', left: 150, top: top + i * rowH, height: rowH - 18, display: 'flex', alignItems: 'center', gap: 26, opacity: Math.min(1, k * 3)}}>
-            <div style={{width: 300, textAlign: 'right', fontFamily: SANS, fontWeight: 800, fontSize: Math.min(40, rowH * 0.42), color: hl ? p.acc : '#ffffffd8'}}>{b.label}</div>
-            <div style={{width: w, height: Math.min(64, rowH * 0.56), borderRadius: 12, background: col, boxShadow: hl ? `0 0 30px ${p.acc}66` : 'none'}} />
-            <div style={{fontFamily: SANS, fontWeight: 900, fontSize: Math.min(54, rowH * 0.52), color: col}}>{fmt(b.value * (sh.count === false ? 1 : k), sh.fmt || 'usd0')}</div>
+          <div key={i} style={{position: 'absolute', left: 120, top: top + i * rowH, height: rowH - 20, display: 'flex', alignItems: 'center', gap: 30, opacity: Math.min(1, k * 3)}}>
+            <div style={{width: 400, textAlign: 'right', fontFamily: SANS, fontWeight: 800, fontSize: fs, lineHeight: 1.05, color: hl ? p.acc : '#ffffffd8'}}>{b.label}</div>
+            <div style={{width: w, height: Math.min(74, rowH * 0.58), borderRadius: 14, background: col, boxShadow: hl ? `0 0 34px ${p.acc}66` : 'none'}} />
+            <div style={{fontFamily: SANS, fontWeight: 900, fontSize: Math.min(64, rowH * 0.5), color: col, whiteSpace: 'nowrap'}}>{fmt(b.value * (sh.count === false ? 1 : k), sh.fmt || 'usd0')}</div>
           </div>
         );
       })}
-      {sh.kicker && sh.kicker.t != null ? <Pill x={150} y={960} text={sh.kicker.text} color={p.acc} T={T} t0={sh.kicker.t} /> : null}
+      {sh.kicker && sh.kicker.t != null ? <Pill x={150} y={975} text={sh.kicker.text} color={p.acc} T={T} t0={sh.kicker.t} /> : null}
     </AbsoluteFill>
   );
 };
@@ -1418,7 +1421,7 @@ const ShotView = ({sh, idx, p, data}) => {
             })}
           </div>
         ) : null}
-        {sh.kicker && !['bars', 'hbars', 'stack'].includes(sh.type) && !isHost && sh.kicker.t != null ? <Pill x={1300} y={175} text={sh.kicker.text} color={p.acc} T={T} t0={sh.kicker.t} align="right" /> : null}
+        {sh.kicker && !['bars', 'hbars', 'stack', 'rank'].includes(sh.type) && !isHost && sh.kicker.t != null ? <Pill x={1300} y={175} text={sh.kicker.text} color={p.acc} T={T} t0={sh.kicker.t} align="right" /> : null}
       </AbsoluteFill>
       {sh.type === 'list' || sh.type === 'duel' ? <Kicker text={sh.title} p={p} T={T} t0={sh.t0} y={sh.cards ? 290 : 92} x={sh.cards ? 300 : 120} /> : null}
       {sh.card ? <div style={{position: 'absolute', left: 120, top: 92, fontFamily: SANS, fontWeight: 900, fontSize: 36, color: '#0d1020', background: p.acc, padding: '6px 20px', borderRadius: 12}}>{sh.card} · {['Money', 'Factories', 'People'][sh.card - 1]}</div> : null}
