@@ -1,0 +1,7 @@
+{"channels": ["Nest Egg Atlas", "Retiree Ledger", "Retirement Percentile", "Silver Ledger", "Golden Years Data", "Retire by the Data"], "topics": [
+ {"id": "rank", "q": "where do you rank retirement wealth", "order": "viewCount", "after": "2025-11-01T00:00:00Z", "dur": "any", "n": 25},
+ {"id": "ssage", "q": "average social security benefit by age claiming 62 67 70", "order": "viewCount", "after": "2025-11-01T00:00:00Z", "dur": "any", "n": 25},
+ {"id": "incpct", "q": "retirement income percentiles top 10 percent retirees", "order": "viewCount", "after": "2025-11-01T00:00:00Z", "dur": "any", "n": 25},
+ {"id": "scf", "q": "federal reserve survey of consumer finances 2025 results", "order": "viewCount", "after": "2026-06-01T00:00:00Z", "dur": "any", "n": 25},
+ {"id": "retcost", "q": "how much retirees actually spend per month data", "order": "viewCount", "after": "2025-11-01T00:00:00Z", "dur": "any", "n": 25}
+]}
