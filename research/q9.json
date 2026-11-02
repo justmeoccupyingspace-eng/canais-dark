@@ -1,0 +1,18 @@
+{"channels": ["Retirement by the Numbers", "Paycheck Atlas", "Money Map USA"], "topics": [
+ {"id": "ss27", "q": "social security 2027", "order": "viewCount", "after": "2026-05-01T00:00:00Z", "dur": "any", "n": 25},
+ {"id": "cola", "q": "social security COLA 2027 increase", "order": "viewCount", "after": "2026-08-01T00:00:00Z", "dur": "any", "n": 25},
+ {"id": "medi", "q": "medicare part B premium 2027", "order": "viewCount", "after": "2026-08-01T00:00:00Z", "dur": "any", "n": 25},
+ {"id": "ret1", "q": "average retirement savings by age", "order": "viewCount", "after": "2026-01-01T00:00:00Z", "dur": "any", "n": 25},
+ {"id": "ret2", "q": "is 1 million enough to retire", "order": "viewCount", "after": "2026-01-01T00:00:00Z", "dur": "any", "n": 25},
+ {"id": "tax27", "q": "2027 tax brackets IRS", "order": "viewCount", "after": "2026-08-01T00:00:00Z", "dur": "any", "n": 25},
+ {"id": "k401", "q": "401k contribution limit 2027", "order": "viewCount", "after": "2026-08-01T00:00:00Z", "dur": "any", "n": 25},
+ {"id": "house", "q": "housing market prediction 2027", "order": "viewCount", "after": "2026-06-01T00:00:00Z", "dur": "any", "n": 25},
+ {"id": "insur", "q": "home insurance crisis states", "order": "viewCount", "after": "2026-01-01T00:00:00Z", "dur": "any", "n": 25},
+ {"id": "col", "q": "cost of living by state 2026", "order": "viewCount", "after": "2026-01-01T00:00:00Z", "dur": "any", "n": 25},
+ {"id": "sal", "q": "how much money you need to live comfortably in each state", "order": "viewCount", "after": "2026-01-01T00:00:00Z", "dur": "any", "n": 25},
+ {"id": "nw", "q": "average net worth by age america", "order": "viewCount", "after": "2026-01-01T00:00:00Z", "dur": "any", "n": 25},
+ {"id": "debt", "q": "american credit card debt record", "order": "viewCount", "after": "2026-03-01T00:00:00Z", "dur": "any", "n": 25},
+ {"id": "move", "q": "states americans are leaving 2026", "order": "viewCount", "after": "2026-01-01T00:00:00Z", "dur": "any", "n": 25},
+ {"id": "retst", "q": "best states to retire 2026", "order": "viewCount", "after": "2026-01-01T00:00:00Z", "dur": "any", "n": 25},
+ {"id": "ssrel", "q": "social security changes retirees", "order": "relevance", "after": "2026-09-01T00:00:00Z", "dur": "any", "n": 25}
+]}
