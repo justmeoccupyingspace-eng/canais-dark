@@ -18,6 +18,8 @@ while True:
     ids += [i["contentDetails"]["videoId"] for i in r.get("items", [])]
     page = r.get("nextPageToken")
     if not page: break
+extra = [x for x in os.environ.get("IDS", "").split(",") if x and x not in ids]
+ids += extra
 vids = []
 for i in range(0, len(ids), 50):
     vids += call("GET", API + "videos?part=snippet,status,statistics,contentDetails&id=" + ",".join(ids[i:i + 50]), tok).get("items", [])
