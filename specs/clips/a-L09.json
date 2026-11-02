@@ -1,0 +1,40 @@
+{
+ "channel": "chartbound",
+ "long": "l7uaR6BQYa4",
+ "longTitle": "In 2012, Japan Was 74% Richer Than Spain. Now Spain Is Ahead.",
+ "preview": "long-41412443395",
+ "timeline": "lprep-41412443395",
+ "timeline_file": "a-L09-spain-japan.json",
+ "sources": "Sources: World Bank WDI (NY.GDP.PCAP.CD, NY.GDP.PCAP.PP.CD, NY.GDP.PCAP.KD, PA.NUS.FCRF, NY.GDP.MKTP.CD, SL.UEM.TOTL.ZS, SL.UEM.1524.ZS, NY.GDP.MKTP.KD.ZG, SP.POP.TOTL, SP.DYN.TFRT.IN, SP.POP.65UP.TO.ZS); Eurostat une_rt_a; INE Frontur; JNTO; Japan Ministry of Finance (net external assets); Bank of Japan; US Federal Reserve.",
+ "music_credits": "Music by Kevin MacLeod (incompetech.com), CC BY 4.0.",
+ "hashtags": "#spain #japan #yen #economics #data",
+ "tags": [
+  "spain",
+  "japan",
+  "yen",
+  "spain economy",
+  "japan economy",
+  "gdp per capita",
+  "tourism",
+  "economics",
+  "shorts"
+ ],
+ "clips": [
+  {
+   "from": "s00",
+   "to": "s00",
+   "hook": "Spain is now *richer than Japan*",
+   "title": "Japan was 74% richer than Spain in 2012. Not anymore #Shorts",
+   "desc": "In 2024 Spain passed Japan in GDP per person in dollars, for the first time in World Bank records (since 1960).",
+   "at": "2026-11-02T22:00:00Z"
+  },
+  {
+   "from": "s08",
+   "to": "s08",
+   "hook": "97 million tourists vs *43 million*",
+   "title": "Spain gets twice as many tourists as Japan #Shorts",
+   "desc": "Spain 96.8M (INE), Japan 42.7M (JNTO), 2025.",
+   "at": "2026-11-03T01:00:00Z"
+  }
+ ]
+}
