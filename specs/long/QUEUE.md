@@ -70,6 +70,9 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 - Semana 46 (próximo lote, c-332+): cena final com CTA de venda ("Amostra grátis da apostila: WhatsApp na bio", fala "Quer a amostra grátis? Chama no WhatsApp da bio.") em vez de só "Siga"; mais posts de edital/prazo ("faltam X dias para o fim das inscrições", 10/12), salário e circunscrição do interior (2ª–10ª RAJ), que trazem candidato novo.
 - Instagram @gabaritododia (liberado pelo Kauan para concursos): 4 posts, 0 seguidores em 01/11. Plano: repostar os vídeos claros como Reels (1/dia) — Reels alcança não seguidores e o IG aceita link clicável do WhatsApp na bio sem mínimo de seguidores (TikTok exige 1.000).
 - 01/11 20:45 BRT: CTA postado também no c-317. c-316 96 views, c-317 47 em ~3 h; post do Kauan 01/11 19:00 (Lei 9.099) 13. YouTube 23:42Z: A-L06 16 views em 5,7 h (Polônia teve 13 nas 1as 13 h), A-L07 público às 23:00Z, Letônia 103, Polônia 47,7 mil, 91 inscritos.
+- 02/11 19:40 BRT: CTA postado no c-318 (salário, 82 views em 7 h) e no c-319 (concordância, 7 views em 50 min). Demais: c-315 97, c-316 111, c-317 94; posts do Kauan 114 e 129. Perfil 91 seguidores, 174 curtidas.
+- 02/11: 1º Reel no IG @gabaritododia = c-316 MMC (out/ig/c-316-ig.mp4, recomprimido p/ <10 MB). Bio do IG já tem o número do WhatsApp em texto; link clicável SÓ pelo app (web: "Somente é possível editar os links no celular") → pedido ao Kauan: app → Editar perfil → Links → https://wa.me/5511917291381.
+- YouTube 22:40Z: Chartbound 97 inscritos; Polônia 50,6 mil; A-L06 104 views em 29 h; A-L07 12 em 24 h; A-L09 7 em 4,7 h. Nest Egg Atlas: B-N01 1 view em 4 h (normal p/ canal recomeçado).
 - Números 01/11 ~17h: c-315 claro 94 views/7 curtidas (24 h); c-316 claro 78 em 5 h; posts do Kauan 108–163. Perfil: 89 seguidores, 164 curtidas.
 
 ## Plano de correção do Chartbound (01/11 21:45, pedido do Kauan "como vai arrumar")
