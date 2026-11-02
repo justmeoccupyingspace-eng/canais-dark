@@ -45,11 +45,12 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 - B-L02 (_SgVH8bGG5k): tela final → B-L01 (bate com o "watch next 0.1+0.2") + inscrição.
 - Regra: o vídeo da tela final tem que ser o mesmo do "WATCH NEXT" renderizado no outro; setar no Studio no dia da publicação.
 
-## Calendário de render (2 longos/dia; voz 3.1 ≥1.115 palavras, 3.8 ≥1.270)
-- 01/11: A-L06 (3.1, 18:00Z) + A-L07 (3.8, 23:00Z) — tarefa agendada 07:15Z.
-- 02/11: A-L09 (3.1, 18:00Z) + A-L08 (3.8, 23:00Z).
-- 03/11: A-L10 (3.1, 18:00Z) + A-L11 África do Sul (3.8, 23:00Z).
-- Banco após 03/11: A-L12 Bulgária + novas pautas (garimpar 01/11).
+## Calendário de render (linha de foco 01/11: 1 longo/dia; 2º só se as duas pautas tiverem nota ≥8 no filtro; voz 3.1 ≥1.115 palavras, 3.8 ≥1.270)
+- 01/11: A-L06 (3.1, 18:00Z) + A-L07 (3.8, 23:00Z) — feito.
+- 02/11: A-L09 Espanha×Japão (3.1, 18:00Z) + A-L08 Vietnã×Indonésia (3.8, 23:00Z) — já prontos e dentro do filtro; último dia com 2. Cortes: 2 por longo (A-L09 19:00/22:00 BRT, A-L08 +1d 10:00/13:00).
+- 03/11: A-L14 Polônia/Croácia > Grécia (18:00Z), roteiro em 02/11. Sem 2º longo (Bulgária nota ~7: país pequeno).
+- 04/11+: A-L17 Polônia > Espanha (conferir dado: Euronews 26/02/2026, Tusk; FMI/Eurostat PPP), depois o melhor do banco pelo filtro. Cota de voz que sobra → faixa de áudio em polonês se 04/11 confirmar.
+- Rebaixados (prontos, fora do filtro: tema negativo): A-L10 México, A-L11 África do Sul — só se T1 falhar em 15/11 ou para preencher buraco.
 - Antes de cada render: validar deixas (todo 'at' existe na fala), teste visual grátis (engine=edge) e checagem de títulos de stats ≤34 caracteres, stats na ordem da fala, miniatura com line2 ≤10 caracteres (senão o mascote cobre).
 
 ## TikTok C (alerta 31/10)
@@ -81,6 +82,13 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 - Se a veia polonesa confirmar (04/11): faixa de áudio em polonês nos vídeos da Polônia (cota grátis de voz).
 - Gatilhos: 04/11 (≥5 mil em 72 h = veia confirmada); 15/11 (todos <1 mil → 3 longos/semana); 15/12 (<500 inscritos → regra antiga perdida, manutenção).
 
+## Linha de foco (01/11 22:30 BRT; doc "Canais Dark — Plano Operacional", seção "Linha de foco do Chartbound")
+- Foco único: "quem está passando quem" — país em ascensão acaba de passar um mais rico/famoso, contado pelo lado de quem subiu. Série principal: Leste Europeu passando Sul/Oeste (Polônia primeiro). Controle: Turquia, Vietnã, Filipinas, Índia, Nigéria, Espanha.
+- Filtro (0–2 cada, entra com ≥8/10): 1) país que sobe tem público grande que assiste em inglês; 2) orgulho, nunca derrota; 3) dado ≤60 dias ou cálculo nosso; 4) nenhum concorrente ≥500 mil views em 2 anos na mesma ultrapassagem; 5) rivalidade (o lado ultrapassado também comenta).
+- Testes: T1 tema (6 longos no filtro; mediana 72 h ≥1.000 ou um ≥10 mil; base 113) · T2 miniatura A/B 3 versões (mapa × mascote; clique ≥5%) · T3 1º minuto (A-L08 intro curta × A-L09 longa; ≥70% aos 30 s; Polônia 63%) · T4 áudio polonês (se 04/11 confirmar; AVD da PL +20%) · T5 inscrição (CTA de série + "qual país a seguir?" + playlist; ≥3 inscritos/mil views; hoje 1,5).
+- Cortes: 2 por longo (mkclips A = 19:00/22:00 BRT; os 2 primeiros clips do spec → pôr os de orgulho primeiro). Nenhum Short templated novo.
+- Datas: 04/11 (≥5 mil em 72 h no A-L06 ou A-L07 → série confirmada, liga T4, volta o 2º longo só nessa série) · 15/11 (T1 falhou → família Ásia/África em ascensão) · 15/12 (<500 inscritos → manutenção, 3 longos/semana) · 31/01/2027 (1.000 inscritos + 4.000 h → inscrever no YPP antes de 01/02/2027).
+
 ## A · Chartbound
 | id | tema | estado | publicação |
 |---|---|---|---|
@@ -93,13 +101,14 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 | A-L07 | Turkey Caught Up With Greece. Despite 50% Inflation. | agendado (dJbN7cO1Rnc, render 41286294903, 8:06; 1º render deu 7:59 → +34 palavras no ato 3, WATCH NEXT corrigido) · cortes A2 zfDCacC3I9I, wxEb-427bJg · tela final → A-L06 | 01/11 23:00Z |
 | A-L08 | Vietnam Overtook Indonesia. With a Third of the People. | pronto: checks ok, 1.279 palavras, voz 3.8, teste visual ok · tela final → Coreia | 02/11 23:00Z (cortes A2) |
 | A-L09 | In 2012, Japan Was 74% Richer Than Spain. Now Spain Is Ahead. | pronto: checks ok (1ª vez desde 1960), 1.141 palavras, voz 3.1, teste visual ok · tela final → Polônia | 02/11 18:00Z |
-| A-L10 | Mexico Exports 4x More Than in 2000. Its Workers Produce Less. (21 países passaram; PIB por trabalhador −10%) | pronto: checks ok, 1.110 palavras, voz 3.1, teste visual ok · tela final → A-L07 | 03/11 18:00Z |
-| A-L11 | South Africans Are Poorer Than in 2008. Here's Why. (Egito 2019, Indonésia 2023, Vietnã 2024 passaram em PPP; pico real em 2013) | pronto: checks ok, ~1.270 palavras, voz 3.8, teste visual ok · tela final → A-L08 | 03/11 23:00Z (cortes A2) |
+| A-L10 | (REBAIXADO 01/11: tema negativo) Mexico Exports 4x More Than in 2000. Its Workers Produce Less. (21 países passaram; PIB por trabalhador −10%) | pronto: checks ok, 1.110 palavras, voz 3.1, teste visual ok · tela final → A-L07 | 03/11 18:00Z |
+| A-L11 | (REBAIXADO 01/11: tema negativo) South Africans Are Poorer Than in 2008. Here's Why. (Egito 2019, Indonésia 2023, Vietnã 2024 passaram em PPP; pico real em 2013) | pronto: checks ok, ~1.270 palavras, voz 3.8, teste visual ok · tela final → A-L08 | 03/11 23:00Z (cortes A2) |
 | A-L12 | Bulgária: do mais pobre da UE ao euro (jan/26), 0,31→0,49 dos EUA desde 2010 | banco: filtro ok (q6; maior longo 78 mil) | |
 | A-L13 | Albânia mais rica por pessoa que México (PPP 2024) e Brasil (nominal 2024) | banco: q7 ok (TLDR 115 mil; nada ≥500 mil) | |
-| A-L14 | Grécia passada por Polônia (nominal 2024), Croácia (2025), Romênia (PPP) — da riqueza ao penúltimo lugar da UE | banco: q7 ok (concorrente de 24/10/26 com 19 mil) · espaçar do A-L07 | |
+| A-L14 | Grécia passada por Polônia (nominal 2024), Croácia (2025), Romênia (PPP) — da riqueza ao penúltimo lugar da UE | roteiro 02/11 (q7 ok; concorrente de 24/10/26 com 19 mil) | 03/11 18:00Z |
 | A-L15 | Argentina passada por Costa Rica e Sérvia (PPP 2024); Sérvia também no nominal 2025 | banco: q7 ok (Econ 38 mil) | |
 | A-L16 | República Dominicana: passou o México (PPP 2021), crescimento mais longo da América Latina | banco: q7 ok (nada ≥2 mil) | |
+| A-L17 | Polônia passou a Espanha (renda por pessoa; Tusk usou como discurso, Euronews 26/02/2026) — série Polônia | banco: conferir dado (FMI/Eurostat PPP) + saturação (ytresearch) | 04/11 18:00Z se passar |
 | ~~Rússia > Itália/Canadá~~ · ~~Singapura > Noruega~~ · ~~Geórgia~~ | fora: tema de guerra / Singapura saturada / busca ambígua | — | |
 | ~~Germany~~ / ~~Iene~~ | reprovados no filtro | — | |
 

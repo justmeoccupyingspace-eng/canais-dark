@@ -4,10 +4,11 @@ Uso: python scripts/mkclips.py specs/long/a-L03.json <videoId> <run_final> <run_
 - horas: `auto:<publishAt do longo em ISO UTC>` (padrão do Kauan, 29/10: 2 cortes na noite do longo + 2 na manhã seguinte,
   antes do próximo longo) ou lista ISO UTC explícita (só se seguir o padrão; senão o script recusa).
   A (longo 15:00 BRT): 19:00, 22:00, +1d 09:00, +1d 12:00 BRT · B (longo 17:00 BRT): 20:00, 23:00, +1d 10:00, +1d 13:00 BRT.
-  A2 (2º longo do dia do A, 20:00 BRT; decisão 30/10): só 2 cortes, +1d 10:00 e +1d 13:00 BRT (os demais clips do spec ficam de fora)."""
+  A2 (2º longo do dia do A, 20:00 BRT; decisão 30/10): só 2 cortes, +1d 10:00 e +1d 13:00 BRT (os demais clips do spec ficam de fora).
+  Linha de foco 01/11: Chartbound A passa a 2 cortes por longo (19:00 e 22:00 BRT) — os 2 primeiros clips do spec; ponha os de maior orgulho primeiro."""
 import datetime as dt, json, os, re, sys
 BRT = dt.timezone(dt.timedelta(hours=-3))
-STD = {"A": [(0, 19), (0, 22), (1, 9), (1, 12)], "B": [(0, 20), (0, 23), (1, 10), (1, 13)], "A2": [(1, 10), (1, 13)]}
+STD = {"A": [(0, 19), (0, 22)], "B": [(0, 20), (0, 23), (1, 10), (1, 13)], "A2": [(1, 10), (1, 13)]}
 def iso(x): return dt.datetime.fromisoformat(x.replace("Z", "+00:00"))
 def auto(ch, long_at):
     d = iso(long_at).astimezone(BRT)

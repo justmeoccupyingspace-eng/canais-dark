@@ -205,8 +205,8 @@ snapshot = []
 
 clips = [
     dict(**{"from": "s00", "to": "s00"}, hook="Spain is now *richer than Japan*", title="Japan was 74% richer than Spain in 2012. Not anymore #Shorts", desc="In 2024 Spain passed Japan in GDP per person in dollars, for the first time in World Bank records (since 1960)."),
-    dict(**{"from": "s02", "to": "s02"}, hook="The yen lost *half its value*", title="How the yen made Japan 'poorer' in dollars #Shorts", desc="2012: ¥80 per dollar. 2024: ¥150 (World Bank)."),
     dict(**{"from": "s08", "to": "s08"}, hook="97 million tourists vs *43 million*", title="Spain gets twice as many tourists as Japan #Shorts", desc="Spain 96.8M (INE), Japan 42.7M (JNTO), 2025."),
+    dict(**{"from": "s02", "to": "s02"}, hook="The yen lost *half its value*", title="How the yen made Japan 'poorer' in dollars #Shorts", desc="2012: ¥80 per dollar. 2024: ¥150 (World Bank)."),
     dict(**{"from": "s10", "to": "s10"}, hook="Don't feel sorry for *Japan*", title="Youth unemployment: Spain vs Japan #Shorts", desc="About 1 in 4 young Spaniards can't find work. In Japan, about 1 in 25 (World Bank, 2025)."),
 ]
 
