@@ -1,0 +1,40 @@
+{
+ "channel": "chartbound",
+ "long": "MHSYNptZ38s",
+ "longTitle": "Vietnam Overtook Indonesia. With a Third of the People.",
+ "preview": "long-41412455861",
+ "timeline": "lprep-41412455861",
+ "timeline_file": "a-L08-vietnam.json",
+ "sources": "Sources: World Bank WDI (NY.GDP.PCAP.PP.CD, NY.GDP.PCAP.CD, NY.GDP.PCAP.PP.KD, NY.GDP.MKTP.KD.ZG, NE.EXP.GNFS.ZS, TX.VAL.MRCH.CD.WT, TX.VAL.TECH.MF.ZS, BX.KLT.DINV.WD.GD.ZS, TX.VAL.FUEL.ZS.UN, TX.VAL.MMTL.ZS.UN, SL.AGR.EMPL.ZS, HD.HCI.OVRL, NY.GDP.MKTP.CD, SI.POV.DDAY, SP.POP.65UP.TO.ZS, SP.DYN.TFRT.IN); USGS Mineral Commodity Summaries 2026 (nickel); Vietnam customs (exports to the US, Jan–Nov 2025).",
+ "music_credits": "Music by Kevin MacLeod (incompetech.com), CC BY 4.0.",
+ "hashtags": "#vietnam #indonesia #asia #economics #data",
+ "tags": [
+  "vietnam",
+  "indonesia",
+  "southeast asia",
+  "vietnam economy",
+  "indonesia economy",
+  "gdp per capita",
+  "exports",
+  "nickel",
+  "shorts"
+ ],
+ "clips": [
+  {
+   "from": "s00",
+   "to": "s00",
+   "hook": "$99 a person → *passed Indonesia*",
+   "title": "Vietnam made $99 a person in 1990. Now it's passed Indonesia #Shorts",
+   "desc": "In 1990 Indonesia was almost 6× richer per person. In 2025 Vietnam passed it (World Bank).",
+   "at": "2026-11-03T13:00:00Z"
+  },
+  {
+   "from": "s05",
+   "to": "s05",
+   "hook": "A third of the people, *more exports*",
+   "title": "Vietnam exports more than Indonesia with a third of the people #Shorts",
+   "desc": "Exports ≈ 98% of Vietnam's GDP vs 23% in Indonesia (World Bank, 2025).",
+   "at": "2026-11-03T16:00:00Z"
+  }
+ ]
+}
