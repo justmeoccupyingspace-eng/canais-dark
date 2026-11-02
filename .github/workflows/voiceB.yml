@@ -3,6 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       voices: {description: "vozes separadas por vírgula", required: false, default: "Gacrux,Sadaltager,Algieba"}
+      model: {description: "modelo TTS", required: false, default: "gemini-3.8-flash-tts"}
 permissions:
   contents: write
 jobs:
@@ -17,6 +18,7 @@ jobs:
         env:
           GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
           VOICES: ${{ inputs.voices }}
+          MODEL: ${{ inputs.model }}
       - run: |
           mkdir -p /tmp/vb && for w in out_vb/*.wav; do ffmpeg -v error -y -i "$w" -b:a 96k /tmp/vb/$(basename ${w%.wav}).mp3; done; cp out_vb/report.json /tmp/vb/
           git config user.name producer; git config user.email producer@users.noreply.github.com
