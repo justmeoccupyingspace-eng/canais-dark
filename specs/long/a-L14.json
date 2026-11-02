@@ -128,7 +128,7 @@
    "act": 0,
    "type": "list",
    "src": "Eurostat prc_ppp_ind · GDP per capita in PPS (EU27 = 100), 2000–2024",
-   "title": "Who passed Greece (adjusted for prices)",
+   "title": "Who passed Greece since 2008",
    "narration": "Adjusted for prices, it's even more dramatic. {p} In 2008, Greece was richer than thirteen other EU countries. {p} Since then, twelve of them have passed it: Czechia and Malta in 2010. Portugal, Slovakia and Slovenia in 2011. Estonia in 2012. Lithuania in 2013. Poland and Hungary in 2015. Romania and Croatia in 2019. Latvia in 2020. {pp} Today, by this measure, only one country in the European Union is poorer than Greece: Bulgaria.",
    "items": [
     {

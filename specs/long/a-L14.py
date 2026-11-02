@@ -20,7 +20,7 @@ shots = [
          keys=[dict(at="In 2008", year=2008.0, dur=3.0), dict(at="In 2024", year=2024.0, dur=4.0), dict(at="In 2025", year=2025.0, dur=2.0)],
          labels=[dict(at="almost thirty-two", iso="GRC", year=2008), dict(at="about fourteen thousand", iso="POL", year=2008), dict(at="for the first time", iso="POL", year=2024), dict(at="by a hair", iso="HRV", year=2025)],
          react=[dict(at="In 2008", pose="idle"), dict(at="more than twice", pose="pointL"), dict(at="Poland passed Greece", pose="shock"), dict(at="by a hair", pose="pointUp")]),
-    dict(act=0, type="list", src=PPS + ", 2000–2024", title="Who passed Greece (adjusted for prices)",
+    dict(act=0, type="list", src=PPS + ", 2000–2024", title="Who passed Greece since 2008",
          narration="Adjusted for prices, it's even more dramatic. {p} In 2008, Greece was richer than thirteen other EU countries. {p} Since then, twelve of them have passed it: Czechia and Malta in 2010. Portugal, Slovakia and Slovenia in 2011. Estonia in 2012. Lithuania in 2013. Poland and Hungary in 2015. Romania and Croatia in 2019. Latvia in 2020. {pp} Today, by this measure, only one country in the European Union is poorer than Greece: Bulgaria.",
          items=[dict(at="Czechia and Malta", kind="bullet", text="2010 · Czechia, Malta"),
                 dict(at="Portugal, Slovakia", kind="bullet", text="2011 · Portugal, Slovakia, Slovenia"),
