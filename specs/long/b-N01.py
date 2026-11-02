@@ -151,7 +151,7 @@ for i, sh in enumerate(shots):
     sh["id"] = f"s{i:02d}"
 
 spec = dict(id="b-N01-networth-age", clips=clips, channel="nesteggatlas", chapter0="The new numbers", host=False,
-            thumb=dict(kind="text", top="NET WORTH AT 65–74", big="$431k", line2="IS THE MIDDLE"),
+            thumb=dict(kind="text", top="NET WORTH AT 65–74", big="$431k", line2="IS THE MIDDLE", sticker="WHERE DO YOU RANK?"),
             w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks, datasets=[], snapshot=snapshot,
             voice=dict(model="", name="Gacrux",
                        style=("You are the narrator of a calm, trustworthy personal-finance documentary for Americans in their fifties, sixties and seventies. "
