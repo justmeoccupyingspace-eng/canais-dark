@@ -1,0 +1,93 @@
+{
+ "report": [
+  {
+   "dur": 59.4,
+   "wpm": 166,
+   "f0_std": 4.4,
+   "f0_p10_90": 11.4,
+   "pauses_05": 3,
+   "pause_total": 1.7,
+   "cut_s": 8.7,
+   "act": 0,
+   "engine": "edge",
+   "align": 0.835
+  },
+  {
+   "dur": 70.0,
+   "wpm": 154,
+   "f0_std": 4.36,
+   "f0_p10_90": 11.4,
+   "pauses_05": 1,
+   "pause_total": 0.5,
+   "cut_s": 0,
+   "act": 1,
+   "engine": "edge",
+   "align": 0.961
+  },
+  {
+   "dur": 62.9,
+   "wpm": 185,
+   "f0_std": 4.2,
+   "f0_p10_90": 10.4,
+   "pauses_05": 3,
+   "pause_total": 1.6,
+   "cut_s": 0,
+   "act": 2,
+   "engine": "edge",
+   "align": 0.887
+  },
+  {
+   "dur": 68.3,
+   "wpm": 175,
+   "f0_std": 4.13,
+   "f0_p10_90": 10.4,
+   "pauses_05": 6,
+   "pause_total": 3.1,
+   "cut_s": 0,
+   "act": 3,
+   "engine": "edge",
+   "align": 0.955
+  },
+  {
+   "dur": 71.6,
+   "wpm": 162,
+   "f0_std": 4.16,
+   "f0_p10_90": 10.6,
+   "pauses_05": 3,
+   "pause_total": 1.6,
+   "cut_s": 0,
+   "act": 4,
+   "engine": "edge",
+   "align": 0.922
+  },
+  {
+   "dur": 66.1,
+   "wpm": 170,
+   "f0_std": 4.47,
+   "f0_p10_90": 11.4,
+   "pauses_05": 2,
+   "pause_total": 1.1,
+   "cut_s": 0,
+   "act": 5,
+   "engine": "edge",
+   "align": 0.898
+  },
+  {
+   "dur": 59.8,
+   "wpm": 172,
+   "f0_std": 4.56,
+   "f0_p10_90": 11.8,
+   "pauses_05": 3,
+   "pause_total": 1.6,
+   "cut_s": 0,
+   "act": 6,
+   "engine": "edge",
+   "align": 0.936
+  }
+ ],
+ "gates": [
+  "ato 0: Whisper bateu s\u00f3 84% das palavras (TTS pulou/trocou texto?)",
+  "dura\u00e7\u00e3o 8.03 min < 8.08 min"
+ ],
+ "total": 481.696
+}
