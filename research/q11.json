@@ -1,0 +1,77 @@
+{
+ "channels": [],
+ "topics": [
+  {
+   "id": "pe1",
+   "q": "Poland overtakes Spain",
+   "order": "viewCount",
+   "after": "2024-11-01T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  },
+  {
+   "id": "pe2",
+   "q": "Poland richer than Spain",
+   "order": "viewCount",
+   "after": "2024-11-01T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  },
+  {
+   "id": "pe3",
+   "q": "Poland vs Spain economy",
+   "order": "viewCount",
+   "after": "2024-11-01T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  },
+  {
+   "id": "pe4",
+   "q": "Polska wyprzedzi\u0142a Hiszpani\u0119",
+   "order": "viewCount",
+   "after": "2024-11-01T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  },
+  {
+   "id": "pe5",
+   "q": "Polonia supera a Espa\u00f1a PIB",
+   "order": "viewCount",
+   "after": "2024-11-01T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  },
+  {
+   "id": "ss1",
+   "q": "Social Security 62 vs 67 vs 70",
+   "order": "viewCount",
+   "after": "2025-11-01T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  },
+  {
+   "id": "ss2",
+   "q": "when to claim Social Security breakeven",
+   "order": "viewCount",
+   "after": "2025-11-01T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  },
+  {
+   "id": "ss3",
+   "q": "Social Security claiming age average benefit",
+   "order": "viewCount",
+   "after": "2025-11-01T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  },
+  {
+   "id": "ss4",
+   "q": "Social Security COLA 2027",
+   "order": "viewCount",
+   "after": "2026-06-01T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  }
+ ]
+}
