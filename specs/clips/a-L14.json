@@ -1,0 +1,40 @@
+{
+ "channel": "chartbound",
+ "long": "knei7dcuF5M",
+ "longTitle": "In 2008, Greece Was Twice as Rich as Poland. Now It's Behind.",
+ "preview": "long-41602160180",
+ "timeline": "lprep-41602160180",
+ "timeline_file": "a-L14-greece.json",
+ "sources": "Sources: World Bank WDI (NY.GDP.PCAP.CD, NY.GDP.PCAP.PP.CD, NY.GDP.PCAP.PP.KD, NY.GDP.MKTP.KD.ZG, NE.GDI.FTOT.ZS, SL.UEM.TOTL.ZS, SL.UEM.1524.ZS, SP.POP.TOTL, SP.DYN.LE00.IN); Eurostat (prc_ppp_ind, earn_mw_cur, gov_10dd_edpt1); European Stability Mechanism (Greek programmes 2010–2018).",
+ "music_credits": "Music by Kevin MacLeod (incompetech.com), CC BY 4.0.",
+ "hashtags": "#poland #greece #croatia #economics #data",
+ "tags": [
+  "poland",
+  "greece",
+  "poland economy",
+  "greece economy",
+  "croatia",
+  "eastern europe",
+  "gdp per capita",
+  "minimum wage",
+  "shorts"
+ ],
+ "clips": [
+  {
+   "from": "s00",
+   "to": "s00",
+   "hook": "Poland just passed *Greece*",
+   "title": "Greece was twice as rich as Poland in 2008. Not anymore #Shorts",
+   "desc": "2008: $31.7k vs $14.0k per person. 2024: Poland passed Greece. 2025: Croatia too (World Bank).",
+   "at": "2026-11-03T22:00:00Z"
+  },
+  {
+   "from": "s01",
+   "to": "s01",
+   "hook": "12 countries *passed Greece*",
+   "title": "12 EU countries passed Greece since 2008 #Shorts",
+   "desc": "Adjusted for prices (Eurostat PPS), only Bulgaria is still behind Greece in the EU.",
+   "at": "2026-11-04T01:00:00Z"
+  }
+ ]
+}
