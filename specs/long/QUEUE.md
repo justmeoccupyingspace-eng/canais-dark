@@ -97,6 +97,8 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 - Nest Egg Atlas: B-N01 tela final → B-N02 (vídeo específico; o Studio avisa "privado, será substituído" até 18:30Z); B-N02 tela final inscrição + B-N01 sobre o card (elemento 996,261 207×117 no preview = card do End em 140,250 820×462).
 - ytstats 09:25Z: Chartbound 100 inscritos, 61,5 mil views; Polônia 51.586 (+~1 mil/dia); A-L06 126 views (~40 h); A-L07 101 (~34 h; era 12); A-L09 9 e A-L08 7 (~15 h e ~10 h). Nest Egg Atlas 6 inscritos: B-N01 2 views em 15 h, cortes 10 e 13.
 - Leitura: nenhum longo novo do Chartbound perto de 5 mil → veredito 04/11 vai dar "não confirmado"; segue T1 até 15/11 (regra). B ainda sem distribuição (normal nas 1as 48 h de canal recomeçado).
+- 09:40–11:00Z: roteiros A-L17 (Polônia × Espanha, FMI out/2026), B-N03 (Social Security 62/67/70, SSA) e B-N04 (401(k)/IRA por idade, SCF 2025) prontos; testes visuais edge 41614422835 / 41614703544 / 41619005040 revisados. Correções no L1: stats com 3+ itens em grade 2×N (antes saíam da tela), texto do host mais largo no canal sem mascote, usdkm com 2 casas ($1.95M).
+- Calendário: 04/11 A-L17 (3.1, 18:00Z) + B-N03 (3.8, 18:30Z); 05/11 B-N04 (3.8) + próximo A (escrever em 04/11: candidatos A-L12 Bulgária, A-L13 Albânia).
 
 ## Linha de foco (01/11 22:30 BRT; doc "Canais Dark — Plano Operacional", seção "Linha de foco do Chartbound")
 - Foco único: "quem está passando quem" — país em ascensão acaba de passar um mais rico/famoso, contado pelo lado de quem subiu. Série principal: Leste Europeu passando Sul/Oeste (Polônia primeiro). Controle: Turquia, Vietnã, Filipinas, Índia, Nigéria, Espanha.
