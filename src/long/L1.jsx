@@ -1027,7 +1027,7 @@ const Stats = ({sh, p, data, T}) => {
       <Rays p={p} T={T} t0={first} />
       {sh.title ? <div style={{position: 'absolute', left: 150, top: 470 - 290 * up, fontFamily: SERIF, fontStyle: 'italic', fontWeight: 600, fontSize: 96 - 46 * up, color: up > 0.5 ? '#ffffffb0' : '#fff', opacity: sp(T, sh.t0 + 0.1), transform: `translateY(${(1 - sp(T, sh.t0 + 0.1)) * 30}px)`, whiteSpace: 'nowrap'}}>{sh.title}</div> : null}
       {(sh.stats || []).map((st, i) => (
-        <StatCard key={i} st={st} p={p} data={data} T={T} x={n > 1 ? 150 + i * 760 : 220} y={n > 1 ? 330 : 300} multi={n > 1} />
+        <StatCard key={i} st={st} p={p} data={data} T={T} x={n > 2 ? 150 + (i % 2) * 760 : n > 1 ? 150 + i * 760 : 220} y={n > 2 ? 300 + Math.floor(i / 2) * 300 : n > 1 ? 330 : 300} multi={n > 1} />
       ))}
     </AbsoluteFill>
   );
@@ -1193,7 +1193,7 @@ const HBars = ({sh, p, T}) => {
 };
 
 const HostSay = ({sh, p, T}) => (
-  <div style={{position: 'absolute', left: 140, top: 300, width: 900, display: 'flex', flexDirection: 'column', gap: 26}}>
+  <div style={{position: 'absolute', left: 140, top: 300, width: p.noHost ? 1640 : 900, display: 'flex', flexDirection: 'column', gap: 26}}>
     {(sh.items || []).map((it, i) => {
       const s = sp(T, it.t);
       if (s <= 0.001) return null;
