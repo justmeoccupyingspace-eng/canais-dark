@@ -50,7 +50,7 @@ export const fmt = (v, k) => {
     case 'mil': return (v / 1e6).toFixed(1) + 'M';
     case 'eurb': return '€' + v.toFixed(1) + 'B';
     case 'eurb0': return '€' + Math.round(v) + 'B';
-    case 'usdkm': return Math.abs(v) >= 1e6 ? '$' + (v / 1e6).toFixed(Math.abs(v) >= 1e7 ? 0 : 1) + 'M' : '$' + Math.round(v / 1000) + 'k';
+    case 'usdkm': return Math.abs(v) >= 1e6 ? '$' + (Math.abs(v) >= 1e7 ? (v / 1e6).toFixed(0) : (v / 1e6).toFixed(2).replace(/0$/, '').replace(/\.0$/, '')) + 'M' : '$' + Math.round(v / 1000) + 'k';
     case 'm': return Math.round(v) + ' million';
     case 'km': return Math.round(v).toLocaleString('en-US') + ' km';
     case 'k0': return v >= 995000 ? (v / 1e6).toFixed(2).replace(/0$/, '') + 'M' : Math.round(v / 1000) + 'k';
