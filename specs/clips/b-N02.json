@@ -1,0 +1,40 @@
+{
+ "channel": "nesteggatlas",
+ "long": "0KMtZW6mnmA",
+ "longTitle": "How Many Retirees Actually Have $1 Million? (New Fed Data)",
+ "preview": "long-41604889922",
+ "timeline": "lprep-41604889922",
+ "timeline_file": "b-N02-million.json",
+ "sources": "Sources: Federal Reserve Board, 2025 Survey of Consumer Finances, summary extract public data (our calculation with survey weights; all figures in 2025 dollars); Bengen (1994), 4% rule of thumb.",
+ "music_credits": "Music by Kevin MacLeod (incompetech.com), CC BY 4.0.",
+ "hashtags": "#retirement #millionaire #401k #personalfinance #retirementplanning",
+ "tags": [
+  "retirement",
+  "how many retirees have 1 million",
+  "millionaire retirees",
+  "federal reserve",
+  "survey of consumer finances",
+  "401k",
+  "net worth",
+  "4% rule",
+  "shorts"
+ ],
+ "clips": [
+  {
+   "from": "s00",
+   "to": "s00",
+   "hook": "How many retirees have *$1 million?*",
+   "title": "How many retirees really have $1 million? It depends #Shorts",
+   "desc": "Households 65+ (Federal Reserve, 2025 SCF): everything ~32%, without the house ~23%, savings ~18%, 401(k)/IRA ~11%.",
+   "at": "2026-11-03T20:30:00Z"
+  },
+  {
+   "from": "s06",
+   "to": "s06",
+   "hook": "The million-dollar 401(k) is *rare*",
+   "title": "Only 1 in 9 retirees has $1M in a 401(k) or IRA #Shorts",
+   "desc": "Federal Reserve 2025 Survey of Consumer Finances, our calculation with survey weights.",
+   "at": "2026-11-04T00:00:00Z"
+  }
+ ]
+}
