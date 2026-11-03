@@ -59,6 +59,25 @@ for b, (a, z) in bands.items():
             r[col.lower() + "_median_all"] = wq(d[col], w, [50])["50"]
     if "HOUSES" in d:
         r["homeowner_share"] = wshare(d["HOUSES"].to_numpy() > 0, w)
+    nw, he = d["NETWORTH"].to_numpy(), d["HOMEEQ"].to_numpy() if "HOMEEQ" in d else 0
+    nx = nw - he
+    r["nwx_pct"] = wq(nx, w, [25, 50, 75, 90])
+    r["share_nwx_ge"] = {str(k): wshare(nx >= k, w) for k in [250_000, 500_000, 1_000_000, 2_000_000]}
+    if "FIN" in d:
+        r["share_fin_ge"] = {str(k): wshare(d["FIN"].to_numpy() >= k, w) for k in [250_000, 500_000, 1_000_000]}
+    r["weight_sum"] = float(w.sum())
+    m = nw >= 1_000_000
+    if m.sum() > 0:
+        dm, wm = d[m], w[m]
+        r["mill"] = {"homeeq_med": wq(dm["HOMEEQ"], wm, [50])["50"] if "HOMEEQ" in d else None,
+                     "ret_med": wq(dm["RETQLIQ"], wm, [50])["50"] if "RETQLIQ" in d else None,
+                     "fin_med": wq(dm["FIN"], wm, [50])["50"] if "FIN" in d else None,
+                     "inc_med": wq(dm["INCOME"], wm, [50])["50"],
+                     "nw_med": wq(dm["NETWORTH"], wm, [50])["50"],
+                     "home_share": wshare(dm["HOUSES"].to_numpy() > 0, wm) if "HOUSES" in d else None,
+                     "ret1m_share": wshare(dm["RETQLIQ"].to_numpy() >= 1_000_000, wm) if "RETQLIQ" in d else None,
+                     "home_pct_of_nw_med": wq((dm["HOMEEQ"] / dm["NETWORTH"]).clip(-1, 2), wm, [50])["50"] if "HOMEEQ" in d else None}
     out["bands"][b] = r
     print(b, {k: round(v) for k, v in r["networth_pct"].items()}, "≥1M", round(r["share_nw_ge"]["1000000"], 3))
+out["weight_total"] = float(W.sum())
 json.dump(out, open(sys.argv[1], "w"), indent=1)
