@@ -1,0 +1,1028 @@
+{
+ "id": "b-N02-million",
+ "clips": [
+  {
+   "from": "s00",
+   "to": "s00",
+   "hook": "How many retirees have *$1 million?*",
+   "title": "How many retirees really have $1 million? It depends #Shorts",
+   "desc": "Households 65+ (Federal Reserve, 2025 SCF): everything ~32%, without the house ~23%, savings ~18%, 401(k)/IRA ~11%."
+  },
+  {
+   "from": "s06",
+   "to": "s06",
+   "hook": "The million-dollar 401(k) is *rare*",
+   "title": "Only 1 in 9 retirees has $1M in a 401(k) or IRA #Shorts",
+   "desc": "Federal Reserve 2025 Survey of Consumer Finances, our calculation with survey weights."
+  }
+ ],
+ "channel": "nesteggatlas",
+ "chapter0": "The question",
+ "host": false,
+ "thumb": {
+  "kind": "text",
+  "top": "RETIREES WITH $1 MILLION",
+  "big": "1 in 3",
+  "line2": "OR 1 IN 9?",
+  "sticker": "NEW FED DATA"
+ },
+ "w": 1920,
+ "h": 1080,
+ "fps": 30,
+ "acts": [
+  "Cold open",
+  "What counts",
+  "Counting everything",
+  "Without the house",
+  "The million-dollar 401(k)",
+  "Who the millionaires are",
+  "What $1 million buys"
+ ],
+ "shots": [
+  {
+   "act": 0,
+   "type": "rank",
+   "title": "Households 65+ with $1 million or more",
+   "sub": "Depends on what you count · 2025",
+   "fmt": "pct0",
+   "count": false,
+   "vmax": 40,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars",
+   "bars": [
+    {
+     "label": "Everything they own",
+     "value": 32.2,
+     "hl": true,
+     "at": "counting everything"
+    },
+    {
+     "label": "Not counting the house",
+     "value": 23.0,
+     "at": "leave out the house"
+    },
+    {
+     "label": "Savings & investments",
+     "value": 18.5,
+     "at": "savings and investments"
+    },
+    {
+     "label": "In 401(k)s & IRAs",
+     "value": 11.3,
+     "at": "retirement accounts alone"
+    }
+   ],
+   "narration": "There are about forty million American households headed by someone sixty-five or older. {p} How many of them have a million dollars? {pp} According to the Federal Reserve's newest survey, counting everything they own, about thirty-two percent. Roughly one in three. {p} But that number changes a lot depending on what you count. {p} If you leave out the house, it drops to about twenty-three percent. {p} Count only savings and investments, and it's about eighteen percent. {p} And in retirement accounts alone, like 401(k)s and IRAs, only about eleven percent.",
+   "id": "s00"
+  },
+  {
+   "act": 0,
+   "type": "host",
+   "bg": "none",
+   "narration": "So is the million-dollar retiree common, or rare? {p} The honest answer is: both, depending on the question. {pp} In this video, we'll go through each definition, age group by age group, using the Fed's own public data. And at the end, we'll look at what a million dollars actually buys in retirement. {p} Why does this matter? Because millionaire headlines can make people feel behind, or falsely comfortable. Knowing which number you're looking at changes the whole picture. {p} <soft>As always, this is education, not financial advice.</soft>",
+   "items": [
+    {
+     "at": "common, or rare",
+     "text": "Common or rare?",
+     "serif": true,
+     "size": 66
+    },
+    {
+     "at": "each definition",
+     "text": "4 ways to count",
+     "color": "acc"
+    },
+    {
+     "at": "actually buys",
+     "text": "What $1M buys",
+     "color": "acc2"
+    }
+   ],
+   "id": "s01"
+  },
+  {
+   "act": 1,
+   "type": "list",
+   "title": "Four ways to count $1 million",
+   "src": "Federal Reserve SCF definitions: net worth, financial assets, quasi-liquid retirement accounts, home equity",
+   "narration": "First, the four ways to count. {p} One: net worth. Everything a household owns, including the home, minus everything it owes. {p} Two: net worth without the house. The same thing, but leaving out the equity in the home you live in. {p} Three: financial assets. Bank accounts, stocks, bonds, mutual funds and retirement accounts, but not real estate or businesses. {p} Four: retirement accounts only. 401(k)s, IRAs and similar plans. {pp} None of these include future Social Security checks or traditional pensions. So many retirees are better off than any of these numbers show.",
+   "items": [
+    {
+     "at": "One: net worth",
+     "kind": "bullet",
+     "text": "1 · Net worth (everything)"
+    },
+    {
+     "at": "Two: net worth without",
+     "kind": "bullet",
+     "text": "2 · Net worth without the house"
+    },
+    {
+     "at": "Three: financial assets",
+     "kind": "bullet",
+     "text": "3 · Savings & investments"
+    },
+    {
+     "at": "Four: retirement accounts",
+     "kind": "bullet",
+     "text": "4 · 401(k)s & IRAs only"
+    },
+    {
+     "at": "None of these include",
+     "kind": "title",
+     "text": "NOT COUNTED: SOCIAL SECURITY, PENSIONS"
+    }
+   ],
+   "id": "s02"
+  },
+  {
+   "act": 1,
+   "type": "host",
+   "bg": "none",
+   "narration": "Why does each definition matter? {p} Home equity is real wealth, but it's hard to spend without selling or borrowing against the house. {p} Financial assets can be spent, but there's a catch: money in a traditional 401(k) or IRA is taxed when you take it out. A million dollars in those accounts is not a million dollars after taxes. {pp} And retirement accounts are only one part of the picture for people who also have pensions, rental property or a small business.",
+   "items": [
+    {
+     "at": "Home equity is real wealth",
+     "text": "House: real, but hard to spend",
+     "color": "acc2"
+    },
+    {
+     "at": "taxed when you take it out",
+     "text": "401(k)/IRA: taxed on withdrawal",
+     "color": "acc"
+    },
+    {
+     "at": "only one part",
+     "text": "One piece of the picture",
+     "serif": true,
+     "size": 56
+    }
+   ],
+   "id": "s03"
+  },
+  {
+   "act": 2,
+   "type": "rank",
+   "title": "$1 million or more, counting everything",
+   "sub": "Share of households, 2025",
+   "fmt": "pct0",
+   "count": false,
+   "vmax": 40,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars",
+   "bars": [
+    {
+     "label": "All ages",
+     "value": 21.5,
+     "at": "all American households"
+    },
+    {
+     "label": "55–64",
+     "value": 32.3,
+     "hl": true,
+     "at": "fifty-five to sixty-four"
+    },
+    {
+     "label": "65–74",
+     "value": 30.9,
+     "hl": true,
+     "at": "sixty-five to seventy-four"
+    },
+    {
+     "label": "75 and older",
+     "value": 33.7,
+     "hl": true,
+     "at": "seventy-five and older"
+    }
+   ],
+   "narration": "Let's start with the broadest measure: net worth, counting everything. {p} Across all American households, about twenty-two percent are worth a million dollars or more. {p} Among households aged fifty-five to sixty-four, about thirty-two percent. {p} Sixty-five to seventy-four, about thirty-one percent. {p} And seventy-five and older, about thirty-four percent. {p} For comparison, between forty-five and fifty-four it's about twenty-four percent, and under thirty-five, less than two percent. {pp} In total, that's roughly thirteen million households headed by someone sixty-five or older. {p} That surprises a lot of people. But it makes sense: these households have had decades for their homes, savings and investments to grow. {p} Many bought their homes decades ago, when prices were far lower. A house bought in the 1990s can be worth several times that today.",
+   "id": "s04"
+  },
+  {
+   "act": 2,
+   "type": "host",
+   "bg": "none",
+   "narration": "But a million dollars in net worth is not a million dollars in the bank. {p} For many of these households, a big piece of that million is the house they live in. You can't spend it without selling it, borrowing against it, or moving somewhere smaller. {pp} So let's take the house out.",
+   "items": [
+    {
+     "at": "not a million dollars in the bank",
+     "text": "Net worth ≠ cash",
+     "color": "acc"
+    },
+    {
+     "at": "the house they live in",
+     "text": "A big piece is the house",
+     "color": "acc2"
+    },
+    {
+     "at": "take the house out",
+     "text": "Now, without the house",
+     "serif": true,
+     "size": 60
+    }
+   ],
+   "id": "s05"
+  },
+  {
+   "act": 3,
+   "type": "rank",
+   "title": "$1 million or more, without the house",
+   "sub": "Net worth minus home equity · share of households, 2025",
+   "fmt": "pct0",
+   "count": false,
+   "vmax": 40,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars",
+   "bars": [
+    {
+     "label": "55–64",
+     "value": 25.1,
+     "hl": true,
+     "at": "fifty-five to sixty-four"
+    },
+    {
+     "label": "65–74",
+     "value": 23.1,
+     "hl": true,
+     "at": "sixty-five to seventy-four"
+    },
+    {
+     "label": "75 and older",
+     "value": 22.9,
+     "hl": true,
+     "at": "seventy-five and older"
+    }
+   ],
+   "narration": "Without home equity, the share of millionaire households drops to about twenty-five percent at fifty-five to sixty-four, about twenty-three percent at sixty-five to seventy-four, and about twenty-three percent at seventy-five and older. {p} Still close to one in four. Notice the house matters most for the oldest households, who've had the longest to pay it off. {pp} But look at the middle household instead of the top. {p} Without the house, the typical household aged sixty-five or older is worth about a hundred and sixty thousand dollars. {p} At fifty-five to sixty-four, about a hundred and fifty thousand.",
+   "id": "s06"
+  },
+  {
+   "act": 3,
+   "type": "stats",
+   "title": "Typical household, without the house",
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars",
+   "stats": [
+    {
+     "at": "a hundred and sixty thousand",
+     "value": 160369.7931255128,
+     "fmt": "usdkm",
+     "label": "median, age 65+"
+    },
+    {
+     "at": "a million or more",
+     "value": 23.0,
+     "fmt": "pct0",
+     "label": "age 65+ with $1M+ without the house"
+    }
+   ],
+   "narration": "So the picture splits in two. {p} A large group, about one in four, has a million or more even without counting the home. {p} And the household right in the middle has about a hundred and sixty thousand. {pp} That's the gap a single average number hides. If you're somewhere in between, you're in very normal company. {p} Savings and investments tell a similar story: about nineteen percent of households at fifty-five to sixty-four, seventeen percent at sixty-five to seventy-four, and twenty percent at seventy-five and older have a million or more in financial assets.",
+   "id": "s07"
+  },
+  {
+   "act": 4,
+   "type": "rank",
+   "title": "$1 million or more in retirement accounts",
+   "sub": "401(k), IRA and similar plans · share of households, 2025",
+   "fmt": "pct0",
+   "count": false,
+   "vmax": 40,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars",
+   "bars": [
+    {
+     "label": "All ages",
+     "value": 7.0,
+     "at": "Across all ages"
+    },
+    {
+     "label": "55–64",
+     "value": 12.4,
+     "hl": true,
+     "at": "fifty-five to sixty-four"
+    },
+    {
+     "label": "65–74",
+     "value": 11.5,
+     "hl": true,
+     "at": "sixty-five to seventy-four"
+    },
+    {
+     "label": "75 and older",
+     "value": 11.0,
+     "hl": true,
+     "at": "seventy-five and older"
+    }
+   ],
+   "narration": "Now the strictest test: a million dollars in retirement accounts alone. {p} Across all ages, only about seven percent of households have that much in 401(k)s and IRAs. {p} At fifty-five to sixty-four, about twelve percent. {p} Sixty-five to seventy-four, about eleven and a half. {p} Seventy-five and older, about eleven. {pp} So the million-dollar 401(k) is real, but it's about one household in nine, even among people at or near retirement.",
+   "id": "s08"
+  },
+  {
+   "act": 4,
+   "type": "host",
+   "bg": "none",
+   "narration": "Why so few, when one in three is a millionaire overall? {p} Partly because 401(k)s only became common in the 1980s and 90s. Many of today's retirees spent part of their careers with traditional pensions instead. {p} And partly because much of their wealth sits elsewhere: in homes, businesses, and regular brokerage and bank accounts. {pp} That doesn't mean a 401(k) can't get you there. It means today's retirees, as a group, built their wealth in more than one place. For people now in their forties and fifties, who've had 401(k)s their whole careers, these numbers will probably look different.",
+   "items": [
+    {
+     "at": "Why so few",
+     "text": "Why so few?",
+     "serif": true,
+     "size": 66
+    },
+    {
+     "at": "traditional pensions",
+     "text": "Pensions came first",
+     "color": "acc2"
+    },
+    {
+     "at": "sits elsewhere",
+     "text": "Homes · businesses · brokerage",
+     "color": "acc"
+    }
+   ],
+   "id": "s09"
+  },
+  {
+   "act": 5,
+   "type": "stats",
+   "title": "The typical millionaire household, 65+",
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars",
+   "stats": [
+    {
+     "at": "two point seven million",
+     "value": 2714115.524715709,
+     "fmt": "usdkm",
+     "label": "median net worth"
+    },
+    {
+     "at": "six hundred thousand",
+     "value": 600000.0,
+     "fmt": "usdkm",
+     "label": "median home equity"
+    }
+   ],
+   "narration": "So who are these millionaire households? {p} Among households aged sixty-five and older with a net worth of at least a million dollars, the one in the middle is worth about two point seven million. {p} About ninety-seven percent own their home, with about six hundred thousand dollars in home equity. {pp} For the typical one, the house is roughly a fifth of their wealth, not most of it.",
+   "id": "s10"
+  },
+  {
+   "act": 5,
+   "type": "stats",
+   "title": "Millionaire households 65+: where the money is",
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars",
+   "stats": [
+    {
+     "at": "five hundred and thirty-two thousand",
+     "value": 532000.0,
+     "fmt": "usdkm",
+     "label": "median in retirement accounts"
+    },
+    {
+     "at": "a hundred and forty-three thousand",
+     "value": 142756.75676,
+     "fmt": "usdkm",
+     "label": "median yearly income"
+    }
+   ],
+   "narration": "Their typical retirement accounts hold about five hundred and thirty-two thousand dollars, and their typical financial assets, including those accounts, about one point three million. And only about thirty-five percent of these millionaires have a million or more in those accounts. {p} Their typical income is about a hundred and forty-three thousand dollars a year, from pensions, Social Security, investments and, for some, work. {pp} In other words, most millionaire retirees didn't get there with one giant 401(k). They got there with several pieces adding up. {p} Some in a 401(k) or IRA, some in a regular brokerage account, some in a business or rental property, plus Social Security, and often a pension. That's also why the averages in headlines can be so misleading.",
+   "id": "s11"
+  },
+  {
+   "act": 6,
+   "type": "stats",
+   "title": "What $1 million buys, by the 4% rule",
+   "src": "4% rule of thumb (Bengen, 1994): first-year withdrawal of 4% of savings, adjusted for inflation afterward · illustration, not advice",
+   "stats": [
+    {
+     "at": "forty thousand dollars",
+     "value": 40000,
+     "fmt": "usdkm",
+     "label": "first-year withdrawal from $1M"
+    },
+    {
+     "at": "about thirty-three hundred",
+     "value": 3333,
+     "fmt": "usd0",
+     "label": "per month, before taxes"
+    }
+   ],
+   "narration": "And what does a million dollars actually buy? {p} A common rule of thumb, the four percent rule, says you can withdraw about four percent in the first year, then adjust for inflation. {p} On a million dollars, that's about forty thousand dollars a year, or about thirty-three hundred a month, before taxes. {pp} Add Social Security on top, and for many households that's a comfortable retirement. {p} But it's a far cry from the image of a millionaire. A million dollars buys security, not luxury. {p} And remember, Social Security can add hundreds of thousands of dollars over a retirement, even though it's not counted in any of these numbers.",
+   "id": "s12"
+  },
+  {
+   "act": 6,
+   "type": "host",
+   "bg": "none",
+   "narration": "So, how many retirees really have a million dollars? {p} Counting everything: about one in three. {p} Without the house: about one in four. {p} In retirement accounts alone: about one in nine. {pp} If you're not in any of those groups, you're in the majority. And if you are, now you know exactly how rare your position is. {p} Tell me in the comments: which way of counting do you think is the fairest?",
+   "items": [
+    {
+     "at": "Counting everything",
+     "text": "Everything: ~1 in 3",
+     "color": "acc"
+    },
+    {
+     "at": "Without the house",
+     "text": "Without the house: ~1 in 4",
+     "color": "acc2"
+    },
+    {
+     "at": "In retirement accounts alone",
+     "text": "401(k)s & IRAs: ~1 in 9",
+     "color": "acc"
+    },
+    {
+     "at": "which way of counting",
+     "text": "Which count is fairest?",
+     "serif": true,
+     "size": 56
+    }
+   ],
+   "id": "s13"
+  },
+  {
+   "act": 6,
+   "type": "end",
+   "src": "",
+   "next": {
+    "kicker": "WATCH NEXT",
+    "big": "$431k",
+    "color": "acc",
+    "title": "Net worth at 55, 65 and 75: where do you rank?",
+    "sub": "The full ladder"
+   },
+   "narration": "To see the full net worth ladder for your age group, from the bottom ten percent to the top, watch this next. {p} This is Nest Egg Atlas. See you next time.",
+   "hold": 14,
+   "id": "s14"
+  }
+ ],
+ "checks": [
+  {
+   "say": "about 40 million households 65+",
+   "set": "hh",
+   "iso": "65p",
+   "year": 2025,
+   "min": 38000000.0,
+   "max": 42000000.0
+  },
+  {
+   "say": "65+ millionaires ≈ 32% (everything)",
+   "set": "s1",
+   "iso": "65p",
+   "year": 2025,
+   "min": 31.5,
+   "max": 32.9
+  },
+  {
+   "say": "65+ without house ≈ 23%",
+   "set": "sx",
+   "iso": "65p",
+   "year": 2025,
+   "min": 22.5,
+   "max": 23.9
+  },
+  {
+   "say": "65+ savings & investments ≈ 18%",
+   "set": "sf",
+   "iso": "65p",
+   "year": 2025,
+   "min": 17.5,
+   "max": 19.4
+  },
+  {
+   "say": "65+ retirement accounts ≈ 11%",
+   "set": "sr",
+   "iso": "65p",
+   "year": 2025,
+   "min": 10.5,
+   "max": 11.9
+  },
+  {
+   "say": "all ages ≈ 22%",
+   "set": "s1",
+   "iso": "all",
+   "year": 2025,
+   "min": 21.0,
+   "max": 22.4
+  },
+  {
+   "say": "55–64 ≈ 32%",
+   "set": "s1",
+   "iso": "55_64",
+   "year": 2025,
+   "min": 31.5,
+   "max": 32.9
+  },
+  {
+   "say": "65–74 ≈ 31%",
+   "set": "s1",
+   "iso": "65_74",
+   "year": 2025,
+   "min": 30.5,
+   "max": 31.4
+  },
+  {
+   "say": "75+ ≈ 34%",
+   "set": "s1",
+   "iso": "75p",
+   "year": 2025,
+   "min": 33.0,
+   "max": 34.4
+  },
+  {
+   "say": "45–54 ≈ 24%",
+   "set": "s1",
+   "iso": "45_54",
+   "year": 2025,
+   "min": 23.0,
+   "max": 24.4
+  },
+  {
+   "say": "under 35 < 2%",
+   "set": "s1",
+   "iso": "u35",
+   "year": 2025,
+   "min": 0,
+   "max": 1.99
+  },
+  {
+   "say": "55–64 savings ≈ 19%",
+   "set": "sf",
+   "iso": "55_64",
+   "year": 2025,
+   "min": 18.5,
+   "max": 19.4
+  },
+  {
+   "say": "65–74 savings ≈ 17%",
+   "set": "sf",
+   "iso": "65_74",
+   "year": 2025,
+   "min": 16.5,
+   "max": 17.4
+  },
+  {
+   "say": "75+ savings ≈ 20%",
+   "set": "sf",
+   "iso": "75p",
+   "year": 2025,
+   "min": 19.5,
+   "max": 20.4
+  },
+  {
+   "say": "millionaires 65+: financial assets ≈ $1.3M",
+   "set": "mill",
+   "iso": "fin_med",
+   "year": 2025,
+   "min": 1250000.0,
+   "max": 1350000.0
+  },
+  {
+   "say": "≈ 13 million households 65+ with $1M+",
+   "rule": "expr",
+   "expr": "round(40121696.18459371 * 32.2 / 100 / 1e6)",
+   "equal": 13
+  },
+  {
+   "say": "55–64 without house ≈ 25%",
+   "set": "sx",
+   "iso": "55_64",
+   "year": 2025,
+   "min": 24.5,
+   "max": 25.9
+  },
+  {
+   "say": "65–74 without house ≈ 23%",
+   "set": "sx",
+   "iso": "65_74",
+   "year": 2025,
+   "min": 22.5,
+   "max": 23.9
+  },
+  {
+   "say": "75+ without house ≈ 23%",
+   "set": "sx",
+   "iso": "75p",
+   "year": 2025,
+   "min": 22.5,
+   "max": 23.4
+  },
+  {
+   "say": "median without house 65+ ≈ $160k",
+   "set": "nwx50",
+   "iso": "65p",
+   "year": 2025,
+   "min": 155000,
+   "max": 165000
+  },
+  {
+   "say": "median without house 55–64 ≈ $150k",
+   "set": "nwx50",
+   "iso": "55_64",
+   "year": 2025,
+   "min": 145000,
+   "max": 155000
+  },
+  {
+   "say": "all ages $1M in accounts ≈ 7%",
+   "set": "sr",
+   "iso": "all",
+   "year": 2025,
+   "min": 6.5,
+   "max": 7.4
+  },
+  {
+   "say": "55–64 ≈ 12%",
+   "set": "sr",
+   "iso": "55_64",
+   "year": 2025,
+   "min": 11.5,
+   "max": 12.9
+  },
+  {
+   "say": "65–74 ≈ 11.5%",
+   "set": "sr",
+   "iso": "65_74",
+   "year": 2025,
+   "min": 11.2,
+   "max": 11.8
+  },
+  {
+   "say": "75+ ≈ 11%",
+   "set": "sr",
+   "iso": "75p",
+   "year": 2025,
+   "min": 10.5,
+   "max": 11.4
+  },
+  {
+   "say": "about one in nine (11–12%)",
+   "rule": "expr",
+   "expr": "round(100 / 11.3)",
+   "equal": 9
+  },
+  {
+   "say": "millionaires 65+: median NW ≈ $2.7M",
+   "set": "mill",
+   "iso": "nw_med",
+   "year": 2025,
+   "min": 2650000.0,
+   "max": 2750000.0
+  },
+  {
+   "say": "97% own home",
+   "set": "mill",
+   "iso": "home_share",
+   "year": 2025,
+   "min": 0.965,
+   "max": 0.979
+  },
+  {
+   "say": "median home equity ≈ $600k",
+   "set": "mill",
+   "iso": "homeeq_med",
+   "year": 2025,
+   "min": 590000,
+   "max": 610000
+  },
+  {
+   "say": "house ≈ a fifth of wealth (median share)",
+   "set": "mill",
+   "iso": "home_pct_of_nw_med",
+   "year": 2025,
+   "min": 0.18,
+   "max": 0.25
+  },
+  {
+   "say": "median retirement accounts ≈ $532k",
+   "set": "mill",
+   "iso": "ret_med",
+   "year": 2025,
+   "min": 530000,
+   "max": 534000
+  },
+  {
+   "say": "≈ 35% have $1M+ in accounts",
+   "set": "mill",
+   "iso": "ret1m_share",
+   "year": 2025,
+   "min": 0.34,
+   "max": 0.36
+  },
+  {
+   "say": "median income ≈ $143k",
+   "set": "mill",
+   "iso": "inc_med",
+   "year": 2025,
+   "min": 142000,
+   "max": 144000
+  },
+  {
+   "say": "house matters most for 75+: drop everything→without house largest",
+   "rule": "expr",
+   "expr": "(33.7 - 22.9) > (32.3 - 25.1) and (33.7 - 22.9) > (30.9 - 23.1)",
+   "equal": true
+  },
+  {
+   "say": "401(k) created by the Revenue Act of 1978, spread in the 1980s",
+   "rule": "expr",
+   "expr": "1978 < 1985",
+   "equal": true
+  },
+  {
+   "say": "4% of $1M = $40k; /12 ≈ $3,333",
+   "rule": "expr",
+   "expr": "[1_000_000 * 0.04, round(40000 / 12)]",
+   "equal": [
+    40000.0,
+    3333
+   ]
+  }
+ ],
+ "datasets": [],
+ "snapshot": [
+  {
+   "set": "s1",
+   "iso": "all",
+   "year": 2025,
+   "value": 21.5,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "sr",
+   "iso": "all",
+   "year": 2025,
+   "value": 7.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "s1",
+   "iso": "55_64",
+   "year": 2025,
+   "value": 32.3,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "sr",
+   "iso": "55_64",
+   "year": 2025,
+   "value": 12.4,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "sx",
+   "iso": "55_64",
+   "year": 2025,
+   "value": 25.1,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "sf",
+   "iso": "55_64",
+   "year": 2025,
+   "value": 18.8,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "nwx50",
+   "iso": "55_64",
+   "year": 2025,
+   "value": 150410.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "s1",
+   "iso": "65_74",
+   "year": 2025,
+   "value": 30.9,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "sr",
+   "iso": "65_74",
+   "year": 2025,
+   "value": 11.5,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "sx",
+   "iso": "65_74",
+   "year": 2025,
+   "value": 23.1,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "sf",
+   "iso": "65_74",
+   "year": 2025,
+   "value": 17.3,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "nwx50",
+   "iso": "65_74",
+   "year": 2025,
+   "value": 140273.2221884773,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "s1",
+   "iso": "75p",
+   "year": 2025,
+   "value": 33.7,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "sr",
+   "iso": "75p",
+   "year": 2025,
+   "value": 11.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "sx",
+   "iso": "75p",
+   "year": 2025,
+   "value": 22.9,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "sf",
+   "iso": "75p",
+   "year": 2025,
+   "value": 20.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "nwx50",
+   "iso": "75p",
+   "year": 2025,
+   "value": 181672.81889980877,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "s1",
+   "iso": "65p",
+   "year": 2025,
+   "value": 32.2,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "sr",
+   "iso": "65p",
+   "year": 2025,
+   "value": 11.3,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "sx",
+   "iso": "65p",
+   "year": 2025,
+   "value": 23.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "sf",
+   "iso": "65p",
+   "year": 2025,
+   "value": 18.5,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "nwx50",
+   "iso": "65p",
+   "year": 2025,
+   "value": 160369.7931255128,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "s1",
+   "iso": "45_54",
+   "year": 2025,
+   "value": 23.6,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "s1",
+   "iso": "u35",
+   "year": 2025,
+   "value": 1.7,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "hh",
+   "iso": "65p",
+   "year": 2025,
+   "value": 40121696.18459371,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "mill",
+   "iso": "homeeq_med",
+   "year": 2025,
+   "value": 600000.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "mill",
+   "iso": "ret_med",
+   "year": 2025,
+   "value": 532000.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "mill",
+   "iso": "fin_med",
+   "year": 2025,
+   "value": 1330000.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "mill",
+   "iso": "inc_med",
+   "year": 2025,
+   "value": 142756.75676,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "mill",
+   "iso": "nw_med",
+   "year": 2025,
+   "value": 2714115.524715709,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "mill",
+   "iso": "home_share",
+   "year": 2025,
+   "value": 0.9742176212945534,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "mill",
+   "iso": "ret1m_share",
+   "year": 2025,
+   "value": 0.350064152515018,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  },
+  {
+   "set": "mill",
+   "iso": "home_pct_of_nw_med",
+   "year": 2025,
+   "value": 0.22453222453222454,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · 2025 dollars"
+  }
+ ],
+ "voice": {
+  "model": "",
+  "name": "Algieba",
+  "style": "You are the narrator of a calm, trustworthy personal-finance documentary for Americans in their fifties, sixties and seventies. Read the script below in a warm, mature, unhurried voice, at about 138 words per minute, like a respected public-radio journalist explaining numbers to a friend. Let each dollar figure land with a short pause before it. Sound reassuring and clear, never salesy, never alarmed, never like an advertisement."
+ },
+ "music": [
+  {
+   "act": 0,
+   "track": "Lightless Dawn",
+   "vol": 0.18
+  },
+  {
+   "act": 1,
+   "track": "Deliberate Thought",
+   "vol": 0.17
+  },
+  {
+   "act": 2,
+   "track": "Investigations",
+   "vol": 0.17
+  },
+  {
+   "act": 3,
+   "track": "Inspired",
+   "vol": 0.17
+  },
+  {
+   "act": 4,
+   "track": "Floating Cities",
+   "vol": 0.17
+  },
+  {
+   "act": 5,
+   "track": "Deliberate Thought",
+   "vol": 0.17
+  },
+  {
+   "act": 6,
+   "track": "Inspired",
+   "vol": 0.18
+  }
+ ],
+ "yt": {
+  "title": "How Many Retirees Actually Have $1 Million? (New Fed Data)",
+  "description": "How many American retirees really have a million dollars? It depends on what you count. Using the Federal Reserve's 2025 Survey of Consumer Finances, we calculate the share of households aged 55–64, 65–74 and 75+ with $1 million or more: counting everything, without the house, in savings and investments, and in 401(k)s and IRAs alone. Plus a profile of the typical millionaire retiree household and what $1 million buys under the 4% rule.\n\nEducational content, not financial advice.\n\nSources: Federal Reserve Board, 2025 Survey of Consumer Finances, summary extract public data (our calculation with survey weights; all figures in 2025 dollars); Bengen (1994), 4% rule of thumb.\n{music_credits}\nNarration is AI-generated.\n\n#retirement #millionaire #401k #personalfinance #retirementplanning",
+  "tags": [
+   "retirement",
+   "how many retirees have 1 million",
+   "millionaire retirees",
+   "federal reserve",
+   "survey of consumer finances",
+   "401k",
+   "net worth",
+   "4% rule",
+   "retirement savings",
+   "personal finance"
+  ],
+  "lang": "en"
+ }
+}
