@@ -127,7 +127,7 @@ checks = [
 
 clips = [
     dict(**{"from": "s00", "to": "s00"}, hook="How many retirees have *$1 million?*", title="How many retirees really have $1 million? It depends #Shorts", desc="Households 65+ (Federal Reserve, 2025 SCF): everything ~32%, without the house ~23%, savings ~18%, 401(k)/IRA ~11%."),
-    dict(**{"from": "s06", "to": "s06"}, hook="The million-dollar 401(k) is *rare*", title="Only 1 in 9 retirees has $1M in a 401(k) or IRA #Shorts", desc="Federal Reserve 2025 Survey of Consumer Finances, our calculation with survey weights."),
+    dict(**{"from": "s08", "to": "s08"}, hook="The million-dollar 401(k) is *rare*", title="Only 1 in 9 retirees has $1M in a 401(k) or IRA #Shorts", desc="Federal Reserve 2025 Survey of Consumer Finances, our calculation with survey weights."),
 ]
 
 for i, sh in enumerate(shots):
