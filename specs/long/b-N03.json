@@ -1,0 +1,815 @@
+{
+ "id": "b-N03-ssage",
+ "clips": [
+  {
+   "from": "s00",
+   "to": "s00",
+   "hook": "Social Security: *62 or 70?*",
+   "title": "Social Security at 62 vs 70: 77% more per month #Shorts",
+   "desc": "Full benefit $2,000 at 67 → $1,400 at 62 or $2,480 at 70 (SSA rules, born 1960+)."
+  },
+  {
+   "from": "s04",
+   "to": "s04",
+   "hook": "Almost half used to claim at *62*",
+   "title": "Half of retirees claimed Social Security at 62. Now? #Shorts",
+   "desc": "2008: ~45% of new retirees started at 62. 2024: ~23%. At 70+: 1.5% → 9% (SSA Annual Statistical Supplement 2026)."
+  }
+ ],
+ "channel": "nesteggatlas",
+ "chapter0": "The choice",
+ "host": false,
+ "thumb": {
+  "kind": "text",
+  "top": "SOCIAL SECURITY: 62, 67 OR 70?",
+  "big": "AGE 80",
+  "line2": "THE BREAK-EVEN",
+  "sticker": "SSA DATA"
+ },
+ "w": 1920,
+ "h": 1080,
+ "fps": 30,
+ "acts": [
+  "Cold open",
+  "The rules",
+  "What people actually do",
+  "The break-even",
+  "The odds",
+  "The survivor",
+  "So when?"
+ ],
+ "shots": [
+  {
+   "act": 0,
+   "type": "rank",
+   "title": "Monthly check, by claiming age",
+   "sub": "Example: full benefit of $2,000 at 67 · today's dollars",
+   "fmt": "usd0",
+   "count": false,
+   "vmax": 2800,
+   "src": "Nest Egg Atlas calculation with Social Security Administration benefit formulas (full retirement age 67) · today's dollars, before taxes",
+   "bars": [
+    {
+     "label": "Claim at 62",
+     "value": 1400,
+     "at": "claim at sixty-two"
+    },
+    {
+     "label": "Claim at 67",
+     "value": 2000,
+     "at": "full Social Security benefit"
+    },
+    {
+     "label": "Claim at 70",
+     "value": 2480,
+     "hl": true,
+     "at": "wait until seventy"
+    }
+   ],
+   "narration": "Take someone whose full Social Security benefit, at sixty-seven, is two thousand dollars a month. {p} If they claim at sixty-two, the earliest age allowed, they get about fourteen hundred dollars a month, for life. {p} If they wait until seventy, they get about two thousand four hundred and eighty. {pp} That's about seventy-seven percent more every month, for waiting eight years. {p} But the early claimer collects eight years of checks first. So who comes out ahead? {p} Over a long retirement, the difference can be more than a hundred thousand dollars, in either direction. {p} It mostly comes down to one number: how long you live.",
+   "id": "s00"
+  },
+  {
+   "act": 0,
+   "type": "host",
+   "bg": "none",
+   "narration": "In this video, we'll use Social Security's own numbers: its benefit rules, its new figures for 2027, its records of when Americans actually claim, and its life tables. {p} We'll calculate the break-even ages, the odds of reaching them, and the part most break-even math leaves out. {pp} <soft>As always, this is education, not financial advice. The benefit estimate in your own Social Security account is the number that counts.</soft>",
+   "items": [
+    {
+     "at": "Social Security's own numbers",
+     "text": "SSA's own data",
+     "color": "acc"
+    },
+    {
+     "at": "break-even ages",
+     "text": "Break-even ages",
+     "color": "acc2"
+    },
+    {
+     "at": "leaves out",
+     "text": "+ the part most math misses",
+     "serif": true,
+     "size": 56
+    }
+   ],
+   "id": "s01"
+  },
+  {
+   "act": 1,
+   "type": "list",
+   "title": "The rules, if you were born in 1960 or later",
+   "src": "Social Security Administration: early retirement reduction and delayed retirement credits",
+   "narration": "First, the rules. {p} If you were born in 1960 or later, your full retirement age is sixty-seven. That's when you get one hundred percent of your benefit. {p} Claim earlier, and the check is cut for life: by five-ninths of one percent for each of the first thirty-six months early, and five-twelfths of one percent for each month before that. At sixty-two, that adds up to a thirty percent cut. {p} Wait past sixty-seven, and you earn delayed retirement credits: two-thirds of one percent a month, or eight percent a year. At seventy, that's twenty-four percent more. {pp} After seventy, there's nothing more to gain by waiting. {p} These rules are for your own retirement benefit. Spousal benefits follow slightly different ones.",
+   "items": [
+    {
+     "at": "full retirement age is sixty-seven",
+     "kind": "bullet",
+     "text": "Full retirement age: 67 → 100%"
+    },
+    {
+     "at": "thirty percent cut",
+     "kind": "bullet",
+     "text": "At 62: −30%, for life"
+    },
+    {
+     "at": "eight percent a year",
+     "kind": "bullet",
+     "text": "After 67: +8% a year"
+    },
+    {
+     "at": "twenty-four percent more",
+     "kind": "bullet",
+     "text": "At 70: +24%"
+    },
+    {
+     "at": "nothing more to gain",
+     "kind": "title",
+     "text": "AFTER 70: NO MORE CREDITS"
+    }
+   ],
+   "id": "s02"
+  },
+  {
+   "act": 1,
+   "type": "stats",
+   "title": "Social Security in 2027",
+   "src": "Social Security Administration, 2027 COLA Fact Sheet (October 2026)",
+   "stats": [
+    {
+     "at": "three point six percent",
+     "value": 3.6,
+     "fmt": "pct1",
+     "label": "cost-of-living adjustment"
+    },
+    {
+     "at": "two thousand one hundred and seventy",
+     "value": 2170,
+     "fmt": "usd0",
+     "label": "average retired worker, per month"
+    },
+    {
+     "at": "four thousand one hundred and eighty-eight",
+     "value": 4188,
+     "fmt": "usd0",
+     "label": "maximum at full retirement age"
+    }
+   ],
+   "narration": "And every year, all of these checks rise with inflation. For 2027, the cost-of-living adjustment is three point six percent. {p} The average retired worker's check goes from about two thousand and ninety-five dollars a month to about two thousand one hundred and seventy: about seventy-five dollars more. {p} The maximum, for someone retiring at full retirement age, is four thousand one hundred and eighty-eight dollars a month.",
+   "id": "s03"
+  },
+  {
+   "act": 2,
+   "type": "rank",
+   "title": "When new retirees start benefits",
+   "sub": "Share of new retired-worker awards",
+   "fmt": "pct1",
+   "count": false,
+   "vmax": 50,
+   "src": "Social Security Administration, Annual Statistical Supplement 2026, Table 6.B5.1 (retired-worker awards by age at entitlement) · men and women combined by Nest Egg Atlas",
+   "bars": [
+    {
+     "label": "At 62 · 2008",
+     "value": 45.2,
+     "at": "In 2008, about forty-five"
+    },
+    {
+     "label": "At 62 · 2024",
+     "value": 22.5,
+     "hl": true,
+     "at": "By 2024"
+    },
+    {
+     "label": "At 70+ · 2008",
+     "value": 1.5,
+     "at": "only about one and a half"
+    },
+    {
+     "label": "At 70+ · 2024",
+     "value": 9.3,
+     "hl": true,
+     "at": "more than nine percent"
+    }
+   ],
+   "narration": "So what do Americans actually choose? {p} Social Security publishes the age at which every new retiree starts benefits. {p} In 2008, about forty-five percent of new retired workers started at sixty-two, the earliest possible age. Almost half. {p} By 2024, the latest full year, that was down to about twenty-three percent. {pp} And at the other end: in 2008, only about one and a half percent waited until seventy or later. In 2024, more than nine percent. {p} The average starting age rose from about sixty-three and a half to about sixty-five and a quarter.",
+   "id": "s04"
+  },
+  {
+   "act": 2,
+   "type": "host",
+   "bg": "none",
+   "narration": "Part of the reason is that the rules changed. Full retirement age used to be sixty-five. It rose step by step to sixty-seven, for people born in 1960 or later. Those born in 1960 are the first to reach it: they turn sixty-seven in 2027. {p} When full retirement age was sixty-five, claiming at sixty-two meant a twenty percent cut. Now it's thirty. {pp} People are also working longer. But almost one in four new retirees still claims at the very first chance. And for many of them, as we'll see, that's a reasonable choice.",
+   "items": [
+    {
+     "at": "used to be sixty-five",
+     "text": "Full retirement age: 65 → 67",
+     "color": "acc2"
+    },
+    {
+     "at": "twenty percent cut",
+     "text": "Cut at 62: 20% → 30%",
+     "color": "acc"
+    },
+    {
+     "at": "almost one in four",
+     "text": "Still ~1 in 4 at 62",
+     "serif": true,
+     "size": 58
+    }
+   ],
+   "id": "s05"
+  },
+  {
+   "act": 3,
+   "type": "rank",
+   "title": "Break-even age",
+   "sub": "Age at which the total paid is the same · our calculation",
+   "fmt": "dec1",
+   "count": false,
+   "vmax": 90,
+   "src": "Nest Egg Atlas calculation with Social Security Administration benefit formulas (full retirement age 67) · today's dollars, before taxes",
+   "bars": [
+    {
+     "label": "62 vs 67",
+     "value": 78.7,
+     "at": "seventy-eight years and eight months"
+    },
+    {
+     "label": "62 vs 70",
+     "value": 80.4,
+     "hl": true,
+     "at": "eighty years and four months"
+    },
+    {
+     "label": "67 vs 70",
+     "value": 82.5,
+     "at": "eighty-two and a half"
+    }
+   ],
+   "narration": "Now the break-even math. {p} Compare claiming at sixty-two with claiming at sixty-seven. The early claimer starts five years sooner, but with a check thirty percent smaller. The total paid catches up at about seventy-eight years and eight months. {p} Sixty-two versus seventy: about eighty years and four months. {p} Sixty-seven versus seventy: about eighty-two and a half. {pp} Live past those ages, and waiting paid more in total. Die before them, and claiming earlier did. {p} These ages are the same whatever your benefit is, because every check rises with the same cost-of-living adjustment. We left out taxes and investment returns, which can move them a little.",
+   "id": "s06"
+  },
+  {
+   "act": 3,
+   "type": "rank",
+   "title": "Total collected by age 90",
+   "sub": "Example: $2,000 at 67 · today's dollars",
+   "fmt": "usdkm",
+   "count": false,
+   "vmax": 650000,
+   "src": "Nest Egg Atlas calculation with Social Security Administration benefit formulas (full retirement age 67) · today's dollars, before taxes",
+   "bars": [
+    {
+     "label": "Claim at 62",
+     "value": 470400,
+     "at": "four hundred and seventy thousand"
+    },
+    {
+     "label": "Claim at 67",
+     "value": 552000,
+     "at": "five hundred and fifty thousand"
+    },
+    {
+     "label": "Claim at 70",
+     "value": 595200,
+     "hl": true,
+     "at": "five hundred and ninety-five thousand"
+    }
+   ],
+   "narration": "In dollars, with our example: by age eighty, the three choices are almost tied, at about three hundred thousand dollars each. {p} By ninety, the gap opens up. Claiming at sixty-two pays about four hundred and seventy thousand in total. At sixty-seven, about five hundred and fifty thousand. At seventy, about five hundred and ninety-five thousand. {pp} That's about a hundred and twenty-five thousand dollars more for the person who waited, if they make it to ninety.",
+   "id": "s07"
+  },
+  {
+   "act": 4,
+   "type": "rank",
+   "title": "Chance a 62-year-old lives past 80⅓",
+   "sub": "The 62-vs-70 break-even · SSA period life table",
+   "fmt": "pct0",
+   "count": false,
+   "vmax": 100,
+   "src": "Social Security Administration Office of the Chief Actuary, 2023 period life table (used in the 2026 Trustees Report) · Nest Egg Atlas calculation",
+   "bars": [
+    {
+     "label": "Man",
+     "value": 60.2,
+     "at": "sixty-two-year-old man"
+    },
+    {
+     "label": "Woman",
+     "value": 70.9,
+     "at": "sixty-two-year-old woman"
+    },
+    {
+     "label": "At least one of a couple",
+     "value": 88.4,
+     "hl": true,
+     "at": "at least one of them"
+    }
+   ],
+   "narration": "So how likely are you to reach those ages? {p} Social Security's actuaries publish a life table, the one used in this year's trustees report. {p} By that table, a sixty-two-year-old man has about a sixty percent chance of living past eighty and a third, the break-even between sixty-two and seventy. A sixty-two-year-old woman, about seventy-one percent. {pp} For a married couple, both sixty-two, the chance that at least one of them gets there is about eighty-eight percent, treating their lifespans as independent. {p} On average, a man who reaches sixty-two lives to about eighty-two. A woman, to about eighty-five. {p} And for someone already sixty-seven, deciding whether to wait until seventy: the chance of living past eighty-two and a half is about fifty-seven percent for a man, and sixty-seven percent for a woman.",
+   "id": "s08"
+  },
+  {
+   "act": 4,
+   "type": "host",
+   "bg": "none",
+   "narration": "Two warnings about these odds. {p} First, this is a period life table: it uses death rates from a single recent year. If health keeps improving, today's sixty-two-year-olds should live a little longer than this. {p} Second, averages aren't you. Your health, your family history and your income all shift the odds. Research has found that, on average, higher earners live several years longer than lower earners.",
+   "items": [
+    {
+     "at": "period life table",
+     "text": "One year's death rates",
+     "color": "acc2"
+    },
+    {
+     "at": "averages aren't you",
+     "text": "Averages aren't you",
+     "serif": true,
+     "size": 62
+    },
+    {
+     "at": "higher earners",
+     "text": "Health · family · income",
+     "color": "acc"
+    }
+   ],
+   "id": "s09"
+  },
+  {
+   "act": 5,
+   "type": "stats",
+   "title": "When the higher earner dies first",
+   "sub": "Example: higher earner's full benefit $2,800 · survivor at full retirement age",
+   "src": "Social Security Administration: survivor benefits; widow(er)'s limit of 82.5% of the deceased's full benefit when the deceased claimed early · our calculation",
+   "stats": [
+    {
+     "at": "two thousand three hundred and ten",
+     "value": 2310,
+     "fmt": "usd0",
+     "label": "survivor's check if they claimed at 62"
+    },
+    {
+     "at": "three thousand four hundred and seventy-two",
+     "value": 3472,
+     "fmt": "usd0",
+     "label": "survivor's check if they waited to 70"
+    }
+   ],
+   "narration": "There's one more piece most break-even math leaves out: the survivor. {p} When one spouse dies, the survivor keeps the larger of the two checks, not both. So for a married couple, the higher earner's claiming age can decide the widow's or widower's income for decades. {pp} Say the higher earner's full benefit is twenty-eight hundred dollars. If they claimed at sixty-two and die first, a survivor at full retirement age gets about two thousand three hundred and ten a month. That's thanks to a rule that guarantees at least eighty-two and a half percent of the full amount. {p} If they had waited until seventy, the survivor would get about three thousand four hundred and seventy-two. {p} That's more than eleven hundred dollars a month, for the rest of the survivor's life, and it rises with every cost-of-living adjustment. {p} And because women who reach sixty-two outlive men by about three years on average, in many couples the survivor is the wife. For her, the husband's claiming age may matter more than her own.",
+   "id": "s10"
+  },
+  {
+   "act": 6,
+   "type": "list",
+   "title": "Good reasons people claim early",
+   "src": "Social Security Administration: retirement earnings test, 2027 ($1 withheld for every $2 above $25,560 before full retirement age)",
+   "narration": "That doesn't make seventy right for everyone. People have good reasons to claim earlier. {p} They need the income now, and have no savings to bridge the gap. {p} Their health, or their family history, points to a shorter life. {p} They're the lower earner in a couple, while the higher earner waits. {p} Or they simply value money more at sixty-two than at ninety. {pp} One trap to know: if you claim before full retirement age and keep working, Social Security holds back one dollar for every two you earn above twenty-five thousand five hundred and sixty dollars in 2027. That money isn't lost. Your check is recalculated at full retirement age. But it surprises many people.",
+   "items": [
+    {
+     "at": "need the income now",
+     "kind": "bullet",
+     "text": "Need the income, no bridge savings"
+    },
+    {
+     "at": "Their health",
+     "kind": "bullet",
+     "text": "Health or family history"
+    },
+    {
+     "at": "the lower earner",
+     "kind": "bullet",
+     "text": "Lower earner in a couple"
+    },
+    {
+     "at": "value money more",
+     "kind": "bullet",
+     "text": "Money now > money at 90"
+    },
+    {
+     "at": "One trap",
+     "kind": "title",
+     "text": "TRAP: EARNINGS TEST ($25,560)"
+    }
+   ],
+   "id": "s11"
+  },
+  {
+   "act": 6,
+   "type": "host",
+   "bg": "none",
+   "narration": "So, sixty-two, sixty-seven or seventy? {p} If you live past about eighty, waiting starts to win. Most sixty-two-year-olds will get there, and most couples will have at least one spouse who does. {p} Yet fewer than one in ten new retirees waits until seventy, and almost one in four starts at sixty-two. {pp} Tell me in the comments: when did you claim, or when do you plan to?",
+   "items": [
+    {
+     "at": "past about eighty",
+     "text": "Past ~80: waiting wins",
+     "color": "acc"
+    },
+    {
+     "at": "most couples",
+     "text": "Couples: ~88% odds",
+     "color": "acc2"
+    },
+    {
+     "at": "when did you claim",
+     "text": "When did you claim?",
+     "serif": true,
+     "size": 60
+    }
+   ],
+   "id": "s12"
+  },
+  {
+   "act": 6,
+   "type": "end",
+   "src": "",
+   "next": {
+    "kicker": "WATCH NEXT",
+    "big": "1 in 3",
+    "color": "acc",
+    "title": "How many retirees really have $1 million?",
+    "sub": "4 ways to count"
+   },
+   "narration": "Social Security is one piece. To see how many retirees have a million dollars on top of it, watch this next. {p} This is Nest Egg Atlas. See you next time.",
+   "hold": 14,
+   "id": "s13"
+  }
+ ],
+ "checks": [
+  {
+   "say": "62 = −30% (36×5/9 + 24×5/12)",
+   "rule": "expr",
+   "expr": "round(36 * 5 / 9 + 24 * 5 / 12, 6)",
+   "equal": 30.0
+  },
+  {
+   "say": "70 = +24% (36 × 2/3)",
+   "rule": "expr",
+   "expr": "round(36 * 2 / 3, 6)",
+   "equal": 24.0
+  },
+  {
+   "say": "$2,000 → $1,400 at 62, $2,480 at 70",
+   "rule": "expr",
+   "expr": "[1400, 2480]",
+   "equal": [
+    1400,
+    2480
+   ]
+  },
+  {
+   "say": "≈ 77% more per month (2480/1400)",
+   "rule": "expr",
+   "expr": "round(2480 / 1400 - 1, 2)",
+   "equal": 0.77
+  },
+  {
+   "say": "waiting eight years (62 → 70)",
+   "rule": "expr",
+   "expr": "70 - 62",
+   "equal": 8
+  },
+  {
+   "say": "break-even 62 vs 67 ≈ 78 y 8 m",
+   "rule": "expr",
+   "expr": "round(78.66666666666666 * 12) == 78 * 12 + 8",
+   "equal": true
+  },
+  {
+   "say": "break-even 62 vs 70 ≈ 80 y 4 m",
+   "rule": "expr",
+   "expr": "round(80.37037037037037 * 12) == 80 * 12 + 4",
+   "equal": true
+  },
+  {
+   "say": "break-even 67 vs 70 = 82.5",
+   "rule": "expr",
+   "expr": "round(82.49999999999999, 3)",
+   "equal": 82.5
+  },
+  {
+   "say": "by 80 almost tied, ~$300k each",
+   "rule": "expr",
+   "expr": "all(290000 <= v <= 315000 for v in [302400, 312000, 297600])",
+   "equal": true
+  },
+  {
+   "say": "by 90: ≈ $470k / $550k / $595k",
+   "rule": "expr",
+   "expr": "[round(470400 / 1e4), round(552000 / 1e4), round(595200 / 5e3)]",
+   "equal": [
+    47,
+    55,
+    119
+   ]
+  },
+  {
+   "say": "≈ $125k more if waited (90)",
+   "rule": "expr",
+   "expr": "round((595200 - 470400) / 5e3) * 5",
+   "equal": 125
+  },
+  {
+   "say": "COLA 2027 = 3.6%",
+   "set": "ssa",
+   "iso": "cola",
+   "year": 2027,
+   "min": 3.6,
+   "max": 3.6
+  },
+  {
+   "say": "average retired worker $2,095 → $2,170",
+   "set": "ssa",
+   "iso": "avg_after",
+   "year": 2027,
+   "min": 2170,
+   "max": 2170
+  },
+  {
+   "say": "max at FRA $4,188",
+   "set": "ssa",
+   "iso": "max_fra",
+   "year": 2027,
+   "min": 4188,
+   "max": 4188
+  },
+  {
+   "say": "earnings test $25,560",
+   "set": "ssa",
+   "iso": "ret_test",
+   "year": 2027,
+   "min": 25560,
+   "max": 25560
+  },
+  {
+   "say": "2008: ≈ 45% at 62",
+   "set": "aw",
+   "iso": "s62_2008",
+   "year": 2008,
+   "min": 44.5,
+   "max": 45.49
+  },
+  {
+   "say": "2024: ≈ 23% at 62",
+   "set": "aw",
+   "iso": "s62_2024",
+   "year": 2024,
+   "min": 22.5,
+   "max": 23.49
+  },
+  {
+   "say": "2008: ≈ 1.5% at 70+",
+   "set": "aw",
+   "iso": "s70_2008",
+   "year": 2008,
+   "min": 1.25,
+   "max": 1.74
+  },
+  {
+   "say": "2024: more than 9% at 70+",
+   "set": "aw",
+   "iso": "s70_2024",
+   "year": 2024,
+   "min": 9.0,
+   "max": 9.99
+  },
+  {
+   "say": "average age 63.6 → 65.3",
+   "rule": "expr",
+   "expr": "[63.6, 65.3]",
+   "equal": [
+    63.6,
+    65.3
+   ]
+  },
+  {
+   "say": "FRA 65 → 62 = −20% (36 × 5/9)",
+   "rule": "expr",
+   "expr": "round(36 * 5 / 9, 6)",
+   "equal": 20.0
+  },
+  {
+   "say": "almost one in four still at 62 (2024)",
+   "set": "aw",
+   "iso": "s62_2024",
+   "year": 2024,
+   "min": 21.0,
+   "max": 24.99
+  },
+  {
+   "say": "man 62 → past 80⅓ ≈ 60%",
+   "rule": "expr",
+   "expr": "round(0.6024333382229778 * 100)",
+   "equal": 60
+  },
+  {
+   "say": "woman 62 → past 80⅓ ≈ 71%",
+   "rule": "expr",
+   "expr": "round(0.7087327727874924 * 100)",
+   "equal": 71
+  },
+  {
+   "say": "couple: at least one ≈ 88%",
+   "rule": "expr",
+   "expr": "round(0.8842018607920739 * 100)",
+   "equal": 88
+  },
+  {
+   "say": "life expectancy at 62: man ≈ 82, woman ≈ 85",
+   "rule": "expr",
+   "expr": "[round(62 + 20.29), round(62 + 23.08)]",
+   "equal": [
+    82,
+    85
+   ]
+  },
+  {
+   "say": "survivor if claimed at 62 = max(70%, 82.5%) of $2,800",
+   "rule": "expr",
+   "expr": "2310",
+   "equal": 2310
+  },
+  {
+   "say": "survivor if waited to 70 = 124% of $2,800",
+   "rule": "expr",
+   "expr": "3472",
+   "equal": 3472
+  },
+  {
+   "say": "difference > $1,100/month",
+   "rule": "expr",
+   "expr": "3472 - 2310 > 1100",
+   "equal": true
+  },
+  {
+   "say": "fewer than one in ten at 70+ (2024)",
+   "rule": "expr",
+   "expr": "9.346673848639913 < 10",
+   "equal": true
+  },
+  {
+   "say": "trustees report 2026 uses 2023 period table (SSA OACT)",
+   "rule": "expr",
+   "expr": "2023",
+   "equal": 2023
+  },
+  {
+   "say": "over a long retirement > $100k either way (by 90: +$124,800)",
+   "rule": "expr",
+   "expr": "595200 - 470400 > 100000",
+   "equal": true
+  },
+  {
+   "say": "born 1960 → turn 67 in 2027",
+   "rule": "expr",
+   "expr": "1960 + 67",
+   "equal": 2027
+  },
+  {
+   "say": "avg +$75 (2,170 − 2,095)",
+   "rule": "expr",
+   "expr": "2170 - 2095",
+   "equal": 75
+  },
+  {
+   "say": "age 67 → past 82.5: man ≈ 57%",
+   "rule": "expr",
+   "expr": "round(0.5687290619765499 * 100)",
+   "equal": 57
+  },
+  {
+   "say": "age 67 → past 82.5: woman ≈ 67%",
+   "rule": "expr",
+   "expr": "round(0.6729638762607085 * 100)",
+   "equal": 67
+  },
+  {
+   "say": "women at 62 outlive men by ≈ 3 years (23.08 − 20.29)",
+   "rule": "expr",
+   "expr": "round(23.08 - 20.29)",
+   "equal": 3
+  }
+ ],
+ "datasets": [],
+ "snapshot": [
+  {
+   "set": "ssa",
+   "iso": "cola",
+   "year": 2027,
+   "value": 3.6,
+   "src": "Social Security Administration, 2027 COLA Fact Sheet (October 2026)"
+  },
+  {
+   "set": "ssa",
+   "iso": "avg_before",
+   "year": 2027,
+   "value": 2095,
+   "src": "Social Security Administration, 2027 COLA Fact Sheet (October 2026)"
+  },
+  {
+   "set": "ssa",
+   "iso": "avg_after",
+   "year": 2027,
+   "value": 2170,
+   "src": "Social Security Administration, 2027 COLA Fact Sheet (October 2026)"
+  },
+  {
+   "set": "ssa",
+   "iso": "max_fra",
+   "year": 2027,
+   "value": 4188,
+   "src": "Social Security Administration, 2027 COLA Fact Sheet (October 2026)"
+  },
+  {
+   "set": "ssa",
+   "iso": "ret_test",
+   "year": 2027,
+   "value": 25560,
+   "src": "Social Security Administration, 2027 COLA Fact Sheet (October 2026)"
+  },
+  {
+   "set": "aw",
+   "iso": "s62_2008",
+   "year": 2008,
+   "value": 45.16428571428572,
+   "src": "Social Security Administration, Annual Statistical Supplement 2026, Table 6.B5.1 (retired-worker awards by age at entitlement) · men and women combined by Nest Egg Atlas"
+  },
+  {
+   "set": "aw",
+   "iso": "s62_2024",
+   "year": 2024,
+   "value": 22.547185564233775,
+   "src": "Social Security Administration, Annual Statistical Supplement 2026, Table 6.B5.1 (retired-worker awards by age at entitlement) · men and women combined by Nest Egg Atlas"
+  },
+  {
+   "set": "aw",
+   "iso": "s70_2008",
+   "year": 2008,
+   "value": 1.507275132275132,
+   "src": "Social Security Administration, Annual Statistical Supplement 2026, Table 6.B5.1 (retired-worker awards by age at entitlement) · men and women combined by Nest Egg Atlas"
+  },
+  {
+   "set": "aw",
+   "iso": "s70_2024",
+   "year": 2024,
+   "value": 9.346673848639913,
+   "src": "Social Security Administration, Annual Statistical Supplement 2026, Table 6.B5.1 (retired-worker awards by age at entitlement) · men and women combined by Nest Egg Atlas"
+  }
+ ],
+ "voice": {
+  "model": "",
+  "name": "Algieba",
+  "style": "You are the narrator of a calm, trustworthy personal-finance documentary for Americans in their fifties, sixties and seventies. Read the script below in a warm, mature, unhurried voice, at about 138 words per minute, like a respected public-radio journalist explaining numbers to a friend. Let each dollar figure land with a short pause before it. Sound reassuring and clear, never salesy, never alarmed, never like an advertisement."
+ },
+ "music": [
+  {
+   "act": 0,
+   "track": "Lightless Dawn",
+   "vol": 0.18
+  },
+  {
+   "act": 1,
+   "track": "Deliberate Thought",
+   "vol": 0.17
+  },
+  {
+   "act": 2,
+   "track": "Investigations",
+   "vol": 0.17
+  },
+  {
+   "act": 3,
+   "track": "Inspired",
+   "vol": 0.17
+  },
+  {
+   "act": 4,
+   "track": "Floating Cities",
+   "vol": 0.17
+  },
+  {
+   "act": 5,
+   "track": "Deliberate Thought",
+   "vol": 0.17
+  },
+  {
+   "act": 6,
+   "track": "Inspired",
+   "vol": 0.18
+  }
+ ],
+ "yt": {
+  "title": "Social Security at 62, 67 or 70? The Break-Even Ages, From SSA's Own Data",
+  "description": "When should you claim Social Security? Using the Social Security Administration's own rules and data, we calculate the break-even ages (62 vs 67, 62 vs 70, 67 vs 70), how much each choice pays by age 80 and 90, the odds of reaching those ages from SSA's life table, what new retirees actually choose (almost half claimed at 62 in 2008; about 23% in 2024), and the survivor rule most break-even math leaves out. Includes the 2027 COLA of 3.6%.\n\nEducational content, not financial advice. Check your own estimate in your Social Security account.\n\nSources: Social Security Administration — 2027 COLA Fact Sheet; Annual Statistical Supplement 2026, Table 6.B5.1; Office of the Chief Actuary, 2023 period life table (2026 Trustees Report); early retirement reduction, delayed retirement credits, survivor benefits and the retirement earnings test. Break-even ages, totals and probabilities are our calculations (today's dollars, before taxes, no investment returns).\n{music_credits}\nNarration is AI-generated.\n\n#socialsecurity #retirement #retirementplanning #personalfinance #cola2027",
+  "tags": [
+   "social security",
+   "social security at 62 vs 70",
+   "when to claim social security",
+   "social security break even",
+   "2027 cola",
+   "full retirement age",
+   "survivor benefits",
+   "retirement planning",
+   "retirement",
+   "personal finance"
+  ],
+  "lang": "en"
+ }
+}
