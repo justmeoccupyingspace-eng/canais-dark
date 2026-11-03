@@ -147,8 +147,10 @@ Ferramentas de pauta: `mine.yml` (sem input = garimpo de ultrapassagens/quem sub
 | B-N01 | Net Worth at 55, 65 and 75: The Fed's New Numbers (Where Do You Rank?) | agendado (OS94QbIKvWw, render 41477075491 gemini-2.5-flash-preview-tts/Algieba, 8:15) · cortes e7hQSkqSnnM (20:30Z), Ou6IdtVIiMI (03/11 00:00Z) · tela final: inscrição + vídeo específico B-N02 sobre o card COMING NEXT (03/11; fica 'melhor p/ espectador' até o B-N02 ficar público) | 02/11 18:30Z |
 | B-N02 | How Many Retirees Actually Have $1 Million? (New Fed Data) | agendado (0KMtZW6mnmA, 8:34, renders 41602647484 / 41604889922 sem novo TTS) · cortes wcOw24o327A, 9hgo6eUcWDg · tela final: inscrição + B-N01 sobre o card (03/11) · sem teste A/B (canal com 6 inscritos não gera impressões p/ decidir) | 03/11 18:30Z |
 | B-N03 | Social Security at 62, 67 or 70? The Break-Even Ages, From SSA's Own Data (COLA 2027 3,6%; tabela 6.B5.1: 45% aos 62 em 2008 → 23% em 2024; tábua 2023: 62→80⅓ H 60% M 71% casal 88%; regra do viúvo 82,5%) | roteiro 03/11: 1.288 palavras, 7 atos, Algieba, 37 checks ok · miniatura out/thumbs/b03_text.jpg · WATCH NEXT → B-N02 · teste visual edge 41614703544 | 04/11 18:30Z |
-| B-N04 | What Retirees Actually Spend Each Month (BLS CE 65+) | banco | |
-| B-N05 | The Income That Puts You in the Top 10% of Retirees (Censo CPS ASEC) | banco | |
+| B-N04 | 401(k) and IRA Balances at 55, 65 and 75: The Fed's New Numbers (SCF 2025: 65–74 mediana $257k entre quem tem, média $768k, 51% sem conta; 4% → $857/mês × SS $2.170) | roteiro 03/11: 1.287 palavras, 7 atos, 32 checks ok · miniatura texto "$257k / NOT $768k" · WATCH NEXT → B-N03 | 05/11 18:30Z (cota 3.8 de 04/11) |
+| B-N05 | What Retirees Actually Spend Each Month (BLS CE 2025, divulgado 29/10/2026; tabelas por idade só em XLSX — FRED ainda em 2024) | banco | |
+| B-N06 | The Income That Puts You in the Top 10% of Retirees (Censo CPS ASEC) | banco | |
+| B-N07 | How Much Social Security at $40k, $60k, $100k Salaries (fórmula PIA, bend points 2027) | banco | |
 
 - 02/11 12:20Z FEITO no Studio: nome "Nest Egg Atlas", @nesteggatlas (livre), descrição nova, banner e avatar (out/brandB/). Canal tinha 6 inscritos, 63 envios (todos de tecnologia; Shorts até 1.220 views, longos 3 views).
 - 02/11 16:00Z FEITO (pedido do Kauan "apaga ou deixa privado"): 48 vídeos antigos públicos → privados (ytchan run 41476758663). Nada apagado. NÃO usar all=1 com vídeo agendado no canal.

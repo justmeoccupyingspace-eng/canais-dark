@@ -1,0 +1,1267 @@
+{
+ "id": "b-N04-401k",
+ "clips": [
+  {
+   "from": "s00",
+   "to": "s00",
+   "hook": "The typical *401(k)* by age",
+   "title": "The typical 401(k) & IRA balance by age (Fed 2025) #Shorts",
+   "desc": "Median among households with an account: 55–64 ≈ $239k, 65–74 ≈ $257k (Federal Reserve 2025 SCF, our calculation)."
+  },
+  {
+   "from": "s06",
+   "to": "s06",
+   "hook": "Why the *average* 401(k) lies",
+   "title": "Average 401(k) at 65–74: $768k. Median: $257k #Shorts",
+   "desc": "A few very large accounts pull the average up (Federal Reserve 2025 SCF, our calculation)."
+  }
+ ],
+ "channel": "nesteggatlas",
+ "chapter0": "The numbers",
+ "host": false,
+ "thumb": {
+  "kind": "text",
+  "top": "TYPICAL 401(k) AT 65–74",
+  "big": "$257k",
+  "line2": "NOT $768k",
+  "sticker": "NEW FED DATA"
+ },
+ "w": 1920,
+ "h": 1080,
+ "fps": 30,
+ "acts": [
+  "Cold open",
+  "Who has one",
+  "The typical balance",
+  "The average trap",
+  "The top and the bottom",
+  "What it pays",
+  "Where you stand"
+ ],
+ "shots": [
+  {
+   "act": 0,
+   "type": "rank",
+   "title": "Typical 401(k) & IRA balance, by age",
+   "sub": "Median, households with an account · 2025",
+   "fmt": "usdkm",
+   "count": false,
+   "vmax": 300000,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars",
+   "bars": [
+    {
+     "label": "Under 35",
+     "value": 21000.0,
+     "at": "Under thirty-five"
+    },
+    {
+     "label": "35–44",
+     "value": 61000.0,
+     "at": "Thirty-five to forty-four"
+    },
+    {
+     "label": "45–54",
+     "value": 132297.70296740916,
+     "at": "Forty-five to fifty-four"
+    },
+    {
+     "label": "55–64",
+     "value": 239000.0,
+     "hl": true,
+     "at": "Fifty-five to sixty-four"
+    },
+    {
+     "label": "65–74",
+     "value": 257000.0,
+     "hl": true,
+     "at": "Sixty-five to seventy-four"
+    },
+    {
+     "label": "75 and older",
+     "value": 257000.0,
+     "hl": true,
+     "at": "seventy-five and older"
+    }
+   ],
+   "narration": "Here's what the typical American household actually has in its 401(k)s and IRAs, by age, from the Federal Reserve's newest survey. {p} Under thirty-five: about twenty-one thousand dollars. Thirty-five to forty-four: about sixty-one thousand. Forty-five to fifty-four: about a hundred and thirty-two thousand. {p} Fifty-five to sixty-four: about two hundred and thirty-nine thousand. {p} Sixty-five to seventy-four, and seventy-five and older: about two hundred and fifty-seven thousand. {pp} Those are medians, for households that have an account, in 2025 dollars, with every retirement account in the household added together. And that last part, having an account, matters more than you might think.",
+   "id": "s00"
+  },
+  {
+   "act": 0,
+   "type": "host",
+   "bg": "none",
+   "narration": "Because about half of households in their late sixties and early seventies don't have one at all. {p} In this video, we'll go through who has a retirement account, what the typical balance really is, why the average you see in headlines is so misleading, and what these balances actually pay in retirement, and how your own number compares. {pp} <soft>As always, this is education, not financial advice.</soft>",
+   "items": [
+    {
+     "at": "don't have one at all",
+     "text": "~Half have none",
+     "color": "acc"
+    },
+    {
+     "at": "typical balance",
+     "text": "The real typical balance",
+     "color": "acc2"
+    },
+    {
+     "at": "so misleading",
+     "text": "The average trap",
+     "serif": true,
+     "size": 62
+    }
+   ],
+   "id": "s01"
+  },
+  {
+   "act": 1,
+   "type": "rank",
+   "title": "Households with any retirement account",
+   "sub": "401(k), IRA and similar plans · 2025",
+   "fmt": "pct0",
+   "count": false,
+   "vmax": 80,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars",
+   "bars": [
+    {
+     "label": "All ages",
+     "value": 54.9,
+     "at": "Across all American households"
+    },
+    {
+     "label": "45–54",
+     "value": 63.0,
+     "at": "between forty-five and sixty-four"
+    },
+    {
+     "label": "55–64",
+     "value": 63.1,
+     "hl": true,
+     "at": "between forty-five and sixty-four"
+    },
+    {
+     "label": "65–74",
+     "value": 49.0,
+     "hl": true,
+     "at": "About forty-nine percent"
+    },
+    {
+     "label": "75 and older",
+     "value": 44.6,
+     "hl": true,
+     "at": "About forty-five percent"
+    }
+   ],
+   "narration": "First: who has one at all. {p} Across all American households, about fifty-five percent have money in a retirement account like a 401(k) or an IRA. {p} The share peaks in the working years: about sixty-three percent of households between forty-five and sixty-four. {p} Then it drops. About forty-nine percent at sixty-five to seventy-four. About forty-five percent at seventy-five and older. {pp} So in the sixty-five to seventy-four group, slightly more than half of households have no retirement account at all. That means the household right in the middle of that age group has zero in a 401(k) or IRA.",
+   "id": "s02"
+  },
+  {
+   "act": 1,
+   "type": "host",
+   "bg": "none",
+   "narration": "Why does the share fall after sixty-five? {p} Some households spend their accounts down, or move the money elsewhere. {p} Required minimum distributions now start at seventy-three, so money has to come out of most of these accounts every year after that. {p} And many of today's oldest retirees spent their careers with traditional pensions, before 401(k)s became common in the 1980s and 90s. For them, the pension check is the retirement plan. {pp} None of those pensions show up in these numbers. Neither does Social Security.",
+   "items": [
+    {
+     "at": "spend their accounts down",
+     "text": "Spent down or moved",
+     "color": "acc2"
+    },
+    {
+     "at": "seventy-three",
+     "text": "RMDs start at 73",
+     "color": "acc"
+    },
+    {
+     "at": "traditional pensions",
+     "text": "Pensions came first",
+     "serif": true,
+     "size": 62
+    }
+   ],
+   "id": "s03"
+  },
+  {
+   "act": 2,
+   "type": "rank",
+   "title": "Age 65–74, households with an account",
+   "sub": "Balance at each point of the ladder · 2025",
+   "fmt": "usdkm",
+   "count": false,
+   "vmax": 2200000,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars",
+   "bars": [
+    {
+     "label": "25th percentile",
+     "value": 94408.04224040623,
+     "at": "A quarter of them"
+    },
+    {
+     "label": "Median",
+     "value": 257000.0,
+     "hl": true,
+     "at": "Half have less"
+    },
+    {
+     "label": "75th percentile",
+     "value": 837000.0,
+     "at": "A quarter have more"
+    },
+    {
+     "label": "90th percentile",
+     "value": 1950000.0,
+     "at": "the top ten percent"
+    }
+   ],
+   "narration": "Now the balances. Let's focus on households aged sixty-five to seventy-four that do have an account. {p} A quarter of them have less than about ninety-four thousand dollars. {p} Half have less than about two hundred and fifty-seven thousand. That's the median. {p} A quarter have more than about eight hundred and thirty-seven thousand. {p} And the top ten percent have more than about one point nine five million. {pp} For fifty-five to sixty-four, just before retirement, the median is about two hundred and thirty-nine thousand, and the top ten percent start at about one point eight five million. {p} At seventy-five and older, the median is also about two hundred and fifty-seven thousand, and the top quarter starts at about nine hundred and seventy-eight thousand.",
+   "id": "s04"
+  },
+  {
+   "act": 2,
+   "type": "host",
+   "bg": "none",
+   "narration": "So if you're in your late sixties, have a 401(k) or IRA, and it holds a quarter of a million dollars, you're right in the middle of your peers. {p} If it holds a hundred thousand, you're near the bottom quarter of account holders, but still ahead of the roughly half of households your age who have nothing in these accounts at all. {p} That's a far more useful benchmark than the averages in most headlines.",
+   "items": [
+    {
+     "at": "a quarter of a million",
+     "text": "$250k ≈ the middle",
+     "color": "acc"
+    },
+    {
+     "at": "a hundred thousand",
+     "text": "$100k ≈ bottom quarter",
+     "color": "acc2"
+    },
+    {
+     "at": "nothing in these accounts",
+     "text": "…but ahead of half",
+     "serif": true,
+     "size": 60
+    }
+   ],
+   "id": "s05"
+  },
+  {
+   "act": 3,
+   "type": "stats",
+   "title": "Age 65–74, households with an account",
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars",
+   "stats": [
+    {
+     "at": "That's the median",
+     "value": 257000.0,
+     "fmt": "usdkm",
+     "label": "median balance"
+    },
+    {
+     "at": "seven hundred and sixty-eight thousand",
+     "value": 767505.2254066664,
+     "fmt": "usdkm",
+     "label": "average balance"
+    }
+   ],
+   "narration": "Now, the number you usually see in headlines: the average. {p} That's the median, from before: about two hundred and fifty-seven thousand. {p} The average balance for the same households is about seven hundred and sixty-eight thousand dollars. Three times the median. {pp} Why so different? Because a small group of very large accounts pulls the average up. A few households with several million dollars move the average a lot, but they don't move the median at all. {p} So when you read that the average retiree has three quarters of a million dollars in a 401(k), remember: well over half of retirees with an account have far less than that. Most likely around seven in ten. {p} For fifty-five to sixty-four, it's the same story: an average of about six hundred and seventy thousand, against a median of about two hundred and thirty-nine thousand.",
+   "id": "s06"
+  },
+  {
+   "act": 3,
+   "type": "host",
+   "bg": "none",
+   "narration": "That's not just a quirk of statistics. It changes how you should read your own number. {p} Comparing yourself to the average will almost always make you feel behind. Comparing yourself to the median tells you where you really stand. {p} And comparing yourself to people your own age matters too: a sixty-eight-year-old and a forty-five-year-old are in completely different places.",
+   "items": [
+    {
+     "at": "feel behind",
+     "text": "Average → feel behind",
+     "color": "acc"
+    },
+    {
+     "at": "where you really stand",
+     "text": "Median → where you stand",
+     "color": "acc2"
+    },
+    {
+     "at": "your own age",
+     "text": "Compare by age",
+     "serif": true,
+     "size": 62
+    }
+   ],
+   "id": "s07"
+  },
+  {
+   "act": 4,
+   "type": "rank",
+   "title": "Households 65–74 with at least…",
+   "sub": "In retirement accounts · share of ALL households, 2025",
+   "fmt": "pct1",
+   "count": false,
+   "vmax": 50,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars",
+   "bars": [
+    {
+     "label": "$100,000",
+     "value": 36.3,
+     "at": "at least a hundred thousand"
+    },
+    {
+     "label": "$250,000",
+     "value": 25.2,
+     "at": "two hundred and fifty thousand"
+    },
+    {
+     "label": "$500,000",
+     "value": 17.7,
+     "at": "half a million"
+    },
+    {
+     "label": "$1 million",
+     "value": 11.5,
+     "hl": true,
+     "at": "a million or more"
+    }
+   ],
+   "narration": "Here's another way to see it, counting every household, with or without an account. {p} Among households aged sixty-five to seventy-four, about thirty-six percent have at least a hundred thousand dollars in retirement accounts. {p} About one in four has at least two hundred and fifty thousand. {p} About eighteen percent, half a million. {p} And about eleven and a half percent, a million or more. Roughly one in nine. {pp} For fifty-five to sixty-four, the shares are a little higher: about forty percent have a hundred thousand or more, and about twelve percent a million. {p} Seventy-five and older: about thirty-one percent have a hundred thousand or more, and about eleven percent a million.",
+   "id": "s08"
+  },
+  {
+   "act": 4,
+   "type": "host",
+   "bg": "none",
+   "narration": "And at the bottom: about half of all households aged sixty-five to seventy-four have nothing in these accounts. For most of them, retirement income comes from Social Security, sometimes a pension, home equity, and work. {p} That's why Social Security matters so much. For many retirees, the lifetime value of their checks is worth more than everything in their accounts, even though it never shows up on a balance sheet. And Social Security checks rise with inflation every year, which no savings account can promise.",
+   "items": [
+    {
+     "at": "have nothing",
+     "text": "~Half: $0 in accounts",
+     "color": "acc"
+    },
+    {
+     "at": "Social Security, sometimes a pension",
+     "text": "Social Security · pension · home",
+     "color": "acc2"
+    },
+    {
+     "at": "never shows up",
+     "text": "Not on any balance sheet",
+     "serif": true,
+     "size": 58
+    }
+   ],
+   "id": "s09"
+  },
+  {
+   "act": 5,
+   "type": "stats",
+   "title": "What the median balance pays",
+   "sub": "Age 65–74 · 4% rule of thumb · before taxes",
+   "src": "4% rule of thumb (Bengen, 1994): first-year withdrawal of 4% of savings · Social Security Administration, 2027 COLA Fact Sheet · illustration, not advice",
+   "stats": [
+    {
+     "at": "eight hundred and fifty-seven dollars a month",
+     "value": 857,
+     "fmt": "usd0",
+     "label": "per month from $257k (4%)"
+    },
+    {
+     "at": "two thousand one hundred and seventy dollars a month",
+     "value": 2170,
+     "fmt": "usd0",
+     "label": "average Social Security check, 2027"
+    }
+   ],
+   "narration": "So what does the median balance actually pay? {p} Using the common four percent rule of thumb, a balance of two hundred and fifty-seven thousand dollars supports a first-year withdrawal of about ten thousand two hundred and eighty dollars. That's about eight hundred and fifty-seven dollars a month, before taxes. {p} Compare that with Social Security. In 2027, the average retired worker's check is about two thousand one hundred and seventy dollars a month. {pp} So for the typical household with an account, Social Security pays about two and a half times more than the 401(k) does.",
+   "id": "s10"
+  },
+  {
+   "act": 5,
+   "type": "host",
+   "bg": "none",
+   "narration": "Two more things to keep in mind. {p} First, money in traditional, pre-tax accounts is taxed as income when you take it out. Two hundred and fifty-seven thousand dollars in a traditional IRA is not two hundred and fifty-seven thousand dollars to spend. {p} Second, these are household numbers. A married couple counts once, with both spouses' accounts added together. So for a couple, the typical balance per person is even smaller. {p} And if your money is in a Roth IRA or a Roth 401(k), qualified withdrawals are tax-free, so the same balance goes further.",
+   "items": [
+    {
+     "at": "taxed as income",
+     "text": "Pre-tax = taxed on the way out",
+     "color": "acc"
+    },
+    {
+     "at": "household numbers",
+     "text": "Couples count once",
+     "color": "acc2"
+    }
+   ],
+   "id": "s11"
+  },
+  {
+   "act": 6,
+   "type": "list",
+   "title": "The ladder, age 65–74",
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars",
+   "narration": "So here's the quick ladder for sixty-five to seventy-four. {p} Zero: about half of all households. {p} About ninety-four thousand: the bottom quarter of those with an account. {p} About two hundred and fifty-seven thousand: the middle. {p} About eight hundred and thirty-seven thousand: the top quarter. {p} About one point nine five million: the top ten percent. {pp} If you're somewhere between two rungs, you're in very normal company. Most people are. {p} Wherever you are on this ladder, remember that it leaves out Social Security, pensions and your home.",
+   "items": [
+    {
+     "at": "Zero: about half",
+     "kind": "bullet",
+     "text": "$0 · about half of households"
+    },
+    {
+     "at": "About ninety-four thousand",
+     "kind": "bullet",
+     "text": "$94k · bottom quarter of holders"
+    },
+    {
+     "at": "About two hundred and fifty-seven",
+     "kind": "bullet",
+     "text": "$257k · the middle"
+    },
+    {
+     "at": "About eight hundred and thirty-seven",
+     "kind": "bullet",
+     "text": "$837k · top quarter"
+    },
+    {
+     "at": "About one point nine five million",
+     "kind": "bullet",
+     "text": "$1.95M · top 10%"
+    },
+    {
+     "at": "leaves out Social Security",
+     "kind": "title",
+     "text": "NOT COUNTED: SOCIAL SECURITY, PENSIONS, HOME"
+    }
+   ],
+   "id": "s12"
+  },
+  {
+   "act": 6,
+   "type": "host",
+   "bg": "none",
+   "narration": "Tell me in the comments: does your balance surprise you, compared with these numbers? {p} And if you're already retired, I'd like to know: was it a 401(k), an IRA, or a pension that did most of the work? {p} And if you know someone your age who's worried they're behind, send them this. The median might be a relief.",
+   "items": [
+    {
+     "at": "does your balance surprise you",
+     "text": "Surprised?",
+     "serif": true,
+     "size": 66
+    },
+    {
+     "at": "did most of the work",
+     "text": "401(k) · IRA · pension?",
+     "color": "acc"
+    }
+   ],
+   "id": "s13"
+  },
+  {
+   "act": 6,
+   "type": "end",
+   "src": "",
+   "next": {
+    "kicker": "WATCH NEXT",
+    "big": "AGE 80",
+    "color": "acc",
+    "title": "Social Security at 62, 67 or 70?",
+    "sub": "The break-even ages"
+   },
+   "narration": "For most retirees, the biggest piece is still Social Security. To see when it pays to claim, watch this next. {p} This is Nest Egg Atlas. See you next time.",
+   "hold": 14,
+   "id": "s14"
+  }
+ ],
+ "checks": [
+  {
+   "say": "<35 median ≈ $21k",
+   "set": "p50",
+   "iso": "u35",
+   "year": 2025,
+   "min": 20500,
+   "max": 21499
+  },
+  {
+   "say": "35–44 ≈ $61k",
+   "set": "p50",
+   "iso": "35_44",
+   "year": 2025,
+   "min": 60500,
+   "max": 61499
+  },
+  {
+   "say": "45–54 ≈ $132k",
+   "set": "p50",
+   "iso": "45_54",
+   "year": 2025,
+   "min": 131500,
+   "max": 132499
+  },
+  {
+   "say": "55–64 ≈ $239k",
+   "set": "p50",
+   "iso": "55_64",
+   "year": 2025,
+   "min": 238500,
+   "max": 239499
+  },
+  {
+   "say": "65–74 ≈ $257k",
+   "set": "p50",
+   "iso": "65_74",
+   "year": 2025,
+   "min": 256500,
+   "max": 257499
+  },
+  {
+   "say": "75+ ≈ $257k",
+   "set": "p50",
+   "iso": "75p",
+   "year": 2025,
+   "min": 256500,
+   "max": 257499
+  },
+  {
+   "say": "all: ≈ 55% have an account",
+   "set": "has",
+   "iso": "all",
+   "year": 2025,
+   "min": 54.5,
+   "max": 55.4
+  },
+  {
+   "say": "45–54 ≈ 63%",
+   "set": "has",
+   "iso": "45_54",
+   "year": 2025,
+   "min": 62.5,
+   "max": 63.4
+  },
+  {
+   "say": "55–64 ≈ 63%",
+   "set": "has",
+   "iso": "55_64",
+   "year": 2025,
+   "min": 62.5,
+   "max": 63.4
+  },
+  {
+   "say": "65–74 ≈ 49% (slightly more than half have none)",
+   "set": "has",
+   "iso": "65_74",
+   "year": 2025,
+   "min": 48.5,
+   "max": 49.9
+  },
+  {
+   "say": "75+ ≈ 45%",
+   "set": "has",
+   "iso": "75p",
+   "year": 2025,
+   "min": 44.5,
+   "max": 45.4
+  },
+  {
+   "say": "65–74 p25 ≈ $94k",
+   "set": "p25",
+   "iso": "65_74",
+   "year": 2025,
+   "min": 93500,
+   "max": 94999
+  },
+  {
+   "say": "65–74 p75 ≈ $837k",
+   "set": "p75",
+   "iso": "65_74",
+   "year": 2025,
+   "min": 836500,
+   "max": 837499
+  },
+  {
+   "say": "65–74 p90 ≈ $1.95M",
+   "set": "p90",
+   "iso": "65_74",
+   "year": 2025,
+   "min": 1945000.0,
+   "max": 1955000.0
+  },
+  {
+   "say": "55–64 p90 ≈ $1.85M",
+   "set": "p90",
+   "iso": "55_64",
+   "year": 2025,
+   "min": 1845000.0,
+   "max": 1855000.0
+  },
+  {
+   "say": "$100k near the bottom quarter (p25 $94k)",
+   "rule": "expr",
+   "expr": "94408.04224040623 < 100000 < 257000.0",
+   "equal": true
+  },
+  {
+   "say": "65–74 mean ≈ $768k",
+   "set": "mean",
+   "iso": "65_74",
+   "year": 2025,
+   "min": 767000,
+   "max": 768999
+  },
+  {
+   "say": "mean ≈ 3× median",
+   "rule": "expr",
+   "expr": "round(767505.2254066664 / 257000.0)",
+   "equal": 3
+  },
+  {
+   "say": "share of holders below the mean ≈ 70% (linear between p50 and p75)",
+   "rule": "expr",
+   "expr": "round(50 + 25 * (767505.2254066664 - 257000.0) / (837000.0 - 257000.0))",
+   "equal": 72
+  },
+  {
+   "say": "65–74 ≥$100k ≈ 36%",
+   "set": "ge100000",
+   "iso": "65_74",
+   "year": 2025,
+   "min": 35.5,
+   "max": 36.4
+  },
+  {
+   "say": "≥$250k ≈ 1 in 4",
+   "set": "ge250000",
+   "iso": "65_74",
+   "year": 2025,
+   "min": 24.5,
+   "max": 25.4
+  },
+  {
+   "say": "≥$500k ≈ 18%",
+   "set": "ge500000",
+   "iso": "65_74",
+   "year": 2025,
+   "min": 17.5,
+   "max": 18.4
+  },
+  {
+   "say": "≥$1M ≈ 11.5%",
+   "set": "ge1000000",
+   "iso": "65_74",
+   "year": 2025,
+   "min": 11.3,
+   "max": 11.7
+  },
+  {
+   "say": "55–64 ≥$100k ≈ 40%",
+   "set": "ge100000",
+   "iso": "55_64",
+   "year": 2025,
+   "min": 39.0,
+   "max": 40.4
+  },
+  {
+   "say": "55–64 ≥$1M ≈ 12%",
+   "set": "ge1000000",
+   "iso": "55_64",
+   "year": 2025,
+   "min": 11.8,
+   "max": 12.4
+  },
+  {
+   "say": "4% of $257k ≈ $10,280; /12 ≈ $857",
+   "rule": "expr",
+   "expr": "[round(10280.0), round(10280.0 / 12)]",
+   "equal": [
+    10280,
+    857
+   ]
+  },
+  {
+   "say": "SS 2,170 / 857 ≈ 2.5×",
+   "rule": "expr",
+   "expr": "round(2170 / (10280.0 / 12), 1)",
+   "equal": 2.5
+  },
+  {
+   "say": "RMD age 73 (SECURE 2.0)",
+   "rule": "expr",
+   "expr": "73",
+   "equal": 73
+  },
+  {
+   "say": "75+ p75 ≈ $978k",
+   "set": "p75",
+   "iso": "75p",
+   "year": 2025,
+   "min": 977500,
+   "max": 978499
+  },
+  {
+   "say": "55–64 mean ≈ $670k",
+   "set": "mean",
+   "iso": "55_64",
+   "year": 2025,
+   "min": 669500,
+   "max": 670999
+  },
+  {
+   "say": "75+ ≥$100k ≈ 31%",
+   "set": "ge100000",
+   "iso": "75p",
+   "year": 2025,
+   "min": 30.5,
+   "max": 31.9
+  },
+  {
+   "say": "75+ ≥$1M ≈ 11%",
+   "set": "ge1000000",
+   "iso": "75p",
+   "year": 2025,
+   "min": 10.5,
+   "max": 11.4
+  }
+ ],
+ "datasets": [],
+ "snapshot": [
+  {
+   "set": "has",
+   "iso": "all",
+   "year": 2025,
+   "value": 54.9,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p25",
+   "iso": "all",
+   "year": 2025,
+   "value": 27000.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p50",
+   "iso": "all",
+   "year": 2025,
+   "value": 106000.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p75",
+   "iso": "all",
+   "year": 2025,
+   "value": 412243.92779493495,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p90",
+   "iso": "all",
+   "year": 2025,
+   "value": 1240000.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "mean",
+   "iso": "all",
+   "year": 2025,
+   "value": 451117.64405888837,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge100000",
+   "iso": "all",
+   "year": 2025,
+   "value": 28.6,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge250000",
+   "iso": "all",
+   "year": 2025,
+   "value": 18.7,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge500000",
+   "iso": "all",
+   "year": 2025,
+   "value": 12.3,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge1000000",
+   "iso": "all",
+   "year": 2025,
+   "value": 7.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "has",
+   "iso": "u35",
+   "year": 2025,
+   "value": 48.8,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p25",
+   "iso": "u35",
+   "year": 2025,
+   "value": 5400.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p50",
+   "iso": "u35",
+   "year": 2025,
+   "value": 21000.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p75",
+   "iso": "u35",
+   "year": 2025,
+   "value": 55000.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p90",
+   "iso": "u35",
+   "year": 2025,
+   "value": 147000.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "mean",
+   "iso": "u35",
+   "year": 2025,
+   "value": 48445.93313428264,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge100000",
+   "iso": "u35",
+   "year": 2025,
+   "value": 7.2,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge250000",
+   "iso": "u35",
+   "year": 2025,
+   "value": 1.4,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge500000",
+   "iso": "u35",
+   "year": 2025,
+   "value": 0.1,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge1000000",
+   "iso": "u35",
+   "year": 2025,
+   "value": 0.1,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "has",
+   "iso": "35_44",
+   "year": 2025,
+   "value": 59.6,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p25",
+   "iso": "35_44",
+   "year": 2025,
+   "value": 17000.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p50",
+   "iso": "35_44",
+   "year": 2025,
+   "value": 61000.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p75",
+   "iso": "35_44",
+   "year": 2025,
+   "value": 218367.70792113047,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p90",
+   "iso": "35_44",
+   "year": 2025,
+   "value": 480562.01410889736,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "mean",
+   "iso": "35_44",
+   "year": 2025,
+   "value": 182426.07496011184,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge100000",
+   "iso": "35_44",
+   "year": 2025,
+   "value": 24.3,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge250000",
+   "iso": "35_44",
+   "year": 2025,
+   "value": 12.6,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge500000",
+   "iso": "35_44",
+   "year": 2025,
+   "value": 5.8,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge1000000",
+   "iso": "35_44",
+   "year": 2025,
+   "value": 1.7,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "has",
+   "iso": "45_54",
+   "year": 2025,
+   "value": 63.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p25",
+   "iso": "45_54",
+   "year": 2025,
+   "value": 47491.661558361746,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p50",
+   "iso": "45_54",
+   "year": 2025,
+   "value": 132297.70296740916,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p75",
+   "iso": "45_54",
+   "year": 2025,
+   "value": 414000.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p90",
+   "iso": "45_54",
+   "year": 2025,
+   "value": 1054000.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "mean",
+   "iso": "45_54",
+   "year": 2025,
+   "value": 415780.6826070393,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge100000",
+   "iso": "45_54",
+   "year": 2025,
+   "value": 37.2,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge250000",
+   "iso": "45_54",
+   "year": 2025,
+   "value": 23.1,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge500000",
+   "iso": "45_54",
+   "year": 2025,
+   "value": 14.4,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge1000000",
+   "iso": "45_54",
+   "year": 2025,
+   "value": 7.3,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "has",
+   "iso": "55_64",
+   "year": 2025,
+   "value": 63.1,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p25",
+   "iso": "55_64",
+   "year": 2025,
+   "value": 60000.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p50",
+   "iso": "55_64",
+   "year": 2025,
+   "value": 239000.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p75",
+   "iso": "55_64",
+   "year": 2025,
+   "value": 708913.0231564414,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p90",
+   "iso": "55_64",
+   "year": 2025,
+   "value": 1848831.997740557,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "mean",
+   "iso": "55_64",
+   "year": 2025,
+   "value": 670247.6473002235,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge100000",
+   "iso": "55_64",
+   "year": 2025,
+   "value": 39.5,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge250000",
+   "iso": "55_64",
+   "year": 2025,
+   "value": 31.2,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge500000",
+   "iso": "55_64",
+   "year": 2025,
+   "value": 21.9,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge1000000",
+   "iso": "55_64",
+   "year": 2025,
+   "value": 12.4,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "has",
+   "iso": "65_74",
+   "year": 2025,
+   "value": 49.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p25",
+   "iso": "65_74",
+   "year": 2025,
+   "value": 94408.04224040623,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p50",
+   "iso": "65_74",
+   "year": 2025,
+   "value": 257000.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p75",
+   "iso": "65_74",
+   "year": 2025,
+   "value": 837000.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p90",
+   "iso": "65_74",
+   "year": 2025,
+   "value": 1950000.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "mean",
+   "iso": "65_74",
+   "year": 2025,
+   "value": 767505.2254066664,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge100000",
+   "iso": "65_74",
+   "year": 2025,
+   "value": 36.3,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge250000",
+   "iso": "65_74",
+   "year": 2025,
+   "value": 25.2,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge500000",
+   "iso": "65_74",
+   "year": 2025,
+   "value": 17.7,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge1000000",
+   "iso": "65_74",
+   "year": 2025,
+   "value": 11.5,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "has",
+   "iso": "75p",
+   "year": 2025,
+   "value": 44.6,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p25",
+   "iso": "75p",
+   "year": 2025,
+   "value": 67092.252697149,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p50",
+   "iso": "75p",
+   "year": 2025,
+   "value": 257000.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p75",
+   "iso": "75p",
+   "year": 2025,
+   "value": 978000.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "p90",
+   "iso": "75p",
+   "year": 2025,
+   "value": 2197125.081052234,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "mean",
+   "iso": "75p",
+   "year": 2025,
+   "value": 798707.0962432305,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge100000",
+   "iso": "75p",
+   "year": 2025,
+   "value": 31.4,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge250000",
+   "iso": "75p",
+   "year": 2025,
+   "value": 22.9,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge500000",
+   "iso": "75p",
+   "year": 2025,
+   "value": 16.9,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  },
+  {
+   "set": "ge1000000",
+   "iso": "75p",
+   "year": 2025,
+   "value": 11.0,
+   "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · retirement accounts = 401(k), IRA and similar · 2025 dollars"
+  }
+ ],
+ "voice": {
+  "model": "",
+  "name": "Algieba",
+  "style": "You are the narrator of a calm, trustworthy personal-finance documentary for Americans in their fifties, sixties and seventies. Read the script below in a warm, mature, unhurried voice, at about 138 words per minute, like a respected public-radio journalist explaining numbers to a friend. Let each dollar figure land with a short pause before it. Sound reassuring and clear, never salesy, never alarmed, never like an advertisement."
+ },
+ "music": [
+  {
+   "act": 0,
+   "track": "Lightless Dawn",
+   "vol": 0.18
+  },
+  {
+   "act": 1,
+   "track": "Deliberate Thought",
+   "vol": 0.17
+  },
+  {
+   "act": 2,
+   "track": "Investigations",
+   "vol": 0.17
+  },
+  {
+   "act": 3,
+   "track": "Inspired",
+   "vol": 0.17
+  },
+  {
+   "act": 4,
+   "track": "Floating Cities",
+   "vol": 0.17
+  },
+  {
+   "act": 5,
+   "track": "Deliberate Thought",
+   "vol": 0.17
+  },
+  {
+   "act": 6,
+   "track": "Inspired",
+   "vol": 0.18
+  }
+ ],
+ "yt": {
+  "title": "401(k) and IRA Balances at 55, 65 and 75: The Fed's New Numbers",
+  "description": "What does the typical American household actually have in its 401(k)s and IRAs? Using the Federal Reserve's 2025 Survey of Consumer Finances, we calculate who has a retirement account by age, the median and the percentiles for households with one, why the average is three times the median, the share with $100k, $250k, $500k and $1 million, and what the median balance pays under the 4% rule compared with Social Security.\n\nEducational content, not financial advice.\n\nSources: Federal Reserve Board, 2025 Survey of Consumer Finances, summary extract public data (our calculation with survey weights; 2025 dollars); Social Security Administration, 2027 COLA Fact Sheet; Bengen (1994), 4% rule of thumb.\n{music_credits}\nNarration is AI-generated.\n\n#401k #ira #retirement #retirementsavings #personalfinance",
+  "tags": [
+   "401k balance by age",
+   "ira balance by age",
+   "retirement savings by age",
+   "average 401k",
+   "median 401k",
+   "federal reserve",
+   "survey of consumer finances",
+   "retirement",
+   "4% rule",
+   "personal finance"
+  ],
+  "lang": "en"
+ }
+}
