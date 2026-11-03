@@ -38,14 +38,14 @@ for st, tab, ind in [("imfusd", IMF_USD, "NGDPDPC"), ("imfg", IMF_G, "NGDP_RPCH"
 
 shots = [
     # ---------------- 0 · COLD OPEN ----------------
-    dict(act=0, type="lines", set="imf", fc=2025, series=["ESP", "POL"], years=[2000, 2026], start=2000.0, y=[0, 64000], src=PPPC, fmt="usd0", hl="POL",
+    dict(act=0, type="lines", set="imf", fc=2025, series=["ESP", "POL"], years=[2000, 2026], start=2000.0, y=[0, 70000], src=PPPC, fmt="usd0", hl="POL",
          narration="In 2008, the average Spaniard produced about thirty-four thousand dollars a year, adjusted for prices. The average Pole, less than twenty thousand. {p} Spain was almost seventy-five percent richer. {pp} This year, according to the IMF's newest numbers, the gap is fifty-five dollars. {p} Not fifty-five percent. Fifty-five dollars, per person, per year. {p} About sixty thousand one hundred for Spain. About sixty thousand and fifty for Poland. {p} That's less than a tenth of one percent.",
          keys=[dict(at="In 2008", year=2008.0, dur=3.0), dict(at="This year", year=2026.0, dur=5.0)],
          labels=[dict(at="thirty-four thousand", iso="ESP", year=2008), dict(at="less than twenty", iso="POL", year=2008), dict(at="sixty thousand one hundred", iso="ESP", year=2026), dict(at="sixty thousand and fifty", iso="POL", year=2026)],
          react=[dict(at="In 2008", pose="idle"), dict(at="seventy-five percent", pose="pointL"), dict(at="fifty-five dollars", pose="shock"), dict(at="Not fifty-five percent", pose="pointUp"), dict(at="a tenth of one percent", pose="shock")]),
-    dict(act=0, type="host", bg="lines", set="imf", fc=2025, series=["ESP", "POL"], years=[2000, 2026], start=2026.0, y=[0, 64000], fmt="usd0",
+    dict(act=0, type="host", bg="lines", set="imf", fc=2025, series=["ESP", "POL"], years=[2000, 2026], start=2026.0, y=[0, 70000], fmt="usd0",
          narration="In February, Poland's prime minister, Donald Tusk, said Poland had already passed Spain in income per person. In Spain, newspapers called it el sorpasso. {p} But the numbers he quoted were older forecasts. The IMF's October update says: not yet. Spain is still ahead, by a hair. {pp} And the same forecast has Poland passing Spain next year, in 2027, and pulling about seven percent ahead by 2030.",
-         items=[dict(at="In February", text="Feb 2026: \"We passed Spain\"", color="acc2"), dict(at="not yet", text="IMF, Oct 2026: −$55", color="acc"), dict(at="next year", text="2027: Poland ahead", serif=True, size=60)],
+         items=[dict(at="In February", text="Feb: \"We passed Spain\"", color="acc2", size=70), dict(at="not yet", text="IMF, Oct: −$55", color="acc", size=70), dict(at="next year", text="2027: Poland ahead", serif=True, size=60)],
          react=[dict(at="In February", pose="pointL"), dict(at="el sorpasso", pose="cheer"), dict(at="not yet", pose="shrug"), dict(at="next year", pose="pointUp")]),
     dict(act=0, type="host", bg="none",
          narration="So how did a country that spent the 1980s under communism catch one of Western Europe's big four economies? {p} And if the two are basically tied, why does Spain still feel so much richer when you visit? {pp} <soft>It's a story about a crash, a long run, and a population puzzle.</soft>",
@@ -81,7 +81,7 @@ shots = [
          narration="Quick favor: if you're enjoying this, hit subscribe. One country passing another, with the real numbers, every day. {p} Now, the part most comparisons miss: the people. Who is actually sharing the pie?",
          items=[dict(at="hit subscribe", text="Subscribe = more of these"), dict(at="the people", text="The people", serif=True, size=70, color="acc")],
          react=[dict(at="Quick favor", pose="wave"), dict(at="every day", pose="pointUp"), dict(at="the people", pose="think")]),
-    dict(act=3, type="lines", set="popx08", series=["ESP", "POL"], years=[2000, 2025], start=2000.0, y=[-10, 12], src=WB + " · population, total; fertility rate (births per woman) · " + IMF + " · GDP per capita PPP × population", fmt="pct0s", hl="ESP",
+    dict(act=3, type="lines", set="popx08", series=["ESP", "POL"], years=[2004, 2025], start=2004.0, y=[-10, 10], src=WB + " · population, total; fertility rate (births per woman) · " + IMF + " · GDP per capita PPP × population", fmt="pct0s", hl="ESP",
          ref=dict(value=0, label="2008 population", pos="left"),
          narration="A number per person has two halves: the economy on top, and the people underneath. {p} Since 2008, Spain's population has grown by more than three million, about seven percent. Poland's has shrunk by about one point seven million, more than four percent. {p} The odd part: both have some of the lowest birth rates in Europe, about one point one children per woman. {p} The difference is immigration. Spain draws newcomers by the million, many from Latin America, who already speak the language and can apply for citizenship after just two years. Today, about one in five people living in Spain was born abroad. {p} Many young Poles, after 2004, went west instead. {pp} So Spain's economy stretches over more people, and Poland's is shared by fewer. {p} Measured as a whole economy, adjusted for prices, Spain is still more than a third bigger. {p} The per-person race is close. The size race isn't.",
          keys=[dict(at="Since 2008", year=2025.0, dur=6.0)],
@@ -99,7 +99,7 @@ shots = [
          react=[dict(at="In plain dollars", pose="think"), dict(at="about a third", pose="pointL"), dict(at="measures prices differently", pose="pointUp"), dict(at="both right", pose="shrug")]),
     dict(act=4, type="host", bg="none",
          narration="So what does Poland actually win? {p} Growth: last year, about three point seven percent, against two point six for Spain. {p} Jobs: unemployment less than a third of Spain's. {p} And debt: Spain's government owes about a hundred percent of its economy. Poland's, about sixty. {pp} Though Poland's debt is rising fast: last year it ran one of the biggest budget deficits in the EU, about seven percent.",
-         items=[dict(at="Growth", text="Growth 2025: 3.7% vs 2.6%", color="acc2"), dict(at="Jobs", text="Unemployment: 3.0% vs 10.4%", color="acc2"), dict(at="And debt", text="Debt: ~60% vs ~100% of GDP", color="acc2"), dict(at="rising fast", text="Deficit 2025: −7%", color="acc")],
+         items=[dict(at="Growth", text="Growth: 3.7% vs 2.6%", color="acc2", size=66), dict(at="Jobs", text="Jobless: 3.0% vs 10.4%", color="acc2", size=66), dict(at="And debt", text="Debt: 60% vs 100%", color="acc2", size=66), dict(at="rising fast", text="Deficit 2025: −7%", color="acc", size=66)],
          react=[dict(at="actually win", pose="think"), dict(at="three point seven", pose="pointL"), dict(at="less than a third", pose="cheer"), dict(at="rising fast", pose="shrug")]),
 
     # ---------------- 5 · WHAT COMES NEXT ----------------

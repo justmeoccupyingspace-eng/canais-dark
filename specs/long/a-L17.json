@@ -59,7 +59,7 @@
    "start": 2000.0,
    "y": [
     0,
-    64000
+    70000
    ],
    "src": "IMF World Economic Outlook, October 2026 · GDP per capita, PPP (current international $); 2026+ are IMF estimates and forecasts",
    "fmt": "usd0",
@@ -140,20 +140,22 @@
    "start": 2026.0,
    "y": [
     0,
-    64000
+    70000
    ],
    "fmt": "usd0",
    "narration": "In February, Poland's prime minister, Donald Tusk, said Poland had already passed Spain in income per person. In Spain, newspapers called it el sorpasso. {p} But the numbers he quoted were older forecasts. The IMF's October update says: not yet. Spain is still ahead, by a hair. {pp} And the same forecast has Poland passing Spain next year, in 2027, and pulling about seven percent ahead by 2030.",
    "items": [
     {
      "at": "In February",
-     "text": "Feb 2026: \"We passed Spain\"",
-     "color": "acc2"
+     "text": "Feb: \"We passed Spain\"",
+     "color": "acc2",
+     "size": 70
     },
     {
      "at": "not yet",
-     "text": "IMF, Oct 2026: −$55",
-     "color": "acc"
+     "text": "IMF, Oct: −$55",
+     "color": "acc",
+     "size": 70
     },
     {
      "at": "next year",
@@ -558,13 +560,13 @@
     "POL"
    ],
    "years": [
-    2000,
+    2004,
     2025
    ],
-   "start": 2000.0,
+   "start": 2004.0,
    "y": [
     -10,
-    12
+    10
    ],
    "src": "World Bank WDI · population, total; fertility rate (births per woman) · IMF World Economic Outlook, October 2026 · GDP per capita PPP × population",
    "fmt": "pct0s",
@@ -724,23 +726,27 @@
    "items": [
     {
      "at": "Growth",
-     "text": "Growth 2025: 3.7% vs 2.6%",
-     "color": "acc2"
+     "text": "Growth: 3.7% vs 2.6%",
+     "color": "acc2",
+     "size": 66
     },
     {
      "at": "Jobs",
-     "text": "Unemployment: 3.0% vs 10.4%",
-     "color": "acc2"
+     "text": "Jobless: 3.0% vs 10.4%",
+     "color": "acc2",
+     "size": 66
     },
     {
      "at": "And debt",
-     "text": "Debt: ~60% vs ~100% of GDP",
-     "color": "acc2"
+     "text": "Debt: 60% vs 100%",
+     "color": "acc2",
+     "size": 66
     },
     {
      "at": "rising fast",
      "text": "Deficit 2025: −7%",
-     "color": "acc"
+     "color": "acc",
+     "size": 66
     }
    ],
    "react": [
