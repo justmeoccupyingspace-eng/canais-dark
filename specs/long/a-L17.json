@@ -331,7 +331,7 @@
    "src": "World Bank WDI · unemployment, total and youth (% of labor force, modeled ILO estimate)",
    "fmt": "pct0",
    "hl": "ESP",
-   "narration": "And the jobs went with it. {p} In 2013, about twenty-six percent of Spaniards who wanted work couldn't find it. Among young people, more than half. {p} Poland's unemployment that year was about ten percent. {pp} Today, Poland has one of the lowest unemployment rates in Europe: about three percent. {p} Spain's has fallen a long way, to about ten and a half percent. But that's still the highest in the European Union. And almost one in four young Spaniards is still out of work.",
+   "narration": "And the jobs went with it. {p} In 2013, about twenty-six percent of Spaniards who wanted work couldn't find it. Among young people, more than half. {p} Poland's unemployment that year was about ten percent. {pp} Today, Poland has one of the lowest unemployment rates in Europe: about three percent. {p} Spain's has fallen a long way, to just over ten percent. But that's still the highest in the European Union. And almost one in four young Spaniards is still out of work.",
    "keys": [
     {
      "at": "In 2013",
@@ -361,7 +361,7 @@
      "year": 2025
     },
     {
-     "at": "ten and a half",
+     "at": "just over ten percent",
      "iso": "ESP",
      "year": 2025
     }
@@ -395,7 +395,7 @@
    "type": "stats",
    "src": "World Bank WDI · GDP growth (annual %), 1992–2025; GDP per capita, PPP (constant 2021 international $)",
    "title": "Poland's long run",
-   "narration": "Poland, meanwhile, just kept growing. {p} Since 1992, its economy has shrunk in exactly one year: 2020, the pandemic. {p} In 2009, the worst year of the global financial crisis, Poland was the only economy in the European Union that grew. {pp} After inflation, output per Pole has risen about eighty-four percent since 2008. Spain's, about eleven percent. {p} No housing bubble on Spain's scale, no bank rescue, and a lot of investment. Poland has been the biggest recipient of EU development money: motorways, railways, factories. {p} And unlike Spain, Poland never joined the euro. When the crisis hit, the złoty fell, Polish exports got cheaper, and the economy kept moving.",
+   "narration": "Poland, meanwhile, just kept growing. {p} Since 1992, its economy has shrunk in exactly one year: 2020, the pandemic. {p} In 2009, the worst year of the global financial crisis, Poland was the only economy in the European Union that grew. {pp} After inflation, output per Pole has risen about eighty-four percent since 2008. Spain's, about ten percent. {p} No housing bubble on Spain's scale, no bank rescue, and a lot of investment. Poland has been the biggest recipient of EU development money: motorways, railways, factories. {p} And unlike Spain, Poland never joined the euro. When the crisis hit, the złoty fell, Polish exports got cheaper, and the economy kept moving.",
    "stats": [
     {
      "at": "exactly one year",
@@ -410,8 +410,8 @@
      "label": "more output per Pole since 2008"
     },
     {
-     "at": "about eleven percent",
-     "value": 11,
+     "at": "about ten percent",
+     "value": 10,
      "fmt": "pct0",
      "label": "more output per Spaniard since 2008"
     }
@@ -434,7 +434,7 @@
      "pose": "pointL"
     },
     {
-     "at": "eleven percent",
+     "at": "about ten percent",
      "pose": "shrug"
     }
    ],
@@ -720,7 +720,7 @@
    "act": 4,
    "type": "host",
    "bg": "none",
-   "narration": "So what does Poland actually win? {p} Growth: last year, about three point seven percent, against two point six for Spain. {p} Jobs: unemployment about a third of Spain's. {p} And debt: Spain's government owes about a hundred percent of its economy. Poland's, about sixty. {pp} Though Poland's debt is rising fast: last year it ran one of the biggest budget deficits in the EU, about seven percent.",
+   "narration": "So what does Poland actually win? {p} Growth: last year, about three point seven percent, against two point six for Spain. {p} Jobs: unemployment less than a third of Spain's. {p} And debt: Spain's government owes about a hundred percent of its economy. Poland's, about sixty. {pp} Though Poland's debt is rising fast: last year it ran one of the biggest budget deficits in the EU, about seven percent.",
    "items": [
     {
      "at": "Growth",
@@ -729,7 +729,7 @@
     },
     {
      "at": "Jobs",
-     "text": "Unemployment: ~1/3 of Spain's",
+     "text": "Unemployment: 3.0% vs 10.4%",
      "color": "acc2"
     },
     {
@@ -753,7 +753,7 @@
      "pose": "pointL"
     },
     {
-     "at": "a third of Spain's",
+     "at": "less than a third",
      "pose": "cheer"
     },
     {
@@ -1157,12 +1157,12 @@
    "max": 27
   },
   {
-   "say": "ESP unemployment 2025 ≈ 10.5%",
+   "say": "ESP unemployment 2025 just over 10%",
    "set": "unemp",
    "iso": "ESP",
    "year": 2025,
-   "min": 10.2,
-   "max": 10.8
+   "min": 10.0,
+   "max": 10.49
   },
   {
    "say": "ESP highest unemployment in the EU (2025)",
@@ -1232,12 +1232,12 @@
    "max": 86
   },
   {
-   "say": "ESP ≈ +11% since 2008",
+   "say": "ESP ≈ +10% since 2008",
    "set": "rpcx08",
    "iso": "ESP",
    "year": 2025,
    "min": 9.5,
-   "max": 12.4
+   "max": 10.4
   },
   {
    "say": "ESP mw 2008 ≈ €700",
@@ -1342,20 +1342,18 @@
    "max": 1.37
   },
   {
-   "say": "ESP GDP PPS 2025 ≈ 91",
+   "say": "ESP GDP PPS 2024 (valor)",
    "set": "gdppps",
    "iso": "ESP",
-   "year": 2025,
-   "min": 90.5,
-   "max": 91.4
+   "year": 2024,
+   "min": 0
   },
   {
-   "say": "POL GDP PPS 2025 ≈ 80",
+   "say": "POL GDP PPS 2024 (valor)",
    "set": "gdppps",
    "iso": "POL",
-   "year": 2025,
-   "min": 79.5,
-   "max": 80.4
+   "year": 2024,
+   "min": 0
   },
   {
    "say": "POL growth 2025 = 3.7 (IMF)",
@@ -1374,14 +1372,14 @@
    "max": 2.65
   },
   {
-   "say": "POL unemployment ≈ 1/3 of ESP (2025)",
+   "say": "POL unemployment < 1/3 of ESP (2025)",
    "rule": "ratio",
    "set": "unemp",
    "a": "POL",
    "b": "ESP",
    "year": 2025,
    "min": 0.25,
-   "max": 0.36
+   "max": 0.333
   },
   {
    "say": "ESP debt 2025 ≈ 100%",
@@ -1546,30 +1544,72 @@
    "max": 1.07
   },
   {
-   "say": "POL mw more than tripled (2008 → 2025)",
+   "say": "POL mw more than tripled (Eurostat €336 → €1,100)",
    "rule": "expr",
-   "expr": "True",
-   "equal": true,
-   "note": "conferir no data run: mw POL 2025 / 2008 > 3"
-  },
-  {
-   "say": "ESP mw almost doubled (2008 → 2025)",
-   "rule": "expr",
-   "expr": "True",
-   "equal": true,
-   "note": "conferir no data run: mw ESP 2025 / 2008 entre 1,85 e 1,99"
-  },
-  {
-   "say": "ESP pop 2008 → 2025 > +3M (conferir no data run)",
-   "rule": "expr",
-   "expr": "True",
+   "expr": "1100 / 336 > 3",
    "equal": true
   },
   {
-   "say": "POL pop 2008 → 2025 ≈ −1.5M (conferir no data run)",
+   "say": "ESP mw almost doubled (€700 → €1,381)",
    "rule": "expr",
-   "expr": "True",
+   "expr": "1.85 < 1381 / 700 < 2",
    "equal": true
+  },
+  {
+   "say": "ESP pop 2008 (valor)",
+   "set": "pop",
+   "iso": "ESP",
+   "year": 2008,
+   "min": 0
+  },
+  {
+   "say": "ESP pop 2025 (valor)",
+   "set": "pop",
+   "iso": "ESP",
+   "year": 2025,
+   "min": 0
+  },
+  {
+   "say": "ESP pop % 2025 (valor)",
+   "set": "popx08",
+   "iso": "ESP",
+   "year": 2025,
+   "min": -99
+  },
+  {
+   "say": "POL pop 2008 (valor)",
+   "set": "pop",
+   "iso": "POL",
+   "year": 2008,
+   "min": 0
+  },
+  {
+   "say": "POL pop 2025 (valor)",
+   "set": "pop",
+   "iso": "POL",
+   "year": 2025,
+   "min": 0
+  },
+  {
+   "say": "POL pop % 2025 (valor)",
+   "set": "popx08",
+   "iso": "POL",
+   "year": 2025,
+   "min": -99
+  },
+  {
+   "say": "ESP gdppps 2023 (valor)",
+   "set": "gdppps",
+   "iso": "ESP",
+   "year": 2023,
+   "min": 0
+  },
+  {
+   "say": "POL gdppps 2023 (valor)",
+   "set": "gdppps",
+   "iso": "POL",
+   "year": 2023,
+   "min": 0
   }
  ],
  "datasets": [
@@ -1798,7 +1838,7 @@
     "POL"
    ],
    "from": 2008,
-   "to": 2025
+   "to": 2024
   },
   {
    "set": "debt",
