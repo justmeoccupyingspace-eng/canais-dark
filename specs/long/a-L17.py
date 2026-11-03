@@ -83,9 +83,9 @@ shots = [
          react=[dict(at="Quick favor", pose="wave"), dict(at="every day", pose="pointUp"), dict(at="the people", pose="think")]),
     dict(act=3, type="lines", set="popx08", series=["ESP", "POL"], years=[2000, 2025], start=2000.0, y=[-10, 12], src=WB + " · population, total; fertility rate (births per woman) · " + IMF + " · GDP per capita PPP × population", fmt="pct0s", hl="ESP",
          ref=dict(value=0, label="2008 population", pos="left"),
-         narration="A number per person has two halves: the economy on top, and the people underneath. {p} Since 2008, Spain's population has grown by more than three million. Poland's has shrunk by about one and a half million. {p} The odd part: both have some of the lowest birth rates in Europe, about one point one children per woman. {p} The difference is immigration. Spain draws newcomers by the million, many from Latin America, who already speak the language and can apply for citizenship after just two years. Today, about one in five people living in Spain was born abroad. {p} Many young Poles, after 2004, went west instead. {pp} So Spain's economy stretches over more people, and Poland's is shared by fewer. {p} Measured as a whole economy, adjusted for prices, Spain is still more than a third bigger. {p} The per-person race is close. The size race isn't.",
+         narration="A number per person has two halves: the economy on top, and the people underneath. {p} Since 2008, Spain's population has grown by more than three million, about seven percent. Poland's has shrunk by about one point seven million, more than four percent. {p} The odd part: both have some of the lowest birth rates in Europe, about one point one children per woman. {p} The difference is immigration. Spain draws newcomers by the million, many from Latin America, who already speak the language and can apply for citizenship after just two years. Today, about one in five people living in Spain was born abroad. {p} Many young Poles, after 2004, went west instead. {pp} So Spain's economy stretches over more people, and Poland's is shared by fewer. {p} Measured as a whole economy, adjusted for prices, Spain is still more than a third bigger. {p} The per-person race is close. The size race isn't.",
          keys=[dict(at="Since 2008", year=2025.0, dur=6.0)],
-         labels=[dict(at="more than three million", iso="ESP", year=2025), dict(at="one and a half million", iso="POL", year=2025)],
+         labels=[dict(at="more than three million", iso="ESP", year=2025), dict(at="one point seven million", iso="POL", year=2025)],
          react=[dict(at="two halves", pose="pointUp"), dict(at="more than three million", pose="pointL"), dict(at="The odd part", pose="think"), dict(at="immigration", pose="pointUp"), dict(at="more than a third", pose="shock"), dict(at="The size race", pose="shrug")]),
 
     # ---------------- 4 · THE TWIST ----------------
@@ -93,9 +93,9 @@ shots = [
          cues=[dict(at="Spaniards live", show="a"), dict(at="Poles, about", show="b")],
          narration="But here's the twist: on almost everything you can feel, Spain is still ahead. {p} Spaniards live about eighty-four years on average. {pp} Poles, about seventy-eight and a half. That's five and a half more years of life.",
          react=[dict(at="the twist", pose="pointUp"), dict(at="eighty-four", pose="pointL"), dict(at="seventy-eight", pose="think"), dict(at="five and a half", pose="shock")]),
-    dict(act=4, type="stats", src=IMF + " · GDP per capita, current US$ (NGDPDPC), 2026 · Eurostat prc_ppp_ind · GDP per capita in PPS (EU27 = 100), 2025", title="Other measuring sticks",
-         narration="In plain dollars, without adjusting for prices, the IMF puts Spain about a third ahead this year: almost forty-two thousand dollars per person, against about thirty-one thousand. {p} And Europe's own statistics office, Eurostat, measures prices differently. On its numbers, Spain is still clearly ahead: about ninety-one percent of the EU average in 2025, against Poland's eighty. {pp} The IMF and Eurostat are both right. They just use different price surveys. {p} And part of why Spain feels rich is that you see it at its best: almost ninety-seven million foreign tourists visited in 2025, a record. About two for every Spaniard.",
-         stats=[dict(at="almost forty-two thousand", value=41756, fmt="usd0", label="Spain, per person, US$ 2026"), dict(at="about thirty-one thousand", value=31186, fmt="usd0", label="Poland, per person, US$ 2026"), dict(at="ninety-one percent", value=91, fmt="pct0", label="Spain, % of EU (Eurostat, 2025)"), dict(at="Poland's eighty", value=80, fmt="pct0", label="Poland, % of EU (Eurostat, 2025)")],
+    dict(act=4, type="stats", src=IMF + " · GDP per capita, current US$ (NGDPDPC), 2026 · Eurostat prc_ppp_ind · GDP per capita in PPS (EU27 = 100), 2024", title="Other measuring sticks",
+         narration="In plain dollars, without adjusting for prices, the IMF puts Spain about a third ahead this year: almost forty-two thousand dollars per person, against about thirty-one thousand. {p} And Europe's own statistics office, Eurostat, measures prices differently. On its numbers, Spain is still clearly ahead: about ninety-two percent of the EU average in 2024, against Poland's seventy-nine. {pp} The IMF and Eurostat are both right. They just use different price surveys. {p} And part of why Spain feels rich is that you see it at its best: almost ninety-seven million foreign tourists visited in 2025, a record. About two for every Spaniard.",
+         stats=[dict(at="almost forty-two thousand", value=41756, fmt="usd0", label="Spain, per person, US$ 2026"), dict(at="about thirty-one thousand", value=31186, fmt="usd0", label="Poland, per person, US$ 2026"), dict(at="ninety-two percent", value=92, fmt="pct0", label="Spain, % of EU (Eurostat, 2024)"), dict(at="Poland's seventy-nine", value=79, fmt="pct0", label="Poland, % of EU (Eurostat, 2024)")],
          react=[dict(at="In plain dollars", pose="think"), dict(at="about a third", pose="pointL"), dict(at="measures prices differently", pose="pointUp"), dict(at="both right", pose="shrug")]),
     dict(act=4, type="host", bg="none",
          narration="So what does Poland actually win? {p} Growth: last year, about three point seven percent, against two point six for Spain. {p} Jobs: unemployment less than a third of Spain's. {p} And debt: Spain's government owes about a hundred percent of its economy. Poland's, about sixty. {pp} Though Poland's debt is rising fast: last year it ran one of the biggest budget deficits in the EU, about seven percent.",
@@ -171,8 +171,8 @@ checks = [
     dict(say="ESP nominal 2026 almost $42k", set="imfusd", iso="ESP", year=2026, min=41500, max=41999),
     dict(say="POL nominal 2026 ≈ $31k", set="imfusd", iso="POL", year=2026, min=30800, max=31400),
     dict(say="Spain about a third ahead in dollars", rule="ratio", set="imfusd", a="ESP", b="POL", year=2026, min=1.30, max=1.37),
-    dict(say="ESP GDP PPS 2024 (valor)", set="gdppps", iso="ESP", year=2024, min=0),
-    dict(say="POL GDP PPS 2024 (valor)", set="gdppps", iso="POL", year=2024, min=0),
+    dict(say="ESP GDP PPS 2024 ≈ 92", set="gdppps", iso="ESP", year=2024, min=91.5, max=92.4),
+    dict(say="POL GDP PPS 2024 ≈ 79", set="gdppps", iso="POL", year=2024, min=78.5, max=79.4),
     dict(say="POL growth 2025 = 3.7 (IMF)", set="imfg", iso="POL", year=2025, min=3.65, max=3.75),
     dict(say="ESP growth 2025 = 2.6 (IMF)", set="imfg", iso="ESP", year=2025, min=2.55, max=2.65),
     dict(say="POL unemployment < 1/3 of ESP (2025)", rule="ratio", set="unemp", a="POL", b="ESP", year=2025, min=0.25, max=0.333),
@@ -200,8 +200,8 @@ checks = [
 checks = [c for c in checks if c.get("say") not in ("POL mw more than tripled", "ESP population +3M+ since 2008")] + [
     dict(say="POL mw more than tripled (Eurostat €336 → €1,100)", rule="expr", expr="1100 / 336 > 3", equal=True),
     dict(say="ESP mw almost doubled (€700 → €1,381)", rule="expr", expr="1.85 < 1381 / 700 < 2", equal=True),
-    dict(say="ESP pop 2008 (valor)", set="pop", iso="ESP", year=2008, min=0), dict(say="ESP pop 2025 (valor)", set="pop", iso="ESP", year=2025, min=0), dict(say="ESP pop % 2025 (valor)", set="popx08", iso="ESP", year=2025, min=-99),
-    dict(say="POL pop 2008 (valor)", set="pop", iso="POL", year=2008, min=0), dict(say="POL pop 2025 (valor)", set="pop", iso="POL", year=2025, min=0), dict(say="POL pop % 2025 (valor)", set="popx08", iso="POL", year=2025, min=-99), dict(say="ESP gdppps 2023 (valor)", set="gdppps", iso="ESP", year=2023, min=0), dict(say="POL gdppps 2023 (valor)", set="gdppps", iso="POL", year=2023, min=0),
+    dict(say="ESP pop 2008 ≈ 45.95M", set="pop", iso="ESP", year=2008, min=45.9e6, max=46.0e6), dict(say="ESP pop 2025 ≈ 49.36M", set="pop", iso="ESP", year=2025, min=49.3e6, max=49.4e6), dict(say="ESP +more than 3M (49.36 − 45.95)", rule="expr", expr="49.36 - 45.95 > 3", equal=True), dict(say="ESP pop ≈ +7%", set="popx08", iso="ESP", year=2025, min=6.6, max=7.49),
+    dict(say="POL pop 2008 ≈ 38.13M", set="pop", iso="POL", year=2008, min=38.1e6, max=38.2e6), dict(say="POL pop 2025 ≈ 36.44M", set="pop", iso="POL", year=2025, min=36.4e6, max=36.5e6), dict(say="POL ≈ −1.7M", rule="expr", expr="round(38.13 - 36.44, 1)", equal=1.7), dict(say="POL pop more than −4%", set="popx08", iso="POL", year=2025, min=-4.9, max=-4.01),
 ]
 
 datasets = [
@@ -226,7 +226,7 @@ datasets = [
 
 clips = [
     dict(**{"from": "s00", "to": "s00"}, hook="Poland is *$55* from Spain", title="Poland is $55 away from passing Spain (IMF, Oct 2026) #Shorts", desc="2008: Spain $34.4k vs Poland $19.7k per person (PPP). 2026: $60,106 vs $60,051. IMF World Economic Outlook, October 2026."),
-    dict(**{"from": "s08", "to": "s08"}, hook="Same birth rate. *Opposite* result", title="Spain gained 3 million people. Poland lost 1.5 million #Shorts", desc="Both have about 1.1 births per woman. The difference is immigration (World Bank WDI)."),
+    dict(**{"from": "s08", "to": "s08"}, hook="Same birth rate. *Opposite* result", title="Spain gained 3 million people. Poland lost 1.7 million #Shorts", desc="Both have about 1.1 births per woman. The difference is immigration (World Bank WDI)."),
 ]
 
 for i, sh in enumerate(shots):

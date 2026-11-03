@@ -12,7 +12,7 @@
    "from": "s08",
    "to": "s08",
    "hook": "Same birth rate. *Opposite* result",
-   "title": "Spain gained 3 million people. Poland lost 1.5 million #Shorts",
+   "title": "Spain gained 3 million people. Poland lost 1.7 million #Shorts",
    "desc": "Both have about 1.1 births per woman. The difference is immigration (World Bank WDI)."
   }
  ],
@@ -574,7 +574,7 @@
     "label": "2008 population",
     "pos": "left"
    },
-   "narration": "A number per person has two halves: the economy on top, and the people underneath. {p} Since 2008, Spain's population has grown by more than three million. Poland's has shrunk by about one and a half million. {p} The odd part: both have some of the lowest birth rates in Europe, about one point one children per woman. {p} The difference is immigration. Spain draws newcomers by the million, many from Latin America, who already speak the language and can apply for citizenship after just two years. Today, about one in five people living in Spain was born abroad. {p} Many young Poles, after 2004, went west instead. {pp} So Spain's economy stretches over more people, and Poland's is shared by fewer. {p} Measured as a whole economy, adjusted for prices, Spain is still more than a third bigger. {p} The per-person race is close. The size race isn't.",
+   "narration": "A number per person has two halves: the economy on top, and the people underneath. {p} Since 2008, Spain's population has grown by more than three million, about seven percent. Poland's has shrunk by about one point seven million, more than four percent. {p} The odd part: both have some of the lowest birth rates in Europe, about one point one children per woman. {p} The difference is immigration. Spain draws newcomers by the million, many from Latin America, who already speak the language and can apply for citizenship after just two years. Today, about one in five people living in Spain was born abroad. {p} Many young Poles, after 2004, went west instead. {pp} So Spain's economy stretches over more people, and Poland's is shared by fewer. {p} Measured as a whole economy, adjusted for prices, Spain is still more than a third bigger. {p} The per-person race is close. The size race isn't.",
    "keys": [
     {
      "at": "Since 2008",
@@ -589,7 +589,7 @@
      "year": 2025
     },
     {
-     "at": "one and a half million",
+     "at": "one point seven million",
      "iso": "POL",
      "year": 2025
     }
@@ -667,9 +667,9 @@
   {
    "act": 4,
    "type": "stats",
-   "src": "IMF World Economic Outlook, October 2026 · GDP per capita, current US$ (NGDPDPC), 2026 · Eurostat prc_ppp_ind · GDP per capita in PPS (EU27 = 100), 2025",
+   "src": "IMF World Economic Outlook, October 2026 · GDP per capita, current US$ (NGDPDPC), 2026 · Eurostat prc_ppp_ind · GDP per capita in PPS (EU27 = 100), 2024",
    "title": "Other measuring sticks",
-   "narration": "In plain dollars, without adjusting for prices, the IMF puts Spain about a third ahead this year: almost forty-two thousand dollars per person, against about thirty-one thousand. {p} And Europe's own statistics office, Eurostat, measures prices differently. On its numbers, Spain is still clearly ahead: about ninety-one percent of the EU average in 2025, against Poland's eighty. {pp} The IMF and Eurostat are both right. They just use different price surveys. {p} And part of why Spain feels rich is that you see it at its best: almost ninety-seven million foreign tourists visited in 2025, a record. About two for every Spaniard.",
+   "narration": "In plain dollars, without adjusting for prices, the IMF puts Spain about a third ahead this year: almost forty-two thousand dollars per person, against about thirty-one thousand. {p} And Europe's own statistics office, Eurostat, measures prices differently. On its numbers, Spain is still clearly ahead: about ninety-two percent of the EU average in 2024, against Poland's seventy-nine. {pp} The IMF and Eurostat are both right. They just use different price surveys. {p} And part of why Spain feels rich is that you see it at its best: almost ninety-seven million foreign tourists visited in 2025, a record. About two for every Spaniard.",
    "stats": [
     {
      "at": "almost forty-two thousand",
@@ -684,16 +684,16 @@
      "label": "Poland, per person, US$ 2026"
     },
     {
-     "at": "ninety-one percent",
-     "value": 91,
+     "at": "ninety-two percent",
+     "value": 92,
      "fmt": "pct0",
-     "label": "Spain, % of EU (Eurostat, 2025)"
+     "label": "Spain, % of EU (Eurostat, 2024)"
     },
     {
-     "at": "Poland's eighty",
-     "value": 80,
+     "at": "Poland's seventy-nine",
+     "value": 79,
      "fmt": "pct0",
-     "label": "Poland, % of EU (Eurostat, 2025)"
+     "label": "Poland, % of EU (Eurostat, 2024)"
     }
    ],
    "react": [
@@ -1342,18 +1342,20 @@
    "max": 1.37
   },
   {
-   "say": "ESP GDP PPS 2024 (valor)",
+   "say": "ESP GDP PPS 2024 ≈ 92",
    "set": "gdppps",
    "iso": "ESP",
    "year": 2024,
-   "min": 0
+   "min": 91.5,
+   "max": 92.4
   },
   {
-   "say": "POL GDP PPS 2024 (valor)",
+   "say": "POL GDP PPS 2024 ≈ 79",
    "set": "gdppps",
    "iso": "POL",
    "year": 2024,
-   "min": 0
+   "min": 78.5,
+   "max": 79.4
   },
   {
    "say": "POL growth 2025 = 3.7 (IMF)",
@@ -1556,60 +1558,64 @@
    "equal": true
   },
   {
-   "say": "ESP pop 2008 (valor)",
+   "say": "ESP pop 2008 ≈ 45.95M",
    "set": "pop",
    "iso": "ESP",
    "year": 2008,
-   "min": 0
+   "min": 45900000.0,
+   "max": 46000000.0
   },
   {
-   "say": "ESP pop 2025 (valor)",
+   "say": "ESP pop 2025 ≈ 49.36M",
    "set": "pop",
    "iso": "ESP",
    "year": 2025,
-   "min": 0
+   "min": 49300000.0,
+   "max": 49400000.0
   },
   {
-   "say": "ESP pop % 2025 (valor)",
+   "say": "ESP +more than 3M (49.36 − 45.95)",
+   "rule": "expr",
+   "expr": "49.36 - 45.95 > 3",
+   "equal": true
+  },
+  {
+   "say": "ESP pop ≈ +7%",
    "set": "popx08",
    "iso": "ESP",
    "year": 2025,
-   "min": -99
+   "min": 6.6,
+   "max": 7.49
   },
   {
-   "say": "POL pop 2008 (valor)",
+   "say": "POL pop 2008 ≈ 38.13M",
    "set": "pop",
    "iso": "POL",
    "year": 2008,
-   "min": 0
+   "min": 38100000.0,
+   "max": 38200000.0
   },
   {
-   "say": "POL pop 2025 (valor)",
+   "say": "POL pop 2025 ≈ 36.44M",
    "set": "pop",
    "iso": "POL",
    "year": 2025,
-   "min": 0
+   "min": 36400000.0,
+   "max": 36500000.0
   },
   {
-   "say": "POL pop % 2025 (valor)",
+   "say": "POL ≈ −1.7M",
+   "rule": "expr",
+   "expr": "round(38.13 - 36.44, 1)",
+   "equal": 1.7
+  },
+  {
+   "say": "POL pop more than −4%",
    "set": "popx08",
    "iso": "POL",
    "year": 2025,
-   "min": -99
-  },
-  {
-   "say": "ESP gdppps 2023 (valor)",
-   "set": "gdppps",
-   "iso": "ESP",
-   "year": 2023,
-   "min": 0
-  },
-  {
-   "say": "POL gdppps 2023 (valor)",
-   "set": "gdppps",
-   "iso": "POL",
-   "year": 2023,
-   "min": 0
+   "min": -4.9,
+   "max": -4.01
   }
  ],
  "datasets": [
