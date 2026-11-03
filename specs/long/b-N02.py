@@ -23,7 +23,7 @@ def cue(bars, ats):
 
 shots = [
     # ---------------- 0 · COLD OPEN ----------------
-    dict(act=0, type="rank", title="Households 65+ with $1 million or more", sub="Depends on what you count · 2025", fmt="pct0", count=False, vmax=40, src=OURS,
+    dict(act=0, type="rank", title="Households 65+ with $1 million or more", sub="Depends on what you count · 2025", fmt="pct1", count=False, vmax=40, src=OURS,
          bars=cue([dict(label="Everything they own", value=S1("65+"), hl=True), dict(label="Not counting the house", value=SX("65+")),
                    dict(label="Savings & investments", value=SF("65+")), dict(label="In 401(k)s & IRAs", value=SR("65+"))],
                   ["counting everything", "leave out the house", "savings and investments", "retirement accounts alone"]),
@@ -46,7 +46,7 @@ shots = [
          items=[dict(at="Home equity is real wealth", text="House: real, but hard to spend", color="acc2"), dict(at="taxed when you take it out", text="401(k)/IRA: taxed on withdrawal", color="acc"), dict(at="only one part", text="One piece of the picture", serif=True, size=56)]),
 
     # ---------------- 2 · COUNTING EVERYTHING ----------------
-    dict(act=2, type="rank", title="$1 million or more, counting everything", sub="Share of households, 2025", fmt="pct0", count=False, vmax=40, src=OURS,
+    dict(act=2, type="rank", title="$1 million or more, counting everything", sub="Share of households, 2025", fmt="pct1", count=False, vmax=40, src=OURS,
          bars=cue([dict(label="All ages", value=S1("all")), dict(label="55–64", value=S1("55-64"), hl=True), dict(label="65–74", value=S1("65-74"), hl=True), dict(label="75 and older", value=S1("75+"), hl=True)],
                   ["all American households", "fifty-five to sixty-four", "sixty-five to seventy-four", "seventy-five and older"]),
          narration="Let's start with the broadest measure: net worth, counting everything. {p} Across all American households, about twenty-two percent are worth a million dollars or more. {p} Among households aged fifty-five to sixty-four, about thirty-two percent. {p} Sixty-five to seventy-four, about thirty-one percent. {p} And seventy-five and older, about thirty-four percent. {p} For comparison, between forty-five and fifty-four it's about twenty-four percent, and under thirty-five, less than two percent. {pp} In total, that's roughly thirteen million households headed by someone sixty-five or older. {p} That surprises a lot of people. But it makes sense: these households have had decades for their homes, savings and investments to grow. {p} Many bought their homes decades ago, when prices were far lower. A house bought in the 1990s can be worth several times that today."),
@@ -55,7 +55,7 @@ shots = [
          items=[dict(at="not a million dollars in the bank", text="Net worth ≠ cash", color="acc"), dict(at="the house they live in", text="A big piece is the house", color="acc2"), dict(at="take the house out", text="Now, without the house", serif=True, size=60)]),
 
     # ---------------- 3 · WITHOUT THE HOUSE ----------------
-    dict(act=3, type="rank", title="$1 million or more, without the house", sub="Net worth minus home equity · share of households, 2025", fmt="pct0", count=False, vmax=40, src=OURS,
+    dict(act=3, type="rank", title="$1 million or more, without the house", sub="Net worth minus home equity · share of households, 2025", fmt="pct1", count=False, vmax=40, src=OURS,
          bars=cue([dict(label="55–64", value=SX("55-64"), hl=True), dict(label="65–74", value=SX("65-74"), hl=True), dict(label="75 and older", value=SX("75+"), hl=True)],
                   ["fifty-five to sixty-four", "sixty-five to seventy-four", "seventy-five and older"]),
          narration="Without home equity, the share of millionaire households drops to about twenty-five percent at fifty-five to sixty-four, about twenty-three percent at sixty-five to seventy-four, and about twenty-three percent at seventy-five and older. {p} Still close to one in four. Notice the house matters most for the oldest households, who've had the longest to pay it off. {pp} But look at the middle household instead of the top. {p} Without the house, the typical household aged sixty-five or older is worth about a hundred and sixty thousand dollars. {p} At fifty-five to sixty-four, about a hundred and fifty thousand."),
@@ -64,7 +64,7 @@ shots = [
          narration="So the picture splits in two. {p} A large group, about one in four, has a million or more even without counting the home. {p} And the household right in the middle has about a hundred and sixty thousand. {pp} That's the gap a single average number hides. If you're somewhere in between, you're in very normal company. {p} Savings and investments tell a similar story: about nineteen percent of households at fifty-five to sixty-four, seventeen percent at sixty-five to seventy-four, and twenty percent at seventy-five and older have a million or more in financial assets."),
 
     # ---------------- 4 · THE MILLION-DOLLAR 401(K) ----------------
-    dict(act=4, type="rank", title="$1 million or more in retirement accounts", sub="401(k), IRA and similar plans · share of households, 2025", fmt="pct0", count=False, vmax=40, src=OURS,
+    dict(act=4, type="rank", title="$1 million or more in retirement accounts", sub="401(k), IRA and similar plans · share of households, 2025", fmt="pct1", count=False, vmax=40, src=OURS,
          bars=cue([dict(label="All ages", value=SR("all")), dict(label="55–64", value=SR("55-64"), hl=True), dict(label="65–74", value=SR("65-74"), hl=True), dict(label="75 and older", value=SR("75+"), hl=True)],
                   ["Across all ages", "fifty-five to sixty-four", "sixty-five to seventy-four", "seventy-five and older"]),
          narration="Now the strictest test: a million dollars in retirement accounts alone. {p} Across all ages, only about seven percent of households have that much in 401(k)s and IRAs. {p} At fifty-five to sixty-four, about twelve percent. {p} Sixty-five to seventy-four, about eleven and a half. {p} Seventy-five and older, about eleven. {pp} So the million-dollar 401(k) is real, but it's about one household in nine, even among people at or near retirement."),
