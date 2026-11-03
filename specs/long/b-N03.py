@@ -183,7 +183,7 @@ for i, sh in enumerate(shots):
     sh["id"] = f"s{i:02d}"
 
 spec = dict(id="b-N03-ssage", clips=clips, channel="nesteggatlas", chapter0="The choice", host=False,
-            thumb=dict(kind="text", top="SOCIAL SECURITY: 62, 67 OR 70?", big="AGE 80", line2="THE BREAK-EVEN", sticker="SSA DATA"),
+            thumb=dict(kind="text", top="SOCIAL SECURITY: 62 OR 70?", big="AGE 80", line2="THE BREAK-EVEN", sticker="SSA DATA"),
             w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks, datasets=[], snapshot=snapshot,
             voice=dict(model="", name="Algieba",
                        style=("You are the narrator of a calm, trustworthy personal-finance documentary for Americans in their fifties, sixties and seventies. "
