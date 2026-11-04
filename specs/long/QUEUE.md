@@ -135,7 +135,7 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 | A-L15 | Argentina passada por Costa Rica e Sérvia (PPP 2024); Sérvia também no nominal 2025 | banco: q7 ok (Econ 38 mil) | |
 | A-L16 | República Dominicana: passou o México (PPP 2021), crescimento mais longo da América Latina | banco: q7 ok (nada ≥2 mil) | |
 | A-L17 | Poland Is $55 Away From Passing Spain (FMI out/2026) | agendado (SW2qxSlMwfc, render 41797871942 3.1/Charon, 8:21) · cortes lSf6PuD1EO8 (22:00Z), 0xeRhZa21Gs (05/11 01:00Z) · teste A/B mapa × duel × flags · tela final inscrição + Polônia × Japão sobre o WATCH NEXT · card 6:55 → Polônia × Japão · playlist Who Passed Whom · PENDENTE: card no Polônia (7:33 'Spain is next') → A-L17 e comentário fixado (Chrome caiu 04/11 ~09:10Z) | 04/11 18:00Z |
-| A-L18 | South Korea Just Passed Britain and France (FMI out/2026: 2026 1º ano KOR > GBR e > FRA em PPP; q12 sem concorrente em inglês) | roteiro 04/11, data run 41802464960 | 05/11 18:00Z |
+| A-L18 | South Korea Just Passed Britain and France (FMI out/2026: 2026 1º ano KOR > GBR e > FRA em PPP; q12 sem concorrente em inglês) | pronto 04/11: 1.146 palavras, 6 atos, 3.1 Charon, checks ok (data 41802464960), teste edge 41802680195 revisado · miniatura principal a18_flags (KOREA > UK), A/B a18_duel e a18_text · WATCH NEXT → A-L02 (0.75) · L1 ganhou bandeiras GBR/FRA/ITA | 05/11 18:00Z |
 | ~~Rússia > Itália/Canadá~~ · ~~Singapura > Noruega~~ · ~~Geórgia~~ | fora: tema de guerra / Singapura saturada / busca ambígua | — | |
 | ~~Germany~~ / ~~Iene~~ | reprovados no filtro | — | |
 
