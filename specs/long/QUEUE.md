@@ -95,6 +95,11 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 - Playlist "Who Passed Whom" criada (PLRrtWo-xNj6Q, pública, 5 vídeos).
 - Números 11:50Z: A-L06 60 views em 18 h, A-L07 5 views em 13 h (fraco; veredito 04/11).
 
+## Veredito 04/11 (08:20Z) — série "quem passou quem"
+- A-L06 140 views em ~62 h (AVD 2:48, 33%), A-L07 144 em ~57 h (AVD 3:48, 47%) → longe de 5 mil: veia NÃO confirmada. Sem T4 (áudio polonês) e sem 2º longo da série. Segue T1 até 15/11 pela regra (6 longos no filtro): A-L08 16, A-L09 21, A-L14 23 em 14 h, A-L17 hoje.
+- Diagnóstico: o Polônia (54 mil) vive de Browse/home (tráfego SUBSCRIBER 46,5 mil) e Shorts; os longos novos não recebem impressões de home. Única ponte que funciona é o próprio Polônia (~1 mil views/dia) → hoje, depois das 18:00Z: card no Polônia em "Spain is next" apontando para o A-L17 e trocar o comentário fixado para o A-L17.
+- 15/11: se a mediana em 72 h continuar <1.000, aplicar a regra (família Ásia/África) — mas a evidência sugere que o problema é distribuição de canal pequeno, não tema; considerar concentrar a cota no Nest Egg Atlas (RPM ~8× maior) e manter o Chartbound em 3 longos/semana.
+
 ## Execução 03/11 (09:00–09:40Z)
 - A-L14 (knei7dcuF5M, 18:00Z): teste A/B mapa × duel × flags; tela final inscrição + A-L06 sobre o WATCH NEXT; card 7:40 → A-L06; playlist Who Passed Whom.
 - Nest Egg Atlas: B-N01 tela final → B-N02 (vídeo específico; o Studio avisa "privado, será substituído" até 18:30Z); B-N02 tela final inscrição + B-N01 sobre o card (elemento 996,261 207×117 no preview = card do End em 140,250 820×462).
