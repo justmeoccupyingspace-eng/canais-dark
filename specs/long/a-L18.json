@@ -19,17 +19,11 @@
  "channel": "chartbound",
  "chapter0": "The flip",
  "thumb": {
-  "v": "map",
+  "v": "flags",
   "iso": "KOR",
   "vs": "GBR",
-  "proj": "ne",
-  "lon": 70,
-  "scale": 300,
-  "cx": 900,
-  "cy": 330,
-  "top": "SOUTH KOREA",
-  "big": "PASSED",
-  "line2": "UK & FRANCE"
+  "big": "KOREA > UK",
+  "line2": "FIRST TIME EVER (IMF, 2026)"
  },
  "w": 1920,
  "h": 1080,

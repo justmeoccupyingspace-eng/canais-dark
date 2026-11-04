@@ -23,7 +23,7 @@ const NAME = {POL: 'Poland', JPN: 'Japan', ESP: 'Spain', DEU: 'Germany', GRC: 'G
 const COUNTRIES = feature(world, world.objects.countries).features;
 const BYNUM = Object.fromEntries(COUNTRIES.map((c) => [c.id, c]));
 
-const colOf = (p, iso) => ({POL: p.acc, JPN: p.warm, UKR: '#4aa8ff', ESP: '#c58bff', DEU: '#8fa3c7', GRC: '#5fd3ff', PRT: p.acc2, KOR: '#ff8ad8', CHN: '#ff9f43', ITA: '#5fd3ff', USA: '#8fa3ff', HUN: p.acc, ISR: p.acc2, WLD: '#ffffff', IRL: '#3ddc84', EUU: '#c9d1e6', EU: '#c9d1e6', LUX: '#5fd3ff', FRA: '#8fa3ff', BEL: '#ffd166', LVA: '#ff8ad8', BGR: '#ffb347', LTU: '#3ddc84', ROU: '#5fd3ff', EST: '#8fa3ff', HRV: '#c58bff', SAU: '#3ddc84', KWT: '#ff5a6e', ARE: '#ffd166', QAT: '#c58bff', OMN: '#ff9f43', BRN: '#ff8ad8', BHR: '#5fd3ff', NOR: '#5fd3ff', CZE: '#ff9f43', SVN: '#c58bff', TUR: '#ff5a6e', MEX: '#3ddc84', ARG: '#c58bff', VNM: '#ffd166', IDN: '#ff5a6e', THA: '#8fa3ff', PHL: '#5fd3ff', MYS: '#c58bff', IND: '#3ddc84', ZAF: '#ff9f43', EGY: '#c58bff', SSF: '#c9d1e6', LCN: '#c9d1e6'}[iso] || '#ffffff');
+const colOf = (p, iso) => ({POL: p.acc, JPN: p.warm, UKR: '#4aa8ff', ESP: '#c58bff', DEU: '#8fa3c7', GRC: '#5fd3ff', PRT: p.acc2, KOR: '#ff8ad8', GBR: '#ffd166', CHN: '#ff9f43', ITA: '#5fd3ff', USA: '#8fa3ff', HUN: p.acc, ISR: p.acc2, WLD: '#ffffff', IRL: '#3ddc84', EUU: '#c9d1e6', EU: '#c9d1e6', LUX: '#5fd3ff', FRA: '#8fa3ff', BEL: '#ffd166', LVA: '#ff8ad8', BGR: '#ffb347', LTU: '#3ddc84', ROU: '#5fd3ff', EST: '#8fa3ff', HRV: '#c58bff', SAU: '#3ddc84', KWT: '#ff5a6e', ARE: '#ffd166', QAT: '#c58bff', OMN: '#ff9f43', BRN: '#ff8ad8', BHR: '#5fd3ff', NOR: '#5fd3ff', CZE: '#ff9f43', SVN: '#c58bff', TUR: '#ff5a6e', MEX: '#3ddc84', ARG: '#c58bff', VNM: '#ffd166', IDN: '#ff5a6e', THA: '#8fa3ff', PHL: '#5fd3ff', MYS: '#c58bff', IND: '#3ddc84', ZAF: '#ff9f43', EGY: '#c58bff', SSF: '#c9d1e6', LCN: '#c9d1e6'}[iso] || '#ffffff');
 
 export const fmt = (v, k) => {
   if (v == null || Number.isNaN(v)) return '';
@@ -209,6 +209,20 @@ const Flag = ({iso, w = 150}) => {
   if (iso === 'VNM') return <div style={{...box, background: '#da251d'}}><div style={{position: 'absolute', left: w / 2 - h * 0.3, top: h * 0.2, width: h * 0.6, height: h * 0.6, background: '#ffff00', clipPath: 'polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)'}} /></div>;
   if (iso === 'HRV') return <div style={{...box, background: 'linear-gradient(#ff0000 0 33.3%, #fff 33.3% 66.6%, #171796 66.6% 100%)'}}><div style={{position: 'absolute', left: w / 2 - h * 0.13, top: h * 0.22, width: h * 0.26, height: h * 0.32, borderRadius: '0 0 40% 40%', background: 'repeating-conic-gradient(#ff0000 0 25%, #fff 0 50%) 0 0 / ' + (h * 0.104) + 'px ' + (h * 0.107) + 'px', border: '2px solid #171796'}} /></div>;
   if (iso === 'IDN') return <div style={{...box, background: 'linear-gradient(#ce1126 0 50%, #fff 50% 100%)'}} />;
+  if (iso === 'FRA') return <div style={{...box, background: 'linear-gradient(90deg, #002395 0 33.3%, #fff 33.3% 66.6%, #ed2939 66.6% 100%)'}} />;
+  if (iso === 'ITA') return <div style={{...box, background: 'linear-gradient(90deg, #009246 0 33.3%, #fff 33.3% 66.6%, #ce2b37 66.6% 100%)'}} />;
+  if (iso === 'GBR') return (
+    <div style={{...box, background: '#012169'}}>
+      <svg viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" width={w} height={h} style={{position: 'absolute', left: 0, top: 0}}>
+        <clipPath id="ukclip"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z" /></clipPath>
+        <path d="M0,0 v30 h60 v-30 z" fill="#012169" />
+        <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" strokeWidth={6} />
+        <path d="M0,0 L60,30 M60,0 L0,30" clipPath="url(#ukclip)" stroke="#C8102E" strokeWidth={4} />
+        <path d="M30,0 v30 M0,15 h60" stroke="#fff" strokeWidth={10} />
+        <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" strokeWidth={6} />
+      </svg>
+    </div>
+  );
   return <div style={{...box, background: '#888'}} />;
 };
 
