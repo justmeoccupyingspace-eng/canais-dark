@@ -1,0 +1,512 @@
+{
+ "channels": {},
+ "topics": {
+  "kr1": {
+   "q": "South Korea richer than UK",
+   "order": "viewCount",
+   "after": "2024-11-01T00:00:00Z",
+   "total_results": 176680,
+   "videos": [
+    {
+     "title": "How did South Korea Get Rich #history #geopolitics #korea #ww2",
+     "id": "ZrbUvACUaJs",
+     "published": "2025-08-08",
+     "views": 306676,
+     "dur_s": 38,
+     "channel": "GeoAndMore",
+     "subs": 99900,
+     "ch_created": "2023-05-14",
+     "ch_videos": 228,
+     "ratio": 3.07
+    },
+    {
+     "title": "Is Mississippi \"Richer\" Than the UK? 🇺🇸🇬🇧",
+     "id": "Z5DkT0XR02w",
+     "published": "2026-02-04",
+     "views": 21873,
+     "dur_s": 7,
+     "channel": "WorldElite X",
+     "subs": 3020,
+     "ch_created": "2025-12-13",
+     "ch_videos": 409,
+     "ratio": 7.24
+    },
+    {
+     "title": "🇬🇧 UK vs 🇫🇷 France — Who's RICHER in 2026? 💰 GDP SHOCK!",
+     "id": "qsWTJpo1CTk",
+     "published": "2026-06-24",
+     "views": 231,
+     "dur_s": 62,
+     "channel": "Datonics",
+     "subs": 15,
+     "ch_created": "2026-04-15",
+     "ch_videos": 31,
+     "ratio": 15.4
+    }
+   ]
+  },
+  "kr2": {
+   "q": "South Korea overtakes France GDP per capita",
+   "order": "viewCount",
+   "after": "2024-11-01T00:00:00Z",
+   "total_results": 103,
+   "videos": []
+  },
+  "kr3": {
+   "q": "Korea richer than Japan",
+   "order": "viewCount",
+   "after": "2024-11-01T00:00:00Z",
+   "total_results": 368033,
+   "videos": [
+    {
+     "title": "Manufacturing be like.. #Japan #China #Korea #USA",
+     "id": "5azS6Uztrvo",
+     "published": "2025-08-27",
+     "views": 25750784,
+     "dur_s": 28,
+     "channel": "Squintly",
+     "subs": 84300,
+     "ch_created": "2016-07-23",
+     "ch_videos": 47,
+     "ratio": 305.47
+    },
+    {
+     "title": "How Lee Kuan Yew Built Singapore: The World’s Most Successful Dictatorship",
+     "id": "aH4cFOB2V5c",
+     "published": "2025-10-02",
+     "views": 2948775,
+     "dur_s": 907,
+     "channel": "Fat Rat",
+     "subs": 15200,
+     "ch_created": "2025-05-01",
+     "ch_videos": 21,
+     "ratio": 194.0
+    },
+    {
+     "title": "Why Every Country Stopped Respecting Korea",
+     "id": "yusBtUG7NrU",
+     "published": "2026-05-01",
+     "views": 2812984,
+     "dur_s": 1404,
+     "channel": "Dr. Jonathan Tam",
+     "subs": 149000,
+     "ch_created": "2025-08-28",
+     "ch_videos": 318,
+     "ratio": 18.88
+    },
+    {
+     "title": "Japan or Korea? which country is better to live in as a foreigner",
+     "id": "jDGgIawaSl0",
+     "published": "2024-12-20",
+     "views": 1020444,
+     "dur_s": 1676,
+     "channel": "TAKASHii",
+     "subs": 2610000,
+     "ch_created": "2016-09-03",
+     "ch_videos": 904,
+     "ratio": 0.39
+    },
+    {
+     "title": "Why the Philippines’ Birth Rate Is Crashing Faster Than Japan | AB Explained",
+     "id": "QRLPNnjqGSE",
+     "published": "2026-06-09",
+     "views": 862880,
+     "dur_s": 2940,
+     "channel": "Asian Boss",
+     "subs": 4170000,
+     "ch_created": "2013-10-29",
+     "ch_videos": 1928,
+     "ratio": 0.21
+    },
+    {
+     "title": "Taiwan Now Richer Than Japan?",
+     "id": "IOrWokQac4Q",
+     "published": "2026-05-24",
+     "views": 576986,
+     "dur_s": 113,
+     "channel": "Sam's POV",
+     "subs": 227000,
+     "ch_created": "2026-02-23",
+     "ch_videos": 615,
+     "ratio": 2.54
+    },
+    {
+     "title": "Work in Japan vs Korea 🇰🇷🇯🇵 #japan #korea #streetinterview",
+     "id": "QbJAXlhiqCE",
+     "published": "2025-01-27",
+     "views": 366643,
+     "dur_s": 33,
+     "channel": "Mojiverse",
+     "subs": 240000,
+     "ch_created": "2023-06-02",
+     "ch_videos": 726,
+     "ratio": 1.53
+    },
+    {
+     "title": "Why Taiwan Loves Japan Who Colonized Them",
+     "id": "0Cy3OF5Pqv8",
+     "published": "2025-11-28",
+     "views": 187943,
+     "dur_s": 971,
+     "channel": "East Asia Beef",
+     "subs": 25900,
+     "ch_created": "2025-05-09",
+     "ch_videos": 12,
+     "ratio": 7.26
+    },
+    {
+     "title": "Why Taiwan Is Richer Than Japan and Korea",
+     "id": "N4QfrJvqYzI",
+     "published": "2026-02-16",
+     "views": 126880,
+     "dur_s": 1364,
+     "channel": "Behind Asia",
+     "subs": 458000,
+     "ch_created": "2020-04-13",
+     "ch_videos": 941,
+     "ratio": 0.28
+    },
+    {
+     "title": "한국보다 잘사는 아시아나라 TOP5",
+     "id": "1UFRN1Ae1K8",
+     "published": "2026-10-27",
+     "views": 342253,
+     "dur_s": 135,
+     "channel": "리센느 사랑해",
+     "subs": 95700,
+     "ch_created": "2026-01-15",
+     "ch_videos": 25,
+     "ratio": 3.58
+    },
+    {
+     "title": "Japan is Broke, Korea is Rich (But Their People are the Opposite)",
+     "id": "fs2-mDbFfzU",
+     "published": "2026-01-29",
+     "views": 75611,
+     "dur_s": 1333,
+     "channel": "Behind Asia",
+     "subs": 458000,
+     "ch_created": "2020-04-13",
+     "ch_videos": 941,
+     "ratio": 0.17
+    },
+    {
+     "title": "Korea🇰🇷 vs Japan🇯🇵 Comparison 2025⚠️| GDP,Population,military||VS Which country is more powerful?",
+     "id": "WaZhTa-B9UM",
+     "published": "2025-07-02",
+     "views": 226392,
+     "dur_s": 6,
+     "channel": "Global Compete",
+     "subs": 2690,
+     "ch_created": "2025-06-23",
+     "ch_videos": 19,
+     "ratio": 84.16
+    }
+   ]
+  },
+  "kr4": {
+   "q": "South Korea vs UK economy",
+   "order": "viewCount",
+   "after": "2024-11-01T00:00:00Z",
+   "total_results": 1000000,
+   "videos": [
+    {
+     "title": "Is India’s $4 Trillion GDP Actually a Trap? | Economic Case Study",
+     "id": "eWiBLgxOcW0",
+     "published": "2025-05-30",
+     "views": 1771548,
+     "dur_s": 1687,
+     "channel": "Think School",
+     "subs": 6610000,
+     "ch_created": "2020-02-26",
+     "ch_videos": 1060,
+     "ratio": 0.27
+    },
+    {
+     "title": "Why Fixing the UK Is So Hard",
+     "id": "OtkNABB8Ras",
+     "published": "2026-05-22",
+     "views": 1638188,
+     "dur_s": 676,
+     "channel": "Bloomberg Originals",
+     "subs": 5190000,
+     "ch_created": "2006-03-09",
+     "ch_videos": 49538,
+     "ratio": 0.32
+    },
+    {
+     "title": "What If North and South Korea Finally United?💣",
+     "id": "haOfxLryL1s",
+     "published": "2025-07-21",
+     "views": 2760390,
+     "dur_s": 40,
+     "channel": "Uniworld ",
+     "subs": 42400,
+     "ch_created": "2024-12-22",
+     "ch_videos": 204,
+     "ratio": 65.1
+    },
+    {
+     "title": "The End of South Korea's Economic Miracle",
+     "id": "3M690082Y0s",
+     "published": "2024-12-23",
+     "views": 1085807,
+     "dur_s": 885,
+     "channel": "Economics Explained",
+     "subs": 2890000,
+     "ch_created": "2012-09-09",
+     "ch_videos": 456,
+     "ratio": 0.38
+    },
+    {
+     "title": "How different are North korea and South korea #northkorea #southkorea #kimjongun",
+     "id": "z9iiXNiOmDo",
+     "published": "2025-04-05",
+     "views": 1770504,
+     "dur_s": 36,
+     "channel": "Suraj Rawat",
+     "subs": 417000,
+     "ch_created": "2020-07-01",
+     "ch_videos": 414,
+     "ratio": 4.25
+    },
+    {
+     "title": "Why are South Korean cosmetics so popular? | The Global Story Podcast",
+     "id": "a8AyodVEVM8",
+     "published": "2026-01-12",
+     "views": 569899,
+     "dur_s": 1205,
+     "channel": "BBC News",
+     "subs": 20200000,
+     "ch_created": "2006-04-08",
+     "ch_videos": 34216,
+     "ratio": 0.03
+    },
+    {
+     "title": "North Korea vs South Korea Military Power 2025",
+     "id": "cJ5ukA_svkQ",
+     "published": "2025-10-10",
+     "views": 1100847,
+     "dur_s": 6,
+     "channel": "Military Strength",
+     "subs": 137000,
+     "ch_created": "2025-08-24",
+     "ch_videos": 1777,
+     "ratio": 8.04
+    },
+    {
+     "title": "Why South Korea’s Economy Looks a Bit Bubbly",
+     "id": "TRUDIJy-UGI",
+     "published": "2026-06-09",
+     "views": 146612,
+     "dur_s": 576,
+     "channel": "TLDR News Global",
+     "subs": 1190000,
+     "ch_created": "2020-12-06",
+     "ch_videos": 1017,
+     "ratio": 0.12
+    },
+    {
+     "title": "What Makes North and South Korea So Different? 🇰🇵 🇰🇷 #map #geography #shorts",
+     "id": "XftXmUm4rkY",
+     "published": "2025-06-18",
+     "views": 65994,
+     "dur_s": 62,
+     "channel": "Geophlex",
+     "subs": 2950,
+     "ch_created": "2025-01-20",
+     "ch_videos": 12,
+     "ratio": 22.37
+    },
+    {
+     "title": "China Southern Airlines Review: London to South Korea with a 19 hour layover in Beijing",
+     "id": "GobIvE3eTuA",
+     "published": "2025-07-19",
+     "views": 43315,
+     "dur_s": 77,
+     "channel": "Sarah Toyin",
+     "subs": 911,
+     "ch_created": "2014-12-14",
+     "ch_videos": 56,
+     "ratio": 47.55
+    },
+    {
+     "title": "🇬🇧 United Kingdom vs South Korea 🇰🇷 Comparison #shorts",
+     "id": "kFy414sQFTo",
+     "published": "2025-12-08",
+     "views": 60751,
+     "dur_s": 5,
+     "channel": "PawBanter",
+     "subs": 2050,
+     "ch_created": "2025-10-15",
+     "ch_videos": 83,
+     "ratio": 29.63
+    },
+    {
+     "title": "Is South Korea’s Rise a Threat to China? | The English Globe Podcast",
+     "id": "Ldw7NClR_Mo",
+     "published": "2025-11-11",
+     "views": 10828,
+     "dur_s": 3981,
+     "channel": "The English Globe",
+     "subs": 165000,
+     "ch_created": "2024-04-17",
+     "ch_videos": 506,
+     "ratio": 0.07
+    }
+   ]
+  },
+  "kr5": {
+   "q": "한국 1인당 GDP 영국 추월",
+   "order": "viewCount",
+   "after": "2024-11-01T00:00:00Z",
+   "total_results": 21405,
+   "videos": [
+    {
+     "title": "추락하는 일본 GDP, 원인은 무엇인가",
+     "id": "t-IIGGFe80U",
+     "published": "2026-10-24",
+     "views": 2306673,
+     "dur_s": 2308,
+     "channel": "슈카월드",
+     "subs": 3740000,
+     "ch_created": "2015-04-25",
+     "ch_videos": 2431,
+     "ratio": 0.62
+    },
+    {
+     "title": "한국한테 GDP추월당한 일본 반응",
+     "id": "YQcTW3Cy2ns",
+     "published": "2025-05-23",
+     "views": 603194,
+     "dur_s": 41,
+     "channel": "칙칙풉풉",
+     "subs": 32500,
+     "ch_created": "2024-12-20",
+     "ch_videos": 344,
+     "ratio": 18.56
+    },
+    {
+     "title": "[일본반응] 한국에 1인당 GDP 추월당한 일본, 토론에서 나온 반전 한마디 “한국은 격차가 엄청나다”｜ABEMA·NEWS23",
+     "id": "FPT6q8ZY408",
+     "published": "2026-10-25",
+     "views": 295410,
+     "dur_s": 584,
+     "channel": "이슈한바퀴",
+     "subs": 1900,
+     "ch_created": "2025-11-25",
+     "ch_videos": 152,
+     "ratio": 155.48
+    },
+    {
+     "title": "[여의도튜브] 내년 GDP 인도 영국에도 추월당해..'통곡' / 머니투데이방송",
+     "id": "1ibrAWTNpu4",
+     "published": "2026-10-14",
+     "views": 150492,
+     "dur_s": 183,
+     "channel": "MTN 머니투데이방송",
+     "subs": 1190000,
+     "ch_created": "2005-11-17",
+     "ch_videos": 107510,
+     "ratio": 0.13
+    },
+    {
+     "title": "인도에 추월 당하고 6위로 풀썩…'경제대국' 일본의 굴욕 [지금이뉴스] / YTN",
+     "id": "pekuAaIlTKo",
+     "published": "2026-10-15",
+     "views": 159836,
+     "dur_s": 85,
+     "channel": " YTN",
+     "subs": 5420000,
+     "ch_created": "2013-05-23",
+     "ch_videos": 994234,
+     "ratio": 0.03
+    },
+    {
+     "title": "[일본반응] 일본은 내년 세계 6위로 밀린다는데 한국은 사상 첫 2조 달러 돌파 12위, 영국 추월 2년 앞당긴 IMF 전망에 일본 시사통신도 보도",
+     "id": "i8ARnyqnPcM",
+     "published": "2026-11-01",
+     "views": 46894,
+     "dur_s": 2207,
+     "channel": "뱅튜브",
+     "subs": 854,
+     "ch_created": "2025-07-03",
+     "ch_videos": 13,
+     "ratio": 54.91
+    },
+    {
+     "title": "영국이 한국에 완패하자… 해외가 브렉시트 때문이라며 난리 난 이유#한국경제 #영국 #브렉시트 #GDP #해외반응 #한국성장 #대한민국 #경제이슈 #AI #삼성전자",
+     "id": "Jyrw0lSVzts",
+     "published": "2026-07-10",
+     "views": 19363,
+     "dur_s": 290,
+     "channel": "장바구니",
+     "subs": 651,
+     "ch_created": "2015-06-09",
+     "ch_videos": 171,
+     "ratio": 29.74
+    },
+    {
+     "title": "IMF 발표 후 일본 댓글 “한 수 아래였던 대만이나 한국에 추월당했다” ｜ 한국 1인당 GDP 첫 4만 달러 전망",
+     "id": "4p3B52bAJnQ",
+     "published": "2026-10-17",
+     "views": 23172,
+     "dur_s": 592,
+     "channel": "밖에서 본 한국",
+     "subs": 132,
+     "ch_created": "2026-10-10",
+     "ch_videos": 29,
+     "ratio": 175.55
+    },
+    {
+     "title": "\"예전에 세계 2위였는데\" 1인당 GDP 한국에 추월당한 일본, 일본 방송도 인정한 한국의 완승",
+     "id": "0SQ57z4Uk3Q",
+     "published": "2026-10-30",
+     "views": 6333,
+     "dur_s": 1529,
+     "channel": "247경제",
+     "subs": 15200,
+     "ch_created": "2016-08-31",
+     "ch_videos": 162,
+     "ratio": 0.42
+    },
+    {
+     "title": "10년안에 한국에게 추월당할 나라 TOP5#한국경제#세계경제#IMF#OECD 일본#영국#프랑스#이탈리아#캐나다#경제성장##경제#Top5 #한국",
+     "id": "_72py1k0p9s",
+     "published": "2025-10-15",
+     "views": 4326,
+     "dur_s": 55,
+     "channel": "인생한마디",
+     "subs": 1450,
+     "ch_created": "2025-07-02",
+     "ch_videos": 201,
+     "ratio": 2.98
+    },
+    {
+     "title": "1991년엔 절반이었는데?\" 영국을 마침내 추월해 버린 한국 GDP! 자조 쏟아지는 현지 상황, 과연 K-제조업의 위엄일까요?",
+     "id": "K3-j3qEWQ00",
+     "published": "2026-08-19",
+     "views": 1900,
+     "dur_s": 308,
+     "channel": "마스터 경제몽",
+     "subs": 32,
+     "ch_created": "2026-07-14",
+     "ch_videos": 36,
+     "ratio": 59.38
+    },
+    {
+     "title": "일본 GDP 내년 세계 6위, 1인당으론 이미 한국한테 밀렸다",
+     "id": "I5T5_yKuYlU",
+     "published": "2026-10-20",
+     "views": 4675,
+     "dur_s": 859,
+     "channel": "왜 그런 일이?",
+     "subs": 71,
+     "ch_created": "2026-07-22",
+     "ch_videos": 67,
+     "ratio": 65.85
+    }
+   ]
+  }
+ }
+}
