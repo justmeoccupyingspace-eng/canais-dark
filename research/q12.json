@@ -1,0 +1,45 @@
+{
+ "channels": [],
+ "topics": [
+  {
+   "id": "kr1",
+   "q": "South Korea richer than UK",
+   "order": "viewCount",
+   "after": "2024-11-01T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  },
+  {
+   "id": "kr2",
+   "q": "South Korea overtakes France GDP per capita",
+   "order": "viewCount",
+   "after": "2024-11-01T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  },
+  {
+   "id": "kr3",
+   "q": "Korea richer than Japan",
+   "order": "viewCount",
+   "after": "2024-11-01T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  },
+  {
+   "id": "kr4",
+   "q": "South Korea vs UK economy",
+   "order": "viewCount",
+   "after": "2024-11-01T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  },
+  {
+   "id": "kr5",
+   "q": "\ud55c\uad6d 1\uc778\ub2f9 GDP \uc601\uad6d \ucd94\uc6d4",
+   "order": "viewCount",
+   "after": "2024-11-01T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  }
+ ]
+}
