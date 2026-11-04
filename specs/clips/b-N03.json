@@ -1,0 +1,40 @@
+{
+ "channel": "nesteggatlas",
+ "long": "J3rLpvQZanA",
+ "longTitle": "Social Security at 62, 67 or 70? The Break-Even Ages, From SSA's Own Data",
+ "preview": "long-41797881289",
+ "timeline": "lprep-41797881289",
+ "timeline_file": "b-N03-ssage.json",
+ "sources": "Sources: Social Security Administration — 2027 COLA Fact Sheet; Annual Statistical Supplement 2026, Table 6.B5.1; Office of the Chief Actuary, 2023 period life table (2026 Trustees Report); early retirement reduction, delayed retirement credits, survivor benefits and the retirement earnings test. Break-even ages, totals and probabilities are our calculations (today's dollars, before taxes, no investment returns).",
+ "music_credits": "Music by Kevin MacLeod (incompetech.com), CC BY 4.0.",
+ "hashtags": "#socialsecurity #retirement #retirementplanning #personalfinance #cola2027",
+ "tags": [
+  "social security",
+  "social security at 62 vs 70",
+  "when to claim social security",
+  "social security break even",
+  "2027 cola",
+  "full retirement age",
+  "survivor benefits",
+  "retirement planning",
+  "shorts"
+ ],
+ "clips": [
+  {
+   "from": "s00",
+   "to": "s00",
+   "hook": "Social Security: *62 or 70?*",
+   "title": "Social Security at 62 vs 70: 77% more per month #Shorts",
+   "desc": "Full benefit $2,000 at 67 → $1,400 at 62 or $2,480 at 70 (SSA rules, born 1960+).",
+   "at": "2026-11-04T20:30:00Z"
+  },
+  {
+   "from": "s04",
+   "to": "s04",
+   "hook": "Almost half used to claim at *62*",
+   "title": "Half of retirees claimed Social Security at 62. Now? #Shorts",
+   "desc": "2008: ~45% of new retirees started at 62. 2024: ~23%. At 70+: 1.5% → 9% (SSA Annual Statistical Supplement 2026).",
+   "at": "2026-11-05T00:00:00Z"
+  }
+ ]
+}
