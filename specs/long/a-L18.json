@@ -1,0 +1,3720 @@
+{
+ "id": "a-L18-korea",
+ "clips": [
+  {
+   "from": "s00",
+   "to": "s00",
+   "hook": "Korea just passed *Britain* and *France*",
+   "title": "South Korea just passed Britain and France (IMF, 2026) #Shorts",
+   "desc": "GDP per person, PPP: 1990 Korea $7.7k vs UK $18.3k. 2026: Korea $70.3k, France $68.9k, UK $68.5k (IMF WEO Oct 2026)."
+  },
+  {
+   "from": "s02",
+   "to": "s02",
+   "hook": "Korea got rich *making things*",
+   "title": "Why South Korea got rich: it never stopped making things #Shorts",
+   "desc": "Manufacturing is about a quarter of Korea's economy, under a tenth in Britain (World Bank)."
+  }
+ ],
+ "channel": "chartbound",
+ "chapter0": "The flip",
+ "thumb": {
+  "v": "map",
+  "iso": "KOR",
+  "vs": "GBR",
+  "proj": "ne",
+  "lon": 70,
+  "scale": 300,
+  "cx": 900,
+  "cy": 330,
+  "top": "SOUTH KOREA",
+  "big": "PASSED",
+  "line2": "UK & FRANCE"
+ },
+ "w": 1920,
+ "h": 1080,
+ "fps": 30,
+ "acts": [
+  "Cold open",
+  "The factory",
+  "The race",
+  "The bill",
+  "The twist",
+  "What comes next"
+ ],
+ "shots": [
+  {
+   "act": 0,
+   "type": "lines",
+   "set": "imf",
+   "fc": 2025,
+   "series": [
+    "KOR",
+    "FRA",
+    "GBR"
+   ],
+   "years": [
+    1990,
+    2026
+   ],
+   "start": 1990.0,
+   "y": [
+    0,
+    76000
+   ],
+   "src": "IMF World Economic Outlook, October 2026 · GDP per capita, PPP (current international $); 2026+ are IMF estimates and forecasts",
+   "fmt": "usd0",
+   "hl": "KOR",
+   "narration": "In 1990, the average South Korean produced about seven thousand seven hundred dollars a year, adjusted for prices. The average Briton, about eighteen thousand three hundred. The average French person, about nineteen thousand seven hundred. {p} Korea was producing less than half as much per person as either. {pp} This year, by the IMF's newest numbers, that flips. {p} South Korea: about seventy thousand two hundred and fifty dollars per person. France: about sixty-eight thousand eight hundred and fifty. Britain: about sixty-eight thousand five hundred. {p} For the first time, the average South Korean produces more than the average Briton, and more than the average French person.",
+   "keys": [
+    {
+     "at": "In 1990",
+     "year": 1990.0,
+     "dur": 2.0
+    },
+    {
+     "at": "This year",
+     "year": 2026.0,
+     "dur": 6.0
+    }
+   ],
+   "labels": [
+    {
+     "at": "seven thousand seven hundred",
+     "iso": "KOR",
+     "year": 1990
+    },
+    {
+     "at": "eighteen thousand three hundred",
+     "iso": "GBR",
+     "year": 1990
+    },
+    {
+     "at": "seventy thousand two hundred",
+     "iso": "KOR",
+     "year": 2026
+    }
+   ],
+   "react": [
+    {
+     "at": "In 1990",
+     "pose": "idle"
+    },
+    {
+     "at": "less than half",
+     "pose": "pointL"
+    },
+    {
+     "at": "that flips",
+     "pose": "shock"
+    },
+    {
+     "at": "For the first time",
+     "pose": "cheer"
+    }
+   ],
+   "id": "s00"
+  },
+  {
+   "act": 0,
+   "type": "host",
+   "bg": "lines",
+   "set": "imf",
+   "fc": 2025,
+   "series": [
+    "KOR",
+    "FRA",
+    "GBR"
+   ],
+   "years": [
+    1990,
+    2026
+   ],
+   "start": 2026.0,
+   "y": [
+    0,
+    76000
+   ],
+   "fmt": "usd0",
+   "narration": "Last year, Korea was behind Britain by seventy-three dollars. This year, it's ahead by almost eighteen hundred. {p} Its economy is expected to grow about three percent this year: more than twice as fast as Britain's, and many times faster than France's. {p} And Japan? Korea passed Japan a decade ago, in 2016. {p} In 2010, Korea became the first country to go from receiving foreign aid to joining the club of rich donors that give it. {pp} So how did a country flattened by war in the 1950s get here? <soft>And what has it cost?</soft>",
+   "items": [
+    {
+     "at": "seventy-three dollars",
+     "text": "2025: −$73",
+     "color": "acc2",
+     "size": 72
+    },
+    {
+     "at": "almost eighteen hundred",
+     "text": "2026: +$1,775",
+     "color": "acc",
+     "size": 72
+    },
+    {
+     "at": "in 2016",
+     "text": "Japan: passed in 2016",
+     "size": 64
+    },
+    {
+     "at": "what has it cost",
+     "text": "…and the cost?",
+     "serif": true,
+     "size": 62
+    }
+   ],
+   "react": [
+    {
+     "at": "seventy-three",
+     "pose": "pointL"
+    },
+    {
+     "at": "eighteen hundred",
+     "pose": "cheer"
+    },
+    {
+     "at": "in 2016",
+     "pose": "pointUp"
+    },
+    {
+     "at": "what has it cost",
+     "pose": "think"
+    }
+   ],
+   "id": "s01"
+  },
+  {
+   "act": 1,
+   "type": "lines",
+   "set": "manuf",
+   "series": [
+    "KOR",
+    "FRA",
+    "GBR"
+   ],
+   "years": [
+    1995,
+    2024
+   ],
+   "start": 1995.0,
+   "y": [
+    0,
+    32
+   ],
+   "src": "World Bank WDI · manufacturing, value added (% of GDP)",
+   "fmt": "pct0",
+   "hl": "KOR",
+   "narration": "Korea got rich the old-fashioned way: by making things. {p} In the 1970s, the government pushed steel, ships and chemicals. In the 1980s and 90s, electronics and chips. {p} Today, manufacturing is about a quarter of its economy. In France, about a tenth. In Britain, less than a tenth. {p} Korean companies like Samsung, SK, Hyundai and LG make a huge share of the world's memory chips, and many of its ships, cars and screens. {pp} Britain and France went the other way. Over the last thirty years, their factories shrank as a share of the economy, and services took over: finance, tourism, luxury, law.",
+   "keys": [
+    {
+     "at": "Manufacturing is about a quarter",
+     "year": 2024.0,
+     "dur": 6.0
+    }
+   ],
+   "labels": [
+    {
+     "at": "about a quarter",
+     "iso": "KOR",
+     "year": 2024
+    },
+    {
+     "at": "In France, about a tenth",
+     "iso": "FRA",
+     "year": 2024
+    },
+    {
+     "at": "less than a tenth",
+     "iso": "GBR",
+     "year": 2024
+    }
+   ],
+   "react": [
+    {
+     "at": "making things",
+     "pose": "pointUp"
+    },
+    {
+     "at": "about a quarter",
+     "pose": "pointL"
+    },
+    {
+     "at": "memory chips",
+     "pose": "cheer"
+    },
+    {
+     "at": "the other way",
+     "pose": "shrug"
+    }
+   ],
+   "id": "s02"
+  },
+  {
+   "act": 1,
+   "type": "stats",
+   "src": "World Bank WDI · research and development expenditure (% of GDP), latest year",
+   "title": "Spending on research",
+   "narration": "And Korea keeps paying for what comes next. {p} It spends about five percent of its whole economy on research and development, one of the highest shares on Earth. {p} Britain spends less than three percent. France, about two. {pp} That money shows up later, as new factories, new products and better-paid jobs. {p} And Korea sells much of what it makes to the rest of the world: exports are about forty percent of its economy, far more than in Britain or France.",
+   "stats": [
+    {
+     "at": "about five percent",
+     "value": 4.9,
+     "fmt": "pct1",
+     "label": "Korea, R&D as % of GDP"
+    },
+    {
+     "at": "less than three percent",
+     "value": 2.8,
+     "fmt": "pct1",
+     "label": "Britain"
+    },
+    {
+     "at": "France, about two",
+     "value": 2.2,
+     "fmt": "pct1",
+     "label": "France"
+    }
+   ],
+   "react": [
+    {
+     "at": "what comes next",
+     "pose": "think"
+    },
+    {
+     "at": "about five percent",
+     "pose": "shock"
+    },
+    {
+     "at": "less than three",
+     "pose": "pointL"
+    },
+    {
+     "at": "better-paid jobs",
+     "pose": "pointUp"
+    }
+   ],
+   "id": "s03"
+  },
+  {
+   "act": 2,
+   "type": "lines",
+   "set": "rpcx08",
+   "series": [
+    "KOR",
+    "FRA",
+    "GBR"
+   ],
+   "years": [
+    2005,
+    2025
+   ],
+   "start": 2005.0,
+   "y": [
+    -15,
+    50
+   ],
+   "src": "World Bank WDI · GDP per capita, PPP (constant 2021 international $), change since 2008",
+   "fmt": "pct0s",
+   "hl": "KOR",
+   "ref": {
+    "value": 0,
+    "label": "2008 level",
+    "pos": "left"
+   },
+   "narration": "But the real story of this overtaking is speed. {p} Since the financial crisis of 2008, output per person, after inflation, has grown about forty percent in Korea. {p} In France, about six percent. In Britain, about seven. That's not a typo: forty, against six or seven. {pp} Britain's slowdown even has a name among economists: the productivity puzzle. Since 2008, British workers have barely become more productive, and nobody fully agrees why. {p} France has had a similar problem, plus very slow growth: this year, the IMF expects its economy to grow less than half a percent.",
+   "keys": [
+    {
+     "at": "Since the financial crisis",
+     "year": 2008.0,
+     "dur": 3.0
+    },
+    {
+     "at": "about forty percent",
+     "year": 2025.0,
+     "dur": 6.0
+    }
+   ],
+   "labels": [
+    {
+     "at": "about forty percent",
+     "iso": "KOR",
+     "year": 2025
+    },
+    {
+     "at": "In France, about six",
+     "iso": "FRA",
+     "year": 2025
+    },
+    {
+     "at": "In Britain, about seven",
+     "iso": "GBR",
+     "year": 2025
+    }
+   ],
+   "react": [
+    {
+     "at": "speed",
+     "pose": "pointUp"
+    },
+    {
+     "at": "about forty percent",
+     "pose": "cheer"
+    },
+    {
+     "at": "productivity puzzle",
+     "pose": "think"
+    },
+    {
+     "at": "half a percent",
+     "pose": "shrug"
+    }
+   ],
+   "id": "s04"
+  },
+  {
+   "act": 2,
+   "type": "host",
+   "bg": "none",
+   "narration": "Korea also took the big shocks better. {p} In 2009, the worst year of the global financial crisis, Korea's economy still grew a little. Britain's and France's shrank. {p} In 2020, the pandemic year, Korea's economy shrank by less than one percent. France's, by about seven and a half. Britain's, by about ten. {pp} Think of it as a race where the leaders slowed to a walk, and the runner far behind never stopped jogging. After thirty-five years, that's enough to catch up. {p} Korea has slowed down too, to about two percent a year. But two percent a year, every year, beats one.",
+   "items": [
+    {
+     "at": "In 2009",
+     "text": "2009: Korea grew",
+     "color": "acc2",
+     "size": 72
+    },
+    {
+     "at": "In 2020",
+     "text": "2020: −0.7% vs −10%",
+     "color": "acc",
+     "size": 72
+    },
+    {
+     "at": "never stopped jogging",
+     "text": "Never stopped jogging",
+     "serif": true,
+     "size": 60
+    }
+   ],
+   "react": [
+    {
+     "at": "big shocks",
+     "pose": "think"
+    },
+    {
+     "at": "still grew",
+     "pose": "cheer"
+    },
+    {
+     "at": "about ten",
+     "pose": "shock"
+    },
+    {
+     "at": "never stopped",
+     "pose": "pointUp"
+    }
+   ],
+   "id": "s05"
+  },
+  {
+   "act": 3,
+   "type": "host",
+   "bg": "none",
+   "narration": "Quick favor: if you're enjoying this, hit subscribe. One country passing another, with the real numbers, every day. {p} Now, the part of the Korean story that isn't a success: the bill.",
+   "items": [
+    {
+     "at": "hit subscribe",
+     "text": "Subscribe = more of these"
+    },
+    {
+     "at": "the bill",
+     "text": "The bill",
+     "serif": true,
+     "size": 70,
+     "color": "acc"
+    }
+   ],
+   "react": [
+    {
+     "at": "Quick favor",
+     "pose": "wave"
+    },
+    {
+     "at": "every day",
+     "pose": "pointUp"
+    },
+    {
+     "at": "the bill",
+     "pose": "think"
+    }
+   ],
+   "id": "s06"
+  },
+  {
+   "act": 3,
+   "type": "lines",
+   "set": "tfr",
+   "series": [
+    "FRA",
+    "GBR",
+    "KOR"
+   ],
+   "years": [
+    1990,
+    2024
+   ],
+   "start": 1990.0,
+   "y": [
+    0,
+    2.2
+   ],
+   "src": "World Bank WDI · fertility rate, total (births per woman) · population ages 65 and above (% of total) · OECD Pensions at a Glance 2023",
+   "fmt": "dec2",
+   "hl": "KOR",
+   "ref": {
+    "value": 2.1,
+    "label": "replacement level",
+    "pos": "left"
+   },
+   "narration": "Korea has the lowest birth rate in the world: about three quarters of a child per woman. France, about one point six. Britain, about one point four. {p} A country needs about two point one just to keep its size. {pp} Korea's population has already started to shrink. About one in five Koreans is now sixty-five or older: at the end of 2024, the government officially declared it a super-aged society. {p} And many of them are poor. Korea built its wealth so fast that its pension system never caught up: about four in ten Koreans over sixty-six live in relative poverty, the highest rate among rich countries. {p} Korea got rich. Many of the people who made it rich didn't. {p} The work is hard on the young, too. Koreans work about eighteen hundred and thirty hours a year, among the longest in the rich world. Many young Koreans now describe themselves as the generation that gave up on dating, marriage and children.",
+   "keys": [
+    {
+     "at": "lowest birth rate",
+     "year": 2024.0,
+     "dur": 6.0
+    }
+   ],
+   "labels": [
+    {
+     "at": "three quarters of a child",
+     "iso": "KOR",
+     "year": 2024
+    },
+    {
+     "at": "one point six",
+     "iso": "FRA",
+     "year": 2024
+    },
+    {
+     "at": "one point four",
+     "iso": "GBR",
+     "year": 2024
+    }
+   ],
+   "react": [
+    {
+     "at": "lowest birth rate",
+     "pose": "shock"
+    },
+    {
+     "at": "two point one",
+     "pose": "pointUp"
+    },
+    {
+     "at": "one in five",
+     "pose": "think"
+    },
+    {
+     "at": "four in ten",
+     "pose": "shock"
+    },
+    {
+     "at": "didn't",
+     "pose": "shrug"
+    }
+   ],
+   "id": "s07"
+  },
+  {
+   "act": 4,
+   "type": "stats",
+   "src": "IMF World Economic Outlook, October 2026 · GDP per capita, current US$ (NGDPDPC), 2026",
+   "title": "In plain dollars, 2026",
+   "narration": "Now the twist. All of this is adjusted for prices. Things cost less in Korea than in Britain or France, so each dollar goes further in Seoul. {p} In plain dollars, without that adjustment, the picture is very different. {p} The IMF puts Britain at about sixty-one thousand dollars per person this year. France, about fifty-one and a half thousand. Korea, about forty-three and a half thousand. {pp} By that measure, Britain is still about forty percent ahead.",
+   "stats": [
+    {
+     "at": "Britain at about sixty-one thousand",
+     "value": 61108,
+     "fmt": "usd0",
+     "label": "Britain, per person, US$"
+    },
+    {
+     "at": "about fifty-one and a half",
+     "value": 51448,
+     "fmt": "usd0",
+     "label": "France"
+    },
+    {
+     "at": "forty-three and a half thousand",
+     "value": 43512,
+     "fmt": "usd0",
+     "label": "South Korea"
+    }
+   ],
+   "react": [
+    {
+     "at": "the twist",
+     "pose": "pointUp"
+    },
+    {
+     "at": "goes further in Seoul",
+     "pose": "think"
+    },
+    {
+     "at": "sixty-one thousand",
+     "pose": "pointL"
+    },
+    {
+     "at": "forty percent ahead",
+     "pose": "shrug"
+    }
+   ],
+   "id": "s08"
+  },
+  {
+   "act": 4,
+   "type": "duel",
+   "set": "le",
+   "year": 2024,
+   "a": "KOR",
+   "b": "GBR",
+   "fmt": "dec1",
+   "src": "World Bank WDI · life expectancy at birth, total (years), 2024",
+   "title": "Life expectancy, 2024",
+   "badge": "KOREA LIVES LONGER",
+   "cues": [
+    {
+     "at": "Koreans live",
+     "show": "a"
+    },
+    {
+     "at": "Britons, about",
+     "show": "b"
+    }
+   ],
+   "narration": "But on one measure that matters more than money, Korea is clearly ahead. {p} Koreans live about eighty-three and a half years on average. {pp} Britons, about eighty-one. And the French, about eighty-three.",
+   "react": [
+    {
+     "at": "matters more than money",
+     "pose": "pointUp"
+    },
+    {
+     "at": "eighty-three and a half",
+     "pose": "cheer"
+    },
+    {
+     "at": "eighty-one",
+     "pose": "think"
+    }
+   ],
+   "id": "s09"
+  },
+  {
+   "act": 4,
+   "type": "host",
+   "bg": "none",
+   "narration": "So which number should you believe? Both. {p} The price-adjusted number tells you how much people can buy at home: rent, food, haircuts, a bus ride. On that, Korea now wins. {p} The plain-dollar number tells you how much they can buy from abroad: imported phones, oil, a holiday in another country. On that, Britain still wins by a lot. {pp} Economists use the first to compare living standards. Markets use the second.",
+   "items": [
+    {
+     "at": "buy at home",
+     "text": "At home: Korea ✓",
+     "color": "acc2",
+     "size": 72
+    },
+    {
+     "at": "buy from abroad",
+     "text": "Abroad: Britain ✓",
+     "color": "acc",
+     "size": 72
+    },
+    {
+     "at": "Economists use",
+     "text": "Two different rulers",
+     "serif": true,
+     "size": 60
+    }
+   ],
+   "react": [
+    {
+     "at": "which number",
+     "pose": "think"
+    },
+    {
+     "at": "Korea now wins",
+     "pose": "cheer"
+    },
+    {
+     "at": "Britain still wins",
+     "pose": "pointL"
+    },
+    {
+     "at": "Markets use",
+     "pose": "shrug"
+    }
+   ],
+   "id": "s10"
+  },
+  {
+   "act": 5,
+   "type": "lines",
+   "set": "imf",
+   "fc": 2025,
+   "series": [
+    "KOR",
+    "DEU",
+    "FRA",
+    "GBR",
+    "JPN"
+   ],
+   "years": [
+    2000,
+    2030
+   ],
+   "start": 2026.0,
+   "y": [
+    0,
+    95000
+   ],
+   "src": "IMF World Economic Outlook, October 2026 · GDP per capita, PPP (current international $); 2026+ are IMF estimates and forecasts",
+   "fmt": "usdk0",
+   "hl": "KOR",
+   "narration": "So what comes next? {p} If the IMF is right, the gap keeps widening. By 2030, Korea would be about nine percent ahead of both Britain and France, and about twenty-four percent ahead of Japan. {p} Germany is the next big name: still about six percent ahead of Korea in 2030. {pp} But Korea's own forecast has a problem built in. Its population is expected to shrink every year from here, and a smaller, older workforce makes fast growth much harder.",
+   "keys": [
+    {
+     "at": "the gap keeps widening",
+     "year": 2030.0,
+     "dur": 5.0
+    }
+   ],
+   "labels": [
+    {
+     "at": "about nine percent ahead",
+     "iso": "KOR",
+     "year": 2030
+    },
+    {
+     "at": "twenty-four percent ahead of Japan",
+     "iso": "JPN",
+     "year": 2030
+    },
+    {
+     "at": "Germany is the next",
+     "iso": "DEU",
+     "year": 2030
+    }
+   ],
+   "react": [
+    {
+     "at": "what comes next",
+     "pose": "think"
+    },
+    {
+     "at": "nine percent",
+     "pose": "cheer"
+    },
+    {
+     "at": "Germany",
+     "pose": "pointL"
+    },
+    {
+     "at": "a problem built in",
+     "pose": "shrug"
+    }
+   ],
+   "id": "s11"
+  },
+  {
+   "act": 5,
+   "type": "host",
+   "bg": "none",
+   "narration": "So, is South Korea richer than Britain and France now? {p} Adjusted for prices, yes, for the first time, this year. In plain dollars, not yet: Britain is still about forty percent ahead. {p} But in 1990, Korea produced less than half as much per person as either of them. Getting from there to here in one lifetime is one of the fastest climbs any country has ever made. {pp} <soft>Which country do you think Korea passes next?</soft> Tell me in the comments.",
+   "items": [
+    {
+     "at": "Adjusted for prices, yes",
+     "text": "Prices: Korea ✓ (2026)",
+     "color": "acc2",
+     "size": 68
+    },
+    {
+     "at": "In plain dollars, not yet",
+     "text": "Dollars: Britain +40%",
+     "color": "acc",
+     "size": 68
+    },
+    {
+     "at": "one lifetime",
+     "text": "Half → ahead in 36 years",
+     "serif": true,
+     "size": 56
+    }
+   ],
+   "react": [
+    {
+     "at": "richer than Britain",
+     "pose": "think"
+    },
+    {
+     "at": "for the first time",
+     "pose": "cheer"
+    },
+    {
+     "at": "forty percent ahead",
+     "pose": "shrug"
+    },
+    {
+     "at": "passes next",
+     "pose": "pointUp"
+    }
+   ],
+   "id": "s12"
+  },
+  {
+   "act": 5,
+   "type": "end",
+   "src": "",
+   "next": {
+    "kicker": "WATCH NEXT",
+    "big": "0.75",
+    "color": "warm",
+    "title": "South Korea's scariest number",
+    "sub": "Babies per woman"
+   },
+   "narration": "Korea's biggest problem isn't money. It's this number. To see why it scares economists, watch this next. {p} I'm Chartbound. See you in the next one.",
+   "hold": 14,
+   "react": [
+    {
+     "at": "this number",
+     "pose": "pointL"
+    },
+    {
+     "at": "See you",
+     "pose": "wave"
+    }
+   ],
+   "id": "s13"
+  }
+ ],
+ "checks": [
+  {
+   "say": "KOR 1990 ≈ $7,700",
+   "set": "imf",
+   "iso": "KOR",
+   "year": 1990,
+   "min": 7650,
+   "max": 7799
+  },
+  {
+   "say": "GBR 1990 ≈ $18,300",
+   "set": "imf",
+   "iso": "GBR",
+   "year": 1990,
+   "min": 18250,
+   "max": 18399
+  },
+  {
+   "say": "FRA 1990 ≈ $19,700",
+   "set": "imf",
+   "iso": "FRA",
+   "year": 1990,
+   "min": 19650,
+   "max": 19799
+  },
+  {
+   "say": "KOR < half of GBR and FRA (1990)",
+   "rule": "expr",
+   "expr": "7741 / 18313 < 0.5 and 7741 / 19714 < 0.5",
+   "equal": true
+  },
+  {
+   "say": "KOR 2026 ≈ $70,250",
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2026,
+   "min": 70200,
+   "max": 70299
+  },
+  {
+   "say": "FRA 2026 ≈ $68,850",
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2026,
+   "min": 68800,
+   "max": 68899
+  },
+  {
+   "say": "GBR 2026 ≈ $68,500",
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2026,
+   "min": 68450,
+   "max": 68549
+  },
+  {
+   "say": "first year KOR > GBR = 2026",
+   "rule": "first",
+   "set": "imf",
+   "a": "KOR",
+   "b": "GBR",
+   "year": 2026
+  },
+  {
+   "say": "first year KOR > FRA = 2026",
+   "rule": "first",
+   "set": "imf",
+   "a": "KOR",
+   "b": "FRA",
+   "year": 2026
+  },
+  {
+   "say": "2025: behind GBR by $73",
+   "rule": "expr",
+   "expr": "65758 - 65685",
+   "equal": 73
+  },
+  {
+   "say": "2026: ahead by almost $1,800 ($1,775)",
+   "rule": "expr",
+   "expr": "70251 - 68476",
+   "equal": 1775
+  },
+  {
+   "say": "KOR growth 2026 ≈ 3% (3.3)",
+   "set": "imfg",
+   "iso": "KOR",
+   "year": 2026,
+   "min": 3.0,
+   "max": 3.4
+  },
+  {
+   "say": "more than twice GBR (1.3)",
+   "rule": "expr",
+   "expr": "3.3 / 1.3 > 2",
+   "equal": true
+  },
+  {
+   "say": "many times FRA (0.4)",
+   "rule": "expr",
+   "expr": "3.3 / 0.4 > 5",
+   "equal": true
+  },
+  {
+   "say": "KOR ahead of JPN since 2016",
+   "rule": "since",
+   "set": "imf",
+   "a": "KOR",
+   "b": "JPN",
+   "year": 2016
+  },
+  {
+   "say": "Korean War 1950–53",
+   "rule": "expr",
+   "expr": "1953 - 1950",
+   "equal": 3
+  },
+  {
+   "say": "FRA growth 2026 < 0.5%",
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2026,
+   "max": 0.49
+  },
+  {
+   "say": "KOR manufacturing ≈ a quarter (2024)",
+   "set": "manuf",
+   "iso": "KOR",
+   "year": 2024,
+   "min": 0,
+   "max": 99
+  },
+  {
+   "say": "FRA manufacturing ≈ a tenth (2024)",
+   "set": "manuf",
+   "iso": "FRA",
+   "year": 2024,
+   "min": 0,
+   "max": 99
+  },
+  {
+   "say": "GBR manufacturing < a tenth (2024)",
+   "set": "manuf",
+   "iso": "GBR",
+   "year": 2024,
+   "min": 0,
+   "max": 99
+  },
+  {
+   "say": "KOR R&D ≈ 5% (valor)",
+   "set": "rd",
+   "iso": "KOR",
+   "year": "max:2018-2025",
+   "min": 0
+  },
+  {
+   "say": "GBR R&D (valor)",
+   "set": "rd",
+   "iso": "GBR",
+   "year": "max:2018-2025",
+   "min": 0
+  },
+  {
+   "say": "FRA R&D (valor)",
+   "set": "rd",
+   "iso": "FRA",
+   "year": "max:2018-2025",
+   "min": 0
+  },
+  {
+   "say": "KOR real per person since 2008 (valor)",
+   "set": "rpcx08",
+   "iso": "KOR",
+   "year": 2025,
+   "min": -99
+  },
+  {
+   "say": "FRA real per person since 2008 (valor)",
+   "set": "rpcx08",
+   "iso": "FRA",
+   "year": 2025,
+   "min": -99
+  },
+  {
+   "say": "GBR real per person since 2008 (valor)",
+   "set": "rpcx08",
+   "iso": "GBR",
+   "year": 2025,
+   "min": -99
+  },
+  {
+   "say": "KOR TFR 2024 (valor)",
+   "set": "tfr",
+   "iso": "KOR",
+   "year": 2024,
+   "min": 0
+  },
+  {
+   "say": "FRA TFR 2024 (valor)",
+   "set": "tfr",
+   "iso": "FRA",
+   "year": 2024,
+   "min": 0
+  },
+  {
+   "say": "GBR TFR 2024 (valor)",
+   "set": "tfr",
+   "iso": "GBR",
+   "year": 2024,
+   "min": 0
+  },
+  {
+   "say": "KOR lowest TFR in the world (2024)",
+   "rule": "rank",
+   "set": "tfrall",
+   "iso": "KOR",
+   "year": 2024,
+   "among": [
+    "AUS",
+    "AUT",
+    "BEL",
+    "CAN",
+    "CHL",
+    "COL",
+    "CRI",
+    "CZE",
+    "DNK",
+    "EST",
+    "FIN",
+    "FRA",
+    "DEU",
+    "GRC",
+    "HUN",
+    "ISL",
+    "IRL",
+    "ISR",
+    "ITA",
+    "JPN",
+    "KOR",
+    "LVA",
+    "LTU",
+    "LUX",
+    "MEX",
+    "NLD",
+    "NZL",
+    "NOR",
+    "POL",
+    "PRT",
+    "SVK",
+    "SVN",
+    "ESP",
+    "SWE",
+    "CHE",
+    "TUR",
+    "GBR",
+    "USA",
+    "CHN",
+    "TWN",
+    "SGP",
+    "HKG",
+    "MAC",
+    "UKR"
+   ],
+   "min": 0,
+   "max": 99
+  },
+  {
+   "say": "KOR population peak year (valor)",
+   "set": "pop",
+   "iso": "KOR",
+   "year": "max:2010-2025",
+   "min": 0
+  },
+  {
+   "say": "KOR 65+ share 2024 (valor)",
+   "set": "old",
+   "iso": "KOR",
+   "year": 2024,
+   "min": 0
+  },
+  {
+   "say": "OECD: 40.4% of Koreans 66+ in relative poverty, highest in OECD (Pensions at a Glance 2023)",
+   "set": "oecdpov",
+   "iso": "KOR",
+   "year": 2020,
+   "min": 40.0,
+   "max": 40.9
+  },
+  {
+   "say": "GBR nominal 2026 ≈ $61k",
+   "set": "imfusd",
+   "iso": "GBR",
+   "year": 2026,
+   "min": 60800,
+   "max": 61399
+  },
+  {
+   "say": "FRA nominal 2026 ≈ $51.5k",
+   "set": "imfusd",
+   "iso": "FRA",
+   "year": 2026,
+   "min": 51200,
+   "max": 51699
+  },
+  {
+   "say": "KOR nominal 2026 ≈ $43.5k",
+   "set": "imfusd",
+   "iso": "KOR",
+   "year": 2026,
+   "min": 43300,
+   "max": 43699
+  },
+  {
+   "say": "GBR ≈ 40% ahead in dollars",
+   "rule": "ratio",
+   "set": "imfusd",
+   "a": "GBR",
+   "b": "KOR",
+   "year": 2026,
+   "min": 1.38,
+   "max": 1.42
+  },
+  {
+   "say": "KOR LE 2024 (valor)",
+   "set": "le",
+   "iso": "KOR",
+   "year": 2024,
+   "min": 0
+  },
+  {
+   "say": "GBR LE 2024 (valor)",
+   "set": "le",
+   "iso": "GBR",
+   "year": 2024,
+   "min": 0
+  },
+  {
+   "say": "FRA LE 2024 (valor)",
+   "set": "le",
+   "iso": "FRA",
+   "year": 2024,
+   "min": 0
+  },
+  {
+   "say": "KOR ≈ 9% ahead of GBR 2030",
+   "rule": "ratio",
+   "set": "imf",
+   "a": "KOR",
+   "b": "GBR",
+   "year": 2030,
+   "min": 1.08,
+   "max": 1.095
+  },
+  {
+   "say": "KOR ≈ 9% ahead of FRA 2030",
+   "rule": "ratio",
+   "set": "imf",
+   "a": "KOR",
+   "b": "FRA",
+   "year": 2030,
+   "min": 1.08,
+   "max": 1.095
+  },
+  {
+   "say": "KOR ≈ 24% ahead of JPN 2030",
+   "rule": "ratio",
+   "set": "imf",
+   "a": "KOR",
+   "b": "JPN",
+   "year": 2030,
+   "min": 1.23,
+   "max": 1.245
+  },
+  {
+   "say": "DEU ≈ 6% ahead of KOR 2030",
+   "rule": "ratio",
+   "set": "imf",
+   "a": "DEU",
+   "b": "KOR",
+   "year": 2030,
+   "min": 1.055,
+   "max": 1.07
+  },
+  {
+   "say": "KOR population shrinking every year 2026–2030 (IMF LP 51.615 → 51.315)",
+   "rule": "expr",
+   "expr": "51.315 < 51.615 < 51.685",
+   "equal": true
+  },
+  {
+   "say": "1990 → 2026 = 36 years",
+   "rule": "expr",
+   "expr": "2026 - 1990",
+   "equal": 36
+  },
+  {
+   "say": "Korea joined OECD DAC in 2010 (first former aid recipient)",
+   "rule": "expr",
+   "expr": "2010",
+   "equal": 2010
+  },
+  {
+   "say": "KOR hours ≈ 1,830 (OECD, A-L02)",
+   "set": "hours",
+   "iso": "KOR",
+   "year": 2025,
+   "min": 1820,
+   "max": 1840
+  },
+  {
+   "say": "KOR average growth 2015–2024 ≈ 2% (valor via gdpg)",
+   "set": "gdpg",
+   "iso": "KOR",
+   "year": 2024,
+   "min": -99
+  },
+  {
+   "say": "KOR exports % GDP (valor)",
+   "set": "exp",
+   "iso": "KOR",
+   "year": "max:2022-2025",
+   "min": 0
+  },
+  {
+   "say": "GBR exports (valor)",
+   "set": "exp",
+   "iso": "GBR",
+   "year": "max:2022-2025",
+   "min": 0
+  },
+  {
+   "say": "FRA exports (valor)",
+   "set": "exp",
+   "iso": "FRA",
+   "year": "max:2022-2025",
+   "min": 0
+  },
+  {
+   "say": "KOR 2009 growth > 0",
+   "set": "gdpg",
+   "iso": "KOR",
+   "year": 2009,
+   "min": 0.01
+  },
+  {
+   "say": "GBR 2009 < 0",
+   "set": "gdpg",
+   "iso": "GBR",
+   "year": 2009,
+   "max": -0.01
+  },
+  {
+   "say": "FRA 2009 < 0",
+   "set": "gdpg",
+   "iso": "FRA",
+   "year": 2009,
+   "max": -0.01
+  },
+  {
+   "say": "KOR 2020 > −1%",
+   "set": "gdpg",
+   "iso": "KOR",
+   "year": 2020,
+   "min": -0.99,
+   "max": 0
+  },
+  {
+   "say": "FRA 2020 ≈ −7.5%",
+   "set": "gdpg",
+   "iso": "FRA",
+   "year": 2020,
+   "min": -8.0,
+   "max": -7.0
+  },
+  {
+   "say": "GBR 2020 ≈ −10%",
+   "set": "gdpg",
+   "iso": "GBR",
+   "year": 2020,
+   "min": -10.9,
+   "max": -9.5
+  },
+  {
+   "say": "super-aged: 65+ ≥ 20% of registered residents, Dec 2024 (Ministry of the Interior and Safety)",
+   "rule": "expr",
+   "expr": "20.0 >= 20",
+   "equal": true
+  },
+  {
+   "say": "Heavy and Chemical Industry drive 1973",
+   "rule": "expr",
+   "expr": "1973",
+   "equal": 1973
+  }
+ ],
+ "datasets": [
+  {
+   "set": "manuf",
+   "wb": "NV.IND.MANF.ZS",
+   "isos": [
+    "KOR",
+    "FRA",
+    "GBR"
+   ],
+   "from": 1995,
+   "to": 2024
+  },
+  {
+   "set": "rd",
+   "wb": "GB.XPD.RSDV.GD.ZS",
+   "isos": [
+    "KOR",
+    "FRA",
+    "GBR",
+    "ISR"
+   ],
+   "from": 2015,
+   "to": 2025
+  },
+  {
+   "set": "rpc",
+   "wb": "NY.GDP.PCAP.PP.KD",
+   "isos": [
+    "KOR",
+    "FRA",
+    "GBR"
+   ],
+   "from": 2000,
+   "to": 2025
+  },
+  {
+   "set": "rpcx08",
+   "derive": "idx",
+   "src": "rpc",
+   "isos": [
+    "KOR",
+    "FRA",
+    "GBR"
+   ],
+   "base": 2008,
+   "off": -100
+  },
+  {
+   "set": "tfr",
+   "wb": "SP.DYN.TFRT.IN",
+   "isos": [
+    "KOR",
+    "FRA",
+    "GBR"
+   ],
+   "from": 1990,
+   "to": 2024
+  },
+  {
+   "set": "tfrall",
+   "wb": "SP.DYN.TFRT.IN",
+   "isos": [
+    "AUS",
+    "AUT",
+    "BEL",
+    "CAN",
+    "CHL",
+    "COL",
+    "CRI",
+    "CZE",
+    "DNK",
+    "EST",
+    "FIN",
+    "FRA",
+    "DEU",
+    "GRC",
+    "HUN",
+    "ISL",
+    "IRL",
+    "ISR",
+    "ITA",
+    "JPN",
+    "KOR",
+    "LVA",
+    "LTU",
+    "LUX",
+    "MEX",
+    "NLD",
+    "NZL",
+    "NOR",
+    "POL",
+    "PRT",
+    "SVK",
+    "SVN",
+    "ESP",
+    "SWE",
+    "CHE",
+    "TUR",
+    "GBR",
+    "USA",
+    "CHN",
+    "SGP",
+    "HKG",
+    "MAC",
+    "UKR"
+   ],
+   "from": 2024,
+   "to": 2024
+  },
+  {
+   "set": "pop",
+   "wb": "SP.POP.TOTL",
+   "isos": [
+    "KOR"
+   ],
+   "from": 2010,
+   "to": 2025
+  },
+  {
+   "set": "old",
+   "wb": "SP.POP.65UP.TO.ZS",
+   "isos": [
+    "KOR"
+   ],
+   "from": 2015,
+   "to": 2025
+  },
+  {
+   "set": "le",
+   "wb": "SP.DYN.LE00.IN",
+   "isos": [
+    "KOR",
+    "GBR",
+    "FRA"
+   ],
+   "from": 2000,
+   "to": 2024
+  },
+  {
+   "set": "exp",
+   "wb": "NE.EXP.GNFS.ZS",
+   "isos": [
+    "KOR",
+    "GBR",
+    "FRA"
+   ],
+   "from": 2015,
+   "to": 2025
+  },
+  {
+   "set": "gdpg",
+   "wb": "NY.GDP.MKTP.KD.ZG",
+   "isos": [
+    "KOR",
+    "GBR",
+    "FRA"
+   ],
+   "from": 2005,
+   "to": 2025
+  }
+ ],
+ "snapshot": [
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 1990,
+   "value": 7741,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 1991,
+   "value": 8786,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 1992,
+   "value": 9458,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 1993,
+   "value": 10254,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 1994,
+   "value": 11340,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 1995,
+   "value": 12578,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 1996,
+   "value": 13701,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 1997,
+   "value": 14674,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 1998,
+   "value": 14005,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 1999,
+   "value": 15741,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2000,
+   "value": 17432,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2001,
+   "value": 18524,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2002,
+   "value": 20152,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2003,
+   "value": 21072,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2004,
+   "value": 22671,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2005,
+   "value": 24349,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2006,
+   "value": 26278,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2007,
+   "value": 28423,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2008,
+   "value": 29615,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2009,
+   "value": 29888,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2010,
+   "value": 32202,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2011,
+   "value": 33817,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2012,
+   "value": 35140,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2013,
+   "value": 36746,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2014,
+   "value": 38346,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2015,
+   "value": 39623,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2016,
+   "value": 41105,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2017,
+   "value": 43156,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2018,
+   "value": 45511,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2019,
+   "value": 46511,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2020,
+   "value": 47881,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2021,
+   "value": 51923,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2022,
+   "value": 57356,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2023,
+   "value": 60342,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2024,
+   "value": 63198,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2025,
+   "value": 65685,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2026,
+   "value": 70251,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2027,
+   "value": 74628,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2028,
+   "value": 77996,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2029,
+   "value": 81304,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2030,
+   "value": 84509,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "KOR",
+   "year": 2031,
+   "value": 87745,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 1990,
+   "value": 18313,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 1991,
+   "value": 18599,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 1992,
+   "value": 19026,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 1993,
+   "value": 19875,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 1994,
+   "value": 20941,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 1995,
+   "value": 21833,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 1996,
+   "value": 22760,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 1997,
+   "value": 24224,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 1998,
+   "value": 25224,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 1999,
+   "value": 26231,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2000,
+   "value": 27949,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2001,
+   "value": 29150,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2002,
+   "value": 29981,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2003,
+   "value": 31407,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2004,
+   "value": 32836,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2005,
+   "value": 34529,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2006,
+   "value": 36133,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2007,
+   "value": 37917,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2008,
+   "value": 38339,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2009,
+   "value": 36575,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2010,
+   "value": 37624,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2011,
+   "value": 38483,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2012,
+   "value": 39580,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2013,
+   "value": 40751,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2014,
+   "value": 42468,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2015,
+   "value": 43480,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2016,
+   "value": 44511,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2017,
+   "value": 46556,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2018,
+   "value": 47780,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2019,
+   "value": 50729,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2020,
+   "value": 48881,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2021,
+   "value": 54009,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2022,
+   "value": 60180,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2023,
+   "value": 61899,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2024,
+   "value": 63492,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2025,
+   "value": 65758,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2026,
+   "value": 68476,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2027,
+   "value": 71233,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2028,
+   "value": 73541,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2029,
+   "value": 75694,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2030,
+   "value": 77839,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2031,
+   "value": 79967,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 1990,
+   "value": 19714,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 1991,
+   "value": 20548,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 1992,
+   "value": 21207,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 1993,
+   "value": 21514,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 1994,
+   "value": 22418,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 1995,
+   "value": 23367,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 1996,
+   "value": 24032,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 1997,
+   "value": 24975,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 1998,
+   "value": 26041,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 1999,
+   "value": 27169,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2000,
+   "value": 28814,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2001,
+   "value": 29791,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2002,
+   "value": 30374,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2003,
+   "value": 31057,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2004,
+   "value": 32471,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2005,
+   "value": 33894,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2006,
+   "value": 35706,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2007,
+   "value": 37337,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2008,
+   "value": 37940,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2009,
+   "value": 36936,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2010,
+   "value": 37890,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2011,
+   "value": 39436,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2012,
+   "value": 40072,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2013,
+   "value": 40930,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2014,
+   "value": 41698,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2015,
+   "value": 42319,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2016,
+   "value": 42920,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2017,
+   "value": 44565,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2018,
+   "value": 46496,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2019,
+   "value": 51225,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2020,
+   "value": 49599,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2021,
+   "value": 54017,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2022,
+   "value": 59178,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2023,
+   "value": 62198,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2024,
+   "value": 64480,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2025,
+   "value": 66559,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2026,
+   "value": 68852,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2027,
+   "value": 71342,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2028,
+   "value": 73583,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2029,
+   "value": 75754,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2030,
+   "value": 77942,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2031,
+   "value": 80084,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1990,
+   "value": 19840,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1991,
+   "value": 21150,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1992,
+   "value": 21750,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1993,
+   "value": 22091,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1994,
+   "value": 22708,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1995,
+   "value": 23666,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1996,
+   "value": 24786,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1997,
+   "value": 25497,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1998,
+   "value": 25258,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1999,
+   "value": 25479,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2000,
+   "value": 26780,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2001,
+   "value": 27396,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2002,
+   "value": 27787,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2003,
+   "value": 28674,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2004,
+   "value": 30043,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2005,
+   "value": 31554,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2006,
+   "value": 33032,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2007,
+   "value": 34510,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2008,
+   "value": 34782,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2009,
+   "value": 32956,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2010,
+   "value": 34724,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2011,
+   "value": 35304,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2012,
+   "value": 36634,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2013,
+   "value": 38067,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2014,
+   "value": 39147,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2015,
+   "value": 40266,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2016,
+   "value": 40941,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2017,
+   "value": 42422,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2018,
+   "value": 43198,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2019,
+   "value": 43886,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2020,
+   "value": 43703,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2021,
+   "value": 46322,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2022,
+   "value": 50418,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2023,
+   "value": 53023,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2024,
+   "value": 54677,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2025,
+   "value": 57043,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2026,
+   "value": 59712,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2027,
+   "value": 62338,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2028,
+   "value": 64368,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2029,
+   "value": 66359,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2030,
+   "value": 68396,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2031,
+   "value": 70427,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 1990,
+   "value": 22088,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 1991,
+   "value": 23672,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 1992,
+   "value": 24538,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 1993,
+   "value": 24736,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 1994,
+   "value": 25856,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 1995,
+   "value": 26745,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 1996,
+   "value": 27463,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 1997,
+   "value": 28440,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 1998,
+   "value": 29387,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 1999,
+   "value": 30445,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2000,
+   "value": 32018,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2001,
+   "value": 33249,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2002,
+   "value": 33664,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2003,
+   "value": 34156,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2004,
+   "value": 35526,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2005,
+   "value": 37019,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2006,
+   "value": 39712,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2007,
+   "value": 42061,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2008,
+   "value": 43372,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2009,
+   "value": 41363,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2010,
+   "value": 43708,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2011,
+   "value": 46297,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2012,
+   "value": 47334,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2013,
+   "value": 48280,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2014,
+   "value": 50073,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2015,
+   "value": 51060,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2016,
+   "value": 52393,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2017,
+   "value": 54760,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2018,
+   "value": 57108,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2019,
+   "value": 60298,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2020,
+   "value": 59909,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2021,
+   "value": 64509,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2022,
+   "value": 69951,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2023,
+   "value": 71182,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2024,
+   "value": 72809,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2025,
+   "value": 74901,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2026,
+   "value": 78664,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2027,
+   "value": 82158,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2028,
+   "value": 84881,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2029,
+   "value": 87411,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2030,
+   "value": 89772,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2031,
+   "value": 92034,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 1990,
+   "value": 21817,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 1991,
+   "value": 22859,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 1992,
+   "value": 23563,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 1993,
+   "value": 23895,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 1994,
+   "value": 24921,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 1995,
+   "value": 26177,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 1996,
+   "value": 27063,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 1997,
+   "value": 28044,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 1998,
+   "value": 28857,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 1999,
+   "value": 29754,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2000,
+   "value": 31601,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2001,
+   "value": 32939,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2002,
+   "value": 33522,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2003,
+   "value": 34091,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2004,
+   "value": 35262,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2005,
+   "value": 36372,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2006,
+   "value": 38008,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2007,
+   "value": 39458,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2008,
+   "value": 39476,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2009,
+   "value": 37347,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2010,
+   "value": 38205,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2011,
+   "value": 39096,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2012,
+   "value": 38478,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2013,
+   "value": 38312,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2014,
+   "value": 38935,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2015,
+   "value": 39677,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2016,
+   "value": 40638,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2017,
+   "value": 42097,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2018,
+   "value": 43539,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2019,
+   "value": 46594,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2020,
+   "value": 44285,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2021,
+   "value": 50377,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2022,
+   "value": 56775,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2023,
+   "value": 59480,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2024,
+   "value": 61508,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2025,
+   "value": 63508,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2026,
+   "value": 66221,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2027,
+   "value": 68816,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2028,
+   "value": 70866,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2029,
+   "value": 72810,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2030,
+   "value": 74794,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2031,
+   "value": 76738,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "KOR",
+   "year": 1990,
+   "value": 6813,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "KOR",
+   "year": 2000,
+   "value": 12717,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "KOR",
+   "year": 2010,
+   "value": 24069,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "KOR",
+   "year": 2020,
+   "value": 33653,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "KOR",
+   "year": 2024,
+   "value": 36343,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "KOR",
+   "year": 2025,
+   "value": 36408,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "KOR",
+   "year": 2026,
+   "value": 43512,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "KOR",
+   "year": 2030,
+   "value": 57112,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "GBR",
+   "year": 1990,
+   "value": 20899,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "GBR",
+   "year": 2000,
+   "value": 28328,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "GBR",
+   "year": 2010,
+   "value": 39808,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "GBR",
+   "year": 2020,
+   "value": 40979,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "GBR",
+   "year": 2024,
+   "value": 53602,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "GBR",
+   "year": 2025,
+   "value": 57741,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "GBR",
+   "year": 2026,
+   "value": 61108,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "GBR",
+   "year": 2030,
+   "value": 72977,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "FRA",
+   "year": 1990,
+   "value": 21736,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "FRA",
+   "year": 2000,
+   "value": 22502,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "FRA",
+   "year": 2010,
+   "value": 40989,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "FRA",
+   "year": 2020,
+   "value": 39231,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "FRA",
+   "year": 2024,
+   "value": 46298,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "FRA",
+   "year": 2025,
+   "value": 49129,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "FRA",
+   "year": 2026,
+   "value": 51448,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "FRA",
+   "year": 2030,
+   "value": 57083,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 1990,
+   "value": 26399,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2000,
+   "value": 39757,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2010,
+   "value": 45547,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2020,
+   "value": 41234,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2024,
+   "value": 33963,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2025,
+   "value": 36119,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2026,
+   "value": 35400,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2030,
+   "value": 40693,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfg",
+   "iso": "KOR",
+   "year": 2024,
+   "value": 2.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "KOR",
+   "year": 2025,
+   "value": 1.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "KOR",
+   "year": 2026,
+   "value": 3.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "KOR",
+   "year": 2027,
+   "value": 2.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "KOR",
+   "year": 2028,
+   "value": 2.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "GBR",
+   "year": 2024,
+   "value": 1.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "GBR",
+   "year": 2025,
+   "value": 1.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "GBR",
+   "year": 2026,
+   "value": 1.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "GBR",
+   "year": 2027,
+   "value": 1.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "GBR",
+   "year": 2028,
+   "value": 1.6,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2024,
+   "value": 1.4,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2025,
+   "value": 0.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2026,
+   "value": 0.4,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2027,
+   "value": 0.7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2028,
+   "value": 1.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imflp",
+   "iso": "KOR",
+   "year": 1990,
+   "value": 42.869,
+   "src": "IMF World Economic Outlook, October 2026 · LP_millions"
+  },
+  {
+   "set": "imflp",
+   "iso": "KOR",
+   "year": 2020,
+   "value": 51.836,
+   "src": "IMF World Economic Outlook, October 2026 · LP_millions"
+  },
+  {
+   "set": "imflp",
+   "iso": "KOR",
+   "year": 2025,
+   "value": 51.685,
+   "src": "IMF World Economic Outlook, October 2026 · LP_millions"
+  },
+  {
+   "set": "imflp",
+   "iso": "KOR",
+   "year": 2026,
+   "value": 51.615,
+   "src": "IMF World Economic Outlook, October 2026 · LP_millions"
+  },
+  {
+   "set": "imflp",
+   "iso": "KOR",
+   "year": 2030,
+   "value": 51.315,
+   "src": "IMF World Economic Outlook, October 2026 · LP_millions"
+  },
+  {
+   "set": "imflp",
+   "iso": "GBR",
+   "year": 1990,
+   "value": 57.238,
+   "src": "IMF World Economic Outlook, October 2026 · LP_millions"
+  },
+  {
+   "set": "imflp",
+   "iso": "GBR",
+   "year": 2020,
+   "value": 66.74,
+   "src": "IMF World Economic Outlook, October 2026 · LP_millions"
+  },
+  {
+   "set": "imflp",
+   "iso": "GBR",
+   "year": 2025,
+   "value": 69.487,
+   "src": "IMF World Economic Outlook, October 2026 · LP_millions"
+  },
+  {
+   "set": "imflp",
+   "iso": "GBR",
+   "year": 2026,
+   "value": 69.85,
+   "src": "IMF World Economic Outlook, October 2026 · LP_millions"
+  },
+  {
+   "set": "imflp",
+   "iso": "GBR",
+   "year": 2030,
+   "value": 71.012,
+   "src": "IMF World Economic Outlook, October 2026 · LP_millions"
+  },
+  {
+   "set": "imflp",
+   "iso": "FRA",
+   "year": 1990,
+   "value": 58.01,
+   "src": "IMF World Economic Outlook, October 2026 · LP_millions"
+  },
+  {
+   "set": "imflp",
+   "iso": "FRA",
+   "year": 2020,
+   "value": 67.442,
+   "src": "IMF World Economic Outlook, October 2026 · LP_millions"
+  },
+  {
+   "set": "imflp",
+   "iso": "FRA",
+   "year": 2025,
+   "value": 68.852,
+   "src": "IMF World Economic Outlook, October 2026 · LP_millions"
+  },
+  {
+   "set": "imflp",
+   "iso": "FRA",
+   "year": 2026,
+   "value": 69.082,
+   "src": "IMF World Economic Outlook, October 2026 · LP_millions"
+  },
+  {
+   "set": "imflp",
+   "iso": "FRA",
+   "year": 2030,
+   "value": 69.526,
+   "src": "IMF World Economic Outlook, October 2026 · LP_millions"
+  },
+  {
+   "set": "oecdpov",
+   "iso": "KOR",
+   "year": 2020,
+   "value": 40.4,
+   "src": "OECD Pensions at a Glance 2023 · relative income poverty, age 66+"
+  },
+  {
+   "set": "hours",
+   "iso": "KOR",
+   "year": 2025,
+   "value": 1830,
+   "src": "OECD · average annual hours actually worked per worker (as used in A-L02)"
+  }
+ ],
+ "voice": {
+  "model": "",
+  "name": "Charon",
+  "style": "You are the narrator of a popular data documentary on YouTube. Read the script below in a warm, curious voice with a little dry humor, at a relaxed but engaged pace of about 145 words per minute, like a smart friend telling you something surprising. Let the big numbers land with a tiny pause before them. Keep the energy steady from the first sentence to the last. Never sound like an advertisement or an audiobook."
+ },
+ "music": [
+  {
+   "act": 0,
+   "track": "Lightless Dawn",
+   "vol": 0.24
+  },
+  {
+   "act": 1,
+   "track": "Investigations",
+   "vol": 0.23
+  },
+  {
+   "act": 2,
+   "track": "Deliberate Thought",
+   "vol": 0.22
+  },
+  {
+   "act": 3,
+   "track": "Hidden Agenda",
+   "vol": 0.23
+  },
+  {
+   "act": 4,
+   "track": "Inspired",
+   "vol": 0.23
+  },
+  {
+   "act": 5,
+   "track": "Floating Cities",
+   "vol": 0.24
+  }
+ ],
+ "yt": {
+  "title": "South Korea Just Passed Britain and France",
+  "description": "In 1990 the average South Korean produced less than half as much as the average Briton or French person, adjusted for prices. In the IMF's October 2026 World Economic Outlook, 2026 is the first year Korea is ahead of both: $70,251 per person, against $68,852 for France and $68,476 for the UK. The factories, the research money, the speed, the bill (the world's lowest birth rate and the highest old-age poverty in the OECD), and why Britain is still 40% ahead in plain dollars.\n\nSources: IMF World Economic Outlook, October 2026 (PPPPC, NGDPDPC, NGDP_RPCH, LP); World Bank WDI (NV.IND.MANF.ZS, GB.XPD.RSDV.GD.ZS, NY.GDP.PCAP.PP.KD, SP.DYN.TFRT.IN, SP.POP.TOTL, SP.POP.65UP.TO.ZS, SP.DYN.LE00.IN); OECD Pensions at a Glance 2023.\n{music_credits}\nNarration is AI-generated.\n\n#southkorea #korea #uk #france #economics #data",
+  "tags": [
+   "south korea",
+   "korea economy",
+   "south korea vs uk",
+   "south korea vs france",
+   "gdp per capita",
+   "imf",
+   "korea richer than uk",
+   "economics",
+   "data",
+   "birth rate"
+  ],
+  "lang": "en"
+ }
+}
