@@ -135,6 +135,7 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 | A-L15 | Argentina passada por Costa Rica e Sérvia (PPP 2024); Sérvia também no nominal 2025 | banco: q7 ok (Econ 38 mil) | |
 | A-L16 | República Dominicana: passou o México (PPP 2021), crescimento mais longo da América Latina | banco: q7 ok (nada ≥2 mil) | |
 | A-L17 | Poland Is $55 Away From Passing Spain (FMI out/2026) | agendado (SW2qxSlMwfc, render 41797871942 3.1/Charon, 8:21) · cortes lSf6PuD1EO8 (22:00Z), 0xeRhZa21Gs (05/11 01:00Z) · teste A/B mapa × duel × flags · tela final inscrição + Polônia × Japão sobre o WATCH NEXT · card 6:55 → Polônia × Japão · playlist Who Passed Whom · PENDENTE: card no Polônia (7:33 'Spain is next') → A-L17 e comentário fixado (Chrome caiu 04/11 ~09:10Z) | 04/11 18:00Z |
+| A-L18 | South Korea Just Passed Britain and France (FMI out/2026: 2026 1º ano KOR > GBR e > FRA em PPP; q12 sem concorrente em inglês) | roteiro 04/11, data run 41802464960 | 05/11 18:00Z |
 | ~~Rússia > Itália/Canadá~~ · ~~Singapura > Noruega~~ · ~~Geórgia~~ | fora: tema de guerra / Singapura saturada / busca ambígua | — | |
 | ~~Germany~~ / ~~Iene~~ | reprovados no filtro | — | |
 
@@ -158,7 +159,6 @@ Ferramentas de pauta: `mine.yml` (sem input = garimpo de ultrapassagens/quem sub
 | B-N02 | How Many Retirees Actually Have $1 Million? (New Fed Data) | agendado (0KMtZW6mnmA, 8:34, renders 41602647484 / 41604889922 sem novo TTS) · cortes wcOw24o327A, 9hgo6eUcWDg · tela final: inscrição + B-N01 sobre o card (03/11) · sem teste A/B (canal com 6 inscritos não gera impressões p/ decidir) | 03/11 18:30Z |
 | B-N03 | Social Security at 62, 67 or 70? The Break-Even Ages, From SSA's Own Data | agendado (J3rLpvQZanA, render 41797881289 3.8/Algieba 141–168 wpm, 8:42) · cortes PaiIItkalbo (20:30Z), j-ncHWwld8M (05/11 00:00Z) · PENDENTE: tela final inscrição + B-N02 sobre o card | 04/11 18:30Z |
 | B-N04 | 401(k) and IRA Balances at 55, 65 and 75: The Fed's New Numbers (SCF 2025: 65–74 mediana $257k entre quem tem, média $768k, 51% sem conta; 4% → $857/mês × SS $2.170) | roteiro 03/11: 1.287 palavras, 7 atos, 32 checks ok · miniatura texto "$257k / NOT $768k" · WATCH NEXT → B-N03 | 05/11 18:30Z (cota 3.8 de 05/11) |
-| A-L18 | South Korea Just Passed Britain and France (FMI out/2026: 2026 1º ano KOR > GBR e > FRA em PPP; q12 sem concorrente em inglês) | roteiro 04/11, data run 41802464960 | 05/11 18:00Z |
 | B-N05 | What Retirees Actually Spend Each Month (BLS CE 2025, divulgado 29/10/2026; tabelas por idade só em XLSX — FRED ainda em 2024) | banco | |
 | B-N06 | The Income That Puts You in the Top 10% of Retirees (Censo CPS ASEC) | banco | |
 | B-N07 | How Much Social Security at $40k, $60k, $100k Salaries (fórmula PIA, bend points 2027) | banco | |
