@@ -253,25 +253,25 @@
    "type": "stats",
    "src": "World Bank WDI · research and development expenditure (% of GDP), latest year",
    "title": "Spending on research",
-   "narration": "And Korea keeps paying for what comes next. {p} It spends about five percent of its whole economy on research and development, one of the highest shares on Earth. {p} Britain spends less than three percent. France, about two. {pp} That money shows up later, as new factories, new products and better-paid jobs. {p} And Korea sells much of what it makes to the rest of the world: exports are about forty percent of its economy, far more than in Britain or France.",
+   "narration": "And Korea keeps paying for what comes next. {p} It spends about five percent of its whole economy on research and development, one of the highest shares on Earth. {p} Britain spends less than three percent. France, about two. {pp} That money shows up later, as new factories, new products and better-paid jobs. {p} And Korea sells much of what it makes to the rest of the world: exports are about forty-five percent of its economy, against about a third in Britain and France.",
    "stats": [
     {
      "at": "about five percent",
      "value": 4.9,
      "fmt": "pct1",
-     "label": "Korea, R&D as % of GDP"
+     "label": "Korea, R&D as % of GDP (2023)"
     },
     {
      "at": "less than three percent",
-     "value": 2.8,
+     "value": 2.9,
      "fmt": "pct1",
-     "label": "Britain"
+     "label": "Britain (2020)"
     },
     {
      "at": "France, about two",
-     "value": 2.2,
+     "value": 2.3,
      "fmt": "pct1",
-     "label": "France"
+     "label": "France (2020)"
     }
    ],
    "react": [
@@ -310,7 +310,7 @@
    "start": 2005.0,
    "y": [
     -15,
-    50
+    60
    ],
    "src": "World Bank WDI · GDP per capita, PPP (constant 2021 international $), change since 2008",
    "fmt": "pct0s",
@@ -320,7 +320,7 @@
     "label": "2008 level",
     "pos": "left"
    },
-   "narration": "But the real story of this overtaking is speed. {p} Since the financial crisis of 2008, output per person, after inflation, has grown about forty percent in Korea. {p} In France, about six percent. In Britain, about seven. That's not a typo: forty, against six or seven. {pp} Britain's slowdown even has a name among economists: the productivity puzzle. Since 2008, British workers have barely become more productive, and nobody fully agrees why. {p} France has had a similar problem, plus very slow growth: this year, the IMF expects its economy to grow less than half a percent.",
+   "narration": "But the real story of this overtaking is speed. {p} Since the financial crisis of 2008, output per person, after inflation, has grown about fifty percent in Korea. {p} In France, about ten percent. In Britain, about nine. That's not a typo: fifty, against nine or ten. {pp} Britain's slowdown even has a name among economists: the productivity puzzle. Since 2008, British workers have barely become more productive, and nobody fully agrees why. {p} France has had a similar problem, plus very slow growth: this year, the IMF expects its economy to grow less than half a percent.",
    "keys": [
     {
      "at": "Since the financial crisis",
@@ -328,24 +328,24 @@
      "dur": 3.0
     },
     {
-     "at": "about forty percent",
+     "at": "about fifty percent",
      "year": 2025.0,
      "dur": 6.0
     }
    ],
    "labels": [
     {
-     "at": "about forty percent",
+     "at": "about fifty percent",
      "iso": "KOR",
      "year": 2025
     },
     {
-     "at": "In France, about six",
+     "at": "In France, about ten",
      "iso": "FRA",
      "year": 2025
     },
     {
-     "at": "In Britain, about seven",
+     "at": "In Britain, about nine",
      "iso": "GBR",
      "year": 2025
     }
@@ -356,7 +356,7 @@
      "pose": "pointUp"
     },
     {
-     "at": "about forty percent",
+     "at": "about fifty percent",
      "pose": "cheer"
     },
     {
@@ -475,10 +475,10 @@
     "label": "replacement level",
     "pos": "left"
    },
-   "narration": "Korea has the lowest birth rate in the world: about three quarters of a child per woman. France, about one point six. Britain, about one point four. {p} A country needs about two point one just to keep its size. {pp} Korea's population has already started to shrink. About one in five Koreans is now sixty-five or older: at the end of 2024, the government officially declared it a super-aged society. {p} And many of them are poor. Korea built its wealth so fast that its pension system never caught up: about four in ten Koreans over sixty-six live in relative poverty, the highest rate among rich countries. {p} Korea got rich. Many of the people who made it rich didn't. {p} The work is hard on the young, too. Koreans work about eighteen hundred and thirty hours a year, among the longest in the rich world. Many young Koreans now describe themselves as the generation that gave up on dating, marriage and children.",
+   "narration": "Korea has one of the lowest birth rates in the world, and the lowest of any rich country: about three quarters of a child per woman. France, about one point six. Britain, about one point five. {p} A country needs about two point one just to keep its size. {pp} Korea's population has already started to shrink. About one in five Koreans is now sixty-five or older: at the end of 2024, the government officially declared it a super-aged society. {p} And many of them are poor. Korea built its wealth so fast that its pension system never caught up: about four in ten Koreans over sixty-six live in relative poverty, the highest rate among rich countries. {p} Korea got rich. Many of the people who made it rich didn't. {p} The work is hard on the young, too. Koreans work about eighteen hundred and thirty hours a year, among the longest in the rich world. Many young Koreans now describe themselves as the generation that gave up on dating, marriage and children.",
    "keys": [
     {
-     "at": "lowest birth rate",
+     "at": "lowest birth rates",
      "year": 2024.0,
      "dur": 6.0
     }
@@ -495,14 +495,14 @@
      "year": 2024
     },
     {
-     "at": "one point four",
+     "at": "one point five",
      "iso": "GBR",
      "year": 2024
     }
    ],
    "react": [
     {
-     "at": "lowest birth rate",
+     "at": "lowest birth rates",
      "pose": "shock"
     },
     {
@@ -529,7 +529,7 @@
    "type": "stats",
    "src": "IMF World Economic Outlook, October 2026 · GDP per capita, current US$ (NGDPDPC), 2026",
    "title": "In plain dollars, 2026",
-   "narration": "Now the twist. All of this is adjusted for prices. Things cost less in Korea than in Britain or France, so each dollar goes further in Seoul. {p} In plain dollars, without that adjustment, the picture is very different. {p} The IMF puts Britain at about sixty-one thousand dollars per person this year. France, about fifty-one and a half thousand. Korea, about forty-three and a half thousand. {pp} By that measure, Britain is still about forty percent ahead.",
+   "narration": "Now the twist. All of this is adjusted for prices. Things cost less in Korea than in Britain or France, so each dollar goes further in Seoul. {p} In plain dollars, without that adjustment, the picture is very different. {p} The IMF puts Britain at about sixty-one thousand dollars per person this year. France, about fifty-one and a half thousand. Korea, about forty-three and a half thousand. {pp} By that measure, Britain is still about forty percent ahead. Part of that gap is exchange rates, which can swing a lot from one year to the next.",
    "stats": [
     {
      "at": "Britain at about sixty-one thousand",
@@ -922,90 +922,99 @@
    "set": "manuf",
    "iso": "KOR",
    "year": 2024,
-   "min": 0,
-   "max": 99
+   "min": 24,
+   "max": 27.5
   },
   {
    "say": "FRA manufacturing ≈ a tenth (2024)",
    "set": "manuf",
    "iso": "FRA",
    "year": 2024,
-   "min": 0,
-   "max": 99
+   "min": 9,
+   "max": 11
   },
   {
    "say": "GBR manufacturing < a tenth (2024)",
    "set": "manuf",
    "iso": "GBR",
    "year": 2024,
-   "min": 0,
-   "max": 99
+   "min": 6,
+   "max": 9.99
   },
   {
-   "say": "KOR R&D ≈ 5% (valor)",
+   "say": "KOR R&D ≈ 5% (2023)",
    "set": "rd",
    "iso": "KOR",
-   "year": "max:2018-2025",
-   "min": 0
+   "year": 2023,
+   "min": 4.8,
+   "max": 5.2
   },
   {
-   "say": "GBR R&D (valor)",
+   "say": "GBR R&D < 3% (2020)",
    "set": "rd",
    "iso": "GBR",
-   "year": "max:2018-2025",
-   "min": 0
+   "year": 2020,
+   "min": 2.85,
+   "max": 2.99
   },
   {
-   "say": "FRA R&D (valor)",
+   "say": "FRA R&D ≈ 2% (2020, 2.27)",
    "set": "rd",
    "iso": "FRA",
-   "year": "max:2018-2025",
-   "min": 0
+   "year": 2020,
+   "min": 2.2,
+   "max": 2.35
   },
   {
-   "say": "KOR real per person since 2008 (valor)",
+   "say": "KOR +≈50% since 2008",
    "set": "rpcx08",
    "iso": "KOR",
    "year": 2025,
-   "min": -99
+   "min": 48,
+   "max": 52
   },
   {
-   "say": "FRA real per person since 2008 (valor)",
+   "say": "FRA +≈10%",
    "set": "rpcx08",
    "iso": "FRA",
    "year": 2025,
-   "min": -99
+   "min": 9.5,
+   "max": 10.5
   },
   {
-   "say": "GBR real per person since 2008 (valor)",
+   "say": "GBR +≈9%",
    "set": "rpcx08",
    "iso": "GBR",
    "year": 2025,
-   "min": -99
+   "min": 8.5,
+   "max": 9.4
   },
   {
-   "say": "KOR TFR 2024 (valor)",
+   "say": "KOR TFR ≈ 0.75",
    "set": "tfr",
    "iso": "KOR",
    "year": 2024,
-   "min": 0
+   "min": 0.72,
+   "max": 0.78
   },
   {
-   "say": "FRA TFR 2024 (valor)",
+   "say": "FRA TFR ≈ 1.6",
    "set": "tfr",
    "iso": "FRA",
    "year": 2024,
-   "min": 0
+   "min": 1.55,
+   "max": 1.65
   },
   {
-   "say": "GBR TFR 2024 (valor)",
+   "say": "GBR TFR ≈ 1.5",
    "set": "tfr",
    "iso": "GBR",
    "year": 2024,
-   "min": 0
+   "min": 1.45,
+   "max": 1.59
   },
   {
-   "say": "KOR lowest TFR in the world (2024)",
+   "say": "KOR one of the lowest in the world (2nd lowest of 43, after a territory)",
    "rule": "rank",
    "set": "tfrall",
    "iso": "KOR",
@@ -1056,22 +1065,72 @@
     "MAC",
     "UKR"
    ],
-   "min": 0,
-   "max": 99
+   "min": 42,
+   "max": 43
   },
   {
-   "say": "KOR population peak year (valor)",
+   "say": "KOR lowest of the OECD",
+   "rule": "rank",
+   "set": "tfrall",
+   "iso": "KOR",
+   "year": 2024,
+   "among": [
+    "AUS",
+    "AUT",
+    "BEL",
+    "CAN",
+    "CHL",
+    "COL",
+    "CRI",
+    "CZE",
+    "DNK",
+    "EST",
+    "FIN",
+    "FRA",
+    "DEU",
+    "GRC",
+    "HUN",
+    "ISL",
+    "IRL",
+    "ISR",
+    "ITA",
+    "JPN",
+    "KOR",
+    "LVA",
+    "LTU",
+    "LUX",
+    "MEX",
+    "NLD",
+    "NZL",
+    "NOR",
+    "POL",
+    "PRT",
+    "SVK",
+    "SVN",
+    "ESP",
+    "SWE",
+    "CHE",
+    "TUR",
+    "GBR",
+    "USA"
+   ],
+   "equal": 38
+  },
+  {
+   "say": "KOR population peaked in 2020 (already shrinking)",
    "set": "pop",
    "iso": "KOR",
    "year": "max:2010-2025",
-   "min": 0
+   "min": 51800000.0,
+   "max": 51900000.0
   },
   {
-   "say": "KOR 65+ share 2024 (valor)",
+   "say": "KOR 65+ ≈ one in five (19.3%)",
    "set": "old",
    "iso": "KOR",
    "year": 2024,
-   "min": 0
+   "min": 18.5,
+   "max": 21
   },
   {
    "say": "OECD: 40.4% of Koreans 66+ in relative poverty, highest in OECD (Pensions at a Glance 2023)",
@@ -1116,25 +1175,28 @@
    "max": 1.42
   },
   {
-   "say": "KOR LE 2024 (valor)",
+   "say": "KOR LE ≈ 83.5",
    "set": "le",
    "iso": "KOR",
    "year": 2024,
-   "min": 0
+   "min": 83.3,
+   "max": 83.7
   },
   {
-   "say": "GBR LE 2024 (valor)",
+   "say": "GBR LE ≈ 81",
    "set": "le",
    "iso": "GBR",
    "year": 2024,
-   "min": 0
+   "min": 80.8,
+   "max": 81.49
   },
   {
-   "say": "FRA LE 2024 (valor)",
+   "say": "FRA LE ≈ 83",
    "set": "le",
    "iso": "FRA",
    "year": 2024,
-   "min": 0
+   "min": 82.8,
+   "max": 83.2
   },
   {
    "say": "KOR ≈ 9% ahead of GBR 2030",
@@ -1203,32 +1265,36 @@
    "max": 1840
   },
   {
-   "say": "KOR average growth 2015–2024 ≈ 2% (valor via gdpg)",
+   "say": "KOR growth ≈ 2% a year recently (2024: 2.0)",
    "set": "gdpg",
    "iso": "KOR",
    "year": 2024,
-   "min": -99
+   "min": 1.8,
+   "max": 2.3
   },
   {
-   "say": "KOR exports % GDP (valor)",
+   "say": "KOR exports ≈ 45% (2025)",
    "set": "exp",
    "iso": "KOR",
-   "year": "max:2022-2025",
-   "min": 0
+   "year": 2025,
+   "min": 44.5,
+   "max": 46.5
   },
   {
-   "say": "GBR exports (valor)",
+   "say": "GBR exports ≈ a third (2022, 34%)",
    "set": "exp",
    "iso": "GBR",
-   "year": "max:2022-2025",
-   "min": 0
+   "year": 2022,
+   "min": 31,
+   "max": 36
   },
   {
-   "say": "FRA exports (valor)",
+   "say": "FRA exports ≈ a third (2022, 37%)",
    "set": "exp",
    "iso": "FRA",
-   "year": "max:2022-2025",
-   "min": 0
+   "year": 2022,
+   "min": 31,
+   "max": 37.5
   },
   {
    "say": "KOR 2009 growth > 0",
