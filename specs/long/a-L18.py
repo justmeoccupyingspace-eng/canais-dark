@@ -91,7 +91,7 @@ shots = [
     dict(act=5, type="lines", set="imf", fc=2025, series=["KOR", "DEU", "FRA", "GBR", "JPN"], years=[2000, 2030], start=2026.0, y=[0, 95000], src=PPPC, fmt="usdk0", hl="KOR",
          narration="So what comes next? {p} If the IMF is right, the gap keeps widening. By 2030, Korea would be about nine percent ahead of both Britain and France, and about twenty-four percent ahead of Japan. {p} Germany is the next big name: still about six percent ahead of Korea in 2030. {pp} But Korea's own forecast has a problem built in. Its population is expected to shrink every year from here, and a smaller, older workforce makes fast growth much harder.",
          keys=[dict(at="the gap keeps widening", year=2030.0, dur=5.0)],
-         labels=[dict(at="about nine percent ahead", iso="KOR", year=2030), dict(at="twenty-four percent ahead of Japan", iso="JPN", year=2030), dict(at="Germany is the next", iso="DEU", year=2030)],
+         labels=[dict(at="twenty-four percent ahead of Japan", iso="JPN", year=2030), dict(at="Germany is the next", iso="DEU", year=2030)],
          react=[dict(at="what comes next", pose="think"), dict(at="nine percent", pose="cheer"), dict(at="Germany", pose="pointL"), dict(at="a problem built in", pose="shrug")]),
     dict(act=5, type="host", bg="none",
          narration="So, is South Korea richer than Britain and France now? {p} Adjusted for prices, yes, for the first time, this year. In plain dollars, not yet: Britain is still about forty percent ahead. {p} But in 1990, Korea produced less than half as much per person as either of them. Getting from there to here in one lifetime is one of the fastest climbs any country has ever made. {pp} <soft>Which country do you think Korea passes next?</soft> Tell me in the comments.",
