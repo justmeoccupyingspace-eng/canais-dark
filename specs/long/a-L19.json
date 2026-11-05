@@ -311,9 +311,19 @@
      "dur": 2.0
     },
     {
+     "at": "In 1987",
+     "year": 1997.0,
+     "dur": 8.0
+    },
+    {
+     "at": "one of the most valuable",
+     "year": 2006.0,
+     "dur": 8.0
+    },
+    {
      "at": "passed Japan in 2010",
      "year": 2010.0,
-     "dur": 4.0
+     "dur": 3.0
     },
     {
      "at": "this year it's almost",
@@ -434,21 +444,33 @@
   {
    "act": 3,
    "type": "stats",
-   "src": "IMF World Economic Outlook, October 2026 · GDP per capita, current US$ (NGDPDPC), 2026",
-   "title": "In plain dollars, 2026",
-   "narration": "Everything so far is adjusted for prices. Rent, food, transport and haircuts cost far less in Taipei than in New York or San Francisco, so a dollar goes much further. A meal, a train ride, a month's rent: all much cheaper in Taiwan. {p} In plain dollars, without that adjustment, the picture is completely different. {p} The IMF puts the average American at about ninety-five thousand dollars this year. The average Taiwanese, about forty-four thousand. {pp} By that measure, America is still more than twice as rich per person. {p} Both numbers are real. They just answer different questions. One asks how much you can actually buy where you live. The other asks what your income is worth in dollars, on world markets. {p} So if you're a Taiwanese tourist in New York, it doesn't feel like you're from the richer country. At home, though, your money stretches a lot further.",
+   "src": "IMF World Economic Outlook, October 2026 · GDP per capita, PPP (PPPPC) and current US$ (NGDPDPC), 2026",
+   "title": "Per person, 2026",
+   "narration": "Everything so far is adjusted for prices. Rent, food, transport and haircuts cost far less in Taipei than in New York or San Francisco, so a dollar goes much further. A meal, a train ride, a month's rent: all much cheaper in Taiwan. {p} In plain dollars, without that adjustment, the picture is completely different. {p} The IMF puts the average Taiwanese at about forty-four thousand dollars this year. The average American, about ninety-five thousand. {pp} By that measure, America is still more than twice as rich per person. {p} Both numbers are real. They just answer different questions. One asks how much you can actually buy where you live. The other asks what your income is worth in dollars, on world markets. {p} So if you're a Taiwanese tourist in New York, it doesn't feel like you're from the richer country. At home, though, your money stretches a lot further.",
    "stats": [
     {
-     "at": "about ninety-five thousand",
+     "at": "Everything so far is adjusted",
+     "value": 103743,
+     "fmt": "usd0",
+     "label": "Taiwan, adjusted for prices"
+    },
+    {
+     "at": "A meal, a train ride",
      "value": 95212,
      "fmt": "usd0",
-     "label": "United States, per person, US$"
+     "label": "United States, adjusted for prices"
     },
     {
      "at": "about forty-four thousand",
      "value": 43951,
      "fmt": "usd0",
-     "label": "Taiwan, per person, US$"
+     "label": "Taiwan, plain US$"
+    },
+    {
+     "at": "about ninety-five thousand",
+     "value": 95212,
+     "fmt": "usd0",
+     "label": "United States, plain US$"
     }
    ],
    "react": [
