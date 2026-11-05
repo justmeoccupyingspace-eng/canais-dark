@@ -1,0 +1,7 @@
+{"channels": [], "topics": [
+ {"id": "ssal1", "q": "how much social security will I get if I make 50000 a year", "order": "viewCount", "after": "2025-11-01T00:00:00Z", "dur": "any", "n": 15},
+ {"id": "ssal2", "q": "social security benefit by salary 40k 60k 100k", "order": "viewCount", "after": "2025-11-01T00:00:00Z", "dur": "any", "n": 15},
+ {"id": "ssal3", "q": "social security bend points 2027 benefit formula", "order": "viewCount", "after": "2026-06-01T00:00:00Z", "dur": "any", "n": 15},
+ {"id": "top10", "q": "income top 10 percent retirees", "order": "viewCount", "after": "2025-11-01T00:00:00Z", "dur": "any", "n": 15},
+ {"id": "spend", "q": "how much do retirees spend per month 2026", "order": "viewCount", "after": "2025-11-01T00:00:00Z", "dur": "any", "n": 15}
+]}
