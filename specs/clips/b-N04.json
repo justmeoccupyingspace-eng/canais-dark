@@ -1,0 +1,40 @@
+{
+ "channel": "nesteggatlas",
+ "long": "JOiV4L00zGM",
+ "longTitle": "401(k) and IRA Balances at 55, 65 and 75: The Fed's New Numbers",
+ "preview": "long-41992698647",
+ "timeline": "lprep-41992698647",
+ "timeline_file": "b-N04-401k.json",
+ "sources": "Sources: Federal Reserve Board, 2025 Survey of Consumer Finances, summary extract public data (our calculation with survey weights; 2025 dollars); Social Security Administration, 2027 COLA Fact Sheet; Bengen (1994), 4% rule of thumb.",
+ "music_credits": "Music by Kevin MacLeod (incompetech.com), CC BY 4.0.",
+ "hashtags": "#401k #ira #retirement #retirementsavings #personalfinance",
+ "tags": [
+  "401k balance by age",
+  "ira balance by age",
+  "retirement savings by age",
+  "average 401k",
+  "median 401k",
+  "federal reserve",
+  "survey of consumer finances",
+  "retirement",
+  "shorts"
+ ],
+ "clips": [
+  {
+   "from": "s00",
+   "to": "s00",
+   "hook": "The typical *401(k)* by age",
+   "title": "The typical 401(k) & IRA balance by age (Fed 2025) #Shorts",
+   "desc": "Median among households with an account: 55–64 ≈ $239k, 65–74 ≈ $257k (Federal Reserve 2025 SCF, our calculation).",
+   "at": "2026-11-05T20:30:00Z"
+  },
+  {
+   "from": "s06",
+   "to": "s06",
+   "hook": "Why the *average* 401(k) lies",
+   "title": "Average 401(k) at 65–74: $768k. Median: $257k #Shorts",
+   "desc": "A few very large accounts pull the average up (Federal Reserve 2025 SCF, our calculation).",
+   "at": "2026-11-06T00:00:00Z"
+  }
+ ]
+}
