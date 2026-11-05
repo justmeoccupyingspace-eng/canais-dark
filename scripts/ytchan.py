@@ -1,5 +1,6 @@
 """Lista os envios de um canal e, com MODE=private, deixa privados os vídeos dados em IDS (ou todos os públicos/agendados com ALL=1).
-Nada é apagado. Uso: CH=B MODE=list|private [IDS=a,b] [ALL=1] python scripts/ytchan.py out.json"""
+MODE=playlist põe os IDS na playlist cujo título é PL (não cria playlist nova, não remove nada).
+Nada é apagado. Uso: CH=B MODE=list|private|playlist [IDS=a,b] [ALL=1] [PL=título] python scripts/ytchan.py out.json"""
 import json, os, sys, urllib.parse, urllib.request
 def post(url, data):
     return json.load(urllib.request.urlopen(urllib.request.Request(url, data=urllib.parse.urlencode(data).encode())))
@@ -40,4 +41,23 @@ if mode == "private":
                                           **({"containsSyntheticMedia": st["containsSyntheticMedia"]} if "containsSyntheticMedia" in st else {})}}
         r = call("PUT", API + "videos?part=status", tok, body)
         done.append(v["id"]); print("privado:", v["id"], r["status"].get("privacyStatus"), r["status"].get("publishAt"))
-json.dump(dict(channel=c["snippet"]["title"], rows=rows, made_private=done), open(sys.argv[1], "w"), indent=1, ensure_ascii=False)
+added = []
+if mode == "playlist":
+    want = [x for x in os.environ.get("IDS", "").split(",") if x]
+    pls = call("GET", API + "playlists?part=snippet&mine=true&maxResults=50", tok).get("items", [])
+    pl = next((p for p in pls if p["snippet"]["title"].strip().lower() == os.environ.get("PL", "").strip().lower()), None)
+    print("playlists:", [p["snippet"]["title"] for p in pls])
+    if not pl:
+        raise SystemExit("playlist não encontrada: " + os.environ.get("PL", ""))
+    have, page = [], ""
+    while True:
+        r = call("GET", API + f"playlistItems?part=contentDetails&maxResults=50&playlistId={pl['id']}" + (f"&pageToken={page}" if page else ""), tok)
+        have += [i["contentDetails"]["videoId"] for i in r.get("items", [])]
+        page = r.get("nextPageToken")
+        if not page: break
+    for v in want:
+        if v in have:
+            print("já está:", v); continue
+        call("POST", API + "playlistItems?part=snippet", tok, {"snippet": {"playlistId": pl["id"], "resourceId": {"kind": "youtube#video", "videoId": v}}})
+        added.append(v); print(f"::notice::{v} adicionado à playlist {pl['snippet']['title']}")
+json.dump(dict(channel=c["snippet"]["title"], rows=rows, made_private=done, playlist_added=added), open(sys.argv[1], "w"), indent=1, ensure_ascii=False)

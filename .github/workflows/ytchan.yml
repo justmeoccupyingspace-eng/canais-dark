@@ -4,9 +4,10 @@ on:
   workflow_dispatch:
     inputs:
       ch: {description: "A ou B", required: true, default: "B"}
-      mode: {description: "list | private", required: true, default: "list"}
+      mode: {description: "list | private | playlist", required: true, default: "list"}
       ids: {description: "IDs (vírgula) para deixar privados", required: false, default: ""}
       all: {description: "1 = todos os públicos/agendados viram privados", required: false, default: ""}
+      pl: {description: "título da playlist (mode=playlist)", required: false, default: ""}
 permissions:
   contents: write
 jobs:
@@ -20,6 +21,7 @@ jobs:
           MODE: ${{ inputs.mode }}
           IDS: ${{ inputs.ids }}
           ALL: ${{ inputs.all }}
+          PL: ${{ inputs.pl }}
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_A: ${{ secrets.YT_REFRESH_A }}
