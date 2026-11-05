@@ -103,8 +103,8 @@
    "items": [
     {
      "at": "your thirty-five best years",
-     "kind": "title",
-     "text": "START: MONTHLY AVERAGE OF YOUR BEST 35 YEARS"
+     "kind": "bullet",
+     "text": "Start: monthly average, best 35 years"
     },
     {
      "at": "ninety percent of the first",
@@ -123,8 +123,8 @@
     },
     {
      "at": "sixty-seven for anyone born",
-     "kind": "bullet",
-     "text": "= your benefit at 67 (born 1960+)"
+     "kind": "title",
+     "text": "= YOUR BENEFIT AT 67 (BORN 1960+)"
     }
    ],
    "id": "s02"
@@ -408,7 +408,7 @@
     {
      "at": "before taxes",
      "kind": "title",
-     "text": "BEFORE TAXES AND MEDICARE · 35 YEARS · TODAY'S WAGES"
+     "text": "BEFORE TAXES · 35 YEARS"
     }
    ],
    "id": "s12"
