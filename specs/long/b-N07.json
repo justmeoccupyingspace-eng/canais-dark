@@ -1,0 +1,776 @@
+{
+ "id": "b-N07-ss-salary",
+ "clips": [
+  {
+   "from": "s00",
+   "to": "s00",
+   "hook": "Social Security at *$40k, $60k, $100k*",
+   "title": "Social Security at a $40k, $60k or $100k salary (2027 formula) #Shorts",
+   "desc": "2027 SSA formula, turning 62 in 2027, 35-year career, full retirement age 67: $40k ≈ $1,844, $60k ≈ $2,377, $100k ≈ $3,400 a month. Education, not financial advice."
+  },
+  {
+   "from": "s10",
+   "to": "s10",
+   "hook": "The rule that *shrinks* your check",
+   "title": "Fewer than 35 years of work? Your Social Security drops #Shorts",
+   "desc": "$60k a year: 35 years ≈ $2,377, 30 years ≈ $2,148, 25 years ≈ $1,920 a month (2027 SSA formula, our calculation)."
+  }
+ ],
+ "channel": "nesteggatlas",
+ "chapter0": "Three salaries",
+ "host": false,
+ "thumb": {
+  "kind": "text",
+  "top": "ON A $60k SALARY:",
+  "big": "$2,377",
+  "line2": "A MONTH AT 67",
+  "sticker": "SOCIAL SECURITY 2027"
+ },
+ "w": 1920,
+ "h": 1080,
+ "fps": 30,
+ "acts": [
+  "Cold open",
+  "The formula",
+  "Working it out",
+  "What it replaces",
+  "Claiming age",
+  "The 35-year rule",
+  "Where you stand"
+ ],
+ "shots": [
+  {
+   "act": 0,
+   "type": "rank",
+   "title": "Social Security at full retirement age",
+   "sub": "Monthly check by career salary · turning 62 in 2027",
+   "fmt": "usd0",
+   "count": false,
+   "vmax": 3600,
+   "src": "Nest Egg Atlas calculation with the SSA benefit formula (2027 bend points) · turning 62 in 2027 · 35-year career · salary in today's wages",
+   "bars": [
+    {
+     "label": "$40,000 salary",
+     "value": 1843.7,
+     "at": "forty thousand dollars a year"
+    },
+    {
+     "label": "$60,000 salary",
+     "value": 2377.2,
+     "at": "Sixty thousand a year"
+    },
+    {
+     "label": "$100,000 salary",
+     "value": 3400.2,
+     "hl": true,
+     "at": "A hundred thousand a year"
+    }
+   ],
+   "narration": "Here's what Social Security pays at three different salaries, using the official formula for people turning sixty-two in 2027. {p} Someone who earned forty thousand dollars a year: about eighteen hundred and forty-four dollars a month, at full retirement age. {p} Sixty thousand a year: about two thousand three hundred and seventy-seven. {p} A hundred thousand a year: about three thousand four hundred. {pp} Notice something. The hundred-thousand-dollar earner made two and a half times as much as the forty-thousand-dollar earner. But their check is less than twice as big. {p} That's not an accident. It's built into the formula, and once you see how it works, you can estimate your own check in about a minute.",
+   "id": "s00"
+  },
+  {
+   "act": 0,
+   "type": "host",
+   "bg": "none",
+   "narration": "Social Security published the new numbers for 2027 last month: the formula's bend points, the national wage index, and the cost-of-living adjustment. {p} In this video, we'll go through how the formula works, what it pays at different salaries, how much your claiming age changes it, and the one rule that quietly lowers a lot of people's checks. {p} Every number comes from Social Security's own published figures, and you can plug in your own salary as we go. {pp} <soft>As always, this is education, not financial advice.</soft>",
+   "items": [
+    {
+     "at": "the new numbers for 2027",
+     "text": "The 2027 formula",
+     "color": "acc"
+    },
+    {
+     "at": "different salaries",
+     "text": "Salary → monthly check",
+     "color": "acc2"
+    },
+    {
+     "at": "quietly lowers",
+     "text": "The 35-year rule",
+     "serif": true,
+     "size": 62
+    }
+   ],
+   "id": "s01"
+  },
+  {
+   "act": 1,
+   "type": "list",
+   "title": "The 2027 benefit formula",
+   "src": "Social Security Administration, Office of the Chief Actuary: 2027 PIA bend points, national average wage index, contribution and benefit base",
+   "narration": "Here's the formula itself. It starts with one number: your average monthly earnings over your thirty-five best years. Social Security calls it your AIME. {p} Then it pays you ninety percent of the first thirteen hundred and forty dollars of that monthly average. {p} Thirty-two percent of the part between thirteen hundred and forty and eight thousand and seventy-seven dollars. {p} And fifteen percent of anything above eight thousand and seventy-seven. {pp} The result is your full benefit at full retirement age, which is sixty-seven for anyone born in 1960 or later. Those two dollar amounts are called bend points, and they rise every year with average wages.",
+   "items": [
+    {
+     "at": "your thirty-five best years",
+     "kind": "title",
+     "text": "START: MONTHLY AVERAGE OF YOUR BEST 35 YEARS"
+    },
+    {
+     "at": "ninety percent of the first",
+     "kind": "bullet",
+     "text": "90% of the first $1,340"
+    },
+    {
+     "at": "Thirty-two percent of the part",
+     "kind": "bullet",
+     "text": "32% from $1,340 to $8,077"
+    },
+    {
+     "at": "fifteen percent of anything above",
+     "kind": "bullet",
+     "text": "15% above $8,077"
+    },
+    {
+     "at": "sixty-seven for anyone born",
+     "kind": "bullet",
+     "text": "= your benefit at 67 (born 1960+)"
+    }
+   ],
+   "id": "s02"
+  },
+  {
+   "act": 1,
+   "type": "host",
+   "bg": "none",
+   "narration": "Two details matter here. {p} First, your old earnings are adjusted for wage growth. A salary of twenty thousand dollars in 1990 counts like about sixty-nine thousand today, because average wages have risen that much since then. So the formula compares your career with today's pay, not with old prices. {p} Second, there's a cap. In 2027, earnings above a hundred and ninety-two thousand three hundred dollars aren't taxed for Social Security, and they don't count toward your benefit either.",
+   "items": [
+    {
+     "at": "twenty thousand dollars in 1990",
+     "text": "$20k in 1990 ≈ $69k today",
+     "color": "acc"
+    },
+    {
+     "at": "there's a cap",
+     "text": "2027 cap: $192,300",
+     "color": "acc2"
+    }
+   ],
+   "id": "s03"
+  },
+  {
+   "act": 2,
+   "type": "list",
+   "title": "Example: $60,000 a year for 35 years",
+   "src": "Nest Egg Atlas calculation with the SSA benefit formula (2027 bend points) · turning 62 in 2027 · 35-year career · salary in today's wages",
+   "narration": "Let's work one through. Take someone who earned sixty thousand dollars a year, in today's wages, for thirty-five years. {p} Their monthly average is five thousand dollars. {p} Ninety percent of the first thirteen hundred and forty is twelve hundred and six dollars. {p} The rest, thirty-six hundred and sixty dollars, falls in the thirty-two percent bracket. That adds eleven hundred and seventy-one dollars and twenty cents. {p} Nothing is above the second bend point, so that's it. {pp} Total: about two thousand three hundred and seventy-seven dollars a month, at sixty-seven.",
+   "items": [
+    {
+     "at": "Their monthly average",
+     "kind": "bullet",
+     "text": "$60,000 ÷ 12 = $5,000 a month"
+    },
+    {
+     "at": "Ninety percent of the first",
+     "kind": "bullet",
+     "text": "90% × $1,340 = $1,206"
+    },
+    {
+     "at": "The rest, thirty-six hundred",
+     "kind": "bullet",
+     "text": "32% × $3,660 = $1,171.20"
+    },
+    {
+     "at": "Total: about",
+     "kind": "title",
+     "text": "= $2,377 A MONTH AT 67"
+    }
+   ],
+   "id": "s04"
+  },
+  {
+   "act": 2,
+   "type": "host",
+   "bg": "none",
+   "narration": "Do the same for forty thousand dollars a year: a monthly average of about three thousand three hundred and thirty-three, and a check of about eighteen hundred and forty-four. {p} And for a hundred thousand: a monthly average of about eight thousand three hundred and thirty-three. Only about two hundred and fifty-six dollars of that is above the second bend point, and it's paid at fifteen percent. The check comes to about thirty-four hundred dollars. {p} Above that second bend point, each extra dollar of monthly average earnings adds just fifteen cents to the check.",
+   "items": [
+    {
+     "at": "Do the same for forty thousand",
+     "text": "$40k → $1,844",
+     "color": "acc2"
+    },
+    {
+     "at": "And for a hundred thousand",
+     "text": "$100k → $3,400",
+     "color": "acc"
+    },
+    {
+     "at": "just fifteen cents",
+     "text": "Above $8,077: 15¢ per $1",
+     "serif": true,
+     "size": 60
+    }
+   ],
+   "id": "s05"
+  },
+  {
+   "act": 3,
+   "type": "rank",
+   "title": "Share of salary Social Security replaces",
+   "sub": "At full retirement age · 35-year career · 2027 formula",
+   "fmt": "pct0",
+   "count": false,
+   "vmax": 90,
+   "src": "Nest Egg Atlas calculation with the SSA benefit formula (2027 bend points) · turning 62 in 2027 · 35-year career · salary in today's wages",
+   "bars": [
+    {
+     "label": "$20,000",
+     "value": 78.6,
+     "hl": true,
+     "at": "At twenty thousand dollars a year"
+    },
+    {
+     "label": "$40,000",
+     "value": 55.3,
+     "at": "At forty thousand, about fifty-five"
+    },
+    {
+     "label": "$60,000",
+     "value": 47.5,
+     "at": "At sixty thousand, about forty-eight"
+    },
+    {
+     "label": "$100,000",
+     "value": 40.8,
+     "at": "At a hundred thousand, about forty-one"
+    }
+   ],
+   "narration": "Now compare each check with the salary behind it. {p} At twenty thousand dollars a year, Social Security replaces about seventy-nine percent of your pay. {p} At forty thousand, about fifty-five percent. {p} At sixty thousand, about forty-eight percent. {p} At a hundred thousand, about forty-one percent. {pp} That's the design: Social Security replaces a much bigger share of a smaller paycheck. {p} Double a salary from forty to eighty thousand, and the check rises by only about fifty-eight percent, from about eighteen hundred and forty-four dollars to about twenty-nine hundred and ten.",
+   "id": "s06"
+  },
+  {
+   "act": 3,
+   "type": "host",
+   "bg": "none",
+   "narration": "That's also why the famous thirty-five-hundred-dollar check is harder to reach than it sounds. {p} To get thirty-five hundred dollars a month at full retirement age, you'd need to have earned about a hundred and eight thousand dollars a year, in today's wages, for thirty-five years. {p} And the maximum benefit for someone retiring at full retirement age in 2027, after a whole career at or above the cap, is four thousand one hundred and eighty-eight dollars a month. {p} In other words, for lower earners Social Security does most of the work in retirement. For higher earners, it's more of a base layer, and savings, pensions and 401(k)s have to carry much more of the load.",
+   "items": [
+    {
+     "at": "thirty-five-hundred-dollar check",
+     "text": "$3,500 a month?",
+     "serif": true,
+     "size": 64
+    },
+    {
+     "at": "a hundred and eight thousand",
+     "text": "≈ $108k a year × 35 years",
+     "color": "acc"
+    },
+    {
+     "at": "four thousand one hundred and eighty-eight",
+     "text": "2027 max at full age: $4,188",
+     "color": "acc2"
+    }
+   ],
+   "id": "s07"
+  },
+  {
+   "act": 4,
+   "type": "rank",
+   "title": "$60,000 career: monthly check by claiming age",
+   "sub": "2027 formula · full retirement age 67",
+   "fmt": "usd0",
+   "count": false,
+   "vmax": 3200,
+   "src": "Nest Egg Atlas calculation with the SSA benefit formula (2027 bend points) · turning 62 in 2027 · 35-year career · salary in today's wages",
+   "bars": [
+    {
+     "label": "Claim at 62",
+     "value": 1664,
+     "at": "Claim at sixty-two"
+    },
+    {
+     "label": "Claim at 67",
+     "value": 2377.2,
+     "at": "At sixty-seven, about two thousand"
+    },
+    {
+     "label": "Claim at 70",
+     "value": 2947,
+     "hl": true,
+     "at": "Wait until seventy"
+    }
+   ],
+   "narration": "Those are the checks at sixty-seven. But you can claim as early as sixty-two, or as late as seventy. {p} Claim at sixty-two, and the check is cut by thirty percent, for life. For the sixty-thousand-dollar earner, that's about sixteen hundred and sixty-four dollars a month. {p} At sixty-seven, about two thousand three hundred and seventy-seven. {p} Wait until seventy, and you get eight percent more for every year past sixty-seven: twenty-four percent in total. About two thousand nine hundred and forty-seven. {pp} For the forty-thousand-dollar earner, that's about twelve hundred and ninety at sixty-two, and about twenty-two hundred and eighty-six at seventy. For the hundred-thousand-dollar earner, about twenty-three hundred and eighty, and about forty-two hundred and sixteen.",
+   "id": "s08"
+  },
+  {
+   "act": 4,
+   "type": "host",
+   "bg": "none",
+   "narration": "If you're married, there's one more number. A spouse with a small work record can get up to half of the other spouse's full benefit, if they claim at their own full retirement age. {p} For the hundred-thousand-dollar earner, that's up to about seventeen hundred dollars a month for the spouse. {p} And when one spouse dies, the survivor keeps the larger of the two checks.",
+   "items": [
+    {
+     "at": "up to half",
+     "text": "Spouse: up to 50%",
+     "color": "acc"
+    },
+    {
+     "at": "seventeen hundred dollars",
+     "text": "$100k earner → up to $1,700",
+     "color": "acc2"
+    },
+    {
+     "at": "the survivor keeps",
+     "text": "Survivor keeps the larger check",
+     "serif": true,
+     "size": 58
+    }
+   ],
+   "id": "s09"
+  },
+  {
+   "act": 5,
+   "type": "rank",
+   "title": "$60,000 a year, different career lengths",
+   "sub": "Monthly check at 67 · missing years count as zero",
+   "fmt": "usd0",
+   "count": false,
+   "vmax": 2600,
+   "src": "Nest Egg Atlas calculation with the SSA benefit formula (2027 bend points) · turning 62 in 2027 · 35-year career · salary in today's wages",
+   "bars": [
+    {
+     "label": "35 years",
+     "value": 2377.2,
+     "at": "a full thirty-five years"
+    },
+    {
+     "label": "30 years",
+     "value": 2148.4,
+     "at": "With only thirty years"
+    },
+    {
+     "label": "25 years",
+     "value": 1919.9,
+     "hl": true,
+     "at": "With twenty-five years"
+    }
+   ],
+   "narration": "Now, the rule that quietly lowers a lot of checks. {p} The formula always averages thirty-five years. If you worked fewer, the missing years count as zero. {p} Our sixty-thousand-dollar earner, with a full thirty-five years, gets about two thousand three hundred and seventy-seven a month. {p} With only thirty years of earnings, about two thousand one hundred and forty-eight. {p} With twenty-five years, about nineteen hundred and twenty. That's about four hundred and fifty-seven dollars a month less, for life. {pp} This is common for anyone who took years off to raise children, care for a parent, or go back to school.",
+   "id": "s10"
+  },
+  {
+   "act": 5,
+   "type": "host",
+   "bg": "none",
+   "narration": "The good news: it works in reverse, too. If you have fewer than thirty-five years, every extra year you work replaces a zero, even a part-time year. And a strong year late in your career can replace a weak year from your twenties. {p} You can see every year of your record at ssa.gov, in your my Social Security account. Check it for missing years. If wages are missing, you can ask Social Security to fix them, but there are time limits, so it's worth checking now, not at sixty-two.",
+   "items": [
+    {
+     "at": "replaces a zero",
+     "text": "Each extra year replaces a zero",
+     "color": "acc"
+    },
+    {
+     "at": "my Social Security account",
+     "text": "Check your record: ssa.gov",
+     "color": "acc2"
+    },
+    {
+     "at": "time limits",
+     "text": "Fix errors early",
+     "serif": true,
+     "size": 62
+    }
+   ],
+   "id": "s11"
+  },
+  {
+   "act": 6,
+   "type": "list",
+   "title": "Quick estimate at 67 (2027 formula)",
+   "src": "Nest Egg Atlas calculation with the SSA benefit formula (2027 bend points) · turning 62 in 2027 · 35-year career · salary in today's wages",
+   "narration": "So here's the quick ladder, at full retirement age, for a full thirty-five-year career. {p} Twenty thousand a year: about thirteen hundred and ten dollars a month. {p} Forty thousand: about eighteen hundred and forty-four. {p} Sixty thousand: about twenty-three hundred and seventy-seven. {p} Seventy-two thousand eight hundred, the national average wage for 2025: about twenty-seven hundred and eighteen. {p} A hundred thousand: about thirty-four hundred. {pp} For comparison, the average retired worker's check in 2027 is about two thousand one hundred and seventy dollars. These estimates are before taxes, and before the Medicare premium most people have taken out of their check. The real formula uses your exact earnings, year by year.",
+   "items": [
+    {
+     "at": "Twenty thousand a year",
+     "kind": "bullet",
+     "text": "$20k → about $1,310"
+    },
+    {
+     "at": "Forty thousand: about",
+     "kind": "bullet",
+     "text": "$40k → about $1,844"
+    },
+    {
+     "at": "Sixty thousand: about",
+     "kind": "bullet",
+     "text": "$60k → about $2,377"
+    },
+    {
+     "at": "Seventy-two thousand eight hundred",
+     "kind": "bullet",
+     "text": "$72.8k (average wage) → about $2,718"
+    },
+    {
+     "at": "A hundred thousand: about",
+     "kind": "bullet",
+     "text": "$100k → about $3,400"
+    },
+    {
+     "at": "before taxes",
+     "kind": "title",
+     "text": "BEFORE TAXES AND MEDICARE · 35 YEARS · TODAY'S WAGES"
+    }
+   ],
+   "id": "s12"
+  },
+  {
+   "act": 6,
+   "type": "host",
+   "bg": "none",
+   "narration": "Tell me in the comments: is your estimate higher or lower than you expected? {p} And if you've already claimed, I'd like to know: at what age, and would you choose the same again? {p} And if you know someone in their fifties who has never looked at their Social Security record, send them this. Ten minutes on ssa.gov now can catch a costly mistake later.",
+   "items": [
+    {
+     "at": "higher or lower",
+     "text": "Higher or lower?",
+     "serif": true,
+     "size": 66
+    },
+    {
+     "at": "at what age",
+     "text": "62 · 67 · 70?",
+     "color": "acc"
+    }
+   ],
+   "id": "s13"
+  },
+  {
+   "act": 6,
+   "type": "end",
+   "src": "",
+   "next": {
+    "kicker": "WATCH NEXT",
+    "big": "AGE 80",
+    "color": "acc",
+    "title": "Social Security at 62, 67 or 70?",
+    "sub": "The break-even ages"
+   },
+   "narration": "Now that you know your number, the next question is when to claim it. To see the break-even ages, watch this next. {p} This is Nest Egg Atlas. See you next time.",
+   "hold": 14,
+   "id": "s14"
+  }
+ ],
+ "checks": [
+  {
+   "say": "bend points 2027 = $1,340 / $8,077 (SSA OACT)",
+   "rule": "expr",
+   "expr": "[1340, 8077]",
+   "equal": [
+    1340,
+    8077
+   ]
+  },
+  {
+   "say": "$40k → AIME 3,333 → PIA 1,843.70 (≈ $1,844)",
+   "rule": "expr",
+   "expr": "[3333, 1843.7]",
+   "equal": [
+    3333,
+    1843.7
+   ]
+  },
+  {
+   "say": "$60k → AIME 5,000 → PIA 2,377.20",
+   "rule": "expr",
+   "expr": "[5000, 2377.2]",
+   "equal": [
+    5000,
+    2377.2
+   ]
+  },
+  {
+   "say": "$100k → AIME 8,333 → PIA 3,400.20 (≈ $3,400)",
+   "rule": "expr",
+   "expr": "[8333, 3400.2]",
+   "equal": [
+    8333,
+    3400.2
+   ]
+  },
+  {
+   "say": "100k/40k = 2.5×; check ratio < 2",
+   "rule": "expr",
+   "expr": "[100000 / 40000, 3400.2 / 1843.7 < 2]",
+   "equal": [
+    2.5,
+    true
+   ]
+  },
+  {
+   "say": "FRA 67 for born 1960+",
+   "rule": "expr",
+   "expr": "67",
+   "equal": 67
+  },
+  {
+   "say": "$20k in 1990 indexed to AWI 2025 ≈ $69k",
+   "rule": "expr",
+   "expr": "round(20000 * 72800.33 / 21027.98 / 1000)",
+   "equal": 69
+  },
+  {
+   "say": "taxable max 2027 = $192,300",
+   "rule": "expr",
+   "expr": "192300",
+   "equal": 192300
+  },
+  {
+   "say": "$60k: 0.9×1340 = 1206; 5000−1340 = 3660; ×0.32 = 1171.20",
+   "rule": "expr",
+   "expr": "[round(0.9 * 1340, 2), 5000 - 1340, round(0.32 * 3660, 2)]",
+   "equal": [
+    1206.0,
+    3660,
+    1171.2
+   ]
+  },
+  {
+   "say": "$100k: 8333 − 8077 = 256 above bend 2",
+   "rule": "expr",
+   "expr": "8333 - 8077",
+   "equal": 256
+  },
+  {
+   "say": "replacement: 20k ≈ 79%, 40k ≈ 55%, 60k ≈ 48%, 100k ≈ 41%",
+   "rule": "expr",
+   "expr": "[round(78.6), round(55.3), round(47.5), round(40.8)]",
+   "equal": [
+    79,
+    55,
+    48,
+    41
+   ]
+  },
+  {
+   "say": "$80k → ≈ $2,910 (+58% vs $40k)",
+   "rule": "expr",
+   "expr": "[round(2910.3), round((2910.3 / 1843.7 - 1) * 100)]",
+   "equal": [
+    2910,
+    58
+   ]
+  },
+  {
+   "say": "$3,500 at FRA needs ≈ $108k salary",
+   "rule": "expr",
+   "expr": "[3487.6 < 3500, 3500.2 >= 3500]",
+   "equal": [
+    true,
+    true
+   ]
+  },
+  {
+   "say": "max at FRA 2027 = $4,188 (COLA fact sheet)",
+   "rule": "expr",
+   "expr": "4188",
+   "equal": 4188
+  },
+  {
+   "say": "$60k at 62 / 67 / 70 = 1,664 / 2,377 / 2,947",
+   "rule": "expr",
+   "expr": "[1664, round(2377.2), 2947]",
+   "equal": [
+    1664,
+    2377,
+    2947
+   ]
+  },
+  {
+   "say": "$40k at 62 / 70 = 1,290 / 2,286",
+   "rule": "expr",
+   "expr": "[1290, 2286]",
+   "equal": [
+    1290,
+    2286
+   ]
+  },
+  {
+   "say": "$100k at 62 / 70 = 2,380 / 4,216",
+   "rule": "expr",
+   "expr": "[2380, 4216]",
+   "equal": [
+    2380,
+    4216
+   ]
+  },
+  {
+   "say": "spouse up to 50% of $3,400 ≈ $1,700",
+   "rule": "expr",
+   "expr": "round(3400.2 / 2)",
+   "equal": 1700
+  },
+  {
+   "say": "$60k for 30 / 25 years = 2,148 / 1,920; −$457",
+   "rule": "expr",
+   "expr": "[round(2148.4), round(1919.9), round(2377.2 - 1919.9)]",
+   "equal": [
+    2148,
+    1920,
+    457
+   ]
+  },
+  {
+   "say": "$20k → ≈ $1,310",
+   "rule": "expr",
+   "expr": "round(1310.3)",
+   "equal": 1310
+  },
+  {
+   "say": "AWI 2025 = 72,800.33 → ≈ $2,718",
+   "rule": "expr",
+   "expr": "round(2718.3)",
+   "equal": 2718
+  },
+  {
+   "say": "average retired worker 2027 = $2,170",
+   "rule": "expr",
+   "expr": "2170",
+   "equal": 2170
+  }
+ ],
+ "datasets": [],
+ "snapshot": [
+  {
+   "set": "ssa",
+   "iso": "bend1",
+   "year": 2027,
+   "value": 1340,
+   "src": "Social Security Administration, Office of the Chief Actuary: 2027 PIA bend points, national average wage index, contribution and benefit base"
+  },
+  {
+   "set": "ssa",
+   "iso": "bend2",
+   "year": 2027,
+   "value": 8077,
+   "src": "Social Security Administration, Office of the Chief Actuary: 2027 PIA bend points, national average wage index, contribution and benefit base"
+  },
+  {
+   "set": "ssa",
+   "iso": "cap",
+   "year": 2027,
+   "value": 192300,
+   "src": "Social Security Administration, Office of the Chief Actuary: 2027 PIA bend points, national average wage index, contribution and benefit base"
+  },
+  {
+   "set": "ssa",
+   "iso": "awi2025",
+   "year": 2027,
+   "value": 72800.33,
+   "src": "Social Security Administration, Office of the Chief Actuary: 2027 PIA bend points, national average wage index, contribution and benefit base"
+  },
+  {
+   "set": "ssa",
+   "iso": "avg",
+   "year": 2027,
+   "value": 2170,
+   "src": "Social Security Administration, Office of the Chief Actuary: 2027 PIA bend points, national average wage index, contribution and benefit base"
+  },
+  {
+   "set": "ssa",
+   "iso": "maxfra",
+   "year": 2027,
+   "value": 4188,
+   "src": "Social Security Administration, Office of the Chief Actuary: 2027 PIA bend points, national average wage index, contribution and benefit base"
+  },
+  {
+   "set": "pia",
+   "iso": "s20k",
+   "year": 2027,
+   "value": 1310.3,
+   "src": "Nest Egg Atlas calculation with the SSA benefit formula (2027 bend points) · turning 62 in 2027 · 35-year career · salary in today's wages"
+  },
+  {
+   "set": "pia",
+   "iso": "s40k",
+   "year": 2027,
+   "value": 1843.7,
+   "src": "Nest Egg Atlas calculation with the SSA benefit formula (2027 bend points) · turning 62 in 2027 · 35-year career · salary in today's wages"
+  },
+  {
+   "set": "pia",
+   "iso": "s60k",
+   "year": 2027,
+   "value": 2377.2,
+   "src": "Nest Egg Atlas calculation with the SSA benefit formula (2027 bend points) · turning 62 in 2027 · 35-year career · salary in today's wages"
+  },
+  {
+   "set": "pia",
+   "iso": "s72k",
+   "year": 2027,
+   "value": 2718.3,
+   "src": "Nest Egg Atlas calculation with the SSA benefit formula (2027 bend points) · turning 62 in 2027 · 35-year career · salary in today's wages"
+  },
+  {
+   "set": "pia",
+   "iso": "s80k",
+   "year": 2027,
+   "value": 2910.3,
+   "src": "Nest Egg Atlas calculation with the SSA benefit formula (2027 bend points) · turning 62 in 2027 · 35-year career · salary in today's wages"
+  },
+  {
+   "set": "pia",
+   "iso": "s100k",
+   "year": 2027,
+   "value": 3400.2,
+   "src": "Nest Egg Atlas calculation with the SSA benefit formula (2027 bend points) · turning 62 in 2027 · 35-year career · salary in today's wages"
+  }
+ ],
+ "voice": {
+  "model": "",
+  "name": "Algieba",
+  "style": "You are the narrator of a calm, trustworthy personal-finance documentary for Americans in their fifties, sixties and seventies. Read the script below in a warm, mature, unhurried voice, at about 135 words per minute, like a respected public-radio journalist explaining numbers to a friend. Take your time with every dollar figure and let it land with a short pause before it. Sound reassuring and clear, never rushed, never salesy, never alarmed, never like an advertisement."
+ },
+ "music": [
+  {
+   "act": 0,
+   "track": "Lightless Dawn",
+   "vol": 0.18
+  },
+  {
+   "act": 1,
+   "track": "Deliberate Thought",
+   "vol": 0.17
+  },
+  {
+   "act": 2,
+   "track": "Investigations",
+   "vol": 0.17
+  },
+  {
+   "act": 3,
+   "track": "Inspired",
+   "vol": 0.17
+  },
+  {
+   "act": 4,
+   "track": "Floating Cities",
+   "vol": 0.17
+  },
+  {
+   "act": 5,
+   "track": "Deliberate Thought",
+   "vol": 0.17
+  },
+  {
+   "act": 6,
+   "track": "Inspired",
+   "vol": 0.18
+  }
+ ],
+ "yt": {
+  "title": "How Much Social Security on a $40k, $60k or $100k Salary? (2027 Formula)",
+  "description": "What does Social Security actually pay at different salaries? Using the official 2027 benefit formula (bend points $1,340 and $8,077), we work out the monthly check at full retirement age for a 35-year career at $20k, $40k, $60k, the national average wage and $100k, how much of your pay it replaces, what changes if you claim at 62 or 70, spousal benefits, and the 35-year rule.\n\nAssumptions: turning 62 in 2027 (full retirement age 67), 35 years of earnings at the same level relative to national average wages (salary in today's wages), before taxes and Medicare premiums. Your own estimate: your my Social Security account at ssa.gov.\n\nEducational content, not financial advice.\n\nSources: Social Security Administration, Office of the Chief Actuary — PIA formula bend points, national average wage index (2025: $72,800.33), contribution and benefit base ($192,300 in 2027); 2027 COLA Fact Sheet. Calculations: Nest Egg Atlas.\n{music_credits}\nNarration is AI-generated.\n\n#socialsecurity #retirement #retirementplanning #personalfinance #socialsecurity2027",
+  "tags": [
+   "social security",
+   "how much social security will i get",
+   "social security calculator",
+   "social security benefit formula",
+   "bend points 2027",
+   "social security by salary",
+   "full retirement age",
+   "35 years social security",
+   "retirement planning",
+   "personal finance"
+  ],
+  "lang": "en"
+ }
+}
