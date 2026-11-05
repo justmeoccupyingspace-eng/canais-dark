@@ -1,0 +1,45 @@
+{
+ "channels": [],
+ "topics": [
+  {
+   "id": "tw1",
+   "q": "Taiwan richer than USA",
+   "order": "viewCount",
+   "after": "2024-11-01T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  },
+  {
+   "id": "tw2",
+   "q": "Taiwan GDP per capita surpasses United States",
+   "order": "viewCount",
+   "after": "2024-11-01T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  },
+  {
+   "id": "tw3",
+   "q": "Taiwan economy growth 2026 AI",
+   "order": "viewCount",
+   "after": "2024-11-01T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  },
+  {
+   "id": "tw4",
+   "q": "\u53f0\u7063 \u4eba\u5747GDP \u8d85\u8d8a\u7f8e\u570b",
+   "order": "viewCount",
+   "after": "2024-11-01T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  },
+  {
+   "id": "tw5",
+   "q": "Taiwan richer than Japan",
+   "order": "viewCount",
+   "after": "2024-11-01T00:00:00Z",
+   "dur": "any",
+   "n": 12
+  }
+ ]
+}
