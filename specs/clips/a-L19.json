@@ -1,0 +1,40 @@
+{
+ "channel": "chartbound",
+ "long": "vQX0x96vsYM",
+ "longTitle": "Taiwan Just Passed America",
+ "preview": "long-42186111960",
+ "timeline": "lprep-42186111960",
+ "timeline_file": "a-L19-taiwan.json",
+ "sources": "Sources: IMF World Economic Outlook, October 2026 (PPPPC, NGDPDPC, NGDP_RPCH, LP, BCA_NGDPD, LUR, GGXWDG_NGDP, PCPIPCH).",
+ "music_credits": "Music by Kevin MacLeod (incompetech.com), CC BY 4.0.",
+ "hashtags": "#taiwan #usa #economics #imf #chips #data",
+ "tags": [
+  "taiwan",
+  "taiwan economy",
+  "taiwan vs usa",
+  "tsmc",
+  "semiconductors",
+  "gdp per capita",
+  "imf",
+  "economics",
+  "shorts"
+ ],
+ "clips": [
+  {
+   "from": "s00",
+   "to": "s00",
+   "hook": "Taiwan just passed *America*",
+   "title": "Taiwan just passed the United States (IMF, 2026) #Shorts",
+   "desc": "GDP per person, PPP: 1990 Taiwan $9.5k vs US $23.8k. 2026: Taiwan $103.7k vs US $95.2k (IMF WEO Oct 2026).",
+   "at": "2026-11-06T22:00:00Z"
+  },
+  {
+   "from": "s03",
+   "to": "s03",
+   "hook": "One company changed *Taiwan*",
+   "title": "Taiwan grew 9% and 11% in two years. Here's why #Shorts",
+   "desc": "IMF: real growth 8.8% in 2025 and 10.7% expected in 2026; current account surplus ~22% of GDP.",
+   "at": "2026-11-07T01:00:00Z"
+  }
+ ]
+}
