@@ -625,7 +625,9 @@
  "LUR_ARG": {
   "2024": 7.2,
   "2025": 7.4,
-  "2026": 7.6
+  "2026": 7.6,
+  "2022": 6.8,
+  "2023": 6.1
  },
  "BCA_NGDPD_ARG": {
   "2023": -3.4,
@@ -738,5 +740,17 @@
    151
   ]
  },
- "rank_note": "rank among 151 economies with PPPPC data for 1990 and 2026"
+ "rank_note": "rank among 151 economies with PPPPC data for 1990 and 2026",
+ "NGDP_RPCH_POL_negative_1990_2025": {
+  "1990": -7.2,
+  "1991": -7.0,
+  "2020": -2.1
+ },
+ "PCPIPCH_USA": {
+  "2021": 4.7,
+  "2022": 8.0
+ },
+ "LP_CRI": {
+  "2026": 5.416
+ }
 }
