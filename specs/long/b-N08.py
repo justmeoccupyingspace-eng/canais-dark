@@ -55,7 +55,7 @@ shots = [
          items=[dict(at="about three times more", text="Median → top 25%: ×3", color="acc"), dict(at="almost three times again", text="Top 25% → top 10%: ×2.8", color="acc"), dict(at="one point nine million", text="Average: $1.9M (not typical)", color="warm", size=62)]),
 
     # ---------------- 3 · THE MILLIONAIRES ----------------
-    dict(act=3, type="stats", title="Households 65–74 with a net worth of at least…", src=OURS,
+    dict(act=3, type="stats", title="Households 65–74 with at least…", src=OURS,
          stats=[dict(at="at least half a million", value=GE("65-74", 500000), fmt="pct0", label="$500,000"), dict(at="at least a million", value=GE("65-74", 1000000), fmt="pct0", label="$1 million"),
                 dict(at="at least two million", value=GE("65-74", 2000000), fmt="pct0", label="$2 million"), dict(at="at least five million", value=GE("65-74", 5000000), fmt="pct0", label="$5 million")],
          narration="So how many retirees are millionaires? More than you might think. {p} About forty-five percent of households aged sixty-five to seventy-four have at least half a million dollars. {p} About thirty-one percent have at least a million. {p} About nineteen percent, at least two million. {p} And about eight percent, at least five million. {pp} That's roughly one in three households in this age group with a seven-figure net worth: about six point eight million households."),
@@ -88,8 +88,7 @@ shots = [
                 dict(at="Around four hundred and thirty", kind="bullet", text="Median: about $431k"),
                 dict(at="puts you in the top quarter", kind="bullet", text="Top 25%: $1.3M+"),
                 dict(at="in the top ten percent", kind="bullet", text="Top 10%: $3.6M+"),
-                dict(at="in the top one percent", kind="bullet", text="Top 1%: $20.5M+"),
-                dict(at="leave out Social Security", kind="title", text="FED SCF 2025")]),
+                dict(at="in the top one percent", kind="bullet", text="Top 1%: $20.5M+")]),
     dict(act=6, type="host", bg="none",
          narration="Tell me in the comments: were you surprised by where the median is? {p} And if you know someone who's sure they're behind, send them this. They might be doing better than they think.",
          items=[dict(at="surprised", text="Surprised?", serif=True, size=70), dict(at="better than they think", text="Share it", color="acc")]),

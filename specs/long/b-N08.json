@@ -232,7 +232,7 @@
   {
    "act": 3,
    "type": "stats",
-   "title": "Households 65–74 with a net worth of at least…",
+   "title": "Households 65–74 with at least…",
    "src": "Nest Egg Atlas calculation from the Federal Reserve's 2025 Survey of Consumer Finances public data (survey weights) · households by age of head · 2025 dollars",
    "stats": [
     {
@@ -433,11 +433,6 @@
      "at": "in the top one percent",
      "kind": "bullet",
      "text": "Top 1%: $20.5M+"
-    },
-    {
-     "at": "leave out Social Security",
-     "kind": "title",
-     "text": "FED SCF 2025"
     }
    ],
    "id": "s12"
