@@ -1,0 +1,7 @@
+{"channels": [], "topics": [
+ {"id": "arg1", "q": "countries that passed Argentina", "order": "viewCount", "after": "2025-06-01T00:00:00Z", "dur": "any", "n": 15},
+ {"id": "arg2", "q": "why Argentina got poor", "order": "viewCount", "after": "2025-06-01T00:00:00Z", "dur": "any", "n": 15},
+ {"id": "arg3", "q": "Argentina economy 2026 Milei IMF", "order": "viewCount", "after": "2026-04-01T00:00:00Z", "dur": "any", "n": 15},
+ {"id": "nw1", "q": "net worth percentile by age retirees 2026", "order": "viewCount", "after": "2025-11-01T00:00:00Z", "dur": "any", "n": 15},
+ {"id": "nw2", "q": "top 10 percent net worth age 65", "order": "viewCount", "after": "2025-11-01T00:00:00Z", "dur": "any", "n": 15}
+]}
