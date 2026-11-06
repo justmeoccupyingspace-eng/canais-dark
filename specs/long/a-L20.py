@@ -39,7 +39,7 @@ shots = [
     # ---------------- 0 · COLD OPEN ----------------
     dict(act=0, type="lines", set="imf", fc=2025, series=["KOR", "POL", "CHL", "ARG"], years=[1990, 2026], start=1990.0, y=[0, 75000], src=PPPC, fmt="usdk0", hl="ARG",
          narration="In 1990, the average person in Argentina produced about eight thousand two hundred and fifty dollars a year, adjusted for prices. {p} That was more than the average person in South Korea. More than in Poland. And more than in Chile. {pp} Today, by the IMF's newest numbers, South Korea is more than twice as rich as Argentina per person. Poland is about eighty percent richer. That's not a small gap: it's the difference between a middle-income country and a rich one. {p} And Chile, Argentina's neighbor across the Andes, is now more than ten percent ahead. {p} Argentina didn't just fall behind one country. It fell behind a long list of them.",
-         keys=[dict(at="In 1990", year=1990.0, dur=2.0), dict(at="Today, by the IMF", year=2026.0, dur=7.0)],
+         keys=[dict(at="In 1990", year=1990.0, dur=2.0), dict(at="Today, by the", year=2026.0, dur=7.0)],
          labels=[dict(at="eight thousand two hundred", iso="ARG", year=1990), dict(at="more than twice", iso="KOR", year=2026), dict(at="about eighty percent", iso="POL", year=2026), dict(at="more than ten percent", iso="CHL", year=2026)],
          react=[dict(at="In 1990", pose="idle"), dict(at="more than in Chile", pose="pointUp"), dict(at="more than twice", pose="shock"), dict(at="across the Andes", pose="pointL"), dict(at="a long list", pose="think")]),
     dict(act=0, type="host", bg="lines", set="imf", fc=2025, series=["KOR", "POL", "CHL", "ARG"], years=[1990, 2026], start=2026.0, y=[0, 75000], fmt="usdk0",
