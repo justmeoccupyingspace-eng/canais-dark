@@ -1,6 +1,7 @@
 """Lista os envios de um canal e, com MODE=private, deixa privados os vídeos dados em IDS (ou todos os públicos/agendados com ALL=1).
 MODE=playlist põe os IDS na playlist cujo título é PL (não cria playlist nova, não remove nada).
-Nada é apagado. Uso: CH=B MODE=list|private|playlist [IDS=a,b] [ALL=1] [PL=título] python scripts/ytchan.py out.json"""
+MODE=localize grava título/descrição traduzidos a partir do JSON em LOC ({id: {lang: {title, description}}}); o original fica igual.
+Nada é apagado. Uso: CH=B MODE=list|private|playlist|localize [IDS=a,b] [ALL=1] [PL=título] [LOC=arquivo.json] python scripts/ytchan.py out.json"""
 import json, os, sys, urllib.parse, urllib.request
 def post(url, data):
     return json.load(urllib.request.urlopen(urllib.request.Request(url, data=urllib.parse.urlencode(data).encode())))
@@ -60,4 +61,18 @@ if mode == "playlist":
             print("já está:", v); continue
         call("POST", API + "playlistItems?part=snippet", tok, {"snippet": {"playlistId": pl["id"], "resourceId": {"kind": "youtube#video", "videoId": v}}})
         added.append(v); print(f"::notice::{v} adicionado à playlist {pl['snippet']['title']}")
-json.dump(dict(channel=c["snippet"]["title"], rows=rows, made_private=done, playlist_added=added), open(sys.argv[1], "w"), indent=1, ensure_ascii=False)
+localized = []
+if mode == "localize":
+    # LOC = arquivo JSON {videoId: {lang: {title, description}}}; grava título/descrição traduzidos (snippet.localizations) sem mexer no original.
+    loc = json.load(open(os.environ["LOC"]))
+    for vid, langs in loc.items():
+        v = call("GET", API + f"videos?part=snippet,localizations&id={vid}", tok).get("items", [])
+        if not v:
+            print("não achei:", vid); continue
+        v = v[0]; sn = v["snippet"]
+        snippet = {"title": sn["title"], "description": sn.get("description", ""), "categoryId": sn["categoryId"], "tags": sn.get("tags", []),
+                   "defaultLanguage": sn.get("defaultLanguage") or "en", **({"defaultAudioLanguage": sn["defaultAudioLanguage"]} if sn.get("defaultAudioLanguage") else {})}
+        locs = {**v.get("localizations", {}), **langs}
+        r = call("PUT", API + "videos?part=snippet,localizations", tok, {"id": vid, "snippet": snippet, "localizations": locs})
+        localized.append(vid); print(f"::notice::{vid} localizado em {','.join(langs)}: {list(langs.values())[0]['title'][:60]}")
+json.dump(dict(channel=c["snippet"]["title"], rows=rows, made_private=done, playlist_added=added, localized=localized), open(sys.argv[1], "w"), indent=1, ensure_ascii=False)
