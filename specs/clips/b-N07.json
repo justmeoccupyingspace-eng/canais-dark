@@ -1,0 +1,40 @@
+{
+ "channel": "nesteggatlas",
+ "long": "EAPiFqFBugc",
+ "longTitle": "How Much Social Security on a $40k, $60k or $100k Salary? (2027 Formula)",
+ "preview": "long-42186120976",
+ "timeline": "lprep-42186120976",
+ "timeline_file": "b-N07-ss-salary.json",
+ "sources": "Sources: Social Security Administration, Office of the Chief Actuary — PIA formula bend points, national average wage index (2025: $72,800.33), contribution and benefit base ($192,300 in 2027); 2027 COLA Fact Sheet. Calculations: Nest Egg Atlas.",
+ "music_credits": "Music by Kevin MacLeod (incompetech.com), CC BY 4.0.",
+ "hashtags": "#socialsecurity #retirement #retirementplanning #personalfinance #socialsecurity",
+ "tags": [
+  "social security",
+  "how much social security will i get",
+  "social security calculator",
+  "social security benefit formula",
+  "bend points 2027",
+  "social security by salary",
+  "full retirement age",
+  "35 years social security",
+  "shorts"
+ ],
+ "clips": [
+  {
+   "from": "s00",
+   "to": "s00",
+   "hook": "Social Security at *$40k, $60k, $100k*",
+   "title": "Social Security at a $40k, $60k or $100k salary (2027 formula) #Shorts",
+   "desc": "2027 SSA formula, turning 62 in 2027, 35-year career, full retirement age 67: $40k ≈ $1,844, $60k ≈ $2,377, $100k ≈ $3,400 a month. Education, not financial advice.",
+   "at": "2026-11-06T20:30:00Z"
+  },
+  {
+   "from": "s10",
+   "to": "s10",
+   "hook": "The rule that *shrinks* your check",
+   "title": "Fewer than 35 years of work? Your Social Security drops #Shorts",
+   "desc": "$60k a year: 35 years ≈ $2,377, 30 years ≈ $2,148, 25 years ≈ $1,920 a month (2027 SSA formula, our calculation).",
+   "at": "2026-11-07T00:00:00Z"
+  }
+ ]
+}
