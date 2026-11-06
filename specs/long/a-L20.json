@@ -58,7 +58,7 @@
     75000
    ],
    "src": "IMF World Economic Outlook, October 2026 · GDP per capita, PPP (current international $); 2026+ are IMF estimates and forecasts",
-   "fmt": "usdk0",
+   "fmt": "usdk",
    "hl": "ARG",
    "narration": "In 1990, the average person in Argentina produced about eight thousand two hundred and fifty dollars a year, adjusted for prices. {p} That was more than the average person in South Korea. More than in Poland. And more than in Chile. {pp} Today, by the IMF's newest numbers, South Korea is more than twice as rich as Argentina per person. Poland is about eighty percent richer. That's not a small gap: it's the difference between a middle-income country and a rich one. {p} And Chile, Argentina's neighbor across the Andes, is now more than ten percent ahead. {p} Argentina didn't just fall behind one country. It fell behind a long list of them.",
    "keys": [
@@ -729,7 +729,7 @@
    "src": "",
    "next": {
     "kicker": "WATCH NEXT",
-    "big": "POLAND",
+    "big": "POL",
     "color": "acc",
     "title": "Poland passed Japan",
     "sub": "and it isn't done."

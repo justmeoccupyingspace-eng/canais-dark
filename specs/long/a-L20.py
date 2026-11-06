@@ -37,7 +37,7 @@ for v in G[:36]:
 
 shots = [
     # ---------------- 0 · COLD OPEN ----------------
-    dict(act=0, type="lines", set="imf", fc=2025, series=["KOR", "POL", "CHL", "ARG"], years=[1990, 2026], start=1990.0, y=[0, 75000], src=PPPC, fmt="usdk0", hl="ARG",
+    dict(act=0, type="lines", set="imf", fc=2025, series=["KOR", "POL", "CHL", "ARG"], years=[1990, 2026], start=1990.0, y=[0, 75000], src=PPPC, fmt="usdk", hl="ARG",
          narration="In 1990, the average person in Argentina produced about eight thousand two hundred and fifty dollars a year, adjusted for prices. {p} That was more than the average person in South Korea. More than in Poland. And more than in Chile. {pp} Today, by the IMF's newest numbers, South Korea is more than twice as rich as Argentina per person. Poland is about eighty percent richer. That's not a small gap: it's the difference between a middle-income country and a rich one. {p} And Chile, Argentina's neighbor across the Andes, is now more than ten percent ahead. {p} Argentina didn't just fall behind one country. It fell behind a long list of them.",
          keys=[dict(at="In 1990", year=1990.0, dur=2.0), dict(at="Today, by the", year=2026.0, dur=7.0)],
          labels=[dict(at="eight thousand two hundred", iso="ARG", year=1990), dict(at="more than twice", iso="KOR", year=2026), dict(at="about eighty percent", iso="POL", year=2026), dict(at="more than ten percent", iso="CHL", year=2026)],
@@ -104,7 +104,7 @@ shots = [
          items=[dict(at="Huge farmland", text="Farmland · Vaca Muerta · Lithium", color="acc2", size=58), dict(at="keeping the economy stable", text="The missing ingredient: stability", serif=True, size=58, color="acc")],
          react=[dict(at="ingredients", pose="pointUp"), dict(at="Vaca Muerta", pose="pointL"), dict(at="never been what", pose="think"), dict(at="this time is different", pose="shrug")]),
     dict(act=5, type="end", src="",
-         next=dict(kicker="WATCH NEXT", big="POLAND", color="acc", title="Poland passed Japan", sub="and it isn't done."),
+         next=dict(kicker="WATCH NEXT", big="POL", color="acc", title="Poland passed Japan", sub="and it isn't done."),
          narration="Poland is one of the countries that passed Argentina, and it didn't stop there. It passed Japan, too. To see how, watch this next. {p} I'm Chartbound. See you in the next one.",
          hold=14,
          react=[dict(at="Poland is one", pose="pointL"), dict(at="See you", pose="wave")]),
