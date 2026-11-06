@@ -8,7 +8,7 @@ for ind in q["ind"]:
     url = f"https://api.worldbank.org/v2/country/{';'.join(q['isos'])}/indicator/{ind}?format=json&date={q.get('from', 1990)}:{q.get('to', 2025)}&per_page=20000"
     for i in range(5):
         try:
-            d = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (data pipeline)"}), timeout=120))
+            d = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "canais-dark-bot/1.0 (+https://github.com/justmeoccupyingspace-eng/canais-dark)"}), timeout=120))
             break
         except Exception as e:
             print("retry", i, ind, repr(e)[:80]); time.sleep(3 + 4 * i)

@@ -12,7 +12,7 @@ async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch(channel='chrome')
         ctx = await b.new_context(accept_downloads=True, locale='pt-BR',
-              user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36')
+              user_agent='canais-dark-bot/1.0 (+https://github.com/justmeoccupyingspace-eng/canais-dark)')
         for key, url in items:
             url = url.strip()
             try:

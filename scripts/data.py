@@ -6,7 +6,7 @@ from collections import defaultdict
 
 def fred_annual(series, y0, y1):
     url = f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={series}&cosd={y0}-01-01&coed={y1}-12-31"
-    raw = urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=30).read().decode()
+    raw = urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "canais-dark-bot/1.0 (+https://github.com/justmeoccupyingspace-eng/canais-dark)"}), timeout=30).read().decode()
     by = defaultdict(list)
     for row in list(csv.reader(io.StringIO(raw)))[1:]:
         if len(row) < 2 or row[1] in ("", "."):
@@ -41,7 +41,7 @@ def ipca_series(first):
     last = None
     for i in range(3):
         try:
-            rows = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=30))
+            rows = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "canais-dark-bot/1.0 (+https://github.com/justmeoccupyingspace-eng/canais-dark)"}), timeout=30))
             break
         except Exception:
             if i == 2:
@@ -67,7 +67,7 @@ def sgs_range(code, y0, m0, retries=4):
         url = f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{code}/dados?formato=json&dataInicial={d0.strftime('%d/%m/%Y')}&dataFinal={d1.strftime('%d/%m/%Y')}"
         for i in range(retries):
             try:
-                rows = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=60))
+                rows = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "canais-dark-bot/1.0 (+https://github.com/justmeoccupyingspace-eng/canais-dark)"}), timeout=60))
                 if isinstance(rows, list):
                     out += rows
                     break
@@ -120,7 +120,7 @@ def compute_blocks(spec, ctx, raw):
         annual = False
         for _ in range(3):
             try:
-                rows = list(csv.reader(io.StringIO(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=60).read().decode())))[1:]
+                rows = list(csv.reader(io.StringIO(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "canais-dark-bot/1.0 (+https://github.com/justmeoccupyingspace-eng/canais-dark)"}), timeout=60).read().decode())))[1:]
                 rows = [(r[0], float(r[1])) for r in rows if len(r) > 1 and r[1] not in ("", ".")]
                 break
             except Exception as e:
@@ -461,7 +461,7 @@ def compute_blocks(spec, ctx, raw):
         rows = None
         for _ in range(3):
             try:
-                rows = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=60))
+                rows = json.load(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "canais-dark-bot/1.0 (+https://github.com/justmeoccupyingspace-eng/canais-dark)"}), timeout=60))
                 break
             except Exception as e:
                 print("sgs1619 falhou:", e)

@@ -9,8 +9,8 @@ jobs:
           python3 - <<'PY'
           import urllib.request, urllib.error
           tests = [("incompetech", "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Inspired.mp3"),
-                   ("fed", "https://www.federalreserve.gov/econres/files/scfp2025excel.zip")]
-          for ua in (None, "canais-dark-bot/1.0 (+https://github.com/justmeoccupyingspace-eng/canais-dark)"):
+                   ("fed", "https://www.federalreserve.gov/econres/files/scfp2025excel.zip"), ("worldbank", "https://api.worldbank.org/v2/country/POL/indicator/NY.GDP.PCAP.PP.CD?format=json&date=2020:2024"), ("eurostat", "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tec00114?format=JSON&geo=PL&time=2024")]
+          for ua in ("canais-dark-bot/1.0 (+https://github.com/justmeoccupyingspace-eng/canais-dark)"):
               for name, url in tests:
                   h = {"User-Agent": ua} if ua else {}
                   try:

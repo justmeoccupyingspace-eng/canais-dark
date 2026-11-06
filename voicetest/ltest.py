@@ -133,7 +133,7 @@ for t in TRACKS:
     url = "https://incompetech.com/music/royalty-free/mp3-royaltyfree/" + urllib.parse.quote(t) + ".mp3"
     p = f"out_l/music/{t.replace(' ', '_')}.mp3"
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        req = urllib.request.Request(url, headers={"User-Agent": "canais-dark-bot/1.0 (+https://github.com/justmeoccupyingspace-eng/canais-dark)"})
         open(p, "wb").write(urllib.request.urlopen(req, timeout=60).read())
         y, s = librosa.load(p, sr=22050, mono=True)
         tempo = float(librosa.feature.rhythm.tempo(y=y, sr=s)[0])

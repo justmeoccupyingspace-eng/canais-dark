@@ -13,7 +13,7 @@ jobs:
       - run: pip install -q pandas numpy
       - run: |
           mkdir -p /tmp/o && python3 scripts/scf.py /tmp/o/scf2025.json | tee /tmp/o/log.txt
-          curl -sL -A "Mozilla/5.0" -o /tmp/o/scf26.pdf https://www.federalreserve.gov/publications/files/scf26.pdf && sudo apt-get install -y -qq poppler-utils >/dev/null && pdftotext -layout /tmp/o/scf26.pdf /tmp/o/scf26.txt || true
+          curl -sL -A "canais-dark-bot/1.0 (+https://github.com/justmeoccupyingspace-eng/canais-dark)" -o /tmp/o/scf26.pdf https://www.federalreserve.gov/publications/files/scf26.pdf && sudo apt-get install -y -qq poppler-utils >/dev/null && pdftotext -layout /tmp/o/scf26.pdf /tmp/o/scf26.txt || true
           git config user.name producer; git config user.email producer@users.noreply.github.com
           git checkout --orphan scf-${{ github.run_id }} && git rm -rf . -q
           cp /tmp/o/* . && git add . && git commit -qm scf && git push -f origin scf-${{ github.run_id }}

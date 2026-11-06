@@ -4,7 +4,7 @@ import io, json, sys, urllib.request, zipfile
 import numpy as np, pandas as pd
 
 URLS = ["https://www.federalreserve.gov/econres/files/scfp2025excel.zip", "https://www.federalreserve.gov/econres/files/scfp2025s.zip"]
-UA = {"User-Agent": "Mozilla/5.0 (research; Chartbound)"}
+UA = {"User-Agent": "canais-dark-bot/1.0 (+https://github.com/justmeoccupyingspace-eng/canais-dark)"}
 
 def get(url):
     return urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=180).read()

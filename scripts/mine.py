@@ -10,7 +10,7 @@ NOTABLE = set("USA JPN DEU GBR FRA ITA CAN ESP KOR AUS CHN IND BRA RUS MEX TUR S
 def fetch(path, tries=5):
     for i in range(tries):
         try:
-            req = urllib.request.Request(API + path, headers={"User-Agent": "Mozilla/5.0 (data pipeline)"})
+            req = urllib.request.Request(API + path, headers={"User-Agent": "canais-dark-bot/1.0 (+https://github.com/justmeoccupyingspace-eng/canais-dark)"})
             return json.load(urllib.request.urlopen(req, timeout=120))
         except Exception as e:
             print("retry", i, path, repr(e)[:80])

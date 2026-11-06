@@ -12,7 +12,7 @@ EU27_2009 = ["AUT", "BEL", "DNK", "FIN", "FRA", "DEU", "GRC", "IRL", "ITA", "LUX
 def fetch(url, tries=5):
     for i in range(tries):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (data pipeline)"})
+            req = urllib.request.Request(url, headers={"User-Agent": "canais-dark-bot/1.0 (+https://github.com/justmeoccupyingspace-eng/canais-dark)"})
             return json.load(urllib.request.urlopen(req, timeout=90))
         except Exception as e:
             print("retry", i, url[:90], repr(e)[:80])
