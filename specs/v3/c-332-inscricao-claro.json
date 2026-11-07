@@ -52,8 +52,8 @@
   {
    "type": "text",
    "kicker": "Atenção",
-   "text": "A circunscrição não pode ser trocada depois",
-   "hl": "não pode ser trocada",
+   "text": "Circunscrição: sem troca depois",
+   "hl": "sem troca",
    "icon": "⚠️",
    "pose": "shock",
    "narration": "Atenção: a circunscrição não pode ser trocada depois. Veja onde você consegue trabalhar de verdade.",
