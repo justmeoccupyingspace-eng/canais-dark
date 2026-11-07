@@ -6,7 +6,7 @@
  "publish": {
   "channel": "C",
   "privacy": "public",
-  "tiktok_at": "2026-11-15 12:30"
+  "tiktok_at": "2026-11-15 12:00"
  },
  "tiktok": "Português do Escrevente TJSP: sessão, seção ou cessão. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues #ortografia",
  "scenes": [
@@ -77,5 +77,6 @@
    "narration": "Segue: uma questão por dia até a prova.",
    "min_duration": 2.0
   }
- ]
+ ],
+ "palette": "gabaritoclaro"
 }

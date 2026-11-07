@@ -1,4 +1,4 @@
-"""Semana 46 (09–15/11) do Gabarito do Dia (TikTok/Reels, PT-BR): 14 vídeos, 12:30 e 19:30 BRT.
+"""Semana 46 (09–15/11) do Gabarito do Dia (TikTok/Reels, PT-BR): 14 vídeos, 12:00 e 19:00 BRT (paleta clara).
 PLANO.md (07/11), caminho 3 do TikTok: conteúdo que a busca interna pede (inscrição, planilha 2027, prazo) + questões VUNESP de Português e Direito.
 Fatos do edital: Edital de Abertura nº 02/2026 (DJE 19/10/2026) — R$ 6.782,54, inscrições 28/10 a 10/12/2026 no site da VUNESP, taxa R$ 81,
 prova 14/03/2027 à tarde (5 h), 70 questões em 3 blocos, redação 0–40 (mín. 24), cadastro de reserva, 50 circunscrições da 2ª à 10ª RAJ, sem troca.
@@ -14,8 +14,9 @@ V = []
 
 
 def save(name, spec):
-    json.dump(spec, open(f'{OUT}/{name}.json', 'w'), ensure_ascii=False, indent=1)
-    V.append(name)
+    spec['palette'] = 'gabaritoclaro'  # desde 31/10: só a paleta clara tem alcance; escuro zerou
+    json.dump(spec, open(f'{OUT}/{name}-claro.json', 'w'), ensure_ascii=False, indent=1)
+    V.append(name + '-claro')
 
 
 def q(name, at, label, hook_text, hook_hl, hook_icon, hook_n, question, alts, letter, q_n, ans_text, ans_n, steps, trap, tags, caption, qsize=56, asize=48):
@@ -41,7 +42,7 @@ def info(name, at, title, caption, tags, scenes, sell=SELL):
 
 
 # ---------------- 09/11 ----------------
-info('c-332-inscricao', '2026-11-09 12:30', 'Inscrição do TJSP: passo a passo',
+info('c-332-inscricao', '2026-11-09 12:00', 'Inscrição do TJSP: passo a passo',
      'Inscrição do Escrevente TJSP 2026, passo a passo: site da VUNESP, taxa de R$ 81, prazo 10/12, e a escolha da circunscrição que não pode ser trocada depois.',
      '#inscricao #edital #tjsp', [
          {'type': 'hook', 'kicker': 'Edital 2026', 'text': 'Inscrição do TJSP: passo a passo', 'hl': 'passo a passo', 'icon': '📝', 'narration': 'Inscrição do escrevente do TJ de São Paulo, passo a passo, em trinta segundos.', 'min_duration': 2.4},
@@ -50,7 +51,7 @@ info('c-332-inscricao', '2026-11-09 12:30', 'Inscrição do TJSP: passo a passo'
          {'type': 'text', 'kicker': 'Atenção', 'text': 'A circunscrição não pode ser trocada depois', 'hl': 'não pode ser trocada', 'icon': '⚠️', 'pose': 'shock', 'narration': 'Atenção: a circunscrição não pode ser trocada depois. Veja onde você consegue trabalhar de verdade.', 'min_duration': 3.0},
          {'type': 'big', 'text': 'Prazo', 'hl': 'Prazo', 'big': '10/12', 'label': 'inscrições até 10 de dezembro · prova 14/03/2027', 'narration': 'O prazo vai até dez de dezembro. A prova é em quatorze de março.', 'min_duration': 2.8},
      ])
-q('c-333-regencia', '2026-11-09 19:30', 'PORTUGUÊS · REGÊNCIA', 'Assistir o filme ou ao filme?', 'ao filme?', '✍️',
+q('c-333-regencia', '2026-11-09 19:00', 'PORTUGUÊS · REGÊNCIA', 'Assistir o filme ou ao filme?', 'ao filme?', '✍️',
   'Assistir o filme ou assistir ao filme? A VUNESP cobra isso direto.',
   'A regência verbal está de acordo com a norma-padrão em:', ['Assistimos o filme ontem à noite.', 'Prefiro estudar do que trabalhar.', 'O juiz assistiu ao julgamento inteiro.', 'Ela chegou no fórum atrasada.', 'Obedeça o regulamento do concurso.'], 'C',
   'Em qual frase a regência está certa?',
@@ -61,7 +62,7 @@ q('c-333-regencia', '2026-11-09 19:30', 'PORTUGUÊS · REGÊNCIA', 'Assistir o f
   '#portugues #regencia', 'Português do Escrevente TJSP: regência verbal (assistir, preferir, chegar, obedecer).', asize=44)
 
 # ---------------- 10/11 ----------------
-q('c-334-crase', '2026-11-10 12:30', 'PORTUGUÊS · CRASE', 'Crase antes de "ela"?', 'Crase', '✍️',
+q('c-334-crase', '2026-11-10 12:00', 'PORTUGUÊS · CRASE', 'Crase antes de "ela"?', 'Crase', '✍️',
   'Entreguei o documento à ela. Tem crase aí?',
   'O emprego do acento indicativo de crase está correto em:', ['Entreguei o documento à ela.', 'Fui à pé até o cartório.', 'Refiro-me às pessoas citadas no processo.', 'Ele chegou à casa antes das oito.', 'Viajaram à Bahia nas férias.'], 'C',
   'Em qual frase a crase está certa?',
@@ -70,7 +71,7 @@ q('c-334-crase', '2026-11-10 12:30', 'PORTUGUÊS · CRASE', 'Crase antes de "ela
    'Não tem crase antes de pronome pessoal: a ela. Nem antes de palavra masculina: a pé. Casa, sem adjetivo, também não: chegou a casa. Já às pessoas tem, porque o verbo pede a e a palavra aceita o artigo.', ['pronome', 'masculina', 'Casa', 'pessoas']),
   ('"Viajaram à Bahia" está certo: Bahia aceita artigo', 'Bahia', 'E a letra E? Viajaram à Bahia está certo, porque se diz a Bahia. O erro era não ter o acento no enunciado original.'),
   '#portugues #crase', 'Português do Escrevente TJSP: crase antes de pronome, palavra masculina e nome de lugar.', asize=44)
-info('c-335-planilha', '2026-11-10 19:30', 'Planilha de estudos até a prova: grátis',
+info('c-335-planilha', '2026-11-10 19:00', 'Planilha de estudos até a prova: grátis',
      'Planilha de estudos para o Escrevente TJSP 2027: 18 semanas até a prova de 14/03, com Português, Direito e redação distribuídos. Comenta PLANILHA que eu mando no WhatsApp.',
      '#planilha #cronograma #estudos', [
          {'type': 'hook', 'kicker': 'TJSP 2027', 'text': 'Planilha de estudos até a prova: grátis', 'hl': 'grátis', 'icon': '📅', 'narration': 'Planilha de estudos até a prova do TJ de São Paulo, de graça.', 'min_duration': 2.4},
@@ -81,7 +82,7 @@ info('c-335-planilha', '2026-11-10 19:30', 'Planilha de estudos até a prova: gr
      ], sell='Comenta PLANILHA e pega a sua no WhatsApp da bio.')
 
 # ---------------- 11/11 ----------------
-q('c-336-principios', '2026-11-11 12:30', 'DIREITO CONSTITUCIONAL · ADM. PÚBLICA', 'Qual NÃO é princípio do art. 37?', 'NÃO é', '⚖️',
+q('c-336-principios', '2026-11-11 12:00', 'DIREITO CONSTITUCIONAL · ADM. PÚBLICA', 'Qual NÃO é princípio do art. 37?', 'NÃO é', '⚖️',
   'Legalidade, impessoalidade, moralidade, publicidade, eficiência. Qual desses não está no artigo trinta e sete?',
   'NÃO é princípio expresso da Administração Pública no caput do art. 37 da Constituição:', ['Legalidade', 'Impessoalidade', 'Moralidade', 'Proporcionalidade', 'Eficiência'], 'D',
   'Qual não é princípio expresso do artigo trinta e sete?',
@@ -90,7 +91,7 @@ q('c-336-principios', '2026-11-11 12:30', 'DIREITO CONSTITUCIONAL · ADM. PÚBLI
    'Decora o LIMPE: legalidade, impessoalidade, moralidade, publicidade e eficiência. Esses cinco estão escritos no caput.', ['legalidade', 'impessoalidade', 'moralidade', 'publicidade', 'eficiência']),
   ('Proporcionalidade existe, mas é implícito', 'implícito', 'Pegadinha: proporcionalidade e razoabilidade existem, mas são princípios implícitos. A questão pediu o expresso.'),
   '#direitoconstitucional #administracaopublica', 'Direito para o Escrevente TJSP: princípios expressos do art. 37 (LIMPE).', asize=46)
-q('c-337-pronomes', '2026-11-11 19:30', 'PORTUGUÊS · PRONOMES', 'Entre eu e você ou entre mim e você?', 'mim', '✍️',
+q('c-337-pronomes', '2026-11-11 19:00', 'PORTUGUÊS · PRONOMES', 'Entre eu e você ou entre mim e você?', 'mim', '✍️',
   'Entre eu e você, ou entre mim e você? Essa derruba muita gente.',
   'O emprego do pronome está de acordo com a norma-padrão em:', ['Isso é para mim fazer hoje.', 'Entre eu e você, está tudo certo.', 'Nada aconteceu entre mim e ti.', 'Mande o recurso para eu, por favor.', 'Ela saiu antes de mim ir embora.'], 'C',
   'Em qual frase o pronome está certo?',
@@ -101,7 +102,7 @@ q('c-337-pronomes', '2026-11-11 19:30', 'PORTUGUÊS · PRONOMES', 'Entre eu e vo
   '#portugues #pronomes', 'Português do Escrevente TJSP: eu ou mim depois de preposição.', asize=44)
 
 # ---------------- 12/11 ----------------
-info('c-338-faltam28', '2026-11-12 12:30', 'Faltam 28 dias para a inscrição fechar',
+info('c-338-faltam28', '2026-11-12 12:00', 'Faltam 28 dias para a inscrição fechar',
      'Inscrições do Escrevente TJSP 2026 fecham em 10/12. Checklist antes de pagar o boleto: circunscrição certa, dados conferidos, taxa de R$ 81.',
      '#inscricao #prazo #edital', [
          {'type': 'hook', 'kicker': 'TJSP 2026', 'text': 'Faltam 28 dias para a inscrição fechar', 'hl': '28 dias', 'icon': '⏳', 'narration': 'Faltam vinte e oito dias para a inscrição do escrevente do TJ fechar.', 'min_duration': 2.4},
@@ -110,7 +111,7 @@ info('c-338-faltam28', '2026-11-12 12:30', 'Faltam 28 dias para a inscrição fe
           'narration': 'Confira antes de pagar: a circunscrição, que não troca depois. Nome, CPF e data de nascimento. Um e-mail que você realmente abre. E guarde o comprovante do boleto.', 'min_duration': 4.2},
          {'type': 'text', 'kicker': 'Dica', 'text': 'Não deixe para o último dia: o site cai', 'hl': 'último dia', 'icon': '⚠️', 'pose': 'shrug', 'narration': 'E não deixa pro último dia. Site de concurso cai, e o prazo não espera.', 'min_duration': 2.8},
      ])
-q('c-339-concnominal', '2026-11-12 19:30', 'PORTUGUÊS · CONCORDÂNCIA NOMINAL', 'É proibido entrada ou proibida a entrada?', 'proibida', '✍️',
+q('c-339-concnominal', '2026-11-12 19:00', 'PORTUGUÊS · CONCORDÂNCIA NOMINAL', 'É proibido entrada ou proibida a entrada?', 'proibida', '✍️',
   'É proibido entrada ou é proibida a entrada? Tem regra.',
   'A concordância nominal está de acordo com a norma-padrão em:', ['É proibido a entrada de estranhos.', 'É proibida a entrada de estranhos.', 'Anexo seguem os documentos pedidos.', 'Seguem anexo as certidões.', 'São meio-dia e meio.'], 'B',
   'Em qual frase a concordância nominal está certa?',
@@ -121,7 +122,7 @@ q('c-339-concnominal', '2026-11-12 19:30', 'PORTUGUÊS · CONCORDÂNCIA NOMINAL'
   '#portugues #concordancia', 'Português do Escrevente TJSP: concordância nominal (proibido, anexo, meio).', asize=42)
 
 # ---------------- 13/11 ----------------
-q('c-340-atributos', '2026-11-13 12:30', 'DIREITO ADMINISTRATIVO · ATO ADM.', 'Qual NÃO é atributo do ato administrativo?', 'NÃO é', '⚖️',
+q('c-340-atributos', '2026-11-13 12:00', 'DIREITO ADMINISTRATIVO · ATO ADM.', 'Qual NÃO é atributo do ato administrativo?', 'NÃO é', '⚖️',
   'Presunção de legitimidade, imperatividade, autoexecutoriedade. E o que não é atributo?',
   'NÃO constitui atributo do ato administrativo:', ['Presunção de legitimidade', 'Imperatividade', 'Autoexecutoriedade', 'Tipicidade', 'Discricionariedade'], 'E',
   'Qual não é atributo do ato administrativo?',
@@ -130,7 +131,7 @@ q('c-340-atributos', '2026-11-13 12:30', 'DIREITO ADMINISTRATIVO · ATO ADM.', '
    'Presunção de legitimidade: o ato vale até prova em contrário. Imperatividade: obriga, mesmo sem você concordar. Autoexecutoriedade: a administração executa sem pedir ao Judiciário. E tipicidade: cada ato corresponde a uma figura prevista em lei.', ['Presunção', 'Imperatividade', 'Autoexecutoriedade', 'tipicidade']),
   ('Discricionariedade é característica, não atributo', 'característica', 'Discricionariedade é a margem de escolha de alguns atos. É característica, não atributo.'),
   '#direitoadministrativo #atoadministrativo', 'Direito para o Escrevente TJSP: atributos do ato administrativo.', asize=46)
-q('c-341-peculato', '2026-11-13 19:30', 'DIREITO PENAL · CRIMES CONTRA A ADM.', 'Ficar com bem público é qual crime?', 'qual crime?', '⚖️',
+q('c-341-peculato', '2026-11-13 19:00', 'DIREITO PENAL · CRIMES CONTRA A ADM.', 'Ficar com bem público é qual crime?', 'qual crime?', '⚖️',
   'O servidor fica com um bem público que estava com ele por causa do cargo. Qual é o crime?',
   'O funcionário público que se apropria de bem público de que tem a posse em razão do cargo comete:', ['Concussão', 'Peculato', 'Corrupção passiva', 'Prevaricação', 'Excesso de exação'], 'B',
   'Qual é o crime?',
@@ -141,7 +142,7 @@ q('c-341-peculato', '2026-11-13 19:30', 'DIREITO PENAL · CRIMES CONTRA A ADM.',
   '#direitopenal #peculato', 'Direito Penal para o Escrevente TJSP: peculato, concussão, corrupção passiva e prevaricação.', asize=46)
 
 # ---------------- 14/11 ----------------
-q('c-342-afim', '2026-11-14 12:30', 'PORTUGUÊS · A FIM OU AFIM', 'A fim de ou afim de?', 'afim', '✍️',
+q('c-342-afim', '2026-11-14 12:00', 'PORTUGUÊS · A FIM OU AFIM', 'A fim de ou afim de?', 'afim', '✍️',
   'A fim de estudar, ou afim de estudar? Separado ou junto?',
   'O emprego de "a fim" ou "afim" está correto em:', ['Vim afim de resolver o problema.', 'Temos ideias a fim sobre o caso.', 'Ele veio a fim de ajudar na mudança.', 'São assuntos a fim entre si.', 'Afim de quê você perguntou isso?'], 'C',
   'Em qual frase está certo?',
@@ -150,7 +151,7 @@ q('c-342-afim', '2026-11-14 12:30', 'PORTUGUÊS · A FIM OU AFIM', 'A fim de ou 
    'A fim de, separado, indica finalidade: a fim de ajudar. Afim, junto, é adjetivo: parecido. Assuntos afins, ideias afins. E estou a fim de ir, separado, é ter vontade.', ['finalidade', 'adjetivo', 'afins', 'vontade']),
   ('"Afim de" não existe na norma-padrão', 'não existe', 'Pegadinha simples: afim de, junto e com de, não existe na norma-padrão.'),
   '#portugues', 'Português do Escrevente TJSP: a fim de ou afim.', asize=44)
-q('c-343-casa', '2026-11-14 19:30', 'DIREITO CONSTITUCIONAL · ART. 5º', 'Polícia pode entrar na sua casa à noite?', 'à noite?', '⚖️',
+q('c-343-casa', '2026-11-14 19:00', 'DIREITO CONSTITUCIONAL · ART. 5º', 'Polícia pode entrar na sua casa à noite?', 'à noite?', '⚖️',
   'A polícia pode entrar na sua casa à noite sem você deixar?',
   'Segundo o art. 5º, XI, da Constituição, é possível entrar na casa sem consentimento do morador:', ['Em caso de flagrante delito, a qualquer hora.', 'Por determinação judicial, a qualquer hora.', 'Por ordem de autoridade policial, durante o dia.', 'Por ordem do delegado, durante a noite.', 'Em nenhuma hipótese.'], 'A',
   'Quando pode entrar sem consentimento?',
@@ -161,7 +162,7 @@ q('c-343-casa', '2026-11-14 19:30', 'DIREITO CONSTITUCIONAL · ART. 5º', 'Polí
   '#direitoconstitucional #art5', 'Direito Constitucional para o Escrevente TJSP: inviolabilidade do domicílio (art. 5º, XI).', asize=44)
 
 # ---------------- 15/11 ----------------
-q('c-344-sessao', '2026-11-15 12:30', 'PORTUGUÊS · HOMÔNIMOS', 'Sessão, seção ou cessão?', 'cessão?', '✍️',
+q('c-344-sessao', '2026-11-15 12:00', 'PORTUGUÊS · HOMÔNIMOS', 'Sessão, seção ou cessão?', 'cessão?', '✍️',
   'Sessão, seção ou cessão? Três palavras, três sentidos. Cai em cartório e cai na prova.',
   'Preenche corretamente as lacunas: "A ___ do júri durou cinco horas; a ___ de direitos foi registrada; leia a ___ de esportes."', ['seção, sessão, cessão', 'sessão, cessão, seção', 'cessão, seção, sessão', 'sessão, seção, cessão', 'seção, cessão, sessão'], 'B',
   'Qual sequência preenche certo?',
@@ -170,7 +171,7 @@ q('c-344-sessao', '2026-11-15 12:30', 'PORTUGUÊS · HOMÔNIMOS', 'Sessão, seç
    'Sessão com dois esses é reunião: sessão do júri. Cessão com c é ceder: cessão de direitos. E seção com ç é divisão: seção do jornal.', ['Sessão', 'Cessão', 'seção']),
   None,
   '#portugues #ortografia', 'Português do Escrevente TJSP: sessão, seção ou cessão.', asize=44)
-info('c-345-redacao', '2026-11-15 19:30', 'Redação do TJSP: 24 de 40 ou está fora',
+info('c-345-redacao', '2026-11-15 19:00', 'Redação do TJSP: 24 de 40 ou está fora',
      'Redação do Escrevente TJSP 2027: nota mínima 24 de 40, no mesmo dia da prova objetiva (14/03). O que a banca costuma cobrar e como treinar uma por semana.',
      '#redacao #edital #provatjsp', [
          {'type': 'hook', 'kicker': 'Edital 2026', 'text': 'Redação do TJSP: 24 de 40 ou está fora', 'hl': '24 de 40', 'icon': '📝', 'narration': 'Redação do escrevente do TJ: vinte e quatro de quarenta, ou você está fora.', 'min_duration': 2.4},

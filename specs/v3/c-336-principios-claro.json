@@ -6,7 +6,7 @@
  "publish": {
   "channel": "C",
   "privacy": "public",
-  "tiktok_at": "2026-11-11 12:30"
+  "tiktok_at": "2026-11-11 12:00"
  },
  "tiktok": "Direito para o Escrevente TJSP: princípios expressos do art. 37 (LIMPE). Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #direitoconstitucional #administracaopublica",
  "scenes": [
@@ -95,5 +95,6 @@
    "narration": "Segue: uma questão por dia até a prova.",
    "min_duration": 2.0
   }
- ]
+ ],
+ "palette": "gabaritoclaro"
 }

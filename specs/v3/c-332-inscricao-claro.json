@@ -6,7 +6,7 @@
  "publish": {
   "channel": "C",
   "privacy": "public",
-  "tiktok_at": "2026-11-09 12:30"
+  "tiktok_at": "2026-11-09 12:00"
  },
  "tiktok": "Inscrição do Escrevente TJSP 2026, passo a passo: site da VUNESP, taxa de R$ 81, prazo 10/12, e a escolha da circunscrição que não pode ser trocada depois. Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #inscricao #edital #tjsp",
  "scenes": [
@@ -76,5 +76,6 @@
    "narration": "Segue: uma questão por dia até a prova.",
    "min_duration": 2.0
   }
- ]
+ ],
+ "palette": "gabaritoclaro"
 }
