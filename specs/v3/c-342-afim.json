@@ -1,0 +1,95 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "A fim de ou afim de?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-14 12:30"
+ },
+ "tiktok": "Português do Escrevente TJSP: a fim de ou afim. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "A fim de ou afim de?",
+   "hl": "afim",
+   "icon": "✍️",
+   "narration": "A fim de estudar, ou afim de estudar? Separado ou junto?",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · A FIM OU AFIM",
+   "q": "O emprego de \"a fim\" ou \"afim\" está correto em:",
+   "alts": [
+    "Vim afim de resolver o problema.",
+    "Temos ideias a fim sobre o caso.",
+    "Ele veio a fim de ajudar na mudança.",
+    "São assuntos a fim entre si.",
+    "Afim de quê você perguntou isso?"
+   ],
+   "correct": 2,
+   "narration": "Em qual frase está certo?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 44
+  },
+  {
+   "type": "text",
+   "text": "Letra C: a fim de ajudar",
+   "hl": "a fim de ajudar",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra C!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Separado ou junto",
+   "hl": "junto",
+   "rows": [
+    {
+     "t": "A fim de (separado): finalidade",
+     "cue": "finalidade"
+    },
+    {
+     "t": "Afim (junto): semelhante, parecido",
+     "cue": "adjetivo"
+    },
+    {
+     "t": "Assuntos afins, ideias afins",
+     "cue": "afins"
+    },
+    {
+     "t": "Estou a fim de ir = com vontade",
+     "cue": "vontade"
+    }
+   ],
+   "narration": "A fim de, separado, indica finalidade: a fim de ajudar. Afim, junto, é adjetivo: parecido. Assuntos afins, ideias afins. E estou a fim de ir, separado, é ter vontade.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "\"Afim de\" não existe na norma-padrão",
+   "hl": "não existe",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha simples: afim de, junto e com de, não existe na norma-padrão.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

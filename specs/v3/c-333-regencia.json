@@ -1,0 +1,95 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Assistir o filme ou ao filme?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-09 19:30"
+ },
+ "tiktok": "Português do Escrevente TJSP: regência verbal (assistir, preferir, chegar, obedecer). Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues #regencia",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Assistir o filme ou ao filme?",
+   "hl": "ao filme?",
+   "icon": "✍️",
+   "narration": "Assistir o filme ou assistir ao filme? A VUNESP cobra isso direto.",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · REGÊNCIA",
+   "q": "A regência verbal está de acordo com a norma-padrão em:",
+   "alts": [
+    "Assistimos o filme ontem à noite.",
+    "Prefiro estudar do que trabalhar.",
+    "O juiz assistiu ao julgamento inteiro.",
+    "Ela chegou no fórum atrasada.",
+    "Obedeça o regulamento do concurso."
+   ],
+   "correct": 2,
+   "narration": "Em qual frase a regência está certa?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 44
+  },
+  {
+   "type": "text",
+   "text": "Letra C: assistiu ao julgamento",
+   "hl": "assistiu ao julgamento",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra C!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Regências que caem",
+   "hl": "caem",
+   "rows": [
+    {
+     "t": "Assistir (ver): assistir AO filme",
+     "cue": "Assistir"
+    },
+    {
+     "t": "Preferir: preferir X A Y",
+     "cue": "Preferir"
+    },
+    {
+     "t": "Chegar: chegar AO fórum",
+     "cue": "Chegar"
+    },
+    {
+     "t": "Obedecer: obedecer AO regulamento",
+     "cue": "obedecer"
+    }
+   ],
+   "narration": "Assistir, no sentido de ver, pede a preposição a: assistir ao filme. Preferir é uma coisa a outra, nunca do que. Chegar ao fórum, com a. E obedecer ao regulamento, também com a.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "\"Assistir o doente\" existe: significa ajudar",
+   "hl": "ajudar",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: assistir o doente, sem a, existe. Mas aí significa ajudar, prestar assistência.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

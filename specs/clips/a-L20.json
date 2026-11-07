@@ -1,0 +1,40 @@
+{
+ "channel": "chartbound",
+ "long": "LWCi-qzZxMQ",
+ "longTitle": "22 Countries Passed Argentina Since 2000",
+ "preview": "long-42354495734",
+ "timeline": "lprep-42354495734",
+ "timeline_file": "a-L20-argentina.json",
+ "sources": "Sources: IMF World Economic Outlook, October 2026 (PPPPC, NGDPDPC, NGDP_RPCH, PCPIPCH, GGXWDG_NGDP, LUR, LP). \"Passed\" = GDP per capita in PPP below Argentina's in 2000 and above it every year from the crossing through 2026.",
+ "music_credits": "Music by Kevin MacLeod (incompetech.com), CC BY 4.0.",
+ "hashtags": "#argentina #economics #imf #latinamerica #data",
+ "tags": [
+  "argentina",
+  "argentina economy",
+  "argentina vs chile",
+  "argentina decline",
+  "milei",
+  "gdp per capita",
+  "imf",
+  "economics",
+  "shorts"
+ ],
+ "clips": [
+  {
+   "from": "s00",
+   "to": "s00",
+   "hook": "Argentina was richer than *South Korea*",
+   "title": "Argentina was richer than South Korea and Poland in 1990 #Shorts",
+   "desc": "GDP per person, PPP (IMF WEO Oct 2026): 1990 Argentina $8.3k > Korea $7.7k, Poland $6.7k, Chile $5.9k. 2026: Korea $70k, Poland $60k, Chile $37k, Argentina $33k.",
+   "at": "2026-11-07T22:00:00Z"
+  },
+  {
+   "from": "s02",
+   "to": "s02",
+   "hook": "22 countries passed *Argentina*",
+   "title": "22 countries passed Argentina since 2000 #Shorts",
+   "desc": "Countries poorer than Argentina per person in 2000 that are richer today (IMF, GDP per capita PPP, Oct 2026).",
+   "at": "2026-11-08T01:00:00Z"
+  }
+ ]
+}

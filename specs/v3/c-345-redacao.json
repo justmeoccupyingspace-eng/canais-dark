@@ -1,0 +1,80 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+4%",
+ "title": "Redação do TJSP: 24 de 40 ou está fora",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-15 19:30"
+ },
+ "tiktok": "Redação do Escrevente TJSP 2027: nota mínima 24 de 40, no mesmo dia da prova objetiva (14/03). O que a banca costuma cobrar e como treinar uma por semana. Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #redacao #edital #provatjsp",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Edital 2026",
+   "text": "Redação do TJSP: 24 de 40 ou está fora",
+   "hl": "24 de 40",
+   "icon": "📝",
+   "narration": "Redação do escrevente do TJ: vinte e quatro de quarenta, ou você está fora.",
+   "min_duration": 2.4
+  },
+  {
+   "type": "big",
+   "text": "Nota mínima",
+   "hl": "mínima",
+   "big": "24/40",
+   "label": "no mesmo dia da objetiva · 14/03/2027",
+   "narration": "A nota mínima é vinte e quatro de quarenta, no mesmo dia da prova objetiva.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "steps",
+   "text": "Como treinar",
+   "hl": "treinar",
+   "rows": [
+    {
+     "t": "Uma redação por semana, cronometrada",
+     "icon": "⏱️",
+     "cue": "semana"
+    },
+    {
+     "t": "Tema atual + posição clara",
+     "icon": "🎯",
+     "cue": "posição"
+    },
+    {
+     "t": "Norma-padrão: crase, concordância, vírgula",
+     "icon": "✍️",
+     "cue": "Norma"
+    },
+    {
+     "t": "Releia e corte repetição",
+     "icon": "🔍",
+     "cue": "Releia"
+    }
+   ],
+   "result": false,
+   "narration": "Uma redação por semana, cronometrada. Tema atual e posição clara. Norma-padrão: crase, concordância e vírgula. E releia, cortando repetição.",
+   "min_duration": 4.0
+  },
+  {
+   "type": "text",
+   "kicker": "Lembrete",
+   "text": "Fuga ao tema zera a redação",
+   "hl": "zera",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "E lembra: fugir do tema zera a redação. Leia a proposta duas vezes antes de escrever.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

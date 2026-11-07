@@ -1,0 +1,99 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Qual NÃO é princípio do art. 37?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-11 12:30"
+ },
+ "tiktok": "Direito para o Escrevente TJSP: princípios expressos do art. 37 (LIMPE). Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #direitoconstitucional #administracaopublica",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Qual NÃO é princípio do art. 37?",
+   "hl": "NÃO é",
+   "icon": "⚖️",
+   "narration": "Legalidade, impessoalidade, moralidade, publicidade, eficiência. Qual desses não está no artigo trinta e sete?",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "DIREITO CONSTITUCIONAL · ADM. PÚBLICA",
+   "q": "NÃO é princípio expresso da Administração Pública no caput do art. 37 da Constituição:",
+   "alts": [
+    "Legalidade",
+    "Impessoalidade",
+    "Moralidade",
+    "Proporcionalidade",
+    "Eficiência"
+   ],
+   "correct": 3,
+   "narration": "Qual não é princípio expresso do artigo trinta e sete?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 46
+  },
+  {
+   "type": "text",
+   "text": "Letra D: proporcionalidade",
+   "hl": "proporcionalidade",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra D!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "LIMPE: os cinco expressos",
+   "hl": "LIMPE",
+   "rows": [
+    {
+     "t": "L de Legalidade",
+     "cue": "legalidade"
+    },
+    {
+     "t": "I de Impessoalidade",
+     "cue": "impessoalidade"
+    },
+    {
+     "t": "M de Moralidade",
+     "cue": "moralidade"
+    },
+    {
+     "t": "P de Publicidade",
+     "cue": "publicidade"
+    },
+    {
+     "t": "E de Eficiência",
+     "cue": "eficiência"
+    }
+   ],
+   "narration": "Decora o LIMPE: legalidade, impessoalidade, moralidade, publicidade e eficiência. Esses cinco estão escritos no caput.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "Proporcionalidade existe, mas é implícito",
+   "hl": "implícito",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: proporcionalidade e razoabilidade existem, mas são princípios implícitos. A questão pediu o expresso.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

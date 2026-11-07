@@ -1,0 +1,95 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "É proibido entrada ou proibida a entrada?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-12 19:30"
+ },
+ "tiktok": "Português do Escrevente TJSP: concordância nominal (proibido, anexo, meio). Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues #concordancia",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "É proibido entrada ou proibida a entrada?",
+   "hl": "proibida",
+   "icon": "✍️",
+   "narration": "É proibido entrada ou é proibida a entrada? Tem regra.",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · CONCORDÂNCIA NOMINAL",
+   "q": "A concordância nominal está de acordo com a norma-padrão em:",
+   "alts": [
+    "É proibido a entrada de estranhos.",
+    "É proibida a entrada de estranhos.",
+    "Anexo seguem os documentos pedidos.",
+    "Seguem anexo as certidões.",
+    "São meio-dia e meio."
+   ],
+   "correct": 1,
+   "narration": "Em qual frase a concordância nominal está certa?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 42
+  },
+  {
+   "type": "text",
+   "text": "Letra B: é proibida a entrada",
+   "hl": "é proibida a entrada",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra B!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "A regra do artigo",
+   "hl": "artigo",
+   "rows": [
+    {
+     "t": "Com artigo: é proibidA A entrada",
+     "cue": "artigo"
+    },
+    {
+     "t": "Sem artigo: é proibido entrada",
+     "cue": "masculino"
+    },
+    {
+     "t": "Anexo concorda: anexos seguem os documentos",
+     "cue": "Anexo"
+    },
+    {
+     "t": "Meio-dia e meiA (hora)",
+     "cue": "meia"
+    }
+   ],
+   "narration": "Com artigo, concorda: é proibida a entrada. Sem artigo, fica no masculino: é proibido entrada. Anexo concorda com o substantivo: anexos seguem os documentos. E é meio-dia e meia, porque é meia hora.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "\"Em anexo\" não varia",
+   "hl": "não varia",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: em anexo, com a preposição, não varia. Em anexo seguem as certidões.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

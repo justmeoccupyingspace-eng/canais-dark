@@ -1,0 +1,95 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Polícia pode entrar na sua casa à noite?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-14 19:30"
+ },
+ "tiktok": "Direito Constitucional para o Escrevente TJSP: inviolabilidade do domicílio (art. 5º, XI). Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #direitoconstitucional #art5",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Polícia pode entrar na sua casa à noite?",
+   "hl": "à noite?",
+   "icon": "⚖️",
+   "narration": "A polícia pode entrar na sua casa à noite sem você deixar?",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "DIREITO CONSTITUCIONAL · ART. 5º",
+   "q": "Segundo o art. 5º, XI, da Constituição, é possível entrar na casa sem consentimento do morador:",
+   "alts": [
+    "Em caso de flagrante delito, a qualquer hora.",
+    "Por determinação judicial, a qualquer hora.",
+    "Por ordem de autoridade policial, durante o dia.",
+    "Por ordem do delegado, durante a noite.",
+    "Em nenhuma hipótese."
+   ],
+   "correct": 0,
+   "narration": "Quando pode entrar sem consentimento?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 44
+  },
+  {
+   "type": "text",
+   "text": "Letra A: flagrante, a qualquer hora",
+   "hl": "flagrante, a qualquer hora",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra A!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "A casa é asilo inviolável, salvo",
+   "hl": "salvo",
+   "rows": [
+    {
+     "t": "Flagrante delito: qualquer hora",
+     "cue": "flagrante"
+    },
+    {
+     "t": "Desastre ou prestar socorro: qualquer hora",
+     "cue": "Desastre"
+    },
+    {
+     "t": "Determinação judicial: só durante o DIA",
+     "cue": "judicial"
+    },
+    {
+     "t": "Ordem policial sozinha: não basta",
+     "cue": "policial"
+    }
+   ],
+   "narration": "A casa é asilo inviolável, salvo: flagrante delito, a qualquer hora. Desastre ou socorro, a qualquer hora. Determinação judicial, só durante o dia. Ordem policial sozinha não basta.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "Mandado judicial à noite: não pode",
+   "hl": "à noite",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: até com mandado judicial, à noite não pode. O mandado só vale de dia.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

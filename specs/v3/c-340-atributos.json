@@ -1,0 +1,95 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Qual NÃO é atributo do ato administrativo?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-13 12:30"
+ },
+ "tiktok": "Direito para o Escrevente TJSP: atributos do ato administrativo. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #direitoadministrativo #atoadministrativo",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Qual NÃO é atributo do ato administrativo?",
+   "hl": "NÃO é",
+   "icon": "⚖️",
+   "narration": "Presunção de legitimidade, imperatividade, autoexecutoriedade. E o que não é atributo?",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "DIREITO ADMINISTRATIVO · ATO ADM.",
+   "q": "NÃO constitui atributo do ato administrativo:",
+   "alts": [
+    "Presunção de legitimidade",
+    "Imperatividade",
+    "Autoexecutoriedade",
+    "Tipicidade",
+    "Discricionariedade"
+   ],
+   "correct": 4,
+   "narration": "Qual não é atributo do ato administrativo?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 46
+  },
+  {
+   "type": "text",
+   "text": "Letra E: discricionariedade",
+   "hl": "discricionariedade",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra E!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Os atributos",
+   "hl": "atributos",
+   "rows": [
+    {
+     "t": "Presunção de legitimidade: vale até prova em contrário",
+     "cue": "Presunção"
+    },
+    {
+     "t": "Imperatividade: obriga mesmo sem concordar",
+     "cue": "Imperatividade"
+    },
+    {
+     "t": "Autoexecutoriedade: executa sem o Judiciário",
+     "cue": "Autoexecutoriedade"
+    },
+    {
+     "t": "Tipicidade: cada ato tem figura em lei",
+     "cue": "tipicidade"
+    }
+   ],
+   "narration": "Presunção de legitimidade: o ato vale até prova em contrário. Imperatividade: obriga, mesmo sem você concordar. Autoexecutoriedade: a administração executa sem pedir ao Judiciário. E tipicidade: cada ato corresponde a uma figura prevista em lei.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "Discricionariedade é característica, não atributo",
+   "hl": "característica",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Discricionariedade é a margem de escolha de alguns atos. É característica, não atributo.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

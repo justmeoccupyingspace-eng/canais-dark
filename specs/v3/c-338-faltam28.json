@@ -1,0 +1,80 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+4%",
+ "title": "Faltam 28 dias para a inscrição fechar",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-12 12:30"
+ },
+ "tiktok": "Inscrições do Escrevente TJSP 2026 fecham em 10/12. Checklist antes de pagar o boleto: circunscrição certa, dados conferidos, taxa de R$ 81. Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #inscricao #prazo #edital",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "TJSP 2026",
+   "text": "Faltam 28 dias para a inscrição fechar",
+   "hl": "28 dias",
+   "icon": "⏳",
+   "narration": "Faltam vinte e oito dias para a inscrição do escrevente do TJ fechar.",
+   "min_duration": 2.4
+  },
+  {
+   "type": "big",
+   "text": "Último dia",
+   "hl": "Último",
+   "big": "10/12",
+   "label": "inscrição no site da VUNESP · taxa R$ 81",
+   "narration": "O último dia é dez de dezembro, no site da VUNESP.",
+   "min_duration": 2.6
+  },
+  {
+   "type": "steps",
+   "text": "Confira antes de pagar",
+   "hl": "antes de pagar",
+   "rows": [
+    {
+     "t": "Circunscrição: não troca depois",
+     "icon": "📍",
+     "cue": "Circunscrição"
+    },
+    {
+     "t": "Nome, CPF e data de nascimento",
+     "icon": "🪪",
+     "cue": "CPF"
+    },
+    {
+     "t": "E-mail que você realmente abre",
+     "icon": "📧",
+     "cue": "mail"
+    },
+    {
+     "t": "Boleto pago e comprovante guardado",
+     "icon": "🧾",
+     "cue": "comprovante"
+    }
+   ],
+   "result": false,
+   "narration": "Confira antes de pagar: a circunscrição, que não troca depois. Nome, CPF e data de nascimento. Um e-mail que você realmente abre. E guarde o comprovante do boleto.",
+   "min_duration": 4.2
+  },
+  {
+   "type": "text",
+   "kicker": "Dica",
+   "text": "Não deixe para o último dia: o site cai",
+   "hl": "último dia",
+   "icon": "⚠️",
+   "pose": "shrug",
+   "narration": "E não deixa pro último dia. Site de concurso cai, e o prazo não espera.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Ficar com bem público é qual crime?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-13 19:30"
+ },
+ "tiktok": "Direito Penal para o Escrevente TJSP: peculato, concussão, corrupção passiva e prevaricação. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #direitopenal #peculato",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Ficar com bem público é qual crime?",
+   "hl": "qual crime?",
+   "icon": "⚖️",
+   "narration": "O servidor fica com um bem público que estava com ele por causa do cargo. Qual é o crime?",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "DIREITO PENAL · CRIMES CONTRA A ADM.",
+   "q": "O funcionário público que se apropria de bem público de que tem a posse em razão do cargo comete:",
+   "alts": [
+    "Concussão",
+    "Peculato",
+    "Corrupção passiva",
+    "Prevaricação",
+    "Excesso de exação"
+   ],
+   "correct": 1,
+   "narration": "Qual é o crime?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 46
+  },
+  {
+   "type": "text",
+   "text": "Letra B: peculato",
+   "hl": "peculato",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra B!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Não confunda",
+   "hl": "confunda",
+   "rows": [
+    {
+     "t": "Peculato: apropria-se do bem (posse pelo cargo)",
+     "cue": "Peculato"
+    },
+    {
+     "t": "Concussão: exige vantagem",
+     "cue": "Concussão"
+    },
+    {
+     "t": "Corrupção passiva: pede ou recebe vantagem",
+     "cue": "Corrupção"
+    },
+    {
+     "t": "Prevaricação: deixa de agir por interesse próprio",
+     "cue": "Prevaricação"
+    }
+   ],
+   "narration": "Peculato: o servidor se apropria do bem que tem pelo cargo. Concussão: exige vantagem. Corrupção passiva: pede ou recebe vantagem. Prevaricação: deixa de praticar o ato por interesse pessoal.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "Peculato-furto: sem a posse, mas com facilidade do cargo",
+   "hl": "Peculato-furto",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: se ele não tinha a posse, mas usou a facilidade do cargo para subtrair, é peculato-furto. Continua peculato.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

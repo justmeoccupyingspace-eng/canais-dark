@@ -1,0 +1,95 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Entre eu e você ou entre mim e você?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-11 19:30"
+ },
+ "tiktok": "Português do Escrevente TJSP: eu ou mim depois de preposição. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues #pronomes",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Entre eu e você ou entre mim e você?",
+   "hl": "mim",
+   "icon": "✍️",
+   "narration": "Entre eu e você, ou entre mim e você? Essa derruba muita gente.",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · PRONOMES",
+   "q": "O emprego do pronome está de acordo com a norma-padrão em:",
+   "alts": [
+    "Isso é para mim fazer hoje.",
+    "Entre eu e você, está tudo certo.",
+    "Nada aconteceu entre mim e ti.",
+    "Mande o recurso para eu, por favor.",
+    "Ela saiu antes de mim ir embora."
+   ],
+   "correct": 2,
+   "narration": "Em qual frase o pronome está certo?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 44
+  },
+  {
+   "type": "text",
+   "text": "Letra C: entre mim e ti",
+   "hl": "entre mim e ti",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra C!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Eu ou mim?",
+   "hl": "mim",
+   "rows": [
+    {
+     "t": "Depois de preposição: mim, ti (entre mim e ti)",
+     "cue": "preposição"
+    },
+    {
+     "t": "Mim nunca faz ação: \"para mim fazer\" ✘",
+     "cue": "ação"
+    },
+    {
+     "t": "Com verbo no infinitivo: para EU fazer",
+     "cue": "fazer"
+    },
+    {
+     "t": "Antes de EU ir embora",
+     "cue": "embora"
+    }
+   ],
+   "narration": "Depois de preposição, vem mim ou ti: entre mim e ti. Mas mim nunca faz ação. Se tem verbo depois, é eu: para eu fazer, antes de eu ir embora.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "\"Para mim, estudar é fácil\" está certo",
+   "hl": "certo",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: para mim, estudar é fácil, está certo. O mim não é sujeito de estudar, é só opinião.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

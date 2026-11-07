@@ -1,0 +1,81 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Sessão, seção ou cessão?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-15 12:30"
+ },
+ "tiktok": "Português do Escrevente TJSP: sessão, seção ou cessão. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues #ortografia",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Sessão, seção ou cessão?",
+   "hl": "cessão?",
+   "icon": "✍️",
+   "narration": "Sessão, seção ou cessão? Três palavras, três sentidos. Cai em cartório e cai na prova.",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · HOMÔNIMOS",
+   "q": "Preenche corretamente as lacunas: \"A ___ do júri durou cinco horas; a ___ de direitos foi registrada; leia a ___ de esportes.\"",
+   "alts": [
+    "seção, sessão, cessão",
+    "sessão, cessão, seção",
+    "cessão, seção, sessão",
+    "sessão, seção, cessão",
+    "seção, cessão, sessão"
+   ],
+   "correct": 1,
+   "narration": "Qual sequência preenche certo?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 44
+  },
+  {
+   "type": "text",
+   "text": "Letra B: sessão, cessão, seção",
+   "hl": "sessão, cessão, seção",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra B!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Cada uma no seu lugar",
+   "hl": "seu lugar",
+   "rows": [
+    {
+     "t": "Sessão: reunião, tempo (sessão do júri)",
+     "cue": "Sessão"
+    },
+    {
+     "t": "Cessão: ato de ceder (cessão de direitos)",
+     "cue": "Cessão"
+    },
+    {
+     "t": "Seção: parte, divisão (seção do jornal)",
+     "cue": "seção"
+    }
+   ],
+   "narration": "Sessão com dois esses é reunião: sessão do júri. Cessão com c é ceder: cessão de direitos. E seção com ç é divisão: seção do jornal.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

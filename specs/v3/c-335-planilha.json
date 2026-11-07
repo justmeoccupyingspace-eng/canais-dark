@@ -1,0 +1,80 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+4%",
+ "title": "Planilha de estudos até a prova: grátis",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-10 19:30"
+ },
+ "tiktok": "Planilha de estudos para o Escrevente TJSP 2027: 18 semanas até a prova de 14/03, com Português, Direito e redação distribuídos. Comenta PLANILHA que eu mando no WhatsApp. Comenta PLANILHA e pega a sua no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #planilha #cronograma #estudos",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "TJSP 2027",
+   "text": "Planilha de estudos até a prova: grátis",
+   "hl": "grátis",
+   "icon": "📅",
+   "narration": "Planilha de estudos até a prova do TJ de São Paulo, de graça.",
+   "min_duration": 2.4
+  },
+  {
+   "type": "big",
+   "text": "Faltam",
+   "hl": "Faltam",
+   "big": "18 semanas",
+   "label": "de hoje até a prova de 14/03/2027",
+   "narration": "Faltam dezoito semanas até a prova. Dá tempo, se tiver plano.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "steps",
+   "text": "O que tem na planilha",
+   "hl": "planilha",
+   "rows": [
+    {
+     "t": "Semana a semana, matéria por matéria",
+     "icon": "🗓️",
+     "cue": "Semana"
+    },
+    {
+     "t": "Português e Direito todo dia",
+     "icon": "✍️",
+     "cue": "todo dia"
+    },
+    {
+     "t": "Uma redação por semana",
+     "icon": "📝",
+     "cue": "redação"
+    },
+    {
+     "t": "Revisão nas últimas 3 semanas",
+     "icon": "🔁",
+     "cue": "Revisão"
+    }
+   ],
+   "result": false,
+   "narration": "Semana a semana, matéria por matéria. Português e direito todo dia. Uma redação por semana. E revisão nas últimas três semanas.",
+   "min_duration": 4.0
+  },
+  {
+   "type": "text",
+   "kicker": "Como pegar",
+   "text": "Comenta PLANILHA que eu mando no WhatsApp",
+   "hl": "PLANILHA",
+   "icon": "📲",
+   "pose": "pointUp",
+   "narration": "Comenta planilha aqui embaixo, e eu te mando no WhatsApp da bio.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}

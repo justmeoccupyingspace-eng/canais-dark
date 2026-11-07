@@ -1,0 +1,95 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Crase antes de \"ela\"?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-10 12:30"
+ },
+ "tiktok": "Português do Escrevente TJSP: crase antes de pronome, palavra masculina e nome de lugar. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues #crase",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Crase antes de \"ela\"?",
+   "hl": "Crase",
+   "icon": "✍️",
+   "narration": "Entreguei o documento à ela. Tem crase aí?",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · CRASE",
+   "q": "O emprego do acento indicativo de crase está correto em:",
+   "alts": [
+    "Entreguei o documento à ela.",
+    "Fui à pé até o cartório.",
+    "Refiro-me às pessoas citadas no processo.",
+    "Ele chegou à casa antes das oito.",
+    "Viajaram à Bahia nas férias."
+   ],
+   "correct": 2,
+   "narration": "Em qual frase a crase está certa?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 44
+  },
+  {
+   "type": "text",
+   "text": "Letra C: refiro-me às pessoas",
+   "hl": "refiro-me às pessoas",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra C!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Onde não tem crase",
+   "hl": "não tem",
+   "rows": [
+    {
+     "t": "Antes de pronome pessoal: a ela",
+     "cue": "pronome"
+    },
+    {
+     "t": "Antes de palavra masculina: a pé",
+     "cue": "masculina"
+    },
+    {
+     "t": "Casa sem adjetivo: chegou a casa",
+     "cue": "Casa"
+    },
+    {
+     "t": "Plural com artigo: às pessoas ✔",
+     "cue": "pessoas"
+    }
+   ],
+   "narration": "Não tem crase antes de pronome pessoal: a ela. Nem antes de palavra masculina: a pé. Casa, sem adjetivo, também não: chegou a casa. Já às pessoas tem, porque o verbo pede a e a palavra aceita o artigo.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "\"Viajaram à Bahia\" está certo: Bahia aceita artigo",
+   "hl": "Bahia",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "E a letra E? Viajaram à Bahia está certo, porque se diz a Bahia. O erro era não ter o acento no enunciado original.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ]
+}
