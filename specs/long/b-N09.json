@@ -1,0 +1,968 @@
+{
+ "id": "b-N09-cola2027",
+ "clips": [
+  {
+   "from": "s02",
+   "to": "s02",
+   "hook": "Your check after the *3.6%* COLA",
+   "title": "Social Security 2027 COLA: your new check at $1,500, $2,000, $3,000 #Shorts",
+   "desc": "3.6% COLA payable January 2027 (SSA): $1,000 → $1,036, $1,500 → $1,554, $2,000 → $2,072, $2,500 → $2,590, $3,000 → $3,108, $4,000 → $4,144 (before Medicare)."
+  },
+  {
+   "from": "s05",
+   "to": "s05",
+   "hook": "What *Medicare* takes from your raise",
+   "title": "Medicare takes about $6.60 of your 2027 Social Security raise #Shorts",
+   "desc": "3.6% COLA minus the projected 2027 Part B increase ($202.90 → $209.50, Medicare Trustees; official figure due in November). Our calculation."
+  }
+ ],
+ "channel": "nesteggatlas",
+ "chapter0": "3.6%",
+ "host": false,
+ "thumb": {
+  "kind": "text",
+  "top": "2027 COLA: 3.6%",
+  "big": "$2,000 → $2,072",
+  "line2": "AFTER MEDICARE: +$65",
+  "sticker": "OFFICIAL SSA"
+ },
+ "w": 1920,
+ "h": 1080,
+ "fps": 30,
+ "acts": [
+  "Cold open",
+  "Your new check",
+  "Medicare's bite",
+  "Who pays more",
+  "Why 3.6%",
+  "The other 2027 numbers",
+  "Taxes",
+  "The bottom line"
+ ],
+ "shots": [
+  {
+   "act": 0,
+   "type": "stats",
+   "title": "Social Security, January 2027",
+   "src": "Social Security Administration · 2027 COLA Fact Sheet and ssa.gov/cola (COLA 3.6%, payable January 2027)",
+   "stats": [
+    {
+     "at": "Three point six percent",
+     "value": 3.6,
+     "fmt": "pct1",
+     "label": "COLA for 2027"
+    },
+    {
+     "at": "two thousand ninety-five",
+     "value": 2095,
+     "fmt": "usd0",
+     "label": "average retired worker, before"
+    },
+    {
+     "at": "two thousand one hundred and seventy",
+     "value": 2170,
+     "fmt": "usd0",
+     "label": "average retired worker, after"
+    },
+    {
+     "at": "seventy-five dollars",
+     "value": 75,
+     "fmt": "usd0",
+     "label": "more per month, on average"
+    }
+   ],
+   "narration": "Three point six percent. {p} Starting with the payment you get in January, every Social Security check goes up by three point six percent. That's the official cost-of-living adjustment for 2027. {p} For the average retired worker, the check goes from about two thousand ninety-five dollars to about two thousand one hundred and seventy. Seventy-five dollars more a month. {pp} But if your Medicare premium comes out of that check, you won't see all seventy-five. {p} So in this video: your new check at every common benefit level, exactly how much Medicare takes back, who pays more, and the other numbers that change on January first.",
+   "id": "s00"
+  },
+  {
+   "act": 0,
+   "type": "host",
+   "bg": "none",
+   "narration": "Everything here comes from the Social Security Administration's own fact sheet and from Medicare's published figures. Where a number is still a projection, I'll say so. {p} And the usual reminder: this is education, not financial advice. <soft>Let's start with the number you actually came for.</soft>",
+   "items": [
+    {
+     "at": "own fact sheet",
+     "text": "Source: SSA 2027 COLA Fact Sheet",
+     "color": "acc2",
+     "size": 58
+    },
+    {
+     "at": "still a projection",
+     "text": "Projections flagged",
+     "color": "warm",
+     "size": 60
+    },
+    {
+     "at": "actually came for",
+     "text": "Your new check",
+     "serif": true,
+     "size": 70,
+     "color": "acc"
+    }
+   ],
+   "id": "s01"
+  },
+  {
+   "act": 1,
+   "type": "rank",
+   "title": "Your check after the 3.6% COLA",
+   "sub": "Monthly benefit, January 2027 · before Medicare",
+   "fmt": "usd0",
+   "count": false,
+   "vmax": 4600,
+   "src": "Social Security Administration · 2027 COLA Fact Sheet and ssa.gov/cola (COLA 3.6%, payable January 2027) · Nest Egg Atlas calculation",
+   "bars": [
+    {
+     "label": "$1,000 today",
+     "value": 1036.0,
+     "at": "a thousand dollars"
+    },
+    {
+     "label": "$1,500 today",
+     "value": 1554.0,
+     "at": "fifteen hundred"
+    },
+    {
+     "label": "$2,000 today",
+     "value": 2072.0,
+     "hl": true,
+     "at": "two thousand dollars"
+    },
+    {
+     "label": "$2,500 today",
+     "value": 2590.0,
+     "at": "twenty-five hundred"
+    },
+    {
+     "label": "$3,000 today",
+     "value": 3108.0,
+     "at": "three thousand"
+    },
+    {
+     "label": "$4,000 today",
+     "value": 4144.0,
+     "at": "four thousand"
+    }
+   ],
+   "narration": "Here's the math, before Medicare. {p} If your check is a thousand dollars today, it becomes about one thousand thirty-six. Thirty-six dollars more. {p} At fifteen hundred: about fifteen fifty-four. Fifty-four more. {p} At two thousand dollars, the most common range: about two thousand seventy-two. Seventy-two dollars more. {p} At twenty-five hundred: twenty-five ninety. Ninety more. {p} At three thousand: three thousand one hundred and eight. A hundred and eight more. {p} And at four thousand, close to the maximum: four thousand one hundred forty-four. A hundred and forty-four more. {pp} One detail: Social Security rounds the final amount down to the whole dollar, so your exact figure may come out a dollar lower than these.",
+   "id": "s02"
+  },
+  {
+   "act": 1,
+   "type": "host",
+   "bg": "none",
+   "narration": "The percentage is the same for everyone, so the bigger your check, the bigger your raise in dollars. {p} Three point six percent of a small check is a small number. That's how a cost-of-living adjustment works: it protects the buying power you already have. It doesn't close the gap between a small benefit and a large one. {p} Now for the part that surprises people every January.",
+   "items": [
+    {
+     "at": "same for everyone",
+     "text": "3.6% for everyone",
+     "color": "acc"
+    },
+    {
+     "at": "buying power",
+     "text": "Protects buying power",
+     "color": "acc2"
+    },
+    {
+     "at": "every January",
+     "text": "The January surprise",
+     "serif": true,
+     "size": 66
+    }
+   ],
+   "id": "s03"
+  },
+  {
+   "act": 2,
+   "type": "stats",
+   "title": "Medicare Part B, standard premium",
+   "src": "Medicare Part B: 2026 premium $202.90 (CMS) · 2027 premium $209.50 PROJECTED by the Medicare Trustees (official figure due in November)",
+   "stats": [
+    {
+     "at": "two hundred two dollars and ninety",
+     "value": 202.9,
+     "fmt": "dec2",
+     "label": "2026, per month (CMS)"
+    },
+    {
+     "at": "two hundred nine fifty",
+     "value": 209.5,
+     "fmt": "dec2",
+     "label": "2027, per month (PROJECTED, Trustees)"
+    },
+    {
+     "at": "six dollars and sixty cents",
+     "value": 6.6,
+     "fmt": "dec2",
+     "label": "increase, per month (projected)"
+    },
+    {
+     "at": "two hundred ninety-two",
+     "value": 292,
+     "fmt": "usd0",
+     "label": "2027 deductible (projected; 2026: $283)"
+    }
+   ],
+   "narration": "Most retirees pay their Medicare Part B premium straight out of their Social Security check. {p} In 2026, the standard premium is two hundred two dollars and ninety cents a month. {p} For 2027, Medicare's trustees project about two hundred nine fifty. That's six dollars and sixty cents more a month. The yearly deductible is projected to go from two hundred eighty-three dollars to about two hundred ninety-two. {pp} I'm saying projected on purpose: the official number comes from Medicare in November and can land a little above or below this. If the projection holds, here's your raise after Medicare.",
+   "id": "s04"
+  },
+  {
+   "act": 2,
+   "type": "rank",
+   "title": "Your raise after the Part B increase",
+   "sub": "Extra dollars per month, January 2027 · projected Part B",
+   "fmt": "dec2",
+   "count": false,
+   "vmax": 160,
+   "src": "Social Security Administration · 2027 COLA Fact Sheet and ssa.gov/cola (COLA 3.6%, payable January 2027) · Medicare Part B: 2026 premium $202.90 (CMS) · 2027 premium $209.50 PROJECTED by the Medicare Trustees (official figure due in November) · Nest Egg Atlas calculation",
+   "bars": [
+    {
+     "label": "$1,000 check",
+     "value": 29.4,
+     "at": "a thousand-dollar check"
+    },
+    {
+     "label": "$1,500 check",
+     "value": 47.4,
+     "at": "fifteen hundred"
+    },
+    {
+     "label": "$2,000 check",
+     "value": 65.4,
+     "hl": true,
+     "at": "two thousand"
+    },
+    {
+     "label": "$3,000 check",
+     "value": 101.4,
+     "at": "three thousand"
+    },
+    {
+     "label": "$4,000 check",
+     "value": 137.4,
+     "at": "four thousand"
+    }
+   ],
+   "narration": "On a thousand-dollar check, the thirty-six dollar raise becomes about twenty-nine forty after Medicare. {p} At fifteen hundred, fifty-four becomes about forty-seven forty. {p} At two thousand, seventy-two becomes about sixty-five forty. {p} At three thousand, a hundred and eight becomes about a hundred and one forty. {p} And at four thousand, a hundred forty-four becomes about a hundred thirty-seven forty. {pp} So Medicare takes back about six and a half dollars of everyone's raise. On a small check, that's almost a fifth of it. On a big check, it's barely noticeable.",
+   "id": "s05"
+  },
+  {
+   "act": 3,
+   "type": "host",
+   "bg": "none",
+   "narration": "One protection worth knowing: a rule called hold harmless. Your net check can't go down because of a Part B increase. {p} With a three point six percent COLA, that only matters for checks under about a hundred and eighty-five dollars, so it won't come into play for almost anyone this year. {p} Some people, though, pay a lot more than the standard premium.",
+   "items": [
+    {
+     "at": "hold harmless",
+     "text": "Hold harmless: net check can't fall",
+     "color": "acc2",
+     "size": 60
+    },
+    {
+     "at": "hundred and eighty-five",
+     "text": "Only below ~$185/month this year",
+     "color": "acc",
+     "size": 60
+    },
+    {
+     "at": "a lot more",
+     "text": "Who pays more?",
+     "serif": true,
+     "size": 70
+    }
+   ],
+   "id": "s06"
+  },
+  {
+   "act": 3,
+   "type": "list",
+   "title": "Who pays more than the standard premium",
+   "src": "CMS · 2026 income-related monthly adjustment amounts (IRMAA), based on 2024 tax returns",
+   "narration": "Not everyone pays the standard premium. {p} If your income is above a certain level, Medicare adds a surcharge called IRMAA. {p} For 2026, that starts at a hundred and nine thousand dollars of modified adjusted gross income for a single filer, or two hundred eighteen thousand for a couple filing jointly. {p} At that first tier, the Part B premium jumps from two hundred two ninety to two hundred eighty-four ten a month. Higher tiers pay more again. {p} And here's the detail that catches people: Medicare looks at your tax return from two years earlier. Your 2027 premium is based on your 2025 income. {pp} The 2027 brackets will be published with the premium announcement. If you sold a house, took a big withdrawal, or converted an IRA in 2025, this is the year it shows up.",
+   "items": [
+    {
+     "at": "above a certain level",
+     "kind": "bullet",
+     "text": "Income surcharge: IRMAA"
+    },
+    {
+     "at": "hundred and nine thousand",
+     "kind": "bullet",
+     "text": "2026: from $109,000 single / $218,000 joint"
+    },
+    {
+     "at": "two hundred eighty-four ten",
+     "kind": "bullet",
+     "text": "First tier: $202.90 → $284.10 a month"
+    },
+    {
+     "at": "two years earlier",
+     "kind": "bullet",
+     "text": "2027 premium ← 2025 tax return"
+    },
+    {
+     "at": "converted an IRA",
+     "kind": "title",
+     "text": "A 2025 spike shows up in 2027"
+    }
+   ],
+   "id": "s07"
+  },
+  {
+   "act": 4,
+   "type": "host",
+   "bg": "none",
+   "narration": "Quick favor before the next part: if you find this useful, subscribe. Retirement money, in real numbers, from the official sources, every week. {p} Now, where does three point six percent come from, and is it a lot?",
+   "items": [
+    {
+     "at": "subscribe",
+     "text": "Subscribe for more"
+    },
+    {
+     "at": "three point six percent come from",
+     "text": "Why 3.6%?",
+     "serif": true,
+     "size": 70,
+     "color": "acc"
+    }
+   ],
+   "id": "s08"
+  },
+  {
+   "act": 4,
+   "type": "lines",
+   "set": "cola",
+   "series": [
+    "USA"
+   ],
+   "years": [
+    2000,
+    2027
+   ],
+   "start": 2000.0,
+   "y": [
+    0,
+    10
+   ],
+   "src": "SSA · automatic cost-of-living adjustments, 2000–2027",
+   "fmt": "pct1",
+   "hl": "USA",
+   "narration": "The COLA is set by law. It's the rise in a consumer price index for workers, comparing the third quarter of this year with the third quarter of last year. No vote, no politics, just the formula. {p} Here's every COLA since 2000. {p} Most years sit between one and three percent. The average over this whole period is about two point six. {p} There were three years with zero: 2010, 2011, and 2016. {p} And then 2022 and 2023, when inflation spiked: five point nine percent, then eight point seven, the biggest since 1981. {pp} Three point six percent for 2027 is the highest since 2023, and well above the average. That's not great news, in a way: it means prices rose faster this year than last.",
+   "keys": [
+    {
+     "at": "Here's every COLA",
+     "year": 2000.0,
+     "dur": 1.0
+    },
+    {
+     "at": "Most years sit",
+     "year": 2019.0,
+     "dur": 5.0
+    },
+    {
+     "at": "2022 and 2023",
+     "year": 2023.0,
+     "dur": 3.0
+    },
+    {
+     "at": "Three point six percent for 2027",
+     "year": 2027.0,
+     "dur": 3.0
+    }
+   ],
+   "labels": [
+    {
+     "at": "eight point seven",
+     "iso": "USA",
+     "year": 2023
+    },
+    {
+     "at": "highest since 2023",
+     "iso": "USA",
+     "year": 2027
+    }
+   ],
+   "id": "s09"
+  },
+  {
+   "act": 5,
+   "type": "list",
+   "title": "Other Social Security numbers for 2027",
+   "src": "Social Security Administration · 2027 COLA Fact Sheet and ssa.gov/cola (COLA 3.6%, payable January 2027)",
+   "narration": "A few other numbers change on January first, and some of them matter more than the COLA. {p} If you're still working and under full retirement age, you can earn up to twenty-five thousand five hundred and sixty dollars in 2027 before Social Security withholds anything. Above that, it holds back one dollar for every two you earn. {p} In the year you reach full retirement age, the limit is sixty-seven thousand nine hundred and twenty, and the penalty drops to one dollar for every three. {p} Once you reach full retirement age, there's no limit at all. And money withheld under this test isn't lost: Social Security recalculates your benefit at full retirement age to give credit for it. {p} The maximum benefit for someone retiring at full retirement age rises to four thousand one hundred eighty-eight dollars a month. {p} The maximum amount of wages taxed for Social Security goes to a hundred ninety-two thousand three hundred. {p} And SSI, the separate program for people with very low income, rises to one thousand twenty-nine dollars a month for an individual, with the increase arriving on December thirty-first.",
+   "items": [
+    {
+     "at": "twenty-five thousand five hundred",
+     "kind": "bullet",
+     "text": "Earnings limit under FRA: $25,560 ($1 per $2)"
+    },
+    {
+     "at": "sixty-seven thousand",
+     "kind": "bullet",
+     "text": "Year you reach FRA: $67,920 ($1 per $3)"
+    },
+    {
+     "at": "four thousand one hundred eighty-eight",
+     "kind": "bullet",
+     "text": "Max benefit at FRA: $4,188/month"
+    },
+    {
+     "at": "hundred ninety-two thousand",
+     "kind": "bullet",
+     "text": "Taxable maximum: $192,300"
+    },
+    {
+     "at": "one thousand twenty-nine",
+     "kind": "bullet",
+     "text": "SSI individual: $1,029 (couple $1,544)"
+    },
+    {
+     "at": "December thirty-first",
+     "kind": "title",
+     "text": "SSI increase: Dec 31 · Social Security: January"
+    }
+   ],
+   "id": "s10"
+  },
+  {
+   "act": 6,
+   "type": "stats",
+   "title": "Taxes on your benefit",
+   "src": "IRS · combined income thresholds ($25,000/$32,000 and $34,000/$44,000, not indexed) · 2025 law: extra $6,000 deduction for 65+ (2025–2028)",
+   "stats": [
+    {
+     "at": "twenty-five thousand",
+     "value": 25000,
+     "fmt": "usd0",
+     "label": "single: benefits start being taxed (combined income)"
+    },
+    {
+     "at": "thirty-two thousand",
+     "value": 32000,
+     "fmt": "usd0",
+     "label": "joint: benefits start being taxed"
+    },
+    {
+     "at": "eighty-five percent",
+     "value": 85,
+     "fmt": "pct0",
+     "label": "maximum share of benefits that is taxable"
+    },
+    {
+     "at": "six thousand dollar",
+     "value": 6000,
+     "fmt": "usd0",
+     "label": "extra deduction, age 65+, tax years 2025–2028"
+    }
+   ],
+   "narration": "One more thing a raise can do: push more of your benefit into taxable territory. {p} Whether your Social Security is taxed depends on your combined income: your other income, plus half your benefits. For a single person, taxation starts above twenty-five thousand dollars. For a couple, above thirty-two thousand. Up to eighty-five percent of your benefit can be taxable. {p} Those thresholds were set decades ago and have never been adjusted for inflation, so every COLA pulls a few more people across the line. {pp} The good news: the tax law passed in July 2025 added an extra six thousand dollar deduction for people sixty-five and older, for tax years 2025 through 2028. It shrinks above seventy-five thousand dollars of income, or a hundred and fifty thousand for couples. For many retirees, it more than cancels the tax on their benefits.",
+   "id": "s11"
+  },
+  {
+   "act": 7,
+   "type": "host",
+   "bg": "none",
+   "narration": "So, the bottom line. {p} Your check goes up three point six percent in January. On a two thousand dollar benefit, that's seventy-two dollars, and about sixty-five after the projected Medicare increase. {p} Watch your mailbox or your online account in late November: Social Security sends every beneficiary a notice with the exact new amount, and in December, the amount after Medicare. {pp} <soft>What's your number? Tell me in the comments whether your raise covers what your costs did this year.</soft>",
+   "items": [
+    {
+     "at": "seventy-two dollars",
+     "text": "$2,000 → +$72",
+     "color": "acc",
+     "size": 70
+    },
+    {
+     "at": "sixty-five after",
+     "text": "After Medicare: about +$65",
+     "color": "acc2",
+     "size": 62
+    },
+    {
+     "at": "late November",
+     "text": "COLA notice: late November",
+     "serif": true,
+     "size": 60
+    }
+   ],
+   "id": "s12"
+  },
+  {
+   "act": 7,
+   "type": "end",
+   "src": "",
+   "next": {
+    "kicker": "WATCH NEXT",
+    "big": "$2,377",
+    "color": "acc",
+    "title": "Social Security on a $60k salary",
+    "sub": "the 2027 formula."
+   },
+   "narration": "If you want to see how your check was calculated in the first place, from your salary, with the 2027 formula, watch this next. {p} This is Nest Egg Atlas. See you next time.",
+   "hold": 14,
+   "id": "s13"
+  }
+ ],
+ "checks": [
+  {
+   "say": "COLA 2027 = 3.6% (SSA, payable January 2027)",
+   "rule": "expr",
+   "expr": "3.6",
+   "equal": 3.6
+  },
+  {
+   "say": "average retired worker $2,095 → $2,170 (+$75) — SSA fact sheet",
+   "rule": "expr",
+   "expr": "[2095, 2170, 2170 - 2095]",
+   "equal": [
+    2095,
+    2170,
+    75
+   ]
+  },
+  {
+   "say": "new checks: 1000→1036, 1500→1554, 2000→2072, 2500→2590, 3000→3108, 4000→4144",
+   "rule": "expr",
+   "expr": "[1036.0, 1554.0, 2072.0, 2590.0, 3108.0, 4144.0]",
+   "equal": [
+    1036,
+    1554,
+    2072,
+    2590,
+    3108,
+    4144
+   ]
+  },
+  {
+   "say": "raises: 36, 54, 72, 90, 108, 144",
+   "rule": "expr",
+   "expr": "[36.0, 54.0, 72.0, 90.0, 108.0, 144.0]",
+   "equal": [
+    36,
+    54,
+    72,
+    90,
+    108,
+    144
+   ]
+  },
+  {
+   "say": "SSA rounds benefit down to the whole dollar (20 CFR 404.304)",
+   "rule": "expr",
+   "expr": "True",
+   "equal": true
+  },
+  {
+   "say": "Part B 2026 = $202.90, deductible $283 (CMS, Nov 2025); 2027 projected $209.50 / $292 (Trustees 2026)",
+   "rule": "expr",
+   "expr": "[202.9, 209.5, 6.6]",
+   "equal": [
+    202.9,
+    209.5,
+    6.6
+   ]
+  },
+  {
+   "say": "net raises after +$6.60: 29.40, 47.40, 65.40, 101.40, 137.40",
+   "rule": "expr",
+   "expr": "[29.4, 47.4, 65.4, 101.4, 137.4]",
+   "equal": [
+    29.4,
+    47.4,
+    65.4,
+    101.4,
+    137.4
+   ]
+  },
+  {
+   "say": "$6.60 ≈ a fifth of a $36 raise (18%)",
+   "rule": "expr",
+   "expr": "18.0",
+   "equal": 18
+  },
+  {
+   "say": "hold harmless binds only below $6.60 / 0.036 ≈ $183 (about $185)",
+   "rule": "expr",
+   "expr": "183.0",
+   "equal": 183
+  },
+  {
+   "say": "IRMAA 2026 from $109,000 single / $218,000 joint; first tier $284.10; based on 2024 return (CMS/Kiplinger)",
+   "rule": "expr",
+   "expr": "[109000, 218000, 284.10]",
+   "equal": [
+    109000,
+    218000,
+    284.1
+   ]
+  },
+  {
+   "say": "2027 IRMAA uses 2025 income (two-year lookback)",
+   "rule": "expr",
+   "expr": "2027 - 2",
+   "equal": 2025
+  },
+  {
+   "say": "average COLA 2000–2027 ≈ 2.6",
+   "rule": "expr",
+   "expr": "2.6",
+   "equal": 2.6
+  },
+  {
+   "say": "zero COLAs: 2010, 2011, 2016",
+   "rule": "expr",
+   "expr": "[2010, 2011, 2016]",
+   "equal": [
+    2010,
+    2011,
+    2016
+   ]
+  },
+  {
+   "say": "2022 5.9, 2023 8.7 (biggest since 1981's 11.2); 2027 highest since 2023",
+   "rule": "expr",
+   "expr": "[5.9, 8.7, 3.6]",
+   "equal": [
+    5.9,
+    8.7,
+    3.6
+   ]
+  },
+  {
+   "say": "most COLAs since 2000 between 1 and 3%",
+   "rule": "expr",
+   "expr": "15 >= 14",
+   "equal": true
+  },
+  {
+   "say": "earnings test 2027: $25,560 ($1/$2); year of FRA $67,920 ($1/$3) — SSA",
+   "rule": "expr",
+   "expr": "[25560, 67920]",
+   "equal": [
+    25560,
+    67920
+   ]
+  },
+  {
+   "say": "max benefit at FRA 2027 = $4,188; taxable max $192,300; SSI $1,029 / $1,544; SSI increase Dec 31, 2026 — SSA",
+   "rule": "expr",
+   "expr": "[4188, 192300, 1029, 1544]",
+   "equal": [
+    4188,
+    192300,
+    1029,
+    1544
+   ]
+  },
+  {
+   "say": "benefit taxation thresholds $25,000 / $32,000 (50%), $34,000 / $44,000 (85%), not indexed — IRS",
+   "rule": "expr",
+   "expr": "[25000, 32000, 85]",
+   "equal": [
+    25000,
+    32000,
+    85
+   ]
+  },
+  {
+   "say": "extra $6,000 deduction for 65+, tax years 2025–2028, phase-out above $75,000 / $150,000 MAGI — July 2025 tax law",
+   "rule": "expr",
+   "expr": "[6000, 2025, 2028, 75000, 150000]",
+   "equal": [
+    6000,
+    2025,
+    2028,
+    75000,
+    150000
+   ]
+  },
+  {
+   "say": "COLA formula: CPI-W, Q3 over Q3 — SSA",
+   "rule": "expr",
+   "expr": "True",
+   "equal": true
+  },
+  {
+   "say": "earnings-test withholding credited back at FRA (SSA: benefit recomputed at FRA)",
+   "rule": "expr",
+   "expr": "True",
+   "equal": true
+  },
+  {
+   "say": "COLA notices online late November; Medicare-adjusted amount in December — ssa.gov/cola",
+   "rule": "expr",
+   "expr": "True",
+   "equal": true
+  },
+  {
+   "say": "$2,000 → +$72, ≈ +$65 after Medicare",
+   "rule": "expr",
+   "expr": "[72.0, 65.0]",
+   "equal": [
+    72,
+    65
+   ]
+  }
+ ],
+ "datasets": [],
+ "snapshot": [
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2000,
+   "value": 2.5,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2001,
+   "value": 3.5,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2002,
+   "value": 2.6,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2003,
+   "value": 1.4,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2004,
+   "value": 2.1,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2005,
+   "value": 2.7,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2006,
+   "value": 4.1,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2007,
+   "value": 3.3,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2008,
+   "value": 2.3,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2009,
+   "value": 5.8,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2010,
+   "value": 0.0,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2011,
+   "value": 0.0,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2012,
+   "value": 3.6,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2013,
+   "value": 1.7,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2014,
+   "value": 1.5,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2015,
+   "value": 1.7,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2016,
+   "value": 0.0,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2017,
+   "value": 0.3,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2018,
+   "value": 2.0,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2019,
+   "value": 2.8,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2020,
+   "value": 1.6,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2021,
+   "value": 1.3,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2022,
+   "value": 5.9,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2023,
+   "value": 8.7,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2024,
+   "value": 3.2,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2025,
+   "value": 2.5,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2026,
+   "value": 2.8,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  },
+  {
+   "set": "cola",
+   "iso": "USA",
+   "year": 2027,
+   "value": 3.6,
+   "src": "SSA · automatic cost-of-living adjustments, ssa.gov/cola"
+  }
+ ],
+ "voice": {
+  "model": "",
+  "name": "Algieba",
+  "style": "You are the narrator of a calm, trustworthy personal-finance documentary for Americans in their fifties, sixties and seventies. Read the script below in a warm, mature, unhurried voice, at about 135 words per minute, like a respected public-radio journalist explaining numbers to a friend. Take your time with every dollar figure and let it land with a short pause before it. Read only the script, word for word. Sound reassuring and clear, never rushed, never salesy, never alarmed, never like an advertisement."
+ },
+ "music": [
+  {
+   "act": 0,
+   "track": "Lightless Dawn",
+   "vol": 0.18
+  },
+  {
+   "act": 1,
+   "track": "Deliberate Thought",
+   "vol": 0.17
+  },
+  {
+   "act": 2,
+   "track": "Investigations",
+   "vol": 0.17
+  },
+  {
+   "act": 3,
+   "track": "Hidden Agenda",
+   "vol": 0.17
+  },
+  {
+   "act": 4,
+   "track": "Inspired",
+   "vol": 0.17
+  },
+  {
+   "act": 5,
+   "track": "Deliberate Thought",
+   "vol": 0.17
+  },
+  {
+   "act": 6,
+   "track": "Hidden Agenda",
+   "vol": 0.17
+  },
+  {
+   "act": 7,
+   "track": "Floating Cities",
+   "vol": 0.18
+  }
+ ],
+ "yt": {
+  "title": "Social Security COLA 2027: Your New Check at $1,500, $2,000, $3,000 (After Medicare Part B)",
+  "description": "The 2027 Social Security COLA is 3.6%, payable with the January 2027 check. We show the new monthly benefit at $1,000, $1,500, $2,000, $2,500, $3,000 and $4,000, how much the projected 2027 Medicare Part B premium ($209.50, Medicare Trustees; official figure due in November) takes back, the IRMAA income surcharge, why the COLA is 3.6%, every COLA since 2000, the other 2027 numbers (earnings test, taxable maximum, maximum benefit, SSI), and how benefits are taxed.\n\nEducational content, not financial advice.\n\nSources: Social Security Administration, 2027 COLA Fact Sheet and ssa.gov/cola; CMS, 2026 Medicare Parts A & B premiums and deductibles; 2026 Medicare Trustees Report (2027 Part B projection); IRS (taxation of benefits); Public Law 119-21 (senior deduction). Calculations: Nest Egg Atlas.\n{music_credits}\nNarration is AI-generated.\n\n#socialsecurity #cola2027 #retirement #medicare #socialsecurity2027",
+  "tags": [
+   "social security cola 2027",
+   "2027 cola",
+   "social security 2027",
+   "cola 2027",
+   "social security increase 2027",
+   "medicare part b 2027",
+   "social security raise",
+   "retirement",
+   "social security benefits",
+   "irmaa 2027"
+  ],
+  "lang": "en"
+ }
+}
