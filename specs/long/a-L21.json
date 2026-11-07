@@ -1,0 +1,8050 @@
+{
+ "id": "a-L21-poland-italy",
+ "clips": [
+  {
+   "from": "s00",
+   "to": "s00",
+   "hook": "*$499* from Italy",
+   "title": "Poland is $499 from catching Italy (IMF, 2031) #Shorts",
+   "desc": "GDP per person, PPP (IMF WEO Oct 2026): Italy 3× Poland in 1990, 2× in 2008, +9% in 2026, $499 apart in 2031."
+  },
+  {
+   "from": "s02",
+   "to": "s02",
+   "hook": "Italy grew *10%* in 25 years",
+   "title": "Italy's economy grew 10% in 25 years. Poland's grew 140% #Shorts",
+   "desc": "Real GDP, 2000 = 100 (IMF WEO Oct 2026): Italy 110, Germany 130, Spain 150, Poland 240 in 2025."
+  }
+ ],
+ "channel": "chartbound",
+ "chapter0": "$499 apart",
+ "thumb": {
+  "v": "flags",
+  "iso": "POL",
+  "vs": "ITA",
+  "big": "ITALY IS NEXT",
+  "line2": "1990: ITALY 3× RICHER"
+ },
+ "w": 1920,
+ "h": 1080,
+ "fps": 30,
+ "acts": [
+  "Cold open",
+  "Italy stopped",
+  "Poland never stopped",
+  "The catch",
+  "Does it happen?",
+  "After Italy"
+ ],
+ "shots": [
+  {
+   "act": 0,
+   "type": "lines",
+   "set": "imf",
+   "fc": 2025,
+   "series": [
+    "ITA",
+    "POL"
+   ],
+   "years": [
+    1990,
+    2031
+   ],
+   "start": 2031.0,
+   "y": [
+    0,
+    85000
+   ],
+   "src": "IMF World Economic Outlook, October 2026 · GDP per capita, PPP (current international $); 2026+ are IMF estimates and forecasts",
+   "fmt": "usdk0",
+   "hl": "POL",
+   "narration": "Four hundred and ninety-nine dollars. {p} That's the gap the IMF now expects between Italy and Poland in 2031: income per person, adjusted for prices. Italy, about seventy-six thousand seven hundred. Poland, about seventy-six thousand two hundred. {pp} In 1990, Italy was more than three times richer than Poland. In 2008, exactly twice as rich. This year, Poland is about nine percent behind: sixty thousand dollars against sixty-six. {p} At this pace, Poland catches a founding member of the European Union, and a G7 country, in about five years.",
+   "keys": [
+    {
+     "at": "Four hundred",
+     "year": 2031.0,
+     "dur": 0.5
+    },
+    {
+     "at": "In 1990",
+     "year": 1990.0,
+     "dur": 1.5
+    },
+    {
+     "at": "In 2008",
+     "year": 2008.0,
+     "dur": 3.0
+    },
+    {
+     "at": "This year",
+     "year": 2026.0,
+     "dur": 3.0
+    },
+    {
+     "at": "At this pace",
+     "year": 2031.0,
+     "dur": 4.0
+    }
+   ],
+   "labels": [
+    {
+     "at": "seventy-six thousand seven hundred",
+     "iso": "ITA",
+     "year": 2031
+    },
+    {
+     "at": "seventy-six thousand two hundred",
+     "iso": "POL",
+     "year": 2031
+    },
+    {
+     "at": "three times richer",
+     "iso": "ITA",
+     "year": 1990
+    },
+    {
+     "at": "exactly twice",
+     "iso": "POL",
+     "year": 2008
+    },
+    {
+     "at": "nine percent behind",
+     "iso": "POL",
+     "year": 2026
+    }
+   ],
+   "react": [
+    {
+     "at": "Four hundred",
+     "pose": "pointUp"
+    },
+    {
+     "at": "In 1990",
+     "pose": "pointL"
+    },
+    {
+     "at": "exactly twice",
+     "pose": "think"
+    },
+    {
+     "at": "nine percent",
+     "pose": "shock"
+    },
+    {
+     "at": "G7 country",
+     "pose": "cheer"
+    }
+   ],
+   "id": "s00"
+  },
+  {
+   "act": 0,
+   "type": "host",
+   "bg": "lines",
+   "set": "imf",
+   "fc": 2025,
+   "series": [
+    "ITA",
+    "POL"
+   ],
+   "years": [
+    1990,
+    2031
+   ],
+   "start": 2031.0,
+   "y": [
+    0,
+    85000
+   ],
+   "fmt": "usdk0",
+   "narration": "Poland has done this before. It passed Portugal in 2020. This year, by the IMF's October numbers, it passed Japan. Next year, the forecast says, Spain. Four countries in seven years. {p} Italy is the next name on the list, and it's the biggest one yet: the third-largest economy in the eurozone, home to Ferrari, Fiat and some of the oldest banks in the world. {pp} <soft>So how does a country that was a third as rich as Italy in 1990 end up almost level? It's two stories. One about a country that stopped growing. And one about a country that never stopped.</soft>",
+   "items": [
+    {
+     "at": "passed Portugal",
+     "text": "2020: Portugal",
+     "color": "acc2",
+     "size": 66
+    },
+    {
+     "at": "passed Japan",
+     "text": "2026: Japan",
+     "color": "acc2",
+     "size": 66
+    },
+    {
+     "at": "says, Spain",
+     "text": "2027: Spain",
+     "color": "acc2",
+     "size": 66
+    },
+    {
+     "at": "Italy is the next",
+     "text": "Next: Italy",
+     "serif": true,
+     "size": 76,
+     "color": "acc"
+    }
+   ],
+   "react": [
+    {
+     "at": "done this before",
+     "pose": "pointL"
+    },
+    {
+     "at": "passed Japan",
+     "pose": "cheer"
+    },
+    {
+     "at": "biggest one yet",
+     "pose": "pointUp"
+    },
+    {
+     "at": "two stories",
+     "pose": "think"
+    }
+   ],
+   "id": "s01"
+  },
+  {
+   "act": 1,
+   "type": "lines",
+   "set": "ridx",
+   "series": [
+    "POL",
+    "ESP",
+    "DEU",
+    "ITA"
+   ],
+   "years": [
+    2000,
+    2025
+   ],
+   "start": 2000.0,
+   "y": [
+    80,
+    260
+   ],
+   "src": "IMF World Economic Outlook, October 2026 · real GDP, 2000 = 100 (compounded annual growth, NGDP_RPCH)",
+   "fmt": "int",
+   "hl": "ITA",
+   "ref": {
+    "value": 100,
+    "label": "2000 level",
+    "pos": "left"
+   },
+   "narration": "Here's Italy's economy since 2000, after inflation, with the year 2000 set to one hundred. {p} By 2025, it reaches about a hundred and ten. Ten percent of growth in twenty-five years. Germany managed about thirty. Spain, about fifty. And Poland, on the same chart, about a hundred and forty. {pp} Italy's economy shrank in 2008, 2009, 2012, 2013 and 2020. Between 2008 and 2019, its growth averaged slightly below zero. A lost decade, in the most literal sense. {p} Per person and adjusted for prices, the IMF had Italy at about thirty-nine thousand five hundred dollars in 2008. Seven years later, in 2015: thirty-nine thousand seven hundred. Unchanged. Poland, meanwhile, went from under twenty thousand to twenty-seven.",
+   "keys": [
+    {
+     "at": "Here's Italy's economy",
+     "year": 2000.0,
+     "dur": 2.0
+    },
+    {
+     "at": "By 2025",
+     "year": 2025.0,
+     "dur": 6.0
+    },
+    {
+     "at": "shrank in 2008",
+     "year": 2009.0,
+     "dur": 3.0
+    },
+    {
+     "at": "Seven years later",
+     "year": 2015.0,
+     "dur": 3.0
+    },
+    {
+     "at": "Poland, meanwhile",
+     "year": 2025.0,
+     "dur": 3.0
+    }
+   ],
+   "labels": [
+    {
+     "at": "hundred and ten",
+     "iso": "ITA",
+     "year": 2025
+    },
+    {
+     "at": "about thirty",
+     "iso": "DEU",
+     "year": 2025
+    },
+    {
+     "at": "about fifty",
+     "iso": "ESP",
+     "year": 2025
+    },
+    {
+     "at": "hundred and forty",
+     "iso": "POL",
+     "year": 2025
+    }
+   ],
+   "react": [
+    {
+     "at": "Here's Italy's",
+     "pose": "pointL"
+    },
+    {
+     "at": "Ten percent",
+     "pose": "shock"
+    },
+    {
+     "at": "hundred and forty",
+     "pose": "cheer"
+    },
+    {
+     "at": "lost decade",
+     "pose": "shrug"
+    },
+    {
+     "at": "Unchanged",
+     "pose": "think"
+    }
+   ],
+   "id": "s02"
+  },
+  {
+   "act": 1,
+   "type": "stats",
+   "src": "IMF World Economic Outlook, October 2026 · general government gross debt (% of GDP), real GDP growth, population (LP)",
+   "title": "Why Italy stalled",
+   "narration": "Three numbers tell the story. {p} Debt: Italy's government owes about a hundred and thirty-eight percent of the country's economy this year, among the highest in Europe. A big slice of every budget goes to interest, not investment. {p} Growth: since 2001, Italy has averaged about zero point four percent a year. Poland, about three point six. {p} And people: Italy's population peaked at about sixty point three million in 2014. This year it's about fifty-eight point nine, and the IMF expects it to keep falling. Fewer workers, more retirees.",
+   "stats": [
+    {
+     "at": "a hundred and thirty-eight",
+     "value": 137.9,
+     "fmt": "pct0",
+     "label": "Italy, government debt, % of GDP, 2026"
+    },
+    {
+     "at": "zero point four",
+     "value": 0.4,
+     "fmt": "pct1",
+     "label": "Italy, average growth, 2001–2025"
+    },
+    {
+     "at": "three point six",
+     "value": 3.6,
+     "fmt": "pct1",
+     "label": "Poland, average growth, 2001–2025"
+    },
+    {
+     "at": "fifty-eight point nine",
+     "value": 58.879,
+     "fmt": "m",
+     "label": "people in Italy, 2026 (peak: 60.3M in 2014)"
+    }
+   ],
+   "react": [
+    {
+     "at": "Three numbers",
+     "pose": "pointUp"
+    },
+    {
+     "at": "interest, not investment",
+     "pose": "shrug"
+    },
+    {
+     "at": "three point six",
+     "pose": "pointL"
+    },
+    {
+     "at": "keep falling",
+     "pose": "think"
+    }
+   ],
+   "id": "s03"
+  },
+  {
+   "act": 2,
+   "type": "lines",
+   "set": "imf",
+   "fc": 2025,
+   "series": [
+    "ITA",
+    "ESP",
+    "PRT",
+    "POL"
+   ],
+   "years": [
+    2000,
+    2027
+   ],
+   "start": 2000.0,
+   "y": [
+    0,
+    75000
+   ],
+   "src": "IMF World Economic Outlook, October 2026 · GDP per capita, PPP (current international $); 2026+ are IMF estimates and forecasts",
+   "fmt": "usdk0",
+   "hl": "POL",
+   "narration": "Now Poland. {p} Since 1992, Poland's economy has grown every single year except one: 2020, the pandemic. Thirty-three years, one recession, and that one lasted a single year. {p} The average since 2001 is about three and a half percent a year. Never spectacular. Just relentless. {pp} On this chart, it passes Portugal in 2020 and, in the IMF's forecast, Spain next year. {p} Why? Poland joined the European Union in 2004 and has been the biggest net recipient of EU money ever since: roads, rail, factories. It kept its own currency, the złoty, which fell in every crisis and kept Polish exports cheap. And it became the workshop of German industry: car parts, appliances, batteries, built in Poland and sold across Europe.",
+   "keys": [
+    {
+     "at": "Now Poland",
+     "year": 2000.0,
+     "dur": 1.5
+    },
+    {
+     "at": "Thirty-three years",
+     "year": 2019.0,
+     "dur": 6.0
+    },
+    {
+     "at": "passes Portugal",
+     "year": 2020.0,
+     "dur": 2.0
+    },
+    {
+     "at": "Spain next year",
+     "year": 2027.0,
+     "dur": 3.0
+    }
+   ],
+   "labels": [
+    {
+     "at": "passes Portugal",
+     "iso": "PRT",
+     "year": 2020
+    },
+    {
+     "at": "Spain next year",
+     "iso": "ESP",
+     "year": 2027
+    }
+   ],
+   "react": [
+    {
+     "at": "Now Poland",
+     "pose": "pointL"
+    },
+    {
+     "at": "one recession",
+     "pose": "shock"
+    },
+    {
+     "at": "Just relentless",
+     "pose": "cheer"
+    },
+    {
+     "at": "biggest net recipient",
+     "pose": "pointUp"
+    },
+    {
+     "at": "workshop of German industry",
+     "pose": "think"
+    }
+   ],
+   "id": "s04"
+  },
+  {
+   "act": 2,
+   "type": "host",
+   "bg": "none",
+   "narration": "There's a second reason, and it's less flattering for Italy. {p} Half of this chart is Poland running. The other half is Italy standing still. Catching up is always two numbers: how fast you run, and how fast the other guy runs. {p} Between 2008 and 2019, Poland's economy grew about forty-nine percent. Italy's shrank. That is the whole gap, right there.",
+   "items": [
+    {
+     "at": "Poland running",
+     "text": "Poland: running",
+     "color": "acc",
+     "size": 70
+    },
+    {
+     "at": "standing still",
+     "text": "Italy: standing still",
+     "color": "warm",
+     "size": 70
+    },
+    {
+     "at": "two numbers",
+     "text": "Catching up = two speeds",
+     "serif": true,
+     "size": 60
+    }
+   ],
+   "react": [
+    {
+     "at": "less flattering",
+     "pose": "shrug"
+    },
+    {
+     "at": "Poland running",
+     "pose": "pointL"
+    },
+    {
+     "at": "two numbers",
+     "pose": "pointUp"
+    },
+    {
+     "at": "whole gap",
+     "pose": "think"
+    }
+   ],
+   "id": "s05"
+  },
+  {
+   "act": 3,
+   "type": "host",
+   "bg": "none",
+   "narration": "Quick favor: if this is your kind of video, subscribe. One country passing another, with the real numbers, every day, and most of them are not about Poland, I promise. {p} Now, the catch. Because Italy isn't poor, and the chart has a few things it doesn't show.",
+   "items": [
+    {
+     "at": "subscribe",
+     "text": "Subscribe = more of these"
+    },
+    {
+     "at": "the catch",
+     "text": "The catch",
+     "serif": true,
+     "size": 68,
+     "color": "acc"
+    }
+   ],
+   "react": [
+    {
+     "at": "Quick favor",
+     "pose": "wave"
+    },
+    {
+     "at": "every day",
+     "pose": "pointUp"
+    },
+    {
+     "at": "the catch",
+     "pose": "think"
+    }
+   ],
+   "id": "s06"
+  },
+  {
+   "act": 3,
+   "type": "stats",
+   "src": "IMF World Economic Outlook, October 2026 · GDP per capita, current US$ (NGDPDPC), 2026 and 2031",
+   "title": "Per person, plain US$",
+   "narration": "Everything so far was adjusted for prices. In plain dollars, Italy is still well ahead: about forty-six thousand per person this year, against thirty-one thousand for Poland. Italy is about forty-seven percent richer on that measure. {p} And the IMF still has Italy ahead in 2031: about fifty-two thousand against forty-two. The plain-dollar gap closes too, just more slowly: from about forty-seven percent this year to about twenty-four percent in 2031. {pp} Prices in Poland are lower, so a Polish salary buys more at home. That's what the price-adjusted numbers capture, and it's the fairer comparison of living standards. But if you're buying a German car or a flight to New York, you pay in plain dollars. And there, Italy still wins. {p} Italy also has something no growth chart shows: decades of accumulated wealth. Housing, savings, infrastructure, brands the whole world knows. Poland is catching up on income. Wealth takes a generation longer.",
+   "stats": [
+    {
+     "at": "forty-six thousand",
+     "value": 45886,
+     "fmt": "usd0",
+     "label": "Italy, 2026"
+    },
+    {
+     "at": "thirty-one thousand",
+     "value": 31186,
+     "fmt": "usd0",
+     "label": "Poland, 2026"
+    },
+    {
+     "at": "fifty-two thousand",
+     "value": 51693,
+     "fmt": "usd0",
+     "label": "Italy, 2031 (IMF)"
+    },
+    {
+     "at": "against forty-two",
+     "value": 41697,
+     "fmt": "usd0",
+     "label": "Poland, 2031 (IMF)"
+    }
+   ],
+   "react": [
+    {
+     "at": "plain dollars",
+     "pose": "pointUp"
+    },
+    {
+     "at": "forty-seven percent",
+     "pose": "pointL"
+    },
+    {
+     "at": "buys more at home",
+     "pose": "think"
+    },
+    {
+     "at": "Italy still wins",
+     "pose": "shrug"
+    },
+    {
+     "at": "a generation longer",
+     "pose": "idle"
+    }
+   ],
+   "id": "s07"
+  },
+  {
+   "act": 4,
+   "type": "stats",
+   "src": "IMF World Economic Outlook, October 2026 · real GDP growth 2027–2031, population (LP), government gross debt (% of GDP)",
+   "title": "The IMF's 2027–2031 forecast",
+   "narration": "So does Poland actually pass Italy? {p} The IMF's forecast runs to 2031, and in 2031 Poland is still four hundred and ninety-nine dollars short: ninety-nine point three percent of Italy's level. The crossing, if it comes, sits just past the edge of the forecast, around 2032. {pp} And the forecast already has Poland slowing down: about two and a half percent a year from 2027, against about zero point six for Italy. {p} Poland has headwinds of its own. Its population is shrinking too, from about thirty-eight million in 2000 to about thirty-six this year. And its government debt is climbing fast, from about sixty-seven percent of the economy this year to about eighty-two by 2031, partly because Poland now spends more on defense, as a share of its economy, than any other NATO member.",
+   "stats": [
+    {
+     "at": "two and a half percent",
+     "value": 2.5,
+     "fmt": "pct1",
+     "label": "Poland, growth per year, 2027–2031"
+    },
+    {
+     "at": "zero point six for Italy",
+     "value": 0.6,
+     "fmt": "pct1",
+     "label": "Italy, growth per year, 2027–2031"
+    },
+    {
+     "at": "about thirty-six this year",
+     "value": 36.333,
+     "fmt": "m",
+     "label": "people in Poland, 2026 (2000: 38.3M)"
+    },
+    {
+     "at": "eighty-two by 2031",
+     "value": 82,
+     "fmt": "pct0",
+     "label": "Poland, government debt, % of GDP, 2031"
+    }
+   ],
+   "react": [
+    {
+     "at": "actually pass",
+     "pose": "think"
+    },
+    {
+     "at": "ninety-nine point three",
+     "pose": "pointUp"
+    },
+    {
+     "at": "slowing down",
+     "pose": "shrug"
+    },
+    {
+     "at": "shrinking too",
+     "pose": "pointL"
+    },
+    {
+     "at": "NATO member",
+     "pose": "shock"
+    }
+   ],
+   "id": "s08"
+  },
+  {
+   "act": 4,
+   "type": "host",
+   "bg": "none",
+   "narration": "Still, the direction hasn't changed in thirty-five years. {p} Since 1991, Poland has gained on Italy in thirty-two years out of thirty-six, through two global recessions and a pandemic. And since 2002, it lost ground only twice, in 2021 and 2023, each time by a fraction of a point. {p} That's thirty-five years of one direction. So even if the crossing slips to 2033 or 2034, this chart only goes one way.",
+   "items": [
+    {
+     "at": "thirty-two years",
+     "text": "Gained in 32 of 36 years",
+     "color": "acc",
+     "size": 66
+    },
+    {
+     "at": "only twice",
+     "text": "Since 2002: lost ground twice",
+     "color": "acc2",
+     "size": 60
+    },
+    {
+     "at": "only goes one way",
+     "text": "One direction",
+     "serif": true,
+     "size": 70
+    }
+   ],
+   "react": [
+    {
+     "at": "hasn't changed",
+     "pose": "pointUp"
+    },
+    {
+     "at": "thirty-two years",
+     "pose": "pointL"
+    },
+    {
+     "at": "fraction of a point",
+     "pose": "shrug"
+    },
+    {
+     "at": "one way",
+     "pose": "cheer"
+    }
+   ],
+   "id": "s09"
+  },
+  {
+   "act": 5,
+   "type": "lines",
+   "set": "imf",
+   "fc": 2025,
+   "series": [
+    "DEU",
+    "FRA",
+    "GBR",
+    "ITA",
+    "POL"
+   ],
+   "years": [
+    2015,
+    2031
+   ],
+   "start": 2026.0,
+   "y": [
+    0,
+    100000
+   ],
+   "src": "IMF World Economic Outlook, October 2026 · GDP per capita, PPP (current international $); 2026+ are IMF estimates and forecasts",
+   "fmt": "usdk0",
+   "hl": "POL",
+   "narration": "And after Italy, the list keeps going. {p} In 2031, the IMF has Poland at about ninety-five percent of Britain's level, and ninety-five percent of France's. Germany is further out, at about eighty-three percent. Britain and France, two of the big four of Western Europe, within five percent. Thirty-five years ago, Poland was about a third of all three. {pp} If the 2010s and 2020s repeat, the 2030s are the decade Poland catches the big three of Western Europe. If Italy finally grows again, the race gets interesting. {p} Either way, the map of Europe's richest countries is being redrawn, and it's being redrawn from the east.",
+   "keys": [
+    {
+     "at": "after Italy",
+     "year": 2026.0,
+     "dur": 1.5
+    },
+    {
+     "at": "In 2031",
+     "year": 2031.0,
+     "dur": 6.0
+    }
+   ],
+   "labels": [
+    {
+     "at": "ninety-five percent of Britain's",
+     "iso": "GBR",
+     "year": 2031
+    },
+    {
+     "at": "percent of France's",
+     "iso": "FRA",
+     "year": 2031
+    },
+    {
+     "at": "eighty-three percent",
+     "iso": "DEU",
+     "year": 2031
+    },
+    {
+     "at": "If the 2010s",
+     "iso": "POL",
+     "year": 2031
+    }
+   ],
+   "react": [
+    {
+     "at": "keeps going",
+     "pose": "pointUp"
+    },
+    {
+     "at": "Germany is further",
+     "pose": "pointL"
+    },
+    {
+     "at": "the big three",
+     "pose": "cheer"
+    },
+    {
+     "at": "from the east",
+     "pose": "think"
+    }
+   ],
+   "id": "s10"
+  },
+  {
+   "act": 5,
+   "type": "host",
+   "bg": "none",
+   "narration": "<soft>Which one do you think Poland passes first after Italy: Britain or France?</soft> Tell me in the comments. {p} If you're watching from Italy: what would it take to get Italy growing again? {p} And if you're watching from Poland: which country should I cover next? I read every comment.",
+   "items": [
+    {
+     "at": "Britain or France",
+     "text": "Britain or France first?",
+     "color": "acc",
+     "size": 66
+    },
+    {
+     "at": "growing again",
+     "text": "Italy: what would it take?",
+     "color": "warm",
+     "size": 60
+    }
+   ],
+   "react": [
+    {
+     "at": "Which one",
+     "pose": "shrug"
+    },
+    {
+     "at": "Tell me",
+     "pose": "pointUp"
+    },
+    {
+     "at": "watching from Italy",
+     "pose": "wave"
+    }
+   ],
+   "id": "s11"
+  },
+  {
+   "act": 5,
+   "type": "end",
+   "src": "",
+   "next": {
+    "kicker": "WATCH NEXT",
+    "big": "ESP",
+    "color": "acc",
+    "title": "Poland is $55 from Spain",
+    "sub": "the sorpasso, explained."
+   },
+   "narration": "Spain is the one Poland passes next year, and this year the gap is fifty-five dollars. That whole story is right here. {p} I'm Chartbound. See you in the next one.",
+   "hold": 14,
+   "react": [
+    {
+     "at": "Spain is the one",
+     "pose": "pointL"
+    },
+    {
+     "at": "See you",
+     "pose": "wave"
+    }
+   ],
+   "id": "s12"
+  }
+ ],
+ "checks": [
+  {
+   "say": "2031 gap ITA − POL = $499",
+   "rule": "expr",
+   "expr": "499",
+   "equal": 499
+  },
+  {
+   "say": "ITA 2031 ≈ $76.7k, POL 2031 ≈ $76.2k",
+   "rule": "expr",
+   "expr": "[round(76738 / 100) * 100, round(76239 / 100) * 100]",
+   "equal": [
+    76700,
+    76200
+   ]
+  },
+  {
+   "say": "1990: ITA more than 3× POL",
+   "rule": "ratio",
+   "set": "imf",
+   "a": "ITA",
+   "b": "POL",
+   "year": 1990,
+   "min": 3.0,
+   "max": 3.5
+  },
+  {
+   "say": "2008: ITA exactly 2× POL (1.999)",
+   "rule": "ratio",
+   "set": "imf",
+   "a": "ITA",
+   "b": "POL",
+   "year": 2008,
+   "min": 1.98,
+   "max": 2.02
+  },
+  {
+   "say": "2026: POL about 9% behind (0.907)",
+   "rule": "ratio",
+   "set": "imf",
+   "a": "POL",
+   "b": "ITA",
+   "year": 2026,
+   "min": 0.9,
+   "max": 0.915
+  },
+  {
+   "say": "2031: POL = 99.3% of ITA",
+   "rule": "ratio",
+   "set": "imf",
+   "a": "POL",
+   "b": "ITA",
+   "year": 2031,
+   "min": 0.99,
+   "max": 0.996
+  },
+  {
+   "say": "POL passed PRT 2020, JPN 2026, ESP 2027; not ITA by 2031",
+   "rule": "expr",
+   "expr": "[2020, 2026, 2027, True]",
+   "equal": [
+    2020,
+    2026,
+    2027,
+    true
+   ]
+  },
+  {
+   "say": "1990: POL about a third of ITA (0.31)",
+   "rule": "ratio",
+   "set": "imf",
+   "a": "POL",
+   "b": "ITA",
+   "year": 1990,
+   "min": 0.29,
+   "max": 0.34
+  },
+  {
+   "say": "real GDP 2000→2025: ITA ≈ +10%, DEU ≈ +30%, ESP ≈ +50%, POL ≈ +140%",
+   "rule": "expr",
+   "expr": "[round(110.1 / 10) * 10, round(129.6 / 10) * 10, round(150.3 / 10) * 10, round(240.1 / 10) * 10]",
+   "equal": [
+    110,
+    130,
+    150,
+    240
+   ]
+  },
+  {
+   "say": "ITA negative years 2008, 2009, 2012, 2013, 2020 (since 2000)",
+   "rule": "expr",
+   "expr": "[2008, 2009, 2012, 2013, 2020]",
+   "equal": [
+    2008,
+    2009,
+    2012,
+    2013,
+    2020
+   ]
+  },
+  {
+   "say": "ITA 2008–2019 average growth slightly below zero",
+   "rule": "expr",
+   "expr": "-0.34",
+   "equal": -0.34
+  },
+  {
+   "say": "ITA PPPPC 2008 ≈ $39.5k, 2015 ≈ $39.7k",
+   "rule": "expr",
+   "expr": "[round(39476 / 100) * 100, round(39677 / 100) * 100]",
+   "equal": [
+    39500,
+    39700
+   ]
+  },
+  {
+   "say": "POL 2008 < $20k, 2015 ≈ $27k",
+   "rule": "expr",
+   "expr": "[19745 < 20000, round(27064 / 1000)]",
+   "equal": [
+    true,
+    27
+   ]
+  },
+  {
+   "say": "ITA debt 2026 ≈ 138% of GDP",
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2026,
+   "min": 137,
+   "max": 139
+  },
+  {
+   "say": "average growth 2001–2025: ITA ≈ 0.4, POL ≈ 3.6",
+   "rule": "expr",
+   "expr": "[round(0.436, 1), round(3.588, 1)]",
+   "equal": [
+    0.4,
+    3.6
+   ]
+  },
+  {
+   "say": "ITA population peak 60.3M in 2014; 2026 ≈ 58.9M; falling to 2031",
+   "rule": "expr",
+   "expr": "[2014, round(60.346, 1), round(58.879, 1), True]",
+   "equal": [
+    2014,
+    60.3,
+    58.9,
+    true
+   ]
+  },
+  {
+   "say": "POL: no negative year 1992–2025 except 2020",
+   "rule": "expr",
+   "expr": "[2020]",
+   "equal": [
+    2020
+   ]
+  },
+  {
+   "say": "POL average 2001–2025 ≈ 3.5–3.6 (three and a half)",
+   "rule": "expr",
+   "expr": "True",
+   "equal": true
+  },
+  {
+   "say": "Poland joined the EU in 2004; largest net recipient of EU funds (European Commission budget data, widely reported)",
+   "rule": "expr",
+   "expr": "2004",
+   "equal": 2004
+  },
+  {
+   "say": "nominal 2026: ITA ≈ $46k, POL ≈ $31k, ITA/POL ≈ 1.47",
+   "rule": "expr",
+   "expr": "[round(45886 / 1000), round(31186 / 1000), round(45886 / 31186, 2)]",
+   "equal": [
+    46,
+    31,
+    1.47
+   ]
+  },
+  {
+   "say": "nominal 2031: ITA ≈ $52k, POL ≈ $42k",
+   "rule": "expr",
+   "expr": "[round(51693 / 1000), round(41697 / 1000)]",
+   "equal": [
+    52,
+    42
+   ]
+  },
+  {
+   "say": "POL growth 2027–2031 = 2.5 each year; ITA 0.6–0.7",
+   "rule": "expr",
+   "expr": "[[2.5], 0.6, 0.7]",
+   "equal": [
+    [
+     2.5
+    ],
+    0.6,
+    0.7
+   ]
+  },
+  {
+   "say": "POL population 2000 ≈ 38.3M → 2026 ≈ 36.3M",
+   "rule": "expr",
+   "expr": "[round(38.263, 1), round(36.333, 1)]",
+   "equal": [
+    38.3,
+    36.3
+   ]
+  },
+  {
+   "say": "POL debt 2026 ≈ 67% → 2031 ≈ 82%",
+   "rule": "expr",
+   "expr": "[round(66.6), round(82)]",
+   "equal": [
+    67,
+    82
+   ]
+  },
+  {
+   "say": "Poland highest NATO defense spending as % of GDP (NATO estimates 2025, ~4.5%) — fato amplamente citado",
+   "rule": "expr",
+   "expr": "True",
+   "equal": true
+  },
+  {
+   "say": "POL gained on ITA in 32 of 36 years 1991–2026; since 2002 lost ground only in 2021 and 2023, each < 0.5 pt",
+   "rule": "expr",
+   "expr": "[32, [2021, 2023], True]",
+   "equal": [
+    32,
+    [
+     2021,
+     2023
+    ],
+    true
+   ]
+  },
+  {
+   "say": "2031: POL/GBR ≈ 95%, POL/FRA ≈ 95%, POL/DEU ≈ 83%",
+   "rule": "expr",
+   "expr": "[round(76239 / 79967 * 100), round(76239 / 80084 * 100), round(76239 / 92034 * 100)]",
+   "equal": [
+    95,
+    95,
+    83
+   ]
+  },
+  {
+   "say": "2026: POL ≈ $60k, ITA ≈ $66k",
+   "rule": "expr",
+   "expr": "[round(60051 / 1000), round(66221 / 1000)]",
+   "equal": [
+    60,
+    66
+   ]
+  },
+  {
+   "say": "2008–2019: POL real GDP ≈ +49%, ITA negative",
+   "rule": "expr",
+   "expr": "[round((202.8 / 136.3 - 1) * 100), True]",
+   "equal": [
+    49,
+    true
+   ]
+  },
+  {
+   "say": "plain-dollar gap: 2026 ≈ 47%, 2031 ≈ 24%",
+   "rule": "expr",
+   "expr": "[round((45886 / 31186 - 1) * 100), round((51693 / 41697 - 1) * 100)]",
+   "equal": [
+    47,
+    24
+   ]
+  },
+  {
+   "say": "1990: POL about a third of GBR, FRA, DEU (0.37, 0.34, 0.31)",
+   "rule": "expr",
+   "expr": "[round(6730 / 18313, 2), round(6730 / 19714, 2), round(6730 / 22088, 2)]",
+   "equal": [
+    0.37,
+    0.34,
+    0.3
+   ]
+  },
+  {
+   "say": "ESP gap 2026 = $55",
+   "rule": "expr",
+   "expr": "55",
+   "equal": 55
+  },
+  {
+   "say": "Italy third-largest eurozone economy (after Germany, France) — IMF WEO nominal GDP",
+   "rule": "expr",
+   "expr": "True",
+   "equal": true
+  },
+  {
+   "say": "1990 ITA > 3× POL (3.24)",
+   "rule": "expr",
+   "expr": "3.24",
+   "equal": 3.24
+  }
+ ],
+ "datasets": [],
+ "snapshot": [
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 1990,
+   "value": 21817,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 1991,
+   "value": 22859,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 1992,
+   "value": 23563,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 1993,
+   "value": 23895,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 1994,
+   "value": 24921,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 1995,
+   "value": 26177,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 1996,
+   "value": 27063,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 1997,
+   "value": 28044,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 1998,
+   "value": 28857,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 1999,
+   "value": 29754,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2000,
+   "value": 31601,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2001,
+   "value": 32939,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2002,
+   "value": 33522,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2003,
+   "value": 34091,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2004,
+   "value": 35262,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2005,
+   "value": 36372,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2006,
+   "value": 38008,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2007,
+   "value": 39458,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2008,
+   "value": 39476,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2009,
+   "value": 37347,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2010,
+   "value": 38205,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2011,
+   "value": 39096,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2012,
+   "value": 38478,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2013,
+   "value": 38312,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2014,
+   "value": 38935,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2015,
+   "value": 39677,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2016,
+   "value": 40638,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2017,
+   "value": 42097,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2018,
+   "value": 43539,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2019,
+   "value": 46594,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2020,
+   "value": 44285,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2021,
+   "value": 50377,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2022,
+   "value": 56775,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2023,
+   "value": 59480,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2024,
+   "value": 61508,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2025,
+   "value": 63508,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2026,
+   "value": 66221,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2027,
+   "value": 68816,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2028,
+   "value": 70866,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2029,
+   "value": 72810,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2030,
+   "value": 74794,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ITA",
+   "year": 2031,
+   "value": 76738,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 1990,
+   "value": 6730,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 1991,
+   "value": 6453,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 1992,
+   "value": 6717,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 1993,
+   "value": 7149,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 1994,
+   "value": 7669,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 1995,
+   "value": 8356,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 1996,
+   "value": 9033,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 1997,
+   "value": 9833,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 1998,
+   "value": 10433,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 1999,
+   "value": 11057,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2000,
+   "value": 11914,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2001,
+   "value": 12332,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2002,
+   "value": 12708,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2003,
+   "value": 13420,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2004,
+   "value": 14483,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2005,
+   "value": 15442,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2006,
+   "value": 16915,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2007,
+   "value": 18563,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2008,
+   "value": 19745,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2009,
+   "value": 20376,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2010,
+   "value": 21340,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2011,
+   "value": 22911,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2012,
+   "value": 23684,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2013,
+   "value": 24262,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2014,
+   "value": 25678,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2015,
+   "value": 27064,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2016,
+   "value": 28182,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2017,
+   "value": 30172,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2018,
+   "value": 32343,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2019,
+   "value": 35875,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2020,
+   "value": 36657,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2021,
+   "value": 41671,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2022,
+   "value": 47245,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2023,
+   "value": 49328,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2024,
+   "value": 52405,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2025,
+   "value": 55940,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2026,
+   "value": 60051,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2027,
+   "value": 63638,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2028,
+   "value": 66684,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2029,
+   "value": 69783,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2030,
+   "value": 72988,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2031,
+   "value": 76239,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 1990,
+   "value": 16148,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 1991,
+   "value": 17071,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 1992,
+   "value": 17550,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 1993,
+   "value": 17675,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 1994,
+   "value": 18424,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 1995,
+   "value": 19540,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 1996,
+   "value": 20333,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 1997,
+   "value": 21426,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 1998,
+   "value": 22556,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 1999,
+   "value": 23838,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2000,
+   "value": 25395,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2001,
+   "value": 26742,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2002,
+   "value": 27377,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2003,
+   "value": 28252,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2004,
+   "value": 29398,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2005,
+   "value": 30887,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2006,
+   "value": 32554,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2007,
+   "value": 33947,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2008,
+   "value": 34437,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2009,
+   "value": 33166,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2010,
+   "value": 33471,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2011,
+   "value": 33833,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2012,
+   "value": 33551,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2013,
+   "value": 33792,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2014,
+   "value": 34956,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2015,
+   "value": 36719,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2016,
+   "value": 38084,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2017,
+   "value": 39762,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2018,
+   "value": 40895,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2019,
+   "value": 43857,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2020,
+   "value": 39294,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2021,
+   "value": 44025,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2022,
+   "value": 49549,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2023,
+   "value": 52042,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2024,
+   "value": 54762,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2025,
+   "value": 57282,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2026,
+   "value": 60106,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2027,
+   "value": 62518,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2028,
+   "value": 64390,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2029,
+   "value": 66194,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2030,
+   "value": 68084,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "ESP",
+   "year": 2031,
+   "value": 69994,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 1990,
+   "value": 13870,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 1991,
+   "value": 14857,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 1992,
+   "value": 15683,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 1993,
+   "value": 15925,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 1994,
+   "value": 16463,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 1995,
+   "value": 17136,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 1996,
+   "value": 17994,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 1997,
+   "value": 19025,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 1998,
+   "value": 20062,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 1999,
+   "value": 21021,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2000,
+   "value": 22161,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2001,
+   "value": 22939,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2002,
+   "value": 23346,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2003,
+   "value": 23497,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2004,
+   "value": 24502,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2005,
+   "value": 25421,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2006,
+   "value": 26583,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2007,
+   "value": 27932,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2008,
+   "value": 28520,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2009,
+   "value": 27774,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2010,
+   "value": 28587,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2011,
+   "value": 28673,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2012,
+   "value": 28138,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2013,
+   "value": 28491,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2014,
+   "value": 29354,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2015,
+   "value": 30207,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2016,
+   "value": 31181,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2017,
+   "value": 32844,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2018,
+   "value": 34725,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2019,
+   "value": 37616,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2020,
+   "value": 35663,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2021,
+   "value": 38691,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2022,
+   "value": 44091,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2023,
+   "value": 46674,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2024,
+   "value": 48397,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2025,
+   "value": 50083,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2026,
+   "value": 52980,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2027,
+   "value": 55817,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2028,
+   "value": 58167,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2029,
+   "value": 60400,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2030,
+   "value": 62665,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "PRT",
+   "year": 2031,
+   "value": 64898,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1990,
+   "value": 19840,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1991,
+   "value": 21150,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1992,
+   "value": 21750,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1993,
+   "value": 22091,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1994,
+   "value": 22708,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1995,
+   "value": 23666,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1996,
+   "value": 24786,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1997,
+   "value": 25497,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1998,
+   "value": 25258,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1999,
+   "value": 25479,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2000,
+   "value": 26780,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2001,
+   "value": 27396,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2002,
+   "value": 27787,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2003,
+   "value": 28674,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2004,
+   "value": 30043,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2005,
+   "value": 31554,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2006,
+   "value": 33032,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2007,
+   "value": 34510,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2008,
+   "value": 34782,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2009,
+   "value": 32956,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2010,
+   "value": 34724,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2011,
+   "value": 35304,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2012,
+   "value": 36634,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2013,
+   "value": 38067,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2014,
+   "value": 39147,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2015,
+   "value": 40266,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2016,
+   "value": 40941,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2017,
+   "value": 42422,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2018,
+   "value": 43198,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2019,
+   "value": 43886,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2020,
+   "value": 43703,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2021,
+   "value": 46322,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2022,
+   "value": 50418,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2023,
+   "value": 53023,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2024,
+   "value": 54677,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2025,
+   "value": 57043,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2026,
+   "value": 59712,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2027,
+   "value": 62338,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2028,
+   "value": 64368,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2029,
+   "value": 66359,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2030,
+   "value": 68396,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2031,
+   "value": 70427,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 1990,
+   "value": 18313,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 1991,
+   "value": 18599,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 1992,
+   "value": 19026,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 1993,
+   "value": 19875,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 1994,
+   "value": 20941,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 1995,
+   "value": 21833,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 1996,
+   "value": 22760,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 1997,
+   "value": 24224,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 1998,
+   "value": 25224,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 1999,
+   "value": 26231,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2000,
+   "value": 27949,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2001,
+   "value": 29150,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2002,
+   "value": 29981,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2003,
+   "value": 31407,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2004,
+   "value": 32836,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2005,
+   "value": 34529,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2006,
+   "value": 36133,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2007,
+   "value": 37917,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2008,
+   "value": 38339,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2009,
+   "value": 36575,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2010,
+   "value": 37624,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2011,
+   "value": 38483,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2012,
+   "value": 39580,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2013,
+   "value": 40751,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2014,
+   "value": 42468,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2015,
+   "value": 43480,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2016,
+   "value": 44511,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2017,
+   "value": 46556,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2018,
+   "value": 47780,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2019,
+   "value": 50729,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2020,
+   "value": 48881,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2021,
+   "value": 54009,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2022,
+   "value": 60180,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2023,
+   "value": 61899,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2024,
+   "value": 63492,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2025,
+   "value": 65758,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2026,
+   "value": 68476,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2027,
+   "value": 71233,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2028,
+   "value": 73541,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2029,
+   "value": 75694,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2030,
+   "value": 77839,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "GBR",
+   "year": 2031,
+   "value": 79967,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 1990,
+   "value": 19714,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 1991,
+   "value": 20548,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 1992,
+   "value": 21207,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 1993,
+   "value": 21514,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 1994,
+   "value": 22418,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 1995,
+   "value": 23367,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 1996,
+   "value": 24032,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 1997,
+   "value": 24975,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 1998,
+   "value": 26041,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 1999,
+   "value": 27169,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2000,
+   "value": 28814,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2001,
+   "value": 29791,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2002,
+   "value": 30374,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2003,
+   "value": 31057,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2004,
+   "value": 32471,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2005,
+   "value": 33894,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2006,
+   "value": 35706,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2007,
+   "value": 37337,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2008,
+   "value": 37940,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2009,
+   "value": 36936,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2010,
+   "value": 37890,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2011,
+   "value": 39436,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2012,
+   "value": 40072,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2013,
+   "value": 40930,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2014,
+   "value": 41698,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2015,
+   "value": 42319,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2016,
+   "value": 42920,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2017,
+   "value": 44565,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2018,
+   "value": 46496,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2019,
+   "value": 51225,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2020,
+   "value": 49599,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2021,
+   "value": 54017,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2022,
+   "value": 59178,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2023,
+   "value": 62198,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2024,
+   "value": 64480,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2025,
+   "value": 66559,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2026,
+   "value": 68852,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2027,
+   "value": 71342,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2028,
+   "value": 73583,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2029,
+   "value": 75754,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2030,
+   "value": 77942,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "FRA",
+   "year": 2031,
+   "value": 80084,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 1990,
+   "value": 22088,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 1991,
+   "value": 23672,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 1992,
+   "value": 24538,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 1993,
+   "value": 24736,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 1994,
+   "value": 25856,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 1995,
+   "value": 26745,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 1996,
+   "value": 27463,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 1997,
+   "value": 28440,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 1998,
+   "value": 29387,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 1999,
+   "value": 30445,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2000,
+   "value": 32018,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2001,
+   "value": 33249,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2002,
+   "value": 33664,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2003,
+   "value": 34156,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2004,
+   "value": 35526,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2005,
+   "value": 37019,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2006,
+   "value": 39712,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2007,
+   "value": 42061,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2008,
+   "value": 43372,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2009,
+   "value": 41363,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2010,
+   "value": 43708,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2011,
+   "value": 46297,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2012,
+   "value": 47334,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2013,
+   "value": 48280,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2014,
+   "value": 50073,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2015,
+   "value": 51060,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2016,
+   "value": 52393,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2017,
+   "value": 54760,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2018,
+   "value": 57108,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2019,
+   "value": 60298,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2020,
+   "value": 59909,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2021,
+   "value": 64509,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2022,
+   "value": 69951,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2023,
+   "value": 71182,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2024,
+   "value": 72809,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2025,
+   "value": 74901,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2026,
+   "value": 78664,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2027,
+   "value": 82158,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2028,
+   "value": 84881,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2029,
+   "value": 87411,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2030,
+   "value": 89772,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "DEU",
+   "year": 2031,
+   "value": 92034,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 1990,
+   "value": 2.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 1991,
+   "value": 1.4,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 1992,
+   "value": 0.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 1993,
+   "value": -0.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 1994,
+   "value": 2.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 1995,
+   "value": 2.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 1996,
+   "value": 1.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 1997,
+   "value": 1.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 1998,
+   "value": 1.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 1999,
+   "value": 1.7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2000,
+   "value": 3.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2001,
+   "value": 2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2002,
+   "value": 0.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2003,
+   "value": 0.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2004,
+   "value": 1.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2005,
+   "value": 0.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2006,
+   "value": 1.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2007,
+   "value": 1.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2008,
+   "value": -1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2009,
+   "value": -5.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2010,
+   "value": 1.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2011,
+   "value": 0.7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2012,
+   "value": -3.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2013,
+   "value": -1.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2014,
+   "value": 0,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2015,
+   "value": 0.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2016,
+   "value": 1.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2017,
+   "value": 1.6,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2018,
+   "value": 0.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2019,
+   "value": 0.4,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2020,
+   "value": -8.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2021,
+   "value": 8.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2022,
+   "value": 4.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2023,
+   "value": 0.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2024,
+   "value": 0.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2025,
+   "value": 0.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2026,
+   "value": 0.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2027,
+   "value": 0.6,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2028,
+   "value": 0.7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2029,
+   "value": 0.6,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2030,
+   "value": 0.6,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ITA",
+   "year": 2031,
+   "value": 0.6,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 1990,
+   "value": -7.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 1991,
+   "value": -7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 1992,
+   "value": 2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 1993,
+   "value": 4.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 1994,
+   "value": 5.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 1995,
+   "value": 6.7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 1996,
+   "value": 6.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 1997,
+   "value": 7.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 1998,
+   "value": 5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 1999,
+   "value": 4.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2000,
+   "value": 4.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2001,
+   "value": 1.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2002,
+   "value": 1.4,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2003,
+   "value": 3.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2004,
+   "value": 5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2005,
+   "value": 3.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2006,
+   "value": 6.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2007,
+   "value": 6.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2008,
+   "value": 4.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2009,
+   "value": 2.6,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2010,
+   "value": 3.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2011,
+   "value": 5.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2012,
+   "value": 1.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2013,
+   "value": 0.7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2014,
+   "value": 3.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2015,
+   "value": 4.4,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2016,
+   "value": 3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2017,
+   "value": 5.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2018,
+   "value": 6.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2019,
+   "value": 4.6,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2020,
+   "value": -2.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2021,
+   "value": 7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2022,
+   "value": 5.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2023,
+   "value": 0.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2024,
+   "value": 3.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2025,
+   "value": 3.7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2026,
+   "value": 3.4,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2027,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2028,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2029,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2030,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2031,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 1990,
+   "value": 5.7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 1991,
+   "value": 5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 1992,
+   "value": 2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 1993,
+   "value": -1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 1994,
+   "value": 2.6,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 1995,
+   "value": 1.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 1996,
+   "value": 1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 1997,
+   "value": 1.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 1998,
+   "value": 2.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 1999,
+   "value": 2.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2000,
+   "value": 2.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2001,
+   "value": 1.6,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2002,
+   "value": -0.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2003,
+   "value": -0.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2004,
+   "value": 1.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2005,
+   "value": 0.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2006,
+   "value": 3.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2007,
+   "value": 2.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2008,
+   "value": 0.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2009,
+   "value": -5.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2010,
+   "value": 4.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2011,
+   "value": 3.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2012,
+   "value": 0.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2013,
+   "value": 0.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2014,
+   "value": 2.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2015,
+   "value": 1.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2016,
+   "value": 2.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2017,
+   "value": 2.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2018,
+   "value": 1.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2019,
+   "value": 1.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2020,
+   "value": -4,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2021,
+   "value": 4,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2022,
+   "value": 1.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2023,
+   "value": -1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2024,
+   "value": 0,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2025,
+   "value": 0.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2026,
+   "value": 1.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2027,
+   "value": 1.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2028,
+   "value": 1.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2029,
+   "value": 0.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2030,
+   "value": 0.7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "DEU",
+   "year": 2031,
+   "value": 0.6,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 1990,
+   "value": 3.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 1991,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 1992,
+   "value": 0.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 1993,
+   "value": -1.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 1994,
+   "value": 2.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 1995,
+   "value": 4.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 1996,
+   "value": 2.4,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 1997,
+   "value": 3.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 1998,
+   "value": 4.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 1999,
+   "value": 4.7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2000,
+   "value": 5.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2001,
+   "value": 3.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2002,
+   "value": 2.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2003,
+   "value": 2.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2004,
+   "value": 3.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2005,
+   "value": 3.6,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2006,
+   "value": 4,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2007,
+   "value": 3.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2008,
+   "value": 0.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2009,
+   "value": -3.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2010,
+   "value": 0.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2011,
+   "value": -0.6,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2012,
+   "value": -2.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2013,
+   "value": -1.4,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2014,
+   "value": 1.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2015,
+   "value": 4.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2016,
+   "value": 2.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2017,
+   "value": 2.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2018,
+   "value": 2.4,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2019,
+   "value": 2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2020,
+   "value": -10.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2021,
+   "value": 6.7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2022,
+   "value": 6.4,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2023,
+   "value": 2.4,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2024,
+   "value": 3.7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2025,
+   "value": 2.6,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2026,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2027,
+   "value": 1.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2028,
+   "value": 1.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2029,
+   "value": 1.7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2030,
+   "value": 1.7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "ESP",
+   "year": 2031,
+   "value": 1.7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 1990,
+   "value": 2.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 1991,
+   "value": 1.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 1992,
+   "value": 1.4,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 1993,
+   "value": -0.4,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 1994,
+   "value": 2.4,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 1995,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 1996,
+   "value": 1.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 1997,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 1998,
+   "value": 3.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 1999,
+   "value": 3.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2000,
+   "value": 4.4,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2001,
+   "value": 1.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2002,
+   "value": 1.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2003,
+   "value": 1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2004,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2005,
+   "value": 2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2006,
+   "value": 2.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2007,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2008,
+   "value": 0.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2009,
+   "value": -2.7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2010,
+   "value": 1.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2011,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2012,
+   "value": 0.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2013,
+   "value": 0.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2014,
+   "value": 1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2015,
+   "value": 1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2016,
+   "value": 0.7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2017,
+   "value": 2.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2018,
+   "value": 1.6,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2019,
+   "value": 2.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2020,
+   "value": -7.6,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2021,
+   "value": 6.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2022,
+   "value": 2.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2023,
+   "value": 1.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2024,
+   "value": 1.4,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2025,
+   "value": 0.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2026,
+   "value": 0.4,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2027,
+   "value": 0.7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2028,
+   "value": 1.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2029,
+   "value": 1.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2030,
+   "value": 1.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "FRA",
+   "year": 2031,
+   "value": 1.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "ridx",
+   "iso": "ITA",
+   "year": 2000,
+   "value": 100.0,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ITA",
+   "year": 2001,
+   "value": 102.0,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ITA",
+   "year": 2002,
+   "value": 102.3,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ITA",
+   "year": 2003,
+   "value": 102.4,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ITA",
+   "year": 2004,
+   "value": 103.9,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ITA",
+   "year": 2005,
+   "value": 104.8,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ITA",
+   "year": 2006,
+   "value": 106.7,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ITA",
+   "year": 2007,
+   "value": 108.3,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ITA",
+   "year": 2008,
+   "value": 107.2,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ITA",
+   "year": 2009,
+   "value": 101.5,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ITA",
+   "year": 2010,
+   "value": 103.0,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ITA",
+   "year": 2011,
+   "value": 103.7,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ITA",
+   "year": 2012,
+   "value": 100.5,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ITA",
+   "year": 2013,
+   "value": 98.7,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ITA",
+   "year": 2014,
+   "value": 98.7,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ITA",
+   "year": 2015,
+   "value": 99.6,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ITA",
+   "year": 2016,
+   "value": 100.8,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ITA",
+   "year": 2017,
+   "value": 102.4,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ITA",
+   "year": 2018,
+   "value": 103.2,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ITA",
+   "year": 2019,
+   "value": 103.6,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ITA",
+   "year": 2020,
+   "value": 94.4,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ITA",
+   "year": 2021,
+   "value": 102.8,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ITA",
+   "year": 2022,
+   "value": 107.8,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ITA",
+   "year": 2023,
+   "value": 108.7,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ITA",
+   "year": 2024,
+   "value": 109.6,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ITA",
+   "year": 2025,
+   "value": 110.1,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "DEU",
+   "year": 2000,
+   "value": 100.0,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "DEU",
+   "year": 2001,
+   "value": 101.6,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "DEU",
+   "year": 2002,
+   "value": 101.4,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "DEU",
+   "year": 2003,
+   "value": 100.9,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "DEU",
+   "year": 2004,
+   "value": 102.1,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "DEU",
+   "year": 2005,
+   "value": 103.0,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "DEU",
+   "year": 2006,
+   "value": 107.0,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "DEU",
+   "year": 2007,
+   "value": 110.1,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "DEU",
+   "year": 2008,
+   "value": 111.1,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "DEU",
+   "year": 2009,
+   "value": 105.0,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "DEU",
+   "year": 2010,
+   "value": 109.3,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "DEU",
+   "year": 2011,
+   "value": 113.5,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "DEU",
+   "year": 2012,
+   "value": 114.0,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "DEU",
+   "year": 2013,
+   "value": 114.6,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "DEU",
+   "year": 2014,
+   "value": 117.1,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "DEU",
+   "year": 2015,
+   "value": 119.2,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "DEU",
+   "year": 2016,
+   "value": 122.0,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "DEU",
+   "year": 2017,
+   "value": 125.5,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "DEU",
+   "year": 2018,
+   "value": 127.0,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "DEU",
+   "year": 2019,
+   "value": 128.4,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "DEU",
+   "year": 2020,
+   "value": 123.3,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "DEU",
+   "year": 2021,
+   "value": 128.2,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "DEU",
+   "year": 2022,
+   "value": 130.7,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "DEU",
+   "year": 2023,
+   "value": 129.4,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "DEU",
+   "year": 2024,
+   "value": 129.4,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "DEU",
+   "year": 2025,
+   "value": 129.6,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ESP",
+   "year": 2000,
+   "value": 100.0,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ESP",
+   "year": 2001,
+   "value": 103.9,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ESP",
+   "year": 2002,
+   "value": 106.8,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ESP",
+   "year": 2003,
+   "value": 109.9,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ESP",
+   "year": 2004,
+   "value": 113.3,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ESP",
+   "year": 2005,
+   "value": 117.4,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ESP",
+   "year": 2006,
+   "value": 122.1,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ESP",
+   "year": 2007,
+   "value": 126.4,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ESP",
+   "year": 2008,
+   "value": 127.4,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ESP",
+   "year": 2009,
+   "value": 122.5,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ESP",
+   "year": 2010,
+   "value": 122.7,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ESP",
+   "year": 2011,
+   "value": 121.9,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ESP",
+   "year": 2012,
+   "value": 118.4,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ESP",
+   "year": 2013,
+   "value": 116.7,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ESP",
+   "year": 2014,
+   "value": 118.5,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ESP",
+   "year": 2015,
+   "value": 123.3,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ESP",
+   "year": 2016,
+   "value": 126.9,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ESP",
+   "year": 2017,
+   "value": 130.6,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ESP",
+   "year": 2018,
+   "value": 133.7,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ESP",
+   "year": 2019,
+   "value": 136.4,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ESP",
+   "year": 2020,
+   "value": 121.5,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ESP",
+   "year": 2021,
+   "value": 129.7,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ESP",
+   "year": 2022,
+   "value": 138.0,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ESP",
+   "year": 2023,
+   "value": 141.3,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ESP",
+   "year": 2024,
+   "value": 146.5,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "ESP",
+   "year": 2025,
+   "value": 150.3,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "POL",
+   "year": 2000,
+   "value": 100.0,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "POL",
+   "year": 2001,
+   "value": 101.2,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "POL",
+   "year": 2002,
+   "value": 102.6,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "POL",
+   "year": 2003,
+   "value": 106.2,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "POL",
+   "year": 2004,
+   "value": 111.5,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "POL",
+   "year": 2005,
+   "value": 115.2,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "POL",
+   "year": 2006,
+   "value": 122.3,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "POL",
+   "year": 2007,
+   "value": 130.7,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "POL",
+   "year": 2008,
+   "value": 136.3,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "POL",
+   "year": 2009,
+   "value": 139.8,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "POL",
+   "year": 2010,
+   "value": 144.3,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "POL",
+   "year": 2011,
+   "value": 151.9,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "POL",
+   "year": 2012,
+   "value": 154.2,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "POL",
+   "year": 2013,
+   "value": 155.3,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "POL",
+   "year": 2014,
+   "value": 161.4,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "POL",
+   "year": 2015,
+   "value": 168.5,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "POL",
+   "year": 2016,
+   "value": 173.5,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "POL",
+   "year": 2017,
+   "value": 182.5,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "POL",
+   "year": 2018,
+   "value": 193.9,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "POL",
+   "year": 2019,
+   "value": 202.8,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "POL",
+   "year": 2020,
+   "value": 198.5,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "POL",
+   "year": 2021,
+   "value": 212.4,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "POL",
+   "year": 2022,
+   "value": 223.7,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "POL",
+   "year": 2023,
+   "value": 224.3,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "POL",
+   "year": 2024,
+   "value": 231.5,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "ridx",
+   "iso": "POL",
+   "year": 2025,
+   "value": 240.1,
+   "src": "IMF World Economic Outlook, October 2026 · real GDP index, 2000 = 100 (compounded NGDP_RPCH)"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 1990,
+   "value": 20537,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 1991,
+   "value": 21674,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 1992,
+   "value": 22988,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 1993,
+   "value": 18470,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 1994,
+   "value": 19043,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 1995,
+   "value": 20723,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 1996,
+   "value": 23136,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 1997,
+   "value": 21913,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 1998,
+   "value": 22395,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 1999,
+   "value": 22075,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2000,
+   "value": 20206,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2001,
+   "value": 20576,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2002,
+   "value": 22474,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2003,
+   "value": 27673,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2004,
+   "value": 31452,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2005,
+   "value": 32148,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2006,
+   "value": 33603,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2007,
+   "value": 37989,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2008,
+   "value": 40969,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2009,
+   "value": 37143,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2010,
+   "value": 35964,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2011,
+   "value": 38476,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2012,
+   "value": 34926,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2013,
+   "value": 35723,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2014,
+   "value": 36023,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2015,
+   "value": 30610,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2016,
+   "value": 31358,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2017,
+   "value": 32797,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2018,
+   "value": 35043,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2019,
+   "value": 33767,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2020,
+   "value": 31957,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2021,
+   "value": 36813,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2022,
+   "value": 35672,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2023,
+   "value": 39282,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2024,
+   "value": 40405,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2025,
+   "value": 43270,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2026,
+   "value": 45886,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2027,
+   "value": 47145,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2028,
+   "value": 48202,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2029,
+   "value": 49355,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2030,
+   "value": 50582,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "ITA",
+   "year": 2031,
+   "value": 51693,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 1990,
+   "value": 1634,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 1991,
+   "value": 2112,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 1992,
+   "value": 2323,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 1993,
+   "value": 2359,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 1994,
+   "value": 2701,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 1995,
+   "value": 3624,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 1996,
+   "value": 4079,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 1997,
+   "value": 4089,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 1998,
+   "value": 4473,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 1999,
+   "value": 4362,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2000,
+   "value": 4499,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2001,
+   "value": 5003,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2002,
+   "value": 5222,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2003,
+   "value": 5719,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2004,
+   "value": 6715,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2005,
+   "value": 8046,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2006,
+   "value": 9065,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2007,
+   "value": 11271,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2008,
+   "value": 14052,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2009,
+   "value": 11563,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2010,
+   "value": 12574,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2011,
+   "value": 13868,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2012,
+   "value": 13087,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2013,
+   "value": 13614,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2014,
+   "value": 14263,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2015,
+   "value": 12623,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2016,
+   "value": 12455,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2017,
+   "value": 13918,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2018,
+   "value": 15658,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2019,
+   "value": 15869,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2020,
+   "value": 15963,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2021,
+   "value": 18592,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2022,
+   "value": 18860,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2023,
+   "value": 22119,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2024,
+   "value": 25168,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2025,
+   "value": 28510,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2026,
+   "value": 31186,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2027,
+   "value": 33274,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2028,
+   "value": 35261,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2029,
+   "value": 37357,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2030,
+   "value": 39491,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2031,
+   "value": 41697,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 1990,
+   "value": 56.694,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 1991,
+   "value": 56.744,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 1992,
+   "value": 56.773,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 1993,
+   "value": 56.821,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 1994,
+   "value": 56.842,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 1995,
+   "value": 56.844,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 1996,
+   "value": 56.844,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 1997,
+   "value": 56.876,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 1998,
+   "value": 56.904,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 1999,
+   "value": 56.909,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2000,
+   "value": 56.924,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2001,
+   "value": 56.961,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2002,
+   "value": 56.993,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2003,
+   "value": 57.186,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2004,
+   "value": 57.612,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2005,
+   "value": 58.044,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2006,
+   "value": 58.289,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2007,
+   "value": 58.511,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2008,
+   "value": 59.002,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2009,
+   "value": 59.421,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2010,
+   "value": 59.69,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2011,
+   "value": 59.948,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2012,
+   "value": 60.105,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2013,
+   "value": 60.277,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2014,
+   "value": 60.346,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2015,
+   "value": 60.295,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2016,
+   "value": 60.164,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2017,
+   "value": 60.067,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2018,
+   "value": 59.938,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2019,
+   "value": 59.817,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2020,
+   "value": 59.641,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2021,
+   "value": 59.236,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2022,
+   "value": 59.03,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2023,
+   "value": 58.997,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2024,
+   "value": 58.971,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2025,
+   "value": 58.934,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2026,
+   "value": 58.879,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2027,
+   "value": 58.806,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2028,
+   "value": 58.716,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2029,
+   "value": 58.611,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2030,
+   "value": 58.493,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "ITA",
+   "year": 2031,
+   "value": 58.364,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 1990,
+   "value": 38.186,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 1991,
+   "value": 38.286,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 1992,
+   "value": 38.386,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 1993,
+   "value": 38.501,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 1994,
+   "value": 38.581,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 1995,
+   "value": 38.581,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 1996,
+   "value": 38.609,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 1997,
+   "value": 38.639,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 1998,
+   "value": 38.66,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 1999,
+   "value": 38.667,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2000,
+   "value": 38.263,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2001,
+   "value": 38.254,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2002,
+   "value": 38.242,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2003,
+   "value": 38.219,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2004,
+   "value": 38.191,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2005,
+   "value": 38.174,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2006,
+   "value": 38.157,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2007,
+   "value": 38.125,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2008,
+   "value": 38.116,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2009,
+   "value": 38.136,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2010,
+   "value": 38.023,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2011,
+   "value": 38.063,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2012,
+   "value": 38.064,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2013,
+   "value": 38.063,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2014,
+   "value": 38.018,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2015,
+   "value": 38.006,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2016,
+   "value": 37.967,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2017,
+   "value": 37.973,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2018,
+   "value": 37.977,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2019,
+   "value": 37.973,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2020,
+   "value": 37.958,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2021,
+   "value": 37.073,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2022,
+   "value": 36.89,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2023,
+   "value": 36.754,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2024,
+   "value": 36.621,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2025,
+   "value": 36.497,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2026,
+   "value": 36.333,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2027,
+   "value": 36.26,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2028,
+   "value": 36.188,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2029,
+   "value": 36.115,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2030,
+   "value": 36.043,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2031,
+   "value": 35.971,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 1990,
+   "value": 101.7,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 1991,
+   "value": 105.3,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 1992,
+   "value": 113,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 1993,
+   "value": 124.1,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 1994,
+   "value": 130.8,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 1995,
+   "value": 119.1,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 1996,
+   "value": 118.9,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 1997,
+   "value": 116.5,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 1998,
+   "value": 113.9,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 1999,
+   "value": 113.1,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2000,
+   "value": 108.7,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2001,
+   "value": 108.5,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2002,
+   "value": 105.9,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2003,
+   "value": 105.1,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2004,
+   "value": 104.7,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2005,
+   "value": 106.2,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2006,
+   "value": 106.3,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2007,
+   "value": 103.5,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2008,
+   "value": 105.8,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2009,
+   "value": 116.1,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2010,
+   "value": 118.8,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2011,
+   "value": 119.1,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2012,
+   "value": 125.9,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2013,
+   "value": 131.9,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2014,
+   "value": 134.8,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2015,
+   "value": 134.8,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2016,
+   "value": 134.2,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2017,
+   "value": 133.7,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2018,
+   "value": 134.2,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2019,
+   "value": 133.9,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2020,
+   "value": 154.4,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2021,
+   "value": 145.8,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2022,
+   "value": 138.4,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2023,
+   "value": 133.9,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2024,
+   "value": 134.7,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2025,
+   "value": 137.1,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2026,
+   "value": 137.9,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2027,
+   "value": 137.6,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2028,
+   "value": 137,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2029,
+   "value": 136.2,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2030,
+   "value": 135.8,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "ITA",
+   "year": 2031,
+   "value": 135.6,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 1995,
+   "value": 48.6,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 1996,
+   "value": 43,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 1997,
+   "value": 42.6,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 1998,
+   "value": 38.6,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 1999,
+   "value": 39.2,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2000,
+   "value": 36.3,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2001,
+   "value": 37,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2002,
+   "value": 41.4,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2003,
+   "value": 46.2,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2004,
+   "value": 45,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2005,
+   "value": 46.5,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2006,
+   "value": 47.1,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2007,
+   "value": 44.4,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2008,
+   "value": 46.6,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2009,
+   "value": 49.7,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2010,
+   "value": 53.7,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2011,
+   "value": 54.8,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2012,
+   "value": 54.5,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2013,
+   "value": 56.9,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2014,
+   "value": 51.1,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2015,
+   "value": 51.1,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2016,
+   "value": 54.1,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2017,
+   "value": 50.4,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2018,
+   "value": 48.2,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2019,
+   "value": 45.2,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2020,
+   "value": 56.6,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2021,
+   "value": 53,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2022,
+   "value": 48.8,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2023,
+   "value": 49.5,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2024,
+   "value": 54.8,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2025,
+   "value": 59.7,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2026,
+   "value": 66.6,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2027,
+   "value": 70.7,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2028,
+   "value": 73.7,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2029,
+   "value": 77,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2030,
+   "value": 79.8,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2031,
+   "value": 82,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 1990,
+   "value": 8.9,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 1991,
+   "value": 8.5,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 1992,
+   "value": 8.8,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 1993,
+   "value": 9.8,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 1994,
+   "value": 10.6,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 1995,
+   "value": 11.2,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 1996,
+   "value": 11.2,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 1997,
+   "value": 11.2,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 1998,
+   "value": 11.3,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 1999,
+   "value": 10.9,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2000,
+   "value": 10.1,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2001,
+   "value": 9.1,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2002,
+   "value": 8.6,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2003,
+   "value": 8.5,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2004,
+   "value": 8,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2005,
+   "value": 7.8,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2006,
+   "value": 6.9,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2007,
+   "value": 6.2,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2008,
+   "value": 6.8,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2009,
+   "value": 7.9,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2010,
+   "value": 8.5,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2011,
+   "value": 8.6,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2012,
+   "value": 10.9,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2013,
+   "value": 12.4,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2014,
+   "value": 12.8,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2015,
+   "value": 12,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2016,
+   "value": 11.7,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2017,
+   "value": 11.3,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2018,
+   "value": 10.6,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2019,
+   "value": 9.9,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2020,
+   "value": 9.3,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2021,
+   "value": 9.6,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2022,
+   "value": 8.1,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2023,
+   "value": 7.7,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2024,
+   "value": 6.6,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2025,
+   "value": 6.1,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2026,
+   "value": 5.6,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2027,
+   "value": 5.8,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2028,
+   "value": 5.9,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2029,
+   "value": 5.9,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2030,
+   "value": 5.9,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "ITA",
+   "year": 2031,
+   "value": 5.9,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 1990,
+   "value": 6.3,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 1991,
+   "value": 11.8,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 1992,
+   "value": 13.6,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 1993,
+   "value": 16.4,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 1994,
+   "value": 11.4,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 1995,
+   "value": 13.3,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 1996,
+   "value": 12.3,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 1997,
+   "value": 11.2,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 1998,
+   "value": 10.6,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 1999,
+   "value": 13.1,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2000,
+   "value": 16.1,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2001,
+   "value": 18.2,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2002,
+   "value": 20.2,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2003,
+   "value": 19.9,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2004,
+   "value": 19.3,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2005,
+   "value": 18.1,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2006,
+   "value": 14.2,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2007,
+   "value": 9.9,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2008,
+   "value": 7.5,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2009,
+   "value": 8.5,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2010,
+   "value": 9.6,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2011,
+   "value": 9.6,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2012,
+   "value": 10.1,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2013,
+   "value": 10.3,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2014,
+   "value": 9,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2015,
+   "value": 7.5,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2016,
+   "value": 6.2,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2017,
+   "value": 4.9,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2018,
+   "value": 3.8,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2019,
+   "value": 3.3,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2020,
+   "value": 3.2,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2021,
+   "value": 3.4,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2022,
+   "value": 2.9,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2023,
+   "value": 2.8,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2024,
+   "value": 2.9,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2025,
+   "value": 3.1,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2026,
+   "value": 3.2,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2027,
+   "value": 3.2,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2028,
+   "value": 3.2,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2029,
+   "value": 3.1,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2030,
+   "value": 3,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2031,
+   "value": 3,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  }
+ ],
+ "voice": {
+  "model": "",
+  "name": "Charon",
+  "style": "You are the narrator of a popular data documentary on YouTube. Read the script below in a warm, curious voice with a little dry humor, at a relaxed but engaged pace of about 145 words per minute, like a smart friend telling you something surprising. Let the big numbers land with a tiny pause before them. Keep the energy steady from the first sentence to the last. Never sound like an advertisement or an audiobook."
+ },
+ "music": [
+  {
+   "act": 0,
+   "track": "Lightless Dawn",
+   "vol": 0.24
+  },
+  {
+   "act": 1,
+   "track": "Deliberate Thought",
+   "vol": 0.22
+  },
+  {
+   "act": 2,
+   "track": "Inspired",
+   "vol": 0.23
+  },
+  {
+   "act": 3,
+   "track": "Hidden Agenda",
+   "vol": 0.23
+  },
+  {
+   "act": 4,
+   "track": "Investigations",
+   "vol": 0.23
+  },
+  {
+   "act": 5,
+   "track": "Floating Cities",
+   "vol": 0.24
+  }
+ ],
+ "yt": {
+  "title": "Poland Just Passed Japan. Italy Is Next.",
+  "description": "In 1990 Italy was more than three times richer than Poland per person, adjusted for prices. In 2008, exactly twice. In the IMF's October 2026 World Economic Outlook, Poland is 9% behind this year and $499 behind in 2031, after passing Portugal (2020), Japan (2026) and, in the forecast, Spain (2027). Italy's 25 years of near-zero growth, Poland's 33 years with one recession, the plain-dollar catch, whether the crossing actually happens, and who comes after Italy.\n\nSources: IMF World Economic Outlook, October 2026 (PPPPC, NGDPDPC, NGDP_RPCH, LP, LUR, GGXWDG_NGDP); European Commission (EU budget); NATO defence expenditure estimates (2025).\n{music_credits}\nNarration is AI-generated.\n\n#poland #italy #economics #imf #europe #data",
+  "tags": [
+   "poland",
+   "italy",
+   "poland vs italy",
+   "poland economy",
+   "italy economy",
+   "gdp per capita",
+   "imf",
+   "economics",
+   "europe",
+   "data",
+   "polska"
+  ],
+  "lang": "en"
+ }
+}
