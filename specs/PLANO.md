@@ -16,7 +16,7 @@
 
 ## B — Nest Egg Atlas (meta: 1º vídeo 500+ views até 23/11; 100 inscr. até 31/12)
 - R1 Busca primeiro (JÁ, B-N08 em diante): título = query + ano; conferir autocomplete do YouTube; descrição com variantes.
-- R2 Notícia em 24 h (JÁ): COLA 2027, Medicare Part B 2027, IRMAA 2027, limites 401k/IRA 2027, IR 2027 aposentado, RMD.
+- R2 Notícia em 24 h (JÁ; B-N09 COLA pronto 07/11): COLA 2027 ✔, **Part B 2027 (CMS anuncia em novembro — checar cms.gov/newsroom todo dia; vídeo no mesmo dia)**, Medicare Part B 2027, IRMAA 2027, limites 401k/IRA 2027, IR 2027 aposentado, RMD.
 - R3 Reset do sinal de público (09/11 se longos < 20 views): 2 semanas só shorts de aposentadoria (3/dia), sem longo; longos voltam com US ≥ 70% e 55+ na demografia.
 - R4 Formato 60+: 130 wpm, fonte maior, 12–15 min; testar 1 vídeo.
 - R5 Canal novo limpo (decisão do Kauan, se R3 não mudar demografia até 23/11): mesmo projeto Google, sem cota extra; re-upload dos 12.
