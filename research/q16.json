@@ -1,0 +1,7 @@
+{"channels": [], "topics": [
+ {"id": "it1", "q": "Poland overtake Italy GDP per capita", "order": "viewCount", "after": "2025-06-01T00:00:00Z", "dur": "any", "n": 15},
+ {"id": "it2", "q": "Poland richer than Italy", "order": "viewCount", "after": "2025-06-01T00:00:00Z", "dur": "any", "n": 15},
+ {"id": "it3", "q": "Italy economy stagnation why", "order": "viewCount", "after": "2025-11-01T00:00:00Z", "dur": "any", "n": 15},
+ {"id": "cola1", "q": "2027 COLA Social Security", "order": "viewCount", "after": "2026-10-01T00:00:00Z", "dur": "any", "n": 15},
+ {"id": "cola2", "q": "Medicare Part B premium 2027", "order": "viewCount", "after": "2026-10-01T00:00:00Z", "dur": "any", "n": 15}
+]}
