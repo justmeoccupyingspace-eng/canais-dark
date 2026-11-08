@@ -1,6 +1,6 @@
 """Lista os envios de um canal e, com MODE=private, deixa privados os vídeos dados em IDS (ou todos os públicos/agendados com ALL=1).
 MODE=playlist põe os IDS na playlist cujo título é PL (não cria playlist nova, não remove nada).
-MODE=watermark põe o avatar do canal como marca d'água de inscrição em todos os vídeos (POS=topRight por padrão).
+MODE=watermark põe o avatar do canal como marca d'água de inscrição em todos os vídeos (canto inferior direito, o único que o Studio aceita).
 MODE=localize grava título/descrição traduzidos a partir do JSON em LOC ({id: {lang: {title, description}}}); o original fica igual.
 Nada é apagado. Uso: CH=B MODE=list|private|playlist|localize [IDS=a,b] [ALL=1] [PL=título] [LOC=arquivo.json] python scripts/ytchan.py out.json"""
 import json, os, sys, urllib.error, urllib.parse, urllib.request
@@ -86,7 +86,7 @@ if mode == "watermark":
     # marca d'água de inscrição: usa o avatar do próprio canal; POS = topRight|bottomRight|...; no computador, clicar nela inscreve
     import uuid
     img = urllib.request.urlopen(c["snippet"]["thumbnails"]["high"]["url"]).read()
-    for pos in [os.environ.get("POS") or "topRight", "bottomRight"]:
+    for pos in [os.environ.get("POS") or "bottomRight"]:
         meta = {"timing": {"type": "offsetFromStart", "offsetMs": 0}, "position": {"type": "corner", "cornerPosition": pos}}
         bnd = uuid.uuid4().hex
         body = (f"--{bnd}\r\nContent-Type: application/json; charset=UTF-8\r\n\r\n{json.dumps(meta)}\r\n--{bnd}\r\nContent-Type: image/jpeg\r\n\r\n").encode() + img + f"\r\n--{bnd}--\r\n".encode()
