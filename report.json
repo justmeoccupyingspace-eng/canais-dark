@@ -1,0 +1,342 @@
+{
+ "model": "gemini-3.8-flash-tts",
+ "voice": "Charon",
+ "groups": [
+  {
+   "g": 0,
+   "shots": [
+    "s00",
+    "s01",
+    "s02",
+    "s03",
+    "s04",
+    "s05",
+    "s06"
+   ],
+   "cobertura": 0.716,
+   "s": 48.5,
+   "ouvido": "w 1999 roku przeciagny polak wystwarzy okoo 6 tysiecy dolarow przeciagny japonczyk 20 tysiecy polska wychodzia z 40 lat komunizmu inplakcja przekraczaa 500 sklepach byy kolejki ale na poka w niewiele japonia bya druga gospodarka swiata trzydziesci lat pozniej ena byo publikowa prognowe ktora mao kto przeczyta w 2026 roku po raz pierwszy w historii przeciagny polak wyplacza wiecej niz przeciagny japonczyk nikt nie swietowa mao kto zauwazy to historia o tym jak kraj biedniejszy od ukrainy sta sie boga przy od japonii i dlaczego ta sama liczba ktora wyjasnia moze to tez odwrocic przejdzmy przez rekres tu zaczyna sie linia 30 tyle nasz udokod z polski stoczy do japonii w 1990 roku i szczerze mowiac 30 to byo chojnie w 1999 roku solidarno sie wygraa pierwsza czesciowo wolne wybory w roku wschodniej kiedy sie pozniej 1 stycznia 1990 roku polska zrobia cos od co ekonomiczki spieraja sie do dzis"
+  },
+  {
+   "g": 1,
+   "shots": [
+    "s07",
+    "s08",
+    "s09",
+    "s10",
+    "s11",
+    "s12"
+   ],
+   "cobertura": 0.623,
+   "s": 37.2,
+   "ouvido": "polska dostaa tez szansa jakiej wiekszosc krajow nie dostaje 1991 roku wiesz ze dziewiec godziny sie umozlic poowa i dugu ale spojrzcie na ginie 1992 roku polska znow rosa i oto liczba ktora na prawde sie liczy od 1992 do 2009 roku polska gospodarka rosa co roku 20 lat rzedu zaden inny kraj unijny moze go powiedziec japonia w tym czasie koczya sie przez 7 lat wiekszosc od kolei pochodza do braku recesji trzy rzeczy a pierwsza matka pierwsza matka polska wchodzi do unii europejskiej i na chwile nie wygracuje zmienia po pierwsze pieniadze przez nastepny 20 lat polska jest najwiekszym beneficjentem netto paduszy unijnych drogi kolei woda internet w 2004 roku polska miaa niecae 800 kilometrow autostrat i drog ekspresowych w 2005 roku prawie 5 5 tysiaca acznie po lat 160 miliardow robiace nie wpacia po drugie fabryki mnostwo potrzeboway blisko miejsca do produkcji czesci z wyplikowanymi praco"
+  },
+  {
+   "g": 2,
+   "shots": [
+    "s13",
+    "s14",
+    "s15",
+    "s16",
+    "s17",
+    "s18",
+    "s19"
+   ],
+   "cobertura": 0.604,
+   "s": 43.6,
+   "ouvido": "po trzecie ludzie okoo dwoch milionow polakow wyjechao do klasy za granice gownie do wielkiej brytanii i wielanii wysyaja pieniadze z domu a potem wielu z nich wrocio z umiejetnosciami i oszczednosciami spojscie na nasladanie po 2022 roku paniescie to ancy do staw a potem rok 2008 swiatowy kryzys finansowy w 2009 roku skurczya sie kazda z polarka unii europejskiej kazda oprocz polskiej polska rosa praca nazywaja zielona dyspa jedna zielona kropka na czerwonej pie dlaczego znudnych powodow ktory najlepszych banki ktore nie warioway zotych ktore spado jakies 30 i polskie kropki dokadnie wywosciy momencie i rynek 38 milionow ludzi kupujacych polskie produkty spojscie na nasladanie po 2022 roku 20 15 20 ponizej 3 ponieje podbice to jest inny kraj a jesli myslicie ze to tylko grac spojscie na nasladanie w 1990 roku ukraina bya nasladana przez polskie po 22 i podmierkosc ta sama sobie przeszas"
+  },
+  {
+   "g": 3,
+   "shots": [
+    "s20",
+    "s21",
+    "s22",
+    "s23",
+    "s24",
+    "s25",
+    "s26"
+   ],
+   "cobertura": 0.709,
+   "s": 42.0,
+   "ouvido": "w 1990 roku peka japonska banka akcje ziemia wszystko to sa pio nazwano stracana dekada potem druga stracana dekada widzac sia nabieszcza japonia jednak rosa powoli z 20 tysiecy do okoo 54 polska z 6 do 51 a pod spodem dziao sie cos wolniejszego wydba japonczykow w wieku produkcyjnym nabiaa szczyt w poowie od 90 i o tamtej pory spada zapamietajcie to jeszcze wroci zwyky dolar jest gorzej w 2012 roku przyswietym doku japonczyka wynosi prawie 50 tysiecy dolarow w 2024 34 to nie japonia biegnieje u siebie to jem w trakcie prawie poowy wartosci poatw dolara zeby wszystko sie krecio to kiepo pozyczao duzo dug rzadu japonia biegnie poatw dwa razy wiekszy niz caa gospodaka najwyzszy w podatnym swiecie wiec czesc tej historii to polska ktora biegnie a czesc to japonia stojaca na ruchomych chodach w do dobrze polska wyczeda japonia w 2026 roku zanim przeprowadzicie sie do warszawy trzy checi po p"
+  },
+  {
+   "g": 4,
+   "shots": [
+    "s27",
+    "s28",
+    "s29",
+    "s30",
+    "s31"
+   ],
+   "cobertura": 0.659,
+   "s": 37.1,
+   "ouvido": "po drugie sia nabyscza to niepensja te liczby uwzgledniaja to ze strzyzenie w krakowie kosztuje mnie niz w polsce w zwykych dolarach do polski to wciaz okoo 25 tysiecy japoni 34 po trzecie i to jest najwazniejsze wiesnosc polska 2024 1 14 japonia kraj ktory cay swiat podaje jako przykurs kurs czy spoeczenstwa 1 15 polska ma dzis niszcza dziecnosc niz japonia nie tak niska jak korea poudniowa 0 75 ale niszcza niz japonia czescia polskiego culu bya duza moda sia robocza ktora moga isc tylko gora ta sia robocza sie starzeje lubnosc polskiego czymaa szczyt po koniec lat 90 jest tamtej po tej sie kurczy ta sama tematyka ktora skurczya japonia dziaa juz w polsce tylko zaczea sie 30 lat pozniej o pocay wykres od poczatku do konca od 30 do konca po niedostu po drodze polska po ciku wyszczya grecje po ten portugalie nastepna jest hiszpania wedug mw w tym roku obakuje sa praktycznie narowni niemcy"
+  },
+  {
+   "g": 5,
+   "shots": [
+    "s32",
+    "s33",
+    "s34"
+   ],
+   "cobertura": 0.863,
+   "s": 23.8,
+   "ouvido": "ale prawdziwe pytanie nie brzmi kogo polska wyprzestrzenie w tym odcinku tylko czy kraj moze dalej rosnac kiedy ludzi przestaje przybywac japonii w wiekszosci sie nie udao polska ma jednak kilka kart ktorych japonia nigdy nie wygraa wiskom milion ukancow mieszka po ramach ochrony czasowej i wielu z nich pracuje a polska wciaz goni wiec moze rosnac pracujac madrzej a nie tylko dokadajac pracownikow czy to wystarczy polska zaraz sie przekona gdybyscie w 1990 roku powiedzieli komus w kolejce po chleb w warszawie ze jego wnuki beda zarabiac wiecej niz ten cytopio bys miaby was wykres nie jesli jestescie korekska w tej historii najbardziej przerazajaca mi bol na swiecie jest tutaj to by czarnat do zobaczenia w nastepnym odcinku"
+  }
+ ],
+ "shots": [
+  {
+   "id": "s00",
+   "pl_s": 4.27,
+   "janela_s": 10.42,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s01",
+   "pl_s": 5.28,
+   "janela_s": 13.24,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s02",
+   "pl_s": 5.73,
+   "janela_s": 12.8,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s03",
+   "pl_s": 6.82,
+   "janela_s": 17.24,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s04",
+   "pl_s": 5.02,
+   "janela_s": 12.34,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s05",
+   "pl_s": 14.36,
+   "janela_s": 28.3,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s06",
+   "pl_s": 5.11,
+   "janela_s": 10.96,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s07",
+   "pl_s": 4.01,
+   "janela_s": 8.44,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s08",
+   "pl_s": 9.95,
+   "janela_s": 22.22,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s09",
+   "pl_s": 2.41,
+   "janela_s": 7.94,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s10",
+   "pl_s": 2.58,
+   "janela_s": 7.83,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s11",
+   "pl_s": 9.99,
+   "janela_s": 26.23,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s12",
+   "pl_s": 7.34,
+   "janela_s": 17.22,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s13",
+   "pl_s": 6.5,
+   "janela_s": 12.9,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s14",
+   "pl_s": 2.21,
+   "janela_s": 5.08,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s15",
+   "pl_s": 8.14,
+   "janela_s": 18.38,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s16",
+   "pl_s": 7.33,
+   "janela_s": 19.22,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s17",
+   "pl_s": 6.05,
+   "janela_s": 12.28,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s18",
+   "pl_s": 9.96,
+   "janela_s": 21.84,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s19",
+   "pl_s": 2.25,
+   "janela_s": 5.04,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s20",
+   "pl_s": 10.21,
+   "janela_s": 21.46,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s21",
+   "pl_s": 4.87,
+   "janela_s": 10.6,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s22",
+   "pl_s": 8.03,
+   "janela_s": 15.86,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s23",
+   "pl_s": 4.54,
+   "janela_s": 9.84,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s24",
+   "pl_s": 2.81,
+   "janela_s": 7.52,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s25",
+   "pl_s": 3.39,
+   "janela_s": 7.72,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s26",
+   "pl_s": 6.33,
+   "janela_s": 15.0,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s27",
+   "pl_s": 6.81,
+   "janela_s": 15.06,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s28",
+   "pl_s": 6.69,
+   "janela_s": 14.86,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s29",
+   "pl_s": 4.14,
+   "janela_s": 8.68,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s30",
+   "pl_s": 8.48,
+   "janela_s": 20.1,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s31",
+   "pl_s": 9.47,
+   "janela_s": 21.96,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s32",
+   "pl_s": 13.48,
+   "janela_s": 29.02,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s33",
+   "pl_s": 5.26,
+   "janela_s": 9.02,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s34",
+   "pl_s": 4.7,
+   "janela_s": 20.92,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  }
+ ],
+ "lufs_en": -17.7,
+ "lufs_dub_antes": -19.0,
+ "ganho_db": 1.3,
+ "total_s": 524.459,
+ "overflow": [],
+ "fator_max": 1.0
+}
