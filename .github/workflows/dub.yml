@@ -1,0 +1,38 @@
+name: dub
+on:
+  workflow_dispatch:
+    inputs:
+      dub: {description: "roteiro da dublagem (specs/dub/*.json)", required: true}
+      model: {description: "modelo Gemini TTS", required: false, default: "gemini-3.8-flash-tts"}
+      maxw: {description: "palavras por pedido de TTS", required: false, default: "210"}
+      kmax: {description: "aceleração máxima por cena", required: false, default: "1.18"}
+permissions:
+  contents: write
+jobs:
+  d:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: sudo apt-get install -y -qq ffmpeg >/dev/null && pip install -q numpy scipy soundfile librosa num2words faster-whisper
+      - name: dados do render original
+        run: |
+          LP=$(python -c "import json;print(json.load(open('${{ inputs.dub }}'))['lprep'])")
+          SPEC=$(python -c "import json;print(json.load(open('${{ inputs.dub }}'))['spec'])")
+          mkdir lp && git fetch -q origin $LP && git archive FETCH_HEAD | tar -x -C lp
+          echo "SPEC=$SPEC" >> $GITHUB_ENV
+      - name: dublagem
+        working-directory: lp
+        env:
+          GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
+          TTS_MODEL: ${{ inputs.model }}
+          MAXW: ${{ inputs.maxw }}
+          KMAX: ${{ inputs.kmax }}
+        run: python ../scripts/dub.py ../${{ inputs.dub }} ${SPEC}.json ../out_dub
+      - run: |
+          git config user.name producer; git config user.email producer@users.noreply.github.com
+          mkdir -p /tmp/o && cp out_dub/report.json out_dub/dub_*.mp3 out_dub/dub_*.wav out_dub/voz_*.wav /tmp/o/
+          git checkout --orphan dub-${{ github.run_id }} && git rm -rf . -q
+          cp /tmp/o/* . && git add -f . && git commit -qm dub && git push -f origin dub-${{ github.run_id }}
