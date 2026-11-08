@@ -1,3 +1,17 @@
+# PLANO v3 — DINHEIRO PRIMEIRO (07/11/2026 23:55 BRT). Objetivo final do Kauan: monetizar e ter renda.
+
+## 0. Prazo duro descoberto
+- YouTube muda o YPP em 01/02/2027 (página oficial support.google.com/youtube/answer/72851 confirma a data; blog oficial de ago/2026, citado por vários sites: novos pedidos passam a precisar de 1.000 inscritos + 8.000 h em 365 dias, ou 20 mi de views de Shorts em 90 dias). Pedidos que chegarem até 31/01/2027 23:59 UTC são avaliados pela regra atual (4.000 h) — fonte AIR Media-Tech, não oficial.
+- Chartbound até 31/01 (84 dias): faltam 890 inscritos (10,6/dia; hoje 2–4/dia; viral 31–33/dia) e ~2.870 h (34 h/dia ≈ 900 views de longo/dia a 2:20 de média; hoje 4–5 mil/dia com a onda da Espanha) → INSCRITO é a única restrição. Horas: 1.129, das quais 1.068 do Japão (valem até out/2027).
+- Marcos lineares para chegar: 15/11 195 · 30/11 355 · 15/12 515 · 31/12 685 · 31/01 1.000. SE 30/11 < 250 → prazo perdido na prática: Chartbound passa a mirar 8.000 h (2º semestre 2027) e o esforço vai para C.
+- Nest Egg Atlas (6 inscr., longos 0–1 view): chance ≈ 0 de YPP antes de 01/02 e depois precisa de 8.000 h → CONGELADO (sem longos, sem shorts); cota do modelo 3.8 vai para a dublagem polonesa do Chartbound. B-N09 (COLA) fica pronto na gaveta.
+
+## 0.1 Ordem por dinheiro
+1. C — apostila TJSP: ÚNICA renda possível antes de fev/2027. Janela: inscrições até 10/12, prova 14/03/2027. Kiwify: 8,99% + R$ 2,49 por venda, Pix na hora, sem mensalidade → líquido R$ 33,82 por venda de R$ 39,90. R$ 1.000/mês = 30 vendas. Bloqueios (só o Kauan): conta Kiwify (CPF/banco); OK para virar conta comercial no TikTok (link clicável na bio sem mínimo de seguidores; pessoal exige 1.000). Métrica: vendas/semana e leads/1.000 views. Regras: 0 vendas 7 dias após checkout no ar → trocar isca (planilha grátis) e testar R$ 29,90; ≥ 5 vendas/semana → Promote R$ 30/dia no vídeo de inscrição, cortar se custo por venda > R$ 20.
+2. A — Chartbound: corrida até 31/01 (seções 1–7 abaixo continuam valendo, com os marcos acima). Teste de maior alavancagem: faixa de ÁUDIO POLONÊS (Studio → Idiomas tem coluna "Áudio"). 1º no Polônia > Japão (onda já caiu, ~300/dia, risco baixo, analytics por faixa de áudio); SE retenção da faixa PL ≥ inglês em 48 h → Espanha e todo vídeo PL. Também: marca-d'água de inscrição em todos os vídeos (precisa OK do Kauan).
+3. B — congelado até prova em contrário.
+- Antes do YPP o Chartbound não gera renda nenhuma; RPM real (e o peso do público polonês) só aparece depois de monetizar → medir por país no 1º mês e ajustar temas.
+
 # PLANO ADAPTÁVEL v2 — 07/11/2026 23:40 BRT (dados até 08/11 02:09Z)
 Regra geral: toda decisão tem um número que a dispara. Checagens: 11/11, 15/11, 22/11, 06/12 (ytstats + este arquivo). Sem o número, não muda.
 
