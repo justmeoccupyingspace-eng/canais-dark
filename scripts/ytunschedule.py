@@ -13,8 +13,10 @@ for vid in os.environ["IDS"].split(","):
     st = v["status"]; print(vid, v["snippet"]["title"], st.get("privacyStatus"), st.get("publishAt"))
     if st.get("privacyStatus") != "private":
         print("  não é privado, nada feito"); continue
-    body = {"id": vid, "status": {"privacyStatus": "private", "embeddable": st.get("embeddable", True), "license": st.get("license", "youtube"),
+    body = {"id": vid, "status": {"privacyStatus": "private", "publishAt": None, "embeddable": st.get("embeddable", True), "license": st.get("license", "youtube"),
                                   "publicStatsViewable": st.get("publicStatsViewable", True), "selfDeclaredMadeForKids": st.get("madeForKids", False),
                                   **({"containsSyntheticMedia": st["containsSyntheticMedia"]} if "containsSyntheticMedia" in st else {})}}
     r = call("PUT", "https://www.googleapis.com/youtube/v3/videos?part=status", tok, body)
     print("  agora:", r["status"].get("privacyStatus"), r["status"].get("publishAt"))
+    if r["status"].get("publishAt"):
+        print(f"::error::{vid} continua agendado para {r['status']['publishAt']} — tirar pelo Studio (Visibilidade → Privado)")
