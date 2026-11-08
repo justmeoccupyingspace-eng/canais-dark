@@ -1,0 +1,36 @@
+name: locucao
+on:
+  workflow_dispatch:
+    inputs:
+      script: {description: "roteiro JSON (voicetest/*.json)", required: false, default: "voicetest/cronos_locucao.json"}
+      engine: {description: "gemini | edge | both", required: false, default: "gemini"}
+      voices: {description: "vozes Gemini separadas por vírgula", required: false, default: "Charon,Orus,Algieba"}
+      model: {description: "modelo Gemini TTS", required: false, default: "gemini-3.1-flash-tts-preview"}
+      edge_voices: {description: "vozes edge separadas por vírgula", required: false, default: "pt-BR-AntonioNeural"}
+      rate: {description: "edge rate", required: false, default: "-6%"}
+      pitch: {description: "edge pitch", required: false, default: "-2Hz"}
+permissions:
+  contents: write
+jobs:
+  v:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: sudo apt-get install -y -qq ffmpeg >/dev/null && pip install -q numpy scipy soundfile librosa num2words faster-whisper edge-tts
+      - run: python voicetest/locucao.py
+        env:
+          GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
+          SCRIPT: ${{ inputs.script }}
+          ENGINE: ${{ inputs.engine }}
+          VOICES: ${{ inputs.voices }}
+          MODEL: ${{ inputs.model }}
+          EDGE_VOICES: ${{ inputs.edge_voices }}
+          RATE: ${{ inputs.rate }}
+          PITCH: ${{ inputs.pitch }}
+      - run: |
+          git config user.name producer; git config user.email producer@users.noreply.github.com
+          mkdir -p /tmp/loc && cp -r out_loc/* /tmp/loc/
+          git checkout --orphan locucao-${{ github.run_id }} && git rm -rf . -q
+          cp -r /tmp/loc/* . && git add -f . && git commit -qm locucao && git push -f origin locucao-${{ github.run_id }}

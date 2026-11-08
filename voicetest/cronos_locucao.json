@@ -1,0 +1,22 @@
+{
+ "titulo": "Cronos — vídeo institucional (Omnitri), locução pt-BR",
+ "style": "Você é um locutor brasileiro profissional. Voz masculina madura, firme e calma, confiante, de quem entende de obra. Narração institucional de um software de planejamento e controle de custo de obra, com pegada de tecnologia. Ritmo pausado, frases curtas, com respiro entre as ideias e uma pausa de cerca de um segundo entre os parágrafos. Nada de voz de comercial de varejo, nada de empolgação forçada, nada de tom de audiolivro ou de apresentador de TV. Leia apenas o texto abaixo, palavra por palavra, sem acrescentar nem comentar nada. Pronúncias: 'Crônos' com a sílaba forte em CRÔ; 'Siêngi' lido como si-ÊN-gi; 'Microsoft Project' em inglês, natural; 'Omnitrí' com a sílaba forte em TRÍ. Os dois últimos parágrafos são a assinatura: mais lentos, mais graves e mais pausados.",
+ "pron": {"Cronos": "Crônos", "Sienge": "Siêngi", "Omnitri": "Omnitrí"},
+ "blocos": [
+  "Toda reunião de obra tem a mesma pergunta: o cronograma está certo?",
+  "O cronograma diz uma coisa. Os controles paralelos da obra, outra. E o financeiro, uma terceira.",
+  "O Cronos coloca tudo na mesma régua.",
+  "Lê o Microsoft Project, lê o custo do Sienge, e fecha o mês com físico e financeiro integrados, na mesma data de corte.",
+  "E as tarefas futuras, reprojetadas com precisão.",
+  "O controle no nível que você quiser: macro, etapa ou serviço.",
+  "A linha de balanço, pavimento por pavimento. E ferramentas visuais diversas.",
+  "Cada tarefa, cada torre, cada pavimento.",
+  "No fim do mês, cinco passos. O que fecha, congela. Mas o Cronos também olha para a frente: monitora tarefas futuras, restrições e ações, para que as coisas aconteçam.",
+  "E o relatório completo sai num clique.",
+  "E agora o Cronos está na web. Abre no navegador, do escritório ou da obra.",
+  "Cada construtora com o seu próprio banco de dados, num servidor no Brasil.",
+  "E cada pessoa vê só o que precisa: quem administra, quem lança, e quem só quer acompanhar o gráfico.",
+  "Cronos. Para quem precisa de precisão nos números.",
+  "Feito por Omnitri."
+ ]
+}
