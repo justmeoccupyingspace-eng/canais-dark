@@ -98,6 +98,14 @@ def split_blocks(x, blocos):
             if norm(w):
                 ref.append(norm(w)); owner.append(bi)
     hyp = words_pt(x)
+    # nomes próprios que o whisper escreve diferente (Kronos, Cienge, Omnitrix): troca pela palavra do roteiro mais parecida
+    vocab = set(ref)
+    def fix(w):
+        if w in vocab or len(w) < 4:
+            return w
+        best = max(vocab, key=lambda r: difflib.SequenceMatcher(None, w, r).ratio())
+        return best if difflib.SequenceMatcher(None, w, best).ratio() >= 0.75 else w
+    hyp = [(fix(h[0]), h[1], h[2]) for h in hyp]
     sm = difflib.SequenceMatcher(None, ref, [h[0] for h in hyp], autojunk=False)
     ref2hyp = {}
     for a, b, n in sm.get_matching_blocks():

@@ -1,0 +1,25 @@
+{
+ "titulo": "Cronos — vídeo institucional (Omnitri), locução pt-BR, texto final (08/11/2026) — take 2",
+ "style": "Você é um locutor brasileiro profissional. Voz masculina madura, firme e calma, confiante, de quem entende de obra. Narração institucional de um software de planejamento e controle de custo de obra, com pegada de tecnologia. Fala fluida e natural, num ritmo um pouco abaixo de 125 palavras por minuto, sem pressa, inclusive nas frases curtas, como uma conversa segura. A calma vem das pausas entre as ideias, nas vírgulas, nos dois-pontos e entre os parágrafos, nunca de sílabas arrastadas ou alongadas: pronuncie cada palavra no tempo normal. Faça uma pausa clara, de cerca de um segundo, entre um parágrafo e outro. Nada de voz de comercial de varejo, nada de empolgação forçada, nada de tom de audiolivro ou de apresentador de TV. Leia apenas o texto abaixo, palavra por palavra, sem acrescentar nem comentar nada. Pronúncias: 'Crônos' com a sílaba forte em CRÔ; 'Siêngi' lido como si-ÊN-gi; 'Microsoft Project' em inglês, natural; 'Ôm-ni-trí' lido como uma palavra só, ôm-ni-TRÍ, com a sílaba forte em TRÍ. O penúltimo parágrafo, 'Crônos. Para quem precisa de precisão nos números.', é a assinatura: bem mais lenta e mais grave que o resto, por volta de 100 palavras por minuto, com uma pausa longa depois de 'Crônos' e cada palavra bem colocada. O último parágrafo volta ao tom calmo normal.",
+ "pron": {
+  "Cronos": "Crônos",
+  "Sienge": "Siêngi",
+  "Omnitri": "Ôm-ni-trí"
+ },
+ "blocos": [
+  "Toda reunião de obra tem a mesma pergunta: o cronograma está certo?",
+  "O cronograma diz uma coisa. Os controles paralelos da obra, outra. E o financeiro, uma terceira.",
+  "O Cronos coloca tudo na mesma régua.",
+  "Lê o Microsoft Project, lê o custo do Sienge, e fecha o mês com físico e financeiro integrados, na mesma data de corte.",
+  "Cinco passos. E o que fecha, congela.",
+  "A partir daí, reprojeta o que falta no ritmo real da obra, e monitora tarefas futuras, restrições e ações, antes que virem atraso.",
+  "O controle no nível que você quiser: da obra inteira ao serviço.",
+  "A linha de balanço, pavimento por pavimento. E ferramentas visuais diversas.",
+  "O relatório completo sai num clique.",
+  "Tudo no navegador, do escritório ou da obra.",
+  "Cada construtora com o seu próprio banco de dados, num servidor no Brasil.",
+  "E cada pessoa vê só o que precisa: quem administra, quem lança, e quem só acompanha.",
+  "Cronos... Para quem precisa de precisão nos números.",
+  "Feito por Omnitri."
+ ]
+}
