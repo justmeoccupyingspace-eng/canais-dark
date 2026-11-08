@@ -72,6 +72,11 @@ if mode == "localize":
         v = v[0]; sn = v["snippet"]
         snippet = {"title": sn["title"], "description": sn.get("description", ""), "categoryId": sn["categoryId"], "tags": sn.get("tags", []),
                    "defaultLanguage": sn.get("defaultLanguage") or "en", **({"defaultAudioLanguage": sn["defaultAudioLanguage"]} if sn.get("defaultAudioLanguage") else {})}
+        # licença CC-BY: a descrição traduzida também precisa do crédito da música (copiado da descrição original)
+        cred = next((l for l in sn.get("description", "").split("\n") if l.startswith("Music by Kevin MacLeod")), None)
+        for lg in langs.values():
+            if cred and "incompetech" not in lg.get("description", ""):
+                lg["description"] = lg.get("description", "").rstrip() + "\n\n" + cred
         locs = {**v.get("localizations", {}), **langs}
         r = call("PUT", API + "videos?part=snippet,localizations", tok, {"id": vid, "snippet": snippet, "localizations": locs})
         localized.append(vid); print(f"::notice::{vid} localizado em {','.join(langs)}: {list(langs.values())[0]['title'][:60]}")
