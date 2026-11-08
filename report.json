@@ -1,0 +1,28 @@
+{
+ "script": "voicetest/cronos_locucao_final_take2.json",
+ "vozes": {
+  "gemini_Algieba": {
+   "blocos_s": [
+    6.24,
+    7.98,
+    3.82,
+    9.82,
+    4.24,
+    10.68,
+    5.52,
+    5.86,
+    3.82,
+    3.88,
+    5.1,
+    7.32,
+    4.66,
+    4.02
+   ],
+   "total_s": 83.0,
+   "ferramenta": "Gemini TTS (gemini-3.1-flash-tts-preview), voz Algieba",
+   "cobertura_alinhamento": 0.97,
+   "inteiro_s": 86.4,
+   "transcricao": "toda reuniao de obra tem a mesma pergunta o cronograma esta certo o cronograma diz uma coisa os controles paralelos da obra outra e o financeiro uma terceira o cronos coloca tudo na mesma regua leu microsoft project leu custo do cienji e fecha o mes com fisico e financeiro integrados na mesma data de corte cinco passos e o que fecha congela a partir dai reprojeta o que falta no ritmo real da obra e monitora tarefas futuras restricoes e acoes antes que virem atraso o controle no nivel que voce quiser da obra inteira ao servico a linha de balanco pavimento por pavimento e ferramentas visuais div"
+  }
+ }
+}
