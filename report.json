@@ -1,0 +1,260 @@
+{
+ "model": "gemini-3.8-flash-tts",
+ "voice": "Charon",
+ "groups": [],
+ "shots": [
+  {
+   "id": "s00",
+   "pl_s": 8.54,
+   "janela_s": 10.42,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s01",
+   "pl_s": 10.56,
+   "janela_s": 13.24,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s02",
+   "pl_s": 11.46,
+   "janela_s": 12.8,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s03",
+   "pl_s": 13.64,
+   "janela_s": 17.24,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s04",
+   "pl_s": 10.04,
+   "janela_s": 12.34,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s05",
+   "pl_s": 28.72,
+   "janela_s": 28.3,
+   "fator": 1.015,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s06",
+   "pl_s": 10.22,
+   "janela_s": 10.96,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s07",
+   "pl_s": 8.02,
+   "janela_s": 8.44,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s08",
+   "pl_s": 19.9,
+   "janela_s": 22.22,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s09",
+   "pl_s": 4.82,
+   "janela_s": 7.94,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s10",
+   "pl_s": 5.16,
+   "janela_s": 7.83,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s11",
+   "pl_s": 19.98,
+   "janela_s": 26.23,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s12",
+   "pl_s": 14.68,
+   "janela_s": 17.22,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s13",
+   "pl_s": 13.0,
+   "janela_s": 12.9,
+   "fator": 1.008,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s14",
+   "pl_s": 4.42,
+   "janela_s": 5.08,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s15",
+   "pl_s": 16.28,
+   "janela_s": 18.38,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s16",
+   "pl_s": 14.66,
+   "janela_s": 19.22,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s17",
+   "pl_s": 12.1,
+   "janela_s": 12.28,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s18",
+   "pl_s": 19.92,
+   "janela_s": 21.84,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s19",
+   "pl_s": 4.5,
+   "janela_s": 5.04,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s20",
+   "pl_s": 20.42,
+   "janela_s": 21.46,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s21",
+   "pl_s": 9.74,
+   "janela_s": 10.6,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s22",
+   "pl_s": 16.06,
+   "janela_s": 15.86,
+   "fator": 1.013,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s23",
+   "pl_s": 9.08,
+   "janela_s": 9.84,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s24",
+   "pl_s": 5.62,
+   "janela_s": 7.52,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s25",
+   "pl_s": 6.78,
+   "janela_s": 7.72,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s26",
+   "pl_s": 12.66,
+   "janela_s": 15.0,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s27",
+   "pl_s": 13.62,
+   "janela_s": 15.06,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s28",
+   "pl_s": 13.38,
+   "janela_s": 14.86,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s29",
+   "pl_s": 8.28,
+   "janela_s": 8.68,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s30",
+   "pl_s": 16.96,
+   "janela_s": 20.1,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s31",
+   "pl_s": 18.94,
+   "janela_s": 21.96,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s32",
+   "pl_s": 26.96,
+   "janela_s": 29.02,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s33",
+   "pl_s": 10.52,
+   "janela_s": 9.02,
+   "fator": 1.166,
+   "OVERFLOW": 0
+  },
+  {
+   "id": "s34",
+   "pl_s": 9.4,
+   "janela_s": 20.92,
+   "fator": 1.0,
+   "OVERFLOW": 0
+  }
+ ],
+ "reuse": "/home/runner/work/canais-dark/canais-dark/reuse/voz_pl.wav",
+ "qc_transcricao": "w 1990 roku przecietny polak wytwarza rocznie okoo 6 tysiecy dolarow przecietny japonczyk 20 tysiecy polska wychodzia z 40 lat komunizmu inflacja przekraczaa 500 w sklepach byy kolejki ale na pokach niewiele japonia bya druga gospodarka swiata 36 lat pozniej mfw opublikowa prognoze ktora mao kto przeczyta w 2026 roku po raz pierwszy w historii przecietny polak wytwarza wiecej niz przecietny japonczyk nikt nie swietowa mao kto zauwazy to historia o tym jak kraj biedniejszy od ukrainy sta sie bogatszy od japonii i dlaczego ta sama liczba ktora to wyjasnia moze to tez odwrocic przejdzmy przez wykres tu zaczyna sie linia 30 tyle wynosi dochod polski w stosunku do japonii w 1990 roku i szczerze mowiac 30 to byo chojnie w 1989 roku solidarnosc wygraa pierwsze czesciowo wolne wybory w bloku wschodnim kilka miesiecy pozniej 1 stycznia 1990 roku polska zrobia cos o co ekonomisci spieraja sie do dzis zerwaa plaster jednym ruchem kontrola cen koniec dotacje dla panstwowych fabryk koniec zoty niech pywa niech spada nazwano to terapia szokowa a szok by prawdziwy ceny wzrosy w ciagu roku o ponad 500 produkcja spada bezrobocie skoczyo z oficjalnego zera bo komunizm nie przyznawa ze istnieje do dwucyfrowego polska dostaa tez szanse jakiej wiekszosc krajow nie dostaje w 1991 roku wierzyciele zgodzili sie umozyc poowe jej dugu ale spojrzcie na linie w 1992 roku polska znow rosa i oto liczba ktora naprawde sie liczy od 1992 do 2019 roku polska gospodarka rosa co roku 28 lat z rzedu zaden inny kraj unii nie moze tego powiedziec japonia w tym czasie kurczya sie przez siedem lat jak przejsc od kolejek po chleb do braku recesji trzy rzeczy a pierwsza ma date 1 maja 2004 roku polska wchodzi do unii europejskiej i nachylenie wykresu sie zmienia po pierwsze pieniadze przez nastepny 20 lat polska jest najwiekszym beneficjentem netto funduszy unijnych drogi kolej woda internet w 2004 roku polska miaa niecae 800 kilometrow autostrad i drog ekspresowych w 2025 roku prawie 5 5 tysiaca acznie ponad 160 miliardow euro wiecej niz wpacia po drugie fabryki niemieckie firmy potrzeboway blisko miejsca do produkcji czesci zwykwalifikowanymi pracownikami i nizszymi kosztami z warszawy do berlina jest 6 godzin jazdy nawet toyota produkuje tu silniki dzis ponad 1 4 polskiego eksportu trafia do niemiec po trzecie ludzie okoo 2 milionow polakow wyjechao do pracy za granice gownie do wielkiej brytanii i irlandii wysyali pieniadze do domu a potem wielu z nich wrocio z umiejetnosciami i oszczednosciami spojrzcie na nachylenie po 2004 roku to nieszczescie to ancuch dostaw a potem rok 2008 swiatowy kryzys finansowy w 2009 roku skurczya sie kazda gospodarka unii europejskiej kazda oprocz polski polska rosa prasa nazwaa ja zielona wyspa jedna zielona kropka na czerwonej mapie dlaczego z nudnych powodow czyli najlepszych banki ktore nie zwarioway zoty ktory spado o jakies 30 i potani polski eksport dokadnie w wasciwym momencie i rynek 38 milionow ludzi kupujacych polskie produkty spojrzcie na bezrobocie rok 2002 20 co piaty pracownik rok 2024 ponizej trzech to nie jest odbicie to jest inny kraj a jesli myslicie ze to tylko geografia spojrzcie na sasiada w 1990 roku ukraina bya nawet troche bogatsza od polski podobne fabryki podobna wielkosc ta sama sowiecka przeszosc w 2013 roku i jeszcze przed wojna polska bya ponad dwa razy bogatsza dzis prawie trzy razy ale przeciecie to dwie linie a druga prawie staa w miejscu w 1990 roku peka japonska banka akcje ziemia wszystko to co nastapio nazwano stracona dekada potem druga stracona dekada liczac sia nabywcza japonia jednak rosa powoli z 20 tysiecy do okoo 54 polska z 6 do 51 a pod spodem dziao sie cos wolniejszego liczba japonczykow w wieku produkcyjnym osiagnea szczyt w poowie lat 90 i od tamtej pory spada zapamietajcie to to jeszcze wroci w zwykych dolarach jest gorzej w 2012 roku przecietny dochod japonczyka wynosi prawie 50 tysiecy dolarow w 2024 34 to nie japonia biednieje u siebie to jen straci prawie poowe wartosci wobec dolara zeby wszystko sie krecio tokio pozyczao duzo dug rzadu japonii jest gdzies ponad dwa razy wiekszy niz caa gospodarka najwyzszy w bogatym swiecie wiec czesc tej historii to polska ktora biegnie a czesc to japonia stojaca na ruchomych schodach w do dobrze polska wyprzedza japonie w 2026 roku zanim przeprowadzicie sie do warszawy trzy haczyki po pierwsze na osobe to nie na godzine polacy pracuja okoo 1780 godzin rocznie japonczycy okoo 1600 to cztery i po tygodnia pracy wiecej zeby wytworzyc mniej wiecej tyle samo po drugie sia nabywcza to nie pensja te liczby uwzgledniaja to ze strzyzenie w krakowie kosztuje mniej niz w osace w zwykych dolarach do chod polski to wciaz okoo 25 tysiecy japonii 34 po trzecie i to jest najwazniejsze dzietnosc polska 2024 jeden przecinek 14 japonia kraj ktory cay swiat podaje jako przykad kurczacego sie spoeczenstwa jeden przecinek 15 polska ma dzis nizsza dzietnosc niz japonia nie tak niska jak korea poudniowa zero przecinek 75 ale nizsza niz japonia czescia polskiego cudu bya duza moda sia robocza ktora moga isc tylko w gore ta sia robocza sie starzeje ludnosc polski osiagnea szczyt pod koniec lat 90 i od tamtej pory sie kurczy ta sama matematyka ktora skurczya japonie dziaa juz w polsce tylko zaczea sie 30 lat pozniej oto cay wykres od poczatku do konca od 30 japonii do stu po drodze polska po cichu wyprzedzia grecje potem portugalie nastepna jest hiszpania wedug mvw w tym roku oba kraje sa praktycznie na rowni niemcy nie niemcy wciaz sa 30 wyzej a dystans nie maleje szybko ale prawdziwe pytanie nie brzmi kogo polska wyprzedzi nastepnego tylko czy kraj moze dalej rosnac kiedy ludzi przestaje przybywac japonii w wiekszosci sie nie udao polska ma jednak kilka kart ktorych japonia nigdy nie zagraa bliskom milion ukraincow mieszka tu w ramach ochrony czasowej i wielu z nich pracuje a polska wciaz goni wiec moze rosnac pracujac madrzej a nie tylko dokadajac pracownikow czy to wystarczy polska zaraz sie przekona gdybyscie w 1990 roku powiedzieli komus w kolejce po chleb w warszawie ze jego wnuki beda zarabiac wiecej niz mieszkancy tokio wysmiaby was wykrez nie jesli chcecie koreganska wersje tej historii z najbardziej przerazajaca liczba na swiecie jest tutaj to by chartbound do zobaczenia w nastepnym odcinku",
+ "lufs_en": -17.7,
+ "lufs_dub_antes": -17.4,
+ "ganho_db": -0.3,
+ "total_s": 524.459,
+ "overflow": [],
+ "fator_max": 1.166
+}
