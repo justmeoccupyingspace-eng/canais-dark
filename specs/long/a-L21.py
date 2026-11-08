@@ -6,7 +6,7 @@ import json, os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 D = json.load(open(os.path.join(HERE, "..", "..", "research", "imf_ita_2026-11-07.json")))
-ACTS = ["Cold open", "Italy stopped", "Poland never stopped", "The catch", "Does it happen?", "After Italy"]
+ACTS = ["Cold open", "Italy stopped", "Why Italy stalled", "Poland never stopped", "The catch", "Does it happen?", "After Italy"]
 IMF = "IMF World Economic Outlook, October 2026"
 PPPC = IMF + " · GDP per capita, PPP (current international $); 2026+ are IMF estimates and forecasts"
 
@@ -60,59 +60,63 @@ shots = [
          react=[dict(at="done this before", pose="pointL"), dict(at="passed Japan", pose="cheer"), dict(at="biggest one yet", pose="pointUp"), dict(at="two stories", pose="think")]),
 
     # ---------------- 1 · ITALY STOPPED ----------------
+    dict(act=1, type="host", bg="none",
+         narration="Quick one before the two stories: this is a series, and the next episode is Poland versus Germany. When, and whether it happens at all. Subscribe so you don't miss it. {p} Now, Italy.",
+         items=[dict(at="this is a series", text="The Poland series", serif=True, size=66, color="acc"), dict(at="Poland versus Germany", text="Next: Poland vs Germany", color="acc2", size=62), dict(at="Subscribe", text="Subscribe", size=70)],
+         react=[dict(at="Quick one", pose="wave"), dict(at="Poland versus Germany", pose="pointUp"), dict(at="Subscribe", pose="cheer"), dict(at="Now, Italy", pose="pointL")]),
     dict(act=1, type="lines", set="ridx", series=["POL", "ESP", "DEU", "ITA"], years=[2000, 2025], start=2000.0, y=[80, 260], src=IMF + " · real GDP, 2000 = 100 (compounded annual growth, NGDP_RPCH)", fmt="int", hl="ITA",
          ref=dict(value=100, label="2000 level", pos="left"),
          narration="Here's Italy's economy since 2000, after inflation, with the year 2000 set to one hundred. {p} By 2025, it reaches about a hundred and ten. Ten percent of growth in twenty-five years. Germany managed about thirty. Spain, about fifty. And Poland, on the same chart, about a hundred and forty. {pp} Italy's economy shrank in 2008, 2009, 2012, 2013 and 2020. Between 2008 and 2019, its growth averaged slightly below zero. A lost decade, in the most literal sense. {p} Per person and adjusted for prices, the IMF had Italy at about thirty-nine thousand five hundred dollars in 2008. Seven years later, in 2015: thirty-nine thousand seven hundred. Unchanged. Poland, meanwhile, went from under twenty thousand to twenty-seven.",
          keys=[dict(at="Here's Italy's economy", year=2000.0, dur=2.0), dict(at="By 2025", year=2025.0, dur=6.0), dict(at="shrank in 2008", year=2009.0, dur=3.0), dict(at="Seven years later", year=2015.0, dur=3.0), dict(at="Poland, meanwhile", year=2025.0, dur=3.0)],
          labels=[dict(at="hundred and ten", iso="ITA", year=2025), dict(at="about thirty", iso="DEU", year=2025), dict(at="about fifty", iso="ESP", year=2025), dict(at="hundred and forty", iso="POL", year=2025)],
          react=[dict(at="Here's Italy's", pose="pointL"), dict(at="Ten percent", pose="shock"), dict(at="hundred and forty", pose="cheer"), dict(at="lost decade", pose="shrug"), dict(at="Unchanged", pose="think")]),
-    dict(act=1, type="stats", src=IMF + " · general government gross debt (% of GDP), real GDP growth, population (LP)", title="Why Italy stalled",
+    dict(act=2, type="stats", src=IMF + " · general government gross debt (% of GDP), real GDP growth, population (LP)", title="Why Italy stalled",
          narration="Three numbers tell the story. {p} Debt: Italy's government owes about a hundred and thirty-eight percent of the country's economy this year, among the highest in Europe. A big slice of every budget goes to interest, not investment. {p} Growth: since 2001, Italy has averaged about zero point four percent a year. Poland, about three point six. {p} And people: Italy's population peaked at about sixty point three million in 2014. This year it's about fifty-eight point nine, and the IMF expects it to keep falling. Fewer workers, more retirees.",
          stats=[dict(at="a hundred and thirty-eight", value=DEBT["ITA"][2026], fmt="pct0", label="Italy, government debt, % of GDP, 2026"), dict(at="zero point four", value=round(avg("ITA", 2001, 2025), 1), fmt="pct1", label="Italy, average growth, 2001–2025"), dict(at="three point six", value=round(avg("POL", 2001, 2025), 1), fmt="pct1", label="Poland, average growth, 2001–2025"), dict(at="fifty-eight point nine", value=LP["ITA"][2026], fmt="m", label="people in Italy, 2026 (peak: 60.3M in 2014)")],
          react=[dict(at="Three numbers", pose="pointUp"), dict(at="interest, not investment", pose="shrug"), dict(at="three point six", pose="pointL"), dict(at="keep falling", pose="think")]),
 
     # ---------------- 2 · POLAND NEVER STOPPED ----------------
-    dict(act=2, type="lines", set="imf", fc=2025, series=["ITA", "ESP", "PRT", "POL"], years=[2000, 2027], start=2000.0, y=[0, 75000], src=PPPC, fmt="usdk0", hl="POL",
+    dict(act=3, type="lines", set="imf", fc=2025, series=["ITA", "ESP", "PRT", "POL"], years=[2000, 2027], start=2000.0, y=[0, 75000], src=PPPC, fmt="usdk0", hl="POL",
          narration="Now Poland. {p} Since 1992, Poland's economy has grown every single year except one: 2020, the pandemic. Thirty-three years, one recession, and that one lasted a single year. {p} The average since 2001 is about three and a half percent a year. Never spectacular. Just relentless. {pp} On this chart, it passes Portugal in 2020 and, in the IMF's forecast, Spain next year. {p} Why? Poland joined the European Union in 2004 and has been the biggest net recipient of EU money ever since: roads, rail, factories. It kept its own currency, the złoty, which fell in every crisis and kept Polish exports cheap. And it became the workshop of German industry: car parts, appliances, batteries, built in Poland and sold across Europe.",
          keys=[dict(at="Now Poland", year=2000.0, dur=1.5), dict(at="Thirty-three years", year=2019.0, dur=6.0), dict(at="passes Portugal", year=2020.0, dur=2.0), dict(at="Spain next year", year=2027.0, dur=3.0)],
          labels=[dict(at="passes Portugal", iso="PRT", year=2020), dict(at="Spain next year", iso="ESP", year=2027)],
          react=[dict(at="Now Poland", pose="pointL"), dict(at="one recession", pose="shock"), dict(at="Just relentless", pose="cheer"), dict(at="biggest net recipient", pose="pointUp"), dict(at="workshop of German industry", pose="think")]),
-    dict(act=2, type="host", bg="none",
+    dict(act=3, type="host", bg="none",
          narration="There's a second reason, and it's less flattering for Italy. {p} Half of this chart is Poland running. The other half is Italy standing still. Catching up is always two numbers: how fast you run, and how fast the other guy runs. {p} Between 2008 and 2019, Poland's economy grew about forty-nine percent. Italy's shrank. That is the whole gap, right there.",
          items=[dict(at="Poland running", text="Poland: running", color="acc", size=70), dict(at="standing still", text="Italy: standing still", color="warm", size=70), dict(at="two numbers", text="Catching up = two speeds", serif=True, size=60)],
          react=[dict(at="less flattering", pose="shrug"), dict(at="Poland running", pose="pointL"), dict(at="two numbers", pose="pointUp"), dict(at="whole gap", pose="think")]),
 
     # ---------------- 3 · THE CATCH ----------------
-    dict(act=3, type="host", bg="none",
-         narration="Quick favor: if this is your kind of video, subscribe. One country passing another, with the real numbers, every day, and most of them are not about Poland, I promise. {p} Now, the catch. Because Italy isn't poor, and the chart has a few things it doesn't show.",
-         items=[dict(at="subscribe", text="Subscribe = more of these"), dict(at="the catch", text="The catch", serif=True, size=68, color="acc")],
-         react=[dict(at="Quick favor", pose="wave"), dict(at="every day", pose="pointUp"), dict(at="the catch", pose="think")]),
-    dict(act=3, type="stats", src=IMF + " · GDP per capita, current US$ (NGDPDPC), 2026 and 2031", title="Per person, plain US$",
+    dict(act=4, type="host", bg="none",
+         narration="Now, the catch. Because Italy isn't poor, and a chart like this hides a few things. {p} And if you're enjoying this, the subscribe button is right there. The series continues.",
+         items=[dict(at="the catch", text="The catch", serif=True, size=68, color="acc"), dict(at="subscribe button", text="Subscribe", size=66)],
+         react=[dict(at="the catch", pose="think"), dict(at="subscribe button", pose="pointUp")]),
+    dict(act=4, type="stats", src=IMF + " · GDP per capita, current US$ (NGDPDPC), 2026 and 2031", title="Per person, plain US$",
          narration="Everything so far was adjusted for prices. In plain dollars, Italy is still well ahead: about forty-six thousand per person this year, against thirty-one thousand for Poland. Italy is about forty-seven percent richer on that measure. {p} And the IMF still has Italy ahead in 2031: about fifty-two thousand against forty-two. The plain-dollar gap closes too, just more slowly: from about forty-seven percent this year to about twenty-four percent in 2031. {pp} Prices in Poland are lower, so a Polish salary buys more at home. That's what the price-adjusted numbers capture, and it's the fairer comparison of living standards. But if you're buying a German car or a flight to New York, you pay in plain dollars. And there, Italy still wins. {p} Italy also has something no growth chart shows: decades of accumulated wealth. Housing, savings, infrastructure, brands the whole world knows. Poland is catching up on income. Wealth takes a generation longer.",
          stats=[dict(at="forty-six thousand", value=N["ITA"][2026], fmt="usd0", label="Italy, 2026"), dict(at="thirty-one thousand", value=N["POL"][2026], fmt="usd0", label="Poland, 2026"), dict(at="fifty-two thousand", value=N["ITA"][2031], fmt="usd0", label="Italy, 2031 (IMF)"), dict(at="against forty-two", value=N["POL"][2031], fmt="usd0", label="Poland, 2031 (IMF)")],
          react=[dict(at="plain dollars", pose="pointUp"), dict(at="forty-seven percent", pose="pointL"), dict(at="buys more at home", pose="think"), dict(at="Italy still wins", pose="shrug"), dict(at="a generation longer", pose="idle")]),
 
     # ---------------- 4 · DOES IT HAPPEN? ----------------
-    dict(act=4, type="stats", src=IMF + " · real GDP growth 2027–2031, population (LP), government gross debt (% of GDP)", title="The IMF's 2027–2031 forecast",
+    dict(act=5, type="stats", src=IMF + " · real GDP growth 2027–2031, population (LP), government gross debt (% of GDP)", title="The IMF's 2027–2031 forecast",
          narration="So does Poland actually pass Italy? {p} The IMF's forecast runs to 2031, and in 2031 Poland is still four hundred and ninety-nine dollars short: ninety-nine point three percent of Italy's level. The crossing, if it comes, sits just past the edge of the forecast, around 2032. {pp} And the forecast already has Poland slowing down: about two and a half percent a year from 2027, against about zero point six for Italy. {p} Poland has headwinds of its own. Its population is shrinking too, from about thirty-eight million in 2000 to about thirty-six this year. And its government debt is climbing fast, from about sixty-seven percent of the economy this year to about eighty-two by 2031, partly because Poland now spends more on defense, as a share of its economy, than any other NATO member.",
          stats=[dict(at="two and a half percent", value=G["POL"][2028], fmt="pct1", label="Poland, growth per year, 2027–2031"), dict(at="zero point six for Italy", value=G["ITA"][2029], fmt="pct1", label="Italy, growth per year, 2027–2031"), dict(at="about thirty-six this year", value=LP["POL"][2026], fmt="m", label="people in Poland, 2026 (2000: 38.3M)"), dict(at="eighty-two by 2031", value=DEBT["POL"][2031], fmt="pct0", label="Poland, government debt, % of GDP, 2031")],
          react=[dict(at="actually pass", pose="think"), dict(at="ninety-nine point three", pose="pointUp"), dict(at="slowing down", pose="shrug"), dict(at="shrinking too", pose="pointL"), dict(at="NATO member", pose="shock")]),
-    dict(act=4, type="host", bg="none",
+    dict(act=5, type="host", bg="none",
          narration="Still, the direction hasn't changed in thirty-five years. {p} Since 1991, Poland has gained on Italy in thirty-two years out of thirty-six, through two global recessions and a pandemic. And since 2002, it lost ground only twice, in 2021 and 2023, each time by a fraction of a point. {p} That's thirty-five years of one direction. So even if the crossing slips to 2033 or 2034, this chart only goes one way.",
          items=[dict(at="thirty-two years", text="Gained in 32 of 36 years", color="acc", size=66), dict(at="only twice", text="Since 2002: lost ground twice", color="acc2", size=60), dict(at="only goes one way", text="One direction", serif=True, size=70)],
          react=[dict(at="hasn't changed", pose="pointUp"), dict(at="thirty-two years", pose="pointL"), dict(at="fraction of a point", pose="shrug"), dict(at="one way", pose="cheer")]),
 
     # ---------------- 5 · AFTER ITALY ----------------
-    dict(act=5, type="lines", set="imf", fc=2025, series=["DEU", "FRA", "GBR", "ITA", "POL"], years=[2015, 2031], start=2026.0, y=[0, 100000], src=PPPC, fmt="usdk0", hl="POL",
+    dict(act=6, type="lines", set="imf", fc=2025, series=["DEU", "FRA", "GBR", "ITA", "POL"], years=[2015, 2031], start=2026.0, y=[0, 100000], src=PPPC, fmt="usdk0", hl="POL",
          narration="And after Italy, the list keeps going. {p} In 2031, the IMF has Poland at about ninety-five percent of Britain's level, and ninety-five percent of France's. Germany is further out, at about eighty-three percent. Britain and France, two of the big four of Western Europe, within five percent. Thirty-five years ago, Poland was about a third of all three. {pp} If the 2010s and 2020s repeat, the 2030s are the decade Poland catches the big three of Western Europe. If Italy finally grows again, the race gets interesting. {p} Either way, the map of Europe's richest countries is being redrawn, and it's being redrawn from the east.",
          keys=[dict(at="after Italy", year=2026.0, dur=1.5), dict(at="In 2031", year=2031.0, dur=6.0)],
          labels=[dict(at="ninety-five percent of Britain's", iso="GBR", year=2031), dict(at="percent of France's", iso="FRA", year=2031), dict(at="eighty-three percent", iso="DEU", year=2031), dict(at="If the 2010s", iso="POL", year=2031)],
          react=[dict(at="keeps going", pose="pointUp"), dict(at="Germany is further", pose="pointL"), dict(at="the big three", pose="cheer"), dict(at="from the east", pose="think")]),
-    dict(act=5, type="host", bg="none",
+    dict(act=6, type="host", bg="none",
          narration="<soft>Which one do you think Poland passes first after Italy: Britain or France?</soft> Tell me in the comments. {p} If you're watching from Italy: what would it take to get Italy growing again? {p} And if you're watching from Poland: which country should I cover next? I read every comment.",
          items=[dict(at="Britain or France", text="Britain or France first?", color="acc", size=66), dict(at="growing again", text="Italy: what would it take?", color="warm", size=60)],
          react=[dict(at="Which one", pose="shrug"), dict(at="Tell me", pose="pointUp"), dict(at="watching from Italy", pose="wave")]),
-    dict(act=5, type="end", src="",
+    dict(act=6, type="end", src="",
          next=dict(kicker="WATCH NEXT", big="ESP", color="acc", title="Poland is $55 from Spain", sub="the sorpasso, explained."),
          narration="Spain is the one Poland passes next year, and this year the gap is fifty-five dollars. That whole story is right here. {p} I'm Chartbound. See you in the next one.",
          hold=14,
@@ -158,7 +162,7 @@ checks = [
 
 clips = [
     dict(**{"from": "s00", "to": "s00"}, hook="*$499* from Italy", title="Poland is $499 from catching Italy (IMF, 2031) #Shorts", desc="GDP per person, PPP (IMF WEO Oct 2026): Italy 3× Poland in 1990, 2× in 2008, +9% in 2026, $499 apart in 2031."),
-    dict(**{"from": "s02", "to": "s02"}, hook="Italy grew *10%* in 25 years", title="Italy's economy grew 10% in 25 years. Poland's grew 140% #Shorts", desc="Real GDP, 2000 = 100 (IMF WEO Oct 2026): Italy 110, Germany 130, Spain 150, Poland 240 in 2025."),
+    dict(**{"from": "s03", "to": "s03"}, hook="Italy grew *10%* in 25 years", title="Italy's economy grew 10% in 25 years. Poland's grew 140% #Shorts", desc="Real GDP, 2000 = 100 (IMF WEO Oct 2026): Italy 110, Germany 130, Spain 150, Poland 240 in 2025."),
 ]
 
 for i, sh in enumerate(shots):
@@ -172,8 +176,8 @@ spec = dict(id="a-L21-poland-italy", clips=clips, channel="chartbound", chapter0
                               "with a little dry humor, at a relaxed but engaged pace of about 145 words per minute, like a smart friend telling "
                               "you something surprising. Let the big numbers land with a tiny pause before them. Keep the energy steady from the "
                               "first sentence to the last. Never sound like an advertisement or an audiobook.")),
-            music=[dict(act=0, track="Lightless Dawn", vol=0.24), dict(act=1, track="Deliberate Thought", vol=0.22), dict(act=2, track="Inspired", vol=0.23),
-                   dict(act=3, track="Hidden Agenda", vol=0.23), dict(act=4, track="Investigations", vol=0.23), dict(act=5, track="Floating Cities", vol=0.24)],
+            music=[dict(act=0, track="Lightless Dawn", vol=0.24), dict(act=1, track="Deliberate Thought", vol=0.22), dict(act=2, track="Deliberate Thought", vol=0.22), dict(act=3, track="Inspired", vol=0.23),
+                   dict(act=4, track="Hidden Agenda", vol=0.23), dict(act=5, track="Investigations", vol=0.23), dict(act=6, track="Floating Cities", vol=0.24)],
             yt=dict(title="Poland Just Passed Japan. Italy Is Next.",
                     description=("In 1990 Italy was more than three times richer than Poland per person, adjusted for prices. In 2008, exactly twice. In the IMF's October 2026 World Economic Outlook, "
                                  "Poland is 9% behind this year and $499 behind in 2031, after passing Portugal (2020), Japan (2026) and, in the forecast, Spain (2027). "

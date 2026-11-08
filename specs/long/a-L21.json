@@ -9,8 +9,8 @@
    "desc": "GDP per person, PPP (IMF WEO Oct 2026): Italy 3× Poland in 1990, 2× in 2008, +9% in 2026, $499 apart in 2031."
   },
   {
-   "from": "s02",
-   "to": "s02",
+   "from": "s03",
+   "to": "s03",
    "hook": "Italy grew *10%* in 25 years",
    "title": "Italy's economy grew 10% in 25 years. Poland's grew 140% #Shorts",
    "desc": "Real GDP, 2000 = 100 (IMF WEO Oct 2026): Italy 110, Germany 130, Spain 150, Poland 240 in 2025."
@@ -31,6 +31,7 @@
  "acts": [
   "Cold open",
   "Italy stopped",
+  "Why Italy stalled",
   "Poland never stopped",
   "The catch",
   "Does it happen?",
@@ -207,6 +208,51 @@
   },
   {
    "act": 1,
+   "type": "host",
+   "bg": "none",
+   "narration": "Quick one before the two stories: this is a series, and the next episode is Poland versus Germany. When, and whether it happens at all. Subscribe so you don't miss it. {p} Now, Italy.",
+   "items": [
+    {
+     "at": "this is a series",
+     "text": "The Poland series",
+     "serif": true,
+     "size": 66,
+     "color": "acc"
+    },
+    {
+     "at": "Poland versus Germany",
+     "text": "Next: Poland vs Germany",
+     "color": "acc2",
+     "size": 62
+    },
+    {
+     "at": "Subscribe",
+     "text": "Subscribe",
+     "size": 70
+    }
+   ],
+   "react": [
+    {
+     "at": "Quick one",
+     "pose": "wave"
+    },
+    {
+     "at": "Poland versus Germany",
+     "pose": "pointUp"
+    },
+    {
+     "at": "Subscribe",
+     "pose": "cheer"
+    },
+    {
+     "at": "Now, Italy",
+     "pose": "pointL"
+    }
+   ],
+   "id": "s02"
+  },
+  {
+   "act": 1,
    "type": "lines",
    "set": "ridx",
    "series": [
@@ -304,10 +350,10 @@
      "pose": "think"
     }
    ],
-   "id": "s02"
+   "id": "s03"
   },
   {
-   "act": 1,
+   "act": 2,
    "type": "stats",
    "src": "IMF World Economic Outlook, October 2026 · general government gross debt (% of GDP), real GDP growth, population (LP)",
    "title": "Why Italy stalled",
@@ -356,10 +402,10 @@
      "pose": "think"
     }
    ],
-   "id": "s03"
+   "id": "s04"
   },
   {
-   "act": 2,
+   "act": 3,
    "type": "lines",
    "set": "imf",
    "fc": 2025,
@@ -438,10 +484,10 @@
      "pose": "think"
     }
    ],
-   "id": "s04"
+   "id": "s05"
   },
   {
-   "act": 2,
+   "act": 3,
    "type": "host",
    "bg": "none",
    "narration": "There's a second reason, and it's less flattering for Italy. {p} Half of this chart is Poland running. The other half is Italy standing still. Catching up is always two numbers: how fast you run, and how fast the other guy runs. {p} Between 2008 and 2019, Poland's economy grew about forty-nine percent. Italy's shrank. That is the whole gap, right there.",
@@ -483,44 +529,41 @@
      "pose": "think"
     }
    ],
-   "id": "s05"
+   "id": "s06"
   },
   {
-   "act": 3,
+   "act": 4,
    "type": "host",
    "bg": "none",
-   "narration": "Quick favor: if this is your kind of video, subscribe. One country passing another, with the real numbers, every day, and most of them are not about Poland, I promise. {p} Now, the catch. Because Italy isn't poor, and the chart has a few things it doesn't show.",
+   "narration": "Now, the catch. Because Italy isn't poor, and a chart like this hides a few things. {p} And if you're enjoying this, the subscribe button is right there. The series continues.",
    "items": [
-    {
-     "at": "subscribe",
-     "text": "Subscribe = more of these"
-    },
     {
      "at": "the catch",
      "text": "The catch",
      "serif": true,
      "size": 68,
      "color": "acc"
+    },
+    {
+     "at": "subscribe button",
+     "text": "Subscribe",
+     "size": 66
     }
    ],
    "react": [
     {
-     "at": "Quick favor",
-     "pose": "wave"
-    },
-    {
-     "at": "every day",
-     "pose": "pointUp"
-    },
-    {
      "at": "the catch",
      "pose": "think"
+    },
+    {
+     "at": "subscribe button",
+     "pose": "pointUp"
     }
    ],
-   "id": "s06"
+   "id": "s07"
   },
   {
-   "act": 3,
+   "act": 4,
    "type": "stats",
    "src": "IMF World Economic Outlook, October 2026 · GDP per capita, current US$ (NGDPDPC), 2026 and 2031",
    "title": "Per person, plain US$",
@@ -573,10 +616,10 @@
      "pose": "idle"
     }
    ],
-   "id": "s07"
+   "id": "s08"
   },
   {
-   "act": 4,
+   "act": 5,
    "type": "stats",
    "src": "IMF World Economic Outlook, October 2026 · real GDP growth 2027–2031, population (LP), government gross debt (% of GDP)",
    "title": "The IMF's 2027–2031 forecast",
@@ -629,10 +672,10 @@
      "pose": "shock"
     }
    ],
-   "id": "s08"
+   "id": "s09"
   },
   {
-   "act": 4,
+   "act": 5,
    "type": "host",
    "bg": "none",
    "narration": "Still, the direction hasn't changed in thirty-five years. {p} Since 1991, Poland has gained on Italy in thirty-two years out of thirty-six, through two global recessions and a pandemic. And since 2002, it lost ground only twice, in 2021 and 2023, each time by a fraction of a point. {p} That's thirty-five years of one direction. So even if the crossing slips to 2033 or 2034, this chart only goes one way.",
@@ -674,10 +717,10 @@
      "pose": "cheer"
     }
    ],
-   "id": "s09"
+   "id": "s10"
   },
   {
-   "act": 5,
+   "act": 6,
    "type": "lines",
    "set": "imf",
    "fc": 2025,
@@ -753,10 +796,10 @@
      "pose": "think"
     }
    ],
-   "id": "s10"
+   "id": "s11"
   },
   {
-   "act": 5,
+   "act": 6,
    "type": "host",
    "bg": "none",
    "narration": "<soft>Which one do you think Poland passes first after Italy: Britain or France?</soft> Tell me in the comments. {p} If you're watching from Italy: what would it take to get Italy growing again? {p} And if you're watching from Poland: which country should I cover next? I read every comment.",
@@ -788,10 +831,10 @@
      "pose": "wave"
     }
    ],
-   "id": "s11"
+   "id": "s12"
   },
   {
-   "act": 5,
+   "act": 6,
    "type": "end",
    "src": "",
    "next": {
@@ -813,7 +856,7 @@
      "pose": "wave"
     }
    ],
-   "id": "s12"
+   "id": "s13"
   }
  ],
  "checks": [
@@ -8010,21 +8053,26 @@
   },
   {
    "act": 2,
+   "track": "Deliberate Thought",
+   "vol": 0.22
+  },
+  {
+   "act": 3,
    "track": "Inspired",
    "vol": 0.23
   },
   {
-   "act": 3,
+   "act": 4,
    "track": "Hidden Agenda",
    "vol": 0.23
   },
   {
-   "act": 4,
+   "act": 5,
    "track": "Investigations",
    "vol": 0.23
   },
   {
-   "act": 5,
+   "act": 6,
    "track": "Floating Cities",
    "vol": 0.24
   }

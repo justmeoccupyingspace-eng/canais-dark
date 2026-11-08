@@ -6,6 +6,9 @@
 - TikTok @vale_opreco: 101 seg.; 80–100 views orgânicas/post, −47% na semana. Promote R$ 20 = 3.541 views (R$ 5,60/mil), 5 seg., 1 lead sumiu, 0 vendas. Busca interna pede: inscrição, isenção de taxa, nomeações interior, planilha 2027. Funil manual (chamar → esperar → Pix) = atrito.
 
 ## A — Chartbound (meta: 500 inscr. até 15/12; 1.000 até 31/01)
+- DIAGNÓSTICO 07/11 (inscritos): 110. Polônia > Japão deu 84 dos 110 (55 mil views → 0,15%). Shorts: 11 inscritos em ~9 mil views e 0 h assistidas. Outros longos: 4. Polônia > Espanha: 6,3 mil views → ~2 inscritos (conversão quase zero). Problema nº 1 = CONVERSÃO, não alcance.
+- R0 Conversão (JÁ, A-L21 em diante): pedido de inscrição no minuto 1 com gancho de série ("next: Poland vs Germany"), não no ato 3; 2º lembrete curto no meio; comentário fixado EN+PL em todo vídeo da Polônia com o próximo episódio (feito 07/11 no Japão e no Espanha pelo Studio → Comentários, que aceita comentário novo e "Fixar no topo"); tela final com inscrição.
+- R0b Shorts PAUSADOS a partir de 08/11 (decisão com o Kauan): não geram inscritos nem horas e puxam público errado (Etiópia/Egito/Filipinas). Sem cortes dos longos, sem shorts de população. Reavaliar 22/11.
 - R1 Série Polônia (JÁ): próximos longos com PL vencendo/perto: PL × Itália (quando passa), PL × Alemanha (salário/2040), PL × Tchéquia, PL × Coreia, "o que a PL fez que PT/GR não fizeram", PL 1990–2026 em 1 gráfico. Fixar comentário "qual país agora?" no Polônia > Japão; responder comentários. Meta: 2 vídeos > 5 mil views até 20/11.
 - R2 Intro cortada (JÁ, do A-L21 em diante): cruzamento + número nos primeiros 8 s; sem histórico antes de 1:00. Meta: retenção a 10% ≥ 65%.
 - R3 Vencedores com público grande em inglês (ativar se 2 vídeos PL seguidos caírem): Romênia > Hungria, Croácia > Grécia, Lituânia × Espanha, Turquia, Irlanda, Índia (volume, saturado). Verificar no FMI antes.
@@ -15,6 +18,7 @@
 - R7 Longos de 6 min (se R2 não subir retenção em 5 vídeos).
 
 ## B — Nest Egg Atlas (meta: 1º vídeo 500+ views até 23/11; 100 inscr. até 31/12)
+- 07/11: 6 inscritos, longos a 0–1 view. Proposta ao Kauan: B só com vídeo-notícia de busca (COLA 2027 pronto; Part B 2027 no dia do anúncio; IRMAA; limites 2027), 2×/semana, sem shorts, sem longo diário. Esforço diário vai para o A.
 - R1 Busca primeiro (JÁ, B-N08 em diante): título = query + ano; conferir autocomplete do YouTube; descrição com variantes.
 - R2 Notícia em 24 h (JÁ; B-N09 COLA pronto 07/11): COLA 2027 ✔, **Part B 2027 (CMS anuncia em novembro — checar cms.gov/newsroom todo dia; vídeo no mesmo dia)**, Medicare Part B 2027, IRMAA 2027, limites 401k/IRA 2027, IR 2027 aposentado, RMD.
 - R3 Reset do sinal de público (09/11 se longos < 20 views): 2 semanas só shorts de aposentadoria (3/dia), sem longo; longos voltam com US ≥ 70% e 55+ na demografia.
