@@ -12,7 +12,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import ltts, lmix
 
-SR, FPS = 48000, 30
+SR, FPS = ltts.SR, 30  # voz trabalha na taxa do ltts (24 kHz); o lmix converte para 48 kHz
 MAXW = int(os.environ.get("MAXW", "210"))
 KMAX = float(os.environ.get("KMAX", "1.18"))
 MODEL = os.environ.get("TTS_MODEL", "gemini-3.8-flash-tts")
@@ -100,6 +100,18 @@ def main(dub_path, built_path, out):
     print(f"{len(groups)} pedidos de TTS ({MODEL}), {sum(len(pl[i].split()) for i in ids)} palavras")
     seg = {}
     rep = {"model": MODEL, "voice": D["voice"], "groups": [], "shots": []}
+    reuse = os.environ.get("REUSE_VOICE")
+    if reuse:
+        old_rep = json.load(open(os.environ["REUSE_REPORT"]))
+        arr, _sr = sf.read(reuse, dtype="float32")
+        need = {r["id"]: r["pl_s"] for r in old_rep["shots"]}
+        for s in shots:
+            w = s.get("words") or []
+            t0 = w[0]["t0"] if w else s["t0"] + 0.2
+            a = int(round(t0 * _sr)); L = int(round(need[s["id"]] * _sr))
+            seg[s["id"]] = arr[a:a + L].copy()  # amostras de 24 kHz: reinterpretadas na taxa certa
+        rep["reuse"] = reuse
+        groups = []
     for gi, g in enumerate(groups):
         texts = [pl[s["id"]] for s in g]
         x = None
@@ -143,6 +155,11 @@ def main(dub_path, built_path, out):
         flag = "  <<< OVERFLOW" if over else ""
         print(f"{s['id']} pl {need:5.2f}s janela {avail:5.2f}s fator {k:4.2f}{flag}")
     voice = voice[: int(total * SR)]
+    try:
+        heard = words(voice.astype(np.float32), lang)
+        rep["qc_transcricao"] = " ".join(h[0] for h in heard)
+    except Exception as e:
+        rep["qc_transcricao"] = "erro: " + repr(e)[:200]
     os.makedirs("public/audio/dub", exist_ok=True)
     sf.write("public/audio/dub/voice.wav", voice, SR, subtype="PCM_16")
     sf.write(f"{out}/voz_{lang}.wav", voice, SR, subtype="PCM_16")
@@ -168,7 +185,7 @@ def main(dub_path, built_path, out):
     pk = float(np.max(np.abs(y)))
     if pk > 0.89:  # ~-1 dBFS
         y = y * (0.89 / pk)
-    sf.write(f"{out}/dub_{lang}.wav", y, SR, subtype="PCM_16")
+    sf.write(f"{out}/dub_{lang}.wav", y, lmix.SR, subtype="PCM_16")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", f"{out}/dub_{lang}.wav", "-c:a", "libmp3lame", "-b:a", "320k", f"{out}/dub_{lang}.mp3"], check=True)
     os.remove(f"{out}/mix_{lang}_raw.wav")
     rep.update({"lufs_en": le, "lufs_dub_antes": lp, "ganho_db": round(20 * np.log10(g), 2), "total_s": round(total, 3),

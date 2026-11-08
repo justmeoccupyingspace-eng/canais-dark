@@ -6,6 +6,7 @@ on:
       model: {description: "modelo Gemini TTS", required: false, default: "gemini-3.8-flash-tts"}
       maxw: {description: "palavras por pedido de TTS", required: false, default: "210"}
       kmax: {description: "aceleração máxima por cena", required: false, default: "1.18"}
+      reuse: {description: "branch dub-<run> para reaproveitar a voz (sem TTS)", required: false, default: ""}
 permissions:
   contents: write
 jobs:
@@ -23,6 +24,12 @@ jobs:
           SPEC=$(python -c "import json;print(json.load(open('${{ inputs.dub }}'))['spec'])")
           mkdir lp && git fetch -q origin $LP && git archive FETCH_HEAD | tar -x -C lp
           echo "SPEC=$SPEC" >> $GITHUB_ENV
+      - name: voz reaproveitada
+        if: ${{ inputs.reuse != '' }}
+        run: |
+          mkdir reuse && git fetch -q origin ${{ inputs.reuse }} && git archive FETCH_HEAD | tar -x -C reuse
+          echo "REUSE_VOICE=$PWD/reuse/$(ls reuse | grep '^voz_' | head -1)" >> $GITHUB_ENV
+          echo "REUSE_REPORT=$PWD/reuse/report.json" >> $GITHUB_ENV
       - name: dublagem
         working-directory: lp
         env:
@@ -33,6 +40,6 @@ jobs:
         run: python ../scripts/dub.py ../${{ inputs.dub }} ${SPEC}.json ../out_dub
       - run: |
           git config user.name producer; git config user.email producer@users.noreply.github.com
-          mkdir -p /tmp/o && cp out_dub/report.json out_dub/dub_*.mp3 out_dub/dub_*.wav out_dub/voz_*.wav /tmp/o/
+          mkdir -p /tmp/o && cp out_dub/report.json out_dub/dub_*.mp3 out_dub/voz_*.wav /tmp/o/ && cp out_dub/g*.wav /tmp/o/ 2>/dev/null || true
           git checkout --orphan dub-${{ github.run_id }} && git rm -rf . -q
           cp /tmp/o/* . && git add -f . && git commit -qm dub && git push -f origin dub-${{ github.run_id }}
