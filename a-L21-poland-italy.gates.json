@@ -1,0 +1,93 @@
+{
+ "report": [
+  {
+   "dur": 40.3,
+   "wpm": 278,
+   "f0_std": 6.96,
+   "f0_p10_90": 17.8,
+   "pauses_05": 9,
+   "pause_total": 4.9,
+   "cut_s": 0,
+   "act": 0,
+   "engine": "gemini:gemini-3.1-flash-tts-preview",
+   "align": 0.422
+  },
+  {
+   "dur": 69.4,
+   "wpm": 128,
+   "f0_std": 6.6,
+   "f0_p10_90": 17.7,
+   "pauses_05": 17,
+   "pause_total": 9.3,
+   "cut_s": 0,
+   "act": 1,
+   "engine": "gemini:gemini-3.1-flash-tts-preview",
+   "align": 0.939
+  },
+  {
+   "dur": 41.2,
+   "wpm": 127,
+   "f0_std": 7.17,
+   "f0_p10_90": 20.1,
+   "pauses_05": 12,
+   "pause_total": 6.5,
+   "cut_s": 0,
+   "act": 2,
+   "engine": "gemini:gemini-3.1-flash-tts-preview",
+   "align": 0.885
+  },
+  {
+   "dur": 81.1,
+   "wpm": 132,
+   "f0_std": 6.09,
+   "f0_p10_90": 16.1,
+   "pauses_05": 17,
+   "pause_total": 9.5,
+   "cut_s": 0,
+   "act": 3,
+   "engine": "gemini:gemini-3.1-flash-tts-preview",
+   "align": 0.972
+  },
+  {
+   "dur": 78.5,
+   "wpm": 138,
+   "f0_std": 6.66,
+   "f0_p10_90": 17.6,
+   "pauses_05": 17,
+   "pause_total": 9.2,
+   "cut_s": 0,
+   "act": 4,
+   "engine": "gemini:gemini-3.1-flash-tts-preview",
+   "align": 0.961
+  },
+  {
+   "dur": 88.7,
+   "wpm": 137,
+   "f0_std": 5.44,
+   "f0_p10_90": 14.3,
+   "pauses_05": 9,
+   "pause_total": 5.1,
+   "cut_s": 0,
+   "act": 5,
+   "engine": "gemini:gemini-3.1-flash-tts-preview",
+   "align": 0.951
+  },
+  {
+   "dur": 70.9,
+   "wpm": 154,
+   "f0_std": 7.65,
+   "f0_p10_90": 20.8,
+   "pauses_05": 21,
+   "pause_total": 11.4,
+   "cut_s": 0,
+   "act": 6,
+   "engine": "gemini:gemini-3.1-flash-tts-preview",
+   "align": 0.967
+  }
+ ],
+ "gates": [
+  "ato 0: 278 wpm fora de 122\u2013185",
+  "ato 0: Whisper bateu s\u00f3 42% das palavras (TTS pulou/trocou texto?)"
+ ],
+ "total": 493.8
+}
