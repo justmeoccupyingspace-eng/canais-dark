@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       ch: {description: "A ou B", required: true, default: "B"}
-      mode: {description: "list | private | playlist | localize", required: true, default: "list"}
+      mode: {description: "list | private | playlist | localize | watermark", required: true, default: "list"}
       ids: {description: "IDs (vírgula) para deixar privados", required: false, default: ""}
       all: {description: "1 = todos os públicos/agendados viram privados", required: false, default: ""}
       pl: {description: "título da playlist (mode=playlist)", required: false, default: ""}

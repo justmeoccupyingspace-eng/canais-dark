@@ -1,8 +1,9 @@
 """Lista os envios de um canal e, com MODE=private, deixa privados os vídeos dados em IDS (ou todos os públicos/agendados com ALL=1).
 MODE=playlist põe os IDS na playlist cujo título é PL (não cria playlist nova, não remove nada).
+MODE=watermark põe o avatar do canal como marca d'água de inscrição em todos os vídeos (POS=topRight por padrão).
 MODE=localize grava título/descrição traduzidos a partir do JSON em LOC ({id: {lang: {title, description}}}); o original fica igual.
 Nada é apagado. Uso: CH=B MODE=list|private|playlist|localize [IDS=a,b] [ALL=1] [PL=título] [LOC=arquivo.json] python scripts/ytchan.py out.json"""
-import json, os, sys, urllib.parse, urllib.request
+import json, os, sys, urllib.error, urllib.parse, urllib.request
 def post(url, data):
     return json.load(urllib.request.urlopen(urllib.request.Request(url, data=urllib.parse.urlencode(data).encode())))
 def call(method, url, tok, body=None):
@@ -80,4 +81,21 @@ if mode == "localize":
         locs = {**v.get("localizations", {}), **langs}
         r = call("PUT", API + "videos?part=snippet,localizations", tok, {"id": vid, "snippet": snippet, "localizations": locs})
         localized.append(vid); print(f"::notice::{vid} localizado em {','.join(langs)}: {list(langs.values())[0]['title'][:60]}")
-json.dump(dict(channel=c["snippet"]["title"], rows=rows, made_private=done, playlist_added=added, localized=localized), open(sys.argv[1], "w"), indent=1, ensure_ascii=False)
+wm = None
+if mode == "watermark":
+    # marca d'água de inscrição: usa o avatar do próprio canal; POS = topRight|bottomRight|...; no computador, clicar nela inscreve
+    import uuid
+    img = urllib.request.urlopen(c["snippet"]["thumbnails"]["high"]["url"]).read()
+    for pos in [os.environ.get("POS") or "topRight", "bottomRight"]:
+        meta = {"timing": {"type": "offsetFromStart", "offsetMs": 0}, "position": {"type": "corner", "cornerPosition": pos}}
+        bnd = uuid.uuid4().hex
+        body = (f"--{bnd}\r\nContent-Type: application/json; charset=UTF-8\r\n\r\n{json.dumps(meta)}\r\n--{bnd}\r\nContent-Type: image/jpeg\r\n\r\n").encode() + img + f"\r\n--{bnd}--\r\n".encode()
+        req = urllib.request.Request(f"https://www.googleapis.com/upload/youtube/v3/watermarks/set?channelId={c['id']}&uploadType=multipart", data=body, method="POST",
+                                     headers={"Authorization": f"Bearer {tok}", "Content-Type": f"multipart/related; boundary={bnd}"})
+        try:
+            urllib.request.urlopen(req).read(); wm = pos; print(f"::notice::marca d'água aplicada ({pos}, vídeo inteiro, {len(img)} bytes)"); break
+        except urllib.error.HTTPError as e:
+            print(f"::warning::watermark {pos}: {e.code} {e.read()[:300]}")
+    if not wm:
+        sys.exit("marca d'água não aplicada")
+json.dump(dict(channel=c["snippet"]["title"], rows=rows, made_private=done, playlist_added=added, localized=localized, watermark=wm), open(sys.argv[1], "w"), indent=1, ensure_ascii=False)
