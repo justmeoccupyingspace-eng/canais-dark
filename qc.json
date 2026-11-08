@@ -1,0 +1,311 @@
+{
+ "edge_pt-BR-AntonioNeural": [
+  {
+   "bloco": 1,
+   "ok": 1.0,
+   "ouvido": "Toda reunião de obra tem a mesma pergunta. O cronograma está certo?"
+  },
+  {
+   "bloco": 2,
+   "ok": 1.0,
+   "ouvido": "O cronograma diz uma coisa, os controles paralelos da obra, outra, e o financeiro, uma terceira."
+  },
+  {
+   "bloco": 3,
+   "ok": 0.86,
+   "ouvido": "O Kronos coloca tudo na mesma régua."
+  },
+  {
+   "bloco": 4,
+   "ok": 0.83,
+   "ouvido": "Leia o Microsoft Project, leia o custo do Cienge e feche o mês com físico e financeiro  integrados, na mesma data de corte."
+  },
+  {
+   "bloco": 5,
+   "ok": 1.0,
+   "ouvido": "E as tarefas futuras, reprojetadas com precisão."
+  },
+  {
+   "bloco": 6,
+   "ok": 1.0,
+   "ouvido": "O controle no nível que você quiser, macro, etapa ou serviço."
+  },
+  {
+   "bloco": 7,
+   "ok": 1.0,
+   "ouvido": "a linha de balanço, pavimento por pavimento,  e ferramentas visuais diversas."
+  },
+  {
+   "bloco": 8,
+   "ok": 1.0,
+   "ouvido": "Cada tarefa, cada torre, cada pavimento."
+  },
+  {
+   "bloco": 9,
+   "ok": 1.0,
+   "ouvido": "No fim do mês, cinco passos.  O que fecha, congela.  Mas o Cronos também olha para a frente, monitora tarefas futuras, restrições e ações,  para que as coisas aconteçam."
+  },
+  {
+   "bloco": 10,
+   "ok": 1.0,
+   "ouvido": "E o relatório completo sai num clique."
+  },
+  {
+   "bloco": 11,
+   "ok": 0.93,
+   "ouvido": "E agora o crônus está na web.  Abre no navegador do escritório ou da obra."
+  },
+  {
+   "bloco": 12,
+   "ok": 0.92,
+   "ouvido": "Cada construtora com o seu próprio banco de dados, um servidor no Brasil."
+  },
+  {
+   "bloco": 13,
+   "ok": 1.0,
+   "ouvido": "E cada pessoa vê só o que precisa, quem administra, quem lança e quem só quer  acompanhar o gráfico."
+  },
+  {
+   "bloco": 14,
+   "ok": 1.0,
+   "ouvido": "Cronos. Para quem precisa de precisão nos números."
+  },
+  {
+   "bloco": 15,
+   "ok": 0.57,
+   "ouvido": "Feito por um nitri."
+  }
+ ],
+ "gemini_Algieba": [
+  {
+   "bloco": 1,
+   "ok": 1.0,
+   "ouvido": "Toda reunião de obra tem a mesma pergunta.  O cronograma está certo?"
+  },
+  {
+   "bloco": 2,
+   "ok": 1.0,
+   "ouvido": "O cronograma diz uma coisa, os controles paralelos da obra outra, e o financeiro, uma terceira."
+  },
+  {
+   "bloco": 3,
+   "ok": 1.0,
+   "ouvido": "O Cronos coloca tudo na mesma régua."
+  },
+  {
+   "bloco": 4,
+   "ok": 0.96,
+   "ouvido": "lê o Microsoft Project, lê o custo do Cieng e fecha o mês com físico e financeiro integrados,  na mesma data de corte."
+  },
+  {
+   "bloco": 5,
+   "ok": 1.0,
+   "ouvido": "e as tarefas futuras reprojetadas com precisão."
+  },
+  {
+   "bloco": 6,
+   "ok": 1.0,
+   "ouvido": "o controle no nível que você quiser, macro, etapa ou serviço."
+  },
+  {
+   "bloco": 7,
+   "ok": 1.0,
+   "ouvido": "a linha de balanço, pavimento por pavimento e ferramentas visuais diversas."
+  },
+  {
+   "bloco": 8,
+   "ok": 1.0,
+   "ouvido": "Cada tarefa, cada torre, cada pavimento."
+  },
+  {
+   "bloco": 9,
+   "ok": 1.0,
+   "ouvido": "No fim do mês, cinco passos.  O que fecha, congela.  Mas o Cronos também olha para a frente.  Monitora tarefas futuras,  restrições e ações,  para que as coisas aconteçam."
+  },
+  {
+   "bloco": 10,
+   "ok": 1.0,
+   "ouvido": "E o relatório completo sai num clique."
+  },
+  {
+   "bloco": 11,
+   "ok": 0.93,
+   "ouvido": "E agora o crônus está na web.  Abre no navegador, do escritório ou da obra."
+  },
+  {
+   "bloco": 12,
+   "ok": 0.96,
+   "ouvido": "Cada construtora com seu próprio banco de dados, num servidor no Brasil."
+  },
+  {
+   "bloco": 13,
+   "ok": 1.0,
+   "ouvido": "E cada pessoa vê só o que precisa.  Quem administra, quem lança e quem só quer acompanhar o gráfico."
+  },
+  {
+   "bloco": 14,
+   "ok": 1.0,
+   "ouvido": "Cronos. Para quem precisa de precisão nos números."
+  },
+  {
+   "bloco": 15,
+   "ok": 0.57,
+   "ouvido": "Feito por 1.3"
+  }
+ ],
+ "gemini_Charon": [
+  {
+   "bloco": 1,
+   "ok": 1.0,
+   "ouvido": "Toda reunião de obra tem a mesma pergunta.  O cronograma está certo?"
+  },
+  {
+   "bloco": 2,
+   "ok": 1.0,
+   "ouvido": "O cronograma diz uma coisa, os controles paralelos da obra outra, e o financeiro uma terceira."
+  },
+  {
+   "bloco": 3,
+   "ok": 0.86,
+   "ouvido": "O Kronos coloca tudo na mesma régua."
+  },
+  {
+   "bloco": 4,
+   "ok": 0.83,
+   "ouvido": "Leia o Microsoft Project, leia o custo do Cienge e feche o mês com físico e financeiro  integrados, na mesma data de corte."
+  },
+  {
+   "bloco": 5,
+   "ok": 1.0,
+   "ouvido": "e as tarefas futuras, reprojetadas com precisão."
+  },
+  {
+   "bloco": 6,
+   "ok": 1.0,
+   "ouvido": "o controle no nível que você quiser, macro, etapa ou serviço."
+  },
+  {
+   "bloco": 7,
+   "ok": 1.0,
+   "ouvido": "a linha de balanço, pavimento por pavimento e ferramentas visuais diversas."
+  },
+  {
+   "bloco": 8,
+   "ok": 1.0,
+   "ouvido": "cada tarefa, cada torre, cada pavimento."
+  },
+  {
+   "bloco": 9,
+   "ok": 0.91,
+   "ouvido": "No fim do mês, 5 passos. O que fecha, congela. Mas o crônus também olha para frente.  Monitora tarefas futuras, restrições e ações, para que as coisas aconteçam."
+  },
+  {
+   "bloco": 10,
+   "ok": 1.0,
+   "ouvido": "E o relatório completo sai num clique."
+  },
+  {
+   "bloco": 11,
+   "ok": 0.93,
+   "ouvido": "E agora o crônus está na web.  Abre no navegador, do escritório ou da obra."
+  },
+  {
+   "bloco": 12,
+   "ok": 1.0,
+   "ouvido": "Cada construtora com o seu próprio banco de dados, num servidor no Brasil."
+  },
+  {
+   "bloco": 13,
+   "ok": 1.0,
+   "ouvido": "e cada pessoa vê só o que precisa, quem administra, quem lança e quem só quer acompanhar o gráfico."
+  },
+  {
+   "bloco": 14,
+   "ok": 1.0,
+   "ouvido": "Cronos. Para quem precisa de precisão nos números."
+  },
+  {
+   "bloco": 15,
+   "ok": 0.67,
+   "ouvido": "Feito por Omnitrix."
+  }
+ ],
+ "gemini_Orus": [
+  {
+   "bloco": 1,
+   "ok": 1.0,
+   "ouvido": "Toda reunião de obra tem a mesma pergunta.  O cronograma está certo?"
+  },
+  {
+   "bloco": 2,
+   "ok": 1.0,
+   "ouvido": "O cronograma diz uma coisa, os controles paralelos da obra, outra, e o financeiro, uma terceira."
+  },
+  {
+   "bloco": 3,
+   "ok": 0.86,
+   "ouvido": "O Kronos coloca tudo na mesma régua."
+  },
+  {
+   "bloco": 4,
+   "ok": 0.96,
+   "ouvido": "lê o Microsoft Project, lê o custo do Cienje e fecha o mês com físico e financeiro integrados,  na mesma data de corte."
+  },
+  {
+   "bloco": 5,
+   "ok": 1.0,
+   "ouvido": "e as tarefas futuras reprojetadas com precisão."
+  },
+  {
+   "bloco": 6,
+   "ok": 0.91,
+   "ouvido": "o controle num nível que você quiser, macro, etapa ou serviço."
+  },
+  {
+   "bloco": 7,
+   "ok": 1.0,
+   "ouvido": "A linha de balanço, pavimento por pavimento e ferramentas visuais diversas."
+  },
+  {
+   "bloco": 8,
+   "ok": 1.0,
+   "ouvido": "cada tarefa, cada torre, cada pavimento."
+  },
+  {
+   "bloco": 9,
+   "ok": 1.0,
+   "ouvido": "No fim do mês, cinco passos.  O que fecha, congela.  Mas o Cronos também olha para a frente.  Monitora tarefas futuras, restrições e ações,  para que as coisas aconteçam."
+  },
+  {
+   "bloco": 10,
+   "ok": 1.0,
+   "ouvido": "E o relatório completo sai num clique."
+  },
+  {
+   "bloco": 11,
+   "ok": 1.0,
+   "ouvido": "E agora o Cronos está na web.  Abre no navegador do escritório ou da obra."
+  },
+  {
+   "bloco": 12,
+   "ok": 1.0,
+   "ouvido": "cada construtora com o seu próprio banco de dados, num servidor no Brasil."
+  },
+  {
+   "bloco": 13,
+   "ok": 0.97,
+   "ouvido": "E cada pessoa vê só o que precisa.  Quem administra, quem lança e quem só quer acompanhar o gráfico.  Cronos."
+  },
+  {
+   "bloco": 14,
+   "ok": 0.93,
+   "ouvido": "para quem precisa de precisão nos números."
+  },
+  {
+   "bloco": 15,
+   "ok": 0.67,
+   "ouvido": "Feito por OmniTree."
+  }
+ ],
+ "out_loc": []
+}
