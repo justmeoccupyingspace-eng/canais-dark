@@ -1,0 +1,23 @@
+name: locqc
+on:
+  workflow_dispatch:
+    inputs:
+      branch: {description: "branch locucao-<run>", required: true}
+      script: {description: "roteiro JSON", required: false, default: "voicetest/cronos_locucao.json"}
+permissions:
+  contents: write
+jobs:
+  q:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: sudo apt-get install -y -qq ffmpeg >/dev/null && pip install -q numpy soundfile librosa faster-whisper
+      - run: mkdir loc && git fetch -q origin ${{ inputs.branch }} && git archive FETCH_HEAD | tar -x -C loc
+      - run: python voicetest/locqc.py
+        env: {SCRIPT: "${{ inputs.script }}"}
+      - run: |
+          git config user.name producer; git config user.email producer@users.noreply.github.com
+          cp loc/qc.json /tmp/qc.json && git checkout -q ${{ inputs.branch }} 2>/dev/null || git checkout -q -b ${{ inputs.branch }} FETCH_HEAD
+          cp /tmp/qc.json qc.json && git add qc.json && git commit -qm qc && git push -f origin HEAD:${{ inputs.branch }}
