@@ -1,0 +1,18 @@
+{
+ "script": "voicetest/cronos_locucao_final_take3.json",
+ "vozes": {
+  "gemini_Algieba": {
+   "blocos_s": [
+    12.12,
+    3.14,
+    4.5,
+    5.96
+   ],
+   "total_s": 25.7,
+   "ferramenta": "Gemini TTS (gemini-3.1-flash-tts-preview), voz Algieba",
+   "cobertura_alinhamento": 0.94,
+   "inteiro_s": 29.0,
+   "transcricao": "leu o microsoft project leu o custo do cienje e fecha o mes com fisico e financeiro integrados na mesma data de corte o relatorio completo sai num clique tudo no navegador do escritorio ou da obra cada construtora a com o seu proprio banco de dados num servidor no brasil"
+  }
+ }
+}
