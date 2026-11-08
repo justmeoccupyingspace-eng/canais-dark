@@ -116,11 +116,6 @@
      "at": "Seventy in 2024",
      "iso": "POL",
      "year": 2024
-    },
-    {
-     "at": "eighty-three percent",
-     "iso": "POL",
-     "year": 2031
     }
    ],
    "react": [
@@ -290,7 +285,7 @@
     "label": "Germany = 100%",
     "pos": "left"
    },
-   "narration": "Look at how long each step took. {p} From thirty percent of Germany to forty: fourteen years. Forty to fifty: eight. Fifty to sixty: eight again. And sixty to seventy: four. Just four years, from 2020 to 2024. {pp} In thirty-six years, Poland lost ground on Germany in only three: 1991, the first year of shock therapy, and then by less than half a point in 2001 and 2010. Every other year, this line went up. {p} So why did it speed up after 2019? Not only because Poland ran faster. Because Germany stopped.",
+   "narration": "Look at how long each step took. {p} In 1990, the average German produced about twenty-two thousand dollars a year, adjusted for prices. The average Pole, about six thousand seven hundred. {p} From thirty percent of Germany to forty: fourteen years. Forty to fifty: eight. Fifty to sixty: eight again. And sixty to seventy: four. Just four years, from 2020 to 2024. {pp} In thirty-six years, Poland lost ground on Germany in only three: 1991, the first year of shock therapy, and then by less than half a point in 2001 and 2010. Every other year, this line went up. {p} So why did it speed up after 2019? Not only because Poland ran faster. Because Germany stopped.",
    "keys": [
     {
      "at": "Look at how long",
@@ -446,8 +441,8 @@
     {
      "at": "eighty-three and a half",
      "value": 83.517,
-     "fmt": "m",
-     "label": "people in Germany, 2024 peak"
+     "fmt": "dec1",
+     "label": "million people in Germany, 2024 peak"
     },
     {
      "at": "about one percent a year",
@@ -813,7 +808,7 @@
    "act": 6,
    "type": "host",
    "bg": "none",
-   "narration": "<soft>So, your guess: 2034, 2043, or never?</soft> Tell me in the comments. {p} If you're watching from Germany: does the slowdown feel real where you live? {p} And if you're watching from Poland: which country should I cover after Czechia? I read every comment.",
+   "narration": "<soft>So, your guess: 2034, 2043, or never?</soft> Tell me in the comments. {p} If you're watching from Germany: does the slowdown feel real where you live? {p} And if you're watching from Poland: which country should I cover after Czechia? {p} And if you're in Czechia: you're the next episode, so tell me what I should know. I read every comment.",
    "items": [
     {
      "at": "your guess",
@@ -1133,6 +1128,15 @@
    ]
   },
   {
+   "say": "1990 PPP per person: DEU ≈ $22k, POL ≈ $6.7k",
+   "rule": "expr",
+   "expr": "[round(22088 / 1000), round(6730 / 100) * 100]",
+   "equal": [
+    22,
+    6700
+   ]
+  },
+  {
    "say": "CZE still ahead of POL in 2026 and 2031 (IMF PPPPC)",
    "rule": "expr",
    "expr": "[True, True]",
@@ -1154,21 +1158,21 @@
    "set": "rat",
    "iso": "POL",
    "year": 1990,
-   "value": 30.5,
+   "value": 30.47,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
    "set": "rat",
    "iso": "POL",
    "year": 1991,
-   "value": 27.3,
+   "value": 27.26,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
    "set": "rat",
    "iso": "POL",
    "year": 1992,
-   "value": 27.4,
+   "value": 27.37,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
@@ -1182,28 +1186,28 @@
    "set": "rat",
    "iso": "POL",
    "year": 1994,
-   "value": 29.7,
+   "value": 29.66,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
    "set": "rat",
    "iso": "POL",
    "year": 1995,
-   "value": 31.2,
+   "value": 31.24,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
    "set": "rat",
    "iso": "POL",
    "year": 1996,
-   "value": 32.9,
+   "value": 32.89,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
    "set": "rat",
    "iso": "POL",
    "year": 1997,
-   "value": 34.6,
+   "value": 34.57,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
@@ -1217,112 +1221,112 @@
    "set": "rat",
    "iso": "POL",
    "year": 1999,
-   "value": 36.3,
+   "value": 36.32,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
    "set": "rat",
    "iso": "POL",
    "year": 2000,
-   "value": 37.2,
+   "value": 37.21,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
    "set": "rat",
    "iso": "POL",
    "year": 2001,
-   "value": 37.1,
+   "value": 37.09,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
    "set": "rat",
    "iso": "POL",
    "year": 2002,
-   "value": 37.7,
+   "value": 37.75,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
    "set": "rat",
    "iso": "POL",
    "year": 2003,
-   "value": 39.3,
+   "value": 39.29,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
    "set": "rat",
    "iso": "POL",
    "year": 2004,
-   "value": 40.8,
+   "value": 40.77,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
    "set": "rat",
    "iso": "POL",
    "year": 2005,
-   "value": 41.7,
+   "value": 41.71,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
    "set": "rat",
    "iso": "POL",
    "year": 2006,
-   "value": 42.6,
+   "value": 42.59,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
    "set": "rat",
    "iso": "POL",
    "year": 2007,
-   "value": 44.1,
+   "value": 44.13,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
    "set": "rat",
    "iso": "POL",
    "year": 2008,
-   "value": 45.5,
+   "value": 45.52,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
    "set": "rat",
    "iso": "POL",
    "year": 2009,
-   "value": 49.3,
+   "value": 49.26,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
    "set": "rat",
    "iso": "POL",
    "year": 2010,
-   "value": 48.8,
+   "value": 48.82,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
    "set": "rat",
    "iso": "POL",
    "year": 2011,
-   "value": 49.5,
+   "value": 49.49,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
    "set": "rat",
    "iso": "POL",
    "year": 2012,
-   "value": 50.0,
+   "value": 50.04,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
    "set": "rat",
    "iso": "POL",
    "year": 2013,
-   "value": 50.3,
+   "value": 50.25,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
    "set": "rat",
    "iso": "POL",
    "year": 2014,
-   "value": 51.3,
+   "value": 51.28,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
@@ -1336,7 +1340,7 @@
    "set": "rat",
    "iso": "POL",
    "year": 2016,
-   "value": 53.8,
+   "value": 53.79,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
@@ -1350,7 +1354,7 @@
    "set": "rat",
    "iso": "POL",
    "year": 2018,
-   "value": 56.6,
+   "value": 56.63,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
@@ -1364,7 +1368,7 @@
    "set": "rat",
    "iso": "POL",
    "year": 2020,
-   "value": 61.2,
+   "value": 61.19,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
@@ -1378,7 +1382,7 @@
    "set": "rat",
    "iso": "POL",
    "year": 2022,
-   "value": 67.5,
+   "value": 67.54,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
@@ -1392,42 +1396,42 @@
    "set": "rat",
    "iso": "POL",
    "year": 2024,
-   "value": 72.0,
+   "value": 71.98,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
    "set": "rat",
    "iso": "POL",
    "year": 2025,
-   "value": 74.7,
+   "value": 74.69,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
    "set": "rat",
    "iso": "POL",
    "year": 2026,
-   "value": 76.3,
+   "value": 76.34,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
    "set": "rat",
    "iso": "POL",
    "year": 2027,
-   "value": 77.5,
+   "value": 77.46,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
    "set": "rat",
    "iso": "POL",
    "year": 2028,
-   "value": 78.6,
+   "value": 78.56,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
    "set": "rat",
    "iso": "POL",
    "year": 2029,
-   "value": 79.8,
+   "value": 79.83,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {
@@ -1441,7 +1445,7 @@
    "set": "rat",
    "iso": "POL",
    "year": 2031,
-   "value": 82.8,
+   "value": 82.84,
    "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (PPP) as % of Germany's"
   },
   {

@@ -40,7 +40,7 @@ par_imf = 2031 + math.log(1 / R[2031]) / k_imf
 
 snapshot = []
 for y in range(1990, 2032):
-    snapshot.append(dict(set="rat", iso="POL", year=y, value=round(R[y] * 100, 1), src=IMF + " · Poland's GDP per capita (PPP) as % of Germany's"))
+    snapshot.append(dict(set="rat", iso="POL", year=y, value=round(R[y] * 100, 2), src=IMF + " · Poland's GDP per capita (PPP) as % of Germany's"))
 for iso, s in (("POL", P), ("DEU", G)):
     for y, v in s.items():
         snapshot.append(dict(set="imf", iso=iso, year=y, value=v, src=IMF + " · PPPPC"))
@@ -60,7 +60,7 @@ shots = [
     dict(act=0, type="lines", start=2026.0, **RATCH,
          narration="Seventy-six percent. {p} That's how rich the average Pole is, compared with the average German, this year: income per person, adjusted for prices. About sixty thousand dollars against seventy-nine thousand. {pp} In 1990, it was thirty percent. Poland crossed forty percent of Germany's level in 2004, the year it joined the European Union. Half in 2012. Sixty percent in 2020. Seventy in 2024. {p} The IMF has it at eighty-three percent by 2031. So there's one question left, and it's the dotted line at the top: when does Poland reach a hundred?",
          keys=[dict(at="Seventy-six", year=2026.0, dur=0.5), dict(at="In 1990", year=1990.0, dur=1.5), dict(at="forty percent", year=2004.0, dur=2.0), dict(at="Half in 2012", year=2012.0, dur=1.5), dict(at="Sixty percent", year=2020.0, dur=1.5), dict(at="Seventy in 2024", year=2024.0, dur=1.5), dict(at="eighty-three percent", year=2031.0, dur=3.0)],
-         labels=[dict(at="Seventy-six percent", iso="POL", year=2026), dict(at="thirty percent", iso="POL", year=1990), dict(at="forty percent", iso="POL", year=2004), dict(at="Half in 2012", iso="POL", year=2012), dict(at="Sixty percent", iso="POL", year=2020), dict(at="Seventy in 2024", iso="POL", year=2024), dict(at="eighty-three percent", iso="POL", year=2031)],
+         labels=[dict(at="Seventy-six percent", iso="POL", year=2026), dict(at="thirty percent", iso="POL", year=1990), dict(at="forty percent", iso="POL", year=2004), dict(at="Half in 2012", iso="POL", year=2012), dict(at="Sixty percent", iso="POL", year=2020), dict(at="Seventy in 2024", iso="POL", year=2024)],
          react=[dict(at="Seventy-six", pose="pointUp"), dict(at="In 1990", pose="pointL"), dict(at="joined the European Union", pose="think"), dict(at="Seventy in 2024", pose="shock"), dict(at="reach a hundred", pose="pointUp")]),
     dict(act=0, type="host", bg="lines", start=2031.0, **{k: v for k, v in RATCH.items() if k != "src"},
          narration="On this channel, Poland has been passing countries all year. Japan, this year. Spain, next year, in the IMF's forecast. Italy, right after 2031. {p} Germany is a different kind of race. Japan and Italy were barely moving. Germany is the biggest economy in Europe, and it's also Poland's biggest customer: more than a quarter of everything Poland sells abroad goes to Germany. So Poland is trying to catch the economy it depends on. {pp} <soft>Here's how the gap closed, why the last few years were the fastest yet, and the two dates the numbers point to.</soft>",
@@ -73,7 +73,7 @@ shots = [
          items=[dict(at="this is a series", text="The Poland series", serif=True, size=66, color="acc"), dict(at="Poland versus Czechia", text="Next: Poland vs Czechia", color="acc2", size=62), dict(at="Subscribe", text="Subscribe", size=70)],
          react=[dict(at="Quick one", pose="wave"), dict(at="Poland versus Czechia", pose="pointUp"), dict(at="Subscribe", pose="cheer"), dict(at="the gap", pose="pointL")]),
     dict(act=1, type="lines", start=1990.0, **RATCH,
-         narration="Look at how long each step took. {p} From thirty percent of Germany to forty: fourteen years. Forty to fifty: eight. Fifty to sixty: eight again. And sixty to seventy: four. Just four years, from 2020 to 2024. {pp} In thirty-six years, Poland lost ground on Germany in only three: 1991, the first year of shock therapy, and then by less than half a point in 2001 and 2010. Every other year, this line went up. {p} So why did it speed up after 2019? Not only because Poland ran faster. Because Germany stopped.",
+         narration="Look at how long each step took. {p} In 1990, the average German produced about twenty-two thousand dollars a year, adjusted for prices. The average Pole, about six thousand seven hundred. {p} From thirty percent of Germany to forty: fourteen years. Forty to fifty: eight. Fifty to sixty: eight again. And sixty to seventy: four. Just four years, from 2020 to 2024. {pp} In thirty-six years, Poland lost ground on Germany in only three: 1991, the first year of shock therapy, and then by less than half a point in 2001 and 2010. Every other year, this line went up. {p} So why did it speed up after 2019? Not only because Poland ran faster. Because Germany stopped.",
          keys=[dict(at="Look at how long", year=1990.0, dur=1.0), dict(at="fourteen years", year=2004.0, dur=2.5), dict(at="Forty to fifty", year=2012.0, dur=2.0), dict(at="Fifty to sixty", year=2020.0, dur=2.0), dict(at="sixty to seventy", year=2024.0, dur=2.0), dict(at="only three", year=2026.0, dur=3.0)],
          labels=[dict(at="fourteen years", iso="POL", year=2004), dict(at="Forty to fifty", iso="POL", year=2012), dict(at="Fifty to sixty", iso="POL", year=2020), dict(at="sixty to seventy", iso="POL", year=2024)],
          react=[dict(at="Look at how long", pose="pointL"), dict(at="Just four years", pose="shock"), dict(at="only three", pose="pointUp"), dict(at="Germany stopped", pose="think")]),
@@ -85,7 +85,7 @@ shots = [
          react=[dict(at="Here's Germany's", pose="pointL"), dict(at="minus four", pose="shock"), dict(at="2024: zero", pose="shrug"), dict(at="eighteen percent", pose="pointUp"), dict(at="slow again", pose="think")]),
     dict(act=2, type="stats", src=IMF + " · real GDP growth (NGDP_RPCH), population (LP)", title="Why Germany stalled",
          narration="Three things hit Germany at once. {p} Energy: until 2022, Russia supplied more than half of Germany's gas imports. Then the war cut that off, and German factories suddenly paid far more for energy. {p} Cars: the industry at the heart of the German economy is losing ground in China, its biggest market, to Chinese brands. {p} And people: Germany's population peaked in 2024 at about eighty-three and a half million, and the IMF has it falling from here. {pp} None of that makes Germany poor. It makes it slow. Since 2001, Germany's economy has grown about one percent a year. Poland's: about three and a half.",
-         stats=[dict(at="Then the war", value=GR["DEU"][2023], fmt="pct1", label="Germany, real growth, 2023"), dict(at="eighty-three and a half", value=LP["DEU"][2024], fmt="m", label="people in Germany, 2024 peak"), dict(at="about one percent a year", value=round(avg("DEU", 2001, 2025), 1), fmt="pct1", label="Germany, average growth, 2001–2025"), dict(at="about three and a half", value=round(avg("POL", 2001, 2025), 1), fmt="pct1", label="Poland, average growth, 2001–2025")],
+         stats=[dict(at="Then the war", value=GR["DEU"][2023], fmt="pct1", label="Germany, real growth, 2023"), dict(at="eighty-three and a half", value=LP["DEU"][2024], fmt="dec1", label="million people in Germany, 2024 peak"), dict(at="about one percent a year", value=round(avg("DEU", 2001, 2025), 1), fmt="pct1", label="Germany, average growth, 2001–2025"), dict(at="about three and a half", value=round(avg("POL", 2001, 2025), 1), fmt="pct1", label="Poland, average growth, 2001–2025")],
          react=[dict(at="Three things", pose="pointUp"), dict(at="far more for energy", pose="shock"), dict(at="Chinese brands", pose="pointL"), dict(at="falling from here", pose="think"), dict(at="It makes it slow", pose="shrug")]),
 
     # ---------------- 3 · ALREADY THERE ----------------
@@ -124,7 +124,7 @@ shots = [
 
     # ---------------- 6 · YOUR GUESS ----------------
     dict(act=6, type="host", bg="none",
-         narration="<soft>So, your guess: 2034, 2043, or never?</soft> Tell me in the comments. {p} If you're watching from Germany: does the slowdown feel real where you live? {p} And if you're watching from Poland: which country should I cover after Czechia? I read every comment.",
+         narration="<soft>So, your guess: 2034, 2043, or never?</soft> Tell me in the comments. {p} If you're watching from Germany: does the slowdown feel real where you live? {p} And if you're watching from Poland: which country should I cover after Czechia? {p} And if you're in Czechia: you're the next episode, so tell me what I should know. I read every comment.",
          items=[dict(at="your guess", text="2034, 2043 or never?", color="acc", size=68), dict(at="watching from Germany", text="Germany: does it feel slow?", color="warm", size=58)],
          react=[dict(at="your guess", pose="shrug"), dict(at="Tell me", pose="pointUp"), dict(at="watching from Germany", pose="wave")]),
     dict(act=6, type="end", src="",
@@ -161,6 +161,7 @@ checks = [
     dict(say="POL growth 2027–2031 = 2.5; DEU < 1 in 2029–2031 (1.1 in 2027–28)", rule="expr", expr=f"[{sorted(set(GR['POL'][y] for y in range(2027, 2032)))}, {[GR['DEU'][y] for y in range(2027, 2032)]}]", equal=[[2.5], [1.1, 1.1, 0.9, 0.7, 0.6]]),
     dict(say="POL population 2026 ≈ 36.3M; peak 1999 ≈ 38.7M (almost 39)", rule="expr", expr=f"[round({LP['POL'][2026]}, 1), {max(LP['POL'], key=LP['POL'].get)}, round({LP['POL'][1999]}, 1)]", equal=[36.3, 1999, 38.7]),
     dict(say="2004 → 2019: POL from 40.8% to 59.5% of DEU (forty to almost sixty), both growing", rule="expr", expr=f"[round({R[2004]} * 100), round({R[2019]} * 100, 1), {all(GR['DEU'][y] > -6 for y in range(2005, 2020))}]", equal=[41, 59.5, True]),
+    dict(say="1990 PPP per person: DEU ≈ $22k, POL ≈ $6.7k", rule="expr", expr=f"[round({G[1990]} / 1000), round({P[1990]} / 100) * 100]", equal=[22, 6700]),
     dict(say="CZE still ahead of POL in 2026 and 2031 (IMF PPPPC)", rule="expr", expr=f"[{CZE[2026] > P[2026]}, {CZE[2031] > P[2031]}]", equal=[True, True]),
     dict(say="ITA − POL 2031 = $499", rule="expr", expr=f"{series('PPPPC', 'ITA')[2031] - P[2031]}", equal=499),
 ]
