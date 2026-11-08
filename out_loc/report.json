@@ -1,0 +1,98 @@
+{
+ "script": "voicetest/cronos_locucao.json",
+ "vozes": {
+  "gemini_Charon": {
+   "blocos_s": [
+    6.4,
+    8.88,
+    3.44,
+    11.24,
+    4.56,
+    6.66,
+    6.68,
+    4.44,
+    16.54,
+    3.18,
+    7.12,
+    6.64,
+    8.42,
+    4.44,
+    2.2
+   ],
+   "total_s": 100.8,
+   "ferramenta": "Gemini TTS (gemini-3.1-flash-tts-preview), voz Charon",
+   "cobertura_alinhamento": 0.957,
+   "inteiro_s": 104.3,
+   "transcricao": "toda reuniao de obra tem a mesma pergunta o cronograma esta certo o cronograma diz uma coisa os controles paralelos da obra outra e o financeiro uma terceira o cronus coloca tudo na mesma regua leu o microsoft project leu o custo do cienji e fecha o mes com fisico e financeiro integrados na mesma data de corte e as tarefas futuras reprojetadas com precisao o controle no nivel que voce quiser macro etapa ou servico a linha de balanco pavimento por pavimento e ferramentas visuais diversas cada tarefa cada torre cada pavimento no fim do mes cinco passos o que fecha congela mas o cronus tambem olh"
+  },
+  "gemini_Orus": {
+   "blocos_s": [
+    6.28,
+    8.6,
+    3.84,
+    11.18,
+    4.62,
+    7.12,
+    7.32,
+    5.0,
+    15.62,
+    3.14,
+    6.76,
+    5.36,
+    9.96,
+    3.34,
+    2.02
+   ],
+   "total_s": 100.2,
+   "ferramenta": "Gemini TTS (gemini-3.1-flash-tts-preview), voz Orus",
+   "cobertura_alinhamento": 0.952,
+   "inteiro_s": 113.4,
+   "transcricao": "toda reuniao de obra tem a mesma pergunta o cronograma esta certo o cronograma diz uma coisa os controles paralelos da obra outra e o financeiro uma terceira o cronus coloca tudo na mesma regua leu o microsoft project leu o custo do cienji e fecha o mes com fisico e financeiro integrados na mesma data de corte e as tarefas futuras reprojetadas com precisao o controle no nivel que voce quiser macro etapa ou servico a linha de balanco pavimento por pavimento e ferramentas visuais diversas cada tarefa cada torre cada pavimento no fim do mes cinco passos o que fecha congela mas o cronus tambem olh"
+  },
+  "gemini_Algieba": {
+   "blocos_s": [
+    6.68,
+    10.52,
+    3.92,
+    11.1,
+    4.42,
+    6.9,
+    6.62,
+    4.44,
+    16.06,
+    3.32,
+    7.0,
+    5.36,
+    8.18,
+    4.44,
+    2.26
+   ],
+   "total_s": 101.2,
+   "ferramenta": "Gemini TTS (gemini-3.1-flash-tts-preview), voz Algieba",
+   "cobertura_alinhamento": 0.973,
+   "inteiro_s": 112.4,
+   "transcricao": "toda reuniao de obra tem a mesma pergunta o cronograma esta certo o cronograma diz uma coisa os controles paralelos da obra outra e o financeiro uma terceira o cronos coloca tudo na mesma regua le o microsoft project le o custo do cienji e fecha o mes com fisico e financeiro integrados na mesma data de corte e as tarefas futuras reprojetadas com precisao o controle no nivel que voce quiser macro etapa ou servico a linha de balanco pavimento por pavimento e ferramentas visuais diversas cada tarefa cada torre cada pavimento no fim do mes cinco passos o que fecha congela mas o cronos tambem olha "
+  },
+  "edge_pt-BR-AntonioNeural": {
+   "blocos_s": [
+    5.04,
+    8.78,
+    3.14,
+    8.86,
+    4.08,
+    4.84,
+    6.52,
+    3.8,
+    14.22,
+    2.94,
+    6.26,
+    5.14,
+    7.04,
+    4.6,
+    1.72
+   ],
+   "total_s": 87.0,
+   "ferramenta": "edge-tts (Microsoft), voz pt-BR-AntonioNeural, rate -6%, pitch -2Hz"
+  }
+ }
+}
