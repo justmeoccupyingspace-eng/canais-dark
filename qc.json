@@ -1,0 +1,75 @@
+{
+ "gemini_Algieba": [
+  {
+   "bloco": 1,
+   "ok": 1.0,
+   "ouvido": "Toda reunião de obra tem a mesma pergunta.  O cronograma está certo?"
+  },
+  {
+   "bloco": 2,
+   "ok": 1.0,
+   "ouvido": "O cronograma diz uma coisa, os controles paralelos da obra outra, e o financeiro uma terceira."
+  },
+  {
+   "bloco": 3,
+   "ok": 0.86,
+   "ouvido": "O Kronos coloca tudo na mesma régua."
+  },
+  {
+   "bloco": 4,
+   "ok": 0.96,
+   "ouvido": "Lê o Microsoft Project, lê o custo do Cienge e fecha o mês com físico e financeiro integrados,  na mesma data de corte."
+  },
+  {
+   "bloco": 5,
+   "ok": 1.0,
+   "ouvido": "Cinco passos. E o que fecha, congela."
+  },
+  {
+   "bloco": 6,
+   "ok": 1.0,
+   "ouvido": "A partir daí, reprojeta o que falta no ritmo real da obra e monitora tarefas futuras, restrições  e ações, antes que virem atraso."
+  },
+  {
+   "bloco": 7,
+   "ok": 1.0,
+   "ouvido": "O controle no nível que você quiser, da obra inteira ao serviço."
+  },
+  {
+   "bloco": 8,
+   "ok": 1.0,
+   "ouvido": "a linha de balanço, pavimento por pavimento e ferramentas visuais diversas."
+  },
+  {
+   "bloco": 9,
+   "ok": 1.0,
+   "ouvido": "O relatório completo sai num clique."
+  },
+  {
+   "bloco": 10,
+   "ok": 1.0,
+   "ouvido": "Tudo no navegador, do escritório ou da obra."
+  },
+  {
+   "bloco": 11,
+   "ok": 1.0,
+   "ouvido": "cada construtora com o seu próprio banco de dados, num servidor no Brasil."
+  },
+  {
+   "bloco": 12,
+   "ok": 1.0,
+   "ouvido": "E cada pessoa vê só o que precisa, quem administra, quem lança e quem só acompanha."
+  },
+  {
+   "bloco": 13,
+   "ok": 1.0,
+   "ouvido": "Cronos. Para quem precisa de precisão nos números."
+  },
+  {
+   "bloco": 14,
+   "ok": 0.57,
+   "ouvido": "Os feitos por Omnitri."
+  }
+ ],
+ "out_loc": []
+}
