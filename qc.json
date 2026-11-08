@@ -1,0 +1,25 @@
+{
+ "gemini_Algieba": [
+  {
+   "bloco": 1,
+   "ok": 0.83,
+   "ouvido": "Leia o Microsoft Project, leia o custo do Cienge e feche o mês com físico e financeiro  integrados, na mesma data de corte."
+  },
+  {
+   "bloco": 2,
+   "ok": 1.0,
+   "ouvido": "O relatório completo sai num clique."
+  },
+  {
+   "bloco": 3,
+   "ok": 1.0,
+   "ouvido": "Tudo no navegador, do escritório ou da obra."
+  },
+  {
+   "bloco": 4,
+   "ok": 1.0,
+   "ouvido": "cada construtora com o seu próprio banco de dados, num servidor no Brasil."
+  }
+ ],
+ "out_loc": []
+}
