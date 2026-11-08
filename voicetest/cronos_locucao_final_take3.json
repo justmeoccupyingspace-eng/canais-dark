@@ -1,0 +1,15 @@
+{
+ "titulo": "Cronos — take 3 só dos blocos 04, 09, 10 e 11 (mais pausados)",
+ "style": "Você é um locutor brasileiro profissional. Voz masculina madura, firme e calma, confiante, de quem entende de obra. Narração institucional de um software de planejamento e controle de custo de obra, com pegada de tecnologia. Fala fluida e natural, num ritmo de cerca de 115 palavras por minuto, sem pressa nenhuma, com respiro claro em cada vírgula, como uma conversa segura. A calma vem das pausas entre as ideias, nas vírgulas, nos dois-pontos e entre os parágrafos, nunca de sílabas arrastadas ou alongadas: pronuncie cada palavra no tempo normal. Faça uma pausa clara, de cerca de um segundo, entre um parágrafo e outro. Nada de voz de comercial de varejo, nada de empolgação forçada, nada de tom de audiolivro ou de apresentador de TV. Leia apenas o texto abaixo, palavra por palavra, sem acrescentar nem comentar nada. Pronúncias: 'Crônos' com a sílaba forte em CRÔ; 'Siêngi' lido como si-ÊN-gi; 'Microsoft Project' em inglês, natural; 'Ôm-ni-trí' lido como uma palavra só, ôm-ni-TRÍ, com a sílaba forte em TRÍ.",
+ "pron": {
+  "Cronos": "Crônos",
+  "Sienge": "Siêngi",
+  "Omnitri": "Ôm-ni-trí"
+ },
+ "blocos": [
+  "Lê o Microsoft Project, lê o custo do Sienge, e fecha o mês com físico e financeiro integrados, na mesma data de corte.",
+  "O relatório completo sai num clique.",
+  "Tudo no navegador, do escritório ou da obra.",
+  "Cada construtora com o seu próprio banco de dados, num servidor no Brasil."
+ ]
+}
