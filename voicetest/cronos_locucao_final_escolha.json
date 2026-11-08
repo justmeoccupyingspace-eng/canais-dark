@@ -1,0 +1,24 @@
+{
+ "runs": {
+  "take1": "locucao-42494517775",
+  "take2": "locucao-42494946125",
+  "take3": "locucao-42495491530 (só 04,09,10,11)"
+ },
+ "obs": "recorte refeito no maior silêncio entre blocos (o corte automático caiu dentro de 'números' e 'diversas' no take 2); volume igualado em -22 LUFS por bloco, picos ≤ -1 dBFS; sem alterar velocidade",
+ "escolha": {
+  "01": "take2",
+  "02": "take2",
+  "03": "take2",
+  "04": "take2",
+  "05": "take2",
+  "06": "take2",
+  "07": "take1",
+  "08": "take2",
+  "09": "take1",
+  "10": "take3",
+  "11": "take3",
+  "12": "take2",
+  "13": "take2",
+  "14": "take2"
+ }
+}
