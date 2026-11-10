@@ -180,7 +180,7 @@ for i, sh in enumerate(shots):
     sh["id"] = f"s{i:02d}"
 
 spec = dict(id="a-L23-poland-czechia", clips=[], channel="chartbound", chapter0="94% of Czechia",
-            thumb=dict(v="flags", iso="POL", vs="CZE", big="94% → 100%?", line2="WHEN POLAND PASSES CZECHIA"),
+            thumb=dict(v="flags", iso="POL", vs="CZE", sym="vs", big="94% → 100%?", line2="WHEN POLAND PASSES CZECHIA"),
             w=1920, h=1080, fps=30, acts=ACTS, shots=shots, checks=checks, datasets=[], snapshot=snapshot,
             voice=dict(model="", name="Charon",
                        style=("You are the narrator of a popular data documentary on YouTube. Read the script below in a warm, curious voice "
