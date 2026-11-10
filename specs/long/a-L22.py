@@ -22,6 +22,7 @@ N = {iso: series("NGDPDPC", iso) for iso in ("POL", "DEU")}
 DEBT = {iso: series("GGXWDG_NGDP", iso) for iso in ("POL", "DEU")}
 LUR = {iso: series("LUR", iso) for iso in ("POL", "DEU")}
 CZE = {int(y): v for y, v in CE["PPPPC"]["CZE"].items()}
+LTU = {int(y): v for y, v in CE["PPPPC"]["LTU"].items()}
 
 R = {y: P[y] / G[y] for y in range(1990, 2032)}
 GAP = {y: G[y] - P[y] for y in range(1990, 2032)}
@@ -69,7 +70,7 @@ shots = [
 
     # ---------------- 1 · FASTER AND FASTER ----------------
     dict(act=1, type="host", bg="none",
-         narration="Quick one before the chart: this is a series, and the next episode is Poland versus Czechia, the one neighbor Poland still hasn't caught. Subscribe so you don't miss it. {p} Now, the gap.",
+         narration="Quick one before the chart: this is a series, and the next episode is Poland versus Czechia, a neighbor that's still about four thousand dollars ahead. Subscribe so you don't miss it. {p} Now, the gap.",
          items=[dict(at="this is a series", text="The Poland series", serif=True, size=66, color="acc"), dict(at="Poland versus Czechia", text="Next: Poland vs Czechia", color="acc2", size=62), dict(at="Subscribe", text="Subscribe", size=70)],
          react=[dict(at="Quick one", pose="wave"), dict(at="Poland versus Czechia", pose="pointUp"), dict(at="Subscribe", pose="cheer"), dict(at="the gap", pose="pointL")]),
     dict(act=1, type="lines", start=1990.0, **RATCH,
@@ -163,6 +164,7 @@ checks = [
     dict(say="2004 → 2019: POL from 40.8% to 59.5% of DEU (forty to almost sixty), both growing", rule="expr", expr=f"[round({R[2004]} * 100), round({R[2019]} * 100, 1), {all(GR['DEU'][y] > -6 for y in range(2005, 2020))}]", equal=[41, 59.5, True]),
     dict(say="1990 PPP per person: DEU ≈ $22k, POL ≈ $6.7k", rule="expr", expr=f"[round({G[1990]} / 1000), round({P[1990]} / 100) * 100]", equal=[22, 6700]),
     dict(say="CZE still ahead of POL in 2026 and 2031 (IMF PPPPC)", rule="expr", expr=f"[{CZE[2026] > P[2026]}, {CZE[2031] > P[2031]}]", equal=[True, True]),
+    dict(say="CZE − POL 2026 ≈ $4,000 (about four thousand dollars ahead); LTU também à frente (não dizer 'o único vizinho')", rule="expr", expr=f"[round(({CZE[2026]} - {P[2026]}) / 1000), {LTU[2026] > P[2026]}]", equal=[4, True]),
     dict(say="ITA − POL 2031 = $499", rule="expr", expr=f"{series('PPPPC', 'ITA')[2031] - P[2031]}", equal=499),
 ]
 

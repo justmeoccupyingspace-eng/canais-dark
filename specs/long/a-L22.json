@@ -219,7 +219,7 @@
    "act": 1,
    "type": "host",
    "bg": "none",
-   "narration": "Quick one before the chart: this is a series, and the next episode is Poland versus Czechia, the one neighbor Poland still hasn't caught. Subscribe so you don't miss it. {p} Now, the gap.",
+   "narration": "Quick one before the chart: this is a series, and the next episode is Poland versus Czechia, a neighbor that's still about four thousand dollars ahead. Subscribe so you don't miss it. {p} Now, the gap.",
    "items": [
     {
      "at": "this is a series",
@@ -1142,6 +1142,15 @@
    "expr": "[True, True]",
    "equal": [
     true,
+    true
+   ]
+  },
+  {
+   "say": "CZE − POL 2026 ≈ $4,000 (about four thousand dollars ahead); LTU também à frente (não dizer 'o único vizinho')",
+   "rule": "expr",
+   "expr": "[round((64071 - 60051) / 1000), True]",
+   "equal": [
+    4,
     true
    ]
   },
