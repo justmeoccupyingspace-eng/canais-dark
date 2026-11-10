@@ -112,8 +112,8 @@ shots = [
 
     # ---------------- 4 · THE SLOW PART ----------------
     dict(act=4, type="host", bg="none",
-         narration="Now, the part that makes the last few percent so slow. {p} And if you're enjoying this, the subscribe button is right there. Lithuania is next.",
-         items=[dict(at="the last few percent", text="The slow part", serif=True, size=68, color="acc"), dict(at="subscribe button", text="Subscribe", size=66)],
+         narration="Now, the part that makes those last few percent so slow. {p} And if you're enjoying this, the subscribe button is right there. Lithuania is next.",
+         items=[dict(at="those last few percent", text="The slow part", serif=True, size=68, color="acc"), dict(at="subscribe button", text="Subscribe", size=66)],
          react=[dict(at="so slow", pose="think"), dict(at="subscribe button", pose="pointUp")]),
     dict(act=4, type="stats", src=IMF + " · PPPPC gap in US$, real GDP growth forecasts (NGDP_RPCH), population (LP)", title="The dollar gap",
          narration="In dollars, adjusted for prices, the gap between the average Czech and the average Pole actually grew in the 2000s, and peaked in 2007 at about eleven thousand four hundred. This year, it's about four thousand. {p} But in the IMF's forecast, the closing slows right down. Poland grows about two and a half percent a year from 2027, Czechia about two. Half a point a year doesn't close a gap fast: by 2031, it's still about three thousand one hundred dollars. {pp} One thing does work in Poland's favor here, and it's not a happy one. Poland's population is shrinking, from about thirty-eight and a half million in 1995 to thirty-six million today, while Czechia's grew a little. Fewer people means more income per person, even from the same economy.",
@@ -132,7 +132,7 @@ shots = [
 
     # ---------------- 6 · YOUR GUESS ----------------
     dict(act=6, type="host", bg="none",
-         narration="<soft>So, your guess: 2030, 2039, or does Czechia hold on?</soft> Tell me in the comments. {p} If you're watching from Czechia: did the last few years feel as slow as the numbers say? {p} If you're in Poland: does it feel like you're about to pass Czechia? {p} And Lithuania: you're next, so tell me what I should know. I read every comment.",
+         narration="<soft>So, your guess: 2030, 2039, or does Czechia hold on?</soft> Tell me down in the comments. {p} If you're watching from Czechia: did the last few years feel as slow as the numbers say? {p} If you're in Poland: does it feel like you're about to pass Czechia? {p} And Lithuania: you're next, so tell me what I should know. I read every comment.",
          items=[dict(at="your guess", text="2030, 2039 or never?", color="acc", size=68), dict(at="watching from Czechia", text="Czechia: did it feel slow?", color="warm", size=58)],
          react=[dict(at="your guess", pose="shrug"), dict(at="Tell me", pose="pointUp"), dict(at="watching from Czechia", pose="wave")]),
     dict(act=6, type="end", src="",

@@ -578,10 +578,10 @@
    "act": 4,
    "type": "host",
    "bg": "none",
-   "narration": "Now, the part that makes the last few percent so slow. {p} And if you're enjoying this, the subscribe button is right there. Lithuania is next.",
+   "narration": "Now, the part that makes those last few percent so slow. {p} And if you're enjoying this, the subscribe button is right there. Lithuania is next.",
    "items": [
     {
-     "at": "the last few percent",
+     "at": "those last few percent",
      "text": "The slow part",
      "serif": true,
      "size": 68,
@@ -761,7 +761,7 @@
    "act": 6,
    "type": "host",
    "bg": "none",
-   "narration": "<soft>So, your guess: 2030, 2039, or does Czechia hold on?</soft> Tell me in the comments. {p} If you're watching from Czechia: did the last few years feel as slow as the numbers say? {p} If you're in Poland: does it feel like you're about to pass Czechia? {p} And Lithuania: you're next, so tell me what I should know. I read every comment.",
+   "narration": "<soft>So, your guess: 2030, 2039, or does Czechia hold on?</soft> Tell me down in the comments. {p} If you're watching from Czechia: did the last few years feel as slow as the numbers say? {p} If you're in Poland: does it feel like you're about to pass Czechia? {p} And Lithuania: you're next, so tell me what I should know. I read every comment.",
    "items": [
     {
      "at": "your guess",
