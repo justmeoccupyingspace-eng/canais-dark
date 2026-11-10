@@ -181,6 +181,7 @@ const Flag = ({iso, w = 150}) => {
   const h = w * 0.66;
   const box = {width: w, height: h, borderRadius: 10, overflow: 'hidden', boxShadow: '0 12px 30px rgba(0,0,0,.45)', position: 'relative'};
   if (iso === 'POL') return <div style={{...box, background: 'linear-gradient(#fff 0 50%, #dc143c 50% 100%)'}} />;
+  if (iso === 'CZE') return <div style={{...box, background: 'linear-gradient(#fff 0 50%, #d7141a 50% 100%)'}}><div style={{position: 'absolute', left: 0, top: 0, width: w * 0.5, height: h, background: '#11457e', clipPath: 'polygon(0 0, 100% 50%, 0 100%)'}} /></div>;
   if (iso === 'JPN') return <div style={{...box, background: '#fff'}}><div style={{position: 'absolute', left: w / 2 - h * 0.3, top: h * 0.2, width: h * 0.6, height: h * 0.6, borderRadius: '50%', background: '#bc002d'}} /></div>;
   if (iso === 'UKR') return <div style={{...box, background: 'linear-gradient(#0057b7 0 50%, #ffd700 50% 100%)'}} />;
   if (iso === 'DEU') return <div style={{...box, background: 'linear-gradient(#000 0 33.3%, #dd0000 33.3% 66.6%, #ffce00 66.6% 100%)'}} />;
