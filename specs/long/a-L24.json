@@ -464,15 +464,15 @@
    "stats": [
     {
      "at": "three point six million",
-     "value": 3.629,
-     "fmt": "m",
-     "label": "people in Lithuania, 1995"
+     "value": 3.6,
+     "fmt": "dec1",
+     "label": "million people in Lithuania, 1995"
     },
     {
      "at": "two point eight million",
-     "value": 2.808,
-     "fmt": "m",
-     "label": "people in Lithuania, 2021"
+     "value": 2.8,
+     "fmt": "dec1",
+     "label": "million people in Lithuania, 2021"
     },
     {
      "at": "more than a fifth",
