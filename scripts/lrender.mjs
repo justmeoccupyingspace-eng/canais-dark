@@ -9,6 +9,8 @@ import path from 'node:path';
 const [specPath, mode, ...rest] = process.argv.slice(2);
 const spec = JSON.parse(fs.readFileSync(specPath, 'utf8'));
 const serveUrl = await bundle({entryPoint: path.resolve('src/index.jsx'), publicDir: path.resolve('public')});
+// cada execução cria ~190 MB em /tmp/remotion-webpack-bundle-*; sem apagar, 180 renders locais lotaram o disco (11/11/2026)
+process.on('exit', () => { try { if (serveUrl.includes('remotion-webpack-bundle')) fs.rmSync(serveUrl, {recursive: true, force: true}); } catch {} });
 const browserExecutable = process.env.CHROME_PATH || undefined;
 const chromiumOptions = {gl: 'angle'};
 const inputProps = {spec};
