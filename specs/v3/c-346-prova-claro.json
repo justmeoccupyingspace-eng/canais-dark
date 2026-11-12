@@ -1,0 +1,81 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+4%",
+ "title": "Como é a prova do TJSP 2027",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-16 12:00"
+ },
+ "tiktok": "Prova do Escrevente TJSP: 14/03/2027, à tarde, 5 horas, 70 questões em 3 blocos e redação de 0 a 40 (mínimo 24) no mesmo dia. Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #prova #edital #tjsp",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Edital 2026",
+   "text": "Como é a prova do TJSP 2027",
+   "hl": "prova",
+   "icon": "📋",
+   "narration": "Como é a prova do escrevente do TJ de São Paulo, em vinte segundos.",
+   "min_duration": 2.4
+  },
+  {
+   "type": "big",
+   "text": "Data",
+   "hl": "Data",
+   "big": "14/03",
+   "label": "domingo à tarde · 5 horas de prova",
+   "narration": "É dia quatorze de março, à tarde, com cinco horas de prova.",
+   "min_duration": 2.6
+  },
+  {
+   "type": "steps",
+   "text": "O que tem no dia",
+   "hl": "no dia",
+   "rows": [
+    {
+     "t": "70 questões objetivas",
+     "icon": "✅",
+     "cue": "setenta"
+    },
+    {
+     "t": "Divididas em 3 blocos",
+     "icon": "🧩",
+     "cue": "blocos"
+    },
+    {
+     "t": "Redação: nota de 0 a 40",
+     "icon": "📝",
+     "cue": "redação"
+    },
+    {
+     "t": "Mínimo 24 na redação",
+     "icon": "🎯",
+     "cue": "mínimo"
+    }
+   ],
+   "result": false,
+   "narration": "São setenta questões objetivas, divididas em três blocos. E tem redação no mesmo dia, valendo de zero a quarenta, com mínimo de vinte e quatro.",
+   "min_duration": 4.0
+  },
+  {
+   "type": "text",
+   "kicker": "Dica",
+   "text": "Treine prova inteira no tempo",
+   "hl": "no tempo",
+   "icon": "⏱️",
+   "pose": "pointUp",
+   "narration": "Dica: treina pelo menos uma prova inteira no tempo, com a redação junto.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ],
+ "palette": "gabaritoclaro"
+}

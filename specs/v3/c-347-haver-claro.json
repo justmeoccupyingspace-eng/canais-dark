@@ -1,0 +1,96 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "\"Houveram problemas\" está certo?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-16 19:00"
+ },
+ "tiktok": "Português do Escrevente TJSP: haver e fazer impessoais. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues #concordancia",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "\"Houveram problemas\" está certo?",
+   "hl": "Houveram",
+   "icon": "✍️",
+   "narration": "Houveram muitos problemas. Tá certo isso? A VUNESP adora.",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · CONCORDÂNCIA VERBAL",
+   "q": "A concordância verbal está de acordo com a norma-padrão em:",
+   "alts": [
+    "Haviam muitas pessoas na sala.",
+    "Fazem dez anos que estudo.",
+    "Houve muitas reclamações no fórum.",
+    "Devem haver soluções para o caso.",
+    "Existe muitas dúvidas sobre o edital."
+   ],
+   "correct": 2,
+   "narration": "Em qual frase a concordância está certa?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 44
+  },
+  {
+   "type": "text",
+   "text": "Letra C: houve muitas reclamações",
+   "hl": "houve muitas reclamações",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra C!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Verbos que não vão ao plural",
+   "hl": "plural",
+   "rows": [
+    {
+     "t": "Haver = existir: houve, havia (singular)",
+     "cue": "existir"
+    },
+    {
+     "t": "Fazer = tempo: faz dez anos",
+     "cue": "tempo"
+    },
+    {
+     "t": "Auxiliar também fica: deve haver",
+     "cue": "auxiliar"
+    },
+    {
+     "t": "Existir concorda: existem dúvidas",
+     "cue": "concorda"
+    }
+   ],
+   "narration": "Haver no sentido de existir não tem sujeito: houve, havia, sempre no singular. Fazer indicando tempo também: faz dez anos. O auxiliar acompanha: deve haver. Mas existir concorda normal: existem dúvidas.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "\"Existem\" vai ao plural; \"há\" não",
+   "hl": "plural",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: troque por existir. Existem muitas dúvidas, no plural. Há muitas dúvidas, no singular.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ],
+ "palette": "gabaritoclaro"
+}

@@ -1,0 +1,81 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+4%",
+ "title": "Escrevente TJSP: R$ 6.782,54",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-18 19:00"
+ },
+ "tiktok": "Escrevente Técnico Judiciário do TJSP: R$ 6.782,54, nível médio, 50 circunscrições e cadastro de reserva. Inscrições até 10/12 no site da VUNESP. Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #salario #edital #tjsp",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Edital 2026",
+   "text": "Quanto ganha o escrevente do TJSP",
+   "hl": "Quanto ganha",
+   "icon": "💰",
+   "narration": "Quanto ganha o escrevente do TJ de São Paulo?",
+   "min_duration": 2.2
+  },
+  {
+   "type": "big",
+   "text": "Salário",
+   "hl": "Salário",
+   "big": "R$ 6.782",
+   "label": "R$ 6.782,54 segundo o edital de 2026",
+   "narration": "Seis mil setecentos e oitenta e dois reais, segundo o edital.",
+   "min_duration": 2.6
+  },
+  {
+   "type": "steps",
+   "text": "O que mais o edital diz",
+   "hl": "edital",
+   "rows": [
+    {
+     "t": "Nível médio",
+     "icon": "🎓",
+     "cue": "médio"
+    },
+    {
+     "t": "50 circunscrições no estado",
+     "icon": "📍",
+     "cue": "circunscrições"
+    },
+    {
+     "t": "Cadastro de reserva",
+     "icon": "📋",
+     "cue": "reserva"
+    },
+    {
+     "t": "Inscrição até 10/12",
+     "icon": "⏳",
+     "cue": "dezembro"
+    }
+   ],
+   "result": false,
+   "narration": "O cargo é de nível médio. São cinquenta circunscrições no estado, com cadastro de reserva. E a inscrição vai até dez de dezembro.",
+   "min_duration": 3.8
+  },
+  {
+   "type": "text",
+   "kicker": "Atenção",
+   "text": "Escolha a circunscrição com cuidado",
+   "hl": "circunscrição",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Atenção: a circunscrição não troca depois. Escolhe onde você consegue trabalhar.",
+   "min_duration": 2.6
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ],
+ "palette": "gabaritoclaro"
+}

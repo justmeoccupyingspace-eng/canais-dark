@@ -1,0 +1,96 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Mal ou mau?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-17 12:00"
+ },
+ "tiktok": "Português do Escrevente TJSP: mal ou mau. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues #ortografia",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Mal ou mau?",
+   "hl": "mau?",
+   "icon": "✍️",
+   "narration": "Mal ou mau? Tem um truque que resolve na hora.",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · MAL OU MAU",
+   "q": "O emprego de \"mal\" ou \"mau\" está correto em:",
+   "alts": [
+    "Foi um mal exemplo para todos.",
+    "Ele agiu mau na reunião.",
+    "Ele se comportou mal na audiência.",
+    "Estava de mal humor no fórum.",
+    "O doce em excesso faz mau."
+   ],
+   "correct": 2,
+   "narration": "Em qual frase está certo?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 44
+  },
+  {
+   "type": "text",
+   "text": "Letra C: comportou-se mal",
+   "hl": "comportou-se mal",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra C!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "O truque",
+   "hl": "truque",
+   "rows": [
+    {
+     "t": "Mal: oposto de BEM (agiu mal)",
+     "cue": "bem"
+    },
+    {
+     "t": "Mau: oposto de BOM (mau exemplo)",
+     "cue": "bom"
+    },
+    {
+     "t": "Mau humor, mau exemplo",
+     "cue": "humor"
+    },
+    {
+     "t": "Faz mal (faz bem)",
+     "cue": "faz"
+    }
+   ],
+   "narration": "O truque: mal é o contrário de bem. Agiu bem, agiu mal. Mau é o contrário de bom: bom exemplo, mau exemplo. Então é mau humor, mau exemplo, e faz mal, porque o contrário é faz bem.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "\"Mal cheguei, ele saiu\": mal = assim que",
+   "hl": "assim que",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: mal também é conjunção. Mal cheguei, ele saiu, quer dizer assim que eu cheguei.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ],
+ "palette": "gabaritoclaro"
+}

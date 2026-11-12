@@ -1,0 +1,96 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Qual NÃO é direito social do art. 6º?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-21 19:00"
+ },
+ "tiktok": "Direito Constitucional para o Escrevente TJSP: direitos sociais do art. 6º. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #direitoconstitucional #direitossociais",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Qual NÃO é direito social do art. 6º?",
+   "hl": "NÃO é",
+   "icon": "⚖️",
+   "narration": "Educação, saúde, moradia, transporte. Qual desses não está no artigo sexto?",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "DIREITO CONSTITUCIONAL · ART. 6º",
+   "q": "NÃO está entre os direitos sociais do art. 6º da Constituição:",
+   "alts": [
+    "Moradia",
+    "Transporte",
+    "Lazer",
+    "Propriedade",
+    "Alimentação"
+   ],
+   "correct": 3,
+   "narration": "Qual não é direito social do artigo sexto?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 46
+  },
+  {
+   "type": "text",
+   "text": "Letra D: propriedade",
+   "hl": "propriedade",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra D!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Os direitos sociais do art. 6º",
+   "hl": "art. 6º",
+   "rows": [
+    {
+     "t": "Educação, saúde, alimentação, trabalho",
+     "cue": "educação"
+    },
+    {
+     "t": "Moradia, transporte, lazer, segurança",
+     "cue": "transporte"
+    },
+    {
+     "t": "Previdência social",
+     "cue": "previdência"
+    },
+    {
+     "t": "Maternidade, infância, desamparados",
+     "cue": "maternidade"
+    }
+   ],
+   "narration": "O artigo sexto lista: educação, saúde, alimentação, trabalho, moradia, transporte, lazer, segurança, previdência social, proteção à maternidade e à infância, e assistência aos desamparados.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "Propriedade está no art. 5º",
+   "hl": "art. 5º",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: propriedade é direito garantido, mas está no artigo quinto, entre os direitos individuais.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ],
+ "palette": "gabaritoclaro"
+}

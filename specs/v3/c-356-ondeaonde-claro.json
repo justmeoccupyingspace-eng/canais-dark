@@ -1,0 +1,96 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Onde ou aonde?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-21 12:00"
+ },
+ "tiktok": "Português do Escrevente TJSP: onde ou aonde. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Onde ou aonde?",
+   "hl": "aonde?",
+   "icon": "✍️",
+   "narration": "Aonde você mora? Errado. Mas por quê?",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · ONDE OU AONDE",
+   "q": "O emprego de \"onde\" ou \"aonde\" está correto em:",
+   "alts": [
+    "Aonde fica o fórum central?",
+    "Onde você vai depois da prova?",
+    "Aonde você vai depois da prova?",
+    "Não sei aonde deixei a chave.",
+    "A cidade aonde moro é pequena."
+   ],
+   "correct": 2,
+   "narration": "Em qual frase está certo?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 44
+  },
+  {
+   "type": "text",
+   "text": "Letra C: aonde você vai",
+   "hl": "aonde você vai",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra C!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "O truque",
+   "hl": "truque",
+   "rows": [
+    {
+     "t": "Aonde = a + onde",
+     "cue": "movimento"
+    },
+    {
+     "t": "Verbo de movimento: ir A algum lugar",
+     "cue": "ir"
+    },
+    {
+     "t": "Onde: lugar em que algo está",
+     "cue": "lugar"
+    },
+    {
+     "t": "Morar, ficar, estar: onde",
+     "cue": "mora"
+    }
+   ],
+   "narration": "Aonde é a mais onde. Usa com verbo de movimento, que pede a: ir a algum lugar, aonde você vai? Onde é o lugar em que algo está: onde você mora, onde fica, onde está.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "Chegar também pede a: aonde ele chegou",
+   "hl": "chegar",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: chegar também é movimento e pede a. Aonde ele chegou, com a.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ],
+ "palette": "gabaritoclaro"
+}

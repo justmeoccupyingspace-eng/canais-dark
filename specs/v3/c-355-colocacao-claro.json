@@ -1,0 +1,96 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "\"Me disseram\" no começo da frase pode?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-20 19:00"
+ },
+ "tiktok": "Português do Escrevente TJSP: colocação pronominal (próclise). Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues #colocacaopronominal",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "\"Me disseram\" no começo da frase pode?",
+   "hl": "Me disseram",
+   "icon": "✍️",
+   "narration": "Me disseram que a prova mudou. Começar frase com me pode, na prova?",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · COLOCAÇÃO PRONOMINAL",
+   "q": "A colocação pronominal está de acordo com a norma-padrão em:",
+   "alts": [
+    "Me disseram que a prova mudou.",
+    "Não disseram-me nada sobre o prazo.",
+    "Ninguém me avisou do prazo.",
+    "Se encontraram no fórum ontem.",
+    "Quando entregaram-me o processo, saí."
+   ],
+   "correct": 2,
+   "narration": "Em qual frase a colocação está certa?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 42
+  },
+  {
+   "type": "text",
+   "text": "Letra C: ninguém me avisou",
+   "hl": "ninguém me avisou",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra C!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Quando o pronome vem antes",
+   "hl": "antes",
+   "rows": [
+    {
+     "t": "Não começa frase com me, te, se",
+     "cue": "começa"
+    },
+    {
+     "t": "Negação puxa: não me disseram",
+     "cue": "negativa"
+    },
+    {
+     "t": "Ninguém, nada, nunca puxam",
+     "cue": "Ninguém"
+    },
+    {
+     "t": "Quando, que, se: quando me entregaram",
+     "cue": "conjunção"
+    }
+   ],
+   "narration": "Na norma-padrão, frase não começa com me, te ou se. Palavra negativa puxa o pronome para antes: não me disseram. Ninguém, nada e nunca também puxam. E conjunção como quando, que e se: quando me entregaram.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "Na fala vale; na prova, não",
+   "hl": "na prova",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: me disseram é normal na fala do Brasil. Mas a prova cobra a norma-padrão.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ],
+ "palette": "gabaritoclaro"
+}

@@ -1,0 +1,96 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Naturalizado pode ser ministro do STF?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-20 12:00"
+ },
+ "tiktok": "Direito Constitucional para o Escrevente TJSP: cargos privativos de brasileiro nato. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #direitoconstitucional #nacionalidade",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Naturalizado pode ser ministro do STF?",
+   "hl": "ministro do STF?",
+   "icon": "⚖️",
+   "narration": "Um brasileiro naturalizado pode ser ministro do Supremo?",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "DIREITO CONSTITUCIONAL · NACIONALIDADE",
+   "q": "Segundo o art. 12, § 3º, da Constituição, é cargo privativo de brasileiro nato:",
+   "alts": [
+    "Senador da República",
+    "Deputado federal",
+    "Ministro do Supremo Tribunal Federal",
+    "Governador de Estado",
+    "Ministro da Fazenda"
+   ],
+   "correct": 2,
+   "narration": "Qual cargo é privativo de brasileiro nato?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 44
+  },
+  {
+   "type": "text",
+   "text": "Letra C: ministro do STF",
+   "hl": "ministro do STF",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra C!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Só brasileiro nato",
+   "hl": "nato",
+   "rows": [
+    {
+     "t": "Presidente e vice-presidente",
+     "cue": "presidente"
+    },
+    {
+     "t": "Presidentes da Câmara e do Senado",
+     "cue": "Câmara"
+    },
+    {
+     "t": "Ministro do STF",
+     "cue": "Supremo"
+    },
+    {
+     "t": "Diplomata, oficial, ministro da Defesa",
+     "cue": "diplomática"
+    }
+   ],
+   "narration": "Só brasileiro nato: presidente e vice-presidente da República. Presidentes da Câmara e do Senado. Ministro do Supremo. Carreira diplomática, oficial das Forças Armadas e ministro da Defesa.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "Senador pode ser naturalizado; presidente do Senado, não",
+   "hl": "presidente do Senado",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: deputado e senador podem ser naturalizados. Só a presidência da Câmara e do Senado exige brasileiro nato.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ],
+ "palette": "gabaritoclaro"
+}

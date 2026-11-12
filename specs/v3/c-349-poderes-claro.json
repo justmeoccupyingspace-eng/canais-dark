@@ -1,0 +1,96 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Multa da vigilância sanitária: qual poder?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-17 19:00"
+ },
+ "tiktok": "Direito Administrativo para o Escrevente TJSP: poder de polícia x disciplinar. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #direitoadministrativo #poderdepolicia",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Multa da vigilância sanitária: qual poder?",
+   "hl": "qual poder?",
+   "icon": "⚖️",
+   "narration": "A prefeitura multa um restaurante por descumprir regra sanitária. Qual é o poder?",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "DIREITO ADMINISTRATIVO · PODERES",
+   "q": "A aplicação de multa a estabelecimento comercial por descumprimento de norma sanitária é manifestação do poder:",
+   "alts": [
+    "Hierárquico",
+    "Disciplinar",
+    "Regulamentar",
+    "De polícia",
+    "Vinculado"
+   ],
+   "correct": 3,
+   "narration": "Qual é o poder?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 46
+  },
+  {
+   "type": "text",
+   "text": "Letra D: poder de polícia",
+   "hl": "poder de polícia",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra D!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Cada poder no seu lugar",
+   "hl": "seu lugar",
+   "rows": [
+    {
+     "t": "Polícia: limita direitos do particular",
+     "cue": "polícia"
+    },
+    {
+     "t": "Disciplinar: pune servidor",
+     "cue": "Disciplinar"
+    },
+    {
+     "t": "Hierárquico: ordena e revisa",
+     "cue": "Hierárquico"
+    },
+    {
+     "t": "Regulamentar: decreto para executar lei",
+     "cue": "Regulamentar"
+    }
+   ],
+   "narration": "Poder de polícia limita a liberdade e a propriedade do particular em nome do interesse público. Disciplinar pune o servidor. Hierárquico organiza, dá ordens e revisa. Regulamentar edita decreto para executar a lei.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "Multa a SERVIDOR é disciplinar",
+   "hl": "SERVIDOR",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: se a punição for para um servidor, por falta funcional, aí é poder disciplinar, não de polícia.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ],
+ "palette": "gabaritoclaro"
+}

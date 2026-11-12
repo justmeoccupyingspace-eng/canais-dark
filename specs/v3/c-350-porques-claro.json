@@ -1,0 +1,96 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Por que, porque, por quê ou porquê?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-18 12:00"
+ },
+ "tiktok": "Português do Escrevente TJSP: os quatro porquês. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues #ortografia",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Por que, porque, por quê ou porquê?",
+   "hl": "porquê?",
+   "icon": "✍️",
+   "narration": "Por que, porque, por quê ou porquê? Quatro jeitos, e a prova cobra todos.",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · PORQUÊS",
+   "q": "Preenche corretamente as lacunas: \"___ você faltou? Quero entender o ___.\"",
+   "alts": [
+    "Porque / por quê",
+    "Por que / porquê",
+    "Por quê / porque",
+    "Porquê / por que",
+    "Porque / porquê"
+   ],
+   "correct": 1,
+   "narration": "Qual alternativa preenche certo?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 44
+  },
+  {
+   "type": "text",
+   "text": "Letra B: por que / porquê",
+   "hl": "por que / porquê",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra B!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Os quatro porquês",
+   "hl": "quatro",
+   "rows": [
+    {
+     "t": "Por que: pergunta (por que faltou?)",
+     "cue": "pergunta"
+    },
+    {
+     "t": "Por quê: no fim da frase",
+     "cue": "fim"
+    },
+    {
+     "t": "Porque: resposta, explicação",
+     "cue": "resposta"
+    },
+    {
+     "t": "Porquê: substantivo (o porquê)",
+     "cue": "substantivo"
+    }
+   ],
+   "narration": "Por que, separado, é pergunta: por que você faltou? Por quê, separado e com acento, vai no fim: faltou por quê? Porque, junto, é resposta. E porquê, junto e com acento, é substantivo: o porquê.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "Com artigo antes, é porquê",
+   "hl": "artigo",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: se tem artigo antes, o porquê, vira substantivo. Junto e com acento.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ],
+ "palette": "gabaritoclaro"
+}

@@ -1,0 +1,96 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Vírgula entre sujeito e verbo pode?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-19 19:00"
+ },
+ "tiktok": "Português do Escrevente TJSP: vírgula entre sujeito e verbo. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues #pontuacao",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Vírgula entre sujeito e verbo pode?",
+   "hl": "pode?",
+   "icon": "✍️",
+   "narration": "Vírgula entre sujeito e verbo. Pode ou não pode?",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · VÍRGULA",
+   "q": "A pontuação está de acordo com a norma-padrão em:",
+   "alts": [
+    "Os candidatos aprovados, tomarão posse em março.",
+    "O juiz, após a audiência, proferiu a sentença.",
+    "O escrevente entregou, o processo ao juiz.",
+    "Os servidores do fórum, chegaram cedo.",
+    "Amanhã, haverá, sessão no tribunal."
+   ],
+   "correct": 1,
+   "narration": "Em qual frase a vírgula está certa?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 52,
+   "asize": 40
+  },
+  {
+   "type": "text",
+   "text": "Letra B: o juiz, após a audiência, proferiu",
+   "hl": "o juiz, após a audiência, proferiu",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra B!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Regras da vírgula",
+   "hl": "vírgula",
+   "rows": [
+    {
+     "t": "Nunca entre sujeito e verbo",
+     "cue": "sujeito"
+    },
+    {
+     "t": "Nunca entre verbo e complemento",
+     "cue": "complemento"
+    },
+    {
+     "t": "Isola expressão intercalada",
+     "cue": "intercalada"
+    },
+    {
+     "t": "Adjunto deslocado: pode isolar",
+     "cue": "deslocado"
+    }
+   ],
+   "narration": "Nunca separa o sujeito do verbo, nem o verbo do complemento. Mas uma expressão intercalada, no meio da frase, vai entre vírgulas: o juiz, após a audiência, proferiu a sentença. E o adjunto deslocado pode ser isolado.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "Sujeito longo também não leva vírgula",
+   "hl": "longo",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: mesmo com sujeito longo, como os servidores do fórum, não vai vírgula antes do verbo.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ],
+ "palette": "gabaritoclaro"
+}
