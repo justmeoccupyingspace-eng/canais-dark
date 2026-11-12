@@ -1,6 +1,6 @@
 # Fila de vídeos longos (1 por canal por dia)
 
-- 12/11 21:10Z stats: 115 inscritos · unvBo2-k4qA 1.288 views (dobrou em 1 dia) · l5RdOg0Lsac 692 · 7vwG1ZSozQQ 75 · egQndtiQavo 22 (24 h) · RJs5upoaii0 recém-publicado. Comentário fixado do A-L24 NÃO feito (Chrome minimizado, janela 0x0) → retry 23:00Z.
+- 12/11 21:10Z stats: 115 inscritos · unvBo2-k4qA 1.288 views (dobrou em 1 dia) · l5RdOg0Lsac 692 · 7vwG1ZSozQQ 75 · egQndtiQavo 22 (24 h) · RJs5upoaii0 recém-publicado. Comentário fixado do A-L24 NÃO feito (Chrome minimizado às 21:07Z; às 23:00Z o Chrome não respondeu) → fazer na rotina da manhã 13/11 junto com o resto.
 - 12/11 09:20Z: TikTok semana 47 (c-346..c-359) renderizada (14 runs produce canal C, pv-<run>), quadros conferidos; vídeos em scratchpad/w47 (reencodados <10 MB em w47/up — file_upload do Chrome limita 10 MB). Agendados no TikTok: TODOS os 14 (c-346..c-359, 16/11 12:00 → 22/11 19:00), divulgação "Sua marca" ligada; c-359 sem a frase duplicada da legenda.
 - 11/11 21:10Z stats: unvBo2-k4qA (Japão/Itália) 601 views em 3 dias · 7vwG1ZSozQQ (Alemanha) 33 em 24 h · l5RdOg0Lsac (Coreia) 689 · egQndtiQavo recém-publicado.
 - 11/11 08:50Z: disco cheio — 180 bundles do Remotion em /tmp (190 MB cada, lrender não apagava; agora apaga ao sair). Liberado: git prune dos branches de render (5,8→2,4 GB) e scratch antigo. Varredura de /tmp bloqueada pelo classificador; bundles antigos continuam lá (~34 GB).
