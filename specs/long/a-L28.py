@@ -116,12 +116,12 @@ shots = [
 
     # ---------------- 6 · YOUR GUESS ----------------
     dict(act=6, type="host", bg="none",
-         narration="<soft>So, what's your guess? Does Poland stay ahead of Slovakia this time, or does the złoty flip it back, the way Hungary flipped it in 2023?</soft> Tell me in the comments. {p} If you're watching from Slovakia: does this match what you see? {p} If you're in Poland: did you know Slovakia was ever this far ahead? {p} I read every comment.",
+         narration="<soft>So, what's your guess?</soft> {pp} Does Poland stay ahead of Slovakia this time, {p} or does the złoty flip it back, the way Hungary flipped it in 2023? {pp} Tell me in the comments. {pp} If you're watching from Slovakia: {p} does this match what you see? {pp} If you're in Poland: {p} did you know Slovakia was ever this far ahead? {pp} I read every comment.",
          items=[dict(at="your guess", text="Stay ahead or flip?", color="acc", size=66), dict(at="watching from Slovakia", text="Slovakia: does it match?", color="warm", size=58)],
          react=[dict(at="your guess", pose="shrug"), dict(at="Tell me", pose="pointUp"), dict(at="watching from Slovakia", pose="wave")]),
     dict(act=6, type="end", src="",
          next=dict(kicker="WATCH NEXT", big="JPN", color="acc", title="Poland passed Japan", sub="the one nobody noticed."),
-         narration="And if you missed it, this is where the series took off: the year Poland passed Japan, adjusted for prices. It's right here. {p} I'm Chartbound. See you in the next one.",
+         narration="And if you missed it, {p} this is where the series took off: {p} the year Poland passed Japan, adjusted for prices. {pp} It's right here. {pp} I'm Chartbound. {p} See you in the next one.",
          hold=14,
          react=[dict(at="if you missed it", pose="pointL"), dict(at="See you", pose="wave")]),
 ]
