@@ -23,7 +23,7 @@ const NAME = {POL: 'Poland', JPN: 'Japan', ESP: 'Spain', DEU: 'Germany', GRC: 'G
 const COUNTRIES = feature(world, world.objects.countries).features;
 const BYNUM = Object.fromEntries(COUNTRIES.map((c) => [c.id, c]));
 
-const colOf = (p, iso) => ({POL: p.acc, JPN: p.warm, UKR: '#4aa8ff', ESP: '#c58bff', DEU: '#8fa3c7', GRC: '#5fd3ff', PRT: p.acc2, KOR: '#ff8ad8', TWN: '#3ddc84', GBR: '#ffd166', CHN: '#ff9f43', ITA: '#5fd3ff', USA: '#8fa3ff', HUN: p.acc, ISR: p.acc2, WLD: '#ffffff', IRL: '#3ddc84', EUU: '#c9d1e6', EU: '#c9d1e6', LUX: '#5fd3ff', FRA: '#8fa3ff', BEL: '#ffd166', LVA: '#ff8ad8', BGR: '#ffb347', LTU: '#3ddc84', ROU: '#5fd3ff', EST: '#8fa3ff', HRV: '#c58bff', SAU: '#3ddc84', KWT: '#ff5a6e', ARE: '#ffd166', QAT: '#c58bff', OMN: '#ff9f43', BRN: '#ff8ad8', BHR: '#5fd3ff', NOR: '#5fd3ff', CZE: '#ff9f43', SVN: '#c58bff', TUR: '#ff5a6e', MEX: '#3ddc84', ARG: '#74acdf', CHL: '#ff5a6e', URY: '#ffd166', CRI: '#3ddc84', SRB: '#ff9f43', PAN: '#5fd3ff', MUS: '#c58bff', VNM: '#ffd166', IDN: '#ff5a6e', THA: '#8fa3ff', PHL: '#5fd3ff', MYS: '#c58bff', IND: '#3ddc84', ZAF: '#ff9f43', EGY: '#c58bff', SSF: '#c9d1e6', LCN: '#c9d1e6'}[iso] || '#ffffff');
+const colOf = (p, iso) => ({POL: p.acc, JPN: p.warm, UKR: '#4aa8ff', ESP: '#c58bff', DEU: '#8fa3c7', GRC: '#5fd3ff', PRT: p.acc2, KOR: '#ff8ad8', TWN: '#3ddc84', GBR: '#ffd166', CHN: '#ff9f43', ITA: '#5fd3ff', USA: '#8fa3ff', HUN: '#3ddc84', SVK: '#5fd3ff', ISR: p.acc2, WLD: '#ffffff', IRL: '#3ddc84', EUU: '#c9d1e6', EU: '#c9d1e6', LUX: '#5fd3ff', FRA: '#8fa3ff', BEL: '#ffd166', LVA: '#ff8ad8', BGR: '#ffb347', LTU: '#3ddc84', ROU: '#5fd3ff', EST: '#8fa3ff', HRV: '#c58bff', SAU: '#3ddc84', KWT: '#ff5a6e', ARE: '#ffd166', QAT: '#c58bff', OMN: '#ff9f43', BRN: '#ff8ad8', BHR: '#5fd3ff', NOR: '#5fd3ff', CZE: '#ff9f43', SVN: '#c58bff', TUR: '#ff5a6e', MEX: '#3ddc84', ARG: '#74acdf', CHL: '#ff5a6e', URY: '#ffd166', CRI: '#3ddc84', SRB: '#ff9f43', PAN: '#5fd3ff', MUS: '#c58bff', VNM: '#ffd166', IDN: '#ff5a6e', THA: '#8fa3ff', PHL: '#5fd3ff', MYS: '#c58bff', IND: '#3ddc84', ZAF: '#ff9f43', EGY: '#c58bff', SSF: '#c9d1e6', LCN: '#c9d1e6'}[iso] || '#ffffff');
 
 export const fmt = (v, k) => {
   if (v == null || Number.isNaN(v)) return '';
@@ -181,6 +181,16 @@ const Flag = ({iso, w = 150}) => {
   const h = w * 0.66;
   const box = {width: w, height: h, borderRadius: 10, overflow: 'hidden', boxShadow: '0 12px 30px rgba(0,0,0,.45)', position: 'relative'};
   if (iso === 'POL') return <div style={{...box, background: 'linear-gradient(#fff 0 50%, #dc143c 50% 100%)'}} />;
+  if (iso === 'HUN') return <div style={{...box, background: 'linear-gradient(#ce2939 0 33.3%, #fff 33.3% 66.6%, #477050 66.6% 100%)'}} />;
+  if (iso === 'SVK') return (
+    <div style={{...box, background: 'linear-gradient(#fff 0 33.3%, #0b4ea2 33.3% 66.6%, #ee1c25 66.6% 100%)'}}>
+      <svg viewBox="0 0 90 60" width={w} height={h} style={{position: 'absolute', left: 0, top: 0}}>
+        <path d="M20,12 h22 v22 c0,9 -6,14 -11,16 c-5,-2 -11,-7 -11,-16 z" fill="#ee1c25" stroke="#fff" strokeWidth={1.6} />
+        <path d="M29.6,15 h2.8 v4 h4.6 v2.6 h-4.6 v3 h6 v2.6 h-6 v8 h-2.8 v-8 h-6 v-2.6 h6 v-3 h-4.6 v-2.6 h4.6 z" fill="#fff" />
+        <path d="M21.6,40 c2,-4 5,-4 6,-2 c1.5,-4 5.5,-4 7,0 c1,-2 4,-2 6,2 c-2.4,4.6 -6,7.6 -9.6,9 c-3.6,-1.4 -7.2,-4.4 -9.4,-9 z" fill="#0b4ea2" />
+      </svg>
+    </div>
+  );
   if (iso === 'CZE') return <div style={{...box, background: 'linear-gradient(#fff 0 50%, #d7141a 50% 100%)'}}><div style={{position: 'absolute', left: 0, top: 0, width: w * 0.5, height: h, background: '#11457e', clipPath: 'polygon(0 0, 100% 50%, 0 100%)'}} /></div>;
   if (iso === 'JPN') return <div style={{...box, background: '#fff'}}><div style={{position: 'absolute', left: w / 2 - h * 0.3, top: h * 0.2, width: h * 0.6, height: h * 0.6, borderRadius: '50%', background: '#bc002d'}} /></div>;
   if (iso === 'UKR') return <div style={{...box, background: 'linear-gradient(#0057b7 0 50%, #ffd700 50% 100%)'}} />;
