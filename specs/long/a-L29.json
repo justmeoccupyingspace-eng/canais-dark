@@ -1,0 +1,5393 @@
+{
+ "id": "a-L29-poland-japan-usd",
+ "clips": [],
+ "channel": "chartbound",
+ "chapter0": "16 times",
+ "thumb": {
+  "v": "flags",
+  "iso": "JPN",
+  "vs": "POL",
+  "sym": "vs",
+  "big": "16× → 1.1×",
+  "line2": "PLAIN DOLLARS"
+ },
+ "w": 1920,
+ "h": 1080,
+ "fps": 30,
+ "acts": [
+  "Cold open",
+  "Sixteen times",
+  "Japan's lost dollars",
+  "Already passed",
+  "Where Japan wins",
+  "The pass",
+  "Your guess"
+ ],
+ "shots": [
+  {
+   "act": 0,
+   "type": "lines",
+   "start": 1990.0,
+   "set": "imfusd",
+   "fc": 2025,
+   "series": [
+    "JPN",
+    "POL"
+   ],
+   "years": [
+    1990,
+    2031
+   ],
+   "y": [
+    0,
+    55000
+   ],
+   "src": "IMF World Economic Outlook, October 2026 · GDP per capita, current US$ at market exchange rates (NGDPDPC); 2026+ are IMF estimates and forecasts",
+   "fmt": "usdk0",
+   "hl": "POL",
+   "narration": "Sixteen times. {p} In 1990, the average Japanese person produced sixteen times as much as the average Pole, in plain dollars: about twenty-six thousand four hundred dollars a year, against one thousand six hundred. {pp} This year, in the IMF's numbers: about thirty-five thousand four hundred in Japan, thirty-one thousand two hundred in Poland. Japan is about fourteen percent ahead. {p} And by 2031, in the IMF's forecast, the gap is two hundred and fifty-six dollars.",
+   "keys": [
+    {
+     "at": "Sixteen times",
+     "year": 1990.0,
+     "dur": 0.5
+    },
+    {
+     "at": "This year",
+     "year": 2026.0,
+     "dur": 3.0
+    },
+    {
+     "at": "fourteen percent ahead",
+     "year": 2026.0,
+     "dur": 1.0
+    },
+    {
+     "at": "by 2031",
+     "year": 2031.0,
+     "dur": 2.5
+    }
+   ],
+   "labels": [
+    {
+     "at": "twenty-six thousand four hundred",
+     "iso": "JPN",
+     "year": 1990
+    },
+    {
+     "at": "against one thousand six hundred",
+     "iso": "POL",
+     "year": 1990
+    },
+    {
+     "at": "thirty-five thousand four hundred",
+     "iso": "JPN",
+     "year": 2026
+    },
+    {
+     "at": "thirty-one thousand two hundred",
+     "iso": "POL",
+     "year": 2026
+    },
+    {
+     "at": "two hundred and fifty-six",
+     "iso": "POL",
+     "year": 2031
+    }
+   ],
+   "react": [
+    {
+     "at": "Sixteen times",
+     "pose": "shock"
+    },
+    {
+     "at": "plain dollars",
+     "pose": "pointUp"
+    },
+    {
+     "at": "This year",
+     "pose": "pointL"
+    },
+    {
+     "at": "fourteen percent",
+     "pose": "think"
+    },
+    {
+     "at": "two hundred and fifty-six",
+     "pose": "shock"
+    }
+   ],
+   "id": "s00"
+  },
+  {
+   "act": 0,
+   "type": "host",
+   "bg": "lines",
+   "start": 2031.0,
+   "set": "imfusd",
+   "fc": 2025,
+   "series": [
+    "JPN",
+    "POL"
+   ],
+   "years": [
+    1990,
+    2031
+   ],
+   "y": [
+    0,
+    55000
+   ],
+   "fmt": "usdk0",
+   "hl": "POL",
+   "narration": "This year, on income adjusted for prices, the IMF's numbers put Poland ahead of Japan. That was one of the biggest stories on this channel. But adjusted for prices isn't the money people see on a payslip converted into dollars. {p} So here's the plain money: market exchange rates, no adjustment. {pp} <soft>And the surprising part of this chart isn't Poland. It's Japan. In plain dollars, the average Japanese person produces less this year than in 1995.</soft>",
+   "items": [
+    {
+     "at": "adjusted for prices",
+     "text": "2026: Poland > Japan (PPP)",
+     "color": "acc",
+     "size": 58
+    },
+    {
+     "at": "plain money",
+     "text": "Plain dollars",
+     "serif": true,
+     "size": 66,
+     "color": "acc2"
+    },
+    {
+     "at": "less this year than in 1995",
+     "text": "Japan: $44,960 → $35,400",
+     "color": "warm",
+     "size": 58
+    }
+   ],
+   "react": [
+    {
+     "at": "This year",
+     "pose": "pointL"
+    },
+    {
+     "at": "biggest stories",
+     "pose": "cheer"
+    },
+    {
+     "at": "plain money",
+     "pose": "pointUp"
+    },
+    {
+     "at": "It's Japan",
+     "pose": "shock"
+    }
+   ],
+   "id": "s01"
+  },
+  {
+   "act": 1,
+   "type": "host",
+   "bg": "none",
+   "narration": "Quick one before the chart: this channel is a series about who's passing whom. Subscribe so you don't miss the next one. {p} Now, the long view.",
+   "items": [
+    {
+     "at": "who's passing whom",
+     "text": "Who passed whom",
+     "serif": true,
+     "size": 66,
+     "color": "acc"
+    },
+    {
+     "at": "Subscribe",
+     "text": "Subscribe",
+     "size": 70
+    }
+   ],
+   "react": [
+    {
+     "at": "Quick one",
+     "pose": "wave"
+    },
+    {
+     "at": "Subscribe",
+     "pose": "cheer"
+    },
+    {
+     "at": "the long view",
+     "pose": "pointL"
+    }
+   ],
+   "id": "s02"
+  },
+  {
+   "act": 1,
+   "type": "lines",
+   "start": 1990.0,
+   "set": "rat",
+   "fc": 2025,
+   "series": [
+    "POL"
+   ],
+   "years": [
+    1990,
+    2031
+   ],
+   "y": [
+    0,
+    110
+   ],
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita in current US$, as % of Japan's; 2026+ are IMF estimates and forecasts",
+   "fmt": "pct0",
+   "hl": "POL",
+   "ref": {
+    "value": 100,
+    "label": "Japan = 100%",
+    "pos": "left"
+   },
+   "narration": "Here's Poland as a share of Japan, in plain dollars. {p} 1990: six percent. In 1990, the average Japanese person produced more than the average American. Poland was coming out of communism. {p} By 2004, when Poland joined the European Union, it was at seventeen percent. 2012: twenty-six. {pp} Then the line turns almost straight up. Fifty-three percent in 2022. Seventy-four in 2024. Eighty-eight this year. That's thirty-five points in four years. Poland didn't suddenly get that much faster. Something happened to Japan.",
+   "keys": [
+    {
+     "at": "1990: six percent",
+     "year": 1990.0,
+     "dur": 1.5
+    },
+    {
+     "at": "By 2004",
+     "year": 2004.0,
+     "dur": 1.5
+    },
+    {
+     "at": "2012: twenty-six",
+     "year": 2012.0,
+     "dur": 1.5
+    },
+    {
+     "at": "Fifty-three percent in 2022",
+     "year": 2022.0,
+     "dur": 1.0
+    },
+    {
+     "at": "Seventy-four in 2024",
+     "year": 2024.0,
+     "dur": 1.0
+    },
+    {
+     "at": "Eighty-eight this year",
+     "year": 2026.0,
+     "dur": 2.5
+    }
+   ],
+   "labels": [
+    {
+     "at": "1990: six percent",
+     "iso": "POL",
+     "year": 1990
+    },
+    {
+     "at": "By 2004",
+     "iso": "POL",
+     "year": 2004
+    },
+    {
+     "at": "2012: twenty-six",
+     "iso": "POL",
+     "year": 2012
+    },
+    {
+     "at": "Fifty-three percent in 2022",
+     "iso": "POL",
+     "year": 2022
+    },
+    {
+     "at": "Eighty-eight this year",
+     "iso": "POL",
+     "year": 2026
+    }
+   ],
+   "react": [
+    {
+     "at": "six percent",
+     "pose": "shock"
+    },
+    {
+     "at": "the average American",
+     "pose": "think"
+    },
+    {
+     "at": "almost straight up",
+     "pose": "shock"
+    },
+    {
+     "at": "thirty-five points",
+     "pose": "pointUp"
+    },
+    {
+     "at": "Something happened to Japan",
+     "pose": "think"
+    }
+   ],
+   "id": "s03"
+  },
+  {
+   "act": 2,
+   "type": "lines",
+   "set": "imfusd",
+   "fc": 2025,
+   "series": [
+    "JPN"
+   ],
+   "years": [
+    1990,
+    2031
+   ],
+   "start": 1995.0,
+   "y": [
+    0,
+    55000
+   ],
+   "src": "IMF World Economic Outlook, October 2026 · GDP per capita, current US$ at market exchange rates (NGDPDPC); 2026+ are IMF estimates and forecasts",
+   "fmt": "usdk0",
+   "hl": "JPN",
+   "narration": "Here's Japan alone, in plain dollars per person. {p} 1995: about forty-five thousand. Then thirty years of going sideways. The peak came in 2012, at almost fifty thousand. {pp} And then, from 2012 to 2024, it fell by almost a third, to about thirty-four thousand. {p} Did Japan's economy collapse? No. After inflation, it grew about nine percent over those twelve years. Slowly, but it grew. What collapsed was the value of the yen in dollars. Same work, same output, fewer dollars.",
+   "keys": [
+    {
+     "at": "1995",
+     "year": 1995.0,
+     "dur": 1.5
+    },
+    {
+     "at": "going sideways",
+     "year": 2005.0,
+     "dur": 2.0
+    },
+    {
+     "at": "The peak came in 2012",
+     "year": 2012.0,
+     "dur": 2.0
+    },
+    {
+     "at": "fell by almost a third",
+     "year": 2024.0,
+     "dur": 2.5
+    }
+   ],
+   "labels": [
+    {
+     "at": "1995",
+     "iso": "JPN",
+     "year": 1995
+    },
+    {
+     "at": "The peak came in 2012",
+     "iso": "JPN",
+     "year": 2012
+    },
+    {
+     "at": "about thirty-four thousand",
+     "iso": "JPN",
+     "year": 2024
+    }
+   ],
+   "react": [
+    {
+     "at": "Japan alone",
+     "pose": "pointL"
+    },
+    {
+     "at": "going sideways",
+     "pose": "shrug"
+    },
+    {
+     "at": "almost a third",
+     "pose": "shock"
+    },
+    {
+     "at": "Did Japan's economy collapse",
+     "pose": "think"
+    },
+    {
+     "at": "fewer dollars",
+     "pose": "pointUp"
+    }
+   ],
+   "id": "s04"
+  },
+  {
+   "act": 2,
+   "type": "stats",
+   "src": "IMF World Economic Outlook, October 2026 · real GDP growth (NGDP_RPCH, compounded), population (LP)",
+   "title": "Slow growth, fewer people",
+   "narration": "Underneath the yen, there's a slower story too. Since 1995, after inflation, Japan's economy has grown about twenty-five percent. Poland's has more than tripled. {p} And Japan's population peaked in 2011, at about a hundred and twenty-eight million. This year it's about a hundred and twenty-three, and the IMF has a hundred and nineteen by 2031. {pp} The IMF expects Japan to grow well under one percent a year until 2031.",
+   "stats": [
+    {
+     "at": "about twenty-five percent",
+     "value": 25,
+     "fmt": "pct0",
+     "label": "Japan, real growth 1995–2025"
+    },
+    {
+     "at": "more than tripled",
+     "value": 3.1,
+     "fmt": "dec1",
+     "label": "Poland, 2025 vs 1995 (×)"
+    },
+    {
+     "at": "a hundred and twenty-three",
+     "value": 122.7,
+     "fmt": "dec1",
+     "label": "million people in Japan, 2026 (2011: 127.8)"
+    },
+    {
+     "at": "well under one percent",
+     "value": 0.6,
+     "fmt": "pct1",
+     "label": "Japan, IMF growth forecast 2028"
+    }
+   ],
+   "react": [
+    {
+     "at": "slower story",
+     "pose": "think"
+    },
+    {
+     "at": "more than tripled",
+     "pose": "cheer"
+    },
+    {
+     "at": "peaked in 2011",
+     "pose": "pointL"
+    },
+    {
+     "at": "well under one percent",
+     "pose": "shrug"
+    }
+   ],
+   "id": "s05"
+  },
+  {
+   "act": 3,
+   "type": "stats",
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC (current US$), selected years",
+   "title": "Already ahead of Japan",
+   "narration": "Poland isn't the first to close in on Japan in plain dollars. Two of Japan's neighbors already passed it. {p} In 2020, the average South Korean and the average Taiwanese both produced less than the average Japanese person. By 2024, both were ahead. {pp} This year, in the IMF's numbers: South Korea about forty-three and a half thousand dollars per person, Taiwan about forty-four thousand, Japan about thirty-five thousand four hundred. {p} In 1990, Japan was more than three times as rich as Taiwan, in plain dollars, and almost four times as rich as South Korea.",
+   "stats": [
+    {
+     "at": "South Korea about forty-three and a half thousand",
+     "value": 43512,
+     "fmt": "usd0",
+     "label": "South Korea, 2026"
+    },
+    {
+     "at": "Taiwan about forty-four thousand",
+     "value": 43951,
+     "fmt": "usd0",
+     "label": "Taiwan, 2026"
+    },
+    {
+     "at": "Japan about thirty-five thousand four hundred",
+     "value": 35400,
+     "fmt": "usd0",
+     "label": "Japan, 2026"
+    },
+    {
+     "at": "more than three times",
+     "value": 3.2,
+     "fmt": "dec1",
+     "label": "Japan ÷ Taiwan, 1990 (×)"
+    }
+   ],
+   "react": [
+    {
+     "at": "isn't the first",
+     "pose": "think"
+    },
+    {
+     "at": "already passed",
+     "pose": "shock"
+    },
+    {
+     "at": "both were ahead",
+     "pose": "pointUp"
+    },
+    {
+     "at": "more than three times",
+     "pose": "shock"
+    }
+   ],
+   "id": "s06"
+  },
+  {
+   "act": 4,
+   "type": "host",
+   "bg": "none",
+   "narration": "And if you're enjoying this, the subscribe button is right there. {p} Now, to be fair to Japan: where it still wins.",
+   "items": [
+    {
+     "at": "subscribe button",
+     "text": "Subscribe",
+     "size": 66
+    },
+    {
+     "at": "still wins",
+     "text": "Where Japan wins",
+     "serif": true,
+     "size": 66,
+     "color": "acc"
+    }
+   ],
+   "react": [
+    {
+     "at": "subscribe button",
+     "pose": "pointUp"
+    },
+    {
+     "at": "still wins",
+     "pose": "cheer"
+    }
+   ],
+   "id": "s07"
+  },
+  {
+   "act": 4,
+   "type": "duel",
+   "set": "lur",
+   "year": 2026,
+   "a": "JPN",
+   "b": "POL",
+   "fmt": "dec1",
+   "src": "IMF World Economic Outlook, October 2026 · unemployment rate (% of labor force), 2026 estimate",
+   "title": "Unemployment, 2026",
+   "badge": "LOWER IN JAPAN",
+   "cues": [
+    {
+     "at": "two point five",
+     "show": "a"
+    },
+    {
+     "at": "three point two",
+     "show": "b"
+    }
+   ],
+   "narration": "Unemployment this year: about two point five percent in Japan, {pp} three point two in Poland. And inflation: in 2022, prices rose two and a half percent in Japan, and more than fourteen percent in Poland. {p} Where Poland wins is debt: about sixty-seven percent of the economy in Poland, about two hundred percent in Japan, one of the highest in the world.",
+   "react": [
+    {
+     "at": "Unemployment",
+     "pose": "pointUp"
+    },
+    {
+     "at": "more than fourteen",
+     "pose": "shock"
+    },
+    {
+     "at": "Where Poland wins",
+     "pose": "cheer"
+    },
+    {
+     "at": "two hundred percent",
+     "pose": "shock"
+    }
+   ],
+   "id": "s08"
+  },
+  {
+   "act": 5,
+   "type": "lines",
+   "start": 2019.0,
+   "set": "imfusd",
+   "fc": 2025,
+   "series": [
+    "JPN",
+    "POL"
+   ],
+   "years": [
+    2010,
+    2031
+   ],
+   "y": [
+    0,
+    55000
+   ],
+   "src": "IMF World Economic Outlook, October 2026 · GDP per capita, current US$ at market exchange rates (NGDPDPC); 2026+ are IMF estimates and forecasts",
+   "fmt": "usdk0",
+   "hl": "POL",
+   "narration": "So, does Poland pass Japan in plain dollars too? {p} In the IMF's forecast: next year, Japan about thirty-six thousand six hundred dollars per person, Poland about thirty-three thousand three hundred. 2030: forty thousand seven hundred against thirty-nine thousand five hundred. {pp} And 2031: forty-one thousand nine hundred and fifty-three in Japan, forty-one thousand six hundred and ninety-seven in Poland. Two hundred and fifty-six dollars apart. Ninety-nine percent. {p} That's not a pass. It's a coin flip, and it depends on the yen as much as on Poland.",
+   "keys": [
+    {
+     "at": "does Poland pass Japan",
+     "year": 2026.0,
+     "dur": 1.5
+    },
+    {
+     "at": "next year",
+     "year": 2027.0,
+     "dur": 1.5
+    },
+    {
+     "at": "2030",
+     "year": 2030.0,
+     "dur": 1.5
+    },
+    {
+     "at": "And 2031",
+     "year": 2031.0,
+     "dur": 3.0
+    }
+   ],
+   "labels": [
+    {
+     "at": "next year",
+     "iso": "POL",
+     "year": 2027
+    },
+    {
+     "at": "forty-one thousand nine hundred and fifty-three",
+     "iso": "JPN",
+     "year": 2031
+    },
+    {
+     "at": "forty-one thousand six hundred and ninety-seven",
+     "iso": "POL",
+     "year": 2031
+    }
+   ],
+   "react": [
+    {
+     "at": "does Poland pass",
+     "pose": "think"
+    },
+    {
+     "at": "next year",
+     "pose": "pointL"
+    },
+    {
+     "at": "Two hundred and fifty-six",
+     "pose": "shock"
+    },
+    {
+     "at": "coin flip",
+     "pose": "shrug"
+    }
+   ],
+   "id": "s09"
+  },
+  {
+   "act": 5,
+   "type": "host",
+   "bg": "none",
+   "narration": "Think about what that means. In 1990, the average Pole produced six percent of what the average Japanese person did. Today, the average Pole produces about eighty-eight percent of what the average Japanese person does, in the same dollars. {p} And adjusted for what money buys at home, Poland is already ahead. {pp} Japan isn't poor. But in plain money, the gap that defined the last thirty-five years is almost gone.",
+   "items": [
+    {
+     "at": "In 1990",
+     "text": "1990: 6%",
+     "color": "warm",
+     "size": 62
+    },
+    {
+     "at": "eighty-eight percent",
+     "text": "2026: 88%",
+     "serif": true,
+     "size": 64,
+     "color": "acc"
+    },
+    {
+     "at": "already ahead",
+     "text": "PPP: Poland ahead",
+     "color": "acc2",
+     "size": 58
+    }
+   ],
+   "react": [
+    {
+     "at": "Think about",
+     "pose": "think"
+    },
+    {
+     "at": "six percent",
+     "pose": "shrug"
+    },
+    {
+     "at": "already ahead",
+     "pose": "cheer"
+    },
+    {
+     "at": "almost gone",
+     "pose": "pointUp"
+    }
+   ],
+   "id": "s10"
+  },
+  {
+   "act": 6,
+   "type": "host",
+   "bg": "none",
+   "narration": "<soft>So, your guess: does Poland pass Japan in plain dollars by 2031, or does the yen bounce back first?</soft> Tell me in the comments. {p} If you're watching from Japan: does this match what you see in your own wallet? {p} If you're in Poland: did you ever expect to be this close? {p} I read every comment.",
+   "items": [
+    {
+     "at": "your guess",
+     "text": "2031: pass or not?",
+     "color": "acc",
+     "size": 66
+    },
+    {
+     "at": "watching from Japan",
+     "text": "Japan: does it match?",
+     "color": "warm",
+     "size": 58
+    }
+   ],
+   "react": [
+    {
+     "at": "your guess",
+     "pose": "shrug"
+    },
+    {
+     "at": "Tell me",
+     "pose": "pointUp"
+    },
+    {
+     "at": "watching from Japan",
+     "pose": "wave"
+    }
+   ],
+   "id": "s11"
+  },
+  {
+   "act": 6,
+   "type": "end",
+   "src": "",
+   "next": {
+    "kicker": "WATCH NEXT",
+    "big": "JPN",
+    "color": "acc",
+    "title": "Poland passed Japan",
+    "sub": "adjusted for prices."
+   },
+   "narration": "And if you missed it, here's the episode where Poland passed Japan, adjusted for prices. It's right here. {p} I'm Chartbound. See you in the next one.",
+   "hold": 14,
+   "react": [
+    {
+     "at": "if you missed it",
+     "pose": "pointL"
+    },
+    {
+     "at": "See you",
+     "pose": "wave"
+    }
+   ],
+   "id": "s12"
+  }
+ ],
+ "checks": [
+  {
+   "say": "1990: JPN 26399 (≈26,400), POL 1634 (≈1,600), 16×",
+   "rule": "expr",
+   "expr": "[round(26399 / 100) * 100, round(1634 / 100) * 100, round(26399 / 1634)]",
+   "equal": [
+    26400,
+    1600,
+    16
+   ]
+  },
+  {
+   "say": "2026: JPN ≈ 35,400, POL ≈ 31,200, Japan +14% (13.5)",
+   "rule": "expr",
+   "expr": "[round(35400 / 100) * 100, round(31186 / 100) * 100, round((35400 / 31186 - 1) * 100)]",
+   "equal": [
+    35400,
+    31200,
+    14
+   ]
+  },
+  {
+   "say": "2031: JPN 41953, POL 41697, gap 256, 99%",
+   "rule": "expr",
+   "expr": "[41953, 41697, 256, round(0.9938979334016638 * 100)]",
+   "equal": [
+    41953,
+    41697,
+    256,
+    99
+   ]
+  },
+  {
+   "say": "PPP: POL > JPN in 2026 (first year)",
+   "rule": "expr",
+   "expr": "[True, True]",
+   "equal": [
+    true,
+    true
+   ]
+  },
+  {
+   "say": "JPN USD 2026 (35,400) < 1995 (44,960)",
+   "rule": "expr",
+   "expr": "[True, 44960]",
+   "equal": [
+    true,
+    44960
+   ]
+  },
+  {
+   "say": "1990 JPN > USA (26,399 vs 23,848)",
+   "rule": "expr",
+   "expr": "True",
+   "equal": true
+  },
+  {
+   "say": "POL/JPN: 1990 6%, 2004 17%, 2012 26%, 2022 53%, 2024 74%, 2026 88% (+35 in 4 years)",
+   "rule": "expr",
+   "expr": "[round(0.06189628395014963 * 100), round(0.1735770046011477 * 100), round(0.2635479388605836 * 100), round(0.5306398064262 * 100), round(0.7410417218738038 * 100), round(0.8809604519774011 * 100), round(0.8809604519774011 * 100) - round(0.5306398064262 * 100)]",
+   "equal": [
+    6,
+    17,
+    26,
+    53,
+    74,
+    88,
+    35
+   ]
+  },
+  {
+   "say": "JPN USD 1995 ≈ 45k; peak 2012 49,657 (almost fifty); 2024 ≈ 34k; fall 2012→2024 −32% (almost a third)",
+   "rule": "expr",
+   "expr": "[round(44960 / 1000), 2012, round(33963 / 1000), round((33963 / 49657 - 1) * 100)]",
+   "equal": [
+    45,
+    2012,
+    34,
+    -32
+   ]
+  },
+  {
+   "say": "JPN real growth 2012→2024 +9%",
+   "rule": "expr",
+   "expr": "round((1.0916802020814897 - 1) * 100)",
+   "equal": 9
+  },
+  {
+   "say": "real 1995→2025: JPN +25%, POL ×3.1 (more than tripled)",
+   "rule": "expr",
+   "expr": "[round((1.2484508961632343 - 1) * 100), round(3.125091824425234, 1)]",
+   "equal": [
+    25,
+    3.1
+   ]
+  },
+  {
+   "say": "JPN population peak 2011 ≈ 128 (127.8); 2026 ≈ 123 (122.7); 2031 ≈ 119",
+   "rule": "expr",
+   "expr": "[2011, round(127.831, 1), round(122.656), round(119.158)]",
+   "equal": [
+    2011,
+    127.8,
+    123,
+    119
+   ]
+  },
+  {
+   "say": "JPN growth 2027–2031 all < 1 (well under one)",
+   "rule": "expr",
+   "expr": "True",
+   "equal": true
+  },
+  {
+   "say": "KOR, TWN < JPN in 2020; > JPN in 2024",
+   "rule": "expr",
+   "expr": "[True, True, True, True]",
+   "equal": [
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "say": "2026: KOR ≈ 43.5k, TWN ≈ 44k, JPN ≈ 35.4k (twn file = ita file)",
+   "rule": "expr",
+   "expr": "[round(43512 / 500) * 500, round(43951 / 1000), round(35400 / 100) * 100, True]",
+   "equal": [
+    43500,
+    44,
+    35400,
+    true
+   ]
+  },
+  {
+   "say": "1990: JPN/TWN 3.2 (more than three), JPN/KOR 3.9 (almost four)",
+   "rule": "expr",
+   "expr": "[round(26399 / 8167, 1), round(26399 / 6813, 1)]",
+   "equal": [
+    3.2,
+    3.9
+   ]
+  },
+  {
+   "say": "unemployment 2026: JPN 2.5, POL 3.2; inflation 2022 JPN 2.5, POL 14.4; debt 2026 POL ≈ 67, JPN ≈ 199 (about two hundred)",
+   "rule": "expr",
+   "expr": "[2.5, 3.2, 2.5, 14.4, round(66.6), round(199.4)]",
+   "equal": [
+    2.5,
+    3.2,
+    2.5,
+    14.4,
+    67,
+    199
+   ]
+  },
+  {
+   "say": "2027: JPN ≈ 36,600, POL ≈ 33,300; 2030: JPN ≈ 40,700, POL ≈ 39,500",
+   "rule": "expr",
+   "expr": "[round(36620 / 100) * 100, round(33274 / 100) * 100, round(40693 / 100) * 100, round(39491 / 100) * 100]",
+   "equal": [
+    36600,
+    33300,
+    40700,
+    39500
+   ]
+  },
+  {
+   "say": "POL still behind JPN every year 2026–2031 (not a pass)",
+   "rule": "expr",
+   "expr": "True",
+   "equal": true
+  }
+ ],
+ "datasets": [],
+ "snapshot": [
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 1990,
+   "value": 1634,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 1991,
+   "value": 2112,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 1992,
+   "value": 2323,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 1993,
+   "value": 2359,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 1994,
+   "value": 2701,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 1995,
+   "value": 3624,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 1996,
+   "value": 4079,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 1997,
+   "value": 4089,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 1998,
+   "value": 4473,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 1999,
+   "value": 4362,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2000,
+   "value": 4499,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2001,
+   "value": 5003,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2002,
+   "value": 5222,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2003,
+   "value": 5719,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2004,
+   "value": 6715,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2005,
+   "value": 8046,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2006,
+   "value": 9065,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2007,
+   "value": 11271,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2008,
+   "value": 14052,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2009,
+   "value": 11563,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2010,
+   "value": 12574,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2011,
+   "value": 13868,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2012,
+   "value": 13087,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2013,
+   "value": 13614,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2014,
+   "value": 14263,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2015,
+   "value": 12623,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2016,
+   "value": 12455,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2017,
+   "value": 13918,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2018,
+   "value": 15658,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2019,
+   "value": 15869,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2020,
+   "value": 15963,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2021,
+   "value": 18592,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2022,
+   "value": 18860,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2023,
+   "value": 22119,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2024,
+   "value": 25168,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2025,
+   "value": 28510,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2026,
+   "value": 31186,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2027,
+   "value": 33274,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2028,
+   "value": 35261,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2029,
+   "value": 37357,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2030,
+   "value": 39491,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "POL",
+   "year": 2031,
+   "value": 41697,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 1990,
+   "value": 6730,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 1991,
+   "value": 6453,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 1992,
+   "value": 6717,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 1993,
+   "value": 7149,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 1994,
+   "value": 7669,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 1995,
+   "value": 8356,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 1996,
+   "value": 9033,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 1997,
+   "value": 9833,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 1998,
+   "value": 10433,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 1999,
+   "value": 11057,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2000,
+   "value": 11914,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2001,
+   "value": 12332,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2002,
+   "value": 12708,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2003,
+   "value": 13420,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2004,
+   "value": 14483,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2005,
+   "value": 15442,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2006,
+   "value": 16915,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2007,
+   "value": 18563,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2008,
+   "value": 19745,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2009,
+   "value": 20376,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2010,
+   "value": 21340,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2011,
+   "value": 22911,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2012,
+   "value": 23684,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2013,
+   "value": 24262,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2014,
+   "value": 25678,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2015,
+   "value": 27064,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2016,
+   "value": 28182,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2017,
+   "value": 30172,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2018,
+   "value": 32343,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2019,
+   "value": 35875,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2020,
+   "value": 36657,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2021,
+   "value": 41671,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2022,
+   "value": 47245,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2023,
+   "value": 49328,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2024,
+   "value": 52405,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2025,
+   "value": 55940,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2026,
+   "value": 60051,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2027,
+   "value": 63638,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2028,
+   "value": 66684,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2029,
+   "value": 69783,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2030,
+   "value": 72988,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "POL",
+   "year": 2031,
+   "value": 76239,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 1990,
+   "value": -7.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 1991,
+   "value": -7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 1992,
+   "value": 2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 1993,
+   "value": 4.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 1994,
+   "value": 5.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 1995,
+   "value": 6.7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 1996,
+   "value": 6.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 1997,
+   "value": 7.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 1998,
+   "value": 5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 1999,
+   "value": 4.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2000,
+   "value": 4.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2001,
+   "value": 1.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2002,
+   "value": 1.4,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2003,
+   "value": 3.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2004,
+   "value": 5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2005,
+   "value": 3.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2006,
+   "value": 6.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2007,
+   "value": 6.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2008,
+   "value": 4.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2009,
+   "value": 2.6,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2010,
+   "value": 3.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2011,
+   "value": 5.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2012,
+   "value": 1.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2013,
+   "value": 0.7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2014,
+   "value": 3.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2015,
+   "value": 4.4,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2016,
+   "value": 3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2017,
+   "value": 5.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2018,
+   "value": 6.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2019,
+   "value": 4.6,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2020,
+   "value": -2.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2021,
+   "value": 7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2022,
+   "value": 5.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2023,
+   "value": 0.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2024,
+   "value": 3.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2025,
+   "value": 3.7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2026,
+   "value": 3.4,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2027,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2028,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2029,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2030,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "POL",
+   "year": 2031,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 1990,
+   "value": 38.186,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 1991,
+   "value": 38.286,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 1992,
+   "value": 38.386,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 1993,
+   "value": 38.501,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 1994,
+   "value": 38.581,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 1995,
+   "value": 38.581,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 1996,
+   "value": 38.609,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 1997,
+   "value": 38.639,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 1998,
+   "value": 38.66,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 1999,
+   "value": 38.667,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2000,
+   "value": 38.263,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2001,
+   "value": 38.254,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2002,
+   "value": 38.242,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2003,
+   "value": 38.219,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2004,
+   "value": 38.191,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2005,
+   "value": 38.174,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2006,
+   "value": 38.157,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2007,
+   "value": 38.125,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2008,
+   "value": 38.116,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2009,
+   "value": 38.136,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2010,
+   "value": 38.023,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2011,
+   "value": 38.063,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2012,
+   "value": 38.064,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2013,
+   "value": 38.063,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2014,
+   "value": 38.018,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2015,
+   "value": 38.006,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2016,
+   "value": 37.967,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2017,
+   "value": 37.973,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2018,
+   "value": 37.977,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2019,
+   "value": 37.973,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2020,
+   "value": 37.958,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2021,
+   "value": 37.073,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2022,
+   "value": 36.89,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2023,
+   "value": 36.754,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2024,
+   "value": 36.621,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2025,
+   "value": 36.497,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2026,
+   "value": 36.333,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2027,
+   "value": 36.26,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2028,
+   "value": 36.188,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2029,
+   "value": 36.115,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2030,
+   "value": 36.043,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "POL",
+   "year": 2031,
+   "value": 35.971,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 1995,
+   "value": 48.6,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 1996,
+   "value": 43,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 1997,
+   "value": 42.6,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 1998,
+   "value": 38.6,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 1999,
+   "value": 39.2,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2000,
+   "value": 36.3,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2001,
+   "value": 37,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2002,
+   "value": 41.4,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2003,
+   "value": 46.2,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2004,
+   "value": 45,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2005,
+   "value": 46.5,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2006,
+   "value": 47.1,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2007,
+   "value": 44.4,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2008,
+   "value": 46.6,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2009,
+   "value": 49.7,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2010,
+   "value": 53.7,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2011,
+   "value": 54.8,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2012,
+   "value": 54.5,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2013,
+   "value": 56.9,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2014,
+   "value": 51.1,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2015,
+   "value": 51.1,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2016,
+   "value": 54.1,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2017,
+   "value": 50.4,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2018,
+   "value": 48.2,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2019,
+   "value": 45.2,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2020,
+   "value": 56.6,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2021,
+   "value": 53,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2022,
+   "value": 48.8,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2023,
+   "value": 49.5,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2024,
+   "value": 54.8,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2025,
+   "value": 59.7,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2026,
+   "value": 66.6,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2027,
+   "value": 70.7,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2028,
+   "value": 73.7,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2029,
+   "value": 77,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2030,
+   "value": 79.8,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "POL",
+   "year": 2031,
+   "value": 82,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 1990,
+   "value": 6.3,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 1991,
+   "value": 11.8,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 1992,
+   "value": 13.6,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 1993,
+   "value": 16.4,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 1994,
+   "value": 11.4,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 1995,
+   "value": 13.3,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 1996,
+   "value": 12.3,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 1997,
+   "value": 11.2,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 1998,
+   "value": 10.6,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 1999,
+   "value": 13.1,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2000,
+   "value": 16.1,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2001,
+   "value": 18.2,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2002,
+   "value": 20.2,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2003,
+   "value": 19.9,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2004,
+   "value": 19.3,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2005,
+   "value": 18.1,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2006,
+   "value": 14.2,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2007,
+   "value": 9.9,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2008,
+   "value": 7.5,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2009,
+   "value": 8.5,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2010,
+   "value": 9.6,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2011,
+   "value": 9.6,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2012,
+   "value": 10.1,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2013,
+   "value": 10.3,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2014,
+   "value": 9,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2015,
+   "value": 7.5,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2016,
+   "value": 6.2,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2017,
+   "value": 4.9,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2018,
+   "value": 3.8,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2019,
+   "value": 3.3,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2020,
+   "value": 3.2,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2021,
+   "value": 3.4,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2022,
+   "value": 2.9,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2023,
+   "value": 2.8,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2024,
+   "value": 2.9,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2025,
+   "value": 3.1,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2026,
+   "value": 3.2,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2027,
+   "value": 3.2,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2028,
+   "value": 3.2,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2029,
+   "value": 3.1,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2030,
+   "value": 3,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "POL",
+   "year": 2031,
+   "value": 3,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 1990,
+   "value": 585.8,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 1991,
+   "value": 70.3,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 1992,
+   "value": 43,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 1993,
+   "value": 35.3,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 1994,
+   "value": 32.2,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 1995,
+   "value": 27.9,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 1996,
+   "value": 19.9,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 1997,
+   "value": 14.9,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 1998,
+   "value": 11.8,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 1999,
+   "value": 7.3,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2000,
+   "value": 10.1,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2001,
+   "value": 5.5,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2002,
+   "value": 1.9,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2003,
+   "value": 0.8,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2004,
+   "value": 3.5,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2005,
+   "value": 2.1,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2006,
+   "value": 1,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2007,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2008,
+   "value": 4.2,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2009,
+   "value": 3.5,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2010,
+   "value": 2.6,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2011,
+   "value": 4.3,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2012,
+   "value": 3.7,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2013,
+   "value": 0.9,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2014,
+   "value": 0,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2015,
+   "value": -0.9,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2016,
+   "value": -0.6,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2017,
+   "value": 2,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2018,
+   "value": 1.6,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2019,
+   "value": 2.3,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2020,
+   "value": 3.4,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2021,
+   "value": 5.1,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2022,
+   "value": 14.4,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2023,
+   "value": 11.4,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2024,
+   "value": 3.6,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2025,
+   "value": 3.6,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2026,
+   "value": 3.2,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2027,
+   "value": 2.8,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2028,
+   "value": 3.9,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2029,
+   "value": 2.7,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2030,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "POL",
+   "year": 2031,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 1990,
+   "value": 26399,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 1991,
+   "value": 30109,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 1992,
+   "value": 32739,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 1993,
+   "value": 37193,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 1994,
+   "value": 40795,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 1995,
+   "value": 44960,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 1996,
+   "value": 39944,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 1997,
+   "value": 36344,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 1998,
+   "value": 32848,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 1999,
+   "value": 37042,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2000,
+   "value": 39757,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2001,
+   "value": 34915,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2002,
+   "value": 33328,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2003,
+   "value": 35832,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2004,
+   "value": 38686,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2005,
+   "value": 38165,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2006,
+   "value": 36385,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2007,
+   "value": 36199,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2008,
+   "value": 40411,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2009,
+   "value": 41840,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2010,
+   "value": 45547,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2011,
+   "value": 49123,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2012,
+   "value": 49657,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2013,
+   "value": 41406,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2014,
+   "value": 39221,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2015,
+   "value": 35711,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2016,
+   "value": 40252,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2017,
+   "value": 39751,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2018,
+   "value": 40747,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2019,
+   "value": 41560,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2020,
+   "value": 41234,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2021,
+   "value": 41652,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2022,
+   "value": 35542,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2023,
+   "value": 35261,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2024,
+   "value": 33963,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2025,
+   "value": 36119,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2026,
+   "value": 35400,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2027,
+   "value": 36620,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2028,
+   "value": 38305,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2029,
+   "value": 39561,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2030,
+   "value": 40693,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imfusd",
+   "iso": "JPN",
+   "year": 2031,
+   "value": 41953,
+   "src": "IMF World Economic Outlook, October 2026 · NGDPDPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1990,
+   "value": 19840,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1991,
+   "value": 21150,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1992,
+   "value": 21750,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1993,
+   "value": 22091,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1994,
+   "value": 22708,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1995,
+   "value": 23666,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1996,
+   "value": 24786,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1997,
+   "value": 25497,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1998,
+   "value": 25258,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 1999,
+   "value": 25479,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2000,
+   "value": 26780,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2001,
+   "value": 27396,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2002,
+   "value": 27787,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2003,
+   "value": 28674,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2004,
+   "value": 30043,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2005,
+   "value": 31554,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2006,
+   "value": 33032,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2007,
+   "value": 34510,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2008,
+   "value": 34782,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2009,
+   "value": 32956,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2010,
+   "value": 34724,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2011,
+   "value": 35304,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2012,
+   "value": 36634,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2013,
+   "value": 38067,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2014,
+   "value": 39147,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2015,
+   "value": 40266,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2016,
+   "value": 40941,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2017,
+   "value": 42422,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2018,
+   "value": 43198,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2019,
+   "value": 43886,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2020,
+   "value": 43703,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2021,
+   "value": 46322,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2022,
+   "value": 50418,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2023,
+   "value": 53023,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2024,
+   "value": 54677,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2025,
+   "value": 57043,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2026,
+   "value": 59712,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2027,
+   "value": 62338,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2028,
+   "value": 64368,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2029,
+   "value": 66359,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2030,
+   "value": 68396,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imf",
+   "iso": "JPN",
+   "year": 2031,
+   "value": 70427,
+   "src": "IMF World Economic Outlook, October 2026 · PPPPC"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 1990,
+   "value": 4.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 1991,
+   "value": 3.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 1992,
+   "value": 0.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 1993,
+   "value": -0.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 1994,
+   "value": 0.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 1995,
+   "value": 2.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 1996,
+   "value": 3.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 1997,
+   "value": 1.4,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 1998,
+   "value": -1.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 1999,
+   "value": -0.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2000,
+   "value": 3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2001,
+   "value": 0.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2002,
+   "value": 0.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2003,
+   "value": 1.4,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2004,
+   "value": 2.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2005,
+   "value": 1.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2006,
+   "value": 1.5,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2007,
+   "value": 1.7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2008,
+   "value": -1.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2009,
+   "value": -5.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2010,
+   "value": 4.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2011,
+   "value": -0.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2012,
+   "value": 1.6,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2013,
+   "value": 2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2014,
+   "value": 0.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2015,
+   "value": 1.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2016,
+   "value": 0.7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2017,
+   "value": 1.6,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2018,
+   "value": 0.8,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2019,
+   "value": -0.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2020,
+   "value": -4.3,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2021,
+   "value": 3.6,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2022,
+   "value": 1.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2023,
+   "value": 0.9,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2024,
+   "value": 0.1,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2025,
+   "value": 1.2,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2026,
+   "value": 0.7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2027,
+   "value": 0.7,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2028,
+   "value": 0.6,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2029,
+   "value": 0.6,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2030,
+   "value": 0.6,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "imfg",
+   "iso": "JPN",
+   "year": 2031,
+   "value": 0.6,
+   "src": "IMF World Economic Outlook, October 2026 · NGDP_RPCH"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 1990,
+   "value": 123.438,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 1991,
+   "value": 123.928,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 1992,
+   "value": 124.367,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 1993,
+   "value": 124.77,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 1994,
+   "value": 125.116,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 1995,
+   "value": 125.436,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 1996,
+   "value": 125.711,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 1997,
+   "value": 126.011,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 1998,
+   "value": 126.349,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 1999,
+   "value": 126.587,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2000,
+   "value": 126.831,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2001,
+   "value": 127.132,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2002,
+   "value": 127.4,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2003,
+   "value": 127.634,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2004,
+   "value": 127.734,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2005,
+   "value": 127.752,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2006,
+   "value": 127.746,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2007,
+   "value": 127.757,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2008,
+   "value": 127.692,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2009,
+   "value": 127.551,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2010,
+   "value": 127.594,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2011,
+   "value": 127.831,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2012,
+   "value": 127.552,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2013,
+   "value": 127.333,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2014,
+   "value": 127.12,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2015,
+   "value": 126.978,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2016,
+   "value": 126.96,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2017,
+   "value": 126.746,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2018,
+   "value": 126.495,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2019,
+   "value": 126.221,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2020,
+   "value": 125.849,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2021,
+   "value": 125.492,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2022,
+   "value": 125.063,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2023,
+   "value": 124.482,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2024,
+   "value": 123.89,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2025,
+   "value": 123.291,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2026,
+   "value": 122.656,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2027,
+   "value": 121.999,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2028,
+   "value": 121.319,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2029,
+   "value": 120.619,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2030,
+   "value": 119.898,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "pop",
+   "iso": "JPN",
+   "year": 2031,
+   "value": 119.158,
+   "src": "IMF World Economic Outlook, October 2026 · LP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 1990,
+   "value": 54.8,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 1991,
+   "value": 54.1,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 1992,
+   "value": 57.9,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 1993,
+   "value": 63.2,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 1994,
+   "value": 73.3,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 1995,
+   "value": 80.7,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 1996,
+   "value": 85.3,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 1997,
+   "value": 91.3,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 1998,
+   "value": 101.6,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 1999,
+   "value": 113.5,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2000,
+   "value": 118.5,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2001,
+   "value": 126.8,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2002,
+   "value": 134.6,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2003,
+   "value": 140.2,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2004,
+   "value": 148.8,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2005,
+   "value": 153.4,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2006,
+   "value": 152.1,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2007,
+   "value": 150.4,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2008,
+   "value": 153.6,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2009,
+   "value": 172.9,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2010,
+   "value": 178.6,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2011,
+   "value": 190.6,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2012,
+   "value": 197.1,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2013,
+   "value": 201.2,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2014,
+   "value": 203.6,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2015,
+   "value": 200.1,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2016,
+   "value": 202.1,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2017,
+   "value": 203.1,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2018,
+   "value": 203.7,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2019,
+   "value": 206.3,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2020,
+   "value": 228.8,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2021,
+   "value": 222.6,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2022,
+   "value": 228,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2023,
+   "value": 220.1,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2024,
+   "value": 213.6,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2025,
+   "value": 204.8,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2026,
+   "value": 199.4,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2027,
+   "value": 196.4,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2028,
+   "value": 193.8,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2029,
+   "value": 191.5,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2030,
+   "value": 190.1,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "debt",
+   "iso": "JPN",
+   "year": 2031,
+   "value": 188.9,
+   "src": "IMF World Economic Outlook, October 2026 · GGXWDG_NGDP"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 1990,
+   "value": 2.1,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 1991,
+   "value": 2.1,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 1992,
+   "value": 2.2,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 1993,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 1994,
+   "value": 2.9,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 1995,
+   "value": 3.2,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 1996,
+   "value": 3.4,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 1997,
+   "value": 3.4,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 1998,
+   "value": 4.1,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 1999,
+   "value": 4.7,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2000,
+   "value": 4.7,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2001,
+   "value": 5,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2002,
+   "value": 5.4,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2003,
+   "value": 5.2,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2004,
+   "value": 4.7,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2005,
+   "value": 4.4,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2006,
+   "value": 4.1,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2007,
+   "value": 3.8,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2008,
+   "value": 4,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2009,
+   "value": 5.1,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2010,
+   "value": 5.1,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2011,
+   "value": 4.6,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2012,
+   "value": 4.3,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2013,
+   "value": 4,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2014,
+   "value": 3.6,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2015,
+   "value": 3.4,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2016,
+   "value": 3.1,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2017,
+   "value": 2.8,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2018,
+   "value": 2.4,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2019,
+   "value": 2.4,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2020,
+   "value": 2.8,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2021,
+   "value": 2.8,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2022,
+   "value": 2.6,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2023,
+   "value": 2.6,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2024,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2025,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2026,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2027,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2028,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2029,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2030,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "lur",
+   "iso": "JPN",
+   "year": 2031,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · LUR"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 1990,
+   "value": 3.1,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 1991,
+   "value": 3.3,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 1992,
+   "value": 1.7,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 1993,
+   "value": 1.3,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 1994,
+   "value": 0.7,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 1995,
+   "value": -0.1,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 1996,
+   "value": 0.1,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 1997,
+   "value": 1.7,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 1998,
+   "value": 0.7,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 1999,
+   "value": -0.3,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2000,
+   "value": -0.7,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2001,
+   "value": -0.7,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2002,
+   "value": -0.9,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2003,
+   "value": -0.3,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2004,
+   "value": 0,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2005,
+   "value": -0.2,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2006,
+   "value": 0.2,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2007,
+   "value": 0.1,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2008,
+   "value": 1.4,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2009,
+   "value": -1.3,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2010,
+   "value": -0.7,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2011,
+   "value": -0.3,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2012,
+   "value": -0.1,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2013,
+   "value": 0.3,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2014,
+   "value": 2.8,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2015,
+   "value": 0.8,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2016,
+   "value": -0.1,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2017,
+   "value": 0.5,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2018,
+   "value": 1,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2019,
+   "value": 0.5,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2020,
+   "value": 0,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2021,
+   "value": -0.2,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2022,
+   "value": 2.5,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2023,
+   "value": 3.3,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2024,
+   "value": 2.7,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2025,
+   "value": 3.2,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2026,
+   "value": 2,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2027,
+   "value": 2.6,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2028,
+   "value": 2,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2029,
+   "value": 2,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2030,
+   "value": 2,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "cpi",
+   "iso": "JPN",
+   "year": 2031,
+   "value": 2,
+   "src": "IMF World Economic Outlook, October 2026 · PCPIPCH"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 1990,
+   "value": 6.19,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 1991,
+   "value": 7.01,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 1992,
+   "value": 7.1,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 1993,
+   "value": 6.34,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 1994,
+   "value": 6.62,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 1995,
+   "value": 8.06,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 1996,
+   "value": 10.21,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 1997,
+   "value": 11.25,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 1998,
+   "value": 13.62,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 1999,
+   "value": 11.78,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2000,
+   "value": 11.32,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2001,
+   "value": 14.33,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2002,
+   "value": 15.67,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2003,
+   "value": 15.96,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2004,
+   "value": 17.36,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2005,
+   "value": 21.08,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2006,
+   "value": 24.91,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2007,
+   "value": 31.14,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2008,
+   "value": 34.77,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2009,
+   "value": 27.64,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2010,
+   "value": 27.61,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2011,
+   "value": 28.23,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2012,
+   "value": 26.35,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2013,
+   "value": 32.88,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2014,
+   "value": 36.37,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2015,
+   "value": 35.35,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2016,
+   "value": 30.94,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2017,
+   "value": 35.01,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2018,
+   "value": 38.43,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2019,
+   "value": 38.18,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2020,
+   "value": 38.71,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2021,
+   "value": 44.64,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2022,
+   "value": 53.06,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2023,
+   "value": 62.73,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2024,
+   "value": 74.1,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2025,
+   "value": 78.93,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2026,
+   "value": 88.1,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2027,
+   "value": 90.86,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2028,
+   "value": 92.05,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2029,
+   "value": 94.43,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2030,
+   "value": 97.05,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  },
+  {
+   "set": "rat",
+   "iso": "POL",
+   "year": 2031,
+   "value": 99.39,
+   "src": "IMF World Economic Outlook, October 2026 · Poland's GDP per capita (current US$) as % of Japan's"
+  }
+ ],
+ "voice": {
+  "model": "",
+  "name": "Charon",
+  "style": "You are the narrator of a popular data documentary on YouTube. Read the script below in a warm, curious voice with a little dry humor, at a relaxed but engaged pace of about 145 words per minute, like a smart friend telling you something surprising. Let the big numbers land with a tiny pause before them. Keep the energy steady from the first sentence to the last. Never sound like an advertisement or an audiobook."
+ },
+ "music": [
+  {
+   "act": 0,
+   "track": "Lightless Dawn",
+   "vol": 0.24
+  },
+  {
+   "act": 1,
+   "track": "Deliberate Thought",
+   "vol": 0.22
+  },
+  {
+   "act": 2,
+   "track": "Hidden Agenda",
+   "vol": 0.23
+  },
+  {
+   "act": 3,
+   "track": "Inspired",
+   "vol": 0.23
+  },
+  {
+   "act": 4,
+   "track": "Investigations",
+   "vol": 0.23
+  },
+  {
+   "act": 5,
+   "track": "Deliberate Thought",
+   "vol": 0.22
+  },
+  {
+   "act": 6,
+   "track": "Floating Cities",
+   "vol": 0.24
+  }
+ ],
+ "yt": {
+  "title": "Japan Was 16 Times Richer Than Poland. Now It's 14% Ahead.",
+  "description": "Income per person in plain US dollars, at market exchange rates (IMF World Economic Outlook, October 2026): in 1990 the average Japanese person produced 16× as much as the average Pole ($26,399 vs $1,634). In 2026: $35,400 vs $31,186 — Japan ~14% ahead — and in the IMF's 2031 forecast the gap is $256. Why Japan's dollar income is lower than in 1995 (peak 2012, −32% by 2024 while the real economy grew ~9%: the yen), slow growth and a shrinking population, South Korea and Taiwan already ahead of Japan in plain dollars, and where Japan still wins (unemployment, inflation) and loses (debt ~200% of GDP).\nAdjusted for prices (PPP), Poland already passed Japan in 2026 — that's the previous episode.\n\nSources: IMF World Economic Outlook, October 2026 (NGDPDPC, PPPPC, NGDP_RPCH, LP, LUR, GGXWDG_NGDP, PCPIPCH). 2026+ figures are IMF estimates and forecasts.\n{music_credits}\nNarration is AI-generated.\n\n#poland #japan #yen #economics #imf #data",
+  "tags": [
+   "poland",
+   "japan",
+   "poland vs japan",
+   "japan economy",
+   "yen",
+   "weak yen",
+   "poland economy",
+   "gdp per capita",
+   "imf",
+   "economics",
+   "polska",
+   "japonia",
+   "日本"
+  ],
+  "lang": "en"
+ }
+}
