@@ -103,9 +103,9 @@ shots = [
          items=[dict(at="subscribe button", text="Subscribe", size=66), dict(at="already wins", text="Where Poland wins", serif=True, size=66, color="acc")],
          react=[dict(at="subscribe button", pose="pointUp"), dict(at="already wins", pose="cheer")]),
     dict(act=4, type="duel", set="debt", year=2026, a="POL", b="FRA", fmt="pct0", src=IMF + " · general government gross debt (% of GDP), 2026 estimate and 2031 forecast", title="Government debt, % of GDP, 2026", badge="LOWER IN POLAND",
-         cues=[dict(at="about sixty-seven", show="a"), dict(at="France's: about a hundred and eighteen", show="b")],
-         narration="Government debt this year: Poland, about sixty-seven percent of its economy. {pp} France's: about a hundred and eighteen, and still rising in the IMF's forecast, to about a hundred and twenty-four by 2031. Poland's debt rises too in that forecast, to about eighty-two, but it starts much lower. {p} And unemployment: about three point two percent in Poland. In France, eight point four. More than two and a half times as high.",
-         react=[dict(at="Government debt", pose="pointUp"), dict(at="a hundred and eighteen", pose="shock"), dict(at="still rising", pose="think"), dict(at="eight point four", pose="pointL")]),
+         cues=[dict(at="about sixty-seven", show="a"), dict(at="France's: about a hundred and nineteen", show="b")],
+         narration="Government debt this year: Poland, about sixty-seven percent of its economy. {pp} France's: about a hundred and nineteen, and still rising in the IMF's forecast, to about a hundred and twenty-four by 2031. Poland's debt rises too in that forecast, to about eighty-two, but it starts much lower. {p} And unemployment: about three point two percent in Poland. In France, eight point four. More than two and a half times as high.",
+         react=[dict(at="Government debt", pose="pointUp"), dict(at="a hundred and nineteen", pose="shock"), dict(at="still rising", pose="think"), dict(at="eight point four", pose="pointL")]),
 
     # ---------------- 5 · THE DATE ----------------
     dict(act=5, type="stats", src=IMF + " · PPPPC; parity years are Chartbound extrapolations of the 2016–2026 and IMF 2026–2031 paces, not IMF forecasts", title="When does Poland pass France?",
@@ -144,7 +144,7 @@ checks = [
     dict(say="population 1990→2026: FRA 58.0 → 69.1; POL 38.2 → 36.3", rule="expr", expr=f"[round({LP['FRA'][1990]}), round({LP['FRA'][2026]}), round({LP['POL'][1990]}), round({LP['POL'][2026]})]", equal=[58, 69, 38, 36]),
     dict(say="nominal 2026: FRA ≈ $51k, POL ≈ $31k, 61%; 1990 13×; 2026 < 2×", rule="expr", expr=f"[round({N['FRA'][2026]} / 1000), round({N['POL'][2026]} / 1000), round({N['POL'][2026]} / {N['FRA'][2026]} * 100), round({N['FRA'][1990]} / {N['POL'][1990]}), {N['FRA'][2026] / N['POL'][2026] < 2}]", equal=[51, 31, 61, 13, True]),
     dict(say="inflation 2022: FRA 5.9 (about six; HICP mais baixo da zona do euro — Eurostat), POL 14.4 (over fourteen)", rule="expr", expr=f"[{CPI['FRA'][2022]}, {CPI['POL'][2022]}]", equal=[5.9, 14.4]),
-    dict(say="debt: POL 2026 ≈ 67; FRA 2026 ≈ 118, 2031 ≈ 124, rising", rule="expr", expr=f"[round({DEBT['POL'][2026]}), round({DEBT['FRA'][2026]}), round({DEBT['FRA'][2031]})]", equal=[67, 118, 124]),
+    dict(say="debt: POL 2026 ≈ 67; FRA 2026 118.5 (tela mostra 119 → narração 'a hundred and nineteen'), 2031 ≈ 124, rising", rule="expr", expr=f"[round({DEBT['POL'][2026]}), {DEBT['FRA'][2026]}, round({DEBT['FRA'][2031]})]", equal=[67, 118.5, 124]),
     dict(say="unemployment 2026: POL 3.2, FRA 8.4; ratio > 2.5", rule="expr", expr=f"[{LUR['POL'][2026]}, {LUR['FRA'][2026]}, {LUR['FRA'][2026] / LUR['POL'][2026] > 2.5}]", equal=[3.2, 8.4, True]),
     dict(say="PPP gap widest 2006 ≈ $18.8k; 2026 ≈ $8.8k; 2031 ≈ $3.8k", rule="expr", expr=f"[{max(GAP, key=GAP.get)}, round({GAP[2006]} / 100) * 100, round({GAP[2026]} / 100) * 100, round({GAP[2031]} / 100) * 100]", equal=[2006, 18800, 8800, 3800]),
     dict(say="pace 2016–2026 ≈ 2.8%/yr (almost three) → 2031 (2030.8); IMF → 2034 (2033.8); same as GBR (A-L25: 2031/2034)", rule="expr", expr=f"[round({k_recent} * 100, 1), {math.ceil(par_recent)}, {math.ceil(par_imf)}]", equal=[2.8, 2031, 2034]),

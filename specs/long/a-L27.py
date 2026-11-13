@@ -82,7 +82,7 @@ shots = [
          react=[dict(at="In 1990", pose="pointL"), dict(at="three and a half times", pose="cheer"), dict(at="Spain's has doubled", pose="shrug"), dict(at="Spanish crashes", pose="shock")]),
 
     # ---------------- 2 · SPAIN'S TWO CRASHES ----------------
-    dict(act=2, type="bars", mode="abs", set="imfg", iso="ESP", years=[2000, 2031], start=2000.0, fmt="pct1", src=IMF + " · real GDP growth, Spain (annual %); 2026+ are IMF estimates and forecasts",
+    dict(act=2, type="bars", mode="abs", set="imfg", iso="ESP", years=[2000, 2030], start=2000.0, fmt="pct1", src=IMF + " · real GDP growth, Spain (annual %); 2026+ are IMF estimates and forecasts",
          narration="Here's Spain's economy, year by year, after inflation. {p} First crash: after 2008, Spain shrank in four different years, 2009, 2011, 2012 and 2013. By 2013, the economy was about eight percent smaller than in 2007, and unemployment hit twenty-six percent. {pp} Second crash: 2020. Minus eleven percent, one of the deepest falls in Europe that year, with tourism shut down. Poland's was about minus two. In that single year, Poland jumped from eighty-two percent of Spain to ninety-three.",
          keys=[dict(at="Here's Spain's", year=2004.0, dur=3.0), dict(at="First crash", year=2009.0, dur=1.5), dict(at="2013", year=2013.0, dur=1.5), dict(at="Second crash", year=2020.0, dur=1.5), dict(at="ninety-three", year=2021.0, dur=2.0)],
          react=[dict(at="Here's Spain's", pose="pointL"), dict(at="four different years", pose="shock"), dict(at="twenty-six percent", pose="shock"), dict(at="Minus eleven", pose="shock"), dict(at="ninety-three", pose="pointUp")]),

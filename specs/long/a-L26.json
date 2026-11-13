@@ -564,18 +564,18 @@
      "show": "a"
     },
     {
-     "at": "France's: about a hundred and eighteen",
+     "at": "France's: about a hundred and nineteen",
      "show": "b"
     }
    ],
-   "narration": "Government debt this year: Poland, about sixty-seven percent of its economy. {pp} France's: about a hundred and eighteen, and still rising in the IMF's forecast, to about a hundred and twenty-four by 2031. Poland's debt rises too in that forecast, to about eighty-two, but it starts much lower. {p} And unemployment: about three point two percent in Poland. In France, eight point four. More than two and a half times as high.",
+   "narration": "Government debt this year: Poland, about sixty-seven percent of its economy. {pp} France's: about a hundred and nineteen, and still rising in the IMF's forecast, to about a hundred and twenty-four by 2031. Poland's debt rises too in that forecast, to about eighty-two, but it starts much lower. {p} And unemployment: about three point two percent in Poland. In France, eight point four. More than two and a half times as high.",
    "react": [
     {
      "at": "Government debt",
      "pose": "pointUp"
     },
     {
-     "at": "a hundred and eighteen",
+     "at": "a hundred and nineteen",
      "pose": "shock"
     },
     {
@@ -891,12 +891,12 @@
    ]
   },
   {
-   "say": "debt: POL 2026 ≈ 67; FRA 2026 ≈ 118, 2031 ≈ 124, rising",
+   "say": "debt: POL 2026 ≈ 67; FRA 2026 118.5 (tela mostra 119 → narração 'a hundred and nineteen'), 2031 ≈ 124, rising",
    "rule": "expr",
-   "expr": "[round(66.6), round(118.5), round(123.6)]",
+   "expr": "[round(66.6), 118.5, round(123.6)]",
    "equal": [
     67,
-    118,
+    118.5,
     124
    ]
   },
