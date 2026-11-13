@@ -116,7 +116,7 @@ shots = [
 
     # ---------------- 6 · YOUR GUESS ----------------
     dict(act=6, type="host", bg="none",
-         narration="<soft>So, your guess: does Poland stay ahead of Slovakia this time, or does the złoty flip it back, the way Hungary flipped it in 2023?</soft> Tell me in the comments. {p} If you're watching from Slovakia: does this match what you see? {p} If you're in Poland: did you know Slovakia was ever this far ahead? {p} I read every comment.",
+         narration="<soft>So, what's your guess? Does Poland stay ahead of Slovakia this time, or does the złoty flip it back, the way Hungary flipped it in 2023?</soft> Tell me in the comments. {p} If you're watching from Slovakia: does this match what you see? {p} If you're in Poland: did you know Slovakia was ever this far ahead? {p} I read every comment.",
          items=[dict(at="your guess", text="Stay ahead or flip?", color="acc", size=66), dict(at="watching from Slovakia", text="Slovakia: does it match?", color="warm", size=58)],
          react=[dict(at="your guess", pose="shrug"), dict(at="Tell me", pose="pointUp"), dict(at="watching from Slovakia", pose="wave")]),
     dict(act=6, type="end", src="",

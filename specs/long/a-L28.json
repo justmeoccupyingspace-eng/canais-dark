@@ -756,7 +756,7 @@
    "act": 6,
    "type": "host",
    "bg": "none",
-   "narration": "<soft>So, your guess: does Poland stay ahead of Slovakia this time, or does the złoty flip it back, the way Hungary flipped it in 2023?</soft> Tell me in the comments. {p} If you're watching from Slovakia: does this match what you see? {p} If you're in Poland: did you know Slovakia was ever this far ahead? {p} I read every comment.",
+   "narration": "<soft>So, what's your guess? Does Poland stay ahead of Slovakia this time, or does the złoty flip it back, the way Hungary flipped it in 2023?</soft> Tell me in the comments. {p} If you're watching from Slovakia: does this match what you see? {p} If you're in Poland: did you know Slovakia was ever this far ahead? {p} I read every comment.",
    "items": [
     {
      "at": "your guess",
