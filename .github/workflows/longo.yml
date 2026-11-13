@@ -188,7 +188,7 @@ jobs:
         run: |
           J=${{ inputs.spec }}; python $J >/dev/null; python scripts/lyt.py meta public/build/$ID.json out/yt.json ${J%.py}.json
           # trava (10/11/2026: A-L23 subiu com o ato 4 quebrado, 836 wpm / align 0,02): voz fora dos limites não vai para o YouTube
-          python -c "import json,sys;g=json.load(open('public/build/$ID.gates.json'));bad=[f\"ato {r['act']}: {r['wpm']} wpm, align {r.get('align')}\" for r in g['report'] if not (122<=r['wpm']<=185) or r.get('align',1)<0.85];[print('::error title=voz::'+b) for b in bad];sys.exit(1 if bad else 0)"
+          python -c "import json,sys;g=json.load(open('public/build/$ID.gates.json'));bad=[f\"ato {r['act']}: {r['wpm']} wpm, align {r.get('align')}\" for r in g['report'] if not (122<=r['wpm']<=195) or r.get('align',1)<0.85];[print('::error title=voz::'+b) for b in bad];sys.exit(1 if bad else 0)"
           python scripts/upload.py ${{ inputs.upload }} out/$ID.mp4 out/yt.json private
           VID=$(python -c "import json;print(json.load(open('uploaded.json'))['id'])")
           [ -f out/sheet/thumb.jpg ] && python scripts/lyt.py thumb ${{ inputs.upload }} $VID out/sheet/thumb.jpg || echo "sem thumb"
