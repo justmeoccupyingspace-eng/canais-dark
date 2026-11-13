@@ -51,7 +51,7 @@ for st, tab, ind in [("pop", LP, "LP"), ("debt", DEBT, "GGXWDG_NGDP"), ("lur", L
 
 USDSRC = IMF + " · GDP per capita, current US$ at market exchange rates (NGDPDPC); 2026+ are IMF estimates and forecasts"
 PPPSRC = IMF + " · GDP per capita, PPP, current international $ (PPPPC); 2026+ are IMF estimates and forecasts"
-USD2 = dict(set="imfusd", fc=2025, series=["SVK", "POL"], years=[1995, 2031], y=[0, 45000], src=USDSRC, fmt="usdk0", hl="POL")
+USD2 = dict(set="imfusd", fc=2025, series=["SVK", "POL"], years=[1995, 2031], y=[0, 45000], src=USDSRC, fmt="usd0", hl="POL")  # usd0: com usdk0 o rótulo de 2025 dava "$29k × $28k", contradizendo os US$ 12
 
 shots = [
     # ---------------- 0 · COLD OPEN ----------------
@@ -98,7 +98,7 @@ shots = [
          narration="And if you're enjoying the series, the subscribe button is right there. {p} Now, Hungary.",
          items=[dict(at="subscribe button", text="Subscribe", size=66), dict(at="Now, Hungary", text="Hungary", serif=True, size=66, color="acc")],
          react=[dict(at="subscribe button", pose="pointUp"), dict(at="Now, Hungary", pose="pointL")]),
-    dict(act=4, type="lines", set="imfusd", fc=2025, series=["HUN", "POL"], years=[2005, 2031], start=2012.0, y=[0, 45000], src=USDSRC, fmt="usdk0", hl="POL",
+    dict(act=4, type="lines", set="imfusd", fc=2025, series=["HUN", "POL"], years=[2005, 2031], start=2012.0, y=[0, 45000], src=USDSRC, fmt="usd0", hl="POL",
          narration="In 1990, the average Hungarian produced twice as much as the average Pole, in dollars. {p} Poland first passed Hungary in 2012. Hungary took the lead back in 2013. Poland passed again in 2022. Hungary took it back again in 2023, by seventy-nine dollars. {pp} And in 2024, Poland passed a third time. This one looks like it sticks: about three thousand three hundred dollars ahead this year, and almost six thousand by 2031, in the IMF's forecast. {p} Hungary's recent years explain a lot: inflation of seventeen percent in 2023, the highest of the three, and an economy that shrank that year and barely grew in the next two.",
          keys=[dict(at="Poland first passed", year=2012.0, dur=1.5), dict(at="Poland passed again", year=2022.0, dur=1.5), dict(at="seventy-nine dollars", year=2023.0, dur=1.5), dict(at="a third time", year=2024.0, dur=1.5), dict(at="almost six thousand", year=2031.0, dur=3.0)],
          labels=[dict(at="Poland first passed", iso="POL", year=2012), dict(at="seventy-nine dollars", iso="HUN", year=2023), dict(at="a third time", iso="POL", year=2024), dict(at="almost six thousand", iso="POL", year=2031)],

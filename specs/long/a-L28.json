@@ -43,7 +43,7 @@
     45000
    ],
    "src": "IMF World Economic Outlook, October 2026 · GDP per capita, current US$ at market exchange rates (NGDPDPC); 2026+ are IMF estimates and forecasts",
-   "fmt": "usdk0",
+   "fmt": "usd0",
    "hl": "POL",
    "narration": "Twelve dollars. {p} That's how far Poland got ahead of Slovakia last year, in the IMF's numbers: income per person, in plain dollars, at market exchange rates. Twenty-eight thousand five hundred and ten for the average Pole, twenty-eight thousand four hundred and ninety-eight for the average Slovak. {pp} For twenty-two years, from 2003 to 2024, Slovakia was ahead. In 2009, it was forty-three percent ahead. {p} This year, the IMF has Poland about three hundred dollars in front. By 2031, about two and a half thousand.",
    "keys": [
@@ -138,7 +138,7 @@
     0,
     45000
    ],
-   "fmt": "usdk0",
+   "fmt": "usd0",
    "hl": "POL",
    "narration": "In this series, Poland has been passing countries on income adjusted for prices: Portugal, then Japan. This one is different. This is plain money: what the average person's output is worth in dollars on the world market. {p} And on that measure, Poland just passed a neighbor that uses the euro, and that builds more cars per person than any other country on Earth. {pp} <soft>So how did Slovakia get so far ahead, why did Poland need twenty-two years to catch up, and what about Hungary? Poland has passed Hungary three times.</soft>",
    "items": [
@@ -241,7 +241,7 @@
     45000
    ],
    "src": "IMF World Economic Outlook, October 2026 · GDP per capita, current US$ at market exchange rates (NGDPDPC); 2026+ are IMF estimates and forecasts",
-   "fmt": "usdk0",
+   "fmt": "usd0",
    "hl": "POL",
    "narration": "In 1995, the three were close: about three thousand six hundred dollars per person in Poland, three thousand eight hundred in Slovakia, four and a half thousand in Hungary. {p} Then Slovakia took off. In 2003 it passed Poland, and kept pulling away. By 2008, the average Slovak produced about eighteen thousand dollars a year, the average Pole about fourteen. {pp} Then 2009. Slovakia joined the euro, and the gap jumped to forty-three percent. Slovakia stayed ahead every single year after that, until 2025.",
    "keys": [
@@ -574,7 +574,7 @@
     45000
    ],
    "src": "IMF World Economic Outlook, October 2026 · GDP per capita, current US$ at market exchange rates (NGDPDPC); 2026+ are IMF estimates and forecasts",
-   "fmt": "usdk0",
+   "fmt": "usd0",
    "hl": "POL",
    "narration": "In 1990, the average Hungarian produced twice as much as the average Pole, in dollars. {p} Poland first passed Hungary in 2012. Hungary took the lead back in 2013. Poland passed again in 2022. Hungary took it back again in 2023, by seventy-nine dollars. {pp} And in 2024, Poland passed a third time. This one looks like it sticks: about three thousand three hundred dollars ahead this year, and almost six thousand by 2031, in the IMF's forecast. {p} Hungary's recent years explain a lot: inflation of seventeen percent in 2023, the highest of the three, and an economy that shrank that year and barely grew in the next two.",
    "keys": [
