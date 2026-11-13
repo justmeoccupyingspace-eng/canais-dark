@@ -176,6 +176,12 @@ Limite: ≤10 pedidos/dia por modelo; cada ato ≤210 palavras = 1 pedido (rotei
 
 Ferramentas de pauta: `mine.yml` (sem input = garimpo de ultrapassagens/quem subiu/quem caiu no WDI; com `dump` = séries do WDI para explorar) → branch mine-<run>. O datamapper do IMF bloqueia os runners (403): para projeção do WEO, snapshot com fonte.
 
+## Studio pendente (13/11 21:40Z: Chrome 361e56b8 minimizado, innerWidth 0, renderer congelado — nada feito)
+- -zqvGOlmE_o (Reino Unido, público): comentário fixado EN+PL. ATENÇÃO: o vídeo da França (nIqajVSVFtA) promete "next episode is Spain" e o Espanha já existe (SW2qxSlMwfc) → no comentário fixado da FRANÇA usar: "The Spain episode mentioned in the video: https://youtu.be/SW2qxSlMwfc — Poland is $55 away. Next in the series: Slovakia, which Poland just passed by $12." + PL.
+- RJs5upoaii0 (Lituânia): comentário fixado (texto da tentativa de 12/11 23:00Z).
+- nIqajVSVFtA (França, pública 14/11 21:00Z): A/B th26 (a26_flags/a26_duel/a26_text), tela final → -zqvGOlmE_o + inscrição, comentário fixado acima.
+- A-L28 (Eslováquia, 15/11): A/B a28_flags/a28_text + duelo (gerar do built), tela final → XGmxZPO8lx8 + inscrição, PL em scratch/pl-l28.json (trocar VIDEOID), playlist Who Passed Whom; comentário fixado: "Next in the series: Japan again, in plain dollars this time. In 1990 Japan was 16× richer than Poland. Now? Drop your guess." + PL.
+
 ## B · Nest Egg Atlas (ex-How It Ticks) — decisão 01/11 22:40 BRT (Kauan: "volta a usar a cota no outro canal, muda o tema, público fixo, máximo RPM")
 - Público fixo: americanos de 55 a 75 anos, perto de se aposentar ou aposentados. Tema: o dinheiro da aposentadoria em dados oficiais — "onde você está" (percentis por idade, renda, estado).
 - RPM (estimativas de terceiros, US$/mil views): aposentadoria 12–18 médio (OutlierKit, jun/2026), finanças pessoais 8–20 (Peeksy, abr/2026); Q4 +30–60%. Polônia 0,60 vs EUA 5,11 na amostra de música da Dynamoi → o público do Chartbound paga ~8× menos.
