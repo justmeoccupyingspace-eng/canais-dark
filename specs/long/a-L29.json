@@ -43,7 +43,7 @@
     55000
    ],
    "src": "IMF World Economic Outlook, October 2026 · GDP per capita, current US$ at market exchange rates (NGDPDPC); 2026+ are IMF estimates and forecasts",
-   "fmt": "usdk0",
+   "fmt": "usd0",
    "hl": "POL",
    "narration": "Sixteen times. {p} In 1990, the average Japanese person produced sixteen times as much as the average Pole, in plain dollars: about twenty-six thousand four hundred dollars a year, against one thousand six hundred. {pp} This year, in the IMF's numbers: about thirty-five thousand four hundred in Japan, thirty-one thousand two hundred in Poland. Japan is about fourteen percent ahead. {p} And by 2031, in the IMF's forecast, the gap is two hundred and fifty-six dollars.",
    "keys": [
@@ -138,7 +138,7 @@
     0,
     55000
    ],
-   "fmt": "usdk0",
+   "fmt": "usd0",
    "hl": "POL",
    "narration": "This year, on income adjusted for prices, the IMF's numbers put Poland ahead of Japan. That was one of the biggest stories on this channel. But adjusted for prices isn't the money people see on a payslip converted into dollars. {p} So here's the plain money: market exchange rates, no adjustment. {pp} <soft>And the surprising part of this chart isn't Poland. It's Japan. In plain dollars, the average Japanese person produces less this year than in 1995.</soft>",
    "items": [
@@ -344,7 +344,7 @@
     55000
    ],
    "src": "IMF World Economic Outlook, October 2026 · GDP per capita, current US$ at market exchange rates (NGDPDPC); 2026+ are IMF estimates and forecasts",
-   "fmt": "usdk0",
+   "fmt": "usd0",
    "hl": "JPN",
    "narration": "Here's Japan alone, in plain dollars per person. {p} 1995: about forty-five thousand. Then thirty years of going sideways. The peak came in 2012, at almost fifty thousand. {pp} And then, from 2012 to 2024, it fell by almost a third, to about thirty-four thousand. {p} Did Japan's economy collapse? No. After inflation, it grew about nine percent over those twelve years. Slowly, but it grew. What collapsed was the value of the yen in dollars. Same work, same output, fewer dollars.",
    "keys": [
@@ -606,7 +606,7 @@
     55000
    ],
    "src": "IMF World Economic Outlook, October 2026 · GDP per capita, current US$ at market exchange rates (NGDPDPC); 2026+ are IMF estimates and forecasts",
-   "fmt": "usdk0",
+   "fmt": "usd0",
    "hl": "POL",
    "narration": "So, does Poland pass Japan in plain dollars too? {p} In the IMF's forecast: next year, Japan about thirty-six thousand six hundred dollars per person, Poland about thirty-three thousand three hundred. 2030: forty thousand seven hundred against thirty-nine thousand five hundred. {pp} And 2031: forty-one thousand nine hundred and fifty-three in Japan, forty-one thousand six hundred and ninety-seven in Poland. Two hundred and fifty-six dollars apart. Ninety-nine percent. {p} That's not a pass. It's a coin flip, and it depends on the yen as much as on Poland.",
    "keys": [

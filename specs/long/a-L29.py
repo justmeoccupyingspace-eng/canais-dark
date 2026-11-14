@@ -50,7 +50,7 @@ for y in range(1990, 2032):
     snapshot.append(dict(set="rat", iso="POL", year=y, value=round(P[y] / J[y] * 100, 2), src=IMF + " · Poland's GDP per capita (current US$) as % of Japan's"))
 
 USDSRC = IMF + " · GDP per capita, current US$ at market exchange rates (NGDPDPC); 2026+ are IMF estimates and forecasts"
-USD2 = dict(set="imfusd", fc=2025, series=["JPN", "POL"], years=[1990, 2031], y=[0, 55000], src=USDSRC, fmt="usdk0", hl="POL")
+USD2 = dict(set="imfusd", fc=2025, series=["JPN", "POL"], years=[1990, 2031], y=[0, 55000], src=USDSRC, fmt="usd0", hl="POL")  # usd0: com usdk0, 1990 mostrava "$2k" para os US$ 1.634 narrados
 RATCH = dict(set="rat", fc=2025, series=["POL"], years=[1990, 2031], y=[0, 110], src=IMF + " · Poland's GDP per capita in current US$, as % of Japan's; 2026+ are IMF estimates and forecasts", fmt="pct0", hl="POL", ref=dict(value=100, label="Japan = 100%", pos="left"))
 
 shots = [
@@ -77,7 +77,7 @@ shots = [
          react=[dict(at="six percent", pose="shock"), dict(at="the average American", pose="think"), dict(at="almost straight up", pose="shock"), dict(at="thirty-five points", pose="pointUp"), dict(at="Something happened to Japan", pose="think")]),
 
     # ---------------- 2 · JAPAN'S LOST DOLLARS ----------------
-    dict(act=2, type="lines", set="imfusd", fc=2025, series=["JPN"], years=[1990, 2031], start=1995.0, y=[0, 55000], src=USDSRC, fmt="usdk0", hl="JPN",
+    dict(act=2, type="lines", set="imfusd", fc=2025, series=["JPN"], years=[1990, 2031], start=1995.0, y=[0, 55000], src=USDSRC, fmt="usd0", hl="JPN",
          narration="Here's Japan alone, in plain dollars per person. {p} 1995: about forty-five thousand. Then thirty years of going sideways. The peak came in 2012, at almost fifty thousand. {pp} And then, from 2012 to 2024, it fell by almost a third, to about thirty-four thousand. {p} Did Japan's economy collapse? No. After inflation, it grew about nine percent over those twelve years. Slowly, but it grew. What collapsed was the value of the yen in dollars. Same work, same output, fewer dollars.",
          keys=[dict(at="1995", year=1995.0, dur=1.5), dict(at="going sideways", year=2005.0, dur=2.0), dict(at="The peak came in 2012", year=2012.0, dur=2.0), dict(at="fell by almost a third", year=2024.0, dur=2.5)],
          labels=[dict(at="1995", iso="JPN", year=1995), dict(at="The peak came in 2012", iso="JPN", year=2012), dict(at="about thirty-four thousand", iso="JPN", year=2024)],
