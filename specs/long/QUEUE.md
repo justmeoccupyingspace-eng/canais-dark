@@ -225,3 +225,5 @@ Ferramentas de pauta: `mine.yml` (sem input = garimpo de ultrapassagens/quem sub
 
 - 14/11 08:40Z: inscritos 118, envios 109 · Lituânia 102 views (3 dias) · Reino Unido 21 (11 h).
 - 14/11 21:10Z: França publicada (0 views em 5 min) · inscritos 118 · Reino Unido 39 (24 h) · Lituânia 132 · Chrome sem resposta (PC dormindo/minimizado) → Studio e TikTok não conferidos.
+- 15/11 08:45Z: TikTok semana 48 (23–29/11) PRONTA: specs/week48.py → c-360..c-373 (11 questões + faltam 14 dias + apostila; edital 2026 cobra Penal, Proc. Penal, Proc. Civil, Constitucional, Administrativo, Legislação Interna — Folha/QConcursos 21/10/2026), 14 vídeos gerados (produce.yml upload=false, pv-43693551898…43693609144), recodificados ~9,1 MB em scratch/w48/up para o file_upload. FALTA agendar no TikTok Studio (Chrome) antes de 23/11 12:00 BRT, mesmos horários 12:00/19:00 do spec (publish.tiktok_at).
+- 15/11 08:45Z: A-L30 Estônia: ato 2 recusado por SAFETY 2× no 3.1 (palavras "crash/minus/wall"?) → reescrito; ato 5 saiu 111 wpm/align 0,833 (números longos) → reescrito com menos números falados; rótulos do ato 4 sobrepostos → anos 2006–2031. Render final 43694972691.
