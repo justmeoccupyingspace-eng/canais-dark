@@ -1,0 +1,96 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "\"Cujo o\" existe?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-24 12:00"
+ },
+ "tiktok": "Português do Escrevente TJSP: pronome relativo cujo. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues #pronomes",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "\"Cujo o\" existe?",
+   "hl": "Cujo o",
+   "icon": "✍️",
+   "narration": "O processo cujo o prazo venceu. Tem um erro aí. Achou?",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · PRONOME RELATIVO",
+   "q": "O pronome \"cujo\" está empregado de acordo com a norma-padrão em:",
+   "alts": [
+    "O réu cujo o advogado faltou foi ouvido.",
+    "A lei cuja a vigência começou ontem.",
+    "O servidor cujo nome saiu no diário tomou posse.",
+    "O processo que o prazo venceu foi arquivado.",
+    "A vara cujos o juiz é novo."
+   ],
+   "correct": 2,
+   "narration": "Em qual frase está certo?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 54,
+   "asize": 42
+  },
+  {
+   "type": "text",
+   "text": "Letra C: cujo nome",
+   "hl": "cujo nome",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra C!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Regras do cujo",
+   "hl": "cujo",
+   "rows": [
+    {
+     "t": "Nunca vem com artigo depois",
+     "cue": "artigo"
+    },
+    {
+     "t": "Concorda com o que vem depois",
+     "cue": "concorda"
+    },
+    {
+     "t": "Indica posse: o nome DO servidor",
+     "cue": "posse"
+    },
+    {
+     "t": "Não troque por \"que o\"",
+     "cue": "que o"
+    }
+   ],
+   "narration": "Cujo nunca leva artigo depois: cujo nome, e não cujo o nome. Ele concorda com a palavra que vem depois: cuja vigência, cujos autos. E indica posse: o nome do servidor. Trocar por que o, como em o processo que o prazo venceu, está errado.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "\"Cuja a\" também está errado",
+   "hl": "Cuja a",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: no feminino é igual. Cuja vigência, nunca cuja a vigência.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ],
+ "palette": "gabaritoclaro"
+}

@@ -1,0 +1,96 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Dados errados no cadastro do governo: qual remédio?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-24 19:00"
+ },
+ "tiktok": "Direito Constitucional para o Escrevente TJSP: habeas data e os remédios constitucionais. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #direitoconstitucional #remedios",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Dados errados no cadastro do governo: qual remédio?",
+   "hl": "qual remédio?",
+   "icon": "⚖️",
+   "narration": "Seus dados estão errados num cadastro do governo. Qual ação você usa?",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "DIREITO CONSTITUCIONAL · REMÉDIOS",
+   "q": "Para assegurar o conhecimento ou a retificação de dados pessoais em banco de dados de entidade governamental, cabe:",
+   "alts": [
+    "Habeas corpus",
+    "Mandado de segurança",
+    "Habeas data",
+    "Mandado de injunção",
+    "Ação popular"
+   ],
+   "correct": 2,
+   "narration": "Qual é o remédio?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 50,
+   "asize": 46
+  },
+  {
+   "type": "text",
+   "text": "Letra C: habeas data",
+   "hl": "habeas data",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra C!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Cada remédio, um problema",
+   "hl": "remédio",
+   "rows": [
+    {
+     "t": "Habeas corpus: liberdade de locomoção",
+     "cue": "ir e vir"
+    },
+    {
+     "t": "Habeas data: seus dados pessoais",
+     "cue": "dados"
+    },
+    {
+     "t": "Mandado de injunção: falta de norma",
+     "cue": "falta"
+    },
+    {
+     "t": "Mandado de segurança: o que sobra",
+     "cue": "líquido"
+    }
+   ],
+   "narration": "Habeas corpus protege a liberdade de ir e vir. Habeas data, conhecer ou corrigir seus dados em cadastro público. Mandado de injunção, quando falta a norma que regulamenta um direito. E mandado de segurança protege direito líquido e certo que não cabe nos outros dois habeas.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "Dados de OUTRA pessoa: não é habeas data",
+   "hl": "OUTRA pessoa",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: o habeas data é para informações sobre o próprio impetrante. Dados de terceiros, não.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ],
+ "palette": "gabaritoclaro"
+}

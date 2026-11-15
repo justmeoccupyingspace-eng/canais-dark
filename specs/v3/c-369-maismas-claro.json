@@ -1,0 +1,96 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Mas ou mais?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-27 19:00"
+ },
+ "tiktok": "Português do Escrevente TJSP: mas ou mais. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Mas ou mais?",
+   "hl": "mais?",
+   "icon": "✍️",
+   "narration": "Estudei, mais não passei. Errou. Mas por quê?",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · MAS OU MAIS",
+   "q": "O emprego de \"mas\" ou \"mais\" está correto em:",
+   "alts": [
+    "Estudei muito, mais não passei.",
+    "Ele é mas dedicado que o colega.",
+    "Quero mas tempo para revisar.",
+    "Revisei o edital, mas esqueci a taxa.",
+    "Faltam mas dez dias."
+   ],
+   "correct": 3,
+   "narration": "Em qual frase está certo?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 56,
+   "asize": 44
+  },
+  {
+   "type": "text",
+   "text": "Letra D: revisei, mas esqueci",
+   "hl": "revisei, mas esqueci",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra D!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "O truque",
+   "hl": "truque",
+   "rows": [
+    {
+     "t": "Mas = porém (oposição)",
+     "cue": "porém"
+    },
+    {
+     "t": "Mais = quantidade (oposto de menos)",
+     "cue": "menos"
+    },
+    {
+     "t": "Troque por porém: se couber, é mas",
+     "cue": "trocar"
+    },
+    {
+     "t": "Troque por menos: se couber, é mais",
+     "cue": "cabe"
+    }
+   ],
+   "narration": "Mas é oposição, igual a porém: revisei, mas esqueci. Mais é quantidade, o contrário de menos: mais tempo, mais dedicado. O truque é trocar: se cabe porém, é mas. Se cabe menos, é mais.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "\"Mais\" com som de \"mas\" engana na fala",
+   "hl": "fala",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: na fala os dois soam parecidos. Na escrita, troca por porém antes de decidir.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ],
+ "palette": "gabaritoclaro"
+}

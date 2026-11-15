@@ -1,0 +1,96 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Anular ou revogar um ato?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-25 19:00"
+ },
+ "tiktok": "Direito Administrativo para o Escrevente TJSP: anulação x revogação (Súmula 473 do STF). Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #direitoadministrativo #atosadministrativos",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Anular ou revogar um ato?",
+   "hl": "revogar",
+   "icon": "⚖️",
+   "narration": "A Administração descobre que um ato é ilegal. Ela anula ou revoga?",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "DIREITO ADMINISTRATIVO · ATOS",
+   "q": "Segundo a Súmula 473 do STF, a Administração pode:",
+   "alts": [
+    "Revogar seus atos ilegais, com efeitos retroativos.",
+    "Anular seus atos ilegais e revogar os inconvenientes, respeitados os direitos adquiridos.",
+    "Anular atos só com autorização do Judiciário.",
+    "Revogar atos de outro Poder por conveniência.",
+    "Apenas revogar, nunca anular, seus próprios atos."
+   ],
+   "correct": 1,
+   "narration": "Qual alternativa está certa?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 50,
+   "asize": 36
+  },
+  {
+   "type": "text",
+   "text": "Letra B: anula o ilegal, revoga o inconveniente",
+   "hl": "anula o ilegal, revoga o inconveniente",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra B!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Anulação x revogação",
+   "hl": "revogação",
+   "rows": [
+    {
+     "t": "Anulação: ato ILEGAL",
+     "cue": "ilegal"
+    },
+    {
+     "t": "Revogação: conveniência e oportunidade",
+     "cue": "conveniência"
+    },
+    {
+     "t": "Judiciário pode anular, não revogar",
+     "cue": "Judiciário"
+    },
+    {
+     "t": "Revogação respeita direito adquirido",
+     "cue": "adquiridos"
+    }
+   ],
+   "narration": "Anulação é para ato ilegal, e pode ser feita pela própria Administração ou pelo Judiciário. Revogação é por conveniência e oportunidade, só pela própria Administração, respeitando os direitos adquiridos.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "Judiciário não revoga ato de outro Poder",
+   "hl": "não revoga",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: o juiz pode anular um ato administrativo ilegal, mas não pode revogar por achar inconveniente.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ],
+ "palette": "gabaritoclaro"
+}

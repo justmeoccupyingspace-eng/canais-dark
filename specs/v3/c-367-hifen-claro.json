@@ -1,0 +1,96 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Micro-ondas tem hífen? E autoescola?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-26 19:00"
+ },
+ "tiktok": "Português do Escrevente TJSP: hífen depois do Acordo Ortográfico. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues #ortografia",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Micro-ondas tem hífen? E autoescola?",
+   "hl": "hífen?",
+   "icon": "✍️",
+   "narration": "Micro-ondas tem hífen. Autoescola não tem. Antissocial dobra o s. Qual é a regra?",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · HÍFEN",
+   "q": "A grafia está de acordo com o Acordo Ortográfico em:",
+   "alts": [
+    "auto-escola",
+    "anti-social",
+    "micro-ondas",
+    "contra-regra",
+    "micro ondas"
+   ],
+   "correct": 2,
+   "narration": "Qual palavra está escrita certo?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 54,
+   "asize": 52
+  },
+  {
+   "type": "text",
+   "text": "Letra C: micro-ondas",
+   "hl": "micro-ondas",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra C!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "A regra do prefixo",
+   "hl": "prefixo",
+   "rows": [
+    {
+     "t": "Vogal igual: hífen (micro-ondas)",
+     "cue": "mesma vogal"
+    },
+    {
+     "t": "Vogal diferente: junto (autoescola)",
+     "cue": "diferente"
+    },
+    {
+     "t": "Antes de R ou S: dobra (antissocial)",
+     "cue": "dobra"
+    },
+    {
+     "t": "Anti-inflamatório: vogal igual",
+     "cue": "contrarregra"
+    }
+   ],
+   "narration": "Prefixo terminado em vogal: se a palavra começa com a mesma vogal, leva hífen, micro-ondas, anti-inflamatório. Se a vogal é diferente, vai junto, autoescola. E antes de r ou s, junta e dobra a letra: antissocial, contrarregra.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "Contrarregra: junto e com rr",
+   "hl": "Contrarregra",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: contra-regra perdeu o hífen. Agora é contrarregra, junto e com dois erres.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ],
+ "palette": "gabaritoclaro"
+}

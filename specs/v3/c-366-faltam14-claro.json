@@ -1,0 +1,81 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+4%",
+ "title": "Inscrição do TJSP: faltam 14 dias",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-26 12:00"
+ },
+ "tiktok": "Escrevente TJSP: as inscrições fecham em 10/12, no site da VUNESP. Taxa de R$ 81. A circunscrição escolhida não troca depois. Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #inscricao #edital #tjsp",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Edital 2026",
+   "text": "Faltam 14 dias para fechar a inscrição",
+   "hl": "14 dias",
+   "icon": "⏳",
+   "narration": "Faltam catorze dias para fechar a inscrição do escrevente do TJ de São Paulo.",
+   "min_duration": 2.4
+  },
+  {
+   "type": "big",
+   "text": "Último dia",
+   "hl": "Último dia",
+   "big": "10/12",
+   "label": "inscrição no site da VUNESP · taxa R$ 81",
+   "narration": "O último dia é dez de dezembro, no site da VUNESP. A taxa é de oitenta e um reais.",
+   "min_duration": 2.8
+  },
+  {
+   "type": "steps",
+   "text": "Antes de pagar o boleto",
+   "hl": "boleto",
+   "rows": [
+    {
+     "t": "Escolha a circunscrição",
+     "icon": "📍",
+     "cue": "circunscrição"
+    },
+    {
+     "t": "Ela não troca depois",
+     "icon": "🔒",
+     "cue": "troca"
+    },
+    {
+     "t": "Pague a taxa no prazo",
+     "icon": "💳",
+     "cue": "prazo"
+    },
+    {
+     "t": "Guarde o comprovante",
+     "icon": "🧾",
+     "cue": "comprovante"
+    }
+   ],
+   "result": false,
+   "narration": "Antes de pagar, escolhe bem a circunscrição, porque ela não troca depois. Paga a taxa dentro do prazo e guarda o comprovante.",
+   "min_duration": 3.8
+  },
+  {
+   "type": "text",
+   "kicker": "Prova",
+   "text": "14/03/2027, à tarde",
+   "hl": "14/03/2027",
+   "icon": "📅",
+   "pose": "pointUp",
+   "narration": "E a prova é dia quatorze de março, à tarde.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ],
+ "palette": "gabaritoclaro"
+}

@@ -1,0 +1,96 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "O delegado pode arquivar o inquérito?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-28 19:00"
+ },
+ "tiktok": "Direito Processual Penal para o Escrevente TJSP: arquivamento do inquérito (art. 17 do CPP). Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #direitoprocessualpenal #inquerito",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "O delegado pode arquivar o inquérito?",
+   "hl": "arquivar",
+   "icon": "⚖️",
+   "narration": "Não achou prova nenhuma. O delegado pode mandar arquivar o inquérito?",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "DIREITO PROCESSUAL PENAL · INQUÉRITO",
+   "q": "Segundo o art. 17 do Código de Processo Penal, a autoridade policial:",
+   "alts": [
+    "Pode arquivar o inquérito se não houver provas.",
+    "Pode arquivar com autorização da vítima.",
+    "Não poderá mandar arquivar autos de inquérito.",
+    "Pode arquivar se o crime for de menor potencial.",
+    "Arquiva após trinta dias sem diligências."
+   ],
+   "correct": 2,
+   "narration": "Qual alternativa está certa?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 54,
+   "asize": 42
+  },
+  {
+   "type": "text",
+   "text": "Letra C: não pode arquivar",
+   "hl": "não pode arquivar",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra C!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "O delegado nunca arquiva",
+   "hl": "nunca",
+   "rows": [
+    {
+     "t": "Art. 17 do CPP: não pode arquivar",
+     "cue": "dezessete"
+    },
+    {
+     "t": "Nem por falta de provas",
+     "cue": "provas"
+    },
+    {
+     "t": "Nem com pedido da vítima",
+     "cue": "vítima"
+    },
+    {
+     "t": "Arquivamento passa pelo Ministério Público",
+     "cue": "Ministério"
+    }
+   ],
+   "narration": "O artigo dezessete do CPP é direto: a autoridade policial não poderá mandar arquivar autos de inquérito. Nem por falta de provas, nem a pedido da vítima. O arquivamento passa pelo Ministério Público.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "Falta de prova não muda nada",
+   "hl": "Falta de prova",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: a alternativa mais tentadora é a da falta de provas. Mesmo assim, o delegado não arquiva.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ],
+ "palette": "gabaritoclaro"
+}

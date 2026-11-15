@@ -1,0 +1,72 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+4%",
+ "title": "182 questões comentadas: amostra grátis",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-29 19:00"
+ },
+ "tiktok": "Apostila do Escrevente TJSP com 182 questões comentadas, no estilo das questões desta semana. Amostra grátis no WhatsApp da bio: manda APOSTILA. Amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #apostila #questoes #tjsp",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP",
+   "text": "182 questões comentadas",
+   "hl": "182",
+   "icon": "📚",
+   "narration": "Gostou das questões da semana? Tem cento e oitenta e duas, todas comentadas.",
+   "min_duration": 2.6
+  },
+  {
+   "type": "steps",
+   "text": "Nesta semana caiu",
+   "hl": "semana",
+   "rows": [
+    {
+     "t": "Cujo, preferir, anexo",
+     "icon": "✍️",
+     "cue": "Cujo"
+    },
+    {
+     "t": "Hífen, crase, mas ou mais",
+     "icon": "✍️",
+     "cue": "Hífen"
+    },
+    {
+     "t": "Corrupção passiva, habeas data",
+     "icon": "⚖️",
+     "cue": "Corrupção"
+    },
+    {
+     "t": "Prazos do CPC, inquérito",
+     "icon": "⚖️",
+     "cue": "Prazos"
+    }
+   ],
+   "result": false,
+   "narration": "Nesta semana caiu: cujo, preferir e anexo. Hífen, crase e mas ou mais. Corrupção passiva e habeas data. Prazos do CPC e arquivamento do inquérito.",
+   "min_duration": 4.2
+  },
+  {
+   "type": "text",
+   "kicker": "Como pegar",
+   "text": "Manda APOSTILA no WhatsApp da bio",
+   "hl": "APOSTILA",
+   "icon": "📲",
+   "pose": "pointUp",
+   "narration": "Manda apostila no WhatsApp da bio, que eu te mando uma amostra grátis.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ],
+ "palette": "gabaritoclaro"
+}

@@ -1,0 +1,96 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "\"Prefiro mais isso do que aquilo\" está certo?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-25 12:00"
+ },
+ "tiktok": "Português do Escrevente TJSP: regência do verbo preferir. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues #regencia",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "\"Prefiro mais isso do que aquilo\" está certo?",
+   "hl": "Prefiro mais",
+   "icon": "✍️",
+   "narration": "Prefiro mais estudar do que trabalhar. Dois erros numa frase só.",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · REGÊNCIA VERBAL",
+   "q": "A regência do verbo \"preferir\" está de acordo com a norma-padrão em:",
+   "alts": [
+    "Prefiro mais o fórum do que o cartório.",
+    "Prefiro o fórum do que o cartório.",
+    "Prefiro mil vezes o fórum ao cartório.",
+    "Prefiro o fórum ao cartório.",
+    "Prefiro antes o fórum que o cartório."
+   ],
+   "correct": 3,
+   "narration": "Em qual frase está certo?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 52,
+   "asize": 44
+  },
+  {
+   "type": "text",
+   "text": "Letra D: prefiro o fórum ao cartório",
+   "hl": "prefiro o fórum ao cartório",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra D!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Como usar preferir",
+   "hl": "preferir",
+   "rows": [
+    {
+     "t": "Preferir uma coisa A outra",
+     "cue": "outra"
+    },
+    {
+     "t": "Sem \"mais\", sem \"antes\"",
+     "cue": "antes"
+    },
+    {
+     "t": "Sem \"do que\"",
+     "cue": "do que"
+    },
+    {
+     "t": "Prefiro estudar a trabalhar",
+     "cue": "estudar"
+    }
+   ],
+   "narration": "Preferir é preferir uma coisa a outra: prefiro o fórum ao cartório. Não leva mais nem antes, porque preferir já é querer mais. E não leva do que. Com verbo também: prefiro estudar a trabalhar.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "\"Mil vezes\" também é intensificador proibido",
+   "hl": "Mil vezes",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: prefiro mil vezes também está fora da norma-padrão. Preferir não aceita intensificador.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ],
+ "palette": "gabaritoclaro"
+}

@@ -1,0 +1,96 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Servidor que aceita propina comete qual crime?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-23 19:00"
+ },
+ "tiktok": "Direito Penal para o Escrevente TJSP: corrupção passiva x concussão x corrupção ativa. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #direitopenal #crimescontraaadministracao",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Servidor que aceita propina comete qual crime?",
+   "hl": "aceita propina",
+   "icon": "⚖️",
+   "narration": "O servidor não pediu nada, só aceitou a promessa de dinheiro. Já é crime?",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "DIREITO PENAL · CRIMES CONTRA A ADM.",
+   "q": "O funcionário público que aceita promessa de vantagem indevida, em razão da função, comete:",
+   "alts": [
+    "Concussão",
+    "Corrupção passiva",
+    "Corrupção ativa",
+    "Prevaricação",
+    "Nenhum crime, pois não recebeu"
+   ],
+   "correct": 1,
+   "narration": "Qual é o crime?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 50,
+   "asize": 44
+  },
+  {
+   "type": "text",
+   "text": "Letra B: corrupção passiva",
+   "hl": "corrupção passiva",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra B!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Não confunda",
+   "hl": "confunda",
+   "rows": [
+    {
+     "t": "Concussão (316): servidor EXIGE",
+     "cue": "exige"
+    },
+    {
+     "t": "Corrupção passiva (317): solicita, recebe ou aceita",
+     "cue": "aceita"
+    },
+    {
+     "t": "Corrupção ativa (333): particular oferece",
+     "cue": "particular"
+    },
+    {
+     "t": "Basta aceitar a promessa",
+     "cue": "promessa"
+    }
+   ],
+   "narration": "Concussão, artigo trezentos e dezesseis: o servidor exige. Corrupção passiva, trezentos e dezessete: solicita, recebe ou aceita promessa de vantagem indevida. Corrupção ativa, trezentos e trinta e três: é o particular que oferece ou promete.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "Não precisa receber o dinheiro",
+   "hl": "receber",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: aceitar a promessa já consuma a corrupção passiva, mesmo que o dinheiro nunca chegue.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ],
+ "palette": "gabaritoclaro"
+}

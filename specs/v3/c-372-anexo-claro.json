@@ -1,0 +1,96 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "\"Segue anexo as cópias\" está certo?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-29 12:00"
+ },
+ "tiktok": "Português do Escrevente TJSP: concordância de anexo. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues #concordancia",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "\"Segue anexo as cópias\" está certo?",
+   "hl": "anexo",
+   "icon": "✍️",
+   "narration": "Segue anexo as cópias. Todo mundo escreve assim no e-mail. Tá errado.",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · CONCORDÂNCIA NOMINAL",
+   "q": "A concordância está de acordo com a norma-padrão em:",
+   "alts": [
+    "Segue anexo as cópias do processo.",
+    "Seguem anexo as certidões.",
+    "Seguem anexas as certidões.",
+    "Segue anexa os documentos.",
+    "Seguem em anexas as cópias."
+   ],
+   "correct": 2,
+   "narration": "Em qual frase está certo?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 54,
+   "asize": 44
+  },
+  {
+   "type": "text",
+   "text": "Letra C: seguem anexas as certidões",
+   "hl": "seguem anexas as certidões",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra C!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Anexo concorda",
+   "hl": "concorda",
+   "rows": [
+    {
+     "t": "Anexo é adjetivo: concorda",
+     "cue": "adjetivo"
+    },
+    {
+     "t": "Anexas as certidões, anexos os laudos",
+     "cue": "laudos"
+    },
+    {
+     "t": "O verbo também: seguem",
+     "cue": "seguem"
+    },
+    {
+     "t": "Em anexo: não varia",
+     "cue": "preposição"
+    }
+   ],
+   "narration": "Anexo é adjetivo, então concorda com o que vem junto: anexas as certidões, anexos os laudos. O verbo também vai ao plural: seguem. E em anexo, com a preposição, não varia: seguem em anexo as cópias.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "\"Em anexo\" não vai ao plural",
+   "hl": "Em anexo",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: em anexas está errado. Com em na frente, fica sempre em anexo.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ],
+ "palette": "gabaritoclaro"
+}

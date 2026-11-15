@@ -1,0 +1,96 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "Prazo de 15 dias conta sábado e domingo?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-27 12:00"
+ },
+ "tiktok": "Direito Processual Civil para o Escrevente TJSP: contagem de prazos (arts. 219 e 224 do CPC). Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #direitoprocessualcivil #cpc #prazos",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "Prazo de 15 dias conta sábado e domingo?",
+   "hl": "sábado e domingo?",
+   "icon": "⚖️",
+   "narration": "Prazo de quinze dias no processo civil. Sábado e domingo entram na conta?",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "DIREITO PROCESSUAL CIVIL · PRAZOS",
+   "q": "Segundo o CPC, na contagem de prazo processual em dias:",
+   "alts": [
+    "Computam-se os dias corridos.",
+    "Computam-se somente os dias úteis.",
+    "Inclui-se o dia do começo.",
+    "Exclui-se o dia do vencimento.",
+    "Os feriados contam normalmente."
+   ],
+   "correct": 1,
+   "narration": "Qual alternativa está certa?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 54,
+   "asize": 46
+  },
+  {
+   "type": "text",
+   "text": "Letra B: só dias úteis",
+   "hl": "só dias úteis",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra B!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Como contar no CPC",
+   "hl": "contar",
+   "rows": [
+    {
+     "t": "Só dias úteis (art. 219)",
+     "cue": "úteis"
+    },
+    {
+     "t": "Exclui o dia do começo (art. 224)",
+     "cue": "começo"
+    },
+    {
+     "t": "Inclui o dia do vencimento",
+     "cue": "vencimento"
+    },
+    {
+     "t": "Vale para prazo processual",
+     "cue": "processual"
+    }
+   ],
+   "narration": "No CPC, o prazo em dias conta só os dias úteis, artigo duzentos e dezenove. E pelo artigo duzentos e vinte e quatro, exclui o dia do começo e inclui o dia do vencimento. Isso vale para prazo processual.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "Processo penal conta dias corridos",
+   "hl": "penal",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: a regra dos dias úteis é do CPC. No processo penal, o prazo corre em dias corridos.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ],
+ "palette": "gabaritoclaro"
+}

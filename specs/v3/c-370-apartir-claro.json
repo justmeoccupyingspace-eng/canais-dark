@@ -1,0 +1,96 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "\"À partir de amanhã\" tem crase?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-28 12:00"
+ },
+ "tiktok": "Português do Escrevente TJSP: crase antes de verbo (a partir de). Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues #crase",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "\"À partir de amanhã\" tem crase?",
+   "hl": "À partir",
+   "icon": "✍️",
+   "narration": "À partir de amanhã, com crase. Tá certo? Nunca.",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · CRASE",
+   "q": "O uso do acento indicativo de crase está correto em:",
+   "alts": [
+    "À partir de amanhã, o prazo corre.",
+    "Começou à estudar ontem.",
+    "O prazo corre a partir de amanhã.",
+    "Ele foi à pé até o fórum.",
+    "Entregou o processo à ele."
+   ],
+   "correct": 2,
+   "narration": "Em qual frase está certo?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 54,
+   "asize": 44
+  },
+  {
+   "type": "text",
+   "text": "Letra C: a partir de amanhã, sem crase",
+   "hl": "a partir de amanhã, sem crase",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra C!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "Onde nunca tem crase",
+   "hl": "nunca",
+   "rows": [
+    {
+     "t": "Antes de verbo: a partir, a estudar",
+     "cue": "verbo"
+    },
+    {
+     "t": "Antes de palavra masculina: a pé",
+     "cue": "masculina"
+    },
+    {
+     "t": "Antes de pronome pessoal: a ele",
+     "cue": "pessoal"
+    },
+    {
+     "t": "Partir é verbo: a partir",
+     "cue": "Partir"
+    }
+   ],
+   "narration": "Crase nunca vem antes de verbo: a partir, a estudar. Nem antes de palavra masculina: a pé. Nem antes de pronome pessoal: a ele. Partir é verbo, então a partir de amanhã fica sem crase.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "À medida que tem crase; a partir, não",
+   "hl": "À medida",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: à medida que leva crase, porque medida é palavra feminina. A partir não, porque partir é verbo.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ],
+ "palette": "gabaritoclaro"
+}

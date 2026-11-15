@@ -1,0 +1,96 @@
+{
+ "channel": "gabarito",
+ "style": "v3",
+ "rate": "+5%",
+ "title": "\"Ao encontro de\" ou \"de encontro a\"?",
+ "publish": {
+  "channel": "C",
+  "privacy": "public",
+  "tiktok_at": "2026-11-23 12:00"
+ },
+ "tiktok": "Português do Escrevente TJSP: ao encontro de x de encontro a. Comenta a letra! Apostila com 182 questões comentadas: amostra grátis no WhatsApp da bio.\n#concursotjsp #escreventetjsp #concursopublico #vunesp #concurseiro #portugues #semantica",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "Escrevente TJSP · VUNESP",
+   "text": "\"Ao encontro de\" ou \"de encontro a\"?",
+   "hl": "de encontro a",
+   "icon": "✍️",
+   "narration": "Ao encontro de ou de encontro a? Uma é concordar, a outra é bater de frente.",
+   "min_duration": 2.0
+  },
+  {
+   "type": "quiz",
+   "label": "PORTUGUÊS · EXPRESSÕES",
+   "q": "O sentido da expressão destacada está correto em:",
+   "alts": [
+    "A decisão veio de encontro ao que pedimos, e comemoramos.",
+    "O carro foi ao encontro do muro e quebrou.",
+    "A proposta vai ao encontro do que defendemos, por isso a apoiamos.",
+    "A sentença veio ao encontro da lei e foi anulada.",
+    "Fomos de encontro aos amigos na saída."
+   ],
+   "correct": 2,
+   "narration": "Em qual frase o sentido está certo?",
+   "extra": 4.6,
+   "revealFromEnd": 1.6,
+   "countdown": 3,
+   "qsize": 50,
+   "asize": 38
+  },
+  {
+   "type": "text",
+   "text": "Letra C: vai ao encontro do que defendemos",
+   "hl": "vai ao encontro do que defendemos",
+   "icon": "✅",
+   "pose": "cheer",
+   "burst": true,
+   "narration": "Letra C!",
+   "min_duration": 1.8
+  },
+  {
+   "type": "steps",
+   "text": "A diferença",
+   "hl": "diferença",
+   "rows": [
+    {
+     "t": "Ao encontro de: a favor, em direção",
+     "cue": "favor"
+    },
+    {
+     "t": "De encontro a: contra, choque",
+     "cue": "choque"
+    },
+    {
+     "t": "Ir ao encontro de alguém: ir até ele",
+     "cue": "direção"
+    },
+    {
+     "t": "Bater de encontro ao muro",
+     "cue": "muro"
+    }
+   ],
+   "narration": "Ao encontro de é estar a favor, ou ir em direção a algo: a proposta vai ao encontro do que defendemos. De encontro a é oposição, choque: o carro foi de encontro ao muro.",
+   "min_duration": 3.0
+  },
+  {
+   "type": "text",
+   "kicker": "Pegadinha",
+   "text": "\"Veio de encontro\" e comemorou? Não combina",
+   "hl": "comemorou",
+   "icon": "⚠️",
+   "pose": "shock",
+   "narration": "Pegadinha: se veio de encontro ao pedido, foi contra. Não tem o que comemorar.",
+   "min_duration": 2.2
+  },
+  {
+   "type": "end",
+   "text": "Siga: 1 questão do TJSP por dia",
+   "hl": "1 questão",
+   "brand": "GABARITO DO DIA",
+   "narration": "Segue: uma questão por dia até a prova.",
+   "min_duration": 2.0
+  }
+ ],
+ "palette": "gabaritoclaro"
+}
