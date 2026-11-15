@@ -100,7 +100,7 @@ shots = [
     dict(act=4, type="lines", set="imf", fc=2025, series=["EST", "LTU", "POL"], years=[2006, 2031], start=2007.0, y=[0, 80000], src=PPPSRC, fmt="usd0", hl="POL",
          narration="Lithuania. In 2007, the average Lithuanian was about nineteen percent behind the average Estonian, adjusted for prices. {p} In 2020, Lithuania passed Estonia. Three years later, Poland did too. {pp} This year, Lithuania is about fourteen percent ahead of Estonia, and still about two percent ahead of Poland. Which is a whole other episode, and it's already on the channel. {p} Estonia went from first in this race to third.",
          keys=[dict(at="In 2007", year=2007.0, dur=1.5), dict(at="In 2020", year=2020.0, dur=1.5), dict(at="Three years later", year=2023.0, dur=1.5), dict(at="This year", year=2026.0, dur=3.0)],
-         labels=[dict(at="In 2007", iso="EST", year=2007), dict(at="In 2020", iso="LTU", year=2020), dict(at="Three years later", iso="POL", year=2023)],
+         labels=[dict(at="In 2007", iso="EST", year=2007)],  # rótulos de 2020/2023 cobriam os rótulos finais (stills 15/11)
          react=[dict(at="Lithuania", pose="pointL"), dict(at="passed Estonia", pose="shock"), dict(at="Poland did too", pose="cheer"), dict(at="from first", pose="think")]),
 
     # ---------------- 5 · THE PASS ----------------
