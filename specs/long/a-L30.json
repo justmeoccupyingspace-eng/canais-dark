@@ -306,41 +306,41 @@
    "start": 2005.0,
    "fmt": "pct1",
    "src": "IMF World Economic Outlook, October 2026 · real GDP growth, Estonia (annual %); 2026+ are IMF estimates and forecasts",
-   "narration": "Here's Estonia's economy, year by year, after inflation. {p} 2008: minus five. 2009: minus fourteen and a half percent, one of the worst years any economy in Europe had in that crisis. In the same year, Poland grew two point six percent. {pp} Estonia bounced back, then hit another wall: minus three in 2023, almost zero in 2024. {p} Poland hasn't had a single year of recession since 1991, except 2020.",
+   "narration": "Here's Estonia's economy, year by year, after inflation. {p} In 2008, it shrank about five percent. In 2009, it shrank fourteen and a half percent, one of the deepest drops in Europe in that recession. In the same year, Poland grew two point six percent. {pp} Estonia recovered, then slowed again: it shrank about three percent in 2023, and barely grew in 2024. {p} Poland's economy has shrunk in only one year since 1991: 2020.",
    "keys": [
     {
-     "at": "2008: minus five",
+     "at": "In 2008",
      "year": 2008.0,
      "dur": 1.5
     },
     {
-     "at": "2009: minus fourteen",
+     "at": "In 2009",
      "year": 2009.0,
      "dur": 2.0
     },
     {
-     "at": "bounced back",
+     "at": "Estonia recovered",
      "year": 2011.0,
      "dur": 2.0
     },
     {
-     "at": "minus three in 2023",
+     "at": "three percent in 2023",
      "year": 2023.0,
      "dur": 1.5
     },
     {
-     "at": "almost zero in 2024",
+     "at": "barely grew in 2024",
      "year": 2024.0,
      "dur": 1.5
     }
    ],
    "react": [
     {
-     "at": "minus five",
+     "at": "In 2008",
      "pose": "think"
     },
     {
-     "at": "minus fourteen",
+     "at": "fourteen and a half",
      "pose": "shock"
     },
     {
@@ -348,7 +348,7 @@
      "pose": "pointUp"
     },
     {
-     "at": "another wall",
+     "at": "slowed again",
      "pose": "shrug"
     },
     {
@@ -765,7 +765,7 @@
    ]
   },
   {
-   "say": "EST growth 2008 −5.1 (minus five), 2009 −14.6 (minus fourteen and a half); POL 2009 +2.6",
+   "say": "EST growth 2008 −5.1 (shrank about five), 2009 −14.6 (fourteen and a half); POL 2009 +2.6",
    "rule": "expr",
    "expr": "[-5.1, -14.6, 2.6]",
    "equal": [
@@ -775,7 +775,7 @@
    ]
   },
   {
-   "say": "EST 2023 −2.9 (minus three), 2024 0.1 (almost zero)",
+   "say": "EST 2023 −2.9 (shrank about three), 2024 0.1 (barely grew)",
    "rule": "expr",
    "expr": "[-2.9, 0.1]",
    "equal": [
