@@ -609,22 +609,22 @@
    "type": "stats",
    "src": "IMF World Economic Outlook, October 2026 · GDP per capita, PPP, current international $ (PPPPC); 2026+ are IMF estimates and forecasts",
    "title": "The pass, adjusted for prices",
-   "narration": "So here's the pass, in the IMF's numbers. {p} 2022: Estonia forty-seven thousand nine hundred and seventy dollars per person, Poland forty-seven thousand two hundred and forty-five. Estonia still ahead, by about seven hundred. {p} 2023: Poland forty-nine thousand three hundred and twenty-eight, Estonia forty-seven thousand five hundred and fifty-four. Poland ahead by about eighteen hundred. {pp} This year, by about six thousand four hundred. And by 2031, about ten thousand, in the IMF's forecast.",
+   "narration": "So here's the pass, in the IMF's numbers. {p} In 2022, Estonia was still ahead, by about seven hundred dollars per person. {p} In 2023, Poland passed it, and finished the year about eighteen hundred dollars ahead. {pp} This year, the gap is about six thousand four hundred. And by 2031, in the IMF's forecast, about ten thousand.",
    "stats": [
     {
-     "at": "Estonia forty-seven thousand nine hundred",
+     "at": "still ahead",
      "value": 47970.0,
      "fmt": "usd0",
      "label": "Estonia, 2022"
     },
     {
-     "at": "Poland forty-seven thousand two hundred",
+     "at": "about seven hundred",
      "value": 47245.0,
      "fmt": "usd0",
      "label": "Poland, 2022"
     },
     {
-     "at": "Poland ahead by about eighteen hundred",
+     "at": "eighteen hundred dollars ahead",
      "value": 1774.0,
      "fmt": "usd0",
      "label": "Poland ahead, 2023"
@@ -642,11 +642,11 @@
      "pose": "pointUp"
     },
     {
-     "at": "by about seven hundred",
+     "at": "still ahead",
      "pose": "think"
     },
     {
-     "at": "eighteen hundred",
+     "at": "Poland passed it",
      "pose": "cheer"
     },
     {

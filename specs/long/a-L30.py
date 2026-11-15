@@ -105,9 +105,9 @@ shots = [
 
     # ---------------- 5 · THE PASS ----------------
     dict(act=5, type="stats", src=PPPSRC, title="The pass, adjusted for prices",
-         narration="So here's the pass, in the IMF's numbers. {p} 2022: Estonia forty-seven thousand nine hundred and seventy dollars per person, Poland forty-seven thousand two hundred and forty-five. Estonia still ahead, by about seven hundred. {p} 2023: Poland forty-nine thousand three hundred and twenty-eight, Estonia forty-seven thousand five hundred and fifty-four. Poland ahead by about eighteen hundred. {pp} This year, by about six thousand four hundred. And by 2031, about ten thousand, in the IMF's forecast.",
-         stats=[dict(at="Estonia forty-seven thousand nine hundred", value=E[2022], fmt="usd0", label="Estonia, 2022"), dict(at="Poland forty-seven thousand two hundred", value=P[2022], fmt="usd0", label="Poland, 2022"), dict(at="Poland ahead by about eighteen hundred", value=P[2023] - E[2023], fmt="usd0", label="Poland ahead, 2023"), dict(at="about ten thousand", value=P[2031] - E[2031], fmt="usd0", label="Poland ahead, 2031 (IMF)")],
-         react=[dict(at="here's the pass", pose="pointUp"), dict(at="by about seven hundred", pose="think"), dict(at="eighteen hundred", pose="cheer"), dict(at="about ten thousand", pose="shock")]),
+         narration="So here's the pass, in the IMF's numbers. {p} In 2022, Estonia was still ahead, by about seven hundred dollars per person. {p} In 2023, Poland passed it, and finished the year about eighteen hundred dollars ahead. {pp} This year, the gap is about six thousand four hundred. And by 2031, in the IMF's forecast, about ten thousand.",
+         stats=[dict(at="still ahead", value=E[2022], fmt="usd0", label="Estonia, 2022"), dict(at="about seven hundred", value=P[2022], fmt="usd0", label="Poland, 2022"), dict(at="eighteen hundred dollars ahead", value=P[2023] - E[2023], fmt="usd0", label="Poland ahead, 2023"), dict(at="about ten thousand", value=P[2031] - E[2031], fmt="usd0", label="Poland ahead, 2031 (IMF)")],
+         react=[dict(at="here's the pass", pose="pointUp"), dict(at="still ahead", pose="think"), dict(at="Poland passed it", pose="cheer"), dict(at="about ten thousand", pose="shock")]),
 
     # ---------------- 6 · YOUR GUESS ----------------
     dict(act=6, type="host", bg="none",
