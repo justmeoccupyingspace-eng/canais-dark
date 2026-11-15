@@ -50,7 +50,7 @@ for y in range(1995, 2032):
 PPPSRC = IMF + " · GDP per capita, PPP, current international $ (PPPPC); 2026+ are IMF estimates and forecasts"
 USDSRC = IMF + " · GDP per capita, current US$ at market exchange rates (NGDPDPC); 2026+ are IMF estimates and forecasts"
 PPP2 = dict(set="imf", fc=2025, series=["EST", "POL"], years=[1995, 2031], y=[0, 80000], src=PPPSRC, fmt="usd0", hl="POL")
-RATCH = dict(set="rat", fc=2025, series=["EST"], years=[1995, 2031], y=[60, 160], src=IMF + " · Estonia's GDP per capita (PPP) as % of Poland's; 2026+ are IMF estimates and forecasts", fmt="pct0", hl="EST", ref=dict(value=100, label="Poland = 100%", pos="left"))
+RATCH = dict(set="rat", fc=2025, series=["EST"], years=[1995, 2031], y=[60, 160], src=IMF + " · Estonia's GDP per capita (PPP) as % of Poland's; 2026+ are IMF estimates and forecasts", fmt="pct0", hl="EST", ref=dict(value=100, label="Poland = 100%", pos="right"))
 
 shots = [
     # ---------------- 0 · COLD OPEN ----------------
@@ -97,10 +97,10 @@ shots = [
          narration="And if you're enjoying the series, the subscribe button is right there. {p} Now, the neighbor that never slowed down.",
          items=[dict(at="subscribe button", text="Subscribe", size=66), dict(at="never slowed down", text="The Baltic race", serif=True, size=66, color="acc")],
          react=[dict(at="subscribe button", pose="pointUp"), dict(at="never slowed down", pose="pointL")]),
-    dict(act=4, type="lines", set="imf", fc=2025, series=["EST", "LTU", "POL"], years=[2000, 2031], start=2007.0, y=[0, 80000], src=PPPSRC, fmt="usd0", hl="POL",
+    dict(act=4, type="lines", set="imf", fc=2025, series=["EST", "LTU", "POL"], years=[2006, 2031], start=2007.0, y=[0, 80000], src=PPPSRC, fmt="usd0", hl="POL",
          narration="Lithuania. In 2007, the average Lithuanian was about nineteen percent behind the average Estonian, adjusted for prices. {p} In 2020, Lithuania passed Estonia. Three years later, Poland did too. {pp} This year, Lithuania is about fourteen percent ahead of Estonia, and still about two percent ahead of Poland. Which is a whole other episode, and it's already on the channel. {p} Estonia went from first in this race to third.",
          keys=[dict(at="In 2007", year=2007.0, dur=1.5), dict(at="In 2020", year=2020.0, dur=1.5), dict(at="Three years later", year=2023.0, dur=1.5), dict(at="This year", year=2026.0, dur=3.0)],
-         labels=[dict(at="In 2007", iso="EST", year=2007), dict(at="In 2020", iso="LTU", year=2020), dict(at="Three years later", iso="POL", year=2023), dict(at="still about two percent", iso="LTU", year=2026)],
+         labels=[dict(at="In 2007", iso="EST", year=2007), dict(at="In 2020", iso="LTU", year=2020), dict(at="Three years later", iso="POL", year=2023)],
          react=[dict(at="Lithuania", pose="pointL"), dict(at="passed Estonia", pose="shock"), dict(at="Poland did too", pose="cheer"), dict(at="from first", pose="think")]),
 
     # ---------------- 5 · THE PASS ----------------

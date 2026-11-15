@@ -231,7 +231,7 @@
    "ref": {
     "value": 100,
     "label": "Poland = 100%",
-    "pos": "left"
+    "pos": "right"
    },
    "narration": "Here's Estonia as a share of Poland, adjusted for prices. {p} 1995: about even, a hundred and three percent. Then Estonia took off. A hundred and nine percent in 2000. And in 2007, a hundred and forty-six. {pp} Between 2000 and 2007, Estonia's economy grew almost seventy percent after inflation. Poland's grew about thirty. {p} Then came 2008.",
    "keys": [
@@ -528,7 +528,7 @@
     "POL"
    ],
    "years": [
-    2000,
+    2006,
     2031
    ],
    "start": 2007.0,
@@ -577,11 +577,6 @@
      "at": "Three years later",
      "iso": "POL",
      "year": 2023
-    },
-    {
-     "at": "still about two percent",
-     "iso": "LTU",
-     "year": 2026
     }
    ],
    "react": [
