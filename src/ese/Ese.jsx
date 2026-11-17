@@ -2,11 +2,12 @@
 // contorno brilhante, emoji 3D reagindo, setas verdes, selo "SÓ IMAGINAÇÃO", título-gancho enorme, legenda palavra a palavra).
 // Vertical 1080x1920 (Shorts) ou 1920x1080.
 import React, {useEffect, useMemo, useState} from 'react';
-import {AbsoluteFill, staticFile, useCurrentFrame, useVideoConfig, delayRender, continueRender} from 'remotion';
+import {AbsoluteFill, Img, staticFile, useCurrentFrame, useVideoConfig, delayRender, continueRender} from 'remotion';
 import {geoMercator, geoPath, geoCentroid, geoInterpolate, geoGraticule10} from 'd3-geo';
 import {feature, merge} from 'topojson-client';
 import world from 'world-atlas/countries-50m.json';
 import BRUF from './br_uf.json';
+import MERC from '../../public/geo/merc.json';
 
 const COUNTRIES = feature(world, world.objects.countries).features;
 const GEOMS = world.objects.countries.geometries;
@@ -184,7 +185,7 @@ const mergedOf = (isos) => {
 };
 
 // território de cada dono: bandeira do dono esticada na área conquistada + contorno brilhante
-const Territories = ({st, T, path, W, H, uid = 'v'}) => {
+const Territories = ({st, T, path, W, H, uid = 'v', sat = false}) => {
   const groups = {};
   for (const [iso, o] of Object.entries(st.own)) if (o) (groups[o] = groups[o] || []).push(iso);
   const order = Object.entries(groups).flatMap(([o, L]) => L.map((iso) => [o, iso])).sort((a, b) => (a[1].startsWith('BR-') ? 1 : 0) - (b[1].startsWith('BR-') ? 1 : 0));
@@ -212,7 +213,7 @@ const Territories = ({st, T, path, W, H, uid = 'v'}) => {
     const op = ease((T - st.ownAt[iso]) / 0.9);
     const id = `tp${uid}${iso}`;
     out.push(<g key={'t' + iso}><clipPath id={id}><path d={path(f)} /></clipPath>
-      <g clipPath={`url(#${id})`} opacity={op}><FlagArt iso={o} x={bb[0]} y={bb[1]} w={bb[2]} h={bb[3]} /><rect x={bb[0]} y={bb[1]} width={bb[2]} height={bb[3]} fill="url(#gTerr)" /></g>
+      <g clipPath={`url(#${id})`} opacity={op * (sat ? 0.86 : 1)}><FlagArt iso={o} x={bb[0]} y={bb[1]} w={bb[2]} h={bb[3]} /><rect x={bb[0]} y={bb[1]} width={bb[2]} height={bb[3]} fill="url(#gTerr)" /></g>
       <path d={path(f)} fill="none" stroke="#000" strokeOpacity={0.35 * op} strokeWidth={1.4} /></g>);
   }
   for (const [o, L] of Object.entries(groups)) {
@@ -232,6 +233,27 @@ const SplitFill = ({sp, proj, path, W, H, k = 1}) => {
     <g clipPath="url(#spF)"><g clipPath="url(#spW)"><FlagArt iso={sp.west} x={a} y={b} w={Math.max(1, xl - a)} h={d - b} /></g><g clipPath="url(#spE)"><FlagArt iso={sp.east} x={xl} y={b} w={Math.max(1, c - xl)} h={d - b} /></g><rect x={a} y={b} width={c - a} height={d - b} fill="url(#gTerr)" /></g>
     <path d={path(f)} fill="none" stroke="#fff" strokeWidth={3} strokeOpacity={0.8} />
     <path d={`M${xl},${-20} L${xl},${H + 20}`} stroke="#ffd400" strokeWidth={22} strokeOpacity={0.45} filter="url(#glow)" /><path d={`M${xl},${-20} L${xl},${H + 20}`} stroke="#000" strokeWidth={12} strokeOpacity={0.5} /><path d={`M${xl},${-20} L${xl},${H + 20}`} stroke="#ffd400" strokeWidth={7} strokeDasharray="26 14" /></g>;
+};
+
+// fundo de satélite (NASA, domínio público) em Mercator: só os blocos que aparecem; versão leve quando o zoom é baixo
+const Basemap = ({proj, W, H}) => {
+  const tl = proj([-180, MERC.latN]), br = proj([180, MERC.latS]);
+  const fw = br[0] - tl[0], fh = br[1] - tl[1];
+  const out = [];
+  for (const k of [-1, 0, 1]) {
+    const ox = tl[0] + k * fw;
+    if (ox > W || ox + fw < 0) continue;
+    if (fw < MERC.W * 0.3) {
+      out.push(<Img key={'lo' + k} src={staticFile('geo/merc_lo.jpg')} style={{position: 'absolute', left: ox, top: tl[1], width: fw + 1, height: fh, maxWidth: 'none'}} />);
+      continue;
+    }
+    for (const [i, j, x0, y0, w, h] of MERC.tiles) {
+      const x = ox + (x0 / MERC.W) * fw, y = tl[1] + (y0 / MERC.H) * fh, ww = (w / MERC.W) * fw, hh = (h / MERC.H) * fh;
+      if (x > W || x + ww < 0 || y > H || y + hh < 0) continue;
+      out.push(<Img key={`t${k}_${i}_${j}`} src={staticFile(`geo/m_${i}_${j}.jpg`)} style={{position: 'absolute', left: x, top: y, width: ww + 1.5, height: hh + 1.5, maxWidth: 'none'}} />);
+    }
+  }
+  return <AbsoluteFill style={{overflow: 'hidden', filter: 'saturate(1.15) brightness(0.92)'}}>{out}</AbsoluteFill>;
 };
 
 const Defs = () => (
@@ -275,20 +297,23 @@ export const Ese = ({es}) => {
   const hookOp = es.hook ? Math.max(0, Math.min(1, (es.hook_end || 3) - T)) : 0;
   const lines = (es.hook || '').split('|');
   const grat = useMemo(() => geoGraticule10(), []);
+  const sat = es.basemap !== false;
   return (
     <AbsoluteFill style={{background: 'radial-gradient(1200px 1500px at 50% 42%, #0f3d5c 0%, #0a2340 50%, #040b18 100%)', overflow: 'hidden'}}>
+      {sat ? <Basemap proj={proj} W={W} H={H} /> : null}
+      {sat ? <AbsoluteFill style={{background: 'radial-gradient(1100px 1500px at 50% 45%, rgba(0,8,20,0.05) 0%, rgba(0,8,20,0.25) 60%, rgba(0,6,16,0.6) 100%)'}} /> : null}
       <svg width={W} height={H} style={{position: 'absolute'}}>
         <Defs />
-        <path d={path(grat)} fill="none" stroke="#7fd3ff" strokeOpacity={0.07} strokeWidth={1.2} />
-        <g transform="translate(10,18)" opacity={0.6}>{COUNTRIES.map((c, i) => <path key={'s' + i} d={path(c)} fill="#01040b" />)}</g>
+        {sat ? null : <path d={path(grat)} fill="none" stroke="#7fd3ff" strokeOpacity={0.07} strokeWidth={1.2} />}
+        {sat ? null : <g transform="translate(10,18)" opacity={0.6}>{COUNTRIES.map((c, i) => <path key={'s' + i} d={path(c)} fill="#01040b" />)}</g>}
         {COUNTRIES.map((c, i) => {
           const iso = ISO_OF[String(c.id).padStart(3, '0')];
           const prev = iso && st.ownPrev[iso];
           const fill = prev && COL[prev] ? mix(LAND, COL[prev], 0.85) : (iso && COL[iso] ? mix(LAND, COL[iso], 0.09) : LAND);
-          return <path key={i} d={path(c)} fill={fill} stroke="#6f86a8" strokeOpacity={0.55} strokeWidth={1.3} />;
+          return <path key={i} d={path(c)} fill={sat ? (prev && COL[prev] ? COL[prev] : '#000') : fill} fillOpacity={sat ? (prev && COL[prev] ? 0.55 : 0.12) : 1} stroke={sat ? '#fff' : '#6f86a8'} strokeOpacity={sat ? 0.45 : 0.55} strokeWidth={1.3} />;
         })}
         {es.uf ? STATES.map((f) => <path key={f.id} d={path(f)} fill="none" stroke="#c9d6ea" strokeOpacity={0.35} strokeWidth={1.2} />) : null}
-        <Territories st={st} T={T} path={path} W={W} H={H} />
+        <Territories st={st} T={T} path={path} W={W} H={H} sat={sat} />
         {es.uf ? STATES.map((f) => <path key={'o' + f.id} d={path(f)} fill="none" stroke="#000" strokeOpacity={0.25} strokeWidth={1} />) : null}
         {st.split ? <SplitFill sp={st.split} proj={proj} path={path} W={W} H={H} k={ease((T - st.split.at) / 0.9)} /> : null}
         {st.line ? (() => {
@@ -345,13 +370,16 @@ export const EseThumb = ({es}) => {
   const st = {own, ownAt: Object.fromEntries(Object.keys(own).map((k) => [k, -10])), ownPrev: {}};
   const pt = (v) => { if (Array.isArray(v)) return proj(v); const c = featOf(v); return c ? proj({BRA: [-51, -10]}[v] || geoCentroid(c)) : null; };
   const lines = (th.title || '').split('|');
+  const sat = es.basemap !== false;
   return (
     <AbsoluteFill style={{background: 'radial-gradient(1000px 1400px at 50% 55%, #0f3d5c 0%, #0a2340 55%, #040b18 100%)'}}>
+      {sat ? <Basemap proj={proj} W={W} H={H} /> : null}
+      {sat ? <AbsoluteFill style={{background: 'radial-gradient(1000px 1400px at 50% 55%, rgba(0,8,20,0.0) 0%, rgba(0,8,20,0.3) 65%, rgba(0,6,16,0.65) 100%)'}} /> : null}
       <svg width={W} height={H} style={{position: 'absolute'}}>
         <Defs />
-        <g transform="translate(10,16)" opacity={0.6}>{COUNTRIES.map((c, i) => <path key={'s' + i} d={path(c)} fill="#01040b" />)}</g>
-        {COUNTRIES.map((c, i) => { const iso = ISO_OF[String(c.id).padStart(3, '0')]; return <path key={i} d={path(c)} fill={iso && COL[iso] ? mix(LAND, COL[iso], 0.09) : LAND} stroke="#6f86a8" strokeOpacity={0.55} strokeWidth={1.3} />; })}
-        <Territories st={st} T={10} path={path} W={W} H={H} uid="th" />
+        {sat ? null : <g transform="translate(10,16)" opacity={0.6}>{COUNTRIES.map((c, i) => <path key={'s' + i} d={path(c)} fill="#01040b" />)}</g>}
+        {COUNTRIES.map((c, i) => { const iso = ISO_OF[String(c.id).padStart(3, '0')]; return <path key={i} d={path(c)} fill={sat ? '#000' : (iso && COL[iso] ? mix(LAND, COL[iso], 0.09) : LAND)} fillOpacity={sat ? 0.12 : 1} stroke={sat ? '#fff' : '#6f86a8'} strokeOpacity={sat ? 0.45 : 0.55} strokeWidth={1.3} />; })}
+        <Territories st={st} T={10} path={path} W={W} H={H} uid="th" sat={sat} />
         {th.split ? <SplitFill sp={th.split} proj={proj} path={path} W={W} H={H} /> : null}
         {(th.arrows || []).map((a, i) => <Arrow key={i} a={pt(a.from)} b={pt(a.to)} t={5} color={a.color || '#b6ff3b'} w={18} />)}
         {(th.balls || []).map((b, i) => { const xy = pt(b.ll || b.iso); return xy ? <Ball key={i} uid={100 + i} iso={b.iso} x={xy[0] + (b.dx || 0)} y={xy[1] + (b.dy || 0)} r={b.r || 120} face={b.face} skin={b.skin || 'emoji'} t={1} /> : null; })}

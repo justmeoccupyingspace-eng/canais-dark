@@ -7,6 +7,7 @@ on:
       upload: {description: "A | B | vazio (só prévia)", required: false, default: ""}
       at: {description: "publishAt ISO UTC (vazio = o do spec)", required: false, default: ""}
       chunks: {description: "pedaços paralelos", required: false, default: "4"}
+      reuse: {description: "id de um run anterior: reaproveita a voz/tempos (sem gastar TTS), só renderiza de novo", required: false, default: ""}
 permissions:
   contents: write
 jobs:
@@ -21,12 +22,16 @@ jobs:
       - name: ffmpeg
         run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
       - run: pip install -q numpy scipy soundfile librosa num2words edge-tts faster-whisper
+      - if: inputs.reuse != ''
+        uses: actions/download-artifact@v4
+        with: {name: eseprep, path: out, run-id: "${{ inputs.reuse }}", github-token: "${{ secrets.GITHUB_TOKEN }}"}
       - id: s
         env:
           GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
         run: |
           ID=$(python -c "import json;print(json.load(open('${{ inputs.spec }}'))['id'])"); echo "id=$ID" >> $GITHUB_OUTPUT
-          mkdir -p out && python scripts/ese_build.py ${{ inputs.spec }} out/$ID
+          if [ -n "${{ inputs.reuse }}" ]; then echo "::notice title=reuso::voz do run ${{ inputs.reuse }}"; python scripts/ese_rebeat.py ${{ inputs.spec }} out/$ID; else
+          mkdir -p out && python scripts/ese_build.py ${{ inputs.spec }} out/$ID; fi
           echo "::notice title=fe::$(cat out/$ID/gates.json)"
       - uses: actions/upload-artifact@v4
         with: {name: eseprep, path: out, retention-days: 7}
