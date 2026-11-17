@@ -1,0 +1,423 @@
+{
+ "id": "a-en-001",
+ "channel": "A",
+ "lang": "en",
+ "format": "short",
+ "style": "clean",
+ "hook": "STALIN TRIED|TO STARVE|BERLIN",
+ "hook_end": 2.6,
+ "voice": "Charon",
+ "models": "gemini-3.8-flash-tts,gemini-3.1-flash-tts-preview",
+ "edge_voice": "en-US-AndrewMultilingualNeural",
+ "music": {
+  "track": "Volatile Reaction",
+  "vol": 0.11,
+  "alt": [
+   "Hidden Agenda",
+   "Investigations"
+  ]
+ },
+ "beats": [
+  {
+   "say": "In 1948, Stalin tried to starve two million people into surrender. The West answered by flying in everything, from flour to coal.",
+   "cam": {
+    "c": [
+     12.5,
+     52.0
+    ],
+    "s": 7.5
+   },
+   "date": "JUNE 1948",
+   "pins": [
+    {
+     "ll": [
+      13.4,
+      52.52
+     ],
+     "label": "Berlin",
+     "d": 1.0
+    }
+   ]
+  },
+  {
+   "say": "After the war, Germany was split between four powers, and so was Berlin. But Berlin sat deep inside the Soviet zone, more than 150 kilometers from the West.",
+   "cam": {
+    "c": [
+     11.0,
+     51.8
+    ],
+    "s": 5.0
+   },
+   "pins": [],
+   "zones": [
+    {
+     "coords": [
+      [
+       10.9,
+       54.0
+      ],
+      [
+       11.6,
+       54.15
+      ],
+      [
+       13.0,
+       54.45
+      ],
+      [
+       14.2,
+       53.95
+      ],
+      [
+       14.4,
+       53.3
+      ],
+      [
+       14.6,
+       52.6
+      ],
+      [
+       14.75,
+       52.05
+      ],
+      [
+       15.0,
+       51.2
+      ],
+      [
+       14.8,
+       50.85
+      ],
+      [
+       14.3,
+       50.88
+      ],
+      [
+       13.3,
+       50.6
+      ],
+      [
+       12.3,
+       50.25
+      ],
+      [
+       11.9,
+       50.4
+      ],
+      [
+       11.2,
+       50.35
+      ],
+      [
+       10.1,
+       50.55
+      ],
+      [
+       10.0,
+       51.1
+      ],
+      [
+       10.2,
+       51.5
+      ],
+      [
+       10.6,
+       51.75
+      ],
+      [
+       11.0,
+       52.2
+      ],
+      [
+       10.95,
+       52.6
+      ],
+      [
+       11.3,
+       53.05
+      ],
+      [
+       10.6,
+       53.4
+      ],
+      [
+       10.9,
+       53.7
+      ]
+     ],
+     "color": "#c1121f",
+     "label": "SOVIET ZONE",
+     "ly": 60,
+     "d": 4.5
+    },
+    {
+     "coords": [
+      [
+       13.09,
+       52.42
+      ],
+      [
+       13.12,
+       52.6
+      ],
+      [
+       13.25,
+       52.66
+      ],
+      [
+       13.4,
+       52.62
+      ],
+      [
+       13.46,
+       52.55
+      ],
+      [
+       13.45,
+       52.47
+      ],
+      [
+       13.38,
+       52.39
+      ],
+      [
+       13.2,
+       52.38
+      ]
+     ],
+     "color": "#1d4ed8",
+     "op": 0.8,
+     "d": 6.5
+    }
+   ],
+   "cards": [
+    {
+     "text": "Berlin to the West:",
+     "big": "150+ km",
+     "d": 8.0
+    }
+   ]
+  },
+  {
+   "say": "On June 24th, 1948, the Soviets cut every road, rail line and canal into West Berlin. The city had food for 36 days. Coal for 45.",
+   "date": "24 JUNE 1948",
+   "cards": [
+    {
+     "text": "Food:",
+     "big": "36 days",
+     "d": 5.0
+    },
+    {
+     "text": "Coal:",
+     "big": "45 days",
+     "d": 6.2
+    }
+   ],
+   "arrows": [
+    {
+     "from": [
+      7.5,
+      52.4
+     ],
+     "to": [
+      12.4,
+      52.5
+     ],
+     "color": "#ff4d4d",
+     "d": 0.8
+    }
+   ]
+  },
+  {
+   "say": "But there were three air corridors the Soviets had agreed to in writing. So the Americans and the British started flying.",
+   "cards": [],
+   "arrows": [
+    {
+     "from": [
+      9.99,
+      53.55
+     ],
+     "to": [
+      13.4,
+      52.52
+     ],
+     "d": 1.4,
+     "color": "#7fd3ff"
+    },
+    {
+     "from": [
+      9.73,
+      52.37
+     ],
+     "to": [
+      13.4,
+      52.52
+     ],
+     "d": 1.8,
+     "color": "#7fd3ff"
+    },
+    {
+     "from": [
+      8.68,
+      50.11
+     ],
+     "to": [
+      13.4,
+      52.52
+     ],
+     "d": 2.2,
+     "color": "#7fd3ff"
+    }
+   ],
+   "pins": [
+    {
+     "ll": [
+      9.99,
+      53.55
+     ],
+     "label": "Hamburg",
+     "left": true,
+     "d": 1.4
+    },
+    {
+     "ll": [
+      9.73,
+      52.37
+     ],
+     "label": "Hanover",
+     "left": true,
+     "d": 1.8
+    },
+    {
+     "ll": [
+      8.68,
+      50.11
+     ],
+     "label": "Frankfurt",
+     "left": true,
+     "d": 2.2
+    }
+   ]
+  },
+  {
+   "say": "At the peak, a plane landed in Berlin almost every minute.",
+   "cam": {
+    "c": [
+     13.3,
+     52.5
+    ],
+    "s": 22
+   },
+   "pins": [
+    {
+     "ll": [
+      13.4,
+      52.47
+     ],
+     "label": "Tempelhof",
+     "d": 0.6
+    }
+   ],
+   "cards": [
+    {
+     "text": "Peak day:",
+     "big": "1,398 flights",
+     "d": 1.6
+    }
+   ]
+  },
+  {
+   "say": "One pilot started dropping candy on tiny parachutes for the kids. Berliners called them the raisin bombers.",
+   "cards": [],
+   "date": "1948 – 1949"
+  },
+  {
+   "say": "In May 1949, after almost eleven months, Stalin gave up and reopened the roads.",
+   "cam": {
+    "c": [
+     11.0,
+     51.8
+    ],
+    "s": 5.0
+   },
+   "date": "12 MAY 1949",
+   "pins": [],
+   "arrows": [
+    {
+     "from": [
+      7.5,
+      52.4
+     ],
+     "to": [
+      12.4,
+      52.5
+     ],
+     "color": "#7dff9a",
+     "d": 0.6
+    }
+   ]
+  },
+  {
+   "say": "In total: about 278,000 flights and more than 2.3 million tons of supplies.",
+   "arrows": [],
+   "cards": [
+    {
+     "text": "Flights:",
+     "big": "~278,000",
+     "d": 0.6
+    },
+    {
+     "text": "Supplies:",
+     "big": "2.3 million tons",
+     "d": 2.6
+    }
+   ]
+  },
+  {
+   "say": "It cost 101 lives in crashes and accidents. But not a single shot was fired, and West Berlin stayed free.",
+   "cards": [
+    {
+     "text": "Lives lost:",
+     "big": "101",
+     "d": 1.0
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "STALIN TRIED|TO STARVE|BERLIN",
+  "c": [
+   11.5,
+   52.0
+  ],
+  "s": 5.5,
+  "y": 0.62,
+  "w": 1080,
+  "h": 1920
+ },
+ "yt": {
+  "title": "How the West Fed Berlin From the Sky for 11 Months",
+  "description": "June 1948: the Soviets cut every road, rail line and canal into West Berlin. For almost eleven months, the US and Britain supplied 2 million people by air: about 278,000 flights, 2.3 million tons of food and coal.\n\nFollow for more history on the map.\n\n#history #maps #geography",
+  "tags": [
+   "history",
+   "map",
+   "history on a map",
+   "military history",
+   "geography",
+   "history shorts",
+   "maps",
+   "berlin airlift",
+   "cold war",
+   "stalin",
+   "berlin blockade",
+   "candy bomber",
+   "1948"
+  ],
+  "lang": "en",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-17T22:00:00Z"
+ },
+ "style_prompt": "Read this in English as a documentary narrator for a fast history channel: confident, clear, slightly dramatic, brisk pace (about 165 words per minute), short pauses before dates and numbers. Never sound like an advert. Read the text exactly as written."
+}

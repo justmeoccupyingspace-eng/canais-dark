@@ -3,7 +3,7 @@
 // Vertical 1080x1920 (Shorts) ou 1920x1080.
 import React, {useEffect, useMemo, useState} from 'react';
 import {AbsoluteFill, Img, staticFile, useCurrentFrame, useVideoConfig, delayRender, continueRender} from 'remotion';
-import {geoMercator, geoPath, geoCentroid, geoInterpolate, geoGraticule10} from 'd3-geo';
+import {geoMercator, geoPath, geoCentroid, geoInterpolate, geoGraticule10, geoArea} from 'd3-geo';
 import {feature, merge} from 'topojson-client';
 import world from 'world-atlas/countries-50m.json';
 import BRUF from './br_uf.json';
@@ -15,18 +15,24 @@ const NUM = {BRA: '076', ARG: '032', CHL: '152', URY: '858', PRY: '600', BOL: '0
   MEX: '484', USA: '840', CAN: '124', PRT: '620', ESP: '724', FRA: '250', GBR: '826', DEU: '276', ITA: '380', RUS: '643', CHN: '156', IND: '356', AUS: '036', JPN: '392',
   PAN: '591', CRI: '188', NIC: '558', HND: '340', GTM: '320', SLV: '222', CUB: '192', DOM: '214', HTI: '332', BLZ: '084', AGO: '024', MOZ: '508', ZAF: '710', NGA: '566', EGY: '818', MAR: '504',
   NLD: '528', BEL: '056', CHE: '756', AUT: '040', POL: '616', UKR: '804', TUR: '792', SAU: '682', IRN: '364', KOR: '410', PRK: '408', IDN: '360', NZL: '554', GRL: '304', ISL: '352',
-  NOR: '578', SWE: '752', FIN: '246', DNK: '208', IRL: '372', GRC: '300', CPV: '132', GNB: '624', STP: '678', TLS: '626'};
+  NOR: '578', SWE: '752', FIN: '246', DNK: '208', IRL: '372', GRC: '300', CPV: '132', GNB: '624', STP: '678', TLS: '626',
+  FLK: '238', MYS: '458', SGP: '702', THA: '764', BLR: '112', EST: '233', LVA: '428', LTU: '440', CZE: '203', SVK: '703', HUN: '348', ROU: '642', BGR: '100', SRB: '688', HRV: '191', KAZ: '398', MNG: '496', VNM: '704', PHL: '608', TWN: '158', ISR: '376', SYR: '760', IRQ: '368', AFG: '004', PAK: '586', CUB2: '192'};
 const BYNUM = Object.fromEntries(COUNTRIES.map((c) => [String(c.id).padStart(3, '0'), c]));
 const ISO_OF = Object.fromEntries(Object.entries(NUM).map(([k, v]) => [v, k]));
 // estados do Brasil (ids 'BR-AC', 'BR-RS'...) para cenários internos
 const STATES = BRUF.features;
 const BYKEY = Object.fromEntries(STATES.map((f) => [f.id, f]));
+// recortes derivados: Alasca (parte do polígono dos EUA)
+{
+  const usa = COUNTRIES.find((c) => String(c.id) === '840');
+  if (usa) BYKEY['US-AK'] = {type: 'Feature', id: 'US-AK', properties: {}, geometry: {type: 'MultiPolygon', coordinates: usa.geometry.coordinates.filter((p) => p[0].every(([x, y]) => (x < -129 || x > 170) && y > 50))}};
+}
 const featOf = (k) => BYKEY[k] || BYNUM[NUM[k]];
 // cor de cada "dono" (cor principal da bandeira) e do brilho do contorno
 const COL = {BRA: '#1fa84a', ARG: '#6cb4ee', CHL: '#d52b1e', URY: '#3a6fd8', PRY: '#c8102e', BOL: '#f2c200', PER: '#e8112d', COL: '#fcd116', VEN: '#cf142b', ECU: '#ffdd00',
   GUY: '#009e49', SUR: '#377e3f', GUF: '#0055a4', MEX: '#006847', USA: '#3c3b6e', CAN: '#d80621', PRT: '#046a38', ESP: '#c60b1e', FRA: '#0055a4', GBR: '#012169', RUS: '#d52b1e', CHN: '#de2910',
-  DEU: '#222', ITA: '#009246', JPN: '#bc002d', IND: '#ff9933', NLD: '#ae1c28', CPV: '#003893', AGO: '#cc092f', MOZ: '#009739', GNB: '#ce1126', STP: '#12ad2b', TLS: '#dc241f', SUL: '#0a3d91', NOR: '#f07800'};
-const GLOW = {BRA: '#c6ff2e', ARG: '#7fd3ff', URY: '#8fb8ff', CHL: '#ff6b5b', BOL: '#ffe14d', PER: '#ff6b6b', PRY: '#ff8a8a', COL: '#ffe14d', VEN: '#ffd34d', ECU: '#ffe14d', PRT: '#7dff9a', FRA: '#8fb8ff', USA: '#8fb8ff', ESP: '#ffcf40', GUY: '#c6ff2e', SUR: '#9dff9d', SUL: '#7fe0ff', NOR: '#ffb347'};
+  DEU: '#222', ITA: '#009246', JPN: '#bc002d', IND: '#ff9933', NLD: '#ae1c28', CPV: '#003893', AGO: '#cc092f', MOZ: '#009739', GNB: '#ce1126', STP: '#12ad2b', TLS: '#dc241f', SUL: '#0a3d91', NDE: '#f07800', NOR: '#ba0c2f', FIN: '#002f6c', SWE: '#006aa7', SOV: '#cc0000', POL: '#dc143c', UKR: '#0057b7', MYS: '#010066', SGP: '#ef3340', THA: '#2d2a4a', FLK: '#012169', KOR: '#0047a0', PRK: '#024fa2', ISR: '#0038b8', DNK: '#c8102e'};
+const GLOW = {BRA: '#c6ff2e', ARG: '#7fd3ff', URY: '#8fb8ff', CHL: '#ff6b5b', BOL: '#ffe14d', PER: '#ff6b6b', PRY: '#ff8a8a', COL: '#ffe14d', VEN: '#ffd34d', ECU: '#ffe14d', PRT: '#7dff9a', FRA: '#8fb8ff', USA: '#8fb8ff', ESP: '#ffcf40', GUY: '#c6ff2e', SUR: '#9dff9d', SUL: '#7fe0ff', NDE: '#ffb347'};
 const SANS = 'PoppinsX, "Helvetica Neue", Arial, sans-serif';
 const ANTON = 'AntonX, Impact, "Arial Narrow", sans-serif';
 
@@ -84,7 +90,21 @@ const FlagArt = ({iso, x, y, w, h}) => {
     case 'AGO': return <g>{Hs(['#cc092f', '#000'])}{star(cx, cy, m * 0.1, '#ffcb00')}</g>;
     case 'CPV': return <g>{R('#003893')}<rect x={x} y={y + h * 0.5} width={w} height={h * 0.08} fill="#fff" /><rect x={x} y={y + h * 0.58} width={w} height={h * 0.08} fill="#cf2027" /><rect x={x} y={y + h * 0.66} width={w} height={h * 0.08} fill="#fff" /></g>;
     case 'SUL': return <g>{R('#0a3d91')}<rect x={x} y={y + h * 0.78} width={w} height={h * 0.22} fill="#1fa84a" /><rect x={x} y={y + h * 0.74} width={w} height={h * 0.05} fill="#ffd400" />{[[0.5, 0.18, 0.07], [0.5, 0.56, 0.08], [0.36, 0.36, 0.065], [0.62, 0.32, 0.06], [0.56, 0.44, 0.035]].map(([u, v, k], i) => <g key={i}>{star(x + w * u, y + h * v, m * k)}</g>)}</g>;
-    case 'NOR': return <g>{R('#f07800')}<rect x={x} y={y} width={w} height={h * 0.3} fill="#1f5fbf" /><rect x={x} y={y + h * 0.3} width={w} height={h * 0.05} fill="#fff" /><rect x={x} y={y + h * 0.82} width={w} height={h * 0.18 + 0.6} fill="#159447" /><circle cx={cx} cy={y + h * 0.56} r={m * 0.17} fill="#ffd21a" stroke="#fff" strokeWidth={m * 0.02} />{star(cx, y + h * 0.15, m * 0.07, '#fff')}</g>;
+    case 'NDE': return <g>{R('#f07800')}<rect x={x} y={y} width={w} height={h * 0.3} fill="#1f5fbf" /><rect x={x} y={y + h * 0.3} width={w} height={h * 0.05} fill="#fff" /><rect x={x} y={y + h * 0.82} width={w} height={h * 0.18 + 0.6} fill="#159447" /><circle cx={cx} cy={y + h * 0.56} r={m * 0.17} fill="#ffd21a" stroke="#fff" strokeWidth={m * 0.02} />{star(cx, y + h * 0.15, m * 0.07, '#fff')}</g>;
+    case 'FIN': return <g>{R('#fff')}<rect x={x + w * 0.28} y={y} width={w * 0.17} height={h} fill="#002f6c" /><rect x={x} y={y + h * 0.39} width={w} height={h * 0.22} fill="#002f6c" /></g>;
+    case 'SWE': return <g>{R('#006aa7')}<rect x={x + w * 0.31} y={y} width={w * 0.13} height={h} fill="#fecc02" /><rect x={x} y={y + h * 0.4} width={w} height={h * 0.2} fill="#fecc02" /></g>;
+    case 'NOR': return <g>{R('#ba0c2f')}<rect x={x + w * 0.25} y={y} width={w * 0.22} height={h} fill="#fff" /><rect x={x} y={y + h * 0.36} width={w} height={h * 0.28} fill="#fff" /><rect x={x + w * 0.3} y={y} width={w * 0.12} height={h} fill="#00205b" /><rect x={x} y={y + h * 0.43} width={w} height={h * 0.14} fill="#00205b" /></g>;
+    case 'DNK': return <g>{R('#c8102e')}<rect x={x + w * 0.3} y={y} width={w * 0.12} height={h} fill="#fff" /><rect x={x} y={y + h * 0.43} width={w} height={h * 0.14} fill="#fff" /></g>;
+    case 'SOV': return <g>{R('#cc0000')}{star(x + w * 0.16, y + h * 0.18, m * 0.07, '#ffd700')}<path d={`M${x + w * 0.1},${y + h * 0.42} q${w * 0.06},${h * 0.1} ${w * 0.14},${-h * 0.02}`} stroke="#ffd700" strokeWidth={m * 0.035} fill="none" /></g>;
+    case 'POL': return <g>{Hs(['#fff', '#dc143c'])}</g>;
+    case 'UKR': return <g>{Hs(['#0057b7', '#ffd700'])}</g>;
+    case 'MYS': return <g>{Hs(['#cc0001', '#fff', '#cc0001', '#fff', '#cc0001', '#fff', '#cc0001', '#fff', '#cc0001', '#fff', '#cc0001', '#fff', '#cc0001', '#fff'])}<rect x={x} y={y} width={w * 0.5} height={h * 0.57} fill="#010066" />{star(x + w * 0.3, y + h * 0.28, m * 0.09, '#fc0')}</g>;
+    case 'SGP': return <g>{Hs(['#ef3340', '#fff'])}<circle cx={x + w * 0.2} cy={y + h * 0.25} r={m * 0.11} fill="#fff" /></g>;
+    case 'THA': return <g>{Hs(['#a51931', '#f4f5f8', '#2d2a4a', '#2d2a4a', '#f4f5f8', '#a51931'])}</g>;
+    case 'FLK': return <g>{R('#012169')}<circle cx={x + w * 0.72} cy={cy} r={m * 0.2} fill="#fff" stroke="#00a" strokeWidth={m * 0.02} /></g>;
+    case 'ISR': return <g>{R('#fff')}<rect x={x} y={y + h * 0.12} width={w} height={h * 0.12} fill="#0038b8" /><rect x={x} y={y + h * 0.76} width={w} height={h * 0.12} fill="#0038b8" /></g>;
+    case 'KOR': return <g>{R('#fff')}<circle cx={cx} cy={cy} r={m * 0.22} fill="#cd2e3a" /><path d={`M${cx - m * 0.22},${cy} a${m * 0.11},${m * 0.11} 0 0 0 ${m * 0.22},0 a${m * 0.11},${m * 0.11} 0 0 1 ${m * 0.22},0 a${m * 0.22},${m * 0.22} 0 0 1 ${-m * 0.44},0`} fill="#0047a0" /></g>;
+    case 'PRK': return <g>{Hs(['#024fa2', '#fff', '#ed1c27', '#ed1c27', '#ed1c27', '#fff', '#024fa2'])}<circle cx={x + w * 0.35} cy={cy} r={m * 0.16} fill="#fff" />{star(x + w * 0.35, cy, m * 0.13, '#ed1c27')}</g>;
     case 'MOZ': return <g>{Hs(['#009739', '#000', '#fce100'])}<path d={`M${x},${y} L${x + w * 0.45},${cy} L${x},${y + h} Z`} fill="#d21034" /></g>;
     default: return R(COL[iso] || '#888');
   }
@@ -154,7 +174,7 @@ const Arrow = ({a, b, t, color = '#b6ff3b', w = 16}) => {
 const stateAt = (beats, T) => {
   let cam = beats[0]?.cam || {c: [-58, -18], s: 1.0}, prevCam = cam, camT = 0;
   const own = {}, ownPrev = {}, ownAt = {};
-  let balls = [], arrows = [], cards = [], hl = [], pins = [], split = null, line = null;
+  let balls = [], arrows = [], cards = [], hl = [], pins = [], split = null, line = null, zones = [], date = null, dateAt = 0;
   for (const b of beats) {
     if (b.t0 > T) break;
     if (b.cam) { prevCam = cam; cam = b.cam; camT = b.t0; }
@@ -166,12 +186,14 @@ const stateAt = (beats, T) => {
     if (b.pins !== undefined) pins = (b.pins || []).map((x, i) => ({...x, at: b.t0 + (x.d !== undefined ? x.d : 0.3 + i * 0.5)}));
     if (b.split !== undefined) split = b.split ? {...b.split, at: b.t0 + (b.split.d || 0)} : null;
     if (b.line !== undefined) line = b.line ? {...b.line, at: b.t0 + (b.line.d || 0)} : null;
+    if (b.zones !== undefined) zones = (b.zones || []).map((x) => ({...x, at: b.t0 + (x.d || 0)}));
+    if (b.date !== undefined) { date = b.date; dateAt = b.t0; }
     hl = b.hl || [];
   }
   const k = ease((T - camT) / 1.2);
   const c = geoInterpolate(prevCam.c, cam.c)(k);
   const s = prevCam.s + (cam.s - prevCam.s) * k;
-  return {c, s, own, ownPrev, ownAt, balls, arrows, cards, hl, pins, split, line};
+  return {c, s, own, ownPrev, ownAt, balls, arrows, cards, hl, pins, split, line, zones, date, dateAt};
 };
 
 const mergedCache = new Map();
@@ -188,7 +210,7 @@ const mergedOf = (isos) => {
 const Territories = ({st, T, path, W, H, uid = 'v', sat = false}) => {
   const groups = {};
   for (const [iso, o] of Object.entries(st.own)) if (o) (groups[o] = groups[o] || []).push(iso);
-  const order = Object.entries(groups).flatMap(([o, L]) => L.map((iso) => [o, iso])).sort((a, b) => (a[1].startsWith('BR-') ? 1 : 0) - (b[1].startsWith('BR-') ? 1 : 0));
+  const order = Object.entries(groups).flatMap(([o, L]) => L.map((iso) => [o, iso])).sort((a, b) => (a[1].includes('-') ? 1 : 0) - (b[1].includes('-') ? 1 : 0));
   const bboxOf = (L) => {
     let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
     for (const iso of L) {
@@ -209,7 +231,7 @@ const Territories = ({st, T, path, W, H, uid = 'v', sat = false}) => {
   }
   for (const [o, iso] of order) {
     const f = featOf(iso); let bb = BB[o]; if (!f || !bb) continue;
-    if (iso.startsWith('BR-')) bb = bboxOf(groups[o].filter((i) => i.startsWith('BR-'))) || bb;  // estados: bandeira inteira só na área dos estados desse dono
+    if (iso.includes('-')) bb = bboxOf(groups[o].filter((i) => i.includes('-'))) || bb;  // estados: bandeira inteira só na área dos estados desse dono
     const op = ease((T - st.ownAt[iso]) / 0.9);
     const id = `tp${uid}${iso}`;
     out.push(<g key={'t' + iso}><clipPath id={id}><path d={path(f)} /></clipPath>
@@ -218,7 +240,7 @@ const Territories = ({st, T, path, W, H, uid = 'v', sat = false}) => {
   }
   for (const [o, L] of Object.entries(groups)) {
     const settled = L.filter((i) => T - st.ownAt[i] > 0.45);
-    const cs = settled.filter((i) => !i.startsWith('BR-')), ss = settled.filter((i) => i.startsWith('BR-'));
+    const cs = settled.filter((i) => !i.includes('-')), ss = settled.filter((i) => i.includes('-'));
     const gc = GLOW[o] || '#ffe14d';
     const ds = (cs.length ? [path(mergedOf(cs))] : []).concat(ss.map((i) => path(featOf(i))));
     ds.forEach((g, j) => glow.push(<g key={'g' + o + j}><path d={g} fill="none" stroke={gc} strokeWidth={18} strokeOpacity={0.75} filter="url(#glow)" /><path d={g} fill="none" stroke={gc} strokeWidth={5} /><path d={g} fill="none" stroke="#fff" strokeWidth={1.6} strokeOpacity={0.9} /></g>));
@@ -256,6 +278,21 @@ const Basemap = ({proj, W, H}) => {
   return <AbsoluteFill style={{overflow: 'hidden', filter: 'saturate(1.15) brightness(0.92)'}}>{out}</AbsoluteFill>;
 };
 
+// zonas livres (frentes de batalha, áreas ocupadas): polígonos lon/lat do spec
+const zoneGeo = (z) => {
+  const ring = z.coords.concat([z.coords[0]]);
+  let g = {type: 'Polygon', coordinates: [ring]};
+  if (geoArea(g) > 2 * Math.PI) g = {type: 'Polygon', coordinates: [ring.slice().reverse()]};
+  return g;
+};
+const Zones = ({zones, path, T, vert}) => zones.map((z, i) => {
+  const k = ease((T - z.at) / 0.8); if (k <= 0) return null;
+  const g = zoneGeo(z), c = z.color || '#d62828', cen = path.centroid(g);
+  return <g key={'z' + i} opacity={k}><path d={path(g)} fill={c} fillOpacity={z.op || 0.42} stroke={c} strokeWidth={vert ? 5 : 4} strokeLinejoin="round" />
+    <path d={path(g)} fill="none" stroke="#fff" strokeOpacity={0.6} strokeWidth={1.5} strokeDasharray={z.dash ? '10 8' : 'none'} />
+    {z.label ? <text x={cen[0] + (z.lx || 0)} y={cen[1] + (z.ly || 0)} textAnchor="middle" fontFamily={SANS} fontWeight={800} fontSize={vert ? 34 : 26} fill="#fff" stroke="#000" strokeWidth={6} paintOrder="stroke" letterSpacing={2}>{z.label}</text> : null}</g>;
+});
+
 const Defs = () => (
   <defs>
     <radialGradient id="gEmoji" cx="38%" cy="32%" r="75%"><stop offset="0" stopColor="#fff3a0" /><stop offset="0.35" stopColor="#ffd21f" /><stop offset="0.85" stopColor="#f29a00" /><stop offset="1" stopColor="#c86e00" /></radialGradient>
@@ -290,9 +327,16 @@ export const Ese = ({es}) => {
   const words = es.words || [];
   const wi = words.findIndex((w) => T >= w.t0 - 0.05 && T < w.t1 + 0.25);
   let cap = null;
+  const clean = es.style === 'clean';
+  const chunks = useMemo(() => {  // estilo limpo: frases curtas (até 6 palavras, quebra em pontuação)
+    const out = []; let cur = [];
+    words.forEach((w, i) => { cur.push(i); if (cur.length >= 6 || /[.,;:?!]$/.test(w.w)) { out.push(cur); cur = []; } });
+    if (cur.length) out.push(cur);
+    const of = {}; out.forEach((c, j) => c.forEach((i) => { of[i] = j; })); return {out, of};
+  }, [words]);
   if (wi >= 0) {
-    const blk = Math.floor(wi / 3) * 3;
-    cap = words.slice(blk, blk + 3).map((w, i) => ({...w, on: blk + i === wi}));
+    if (clean) { const c = chunks.out[chunks.of[wi]]; cap = c.map((i) => ({...words[i], on: i === wi})); }
+    else { const blk = Math.floor(wi / 3) * 3; cap = words.slice(blk, blk + 3).map((w, i) => ({...w, on: blk + i === wi})); }
   }
   const hookOp = es.hook ? Math.max(0, Math.min(1, (es.hook_end || 3) - T)) : 0;
   const lines = (es.hook || '').split('|');
@@ -316,6 +360,7 @@ export const Ese = ({es}) => {
         <Territories st={st} T={T} path={path} W={W} H={H} sat={sat} />
         {es.uf ? STATES.map((f) => <path key={'o' + f.id} d={path(f)} fill="none" stroke="#000" strokeOpacity={0.25} strokeWidth={1} />) : null}
         {st.split ? <SplitFill sp={st.split} proj={proj} path={path} W={W} H={H} k={ease((T - st.split.at) / 0.9)} /> : null}
+        <Zones zones={st.zones} path={path} T={T} vert={vert} />
         {st.line ? (() => {
           const ln = st.line, xl = proj([ln.lon, 0])[0], k = ease((T - ln.at) / 1.4), y0 = -20, y1 = y0 + (H + 40) * k;
           return <g><path d={`M${xl},${y0} L${xl},${y1}`} stroke={ln.color || '#ffd400'} strokeWidth={22} strokeOpacity={0.5} filter="url(#glow)" /><path d={`M${xl},${y0} L${xl},${y1}`} stroke="#000" strokeWidth={12} strokeOpacity={0.6} /><path d={`M${xl},${y0} L${xl},${y1}`} stroke={ln.color || '#ffd400'} strokeWidth={7} strokeDasharray="26 14" /></g>;
@@ -330,7 +375,7 @@ export const Ese = ({es}) => {
       </svg>
       {st.pins.filter((p) => T >= p.at).map((p, i) => { const xy = pt(p.ll); if (!xy) return null; const k = ease((T - p.at) / 0.3); return (
         <div key={'p' + i} style={{position: 'absolute', ...(p.left ? {right: W - xy[0] - (vert ? 18 : 15)} : {left: xy[0] - (vert ? 18 : 15)}), top: xy[1], transform: `translateY(-50%) scale(${k})`, transformOrigin: p.left ? 'right center' : 'left center', display: 'flex', alignItems: 'center', gap: 8, flexDirection: p.left ? 'row-reverse' : 'row'}}>
-          <div style={{width: vert ? 26 : 20, height: vert ? 26 : 20, borderRadius: 99, background: p.color || '#fff', border: '5px solid #111', boxShadow: '0 0 18px #fff8'}} />
+          {p.iso ? <svg width={vert ? 54 : 42} height={vert ? 38 : 30} viewBox="0 0 54 38" style={{border: '3px solid #111', boxShadow: '0 4px 10px #000a'}}><FlagArt iso={p.iso} x={0} y={0} w={54} h={38} /></svg> : <div style={{width: vert ? 26 : 20, height: vert ? 26 : 20, borderRadius: 99, background: p.color || '#fff', border: '5px solid #111', boxShadow: '0 0 18px #fff8'}} />}
           <span style={{fontFamily: SANS, fontWeight: 800, fontSize: vert ? 34 : 26, color: '#fff', background: 'rgba(4,10,22,0.85)', padding: '3px 12px', borderRadius: 8, whiteSpace: 'nowrap'}}>{p.label}</span>
         </div>); })}
       {es.badge ? <Badge text={es.badge} vert={vert} op={1 - hookOp * 0} /> : null}
@@ -349,7 +394,13 @@ export const Ese = ({es}) => {
           {lines.map((ln, i) => <div key={i} style={{fontSize: (i === 0 && lines.length > 2 ? 0.62 : 1) * (vert ? 138 : 112), color: i === lines.length - 1 && lines.length > 1 ? '#d4ff3a' : '#fff'}}>{ln}</div>)}
         </div>
       ) : null}
-      {cap && hookOp < 0.5 ? (
+      {st.date ? <div style={{position: 'absolute', left: vert ? 50 : 40, top: vert ? 150 : 36, opacity: ease((T - st.dateAt) / 0.4), fontFamily: SANS, fontWeight: 800, fontSize: vert ? 34 : 26, letterSpacing: 3, color: '#111', background: '#f4f1e8', padding: '6px 16px', borderRadius: 4, boxShadow: '0 6px 16px #0008'}}>{st.date}</div> : null}
+      {cap && clean && hookOp < 0.5 ? (
+        <div style={{position: 'absolute', left: 60, right: 60, top: vert ? H * 0.76 : H * 0.82, textAlign: 'center', fontFamily: SANS, fontWeight: 800, fontSize: vert ? 58 : 44, lineHeight: 1.18, color: '#fff', WebkitTextStroke: '8px #000', paintOrder: 'stroke', textShadow: '0 4px 14px #000c'}}>
+          {cap.map((w, i) => <span key={i} style={{color: w.on ? '#ffd84d' : '#fff'}}>{w.w}{i < cap.length - 1 ? ' ' : ''}</span>)}
+        </div>
+      ) : null}
+      {cap && !clean && hookOp < 0.5 ? (
         <div style={{position: 'absolute', left: 40, right: 40, top: vert ? H * 0.75 : H * 0.8, textAlign: 'center', fontFamily: ANTON, fontSize: vert ? 96 : 72, lineHeight: 1.08, WebkitTextStroke: '6px #000', paintOrder: 'stroke', textShadow: '0 8px 0 #000'}}>
           {cap.map((w, i) => <span key={i} style={{color: w.on ? '#d4ff3a' : '#fff', margin: '0 12px', display: 'inline-block', transform: w.on ? 'scale(1.1)' : 'none'}}>{w.w.toUpperCase()}</span>)}
         </div>

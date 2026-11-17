@@ -1,0 +1,265 @@
+{
+ "id": "a-en-002",
+ "channel": "A",
+ "lang": "en",
+ "format": "short",
+ "style": "clean",
+ "hook": "RUSSIA SOLD|ALASKA FOR|2¢ AN ACRE",
+ "hook_end": 2.6,
+ "voice": "Charon",
+ "models": "gemini-3.8-flash-tts,gemini-3.1-flash-tts-preview",
+ "edge_voice": "en-US-AndrewMultilingualNeural",
+ "music": {
+  "track": "Volatile Reaction",
+  "vol": 0.11,
+  "alt": [
+   "Hidden Agenda",
+   "Investigations"
+  ]
+ },
+ "beats": [
+  {
+   "say": "In 1867, Russia sold a piece of land more than twice the size of Texas to the United States. The price: 7.2 million dollars.",
+   "cam": {
+    "c": [
+     -160,
+     62
+    ],
+    "s": 1.35
+   },
+   "date": "1867",
+   "own": {
+    "US-AK": "RUS",
+    "RUS": "RUS",
+    "USA": "USA"
+   },
+   "cards": [
+    {
+     "text": "Price:",
+     "big": "$7.2 million",
+     "iso": "USA",
+     "d": 5.5
+    }
+   ]
+  },
+  {
+   "say": "That's about two cents an acre.",
+   "cards": [
+    {
+     "text": "Per acre:",
+     "big": "~2 cents",
+     "d": 0.3
+    }
+   ]
+  },
+  {
+   "say": "Why would anyone sell that? Russia was broke after losing the Crimean War, and Alaska was almost impossible to defend.",
+   "cards": [],
+   "cam": {
+    "c": [
+     -150,
+     60
+    ],
+    "s": 0.75
+   },
+   "arrows": [
+    {
+     "from": [
+      40,
+      56
+     ],
+     "to": [
+      -150,
+      62
+     ],
+     "color": "#ff4d4d",
+     "d": 2.0
+    }
+   ]
+  },
+  {
+   "say": "Right next door was British Canada. If war came again, Britain could simply take it.",
+   "arrows": [
+    {
+     "from": [
+      -110,
+      58
+     ],
+     "to": [
+      -152,
+      64
+     ],
+     "color": "#ff4d4d",
+     "d": 1.4
+    }
+   ],
+   "own": {
+    "CAN": "GBR"
+   },
+   "od": 0.4
+  },
+  {
+   "say": "Russia had only a few hundred settlers there, mostly fur traders. And the sea otters they hunted were nearly gone.",
+   "arrows": [],
+   "cam": {
+    "c": [
+     -155,
+     60
+    ],
+    "s": 1.6
+   },
+   "pins": [
+    {
+     "ll": [
+      -135.33,
+      57.05
+     ],
+     "label": "New Archangel (Sitka)",
+     "left": true,
+     "d": 1.0
+    }
+   ]
+  },
+  {
+   "say": "So Russia offered it to the Americans. Secretary of State William Seward signed the deal on March 30th, 1867.",
+   "pins": [],
+   "date": "30 MARCH 1867",
+   "own": {
+    "US-AK": "USA"
+   },
+   "od": 4.0,
+   "cards": [
+    {
+     "text": "Signed by:",
+     "big": "William Seward",
+     "iso": "USA",
+     "d": 2.4
+    }
+   ]
+  },
+  {
+   "say": "Critics called it Seward's Folly. A giant icebox.",
+   "cards": [
+    {
+     "text": "The press:",
+     "big": "“Seward's Folly”",
+     "d": 0.4
+    }
+   ]
+  },
+  {
+   "say": "Then came gold. The Klondike rush next door pulled thousands north, and gold turned up in Alaska too, at Nome.",
+   "cards": [],
+   "date": "1896 – 1899",
+   "pins": [
+    {
+     "ll": [
+      -139.4,
+      64.06
+     ],
+     "label": "Klondike",
+     "d": 1.4
+    },
+    {
+     "ll": [
+      -165.4,
+      64.5
+     ],
+     "label": "Nome",
+     "left": true,
+     "d": 5.2
+    }
+   ]
+  },
+  {
+   "say": "In 1968, they found the largest oil field in North America, at Prudhoe Bay.",
+   "date": "1968",
+   "pins": [
+    {
+     "ll": [
+      -148.3,
+      70.3
+     ],
+     "label": "Prudhoe Bay",
+     "d": 1.6
+    }
+   ]
+  },
+  {
+   "say": "And the strangest part? In the Bering Strait, an American island and a Russian island sit less than four kilometers apart.",
+   "date": null,
+   "pins": [
+    {
+     "ll": [
+      -168.95,
+      65.75
+     ],
+     "label": "Little Diomede (US)",
+     "d": 3.0
+    },
+    {
+     "ll": [
+      -169.06,
+      65.78
+     ],
+     "label": "Big Diomede (Russia)",
+     "left": true,
+     "d": 4.2
+    }
+   ],
+   "cam": {
+    "c": [
+     -169.0,
+     65.9
+    ],
+    "s": 9
+   },
+   "cards": [
+    {
+     "text": "Distance:",
+     "big": "< 4 km",
+     "d": 6.0
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "RUSSIA SOLD|ALASKA FOR|2¢ AN ACRE",
+  "c": [
+   -160,
+   63
+  ],
+  "s": 1.3,
+  "y": 0.66,
+  "own": {
+   "US-AK": "RUS",
+   "RUS": "RUS",
+   "USA": "USA"
+  }
+ },
+ "yt": {
+  "title": "How Russia Sold Alaska for 2 Cents an Acre",
+  "description": "1867: Russia sold Alaska to the United States for $7.2 million, about 2 cents an acre. Broke after the Crimean War and unable to defend it, Russia let it go. Then came gold, and in 1968, the largest oil field in North America.\n\nFollow for more history on the map.\n\n#history #maps #geography",
+  "tags": [
+   "history",
+   "map",
+   "history on a map",
+   "military history",
+   "geography",
+   "history shorts",
+   "maps",
+   "alaska purchase",
+   "seward's folly",
+   "russia",
+   "alaska",
+   "1867",
+   "bering strait"
+  ],
+  "lang": "en",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-18T17:00:00Z"
+ },
+ "style_prompt": "Read this in English as a documentary narrator for a fast history channel: confident, clear, slightly dramatic, brisk pace (about 165 words per minute), short pauses before dates and numbers. Never sound like an advert. Read the text exactly as written."
+}

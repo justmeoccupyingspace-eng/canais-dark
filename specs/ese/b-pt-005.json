@@ -28,15 +28,15 @@
    },
    "own": {
     "BRA": "BRA",
-    "BR-MA": "NOR",
-    "BR-PI": "NOR",
-    "BR-CE": "NOR",
-    "BR-RN": "NOR",
-    "BR-PB": "NOR",
-    "BR-PE": "NOR",
-    "BR-AL": "NOR",
-    "BR-SE": "NOR",
-    "BR-BA": "NOR"
+    "BR-MA": "NDE",
+    "BR-PI": "NDE",
+    "BR-CE": "NDE",
+    "BR-RN": "NDE",
+    "BR-PB": "NDE",
+    "BR-PE": "NDE",
+    "BR-AL": "NDE",
+    "BR-SE": "NDE",
+    "BR-BA": "NDE"
    },
    "od": 1.0,
    "balls": [
@@ -276,10 +276,10 @@
     "s": 3.0
    },
    "own": {
-    "BR-PE": "NOR",
-    "BR-PB": "NOR",
-    "BR-RN": "NOR",
-    "BR-CE": "NOR"
+    "BR-PE": "NDE",
+    "BR-PB": "NDE",
+    "BR-RN": "NDE",
+    "BR-CE": "NDE"
    },
    "od": 3.6
   },
@@ -346,15 +346,15 @@
     "s": 2.1
    },
    "own": {
-    "BR-MA": "NOR",
-    "BR-PI": "NOR",
-    "BR-CE": "NOR",
-    "BR-RN": "NOR",
-    "BR-PB": "NOR",
-    "BR-PE": "NOR",
-    "BR-AL": "NOR",
-    "BR-SE": "NOR",
-    "BR-BA": "NOR"
+    "BR-MA": "NDE",
+    "BR-PI": "NDE",
+    "BR-CE": "NDE",
+    "BR-RN": "NDE",
+    "BR-PB": "NDE",
+    "BR-PE": "NDE",
+    "BR-AL": "NDE",
+    "BR-SE": "NDE",
+    "BR-BA": "NDE"
    },
    "od": 0.4,
    "pins": [
@@ -430,15 +430,15 @@
   "y": 0.64,
   "own": {
    "BRA": "BRA",
-   "BR-MA": "NOR",
-   "BR-PI": "NOR",
-   "BR-CE": "NOR",
-   "BR-RN": "NOR",
-   "BR-PB": "NOR",
-   "BR-PE": "NOR",
-   "BR-AL": "NOR",
-   "BR-SE": "NOR",
-   "BR-BA": "NOR"
+   "BR-MA": "NDE",
+   "BR-PI": "NDE",
+   "BR-CE": "NDE",
+   "BR-RN": "NDE",
+   "BR-PB": "NDE",
+   "BR-PE": "NDE",
+   "BR-AL": "NDE",
+   "BR-SE": "NDE",
+   "BR-BA": "NDE"
   },
   "balls": [
    {

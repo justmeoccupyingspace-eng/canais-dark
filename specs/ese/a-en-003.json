@@ -1,0 +1,356 @@
+{
+ "id": "a-en-003",
+ "channel": "A",
+ "lang": "en",
+ "format": "short",
+ "style": "clean",
+ "hook": "74 DAYS|8,000 MILES|FROM HOME",
+ "hook_end": 2.6,
+ "voice": "Charon",
+ "models": "gemini-3.8-flash-tts,gemini-3.1-flash-tts-preview",
+ "edge_voice": "en-US-AndrewMultilingualNeural",
+ "music": {
+  "track": "Volatile Reaction",
+  "vol": 0.11,
+  "alt": [
+   "Hidden Agenda",
+   "Investigations"
+  ]
+ },
+ "beats": [
+  {
+   "say": "In April 1982, Argentina invaded a British territory almost 13,000 kilometers from London.",
+   "cam": {
+    "c": [
+     -30,
+     -15
+    ],
+    "s": 0.42
+   },
+   "date": "APRIL 1982",
+   "own": {
+    "GBR": "GBR",
+    "ARG": "ARG",
+    "FLK": "GBR"
+   },
+   "arrows": [
+    {
+     "from": [
+      -0.13,
+      51.5
+     ],
+     "to": [
+      -57.85,
+      -51.69
+     ],
+     "color": "#7fd3ff",
+     "d": 2.0
+    }
+   ]
+  },
+  {
+   "say": "On April 2nd, Argentine forces landed near Stanley. The small garrison of Royal Marines surrendered within hours.",
+   "cam": {
+    "c": [
+     -59.0,
+     -51.8
+    ],
+    "s": 22
+   },
+   "date": "2 APRIL 1982",
+   "arrows": [
+    {
+     "from": [
+      -56.5,
+      -52.6
+     ],
+     "to": [
+      -57.9,
+      -51.75
+     ],
+     "color": "#ff4d4d",
+     "d": 0.6
+    }
+   ],
+   "own": {
+    "FLK": "ARG"
+   },
+   "od": 3.0,
+   "pins": [
+    {
+     "ll": [
+      -57.85,
+      -51.69
+     ],
+     "label": "Stanley",
+     "d": 0.8
+    }
+   ]
+  },
+  {
+   "say": "Argentina calls them Las Malvinas, and has claimed them since Britain took control in 1833.",
+   "arrows": [],
+   "cards": [
+    {
+     "text": "Argentina's claim:",
+     "big": "since 1833",
+     "iso": "ARG",
+     "d": 2.0
+    }
+   ]
+  },
+  {
+   "say": "Britain answered with a task force of more than 100 ships, sailing for the far end of the Atlantic.",
+   "cards": [],
+   "pins": [],
+   "cam": {
+    "c": [
+     -30,
+     -15
+    ],
+    "s": 0.42
+   },
+   "date": "5 APRIL 1982",
+   "arrows": [
+    {
+     "from": [
+      -4.2,
+      50.3
+     ],
+     "to": [
+      -14.37,
+      -7.95
+     ],
+     "color": "#7fd3ff",
+     "d": 1.4
+    }
+   ]
+  },
+  {
+   "say": "They stopped halfway, at Ascension Island, a tiny British rock in the middle of the ocean.",
+   "pins": [
+    {
+     "ll": [
+      -14.37,
+      -7.95
+     ],
+     "label": "Ascension Island",
+     "d": 0.8
+    }
+   ],
+   "arrows": [
+    {
+     "from": [
+      -14.37,
+      -7.95
+     ],
+     "to": [
+      -57.85,
+      -51.69
+     ],
+     "color": "#7fd3ff",
+     "d": 2.6
+    }
+   ]
+  },
+  {
+   "say": "On May 2nd, a British submarine sank the Argentine cruiser General Belgrano. 323 sailors died.",
+   "arrows": [],
+   "cam": {
+    "c": [
+     -61.5,
+     -54.0
+    ],
+    "s": 7
+   },
+   "date": "2 MAY 1982",
+   "pins": [
+    {
+     "ll": [
+      -61.6,
+      -55.4
+     ],
+     "label": "Belgrano sunk",
+     "left": true,
+     "d": 2.6
+    }
+   ],
+   "cards": [
+    {
+     "text": "ARA General Belgrano:",
+     "big": "323 dead",
+     "iso": "ARG",
+     "d": 3.6
+    }
+   ]
+  },
+  {
+   "say": "Two days later, an Argentine jet hit the destroyer HMS Sheffield with a single Exocet missile.",
+   "date": "4 MAY 1982",
+   "cards": [
+    {
+     "text": "HMS Sheffield:",
+     "big": "hit by one Exocet",
+     "iso": "GBR",
+     "d": 1.0
+    }
+   ]
+  },
+  {
+   "say": "On May 21st, British troops landed at San Carlos and crossed the islands on foot.",
+   "cards": [],
+   "cam": {
+    "c": [
+     -59.0,
+     -51.8
+    ],
+    "s": 22
+   },
+   "date": "21 MAY 1982",
+   "arrows": [
+    {
+     "from": [
+      -59.1,
+      -51.55
+     ],
+     "to": [
+      -58.3,
+      -51.65
+     ],
+     "color": "#7fd3ff",
+     "d": 1.0
+    },
+    {
+     "from": [
+      -58.3,
+      -51.65
+     ],
+     "to": [
+      -57.95,
+      -51.69
+     ],
+     "color": "#7fd3ff",
+     "d": 2.4
+    }
+   ],
+   "pins": [
+    {
+     "ll": [
+      -59.05,
+      -51.55
+     ],
+     "label": "San Carlos",
+     "left": true,
+     "d": 0.6
+    }
+   ]
+  },
+  {
+   "say": "On June 14th, Argentina surrendered at Stanley. Seventy-four days after the invasion.",
+   "arrows": [],
+   "date": "14 JUNE 1982",
+   "own": {
+    "FLK": "GBR"
+   },
+   "od": 1.2,
+   "pins": [
+    {
+     "ll": [
+      -57.85,
+      -51.69
+     ],
+     "label": "Stanley",
+     "d": 0.4
+    }
+   ]
+  },
+  {
+   "say": "649 Argentine and 255 British servicemen died, along with three islanders.",
+   "pins": [],
+   "cards": [
+    {
+     "text": "Argentina:",
+     "big": "649 dead",
+     "iso": "ARG",
+     "d": 0.4
+    },
+    {
+     "text": "Britain:",
+     "big": "255 dead",
+     "iso": "GBR",
+     "d": 2.0
+    },
+    {
+     "text": "Islanders:",
+     "big": "3",
+     "iso": "FLK",
+     "d": 3.4
+    }
+   ]
+  },
+  {
+   "say": "Argentina still claims the islands. In 2013, 99.8 percent of islanders voted to stay British.",
+   "cards": [
+    {
+     "text": "2013 referendum:",
+     "big": "99.8% stay British",
+     "iso": "FLK",
+     "d": 2.2
+    }
+   ],
+   "date": "2013"
+  }
+ ],
+ "thumb": {
+  "title": "74 DAYS|8,000 MILES|FROM HOME",
+  "c": [
+   -45,
+   -30
+  ],
+  "s": 0.6,
+  "y": 0.62,
+  "own": {
+   "GBR": "GBR",
+   "ARG": "ARG",
+   "FLK": "GBR"
+  },
+  "arrows": [
+   {
+    "from": [
+     -0.13,
+     51.5
+    ],
+    "to": [
+     -57.85,
+     -51.69
+    ],
+    "color": "#7fd3ff"
+   }
+  ]
+ },
+ "yt": {
+  "title": "How Britain Took Back the Falklands in 74 Days",
+  "description": "2 April 1982: Argentina invades the Falkland Islands. Britain sends a task force of 100+ ships across the Atlantic, via Ascension Island. 74 days later, Argentina surrenders at Stanley.\n\nFollow for more history on the map.\n\n#history #maps #geography",
+  "tags": [
+   "history",
+   "map",
+   "history on a map",
+   "military history",
+   "geography",
+   "history shorts",
+   "maps",
+   "falklands war",
+   "falklands",
+   "malvinas",
+   "1982",
+   "royal navy",
+   "argentina"
+  ],
+  "lang": "en",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-19T17:00:00Z"
+ },
+ "style_prompt": "Read this in English as a documentary narrator for a fast history channel: confident, clear, slightly dramatic, brisk pace (about 165 words per minute), short pauses before dates and numbers. Never sound like an advert. Read the text exactly as written."
+}
