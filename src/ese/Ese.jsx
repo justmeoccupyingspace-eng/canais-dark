@@ -26,6 +26,7 @@ const BYKEY = Object.fromEntries(STATES.map((f) => [f.id, f]));
 {
   const usa = COUNTRIES.find((c) => String(c.id) === '840');
   if (usa) BYKEY['US-AK'] = {type: 'Feature', id: 'US-AK', properties: {}, geometry: {type: 'MultiPolygon', coordinates: usa.geometry.coordinates.filter((p) => p[0].every(([x, y]) => (x < -129 || x > 170) && y > 50))}};
+  if (usa) BYKEY['US-48'] = {type: 'Feature', id: 'US-48', properties: {}, geometry: {type: 'MultiPolygon', coordinates: usa.geometry.coordinates.filter((p) => !p[0].every(([x, y]) => (x < -129 || x > 170) && y > 50))}};
 }
 const featOf = (k) => BYKEY[k] || BYNUM[NUM[k]];
 // cor de cada "dono" (cor principal da bandeira) e do brilho do contorno
@@ -212,7 +213,9 @@ const mergedOf = (isos) => {
 };
 
 // território de cada dono: bandeira do dono esticada na área conquistada + contorno brilhante
-const Territories = ({st, T, path, W, H, uid = 'v', sat = false}) => {
+// modo 'color' (história no mapa, estilo One Map): território em cor translúcida sobre o satélite, sem bandeira
+const TCOL = {GBR: '#2f6fe0', USA: '#2f6fe0', FRA: '#3a7bff', RUS: '#d62828', SOV: '#d62828', FIN: '#5aa9ff', JPN: '#e0352b', DEU: '#6b6b6b', ARG: '#74c0f0', FLK: '#2f6fe0', CAN: '#2f6fe0', THA: '#e6b800', MYS: '#2f6fe0', SGP: '#2f6fe0', POL: '#e8e8e8', ITA: '#2e9e5b', ESP: '#f2b705', CHN: '#e0352b', KOR: '#2f6fe0', PRK: '#d62828'};
+const Territories = ({st, T, path, W, H, uid = 'v', sat = false, color = false}) => {
   const groups = {};
   for (const [iso, o] of Object.entries(st.own)) if (o) (groups[o] = groups[o] || []).push(iso);
   const order = Object.entries(groups).flatMap(([o, L]) => L.map((iso) => [o, iso])).sort((a, b) => (a[1].includes('-') ? 1 : 0) - (b[1].includes('-') ? 1 : 0));
@@ -239,6 +242,7 @@ const Territories = ({st, T, path, W, H, uid = 'v', sat = false}) => {
     if (iso.includes('-')) bb = bboxOf(groups[o].filter((i) => i.includes('-'))) || bb;  // estados: bandeira inteira só na área dos estados desse dono
     const op = ease((T - st.ownAt[iso]) / 0.9) * ((st.focus || []).length && !st.focus.includes(o) && !st.focus.includes(iso) ? 0.25 : 1);
     const id = `tp${uid}${iso}`;
+    if (color) { out.push(<path key={'t' + iso} d={path(f)} fill={TCOL[o] || COL[o] || '#888'} fillOpacity={0.42 * op} stroke={TCOL[o] || COL[o] || '#888'} strokeOpacity={0.9 * op} strokeWidth={2.5} />); continue; }
     out.push(<g key={'t' + iso}><clipPath id={id}><path d={path(f)} /></clipPath>
       <g clipPath={`url(#${id})`} opacity={op * (sat ? 0.86 : 1)}><FlagArt iso={o} x={bb[0]} y={bb[1]} w={bb[2]} h={bb[3]} /><rect x={bb[0]} y={bb[1]} width={bb[2]} height={bb[3]} fill="url(#gTerr)" /></g>
       <path d={path(f)} fill="none" stroke="#000" strokeOpacity={0.35 * op} strokeWidth={1.4} /></g>);
@@ -249,7 +253,8 @@ const Territories = ({st, T, path, W, H, uid = 'v', sat = false}) => {
     const cs = settled.filter((i) => !i.includes('-')), ss = settled.filter((i) => i.includes('-'));
     const gc = GLOW[o] || '#ffe14d';
     const ds = (cs.length ? [path(mergedOf(cs))] : []).concat(ss.map((i) => path(featOf(i))));
-    ds.forEach((g, j) => glow.push(<g key={'g' + o + j}><path d={g} fill="none" stroke={gc} strokeWidth={18} strokeOpacity={0.75} filter="url(#glow)" /><path d={g} fill="none" stroke={gc} strokeWidth={5} /><path d={g} fill="none" stroke="#fff" strokeWidth={1.6} strokeOpacity={0.9} /></g>));
+    ds.forEach((g, j) => glow.push(color ? <g key={'g' + o + j}><path d={g} fill="none" stroke={TCOL[o] || gc} strokeWidth={4} strokeOpacity={0.95} /></g>
+      : <g key={'g' + o + j}><path d={g} fill="none" stroke={gc} strokeWidth={18} strokeOpacity={0.75} filter="url(#glow)" /><path d={g} fill="none" stroke={gc} strokeWidth={5} /><path d={g} fill="none" stroke="#fff" strokeWidth={1.6} strokeOpacity={0.9} /></g>));
   }
   return <g>{out}{glow}</g>;
 };
@@ -363,7 +368,7 @@ export const Ese = ({es}) => {
           return <path key={i} d={path(c)} fill={sat ? (prev && COL[prev] ? COL[prev] : '#000') : fill} fillOpacity={sat ? (prev && COL[prev] ? 0.55 : 0.12) : 1} stroke={sat ? '#fff' : '#6f86a8'} strokeOpacity={sat ? 0.45 : 0.55} strokeWidth={1.3} />;
         })}
         {es.uf ? STATES.map((f) => <path key={f.id} d={path(f)} fill="none" stroke="#c9d6ea" strokeOpacity={0.35} strokeWidth={1.2} />) : null}
-        <Territories st={st} T={T} path={path} W={W} H={H} sat={sat} />
+        <Territories st={st} T={T} path={path} W={W} H={H} sat={sat} color={es.terr === 'color' || (es.terr === undefined && es.style === 'clean')} />
         {es.uf ? STATES.map((f) => <path key={'o' + f.id} d={path(f)} fill="none" stroke="#000" strokeOpacity={0.25} strokeWidth={1} />) : null}
         {st.split ? <SplitFill sp={st.split} proj={proj} path={path} W={W} H={H} k={ease((T - st.split.at) / 0.9)} /> : null}
         <Zones zones={st.zones} path={path} T={T} vert={vert} />
@@ -436,7 +441,7 @@ export const EseThumb = ({es}) => {
         <Defs />
         {sat ? null : <g transform="translate(10,16)" opacity={0.6}>{COUNTRIES.map((c, i) => <path key={'s' + i} d={path(c)} fill="#01040b" />)}</g>}
         {COUNTRIES.map((c, i) => { const iso = ISO_OF[String(c.id).padStart(3, '0')]; return <path key={i} d={path(c)} fill={sat ? '#000' : (iso && COL[iso] ? mix(LAND, COL[iso], 0.09) : LAND)} fillOpacity={sat ? 0.12 : 1} stroke={sat ? '#fff' : '#6f86a8'} strokeOpacity={sat ? 0.45 : 0.55} strokeWidth={1.3} />; })}
-        <Territories st={st} T={10} path={path} W={W} H={H} uid="th" sat={sat} />
+        <Territories st={st} T={10} path={path} W={W} H={H} uid="th" sat={sat} color={es.terr === 'color' || (es.terr === undefined && es.style === 'clean')} />
         {th.split ? <SplitFill sp={th.split} proj={proj} path={path} W={W} H={H} /> : null}
         {(th.arrows || []).map((a, i) => <Arrow key={i} a={pt(a.from)} b={pt(a.to)} t={5} color={a.color || '#b6ff3b'} w={18} />)}
         {(th.balls || []).map((b, i) => { const xy = pt(b.ll || b.iso); return xy ? <Ball key={i} uid={100 + i} iso={b.iso} x={xy[0] + (b.dx || 0)} y={xy[1] + (b.dy || 0)} r={b.r || 120} face={b.face} skin={b.skin || 'emoji'} t={1} /> : null; })}

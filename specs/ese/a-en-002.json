@@ -31,7 +31,7 @@
    "own": {
     "US-AK": "RUS",
     "RUS": "RUS",
-    "USA": "USA"
+    "US-48": "USA"
    },
    "cards": [
     {
@@ -234,7 +234,7 @@
   "own": {
    "US-AK": "RUS",
    "RUS": "RUS",
-   "USA": "USA"
+   "US-48": "USA"
   }
  },
  "yt": {

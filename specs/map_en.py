@@ -68,7 +68,7 @@ save(2, "How Russia Sold Alaska for 2 Cents an Acre",
      "RUSSIA SOLD|ALASKA FOR|2¢ AN ACRE",
      [
          dict(say="In 1867, Russia sold a piece of land more than twice the size of Texas to the United States. The price: 7.2 million dollars.",
-              cam={"c": [-160, 62], "s": 1.35}, date="1867", own={"US-AK": "RUS", "RUS": "RUS", "USA": "USA"},
+              cam={"c": [-160, 62], "s": 1.35}, date="1867", own={"US-AK": "RUS", "RUS": "RUS", "US-48": "USA"},
               cards=[dict(text="Price:", big="$7.2 million", iso="USA", d=5.5)]),
          dict(say="That's about two cents an acre.",
               cards=[dict(text="Per acre:", big="~2 cents", d=0.3)]),
@@ -91,7 +91,7 @@ save(2, "How Russia Sold Alaska for 2 Cents an Acre",
               cam={"c": [-169.0, 65.9], "s": 9}, cards=[dict(text="Distance:", big="< 4 km", d=6.0)]),
      ],
      "1867: Russia sold Alaska to the United States for $7.2 million, about 2 cents an acre. Broke after the Crimean War and unable to defend it, Russia let it go. Then came gold, and in 1968, the largest oil field in North America.",
-     dict(title="RUSSIA SOLD|ALASKA FOR|2¢ AN ACRE", c=[-160, 63], s=1.3, y=0.66, own={"US-AK": "RUS", "RUS": "RUS", "USA": "USA"}), "2026-11-18T17:00:00Z",
+     dict(title="RUSSIA SOLD|ALASKA FOR|2¢ AN ACRE", c=[-160, 63], s=1.3, y=0.66, own={"US-AK": "RUS", "RUS": "RUS", "US-48": "USA"}), "2026-11-18T17:00:00Z",
      tags=["alaska purchase", "seward's folly", "russia", "alaska", "1867", "bering strait"])
 
 STANLEY = [-57.85, -51.69]
