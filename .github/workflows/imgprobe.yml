@@ -1,0 +1,17 @@
+name: imgprobe
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/imgprobe.py /tmp/o
+        env:
+          GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
+      - run: |
+          cd /tmp/o && git init -q && git config user.name producer && git config user.email producer@users.noreply.github.com
+          git checkout -q -b imgprobe-${{ github.run_id }} && git add . && git commit -qm probe
+          git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" imgprobe-${{ github.run_id }}

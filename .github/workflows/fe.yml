@@ -93,6 +93,6 @@ jobs:
           ID=${{ needs.prep.outputs.id }}
           mkdir -p /tmp/o && cp out/${ID}_720.mp4 out/thumb.jpg out/$ID/fe.json out/$ID/gates.json /tmp/o/ 2>/dev/null || true
           cp uploaded.json /tmp/o/ 2>/dev/null || true
-          git config user.name producer; git config user.email producer@users.noreply.github.com
-          git checkout --orphan fe-${{ github.run_id }} && git rm -rf . -q
-          cp /tmp/o/* . && git add . && git commit -qm prev && git push -f origin fe-${{ github.run_id }}
+          cd /tmp/o && git init -q && git config user.name producer && git config user.email producer@users.noreply.github.com
+          git checkout -q -b fe-${{ github.run_id }} && git add . && git commit -qm prev
+          git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" fe-${{ github.run_id }}
