@@ -1,0 +1,17 @@
+{
+ "id": "b-long-001",
+ "segments": [
+  {"spec": "specs/ese/b-pt-001.json", "run": 44013636512, "chapter": "E se o Acre ainda fosse da Bolívia?"},
+  {"spec": "specs/ese/b-pt-002.json", "run": 44014889885, "chapter": "E se o Uruguai fosse do Brasil?"},
+  {"spec": "specs/ese/b-pt-004.json", "run": 44015366384, "chapter": "E se Tordesilhas valesse até hoje?"},
+  {"spec": "specs/ese/b-pt-005.json", "run": 44016158246, "chapter": "E se o Nordeste fosse um país?"},
+  {"spec": "specs/ese/b-pt-003.json", "run": 44014995993, "chapter": "E se a América do Sul fosse um país só?"}
+ ],
+ "thumb": {"title": "O BRASIL QUASE|FOI OUTRO|PAÍS", "c": [-55, -16], "s": 1.15, "x": 0.68, "y": 0.55, "size": 104,
+           "own": {"BRA": "BRA", "BR-AC": "BOL", "URY": "BRA", "BOL": "BOL", "BR-MA": "NDE", "BR-PI": "NDE", "BR-CE": "NDE", "BR-RN": "NDE", "BR-PB": "NDE", "BR-PE": "NDE", "BR-AL": "NDE", "BR-SE": "NDE", "BR-BA": "NDE"},
+           "balls": [{"iso": "BRA", "ll": [-50, -11], "face": "shock", "r": 120}]},
+ "yt": {"title": "O mapa do Brasil quase foi outro: 5 simulações (Acre, Uruguai, Tordesilhas, Nordeste...)",
+        "description": "O Acre quase ficou com a Bolívia. O Uruguai já foi brasileiro. Tordesilhas deixaria o Brasil com um terço do tamanho. O Nordeste tentou ser país duas vezes. E se a América do Sul inteira virasse um país só?\nCenários imaginários; os fatos e números de apoio são reais (Banco Mundial, IBGE e fontes históricas).\n\nQual desses \"e se\" você queria ver de verdade? Comenta aí.",
+        "tags": ["curiosidades", "brasil", "mapas", "geografia", "história", "simulação", "e se", "acre", "uruguai", "tordesilhas", "nordeste", "américa do sul"], "lang": "pt-BR", "categoryId": "27"},
+ "publish": {"at": "2026-11-20T23:00:00Z"}
+}

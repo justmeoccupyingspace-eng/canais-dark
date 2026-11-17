@@ -182,7 +182,7 @@ const stateAt = (beats, T) => {
   for (const b of beats) {
     if (b.t0 > T) break;
     if (b.cam) { prevCam = cam; cam = b.cam; camT = b.t0; }
-    for (const [k, v] of Object.entries(b.own || {})) { ownPrev[k] = own[k] || null; own[k] = v; ownAt[k] = b.t0 + (b.od || 0); }
+    for (const [k, v] of Object.entries(b.own || {})) { ownPrev[k] = own[k] || null; own[k] = v; ownAt[k] = b === beats[0] && !b.od ? -5 : b.t0 + (b.od || 0); }  // 1º quadro já completo
     if (b.balls) balls = b.balls.map((x) => ({...x, at: b.t0 + (x.d || 0)}));
     if (b.addballs) balls = balls.concat(b.addballs.map((x) => ({...x, at: b.t0 + (x.d || 0)})));
     if (b.arrows !== undefined) arrows = (b.arrows || []).map((x) => ({...x, at: b.t0 + (x.d || 0)}));

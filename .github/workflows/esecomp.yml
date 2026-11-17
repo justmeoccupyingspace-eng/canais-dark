@@ -1,0 +1,95 @@
+name: esecomp
+run-name: esecomp ${{ inputs.comp }} ${{ inputs.upload }}
+on:
+  workflow_dispatch:
+    inputs:
+      comp: {description: "specs/comp/<id>.json", required: true}
+      upload: {description: "A | B | vazio (só prévia)", required: false, default: ""}
+permissions:
+  contents: write
+  actions: read
+jobs:
+  prep:
+    runs-on: ubuntu-latest
+    outputs:
+      n: ${{ steps.s.outputs.n }}
+      idx: ${{ steps.s.outputs.idx }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+      - id: s
+        env: {GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}"}
+        run: |
+          N=$(python3 -c "import json;print(len(json.load(open('${{ inputs.comp }}'))['segments']))")
+          for i in $(seq 0 $((N-1))); do
+            RUN=$(python3 -c "import json;print(json.load(open('${{ inputs.comp }}'))['segments'][$i]['run'])")
+            mkdir -p out/seg$i && gh run download $RUN -n eseprep -D out/seg$i -R ${{ github.repository }}
+          done
+          python3 scripts/ese_comp.py ${{ inputs.comp }} out
+          echo "n=$N" >> $GITHUB_OUTPUT
+          echo "idx=$(python3 -c "print(list(range($N)))")" >> $GITHUB_OUTPUT
+      - uses: actions/upload-artifact@v4
+        with: {name: compprep, path: out, retention-days: 3}
+  render:
+    needs: prep
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        i: ${{ fromJson(needs.prep.outputs.idx) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: 22, cache: npm}
+      - run: npm ci --no-audit --no-fund
+      - uses: actions/download-artifact@v4
+        with: {name: compprep, path: out}
+      - run: |
+          D=$(python3 -c "import json;print([x for x in json.load(open('out/segs.json')) if x['i']==${{ matrix.i }}][0]['dir'])")
+          CONC=4 node scripts/eserender.mjs $D/es_long.json video out/v${{ matrix.i }}.mp4 0 1 2>&1 | tail -2
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          ffmpeg -v error -y -i out/v${{ matrix.i }}.mp4 -i $D/audio_long.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest out/s${{ matrix.i }}.mp4
+      - uses: actions/upload-artifact@v4
+        with: {name: "compseg-${{ matrix.i }}", path: "out/s${{ matrix.i }}.mp4", retention-days: 2}
+  final:
+    needs: [prep, render]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: 22, cache: npm}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: npm ci --no-audit --no-fund
+      - name: ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+      - uses: actions/download-artifact@v4
+        with: {name: compprep, path: out}
+      - uses: actions/download-artifact@v4
+        with: {pattern: "compseg-*", path: out, merge-multiple: true}
+      - name: junção + miniatura
+        run: |
+          ID=$(python3 -c "import json;print(json.load(open('${{ inputs.comp }}'))['id'])"); echo "ID=$ID" >> $GITHUB_ENV
+          ls out/s*.mp4 | sort -V | sed "s|^|file '$PWD/|;s|$|'|" > out/list.txt
+          ffmpeg -v error -y -f concat -safe 0 -i out/list.txt -c:v copy -c:a aac -b:a 192k -movflags +faststart out/$ID.mp4
+          ffprobe -v error -show_entries format=duration,size -of default=nw=1 out/$ID.mp4
+          ffmpeg -v error -y -i out/$ID.mp4 -vf scale=-2:540 -c:v libx264 -crf 30 -preset veryfast -c:a aac -b:a 96k out/${ID}_540.mp4
+          node scripts/eserender.mjs out/thumb_es.json thumb out/thumb.jpg 2>&1 | tail -1
+      - name: YouTube + miniatura
+        if: inputs.upload != ''
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_A: ${{ secrets.YT_REFRESH_A }}
+          YT_REFRESH_B: ${{ secrets.YT_REFRESH_B }}
+        run: |
+          python scripts/upload.py ${{ inputs.upload }} out/$ID.mp4 out/yt.json private
+          VID=$(python -c "import json;print(json.load(open('uploaded.json'))['id'])")
+          echo "::notice title=enviado::$VID $(python -c "import json;print(json.load(open('uploaded.json'))['privacy'])")"
+          python scripts/lyt.py thumb ${{ inputs.upload }} $VID out/thumb.jpg || echo "sem thumb"
+      - name: prévia
+        run: |
+          mkdir -p /tmp/o && cp out/${ID}_540.mp4 out/thumb.jpg out/yt.json /tmp/o/ && cp uploaded.json /tmp/o/ 2>/dev/null || true
+          cd /tmp/o && git init -q && git config user.name producer && git config user.email producer@users.noreply.github.com
+          git checkout -q -b comp-${{ github.run_id }} && git add . && git commit -qm prev
+          git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" comp-${{ github.run_id }}
