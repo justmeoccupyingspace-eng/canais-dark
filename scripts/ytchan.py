@@ -3,7 +3,7 @@ MODE=playlist põe os IDS na playlist cujo título é PL (não cria playlist nov
 MODE=watermark põe o avatar do canal como marca d'água de inscrição em todos os vídeos (canto inferior direito, o único que o Studio aceita).
   ATENÇÃO (08/11/2026): a API responde 204 mas o Studio não aplica; a marca d'água do Chartbound foi posta pelo Studio (Personalização → Marca-d'água do vídeo).
 MODE=localize grava título/descrição traduzidos a partir do JSON em LOC ({id: {lang: {title, description}}}); o original fica igual.
-Nada é apagado. Uso: CH=B MODE=list|private|playlist|localize [IDS=a,b] [ALL=1] [PL=título] [LOC=arquivo.json] python scripts/ytchan.py out.json"""
+Nada é apagado. Uso: CH=B MODE=list|private|playlist|localize|branding [IDS=a,b] [ALL=1] [PL=título] [LOC=arquivo.json] python scripts/ytchan.py out.json"""
 import json, os, sys, urllib.error, urllib.parse, urllib.request
 def post(url, data):
     return json.load(urllib.request.urlopen(urllib.request.Request(url, data=urllib.parse.urlencode(data).encode())))
@@ -82,6 +82,17 @@ if mode == "localize":
         locs = {**v.get("localizations", {}), **langs}
         r = call("PUT", API + "videos?part=snippet,localizations", tok, {"id": vid, "snippet": snippet, "localizations": locs})
         localized.append(vid); print(f"::notice::{vid} localizado em {','.join(langs)}: {list(langs.values())[0]['title'][:60]}")
+branded = None
+if mode == "branding":
+    # BRAND = arquivo JSON {title?, description, keywords, country, defaultLanguage}; mescla com o que o canal já tem (nada é apagado)
+    want = json.load(open(os.environ["BRAND"]))
+    cur = call("GET", API + "channels?part=brandingSettings&mine=true", tok)["items"][0]
+    bs = cur.get("brandingSettings", {})
+    chs = {**bs.get("channel", {}), **{k: v for k, v in want.items() if k in ("title", "description", "keywords", "country", "defaultLanguage")}}
+    r = call("PUT", API + "channels?part=brandingSettings", tok, {"id": cur["id"], "brandingSettings": {**bs, "channel": chs}})
+    branded = r.get("brandingSettings", {}).get("channel", {})
+    after = call("GET", API + "channels?part=snippet&mine=true", tok)["items"][0]["snippet"]
+    print(f"::notice::branding gravado; título agora: {after['title']} | descrição: {after.get('description','')[:80]}")
 wm = None
 if mode == "watermark":
     # marca d'água de inscrição: usa o avatar do próprio canal; POS = topRight|bottomRight|...; no computador, clicar nela inscreve
@@ -99,4 +110,4 @@ if mode == "watermark":
             print(f"::warning::watermark {pos}: {e.code} {e.read()[:300]}")
     if not wm:
         sys.exit("marca d'água não aplicada")
-json.dump(dict(channel=c["snippet"]["title"], rows=rows, made_private=done, playlist_added=added, localized=localized, watermark=wm), open(sys.argv[1], "w"), indent=1, ensure_ascii=False)
+json.dump(dict(channel=c["snippet"]["title"], rows=rows, made_private=done, playlist_added=added, localized=localized, watermark=wm, branded=branded), open(sys.argv[1], "w"), indent=1, ensure_ascii=False)
