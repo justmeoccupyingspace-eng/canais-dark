@@ -18,6 +18,7 @@
 
 ## Agenda publicada (17/11)
 - B: Cco17qjuIU0 Uruguai 17/11 14:00Z · QhWbhEEXkhw Acre 17/11 19:30Z · kyXKD4TAY8Y América do Sul 18/11 15:00Z · UjL00ZRCgGI Tordesilhas 18/11 21:00Z · 3AWSP_gZD9c Nordeste 19/11 15:00Z (1º com satélite).
+- 17/11 08:11Z: disparados a-en-001..003 (upload A) e b-pt-006..008 (upload B). Compilação b-long-001 (prévia OK, run 44020083445) fica para 18/11 08:10Z (cota de upload: ~6 por dia).
 - Fila após 08:00Z de 17/11: a-en-001 (17/11 22:00Z), a-en-002 (18/11 17:00Z), a-en-003 (19/11 17:00Z); b-pt-006 (19/11 21:00Z), b-pt-007 (20/11 15:00Z), b-pt-008 (20/11 21:00Z); compilação b-long-001 (20/11 23:00Z) se a prévia estiver boa.
 
 # PLANO v3 — DINHEIRO PRIMEIRO (07/11/2026 23:55 BRT). Objetivo final do Kauan: monetizar e ter renda.
