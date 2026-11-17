@@ -1,0 +1,114 @@
+{
+ "id": "b-es-004",
+ "channel": "B",
+ "lang": "es",
+ "voice": "es-MX-JorgeNeural",
+ "rate": "-10%",
+ "pitch": "-2Hz",
+ "format": "long",
+ "scene": "night",
+ "seed": 51,
+ "kicker": "Oración de la noche",
+ "title": "Oración de protección para esta noche",
+ "subtitle": "Inspirada en el Salmo 91",
+ "lines": [
+  {
+   "text": "Señor, esta noche busco refugio en Ti."
+  },
+  {
+   "text": "Como dice tu palabra: el que habita al abrigo del Altísimo morará bajo la sombra del Omnipotente.",
+   "ref": "Salmo 91:1"
+  },
+  {
+   "text": "Quiero habitar ahí, Padre. No solo visitarte cuando tengo miedo, sino vivir cerca de Ti."
+  },
+  {
+   "text": "Tú eres mi esperanza y mi castillo. En Ti confío.",
+   "pause": 1.2
+  },
+  {
+   "text": "Protege mi vida esta noche. Protege mi cuerpo mientras duermo y mi mente mientras sueño."
+  },
+  {
+   "text": "Protege mi casa de todo peligro, de todo accidente y de toda mano que quiera hacer daño."
+  },
+  {
+   "text": "Cubre con tu sombra a los que amo, estén donde estén."
+  },
+  {
+   "text": "Al que va por la carretera, al que trabaja de noche, al que está en un hospital, al que está solo."
+  },
+  {
+   "text": "Tu palabra promete que no temerás el terror nocturno, ni la flecha que vuele de día.",
+   "ref": "Salmo 91:5"
+  },
+  {
+   "text": "Entonces, en tu nombre, suelto el miedo.",
+   "pause": 1.4
+  },
+  {
+   "text": "Suelto el miedo a la enfermedad, el miedo a perder lo que tengo, el miedo a quedarme solo."
+  },
+  {
+   "text": "Manda a tus ángeles a cuidarme en todos mis caminos, como lo prometiste."
+  },
+  {
+   "text": "Y si esta noche algo intenta robarme la paz, que encuentre la puerta cerrada, porque esta casa te pertenece."
+  },
+  {
+   "text": "Gracias por las veces que me libraste sin que yo lo supiera.",
+   "pause": 1.2
+  },
+  {
+   "text": "Gracias por los peligros que nunca llegaron, porque Tú estabas delante."
+  },
+  {
+   "text": "Hoy duermo bajo tus alas. Y mañana, cuando despierte, seguiré bajo ellas."
+  },
+  {
+   "text": "En el nombre de Jesús."
+  }
+ ],
+ "outro": "Amén.",
+ "outro2": "Suscríbete y comparte esta oración",
+ "pause": 0.9,
+ "intro": 3.8,
+ "music": {
+  "track": "Meditation Impromptu 03",
+  "vol": 0.17,
+  "alt": [
+   "Meditation Impromptu 02",
+   "Dreamer"
+  ]
+ },
+ "thumb": {
+  "top": "SALMO 91",
+  "big": "Duerme bajo la protección de Dios",
+  "sub": "Oración de protección para esta noche"
+ },
+ "yt": {
+  "title": "Oración de Protección para Esta Noche | Inspirada en el Salmo 91 🙏",
+  "description": "Una oración de protección para tu vida, tu casa y tu familia, inspirada en el Salmo 91. Escúchala antes de dormir y descansa bajo las alas de Dios.\n\nSi esta oración tocó tu corazón, escribe \"Amén\" en los comentarios y compártela con alguien que la necesite hoy.\nSuscríbete para recibir una oración nueva cada noche.\n\n{music}\nVoz generada con inteligencia artificial; oración escrita para este canal.\n\n#oracion #oraciondelanoche #dios #fe #jesus",
+  "tags": [
+   "oración",
+   "oración de la noche",
+   "oración para dormir",
+   "dios",
+   "jesús",
+   "fe",
+   "oración poderosa",
+   "salmos",
+   "paz",
+   "oracion catolica",
+   "oracion cristiana",
+   "salmo 91",
+   "oración de protección",
+   "salmo 91 para dormir"
+  ],
+  "lang": "es",
+  "categoryId": "22"
+ },
+ "publish": {
+  "at": "2026-11-21T01:00:00Z"
+ }
+}

@@ -1,0 +1,111 @@
+{
+ "id": "b-es-003",
+ "channel": "B",
+ "lang": "es",
+ "voice": "es-MX-JorgeNeural",
+ "rate": "-10%",
+ "pitch": "-2Hz",
+ "format": "long",
+ "scene": "sky",
+ "seed": 37,
+ "kicker": "Oración",
+ "title": "Oración para la ansiedad",
+ "subtitle": "Dios tiene el control",
+ "lines": [
+  {
+   "text": "Señor, hoy mi mente no se detiene. El corazón va rápido y el pecho se siente apretado."
+  },
+  {
+   "text": "Tengo miedo de cosas que todavía no pasaron, y me canso pensando en todo lo que podría salir mal."
+  },
+  {
+   "text": "Por eso me detengo ahora, aunque sea un momento, para respirar delante de Ti.",
+   "pause": 1.6
+  },
+  {
+   "text": "Respiro, y recuerdo que Tú eres Dios, y yo no."
+  },
+  {
+   "text": "No tengo que controlar todo. No tengo que resolver mañana esta noche."
+  },
+  {
+   "text": "Tu palabra me dice: por nada estén afanosos, sino presenten sus peticiones a Dios en oración, con acción de gracias.",
+   "ref": "Filipenses 4:6"
+  },
+  {
+   "text": "Entonces te presento lo que me inquieta, Padre.",
+   "pause": 1.2
+  },
+  {
+   "text": "El trabajo, la salud, el dinero, las relaciones, el futuro. Lo pongo todo sobre la mesa, delante de Ti."
+  },
+  {
+   "text": "Y te doy gracias, aunque todavía no vea la respuesta, porque sé que me escuchas."
+  },
+  {
+   "text": "Cambia mi ansiedad por tu paz, esa paz que no se explica, que sobrepasa todo entendimiento."
+  },
+  {
+   "text": "Cuando vuelvan los pensamientos que me asustan, recuérdame esta oración.",
+   "pause": 1.2
+  },
+  {
+   "text": "Recuérdame que ya me sostuviste en días peores, y que no me soltaste."
+  },
+  {
+   "text": "Dame un descanso verdadero. Para el cuerpo, para la mente y para el alma."
+  },
+  {
+   "text": "Y si hoy alguien a mi lado también está luchando en silencio, dale a esa persona la misma paz."
+  },
+  {
+   "text": "Gracias, Señor, porque tienes el control, aun cuando yo siento que lo perdí todo.",
+   "pause": 1.4
+  },
+  {
+   "text": "En tus manos estoy seguro. En el nombre de Jesús."
+  }
+ ],
+ "outro": "Amén.",
+ "outro2": "Suscríbete y comparte esta oración",
+ "pause": 0.9,
+ "intro": 3.8,
+ "music": {
+  "track": "Dreamer",
+  "vol": 0.17,
+  "alt": [
+   "Meditation Impromptu 02",
+   "Dreamer"
+  ]
+ },
+ "thumb": {
+  "top": "ORACIÓN PARA LA ANSIEDAD",
+  "big": "Respira. Dios tiene el control",
+  "sub": "Escúchala cuando sientas miedo"
+ },
+ "yt": {
+  "title": "Oración para la Ansiedad | Dios Tiene el Control 🙏 Escucha Esto Cuando Sientas Miedo",
+  "description": "Una oración corta para los momentos de ansiedad, preocupación y miedo al futuro. Respira, escucha y entrega a Dios lo que no puedes controlar.\n\nSi esta oración tocó tu corazón, escribe \"Amén\" en los comentarios y compártela con alguien que la necesite hoy.\nSuscríbete para recibir una oración nueva cada noche.\n\n{music}\nVoz generada con inteligencia artificial; oración escrita para este canal.\n\n#oracion #oraciondelanoche #dios #fe #jesus",
+  "tags": [
+   "oración",
+   "oración de la noche",
+   "oración para dormir",
+   "dios",
+   "jesús",
+   "fe",
+   "oración poderosa",
+   "salmos",
+   "paz",
+   "oracion catolica",
+   "oracion cristiana",
+   "oración para la ansiedad",
+   "oración para la paz",
+   "dios tiene el control"
+  ],
+  "lang": "es",
+  "categoryId": "22"
+ },
+ "publish": {
+  "at": "2026-11-20T01:00:00Z"
+ }
+}

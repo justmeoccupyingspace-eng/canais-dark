@@ -1,0 +1,74 @@
+{
+ "id": "b-es-s02",
+ "channel": "B",
+ "lang": "es",
+ "voice": "es-MX-JorgeNeural",
+ "rate": "-10%",
+ "pitch": "-2Hz",
+ "format": "short",
+ "scene": "sky",
+ "seed": 73,
+ "kicker": "Mensaje para ti",
+ "title": "Si estás viendo esto, no es casualidad",
+ "subtitle": null,
+ "lines": [
+  {
+   "text": "Si este video llegó a ti hoy, no es casualidad."
+  },
+  {
+   "text": "Dios sabe lo que estás cargando, aunque no se lo hayas contado a nadie."
+  },
+  {
+   "text": "Él no te olvidó. Él no llega tarde."
+  },
+  {
+   "text": "Lo que hoy parece cerrado, Él lo puede abrir."
+  },
+  {
+   "text": "No temas, porque yo estoy contigo.",
+   "ref": "Isaías 41:10"
+  },
+  {
+   "text": "Si lo recibes, escribe: lo recibo, Señor."
+  }
+ ],
+ "outro": "Amén 🙏",
+ "outro2": "Suscríbete para más oraciones",
+ "pause": 0.45,
+ "intro": 1.6,
+ "music": {
+  "track": "Dreamer",
+  "vol": 0.17,
+  "alt": [
+   "Meditation Impromptu 02",
+   "Dreamer"
+  ]
+ },
+ "thumb": {
+  "top": "MENSAJE PARA TI",
+  "big": "Esto no es casualidad",
+  "sub": "Dios quiere decirte algo"
+ },
+ "yt": {
+  "title": "Si estás viendo esto, no es casualidad 🙏 Dios quiere decirte algo #dios #fe",
+  "description": "Un mensaje corto para tu día.\n\nSi esta oración tocó tu corazón, escribe \"Amén\" en los comentarios y compártela con alguien que la necesite hoy.\nSuscríbete para recibir una oración nueva cada noche.\n\n{music}\nVoz generada con inteligencia artificial; oración escrita para este canal.\n\n#oracion #oraciondelanoche #dios #fe #jesus",
+  "tags": [
+   "oración",
+   "oración de la noche",
+   "oración para dormir",
+   "dios",
+   "jesús",
+   "fe",
+   "oración poderosa",
+   "salmos",
+   "paz",
+   "oracion catolica",
+   "oracion cristiana"
+  ],
+  "lang": "es",
+  "categoryId": "22"
+ },
+ "publish": {
+  "at": "2026-11-18T13:00:00Z"
+ }
+}

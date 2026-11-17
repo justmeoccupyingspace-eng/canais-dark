@@ -1,0 +1,98 @@
+name: fe
+run-name: fe ${{ inputs.spec }} ${{ inputs.upload }}
+on:
+  workflow_dispatch:
+    inputs:
+      spec: {description: "specs/fe/<id>.json", required: true}
+      upload: {description: "A | B | vazio (só prévia)", required: false, default: ""}
+      at: {description: "publishAt ISO UTC (vazio = o do spec)", required: false, default: ""}
+      chunks: {description: "pedaços paralelos", required: false, default: "4"}
+permissions:
+  contents: write
+jobs:
+  prep:
+    runs-on: ubuntu-latest
+    outputs:
+      id: ${{ steps.s.outputs.id }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+      - run: pip install -q edge-tts
+      - id: s
+        run: |
+          ID=$(python -c "import json;print(json.load(open('${{ inputs.spec }}'))['id'])"); echo "id=$ID" >> $GITHUB_OUTPUT
+          mkdir -p out && python scripts/fe_build.py ${{ inputs.spec }} out/$ID
+          echo "::notice title=fe::$(cat out/$ID/gates.json)"
+          IMG=$(python -c "import json;print(json.load(open('${{ inputs.spec }}')).get('img') or '')")
+          if [ -n "$IMG" ] && [ ! -f "public/$IMG" ]; then echo "::error title=img::falta public/$IMG"; exit 1; fi
+      - uses: actions/upload-artifact@v4
+        with: {name: feprep, path: out, retention-days: 7}
+  render:
+    needs: prep
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        chunk: [0, 1, 2, 3]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: 22, cache: npm}
+      - run: npm ci --no-audit --no-fund
+      - uses: actions/download-artifact@v4
+        with: {name: feprep, path: out}
+      - name: render pedaço
+        run: |
+          ID=${{ needs.prep.outputs.id }}
+          CONC=4 node scripts/ferender.mjs out/$ID/fe.json video out/c${{ matrix.chunk }}.mp4 ${{ matrix.chunk }} 4 2>&1 | tail -3
+      - uses: actions/upload-artifact@v4
+        with: {name: "fechunk-${{ matrix.chunk }}", path: "out/c${{ matrix.chunk }}.mp4", retention-days: 2}
+  final:
+    needs: [prep, render]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: 22, cache: npm}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: npm ci --no-audit --no-fund
+      - name: ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+      - uses: actions/download-artifact@v4
+        with: {name: feprep, path: out}
+      - uses: actions/download-artifact@v4
+        with: {pattern: "fechunk-*", path: out, merge-multiple: true}
+      - name: junção + miniatura
+        run: |
+          ID=${{ needs.prep.outputs.id }}
+          ls out/c*.mp4 | sort -V | sed "s|^|file '$PWD/|;s|$|'|" > out/list.txt
+          ffmpeg -v error -y -f concat -safe 0 -i out/list.txt -c copy out/video.mp4
+          ffmpeg -v error -y -i out/video.mp4 -i out/$ID/audio.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest -movflags +faststart out/$ID.mp4
+          ffprobe -v error -show_entries format=duration,size -of default=nw=1 out/$ID.mp4
+          ffmpeg -v error -y -i out/$ID.mp4 -vf scale=-2:720 -c:v libx264 -crf 28 -preset veryfast -c:a aac -b:a 96k out/${ID}_720.mp4
+          node scripts/ferender.mjs out/$ID/fe.json thumb out/thumb.jpg 2>&1 | tail -2 || true
+      - name: YouTube + miniatura
+        if: inputs.upload != ''
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_A: ${{ secrets.YT_REFRESH_A }}
+          YT_REFRESH_B: ${{ secrets.YT_REFRESH_B }}
+          MANUAL_PUBLISH_AT: ${{ inputs.at }}
+        run: |
+          ID=${{ needs.prep.outputs.id }}
+          python scripts/upload.py ${{ inputs.upload }} out/$ID.mp4 out/$ID/yt.json private
+          VID=$(python -c "import json;print(json.load(open('uploaded.json'))['id'])")
+          echo "::notice title=enviado::$VID $(python -c "import json;print(json.load(open('uploaded.json'))['privacy'])")"
+          [ -f out/thumb.jpg ] && python scripts/lyt.py thumb ${{ inputs.upload }} $VID out/thumb.jpg || echo "sem thumb"
+      - name: prévia na branch fe-<run>
+        run: |
+          ID=${{ needs.prep.outputs.id }}
+          mkdir -p /tmp/o && cp out/${ID}_720.mp4 out/thumb.jpg out/$ID/fe.json out/$ID/gates.json /tmp/o/ 2>/dev/null || true
+          cp uploaded.json /tmp/o/ 2>/dev/null || true
+          git config user.name producer; git config user.email producer@users.noreply.github.com
+          git checkout --orphan fe-${{ github.run_id }} && git rm -rf . -q
+          cp /tmp/o/* . && git add . && git commit -qm prev && git push -f origin fe-${{ github.run_id }}

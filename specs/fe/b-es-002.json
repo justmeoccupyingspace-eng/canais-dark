@@ -1,0 +1,117 @@
+{
+ "id": "b-es-002",
+ "channel": "B",
+ "lang": "es",
+ "voice": "es-MX-JorgeNeural",
+ "rate": "-10%",
+ "pitch": "-2Hz",
+ "format": "long",
+ "scene": "candle",
+ "seed": 23,
+ "kicker": "Oración de la noche",
+ "title": "Oración por mi familia y mi hogar",
+ "subtitle": "Que la paz de Dios cubra tu casa",
+ "lines": [
+  {
+   "text": "Padre bueno, esta noche no vengo a pedir solo por mí. Vengo a pedir por mi familia."
+  },
+  {
+   "text": "Tú conoces cada nombre, cada historia y cada herida que hay dentro de esta casa."
+  },
+  {
+   "text": "Conoces las preocupaciones que callamos y las lágrimas que nadie ve."
+  },
+  {
+   "text": "Te pido, Señor, que cubras mi hogar con tu presencia.",
+   "pause": 1.2
+  },
+  {
+   "text": "Que donde hubo gritos, haya calma. Donde hubo silencio frío, haya conversación. Donde hubo distancia, haya abrazo."
+  },
+  {
+   "text": "Bendice a mis padres, con su salud y con sus años. Dales fuerzas y dales paz."
+  },
+  {
+   "text": "Bendice a mis hijos, o a los niños que amo como si fueran míos. Guárdalos de todo mal, del peligro de la calle y del peligro que entra por una pantalla."
+  },
+  {
+   "text": "Bendice a mi esposo, a mi esposa, a quien camina a mi lado. Renueva el amor que el cansancio fue apagando."
+  },
+  {
+   "text": "Y si hay alguien en mi familia que se alejó de Ti, o que se alejó de nosotros, tráelo de vuelta, Señor, a tu tiempo y a tu manera.",
+   "pause": 1.2
+  },
+  {
+   "text": "Tú dijiste: yo y mi casa serviremos al Señor.",
+   "ref": "Josué 24:15"
+  },
+  {
+   "text": "Hoy lo declaro sobre mi casa. Aunque seamos imperfectos, queremos ser tuyos."
+  },
+  {
+   "text": "Que no falte el pan en nuestra mesa, ni el trabajo en nuestras manos, ni la fe en nuestro corazón."
+  },
+  {
+   "text": "Aleja de esta casa la envidia, la división, la enfermedad y el miedo."
+  },
+  {
+   "text": "Y cuando lleguen los días difíciles, porque llegarán, que nos encuentren unidos y de rodillas.",
+   "pause": 1.2
+  },
+  {
+   "text": "Esta noche, mientras todos duermen, quédate en cada cuarto."
+  },
+  {
+   "text": "Pon tu mano sobre cada cabeza, Señor, y que cada uno descanse sabiendo que es amado."
+  },
+  {
+   "text": "Gracias por mi familia, con sus defectos y con su amor. Es el regalo más grande que me diste."
+  },
+  {
+   "text": "En el nombre de Jesús.",
+   "pause": 1.4
+  }
+ ],
+ "outro": "Amén.",
+ "outro2": "Suscríbete y comparte esta oración",
+ "pause": 0.9,
+ "intro": 3.8,
+ "music": {
+  "track": "Meditation Impromptu 02",
+  "vol": 0.17,
+  "alt": [
+   "Meditation Impromptu 02",
+   "Dreamer"
+  ]
+ },
+ "thumb": {
+  "top": "ORACIÓN POR TU FAMILIA",
+  "big": "Que la paz de Dios cubra tu casa esta noche",
+  "sub": "Escúchala antes de dormir"
+ },
+ "yt": {
+  "title": "Oración de la Noche por Mi Familia y Mi Hogar | Que la Paz de Dios Cubra Tu Casa 🙏",
+  "description": "Una oración de la noche para pedir protección, unión y paz para tu familia y tu hogar. Escríbele en los comentarios el nombre de quien quieres poner en esta oración.\n\nSi esta oración tocó tu corazón, escribe \"Amén\" en los comentarios y compártela con alguien que la necesite hoy.\nSuscríbete para recibir una oración nueva cada noche.\n\n{music}\nVoz generada con inteligencia artificial; oración escrita para este canal.\n\n#oracion #oraciondelanoche #dios #fe #jesus",
+  "tags": [
+   "oración",
+   "oración de la noche",
+   "oración para dormir",
+   "dios",
+   "jesús",
+   "fe",
+   "oración poderosa",
+   "salmos",
+   "paz",
+   "oracion catolica",
+   "oracion cristiana",
+   "oración por la familia",
+   "oración por mi hogar",
+   "oración de protección"
+  ],
+  "lang": "es",
+  "categoryId": "22"
+ },
+ "publish": {
+  "at": "2026-11-19T01:00:00Z"
+ }
+}

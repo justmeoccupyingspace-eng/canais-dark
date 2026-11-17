@@ -1,0 +1,74 @@
+{
+ "id": "b-es-s04",
+ "channel": "B",
+ "lang": "es",
+ "voice": "es-MX-JorgeNeural",
+ "rate": "-10%",
+ "pitch": "-2Hz",
+ "format": "short",
+ "scene": "dawn",
+ "seed": 97,
+ "kicker": "Oración de la mañana",
+ "title": "Antes de empezar el día",
+ "subtitle": null,
+ "lines": [
+  {
+   "text": "Buenos días, Señor."
+  },
+  {
+   "text": "Antes de mirar el celular, antes de las prisas, te busco a Ti."
+  },
+  {
+   "text": "Guía mis pasos hoy. Cuida mis palabras. Abre las puertas correctas."
+  },
+  {
+   "text": "Y cierra las que me harían daño."
+  },
+  {
+   "text": "Este es el día que hizo el Señor; nos gozaremos y alegraremos en él.",
+   "ref": "Salmo 118:24"
+  },
+  {
+   "text": "Escribe Amén y empieza tu día con Dios."
+  }
+ ],
+ "outro": "Amén 🙏",
+ "outro2": "Suscríbete para más oraciones",
+ "pause": 0.45,
+ "intro": 1.6,
+ "music": {
+  "track": "Dreamer",
+  "vol": 0.17,
+  "alt": [
+   "Meditation Impromptu 02",
+   "Dreamer"
+  ]
+ },
+ "thumb": {
+  "top": "ORACIÓN DE LA MAÑANA",
+  "big": "Empieza tu día con Dios",
+  "sub": "Oración corta"
+ },
+ "yt": {
+  "title": "Oración corta para empezar el día 🙏 Antes de mirar el celular #oracion #dios",
+  "description": "Una oración corta para empezar la mañana con Dios.\n\nSi esta oración tocó tu corazón, escribe \"Amén\" en los comentarios y compártela con alguien que la necesite hoy.\nSuscríbete para recibir una oración nueva cada noche.\n\n{music}\nVoz generada con inteligencia artificial; oración escrita para este canal.\n\n#oracion #oraciondelanoche #dios #fe #jesus",
+  "tags": [
+   "oración",
+   "oración de la noche",
+   "oración para dormir",
+   "dios",
+   "jesús",
+   "fe",
+   "oración poderosa",
+   "salmos",
+   "paz",
+   "oracion catolica",
+   "oracion cristiana"
+  ],
+  "lang": "es",
+  "categoryId": "22"
+ },
+ "publish": {
+  "at": "2026-11-19T13:00:00Z"
+ }
+}

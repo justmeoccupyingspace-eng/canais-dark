@@ -1,0 +1,126 @@
+{
+ "id": "b-es-001",
+ "channel": "B",
+ "lang": "es",
+ "voice": "es-MX-JorgeNeural",
+ "rate": "-10%",
+ "pitch": "-2Hz",
+ "format": "long",
+ "scene": "night",
+ "seed": 11,
+ "kicker": "Oración de la noche",
+ "title": "Oración para dormir en paz",
+ "subtitle": "Entrega tus preocupaciones a Dios",
+ "lines": [
+  {
+   "text": "Señor, antes de cerrar los ojos esta noche, vengo a Ti tal como estoy."
+  },
+  {
+   "text": "Con el cuerpo cansado, con la mente llena de pensamientos, y con el corazón que a veces no sabe qué hacer con tanto peso."
+  },
+  {
+   "text": "Gracias por este día, Padre. Por lo que salió bien, y también por lo que no salió como yo quería."
+  },
+  {
+   "text": "Porque aun en lo que no entiendo, Tú seguiste conmigo."
+  },
+  {
+   "text": "Hoy pongo en tus manos cada preocupación que traigo guardada.",
+   "pause": 1.2
+  },
+  {
+   "text": "Las cuentas que no sé cómo voy a pagar. Las conversaciones que me dolieron. Las personas que amo y que no puedo cuidar como quisiera."
+  },
+  {
+   "text": "Todo eso te lo entrego ahora, Señor. No quiero llevarlo conmigo a la cama."
+  },
+  {
+   "text": "Tú dijiste: vengan a mí todos los que están cansados y cargados, y yo les daré descanso.",
+   "ref": "Mateo 11:28"
+  },
+  {
+   "text": "Aquí estoy, Jesús. Cansado. Cargado. Y confiando en tu promesa."
+  },
+  {
+   "text": "Calma mi mente esta noche. Que los pensamientos que dan vueltas se queden quietos.",
+   "pause": 1.2
+  },
+  {
+   "text": "Si me despierto en la madrugada, que lo primero que recuerde sea que Tú estás despierto por mí."
+  },
+  {
+   "text": "Cuida mi casa, Señor. Pon tus ángeles en cada puerta y en cada ventana."
+  },
+  {
+   "text": "Cuida a mi familia, a los que duermen cerca y a los que están lejos."
+  },
+  {
+   "text": "Cuida a los enfermos, a los que tienen miedo, y a los que esta noche no tienen dónde dormir."
+  },
+  {
+   "text": "Perdóname por las palabras duras de hoy, por la impaciencia, por las veces que dudé de tu amor.",
+   "pause": 1.2
+  },
+  {
+   "text": "Y ayúdame a perdonar también, para que ningún rencor me robe el sueño."
+  },
+  {
+   "text": "En paz me acuesto y en paz me duermo, porque solo Tú, Señor, me haces vivir confiado.",
+   "ref": "Salmo 4:8"
+  },
+  {
+   "text": "Mañana será un nuevo día, y tus misericordias serán nuevas otra vez."
+  },
+  {
+   "text": "No sé todo lo que viene, pero sé quién va delante de mí."
+  },
+  {
+   "text": "Por eso descanso. Por eso suelto. Por eso cierro los ojos en paz.",
+   "pause": 1.4
+  },
+  {
+   "text": "Te lo pido en el nombre de Jesús."
+  }
+ ],
+ "outro": "Amén.",
+ "outro2": "Suscríbete y comparte esta oración",
+ "pause": 0.9,
+ "intro": 3.8,
+ "music": {
+  "track": "Meditation Impromptu 01",
+  "vol": 0.17,
+  "alt": [
+   "Meditation Impromptu 02",
+   "Dreamer"
+  ]
+ },
+ "thumb": {
+  "top": "ORACIÓN DE LA NOCHE",
+  "big": "Suelta tus preocupaciones y duerme en paz",
+  "sub": "Escúchala antes de dormir"
+ },
+ "yt": {
+  "title": "Oración de la Noche para Dormir en Paz | Entrega tus Preocupaciones a Dios 🙏",
+  "description": "Una oración de la noche para soltar las preocupaciones del día y dormir en la paz de Dios. Escúchala antes de dormir, en silencio, y entrega a Dios lo que te quita el sueño.\n\nSi esta oración tocó tu corazón, escribe \"Amén\" en los comentarios y compártela con alguien que la necesite hoy.\nSuscríbete para recibir una oración nueva cada noche.\n\n{music}\nVoz generada con inteligencia artificial; oración escrita para este canal.\n\n#oracion #oraciondelanoche #dios #fe #jesus",
+  "tags": [
+   "oración",
+   "oración de la noche",
+   "oración para dormir",
+   "dios",
+   "jesús",
+   "fe",
+   "oración poderosa",
+   "salmos",
+   "paz",
+   "oracion catolica",
+   "oracion cristiana",
+   "oración para dormir tranquilo",
+   "oración de la noche para dormir en paz"
+  ],
+  "lang": "es",
+  "categoryId": "22"
+ },
+ "publish": {
+  "at": "2026-11-18T01:00:00Z"
+ }
+}

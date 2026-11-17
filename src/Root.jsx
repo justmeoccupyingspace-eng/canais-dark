@@ -4,6 +4,7 @@ import {Video} from './Video.jsx';
 import {Lab} from './three/Lab.jsx';
 import {Long, longDuration, Thumb} from './long/L1.jsx';
 import {Clip} from './clip/Clip.jsx';
+import {Fe, FeThumb} from './fe/Fe.jsx';
 
 const FPS = 30;
 
@@ -15,6 +16,10 @@ export const Root = () => (
   <Composition id="Clip" component={Clip} width={1080} height={1920} fps={FPS} durationInFrames={FPS * 30}
     defaultProps={{c: {channel: 'chartbound', src: 'clips/src.mp4', t0: 0, t1: 30, words: [], hook: ''}}}
     calculateMetadata={({props}) => ({durationInFrames: Math.max(FPS, Math.round((props.c.t1 - props.c.t0) * FPS))})} />
+  <Composition id="Fe" component={Fe} width={1920} height={1080} fps={FPS} durationInFrames={FPS * 10}
+    defaultProps={{fe: {w: 1920, h: 1080, total: 10, scene: 'night', lines: []}}}
+    calculateMetadata={({props}) => ({durationInFrames: Math.max(FPS, Math.round(props.fe.total * FPS)), width: props.fe.w || 1920, height: props.fe.h || 1080})} />
+  <Composition id="FeThumb" component={FeThumb} width={1280} height={720} fps={FPS} durationInFrames={1} defaultProps={{fe: {scene: 'night', thumb: {big: 'Oración'}}}} />
   <Composition id="Thumb" component={Thumb} width={1280} height={720} fps={FPS} durationInFrames={1} defaultProps={{spec: {channel: 'chartbound', data: {}}}} />
   <Composition id="Lab" component={Lab} width={1080} height={1920} fps={FPS} durationInFrames={120} defaultProps={{m: {bg: '#0b0d0a', color: '#ffb000', belly: '#ffe6a3', acc: 'antenna', accent: '#ff5d73', pose: 'wave', title: 'How It Ticks'}}} />
   <Composition
