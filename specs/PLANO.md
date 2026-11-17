@@ -1,3 +1,25 @@
+# PLANO v4 — RESULTADO (17/11/2026 01:30 BRT). Kauan: "A ÚNICA IMPORTÂNCIA É RESULTADO". Não alavancou → dropa. Pesquisa → replica → mede → corta.
+
+## Formatos ativos (escolhidos por dados de canais NOVOS que cresceram, research/q_probe*_2026-11-17.json)
+- B (Nest Egg Atlas → renomear "E Se no Mapa" pelo Studio): Shorts PT "E se...?" no mapa (modelo Hiperfocando: criado 03/11, 12 mil inscr., mediana 142 mil).
+  Gerador: specs/ese_pt.py → specs/ese/b-pt-NNN.json → .github/workflows/ese.yml (upload=B). 2 por dia (15:00Z e 21:00Z).
+  Longo B: compilação 16:9 dos Shorts (specs/comp/*.json → esecomp.yml, reaproveita voz; capítulos; ≥ 8 min).
+- A (Chartbound): Shorts EN "história no mapa" (modelo One Map, One Battle: criado 07/10, 15,6 mil inscr., mediana 60 mil; 77–95 s).
+  Gerador: specs/map_en.py → specs/ese/a-en-NNN.json → ese.yml (upload=A). 1 por dia 17:00Z (EUA). Longo A: compilação quando houver 5+.
+- Série Polônia/dados longos: ENCERRADA (A-L30 17/11 e A-L31 18/11 já agendados ficam; nada novo).
+- Religioso (Fe): arquivado.
+
+## Regras
+- Corte: 10 vídeos OU 7 dias com mediana < 1 mil views → largar o formato e testar o próximo da lista de pesquisa (Mapvix: comparações de países 13–26 s sem voz; Runic: história de sobrevivência 20 min).
+- Dobrar: vídeo > 10 mil → fazer 3 variações do mesmo tema em 48 h.
+- Cotas: Gemini TTS 10/dia/modelo (renova 08:00Z) — B usa 3.1 (2 req/vídeo), A usa 3.8 (1 req/vídeo). YouTube API ~6 uploads/dia (renova 08:00Z).
+- Reaproveitar voz: ese.yml input reuse=<run> (só re-renderiza).
+- YPP: até 31/01/2027 vale a regra atual (1.000 inscr. + 10 mi de views de Shorts em 90 dias, ou 4.000 h). Meta B: Shorts.
+
+## Agenda publicada (17/11)
+- B: Cco17qjuIU0 Uruguai 17/11 14:00Z · QhWbhEEXkhw Acre 17/11 19:30Z · kyXKD4TAY8Y América do Sul 18/11 15:00Z · UjL00ZRCgGI Tordesilhas 18/11 21:00Z · 3AWSP_gZD9c Nordeste 19/11 15:00Z (1º com satélite).
+- Fila após 08:00Z de 17/11: a-en-001 (17/11 22:00Z), a-en-002 (18/11 17:00Z), a-en-003 (19/11 17:00Z); b-pt-006 (19/11 21:00Z), b-pt-007 (20/11 15:00Z), b-pt-008 (20/11 21:00Z); compilação b-long-001 (20/11 23:00Z) se a prévia estiver boa.
+
 # PLANO v3 — DINHEIRO PRIMEIRO (07/11/2026 23:55 BRT). Objetivo final do Kauan: monetizar e ter renda.
 
 ## 0. Prazo duro descoberto
