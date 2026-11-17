@@ -135,7 +135,7 @@ save(2, "E se o Uruguai fosse do Brasil? #curiosidades #brasil",
      dict(title="E SE O URUGUAI|FOSSE DO|BRASIL?", c=[-55, -27], s=1.9, own={"BRA": "BRA", "URY": "BRA"},
           balls=[dict(iso="URY", face="shock", r=110), dict(iso="BRA", ll=[-50, -14], face="smirk", r=150)],
           arrows=[dict(from_=[-52, -22], to="URY")]),
-     "2026-11-18T15:00:00Z", tags=["uruguai", "cisplatina", "maracanaço", "copa de 1950", "amarelinha", "seleção brasileira"])
+     "2026-11-17T14:00:00Z", tags=["uruguai", "cisplatina", "maracanaço", "copa de 1950", "amarelinha", "seleção brasileira"])
 
 # ---------------------------------------------------------------- 3. América do Sul num país só
 ALL = ["BRA", "ARG", "COL", "PER", "VEN", "CHL", "ECU", "BOL", "PRY", "URY", "GUY", "SUR"]
@@ -180,4 +180,92 @@ save(3, "E se a América do Sul fosse um país só? #curiosidades #brasil",
      "Qual seria o nome desse país, e a capital? Comenta aí. E manda pro amigo argentino que ia odiar dividir a seleção.",
      dict(title="E SE A AMÉRICA|DO SUL FOSSE|UM PAÍS SÓ?", c=[-60, -24], s=1.0, y=0.66, own={k: "SUL" for k in ALL},
           balls=[dict(iso="BRA", ll=[-58, -14], face="shock", r=150)]),
-     "2026-11-18T21:00:00Z", tags=["américa do sul", "união sul-americana", "grã-colômbia", "simón bolívar", "seleção", "maior país do mundo"])
+     "2026-11-18T15:00:00Z", tags=["américa do sul", "união sul-americana", "grã-colômbia", "simón bolívar", "seleção", "maior país do mundo"])
+
+# ---------------------------------------------------------------- 4. Tordesilhas valendo hoje
+TL = -48.6  # meridiano aproximado (a linha passa entre Belém-PA e Laguna-SC)
+BRZ = {"c": [-50, -15], "s": 1.55}
+save(4, "E se o Tratado de Tordesilhas valesse até hoje? #curiosidades #brasil",
+     "E SE|TORDESILHAS|VALESSE HOJE?",
+     [
+         dict(say="E se aquela linha do livro de história valesse até hoje? O Brasil ia encolher. E muito.",
+              cam=SA, own={"BRA": "BRA"}, balls=[dict(iso="BRA", face="shock", d=0.5)]),
+         dict(say="Mil quatrocentos e noventa e quatro. Portugal e Espanha dividem um mundo que ainda nem tinha sido todo descoberto, com uma linha: trezentas e setenta léguas a oeste de Cabo Verde.",
+              cam={"c": [-38, 2], "s": 0.5}, own={"PRT": "PRT", "ESP": "ESP"}, balls=[dict(iso="PRT", ll=[-9, 40], face="cool", r=0.5, d=1.0), dict(iso="ESP", ll=[-3, 41], face="smirk", r=0.5, d=1.6)],
+              cards=[dict(text="7 de junho de 1494:", big="Tordesilhas", d=0.6)], pins=[dict(ll=[-24, 16], label="Cabo Verde", d=6.0)], line=dict(lon=TL, d=7.5)),
+         dict(say="Tudo a leste da linha era de Portugal. Tudo a oeste, da Espanha.",
+              cards=[], pins=[], balls=[], cam={"c": [-52, -14], "s": 1.15}, split=dict(lon=TL, west="ESP", east="PRT", d=0.3)),
+         dict(say="No mapa de hoje, a linha passa mais ou menos de Belém, no Pará, até Laguna, em Santa Catarina.",
+              cam=BRZ, pins=[dict(ll=[-48.5, -1.45], label="Belém", d=1.6), dict(ll=[-48.78, -28.48], label="Laguna", d=4.2)]),
+         dict(say="Se ela valesse até hoje, o Brasil ficaria com só um terço do tamanho atual. Uma faixa no litoral.",
+              pins=[], cards=[dict(text="Brasil hoje:", big="8,5 milhões de km²", iso="BRA", d=1.2), dict(text="Com Tordesilhas:", big="~1/3 disso", iso="PRT", d=3.0)],
+              balls=[dict(ll=[-40, -10], iso="PRT", face="sad", d=3.4)]),
+         dict(say="Do lado português ficariam o Nordeste inteiro, o Rio, quase todo Minas, a cidade de São Paulo e até Brasília.",
+              cards=[], balls=[], pins=[dict(ll=[-38.5, -12.97], label="Salvador"), dict(ll=[-43.2, -22.9], label="Rio"), dict(ll=[-46.63, -23.55], label="São Paulo"), dict(ll=[-47.9, -15.8], label="Brasília")]),
+         dict(say="Mas do lado espanhol? Manaus, Cuiabá, Campo Grande, Goiânia, Curitiba e Porto Alegre.",
+              pins=[dict(ll=[-60.0, -3.1], label="Manaus", left=True), dict(ll=[-56.1, -15.6], label="Cuiabá", left=True), dict(ll=[-54.6, -20.45], label="Campo Grande", left=True),
+                    dict(ll=[-49.25, -16.68], label="Goiânia", left=True), dict(ll=[-49.27, -25.43], label="Curitiba", left=True), dict(ll=[-51.2, -30.03], label="Porto Alegre", left=True)]),
+         dict(say="A Amazônia quase inteira ia falar espanhol. E o gaúcho ia tomar chimarrão do outro lado da fronteira.",
+              pins=[], balls=[dict(ll=[-62, -5], iso="ESP", face="happy", d=0.4), dict(ll=[-52.5, -29.5], iso="ESP", face="cool", r=0.8, d=3.0)]),
+         dict(say="Então por que o Brasil é tão grande? Porque ninguém respeitou a linha.",
+              balls=[dict(ll=[-40, -10], iso="PRT", face="smirk", d=1.4)]),
+         dict(say="De mil quinhentos e oitenta a mil seiscentos e quarenta, Portugal e Espanha tiveram o mesmo rei. Foi a União Ibérica, e a linha virou detalhe.",
+              balls=[], cards=[dict(text="1580–1640:", big="União Ibérica", d=0.6)]),
+         dict(say="Os bandeirantes saíram de São Paulo mata adentro, atrás de ouro, de pedras preciosas e de gente pra escravizar. E foram empurrando a fronteira pro oeste.",
+              cards=[], line=None, arrows=[dict(from_=[-46.6, -23.5], to=[-56, -15], d=1.0), dict(from_=[-46.6, -23.5], to=[-60, -3], d=2.2), dict(from_=[-46.6, -23.5], to=[-53, -29], d=3.4)]),
+         dict(say="Em mil setecentos e cinquenta, o Tratado de Madri oficializou: a terra fica com quem ocupa. E o Brasil ficou com quase tudo que tinha avançado.",
+              arrows=[], split=None, own={"BRA": "BRA"}, cards=[dict(text="1750:", big="Tratado de Madri", iso="PRT", d=0.6)], balls=[dict(iso="BRA", face="cool", d=2.0)]),
+         dict(say="Me fala: se a linha valesse hoje, sua cidade ia ser brasileira ou espanhola? Comenta aí. E manda pro amigo gaúcho que ia ter que aprender espanhol.",
+              cards=[], split=dict(lon=TL, west="ESP", east="PRT", d=0.2), line=dict(lon=TL), balls=[dict(ll=[-40, -10], iso="PRT", face="happy", d=0.6), dict(ll=[-60, -10], iso="ESP", face="smirk", d=1.2)]),
+     ],
+     "Em 1494, Portugal e Espanha dividiram o mundo com uma linha. No mapa de hoje ela passa de Belém (PA) a Laguna (SC): Manaus, Curitiba e Porto Alegre ficariam do lado espanhol. "
+     "O Brasil só é desse tamanho porque ninguém respeitou a linha.\n"
+     "Sua cidade ia ser brasileira ou espanhola? Comenta aí. E manda pro amigo gaúcho que ia ter que aprender espanhol.",
+     dict(title="E SE|TORDESILHAS|VALESSE HOJE?", c=[-52, -16], s=1.25, y=0.64, split=dict(lon=TL, west="ESP", east="PRT"),
+          balls=[dict(ll=[-40, -10], iso="PRT", face="cool", r=120), dict(ll=[-61, -8], iso="ESP", face="rage", skin="red", r=150)]),
+     "2026-11-18T21:00:00Z", tags=["tordesilhas", "tratado de tordesilhas", "bandeirantes", "tratado de madri", "história do brasil", "portugal", "espanha"])
+
+# ---------------------------------------------------------------- 5. Nordeste país
+NE = ["BR-MA", "BR-PI", "BR-CE", "BR-RN", "BR-PB", "BR-PE", "BR-AL", "BR-SE", "BR-BA"]
+NEC = {"c": [-41.5, -9.5], "s": 2.1}
+save(5, "E se o Nordeste fosse um país? #curiosidades #brasil",
+     "E SE O|NORDESTE FOSSE|UM PAÍS?",
+     [
+         dict(say="E se o Nordeste virasse um país? E não é só imaginação: isso quase aconteceu. Duas vezes.",
+              cam={"c": [-48, -13], "s": 1.35}, own={"BRA": "BRA", **{k: "NOR" for k in NE}}, od=1.0,
+              balls=[dict(ll=[-40.5, -8], iso="BRA", face="cool", d=1.4), dict(ll=[-53, -12], iso="BRA", face="shock", d=2.4)]),
+         dict(say="Nove estados, do Maranhão à Bahia.",
+              cam=NEC, balls=[], hl=NE),
+         dict(say="O novo país teria mais de cinquenta e quatro milhões de habitantes. Mais que a Argentina, mais que a Espanha, mais que a Colômbia.",
+              hl=[], cards=[dict(text="Nordeste:", big="54,7 milhões", d=0.6), dict(text="Argentina:", big="45,9 mi", iso="ARG", d=4.2), dict(text="Espanha:", big="49,4 mi", iso="ESP", d=5.6), dict(text="Colômbia:", big="53,4 mi", iso="COL", d=6.8)]),
+         dict(say="Seria o segundo país mais populoso da América do Sul, atrás só do que sobrou do Brasil.",
+              cards=[], cam={"c": [-55, -20], "s": 1.0}, own={k: k for k in ["ARG", "COL", "PER", "VEN", "CHL"]},
+              balls=[dict(ll=[-40.5, -8], iso="BRA", face="cool", d=0.6), dict(iso="COL", face="shock", r=0.7, d=2.0), dict(iso="ARG", face="sad", r=0.7, d=2.6)]),
+         dict(say="E grande: mais de um milhão e meio de quilômetros quadrados. Maior que o Peru, maior que a Colômbia.",
+              balls=[], cards=[dict(text="Área:", big="1,55 milhão de km²", d=0.6), dict(text="Peru:", big="1,29 milhão", iso="PER", d=3.6)], hl=["PER", "COL"]),
+         dict(say="E a capital? Aí começa a briga. Salvador, Recife ou Fortaleza? Pelo último Censo, a maior cidade nem é mais Salvador. É Fortaleza.",
+              cards=[], hl=[], cam=NEC, pins=[dict(ll=[-38.5, -12.97], label="Salvador", d=1.4), dict(ll=[-34.88, -8.05], label="Recife", left=True, d=2.1), dict(ll=[-38.53, -3.72], label="Fortaleza", d=2.8)],
+              balls=[dict(ll=[-38.53, -4.6], iso="BRA", face="cool", r=0.6, d=7.4)]),
+         dict(say="Mas essa ideia não é nova. Em mil oitocentos e dezessete, Pernambuco se declarou uma república independente. A Revolução Pernambucana durou uns setenta e cinco dias.",
+              pins=[], balls=[], own={k: "BRA" for k in NE}, od=0.2, hl=["BR-PE"], cam={"c": [-37.5, -8.3], "s": 4.0},
+              cards=[dict(text="1817:", big="Revolução Pernambucana", d=2.6)]),
+         dict(say="Sete anos depois veio a Confederação do Equador: Pernambuco, Paraíba, Rio Grande do Norte e Ceará tentando formar um país separado do Império.",
+              cards=[dict(text="1824:", big="Confederação do Equador", d=1.4)], hl=[], cam={"c": [-38.5, -6.5], "s": 3.0},
+              own={"BR-PE": "NOR", "BR-PB": "NOR", "BR-RN": "NOR", "BR-CE": "NOR"}, od=3.6),
+         dict(say="Dom Pedro primeiro mandou tropas e esmagou o movimento em poucos meses. Um dos líderes, Frei Caneca, foi condenado à forca. Mas nenhum carrasco aceitou enforcar ele. Acabou fuzilado.",
+              cards=[], arrows=[dict(from_=[-43.2, -22.9], to=[-35.5, -7.5], d=0.8, color="#ff5a3c")], own={k: "BRA" for k in ["BR-PE", "BR-PB", "BR-RN", "BR-CE"]}, od=3.0,
+              balls=[dict(ll=[-37.5, -6.6], iso="BRA", face="sad", d=5.5)]),
+         dict(say="E é por isso que a bandeira de Pernambuco tem um arco-íris e um sol. Ela vem da revolução de mil oitocentos e dezessete.",
+              arrows=[], balls=[], hl=["BR-PE"], cards=[dict(text="Bandeira de Pernambuco:", big="nasceu em 1817", d=1.0)]),
+         dict(say="Agora imagina se tivesse dado certo. O São João de Campina Grande e de Caruaru ia ser festa internacional. E na Copa, Rivaldo, Vavá, Daniel Alves e Hulk iam jogar por outra seleção.",
+              hl=[], cards=[], cam=NEC, own={k: "NOR" for k in NE}, od=0.4,
+              pins=[dict(ll=[-35.88, -7.23], label="Campina Grande", d=1.8), dict(ll=[-35.97, -8.28], label="Caruaru", left=True, d=2.6)],
+              balls=[dict(ll=[-41, -10.5], iso="BRA", face="love", d=6.5)]),
+         dict(say="Me fala: qual seria a capital da República do Nordeste? Comenta aí. E manda pro seu amigo nordestino que ia querer o passaporte novo.",
+              pins=[], cam={"c": [-48, -13], "s": 1.35}, balls=[dict(ll=[-40.5, -8], iso="BRA", face="happy", d=0.4), dict(ll=[-53, -12], iso="BRA", face="sad", d=1.2)]),
+     ],
+     "Nove estados, 54,7 milhões de pessoas (Censo 2022): mais que Argentina, Espanha e Colômbia. E a ideia já foi tentada de verdade: Revolução Pernambucana (1817) e Confederação do Equador (1824).\n"
+     "Qual seria a capital? Comenta aí. E manda pro seu amigo nordestino.",
+     dict(title="E SE O|NORDESTE FOSSE|UM PAÍS?", c=[-47, -12], s=1.6, y=0.64, own={"BRA": "BRA", **{k: "NOR" for k in NE}},
+          balls=[dict(ll=[-40.5, -8], iso="BRA", face="cool", r=130), dict(ll=[-53, -10], iso="BRA", face="shock", skin="red", r=140)]),
+     "2026-11-19T15:00:00Z", tags=["nordeste", "república do nordeste", "confederação do equador", "revolução pernambucana", "frei caneca", "pernambuco", "fortaleza"], uf=True)

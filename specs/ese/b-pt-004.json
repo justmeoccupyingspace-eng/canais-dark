@@ -1,0 +1,470 @@
+{
+ "id": "b-pt-004",
+ "channel": "B",
+ "lang": "pt",
+ "format": "short",
+ "hook": "E SE|TORDESILHAS|VALESSE HOJE?",
+ "hook_end": 2.8,
+ "badge": "SÓ IMAGINAÇÃO",
+ "uf": false,
+ "voice": "Fenrir",
+ "music": {
+  "track": "Hidden Agenda",
+  "vol": 0.12,
+  "alt": [
+   "Investigations",
+   "Curiosity"
+  ]
+ },
+ "beats": [
+  {
+   "say": "E se aquela linha do livro de história valesse até hoje? O Brasil ia encolher. E muito.",
+   "cam": {
+    "c": [
+     -60,
+     -24
+    ],
+    "s": 1.0
+   },
+   "own": {
+    "BRA": "BRA"
+   },
+   "balls": [
+    {
+     "iso": "BRA",
+     "face": "shock",
+     "d": 0.5
+    }
+   ]
+  },
+  {
+   "say": "Mil quatrocentos e noventa e quatro. Portugal e Espanha dividem um mundo que ainda nem tinha sido todo descoberto, com uma linha: trezentas e setenta léguas a oeste de Cabo Verde.",
+   "cam": {
+    "c": [
+     -38,
+     2
+    ],
+    "s": 0.5
+   },
+   "own": {
+    "PRT": "PRT",
+    "ESP": "ESP"
+   },
+   "balls": [
+    {
+     "iso": "PRT",
+     "ll": [
+      -9,
+      40
+     ],
+     "face": "cool",
+     "r": 0.5,
+     "d": 1.0
+    },
+    {
+     "iso": "ESP",
+     "ll": [
+      -3,
+      41
+     ],
+     "face": "smirk",
+     "r": 0.5,
+     "d": 1.6
+    }
+   ],
+   "cards": [
+    {
+     "text": "7 de junho de 1494:",
+     "big": "Tordesilhas",
+     "d": 0.6
+    }
+   ],
+   "pins": [
+    {
+     "ll": [
+      -24,
+      16
+     ],
+     "label": "Cabo Verde",
+     "d": 6.0
+    }
+   ],
+   "line": {
+    "lon": -48.6,
+    "d": 7.5
+   }
+  },
+  {
+   "say": "Tudo a leste da linha era de Portugal. Tudo a oeste, da Espanha.",
+   "cards": [],
+   "pins": [],
+   "balls": [],
+   "cam": {
+    "c": [
+     -52,
+     -14
+    ],
+    "s": 1.15
+   },
+   "split": {
+    "lon": -48.6,
+    "west": "ESP",
+    "east": "PRT",
+    "d": 0.3
+   }
+  },
+  {
+   "say": "No mapa de hoje, a linha passa mais ou menos de Belém, no Pará, até Laguna, em Santa Catarina.",
+   "cam": {
+    "c": [
+     -50,
+     -15
+    ],
+    "s": 1.55
+   },
+   "pins": [
+    {
+     "ll": [
+      -48.5,
+      -1.45
+     ],
+     "label": "Belém",
+     "d": 1.6
+    },
+    {
+     "ll": [
+      -48.78,
+      -28.48
+     ],
+     "label": "Laguna",
+     "d": 4.2
+    }
+   ]
+  },
+  {
+   "say": "Se ela valesse até hoje, o Brasil ficaria com só um terço do tamanho atual. Uma faixa no litoral.",
+   "pins": [],
+   "cards": [
+    {
+     "text": "Brasil hoje:",
+     "big": "8,5 milhões de km²",
+     "iso": "BRA",
+     "d": 1.2
+    },
+    {
+     "text": "Com Tordesilhas:",
+     "big": "~1/3 disso",
+     "iso": "PRT",
+     "d": 3.0
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -40,
+      -10
+     ],
+     "iso": "PRT",
+     "face": "sad",
+     "d": 3.4
+    }
+   ]
+  },
+  {
+   "say": "Do lado português ficariam o Nordeste inteiro, o Rio, quase todo Minas, a cidade de São Paulo e até Brasília.",
+   "cards": [],
+   "balls": [],
+   "pins": [
+    {
+     "ll": [
+      -38.5,
+      -12.97
+     ],
+     "label": "Salvador"
+    },
+    {
+     "ll": [
+      -43.2,
+      -22.9
+     ],
+     "label": "Rio"
+    },
+    {
+     "ll": [
+      -46.63,
+      -23.55
+     ],
+     "label": "São Paulo"
+    },
+    {
+     "ll": [
+      -47.9,
+      -15.8
+     ],
+     "label": "Brasília"
+    }
+   ]
+  },
+  {
+   "say": "Mas do lado espanhol? Manaus, Cuiabá, Campo Grande, Goiânia, Curitiba e Porto Alegre.",
+   "pins": [
+    {
+     "ll": [
+      -60.0,
+      -3.1
+     ],
+     "label": "Manaus",
+     "left": true
+    },
+    {
+     "ll": [
+      -56.1,
+      -15.6
+     ],
+     "label": "Cuiabá",
+     "left": true
+    },
+    {
+     "ll": [
+      -54.6,
+      -20.45
+     ],
+     "label": "Campo Grande",
+     "left": true
+    },
+    {
+     "ll": [
+      -49.25,
+      -16.68
+     ],
+     "label": "Goiânia",
+     "left": true
+    },
+    {
+     "ll": [
+      -49.27,
+      -25.43
+     ],
+     "label": "Curitiba",
+     "left": true
+    },
+    {
+     "ll": [
+      -51.2,
+      -30.03
+     ],
+     "label": "Porto Alegre",
+     "left": true
+    }
+   ]
+  },
+  {
+   "say": "A Amazônia quase inteira ia falar espanhol. E o gaúcho ia tomar chimarrão do outro lado da fronteira.",
+   "pins": [],
+   "balls": [
+    {
+     "ll": [
+      -62,
+      -5
+     ],
+     "iso": "ESP",
+     "face": "happy",
+     "d": 0.4
+    },
+    {
+     "ll": [
+      -52.5,
+      -29.5
+     ],
+     "iso": "ESP",
+     "face": "cool",
+     "r": 0.8,
+     "d": 3.0
+    }
+   ]
+  },
+  {
+   "say": "Então por que o Brasil é tão grande? Porque ninguém respeitou a linha.",
+   "balls": [
+    {
+     "ll": [
+      -40,
+      -10
+     ],
+     "iso": "PRT",
+     "face": "smirk",
+     "d": 1.4
+    }
+   ]
+  },
+  {
+   "say": "De mil quinhentos e oitenta a mil seiscentos e quarenta, Portugal e Espanha tiveram o mesmo rei. Foi a União Ibérica, e a linha virou detalhe.",
+   "balls": [],
+   "cards": [
+    {
+     "text": "1580–1640:",
+     "big": "União Ibérica",
+     "d": 0.6
+    }
+   ]
+  },
+  {
+   "say": "Os bandeirantes saíram de São Paulo mata adentro, atrás de ouro, de pedras preciosas e de gente pra escravizar. E foram empurrando a fronteira pro oeste.",
+   "cards": [],
+   "line": null,
+   "arrows": [
+    {
+     "from": [
+      -46.6,
+      -23.5
+     ],
+     "to": [
+      -56,
+      -15
+     ],
+     "d": 1.0
+    },
+    {
+     "from": [
+      -46.6,
+      -23.5
+     ],
+     "to": [
+      -60,
+      -3
+     ],
+     "d": 2.2
+    },
+    {
+     "from": [
+      -46.6,
+      -23.5
+     ],
+     "to": [
+      -53,
+      -29
+     ],
+     "d": 3.4
+    }
+   ]
+  },
+  {
+   "say": "Em mil setecentos e cinquenta, o Tratado de Madri oficializou: a terra fica com quem ocupa. E o Brasil ficou com quase tudo que tinha avançado.",
+   "arrows": [],
+   "split": null,
+   "own": {
+    "BRA": "BRA"
+   },
+   "cards": [
+    {
+     "text": "1750:",
+     "big": "Tratado de Madri",
+     "iso": "PRT",
+     "d": 0.6
+    }
+   ],
+   "balls": [
+    {
+     "iso": "BRA",
+     "face": "cool",
+     "d": 2.0
+    }
+   ]
+  },
+  {
+   "say": "Me fala: se a linha valesse hoje, sua cidade ia ser brasileira ou espanhola? Comenta aí. E manda pro amigo gaúcho que ia ter que aprender espanhol.",
+   "cards": [],
+   "split": {
+    "lon": -48.6,
+    "west": "ESP",
+    "east": "PRT",
+    "d": 0.2
+   },
+   "line": {
+    "lon": -48.6
+   },
+   "balls": [
+    {
+     "ll": [
+      -40,
+      -10
+     ],
+     "iso": "PRT",
+     "face": "happy",
+     "d": 0.6
+    },
+    {
+     "ll": [
+      -60,
+      -10
+     ],
+     "iso": "ESP",
+     "face": "smirk",
+     "d": 1.2
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "E SE|TORDESILHAS|VALESSE HOJE?",
+  "c": [
+   -52,
+   -16
+  ],
+  "s": 1.25,
+  "y": 0.64,
+  "split": {
+   "lon": -48.6,
+   "west": "ESP",
+   "east": "PRT"
+  },
+  "balls": [
+   {
+    "ll": [
+     -40,
+     -10
+    ],
+    "iso": "PRT",
+    "face": "cool",
+    "r": 120
+   },
+   {
+    "ll": [
+     -61,
+     -8
+    ],
+    "iso": "ESP",
+    "face": "rage",
+    "skin": "red",
+    "r": 150
+   }
+  ]
+ },
+ "yt": {
+  "title": "E se o Tratado de Tordesilhas valesse até hoje? #curiosidades #brasil",
+  "description": "Em 1494, Portugal e Espanha dividiram o mundo com uma linha. No mapa de hoje ela passa de Belém (PA) a Laguna (SC): Manaus, Curitiba e Porto Alegre ficariam do lado espanhol. O Brasil só é desse tamanho porque ninguém respeitou a linha.\nSua cidade ia ser brasileira ou espanhola? Comenta aí. E manda pro amigo gaúcho que ia ter que aprender espanhol.\n\nCenário imaginário: só um \"e se\" no mapa. Os fatos de apoio são reais.\nInscreva-se pra ver o próximo \"e se\".\n\n#curiosidades #brasil #mapas #geografia #historia",
+  "tags": [
+   "curiosidades",
+   "brasil",
+   "mapas",
+   "geografia",
+   "história",
+   "simulação",
+   "e se",
+   "hiperfoco",
+   "américa do sul",
+   "tordesilhas",
+   "tratado de tordesilhas",
+   "bandeirantes",
+   "tratado de madri",
+   "história do brasil",
+   "portugal",
+   "espanha"
+  ],
+  "lang": "pt-BR",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-18T21:00:00Z"
+ }
+}

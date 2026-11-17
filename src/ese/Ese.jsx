@@ -24,8 +24,8 @@ const featOf = (k) => BYKEY[k] || BYNUM[NUM[k]];
 // cor de cada "dono" (cor principal da bandeira) e do brilho do contorno
 const COL = {BRA: '#1fa84a', ARG: '#6cb4ee', CHL: '#d52b1e', URY: '#3a6fd8', PRY: '#c8102e', BOL: '#f2c200', PER: '#e8112d', COL: '#fcd116', VEN: '#cf142b', ECU: '#ffdd00',
   GUY: '#009e49', SUR: '#377e3f', GUF: '#0055a4', MEX: '#006847', USA: '#3c3b6e', CAN: '#d80621', PRT: '#046a38', ESP: '#c60b1e', FRA: '#0055a4', GBR: '#012169', RUS: '#d52b1e', CHN: '#de2910',
-  DEU: '#222', ITA: '#009246', JPN: '#bc002d', IND: '#ff9933', NLD: '#ae1c28', CPV: '#003893', AGO: '#cc092f', MOZ: '#009739', GNB: '#ce1126', STP: '#12ad2b', TLS: '#dc241f', SUL: '#0a3d91'};
-const GLOW = {BRA: '#c6ff2e', ARG: '#7fd3ff', URY: '#8fb8ff', CHL: '#ff6b5b', BOL: '#ffe14d', PER: '#ff6b6b', PRY: '#ff8a8a', COL: '#ffe14d', VEN: '#ffd34d', ECU: '#ffe14d', PRT: '#7dff9a', FRA: '#8fb8ff', USA: '#8fb8ff', ESP: '#ffcf40', GUY: '#c6ff2e', SUR: '#9dff9d', SUL: '#7fe0ff'};
+  DEU: '#222', ITA: '#009246', JPN: '#bc002d', IND: '#ff9933', NLD: '#ae1c28', CPV: '#003893', AGO: '#cc092f', MOZ: '#009739', GNB: '#ce1126', STP: '#12ad2b', TLS: '#dc241f', SUL: '#0a3d91', NOR: '#f07800'};
+const GLOW = {BRA: '#c6ff2e', ARG: '#7fd3ff', URY: '#8fb8ff', CHL: '#ff6b5b', BOL: '#ffe14d', PER: '#ff6b6b', PRY: '#ff8a8a', COL: '#ffe14d', VEN: '#ffd34d', ECU: '#ffe14d', PRT: '#7dff9a', FRA: '#8fb8ff', USA: '#8fb8ff', ESP: '#ffcf40', GUY: '#c6ff2e', SUR: '#9dff9d', SUL: '#7fe0ff', NOR: '#ffb347'};
 const SANS = 'PoppinsX, "Helvetica Neue", Arial, sans-serif';
 const ANTON = 'AntonX, Impact, "Arial Narrow", sans-serif';
 
@@ -83,6 +83,7 @@ const FlagArt = ({iso, x, y, w, h}) => {
     case 'AGO': return <g>{Hs(['#cc092f', '#000'])}{star(cx, cy, m * 0.1, '#ffcb00')}</g>;
     case 'CPV': return <g>{R('#003893')}<rect x={x} y={y + h * 0.5} width={w} height={h * 0.08} fill="#fff" /><rect x={x} y={y + h * 0.58} width={w} height={h * 0.08} fill="#cf2027" /><rect x={x} y={y + h * 0.66} width={w} height={h * 0.08} fill="#fff" /></g>;
     case 'SUL': return <g>{R('#0a3d91')}<rect x={x} y={y + h * 0.78} width={w} height={h * 0.22} fill="#1fa84a" /><rect x={x} y={y + h * 0.74} width={w} height={h * 0.05} fill="#ffd400" />{[[0.5, 0.18, 0.07], [0.5, 0.56, 0.08], [0.36, 0.36, 0.065], [0.62, 0.32, 0.06], [0.56, 0.44, 0.035]].map(([u, v, k], i) => <g key={i}>{star(x + w * u, y + h * v, m * k)}</g>)}</g>;
+    case 'NOR': return <g>{R('#f07800')}<rect x={x} y={y} width={w} height={h * 0.3} fill="#1f5fbf" /><rect x={x} y={y + h * 0.3} width={w} height={h * 0.05} fill="#fff" /><rect x={x} y={y + h * 0.82} width={w} height={h * 0.18 + 0.6} fill="#159447" /><circle cx={cx} cy={y + h * 0.56} r={m * 0.17} fill="#ffd21a" stroke="#fff" strokeWidth={m * 0.02} />{star(cx, y + h * 0.15, m * 0.07, '#fff')}</g>;
     case 'MOZ': return <g>{Hs(['#009739', '#000', '#fce100'])}<path d={`M${x},${y} L${x + w * 0.45},${cy} L${x},${y + h} Z`} fill="#d21034" /></g>;
     default: return R(COL[iso] || '#888');
   }
@@ -152,7 +153,7 @@ const Arrow = ({a, b, t, color = '#b6ff3b', w = 16}) => {
 const stateAt = (beats, T) => {
   let cam = beats[0]?.cam || {c: [-58, -18], s: 1.0}, prevCam = cam, camT = 0;
   const own = {}, ownPrev = {}, ownAt = {};
-  let balls = [], arrows = [], cards = [], hl = [];
+  let balls = [], arrows = [], cards = [], hl = [], pins = [], split = null, line = null;
   for (const b of beats) {
     if (b.t0 > T) break;
     if (b.cam) { prevCam = cam; cam = b.cam; camT = b.t0; }
@@ -161,12 +162,15 @@ const stateAt = (beats, T) => {
     if (b.addballs) balls = balls.concat(b.addballs.map((x) => ({...x, at: b.t0 + (x.d || 0)})));
     if (b.arrows !== undefined) arrows = (b.arrows || []).map((x) => ({...x, at: b.t0 + (x.d || 0)}));
     if (b.cards !== undefined) cards = (b.cards || []).map((x) => ({...x, at: b.t0 + (x.d || 0)}));
+    if (b.pins !== undefined) pins = (b.pins || []).map((x, i) => ({...x, at: b.t0 + (x.d !== undefined ? x.d : 0.3 + i * 0.5)}));
+    if (b.split !== undefined) split = b.split ? {...b.split, at: b.t0 + (b.split.d || 0)} : null;
+    if (b.line !== undefined) line = b.line ? {...b.line, at: b.t0 + (b.line.d || 0)} : null;
     hl = b.hl || [];
   }
   const k = ease((T - camT) / 1.2);
   const c = geoInterpolate(prevCam.c, cam.c)(k);
   const s = prevCam.s + (cam.s - prevCam.s) * k;
-  return {c, s, own, ownPrev, ownAt, balls, arrows, cards, hl};
+  return {c, s, own, ownPrev, ownAt, balls, arrows, cards, hl, pins, split, line};
 };
 
 const mergedCache = new Map();
@@ -204,7 +208,7 @@ const Territories = ({st, T, path, W, H, uid = 'v'}) => {
   }
   for (const [o, iso] of order) {
     const f = featOf(iso); let bb = BB[o]; if (!f || !bb) continue;
-    if (iso.startsWith('BR-')) { const [[a, b2], [c, d]] = path.bounds(f); bb = [a, b2, c - a, d - b2]; }  // estado: bandeira inteira dentro dele
+    if (iso.startsWith('BR-')) bb = bboxOf(groups[o].filter((i) => i.startsWith('BR-'))) || bb;  // estados: bandeira inteira só na área dos estados desse dono
     const op = ease((T - st.ownAt[iso]) / 0.9);
     const id = `tp${uid}${iso}`;
     out.push(<g key={'t' + iso}><clipPath id={id}><path d={path(f)} /></clipPath>
@@ -219,6 +223,15 @@ const Territories = ({st, T, path, W, H, uid = 'v'}) => {
     ds.forEach((g, j) => glow.push(<g key={'g' + o + j}><path d={g} fill="none" stroke={gc} strokeWidth={18} strokeOpacity={0.75} filter="url(#glow)" /><path d={g} fill="none" stroke={gc} strokeWidth={5} /><path d={g} fill="none" stroke="#fff" strokeWidth={1.6} strokeOpacity={0.9} /></g>));
   }
   return <g>{out}{glow}</g>;
+};
+
+const SplitFill = ({sp, proj, path, W, H, k = 1}) => {
+  const f = featOf(sp.iso || 'BRA'); if (!f) return null;
+  const xl = proj([sp.lon, sp.lat || -15])[0], [[a, b], [c, d]] = path.bounds(f);
+  return <g opacity={k}><clipPath id="spF"><path d={path(f)} /></clipPath><clipPath id="spW"><rect x={-W} y={-H} width={xl + W} height={3 * H} /></clipPath><clipPath id="spE"><rect x={xl} y={-H} width={2 * W} height={3 * H} /></clipPath>
+    <g clipPath="url(#spF)"><g clipPath="url(#spW)"><FlagArt iso={sp.west} x={a} y={b} w={Math.max(1, xl - a)} h={d - b} /></g><g clipPath="url(#spE)"><FlagArt iso={sp.east} x={xl} y={b} w={Math.max(1, c - xl)} h={d - b} /></g><rect x={a} y={b} width={c - a} height={d - b} fill="url(#gTerr)" /></g>
+    <path d={path(f)} fill="none" stroke="#fff" strokeWidth={3} strokeOpacity={0.8} />
+    <path d={`M${xl},${-20} L${xl},${H + 20}`} stroke="#ffd400" strokeWidth={22} strokeOpacity={0.45} filter="url(#glow)" /><path d={`M${xl},${-20} L${xl},${H + 20}`} stroke="#000" strokeWidth={12} strokeOpacity={0.5} /><path d={`M${xl},${-20} L${xl},${H + 20}`} stroke="#ffd400" strokeWidth={7} strokeDasharray="26 14" /></g>;
 };
 
 const Defs = () => (
@@ -277,6 +290,11 @@ export const Ese = ({es}) => {
         {es.uf ? STATES.map((f) => <path key={f.id} d={path(f)} fill="none" stroke="#c9d6ea" strokeOpacity={0.35} strokeWidth={1.2} />) : null}
         <Territories st={st} T={T} path={path} W={W} H={H} />
         {es.uf ? STATES.map((f) => <path key={'o' + f.id} d={path(f)} fill="none" stroke="#000" strokeOpacity={0.25} strokeWidth={1} />) : null}
+        {st.split ? <SplitFill sp={st.split} proj={proj} path={path} W={W} H={H} k={ease((T - st.split.at) / 0.9)} /> : null}
+        {st.line ? (() => {
+          const ln = st.line, xl = proj([ln.lon, 0])[0], k = ease((T - ln.at) / 1.4), y0 = -20, y1 = y0 + (H + 40) * k;
+          return <g><path d={`M${xl},${y0} L${xl},${y1}`} stroke={ln.color || '#ffd400'} strokeWidth={22} strokeOpacity={0.5} filter="url(#glow)" /><path d={`M${xl},${y0} L${xl},${y1}`} stroke="#000" strokeWidth={12} strokeOpacity={0.6} /><path d={`M${xl},${y0} L${xl},${y1}`} stroke={ln.color || '#ffd400'} strokeWidth={7} strokeDasharray="26 14" /></g>;
+        })() : null}
         {st.hl.map((iso) => { const c = featOf(iso); return c ? <g key={'h' + iso}><path d={path(c)} fill="#fff" fillOpacity={0.14 + 0.12 * Math.sin(T * 6)} stroke="#000" strokeWidth={14} strokeOpacity={0.6} /><path d={path(c)} fill="none" stroke="#fff" strokeWidth={7} strokeDasharray="22 12" /></g> : null; })}
         {st.arrows.map((a, i) => <Arrow key={i} a={pt(a.from)} b={pt(a.to)} t={T - a.at} color={a.color || '#b6ff3b'} w={vert ? 16 : 12} />)}
         {st.balls.map((b, i) => {
@@ -285,6 +303,11 @@ export const Ese = ({es}) => {
           return xy && T >= b.at ? <Ball key={i} uid={i} iso={b.iso} x={xy[0] + (b.dx || 0)} y={xy[1] + (b.dy || 0)} r={(b.r || 1) * (vert ? 88 : 64)} face={b.face} skin={b.skin || es.skin || 'emoji'} t={T - b.at} /> : null;
         })}
       </svg>
+      {st.pins.filter((p) => T >= p.at).map((p, i) => { const xy = pt(p.ll); if (!xy) return null; const k = ease((T - p.at) / 0.3); return (
+        <div key={'p' + i} style={{position: 'absolute', ...(p.left ? {right: W - xy[0] - (vert ? 18 : 15)} : {left: xy[0] - (vert ? 18 : 15)}), top: xy[1], transform: `translateY(-50%) scale(${k})`, transformOrigin: p.left ? 'right center' : 'left center', display: 'flex', alignItems: 'center', gap: 8, flexDirection: p.left ? 'row-reverse' : 'row'}}>
+          <div style={{width: vert ? 26 : 20, height: vert ? 26 : 20, borderRadius: 99, background: p.color || '#fff', border: '5px solid #111', boxShadow: '0 0 18px #fff8'}} />
+          <span style={{fontFamily: SANS, fontWeight: 800, fontSize: vert ? 34 : 26, color: '#fff', background: 'rgba(4,10,22,0.85)', padding: '3px 12px', borderRadius: 8, whiteSpace: 'nowrap'}}>{p.label}</span>
+        </div>); })}
       {es.badge ? <Badge text={es.badge} vert={vert} op={1 - hookOp * 0} /> : null}
       {st.cards.filter((c) => T >= c.at).map((c, i) => {
         const k = ease((T - c.at) / 0.35);
@@ -329,6 +352,7 @@ export const EseThumb = ({es}) => {
         <g transform="translate(10,16)" opacity={0.6}>{COUNTRIES.map((c, i) => <path key={'s' + i} d={path(c)} fill="#01040b" />)}</g>
         {COUNTRIES.map((c, i) => { const iso = ISO_OF[String(c.id).padStart(3, '0')]; return <path key={i} d={path(c)} fill={iso && COL[iso] ? mix(LAND, COL[iso], 0.09) : LAND} stroke="#6f86a8" strokeOpacity={0.55} strokeWidth={1.3} />; })}
         <Territories st={st} T={10} path={path} W={W} H={H} uid="th" />
+        {th.split ? <SplitFill sp={th.split} proj={proj} path={path} W={W} H={H} /> : null}
         {(th.arrows || []).map((a, i) => <Arrow key={i} a={pt(a.from)} b={pt(a.to)} t={5} color={a.color || '#b6ff3b'} w={18} />)}
         {(th.balls || []).map((b, i) => { const xy = pt(b.ll || b.iso); return xy ? <Ball key={i} uid={100 + i} iso={b.iso} x={xy[0] + (b.dx || 0)} y={xy[1] + (b.dy || 0)} r={b.r || 120} face={b.face} skin={b.skin || 'emoji'} t={1} /> : null; })}
       </svg>
