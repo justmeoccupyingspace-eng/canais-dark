@@ -1,0 +1,180 @@
+{
+ "topics": [
+  {
+   "id": "pt_oracao_noite",
+   "q": "oração da noite",
+   "order": "viewCount",
+   "after": "2026-10-01T00:00:00Z",
+   "lang": "pt",
+   "n": 25
+  },
+  {
+   "id": "pt_oracao_manha",
+   "q": "oração da manhã",
+   "order": "viewCount",
+   "after": "2026-10-01T00:00:00Z",
+   "lang": "pt",
+   "n": 25
+  },
+  {
+   "id": "pt_salmo91",
+   "q": "salmo 91 oração",
+   "order": "viewCount",
+   "after": "2026-10-01T00:00:00Z",
+   "lang": "pt",
+   "n": 25
+  },
+  {
+   "id": "pt_msg_deus",
+   "q": "mensagem de deus para você hoje",
+   "order": "viewCount",
+   "after": "2026-10-01T00:00:00Z",
+   "lang": "pt",
+   "n": 25
+  },
+  {
+   "id": "pt_deus_diz",
+   "q": "deus quer te dizer",
+   "order": "viewCount",
+   "after": "2026-10-01T00:00:00Z",
+   "lang": "pt",
+   "n": 25
+  },
+  {
+   "id": "pt_hist_biblicas",
+   "q": "histórias bíblicas",
+   "order": "viewCount",
+   "after": "2026-10-01T00:00:00Z",
+   "lang": "pt",
+   "n": 25
+  },
+  {
+   "id": "pt_oracao_poderosa",
+   "q": "oração poderosa",
+   "order": "viewCount",
+   "after": "2026-10-01T00:00:00Z",
+   "lang": "pt",
+   "n": 25
+  },
+  {
+   "id": "pt_louvor",
+   "q": "louvores para dormir",
+   "order": "viewCount",
+   "after": "2026-10-01T00:00:00Z",
+   "lang": "pt",
+   "n": 25
+  },
+  {
+   "id": "pt_versiculo",
+   "q": "versículo do dia",
+   "order": "viewCount",
+   "after": "2026-10-01T00:00:00Z",
+   "lang": "pt",
+   "n": 25
+  },
+  {
+   "id": "en_bible_stories",
+   "q": "bible stories",
+   "order": "viewCount",
+   "after": "2026-10-01T00:00:00Z",
+   "lang": "en",
+   "n": 25
+  },
+  {
+   "id": "en_prayer_night",
+   "q": "prayer before sleep",
+   "order": "viewCount",
+   "after": "2026-10-01T00:00:00Z",
+   "lang": "en",
+   "n": 25
+  },
+  {
+   "id": "en_god_message",
+   "q": "god's message for you today",
+   "order": "viewCount",
+   "after": "2026-10-01T00:00:00Z",
+   "lang": "en",
+   "n": 25
+  },
+  {
+   "id": "en_jesus",
+   "q": "jesus says today",
+   "order": "viewCount",
+   "after": "2026-10-01T00:00:00Z",
+   "lang": "en",
+   "n": 25
+  },
+  {
+   "id": "es_oracion",
+   "q": "oración de la noche",
+   "order": "viewCount",
+   "after": "2026-10-01T00:00:00Z",
+   "lang": "es",
+   "n": 25
+  },
+  {
+   "id": "es_mensaje_dios",
+   "q": "mensaje de dios para ti hoy",
+   "order": "viewCount",
+   "after": "2026-10-01T00:00:00Z",
+   "lang": "es",
+   "n": 25
+  },
+  {
+   "id": "pt_relatos",
+   "q": "relatos sobrenaturais",
+   "order": "viewCount",
+   "after": "2026-10-01T00:00:00Z",
+   "lang": "pt",
+   "n": 25
+  },
+  {
+   "id": "pt_curiosidades",
+   "q": "curiosidades que você não sabia",
+   "order": "viewCount",
+   "after": "2026-10-01T00:00:00Z",
+   "lang": "pt",
+   "n": 25
+  },
+  {
+   "id": "pt_historia",
+   "q": "história documentário",
+   "order": "viewCount",
+   "after": "2026-10-01T00:00:00Z",
+   "lang": "pt",
+   "n": 25
+  },
+  {
+   "id": "en_sleep_history",
+   "q": "boring history for sleep",
+   "order": "viewCount",
+   "after": "2026-10-01T00:00:00Z",
+   "lang": "en",
+   "n": 25
+  },
+  {
+   "id": "en_stoic",
+   "q": "stoicism",
+   "order": "viewCount",
+   "after": "2026-10-01T00:00:00Z",
+   "lang": "en",
+   "n": 25
+  },
+  {
+   "id": "pt_financas",
+   "q": "como ficar rico",
+   "order": "viewCount",
+   "after": "2026-10-01T00:00:00Z",
+   "lang": "pt",
+   "n": 25
+  },
+  {
+   "id": "pt_concurso",
+   "q": "concurso público dicas",
+   "order": "viewCount",
+   "after": "2026-10-01T00:00:00Z",
+   "lang": "pt",
+   "n": 25
+  }
+ ]
+}
