@@ -1,0 +1,447 @@
+{
+ "id": "b-pt-006",
+ "channel": "B",
+ "lang": "pt",
+ "format": "short",
+ "hook": "E SE A|VENEZUELA INVADISSE|A GUIANA?",
+ "hook_end": 2.8,
+ "badge": "SÓ IMAGINAÇÃO",
+ "uf": true,
+ "voice": "Fenrir",
+ "music": {
+  "track": "Hidden Agenda",
+  "vol": 0.12,
+  "alt": [
+   "Investigations",
+   "Curiosity"
+  ]
+ },
+ "beats": [
+  {
+   "say": "E se a Venezuela invadisse a Guiana? Parece exagero, mas em dois mil e vinte e três o Brasil reforçou a fronteira com blindados por causa disso.",
+   "cam": {
+    "c": [
+     -62,
+     4
+    ],
+    "s": 2.6
+   },
+   "own": {
+    "VEN": "VEN",
+    "GUY": "GUY",
+    "BRA": "BRA"
+   },
+   "balls": [
+    {
+     "iso": "VEN",
+     "face": "angry",
+     "skin": "red",
+     "d": 0.6
+    },
+    {
+     "iso": "GUY",
+     "face": "shock",
+     "r": 0.7,
+     "d": 1.4
+    },
+    {
+     "iso": "BRA",
+     "ll": [
+      -61.5,
+      2.5
+     ],
+     "face": "cool",
+     "r": 0.8,
+     "d": 5.5
+    }
+   ]
+  },
+  {
+   "say": "Esse é o Essequibo. Mais de dois terços do território da Guiana.",
+   "cam": {
+    "c": [
+     -60.5,
+     4.8
+    ],
+    "s": 4.2
+   },
+   "balls": [],
+   "line": {
+    "lon": -58.5,
+    "d": 0.4
+   },
+   "cards": [
+    {
+     "text": "Essequibo:",
+     "big": "~2/3 da Guiana",
+     "iso": "GUY",
+     "d": 1.6
+    }
+   ]
+  },
+  {
+   "say": "A Venezuela diz que essa terra é dela desde o tempo dos espanhóis. A fronteira foi decidida em mil oitocentos e noventa e nove, num tribunal em Paris. E a Venezuela nunca aceitou.",
+   "cards": [
+    {
+     "text": "1899:",
+     "big": "decisão de Paris",
+     "d": 6.0
+    }
+   ],
+   "balls": [
+    {
+     "iso": "VEN",
+     "ll": [
+      -63.5,
+      7.0
+     ],
+     "face": "angry",
+     "skin": "red",
+     "d": 0.6
+    }
+   ]
+  },
+  {
+   "say": "Por mais de cem anos, isso foi só uma briga no papel. Até que, em dois mil e quinze, acharam petróleo no mar da Guiana. Muito petróleo.",
+   "cards": [
+    {
+     "text": "2015:",
+     "big": "petróleo no mar",
+     "iso": "GUY",
+     "d": 5.0
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -57.0,
+      8.2
+     ],
+     "iso": "GUY",
+     "face": "love",
+     "r": 0.7,
+     "d": 5.4
+    }
+   ]
+  },
+  {
+   "say": "Hoje a Guiana tem a maior renda por pessoa da América do Sul. Mais de trinta e dois mil dólares por ano. Três vezes a do Brasil.",
+   "cam": {
+    "c": [
+     -60,
+     -12
+    ],
+    "s": 1.05
+   },
+   "own": {
+    "ARG": "ARG",
+    "CHL": "CHL",
+    "URY": "URY",
+    "COL": "COL",
+    "PER": "PER"
+   },
+   "cards": [
+    {
+     "text": "PIB por pessoa:",
+     "big": "Guiana US$ 32 mil",
+     "iso": "GUY",
+     "d": 0.8
+    },
+    {
+     "text": "Brasil:",
+     "big": "US$ 10,7 mil",
+     "iso": "BRA",
+     "d": 5.0
+    }
+   ],
+   "balls": []
+  },
+  {
+   "say": "Em dezembro de dois mil e vinte e três, a Venezuela fez um referendo pra anexar o Essequibo. E publicou um mapa novo, com a região pintada como venezuelana.",
+   "cam": {
+    "c": [
+     -60.5,
+     4.8
+    ],
+    "s": 4.2
+   },
+   "cards": [
+    {
+     "text": "Dez/2023:",
+     "big": "referendo na Venezuela",
+     "iso": "VEN",
+     "d": 1.2
+    }
+   ],
+   "split": {
+    "iso": "GUY",
+    "lon": -58.5,
+    "west": "VEN",
+    "east": "GUY",
+    "d": 5.5
+   }
+  },
+  {
+   "say": "Só que entre os dois países tem selva fechada e montanha. Segundo analistas militares, o caminho mais fácil pra um exército passar… é por Roraima. Pelo Brasil.",
+   "split": null,
+   "cards": [],
+   "cam": {
+    "c": [
+     -61.5,
+     3.5
+    ],
+    "s": 3.4
+   },
+   "hl": [
+    "BR-RR"
+   ],
+   "arrows": [
+    {
+     "from": [
+      -61.8,
+      5.8
+     ],
+     "to": [
+      -61.2,
+      4.4
+     ],
+     "d": 3.5,
+     "color": "#ff5a3c"
+    },
+    {
+     "from": [
+      -61.2,
+      4.4
+     ],
+     "to": [
+      -59.8,
+      3.4
+     ],
+     "d": 4.6,
+     "color": "#ff5a3c"
+    }
+   ],
+   "pins": [
+    {
+     "ll": [
+      -61.15,
+      4.48
+     ],
+     "label": "Pacaraima",
+     "left": true,
+     "d": 3.8
+    }
+   ]
+  },
+  {
+   "say": "Por isso o Brasil mandou blindados pra perto de Pacaraima. Ninguém quer uma guerra passando pelo nosso território.",
+   "hl": [],
+   "arrows": [
+    {
+     "from": [
+      -60.67,
+      2.82
+     ],
+     "to": [
+      -61.1,
+      4.3
+     ],
+     "d": 0.8
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -60.6,
+      3.0
+     ],
+     "iso": "BRA",
+     "face": "angry",
+     "skin": "red",
+     "d": 1.4
+    }
+   ]
+  },
+  {
+   "say": "Agora imagina que a Venezuela tomasse o Essequibo. A Guiana encolheria pra menos de um terço do tamanho.",
+   "arrows": [],
+   "pins": [],
+   "balls": [],
+   "cam": {
+    "c": [
+     -60.5,
+     4.8
+    ],
+    "s": 4.2
+   },
+   "split": {
+    "iso": "GUY",
+    "lon": -58.5,
+    "west": "VEN",
+    "east": "GUY",
+    "d": 0.6
+   },
+   "cards": [
+    {
+     "text": "Guiana:",
+     "big": "< 1/3 do tamanho",
+     "iso": "GUY",
+     "d": 3.6
+    }
+   ]
+  },
+  {
+   "say": "E Roraima ia ficar com a Venezuela dos dois lados: no norte e no leste.",
+   "cards": [],
+   "cam": {
+    "c": [
+     -61.5,
+     3.0
+    ],
+    "s": 2.9
+   },
+   "hl": [
+    "BR-RR"
+   ],
+   "balls": [
+    {
+     "ll": [
+      -61.2,
+      2.2
+     ],
+     "iso": "BRA",
+     "face": "shock",
+     "r": 0.8,
+     "d": 1.0
+    }
+   ]
+  },
+  {
+   "say": "E um detalhe que pouca gente sabe: a Guiana é o único país da América do Sul com o inglês como língua oficial. E lá o esporte mais popular nem é o futebol. É o críquete.",
+   "hl": [],
+   "split": null,
+   "balls": [
+    {
+     "iso": "GUY",
+     "face": "cool",
+     "d": 0.6
+    }
+   ],
+   "cards": [
+    {
+     "text": "Língua oficial:",
+     "big": "inglês",
+     "iso": "GBR",
+     "d": 1.2
+    },
+    {
+     "text": "Esporte nº 1:",
+     "big": "críquete",
+     "iso": "GUY",
+     "d": 8.0
+    }
+   ]
+  },
+  {
+   "say": "Me fala: o Brasil devia se meter nessa briga ou ficar de fora? Comenta aí. E manda pro seu amigo de Roraima.",
+   "cards": [],
+   "cam": {
+    "c": [
+     -62,
+     4
+    ],
+    "s": 2.6
+   },
+   "balls": [
+    {
+     "iso": "VEN",
+     "face": "smirk",
+     "skin": "red",
+     "d": 0.4
+    },
+    {
+     "iso": "GUY",
+     "face": "shock",
+     "r": 0.7,
+     "d": 0.9
+    },
+    {
+     "iso": "BRA",
+     "ll": [
+      -61.5,
+      2.5
+     ],
+     "face": "cool",
+     "r": 0.8,
+     "d": 1.4
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "E SE A|VENEZUELA INVADISSE|A GUIANA?",
+  "c": [
+   -61.5,
+   4.2
+  ],
+  "s": 3.0,
+  "y": 0.66,
+  "own": {
+   "VEN": "VEN",
+   "BRA": "BRA"
+  },
+  "split": {
+   "iso": "GUY",
+   "lon": -58.5,
+   "west": "VEN",
+   "east": "GUY"
+  },
+  "balls": [
+   {
+    "iso": "VEN",
+    "ll": [
+     -64,
+     6.5
+    ],
+    "face": "rage",
+    "skin": "red",
+    "r": 150
+   },
+   {
+    "iso": "GUY",
+    "ll": [
+     -58.0,
+     5.0
+    ],
+    "face": "shock",
+    "r": 110
+   }
+  ]
+ },
+ "yt": {
+  "title": "E se a Venezuela invadisse a Guiana? #curiosidades #brasil",
+  "description": "A Venezuela reivindica o Essequibo, mais de 2/3 da Guiana. Em 2015 acharam petróleo; em 2023 a Venezuela fez um referendo pra anexar a região, e o Brasil reforçou a fronteira em Roraima. Dados: Banco Mundial.\nO Brasil devia se meter nessa briga? Comenta aí. E manda pro seu amigo de Roraima.\n\nCenário imaginário: só um \"e se\" no mapa. Os fatos de apoio são reais.\nInscreva-se pra ver o próximo \"e se\".\n\n#curiosidades #brasil #mapas #geografia #historia",
+  "tags": [
+   "curiosidades",
+   "brasil",
+   "mapas",
+   "geografia",
+   "história",
+   "simulação",
+   "e se",
+   "hiperfoco",
+   "américa do sul",
+   "guiana",
+   "venezuela",
+   "essequibo",
+   "roraima",
+   "petróleo",
+   "pacaraima"
+  ],
+  "lang": "pt-BR",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-19T21:00:00Z"
+ }
+}

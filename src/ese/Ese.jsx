@@ -31,8 +31,8 @@ const featOf = (k) => BYKEY[k] || BYNUM[NUM[k]];
 // cor de cada "dono" (cor principal da bandeira) e do brilho do contorno
 const COL = {BRA: '#1fa84a', ARG: '#6cb4ee', CHL: '#d52b1e', URY: '#3a6fd8', PRY: '#c8102e', BOL: '#f2c200', PER: '#e8112d', COL: '#fcd116', VEN: '#cf142b', ECU: '#ffdd00',
   GUY: '#009e49', SUR: '#377e3f', GUF: '#0055a4', MEX: '#006847', USA: '#3c3b6e', CAN: '#d80621', PRT: '#046a38', ESP: '#c60b1e', FRA: '#0055a4', GBR: '#012169', RUS: '#d52b1e', CHN: '#de2910',
-  DEU: '#222', ITA: '#009246', JPN: '#bc002d', IND: '#ff9933', NLD: '#ae1c28', CPV: '#003893', AGO: '#cc092f', MOZ: '#009739', GNB: '#ce1126', STP: '#12ad2b', TLS: '#dc241f', SUL: '#0a3d91', NDE: '#f07800', NOR: '#ba0c2f', FIN: '#002f6c', SWE: '#006aa7', SOV: '#cc0000', POL: '#dc143c', UKR: '#0057b7', MYS: '#010066', SGP: '#ef3340', THA: '#2d2a4a', FLK: '#012169', KOR: '#0047a0', PRK: '#024fa2', ISR: '#0038b8', DNK: '#c8102e'};
-const GLOW = {BRA: '#c6ff2e', ARG: '#7fd3ff', URY: '#8fb8ff', CHL: '#ff6b5b', BOL: '#ffe14d', PER: '#ff6b6b', PRY: '#ff8a8a', COL: '#ffe14d', VEN: '#ffd34d', ECU: '#ffe14d', PRT: '#7dff9a', FRA: '#8fb8ff', USA: '#8fb8ff', ESP: '#ffcf40', GUY: '#c6ff2e', SUR: '#9dff9d', SUL: '#7fe0ff', NDE: '#ffb347'};
+  DEU: '#222', ITA: '#009246', JPN: '#bc002d', IND: '#ff9933', NLD: '#ae1c28', CPV: '#003893', AGO: '#cc092f', MOZ: '#009739', GNB: '#ce1126', STP: '#12ad2b', TLS: '#dc241f', SUL: '#0a3d91', NDE: '#f07800', NRT: '#0b6b2e', SDE: '#13306b', RSU: '#009739', COE: '#d9a300', NOR: '#ba0c2f', FIN: '#002f6c', SWE: '#006aa7', SOV: '#cc0000', POL: '#dc143c', UKR: '#0057b7', MYS: '#010066', SGP: '#ef3340', THA: '#2d2a4a', FLK: '#012169', KOR: '#0047a0', PRK: '#024fa2', ISR: '#0038b8', DNK: '#c8102e'};
+const GLOW = {BRA: '#c6ff2e', ARG: '#7fd3ff', URY: '#8fb8ff', CHL: '#ff6b5b', BOL: '#ffe14d', PER: '#ff6b6b', PRY: '#ff8a8a', COL: '#ffe14d', VEN: '#ffd34d', ECU: '#ffe14d', PRT: '#7dff9a', FRA: '#8fb8ff', USA: '#8fb8ff', ESP: '#ffcf40', GUY: '#c6ff2e', SUR: '#9dff9d', SUL: '#7fe0ff', NDE: '#ffb347', NRT: '#7dff9a', SDE: '#8fb8ff', RSU: '#ff8a8a', COE: '#ffe14d'};
 const SANS = 'PoppinsX, "Helvetica Neue", Arial, sans-serif';
 const ANTON = 'AntonX, Impact, "Arial Narrow", sans-serif';
 
@@ -105,6 +105,10 @@ const FlagArt = ({iso, x, y, w, h}) => {
     case 'ISR': return <g>{R('#fff')}<rect x={x} y={y + h * 0.12} width={w} height={h * 0.12} fill="#0038b8" /><rect x={x} y={y + h * 0.76} width={w} height={h * 0.12} fill="#0038b8" /></g>;
     case 'KOR': return <g>{R('#fff')}<circle cx={cx} cy={cy} r={m * 0.22} fill="#cd2e3a" /><path d={`M${cx - m * 0.22},${cy} a${m * 0.11},${m * 0.11} 0 0 0 ${m * 0.22},0 a${m * 0.11},${m * 0.11} 0 0 1 ${m * 0.22},0 a${m * 0.22},${m * 0.22} 0 0 1 ${-m * 0.44},0`} fill="#0047a0" /></g>;
     case 'PRK': return <g>{Hs(['#024fa2', '#fff', '#ed1c27', '#ed1c27', '#ed1c27', '#fff', '#024fa2'])}<circle cx={x + w * 0.35} cy={cy} r={m * 0.16} fill="#fff" />{star(x + w * 0.35, cy, m * 0.13, '#ed1c27')}</g>;
+    case 'NRT': return <g>{R('#0b6b2e')}<path d={`M${x},${y + h * 0.55} C${x + w * 0.3},${y + h * 0.4} ${x + w * 0.6},${y + h * 0.75} ${x + w},${y + h * 0.55} L${x + w},${y + h * 0.7} C${x + w * 0.6},${y + h * 0.9} ${x + w * 0.3},${y + h * 0.55} ${x},${y + h * 0.7} Z`} fill="#2f8fd6" />{star(x + w * 0.2, y + h * 0.25, m * 0.09, '#fff')}</g>;
+    case 'SDE': return <g>{Hs(['#13306b', '#fff', '#c8102e'])}{star(cx, cy, m * 0.11, '#ffd400')}</g>;
+    case 'RSU': return <g>{R('#009739')}<path d={`M${x},${y + h} L${x + w},${y} L${x + w},${y + h * 0.45} L${x + w * 0.45},${y + h} Z`} fill="#d52b1e" /><path d={`M${x + w * 0.45},${y + h} L${x + w},${y + h * 0.45} L${x + w},${y + h} Z`} fill="#ffcd00" /></g>;
+    case 'COE': return <g>{R('#d9a300')}<rect x={x} y={y + h * 0.62} width={w} height={h * 0.38} fill="#2e7d32" />{star(cx, y + h * 0.33, m * 0.12, '#fff')}</g>;
     case 'MOZ': return <g>{Hs(['#009739', '#000', '#fce100'])}<path d={`M${x},${y} L${x + w * 0.45},${cy} L${x},${y + h} Z`} fill="#d21034" /></g>;
     default: return R(COL[iso] || '#888');
   }
@@ -174,7 +178,7 @@ const Arrow = ({a, b, t, color = '#b6ff3b', w = 16}) => {
 const stateAt = (beats, T) => {
   let cam = beats[0]?.cam || {c: [-58, -18], s: 1.0}, prevCam = cam, camT = 0;
   const own = {}, ownPrev = {}, ownAt = {};
-  let balls = [], arrows = [], cards = [], hl = [], pins = [], split = null, line = null, zones = [], date = null, dateAt = 0;
+  let balls = [], arrows = [], cards = [], hl = [], pins = [], split = null, line = null, zones = [], date = null, dateAt = 0, focus = [];
   for (const b of beats) {
     if (b.t0 > T) break;
     if (b.cam) { prevCam = cam; cam = b.cam; camT = b.t0; }
@@ -188,12 +192,13 @@ const stateAt = (beats, T) => {
     if (b.line !== undefined) line = b.line ? {...b.line, at: b.t0 + (b.line.d || 0)} : null;
     if (b.zones !== undefined) zones = (b.zones || []).map((x) => ({...x, at: b.t0 + (x.d || 0)}));
     if (b.date !== undefined) { date = b.date; dateAt = b.t0; }
+    if (b.focus !== undefined) focus = b.focus || [];
     hl = b.hl || [];
   }
   const k = ease((T - camT) / 1.2);
   const c = geoInterpolate(prevCam.c, cam.c)(k);
   const s = prevCam.s + (cam.s - prevCam.s) * k;
-  return {c, s, own, ownPrev, ownAt, balls, arrows, cards, hl, pins, split, line, zones, date, dateAt};
+  return {c, s, own, ownPrev, ownAt, balls, arrows, cards, hl, pins, split, line, zones, date, dateAt, focus};
 };
 
 const mergedCache = new Map();
@@ -232,13 +237,14 @@ const Territories = ({st, T, path, W, H, uid = 'v', sat = false}) => {
   for (const [o, iso] of order) {
     const f = featOf(iso); let bb = BB[o]; if (!f || !bb) continue;
     if (iso.includes('-')) bb = bboxOf(groups[o].filter((i) => i.includes('-'))) || bb;  // estados: bandeira inteira só na área dos estados desse dono
-    const op = ease((T - st.ownAt[iso]) / 0.9);
+    const op = ease((T - st.ownAt[iso]) / 0.9) * ((st.focus || []).length && !st.focus.includes(o) && !st.focus.includes(iso) ? 0.25 : 1);
     const id = `tp${uid}${iso}`;
     out.push(<g key={'t' + iso}><clipPath id={id}><path d={path(f)} /></clipPath>
       <g clipPath={`url(#${id})`} opacity={op * (sat ? 0.86 : 1)}><FlagArt iso={o} x={bb[0]} y={bb[1]} w={bb[2]} h={bb[3]} /><rect x={bb[0]} y={bb[1]} width={bb[2]} height={bb[3]} fill="url(#gTerr)" /></g>
       <path d={path(f)} fill="none" stroke="#000" strokeOpacity={0.35 * op} strokeWidth={1.4} /></g>);
   }
   for (const [o, L] of Object.entries(groups)) {
+    if ((st.focus || []).length && !st.focus.includes(o)) continue;
     const settled = L.filter((i) => T - st.ownAt[i] > 0.45);
     const cs = settled.filter((i) => !i.includes('-')), ss = settled.filter((i) => i.includes('-'));
     const gc = GLOW[o] || '#ffe14d';

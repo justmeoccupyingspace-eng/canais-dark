@@ -1,0 +1,352 @@
+{
+ "id": "b-pt-008",
+ "channel": "B",
+ "lang": "pt",
+ "format": "short",
+ "hook": "E SE PORTUGAL|VIRASSE ESTADO|BRASILEIRO?",
+ "hook_end": 2.8,
+ "badge": "SÓ IMAGINAÇÃO",
+ "uf": false,
+ "voice": "Fenrir",
+ "music": {
+  "track": "Hidden Agenda",
+  "vol": 0.12,
+  "alt": [
+   "Investigations",
+   "Curiosity"
+  ]
+ },
+ "beats": [
+  {
+   "say": "E se Portugal virasse um estado brasileiro? Parece piada, mas por treze anos quem mandava em Portugal estava aqui, no Rio de Janeiro.",
+   "cam": {
+    "c": [
+     -25,
+     0
+    ],
+    "s": 0.55
+   },
+   "own": {
+    "BRA": "BRA",
+    "PRT": "PRT"
+   },
+   "balls": [
+    {
+     "iso": "BRA",
+     "face": "smirk",
+     "d": 0.6
+    },
+    {
+     "iso": "PRT",
+     "ll": [
+      -8,
+      40
+     ],
+     "face": "shock",
+     "r": 0.6,
+     "d": 1.4
+    }
+   ]
+  },
+  {
+   "say": "Mil oitocentos e sete. Napoleão manda invadir Portugal. E a família real faz uma coisa que nenhuma outra fez: foge pra colônia.",
+   "balls": [
+    {
+     "iso": "FRA",
+     "ll": [
+      2.5,
+      46.5
+     ],
+     "face": "angry",
+     "skin": "red",
+     "r": 0.6,
+     "d": 1.4
+    }
+   ],
+   "arrows": [
+    {
+     "from": [
+      2.5,
+      46.5
+     ],
+     "to": [
+      -8,
+      40
+     ],
+     "d": 1.8,
+     "color": "#ff5a3c"
+    }
+   ],
+   "cards": [
+    {
+     "text": "1807:",
+     "big": "Napoleão invade",
+     "iso": "FRA",
+     "d": 1.6
+    }
+   ]
+  },
+  {
+   "say": "Entre dez e quinze mil pessoas atravessaram o Atlântico com a corte. Em mil oitocentos e oito, o Rio virou a capital do império português.",
+   "arrows": [
+    {
+     "from": [
+      -9.1,
+      38.7
+     ],
+     "to": [
+      -43.2,
+      -22.9
+     ],
+     "d": 2.0
+    }
+   ],
+   "cards": [
+    {
+     "text": "1808:",
+     "big": "Rio, capital do império",
+     "iso": "PRT",
+     "d": 6.2
+    }
+   ],
+   "balls": []
+  },
+  {
+   "say": "Foi a única vez que uma capital europeia funcionou fora da Europa.",
+   "arrows": [],
+   "cards": [],
+   "cam": {
+    "c": [
+     -43.2,
+     -22.9
+    ],
+    "s": 7
+   },
+   "pins": [
+    {
+     "ll": [
+      -43.2,
+      -22.9
+     ],
+     "label": "Rio de Janeiro",
+     "d": 0.6
+    }
+   ]
+  },
+  {
+   "say": "Em mil oitocentos e quinze, o Brasil deixou de ser colônia e virou reino, junto com Portugal. Na prática, a sede era aqui.",
+   "pins": [],
+   "cam": {
+    "c": [
+     -25,
+     0
+    ],
+    "s": 0.55
+   },
+   "cards": [
+    {
+     "text": "1815:",
+     "big": "Reino Unido de Portugal, Brasil e Algarves",
+     "d": 0.8
+    }
+   ]
+  },
+  {
+   "say": "Agora imagina se a corte nunca tivesse voltado. E Portugal virasse mais um estado brasileiro.",
+   "cards": [],
+   "own": {
+    "PRT": "BRA"
+   },
+   "od": 1.6,
+   "balls": [
+    {
+     "iso": "BRA",
+     "face": "happy",
+     "d": 1.8
+    }
+   ]
+  },
+  {
+   "say": "Seria um estado pequeno: Portugal é menor que Pernambuco. Cabe mais de noventa vezes no Brasil.",
+   "cam": {
+    "c": [
+     -8.5,
+     39.6
+    ],
+    "s": 7
+   },
+   "balls": [],
+   "cards": [
+    {
+     "text": "Portugal:",
+     "big": "92 mil km²",
+     "iso": "PRT",
+     "d": 1.0
+    },
+    {
+     "text": "Pernambuco:",
+     "big": "98 mil km²",
+     "iso": "BRA",
+     "d": 2.6
+    }
+   ]
+  },
+  {
+   "say": "Com dez milhões e oitocentas mil pessoas, praticamente a população do Rio Grande do Sul.",
+   "cards": [
+    {
+     "text": "População:",
+     "big": "10,8 milhões",
+     "iso": "PRT",
+     "d": 0.8
+    }
+   ]
+  },
+  {
+   "say": "E seria um estado rico: o PIB por pessoa de Portugal é três vezes o do Brasil.",
+   "cards": [
+    {
+     "text": "PIB por pessoa:",
+     "big": "Portugal US$ 32 mil",
+     "iso": "PRT",
+     "d": 0.8
+    },
+    {
+     "text": "Brasil:",
+     "big": "US$ 10,7 mil",
+     "iso": "BRA",
+     "d": 3.2
+    }
+   ]
+  },
+  {
+   "say": "Mas a história foi pro outro lado. Em mil oitocentos e vinte e um, Dom João sexto voltou pra Lisboa. E no ano seguinte, o filho dele, Dom Pedro, declarou a independência do Brasil.",
+   "cards": [
+    {
+     "text": "1822:",
+     "big": "Independência",
+     "iso": "BRA",
+     "d": 7.0
+    }
+   ],
+   "own": {
+    "PRT": "PRT"
+   },
+   "od": 4.0,
+   "cam": {
+    "c": [
+     -25,
+     0
+    ],
+    "s": 0.55
+   },
+   "arrows": [
+    {
+     "from": [
+      -43.2,
+      -22.9
+     ],
+     "to": [
+      -9.1,
+      38.7
+     ],
+     "d": 2.0,
+     "color": "#7fd3ff"
+    }
+   ]
+  },
+  {
+   "say": "Me fala: Portugal como estado brasileiro, sim ou não? E qual seria o apelido dos portugueses? Comenta aí. E manda pro amigo que mora em Portugal.",
+   "arrows": [],
+   "cards": [],
+   "balls": [
+    {
+     "iso": "BRA",
+     "face": "smirk",
+     "d": 0.4
+    },
+    {
+     "iso": "PRT",
+     "ll": [
+      -8,
+      40
+     ],
+     "face": "smirk",
+     "r": 0.6,
+     "d": 0.9
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "E SE PORTUGAL|VIRASSE ESTADO|BRASILEIRO?",
+  "c": [
+   -28,
+   5
+  ],
+  "s": 0.62,
+  "y": 0.66,
+  "own": {
+   "BRA": "BRA",
+   "PRT": "BRA"
+  },
+  "balls": [
+   {
+    "iso": "PRT",
+    "ll": [
+     -8,
+     40
+    ],
+    "face": "shock",
+    "r": 110
+   },
+   {
+    "iso": "BRA",
+    "ll": [
+     -50,
+     -10
+    ],
+    "face": "smirk",
+    "r": 150
+   }
+  ],
+  "arrows": [
+   {
+    "from": [
+     -43.2,
+     -22.9
+    ],
+    "to": [
+     -9.1,
+     38.7
+    ]
+   }
+  ]
+ },
+ "yt": {
+  "title": "E se Portugal virasse um estado do Brasil? #curiosidades #brasil",
+  "description": "Em 1808, fugindo de Napoleão, a família real portuguesa veio pro Brasil e o Rio virou a capital do império. E se a corte nunca tivesse voltado? Portugal é menor que Pernambuco e tem quase a população do RS. Dados: Banco Mundial e IBGE.\nPortugal como estado brasileiro: sim ou não? Comenta aí.\n\nCenário imaginário: só um \"e se\" no mapa. Os fatos de apoio são reais.\nInscreva-se pra ver o próximo \"e se\".\n\n#curiosidades #brasil #mapas #geografia #historia",
+  "tags": [
+   "curiosidades",
+   "brasil",
+   "mapas",
+   "geografia",
+   "história",
+   "simulação",
+   "e se",
+   "hiperfoco",
+   "américa do sul",
+   "portugal",
+   "família real",
+   "dom joão vi",
+   "1808",
+   "rio de janeiro",
+   "reino unido de portugal brasil e algarves"
+  ],
+  "lang": "pt-BR",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-20T21:00:00Z"
+ }
+}

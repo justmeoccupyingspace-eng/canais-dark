@@ -1,0 +1,393 @@
+{
+ "id": "b-pt-007",
+ "channel": "B",
+ "lang": "pt",
+ "format": "short",
+ "hook": "E SE O BRASIL|VIRASSE|5 PAÍSES?",
+ "hook_end": 2.8,
+ "badge": "SÓ IMAGINAÇÃO",
+ "uf": true,
+ "voice": "Fenrir",
+ "music": {
+  "track": "Hidden Agenda",
+  "vol": 0.12,
+  "alt": [
+   "Investigations",
+   "Curiosity"
+  ]
+ },
+ "beats": [
+  {
+   "say": "E se o Brasil se dividisse em cinco países, um pra cada região? Cada um deles ia ser gigante. Olha só.",
+   "cam": {
+    "c": [
+     -52,
+     -15
+    ],
+    "s": 1.5
+   },
+   "own": {
+    "BRA": "BRA"
+   },
+   "balls": [
+    {
+     "iso": "BRA",
+     "face": "shock",
+     "d": 0.6
+    }
+   ]
+  },
+  {
+   "say": "Primeiro, o Norte. Sozinho, ele teria mais de três milhões e oitocentos mil quilômetros quadrados. Maior que a Índia inteira.",
+   "balls": [],
+   "own": {
+    "BR-AC": "NRT",
+    "BR-AM": "NRT",
+    "BR-RR": "NRT",
+    "BR-RO": "NRT",
+    "BR-PA": "NRT",
+    "BR-AP": "NRT",
+    "BR-TO": "NRT"
+   },
+   "od": 0.6,
+   "cam": {
+    "c": [
+     -60,
+     -5
+    ],
+    "s": 1.8
+   },
+   "cards": [
+    {
+     "text": "Norte:",
+     "big": "3,85 milhões de km²",
+     "d": 1.4
+    },
+    {
+     "text": "Índia:",
+     "big": "3,29 milhões",
+     "iso": "IND",
+     "d": 5.6
+    }
+   ]
+  },
+  {
+   "say": "Mas com pouca gente: dezessete milhões de habitantes. Menos que o Chile.",
+   "cards": [
+    {
+     "text": "População:",
+     "big": "17,4 milhões",
+     "d": 0.6
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -62,
+      -4
+     ],
+     "iso": "BRA",
+     "face": "neutral",
+     "d": 0.6
+    }
+   ]
+  },
+  {
+   "say": "Agora o Nordeste. Cinquenta e quatro milhões e meio de pessoas. Mais que a Colômbia, mais que a Argentina.",
+   "cards": [],
+   "balls": [],
+   "own": {
+    "BR-MA": "NDE",
+    "BR-PI": "NDE",
+    "BR-CE": "NDE",
+    "BR-RN": "NDE",
+    "BR-PB": "NDE",
+    "BR-PE": "NDE",
+    "BR-AL": "NDE",
+    "BR-SE": "NDE",
+    "BR-BA": "NDE"
+   },
+   "od": 0.4,
+   "cam": {
+    "c": [
+     -41.5,
+     -9.5
+    ],
+    "s": 2.1
+   },
+   "hl": [],
+   "pins": []
+  },
+  {
+   "say": "O Sudeste seria o mais rico e o mais populoso: quase oitenta e cinco milhões de pessoas. Mais ou menos a população da Alemanha.",
+   "own": {
+    "BR-SP": "SDE",
+    "BR-RJ": "SDE",
+    "BR-MG": "SDE",
+    "BR-ES": "SDE"
+   },
+   "od": 0.4,
+   "cam": {
+    "c": [
+     -45.5,
+     -20
+    ],
+    "s": 2.6
+   },
+   "cards": [
+    {
+     "text": "Sudeste:",
+     "big": "84,8 milhões",
+     "d": 1.2
+    },
+    {
+     "text": "Alemanha:",
+     "big": "~84 milhões",
+     "iso": "DEU",
+     "d": 4.8
+    }
+   ]
+  },
+  {
+   "say": "O Sul teria trinta milhões de habitantes, mais que a Venezuela. E seria maior que a França europeia.",
+   "cards": [
+    {
+     "text": "Sul:",
+     "big": "29,9 milhões",
+     "d": 0.8
+    },
+    {
+     "text": "Área:",
+     "big": "577 mil km²",
+     "d": 4.2
+    }
+   ],
+   "own": {
+    "BR-PR": "RSU",
+    "BR-SC": "RSU",
+    "BR-RS": "RSU"
+   },
+   "od": 0.4,
+   "cam": {
+    "c": [
+     -51.5,
+     -27
+    ],
+    "s": 3.0
+   }
+  },
+  {
+   "say": "E o Centro-Oeste, o país do agro, ficaria com Brasília. Maior que o Peru, com dezesseis milhões de pessoas.",
+   "cards": [
+    {
+     "text": "Centro-Oeste:",
+     "big": "1,6 milhão de km²",
+     "d": 1.0
+    }
+   ],
+   "own": {
+    "BR-MT": "COE",
+    "BR-MS": "COE",
+    "BR-GO": "COE",
+    "BR-DF": "COE"
+   },
+   "od": 0.4,
+   "cam": {
+    "c": [
+     -53,
+     -15
+    ],
+    "s": 2.0
+   },
+   "pins": [
+    {
+     "ll": [
+      -47.9,
+      -15.8
+     ],
+     "label": "Brasília",
+     "d": 3.0
+    }
+   ]
+  },
+  {
+   "say": "Juntando tudo, a América do Sul passaria de doze pra dezesseis países. E os dois maiores, em população, seriam o Sudeste e o Nordeste. Na frente da Colômbia e da Argentina.",
+   "cards": [],
+   "pins": [],
+   "cam": {
+    "c": [
+     -60,
+     -20
+    ],
+    "s": 1.0
+   },
+   "own": {
+    "ARG": "ARG",
+    "COL": "COL",
+    "PER": "PER",
+    "VEN": "VEN",
+    "CHL": "CHL",
+    "BOL": "BOL",
+    "PRY": "PRY",
+    "URY": "URY",
+    "ECU": "ECU",
+    "GUY": "GUY",
+    "SUR": "SUR"
+   },
+   "balls": [
+    {
+     "ll": [
+      -40.5,
+      -8
+     ],
+     "iso": "BRA",
+     "face": "cool",
+     "r": 0.7,
+     "d": 2.0
+    },
+    {
+     "ll": [
+      -45,
+      -20
+     ],
+     "iso": "BRA",
+     "face": "cool",
+     "r": 0.7,
+     "d": 2.6
+    },
+    {
+     "iso": "COL",
+     "face": "shock",
+     "r": 0.6,
+     "d": 3.4
+    }
+   ]
+  },
+  {
+   "say": "Mas aí vem a pergunta que ia dar briga: qual deles ia ficar com a seleção e as cinco estrelas?",
+   "balls": [
+    {
+     "ll": [
+      -40.5,
+      -8
+     ],
+     "iso": "BRA",
+     "face": "angry",
+     "skin": "red",
+     "r": 0.7,
+     "d": 0.4
+    },
+    {
+     "ll": [
+      -45,
+      -20
+     ],
+     "iso": "BRA",
+     "face": "angry",
+     "skin": "red",
+     "r": 0.7,
+     "d": 0.8
+    },
+    {
+     "ll": [
+      -51,
+      -28
+     ],
+     "iso": "BRA",
+     "face": "angry",
+     "skin": "red",
+     "r": 0.6,
+     "d": 1.2
+    }
+   ]
+  },
+  {
+   "say": "Me fala: em qual desses cinco países você ia morar? Comenta aí. E manda pro amigo que vive dizendo que a região dele sustenta o Brasil.",
+   "cam": {
+    "c": [
+     -52,
+     -15
+    ],
+    "s": 1.5
+   },
+   "balls": []
+  }
+ ],
+ "thumb": {
+  "title": "E SE O BRASIL|VIRASSE|5 PAÍSES?",
+  "c": [
+   -52,
+   -15
+  ],
+  "s": 1.5,
+  "y": 0.64,
+  "own": {
+   "BR-AC": "NRT",
+   "BR-AM": "NRT",
+   "BR-RR": "NRT",
+   "BR-RO": "NRT",
+   "BR-PA": "NRT",
+   "BR-AP": "NRT",
+   "BR-TO": "NRT",
+   "BR-MA": "NDE",
+   "BR-PI": "NDE",
+   "BR-CE": "NDE",
+   "BR-RN": "NDE",
+   "BR-PB": "NDE",
+   "BR-PE": "NDE",
+   "BR-AL": "NDE",
+   "BR-SE": "NDE",
+   "BR-BA": "NDE",
+   "BR-SP": "SDE",
+   "BR-RJ": "SDE",
+   "BR-MG": "SDE",
+   "BR-ES": "SDE",
+   "BR-PR": "RSU",
+   "BR-SC": "RSU",
+   "BR-RS": "RSU",
+   "BR-MT": "COE",
+   "BR-MS": "COE",
+   "BR-GO": "COE",
+   "BR-DF": "COE"
+  },
+  "balls": [
+   {
+    "ll": [
+     -52,
+     -12
+    ],
+    "iso": "BRA",
+    "face": "shock",
+    "r": 140
+   }
+  ]
+ },
+ "yt": {
+  "title": "E se o Brasil virasse 5 países? #curiosidades #brasil",
+  "description": "Norte maior que a Índia, Nordeste com mais gente que a Colômbia, Sudeste do tamanho da Alemanha em população, Sul maior que a França europeia. Dados: Censo 2022 (IBGE) e Banco Mundial.\nEm qual desses países você ia morar? Comenta aí.\n\nCenário imaginário: só um \"e se\" no mapa. Os fatos de apoio são reais.\nInscreva-se pra ver o próximo \"e se\".\n\n#curiosidades #brasil #mapas #geografia #historia",
+  "tags": [
+   "curiosidades",
+   "brasil",
+   "mapas",
+   "geografia",
+   "história",
+   "simulação",
+   "e se",
+   "hiperfoco",
+   "américa do sul",
+   "regiões do brasil",
+   "brasil dividido",
+   "nordeste",
+   "sul",
+   "sudeste",
+   "norte",
+   "centro-oeste",
+   "censo 2022"
+  ],
+  "lang": "pt-BR",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-20T15:00:00Z"
+ }
+}
