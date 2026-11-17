@@ -1,0 +1,413 @@
+{
+ "id": "a-en-004",
+ "channel": "A",
+ "lang": "en",
+ "format": "short",
+ "style": "clean",
+ "hook": "600,000 MEN|INTO RUSSIA.|FEW CAME BACK",
+ "hook_end": 2.6,
+ "voice": "Charon",
+ "models": "gemini-3.8-flash-tts,gemini-3.1-flash-tts-preview",
+ "edge_voice": "en-US-AndrewMultilingualNeural",
+ "music": {
+  "track": "Volatile Reaction",
+  "vol": 0.11,
+  "alt": [
+   "Hidden Agenda",
+   "Investigations"
+  ]
+ },
+ "beats": [
+  {
+   "say": "In June 1812, Napoleon crossed into Russia with the largest army Europe had ever seen. More than 600,000 men.",
+   "cam": {
+    "c": [
+     22,
+     52
+    ],
+    "s": 1.6
+   },
+   "date": "24 JUNE 1812",
+   "own": {
+    "FRA": "FRA",
+    "RUS": "RUS"
+   },
+   "arrows": [
+    {
+     "from": [
+      13.4,
+      52.5
+     ],
+     "to": [
+      23.9,
+      54.9
+     ],
+     "color": "#7fd3ff",
+     "d": 2.0
+    }
+   ],
+   "pins": [
+    {
+     "ll": [
+      23.9,
+      54.9
+     ],
+     "label": "Neman River",
+     "d": 3.0
+    }
+   ],
+   "cards": [
+    {
+     "text": "Grande Armée:",
+     "big": "600,000+",
+     "iso": "FRA",
+     "d": 5.0
+    }
+   ]
+  },
+  {
+   "say": "The plan was simple: one big battle, a quick win, and the Tsar would have to negotiate.",
+   "cards": [],
+   "cam": {
+    "c": [
+     31,
+     55
+    ],
+    "s": 2.6
+   }
+  },
+  {
+   "say": "But the Russians wouldn't fight. They kept retreating, and burned crops and villages behind them.",
+   "pins": [],
+   "zones": [
+    {
+     "coords": [
+      [
+       24.5,
+       56.2
+      ],
+      [
+       31.0,
+       56.5
+      ],
+      [
+       36.5,
+       56.4
+      ],
+      [
+       36.8,
+       54.8
+      ],
+      [
+       31.0,
+       53.6
+      ],
+      [
+       24.2,
+       53.9
+      ]
+     ],
+     "color": "#7a2e0e",
+     "op": 0.45,
+     "label": "SCORCHED EARTH",
+     "d": 1.6
+    }
+   ],
+   "arrows": [
+    {
+     "from": [
+      23.9,
+      54.9
+     ],
+     "to": [
+      31.5,
+      54.8
+     ],
+     "color": "#7fd3ff",
+     "d": 0.6
+    }
+   ]
+  },
+  {
+   "say": "Napoleon finally got his battle at Borodino. Around seventy thousand men fell in a single day, and the Russians still pulled back.",
+   "date": "7 SEPTEMBER 1812",
+   "zones": [],
+   "arrows": [
+    {
+     "from": [
+      31.5,
+      54.8
+     ],
+     "to": [
+      35.82,
+      55.52
+     ],
+     "color": "#7fd3ff",
+     "d": 0.4
+    }
+   ],
+   "pins": [
+    {
+     "ll": [
+      35.82,
+      55.52
+     ],
+     "label": "Borodino",
+     "left": true,
+     "d": 0.8
+    }
+   ],
+   "cards": [
+    {
+     "text": "Borodino:",
+     "big": "~70,000 casualties",
+     "d": 3.2
+    }
+   ]
+  },
+  {
+   "say": "A week later he entered Moscow. It was almost empty. And then it caught fire.",
+   "cards": [],
+   "date": "14 SEPTEMBER 1812",
+   "cam": {
+    "c": [
+     36.5,
+     55.6
+    ],
+    "s": 9
+   },
+   "pins": [
+    {
+     "ll": [
+      37.62,
+      55.75
+     ],
+     "label": "Moscow",
+     "d": 0.6
+    }
+   ],
+   "zones": [
+    {
+     "coords": [
+      [
+       37.45,
+       55.82
+      ],
+      [
+       37.75,
+       55.84
+      ],
+      [
+       37.8,
+       55.68
+      ],
+      [
+       37.5,
+       55.66
+      ]
+     ],
+     "color": "#ff6a00",
+     "op": 0.6,
+     "label": "FIRE",
+     "d": 3.4
+    }
+   ]
+  },
+  {
+   "say": "Napoleon waited five weeks for a peace offer that never came. On October 19th, he turned back.",
+   "date": "19 OCTOBER 1812",
+   "zones": [],
+   "cam": {
+    "c": [
+     31,
+     55
+    ],
+    "s": 2.6
+   },
+   "arrows": [
+    {
+     "from": [
+      37.62,
+      55.75
+     ],
+     "to": [
+      31.5,
+      54.6
+     ],
+     "color": "#ff4d4d",
+     "d": 3.0
+    }
+   ]
+  },
+  {
+   "say": "Then winter arrived. Frost, hunger, and Cossack raids destroyed what was left of the army on the road home.",
+   "date": "NOVEMBER 1812",
+   "arrows": [
+    {
+     "from": [
+      31.5,
+      54.6
+     ],
+     "to": [
+      28.55,
+      54.33
+     ],
+     "color": "#ff4d4d",
+     "d": 0.4
+    }
+   ],
+   "zones": [
+    {
+     "coords": [
+      [
+       27.5,
+       56.0
+      ],
+      [
+       37.8,
+       56.0
+      ],
+      [
+       37.8,
+       54.0
+      ],
+      [
+       27.5,
+       54.0
+      ]
+     ],
+     "color": "#bfe3ff",
+     "op": 0.25,
+     "label": "−30°C",
+     "d": 1.0
+    }
+   ]
+  },
+  {
+   "say": "At the Berezina River, the survivors crossed on improvised bridges while the Russians closed in.",
+   "zones": [],
+   "date": "26–29 NOVEMBER 1812",
+   "pins": [
+    {
+     "ll": [
+      28.55,
+      54.33
+     ],
+     "label": "Berezina",
+     "d": 0.6
+    }
+   ],
+   "arrows": [
+    {
+     "from": [
+      28.55,
+      54.33
+     ],
+     "to": [
+      23.9,
+      54.9
+     ],
+     "color": "#ff4d4d",
+     "d": 3.0
+    }
+   ]
+  },
+  {
+   "say": "Of more than 600,000 men who marched in, historians estimate fewer than one in five made it back.",
+   "pins": [],
+   "date": "DECEMBER 1812",
+   "cam": {
+    "c": [
+     22,
+     52
+    ],
+    "s": 1.6
+   },
+   "cards": [
+    {
+     "text": "Marched in:",
+     "big": "600,000+",
+     "iso": "FRA",
+     "d": 0.6
+    },
+    {
+     "text": "Came back:",
+     "big": "fewer than 1 in 5",
+     "iso": "FRA",
+     "d": 3.0
+    }
+   ]
+  },
+  {
+   "say": "Russia barely had to win a battle. Distance, fire and winter did the rest.",
+   "cards": [],
+   "arrows": [],
+   "own": {
+    "RUS": "RUS",
+    "FRA": "FRA"
+   }
+  }
+ ],
+ "thumb": {
+  "title": "600,000 MEN|INTO RUSSIA.|FEW CAME BACK",
+  "c": [
+   28,
+   54
+  ],
+  "s": 1.9,
+  "y": 0.66,
+  "own": {
+   "FRA": "FRA",
+   "RUS": "RUS"
+  },
+  "arrows": [
+   {
+    "from": [
+     23.9,
+     54.9
+    ],
+    "to": [
+     37.62,
+     55.75
+    ],
+    "color": "#7fd3ff"
+   },
+   {
+    "from": [
+     37.62,
+     55.75
+    ],
+    "to": [
+     28.55,
+     54.33
+    ],
+    "color": "#ff4d4d"
+   }
+  ]
+ },
+ "yt": {
+  "title": "How Russia Destroyed Napoleon's Army by Retreating",
+  "description": "June 1812: Napoleon invades Russia with more than 600,000 men. Borodino, a burning Moscow, five weeks of waiting, then the winter retreat across the Berezina. Fewer than one in five came back.\n\nFollow for more history on the map.\n\n#history #maps #geography",
+  "tags": [
+   "history",
+   "map",
+   "history on a map",
+   "military history",
+   "geography",
+   "history shorts",
+   "maps",
+   "napoleon",
+   "1812",
+   "napoleon in russia",
+   "borodino",
+   "grande armee",
+   "berezina"
+  ],
+  "lang": "en",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-20T17:00:00Z"
+ },
+ "style_prompt": "Read this in English as a documentary narrator for a fast history channel: confident, clear, slightly dramatic, brisk pace (about 165 words per minute), short pauses before dates and numbers. Never sound like an advert. Read the text exactly as written."
+}

@@ -1,0 +1,389 @@
+{
+ "id": "a-en-005",
+ "channel": "A",
+ "lang": "en",
+ "format": "short",
+ "style": "clean",
+ "hook": "FINLAND VS|THE SOVIET|UNION",
+ "hook_end": 2.6,
+ "voice": "Charon",
+ "models": "gemini-3.8-flash-tts,gemini-3.1-flash-tts-preview",
+ "edge_voice": "en-US-AndrewMultilingualNeural",
+ "music": {
+  "track": "Volatile Reaction",
+  "vol": 0.11,
+  "alt": [
+   "Hidden Agenda",
+   "Investigations"
+  ]
+ },
+ "beats": [
+  {
+   "say": "On November 30th, 1939, the Soviet Union invaded Finland. Stalin expected it to take a couple of weeks.",
+   "cam": {
+    "c": [
+     29,
+     63
+    ],
+    "s": 2.0
+   },
+   "date": "30 NOVEMBER 1939",
+   "own": {
+    "FIN": "FIN",
+    "RUS": "SOV"
+   },
+   "arrows": [
+    {
+     "from": [
+      30.3,
+      59.95
+     ],
+     "to": [
+      28.9,
+      60.7
+     ],
+     "color": "#ff4d4d",
+     "d": 2.0
+    },
+    {
+     "from": [
+      33.5,
+      64.5
+     ],
+     "to": [
+      29.2,
+      64.9
+     ],
+     "color": "#ff4d4d",
+     "d": 2.6
+    },
+    {
+     "from": [
+      33.0,
+      67.5
+     ],
+     "to": [
+      28.8,
+      67.4
+     ],
+     "color": "#ff4d4d",
+     "d": 3.2
+    }
+   ]
+  },
+  {
+   "say": "On paper it was hopeless. The Soviets had far more soldiers, thousands of tanks and planes. Finland had about thirty tanks.",
+   "cards": [
+    {
+     "text": "Soviet tanks:",
+     "big": "thousands",
+     "iso": "SOV",
+     "d": 1.6
+    },
+    {
+     "text": "Finnish tanks:",
+     "big": "~30",
+     "iso": "FIN",
+     "d": 5.0
+    }
+   ],
+   "arrows": []
+  },
+  {
+   "say": "But Finland had the forest, the snow, and men who could ski through both.",
+   "cards": [],
+   "cam": {
+    "c": [
+     29.5,
+     64.8
+    ],
+    "s": 4.0
+   }
+  },
+  {
+   "say": "At Suomussalmi, Finnish ski troops cut the Soviet columns into pieces on the forest roads, and destroyed two entire divisions.",
+   "date": "DEC 1939 – JAN 1940",
+   "pins": [
+    {
+     "ll": [
+      28.9,
+      64.9
+     ],
+     "label": "Suomussalmi",
+     "d": 0.8
+    }
+   ],
+   "zones": [
+    {
+     "coords": [
+      [
+       29.1,
+       64.95
+      ],
+      [
+       29.6,
+       64.95
+      ],
+      [
+       29.6,
+       64.75
+      ],
+      [
+       29.1,
+       64.75
+      ]
+     ],
+     "color": "#c1121f",
+     "op": 0.5,
+     "d": 2.0
+    },
+    {
+     "coords": [
+      [
+       29.8,
+       64.85
+      ],
+      [
+       30.3,
+       64.85
+      ],
+      [
+       30.3,
+       64.65
+      ],
+      [
+       29.8,
+       64.65
+      ]
+     ],
+     "color": "#c1121f",
+     "op": 0.5,
+     "d": 2.8
+    }
+   ],
+   "cards": [
+    {
+     "text": "Destroyed:",
+     "big": "2 Soviet divisions",
+     "iso": "FIN",
+     "d": 5.6
+    }
+   ]
+  },
+  {
+   "say": "Temperatures dropped to minus forty. Many Soviet soldiers lacked winter gear, while the Finns moved unseen in white.",
+   "zones": [],
+   "pins": [],
+   "cards": [
+    {
+     "text": "Winter 1940:",
+     "big": "−40°C",
+     "d": 0.8
+    }
+   ]
+  },
+  {
+   "say": "The Finns even named their bottle bombs after the Soviet foreign minister: the Molotov cocktail.",
+   "cards": [
+    {
+     "text": "Named after:",
+     "big": "Vyacheslav Molotov",
+     "iso": "SOV",
+     "d": 2.6
+    }
+   ]
+  },
+  {
+   "say": "In February, the Soviets threw everything at the Mannerheim Line on the Karelian Isthmus, and finally broke through.",
+   "cards": [],
+   "date": "FEBRUARY 1940",
+   "cam": {
+    "c": [
+     29.5,
+     61.0
+    ],
+    "s": 4.5
+   },
+   "zones": [
+    {
+     "coords": [
+      [
+       28.0,
+       60.55
+      ],
+      [
+       28.9,
+       60.75
+      ],
+      [
+       29.6,
+       60.6
+      ],
+      [
+       30.2,
+       60.45
+      ]
+     ],
+     "color": "#1d4ed8",
+     "op": 0.0,
+     "label": "MANNERHEIM LINE",
+     "ly": -30,
+     "d": 0.6
+    }
+   ],
+   "arrows": [
+    {
+     "from": [
+      30.3,
+      59.95
+     ],
+     "to": [
+      29.0,
+      60.75
+     ],
+     "color": "#ff4d4d",
+     "d": 3.0
+    }
+   ]
+  },
+  {
+   "say": "On March 13th, 1940, Finland signed a peace. It gave up about a tenth of its land, including its second city, Viipuri.",
+   "arrows": [],
+   "zones": [
+    {
+     "coords": [
+      [
+       27.8,
+       60.5
+      ],
+      [
+       29.3,
+       61.3
+      ],
+      [
+       30.0,
+       61.9
+      ],
+      [
+       31.2,
+       62.6
+      ],
+      [
+       32.8,
+       62.1
+      ],
+      [
+       31.6,
+       61.2
+      ],
+      [
+       30.5,
+       60.2
+      ],
+      [
+       29.0,
+       60.1
+      ],
+      [
+       28.0,
+       60.4
+      ]
+     ],
+     "color": "#cc0000",
+     "op": 0.55,
+     "label": "CEDED",
+     "d": 1.6
+    }
+   ],
+   "date": "13 MARCH 1940",
+   "pins": [
+    {
+     "ll": [
+      28.75,
+      60.71
+     ],
+     "label": "Viipuri",
+     "left": true,
+     "d": 4.6
+    }
+   ]
+  },
+  {
+   "say": "But it stayed independent. The Soviets lost well over a hundred thousand men in 105 days. Finland lost about twenty-six thousand.",
+   "pins": [],
+   "cam": {
+    "c": [
+     29,
+     63
+    ],
+    "s": 2.0
+   },
+   "cards": [
+    {
+     "text": "Soviet dead:",
+     "big": "~126,000",
+     "iso": "SOV",
+     "d": 3.0
+    },
+    {
+     "text": "Finnish dead:",
+     "big": "~26,000",
+     "iso": "FIN",
+     "d": 6.0
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "FINLAND VS|THE SOVIET|UNION",
+  "c": [
+   30,
+   63
+  ],
+  "s": 1.8,
+  "y": 0.66,
+  "own": {
+   "FIN": "FIN",
+   "RUS": "SOV"
+  },
+  "arrows": [
+   {
+    "from": [
+     33.5,
+     64.5
+    ],
+    "to": [
+     28.5,
+     64.6
+    ],
+    "color": "#ff4d4d"
+   }
+  ]
+ },
+ "yt": {
+  "title": "How Tiny Finland Held Off the Soviet Union for 105 Days",
+  "description": "30 November 1939: the Soviet Union invades Finland. Ski troops, −40°C, the Molotov cocktail and the Mannerheim Line. 105 days later Finland lost a tenth of its land but kept its independence.\n\nFollow for more history on the map.\n\n#history #maps #geography",
+  "tags": [
+   "history",
+   "map",
+   "history on a map",
+   "military history",
+   "geography",
+   "history shorts",
+   "maps",
+   "winter war",
+   "finland",
+   "soviet union",
+   "1939",
+   "molotov cocktail",
+   "mannerheim line",
+   "simo hayha"
+  ],
+  "lang": "en",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-21T17:00:00Z"
+ },
+ "style_prompt": "Read this in English as a documentary narrator for a fast history channel: confident, clear, slightly dramatic, brisk pace (about 165 words per minute), short pauses before dates and numbers. Never sound like an advert. Read the text exactly as written."
+}

@@ -1,0 +1,293 @@
+{
+ "id": "a-en-006",
+ "channel": "A",
+ "lang": "en",
+ "format": "short",
+ "style": "clean",
+ "hook": "THE FORTRESS|THAT FELL IN|7 DAYS",
+ "hook_end": 2.6,
+ "voice": "Charon",
+ "models": "gemini-3.8-flash-tts,gemini-3.1-flash-tts-preview",
+ "edge_voice": "en-US-AndrewMultilingualNeural",
+ "music": {
+  "track": "Volatile Reaction",
+  "vol": 0.11,
+  "alt": [
+   "Hidden Agenda",
+   "Investigations"
+  ]
+ },
+ "beats": [
+  {
+   "say": "Singapore was Britain's great fortress in Asia. Big naval guns, tens of thousands of troops. It fell in a week.",
+   "cam": {
+    "c": [
+     103.8,
+     1.4
+    ],
+    "s": 30
+   },
+   "date": "FEBRUARY 1942",
+   "own": {
+    "SGP": "GBR",
+    "MYS": "GBR"
+   },
+   "pins": [
+    {
+     "ll": [
+      103.82,
+      1.35
+     ],
+     "label": "Singapore",
+     "d": 1.0
+    }
+   ]
+  },
+  {
+   "say": "On December 8th, 1941, Japanese troops landed in northern Malaya, around the same time as the attack on Pearl Harbor.",
+   "pins": [],
+   "cam": {
+    "c": [
+     102.5,
+     4.0
+    ],
+    "s": 5.5
+   },
+   "date": "8 DECEMBER 1941",
+   "arrows": [
+    {
+     "from": [
+      105.0,
+      7.5
+     ],
+     "to": [
+      102.24,
+      6.13
+     ],
+     "color": "#ff4d4d",
+     "d": 1.4
+    }
+   ],
+   "cards": []
+  },
+  {
+   "say": "Then they raced south down the peninsula. Many rode bicycles, moving faster than the British could fall back.",
+   "arrows": [
+    {
+     "from": [
+      102.24,
+      6.13
+     ],
+     "to": [
+      101.7,
+      3.1
+     ],
+     "color": "#ff4d4d",
+     "d": 0.6
+    },
+    {
+     "from": [
+      101.7,
+      3.1
+     ],
+     "to": [
+      103.76,
+      1.47
+     ],
+     "color": "#ff4d4d",
+     "d": 3.0
+    }
+   ],
+   "own": {
+    "MYS": "JPN"
+   },
+   "od": 4.5,
+   "cards": [
+    {
+     "text": "Down the peninsula:",
+     "big": "~1,000 km",
+     "d": 2.0
+    }
+   ]
+  },
+  {
+   "say": "By the end of January, all of Malaya was gone. The British blew a hole in the causeway and pulled back onto the island.",
+   "date": "31 JANUARY 1942",
+   "cards": [],
+   "arrows": [],
+   "cam": {
+    "c": [
+     103.8,
+     1.4
+    ],
+    "s": 30
+   },
+   "pins": [
+    {
+     "ll": [
+      103.77,
+      1.45
+     ],
+     "label": "Causeway",
+     "d": 2.8
+    }
+   ]
+  },
+  {
+   "say": "Singapore's big guns had been built mainly to stop an attack from the sea. The Japanese came from the north.",
+   "pins": [],
+   "zones": [
+    {
+     "coords": [
+      [
+       103.6,
+       1.33
+      ],
+      [
+       103.98,
+       1.36
+      ],
+      [
+       104.05,
+       1.3
+      ],
+      [
+       103.7,
+       1.24
+      ]
+     ],
+     "color": "#1d4ed8",
+     "op": 0.3,
+     "label": "BUILT FOR A SEA ATTACK",
+     "ly": 40,
+     "d": 0.6
+    }
+   ],
+   "arrows": [
+    {
+     "from": [
+      103.7,
+      1.6
+     ],
+     "to": [
+      103.72,
+      1.42
+     ],
+     "color": "#ff4d4d",
+     "d": 3.6
+    }
+   ]
+  },
+  {
+   "say": "On the night of February 8th, they crossed the strait. Within days, they reached the island's water reservoirs.",
+   "zones": [],
+   "date": "8 FEBRUARY 1942",
+   "arrows": [
+    {
+     "from": [
+      103.65,
+      1.47
+     ],
+     "to": [
+      103.7,
+      1.4
+     ],
+     "color": "#ff4d4d",
+     "d": 0.6
+    },
+    {
+     "from": [
+      103.7,
+      1.4
+     ],
+     "to": [
+      103.8,
+      1.36
+     ],
+     "color": "#ff4d4d",
+     "d": 3.0
+    }
+   ],
+   "own": {
+    "SGP": "JPN"
+   },
+   "od": 6.0
+  },
+  {
+   "say": "On February 15th, 1942, the British surrendered. Around eighty thousand British, Indian and Australian troops became prisoners.",
+   "arrows": [],
+   "date": "15 FEBRUARY 1942",
+   "cards": [
+    {
+     "text": "Taken prisoner:",
+     "big": "~80,000",
+     "iso": "GBR",
+     "d": 4.0
+    }
+   ]
+  },
+  {
+   "say": "Churchill called it the worst disaster and largest capitulation in British history.",
+   "cards": [
+    {
+     "text": "Churchill:",
+     "big": "“the worst disaster”",
+     "iso": "GBR",
+     "d": 0.6
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "THE FORTRESS|THAT FELL IN|7 DAYS",
+  "c": [
+   102.8,
+   3.2
+  ],
+  "s": 4.2,
+  "y": 0.66,
+  "own": {
+   "MYS": "JPN",
+   "SGP": "JPN",
+   "THA": "THA"
+  },
+  "arrows": [
+   {
+    "from": [
+     102.24,
+     6.13
+    ],
+    "to": [
+     103.76,
+     1.47
+    ],
+    "color": "#ff4d4d"
+   }
+  ]
+ },
+ "yt": {
+  "title": "How Britain Lost Singapore in One Week",
+  "description": "8 December 1941: Japan lands in northern Malaya. Ten weeks later, Singapore, Britain's 'impregnable' fortress, surrenders. Around 80,000 Allied troops became prisoners.\n\nFollow for more history on the map.\n\n#history #maps #geography",
+  "tags": [
+   "history",
+   "map",
+   "history on a map",
+   "military history",
+   "geography",
+   "history shorts",
+   "maps",
+   "fall of singapore",
+   "singapore 1942",
+   "malaya",
+   "ww2",
+   "churchill",
+   "japan"
+  ],
+  "lang": "en",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-22T17:00:00Z"
+ },
+ "style_prompt": "Read this in English as a documentary narrator for a fast history channel: confident, clear, slightly dramatic, brisk pace (about 165 words per minute), short pauses before dates and numbers. Never sound like an advert. Read the text exactly as written."
+}
