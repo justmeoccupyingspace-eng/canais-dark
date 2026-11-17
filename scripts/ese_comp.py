@@ -9,6 +9,11 @@ for i, sg in enumerate(segs):
     d = f"{OUT}/seg{i}/{sid}"
     es = json.load(open(f"{d}/es.json"))
     es["w"], es["h"] = 1920, 1080
+    # visual ATUAL do spec sobre os tempos da voz (corrige códigos/bandeiras que mudaram depois do Short)
+    if len(es["beats"]) == len(spec["beats"]):
+        es["beats"] = [{**{k: v for k, v in b.items() if k != "say"}, "t0": o["t0"]} for b, o in zip(spec["beats"], es["beats"])]
+    for k in ("badge", "uf", "skin", "style", "basemap", "terr"):
+        if k in spec: es[k] = spec[k]
     last = i == len(segs) - 1
     if not last and sg.get("cut_cta", True) and len(es["beats"]) > 2:
         cut = es["beats"][-1]["t0"] + 0.15
