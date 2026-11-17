@@ -1,0 +1,468 @@
+{
+ "id": "b-pt-002",
+ "channel": "B",
+ "lang": "pt",
+ "format": "short",
+ "hook": "E SE O URUGUAI|FOSSE DO|BRASIL?",
+ "hook_end": 2.8,
+ "badge": "SÓ IMAGINAÇÃO",
+ "uf": false,
+ "voice": "Fenrir",
+ "music": {
+  "track": "Hidden Agenda",
+  "vol": 0.12,
+  "alt": [
+   "Investigations",
+   "Curiosity"
+  ]
+ },
+ "beats": [
+  {
+   "say": "E se o Uruguai fosse um estado brasileiro? Parece loucura, mas durante alguns anos ele foi.",
+   "cam": {
+    "c": [
+     -56,
+     -31.5
+    ],
+    "s": 3.0
+   },
+   "own": {
+    "BRA": "BRA",
+    "URY": "URY",
+    "ARG": "ARG"
+   },
+   "balls": [
+    {
+     "iso": "URY",
+     "face": "shock",
+     "d": 0.5
+    },
+    {
+     "iso": "BRA",
+     "ll": [
+      -53,
+      -29
+     ],
+     "face": "smirk",
+     "d": 1.4
+    }
+   ]
+  },
+  {
+   "say": "Antes de virar país, aquela terra era disputada por todo mundo: espanhóis, portugueses e os vizinhos de Buenos Aires.",
+   "balls": [
+    {
+     "iso": "URY",
+     "face": "sad",
+     "d": 0.2
+    },
+    {
+     "iso": "ARG",
+     "ll": [
+      -60,
+      -34
+     ],
+     "face": "angry",
+     "skin": "red",
+     "r": 0.8,
+     "d": 1.8
+    }
+   ],
+   "arrows": [
+    {
+     "from": [
+      -60,
+      -34
+     ],
+     "to": "URY",
+     "d": 2.0,
+     "color": "#7fd3ff"
+    },
+    {
+     "from": [
+      -53,
+      -29
+     ],
+     "to": "URY",
+     "d": 2.6
+    }
+   ]
+  },
+  {
+   "say": "Em mil oitocentos e dezessete, tropas luso-brasileiras ocuparam Montevidéu. E em mil oitocentos e vinte e um, a região foi anexada com um nome novo: Província Cisplatina.",
+   "arrows": [],
+   "own": {
+    "URY": "BRA"
+   },
+   "od": 4.0,
+   "cards": [
+    {
+     "text": "1821:",
+     "big": "Província Cisplatina",
+     "iso": "BRA",
+     "d": 4.2
+    }
+   ],
+   "balls": [
+    {
+     "iso": "URY",
+     "face": "cool",
+     "skin": "flag",
+     "d": 4.4
+    }
+   ]
+  },
+  {
+   "say": "Quando o Brasil ficou independente, em mil oitocentos e vinte e dois, a Cisplatina veio junto. Era o extremo sul do Império.",
+   "cards": [],
+   "cam": {
+    "c": [
+     -55,
+     -22
+    ],
+    "s": 1.25
+   },
+   "balls": [
+    {
+     "iso": "BRA",
+     "face": "cool",
+     "d": 0.4
+    }
+   ]
+  },
+  {
+   "say": "Só que os uruguaios não queriam ser brasileiros, e Buenos Aires também queria a região. Em mil oitocentos e vinte e cinco começou a Guerra da Cisplatina.",
+   "cam": {
+    "c": [
+     -56,
+     -31.5
+    ],
+    "s": 3.0
+   },
+   "balls": [
+    {
+     "iso": "URY",
+     "face": "angry",
+     "skin": "red",
+     "d": 0.3
+    },
+    {
+     "iso": "ARG",
+     "ll": [
+      -60,
+      -34
+     ],
+     "face": "angry",
+     "skin": "red",
+     "r": 0.8,
+     "d": 1.4
+    }
+   ],
+   "arrows": [
+    {
+     "from": [
+      -60,
+      -34
+     ],
+     "to": "URY",
+     "d": 1.6,
+     "color": "#ff5a3c"
+    }
+   ],
+   "cards": [
+    {
+     "text": "1825:",
+     "big": "Guerra da Cisplatina",
+     "d": 5.0
+    }
+   ]
+  },
+  {
+   "say": "Foram três anos de guerra, sem vencedor claro. Até que a Inglaterra, de olho no comércio do Rio da Prata, entrou no meio pra negociar a paz.",
+   "arrows": [],
+   "cards": [
+    {
+     "text": "Mediador:",
+     "big": "Inglaterra",
+     "iso": "GBR",
+     "d": 4.0
+    }
+   ]
+  },
+  {
+   "say": "Em mil oitocentos e vinte e oito, os dois lados abriram mão da região. E nasceu um país novo, bem no meio dos dois: o Uruguai.",
+   "own": {
+    "URY": "URY"
+   },
+   "od": 2.8,
+   "cards": [],
+   "balls": [
+    {
+     "iso": "URY",
+     "face": "happy",
+     "d": 3.0
+    }
+   ]
+  },
+  {
+   "say": "Agora imagina que o Brasil tivesse ganhado. O Uruguai seria mais um estado brasileiro, colado no Rio Grande do Sul.",
+   "own": {
+    "URY": "BRA"
+   },
+   "od": 1.2,
+   "cam": {
+    "c": [
+     -56,
+     -26
+    ],
+    "s": 1.6
+   },
+   "balls": [
+    {
+     "iso": "BRA",
+     "ll": [
+      -52,
+      -14
+     ],
+     "face": "happy",
+     "d": 1.4
+    }
+   ]
+  },
+  {
+   "say": "Seriam três milhões e quatrocentas mil pessoas a mais. E um território maior que o Ceará inteiro.",
+   "cards": [
+    {
+     "text": "+3,4 milhões",
+     "big": "de pessoas",
+     "iso": "URY",
+     "d": 0.4
+    },
+    {
+     "text": "+176 mil km²",
+     "big": "> Ceará",
+     "iso": "BRA",
+     "d": 3.0
+    }
+   ]
+  },
+  {
+   "say": "E um estado rico: hoje o PIB por pessoa do Uruguai é mais que o dobro do brasileiro.",
+   "cards": [
+    {
+     "text": "PIB por pessoa:",
+     "big": "Uruguai 25 mil dólares",
+     "iso": "URY",
+     "d": 0.3
+    },
+    {
+     "text": "Brasil:",
+     "big": "10,7 mil dólares",
+     "iso": "BRA",
+     "d": 2.6
+    }
+   ]
+  },
+  {
+   "say": "Mas a parte que mais ia mudar é o futebol.",
+   "cards": [],
+   "cam": {
+    "c": [
+     -43.2,
+     -22.9
+    ],
+    "s": 5.0
+   },
+   "balls": [
+    {
+     "ll": [
+      -43.23,
+      -22.91
+     ],
+     "iso": "BRA",
+     "face": "shock",
+     "d": 0.3
+    }
+   ]
+  },
+  {
+   "say": "Mil novecentos e cinquenta. Jogo decisivo da Copa, no Maracanã, perto de duzentas mil pessoas. O Uruguai vira o jogo e ganha de dois a um. O Maracanaço.",
+   "cards": [
+    {
+     "text": "16/07/1950:",
+     "big": "Brasil 1 x 2 Uruguai",
+     "iso": "URY",
+     "d": 0.4
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -43.23,
+      -22.91
+     ],
+     "iso": "BRA",
+     "face": "sad",
+     "d": 0.2
+    },
+    {
+     "ll": [
+      -45.5,
+      -24.5
+     ],
+     "iso": "URY",
+     "face": "cool",
+     "skin": "flag",
+     "r": 0.8,
+     "d": 5.5
+    }
+   ]
+  },
+  {
+   "say": "Se o Uruguai fosse brasileiro, o Maracanaço simplesmente não existiria.",
+   "cards": [],
+   "balls": [
+    {
+     "ll": [
+      -43.23,
+      -22.91
+     ],
+     "iso": "BRA",
+     "face": "shock",
+     "d": 0.2
+    }
+   ]
+  },
+  {
+   "say": "E tem mais. Em cinquenta o Brasil jogava de branco. Foi depois dessa derrota que nasceu a camisa amarela. Sem Maracanaço, talvez nem existisse a amarelinha.",
+   "cards": [
+    {
+     "text": "Antes de 1950:",
+     "big": "camisa branca",
+     "d": 0.6
+    },
+    {
+     "text": "Depois:",
+     "big": "amarelinha",
+     "iso": "BRA",
+     "d": 4.6
+    }
+   ]
+  },
+  {
+   "say": "E as estrelas na camisa? Cinco Copas do Brasil, mais duas do Uruguai. Seriam sete.",
+   "cards": [
+    {
+     "text": "Brasil 5 + Uruguai 2 =",
+     "big": "7 estrelas",
+     "iso": "BRA",
+     "d": 2.4
+    }
+   ],
+   "cam": {
+    "c": [
+     -55,
+     -24
+    ],
+    "s": 1.3
+   },
+   "balls": [
+    {
+     "iso": "BRA",
+     "face": "love",
+     "d": 1.0
+    }
+   ]
+  },
+  {
+   "say": "Me fala: você trocava o Maracanaço por um Uruguai brasileiro? Comenta aí. E manda pro seu amigo uruguaio, se tiver coragem.",
+   "cards": [],
+   "cam": {
+    "c": [
+     -56,
+     -31.5
+    ],
+    "s": 3.0
+   },
+   "balls": [
+    {
+     "iso": "URY",
+     "face": "smirk",
+     "d": 0.3
+    },
+    {
+     "iso": "BRA",
+     "ll": [
+      -53,
+      -29
+     ],
+     "face": "happy",
+     "d": 1.0
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "E SE O URUGUAI|FOSSE DO|BRASIL?",
+  "c": [
+   -55,
+   -27
+  ],
+  "s": 1.9,
+  "own": {
+   "BRA": "BRA",
+   "URY": "BRA"
+  },
+  "balls": [
+   {
+    "iso": "URY",
+    "face": "shock",
+    "r": 110
+   },
+   {
+    "iso": "BRA",
+    "ll": [
+     -50,
+     -14
+    ],
+    "face": "smirk",
+    "r": 150
+   }
+  ],
+  "arrows": [
+   {
+    "from": [
+     -52,
+     -22
+    ],
+    "to": "URY"
+   }
+  ]
+ },
+ "yt": {
+  "title": "E se o Uruguai fosse do Brasil? #curiosidades #brasil",
+  "description": "O Uruguai já foi brasileiro: de 1821 a 1828 ele era a Província Cisplatina. Uma guerra, a Inglaterra no meio, e nasceu um país novo. Se o Brasil tivesse ficado com ele, sumia o Maracanaço… e talvez a amarelinha.\nVocê trocava o Maracanaço por um Uruguai brasileiro? Comenta aí. E manda pro seu amigo uruguaio, se tiver coragem.\n\nCenário imaginário: só um \"e se\" no mapa. Os fatos de apoio são reais.\nInscreva-se pra ver o próximo \"e se\".\n\n#curiosidades #brasil #mapas #geografia #historia",
+  "tags": [
+   "curiosidades",
+   "brasil",
+   "mapas",
+   "geografia",
+   "história",
+   "simulação",
+   "e se",
+   "hiperfoco",
+   "américa do sul",
+   "uruguai",
+   "cisplatina",
+   "maracanaço",
+   "copa de 1950",
+   "amarelinha",
+   "seleção brasileira"
+  ],
+  "lang": "pt-BR",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-18T15:00:00Z"
+ }
+}

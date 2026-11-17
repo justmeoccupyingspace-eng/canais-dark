@@ -1,0 +1,485 @@
+{
+ "id": "b-pt-003",
+ "channel": "B",
+ "lang": "pt",
+ "format": "short",
+ "hook": "E SE A AMÉRICA|DO SUL FOSSE|UM PAÍS SÓ?",
+ "hook_end": 2.8,
+ "badge": "SÓ IMAGINAÇÃO",
+ "uf": false,
+ "voice": "Fenrir",
+ "music": {
+  "track": "Hidden Agenda",
+  "vol": 0.12,
+  "alt": [
+   "Investigations",
+   "Curiosity"
+  ]
+ },
+ "beats": [
+  {
+   "say": "E se a América do Sul inteira virasse um país só? Doze países, uma bandeira. E os números assustam.",
+   "cam": {
+    "c": [
+     -60,
+     -24
+    ],
+    "s": 1.0
+   },
+   "own": {
+    "BRA": "BRA",
+    "ARG": "ARG",
+    "COL": "COL",
+    "PER": "PER",
+    "VEN": "VEN",
+    "CHL": "CHL",
+    "ECU": "ECU",
+    "BOL": "BOL",
+    "PRY": "PRY",
+    "URY": "URY",
+    "GUY": "GUY",
+    "SUR": "SUR"
+   },
+   "balls": [
+    {
+     "iso": "BRA",
+     "face": "shock",
+     "d": 0.5
+    },
+    {
+     "iso": "ARG",
+     "face": "smirk",
+     "r": 0.8,
+     "d": 1.2
+    },
+    {
+     "iso": "COL",
+     "face": "neutral",
+     "r": 0.7,
+     "d": 1.8
+    }
+   ]
+  },
+  {
+   "say": "Hoje são doze países independentes. Do Brasil, gigante, até o Suriname, com pouco mais de seiscentas mil pessoas.",
+   "balls": [
+    {
+     "iso": "BRA",
+     "face": "cool",
+     "d": 0.3
+    },
+    {
+     "iso": "SUR",
+     "face": "shock",
+     "r": 0.55,
+     "d": 3.0
+    }
+   ],
+   "hl": [
+    "SUR"
+   ]
+  },
+  {
+   "say": "E aquele pedacinho ali em cima não conta. A Guiana Francesa é parte da França. Ou seja: a França faz fronteira com o Brasil.",
+   "cam": {
+    "c": [
+     -54,
+     3
+    ],
+    "s": 4.2
+   },
+   "hl": [
+    "FRA"
+   ],
+   "balls": [
+    {
+     "ll": [
+      -53.2,
+      4.0
+     ],
+     "iso": "FRA",
+     "skin": "flag",
+     "face": "smirk",
+     "r": 0.7,
+     "d": 0.6
+    }
+   ]
+  },
+  {
+   "say": "Agora junta tudo.",
+   "cam": {
+    "c": [
+     -60,
+     -24
+    ],
+    "s": 1.0
+   },
+   "hl": [],
+   "balls": [],
+   "own": {
+    "BRA": "SUL",
+    "ARG": "SUL",
+    "COL": "SUL",
+    "PER": "SUL",
+    "VEN": "SUL",
+    "CHL": "SUL",
+    "ECU": "SUL",
+    "BOL": "SUL",
+    "PRY": "SUL",
+    "URY": "SUL",
+    "GUY": "SUL",
+    "SUR": "SUL"
+   },
+   "od": 0.4,
+   "arrows": [
+    {
+     "from": "ARG",
+     "to": [
+      -56,
+      -14
+     ],
+     "d": 0.2
+    },
+    {
+     "from": "COL",
+     "to": [
+      -58,
+      -10
+     ],
+     "d": 0.3
+    },
+    {
+     "from": "PER",
+     "to": [
+      -60,
+      -12
+     ],
+     "d": 0.4
+    },
+    {
+     "from": "CHL",
+     "to": [
+      -58,
+      -16
+     ],
+     "d": 0.5
+    }
+   ]
+  },
+  {
+   "say": "O novo país teria quase quatrocentos e quarenta milhões de habitantes. O terceiro mais populoso do mundo, atrás só da Índia e da China, e na frente dos Estados Unidos.",
+   "arrows": [],
+   "balls": [
+    {
+     "iso": "BRA",
+     "ll": [
+      -58,
+      -14
+     ],
+     "face": "shock",
+     "r": 1.2,
+     "d": 0.4
+    }
+   ],
+   "cards": [
+    {
+     "text": "População:",
+     "big": "437 milhões",
+     "d": 0.6
+    },
+    {
+     "text": "Estados Unidos:",
+     "big": "342 milhões",
+     "iso": "USA",
+     "d": 7.0
+    }
+   ]
+  },
+  {
+   "say": "E em tamanho? Dezessete milhões e setecentos mil quilômetros quadrados. Mais que a Rússia. Seria o maior país do planeta.",
+   "cards": [
+    {
+     "text": "Área:",
+     "big": "17,7 milhões de km²",
+     "d": 0.6
+    },
+    {
+     "text": "Rússia:",
+     "big": "17,1 milhões",
+     "iso": "RUS",
+     "d": 4.6
+    }
+   ],
+   "balls": [
+    {
+     "iso": "BRA",
+     "ll": [
+      -58,
+      -14
+     ],
+     "face": "cool",
+     "r": 1.2,
+     "d": 7.2
+    }
+   ]
+  },
+  {
+   "say": "A economia somada passaria de quatro trilhões e meio de dólares. O dobro do Brasil sozinho.",
+   "cards": [
+    {
+     "text": "PIB:",
+     "big": "US$ 4,57 trilhões",
+     "d": 0.4
+    },
+    {
+     "text": "Brasil sozinho:",
+     "big": "US$ 2,28 tri",
+     "iso": "BRA",
+     "d": 3.4
+    }
+   ],
+   "balls": []
+  },
+  {
+   "say": "Aí começa a briga. Os países de língua espanhola somam uns duzentos e vinte e três milhões de pessoas. O Brasil sozinho, duzentos e treze. Quase empate.",
+   "own": {
+    "BRA": "BRA",
+    "ARG": "ARG",
+    "COL": "COL",
+    "PER": "PER",
+    "VEN": "VEN",
+    "CHL": "CHL",
+    "ECU": "ECU",
+    "BOL": "BOL",
+    "PRY": "PRY",
+    "URY": "URY",
+    "GUY": "GUY",
+    "SUR": "SUR"
+   },
+   "od": 0.3,
+   "cards": [
+    {
+     "text": "Espanhol:",
+     "big": "223 milhões",
+     "iso": "ARG",
+     "d": 1.0
+    },
+    {
+     "text": "Português:",
+     "big": "213 milhões",
+     "iso": "BRA",
+     "d": 6.4
+    }
+   ],
+   "balls": [
+    {
+     "iso": "ARG",
+     "face": "angry",
+     "skin": "red",
+     "r": 0.8,
+     "d": 1.2
+    },
+    {
+     "iso": "BRA",
+     "face": "angry",
+     "skin": "red",
+     "d": 6.6
+    }
+   ]
+  },
+  {
+   "say": "E a capital? Brasília, Buenos Aires ou Bogotá?",
+   "cards": [],
+   "balls": [
+    {
+     "ll": [
+      -47.9,
+      -15.8
+     ],
+     "iso": "BRA",
+     "face": "smirk",
+     "r": 0.6,
+     "d": 0.3
+    },
+    {
+     "ll": [
+      -58.4,
+      -34.6
+     ],
+     "iso": "ARG",
+     "face": "smirk",
+     "r": 0.6,
+     "d": 1.0
+    },
+    {
+     "ll": [
+      -74.1,
+      4.7
+     ],
+     "iso": "COL",
+     "face": "smirk",
+     "r": 0.6,
+     "d": 1.8
+    }
+   ]
+  },
+  {
+   "say": "No futebol seria covardia. Brasil tem cinco Copas, Argentina três, Uruguai duas. A seleção já entraria em campo com dez estrelas.",
+   "balls": [],
+   "own": {
+    "BRA": "SUL",
+    "ARG": "SUL",
+    "COL": "SUL",
+    "PER": "SUL",
+    "VEN": "SUL",
+    "CHL": "SUL",
+    "ECU": "SUL",
+    "BOL": "SUL",
+    "PRY": "SUL",
+    "URY": "SUL",
+    "GUY": "SUL",
+    "SUR": "SUL"
+   },
+   "od": 0.2,
+   "cards": [
+    {
+     "text": "Brasil 5 + Argentina 3 + Uruguai 2 =",
+     "big": "10 estrelas",
+     "d": 1.0
+    }
+   ]
+  },
+  {
+   "say": "E o mais curioso: um pedaço disso já existiu. Simón Bolívar juntou Colômbia, Venezuela, Equador e Panamá na Grã-Colômbia. Durou pouco mais de dez anos.",
+   "cards": [],
+   "cam": {
+    "c": [
+     -72,
+     3
+    ],
+    "s": 2.2
+   },
+   "own": {
+    "BRA": "BRA",
+    "ARG": "ARG",
+    "PER": "PER",
+    "CHL": "CHL",
+    "BOL": "BOL",
+    "PRY": "PRY",
+    "URY": "URY",
+    "GUY": "GUY",
+    "SUR": "SUR",
+    "COL": "COL",
+    "VEN": "COL",
+    "ECU": "COL",
+    "PAN": "COL"
+   },
+   "od": 0.5,
+   "balls": [
+    {
+     "iso": "COL",
+     "face": "happy",
+     "d": 1.0
+    }
+   ]
+  },
+  {
+   "say": "E aí: qual seria o nome desse país, e qual seria a capital? Comenta aí. E manda pro amigo argentino que ia odiar dividir a seleção.",
+   "cam": {
+    "c": [
+     -60,
+     -24
+    ],
+    "s": 1.0
+   },
+   "own": {
+    "BRA": "SUL",
+    "ARG": "SUL",
+    "COL": "SUL",
+    "PER": "SUL",
+    "VEN": "SUL",
+    "CHL": "SUL",
+    "ECU": "SUL",
+    "BOL": "SUL",
+    "PRY": "SUL",
+    "URY": "SUL",
+    "GUY": "SUL",
+    "SUR": "SUL",
+    "PAN": "SUL"
+   },
+   "od": 0.2,
+   "balls": [
+    {
+     "iso": "BRA",
+     "ll": [
+      -58,
+      -14
+     ],
+     "face": "love",
+     "r": 1.2,
+     "d": 0.6
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "E SE A AMÉRICA|DO SUL FOSSE|UM PAÍS SÓ?",
+  "c": [
+   -60,
+   -24
+  ],
+  "s": 1.0,
+  "y": 0.66,
+  "own": {
+   "BRA": "SUL",
+   "ARG": "SUL",
+   "COL": "SUL",
+   "PER": "SUL",
+   "VEN": "SUL",
+   "CHL": "SUL",
+   "ECU": "SUL",
+   "BOL": "SUL",
+   "PRY": "SUL",
+   "URY": "SUL",
+   "GUY": "SUL",
+   "SUR": "SUL"
+  },
+  "balls": [
+   {
+    "iso": "BRA",
+    "ll": [
+     -58,
+     -14
+    ],
+    "face": "shock",
+    "r": 150
+   }
+  ]
+ },
+ "yt": {
+  "title": "E se a América do Sul fosse um país só? #curiosidades #brasil",
+  "description": "Doze países, uma bandeira só. A América do Sul unida teria 437 milhões de pessoas (3º do mundo), 17,7 milhões de km² (maior que a Rússia) e uma seleção com 10 estrelas. Dados: Banco Mundial.\nQual seria o nome desse país, e a capital? Comenta aí. E manda pro amigo argentino que ia odiar dividir a seleção.\n\nCenário imaginário: só um \"e se\" no mapa. Os fatos de apoio são reais.\nInscreva-se pra ver o próximo \"e se\".\n\n#curiosidades #brasil #mapas #geografia #historia",
+  "tags": [
+   "curiosidades",
+   "brasil",
+   "mapas",
+   "geografia",
+   "história",
+   "simulação",
+   "e se",
+   "hiperfoco",
+   "américa do sul",
+   "américa do sul",
+   "união sul-americana",
+   "grã-colômbia",
+   "simón bolívar",
+   "seleção",
+   "maior país do mundo"
+  ],
+  "lang": "pt-BR",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-18T21:00:00Z"
+ }
+}

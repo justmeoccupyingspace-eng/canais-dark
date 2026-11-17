@@ -1,0 +1,488 @@
+{
+ "id": "b-pt-001",
+ "channel": "B",
+ "lang": "pt",
+ "format": "short",
+ "hook": "E SE O ACRE|AINDA FOSSE DA|BOLÍVIA?",
+ "hook_end": 2.8,
+ "badge": "SÓ IMAGINAÇÃO",
+ "uf": true,
+ "voice": "Fenrir",
+ "music": {
+  "track": "Hidden Agenda",
+  "vol": 0.12,
+  "alt": [
+   "Investigations",
+   "Curiosity"
+  ]
+ },
+ "beats": [
+  {
+   "say": "E se o Acre ainda fosse da Bolívia? Parece meme, mas por muito pouco esse pedaço do mapa não é brasileiro até hoje.",
+   "cam": {
+    "c": [
+     -62,
+     -12
+    ],
+    "s": 1.9
+   },
+   "own": {
+    "BRA": "BRA",
+    "BOL": "BOL"
+   },
+   "balls": [
+    {
+     "iso": "BRA",
+     "face": "shock",
+     "d": 0.4
+    },
+    {
+     "iso": "BOL",
+     "face": "smirk",
+     "d": 1.2
+    }
+   ]
+  },
+  {
+   "say": "Esse é o Acre. Mais de cento e sessenta mil quilômetros quadrados, quase do tamanho do Uruguai inteiro.",
+   "cam": {
+    "c": [
+     -70.4,
+     -9.2
+    ],
+    "s": 4.6
+   },
+   "hl": [
+    "BR-AC"
+   ],
+   "balls": [],
+   "cards": [
+    {
+     "text": "Acre:",
+     "big": "164 mil km²",
+     "iso": "BRA",
+     "d": 1.0
+    }
+   ]
+  },
+  {
+   "say": "Só que, pelos tratados do século dezenove, essa terra era da Bolívia.",
+   "own": {
+    "BR-AC": "BOL"
+   },
+   "od": 0.3,
+   "cards": [],
+   "balls": [
+    {
+     "iso": "BR-AC",
+     "face": "smirk",
+     "skin": "emoji",
+     "d": 0.6
+    }
+   ]
+  },
+  {
+   "say": "Aí veio a febre da borracha. Milhares de nordestinos, principalmente cearenses, atravessaram a Amazônia pra trabalhar nos seringais.",
+   "cam": {
+    "c": [
+     -56,
+     -7
+    ],
+    "s": 1.35
+   },
+   "balls": [],
+   "arrows": [
+    {
+     "from": "BR-CE",
+     "to": "BR-AC",
+     "d": 0.8
+    }
+   ]
+  },
+  {
+   "say": "Resultado: a terra era boliviana, mas quem morava lá era brasileiro.",
+   "cam": {
+    "c": [
+     -70.4,
+     -9.2
+    ],
+    "s": 4.0
+   },
+   "arrows": [],
+   "balls": [
+    {
+     "iso": "BR-AC",
+     "face": "neutral",
+     "dx": -70,
+     "d": 0.2
+    },
+    {
+     "iso": "BR-AC",
+     "face": "shock",
+     "skin": "red",
+     "dx": 90,
+     "r": 0.8,
+     "d": 1.0
+    }
+   ]
+  },
+  {
+   "say": "Em mil novecentos e um, a Bolívia fez uma jogada ousada: arrendou a região pra um consórcio estrangeiro com sede em Nova York, o Bolivian Syndicate.",
+   "cards": [
+    {
+     "text": "1901:",
+     "big": "Acre alugado",
+     "iso": "BOL",
+     "d": 0.5
+    },
+    {
+     "text": "Bolivian",
+     "big": "Syndicate",
+     "iso": "USA",
+     "d": 3.5
+    }
+   ],
+   "balls": [
+    {
+     "iso": "BR-AC",
+     "face": "angry",
+     "skin": "red",
+     "d": 0.3
+    }
+   ]
+  },
+  {
+   "say": "Os seringueiros não aceitaram. Um gaúcho chamado Plácido de Castro montou um exército de seringueiros e começou a Revolução Acreana.",
+   "cards": [],
+   "cam": {
+    "c": [
+     -60,
+     -18
+    ],
+    "s": 1.3
+   },
+   "arrows": [
+    {
+     "from": "BR-RS",
+     "to": "BR-AC",
+     "d": 1.2,
+     "color": "#ff5a3c"
+    }
+   ],
+   "balls": [
+    {
+     "iso": "BR-RS",
+     "face": "angry",
+     "skin": "red",
+     "r": 0.8,
+     "d": 0.8
+    }
+   ]
+  },
+  {
+   "say": "No começo de mil novecentos e três, os rebeldes já controlavam quase todo o Acre. A Bolívia ameaçou mandar tropas.",
+   "cam": {
+    "c": [
+     -66,
+     -12
+    ],
+    "s": 2.6
+   },
+   "arrows": [
+    {
+     "from": "BOL",
+     "to": "BR-AC",
+     "d": 1.6,
+     "color": "#ff5a3c"
+    }
+   ],
+   "balls": [
+    {
+     "iso": "BR-AC",
+     "face": "cool",
+     "d": 0.2
+    },
+    {
+     "iso": "BOL",
+     "face": "angry",
+     "skin": "red",
+     "d": 1.4
+    }
+   ]
+  },
+  {
+   "say": "Aí entrou o Barão do Rio Branco. Em vez de guerra, ele fez uma proposta: comprar o Acre.",
+   "arrows": [],
+   "balls": [
+    {
+     "iso": "BRA",
+     "ll": [
+      -60,
+      -10
+     ],
+     "face": "cool",
+     "d": 0.3
+    },
+    {
+     "iso": "BOL",
+     "face": "shock",
+     "d": 1.6
+    }
+   ],
+   "cards": [
+    {
+     "text": "Barão do",
+     "big": "Rio Branco",
+     "iso": "BRA",
+     "d": 0.4
+    }
+   ]
+  },
+  {
+   "say": "No dia dezessete de novembro de mil novecentos e três, os dois países assinaram o Tratado de Petrópolis.",
+   "cards": [
+    {
+     "text": "17/11/1903:",
+     "big": "Tratado de Petrópolis",
+     "d": 0.4
+    }
+   ],
+   "own": {
+    "BR-AC": "BRA"
+   },
+   "od": 2.0,
+   "cam": {
+    "c": [
+     -70.4,
+     -9.2
+    ],
+    "s": 3.6
+   },
+   "balls": [
+    {
+     "iso": "BR-AC",
+     "face": "happy",
+     "d": 2.4
+    }
+   ]
+  },
+  {
+   "say": "O Brasil pagou dois milhões de libras esterlinas, cedeu algumas terras na fronteira e prometeu construir uma ferrovia, a Madeira-Mamoré.",
+   "cards": [
+    {
+     "text": "Preço:",
+     "big": "2 milhões de libras",
+     "iso": "BRA",
+     "d": 0.4
+    },
+    {
+     "text": "+ ferrovia",
+     "big": "Madeira-Mamoré",
+     "d": 4.8
+    }
+   ]
+  },
+  {
+   "say": "E o tal consórcio de Nova York? Levou mais cento e dez mil libras só pra desistir do negócio.",
+   "cards": [
+    {
+     "text": "Indenização:",
+     "big": "110 mil libras",
+     "iso": "USA",
+     "d": 0.6
+    }
+   ],
+   "balls": [
+    {
+     "iso": "BR-AC",
+     "face": "cool",
+     "d": 0.2
+    }
+   ]
+  },
+  {
+   "say": "Agora imagina o contrário. O Brasil não paga, e o Acre continua boliviano.",
+   "cards": [],
+   "cam": {
+    "c": [
+     -63,
+     -13
+    ],
+    "s": 2.0
+   },
+   "own": {
+    "BR-AC": "BOL"
+   },
+   "od": 1.0,
+   "balls": [
+    {
+     "iso": "BOL",
+     "face": "happy",
+     "d": 1.2
+    },
+    {
+     "iso": "BRA",
+     "ll": [
+      -55,
+      -9
+     ],
+     "face": "sad",
+     "d": 1.8
+    }
+   ]
+  },
+  {
+   "say": "A Bolívia ficaria quase quinze por cento maior. E o Brasil teria um estado a menos. A piada de que o Acre não existe ia virar verdade.",
+   "cards": [
+    {
+     "text": "Bolívia:",
+     "big": "+15% de território",
+     "iso": "BOL",
+     "d": 0.4
+    },
+    {
+     "text": "Brasil:",
+     "big": "25 estados",
+     "iso": "BRA",
+     "d": 3.4
+    }
+   ]
+  },
+  {
+   "say": "Mais de oitocentas mil pessoas que hoje são acreanas iam ter documento boliviano, pagar as contas em bolivianos e torcer pra seleção da Bolívia.",
+   "cards": [],
+   "cam": {
+    "c": [
+     -70.4,
+     -9.2
+    ],
+    "s": 4.0
+   },
+   "balls": [
+    {
+     "iso": "BR-AC",
+     "face": "shock",
+     "d": 0.3
+    }
+   ]
+  },
+  {
+   "say": "E o Chico Mendes, o seringueiro de Xapuri que virou símbolo da Amazônia no mundo inteiro? Ia nascer na Bolívia.",
+   "cards": [
+    {
+     "text": "Chico Mendes:",
+     "big": "boliviano?",
+     "iso": "BOL",
+     "d": 0.6
+    }
+   ]
+  },
+  {
+   "say": "Mas o detalhe mais irônico tá na capital. Rio Branco, a capital do Acre, tem justamente o nome do barão que comprou o Acre.",
+   "own": {
+    "BR-AC": "BRA"
+   },
+   "od": 0.2,
+   "cards": [
+    {
+     "text": "Capital:",
+     "big": "Rio Branco",
+     "iso": "BRA",
+     "d": 1.6
+    }
+   ],
+   "balls": [
+    {
+     "iso": "BR-AC",
+     "face": "cool",
+     "d": 0.6
+    }
+   ]
+  },
+  {
+   "say": "Agora me fala: o Brasil fez um bom negócio ou devia ter deixado o Acre com a Bolívia? Comenta aí. E manda pro amigo que jura que o Acre não existe.",
+   "cards": [],
+   "cam": {
+    "c": [
+     -62,
+     -12
+    ],
+    "s": 1.9
+   },
+   "balls": [
+    {
+     "iso": "BRA",
+     "face": "happy",
+     "d": 0.3
+    },
+    {
+     "iso": "BOL",
+     "face": "smirk",
+     "d": 1.0
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "E SE O ACRE|FOSSE DA|BOLÍVIA?",
+  "c": [
+   -63,
+   -14
+  ],
+  "s": 1.9,
+  "own": {
+   "BOL": "BOL",
+   "BR-AC": "BOL",
+   "BRA": "BRA"
+  },
+  "balls": [
+   {
+    "iso": "BR-AC",
+    "face": "smirk",
+    "r": 110
+   },
+   {
+    "iso": "BRA",
+    "ll": [
+     -52,
+     -11
+    ],
+    "face": "rage",
+    "skin": "red",
+    "r": 150
+   }
+  ],
+  "arrows": [
+   {
+    "from": "BOL",
+    "to": "BR-AC"
+   }
+  ]
+ },
+ "yt": {
+  "title": "E se o Acre ainda fosse da Bolívia? #curiosidades #brasil",
+  "description": "Em 17 de novembro de 1903, o Brasil comprou o Acre da Bolívia: 2 milhões de libras esterlinas, umas terras na fronteira e a promessa de uma ferrovia. Antes disso teve febre da borracha, um consórcio de Nova York alugando a região e uma revolução liderada por um gaúcho.\nO Brasil fez um bom negócio? Comenta aí. E manda pro amigo que jura que o Acre não existe.\n\nCenário imaginário: só um \"e se\" no mapa. Os fatos de apoio são reais.\nInscreva-se pra ver o próximo \"e se\".\n\n#curiosidades #brasil #mapas #geografia #historia",
+  "tags": [
+   "curiosidades",
+   "brasil",
+   "mapas",
+   "geografia",
+   "história",
+   "simulação",
+   "e se",
+   "hiperfoco",
+   "américa do sul",
+   "acre",
+   "bolívia",
+   "tratado de petrópolis",
+   "o acre existe",
+   "plácido de castro",
+   "barão do rio branco"
+  ],
+  "lang": "pt-BR",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-17T19:30:00Z"
+ }
+}
