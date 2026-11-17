@@ -65,6 +65,9 @@
     ],
     "s": 4.2
    },
+   "focus": [
+    "GUY"
+   ],
    "balls": [],
    "line": {
     "lon": -58.5,
@@ -133,6 +136,7 @@
     ],
     "s": 1.05
    },
+   "focus": [],
    "own": {
     "ARG": "ARG",
     "CHL": "CHL",
@@ -165,6 +169,9 @@
     ],
     "s": 4.2
    },
+   "focus": [
+    "GUY"
+   ],
    "cards": [
     {
      "text": "Dez/2023:",
@@ -184,6 +191,10 @@
   {
    "say": "Só que entre os dois países tem selva fechada e montanha. Segundo analistas militares, o caminho mais fácil pra um exército passar… é por Roraima. Pelo Brasil.",
    "split": null,
+   "focus": [
+    "VEN",
+    "GUY"
+   ],
    "cards": [],
    "cam": {
     "c": [
@@ -274,6 +285,9 @@
     ],
     "s": 4.2
    },
+   "focus": [
+    "GUY"
+   ],
    "split": {
     "iso": "GUY",
     "lon": -58.5,
@@ -300,6 +314,10 @@
     ],
     "s": 2.9
    },
+   "focus": [
+    "VEN",
+    "GUY"
+   ],
    "hl": [
     "BR-RR"
    ],
@@ -345,6 +363,7 @@
   {
    "say": "Me fala: o Brasil devia se meter nessa briga ou ficar de fora? Comenta aí. E manda pro seu amigo de Roraima.",
    "cards": [],
+   "focus": [],
    "cam": {
     "c": [
      -62,
