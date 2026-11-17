@@ -1,0 +1,23 @@
+name: chanprobe
+run-name: chanprobe ${{ inputs.q }}
+on:
+  workflow_dispatch:
+    inputs:
+      q: {description: "research/q_probe_*.json", required: true}
+      frames: {description: "ids de vídeos (vírgula) para extrair quadros com yt-dlp (vazio = nenhum)", required: false, default: ""}
+permissions:
+  contents: write
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/chanprobe.py ${{ inputs.q }} /tmp/o
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_A: ${{ secrets.YT_REFRESH_A }}
+      - run: |
+          git config user.name producer; git config user.email producer@users.noreply.github.com
+          git checkout --orphan probe-${{ github.run_id }} && git rm -rf . -q
+          cp -r /tmp/o/* . && git add . && git commit -qm probe && git push -f origin probe-${{ github.run_id }}
