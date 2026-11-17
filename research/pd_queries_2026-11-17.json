@@ -1,0 +1,89 @@
+{
+ "queries": [
+  {
+   "tag": "bloch",
+   "q": "Carl Bloch Christ painting",
+   "n": 20
+  },
+  {
+   "tag": "hofmann",
+   "q": "Heinrich Hofmann Christ painting",
+   "n": 15
+  },
+  {
+   "tag": "tissot",
+   "q": "James Tissot Jesus",
+   "n": 25
+  },
+  {
+   "tag": "dore",
+   "q": "Gustave Dor\u00e9 Bible engraving",
+   "n": 30
+  },
+  {
+   "tag": "gethsemane",
+   "q": "Christ in Gethsemane painting 19th century",
+   "n": 12
+  },
+  {
+   "tag": "shepherd",
+   "q": "Good Shepherd Jesus painting",
+   "n": 10
+  },
+  {
+   "tag": "prayer",
+   "q": "praying hands painting old master",
+   "n": 10
+  },
+  {
+   "tag": "angel",
+   "q": "guardian angel painting 19th century",
+   "n": 12
+  },
+  {
+   "tag": "night",
+   "q": "moonlit night landscape painting 19th century",
+   "n": 12
+  },
+  {
+   "tag": "sunrise",
+   "q": "sunrise landscape painting Hudson River School",
+   "n": 12
+  },
+  {
+   "tag": "noah",
+   "q": "Noah's Ark painting",
+   "n": 10
+  },
+  {
+   "tag": "jonah",
+   "q": "Jonah and the whale painting",
+   "n": 8
+  },
+  {
+   "tag": "david",
+   "q": "David and Goliath painting",
+   "n": 8
+  },
+  {
+   "tag": "daniel",
+   "q": "Daniel in the lions den painting",
+   "n": 8
+  },
+  {
+   "tag": "moses",
+   "q": "Moses parting Red Sea painting",
+   "n": 8
+  },
+  {
+   "tag": "nativity",
+   "q": "nativity painting old master",
+   "n": 8
+  },
+  {
+   "tag": "resurrection",
+   "q": "resurrection of Christ painting",
+   "n": 8
+  }
+ ]
+}

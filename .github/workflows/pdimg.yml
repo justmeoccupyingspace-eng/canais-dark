@@ -1,0 +1,18 @@
+name: pdimg
+run-name: pdimg ${{ inputs.q }}
+on:
+  workflow_dispatch:
+    inputs:
+      q: {description: "research/pd_*.json", required: true}
+permissions:
+  contents: write
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/pdimg.py ${{ inputs.q }} /tmp/o
+      - run: |
+          cd /tmp/o && git init -q && git config user.name producer && git config user.email producer@users.noreply.github.com
+          git checkout -q -b pdimg-${{ github.run_id }} && git add . && git commit -qm pdimg
+          git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" pdimg-${{ github.run_id }}
