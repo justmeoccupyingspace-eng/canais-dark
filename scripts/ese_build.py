@@ -38,6 +38,24 @@ for bl in blocks:
         print("::warning title=voz::gemini falhou, usando edge:", repr(e)[:200])
         x = ltts.edge(text, spec.get("edge_voice", "pt-BR-AntonioNeural")); engines.append("edge")
     x = ltts.tighten(ltts.clean(x), cap=0.42)
+    # voz lenta (18/11: 3.8 devolveu 95 ppm num short) → tenta de novo com outro modelo; se seguir lenta, acelera até ~165 ppm (máx x1,35)
+    nw_b = len(text.split()); min_wpm = float(spec.get("min_wpm", 140))
+    wpm_b = nw_b / (len(x) / SR) * 60
+    if wpm_b < min_wpm and engines[-1] != "edge":
+        print(f"::warning title=voz lenta::{engines[-1]} {wpm_b:.0f} ppm < {min_wpm:.0f}, tentando outro modelo")
+        alt = [m for m in models if m != engines[-1]] + [engines[-1]]
+        try:
+            y, m2 = ltts.gemini(text, spec.get("voice", "Fenrir"), style, alt)
+            y = ltts.tighten(ltts.clean(y), cap=0.42)
+            if len(y) < len(x):
+                x = y; engines[-1] = m2
+        except Exception as e:
+            print("::warning title=voz::nova tentativa falhou:", repr(e)[:160])
+        wpm_b = nw_b / (len(x) / SR) * 60
+    if wpm_b < min_wpm:
+        k = min(1.35, float(spec.get("target_wpm", 165)) / wpm_b)
+        print(f"::warning title=voz lenta::{wpm_b:.0f} ppm, acelerando x{k:.2f}")
+        x = ltts.tempo(x, k).astype(np.float32)
     audio.append(x); audio.append(np.zeros(int(0.22 * SR), np.float32))
 voice = np.concatenate(audio)
 lead = float(spec.get("lead", 0.35))
