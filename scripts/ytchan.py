@@ -32,6 +32,11 @@ rows = [dict(id=v["id"], title=v["snippet"]["title"], published=v["snippet"]["pu
 print("canal", c["snippet"]["title"], c["snippet"].get("customUrl"), "inscritos", c["statistics"].get("subscriberCount"), "envios", len(rows))
 for r in sorted(rows, key=lambda r: r["published"]):
     print(f"{r['id']} {r['privacy']:8} {str(r['publishAt'] or ''):22} {r['views']:>6} {r['dur']:>9} {r['title'][:70]}")
+if mode == "detail":  # status/contentDetails completos dos IDS (diagnóstico de Short sem alcance)
+    for v in vids:
+        if v["id"] in os.environ.get("IDS", "").split(","):
+            print("DETALHE", v["id"], json.dumps(dict(status=v["status"], cd={k: v["contentDetails"].get(k) for k in ("duration", "definition", "caption", "licensedContent", "contentRating", "regionRestriction", "projection")},
+                                                      sn={k: v["snippet"].get(k) for k in ("categoryId", "defaultLanguage", "defaultAudioLanguage", "tags", "liveBroadcastContent")}, st=v["statistics"]), ensure_ascii=False))
 done = []
 if mode == "private":
     want = set(os.environ.get("IDS", "").split(",")) - {""}
