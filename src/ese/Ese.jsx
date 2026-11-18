@@ -26,6 +26,8 @@ const BYKEY = Object.fromEntries(STATES.map((f) => [f.id, f]));
 {
   const usa = COUNTRIES.find((c) => String(c.id) === '840');
   if (usa) BYKEY['US-AK'] = {type: 'Feature', id: 'US-AK', properties: {}, geometry: {type: 'MultiPolygon', coordinates: usa.geometry.coordinates.filter((p) => p[0].every(([x, y]) => (x < -129 || x > 170) && y > 50))}};
+  const fra = COUNTRIES.find((c) => String(c.id) === '250');
+  if (fra) BYKEY['FR-GF'] = {type: 'Feature', id: 'FR-GF', properties: {}, geometry: {type: 'MultiPolygon', coordinates: fra.geometry.coordinates.filter((p) => p[0].every(([x, y]) => x < -50 && x > -56 && y > 1 && y < 7))}};
   if (usa) BYKEY['US-48'] = {type: 'Feature', id: 'US-48', properties: {}, geometry: {type: 'MultiPolygon', coordinates: usa.geometry.coordinates.filter((p) => !p[0].every(([x, y]) => (x < -129 || x > 170) && y > 50))}};
 }
 const featOf = (k) => BYKEY[k] || BYNUM[NUM[k]];
@@ -33,7 +35,7 @@ const featOf = (k) => BYKEY[k] || BYNUM[NUM[k]];
 const COL = {BRA: '#1fa84a', ARG: '#6cb4ee', CHL: '#d52b1e', URY: '#3a6fd8', PRY: '#c8102e', BOL: '#f2c200', PER: '#e8112d', COL: '#fcd116', VEN: '#cf142b', ECU: '#ffdd00',
   GUY: '#009e49', SUR: '#377e3f', GUF: '#0055a4', MEX: '#006847', USA: '#3c3b6e', CAN: '#d80621', PRT: '#046a38', ESP: '#c60b1e', FRA: '#0055a4', GBR: '#012169', RUS: '#d52b1e', CHN: '#de2910',
   DEU: '#222', ITA: '#009246', JPN: '#bc002d', IND: '#ff9933', NLD: '#ae1c28', CPV: '#003893', AGO: '#cc092f', MOZ: '#009739', GNB: '#ce1126', STP: '#12ad2b', TLS: '#dc241f', SUL: '#0a3d91', NDE: '#f07800', NRT: '#0b6b2e', SDE: '#13306b', RSU: '#009739', COE: '#d9a300', NOR: '#ba0c2f', FIN: '#002f6c', SWE: '#006aa7', SOV: '#cc0000', POL: '#dc143c', UKR: '#0057b7', MYS: '#010066', SGP: '#ef3340', THA: '#2d2a4a', FLK: '#012169', KOR: '#0047a0', PRK: '#024fa2', ISR: '#0038b8', DNK: '#c8102e'};
-const GLOW = {BRA: '#c6ff2e', ARG: '#7fd3ff', URY: '#8fb8ff', CHL: '#ff6b5b', BOL: '#ffe14d', PER: '#ff6b6b', PRY: '#ff8a8a', COL: '#ffe14d', VEN: '#ffd34d', ECU: '#ffe14d', PRT: '#7dff9a', FRA: '#8fb8ff', USA: '#8fb8ff', ESP: '#ffcf40', GUY: '#c6ff2e', SUR: '#9dff9d', SUL: '#7fe0ff', NDE: '#ffb347', NRT: '#7dff9a', SDE: '#8fb8ff', RSU: '#ff8a8a', COE: '#ffe14d'};
+const GLOW = {CHE: '#ff6b5b', BRA: '#c6ff2e', ARG: '#7fd3ff', URY: '#8fb8ff', CHL: '#ff6b5b', BOL: '#ffe14d', PER: '#ff6b6b', PRY: '#ff8a8a', COL: '#ffe14d', VEN: '#ffd34d', ECU: '#ffe14d', PRT: '#7dff9a', FRA: '#8fb8ff', USA: '#8fb8ff', ESP: '#ffcf40', GUY: '#c6ff2e', SUR: '#9dff9d', SUL: '#7fe0ff', NDE: '#ffb347', NRT: '#7dff9a', SDE: '#8fb8ff', RSU: '#ff8a8a', COE: '#ffe14d'};
 const SANS = 'PoppinsX, "Helvetica Neue", Arial, sans-serif';
 const ANTON = 'AntonX, Impact, "Arial Narrow", sans-serif';
 
@@ -95,6 +97,7 @@ const FlagArt = ({iso, x, y, w, h}) => {
     case 'FIN': return <g>{R('#fff')}<rect x={x + w * 0.28} y={y} width={w * 0.17} height={h} fill="#002f6c" /><rect x={x} y={y + h * 0.39} width={w} height={h * 0.22} fill="#002f6c" /></g>;
     case 'SWE': return <g>{R('#006aa7')}<rect x={x + w * 0.31} y={y} width={w * 0.13} height={h} fill="#fecc02" /><rect x={x} y={y + h * 0.4} width={w} height={h * 0.2} fill="#fecc02" /></g>;
     case 'NOR': return <g>{R('#ba0c2f')}<rect x={x + w * 0.25} y={y} width={w * 0.22} height={h} fill="#fff" /><rect x={x} y={y + h * 0.36} width={w} height={h * 0.28} fill="#fff" /><rect x={x + w * 0.3} y={y} width={w * 0.12} height={h} fill="#00205b" /><rect x={x} y={y + h * 0.43} width={w} height={h * 0.14} fill="#00205b" /></g>;
+    case 'CHE': return <g>{R('#d52b1e')}<rect x={cx - m * 0.1} y={cy - m * 0.32} width={m * 0.2} height={m * 0.64} fill="#fff" /><rect x={cx - m * 0.32} y={cy - m * 0.1} width={m * 0.64} height={m * 0.2} fill="#fff" /></g>;
     case 'DNK': return <g>{R('#c8102e')}<rect x={x + w * 0.3} y={y} width={w * 0.12} height={h} fill="#fff" /><rect x={x} y={y + h * 0.43} width={w} height={h * 0.14} fill="#fff" /></g>;
     case 'SOV': return <g>{R('#cc0000')}{star(x + w * 0.16, y + h * 0.18, m * 0.07, '#ffd700')}<path d={`M${x + w * 0.1},${y + h * 0.42} q${w * 0.06},${h * 0.1} ${w * 0.14},${-h * 0.02}`} stroke="#ffd700" strokeWidth={m * 0.035} fill="none" /></g>;
     case 'POL': return <g>{Hs(['#fff', '#dc143c'])}</g>;

@@ -1,0 +1,421 @@
+{
+ "id": "b-pt-010",
+ "channel": "B",
+ "lang": "pt",
+ "format": "short",
+ "hook": "E SE O RS|TIVESSE VIRADO|UM PAÍS?",
+ "hook_end": 2.8,
+ "badge": "SÓ IMAGINAÇÃO",
+ "uf": true,
+ "voice": "Fenrir",
+ "music": {
+  "track": "Hidden Agenda",
+  "vol": 0.12,
+  "alt": [
+   "Investigations",
+   "Curiosity"
+  ]
+ },
+ "beats": [
+  {
+   "say": "E se o Rio Grande do Sul tivesse virado um país? Não é delírio de churrasco. Por quase dez anos, ele foi uma república.",
+   "cam": {
+    "c": [
+     -52,
+     -24
+    ],
+    "s": 1.7
+   },
+   "own": {
+    "BRA": "BRA",
+    "BR-RS": "RSU"
+   },
+   "od": 1.0,
+   "balls": [
+    {
+     "ll": [
+      -53.2,
+      -29.6
+     ],
+     "iso": "BRA",
+     "face": "cool",
+     "r": 0.8,
+     "d": 1.4
+    },
+    {
+     "ll": [
+      -48,
+      -15
+     ],
+     "iso": "BRA",
+     "face": "shock",
+     "d": 2.4
+    }
+   ]
+  },
+  {
+   "say": "Em vinte de setembro de mil oitocentos e trinta e cinco, os farrapos tomaram Porto Alegre. Começava a Revolução Farroupilha.",
+   "cam": {
+    "c": [
+     -53.3,
+     -29.8
+    ],
+    "s": 3.4
+   },
+   "balls": [],
+   "pins": [
+    {
+     "ll": [
+      -51.2,
+      -30.03
+     ],
+     "label": "Porto Alegre",
+     "d": 1.0
+    }
+   ],
+   "cards": [
+    {
+     "text": "20/09/1835:",
+     "big": "Revolução Farroupilha",
+     "d": 2.4
+    }
+   ]
+  },
+  {
+   "say": "Um ano depois, em onze de setembro de mil oitocentos e trinta e seis, eles proclamaram a República Rio-Grandense. Com presidente, capital e bandeira próprias.",
+   "pins": [
+    {
+     "ll": [
+      -53.1,
+      -31.56
+     ],
+     "label": "Piratini, a capital",
+     "left": true,
+     "d": 4.0
+    }
+   ],
+   "cards": [
+    {
+     "text": "11/09/1836:",
+     "big": "República Rio-Grandense",
+     "iso": "RSU",
+     "d": 1.2
+    }
+   ]
+  },
+  {
+   "say": "E essa bandeira verde, vermelha e amarela que o Rio Grande do Sul usa até hoje? Nasceu ali.",
+   "cards": [],
+   "pins": [],
+   "balls": [
+    {
+     "ll": [
+      -53.2,
+      -29.4
+     ],
+     "iso": "RSU",
+     "skin": "flag",
+     "face": "love",
+     "d": 0.8
+    }
+   ]
+  },
+  {
+   "say": "No meio dessa guerra apareceu um italiano chamado Giuseppe Garibaldi. Ele levou dois barcos por terra, em cima de rodas puxadas por bois, até o mar.",
+   "balls": [],
+   "arrows": [
+    {
+     "from": [
+      -51.0,
+      -30.4
+     ],
+     "to": [
+      -50.2,
+      -29.98
+     ],
+     "d": 3.6,
+     "color": "#b6ff3b"
+    }
+   ],
+   "cards": [
+    {
+     "text": "Garibaldi:",
+     "big": "barcos por terra",
+     "iso": "ITA",
+     "d": 1.0
+    }
+   ],
+   "cam": {
+    "c": [
+     -50.5,
+     -29.5
+    ],
+    "s": 6
+   }
+  },
+  {
+   "say": "Com eles, os farrapos tomaram Laguna, em Santa Catarina, e criaram mais uma república. Foi lá que Garibaldi conheceu Anita.",
+   "arrows": [
+    {
+     "from": [
+      -50.2,
+      -29.98
+     ],
+     "to": [
+      -48.78,
+      -28.48
+     ],
+     "d": 0.8,
+     "color": "#b6ff3b"
+    }
+   ],
+   "own": {
+    "BR-SC": "RSU"
+   },
+   "od": 2.4,
+   "pins": [
+    {
+     "ll": [
+      -48.78,
+      -28.48
+     ],
+     "label": "Laguna",
+     "d": 2.0
+    }
+   ],
+   "cards": [
+    {
+     "text": "1839:",
+     "big": "República Juliana",
+     "iso": "RSU",
+     "d": 3.0
+    }
+   ],
+   "cam": {
+    "c": [
+     -50.5,
+     -28.8
+    ],
+    "s": 4.2
+   }
+  },
+  {
+   "say": "Anos depois, Garibaldi voltou pra Europa e ajudou a unificar a Itália. Por isso chamam ele de herói de dois mundos.",
+   "own": {
+    "BR-SC": "BRA"
+   },
+   "od": 0.2,
+   "pins": [],
+   "arrows": [],
+   "cards": [
+    {
+     "text": "Garibaldi:",
+     "big": "herói de dois mundos",
+     "iso": "ITA",
+     "d": 2.4
+    }
+   ]
+  },
+  {
+   "say": "Mas o Império não desistiu. A guerra só acabou em mil oitocentos e quarenta e cinco, com um acordo de paz, e o Rio Grande voltou pro Brasil.",
+   "cam": {
+    "c": [
+     -53.3,
+     -29.8
+    ],
+    "s": 3.4
+   },
+   "own": {
+    "BR-RS": "BRA"
+   },
+   "od": 3.2,
+   "cards": [
+    {
+     "text": "1845:",
+     "big": "Paz de Poncho Verde",
+     "iso": "BRA",
+     "d": 2.0
+    }
+   ]
+  },
+  {
+   "say": "Agora imagina se a república tivesse sobrevivido. O novo país seria maior que o Reino Unido, com quase onze milhões de pessoas. Mais ou menos a população de Portugal.",
+   "own": {
+    "BR-RS": "RSU"
+   },
+   "od": 0.4,
+   "cards": [
+    {
+     "text": "Área:",
+     "big": "281 mil km² > Reino Unido",
+     "iso": "RSU",
+     "d": 2.6
+    },
+    {
+     "text": "População:",
+     "big": "~10,9 milhões",
+     "iso": "RSU",
+     "d": 6.4
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -53.2,
+      -29.6
+     ],
+     "iso": "RSU",
+     "skin": "flag",
+     "face": "cool",
+     "d": 0.6
+    }
+   ]
+  },
+  {
+   "say": "Grêmio e Inter jogariam outro campeonato. E a seleção gaúcha ia ter Ronaldinho, Taffarel, Dunga e Alisson.",
+   "cards": [
+    {
+     "text": "Seleção gaúcha:",
+     "big": "Ronaldinho, Taffarel, Dunga, Alisson",
+     "iso": "RSU",
+     "d": 3.0
+    }
+   ],
+   "balls": []
+  },
+  {
+   "say": "E pra entrar no Uruguai, a gente ia ter que passar pela fronteira de outro país antes.",
+   "cards": [],
+   "cam": {
+    "c": [
+     -54,
+     -30
+    ],
+    "s": 2.4
+   },
+   "own": {
+    "URY": "URY"
+   },
+   "arrows": [
+    {
+     "from": [
+      -50,
+      -26.5
+     ],
+     "to": [
+      -56,
+      -32.5
+     ],
+     "d": 0.6
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -49.5,
+      -26.5
+     ],
+     "iso": "BRA",
+     "face": "shock",
+     "r": 0.7,
+     "d": 1.2
+    }
+   ]
+  },
+  {
+   "say": "Me fala: se o Rio Grande do Sul fosse um país, você ia morar lá? Comenta aí. E manda pro seu amigo gaúcho.",
+   "arrows": [],
+   "cam": {
+    "c": [
+     -52,
+     -24
+    ],
+    "s": 1.7
+   },
+   "balls": [
+    {
+     "ll": [
+      -53.2,
+      -29.6
+     ],
+     "iso": "RSU",
+     "skin": "flag",
+     "face": "smirk",
+     "r": 0.8,
+     "d": 0.4
+    },
+    {
+     "ll": [
+      -48,
+      -15
+     ],
+     "iso": "BRA",
+     "face": "happy",
+     "d": 1.0
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "E SE O RS|TIVESSE VIRADO|UM PAÍS?",
+  "c": [
+   -51.5,
+   -27.0
+  ],
+  "s": 3.2,
+  "y": 0.68,
+  "own": {
+   "BRA": "BRA",
+   "BR-RS": "RSU"
+  },
+  "balls": [
+   {
+    "ll": [
+     -48.3,
+     -31.2
+    ],
+    "iso": "RSU",
+    "skin": "flag",
+    "face": "cool",
+    "r": 130
+   },
+   {
+    "ll": [
+     -47.5,
+     -23.6
+    ],
+    "iso": "BRA",
+    "face": "shock",
+    "skin": "red",
+    "r": 135
+   }
+  ]
+ },
+ "yt": {
+  "title": "E se o Rio Grande do Sul tivesse virado um país? #curiosidades #brasil",
+  "description": "De 1836 a 1845, o Rio Grande do Sul foi a República Rio-Grandense, com capital em Piratini e a bandeira que o estado usa até hoje. Teve até Garibaldi levando barcos por terra. E se ela tivesse sobrevivido?\nVocê ia morar lá? Comenta aí. E manda pro seu amigo gaúcho.\n\nCenário imaginário: só um \"e se\" no mapa. Os fatos de apoio são reais.\nInscreva-se pra ver o próximo \"e se\".\n\n#curiosidades #brasil #mapas #geografia #historia",
+  "tags": [
+   "curiosidades",
+   "brasil",
+   "mapas",
+   "geografia",
+   "história",
+   "simulação",
+   "e se",
+   "hiperfoco",
+   "américa do sul",
+   "rio grande do sul",
+   "revolução farroupilha",
+   "república rio-grandense",
+   "garibaldi",
+   "anita garibaldi",
+   "gaúcho",
+   "20 de setembro"
+  ],
+  "lang": "pt-BR",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-21T21:00:00Z"
+ }
+}

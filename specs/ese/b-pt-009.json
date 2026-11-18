@@ -1,0 +1,469 @@
+{
+ "id": "b-pt-009",
+ "channel": "B",
+ "lang": "pt",
+ "format": "short",
+ "hook": "E SE O AMAPÁ|FOSSE DA|FRANÇA?",
+ "hook_end": 2.8,
+ "badge": "SÓ IMAGINAÇÃO",
+ "uf": true,
+ "voice": "Fenrir",
+ "music": {
+  "track": "Hidden Agenda",
+  "vol": 0.12,
+  "alt": [
+   "Investigations",
+   "Curiosity"
+  ]
+ },
+ "beats": [
+  {
+   "say": "E se o Amapá fosse da França? Ia ter cidade brasileira usando euro. E isso quase aconteceu.",
+   "cam": {
+    "c": [
+     -54,
+     0
+    ],
+    "s": 2.4
+   },
+   "own": {
+    "BRA": "BRA",
+    "FR-GF": "FRA",
+    "BR-AP": "FRA"
+   },
+   "balls": [
+    {
+     "ll": [
+      -51.8,
+      1.4
+     ],
+     "iso": "FRA",
+     "skin": "flag",
+     "face": "smirk",
+     "r": 0.8,
+     "d": 0.8
+    },
+    {
+     "ll": [
+      -55,
+      -4
+     ],
+     "iso": "BRA",
+     "face": "shock",
+     "d": 1.8
+    }
+   ]
+  },
+  {
+   "say": "Aquele pedaço ali em cima é a Guiana Francesa. Ela não é colônia: é parte da França, da União Europeia, e usa euro.",
+   "own": {
+    "BR-AP": "BRA"
+   },
+   "od": 0.2,
+   "hl": [
+    "FR-GF"
+   ],
+   "balls": [],
+   "cam": {
+    "c": [
+     -52.2,
+     1.6
+    ],
+    "s": 4.2
+   },
+   "cards": [
+    {
+     "text": "Guiana Francesa:",
+     "big": "França + euro",
+     "iso": "FRA",
+     "d": 3.0
+    }
+   ]
+  },
+  {
+   "say": "No século dezenove, a França dizia que a fronteira não era o rio Oiapoque. Era muito mais pro sul. E queria uma área de uns duzentos e sessenta mil quilômetros quadrados.",
+   "hl": [],
+   "cards": [
+    {
+     "text": "A França queria:",
+     "big": "~260 mil km²",
+     "iso": "FRA",
+     "d": 6.0
+    }
+   ],
+   "arrows": [
+    {
+     "from": [
+      -52.5,
+      4.2
+     ],
+     "to": [
+      -51.2,
+      1.0
+     ],
+     "d": 2.0,
+     "color": "#7fd3ff"
+    }
+   ],
+   "pins": [
+    {
+     "ll": [
+      -51.8,
+      3.85
+     ],
+     "label": "Rio Oiapoque",
+     "d": 1.0
+    }
+   ]
+  },
+  {
+   "say": "Por décadas, aquilo ficou como terra de ninguém. Até que acharam ouro na região, e todo mundo correu pra lá.",
+   "arrows": [],
+   "pins": [],
+   "cards": [
+    {
+     "text": "Anos 1890:",
+     "big": "ouro no Amapá",
+     "d": 3.6
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -51.3,
+      2.5
+     ],
+     "iso": "BRA",
+     "face": "love",
+     "r": 0.7,
+     "d": 3.8
+    }
+   ]
+  },
+  {
+   "say": "Em mil oitocentos e noventa e cinco, soldados franceses desembarcaram na vila de Amapá pra prender um líder brasileiro, o Cabralzinho.",
+   "cards": [
+    {
+     "text": "15/05/1895:",
+     "big": "invasão da vila de Amapá",
+     "iso": "FRA",
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "c": [
+     -50.8,
+     2.05
+    ],
+    "s": 9
+   },
+   "arrows": [
+    {
+     "from": [
+      -49.6,
+      2.6
+     ],
+     "to": [
+      -50.8,
+      2.05
+     ],
+     "d": 2.4,
+     "color": "#ff5a3c"
+    }
+   ],
+   "pins": [
+    {
+     "ll": [
+      -50.8,
+      2.05
+     ],
+     "label": "Amapá (vila)",
+     "left": true,
+     "d": 1.6
+    }
+   ]
+  },
+  {
+   "say": "Houve tiroteio, mortos dos dois lados, e o capitão francês morreu no combate. Quase virou guerra.",
+   "arrows": [],
+   "cards": [],
+   "balls": [
+    {
+     "ll": [
+      -50.6,
+      2.3
+     ],
+     "iso": "BRA",
+     "face": "angry",
+     "skin": "red",
+     "r": 0.8,
+     "d": 0.4
+    },
+    {
+     "ll": [
+      -51.2,
+      1.8
+     ],
+     "iso": "FRA",
+     "skin": "flag",
+     "face": "shock",
+     "r": 0.7,
+     "d": 1.6
+    }
+   ]
+  },
+  {
+   "say": "Os dois países resolveram levar a briga pra um juiz neutro: o presidente da Suíça.",
+   "balls": [],
+   "pins": [],
+   "cam": {
+    "c": [
+     -52.2,
+     1.6
+    ],
+    "s": 4.2
+   },
+   "cards": [
+    {
+     "text": "Juiz:",
+     "big": "presidente da Suíça",
+     "iso": "CHE",
+     "d": 1.6
+    }
+   ]
+  },
+  {
+   "say": "E quem defendeu o Brasil? O Barão do Rio Branco. O mesmo que, três anos depois, ia comprar o Acre.",
+   "cards": [
+    {
+     "text": "Advogado do Brasil:",
+     "big": "Barão do Rio Branco",
+     "iso": "BRA",
+     "d": 1.0
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -52,
+      0.6
+     ],
+     "iso": "BRA",
+     "face": "cool",
+     "d": 1.2
+    }
+   ]
+  },
+  {
+   "say": "No dia primeiro de dezembro de mil e novecentos, saiu a decisão: a fronteira é o Oiapoque. O Amapá ficou com o Brasil.",
+   "cards": [
+    {
+     "text": "01/12/1900:",
+     "big": "vitória do Brasil",
+     "iso": "BRA",
+     "d": 4.2
+    }
+   ],
+   "own": {
+    "BR-AP": "BRA"
+   },
+   "balls": [
+    {
+     "ll": [
+      -51.6,
+      1.2
+     ],
+     "iso": "BRA",
+     "face": "happy",
+     "d": 4.6
+    }
+   ]
+  },
+  {
+   "say": "Agora imagina o contrário. Macapá seria uma cidade francesa, com euro, passaporte europeu e o Marco Zero do Equador dentro da França.",
+   "own": {
+    "BR-AP": "FRA"
+   },
+   "od": 1.0,
+   "cards": [],
+   "cam": {
+    "c": [
+     -51.07,
+     0.03
+    ],
+    "s": 7
+   },
+   "balls": [
+    {
+     "ll": [
+      -51.3,
+      0.6
+     ],
+     "iso": "FRA",
+     "skin": "flag",
+     "face": "cool",
+     "r": 0.8,
+     "d": 1.2
+    }
+   ],
+   "pins": [
+    {
+     "ll": [
+      -51.07,
+      0.03
+     ],
+     "label": "Macapá · Marco Zero",
+     "d": 2.0
+    }
+   ]
+  },
+  {
+   "say": "Mais de setecentas mil pessoas que hoje são amapaenses estariam votando nas eleições da França.",
+   "pins": [],
+   "cards": [
+    {
+     "text": "Amapá:",
+     "big": "mais de 700 mil pessoas",
+     "iso": "FRA",
+     "d": 1.0
+    }
+   ],
+   "cam": {
+    "c": [
+     -52.2,
+     1.6
+    ],
+    "s": 4.2
+   }
+  },
+  {
+   "say": "E o detalhe que ninguém acredita: mesmo assim, a maior fronteira terrestre da França hoje não é com a Espanha nem com a Alemanha. É com o Brasil.",
+   "own": {
+    "BR-AP": "BRA"
+   },
+   "od": 0.4,
+   "cards": [
+    {
+     "text": "Maior fronteira terrestre da França:",
+     "big": "com o Brasil",
+     "iso": "BRA",
+     "d": 6.2
+    }
+   ],
+   "hl": [
+    "FR-GF"
+   ],
+   "balls": []
+  },
+  {
+   "say": "Me fala: você preferia o Amapá brasileiro ou francês, com euro? Comenta aí. E manda pro seu amigo de Macapá.",
+   "hl": [],
+   "cards": [],
+   "cam": {
+    "c": [
+     -54,
+     0
+    ],
+    "s": 2.4
+   },
+   "balls": [
+    {
+     "ll": [
+      -51.8,
+      1.4
+     ],
+     "iso": "BRA",
+     "face": "smirk",
+     "r": 0.8,
+     "d": 0.4
+    },
+    {
+     "ll": [
+      -53.2,
+      4.2
+     ],
+     "iso": "FRA",
+     "skin": "flag",
+     "face": "smirk",
+     "r": 0.7,
+     "d": 1.0
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "E SE O AMAPÁ|FOSSE DA|FRANÇA?",
+  "c": [
+   -52.3,
+   1.4
+  ],
+  "s": 4.6,
+  "y": 0.66,
+  "own": {
+   "BRA": "BRA",
+   "FR-GF": "FRA",
+   "BR-AP": "FRA"
+  },
+  "balls": [
+   {
+    "ll": [
+     -49.4,
+     3.4
+    ],
+    "iso": "FRA",
+    "skin": "flag",
+    "face": "smirk",
+    "r": 125
+   },
+   {
+    "ll": [
+     -53.6,
+     -1.6
+    ],
+    "iso": "BRA",
+    "face": "rage",
+    "skin": "red",
+    "r": 150
+   }
+  ],
+  "arrows": [
+   {
+    "from": [
+     -52.6,
+     3.6
+    ],
+    "to": [
+     -51.6,
+     1.0
+    ]
+   }
+  ]
+ },
+ "yt": {
+  "title": "E se o Amapá fosse da França? #curiosidades #brasil",
+  "description": "Em 1895 soldados franceses invadiram a vila de Amapá. A briga foi parar na Suíça e, em 1º de dezembro de 1900, o Brasil ganhou, defendido pelo Barão do Rio Branco. E se a França tivesse ficado com o Amapá?\nAmapá brasileiro ou francês? Comenta aí. E manda pro seu amigo de Macapá.\n\nCenário imaginário: só um \"e se\" no mapa. Os fatos de apoio são reais.\nInscreva-se pra ver o próximo \"e se\".\n\n#curiosidades #brasil #mapas #geografia #historia",
+  "tags": [
+   "curiosidades",
+   "brasil",
+   "mapas",
+   "geografia",
+   "história",
+   "simulação",
+   "e se",
+   "hiperfoco",
+   "américa do sul",
+   "amapá",
+   "frança",
+   "guiana francesa",
+   "oiapoque",
+   "barão do rio branco",
+   "macapá",
+   "questão do amapá"
+  ],
+  "lang": "pt-BR",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-21T15:00:00Z"
+ }
+}
