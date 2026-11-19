@@ -44,7 +44,7 @@ if mode == "private":
         st = v["status"]
         if not (v["id"] in want or (os.environ.get("ALL") == "1" and (st["privacyStatus"] != "private" or st.get("publishAt")))):
             continue
-        body = {"id": v["id"], "status": {"privacyStatus": "private", "embeddable": st.get("embeddable", True), "license": st.get("license", "youtube"),
+        body = {"id": v["id"], "status": {"privacyStatus": "private", "publishAt": None, "embeddable": st.get("embeddable", True), "license": st.get("license", "youtube"),
                                           "publicStatsViewable": st.get("publicStatsViewable", True), "selfDeclaredMadeForKids": st.get("madeForKids", False),
                                           **({"containsSyntheticMedia": st["containsSyntheticMedia"]} if "containsSyntheticMedia" in st else {})}}
         r = call("PUT", API + "videos?part=status", tok, body)
