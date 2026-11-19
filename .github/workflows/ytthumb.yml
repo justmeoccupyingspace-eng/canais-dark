@@ -4,14 +4,15 @@ on:
     inputs:
       ch: {description: "A ou B", required: true}
       vid: {description: "ID do vídeo", required: true}
-      ref: {description: "branch com o thumb.jpg (ex.: long-<run>)", required: true}
+      ref: {description: "branch com o thumb.jpg (ex.: long-<run>) ou 'main' com path", required: true}
+      path: {description: "caminho do jpg no repo (opcional; usa este em vez do thumb.jpg do branch)", required: false, default: ""}
 jobs:
   t:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - run: |
-          git fetch -q origin "${{ inputs.ref }}" && git show "FETCH_HEAD:thumb.jpg" > /tmp/t.jpg && ls -la /tmp/t.jpg
+          if [ -n "${{ inputs.path }}" ]; then cp "${{ inputs.path }}" /tmp/t.jpg; else git fetch -q origin "${{ inputs.ref }}" && git show "FETCH_HEAD:thumb.jpg" > /tmp/t.jpg; fi; ls -la /tmp/t.jpg
           python3 scripts/lyt.py thumb ${{ inputs.ch }} ${{ inputs.vid }} /tmp/t.jpg
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}

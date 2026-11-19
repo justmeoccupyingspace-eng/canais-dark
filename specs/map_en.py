@@ -236,3 +236,47 @@ save(6, "How Britain Lost Singapore in One Week",
      dict(title="THE FORTRESS|THAT FELL IN|7 DAYS", c=[102.8, 3.2], s=4.2, y=0.66, own={"MYS": "JPN", "SGP": "JPN", "THA": "THA"},
           arrows=[dict(from_=KB, to=JOH, color="#ff4d4d")]), "2026-11-22T17:00:00Z",
      tags=["fall of singapore", "singapore 1942", "malaya", "ww2", "churchill", "japan"])
+
+# ---------------------------------------------------------------- 7. Louisiana Purchase 1803 (twin of the Alaska short, best A so far)
+LA = [[-89.4, 29.1], [-91.2, 31.0], [-91.1, 33.0], [-90.1, 35.0], [-89.5, 36.6], [-90.2, 38.7], [-91.4, 40.4], [-91.1, 42.5], [-91.6, 44.3], [-93.2, 45.0], [-95.2, 47.2],
+      [-95.2, 49.0], [-113.5, 49.0], [-112.4, 47.2], [-111.0, 45.0], [-110.2, 43.6], [-108.8, 42.4], [-106.6, 41.0], [-105.9, 39.2], [-106.2, 38.4], [-100.0, 37.8],
+      [-100.0, 34.6], [-97.0, 33.8], [-94.0, 33.6], [-94.05, 32.0], [-93.85, 29.75], [-92.0, 29.6], [-90.5, 29.1]]
+US03 = [[-91.5, 31.0], [-85.0, 31.0], [-82.0, 30.6], [-81.4, 30.7], [-80.8, 32.2], [-78.9, 33.6], [-76.0, 35.2], [-75.6, 36.8], [-74.0, 39.6], [-73.8, 40.6], [-71.0, 41.4],
+        [-70.0, 41.7], [-70.6, 42.6], [-70.2, 43.7], [-67.0, 44.8], [-67.8, 47.1], [-69.2, 47.4], [-70.0, 45.8], [-71.5, 45.0], [-74.7, 45.0], [-76.4, 44.2], [-79.0, 43.3],
+        [-79.0, 42.8], [-82.4, 41.7], [-83.1, 42.2], [-82.4, 43.0], [-82.5, 45.3], [-84.5, 46.5], [-89.5, 47.9], [-95.2, 49.0], [-95.2, 47.2], [-93.2, 45.0], [-91.6, 44.3],
+        [-91.1, 42.5], [-91.4, 40.4], [-90.2, 38.7], [-89.5, 36.6], [-90.1, 35.0], [-91.1, 33.0]]
+NOLA = [-90.07, 29.95]
+ZL = lambda iso, d, label="": dict(coords=LA, iso=iso, op=0.92, label=label, d=d)
+ZU = lambda d: dict(coords=US03, iso="USA", op=0.9, d=d)
+save(7, "How France Sold Louisiana for 3 Cents an Acre",
+     "FRANCE SOLD|ALL OF THIS|FOR 3¢ AN ACRE",
+     [
+         dict(say="In 1803, the United States doubled in size overnight. It bought 828,000 square miles from France for 15 million dollars.",
+              cam={"c": [-92, 39], "s": 1.25}, date="1803", own={"CAN": "GBR"}, zones=[ZU(0.2), ZL("FRA", 0.9)],
+              cards=[dict(text="Price:", big="$15 million", iso="USA", d=5.6)]),
+         dict(say="That's less than three cents an acre.",
+              cards=[dict(text="Per acre:", big="< 3 cents", d=0.3)]),
+         dict(say="And America never asked for all of it. Jefferson only wanted one city: New Orleans.",
+              cards=[], zones=[], cam={"c": [-90.2, 30.6], "s": 9}, pins=[dict(ll=NOLA, label="New Orleans", d=2.4)]),
+         dict(say="Whoever held New Orleans controlled the Mississippi, the road to market for every farmer west of the Appalachians.",
+              cam={"c": [-89.5, 37.5], "s": 2.2}, pins=[], arrows=[dict(from_=[-91.2, 44.0], to=[-90.1, 30.3], color="#7fd3ff", d=1.6)]),
+         dict(say="Napoleon had big plans for Louisiana. But first he needed Haiti, France's richest colony.",
+              arrows=[], cam={"c": [-80, 25.5], "s": 2.1}, pins=[dict(ll=[-72.3, 19.0], label="Haiti (Saint-Domingue)", left=True, d=3.2)]),
+         dict(say="The army he sent there was crushed by the Haitian Revolution and yellow fever.",
+              date="1802", cards=[dict(text="French army in Haiti:", big="destroyed", iso="FRA", d=1.2)]),
+         dict(say="Without Haiti, Louisiana was useless to him. And a new war with Britain was coming. He needed cash.",
+              date=None, pins=[], cards=[], cam={"c": [-92, 39], "s": 1.25}, zones=[ZU(0.2), ZL("FRA", 0.5)]),
+         dict(say="So in April 1803, his finance minister asked the shocked Americans: why not take the whole thing?",
+              date="APRIL 1803", cards=[dict(text="France's offer:", big="ALL of Louisiana", iso="FRA", d=2.6)]),
+         dict(say="The treaty is dated April 30th, 1803.",
+              date="30 APRIL 1803", cards=[], zones=[ZU(-5), ZL("FRA", -5), ZL("USA", 0.6)]),
+         dict(say="Today, that land is part or all of 15 states.",
+              date=None, cards=[dict(text="Today:", big="15 states", iso="USA", d=1.4)]),
+         dict(say="And the twist? France got paid through a British bank, Barings. So British bankers helped fund Napoleon, right before his war with Britain.",
+              cards=[dict(text="Paid through:", big="Barings Bank of London", iso="GBR", d=2.4)], cam={"c": [-35, 44], "s": 0.55},
+              arrows=[dict(from_=[-0.1, 51.5], to=[2.35, 48.86], color="#ffcf40", d=4.0)]),
+     ],
+     "1803: France sold the Louisiana Territory, about 828,000 square miles, to the United States for $15 million, less than three cents an acre. Jefferson only wanted New Orleans. After losing Haiti and facing a new war with Britain, Napoleon sold it all.",
+     dict(title="FRANCE SOLD|ALL OF THIS|FOR 3¢ AN ACRE", c=[-96, 41], s=1.5, y=0.66, own={"CAN": "GBR"}, zones=[dict(coords=US03, iso="USA", op=0.9), dict(coords=LA, iso="FRA", op=0.95)]),
+     "2026-11-23T17:00:00Z",
+     tags=["louisiana purchase", "napoleon", "thomas jefferson", "new orleans", "1803", "haiti", "manifest destiny"])

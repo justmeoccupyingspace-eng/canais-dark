@@ -454,7 +454,7 @@ export const EseThumb = ({es}) => {
         {(th.arrows || []).map((a, i) => <Arrow key={i} a={pt(a.from)} b={pt(a.to)} t={5} color={a.color || '#b6ff3b'} w={18} />)}
         {(th.balls || []).map((b, i) => { const xy = pt(b.ll || b.iso); return xy ? <Ball key={i} uid={100 + i} iso={b.iso} x={xy[0] + (b.dx || 0)} y={xy[1] + (b.dy || 0)} r={b.r || 120} face={b.face} skin={b.skin || 'emoji'} t={1} /> : null; })}
       </svg>
-      {th.badge !== false ? (vert ? <Badge text={th.badge || 'SÓ IMAGINAÇÃO'} vert={vert} /> : <div style={{position: 'absolute', left: 14, top: 0, width: 400}}><Badge text={th.badge || 'SÓ IMAGINAÇÃO'} vert={false} /></div>) : null}
+      {th.badge !== false && (th.badge || es.badge) ? (vert ? <Badge text={th.badge || es.badge} vert={vert} /> : <div style={{position: 'absolute', left: 14, top: 0, width: 400}}><Badge text={th.badge || es.badge} vert={false} /></div>) : null}
       <div style={{position: 'absolute', left: vert ? 30 : 44, right: vert ? 30 : 'auto', width: vert ? 'auto' : W * 0.5, top: vert ? 290 : 110, textAlign: vert ? 'center' : 'left', fontFamily: ANTON, lineHeight: 1.0, WebkitTextStroke: '8px #000', paintOrder: 'stroke', textShadow: '0 12px 0 #000'}}>
         {lines.map((ln, i) => <div key={i} style={{fontSize: (i === 0 && lines.length > 2 ? 0.6 : 1) * (th.size || (vert ? 150 : 120)), color: i === lines.length - 1 && lines.length > 1 ? '#d4ff3a' : '#fff'}}>{ln}</div>)}
       </div>
