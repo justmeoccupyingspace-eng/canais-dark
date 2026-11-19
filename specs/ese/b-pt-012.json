@@ -1,0 +1,756 @@
+{
+ "id": "b-pt-012",
+ "channel": "B",
+ "lang": "pt",
+ "format": "short",
+ "hook": "E SE O OESTE|DE SC FOSSE|ARGENTINO?",
+ "hook_end": 2.8,
+ "badge": "SÓ IMAGINAÇÃO",
+ "uf": true,
+ "voice": "Fenrir",
+ "music": {
+  "track": "Hidden Agenda",
+  "vol": 0.12,
+  "alt": [
+   "Investigations",
+   "Curiosity"
+  ]
+ },
+ "beats": [
+  {
+   "say": "E se o oeste de Santa Catarina fosse da Argentina? Esse pedaço quase virou argentino. E quem decidiu foi um presidente americano.",
+   "cam": {
+    "c": [
+     -53.6,
+     -26.6
+    ],
+    "s": 9
+   },
+   "own": {
+    "BRA": "BRA",
+    "ARG": "ARG",
+    "PRY": "PRY",
+    "URY": "URY"
+   },
+   "zones": [
+    {
+     "coords": [
+      [
+       -53.83,
+       -27.16
+      ],
+      [
+       -53.68,
+       -26.75
+      ],
+      [
+       -53.64,
+       -26.25
+      ],
+      [
+       -53.86,
+       -25.62
+      ],
+      [
+       -53.4,
+       -25.56
+      ],
+      [
+       -53.1,
+       -25.57
+      ],
+      [
+       -52.85,
+       -25.78
+      ],
+      [
+       -52.57,
+       -25.98
+      ],
+      [
+       -52.25,
+       -26.25
+      ],
+      [
+       -52.0,
+       -26.45
+      ],
+      [
+       -52.33,
+       -26.56
+      ],
+      [
+       -52.75,
+       -26.86
+      ],
+      [
+       -53.07,
+       -27.1
+      ],
+      [
+       -53.45,
+       -27.18
+      ]
+     ],
+     "color": "#75aadb",
+     "iso": "ARG",
+     "op": 0.95,
+     "label": "",
+     "d": 0.6
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -54.6,
+      -27.3
+     ],
+     "iso": "ARG",
+     "face": "smirk",
+     "r": 0.7,
+     "d": 1.0
+    },
+    {
+     "ll": [
+      -51.6,
+      -25.9
+     ],
+     "iso": "BRA",
+     "face": "shock",
+     "d": 2.0
+    }
+   ]
+  },
+  {
+   "say": "A briga começou porque tratados antigos diziam que a fronteira era o rio Peperi-Guaçu. Só que ninguém concordava sobre qual rio era esse.",
+   "zones": [],
+   "balls": [],
+   "cam": {
+    "c": [
+     -52.95,
+     -26.4
+    ],
+    "s": 24
+   },
+   "pins": [
+    {
+     "ll": [
+      -53.7,
+      -26.95
+     ],
+     "label": "Rio Peperi-Guaçu",
+     "d": 1.6
+    }
+   ]
+  },
+  {
+   "say": "A Argentina dizia que a fronteira certa ficava mais pro leste, nos rios Chapecó e Chopim. E queria uns trinta mil quilômetros quadrados.",
+   "pins": [
+    {
+     "ll": [
+      -52.75,
+      -26.86
+     ],
+     "label": "Rio Chapecó",
+     "d": 3.0
+    },
+    {
+     "ll": [
+      -52.57,
+      -25.98
+     ],
+     "label": "Rio Chopim",
+     "d": 3.6
+    }
+   ],
+   "zones": [
+    {
+     "coords": [
+      [
+       -53.83,
+       -27.16
+      ],
+      [
+       -53.68,
+       -26.75
+      ],
+      [
+       -53.64,
+       -26.25
+      ],
+      [
+       -53.86,
+       -25.62
+      ],
+      [
+       -53.4,
+       -25.56
+      ],
+      [
+       -53.1,
+       -25.57
+      ],
+      [
+       -52.85,
+       -25.78
+      ],
+      [
+       -52.57,
+       -25.98
+      ],
+      [
+       -52.25,
+       -26.25
+      ],
+      [
+       -52.0,
+       -26.45
+      ],
+      [
+       -52.33,
+       -26.56
+      ],
+      [
+       -52.75,
+       -26.86
+      ],
+      [
+       -53.07,
+       -27.1
+      ],
+      [
+       -53.45,
+       -27.18
+      ]
+     ],
+     "color": "#75aadb",
+     "iso": "ARG",
+     "op": 0.95,
+     "label": "",
+     "d": 1.0
+    }
+   ],
+   "arrows": [
+    {
+     "from": [
+      -54.2,
+      -26.4
+     ],
+     "to": [
+      -52.9,
+      -26.4
+     ],
+     "d": 0.6,
+     "color": "#75aadb"
+    }
+   ],
+   "cards": [
+    {
+     "text": "A Argentina queria:",
+     "big": "~30 mil km²",
+     "iso": "ARG",
+     "d": 5.6
+    }
+   ]
+  },
+  {
+   "say": "Isso ia levar o oeste de Santa Catarina e o sudoeste do Paraná. Cidades como São Miguel do Oeste e Francisco Beltrão.",
+   "arrows": [],
+   "cards": [],
+   "pins": [
+    {
+     "ll": [
+      -53.52,
+      -26.73
+     ],
+     "label": "São Miguel do Oeste",
+     "d": 4.4
+    },
+    {
+     "ll": [
+      -53.05,
+      -26.08
+     ],
+     "label": "Francisco Beltrão",
+     "d": 5.4
+    }
+   ]
+  },
+  {
+   "say": "Os dois países chamaram um juiz: o presidente dos Estados Unidos, Grover Cleveland.",
+   "pins": [],
+   "cards": [
+    {
+     "text": "Juiz:",
+     "big": "Grover Cleveland",
+     "iso": "USA",
+     "d": 1.6
+    }
+   ]
+  },
+  {
+   "say": "E quem defendeu o Brasil? De novo, o Barão do Rio Branco. Ele juntou mapas e documentos antigos pra mostrar que o Brasil tinha razão.",
+   "cards": [
+    {
+     "text": "Advogado do Brasil:",
+     "big": "Barão do Rio Branco",
+     "iso": "BRA",
+     "d": 1.0
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -52.2,
+      -27.4
+     ],
+     "iso": "BRA",
+     "face": "cool",
+     "r": 0.7,
+     "d": 1.4
+    }
+   ]
+  },
+  {
+   "say": "Em cinco de fevereiro de mil oitocentos e noventa e cinco, saiu a decisão: vitória do Brasil.",
+   "zones": [],
+   "cards": [
+    {
+     "text": "05/02/1895:",
+     "big": "vitória do Brasil",
+     "iso": "BRA",
+     "d": 3.4
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -53.0,
+      -26.4
+     ],
+     "iso": "BRA",
+     "face": "happy",
+     "r": 0.8,
+     "d": 3.6
+    }
+   ]
+  },
+  {
+   "say": "Tem até cidade no Paraná que virou homenagem ao juiz: Clevelândia.",
+   "zones": [],
+   "cards": [],
+   "balls": [],
+   "pins": [
+    {
+     "ll": [
+      -52.35,
+      -26.4
+     ],
+     "label": "Clevelândia",
+     "d": 2.6
+    }
+   ]
+  },
+  {
+   "say": "Agora imagina o contrário. A província argentina de Misiones ia ficar com mais que o dobro do tamanho.",
+   "pins": [],
+   "zones": [
+    {
+     "coords": [
+      [
+       -53.83,
+       -27.16
+      ],
+      [
+       -53.68,
+       -26.75
+      ],
+      [
+       -53.64,
+       -26.25
+      ],
+      [
+       -53.86,
+       -25.62
+      ],
+      [
+       -53.4,
+       -25.56
+      ],
+      [
+       -53.1,
+       -25.57
+      ],
+      [
+       -52.85,
+       -25.78
+      ],
+      [
+       -52.57,
+       -25.98
+      ],
+      [
+       -52.25,
+       -26.25
+      ],
+      [
+       -52.0,
+       -26.45
+      ],
+      [
+       -52.33,
+       -26.56
+      ],
+      [
+       -52.75,
+       -26.86
+      ],
+      [
+       -53.07,
+       -27.1
+      ],
+      [
+       -53.45,
+       -27.18
+      ]
+     ],
+     "color": "#75aadb",
+     "iso": "ARG",
+     "op": 0.95,
+     "label": "MISIONES",
+     "d": 1.0
+    }
+   ],
+   "cam": {
+    "c": [
+     -54.4,
+     -26.9
+    ],
+    "s": 12
+   },
+   "cards": [
+    {
+     "text": "Misiones:",
+     "big": "mais que o dobro",
+     "iso": "ARG",
+     "d": 4.0
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -55.6,
+      -27.6
+     ],
+     "iso": "ARG",
+     "face": "love",
+     "r": 0.7,
+     "d": 1.6
+    }
+   ]
+  },
+  {
+   "say": "E a galera de São Miguel do Oeste e de Francisco Beltrão ia falar espanhol, torcer pra Argentina na Copa e trocar o pão de queijo por alfajor.",
+   "cards": [],
+   "cam": {
+    "c": [
+     -52.95,
+     -26.4
+    ],
+    "s": 24
+   },
+   "balls": [
+    {
+     "ll": [
+      -53.35,
+      -26.45
+     ],
+     "iso": "ARG",
+     "face": "happy",
+     "r": 0.75,
+     "d": 0.6
+    },
+    {
+     "ll": [
+      -51.6,
+      -27.0
+     ],
+     "iso": "BRA",
+     "face": "sad",
+     "r": 0.7,
+     "d": 3.4
+    }
+   ]
+  },
+  {
+   "say": "E o detalhe: em Dionísio Cerqueira, a fronteira é seca. A cidade argentina do outro lado da avenida se chama Bernardo de Irigoyen. O mesmo nome do ministro argentino que propôs essa fronteira.",
+   "zones": [],
+   "balls": [],
+   "cam": {
+    "c": [
+     -53.64,
+     -26.26
+    ],
+    "s": 30
+   },
+   "pins": [
+    {
+     "ll": [
+      -53.635,
+      -26.255
+     ],
+     "label": "Dionísio Cerqueira",
+     "d": 1.0
+    }
+   ],
+   "cards": [
+    {
+     "text": "Do outro lado:",
+     "big": "Bernardo de Irigoyen",
+     "iso": "ARG",
+     "d": 4.6
+    }
+   ]
+  },
+  {
+   "say": "Me fala: oeste catarinense argentino ia dar certo? Comenta aí. E manda pro seu amigo do oeste.",
+   "pins": [],
+   "cards": [],
+   "cam": {
+    "c": [
+     -53.6,
+     -26.6
+    ],
+    "s": 9
+   },
+   "zones": [
+    {
+     "coords": [
+      [
+       -53.83,
+       -27.16
+      ],
+      [
+       -53.68,
+       -26.75
+      ],
+      [
+       -53.64,
+       -26.25
+      ],
+      [
+       -53.86,
+       -25.62
+      ],
+      [
+       -53.4,
+       -25.56
+      ],
+      [
+       -53.1,
+       -25.57
+      ],
+      [
+       -52.85,
+       -25.78
+      ],
+      [
+       -52.57,
+       -25.98
+      ],
+      [
+       -52.25,
+       -26.25
+      ],
+      [
+       -52.0,
+       -26.45
+      ],
+      [
+       -52.33,
+       -26.56
+      ],
+      [
+       -52.75,
+       -26.86
+      ],
+      [
+       -53.07,
+       -27.1
+      ],
+      [
+       -53.45,
+       -27.18
+      ]
+     ],
+     "color": "#75aadb",
+     "iso": "ARG",
+     "op": 0.95,
+     "label": "",
+     "d": 0.2
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -54.6,
+      -27.3
+     ],
+     "iso": "ARG",
+     "face": "smirk",
+     "r": 0.7,
+     "d": 0.6
+    },
+    {
+     "ll": [
+      -51.6,
+      -25.9
+     ],
+     "iso": "BRA",
+     "face": "smirk",
+     "d": 1.0
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "E SE O OESTE|DE SC FOSSE|ARGENTINO?",
+  "c": [
+   -53.2,
+   -26.5
+  ],
+  "s": 17,
+  "y": 0.68,
+  "own": {
+   "BRA": "BRA",
+   "ARG": "ARG",
+   "PRY": "PRY"
+  },
+  "zones": [
+   {
+    "coords": [
+     [
+      -53.83,
+      -27.16
+     ],
+     [
+      -53.68,
+      -26.75
+     ],
+     [
+      -53.64,
+      -26.25
+     ],
+     [
+      -53.86,
+      -25.62
+     ],
+     [
+      -53.4,
+      -25.56
+     ],
+     [
+      -53.1,
+      -25.57
+     ],
+     [
+      -52.85,
+      -25.78
+     ],
+     [
+      -52.57,
+      -25.98
+     ],
+     [
+      -52.25,
+      -26.25
+     ],
+     [
+      -52.0,
+      -26.45
+     ],
+     [
+      -52.33,
+      -26.56
+     ],
+     [
+      -52.75,
+      -26.86
+     ],
+     [
+      -53.07,
+      -27.1
+     ],
+     [
+      -53.45,
+      -27.18
+     ]
+    ],
+    "color": "#75aadb",
+    "iso": "ARG",
+    "op": 0.95
+   }
+  ],
+  "balls": [
+   {
+    "ll": [
+     -54.4,
+     -27.55
+    ],
+    "iso": "ARG",
+    "face": "smirk",
+    "r": 125
+   },
+   {
+    "ll": [
+     -51.9,
+     -27.45
+    ],
+    "iso": "BRA",
+    "face": "rage",
+    "skin": "red",
+    "r": 150
+   }
+  ],
+  "arrows": [
+   {
+    "from": [
+     -54.15,
+     -27.2
+    ],
+    "to": [
+     -53.25,
+     -26.6
+    ]
+   }
+  ]
+ },
+ "yt": {
+  "title": "E se o oeste de Santa Catarina fosse da Argentina? #curiosidades #brasil",
+  "description": "Em 1895 o presidente dos EUA, Grover Cleveland, decidiu a briga entre Brasil e Argentina por uns 30 mil km² do oeste de Santa Catarina e do sudoeste do Paraná. O Brasil ganhou, defendido pelo Barão do Rio Branco, e Clevelândia (PR) ganhou o nome do juiz. E se a Argentina tivesse vencido?\nOeste catarinense argentino ia dar certo? Comenta aí. E manda pro seu amigo do oeste.\n\nCenário imaginário: só um \"e se\" no mapa. Os fatos de apoio são reais.\nInscreva-se pra ver o próximo \"e se\".\n\n#curiosidades #brasil #mapas #geografia #historia",
+  "tags": [
+   "curiosidades",
+   "brasil",
+   "mapas",
+   "geografia",
+   "história",
+   "simulação",
+   "e se",
+   "hiperfoco",
+   "américa do sul",
+   "santa catarina",
+   "oeste catarinense",
+   "argentina",
+   "misiones",
+   "questão de palmas",
+   "barão do rio branco",
+   "clevelândia",
+   "dionísio cerqueira"
+  ],
+  "lang": "pt-BR",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-22T21:00:00Z"
+ }
+}

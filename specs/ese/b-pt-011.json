@@ -1,0 +1,550 @@
+{
+ "id": "b-pt-011",
+ "channel": "B",
+ "lang": "pt",
+ "format": "short",
+ "hook": "E SE O PARAGUAI|FOSSE DO|BRASIL?",
+ "hook_end": 2.8,
+ "badge": "SÓ IMAGINAÇÃO",
+ "uf": false,
+ "voice": "Fenrir",
+ "music": {
+  "track": "Hidden Agenda",
+  "vol": 0.12,
+  "alt": [
+   "Investigations",
+   "Curiosity"
+  ]
+ },
+ "beats": [
+  {
+   "say": "E se o Paraguai fosse do Brasil? Parece piada, mas o exército brasileiro ocupou a capital paraguaia por mais de sete anos.",
+   "cam": {
+    "c": [
+     -56,
+     -22
+    ],
+    "s": 2.0
+   },
+   "own": {
+    "BRA": "BRA",
+    "PRY": "PRY",
+    "ARG": "ARG",
+    "URY": "URY",
+    "BOL": "BOL"
+   },
+   "balls": [
+    {
+     "ll": [
+      -58.3,
+      -23.3
+     ],
+     "iso": "PRY",
+     "face": "shock",
+     "r": 0.8,
+     "d": 0.8
+    },
+    {
+     "ll": [
+      -51.5,
+      -16.5
+     ],
+     "iso": "BRA",
+     "face": "smirk",
+     "d": 1.8
+    }
+   ]
+  },
+  {
+   "say": "Em mil oitocentos e sessenta e quatro, o Paraguai invadiu o Mato Grosso. Começava a guerra mais sangrenta da história da América do Sul.",
+   "balls": [],
+   "cam": {
+    "c": [
+     -57.0,
+     -23.6
+    ],
+    "s": 3.2
+   },
+   "arrows": [
+    {
+     "from": [
+      -57.8,
+      -22.6
+     ],
+     "to": [
+      -56.6,
+      -19.2
+     ],
+     "d": 2.2,
+     "color": "#ff5a3c"
+    }
+   ],
+   "cards": [
+    {
+     "text": "1864:",
+     "big": "Guerra do Paraguai",
+     "iso": "PRY",
+     "d": 3.6
+    }
+   ]
+  },
+  {
+   "say": "De um lado, o Paraguai. Do outro, Brasil, Argentina e Uruguai juntos: a Tríplice Aliança.",
+   "arrows": [],
+   "cards": [
+    {
+     "text": "Contra o Paraguai:",
+     "big": "Tríplice Aliança",
+     "d": 2.8
+    }
+   ],
+   "cam": {
+    "c": [
+     -57,
+     -26
+    ],
+    "s": 2.0
+   },
+   "balls": [
+    {
+     "ll": [
+      -58.3,
+      -23.3
+     ],
+     "iso": "PRY",
+     "face": "shock",
+     "r": 0.75,
+     "d": 0.2
+    },
+    {
+     "ll": [
+      -50.5,
+      -19
+     ],
+     "iso": "BRA",
+     "face": "angry",
+     "d": 1.4
+    },
+    {
+     "ll": [
+      -63,
+      -31
+     ],
+     "iso": "ARG",
+     "face": "angry",
+     "d": 1.9
+    },
+    {
+     "ll": [
+      -56,
+      -32.8
+     ],
+     "iso": "URY",
+     "face": "angry",
+     "r": 0.6,
+     "d": 2.4
+    }
+   ]
+  },
+  {
+   "say": "A guerra durou mais de cinco anos e destruiu o Paraguai. O país perdeu uma parte enorme da sua população.",
+   "cards": [
+    {
+     "text": "1864 a 1870:",
+     "big": "mais de 5 anos",
+     "iso": "PRY",
+     "d": 0.4
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -58.3,
+      -23.3
+     ],
+     "iso": "PRY",
+     "face": "sad",
+     "r": 0.8,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "c": [
+     -57.0,
+     -23.6
+    ],
+    "s": 3.2
+   }
+  },
+  {
+   "say": "Em mil oitocentos e sessenta e nove, as tropas brasileiras entraram em Assunção. E só foram embora em mil oitocentos e setenta e seis.",
+   "cam": {
+    "c": [
+     -57.5,
+     -25.3
+    ],
+    "s": 8
+   },
+   "balls": [
+    {
+     "ll": [
+      -57.2,
+      -25.0
+     ],
+     "iso": "BRA",
+     "face": "cool",
+     "r": 0.7,
+     "d": 1.6
+    }
+   ],
+   "pins": [
+    {
+     "ll": [
+      -57.63,
+      -25.28
+     ],
+     "label": "Assunção",
+     "left": true,
+     "d": 0.8
+    }
+   ],
+   "arrows": [
+    {
+     "from": [
+      -56.2,
+      -26.4
+     ],
+     "to": [
+      -57.5,
+      -25.35
+     ],
+     "d": 0.6,
+     "color": "#b6ff3b"
+    }
+   ],
+   "cards": [
+    {
+     "text": "Assunção ocupada:",
+     "big": "1869 até 1876",
+     "iso": "BRA",
+     "d": 3.4
+    }
+   ]
+  },
+  {
+   "say": "No acordo de paz, o Brasil ficou com a terra ao norte do rio Apa. Um pedaço do que hoje é o Mato Grosso do Sul.",
+   "cam": {
+    "c": [
+     -57.0,
+     -23.6
+    ],
+    "s": 3.2
+   },
+   "arrows": [],
+   "balls": [],
+   "pins": [
+    {
+     "ll": [
+      -56.8,
+      -22.15
+     ],
+     "label": "Rio Apa",
+     "d": 0.8
+    }
+   ],
+   "cards": [
+    {
+     "text": "Para o Brasil:",
+     "big": "62 mil km²",
+     "iso": "BRA",
+     "d": 2.6
+    }
+   ]
+  },
+  {
+   "say": "Mas Brasil e Argentina desconfiavam tanto um do outro que nenhum dos dois deixou o outro engolir o Paraguai.",
+   "pins": [],
+   "cards": [],
+   "cam": {
+    "c": [
+     -58,
+     -25.5
+    ],
+    "s": 2.4
+   },
+   "balls": [
+    {
+     "ll": [
+      -62,
+      -28
+     ],
+     "iso": "ARG",
+     "face": "angry",
+     "r": 0.85,
+     "d": 0.6
+    },
+    {
+     "ll": [
+      -52.5,
+      -21
+     ],
+     "iso": "BRA",
+     "face": "angry",
+     "r": 0.85,
+     "d": 1.4
+    },
+    {
+     "ll": [
+      -58.3,
+      -23.3
+     ],
+     "iso": "PRY",
+     "face": "shock",
+     "r": 0.6,
+     "d": 2.4
+    }
+   ]
+  },
+  {
+   "say": "E quando a Argentina quis o Chaco, quem decidiu foi o presidente dos Estados Unidos, Rutherford Hayes. Ele deu razão ao Paraguai. Por isso existe lá uma cidade chamada Villa Hayes.",
+   "balls": [],
+   "cam": {
+    "c": [
+     -59.5,
+     -23.6
+    ],
+    "s": 3.0
+   },
+   "hl": [
+    "PRY"
+   ],
+   "cards": [
+    {
+     "text": "Juiz do Chaco:",
+     "big": "presidente dos EUA",
+     "iso": "USA",
+     "d": 2.4
+    }
+   ],
+   "pins": [
+    {
+     "ll": [
+      -57.62,
+      -25.1
+     ],
+     "label": "Villa Hayes",
+     "left": true,
+     "d": 7.4
+    }
+   ]
+  },
+  {
+   "say": "Agora imagina o contrário: o Paraguai virando estado brasileiro. Mais de seis milhões de pessoas e um território maior que o Mato Grosso do Sul.",
+   "hl": [],
+   "pins": [],
+   "own": {
+    "PRY": "BRA"
+   },
+   "od": 1.0,
+   "cam": {
+    "c": [
+     -56,
+     -23
+    ],
+    "s": 2.6
+   },
+   "cards": [
+    {
+     "text": "População:",
+     "big": "6,1 milhões",
+     "iso": "BRA",
+     "d": 3.0
+    },
+    {
+     "text": "Área:",
+     "big": "406 mil km²",
+     "iso": "BRA",
+     "d": 6.2
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -58.4,
+      -23.0
+     ],
+     "iso": "BRA",
+     "face": "happy",
+     "r": 0.8,
+     "d": 1.4
+    }
+   ]
+  },
+  {
+   "say": "Itaipu seria cem por cento brasileira, o guarani ia ser falado por milhões de brasileiros e o tereré virava mania nacional.",
+   "cards": [],
+   "balls": [],
+   "cam": {
+    "c": [
+     -55.2,
+     -25.2
+    ],
+    "s": 5.5
+   },
+   "pins": [
+    {
+     "ll": [
+      -54.59,
+      -25.41
+     ],
+     "label": "Itaipu",
+     "d": 0.4
+    }
+   ]
+  },
+  {
+   "say": "E a Ponte da Amizade? Ia ligar duas cidades brasileiras. Ninguém mais ia se preocupar com cota de compras em Ciudad del Este.",
+   "pins": [
+    {
+     "ll": [
+      -54.61,
+      -25.51
+     ],
+     "label": "Ciudad del Este",
+     "left": true,
+     "d": 1.2
+    }
+   ],
+   "cam": {
+    "c": [
+     -54.6,
+     -25.5
+    ],
+    "s": 11
+   },
+   "balls": [
+    {
+     "ll": [
+      -54.45,
+      -25.33
+     ],
+     "iso": "BRA",
+     "face": "love",
+     "r": 0.7,
+     "d": 2.6
+    }
+   ]
+  },
+  {
+   "say": "Me fala: Paraguai brasileiro ia dar certo? Comenta aí. E manda pro amigo que vive indo pro Paraguai.",
+   "pins": [],
+   "own": {
+    "PRY": "PRY"
+   },
+   "od": 0.4,
+   "cam": {
+    "c": [
+     -56,
+     -22
+    ],
+    "s": 2.0
+   },
+   "balls": [
+    {
+     "ll": [
+      -58.3,
+      -23.3
+     ],
+     "iso": "PRY",
+     "face": "smirk",
+     "r": 0.8,
+     "d": 0.6
+    },
+    {
+     "ll": [
+      -51.5,
+      -16.5
+     ],
+     "iso": "BRA",
+     "face": "smirk",
+     "d": 1.2
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "E SE O PARAGUAI|FOSSE DO|BRASIL?",
+  "c": [
+   -56.5,
+   -22.5
+  ],
+  "s": 2.6,
+  "y": 0.68,
+  "own": {
+   "BRA": "BRA",
+   "PRY": "BRA",
+   "ARG": "ARG",
+   "BOL": "BOL"
+  },
+  "balls": [
+   {
+    "ll": [
+     -58.6,
+     -23.0
+    ],
+    "iso": "PRY",
+    "face": "shock",
+    "r": 120
+   },
+   {
+    "ll": [
+     -51.5,
+     -18.5
+    ],
+    "iso": "BRA",
+    "face": "smirk",
+    "skin": "red",
+    "r": 150
+   }
+  ],
+  "arrows": [
+   {
+    "from": [
+     -53.5,
+     -19.5
+    ],
+    "to": [
+     -57.2,
+     -23.6
+    ]
+   }
+  ]
+ },
+ "yt": {
+  "title": "E se o Paraguai fosse do Brasil? #curiosidades #brasil",
+  "description": "Em 1869 o exército brasileiro entrou em Assunção e só saiu em 1876. No fim, o Brasil ficou com a terra ao norte do rio Apa, e um presidente americano decidiu o Chaco a favor do Paraguai (por isso existe Villa Hayes). E se o Paraguai tivesse virado estado brasileiro?\nParaguai brasileiro ia dar certo? Comenta aí. E manda pro amigo que vive indo pro Paraguai.\n\nCenário imaginário: só um \"e se\" no mapa. Os fatos de apoio são reais.\nInscreva-se pra ver o próximo \"e se\".\n\n#curiosidades #brasil #mapas #geografia #historia",
+  "tags": [
+   "curiosidades",
+   "brasil",
+   "mapas",
+   "geografia",
+   "história",
+   "simulação",
+   "e se",
+   "hiperfoco",
+   "américa do sul",
+   "paraguai",
+   "guerra do paraguai",
+   "assunção",
+   "itaipu",
+   "ciudad del este",
+   "tríplice aliança",
+   "villa hayes"
+  ],
+  "lang": "pt-BR",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-22T15:00:00Z"
+ }
+}

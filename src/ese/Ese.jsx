@@ -302,7 +302,11 @@ const zoneGeo = (z) => {
 const Zones = ({zones, path, T, vert}) => zones.map((z, i) => {
   const k = ease((T - z.at) / 0.8); if (k <= 0) return null;
   const g = zoneGeo(z), c = z.color || '#d62828', cen = path.centroid(g);
-  return <g key={'z' + i} opacity={k}><path d={path(g)} fill={c} fillOpacity={z.op || 0.42} stroke={c} strokeWidth={vert ? 5 : 4} strokeLinejoin="round" />
+  const bnd = z.iso ? path.bounds(g) : null, zid = 'zc' + i + (z.iso || '');
+  return <g key={'z' + i} opacity={k}>{bnd ? <><clipPath id={zid}><path d={path(g)} /></clipPath>
+      <g clipPath={`url(#${zid})`} opacity={z.op || 0.92}><FlagArt iso={z.iso} x={bnd[0][0]} y={bnd[0][1]} w={Math.max(1, bnd[1][0] - bnd[0][0])} h={Math.max(1, bnd[1][1] - bnd[0][1])} /><rect x={bnd[0][0]} y={bnd[0][1]} width={bnd[1][0] - bnd[0][0]} height={bnd[1][1] - bnd[0][1]} fill="url(#gTerr)" /></g>
+      <path d={path(g)} fill="none" stroke={GLOW[z.iso] || c} strokeWidth={vert ? 7 : 5} strokeLinejoin="round" /></> :
+    <path d={path(g)} fill={c} fillOpacity={z.op || 0.42} stroke={c} strokeWidth={vert ? 5 : 4} strokeLinejoin="round" />}
     <path d={path(g)} fill="none" stroke="#fff" strokeOpacity={0.6} strokeWidth={1.5} strokeDasharray={z.dash ? '10 8' : 'none'} />
     {z.label ? <text x={cen[0] + (z.lx || 0)} y={cen[1] + (z.ly || 0)} textAnchor="middle" fontFamily={SANS} fontWeight={800} fontSize={vert ? 34 : 26} fill="#fff" stroke="#000" strokeWidth={6} paintOrder="stroke" letterSpacing={2}>{z.label}</text> : null}</g>;
 });
@@ -446,6 +450,7 @@ export const EseThumb = ({es}) => {
         {COUNTRIES.map((c, i) => { const iso = ISO_OF[String(c.id).padStart(3, '0')]; return <path key={i} d={path(c)} fill={sat ? '#000' : (iso && COL[iso] ? mix(LAND, COL[iso], 0.09) : LAND)} fillOpacity={sat ? 0.12 : 1} stroke={sat ? '#fff' : '#6f86a8'} strokeOpacity={sat ? 0.45 : 0.55} strokeWidth={1.3} />; })}
         <Territories st={st} T={10} path={path} W={W} H={H} uid="th" sat={sat} color={es.terr === 'color' || (es.terr === undefined && es.style === 'clean')} />
         {th.split ? <SplitFill sp={th.split} proj={proj} path={path} W={W} H={H} /> : null}
+        {th.zones ? <Zones zones={th.zones.map((z) => ({...z, at: -10}))} path={path} T={10} vert={vert} /> : null}
         {(th.arrows || []).map((a, i) => <Arrow key={i} a={pt(a.from)} b={pt(a.to)} t={5} color={a.color || '#b6ff3b'} w={18} />)}
         {(th.balls || []).map((b, i) => { const xy = pt(b.ll || b.iso); return xy ? <Ball key={i} uid={100 + i} iso={b.iso} x={xy[0] + (b.dx || 0)} y={xy[1] + (b.dy || 0)} r={b.r || 120} face={b.face} skin={b.skin || 'emoji'} t={1} /> : null; })}
       </svg>
