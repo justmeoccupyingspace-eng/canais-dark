@@ -1,0 +1,496 @@
+{
+ "id": "a-en-008",
+ "channel": "A",
+ "lang": "en",
+ "format": "short",
+ "style": "clean",
+ "hook": "THE DUTCH|TRADED MANHATTAN|FOR THIS ISLAND",
+ "hook_end": 2.6,
+ "voice": "Charon",
+ "models": "gemini-3.8-flash-tts,gemini-3.1-flash-tts-preview",
+ "edge_voice": "en-US-AndrewMultilingualNeural",
+ "music": {
+  "track": "Volatile Reaction",
+  "vol": 0.11,
+  "alt": [
+   "Hidden Agenda",
+   "Investigations"
+  ]
+ },
+ "beats": [
+  {
+   "say": "In 1667, the Dutch gave up Manhattan. In return, they kept an island about two miles long, on the other side of the world.",
+   "cam": {
+    "c": [
+     -74.0,
+     40.7
+    ],
+    "s": 26
+   },
+   "date": "1667",
+   "pins": [
+    {
+     "ll": [
+      -74.0,
+      40.75
+     ],
+     "label": "Manhattan",
+     "d": 0.6
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -73.85,
+      40.55
+     ],
+     "iso": "NLD",
+     "skin": "flag",
+     "face": "shock",
+     "r": 0.7,
+     "d": 1.2
+    }
+   ]
+  },
+  {
+   "say": "The island was Run, in what's now Indonesia. And back then, these islands were the only place on Earth where nutmeg grew.",
+   "balls": [],
+   "pins": [
+    {
+     "ll": [
+      129.69,
+      -4.55
+     ],
+     "label": "Run",
+     "left": true,
+     "d": 1.6
+    }
+   ],
+   "cam": {
+    "c": [
+     129.8,
+     -4.5
+    ],
+    "s": 30
+   },
+   "date": null,
+   "cards": [
+    {
+     "text": "Banda Islands:",
+     "big": "the world's only nutmeg",
+     "iso": "IDN",
+     "d": 4.0
+    }
+   ]
+  },
+  {
+   "say": "In Europe, nutmeg sold for a fortune. Whoever held these islands controlled the supply.",
+   "cards": [],
+   "cam": {
+    "c": [
+     125,
+     -2
+    ],
+    "s": 3.0
+   }
+  },
+  {
+   "say": "England claimed Run in 1616. The Dutch fought for it and drove the English out.",
+   "date": "1616",
+   "own": {
+    "GBR": "GBR",
+    "NLD": "NLD"
+   },
+   "cam": {
+    "c": [
+     129.7,
+     -4.5
+    ],
+    "s": 22
+   },
+   "balls": [
+    {
+     "ll": [
+      129.85,
+      -4.35
+     ],
+     "iso": "GBR",
+     "skin": "flag",
+     "face": "angry",
+     "r": 0.6,
+     "d": 0.4
+    },
+    {
+     "ll": [
+      129.5,
+      -4.75
+     ],
+     "iso": "NLD",
+     "skin": "flag",
+     "face": "rage",
+     "r": 0.7,
+     "d": 2.6
+    }
+   ]
+  },
+  {
+   "say": "Meanwhile, across the world, the Dutch had a small town on Manhattan: New Amsterdam.",
+   "date": null,
+   "balls": [
+    {
+     "ll": [
+      -73.85,
+      40.55
+     ],
+     "iso": "NLD",
+     "skin": "flag",
+     "face": "happy",
+     "r": 0.7,
+     "d": 1.4
+    }
+   ],
+   "cam": {
+    "c": [
+     -74.0,
+     40.7
+    ],
+    "s": 26
+   },
+   "pins": [
+    {
+     "ll": [
+      -74.01,
+      40.7
+     ],
+     "label": "New Amsterdam",
+     "d": 2.6
+    }
+   ]
+  },
+  {
+   "say": "In 1664, English warships sailed in, and New Amsterdam surrendered. The English renamed it New York.",
+   "date": "1664",
+   "arrows": [
+    {
+     "from": [
+      -73.4,
+      40.2
+     ],
+     "to": [
+      -73.98,
+      40.62
+     ],
+     "color": "#ff5a3c",
+     "d": 0.8
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -73.85,
+      40.55
+     ],
+     "iso": "NLD",
+     "skin": "flag",
+     "face": "shock",
+     "r": 0.7,
+     "d": 0
+    },
+    {
+     "ll": [
+      -73.5,
+      40.35
+     ],
+     "iso": "GBR",
+     "skin": "flag",
+     "face": "smirk",
+     "r": 0.7,
+     "d": 1.6
+    }
+   ],
+   "cards": [
+    {
+     "text": "New Amsterdam →",
+     "big": "New York",
+     "iso": "GBR",
+     "d": 4.6
+    }
+   ]
+  },
+  {
+   "say": "In 1667, the Treaty of Breda made it official. England kept New York.",
+   "date": "1667",
+   "arrows": [],
+   "cards": [
+    {
+     "text": "Treaty of Breda:",
+     "big": "England keeps New York",
+     "iso": "GBR",
+     "d": 1.0
+    }
+   ],
+   "cam": {
+    "c": [
+     -74.0,
+     40.7
+    ],
+    "s": 18
+   },
+   "balls": [
+    {
+     "ll": [
+      -73.75,
+      40.5
+     ],
+     "iso": "GBR",
+     "skin": "flag",
+     "face": "cool",
+     "r": 0.8,
+     "d": 2.4
+    }
+   ]
+  },
+  {
+   "say": "The Dutch kept Run. For them, it looked like the better deal: they controlled the world's nutmeg.",
+   "pins": [
+    {
+     "ll": [
+      129.69,
+      -4.55
+     ],
+     "label": "Run",
+     "left": true,
+     "d": 0.4
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      129.9,
+      -4.35
+     ],
+     "iso": "NLD",
+     "skin": "flag",
+     "face": "happy",
+     "r": 0.8,
+     "d": 0.8
+    }
+   ],
+   "cards": [
+    {
+     "text": "The Dutch keep:",
+     "big": "Run + the nutmeg",
+     "iso": "NLD",
+     "d": 1.0
+    }
+   ],
+   "cam": {
+    "c": [
+     129.75,
+     -4.5
+    ],
+    "s": 22
+   },
+   "date": null
+  },
+  {
+   "say": "Then, in the Napoleonic Wars, Britain seized the Spice Islands and carried nutmeg seedlings to its own colonies.",
+   "date": "1810",
+   "balls": [],
+   "pins": [],
+   "cards": [],
+   "cam": {
+    "c": [
+     106,
+     1
+    ],
+    "s": 1.0
+   },
+   "arrows": [
+    {
+     "from": [
+      129.7,
+      -4.5
+     ],
+     "to": [
+      80.7,
+      7.6
+     ],
+     "color": "#ffcf40",
+     "d": 3.6
+    },
+    {
+     "from": [
+      129.7,
+      -4.5
+     ],
+     "to": [
+      103.8,
+      1.35
+     ],
+     "color": "#ffcf40",
+     "d": 4.4
+    }
+   ]
+  },
+  {
+   "say": "The monopoly was over. Today, Grenada even has a nutmeg on its flag.",
+   "date": null,
+   "arrows": [],
+   "cam": {
+    "c": [
+     -63.5,
+     13.5
+    ],
+    "s": 3.2
+   },
+   "pins": [
+    {
+     "ll": [
+      -61.68,
+      12.12
+     ],
+     "label": "Grenada",
+     "d": 0.6
+    }
+   ],
+   "cards": [
+    {
+     "text": "Grenada's flag:",
+     "big": "a nutmeg",
+     "d": 2.2
+    }
+   ]
+  },
+  {
+   "say": "And the two islands today? Run has about fifteen hundred people.",
+   "pins": [
+    {
+     "ll": [
+      129.69,
+      -4.55
+     ],
+     "label": "Run",
+     "left": true,
+     "d": 0.2
+    }
+   ],
+   "cards": [
+    {
+     "text": "Run today:",
+     "big": "~1,500 people",
+     "iso": "IDN",
+     "d": 1.8
+    }
+   ],
+   "cam": {
+    "c": [
+     129.75,
+     -4.5
+    ],
+    "s": 22
+   }
+  },
+  {
+   "say": "Manhattan has about one point seven million.",
+   "pins": [
+    {
+     "ll": [
+      -74.0,
+      40.75
+     ],
+     "label": "Manhattan",
+     "d": 0.2
+    }
+   ],
+   "cards": [
+    {
+     "text": "Manhattan today:",
+     "big": "~1.7 million",
+     "iso": "USA",
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "c": [
+     -74.0,
+     40.7
+    ],
+    "s": 18
+   }
+  }
+ ],
+ "thumb": {
+  "title": "THE DUTCH|TRADED MANHATTAN|FOR THIS ISLAND",
+  "c": [
+   129.75,
+   -4.6
+  ],
+  "s": 24,
+  "y": 0.66,
+  "own": {
+   "IDN": "IDN"
+  },
+  "balls": [
+   {
+    "ll": [
+     130.05,
+     -4.15
+    ],
+    "iso": "NLD",
+    "skin": "flag",
+    "face": "smirk",
+    "r": 120
+   },
+   {
+    "ll": [
+     129.45,
+     -5.0
+    ],
+    "iso": "GBR",
+    "skin": "flag",
+    "face": "rage",
+    "r": 135
+   }
+  ],
+  "arrows": [
+   {
+    "from": [
+     130.1,
+     -4.95
+    ],
+    "to": [
+     129.72,
+     -4.56
+    ]
+   }
+  ]
+ },
+ "yt": {
+  "title": "How the Dutch Traded Manhattan for a Tiny Spice Island",
+  "description": "1667: in the Treaty of Breda, England kept New Amsterdam (taken in 1664 and renamed New York) and the Dutch kept Run, a tiny island in the Banda Islands, then the world's only source of nutmeg. Then Britain spread nutmeg to its colonies, and Grenada put one on its flag.\n\nFollow for more history on the map.\n\n#history #maps #geography",
+  "tags": [
+   "history",
+   "map",
+   "history on a map",
+   "military history",
+   "geography",
+   "history shorts",
+   "maps",
+   "manhattan",
+   "new amsterdam",
+   "new york",
+   "nutmeg",
+   "treaty of breda",
+   "dutch history",
+   "spice islands",
+   "indonesia"
+  ],
+  "lang": "en",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-24T17:00:00Z"
+ },
+ "style_prompt": "Read this in English as a documentary narrator for a fast history channel: confident, clear, slightly dramatic, brisk pace (about 165 words per minute), short pauses before dates and numbers. Never sound like an advert. Read the text exactly as written."
+}

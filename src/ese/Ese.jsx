@@ -84,6 +84,7 @@ const FlagArt = ({iso, x, y, w, h}) => {
     case 'FRA': case 'GUF': return <g>{Vs(['#0055a4', '#fff', '#ef4135'])}</g>;
     case 'ITA': return <g>{Vs(['#009246', '#fff', '#ce2b37'])}</g>;
     case 'DEU': return <g>{Hs(['#000', '#dd0000', '#ffce00'])}</g>;
+    case 'IDN': return <g>{Hs(['#ce1126', '#fff'])}</g>;
     case 'NLD': return <g>{Hs(['#ae1c28', '#fff', '#21468b'])}</g>;
     case 'RUS': return <g>{Hs(['#fff', '#0039a6', '#d52b1e'])}</g>;
     case 'JPN': return <g>{R('#fff')}<circle cx={cx} cy={cy} r={m * 0.3} fill="#bc002d" /></g>;
