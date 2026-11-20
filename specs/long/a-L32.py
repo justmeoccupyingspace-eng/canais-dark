@@ -104,7 +104,7 @@ shots = [
 
     # ---------------- 5 · THE PASS ----------------
     dict(act=5, type="stats", src=PPPSRC, title="The pass, adjusted for prices",
-         narration="So here's the pass, in the IMF's numbers. {p} In 2010, Hungary was still ahead, by about five hundred dollars per person. {p} In 2011, Poland passed, by about a hundred dollars. For almost a decade, they stayed within a few percent of each other. {pp} Then Poland pulled away. This year, the gap is about nine thousand dollars. And by 2031, in the IMF's forecast, about eleven and a half thousand.",
+         narration="So here's the pass, in the IMF's numbers. {p} In 2010, Hungary was still ahead, by about five hundred dollars a person. {p} In 2011, Poland passed it, by about a hundred dollars. {p} For almost ten years, the two stayed within a few percent of each other. {pp} Then Poland pulled away. This year, the gap is about nine thousand dollars a person. {p} By 2031, in the IMF's forecast, it's about eleven and a half thousand.",
          stats=[dict(at="still ahead", value=H[2010], fmt="usd0", label="Hungary, 2010"), dict(at="about five hundred", value=P[2010], fmt="usd0", label="Poland, 2010"), dict(at="about nine thousand", value=P[2026] - H[2026], fmt="usd0", label="Poland ahead, 2026"), dict(at="eleven and a half thousand", value=P[2031] - H[2031], fmt="usd0", label="Poland ahead, 2031 (IMF)")],
          react=[dict(at="here's the pass", pose="pointUp"), dict(at="still ahead", pose="think"), dict(at="Poland passed", pose="cheer"), dict(at="pulled away", pose="shock")]),
 
