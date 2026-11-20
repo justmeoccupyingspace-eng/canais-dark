@@ -1,0 +1,391 @@
+{
+ "id": "b-pt-014",
+ "channel": "B",
+ "lang": "pt",
+ "format": "short",
+ "hook": "E SE SÃO PAULO|VIRASSE UM|PAÍS?",
+ "hook_end": 2.8,
+ "badge": "SÓ IMAGINAÇÃO",
+ "uf": true,
+ "voice": "Fenrir",
+ "music": {
+  "track": "Hidden Agenda",
+  "vol": 0.12,
+  "alt": [
+   "Investigations",
+   "Curiosity"
+  ]
+ },
+ "beats": [
+  {
+   "say": "E se São Paulo tivesse virado um país? Em mil novecentos e trinta e dois, São Paulo pegou em armas contra o governo do Brasil.",
+   "cam": {
+    "c": [
+     -50,
+     -18
+    ],
+    "s": 2.0
+   },
+   "own": {
+    "BRA": "BRA",
+    "BR-SP": "SPX"
+   },
+   "od": 1.0,
+   "balls": [
+    {
+     "ll": [
+      -48.6,
+      -22.3
+     ],
+     "iso": "SPX",
+     "skin": "flag",
+     "face": "angry",
+     "r": 0.8,
+     "d": 1.2
+    },
+    {
+     "ll": [
+      -47.9,
+      -12
+     ],
+     "iso": "BRA",
+     "face": "shock",
+     "d": 2.4
+    }
+   ]
+  },
+  {
+   "say": "O presidente era Getúlio Vargas. Ele tinha chegado ao poder em mil novecentos e trinta e governava sem Constituição.",
+   "balls": [],
+   "cam": {
+    "c": [
+     -48.6,
+     -22.4
+    ],
+    "s": 5.2
+   },
+   "cards": [
+    {
+     "text": "Presidente:",
+     "big": "Getúlio Vargas",
+     "iso": "BRA",
+     "d": 0.6
+    }
+   ]
+  },
+  {
+   "say": "Em vinte e três de maio, quatro estudantes morreram num confronto no centro de São Paulo. As iniciais deles viraram o símbolo do movimento: MMDC.",
+   "cards": [
+    {
+     "text": "23 de maio de 1932:",
+     "big": "MMDC",
+     "iso": "SPX",
+     "d": 4.2
+    }
+   ],
+   "pins": [
+    {
+     "ll": [
+      -46.63,
+      -23.55
+     ],
+     "label": "São Paulo",
+     "d": 1.0
+    }
+   ]
+  },
+  {
+   "say": "Em nove de julho, começou a guerra. Os paulistas esperavam ajuda de Minas e do Rio Grande do Sul. Que não veio.",
+   "cards": [
+    {
+     "text": "9 de julho de 1932:",
+     "big": "começa a guerra",
+     "iso": "SPX",
+     "d": 0.6
+    }
+   ],
+   "pins": [],
+   "cam": {
+    "c": [
+     -49,
+     -22
+    ],
+    "s": 3.0
+   },
+   "arrows": [
+    {
+     "from": [
+      -44.5,
+      -18.5
+     ],
+     "to": [
+      -47.5,
+      -21.6
+     ],
+     "d": 3.8,
+     "color": "#9aa3b2"
+    },
+    {
+     "from": [
+      -53.2,
+      -29.5
+     ],
+     "to": [
+      -49.5,
+      -24.2
+     ],
+     "d": 4.6,
+     "color": "#9aa3b2"
+    }
+   ]
+  },
+  {
+   "say": "Foram quase três meses de combate. Em dois de outubro, São Paulo se rendeu.",
+   "arrows": [],
+   "cards": [
+    {
+     "text": "2 de outubro de 1932:",
+     "big": "São Paulo se rende",
+     "iso": "BRA",
+     "d": 2.0
+    }
+   ],
+   "own": {
+    "BR-SP": "BRA"
+   },
+   "od": 2.4,
+   "balls": [
+    {
+     "ll": [
+      -48.6,
+      -22.3
+     ],
+     "iso": "SPX",
+     "skin": "flag",
+     "face": "sad",
+     "r": 0.75,
+     "d": 0.6
+    }
+   ]
+  },
+  {
+   "say": "Mas a briga não foi à toa. Em mil novecentos e trinta e quatro, o Brasil ganhou uma nova Constituição.",
+   "balls": [],
+   "cards": [
+    {
+     "text": "1934:",
+     "big": "nova Constituição",
+     "iso": "BRA",
+     "d": 2.4
+    }
+   ]
+  },
+  {
+   "say": "E até hoje, nove de julho é feriado em São Paulo. E as avenidas Nove de Julho e Vinte e Três de Maio têm esse nome por causa de mil novecentos e trinta e dois.",
+   "cards": [
+    {
+     "text": "Avenidas:",
+     "big": "9 de Julho e 23 de Maio",
+     "iso": "SPX",
+     "d": 4.6
+    }
+   ],
+   "cam": {
+    "c": [
+     -46.64,
+     -23.56
+    ],
+    "s": 30
+   },
+   "pins": [
+    {
+     "ll": [
+      -46.64,
+      -23.56
+     ],
+     "label": "Centro de SP",
+     "d": 0.6
+    }
+   ]
+  },
+  {
+   "say": "Agora imagina São Paulo como país. Seriam mais de quarenta e quatro milhões de pessoas. Mais gente que o Canadá.",
+   "pins": [],
+   "cam": {
+    "c": [
+     -48.6,
+     -22.4
+    ],
+    "s": 5.2
+   },
+   "own": {
+    "BR-SP": "SPX"
+   },
+   "od": 0.4,
+   "cards": [
+    {
+     "text": "População:",
+     "big": "44 milhões > Canadá",
+     "iso": "SPX",
+     "d": 3.4
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -48.6,
+      -22.3
+     ],
+     "iso": "SPX",
+     "skin": "flag",
+     "face": "cool",
+     "r": 0.8,
+     "d": 1.2
+    }
+   ]
+  },
+  {
+   "say": "E ia levar quase um terço de toda a economia do Brasil.",
+   "cards": [
+    {
+     "text": "Economia:",
+     "big": "quase 1/3 do Brasil",
+     "iso": "SPX",
+     "d": 0.6
+    }
+   ]
+  },
+  {
+   "say": "Corinthians, Palmeiras, São Paulo e Santos iam jogar outro campeonato. E pra passar o fim de semana no Rio, você ia precisar de passaporte.",
+   "cards": [],
+   "cam": {
+    "c": [
+     -45.5,
+     -22.9
+    ],
+    "s": 4.4
+   },
+   "arrows": [
+    {
+     "from": [
+      -46.6,
+      -23.5
+     ],
+     "to": [
+      -43.2,
+      -22.9
+     ],
+     "d": 5.0,
+     "color": "#ffcf40"
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -42.6,
+      -21.6
+     ],
+     "iso": "BRA",
+     "face": "shock",
+     "r": 0.7,
+     "d": 5.6
+    }
+   ]
+  },
+  {
+   "say": "Me fala: São Paulo país ia dar certo? Comenta aí. E manda pro seu amigo paulista.",
+   "arrows": [],
+   "cam": {
+    "c": [
+     -50,
+     -18
+    ],
+    "s": 2.0
+   },
+   "balls": [
+    {
+     "ll": [
+      -48.6,
+      -22.3
+     ],
+     "iso": "SPX",
+     "skin": "flag",
+     "face": "smirk",
+     "r": 0.8,
+     "d": 0.4
+    },
+    {
+     "ll": [
+      -47.9,
+      -12
+     ],
+     "iso": "BRA",
+     "face": "smirk",
+     "d": 1.0
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "E SE SÃO PAULO|VIRASSE UM|PAÍS?",
+  "c": [
+   -48.0,
+   -21.0
+  ],
+  "s": 3.4,
+  "y": 0.68,
+  "own": {
+   "BRA": "BRA",
+   "BR-SP": "SPX"
+  },
+  "balls": [
+   {
+    "ll": [
+     -44.4,
+     -25.4
+    ],
+    "iso": "SPX",
+    "skin": "flag",
+    "face": "cool",
+    "r": 130
+   },
+   {
+    "ll": [
+     -46.5,
+     -15.5
+    ],
+    "iso": "BRA",
+    "face": "shock",
+    "skin": "red",
+    "r": 140
+   }
+  ]
+ },
+ "yt": {
+  "title": "E se São Paulo tivesse virado um país? #curiosidades #brasil",
+  "description": "Em 9 de julho de 1932, São Paulo pegou em armas contra o governo de Getúlio Vargas. Perdeu em 2 de outubro, mas em 1934 o Brasil ganhou uma nova Constituição. E se São Paulo tivesse virado um país?\nSão Paulo país ia dar certo? Comenta aí. E manda pro seu amigo paulista.\n\nCenário imaginário: só um \"e se\" no mapa. Os fatos de apoio são reais.\nInscreva-se pra ver o próximo \"e se\".\n\n#curiosidades #brasil #mapas #geografia #historia",
+  "tags": [
+   "curiosidades",
+   "brasil",
+   "mapas",
+   "geografia",
+   "história",
+   "simulação",
+   "e se",
+   "hiperfoco",
+   "américa do sul",
+   "são paulo",
+   "revolução constitucionalista",
+   "1932",
+   "9 de julho",
+   "mmdc",
+   "getúlio vargas",
+   "paulista"
+  ],
+  "lang": "pt-BR",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-23T21:00:00Z"
+ }
+}
