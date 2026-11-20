@@ -6,7 +6,7 @@
   Longo B: compilação 16:9 dos Shorts (specs/comp/*.json → esecomp.yml, reaproveita voz; capítulos; ≥ 8 min).
 - A (Chartbound): Shorts EN "história no mapa" (modelo One Map, One Battle: criado 07/10, 15,6 mil inscr., mediana 60 mil; 77–95 s).
   Gerador: specs/map_en.py → specs/ese/a-en-NNN.json → ese.yml (upload=A). 1 por dia 17:00Z (EUA). Longo A: compilação quando houver 5+.
-- Série Polônia/dados longos: ENCERRADA (A-L30 17/11 e A-L31 18/11 já agendados ficam; nada novo).
+- Série Polônia/dados longos: RETOMADA em 20/11 (dados: Estônia A-L30 263 → 5.630 em 2 dias; Japão×Itália 841). A = 1 longo/dia (specs/long/a-LNN.py → longo.yml, 23:00Z) + 1 Short/dia (17:00Z). Gêmeos do que performa: 'X Was N% Richer Than Poland. Now Poland Is Ahead' (Estônia, Hungria A-L32).
 - Religioso (Fe): arquivado.
 
 ## Regras
