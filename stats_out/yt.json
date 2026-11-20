@@ -1,0 +1,9313 @@
+{
+ "A": {
+  "scopes": "https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/yt-analytics.readonly",
+  "channel": {
+   "id": "UCB_QTsSNNX1QkTYW4UXChxg",
+   "title": "Chartbound",
+   "stats": {
+    "viewCount": "97036",
+    "subscriberCount": "132",
+    "hiddenSubscriberCount": false,
+    "videoCount": "97"
+   },
+   "status": {
+    "privacyStatus": "public",
+    "isLinked": true,
+    "longUploadsStatus": "allowed",
+    "isChannelMonetizationEnabled": false
+   },
+   "desc": "History and economics, told through data. Every video starts from a real dataset: why countries got rich or went broke, how companies rose and fell, what the numbers actually say.\n\nNo financial advice, just the story behind the charts. Sources are listed in each video description.\n"
+  },
+  "videos": [
+   {
+    "id": "kc4wdkxzaTg",
+    "title": "Bread prices since 1990 #Shorts (pipeline test)",
+    "published": "2026-10-16T19:32:50Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT16S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 1,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "2dxSXDP30nA",
+    "title": "US income per person since 1,990, in one chart #Shorts",
+    "published": "2026-10-16T19:41:22Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT25S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "56HoY75nSKE",
+    "title": "US income per person is 3.5x higher than in 1990 (the catch) #Shorts",
+    "published": "2026-10-17T00:43:50Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT29S",
+    "views": 56,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "v0_P9brdMT8",
+    "title": "US income per person since 1,990, in one chart #Shorts",
+    "published": "2026-10-17T00:44:04Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT25S",
+    "views": 17,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "KGxMH9zU1U4",
+    "title": "$100 from 2000 needs to be $182 today #Shorts",
+    "published": "2026-10-17T01:45:11Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT20S",
+    "views": 4,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "YJywRSSr2EA",
+    "title": "China's economy was 12% of America's in 2000. Now? #Shorts",
+    "published": "2026-10-17T13:51:37Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT29S",
+    "views": 1,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "l3dnU0q6Y1E",
+    "title": "China's economy was 12% of America's in 2000. Now? #Shorts",
+    "published": "2026-10-17T15:00:25Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT29S",
+    "views": 2,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "oDtNCsq6oFA",
+    "title": "India was 76% of China's population in 1990. Now? #Shorts",
+    "published": "2026-10-17T23:00:19Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT26S",
+    "views": 4,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "d79anBRueQM",
+    "title": "Japan's economy was 256% of Germany's in 2000. Now? #Shorts",
+    "published": "2026-10-18T23:00:23Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT28S",
+    "views": 309,
+    "likes": 8,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "iPNu0-eS5jY",
+    "title": "South Korea's economy was 12% of Japan's in 2000. Now? #Shorts",
+    "published": "2026-10-19T01:00:27Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT23S",
+    "views": 13,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "tREmUSKxhJs",
+    "title": "Vietnam's economy was 25% of Thailand's in 2000. Now? #Shorts",
+    "published": "2026-10-19T02:30:17Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT23S",
+    "views": 70,
+    "likes": 1,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "MyKSCs0ZBb8",
+    "title": "India's economy was 28% of the UK's in 2000. Now? #Shorts",
+    "published": "2026-10-19T16:00:24Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT28S",
+    "views": 11,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "V7mj9F4ncK0",
+    "title": "Brazil's economy was 88% of Mexico's in 2000. Now? #Shorts",
+    "published": "2026-10-19T20:00:11Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT24S",
+    "views": 15,
+    "likes": 1,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "YoLxRrKw_jk",
+    "title": "India's economy was 28% of the UK's in 2000. Now? #Shorts",
+    "published": "2026-10-19T23:00:25Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT27S",
+    "views": 343,
+    "likes": 1,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "Sg3J8d_HmdY",
+    "title": "Nigeria had 45% of America's population in 2000. Now? #Shorts",
+    "published": "2026-10-19T23:00:29Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT28S",
+    "views": 642,
+    "likes": 9,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "rZkagnZFn0I",
+    "title": "China went from 24% to 440% of Japan's economy #Shorts",
+    "published": "2026-10-20T20:00:29Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT23S",
+    "views": 40,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "RzsrgLEP1oY",
+    "title": "India went from 9% to 89% of Japan's economy #Shorts",
+    "published": "2026-10-20T23:00:21Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT23S",
+    "views": 96,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "sIpZOT3lRBM",
+    "title": "Germany went from 118% to 126% of the UK's economy #Shorts",
+    "published": "2026-10-21T01:00:20Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT25S",
+    "views": 35,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "WsEc2lIpL5s",
+    "title": "Pakistan went from 89% to 120% of Brazil's population #Shorts",
+    "published": "2026-10-21T16:00:37Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT24S",
+    "views": 14,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "Rj2yhE7b0g8",
+    "title": "Japan went from 129% to 93% of Mexico's population #Shorts",
+    "published": "2026-10-21T20:00:05Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT24S",
+    "views": 340,
+    "likes": 6,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "ytMv1BEXN_w",
+    "title": "Nigeria went from 73% to 112% of Brazil's population #Shorts",
+    "published": "2026-10-22T16:00:19Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT23S",
+    "views": 17,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "V6-5wzIFi7g",
+    "title": "Argentina's economy was 43% of Brazil's in 2000. Now? #Shorts",
+    "published": "2026-10-22T21:17:42Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT24S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "MzfNY_E6vT8",
+    "title": "Spain's economy was 52% of Italy's in 2000. Now? #Shorts",
+    "published": "2026-10-22T21:17:55Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT26S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "2xBITzfDez0",
+    "title": "The Philippines had 63% of Japan's population in 2000. Now? #Shorts",
+    "published": "2026-10-22T21:18:11Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT27S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "CjSjVM5jXrk",
+    "title": "Poland's economy was 66% of Sweden's in 2000. Now? #Shorts",
+    "published": "2026-10-22T21:18:33Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT26S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "DVgFEdoo7PU",
+    "title": "Canada's economy was 287% of Russia's in 2000. Now? #Shorts",
+    "published": "2026-10-22T22:08:36Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT27S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "Zbl8bKqIOd4",
+    "title": "Indonesia went from 64% to 56% of Russia's economy #Shorts",
+    "published": "2026-10-22T23:00:16Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT23S",
+    "views": 16,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "vd1d7B9SN10",
+    "title": "Bangladesh's economy was 54% of Pakistan's in 2000. Now? #Shorts",
+    "published": "2026-10-23T16:00:10Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT27S",
+    "views": 33,
+    "likes": 2,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "vXX4MOdsk_o",
+    "title": "Turkey had 80% of Germany's population in 2000. Now? #Shorts",
+    "published": "2026-10-23T20:00:30Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT26S",
+    "views": 43,
+    "likes": 1,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "Bt3TfuENNlk",
+    "title": "India's economy was 5% of America's in 2000. Now? #Shorts",
+    "published": "2026-10-23T23:00:25Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT26S",
+    "views": 278,
+    "likes": 1,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "vBG0O2YR9y0",
+    "title": "Ethiopia had 46% of Russia's population in 2000. Now? #Shorts",
+    "published": "2026-10-24T16:00:09Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT27S",
+    "views": 260,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "NW4SSSAb8ZY",
+    "title": "Spain's economy was 52% of Italy's in 2000. Now? #Shorts",
+    "published": "2026-10-24T20:00:21Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT19S",
+    "views": 192,
+    "likes": 2,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "weU0RuLE5HY",
+    "title": "The Philippines had 63% of Japan's population in 2000. Now? #Shorts",
+    "published": "2026-10-24T23:00:05Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT21S",
+    "views": 767,
+    "likes": 6,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "_4gg9LsrleM",
+    "title": "Poland's economy was 66% of Sweden's in 2000. Now? #Shorts",
+    "published": "2026-10-25T16:00:29Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT18S",
+    "views": 230,
+    "likes": 1,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "MCn74Atf36A",
+    "title": "Which has more people: Vietnam or Germany? #Shorts",
+    "published": "2026-10-25T17:51:21Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT21S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "U157oaRZ_SA",
+    "title": "Indonesia's economy was 25% of Brazil's in 2000. Now? #Shorts",
+    "published": "2026-10-25T17:51:25Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT19S",
+    "views": 1,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "0n1lkObpmnw",
+    "title": "Japan's population peaked. Here's the chart #Shorts",
+    "published": "2026-10-25T17:53:53Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT18S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "ZoRPq4l-eLU",
+    "title": "Mexico had 67% of Russia's population in 2000. Now? #Shorts",
+    "published": "2026-10-25T17:53:57Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT20S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "9tCIlIgFUIU",
+    "title": "Which economy is bigger: Mexico or Spain? #Shorts",
+    "published": "2026-10-25T17:54:02Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT21S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "MNBF84SuSNk",
+    "title": "India's life expectancy: 46 to 72 years #Shorts",
+    "published": "2026-10-25T17:54:07Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT18S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "DCeFOfp7sVI",
+    "title": "Canada's economy was 287% of Russia's in 2000. Now? #Shorts",
+    "published": "2026-10-25T20:00:29Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT19S",
+    "views": 472,
+    "likes": 3,
+    "comments": 1,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "Cctr28wdA6Q",
+    "title": "Argentina's economy was 43% of Brazil's in 2000. Now? #Shorts",
+    "published": "2026-10-25T23:00:12Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT18S",
+    "views": 63,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "J-mo1_DYO3o",
+    "title": "Which has more people: DR Congo or Germany? #Shorts",
+    "published": "2026-10-26T16:00:07Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT24S",
+    "views": 769,
+    "likes": 6,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "SE5yKoEcTk4",
+    "title": "Bangladesh had 92% of Russia's population in 2000. Now? #Shorts",
+    "published": "2026-10-26T23:00:20Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT22S",
+    "views": 379,
+    "likes": 3,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "IzVbcE3UcQA",
+    "title": "South Korea went from 6 kids per woman to 0.7 #Shorts",
+    "published": "2026-10-27T16:00:08Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT21S",
+    "views": 56,
+    "likes": 2,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "XGmxZPO8lx8",
+    "title": "Poland Just Passed Japan. Nobody Noticed.",
+    "published": "2026-10-27T18:00:18Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT8M45S",
+    "views": 57089,
+    "likes": 678,
+    "comments": 213,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en-US",
+     "tags": 6,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "pm0ycfgxx4E",
+    "title": "Vietnam's economy was 37% of the Philippines' in 2000. Now? #Shorts",
+    "published": "2026-10-27T23:00:16Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT18S",
+    "views": 152,
+    "likes": 2,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "9UvO0yE-j-w",
+    "title": "Which economy is bigger: Brazil or Canada? #Shorts",
+    "published": "2026-10-28T16:00:39Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT22S",
+    "views": 272,
+    "likes": 3,
+    "comments": 1,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "AfUA7OG-yGo",
+    "title": "Egypt had 89% of Germany's population in 2000. Now? #Shorts",
+    "published": "2026-10-28T23:00:37Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT19S",
+    "views": 870,
+    "likes": 7,
+    "comments": 2,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "baa-m1HjPH8",
+    "title": "China's income per person grew 43.5x since 1990 #Shorts",
+    "published": "2026-10-29T16:00:05Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT20S",
+    "views": 186,
+    "likes": 2,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "PP9J1_ZcpBo",
+    "title": "South Korea's Scariest Number Just Went Up",
+    "published": "2026-10-29T18:38:31Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT8M15S",
+    "views": 457,
+    "likes": 5,
+    "comments": 2,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 7,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "dl0Wv3i6768",
+    "title": "Ethiopia had 53% of Japan's population in 2000. Now? #Shorts",
+    "published": "2026-10-29T23:00:21Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT22S",
+    "views": 976,
+    "likes": 7,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 5,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "5Z0Hkn2nQVc",
+    "title": "South Korea had a million babies in 1970. Then this happened #Shorts",
+    "published": "2026-10-30T00:30:21Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT49S",
+    "views": 90,
+    "likes": 2,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 6,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "l3rAlC5SiMw",
+    "title": "The scariest chart in economics #Shorts",
+    "published": "2026-10-30T02:30:28Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT37S",
+    "views": 85,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 6,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "vLNCvTwxOlU",
+    "title": "South Korea's birth rate went up for the first time in 9 years #Shorts",
+    "published": "2026-10-30T13:00:10Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT54S",
+    "views": 109,
+    "likes": 2,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 6,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "At-J2SGqvIw",
+    "title": "This Korean company pays $70,000 per baby #Shorts",
+    "published": "2026-10-30T16:00:24Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT21S",
+    "views": 103,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 6,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "EpQQtd0o78Q",
+    "title": "Ireland Is the Richest Country in Europe. It Isn't.",
+    "published": "2026-10-30T18:00:35Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT8M14S",
+    "views": 226,
+    "likes": 4,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 7,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "6z26Abz-OT4",
+    "title": "Ireland is richer than the US on paper. Here's the catch #Shorts",
+    "published": "2026-10-30T22:00:29Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT41S",
+    "views": 92,
+    "likes": 2,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 8,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "ScvCTM6mp9s",
+    "title": "Ireland's economy 'grew' 25% in one year #Shorts",
+    "published": "2026-10-31T01:00:36Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT49S",
+    "views": 51,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 8,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "uxy6Av-fHBw",
+    "title": "Apple's tax rate in Ireland was 0.005% #Shorts",
+    "published": "2026-10-31T12:00:05Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT30S",
+    "views": 47,
+    "likes": 1,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 8,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "MmF-8_Niq0I",
+    "title": "Almost half of Ireland's GDP isn't really Irish #Shorts",
+    "published": "2026-10-31T15:00:14Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT50S",
+    "views": 38,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 8,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "LinIPuj7wDI",
+    "title": "Latvia Lost 30% of Its People. There Was No War.",
+    "published": "2026-10-31T18:00:14Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT8M12S",
+    "views": 860,
+    "likes": 2,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 8,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "9NsLyIXALV4",
+    "title": "Latvia lost 30% of its people. There was no war #Shorts",
+    "published": "2026-10-31T22:00:04Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT28S",
+    "views": 182,
+    "likes": 2,
+    "comments": 1,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "s7VEEc8S61c",
+    "title": "Saudi Arabia Is No Richer Than in 1990",
+    "published": "2026-10-31T23:00:16Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT8M3S",
+    "views": 86,
+    "likes": 2,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 10,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "xAsXXbTTBAY",
+    "title": "Why millions left Eastern Europe, in one number #Shorts",
+    "published": "2026-11-01T01:00:30Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT24S",
+    "views": 157,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "APX7b0usW5M",
+    "title": "Bulgaria: two deaths for every birth #Shorts",
+    "published": "2026-11-01T12:00:18Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT46S",
+    "views": 43,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "TZSIH-yJFQI",
+    "title": "Saudi Arabia is no richer per person than in 1990 #Shorts",
+    "published": "2026-11-01T13:00:02Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT23S",
+    "views": 37,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "ScuyYnuARNU",
+    "title": "35,000 more people moved in. Bulgaria still shrank #Shorts",
+    "published": "2026-11-01T15:00:30Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT22S",
+    "views": 62,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "wdyKVv2WiXo",
+    "title": "Kuwait was richer than America. Then this happened #Shorts",
+    "published": "2026-11-01T16:00:25Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT21S",
+    "views": 39,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "aaBU1S0wwpM",
+    "title": "Poland Just Passed Portugal. Again.",
+    "published": "2026-11-01T18:00:20Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT8M24S",
+    "views": 169,
+    "likes": 5,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 10,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "2gl7fS3Ebm0",
+    "title": "Portugal was twice as rich as Poland. Not anymore #Shorts",
+    "published": "2026-11-01T22:00:20Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT33S",
+    "views": 139,
+    "likes": 1,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "dJbN7cO1Rnc",
+    "title": "Turkey Caught Up With Greece. Despite 50% Inflation.",
+    "published": "2026-11-01T23:00:19Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT8M7S",
+    "views": 207,
+    "likes": 2,
+    "comments": 1,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "BMxSpCNgTYQ",
+    "title": "Why Portugal fell behind Eastern Europe, in one chart #Shorts",
+    "published": "2026-11-02T01:00:39Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT32S",
+    "views": 62,
+    "likes": 1,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "Big4NErU6u0",
+    "title": "Poland's minimum wage is now higher than Portugal's #Shorts",
+    "published": "2026-11-02T12:00:02Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT33S",
+    "views": 23,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "zfDCacC3I9I",
+    "title": "Turkey just tied Greece, to within $25 #Shorts",
+    "published": "2026-11-02T13:00:15Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT30S",
+    "views": 30,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "Wc82qjCvjFk",
+    "title": "The one thing Portugal does better than Poland #Shorts",
+    "published": "2026-11-02T15:00:24Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT26S",
+    "views": 29,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "wxEb-427bJg",
+    "title": "Turkey's economy tripled while the lira collapsed #Shorts",
+    "published": "2026-11-02T16:00:15Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT32S",
+    "views": 8,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "l7uaR6BQYa4",
+    "title": "In 2012, Japan Was 74% Richer Than Spain. Now Spain Is Ahead.",
+    "published": "2026-11-02T18:00:33Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT8M28S",
+    "views": 1275,
+    "likes": 6,
+    "comments": 5,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "yWOIBAXz5ro",
+    "title": "Japan was 74% richer than Spain in 2012. Not anymore #Shorts",
+    "published": "2026-11-02T22:00:02Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT47S",
+    "views": 11,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "MHSYNptZ38s",
+    "title": "Vietnam Overtook Indonesia. With a Third of the People.",
+    "published": "2026-11-02T23:00:15Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT8M16S",
+    "views": 294,
+    "likes": 2,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 10,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "k-9lf5rpo3E",
+    "title": "Spain gets twice as many tourists as Japan #Shorts",
+    "published": "2026-11-03T01:00:32Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT41S",
+    "views": 12,
+    "likes": 1,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "qmU3o61jNz4",
+    "title": "Vietnam made $99 a person in 1990. Now it's passed Indonesia #Shorts",
+    "published": "2026-11-03T13:00:17Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT32S",
+    "views": 15,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "7AcmLT5r-30",
+    "title": "Vietnam exports more than Indonesia with a third of the people #Shorts",
+    "published": "2026-11-03T16:00:04Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT29S",
+    "views": 11,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "knei7dcuF5M",
+    "title": "In 2008, Greece Was Twice as Rich as Poland. Now It's Behind.",
+    "published": "2026-11-03T18:00:24Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT8M34S",
+    "views": 710,
+    "likes": 2,
+    "comments": 4,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 10,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "8S7VJNqcwqQ",
+    "title": "Greece was twice as rich as Poland in 2008. Not anymore #Shorts",
+    "published": "2026-11-03T22:00:27Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT40S",
+    "views": 29,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "PBtivTl3WIc",
+    "title": "12 EU countries passed Greece since 2008 #Shorts",
+    "published": "2026-11-04T01:00:21Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT36S",
+    "views": 9,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "SW2qxSlMwfc",
+    "title": "Poland Is $55 Away From Passing Spain",
+    "published": "2026-11-04T18:00:04Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT8M22S",
+    "views": 7326,
+    "likes": 29,
+    "comments": 6,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 10,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "lSf6PuD1EO8",
+    "title": "Poland is $55 away from passing Spain (IMF, Oct 2026) #Shorts",
+    "published": "2026-11-04T22:00:07Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT35S",
+    "views": 54,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "0xeRhZa21Gs",
+    "title": "Spain gained 3 million people. Poland lost 1.7 million #Shorts",
+    "published": "2026-11-05T01:00:19Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT1M4S",
+    "views": 16,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "l5RdOg0Lsac",
+    "title": "South Korea Just Passed Britain and France",
+    "published": "2026-11-05T18:00:18Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT7M58S",
+    "views": 694,
+    "likes": 12,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 10,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "BjFVGxlsqk8",
+    "title": "South Korea just passed Britain and France (IMF, 2026) #Shorts",
+    "published": "2026-11-05T22:00:18Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT47S",
+    "views": 29,
+    "likes": 1,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "_Qr8GaYttqs",
+    "title": "Why South Korea got rich: it never stopped making things #Shorts",
+    "published": "2026-11-06T01:00:26Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT42S",
+    "views": 18,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "vQX0x96vsYM",
+    "title": "Taiwan Just Passed America",
+    "published": "2026-11-06T18:00:12Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT8M8S",
+    "views": 20,
+    "likes": 3,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 10,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "Za-_RFG7VmQ",
+    "title": "Taiwan just passed the United States (IMF, 2026) #Shorts",
+    "published": "2026-11-06T22:00:05Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT47S",
+    "views": 21,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "Z1aR0I0iaUk",
+    "title": "Taiwan grew 9% and 11% in two years. Here's why #Shorts",
+    "published": "2026-11-07T01:00:26Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT51S",
+    "views": 37,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "LWCi-qzZxMQ",
+    "title": "22 Countries Passed Argentina Since 2000",
+    "published": "2026-11-07T18:00:04Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT8M24S",
+    "views": 706,
+    "likes": 3,
+    "comments": 1,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 10,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "10V4xOQHfao",
+    "title": "22 countries passed Argentina since 2000 #Shorts",
+    "published": "2026-11-08T01:00:01Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT52S",
+    "views": 23,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "pQlq0FE4-YE",
+    "title": "Poland Just Passed Japan. Italy Is Next.",
+    "published": "2026-11-08T08:32:45Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT8M14S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 11,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "unvBo2-k4qA",
+    "title": "Poland Just Passed Japan. Italy Is Next.",
+    "published": "2026-11-08T18:00:01Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT8M52S",
+    "views": 5075,
+    "likes": 31,
+    "comments": 20,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 11,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "wjrmJERmsdo",
+    "title": "Poland Is 94% of Czechia. When Does It Pass?",
+    "published": "2026-11-10T20:43:35Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT6M34S",
+    "views": 1,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 14,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "7vwG1ZSozQQ",
+    "title": "Poland Is 76% of Germany. When Does It Catch Up?",
+    "published": "2026-11-10T21:00:22Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT8M32S",
+    "views": 158,
+    "likes": 1,
+    "comments": 1,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 12,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "F16b70P6Z6g",
+    "title": "Poland Is 94% of Czechia. When Does It Pass?",
+    "published": "2026-11-10T21:04:40Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT7M15S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 14,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "OKq99yuejAc",
+    "title": "Lithuania Passed Poland. Twice.",
+    "published": "2026-11-11T08:37:44Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT7M53S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 14,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "egQndtiQavo",
+    "title": "Poland Is 94% of Czechia. When Does It Pass?",
+    "published": "2026-11-11T21:00:27Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT7M15S",
+    "views": 41,
+    "likes": 2,
+    "comments": 1,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 14,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "RJs5upoaii0",
+    "title": "Lithuania Passed Poland. Twice.",
+    "published": "2026-11-12T21:00:14Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT7M50S",
+    "views": 192,
+    "likes": 3,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 14,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "-zqvGOlmE_o",
+    "title": "743,000 Poles Moved to Britain. Now Poland Is Catching Up.",
+    "published": "2026-11-13T21:00:01Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT7M10S",
+    "views": 122,
+    "likes": 2,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 14,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "nIqajVSVFtA",
+    "title": "France Grew 0.4% This Year. Poland Is Closing In.",
+    "published": "2026-11-14T21:00:39Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT7M1S",
+    "views": 1132,
+    "likes": 9,
+    "comments": 1,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 13,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "5sspMhpDmQs",
+    "title": "Poland Just Passed Slovakia. By $12.",
+    "published": "2026-11-15T21:00:16Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT6M2S",
+    "views": 1785,
+    "likes": 8,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 14,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "4YnZHAJMjZo",
+    "title": "Japan Was 16 Times Richer Than Poland. Now It's 14% Ahead.",
+    "published": "2026-11-16T21:00:25Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT6M16S",
+    "views": 1343,
+    "likes": 5,
+    "comments": 3,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 13,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "0uCBZV3rqnI",
+    "title": "Estonia Was 46% Richer Than Poland. Then It Stalled.",
+    "published": "2026-11-17T21:00:17Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT4M57S",
+    "views": 5775,
+    "likes": 14,
+    "comments": 8,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 13,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "VCBl5EYqjZk",
+    "title": "How the West Fed Berlin From the Sky for 11 Months",
+    "published": "2026-11-17T22:00:20Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT1M",
+    "views": 1385,
+    "likes": 43,
+    "comments": 1,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 13,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "shortsAspectRatio",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "5W2-nNOKa1U",
+    "title": "How Britain Lost Singapore in One Week",
+    "published": "2026-11-18T08:16:06Z",
+    "privacy": "private",
+    "publishAt": "2026-11-22T17:00:00Z",
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT50S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 13,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "shortsAspectRatio",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "Vw11QjG9pcU",
+    "title": "How Tiny Finland Held Off the Soviet Union for 105 Days",
+    "published": "2026-11-18T08:18:34Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT1M35S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 14,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "qhd",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "k60kfJkiF4o",
+    "title": "How Russia Destroyed Napoleon's Army by Retreating",
+    "published": "2026-11-18T08:19:46Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT1M50S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 13,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "qhd",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "sxHN77y3dAY",
+    "title": "How Russia Sold Alaska for 2 Cents an Acre",
+    "published": "2026-11-18T17:00:28Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT1M4S",
+    "views": 2764,
+    "likes": 41,
+    "comments": 4,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 13,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "shortsAspectRatio",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "fEck-WAEAoY",
+    "title": "Japan Was Twice as Rich as Italy. Now Italy Is 30% Ahead.",
+    "published": "2026-11-18T21:00:32Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT4M27S",
+    "views": 867,
+    "likes": 3,
+    "comments": 2,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 14,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "4ZoktSfSw_0",
+    "title": "How Tiny Finland Held Off the Soviet Union for 105 Days",
+    "published": "2026-11-19T08:16:19Z",
+    "privacy": "private",
+    "publishAt": "2026-11-21T17:00:00Z",
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT1M1S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 14,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "shortsAspectRatio",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "j6-t_OjPCCE",
+    "title": "How France Sold Louisiana for 3 Cents an Acre",
+    "published": "2026-11-19T08:35:18Z",
+    "privacy": "private",
+    "publishAt": "2026-11-23T17:00:00Z",
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT59S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 14,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "qhd",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "oFNiM446FMg",
+    "title": "How Britain Took Back the Falklands in 74 Days",
+    "published": "2026-11-19T17:00:26Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT1M",
+    "views": 196,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 13,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "shortsAspectRatio",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "vZW7GNDqcng",
+    "title": "How Russia Destroyed Napoleon's Army by Retreating",
+    "published": "2026-11-20T17:00:00Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT58S",
+    "views": 108,
+    "likes": 4,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 13,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "shortsAspectRatio",
+      "standard"
+     ]
+    }
+   }
+  ],
+  "comments_err": "HTTP Error 403: Forbidden",
+  "analytics_by_video": {
+   "kind": "youtubeAnalytics#resultTable",
+   "columnHeaders": [
+    {
+     "name": "video",
+     "columnType": "DIMENSION",
+     "dataType": "STRING"
+    },
+    {
+     "name": "views",
+     "columnType": "METRIC",
+     "dataType": "INTEGER"
+    },
+    {
+     "name": "estimatedMinutesWatched",
+     "columnType": "METRIC",
+     "dataType": "INTEGER"
+    },
+    {
+     "name": "averageViewDuration",
+     "columnType": "METRIC",
+     "dataType": "INTEGER"
+    },
+    {
+     "name": "averageViewPercentage",
+     "columnType": "METRIC",
+     "dataType": "FLOAT"
+    },
+    {
+     "name": "subscribersGained",
+     "columnType": "METRIC",
+     "dataType": "INTEGER"
+    },
+    {
+     "name": "likes",
+     "columnType": "METRIC",
+     "dataType": "INTEGER"
+    },
+    {
+     "name": "comments",
+     "columnType": "METRIC",
+     "dataType": "INTEGER"
+    },
+    {
+     "name": "shares",
+     "columnType": "METRIC",
+     "dataType": "INTEGER"
+    }
+   ],
+   "rows": [
+    [
+     "XGmxZPO8lx8",
+     57047,
+     66187,
+     162,
+     30.879999999999995,
+     87,
+     678,
+     84,
+     163
+    ],
+    [
+     "SW2qxSlMwfc",
+     7326,
+     4876,
+     120,
+     24.08,
+     2,
+     29,
+     6,
+     5
+    ],
+    [
+     "unvBo2-k4qA",
+     5064,
+     3998,
+     130,
+     24.58,
+     11,
+     30,
+     6,
+     5
+    ],
+    [
+     "0uCBZV3rqnI",
+     2361,
+     788,
+     78,
+     26.47,
+     1,
+     5,
+     4,
+     0
+    ],
+    [
+     "sxHN77y3dAY",
+     1744,
+     793,
+     56,
+     87.69,
+     2,
+     33,
+     1,
+     1
+    ],
+    [
+     "5sspMhpDmQs",
+     1584,
+     696,
+     75,
+     20.94,
+     1,
+     7,
+     0,
+     0
+    ],
+    [
+     "VCBl5EYqjZk",
+     1356,
+     583,
+     46,
+     77.76,
+     1,
+     43,
+     1,
+     1
+    ],
+    [
+     "l7uaR6BQYa4",
+     1275,
+     760,
+     101,
+     20.01,
+     0,
+     6,
+     3,
+     2
+    ],
+    [
+     "nIqajVSVFtA",
+     1129,
+     629,
+     112,
+     26.76,
+     1,
+     9,
+     1,
+     0
+    ],
+    [
+     "dl0Wv3i6768",
+     976,
+     106,
+     17,
+     78.36,
+     2,
+     7,
+     0,
+     0
+    ],
+    [
+     "AfUA7OG-yGo",
+     870,
+     90,
+     13,
+     69.39,
+     1,
+     7,
+     2,
+     0
+    ],
+    [
+     "LinIPuj7wDI",
+     858,
+     452,
+     110,
+     22.48,
+     1,
+     2,
+     0,
+     0
+    ],
+    [
+     "J-mo1_DYO3o",
+     769,
+     76,
+     15,
+     63.39,
+     1,
+     6,
+     0,
+     0
+    ],
+    [
+     "weU0RuLE5HY",
+     767,
+     63,
+     12,
+     59.599999999999994,
+     2,
+     6,
+     0,
+     0
+    ],
+    [
+     "knei7dcuF5M",
+     709,
+     337,
+     96,
+     18.83,
+     0,
+     2,
+     3,
+     1
+    ],
+    [
+     "LWCi-qzZxMQ",
+     707,
+     255,
+     75,
+     14.95,
+     0,
+     3,
+     1,
+     1
+    ],
+    [
+     "l5RdOg0Lsac",
+     694,
+     453,
+     111,
+     23.33,
+     1,
+     12,
+     0,
+     3
+    ],
+    [
+     "Sg3J8d_HmdY",
+     642,
+     96,
+     27,
+     99.44,
+     1,
+     9,
+     0,
+     0
+    ],
+    [
+     "4YnZHAJMjZo",
+     473,
+     164,
+     88,
+     23.41,
+     0,
+     5,
+     2,
+     0
+    ],
+    [
+     "DCeFOfp7sVI",
+     472,
+     43,
+     13,
+     72.69,
+     1,
+     3,
+     1,
+     0
+    ],
+    [
+     "PP9J1_ZcpBo",
+     457,
+     750,
+     200,
+     40.54,
+     1,
+     5,
+     2,
+     1
+    ],
+    [
+     "SE5yKoEcTk4",
+     379,
+     30,
+     12,
+     58.9,
+     0,
+     3,
+     0,
+     0
+    ],
+    [
+     "YoLxRrKw_jk",
+     343,
+     34,
+     16,
+     62.22,
+     1,
+     1,
+     0,
+     0
+    ],
+    [
+     "Rj2yhE7b0g8",
+     340,
+     22,
+     11,
+     49.43,
+     1,
+     6,
+     0,
+     0
+    ],
+    [
+     "d79anBRueQM",
+     309,
+     31,
+     17,
+     62.81,
+     0,
+     8,
+     0,
+     0
+    ],
+    [
+     "MHSYNptZ38s",
+     294,
+     197,
+     154,
+     31.08,
+     1,
+     2,
+     0,
+     1
+    ],
+    [
+     "Bt3TfuENNlk",
+     278,
+     28,
+     16,
+     62.81,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     "9UvO0yE-j-w",
+     272,
+     22,
+     14,
+     64.12,
+     0,
+     3,
+     1,
+     0
+    ],
+    [
+     "vBG0O2YR9y0",
+     260,
+     25,
+     15,
+     58.440000000000005,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "_4gg9LsrleM",
+     230,
+     17,
+     11,
+     65.75,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     "EpQQtd0o78Q",
+     226,
+     162,
+     173,
+     35.08,
+     1,
+     4,
+     0,
+     0
+    ],
+    [
+     "dJbN7cO1Rnc",
+     207,
+     127,
+     127,
+     26.22,
+     0,
+     2,
+     1,
+     0
+    ],
+    [
+     "NW4SSSAb8ZY",
+     192,
+     14,
+     13,
+     69.25,
+     0,
+     2,
+     0,
+     0
+    ],
+    [
+     "baa-m1HjPH8",
+     186,
+     20,
+     14,
+     74.96,
+     0,
+     2,
+     0,
+     0
+    ],
+    [
+     "RJs5upoaii0",
+     182,
+     140,
+     136,
+     28.98,
+     0,
+     2,
+     0,
+     0
+    ],
+    [
+     "9NsLyIXALV4",
+     182,
+     17,
+     21,
+     78.14,
+     0,
+     2,
+     1,
+     0
+    ],
+    [
+     "aaBU1S0wwpM",
+     167,
+     283,
+     169,
+     33.73,
+     1,
+     5,
+     0,
+     0
+    ],
+    [
+     "xAsXXbTTBAY",
+     157,
+     9,
+     13,
+     55.33,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "7vwG1ZSozQQ",
+     156,
+     177,
+     172,
+     33.74,
+     0,
+     1,
+     1,
+     0
+    ],
+    [
+     "pm0ycfgxx4E",
+     151,
+     14,
+     12,
+     69.99,
+     0,
+     2,
+     0,
+     0
+    ],
+    [
+     "2gl7fS3Ebm0",
+     139,
+     11,
+     21,
+     64.68,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     "-zqvGOlmE_o",
+     119,
+     105,
+     133,
+     31.14,
+     0,
+     2,
+     0,
+     0
+    ],
+    [
+     "vLNCvTwxOlU",
+     109,
+     20,
+     32,
+     60.42000000000001,
+     0,
+     2,
+     0,
+     0
+    ],
+    [
+     "At-J2SGqvIw",
+     103,
+     5,
+     16,
+     80.27,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "RzsrgLEP1oY",
+     96,
+     8,
+     17,
+     75.81,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "6z26Abz-OT4",
+     92,
+     12,
+     27,
+     67.62,
+     0,
+     2,
+     0,
+     0
+    ],
+    [
+     "5Z0Hkn2nQVc",
+     90,
+     13,
+     26,
+     53.18999999999999,
+     0,
+     2,
+     0,
+     0
+    ],
+    [
+     "s7VEEc8S61c",
+     86,
+     58,
+     161,
+     33.37,
+     0,
+     2,
+     0,
+     0
+    ],
+    [
+     "l3rAlC5SiMw",
+     85,
+     9,
+     19,
+     53.65,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     "tREmUSKxhJs",
+     70,
+     6,
+     14,
+     64.97,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     "Cctr28wdA6Q",
+     63,
+     3,
+     10,
+     57.92,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "ScuyYnuARNU",
+     62,
+     4,
+     13,
+     61.17,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "BMxSpCNgTYQ",
+     62,
+     3,
+     23,
+     73.43,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     "56HoY75nSKE",
+     56,
+     4,
+     16,
+     58.21999999999999,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "IzVbcE3UcQA",
+     56,
+     6,
+     17,
+     81.33,
+     0,
+     2,
+     0,
+     0
+    ],
+    [
+     "lSf6PuD1EO8",
+     54,
+     8,
+     31,
+     89.09,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "ScvCTM6mp9s",
+     51,
+     8,
+     23,
+     46.95,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "uxy6Av-fHBw",
+     47,
+     5,
+     22,
+     75.75,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     "APX7b0usW5M",
+     43,
+     7,
+     26,
+     57.07,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "vXX4MOdsk_o",
+     43,
+     4,
+     13,
+     51.800000000000004,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     "rZkagnZFn0I",
+     40,
+     2,
+     12,
+     54.93,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "egQndtiQavo",
+     39,
+     130,
+     262,
+     60.38,
+     0,
+     2,
+     1,
+     0
+    ],
+    [
+     "MmF-8_Niq0I",
+     38,
+     5,
+     27,
+     55.94,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "TZSIH-yJFQI",
+     37,
+     2,
+     12,
+     53.88,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "Z1aR0I0iaUk",
+     37,
+     3,
+     14,
+     28.71,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "sIpZOT3lRBM",
+     35,
+     1,
+     14,
+     58.989999999999995,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "wdyKVv2WiXo",
+     35,
+     3,
+     13,
+     64.27,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "vd1d7B9SN10",
+     33,
+     4,
+     20,
+     75.32,
+     1,
+     2,
+     0,
+     0
+    ],
+    [
+     "zfDCacC3I9I",
+     30,
+     1,
+     19,
+     65.27,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "8S7VJNqcwqQ",
+     29,
+     4,
+     27,
+     67.56,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "BjFVGxlsqk8",
+     29,
+     4,
+     20,
+     44.26,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     "Wc82qjCvjFk",
+     29,
+     1,
+     25,
+     99.68,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "Big4NErU6u0",
+     23,
+     2,
+     28,
+     87.35,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "10V4xOQHfao",
+     23,
+     2,
+     30,
+     57.830000000000005,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "Za-_RFG7VmQ",
+     21,
+     4,
+     26,
+     57.09000000000001,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "vQX0x96vsYM",
+     18,
+     30,
+     254,
+     52.21,
+     0,
+     3,
+     0,
+     0
+    ],
+    [
+     "_Qr8GaYttqs",
+     18,
+     3,
+     25,
+     59.86,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "v0_P9brdMT8",
+     17,
+     1,
+     17,
+     70.95,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "ytMv1BEXN_w",
+     17,
+     1,
+     17,
+     77.89,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "0xeRhZa21Gs",
+     16,
+     4,
+     26,
+     41.58,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "qmU3o61jNz4",
+     15,
+     1,
+     18,
+     58.550000000000004,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "V7mj9F4ncK0",
+     15,
+     0,
+     9,
+     41.24,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     "Zbl8bKqIOd4",
+     15,
+     1,
+     15,
+     65.41,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "WsEc2lIpL5s",
+     14,
+     1,
+     13,
+     57.830000000000005,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "fEck-WAEAoY",
+     13,
+     8,
+     102,
+     38.39,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "iPNu0-eS5jY",
+     13,
+     0,
+     10,
+     45.87,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "k-9lf5rpo3E",
+     12,
+     0,
+     11,
+     29.26,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     "yWOIBAXz5ro",
+     11,
+     1,
+     26,
+     57.24,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "MyKSCs0ZBb8",
+     11,
+     1,
+     19,
+     70.32,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "7AcmLT5r-30",
+     11,
+     1,
+     32,
+     111.14,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "PBtivTl3WIc",
+     9,
+     1,
+     25,
+     69.72,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "wxEb-427bJg",
+     8,
+     0,
+     21,
+     66.25,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "KGxMH9zU1U4",
+     4,
+     0,
+     8,
+     43.75,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "oDtNCsq6oFA",
+     4,
+     0,
+     18,
+     70.15,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "l3dnU0q6Y1E",
+     2,
+     0,
+     9,
+     32.07,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "U157oaRZ_SA",
+     1,
+     0,
+     6,
+     31.58,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "wjrmJERmsdo",
+     1,
+     0,
+     4,
+     1.17,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "YJywRSSr2EA",
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ]
+  },
+  "analytics_err": "HTTP Error 500: Internal Server Error"
+ },
+ "B": {
+  "scopes": "https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/yt-analytics.readonly",
+  "channel": {
+   "id": "UC_6WYVwzGGPSOjX035ff6qA",
+   "title": "E Se no Mapa",
+   "stats": {
+    "viewCount": "3868",
+    "subscriberCount": "21",
+    "hiddenSubscriberCount": false,
+    "videoCount": "8"
+   },
+   "status": {
+    "privacyStatus": "public",
+    "isLinked": true,
+    "longUploadsStatus": "allowed",
+    "isChannelMonetizationEnabled": false
+   },
+   "desc": "E se o Brasil tivesse feito diferente? Simulações no mapa, com fatos reais por trás de cada cenário.\n\nNo E Se no Mapa você vê países mudando de dono, fronteiras que quase existiram e a história do Brasil e da América do Sul contada pelo mapa — em vídeos curtos.\n\nCenários imaginários; os números e os"
+  },
+  "videos": [
+   {
+    "id": "kQ-UWxOUX5I",
+    "title": "How GPS knows where you are #Shorts",
+    "published": "2026-10-17T00:43:08Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT37S",
+    "views": 109,
+    "likes": 1,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "SoQ26TqmRnQ",
+    "title": "How GPS knows where you are #Shorts",
+    "published": "2026-10-17T00:43:13Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT35S",
+    "views": 97,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "fy2HN-ngqww",
+    "title": "I changed ONE letter. 131 of 256 bits flipped #Shorts",
+    "published": "2026-10-17T00:43:16Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT30S",
+    "views": 1220,
+    "likes": 8,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "hWmo19Qlqsc",
+    "title": "The internet ran out of addresses. Here is the math #Shorts",
+    "published": "2026-10-17T01:45:08Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT30S",
+    "views": 192,
+    "likes": 6,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "k1v4M6YN4no",
+    "title": "Computers will break on January 19, 2038. Here is why #Shorts",
+    "published": "2026-10-17T13:53:32Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT41S",
+    "views": 1,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "7zzx40st58o",
+    "title": "Computers will break on January 19, 2038. Here is why #Shorts",
+    "published": "2026-10-17T15:00:39Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT41S",
+    "views": 550,
+    "likes": 6,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "eUgU-HG9_Hs",
+    "title": "Why 0.1 + 0.2 is not 0.3 in code #Shorts",
+    "published": "2026-10-18T01:00:37Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT31S",
+    "views": 1071,
+    "likes": 10,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "31EqyiFH0T4",
+    "title": "You can count to 1,023 on your fingers #Shorts",
+    "published": "2026-10-19T00:45:26Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT23S",
+    "views": 32,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "sQgOe0NsGp0",
+    "title": "23 people, 50.7% chance two share a birthday #Shorts",
+    "published": "2026-10-19T01:00:08Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT25S",
+    "views": 101,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "O6jCz_DiDio",
+    "title": "An 8 letter password falls in 21 seconds #Shorts",
+    "published": "2026-10-19T02:00:08Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT25S",
+    "views": 171,
+    "likes": 1,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "P-p7xUN2ZMA",
+    "title": "A 1 TB drive shows 931.3 GB. Where did the rest go? #Shorts",
+    "published": "2026-10-19T17:00:40Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT28S",
+    "views": 678,
+    "likes": 7,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "gI4amcuBSFc",
+    "title": "Every card shuffle in history is probably unique #Shorts",
+    "published": "2026-10-19T21:00:05Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT24S",
+    "views": 76,
+    "likes": 1,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "Y-oOv9UU5yU",
+    "title": "Your screen shows 16,777,216 colors. Here is why #Shorts",
+    "published": "2026-10-20T01:00:08Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT25S",
+    "views": 158,
+    "likes": 6,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "cHPMRDJWejc",
+    "title": "255 + 1 = 0 in code #Shorts",
+    "published": "2026-10-20T21:00:02Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT22S",
+    "views": 255,
+    "likes": 4,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "5FWqFKcYC6g",
+    "title": "How to find 1 name in 1 billion in 30 steps #Shorts",
+    "published": "2026-10-21T00:00:05Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT19S",
+    "views": 205,
+    "likes": 4,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "fj1wC3q7EN4",
+    "title": "Fold paper 42 times and it passes the Moon #Shorts",
+    "published": "2026-10-21T02:00:16Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT27S",
+    "views": 647,
+    "likes": 10,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "_dVy6BEcAWs",
+    "title": "One grain doubled 64 times is 18.4 quintillion grains #Shorts",
+    "published": "2026-10-21T17:00:27Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT19S",
+    "views": 101,
+    "likes": 5,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "KXR_fF9wrcM",
+    "title": "A 32-bit hash collides after only 77,163 items #Shorts",
+    "published": "2026-10-21T21:00:28Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT21S",
+    "views": 210,
+    "likes": 4,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "FvEhre2MFEY",
+    "title": "IPv6 gives every square millimeter of Earth 6.7e17 addresses #Shorts",
+    "published": "2026-10-22T01:00:13Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT24S",
+    "views": 108,
+    "likes": 2,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "Ss8pYZkp4zo",
+    "title": "Counting to 1 billion takes 31.7 years #Shorts",
+    "published": "2026-10-22T17:00:04Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT17S",
+    "views": 538,
+    "likes": 2,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "Y5_LlWmFRno",
+    "title": "One emoji takes 4 bytes. A letter takes 1 #Shorts",
+    "published": "2026-10-22T21:00:06Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT19S",
+    "views": 91,
+    "likes": 3,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "M8SiGLfuI40",
+    "title": "Computer clocks hit 2,000,000,000 seconds on May 18, 2033 #Shorts",
+    "published": "2026-10-22T21:17:25Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT32S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "PA3AWqjFA6s",
+    "title": "The sunlight you see left the Sun 8 min 19 s ago #Shorts",
+    "published": "2026-10-22T21:17:37Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT27S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "XNSDpX0_VsM",
+    "title": "GPS clocks run 38.5 microseconds fast every day #Shorts",
+    "published": "2026-10-22T21:18:03Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT39S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "ZqVuxLRGSro",
+    "title": "1,000 km of fiber adds at least 9.8 ms of ping #Shorts",
+    "published": "2026-10-22T21:18:13Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT35S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "ZgswNudc4cI",
+    "title": "A 3x3 puzzle cube has 43 quintillion positions #Shorts",
+    "published": "2026-10-22T21:41:52Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT29S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "E_8RYE6g5-o",
+    "title": "Your card's last digit catches 100% of one-digit typos #Shorts",
+    "published": "2026-10-22T22:00:01Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT33S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "dDD1nvPdyck",
+    "title": "Unix time hits 2,000,000,000 seconds on May 18, 2033 (UTC) #Shorts",
+    "published": "2026-10-22T22:30:16Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT35S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "x71n_s95sW8",
+    "title": "Smart sorting is 50,000x faster on 1 million items #Shorts",
+    "published": "2026-10-23T01:00:25Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT21S",
+    "views": 92,
+    "likes": 1,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "gt08tJlilO8",
+    "title": "Only 97 of every 400 years are leap years #Shorts",
+    "published": "2026-10-23T17:00:24Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT33S",
+    "views": 66,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "mKeiEfa_b7A",
+    "title": "Counting 1 billion per second, a 64-bit counter lasts 584.5 years #Shorts",
+    "published": "2026-10-23T21:00:11Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT33S",
+    "views": 114,
+    "likes": 1,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "CswPwRzn0Hk",
+    "title": "The sunlight you see left the Sun 8 min 19 s ago #Shorts",
+    "published": "2026-10-23T23:10:45Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT28S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "ebY2VFsLn7k",
+    "title": "Switch doors and you win 66.7% of the time. Here is why #Shorts",
+    "published": "2026-10-24T01:00:18Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT36S",
+    "views": 45,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "7JitGFTjsXw",
+    "title": "You see the Sun as it was 8 min 19 s ago #Shorts",
+    "published": "2026-10-24T21:00:00Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT21S",
+    "views": 42,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "_bZ6tPOi5O8",
+    "title": "Without Einstein, GPS would drift 11.5 km a day #Shorts",
+    "published": "2026-10-25T01:00:34Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT24S",
+    "views": 12,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "tojXB3PL99M",
+    "title": "Your card's last digit catches 100% of typos #Shorts",
+    "published": "2026-10-25T17:00:00Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT23S",
+    "views": 16,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "VpC1Cv9LYuM",
+    "title": "Your ping can never be zero. Here's the limit #Shorts",
+    "published": "2026-10-25T21:00:28Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT20S",
+    "views": 25,
+    "likes": 1,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "bZgUw1W8X6g",
+    "title": "This small cube has 43 quintillion positions #Shorts",
+    "published": "2026-10-26T01:00:17Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT23S",
+    "views": 28,
+    "likes": 1,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "6RHMot9E0Tc",
+    "title": "Your computer hits 2,000,000,000 on May 18, 2033 #Shorts",
+    "published": "2026-10-26T17:00:25Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT28S",
+    "views": 17,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "y-svV2AmQZk",
+    "title": "Driving one light-year takes 10.8 million years #Shorts",
+    "published": "2026-10-26T18:18:20Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT22S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "9QpbGzgxTzM",
+    "title": "Your 100 Mbps internet tops out at 12.5 MB/s #Shorts",
+    "published": "2026-10-26T21:00:37Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT28S",
+    "views": 86,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "9QpbGzgxTzM",
+    "title": "Your 100 Mbps internet tops out at 12.5 MB/s #Shorts",
+    "published": "2026-10-26T21:00:37Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT28S",
+    "views": 86,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "ntU7BG2jzq4",
+    "title": "Count after lightning, divide by 3: that's the km #Shorts",
+    "published": "2026-10-27T01:00:16Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT24S",
+    "views": 6,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "ntU7BG2jzq4",
+    "title": "Count after lightning, divide by 3: that's the km #Shorts",
+    "published": "2026-10-27T01:00:16Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT24S",
+    "views": 6,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "4hvmu0J5JNM",
+    "title": "The horizon is only 4.7 km away #Shorts",
+    "published": "2026-10-27T21:00:28Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT29S",
+    "views": 2,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "4hvmu0J5JNM",
+    "title": "The horizon is only 4.7 km away #Shorts",
+    "published": "2026-10-27T21:00:28Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT29S",
+    "views": 2,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "ZX-UW6dlHlI",
+    "title": "You're spinning at 1,674 km/h right now #Shorts",
+    "published": "2026-10-28T01:00:37Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT28S",
+    "views": 20,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "ZX-UW6dlHlI",
+    "title": "You're spinning at 1,674 km/h right now #Shorts",
+    "published": "2026-10-28T01:00:37Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT28S",
+    "views": 20,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "D8KMhsVOBdg",
+    "title": "Your phone battery could lift you 101 meters #Shorts",
+    "published": "2026-10-28T21:00:37Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT23S",
+    "views": 86,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "D8KMhsVOBdg",
+    "title": "Your phone battery could lift you 101 meters #Shorts",
+    "published": "2026-10-28T21:00:37Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT23S",
+    "views": 86,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "Hy_JPtT9MJA",
+    "title": "Your Wi-Fi uses the same frequency as your microwave #Shorts",
+    "published": "2026-10-29T01:00:12Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT26S",
+    "views": 4,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "DJEANTgbtD0",
+    "title": "Tiny Math Errors That Cost Lives and Millions",
+    "published": "2026-10-29T18:38:33Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT7M17S",
+    "views": 3,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 8,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "bMkFg1mQr8A",
+    "title": "4K isn't 2x 1080p. It's 4x #Shorts",
+    "published": "2026-10-29T21:00:32Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT26S",
+    "views": 458,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "SIEevthvBV0",
+    "title": "Why texts stopped at 160 characters #Shorts",
+    "published": "2026-10-30T01:00:27Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT25S",
+    "views": 226,
+    "likes": 2,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 4,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "L5CisMKqKhQ",
+    "title": "A tiny rounding error killed 28 soldiers #Shorts",
+    "published": "2026-10-30T01:30:12Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT42S",
+    "views": 24,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 6,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "FTx7vNMOvyA",
+    "title": "0.34 seconds made a Patriot missile miss #Shorts",
+    "published": "2026-10-30T03:30:10Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT29S",
+    "views": 91,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 6,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "UGPKhcVg8CE",
+    "title": "One number destroyed a $370 million rocket #Shorts",
+    "published": "2026-10-30T14:00:37Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT51S",
+    "views": 22,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 6,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "GPJQizHHspY",
+    "title": "This stock market 'lost' half its value by accident #Shorts",
+    "published": "2026-10-30T17:00:36Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT56S",
+    "views": 30,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 6,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "_SgVH8bGG5k",
+    "title": "Where Did 69 GB of My 1 TB Drive Go?",
+    "published": "2026-10-30T20:00:23Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT7M13S",
+    "views": 3,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 8,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "-rmnWT3Jz6w",
+    "title": "Why your 1 TB drive shows 931 GB #Shorts",
+    "published": "2026-10-30T23:00:05Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT40S",
+    "views": 632,
+    "likes": 3,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "17341VgauLg",
+    "title": "Your SSD secretly holds more than 1 TB #Shorts",
+    "published": "2026-10-31T02:00:36Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT28S",
+    "views": 741,
+    "likes": 4,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "ZLsxAGFVY-k",
+    "title": "The 1.44 MB floppy disk was never 1.44 MB #Shorts",
+    "published": "2026-10-31T13:00:01Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT32S",
+    "views": 217,
+    "likes": 4,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "9EkUwdLL7wo",
+    "title": "Why your 1 Gbps internet downloads at 125 MB/s #Shorts",
+    "published": "2026-10-31T16:00:33Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT22S",
+    "views": 104,
+    "likes": 1,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": null,
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "OS94QbIKvWw",
+    "title": "Net Worth at 55, 65 and 75: The Fed's New Numbers (Where Do You Rank?)",
+    "published": "2026-11-02T18:30:10Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT8M16S",
+    "views": 7,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 10,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "e7hQSkqSnnM",
+    "title": "Net worth at 55–64: where do you rank? (Fed 2025) #Shorts",
+    "published": "2026-11-02T20:30:23Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT43S",
+    "views": 16,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "Ou6IdtVIiMI",
+    "title": "Why the 'average retiree' number is misleading #Shorts",
+    "published": "2026-11-03T00:00:02Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT33S",
+    "views": 19,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "0KMtZW6mnmA",
+    "title": "How Many Retirees Actually Have $1 Million? (New Fed Data)",
+    "published": "2026-11-03T18:30:24Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT8M35S",
+    "views": 4,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 10,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "wcOw24o327A",
+    "title": "How many retirees really have $1 million? It depends #Shorts",
+    "published": "2026-11-03T20:30:13Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT37S",
+    "views": 24,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "9hgo6eUcWDg",
+    "title": "Only 1 in 9 retirees has $1M in a 401(k) or IRA #Shorts",
+    "published": "2026-11-04T00:00:07Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT35S",
+    "views": 68,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "J3rLpvQZanA",
+    "title": "Social Security at 62, 67 or 70? The Break-Even Ages, From SSA's Own Data",
+    "published": "2026-11-04T18:30:30Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT8M42S",
+    "views": 4,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 10,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "PaiIItkalbo",
+    "title": "Social Security at 62 vs 70: 77% more per month #Shorts",
+    "published": "2026-11-04T20:30:31Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT43S",
+    "views": 48,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "j-ncHWwld8M",
+    "title": "Half of retirees claimed Social Security at 62. Now? #Shorts",
+    "published": "2026-11-05T00:00:13Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT41S",
+    "views": 20,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "JOiV4L00zGM",
+    "title": "401(k) and IRA Balances at 55, 65 and 75: The Fed's New Numbers",
+    "published": "2026-11-05T18:30:15Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT8M27S",
+    "views": 3,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 10,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "RHufG031oFY",
+    "title": "The typical 401(k) & IRA balance by age (Fed 2025) #Shorts",
+    "published": "2026-11-05T20:30:22Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT45S",
+    "views": 24,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "7-l8oXIplt0",
+    "title": "Average 401(k) at 65–74: $768k. Median: $257k #Shorts",
+    "published": "2026-11-06T00:00:39Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT51S",
+    "views": 12,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "EAPiFqFBugc",
+    "title": "How Much Social Security on a $40k, $60k or $100k Salary? (2027 Formula)",
+    "published": "2026-11-06T18:30:37Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT8M43S",
+    "views": 3,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 10,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "da0aQnBMa04",
+    "title": "Social Security at a $40k, $60k or $100k salary (2027 formula) #Shorts",
+    "published": "2026-11-06T20:30:10Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT41S",
+    "views": 25,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "pd-27Y3Ukok",
+    "title": "Fewer than 35 years of work? Your Social Security drops #Shorts",
+    "published": "2026-11-07T00:00:01Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT40S",
+    "views": 18,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "UAf_G-mu7cc",
+    "title": "What Net Worth Puts You in the Top 10% at 65–74? (New Fed Data)",
+    "published": "2026-11-07T18:30:23Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT8M17S",
+    "views": 5,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 10,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "88-pWgg8ieQ",
+    "title": "The net worth that puts you in the top 10% at 65–74 (Fed 2025) #Shorts",
+    "published": "2026-11-07T20:30:09Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT40S",
+    "views": 26,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "TjidVK5SagE",
+    "title": "1 in 3 households aged 65–74 are millionaires #Shorts",
+    "published": "2026-11-08T00:00:33Z",
+    "privacy": "private",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT29S",
+    "views": 15,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "en",
+     "tags": 9,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "Cco17qjuIU0",
+    "title": "E se o Uruguai fosse do Brasil? #curiosidades #brasil",
+    "published": "2026-11-17T14:00:05Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT2M14S",
+    "views": 1591,
+    "likes": 35,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "pt-BR",
+     "tags": 15,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "qhd",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "QhWbhEEXkhw",
+    "title": "E se o Acre ainda fosse da Bolívia? #curiosidades #brasil",
+    "published": "2026-11-17T19:30:23Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT2M16S",
+    "views": 1237,
+    "likes": 26,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "pt-BR",
+     "tags": 15,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "qhd",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "0popU_YnfdQ",
+    "title": "E se o Rio Grande do Sul tivesse virado um país? #curiosidades #brasil",
+    "published": "2026-11-18T08:28:50Z",
+    "privacy": "private",
+    "publishAt": "2026-11-21T21:00:00Z",
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT1M47S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "pt-BR",
+     "tags": 16,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "qhd",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "JIrFpTFwhvg",
+    "title": "E se o Amapá fosse da França? #curiosidades #brasil",
+    "published": "2026-11-18T08:28:52Z",
+    "privacy": "private",
+    "publishAt": "2026-11-21T15:00:00Z",
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT1M49S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "pt-BR",
+     "tags": 16,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "qhd",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "4gugxslDKQ4",
+    "title": "O mapa do Brasil quase foi outro: 5 simulações (Acre, Uruguai, Tordesilhas, Nordeste...)",
+    "published": "2026-11-18T08:39:19Z",
+    "privacy": "private",
+    "publishAt": "2026-11-20T23:00:00Z",
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT9M4S",
+    "views": 1,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "pt-BR",
+     "tags": 12,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "kyXKD4TAY8Y",
+    "title": "E se a América do Sul fosse um país só? #curiosidades #brasil",
+    "published": "2026-11-18T15:00:13Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT1M40S",
+    "views": 17,
+    "likes": 1,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "pt-BR",
+     "tags": 14,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "qhd",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "UjL00ZRCgGI",
+    "title": "E se o Tratado de Tordesilhas valesse até hoje? #curiosidades #brasil",
+    "published": "2026-11-18T21:00:22Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT1M44S",
+    "views": 119,
+    "likes": 8,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "pt-BR",
+     "tags": 16,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "qhd",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "McDDLdxhpgw",
+    "title": "E se o Paraguai fosse do Brasil? #curiosidades #brasil",
+    "published": "2026-11-19T08:34:11Z",
+    "privacy": "private",
+    "publishAt": "2026-11-22T15:00:00Z",
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT1M42S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "pt-BR",
+     "tags": 16,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "qhd",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "gjcuJTVVmNY",
+    "title": "E se o oeste de Santa Catarina fosse da Argentina? #curiosidades #brasil",
+    "published": "2026-11-19T08:49:14Z",
+    "privacy": "private",
+    "publishAt": "2026-11-22T21:00:00Z",
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT1M35S",
+    "views": 0,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "pt-BR",
+     "tags": 17,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "qhd",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "3AWSP_gZD9c",
+    "title": "E se o Nordeste fosse um país? #curiosidades #brasil",
+    "published": "2026-11-19T15:00:32Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT1M48S",
+    "views": 1044,
+    "likes": 24,
+    "comments": 4,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "pt-BR",
+     "tags": 16,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "qhd",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "8biLVKHN6MI",
+    "title": "E se a Venezuela invadisse a Guiana? #curiosidades #brasil",
+    "published": "2026-11-19T21:00:00Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT1M51S",
+    "views": 1067,
+    "likes": 31,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "pt-BR",
+     "tags": 15,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "qhd",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "tCw4X8df950",
+    "title": "E se o Brasil virasse 5 países? #curiosidades #brasil",
+    "published": "2026-11-20T15:00:11Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT1M14S",
+    "views": 756,
+    "likes": 19,
+    "comments": 1,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "pt-BR",
+     "tags": 17,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "qhd",
+      "standard"
+     ]
+    }
+   },
+   {
+    "id": "F-fp8yhPpJc",
+    "title": "E se Portugal virasse um estado do Brasil? #curiosidades #brasil",
+    "published": "2026-11-20T21:00:18Z",
+    "privacy": "public",
+    "publishAt": null,
+    "upload": "processed",
+    "reject": null,
+    "madeForKids": false,
+    "dur": "PT1M24S",
+    "views": 5,
+    "likes": 0,
+    "comments": 0,
+    "detail": {
+     "embeddable": true,
+     "license": "youtube",
+     "synthetic": null,
+     "rating": {},
+     "region": null,
+     "licensed": false,
+     "cat": "27",
+     "lang": "pt-BR",
+     "tags": 15,
+     "thumbs": [
+      "default",
+      "high",
+      "maxres",
+      "medium",
+      "qhd",
+      "standard"
+     ]
+    }
+   }
+  ],
+  "comments_err": "HTTP Error 403: Forbidden",
+  "analytics_by_video": {
+   "kind": "youtubeAnalytics#resultTable",
+   "columnHeaders": [
+    {
+     "name": "video",
+     "columnType": "DIMENSION",
+     "dataType": "STRING"
+    },
+    {
+     "name": "views",
+     "columnType": "METRIC",
+     "dataType": "INTEGER"
+    },
+    {
+     "name": "estimatedMinutesWatched",
+     "columnType": "METRIC",
+     "dataType": "INTEGER"
+    },
+    {
+     "name": "averageViewDuration",
+     "columnType": "METRIC",
+     "dataType": "INTEGER"
+    },
+    {
+     "name": "averageViewPercentage",
+     "columnType": "METRIC",
+     "dataType": "FLOAT"
+    },
+    {
+     "name": "subscribersGained",
+     "columnType": "METRIC",
+     "dataType": "INTEGER"
+    },
+    {
+     "name": "likes",
+     "columnType": "METRIC",
+     "dataType": "INTEGER"
+    },
+    {
+     "name": "comments",
+     "columnType": "METRIC",
+     "dataType": "INTEGER"
+    },
+    {
+     "name": "shares",
+     "columnType": "METRIC",
+     "dataType": "INTEGER"
+    }
+   ],
+   "rows": [
+    [
+     "Cco17qjuIU0",
+     1592,
+     938,
+     43,
+     32.62,
+     7,
+     35,
+     0,
+     2
+    ],
+    [
+     "fy2HN-ngqww",
+     1220,
+     129,
+     13,
+     45.45,
+     0,
+     8,
+     0,
+     1
+    ],
+    [
+     "QhWbhEEXkhw",
+     1220,
+     869,
+     57,
+     42.05,
+     3,
+     25,
+     0,
+     1
+    ],
+    [
+     "eUgU-HG9_Hs",
+     1071,
+     156,
+     18,
+     60.27,
+     3,
+     10,
+     0,
+     0
+    ],
+    [
+     "17341VgauLg",
+     741,
+     130,
+     37,
+     134.81,
+     0,
+     4,
+     2,
+     0
+    ],
+    [
+     "P-p7xUN2ZMA",
+     678,
+     88,
+     18,
+     66.53,
+     0,
+     7,
+     0,
+     0
+    ],
+    [
+     "fj1wC3q7EN4",
+     647,
+     205,
+     70,
+     261.45,
+     1,
+     10,
+     0,
+     0
+    ],
+    [
+     "-rmnWT3Jz6w",
+     632,
+     95,
+     28,
+     70.07,
+     0,
+     3,
+     0,
+     0
+    ],
+    [
+     "7zzx40st58o",
+     550,
+     108,
+     25,
+     63.29,
+     1,
+     6,
+     0,
+     0
+    ],
+    [
+     "Ss8pYZkp4zo",
+     538,
+     48,
+     14,
+     87.75,
+     0,
+     2,
+     0,
+     0
+    ],
+    [
+     "bMkFg1mQr8A",
+     458,
+     50,
+     15,
+     59.73,
+     0,
+     0,
+     1,
+     0
+    ],
+    [
+     "cHPMRDJWejc",
+     255,
+     27,
+     16,
+     76.58,
+     1,
+     4,
+     0,
+     0
+    ],
+    [
+     "SIEevthvBV0",
+     226,
+     18,
+     13,
+     53.11,
+     0,
+     2,
+     0,
+     0
+    ],
+    [
+     "ZLsxAGFVY-k",
+     217,
+     25,
+     20,
+     63.57000000000001,
+     0,
+     4,
+     0,
+     0
+    ],
+    [
+     "KXR_fF9wrcM",
+     210,
+     15,
+     13,
+     63.41,
+     0,
+     4,
+     0,
+     0
+    ],
+    [
+     "5FWqFKcYC6g",
+     205,
+     19,
+     12,
+     64.15,
+     0,
+     4,
+     0,
+     0
+    ],
+    [
+     "hWmo19Qlqsc",
+     192,
+     21,
+     20,
+     69.26,
+     0,
+     6,
+     0,
+     0
+    ],
+    [
+     "O6jCz_DiDio",
+     171,
+     18,
+     15,
+     63.49,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     "Y-oOv9UU5yU",
+     158,
+     13,
+     15,
+     63.190000000000005,
+     0,
+     6,
+     0,
+     0
+    ],
+    [
+     "mKeiEfa_b7A",
+     114,
+     8,
+     13,
+     40.68,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     "kQ-UWxOUX5I",
+     109,
+     12,
+     23,
+     62.19,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     "FvEhre2MFEY",
+     108,
+     8,
+     16,
+     67.32,
+     0,
+     2,
+     0,
+     0
+    ],
+    [
+     "9EkUwdLL7wo",
+     104,
+     7,
+     15,
+     68.88,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     "sQgOe0NsGp0",
+     101,
+     9,
+     14,
+     56.330000000000005,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "_dVy6BEcAWs",
+     101,
+     9,
+     13,
+     73.28,
+     1,
+     5,
+     0,
+     0
+    ],
+    [
+     "SoQ26TqmRnQ",
+     97,
+     6,
+     12,
+     36.31,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "x71n_s95sW8",
+     92,
+     5,
+     13,
+     62.9,
+     0,
+     1,
+     1,
+     0
+    ],
+    [
+     "FTx7vNMOvyA",
+     91,
+     17,
+     46,
+     159.73,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "Y5_LlWmFRno",
+     91,
+     6,
+     11,
+     60.67,
+     0,
+     3,
+     0,
+     0
+    ],
+    [
+     "9QpbGzgxTzM",
+     86,
+     9,
+     17,
+     63.77,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "D8KMhsVOBdg",
+     86,
+     23,
+     49,
+     215.3,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "gI4amcuBSFc",
+     76,
+     7,
+     29,
+     121.06000000000002,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     "9hgo6eUcWDg",
+     68,
+     12,
+     25,
+     73.35,
+     0,
+     0,
+     0,
+     1
+    ],
+    [
+     "gt08tJlilO8",
+     66,
+     8,
+     19,
+     59.209999999999994,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "PaiIItkalbo",
+     48,
+     7,
+     28,
+     67.07,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "ebY2VFsLn7k",
+     45,
+     3,
+     12,
+     34.71,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "7JitGFTjsXw",
+     42,
+     1,
+     6,
+     31.59,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "31EqyiFH0T4",
+     32,
+     3,
+     12,
+     56.05,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "GPJQizHHspY",
+     30,
+     6,
+     49,
+     88.25,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "bZgUw1W8X6g",
+     28,
+     1,
+     10,
+     47.79,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     "88-pWgg8ieQ",
+     26,
+     2,
+     23,
+     59.93999999999999,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "da0aQnBMa04",
+     25,
+     5,
+     32,
+     79.38,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "VpC1Cv9LYuM",
+     25,
+     2,
+     12,
+     64.32,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     "RHufG031oFY",
+     24,
+     5,
+     39,
+     87.95,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "L5CisMKqKhQ",
+     24,
+     1,
+     11,
+     27.029999999999998,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "wcOw24o327A",
+     24,
+     2,
+     23,
+     63.190000000000005,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "UGPKhcVg8CE",
+     22,
+     1,
+     23,
+     45.19,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "ZX-UW6dlHlI",
+     20,
+     1,
+     13,
+     48.2,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "j-ncHWwld8M",
+     20,
+     3,
+     29,
+     72.22,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "UjL00ZRCgGI",
+     19,
+     13,
+     52,
+     50.89,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     "Ou6IdtVIiMI",
+     19,
+     1,
+     11,
+     34.62,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "pd-27Y3Ukok",
+     18,
+     2,
+     14,
+     36.81,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "6RHMot9E0Tc",
+     17,
+     1,
+     11,
+     42.49,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "e7hQSkqSnnM",
+     16,
+     1,
+     17,
+     40.08,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "tojXB3PL99M",
+     16,
+     1,
+     12,
+     55.84,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "TjidVK5SagE",
+     15,
+     0,
+     13,
+     45,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "_bZ6tPOi5O8",
+     12,
+     0,
+     12,
+     53.26,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "7-l8oXIplt0",
+     12,
+     7,
+     220,
+     432.99,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "kyXKD4TAY8Y",
+     11,
+     4,
+     35,
+     35.42,
+     0,
+     1,
+     0,
+     0
+    ],
+    [
+     "OS94QbIKvWw",
+     7,
+     4,
+     47,
+     9.49,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "ntU7BG2jzq4",
+     6,
+     0,
+     0,
+     3.25,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "UAf_G-mu7cc",
+     5,
+     4,
+     143,
+     28.83,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "J3rLpvQZanA",
+     4,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "Hy_JPtT9MJA",
+     4,
+     0,
+     11,
+     43.85,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "0KMtZW6mnmA",
+     4,
+     8,
+     258,
+     50.17,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "_SgVH8bGG5k",
+     3,
+     0,
+     7,
+     1.81,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "EAPiFqFBugc",
+     3,
+     17,
+     348,
+     66.68,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "DJEANTgbtD0",
+     3,
+     1,
+     24,
+     5.58,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "JOiV4L00zGM",
+     3,
+     6,
+     179,
+     35.43,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "4hvmu0J5JNM",
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     "k1v4M6YN4no",
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ]
+  },
+  "traffic": {
+   "kind": "youtubeAnalytics#resultTable",
+   "columnHeaders": [
+    {
+     "name": "insightTrafficSourceType",
+     "columnType": "DIMENSION",
+     "dataType": "STRING"
+    },
+    {
+     "name": "views",
+     "columnType": "METRIC",
+     "dataType": "INTEGER"
+    }
+   ],
+   "rows": [
+    [
+     "SHORTS",
+     12101
+    ],
+    [
+     "YT_SEARCH",
+     531
+    ],
+    [
+     "YT_OTHER_PAGE",
+     299
+    ],
+    [
+     "YT_CHANNEL",
+     48
+    ],
+    [
+     "NO_LINK_OTHER",
+     9
+    ],
+    [
+     "SUBSCRIBER",
+     8
+    ],
+    [
+     "EXT_URL",
+     8
+    ],
+    [
+     "RELATED_VIDEO",
+     1
+    ],
+    [
+     "NOTIFICATION",
+     1
+    ],
+    [
+     "SOUND_PAGE",
+     1
+    ]
+   ]
+  },
+  "geo": {
+   "kind": "youtubeAnalytics#resultTable",
+   "columnHeaders": [
+    {
+     "name": "country",
+     "columnType": "DIMENSION",
+     "dataType": "STRING"
+    },
+    {
+     "name": "views",
+     "columnType": "METRIC",
+     "dataType": "INTEGER"
+    }
+   ],
+   "rows": [
+    [
+     "US",
+     3940
+    ],
+    [
+     "BR",
+     2664
+    ],
+    [
+     "PH",
+     351
+    ],
+    [
+     "ID",
+     275
+    ],
+    [
+     "IN",
+     272
+    ],
+    [
+     "GB",
+     268
+    ],
+    [
+     "DE",
+     217
+    ],
+    [
+     "CA",
+     212
+    ],
+    [
+     "NL",
+     63
+    ],
+    [
+     "SE",
+     60
+    ]
+   ]
+  },
+  "daily": {
+   "kind": "youtubeAnalytics#resultTable",
+   "columnHeaders": [
+    {
+     "name": "day",
+     "columnType": "DIMENSION",
+     "dataType": "STRING"
+    },
+    {
+     "name": "views",
+     "columnType": "METRIC",
+     "dataType": "INTEGER"
+    },
+    {
+     "name": "subscribersGained",
+     "columnType": "METRIC",
+     "dataType": "INTEGER"
+    }
+   ],
+   "rows": [
+    [
+     "2026-09-21",
+     0,
+     0
+    ],
+    [
+     "2026-09-22",
+     0,
+     0
+    ],
+    [
+     "2026-09-23",
+     0,
+     0
+    ],
+    [
+     "2026-09-24",
+     0,
+     0
+    ],
+    [
+     "2026-09-25",
+     0,
+     0
+    ],
+    [
+     "2026-09-26",
+     0,
+     0
+    ],
+    [
+     "2026-09-27",
+     0,
+     0
+    ],
+    [
+     "2026-09-28",
+     0,
+     0
+    ],
+    [
+     "2026-09-29",
+     0,
+     0
+    ],
+    [
+     "2026-09-30",
+     0,
+     0
+    ],
+    [
+     "2026-10-01",
+     0,
+     0
+    ],
+    [
+     "2026-10-02",
+     0,
+     0
+    ],
+    [
+     "2026-10-03",
+     0,
+     0
+    ],
+    [
+     "2026-10-04",
+     0,
+     0
+    ],
+    [
+     "2026-10-05",
+     0,
+     0
+    ],
+    [
+     "2026-10-06",
+     0,
+     0
+    ],
+    [
+     "2026-10-07",
+     0,
+     0
+    ],
+    [
+     "2026-10-08",
+     0,
+     0
+    ],
+    [
+     "2026-10-09",
+     0,
+     0
+    ],
+    [
+     "2026-10-10",
+     0,
+     0
+    ],
+    [
+     "2026-10-11",
+     0,
+     0
+    ],
+    [
+     "2026-10-12",
+     0,
+     0
+    ],
+    [
+     "2026-10-13",
+     0,
+     0
+    ],
+    [
+     "2026-10-14",
+     0,
+     0
+    ],
+    [
+     "2026-10-15",
+     0,
+     0
+    ],
+    [
+     "2026-10-16",
+     816,
+     0
+    ],
+    [
+     "2026-10-17",
+     1336,
+     3
+    ],
+    [
+     "2026-10-18",
+     1099,
+     1
+    ],
+    [
+     "2026-10-19",
+     454,
+     1
+    ],
+    [
+     "2026-10-20",
+     785,
+     0
+    ],
+    [
+     "2026-10-21",
+     1178,
+     1
+    ],
+    [
+     "2026-10-22",
+     763,
+     1
+    ],
+    [
+     "2026-10-23",
+     376,
+     0
+    ],
+    [
+     "2026-10-24",
+     157,
+     0
+    ],
+    [
+     "2026-10-25",
+     71,
+     0
+    ],
+    [
+     "2026-10-26",
+     97,
+     0
+    ],
+    [
+     "2026-10-27",
+     58,
+     1
+    ],
+    [
+     "2026-10-28",
+     89,
+     0
+    ],
+    [
+     "2026-10-29",
+     197,
+     0
+    ],
+    [
+     "2026-10-30",
+     1026,
+     0
+    ],
+    [
+     "2026-10-31",
+     1231,
+     0
+    ],
+    [
+     "2026-11-01",
+     129,
+     0
+    ],
+    [
+     "2026-11-02",
+     35,
+     0
+    ],
+    [
+     "2026-11-03",
+     77,
+     0
+    ],
+    [
+     "2026-11-04",
+     85,
+     0
+    ],
+    [
+     "2026-11-05",
+     39,
+     0
+    ],
+    [
+     "2026-11-06",
+     43,
+     0
+    ],
+    [
+     "2026-11-07",
+     51,
+     0
+    ],
+    [
+     "2026-11-08",
+     8,
+     0
+    ],
+    [
+     "2026-11-09",
+     1,
+     0
+    ],
+    [
+     "2026-11-10",
+     4,
+     0
+    ],
+    [
+     "2026-11-11",
+     3,
+     0
+    ],
+    [
+     "2026-11-12",
+     0,
+     0
+    ],
+    [
+     "2026-11-13",
+     0,
+     0
+    ],
+    [
+     "2026-11-14",
+     2,
+     0
+    ],
+    [
+     "2026-11-15",
+     0,
+     0
+    ],
+    [
+     "2026-11-16",
+     2,
+     0
+    ],
+    [
+     "2026-11-17",
+     2212,
+     9
+    ],
+    [
+     "2026-11-18",
+     631,
+     1
+    ]
+   ]
+  },
+  "long": {}
+ }
+}
