@@ -73,7 +73,7 @@ shots = [
          narration="Here's Slovenia as a share of Poland, adjusted for prices. {p} In 1992, a hundred and seventy-six percent. {pp} For the next sixteen years, Poland barely closed the gap. In 2008, Slovenia was still about sixty percent richer. {p} Then the line falls off a cliff.",
          keys=[dict(at="In 1992", year=1992.0, dur=1.5), dict(at="next sixteen years", year=2004.0, dur=3.0), dict(at="In 2008", year=2008.0, dur=1.5), dict(at="falls off a cliff", year=2013.0, dur=2.5)],
          labels=[dict(at="In 1992", iso="SVN", year=1992), dict(at="sixty percent richer", iso="SVN", year=2008)],
-         react=[dict(at="In 1992", pose="pointL"), dict(at="barely closed", pose="think"), dict(at="still sixty percent", pose="shrug"), dict(at="off a cliff", pose="shock")]),
+         react=[dict(at="In 1992", pose="pointL"), dict(at="barely closed", pose="think"), dict(at="about sixty percent", pose="shrug"), dict(at="off a cliff", pose="shock")]),
 
     # ---------------- 2 · THE CRASH ----------------
     dict(act=2, type="bars", mode="abs", set="imfg", iso="SVN", years=[2000, 2030], start=2007.0, fmt="pct1", src=IMF + " · real GDP growth, Slovenia (annual %); 2026+ are IMF estimates and forecasts",
