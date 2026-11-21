@@ -329,3 +329,42 @@ save(8, "How the Dutch Traded Manhattan for a Tiny Spice Island",
           arrows=[dict(from_=[130.1, -4.95], to=[129.72, -4.56])]),
      "2026-11-24T17:00:00Z",
      tags=["manhattan", "new amsterdam", "new york", "nutmeg", "treaty of breda", "dutch history", "spice islands", "indonesia"])
+
+# ---------------------------------------------------------------- 9. Danish West Indies 1917 ($25M in gold) + Greenland side deal
+STT = [-64.93, 18.34]
+STX = [-64.75, 17.73]
+VIC = {"c": [-64.85, 18.05], "s": 42}
+save(9, "How Denmark Sold 3 Islands to the US for $25 Million in Gold",
+     "DENMARK SOLD|THESE ISLANDS|FOR $25M IN GOLD",
+     [
+         dict(say="In 1917, Denmark sold three Caribbean islands to the United States for 25 million dollars in gold. Today they're the U.S. Virgin Islands.",
+              cam=VIC, date="1917", pins=[dict(ll=STT, label="St. Thomas", left=True, d=2.0), dict(ll=[-64.74, 18.34], label="St. John", d=2.4), dict(ll=STX, label="St. Croix", d=2.8)],
+              balls=[dict(ll=[-64.5, 18.0], iso="DNK", skin="flag", face="smirk", r=0.7, d=0.8)], cards=[dict(text="Price:", big="$25 million in gold", iso="USA", d=5.0)]),
+         dict(say="America had tried before. In 1867, Denmark agreed to sell two of the islands for seven and a half million. The U.S. Senate never ratified it.",
+              date="1867", cards=[dict(text="1867:", big="Senate says no", iso="USA", d=4.4)], balls=[dict(ll=[-64.5, 18.0], iso="DNK", skin="flag", face="shock", r=0.7, d=0)]),
+         dict(say="In 1902, they tried again. This time the Danish parliament's upper house blocked it, with a tied vote.",
+              date="1902", cards=[dict(text="1902:", big="blocked, 32 to 32", iso="DNK", d=3.4)]),
+         dict(say="Then came World War One. Washington feared Germany could take over Denmark, and grab the islands on the route to the Panama Canal.",
+              date="1915", cards=[], balls=[], cam={"c": [-30, 30], "s": 0.4}, own={"DEU": "DEU", "DNK": "DNK"},
+              arrows=[dict(from_=[10.4, 51.2], to=[10.0, 56.0], color="#ff5a3c", d=4.2), dict(from_=[-64.9, 18.3], to=[-79.7, 9.1], color="#ffcf40", d=6.6)],
+              pins=[dict(ll=[-79.7, 9.1], label="Panama Canal", d=6.8)]),
+         dict(say="So in August 1916, the two countries signed a treaty in a New York hotel.",
+              date="1916", arrows=[], pins=[dict(ll=[-73.98, 40.75], label="New York", d=1.0)], cam={"c": [-74.0, 40.7], "s": 18}),
+         dict(say="Danish voters approved it in a referendum. And on March 31st, 1917, the Danish flag came down and the American flag went up.",
+              date="31 MARCH 1917", pins=[], cam=VIC, balls=[dict(ll=[-64.5, 18.0], iso="DNK", skin="flag", face="sad", r=0.7, d=0.6), dict(ll=[-65.1, 17.85], iso="USA", skin="flag", face="happy", r=0.7, d=3.8)],
+              cards=[dict(text="Every March 31:", big="Transfer Day", iso="USA", d=5.6)]),
+         dict(say="Six days later, the United States entered the war.",
+              date="6 APRIL 1917", cards=[]),
+         dict(say="But here's the twist. During the talks, the U.S. also declared it would not object to Denmark taking control of all of Greenland.",
+              date=None, balls=[], cam={"c": [-42, 70], "s": 1.0}, own={"GRL": "DNK", "DNK": "DNK"}, od=2.0,
+              cards=[dict(text="The side deal:", big="Greenland → Denmark", iso="DNK", d=3.0)]),
+         dict(say="So America got three small islands, and gave up any objection to Denmark owning one of the biggest islands on Earth.",
+              cards=[], balls=[dict(ll=[-42, 74], iso="DNK", skin="flag", face="cool", r=0.9, d=2.4)]),
+         dict(say="A century later, an American president offered to buy Greenland.",
+              date="2019", balls=[dict(ll=[-42, 74], iso="DNK", skin="flag", face="shock", r=0.9, d=0)], cards=[dict(text="2019:", big="\"Can we buy Greenland?\"", iso="USA", d=1.2)]),
+     ],
+     "1917: Denmark sold St. Thomas, St. John and St. Croix to the United States for $25 million in gold. Earlier deals failed in 1867 (U.S. Senate) and 1902 (a tied vote in Denmark). And in the talks, the U.S. declared it wouldn't object to Denmark extending its control to all of Greenland.",
+     dict(title="DENMARK SOLD|THESE ISLANDS|FOR $25M IN GOLD", c=[-64.8, 18.05], s=55, y=0.66,
+          balls=[dict(ll=[-64.35, 18.25], iso="DNK", skin="flag", face="smirk", r=120), dict(ll=[-65.25, 17.75], iso="USA", skin="flag", face="happy", r=130)]),
+     "2026-11-25T17:00:00Z",
+     tags=["us virgin islands", "denmark", "danish west indies", "greenland", "1917", "world war 1", "transfer day"])
