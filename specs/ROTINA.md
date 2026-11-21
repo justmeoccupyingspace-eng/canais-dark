@@ -19,7 +19,7 @@ Dono: Kauan. Regra dele: "A ÚNICA IMPORTÂNCIA É RESULTADO". Responder sempre 
 - PRÉVIA obrigatória antes de enviar: gerar es.json sintético (165 ppm) e quadros: `CHROME_PATH=/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell node scripts/eserender.mjs <es.json> stills <prefixo> t1,t2,... 0.4` e `... thumb <saida.jpg>`; olhar os quadros (Read) e corrigir sobreposição, bandeira errada, câmera no vazio.
 - Enviar Short: `gh api -X POST .../actions/workflows/ese.yml/dispatches -f ref=main -f 'inputs[spec]=specs/ese/b-pt-NNN.json' -f 'inputs[upload]=B'` (A: a-en-NNN, upload=A). A data/hora vem do spec.
 - Antes de enviar um longo: conferir que todo `at` (keys/labels/react/items/stats) aparece literalmente na narração do shot (o prep falha com 'frase não encontrada').
-- Enviar longo A: longo.yml com inputs spec=specs/long/a-LNN.py, mode=full, upload=A, at=<ISO 23:00Z>. Se um ato sair fora (wpm fora de 110–195 ou align < 0,85), reescrever só esse ato e rodar de novo com tts_cache_run=<run anterior> (só esse ato gasta cota).
+- Enviar longo A: longo.yml com inputs spec=specs/long/a-LNN.py, mode=full, upload=A, at=<ISO 23:00Z>, model=gemini-3.1-flash-tts-preview (21/11: o 3.8 lê ~25 s das instruções em voz alta e estragou atos; o 3.1 saiu limpo). Disparar o LONGO ANTES dos Shorts do B (os Shorts do B também tentam o 3.1 primeiro e caem para o 3.8 quando acaba). Se um ato sair fora (wpm fora de 110–195 ou align < 0,85), reescrever só esse ato e rodar de novo com tts_cache_run=<run anterior> (só esse ato gasta cota).
 - Conferir em cada run: linha `notice]{...wpm...}` (Short: 150–195 ppm) e `enviado: <ID> agendado para ...`.
 
 ## 3. Fechar
