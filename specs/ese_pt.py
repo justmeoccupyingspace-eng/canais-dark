@@ -654,3 +654,84 @@ save(14, "E se São Paulo tivesse virado um país? #curiosidades #brasil",
      dict(title="E SE SÃO PAULO|VIRASSE UM|PAÍS?", c=[-48.0, -21.0], s=3.4, y=0.68, own={"BRA": "BRA", "BR-SP": "SPX"},
           balls=[dict(ll=[-44.4, -25.4], iso="SPX", skin="flag", face="cool", r=130), dict(ll=[-46.5, -15.5], iso="BRA", face="shock", skin="red", r=140)]),
      "2026-11-23T21:00:00Z", tags=["são paulo", "revolução constitucionalista", "1932", "9 de julho", "mmdc", "getúlio vargas", "paulista"], uf=True)
+
+# ---------------------------------------------------------------- 15. Amazônia país (Amazônia Legal ~5 mi km², 59% do Brasil)
+AMZS = ["BR-AC", "BR-AP", "BR-AM", "BR-PA", "BR-RO", "BR-RR", "BR-TO", "BR-MT", "BR-MA"]
+AOWN = {k: "AMZ" for k in AMZS}
+ABACK = {k: "BRA" for k in AMZS}
+save(15, "E se a Amazônia fosse um país? #curiosidades #brasil",
+     "E SE A AMAZÔNIA|FOSSE UM|PAÍS?",
+     [
+         dict(say="E se a Amazônia fosse um país? Não é só a floresta. Tô falando da Amazônia Legal: nove estados, mais da metade do Brasil.",
+              cam={"c": [-55, -12], "s": 1.6}, own={"BRA": "BRA", **AOWN}, od=1.4,
+              balls=[dict(ll=[-62, -5], iso="AMZ", skin="flag", face="cool", r=0.85, d=1.6), dict(ll=[-45, -19], iso="BRA", face="shock", d=2.6)]),
+         dict(say="Acre, Amapá, Amazonas, Pará, Rondônia, Roraima, Tocantins, Mato Grosso e parte do Maranhão.",
+              balls=[], cards=[dict(text="Amazônia Legal:", big="9 estados", iso="AMZ", d=0.6)], hl=AMZS),
+         dict(say="Juntos, são uns cinco milhões de quilômetros quadrados. Quase sessenta por cento do território brasileiro.",
+              hl=[], cards=[dict(text="Área:", big="~5 milhões de km²", iso="AMZ", d=1.0), dict(text="Do Brasil:", big="~59%", iso="BRA", d=4.2)]),
+         dict(say="Como país, a Amazônia seria a sexta maior do mundo. Atrás só de Rússia, Canadá, Estados Unidos, China e Austrália.",
+              cards=[dict(text="Ranking mundial:", big="6º maior país", iso="AMZ", d=1.0)], cam={"c": [-30, 5], "s": 0.45}),
+         dict(say="Seria maior que a União Europeia inteira.",
+              cards=[dict(text="Amazônia:", big="maior que a União Europeia", iso="AMZ", d=0.4)]),
+         dict(say="E teria a maior parte da maior floresta tropical do planeta, e o rio mais caudaloso do mundo, o Amazonas.",
+              cards=[], cam={"c": [-58, -3.5], "s": 3.0}, pins=[dict(ll=[-60.02, -3.1], label="Manaus", d=3.4), dict(ll=[-48.5, -1.45], label="Belém", d=4.2)],
+              balls=[dict(ll=[-64, -6.5], iso="AMZ", skin="flag", face="love", r=0.8, d=1.2)]),
+         dict(say="Mas com mais de vinte milhões de pessoas espalhadas nesse tamanho todo, seria um dos países mais vazios do mundo.",
+              pins=[], balls=[], cards=[dict(text="População:", big="20+ milhões", iso="AMZ", d=1.4)], cam={"c": [-55, -9], "s": 1.8}),
+         dict(say="E o resto do Brasil? Encolhia pra uns três milhões e meio de quilômetros quadrados.",
+              cards=[dict(text="Resto do Brasil:", big="~3,5 milhões de km²", iso="BRA", d=1.6)], balls=[dict(ll=[-44, -16], iso="BRA", face="sad", r=0.8, d=1.0)]),
+         dict(say="E o detalhe: mesmo assim, ainda seria maior que a Índia.",
+              cards=[dict(text="Resto do Brasil:", big="maior que a Índia", iso="BRA", d=1.4)], balls=[dict(ll=[-44, -16], iso="BRA", face="cool", r=0.8, d=0.2)]),
+         dict(say="Brasília ia ficar quase na fronteira. E pra ir de São Paulo a Manaus, você ia precisar de passaporte.",
+              cards=[], balls=[], cam={"c": [-53, -14], "s": 2.0}, arrows=[dict(from_=[-46.6, -23.5], to=[-60.0, -3.2], d=2.4, color="#ffcf40")],
+              pins=[dict(ll=[-47.9, -15.8], label="Brasília", d=0.4)]),
+         dict(say="Me fala: Amazônia país ia dar certo? Comenta aí. E manda pro seu amigo do Norte.",
+              arrows=[], pins=[], cam={"c": [-55, -12], "s": 1.6}, own=ABACK, od=0.6,
+              balls=[dict(ll=[-62, -5], iso="AMZ", skin="flag", face="smirk", r=0.85, d=0.4), dict(ll=[-45, -19], iso="BRA", face="smirk", d=1.0)]),
+     ],
+     "A Amazônia Legal (Acre, Amapá, Amazonas, Pará, Rondônia, Roraima, Tocantins, Mato Grosso e parte do Maranhão) tem uns 5 milhões de km², quase 60% do Brasil. Como país, seria o 6º maior do mundo, maior que a União Europeia. E o resto do Brasil ainda seria maior que a Índia.\n"
+     "Amazônia país ia dar certo? Comenta aí. E manda pro seu amigo do Norte.",
+     dict(title="E SE A AMAZÔNIA|FOSSE UM|PAÍS?", c=[-54, -10], s=1.75, y=0.68, own={"BRA": "BRA", **AOWN},
+          balls=[dict(ll=[-62.5, -4.5], iso="AMZ", skin="flag", face="cool", r=140), dict(ll=[-44.5, -18.5], iso="BRA", face="shock", skin="red", r=140)]),
+     "2026-11-24T15:00:00Z", tags=["amazônia", "amazônia legal", "norte", "manaus", "belém", "floresta amazônica", "país"], uf=True)
+
+# ---------------------------------------------------------------- 16. Questão do Pirara (laudo do rei da Itália, 1904)
+PIR = [-59.69, 3.62]
+PZR = [[-59.95, 4.9], [-59.6, 4.5], [-59.75, 3.9], [-59.8, 3.4], [-59.95, 2.8], [-59.75, 2.2], [-59.3, 1.9], [-58.9, 2.3], [-58.8, 3.0], [-58.6, 3.6], [-58.5, 4.1], [-59.3, 4.7]]
+RRC = {"c": [-60.2, 3.2], "s": 7.0}
+save(16, "E se essa parte da Guiana fosse do Brasil? #curiosidades #brasil",
+     "O BRASIL|PERDEU ISSO|PRA INGLATERRA",
+     [
+         dict(say="Em mil novecentos e quatro, o Brasil perdeu um pedaço de terra pra Inglaterra. E quem decidiu foi o rei da Itália.",
+              cam={"c": [-60.5, 2.0], "s": 4.0}, own={"BRA": "BRA", "GUY": "GUY", "BR-RR": "BRA"}, zones=[dict(coords=PZR, iso="GBR", op=0.92, d=1.0)],
+              balls=[dict(ll=[-58.0, 4.6], iso="GBR", skin="flag", face="smirk", r=0.7, d=1.4), dict(ll=[-61.5, 1.0], iso="BRA", face="shock", d=2.4)]),
+         dict(say="Lá em cima, Roraima faz fronteira com a Guiana. Naquela época, ela era colônia inglesa: a Guiana Inglesa.",
+              zones=[], balls=[], hl=["BR-RR", "GUY"], cards=[dict(text="Antes de 1966:", big="Guiana Inglesa", iso="GBR", d=3.6)]),
+         dict(say="Brasil e Inglaterra brigavam por uma região chamada Pirara. Em mil oitocentos e quarenta e dois, combinaram deixar a área neutra até decidir.",
+              hl=[], cards=[], cam=RRC, zones=[dict(coords=PZR, color="#ffcf40", op=0.45, label="PIRARA", d=1.6)], pins=[dict(ll=PIR, label="Pirara", d=2.2)]),
+         dict(say="A decisão demorou sessenta anos. Em mil novecentos e um, os dois aceitaram um juiz: o rei da Itália, Vítor Emanuel Terceiro.",
+              pins=[], cards=[dict(text="Juiz:", big="rei da Itália", iso="ITA", d=3.2)]),
+         dict(say="O Brasil mandou um dos seus maiores diplomatas, Joaquim Nabuco. Ele escreveu volumes e volumes defendendo o lado brasileiro.",
+              cards=[dict(text="Advogado do Brasil:", big="Joaquim Nabuco", iso="BRA", d=1.0)], balls=[dict(ll=[-61.2, 2.6], iso="BRA", face="cool", r=0.7, d=1.4)]),
+         dict(say="Em mil novecentos e quatro, saiu a decisão: a maior parte ficou com a Inglaterra.",
+              zones=[dict(coords=PZR, iso="GBR", op=0.92, d=2.0)], balls=[dict(ll=[-58.4, 4.2], iso="GBR", skin="flag", face="happy", r=0.7, d=2.6)],
+              cards=[dict(text="1904:", big="maior parte pra Inglaterra", iso="GBR", d=2.2)]),
+         dict(say="Depois de ganhar Acre, Amapá e Palmas, dessa vez o Brasil perdeu.",
+              cards=[], balls=[dict(ll=[-61.2, 2.6], iso="BRA", face="sad", r=0.75, d=0.6)]),
+         dict(say="Hoje essa área é parte da Guiana, que ficou independente da Inglaterra em mil novecentos e sessenta e seis.",
+              balls=[], zones=[dict(coords=PZR, iso="GUY", op=0.92, d=1.0)], cards=[dict(text="1966:", big="Guiana independente", iso="GUY", d=3.8)]),
+         dict(say="Agora imagina o contrário. Roraima ia ser maior, e a fronteira ia ficar no rio Rupununi.",
+              cards=[], zones=[dict(coords=PZR, iso="BRA", op=0.92, d=1.0)], pins=[dict(ll=[-58.75, 3.3], label="Rio Rupununi", d=3.0)],
+              balls=[dict(ll=[-60.6, 2.2], iso="BRA", face="love", r=0.75, d=1.6)]),
+         dict(say="E a Guiana, que a Venezuela já quer dividir por causa do Essequibo, ia ficar ainda menor.",
+              pins=[], balls=[], cam={"c": [-59.5, 5.5], "s": 2.6}, hl=["GUY"], cards=[dict(text="Guiana:", big="ainda menor", iso="GUY", d=2.8)]),
+         dict(say="Me fala: o rei da Itália foi justo? Comenta aí. E manda pro seu amigo de Roraima.",
+              hl=[], cards=[], cam={"c": [-60.5, 2.0], "s": 4.0}, zones=[dict(coords=PZR, iso="GUY", op=0.92, d=-1)],
+              balls=[dict(ll=[-58.0, 4.6], iso="GUY", face="smirk", r=0.7, d=0.4), dict(ll=[-61.5, 1.0], iso="BRA", face="smirk", d=1.0)]),
+     ],
+     "Por 60 anos, Brasil e Inglaterra brigaram pela região do Pirara, na fronteira de Roraima com a então Guiana Inglesa. Em 1904, o rei da Itália, Vítor Emanuel III, deu a maior parte para a Inglaterra, mesmo com Joaquim Nabuco defendendo o Brasil. E se fosse o contrário?\n"
+     "O rei da Itália foi justo? Comenta aí. E manda pro seu amigo de Roraima.",
+     dict(title="O BRASIL|PERDEU ISSO|PRA INGLATERRA", c=[-60.0, 3.0], s=6.0, y=0.66, own={"BRA": "BRA", "GUY": "GUY"}, zones=[dict(coords=PZR, iso="GBR", op=0.95)],
+          balls=[dict(ll=[-57.9, 4.3], iso="GBR", skin="flag", face="smirk", r=125), dict(ll=[-61.8, 1.6], iso="BRA", face="rage", skin="red", r=145)],
+          arrows=[dict(from_=[-61.2, 2.3], to=[-59.4, 3.2])]),
+     "2026-11-24T21:00:00Z", tags=["roraima", "guiana", "pirara", "joaquim nabuco", "inglaterra", "fronteira", "essequibo"], uf=True)

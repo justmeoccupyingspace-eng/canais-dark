@@ -1,0 +1,739 @@
+{
+ "id": "b-pt-016",
+ "channel": "B",
+ "lang": "pt",
+ "format": "short",
+ "hook": "O BRASIL|PERDEU ISSO|PRA INGLATERRA",
+ "hook_end": 2.8,
+ "badge": "SÓ IMAGINAÇÃO",
+ "uf": true,
+ "voice": "Fenrir",
+ "music": {
+  "track": "Hidden Agenda",
+  "vol": 0.12,
+  "alt": [
+   "Investigations",
+   "Curiosity"
+  ]
+ },
+ "beats": [
+  {
+   "say": "Em mil novecentos e quatro, o Brasil perdeu um pedaço de terra pra Inglaterra. E quem decidiu foi o rei da Itália.",
+   "cam": {
+    "c": [
+     -60.5,
+     2.0
+    ],
+    "s": 4.0
+   },
+   "own": {
+    "BRA": "BRA",
+    "GUY": "GUY",
+    "BR-RR": "BRA"
+   },
+   "zones": [
+    {
+     "coords": [
+      [
+       -59.95,
+       4.9
+      ],
+      [
+       -59.6,
+       4.5
+      ],
+      [
+       -59.75,
+       3.9
+      ],
+      [
+       -59.8,
+       3.4
+      ],
+      [
+       -59.95,
+       2.8
+      ],
+      [
+       -59.75,
+       2.2
+      ],
+      [
+       -59.3,
+       1.9
+      ],
+      [
+       -58.9,
+       2.3
+      ],
+      [
+       -58.8,
+       3.0
+      ],
+      [
+       -58.6,
+       3.6
+      ],
+      [
+       -58.5,
+       4.1
+      ],
+      [
+       -59.3,
+       4.7
+      ]
+     ],
+     "iso": "GBR",
+     "op": 0.92,
+     "d": 1.0
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -58.0,
+      4.6
+     ],
+     "iso": "GBR",
+     "skin": "flag",
+     "face": "smirk",
+     "r": 0.7,
+     "d": 1.4
+    },
+    {
+     "ll": [
+      -61.5,
+      1.0
+     ],
+     "iso": "BRA",
+     "face": "shock",
+     "d": 2.4
+    }
+   ]
+  },
+  {
+   "say": "Lá em cima, Roraima faz fronteira com a Guiana. Naquela época, ela era colônia inglesa: a Guiana Inglesa.",
+   "zones": [],
+   "balls": [],
+   "hl": [
+    "BR-RR",
+    "GUY"
+   ],
+   "cards": [
+    {
+     "text": "Antes de 1966:",
+     "big": "Guiana Inglesa",
+     "iso": "GBR",
+     "d": 3.6
+    }
+   ]
+  },
+  {
+   "say": "Brasil e Inglaterra brigavam por uma região chamada Pirara. Em mil oitocentos e quarenta e dois, combinaram deixar a área neutra até decidir.",
+   "hl": [],
+   "cards": [],
+   "cam": {
+    "c": [
+     -60.2,
+     3.2
+    ],
+    "s": 7.0
+   },
+   "zones": [
+    {
+     "coords": [
+      [
+       -59.95,
+       4.9
+      ],
+      [
+       -59.6,
+       4.5
+      ],
+      [
+       -59.75,
+       3.9
+      ],
+      [
+       -59.8,
+       3.4
+      ],
+      [
+       -59.95,
+       2.8
+      ],
+      [
+       -59.75,
+       2.2
+      ],
+      [
+       -59.3,
+       1.9
+      ],
+      [
+       -58.9,
+       2.3
+      ],
+      [
+       -58.8,
+       3.0
+      ],
+      [
+       -58.6,
+       3.6
+      ],
+      [
+       -58.5,
+       4.1
+      ],
+      [
+       -59.3,
+       4.7
+      ]
+     ],
+     "color": "#ffcf40",
+     "op": 0.45,
+     "label": "PIRARA",
+     "d": 1.6
+    }
+   ],
+   "pins": [
+    {
+     "ll": [
+      -59.69,
+      3.62
+     ],
+     "label": "Pirara",
+     "d": 2.2
+    }
+   ]
+  },
+  {
+   "say": "A decisão demorou sessenta anos. Em mil novecentos e um, os dois aceitaram um juiz: o rei da Itália, Vítor Emanuel Terceiro.",
+   "pins": [],
+   "cards": [
+    {
+     "text": "Juiz:",
+     "big": "rei da Itália",
+     "iso": "ITA",
+     "d": 3.2
+    }
+   ]
+  },
+  {
+   "say": "O Brasil mandou um dos seus maiores diplomatas, Joaquim Nabuco. Ele escreveu volumes e volumes defendendo o lado brasileiro.",
+   "cards": [
+    {
+     "text": "Advogado do Brasil:",
+     "big": "Joaquim Nabuco",
+     "iso": "BRA",
+     "d": 1.0
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -61.2,
+      2.6
+     ],
+     "iso": "BRA",
+     "face": "cool",
+     "r": 0.7,
+     "d": 1.4
+    }
+   ]
+  },
+  {
+   "say": "Em mil novecentos e quatro, saiu a decisão: a maior parte ficou com a Inglaterra.",
+   "zones": [
+    {
+     "coords": [
+      [
+       -59.95,
+       4.9
+      ],
+      [
+       -59.6,
+       4.5
+      ],
+      [
+       -59.75,
+       3.9
+      ],
+      [
+       -59.8,
+       3.4
+      ],
+      [
+       -59.95,
+       2.8
+      ],
+      [
+       -59.75,
+       2.2
+      ],
+      [
+       -59.3,
+       1.9
+      ],
+      [
+       -58.9,
+       2.3
+      ],
+      [
+       -58.8,
+       3.0
+      ],
+      [
+       -58.6,
+       3.6
+      ],
+      [
+       -58.5,
+       4.1
+      ],
+      [
+       -59.3,
+       4.7
+      ]
+     ],
+     "iso": "GBR",
+     "op": 0.92,
+     "d": 2.0
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -58.4,
+      4.2
+     ],
+     "iso": "GBR",
+     "skin": "flag",
+     "face": "happy",
+     "r": 0.7,
+     "d": 2.6
+    }
+   ],
+   "cards": [
+    {
+     "text": "1904:",
+     "big": "maior parte pra Inglaterra",
+     "iso": "GBR",
+     "d": 2.2
+    }
+   ]
+  },
+  {
+   "say": "Depois de ganhar Acre, Amapá e Palmas, dessa vez o Brasil perdeu.",
+   "cards": [],
+   "balls": [
+    {
+     "ll": [
+      -61.2,
+      2.6
+     ],
+     "iso": "BRA",
+     "face": "sad",
+     "r": 0.75,
+     "d": 0.6
+    }
+   ]
+  },
+  {
+   "say": "Hoje essa área é parte da Guiana, que ficou independente da Inglaterra em mil novecentos e sessenta e seis.",
+   "balls": [],
+   "zones": [
+    {
+     "coords": [
+      [
+       -59.95,
+       4.9
+      ],
+      [
+       -59.6,
+       4.5
+      ],
+      [
+       -59.75,
+       3.9
+      ],
+      [
+       -59.8,
+       3.4
+      ],
+      [
+       -59.95,
+       2.8
+      ],
+      [
+       -59.75,
+       2.2
+      ],
+      [
+       -59.3,
+       1.9
+      ],
+      [
+       -58.9,
+       2.3
+      ],
+      [
+       -58.8,
+       3.0
+      ],
+      [
+       -58.6,
+       3.6
+      ],
+      [
+       -58.5,
+       4.1
+      ],
+      [
+       -59.3,
+       4.7
+      ]
+     ],
+     "iso": "GUY",
+     "op": 0.92,
+     "d": 1.0
+    }
+   ],
+   "cards": [
+    {
+     "text": "1966:",
+     "big": "Guiana independente",
+     "iso": "GUY",
+     "d": 3.8
+    }
+   ]
+  },
+  {
+   "say": "Agora imagina o contrário. Roraima ia ser maior, e a fronteira ia ficar no rio Rupununi.",
+   "cards": [],
+   "zones": [
+    {
+     "coords": [
+      [
+       -59.95,
+       4.9
+      ],
+      [
+       -59.6,
+       4.5
+      ],
+      [
+       -59.75,
+       3.9
+      ],
+      [
+       -59.8,
+       3.4
+      ],
+      [
+       -59.95,
+       2.8
+      ],
+      [
+       -59.75,
+       2.2
+      ],
+      [
+       -59.3,
+       1.9
+      ],
+      [
+       -58.9,
+       2.3
+      ],
+      [
+       -58.8,
+       3.0
+      ],
+      [
+       -58.6,
+       3.6
+      ],
+      [
+       -58.5,
+       4.1
+      ],
+      [
+       -59.3,
+       4.7
+      ]
+     ],
+     "iso": "BRA",
+     "op": 0.92,
+     "d": 1.0
+    }
+   ],
+   "pins": [
+    {
+     "ll": [
+      -58.75,
+      3.3
+     ],
+     "label": "Rio Rupununi",
+     "d": 3.0
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -60.6,
+      2.2
+     ],
+     "iso": "BRA",
+     "face": "love",
+     "r": 0.75,
+     "d": 1.6
+    }
+   ]
+  },
+  {
+   "say": "E a Guiana, que a Venezuela já quer dividir por causa do Essequibo, ia ficar ainda menor.",
+   "pins": [],
+   "balls": [],
+   "cam": {
+    "c": [
+     -59.5,
+     5.5
+    ],
+    "s": 2.6
+   },
+   "hl": [
+    "GUY"
+   ],
+   "cards": [
+    {
+     "text": "Guiana:",
+     "big": "ainda menor",
+     "iso": "GUY",
+     "d": 2.8
+    }
+   ]
+  },
+  {
+   "say": "Me fala: o rei da Itália foi justo? Comenta aí. E manda pro seu amigo de Roraima.",
+   "hl": [],
+   "cards": [],
+   "cam": {
+    "c": [
+     -60.5,
+     2.0
+    ],
+    "s": 4.0
+   },
+   "zones": [
+    {
+     "coords": [
+      [
+       -59.95,
+       4.9
+      ],
+      [
+       -59.6,
+       4.5
+      ],
+      [
+       -59.75,
+       3.9
+      ],
+      [
+       -59.8,
+       3.4
+      ],
+      [
+       -59.95,
+       2.8
+      ],
+      [
+       -59.75,
+       2.2
+      ],
+      [
+       -59.3,
+       1.9
+      ],
+      [
+       -58.9,
+       2.3
+      ],
+      [
+       -58.8,
+       3.0
+      ],
+      [
+       -58.6,
+       3.6
+      ],
+      [
+       -58.5,
+       4.1
+      ],
+      [
+       -59.3,
+       4.7
+      ]
+     ],
+     "iso": "GUY",
+     "op": 0.92,
+     "d": -1
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -58.0,
+      4.6
+     ],
+     "iso": "GUY",
+     "face": "smirk",
+     "r": 0.7,
+     "d": 0.4
+    },
+    {
+     "ll": [
+      -61.5,
+      1.0
+     ],
+     "iso": "BRA",
+     "face": "smirk",
+     "d": 1.0
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "O BRASIL|PERDEU ISSO|PRA INGLATERRA",
+  "c": [
+   -60.0,
+   3.0
+  ],
+  "s": 6.0,
+  "y": 0.66,
+  "own": {
+   "BRA": "BRA",
+   "GUY": "GUY"
+  },
+  "zones": [
+   {
+    "coords": [
+     [
+      -59.95,
+      4.9
+     ],
+     [
+      -59.6,
+      4.5
+     ],
+     [
+      -59.75,
+      3.9
+     ],
+     [
+      -59.8,
+      3.4
+     ],
+     [
+      -59.95,
+      2.8
+     ],
+     [
+      -59.75,
+      2.2
+     ],
+     [
+      -59.3,
+      1.9
+     ],
+     [
+      -58.9,
+      2.3
+     ],
+     [
+      -58.8,
+      3.0
+     ],
+     [
+      -58.6,
+      3.6
+     ],
+     [
+      -58.5,
+      4.1
+     ],
+     [
+      -59.3,
+      4.7
+     ]
+    ],
+    "iso": "GBR",
+    "op": 0.95
+   }
+  ],
+  "balls": [
+   {
+    "ll": [
+     -57.9,
+     4.3
+    ],
+    "iso": "GBR",
+    "skin": "flag",
+    "face": "smirk",
+    "r": 125
+   },
+   {
+    "ll": [
+     -61.8,
+     1.6
+    ],
+    "iso": "BRA",
+    "face": "rage",
+    "skin": "red",
+    "r": 145
+   }
+  ],
+  "arrows": [
+   {
+    "from": [
+     -61.2,
+     2.3
+    ],
+    "to": [
+     -59.4,
+     3.2
+    ]
+   }
+  ]
+ },
+ "yt": {
+  "title": "E se essa parte da Guiana fosse do Brasil? #curiosidades #brasil",
+  "description": "Por 60 anos, Brasil e Inglaterra brigaram pela região do Pirara, na fronteira de Roraima com a então Guiana Inglesa. Em 1904, o rei da Itália, Vítor Emanuel III, deu a maior parte para a Inglaterra, mesmo com Joaquim Nabuco defendendo o Brasil. E se fosse o contrário?\nO rei da Itália foi justo? Comenta aí. E manda pro seu amigo de Roraima.\n\nCenário imaginário: só um \"e se\" no mapa. Os fatos de apoio são reais.\nInscreva-se pra ver o próximo \"e se\".\n\n#curiosidades #brasil #mapas #geografia #historia",
+  "tags": [
+   "curiosidades",
+   "brasil",
+   "mapas",
+   "geografia",
+   "história",
+   "simulação",
+   "e se",
+   "hiperfoco",
+   "américa do sul",
+   "roraima",
+   "guiana",
+   "pirara",
+   "joaquim nabuco",
+   "inglaterra",
+   "fronteira",
+   "essequibo"
+  ],
+  "lang": "pt-BR",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-24T21:00:00Z"
+ }
+}

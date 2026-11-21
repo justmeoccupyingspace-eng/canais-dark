@@ -1,0 +1,396 @@
+{
+ "id": "b-pt-015",
+ "channel": "B",
+ "lang": "pt",
+ "format": "short",
+ "hook": "E SE A AMAZÔNIA|FOSSE UM|PAÍS?",
+ "hook_end": 2.8,
+ "badge": "SÓ IMAGINAÇÃO",
+ "uf": true,
+ "voice": "Fenrir",
+ "music": {
+  "track": "Hidden Agenda",
+  "vol": 0.12,
+  "alt": [
+   "Investigations",
+   "Curiosity"
+  ]
+ },
+ "beats": [
+  {
+   "say": "E se a Amazônia fosse um país? Não é só a floresta. Tô falando da Amazônia Legal: nove estados, mais da metade do Brasil.",
+   "cam": {
+    "c": [
+     -55,
+     -12
+    ],
+    "s": 1.6
+   },
+   "own": {
+    "BRA": "BRA",
+    "BR-AC": "AMZ",
+    "BR-AP": "AMZ",
+    "BR-AM": "AMZ",
+    "BR-PA": "AMZ",
+    "BR-RO": "AMZ",
+    "BR-RR": "AMZ",
+    "BR-TO": "AMZ",
+    "BR-MT": "AMZ",
+    "BR-MA": "AMZ"
+   },
+   "od": 1.4,
+   "balls": [
+    {
+     "ll": [
+      -62,
+      -5
+     ],
+     "iso": "AMZ",
+     "skin": "flag",
+     "face": "cool",
+     "r": 0.85,
+     "d": 1.6
+    },
+    {
+     "ll": [
+      -45,
+      -19
+     ],
+     "iso": "BRA",
+     "face": "shock",
+     "d": 2.6
+    }
+   ]
+  },
+  {
+   "say": "Acre, Amapá, Amazonas, Pará, Rondônia, Roraima, Tocantins, Mato Grosso e parte do Maranhão.",
+   "balls": [],
+   "cards": [
+    {
+     "text": "Amazônia Legal:",
+     "big": "9 estados",
+     "iso": "AMZ",
+     "d": 0.6
+    }
+   ],
+   "hl": [
+    "BR-AC",
+    "BR-AP",
+    "BR-AM",
+    "BR-PA",
+    "BR-RO",
+    "BR-RR",
+    "BR-TO",
+    "BR-MT",
+    "BR-MA"
+   ]
+  },
+  {
+   "say": "Juntos, são uns cinco milhões de quilômetros quadrados. Quase sessenta por cento do território brasileiro.",
+   "hl": [],
+   "cards": [
+    {
+     "text": "Área:",
+     "big": "~5 milhões de km²",
+     "iso": "AMZ",
+     "d": 1.0
+    },
+    {
+     "text": "Do Brasil:",
+     "big": "~59%",
+     "iso": "BRA",
+     "d": 4.2
+    }
+   ]
+  },
+  {
+   "say": "Como país, a Amazônia seria a sexta maior do mundo. Atrás só de Rússia, Canadá, Estados Unidos, China e Austrália.",
+   "cards": [
+    {
+     "text": "Ranking mundial:",
+     "big": "6º maior país",
+     "iso": "AMZ",
+     "d": 1.0
+    }
+   ],
+   "cam": {
+    "c": [
+     -30,
+     5
+    ],
+    "s": 0.45
+   }
+  },
+  {
+   "say": "Seria maior que a União Europeia inteira.",
+   "cards": [
+    {
+     "text": "Amazônia:",
+     "big": "maior que a União Europeia",
+     "iso": "AMZ",
+     "d": 0.4
+    }
+   ]
+  },
+  {
+   "say": "E teria a maior parte da maior floresta tropical do planeta, e o rio mais caudaloso do mundo, o Amazonas.",
+   "cards": [],
+   "cam": {
+    "c": [
+     -58,
+     -3.5
+    ],
+    "s": 3.0
+   },
+   "pins": [
+    {
+     "ll": [
+      -60.02,
+      -3.1
+     ],
+     "label": "Manaus",
+     "d": 3.4
+    },
+    {
+     "ll": [
+      -48.5,
+      -1.45
+     ],
+     "label": "Belém",
+     "d": 4.2
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -64,
+      -6.5
+     ],
+     "iso": "AMZ",
+     "skin": "flag",
+     "face": "love",
+     "r": 0.8,
+     "d": 1.2
+    }
+   ]
+  },
+  {
+   "say": "Mas com mais de vinte milhões de pessoas espalhadas nesse tamanho todo, seria um dos países mais vazios do mundo.",
+   "pins": [],
+   "balls": [],
+   "cards": [
+    {
+     "text": "População:",
+     "big": "20+ milhões",
+     "iso": "AMZ",
+     "d": 1.4
+    }
+   ],
+   "cam": {
+    "c": [
+     -55,
+     -9
+    ],
+    "s": 1.8
+   }
+  },
+  {
+   "say": "E o resto do Brasil? Encolhia pra uns três milhões e meio de quilômetros quadrados.",
+   "cards": [
+    {
+     "text": "Resto do Brasil:",
+     "big": "~3,5 milhões de km²",
+     "iso": "BRA",
+     "d": 1.6
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -44,
+      -16
+     ],
+     "iso": "BRA",
+     "face": "sad",
+     "r": 0.8,
+     "d": 1.0
+    }
+   ]
+  },
+  {
+   "say": "E o detalhe: mesmo assim, ainda seria maior que a Índia.",
+   "cards": [
+    {
+     "text": "Resto do Brasil:",
+     "big": "maior que a Índia",
+     "iso": "BRA",
+     "d": 1.4
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -44,
+      -16
+     ],
+     "iso": "BRA",
+     "face": "cool",
+     "r": 0.8,
+     "d": 0.2
+    }
+   ]
+  },
+  {
+   "say": "Brasília ia ficar quase na fronteira. E pra ir de São Paulo a Manaus, você ia precisar de passaporte.",
+   "cards": [],
+   "balls": [],
+   "cam": {
+    "c": [
+     -53,
+     -14
+    ],
+    "s": 2.0
+   },
+   "arrows": [
+    {
+     "from": [
+      -46.6,
+      -23.5
+     ],
+     "to": [
+      -60.0,
+      -3.2
+     ],
+     "d": 2.4,
+     "color": "#ffcf40"
+    }
+   ],
+   "pins": [
+    {
+     "ll": [
+      -47.9,
+      -15.8
+     ],
+     "label": "Brasília",
+     "d": 0.4
+    }
+   ]
+  },
+  {
+   "say": "Me fala: Amazônia país ia dar certo? Comenta aí. E manda pro seu amigo do Norte.",
+   "arrows": [],
+   "pins": [],
+   "cam": {
+    "c": [
+     -55,
+     -12
+    ],
+    "s": 1.6
+   },
+   "own": {
+    "BR-AC": "BRA",
+    "BR-AP": "BRA",
+    "BR-AM": "BRA",
+    "BR-PA": "BRA",
+    "BR-RO": "BRA",
+    "BR-RR": "BRA",
+    "BR-TO": "BRA",
+    "BR-MT": "BRA",
+    "BR-MA": "BRA"
+   },
+   "od": 0.6,
+   "balls": [
+    {
+     "ll": [
+      -62,
+      -5
+     ],
+     "iso": "AMZ",
+     "skin": "flag",
+     "face": "smirk",
+     "r": 0.85,
+     "d": 0.4
+    },
+    {
+     "ll": [
+      -45,
+      -19
+     ],
+     "iso": "BRA",
+     "face": "smirk",
+     "d": 1.0
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "E SE A AMAZÔNIA|FOSSE UM|PAÍS?",
+  "c": [
+   -54,
+   -10
+  ],
+  "s": 1.75,
+  "y": 0.68,
+  "own": {
+   "BRA": "BRA",
+   "BR-AC": "AMZ",
+   "BR-AP": "AMZ",
+   "BR-AM": "AMZ",
+   "BR-PA": "AMZ",
+   "BR-RO": "AMZ",
+   "BR-RR": "AMZ",
+   "BR-TO": "AMZ",
+   "BR-MT": "AMZ",
+   "BR-MA": "AMZ"
+  },
+  "balls": [
+   {
+    "ll": [
+     -62.5,
+     -4.5
+    ],
+    "iso": "AMZ",
+    "skin": "flag",
+    "face": "cool",
+    "r": 140
+   },
+   {
+    "ll": [
+     -44.5,
+     -18.5
+    ],
+    "iso": "BRA",
+    "face": "shock",
+    "skin": "red",
+    "r": 140
+   }
+  ]
+ },
+ "yt": {
+  "title": "E se a Amazônia fosse um país? #curiosidades #brasil",
+  "description": "A Amazônia Legal (Acre, Amapá, Amazonas, Pará, Rondônia, Roraima, Tocantins, Mato Grosso e parte do Maranhão) tem uns 5 milhões de km², quase 60% do Brasil. Como país, seria o 6º maior do mundo, maior que a União Europeia. E o resto do Brasil ainda seria maior que a Índia.\nAmazônia país ia dar certo? Comenta aí. E manda pro seu amigo do Norte.\n\nCenário imaginário: só um \"e se\" no mapa. Os fatos de apoio são reais.\nInscreva-se pra ver o próximo \"e se\".\n\n#curiosidades #brasil #mapas #geografia #historia",
+  "tags": [
+   "curiosidades",
+   "brasil",
+   "mapas",
+   "geografia",
+   "história",
+   "simulação",
+   "e se",
+   "hiperfoco",
+   "américa do sul",
+   "amazônia",
+   "amazônia legal",
+   "norte",
+   "manaus",
+   "belém",
+   "floresta amazônica",
+   "país"
+  ],
+  "lang": "pt-BR",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-24T15:00:00Z"
+ }
+}
