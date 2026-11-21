@@ -218,6 +218,15 @@ const Flag = ({iso, w = 150}) => {
   if (iso === 'ZAF') return <div style={{...box, background: 'linear-gradient(#de3831 0 50%, #002395 50% 100%)'}}><div style={{position: 'absolute', inset: 0, background: '#fff', clipPath: 'polygon(0 0, 20% 0, 56% 38%, 100% 38%, 100% 62%, 56% 62%, 20% 100%, 0 100%)'}} /><div style={{position: 'absolute', inset: 0, background: '#007a4d', clipPath: 'polygon(0 4%, 13% 4%, 52% 44%, 100% 44%, 100% 56%, 52% 56%, 13% 96%, 0 96%)'}} /><div style={{position: 'absolute', inset: 0, background: '#ffb612', clipPath: 'polygon(0 14%, 38% 50%, 0 86%)'}} /><div style={{position: 'absolute', inset: 0, background: '#000', clipPath: 'polygon(0 21%, 30% 50%, 0 79%)'}} /></div>;
   if (iso === 'MEX') return <div style={{...box, background: 'linear-gradient(90deg, #006847 0 33.3%, #fff 33.3% 66.6%, #ce1126 66.6% 100%)'}}><div style={{position: 'absolute', left: w / 2 - h * 0.13, top: h * 0.37, width: h * 0.26, height: h * 0.26, borderRadius: '50%', background: '#8c6b2e'}} /></div>;
   if (iso === 'VNM') return <div style={{...box, background: '#da251d'}}><div style={{position: 'absolute', left: w / 2 - h * 0.3, top: h * 0.2, width: h * 0.6, height: h * 0.6, background: '#ffff00', clipPath: 'polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)'}} /></div>;
+  if (iso === 'SVN') return (
+    <div style={{...box, background: 'linear-gradient(#fff 0 33.3%, #0000ff 33.3% 66.6%, #ff0000 66.6% 100%)'}}>
+      <svg viewBox="0 0 90 60" width={w} height={h} style={{position: 'absolute', left: 0, top: 0}}>
+        <path d="M16,9 h16 v14 c0,7 -4,10 -8,12 c-4,-2 -8,-5 -8,-12 z" fill="#0000ff" stroke="#ff0000" strokeWidth={1.4} />
+        <path d="M17.5,27 l3,-6 l2,3 l1.5,-5 l1.5,5 l2,-3 l3,6 c-2,3 -4.5,4.6 -6.5,5.6 c-2,-1 -4.5,-2.6 -6.5,-5.6 z" fill="#fff" />
+        <circle cx={20.5} cy={12.5} r={1} fill="#ffdd00" /><circle cx={27.5} cy={12.5} r={1} fill="#ffdd00" /><circle cx={24} cy={15.5} r={1} fill="#ffdd00" />
+      </svg>
+    </div>
+  );
   if (iso === 'HRV') return <div style={{...box, background: 'linear-gradient(#ff0000 0 33.3%, #fff 33.3% 66.6%, #171796 66.6% 100%)'}}><div style={{position: 'absolute', left: w / 2 - h * 0.13, top: h * 0.22, width: h * 0.26, height: h * 0.32, borderRadius: '0 0 40% 40%', background: 'repeating-conic-gradient(#ff0000 0 25%, #fff 0 50%) 0 0 / ' + (h * 0.104) + 'px ' + (h * 0.107) + 'px', border: '2px solid #171796'}} /></div>;
   if (iso === 'IDN') return <div style={{...box, background: 'linear-gradient(#ce1126 0 50%, #fff 50% 100%)'}} />;
   if (iso === 'ARG') return <div style={{...box, background: 'linear-gradient(#74acdf 0 33.3%, #fff 33.3% 66.6%, #74acdf 66.6% 100%)'}}><div style={{position: 'absolute', left: w / 2 - h * 0.1, top: h / 2 - h * 0.1, width: h * 0.2, height: h * 0.2, borderRadius: '50%', background: '#f6b40e'}} /></div>;
