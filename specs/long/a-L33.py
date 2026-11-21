@@ -87,10 +87,10 @@ shots = [
 
     # ---------------- 3 · PLAIN DOLLARS ----------------
     dict(act=3, type="lines", set="imfusd", fc=2025, series=["SVN", "POL"], years=[1995, 2031], start=2008.0, y=[0, 60000], src=USDSRC, fmt="usd0", hl="SVN",
-         narration="But here's the twist. In plain dollars, at market exchange rates, the picture is very different. {p} This year, Slovenia is about forty-one thousand six hundred dollars a person. Poland, about thirty-one thousand two hundred. {pp} That's still a third more. {p} Prices in Slovenia are higher, so adjusting for prices shrinks the gap. In plain money, Slovenia is still clearly ahead.",
+         narration="But here's the twist. In plain dollars, at market exchange rates, the picture is very different. {p} This year, Slovenia is about forty-one thousand six hundred dollars a person. Poland, about thirty-one thousand two hundred. {pp} That's still a third more. {p} Prices in Slovenia are higher, so adjusting for prices shrinks the gap. So in plain money, Slovenia is still well ahead.",
          keys=[dict(at="plain dollars", year=2008.0, dur=1.5), dict(at="This year", year=2026.0, dur=3.0)],
          labels=[dict(at="forty-one thousand six hundred", iso="SVN", year=2026), dict(at="thirty-one thousand two hundred", iso="POL", year=2026)],
-         react=[dict(at="the twist", pose="pointUp"), dict(at="very different", pose="shock"), dict(at="a third more", pose="think"), dict(at="clearly ahead", pose="shrug")]),
+         react=[dict(at="the twist", pose="pointUp"), dict(at="very different", pose="shock"), dict(at="a third more", pose="think"), dict(at="well ahead", pose="shrug")]),
 
     # ---------------- 4 · THE RACE ----------------
     dict(act=4, type="host", bg="none",

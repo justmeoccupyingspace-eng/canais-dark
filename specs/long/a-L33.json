@@ -407,7 +407,7 @@
    "src": "IMF World Economic Outlook, October 2026 · GDP per capita, current US$ at market exchange rates (NGDPDPC); 2026+ are IMF estimates and forecasts",
    "fmt": "usd0",
    "hl": "SVN",
-   "narration": "But here's the twist. In plain dollars, at market exchange rates, the picture is very different. {p} This year, Slovenia is about forty-one thousand six hundred dollars a person. Poland, about thirty-one thousand two hundred. {pp} That's still a third more. {p} Prices in Slovenia are higher, so adjusting for prices shrinks the gap. In plain money, Slovenia is still clearly ahead.",
+   "narration": "But here's the twist. In plain dollars, at market exchange rates, the picture is very different. {p} This year, Slovenia is about forty-one thousand six hundred dollars a person. Poland, about thirty-one thousand two hundred. {pp} That's still a third more. {p} Prices in Slovenia are higher, so adjusting for prices shrinks the gap. So in plain money, Slovenia is still well ahead.",
    "keys": [
     {
      "at": "plain dollars",
@@ -446,7 +446,7 @@
      "pose": "think"
     },
     {
-     "at": "clearly ahead",
+     "at": "well ahead",
      "pose": "shrug"
     }
    ],
