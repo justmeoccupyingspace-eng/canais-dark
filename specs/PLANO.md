@@ -1,3 +1,8 @@
+## v5.1 (22/11 08:30Z) — cortes antecipados, sem esperar data
+- SÉRIE POLÔNIA (longos do A): MORTA AGORA. Hungria 27 views em ~33 h, Eslovênia 19 em ~9 h (corte era 500 em 48 h). Não espera 24/11. Longos param até a pesquisa achar tema com prova (≥100 mil em canal novo) — Croácia cancelada.
+- A Shorts: 3/dia (14:00Z, 17:00Z, 20:00Z) a partir de 23/11, usando o envio que era do longo. Cota 6/dia = A 3 + B 3, cada envio publica em ≤ 48 h (compensa no mesmo dia, nada de empurrar para depois).
+- Meta YPP de 31/01 (1.000 inscr. no A): ritmo atual ~1–2 inscr./dia → NÃO chega. Marco 30/11 = 250; hoje 135. Se 30/11 < 250, assume-se perdido e a prioridade passa a ser views de Shorts (10 mi/90 d) nos dois canais.
+
 ## PLANO v5 (22/11/2026) — regras duras (Kauan: "mais duro e honesto", "foco é resultado")
 Diagnóstico com dados (ytstats até 19/11): Shorts do B de 1:45–2:15 retêm 33–45% (o público sai aos 43–57 s) → o feed não empurra além de ~1–1,6 mil. Shorts do A de ~60 s retêm 78–93% (Alasca 2,8 mil). Longos do A retêm 20–27%; série Polônia decaindo (Hungria 23 views em 27 h).
 - B: todo Short novo ≤ 140 palavras (≈50 s; o gerador bloqueia acima disso). 3 Shorts/dia (15:00Z, 19:00Z e 22:00Z). Só "pedaço do Brasil × vizinho" e "estado/região vira país". CORTE 30/11: mediana dos Shorts curtos < 3 mil → trocar o tema do canal.

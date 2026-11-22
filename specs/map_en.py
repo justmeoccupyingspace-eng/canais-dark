@@ -491,7 +491,7 @@ save(13, "Why Is This Country Completely Inside Another Country?",
      "Lesotho is completely surrounded by South Africa: about 30,000 km², all mountains (its lowest point is 1,400 m, the highest low point of any country). Moshoeshoe I united the Basotho in the 1820s, asked Britain for protection from the Boers in 1868, and Lesotho became independent on 4 October 1966.",
      dict(title="THIS COUNTRY IS|COMPLETELY INSIDE|ANOTHER ONE", c=[27.0, -29.8], s=3.4, y=0.68, own={"LSO": "LSO", "ZAF": "ZAF"},
           balls=[dict(ll=[28.3, -29.5], iso="LSO", skin="flag", face="shock", r=110), dict(ll=[24.8, -31.6], iso="ZAF", skin="flag", face="smirk", r=125)]),
-     "2026-11-25T14:00:00Z",
+     "2026-11-23T20:00:00Z",
      tags=["lesotho", "south africa", "enclave", "geography", "africa", "borders", "maps"])
 
 # ---------------------------------------------------------------- 14. Northwest Angle (1783 Treaty of Paris + Mitchell Map; Lake of the Woods; only contiguous-US land north of 49th; by land only via Manitoba; 149 people in 2020; check-in kiosk)
@@ -519,7 +519,7 @@ save(14, "Why Can You Only Drive to This Part of the US Through Canada?",
      "The Northwest Angle, Minnesota: the only part of the contiguous US north of the 49th parallel, reachable by land only through Manitoba. A 1783 treaty drew the border through Lake of the Woods using the faulty Mitchell Map; 149 people lived there in 2020.",
      dict(title="TO DRIVE HERE|FROM THE US, YOU|GO THROUGH CANADA", c=[-95.1, 49.15], s=26, y=0.66, own={"USA": "USA", "CAN": "CAN"},
           balls=[dict(ll=[-94.75, 49.55], iso="CAN", skin="flag", face="smirk", r=120), dict(ll=[-95.15, 49.3], iso="USA", skin="flag", face="shock", r=105)]),
-     "2026-11-26T14:00:00Z",
+     "2026-11-24T20:00:00Z",
      tags=["northwest angle", "minnesota", "canada", "border", "lake of the woods", "maps", "geography"])
 
 # ---------------------------------------------------------------- 15. France's longest land border is with Brazil (French Guiana; Oiapoque; ~730 km; euro; Kourou)
@@ -545,5 +545,5 @@ save(15, "France's Longest Land Border Isn't in Europe",
      "France's longest land border is with Brazil: about 730 km along the Oyapock river, because French Guiana is a full part of France (and of the EU, using the euro). Europe also launches rockets from Kourou.",
      dict(title="FRANCE'S LONGEST|LAND BORDER IS|WITH BRAZIL", c=[-52.5, 2.6], s=4.4, y=0.66, own={"FRA": "FRA", "BRA": "BRA", "FR-GF": "FRA"},
           balls=[dict(ll=[-53.2, 4.3], iso="FRA", skin="flag", face="smirk", r=115), dict(ll=[-51.0, 0.2], iso="BRA", skin="flag", face="shock", r=130)]),
-     "2026-11-26T17:00:00Z",
+     "2026-11-25T14:00:00Z",
      tags=["france", "brazil", "french guiana", "borders", "geography", "european union", "kourou"])
