@@ -1,4 +1,10 @@
-## v5.1 (22/11 08:30Z) — cortes antecipados, sem esperar data
+## v5.2 (22/11 23:50Z) — CORREÇÃO: o corte da série Polônia foi precipitado
+- Eslovênia FbzDub5I2_8 foi de 19 (08:12Z) para 1.096 views (23:41Z) em 15 h — mesmo padrão da Estônia (263 → 2.081 numa noite). Longo só se julga com 48 h. Hungria (33) segue morta.
+- Molde que pega: "X Was N% Richer Than Poland" com N grande (Estônia 46% → 6,4 mil; Eslovênia 71% → 1,1 mil; Hungria 29% → 33). Próximo: A-L34 Tchéquia 87% (specs/long/a-L34.py, checks OK no CI run 45084991111), 23/11 23:00Z.
+- Volta: 1 longo/dia do A às 23:00Z enquanto o molde segurar (≥500 views em 48 h na mediana dos 3 últimos). Cota 6/dia = longo A 1 + Shorts A 2 + Shorts B 3. Short A das 20:00Z só quando sobrar envio.
+- Próximos países do molde: precisa de dado do FMI fora do imf_v4 (Portugal, Grécia, Letônia, Croácia 25% é fraco). Pesquisar antes de escrever.
+
+## v5.1 (22/11 08:30Z) [cortes de longo REVERTIDOS pela v5.2] — cortes antecipados, sem esperar data
 - SÉRIE POLÔNIA (longos do A): MORTA AGORA. Hungria 27 views em ~33 h, Eslovênia 19 em ~9 h (corte era 500 em 48 h). Não espera 24/11. Longos param até a pesquisa achar tema com prova (≥100 mil em canal novo) — Croácia cancelada.
 - A Shorts: 3/dia (14:00Z, 17:00Z, 20:00Z) a partir de 23/11, usando o envio que era do longo. Cota 6/dia = A 3 + B 3, cada envio publica em ≤ 48 h (compensa no mesmo dia, nada de empurrar para depois).
 - Meta YPP de 31/01 (1.000 inscr. no A): ritmo atual ~1–2 inscr./dia → NÃO chega. Marco 30/11 = 250; hoje 135. Se 30/11 < 250, assume-se perdido e a prioridade passa a ser views de Shorts (10 mi/90 d) nos dois canais.
