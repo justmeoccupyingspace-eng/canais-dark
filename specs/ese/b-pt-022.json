@@ -1,0 +1,223 @@
+{
+ "id": "b-pt-022",
+ "channel": "B",
+ "lang": "pt",
+ "format": "short",
+ "hook": "ATRAVESSA A RUA|E VOCÊ ESTÁ|EM OUTRO PAÍS",
+ "hook_end": 2.8,
+ "badge": null,
+ "uf": true,
+ "voice": "Fenrir",
+ "music": {
+  "track": "Hidden Agenda",
+  "vol": 0.12,
+  "alt": [
+   "Investigations",
+   "Curiosity"
+  ]
+ },
+ "beats": [
+  {
+   "say": "Nessa cidade, você atravessa a rua e já está em outro país. Sem muro, sem passaporte, sem fila.",
+   "cam": {
+    "c": [
+     -55.54,
+     -30.9
+    ],
+    "s": 70
+   },
+   "own": {
+    "BRA": "BRA",
+    "URY": "URY"
+   },
+   "balls": [
+    {
+     "ll": [
+      -55.5,
+      -30.86
+     ],
+     "iso": "BRA",
+     "face": "happy",
+     "r": 0.75,
+     "d": 1.0
+    },
+    {
+     "ll": [
+      -55.58,
+      -30.94
+     ],
+     "iso": "URY",
+     "skin": "flag",
+     "face": "happy",
+     "r": 0.75,
+     "d": 1.6
+    }
+   ]
+  },
+  {
+   "say": "De um lado, Santana do Livramento, no Rio Grande do Sul. Do outro, Rivera, no Uruguai.",
+   "balls": [],
+   "pins": [
+    {
+     "ll": [
+      -55.53,
+      -30.89
+     ],
+     "label": "Santana do Livramento",
+     "d": 0.4
+    },
+    {
+     "ll": [
+      -55.55,
+      -30.91
+     ],
+     "label": "Rivera",
+     "left": true,
+     "d": 2.6
+    }
+   ]
+  },
+  {
+   "say": "Juntas, são mais de cento e sessenta mil pessoas. E a fronteira é uma linha imaginária no meio das ruas.",
+   "cards": [
+    {
+     "text": "As duas cidades:",
+     "big": "~169 mil pessoas",
+     "d": 2.0
+    }
+   ]
+  },
+  {
+   "say": "Tem até uma praça dividida ao meio entre os dois países. Dizem que é a única praça binacional do mundo.",
+   "cards": [
+    {
+     "text": "Praça Internacional:",
+     "big": "metade de cada país",
+     "d": 1.6
+    }
+   ],
+   "pins": [
+    {
+     "ll": [
+      -55.54,
+      -30.9
+     ],
+     "label": "Praça Internacional",
+     "d": 0.6
+    }
+   ]
+  },
+  {
+   "say": "Ela foi inaugurada em mil novecentos e quarenta e três, pelos presidentes dos dois países, juntos.",
+   "date": "1943",
+   "cards": [
+    {
+     "text": "1943:",
+     "big": "Vargas + Baldomir",
+     "d": 1.6
+    }
+   ]
+  },
+  {
+   "say": "Por isso o lugar ganhou um apelido: Fronteira da Paz.",
+   "date": null,
+   "cards": [
+    {
+     "text": "Apelido:",
+     "big": "Fronteira da Paz",
+     "d": 0.6
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -55.5,
+      -30.86
+     ],
+     "iso": "BRA",
+     "face": "love",
+     "r": 0.75,
+     "d": 0.4
+    },
+    {
+     "ll": [
+      -55.58,
+      -30.94
+     ],
+     "iso": "URY",
+     "skin": "flag",
+     "face": "love",
+     "r": 0.75,
+     "d": 0.8
+    }
+   ]
+  },
+  {
+   "say": "Você moraria do lado brasileiro ou do uruguaio?",
+   "cards": [],
+   "pins": []
+  }
+ ],
+ "thumb": {
+  "title": "ATRAVESSA A RUA|E VOCÊ ESTÁ|EM OUTRO PAÍS",
+  "c": [
+   -55.54,
+   -30.92
+  ],
+  "s": 55,
+  "y": 0.68,
+  "own": {
+   "BRA": "BRA",
+   "URY": "URY"
+  },
+  "balls": [
+   {
+    "ll": [
+     -55.49,
+     -30.86
+    ],
+    "iso": "BRA",
+    "face": "happy",
+    "r": 120
+   },
+   {
+    "ll": [
+     -55.6,
+     -30.97
+    ],
+    "iso": "URY",
+    "skin": "flag",
+    "face": "happy",
+    "r": 120
+   }
+  ]
+ },
+ "yt": {
+  "title": "A cidade brasileira que divide a rua com o Uruguai #curiosidades #historia",
+  "description": "Santana do Livramento (RS) e Rivera (Uruguai) formam a Fronteira da Paz: ~169 mil pessoas, sem barreira física, com a fronteira passando no meio das ruas. A Praça Internacional, dividida entre os dois países, foi inaugurada em 1943 por Getúlio Vargas e Alfredo Baldomir.\nVocê moraria do lado brasileiro ou do uruguaio?\n\nCenário imaginário: só um \"e se\" no mapa. Os fatos de apoio são reais.\nInscreva-se pra ver o próximo \"e se\".\n\n#curiosidades #brasil #mapas #geografia #historia",
+  "tags": [
+   "curiosidades",
+   "brasil",
+   "mapas",
+   "geografia",
+   "história",
+   "simulação",
+   "e se",
+   "hiperfoco",
+   "américa do sul",
+   "santana do livramento",
+   "rivera",
+   "uruguai",
+   "fronteira da paz",
+   "rio grande do sul",
+   "praça internacional",
+   "fronteira"
+  ],
+  "lang": "pt-BR",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-25T22:00:00Z"
+ },
+ "terr": "color"
+}

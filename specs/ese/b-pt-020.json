@@ -1,0 +1,309 @@
+{
+ "id": "b-pt-020",
+ "channel": "B",
+ "lang": "pt",
+ "format": "short",
+ "hook": "NORONHA FICA MAIS|PERTO DO RN. MAS|É DE PERNAMBUCO",
+ "hook_end": 2.8,
+ "badge": null,
+ "uf": true,
+ "voice": "Fenrir",
+ "music": {
+  "track": "Hidden Agenda",
+  "vol": 0.12,
+  "alt": [
+   "Investigations",
+   "Curiosity"
+  ]
+ },
+ "beats": [
+  {
+   "say": "Fernando de Noronha fica a uns trezentos e sessenta quilômetros de Natal. E a mais de quinhentos e quarenta de Recife. Mesmo assim, é de Pernambuco.",
+   "cam": {
+    "c": [
+     -34.2,
+     -5.6
+    ],
+    "s": 6
+   },
+   "own": {
+    "BRA": "BRA"
+   },
+   "pins": [
+    {
+     "ll": [
+      -32.42,
+      -3.85
+     ],
+     "label": "Noronha",
+     "d": 0.4
+    },
+    {
+     "ll": [
+      -35.2,
+      -5.79
+     ],
+     "label": "Natal",
+     "left": true,
+     "d": 1.8
+    },
+    {
+     "ll": [
+      -34.88,
+      -8.05
+     ],
+     "label": "Recife",
+     "left": true,
+     "d": 4.4
+    }
+   ],
+   "arrows": [
+    {
+     "from": [
+      -35.1,
+      -5.75
+     ],
+     "to": [
+      -32.6,
+      -3.95
+     ],
+     "d": 2.0,
+     "color": "#7fd3ff"
+    },
+    {
+     "from": [
+      -34.8,
+      -7.95
+     ],
+     "to": [
+      -32.55,
+      -4.0
+     ],
+     "d": 4.6,
+     "color": "#ffcf40"
+    }
+   ]
+  },
+  {
+   "say": "O motivo é antigo. Em mil setecentos e trinta e sete, ainda na colônia, Portugal ligou a ilha à capitania de Pernambuco.",
+   "arrows": [],
+   "date": "1737",
+   "cards": [
+    {
+     "text": "1737:",
+     "big": "ilha ligada a Pernambuco",
+     "iso": "PRT",
+     "d": 1.6
+    }
+   ],
+   "hl": [
+    "BR-PE"
+   ]
+  },
+  {
+   "say": "Na Segunda Guerra, o governo federal tomou a ilha e virou território federal. Por mais de quarenta anos, não era de estado nenhum.",
+   "date": "1942",
+   "hl": [],
+   "cards": [
+    {
+     "text": "1942:",
+     "big": "território federal",
+     "iso": "BRA",
+     "d": 1.4
+    }
+   ],
+   "cam": {
+    "c": [
+     -32.42,
+     -3.85
+    ],
+    "s": 60
+   },
+   "balls": [
+    {
+     "ll": [
+      -32.36,
+      -3.82
+     ],
+     "iso": "BRA",
+     "face": "cool",
+     "r": 0.75,
+     "d": 1.6
+    }
+   ]
+  },
+  {
+   "say": "Em mil novecentos e oitenta e oito, a nova Constituição acabou com o território. E Noronha voltou pra Pernambuco.",
+   "date": "1988",
+   "cards": [
+    {
+     "text": "1988:",
+     "big": "volta pra Pernambuco",
+     "iso": "PEX",
+     "d": 1.6
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -32.36,
+      -3.82
+     ],
+     "iso": "PEX",
+     "skin": "flag",
+     "face": "happy",
+     "r": 0.8,
+     "d": 1.6
+    }
+   ]
+  },
+  {
+   "say": "E hoje Noronha nem tem prefeito. Quem manda é um administrador escolhido pelo governador de Pernambuco.",
+   "date": null,
+   "cards": [
+    {
+     "text": "Noronha hoje:",
+     "big": "sem prefeito",
+     "iso": "PEX",
+     "d": 1.0
+    }
+   ]
+  },
+  {
+   "say": "Você acha que Noronha devia ser do Rio Grande do Norte?",
+   "cards": [],
+   "cam": {
+    "c": [
+     -34.2,
+     -5.6
+    ],
+    "s": 6
+   },
+   "pins": [
+    {
+     "ll": [
+      -32.42,
+      -3.85
+     ],
+     "label": "Noronha",
+     "d": 0
+    },
+    {
+     "ll": [
+      -35.2,
+      -5.79
+     ],
+     "label": "Natal",
+     "left": true,
+     "d": 0
+    },
+    {
+     "ll": [
+      -34.88,
+      -8.05
+     ],
+     "label": "Recife",
+     "left": true,
+     "d": 0
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -36.6,
+      -5.4
+     ],
+     "iso": "BRA",
+     "face": "angry",
+     "r": 0.7,
+     "d": 0.2
+    },
+    {
+     "ll": [
+      -36.2,
+      -8.4
+     ],
+     "iso": "PEX",
+     "skin": "flag",
+     "face": "smirk",
+     "r": 0.7,
+     "d": 0.6
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "NORONHA FICA MAIS|PERTO DO RN. MAS|É DE PERNAMBUCO",
+  "c": [
+   -34.0,
+   -5.8
+  ],
+  "s": 6,
+  "y": 0.68,
+  "own": {
+   "BRA": "BRA"
+  },
+  "balls": [
+   {
+    "ll": [
+     -32.42,
+     -3.85
+    ],
+    "iso": "PEX",
+    "skin": "flag",
+    "face": "smirk",
+    "r": 110
+   },
+   {
+    "ll": [
+     -36.6,
+     -5.4
+    ],
+    "iso": "BRA",
+    "face": "rage",
+    "skin": "red",
+    "r": 125
+   }
+  ],
+  "arrows": [
+   {
+    "from": [
+     -35.1,
+     -5.75
+    ],
+    "to": [
+     -32.6,
+     -3.95
+    ]
+   }
+  ]
+ },
+ "yt": {
+  "title": "Por que Fernando de Noronha é de Pernambuco? #curiosidades #historia",
+  "description": "Fernando de Noronha fica a ~360 km de Natal e a mais de 540 km de Recife, mas é de Pernambuco: foi ligada à capitania em 1737, virou território federal em 1942 e voltou a Pernambuco com a Constituição de 1988. Hoje não tem prefeito: um administrador nomeado pelo governador cuida da ilha.\nDevia ser do RN?\n\nCenário imaginário: só um \"e se\" no mapa. Os fatos de apoio são reais.\nInscreva-se pra ver o próximo \"e se\".\n\n#curiosidades #brasil #mapas #geografia #historia",
+  "tags": [
+   "curiosidades",
+   "brasil",
+   "mapas",
+   "geografia",
+   "história",
+   "simulação",
+   "e se",
+   "hiperfoco",
+   "américa do sul",
+   "fernando de noronha",
+   "pernambuco",
+   "rio grande do norte",
+   "natal",
+   "recife",
+   "ilha",
+   "curiosidades"
+  ],
+  "lang": "pt-BR",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-25T15:00:00Z"
+ },
+ "terr": "color"
+}

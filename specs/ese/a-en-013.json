@@ -1,0 +1,265 @@
+{
+ "id": "a-en-013",
+ "channel": "A",
+ "lang": "en",
+ "format": "short",
+ "style": "clean",
+ "hook": "THIS COUNTRY IS|COMPLETELY INSIDE|ANOTHER ONE",
+ "hook_end": 2.6,
+ "voice": "Charon",
+ "models": "gemini-3.8-flash-tts,gemini-3.1-flash-tts-preview",
+ "edge_voice": "en-US-AndrewMultilingualNeural",
+ "music": {
+  "track": "Volatile Reaction",
+  "vol": 0.11,
+  "alt": [
+   "Hidden Agenda",
+   "Investigations"
+  ]
+ },
+ "beats": [
+  {
+   "say": "This whole country is completely surrounded by another country. It's called Lesotho, and it sits inside South Africa.",
+   "cam": {
+    "c": [
+     26,
+     -29
+    ],
+    "s": 3.0
+   },
+   "own": {
+    "LSO": "LSO",
+    "ZAF": "ZAF"
+   },
+   "hl": [
+    "LSO"
+   ],
+   "balls": [
+    {
+     "ll": [
+      28.3,
+      -29.5
+     ],
+     "iso": "LSO",
+     "skin": "flag",
+     "face": "shock",
+     "r": 0.6,
+     "d": 1.6
+    },
+    {
+     "ll": [
+      24.5,
+      -31.5
+     ],
+     "iso": "ZAF",
+     "skin": "flag",
+     "face": "smirk",
+     "r": 0.8,
+     "d": 3.4
+    }
+   ]
+  },
+  {
+   "say": "It's the biggest country in the world fully enclosed by just one other. About the size of Belgium.",
+   "hl": [],
+   "cards": [
+    {
+     "text": "Lesotho:",
+     "big": "~30,000 km² ≈ Belgium",
+     "iso": "LSO",
+     "d": 1.4
+    }
+   ]
+  },
+  {
+   "say": "And it's all mountains. Its lowest point is 1,400 meters up. That's the highest low point of any country on Earth.",
+   "cards": [
+    {
+     "text": "Lowest point:",
+     "big": "1,400 m",
+     "iso": "LSO",
+     "d": 1.4
+    }
+   ],
+   "cam": {
+    "c": [
+     28.3,
+     -29.6
+    ],
+    "s": 9
+   },
+   "balls": []
+  },
+  {
+   "say": "In the 1820s, a chief named Moshoeshoe gathered the Basotho people in these mountains.",
+   "cards": [],
+   "date": "1820s",
+   "balls": [
+    {
+     "ll": [
+      28.0,
+      -29.4
+     ],
+     "iso": "LSO",
+     "skin": "flag",
+     "face": "cool",
+     "r": 0.7,
+     "d": 0.8
+    }
+   ]
+  },
+  {
+   "say": "Then the Boers came for their land. So in 1868, Moshoeshoe asked Britain for protection.",
+   "date": "1868",
+   "balls": [
+    {
+     "ll": [
+      28.0,
+      -29.4
+     ],
+     "iso": "LSO",
+     "skin": "flag",
+     "face": "shock",
+     "r": 0.7,
+     "d": 0
+    },
+    {
+     "ll": [
+      26.2,
+      -28.4
+     ],
+     "iso": "ZAF",
+     "skin": "flag",
+     "face": "angry",
+     "r": 0.75,
+     "d": 0.8
+    },
+    {
+     "ll": [
+      29.6,
+      -30.6
+     ],
+     "iso": "GBR",
+     "skin": "flag",
+     "face": "cool",
+     "r": 0.7,
+     "d": 3.0
+    }
+   ]
+  },
+  {
+   "say": "It worked. Lesotho stayed a separate British territory, and became independent in 1966.",
+   "date": "1966",
+   "cards": [
+    {
+     "text": "4 October 1966:",
+     "big": "independence",
+     "iso": "LSO",
+     "d": 2.4
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      28.0,
+      -29.4
+     ],
+     "iso": "LSO",
+     "skin": "flag",
+     "face": "happy",
+     "r": 0.75,
+     "d": 0.6
+    }
+   ]
+  },
+  {
+   "say": "So today, to leave Lesotho by land, you always cross into South Africa. Would you live in a country like that?",
+   "date": null,
+   "cards": [],
+   "cam": {
+    "c": [
+     26,
+     -29
+    ],
+    "s": 3.0
+   },
+   "hl": [
+    "LSO"
+   ],
+   "balls": [
+    {
+     "ll": [
+      28.3,
+      -29.5
+     ],
+     "iso": "LSO",
+     "skin": "flag",
+     "face": "smirk",
+     "r": 0.6,
+     "d": 0.4
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "THIS COUNTRY IS|COMPLETELY INSIDE|ANOTHER ONE",
+  "c": [
+   27.0,
+   -29.8
+  ],
+  "s": 3.4,
+  "y": 0.68,
+  "own": {
+   "LSO": "LSO",
+   "ZAF": "ZAF"
+  },
+  "balls": [
+   {
+    "ll": [
+     28.3,
+     -29.5
+    ],
+    "iso": "LSO",
+    "skin": "flag",
+    "face": "shock",
+    "r": 110
+   },
+   {
+    "ll": [
+     24.8,
+     -31.6
+    ],
+    "iso": "ZAF",
+    "skin": "flag",
+    "face": "smirk",
+    "r": 125
+   }
+  ]
+ },
+ "yt": {
+  "title": "Why Is This Country Completely Inside Another Country?",
+  "description": "Lesotho is completely surrounded by South Africa: about 30,000 km², all mountains (its lowest point is 1,400 m, the highest low point of any country). Moshoeshoe I united the Basotho in the 1820s, asked Britain for protection from the Boers in 1868, and Lesotho became independent on 4 October 1966.\n\nFollow for more history on the map.\n\n#history #maps #geography",
+  "tags": [
+   "history",
+   "map",
+   "history on a map",
+   "military history",
+   "geography",
+   "history shorts",
+   "maps",
+   "lesotho",
+   "south africa",
+   "enclave",
+   "geography",
+   "africa",
+   "borders",
+   "maps"
+  ],
+  "lang": "en",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-25T14:00:00Z"
+ },
+ "style_prompt": "Read this in English as a documentary narrator for a fast history channel: confident, clear, slightly dramatic, brisk pace (about 165 words per minute), short pauses before dates and numbers. Never sound like an advert. Read the text exactly as written."
+}

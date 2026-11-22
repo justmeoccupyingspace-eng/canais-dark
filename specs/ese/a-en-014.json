@@ -1,0 +1,219 @@
+{
+ "id": "a-en-014",
+ "channel": "A",
+ "lang": "en",
+ "format": "short",
+ "style": "clean",
+ "hook": "TO DRIVE HERE|FROM THE US, YOU|GO THROUGH CANADA",
+ "hook_end": 2.6,
+ "voice": "Charon",
+ "models": "gemini-3.8-flash-tts,gemini-3.1-flash-tts-preview",
+ "edge_voice": "en-US-AndrewMultilingualNeural",
+ "music": {
+  "track": "Volatile Reaction",
+  "vol": 0.11,
+  "alt": [
+   "Hidden Agenda",
+   "Investigations"
+  ]
+ },
+ "beats": [
+  {
+   "say": "To drive to this part of Minnesota, you have to go through Canada first.",
+   "cam": {
+    "c": [
+     -95.0,
+     49.1
+    ],
+    "s": 30
+   },
+   "own": {
+    "USA": "USA",
+    "CAN": "CAN"
+   },
+   "pins": [
+    {
+     "ll": [
+      -95.1,
+      49.33
+     ],
+     "label": "Northwest Angle",
+     "d": 0.6
+    }
+   ],
+   "arrows": [
+    {
+     "from": [
+      -95.3,
+      48.9
+     ],
+     "to": [
+      -95.3,
+      49.25
+     ],
+     "d": 1.6,
+     "color": "#ffcf40"
+    }
+   ]
+  },
+  {
+   "say": "It's the Northwest Angle. The only piece of the lower 48 states north of the 49th parallel.",
+   "arrows": [],
+   "cards": [
+    {
+     "text": "Northwest Angle:",
+     "big": "north of the 49th",
+     "iso": "USA",
+     "d": 1.0
+    }
+   ],
+   "cam": {
+    "c": [
+     -96,
+     48.5
+    ],
+    "s": 6
+   }
+  },
+  {
+   "say": "Blame a bad map. In 1783, the treaty that ended the American Revolution drew the border through the Lake of the Woods.",
+   "cards": [],
+   "date": "1783",
+   "cam": {
+    "c": [
+     -95.0,
+     49.1
+    ],
+    "s": 30
+   }
+  },
+  {
+   "say": "The negotiators used the Mitchell Map. It got the lake and the Mississippi's source wrong.",
+   "cards": [
+    {
+     "text": "The map they used:",
+     "big": "wrong lake, wrong river",
+     "d": 1.2
+    }
+   ]
+  },
+  {
+   "say": "When surveyors finally fixed the line, this little corner ended up cut off, with the lake on one side and Canada on the other.",
+   "date": null,
+   "cards": [],
+   "balls": [
+    {
+     "ll": [
+      -95.0,
+      49.5
+     ],
+     "iso": "CAN",
+     "skin": "flag",
+     "face": "smirk",
+     "r": 0.7,
+     "d": 1.4
+    },
+    {
+     "ll": [
+      -95.2,
+      49.3
+     ],
+     "iso": "USA",
+     "skin": "flag",
+     "face": "shock",
+     "r": 0.6,
+     "d": 2.6
+    }
+   ]
+  },
+  {
+   "say": "About 150 people live there. And to enter, they check in at a kiosk instead of a border guard.",
+   "cards": [
+    {
+     "text": "Population (2020):",
+     "big": "149",
+     "iso": "USA",
+     "d": 0.8
+    }
+   ]
+  },
+  {
+   "say": "The other options? A boat, a plane, or in winter, a road built on the frozen lake. Would you live there?",
+   "cards": [],
+   "balls": [
+    {
+     "ll": [
+      -95.2,
+      49.3
+     ],
+     "iso": "USA",
+     "skin": "flag",
+     "face": "cool",
+     "r": 0.6,
+     "d": 0.2
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "TO DRIVE HERE|FROM THE US, YOU|GO THROUGH CANADA",
+  "c": [
+   -95.1,
+   49.15
+  ],
+  "s": 26,
+  "y": 0.66,
+  "own": {
+   "USA": "USA",
+   "CAN": "CAN"
+  },
+  "balls": [
+   {
+    "ll": [
+     -94.75,
+     49.55
+    ],
+    "iso": "CAN",
+    "skin": "flag",
+    "face": "smirk",
+    "r": 120
+   },
+   {
+    "ll": [
+     -95.15,
+     49.3
+    ],
+    "iso": "USA",
+    "skin": "flag",
+    "face": "shock",
+    "r": 105
+   }
+  ]
+ },
+ "yt": {
+  "title": "Why Can You Only Drive to This Part of the US Through Canada?",
+  "description": "The Northwest Angle, Minnesota: the only part of the contiguous US north of the 49th parallel, reachable by land only through Manitoba. A 1783 treaty drew the border through Lake of the Woods using the faulty Mitchell Map; 149 people lived there in 2020.\n\nFollow for more history on the map.\n\n#history #maps #geography",
+  "tags": [
+   "history",
+   "map",
+   "history on a map",
+   "military history",
+   "geography",
+   "history shorts",
+   "maps",
+   "northwest angle",
+   "minnesota",
+   "canada",
+   "border",
+   "lake of the woods",
+   "maps",
+   "geography"
+  ],
+  "lang": "en",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-26T14:00:00Z"
+ },
+ "style_prompt": "Read this in English as a documentary narrator for a fast history channel: confident, clear, slightly dramatic, brisk pace (about 165 words per minute), short pauses before dates and numbers. Never sound like an advert. Read the text exactly as written."
+}

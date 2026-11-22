@@ -1,0 +1,248 @@
+{
+ "id": "a-en-015",
+ "channel": "A",
+ "lang": "en",
+ "format": "short",
+ "style": "clean",
+ "hook": "FRANCE'S LONGEST|LAND BORDER IS|WITH BRAZIL",
+ "hook_end": 2.6,
+ "voice": "Charon",
+ "models": "gemini-3.8-flash-tts,gemini-3.1-flash-tts-preview",
+ "edge_voice": "en-US-AndrewMultilingualNeural",
+ "music": {
+  "track": "Volatile Reaction",
+  "vol": 0.11,
+  "alt": [
+   "Hidden Agenda",
+   "Investigations"
+  ]
+ },
+ "beats": [
+  {
+   "say": "France's longest land border isn't with Spain, Belgium or Germany. It's with Brazil.",
+   "cam": {
+    "c": [
+     -25,
+     15
+    ],
+    "s": 0.55
+   },
+   "own": {
+    "FRA": "FRA",
+    "BRA": "BRA",
+    "FR-GF": "FRA"
+   },
+   "balls": [
+    {
+     "ll": [
+      2.3,
+      46.5
+     ],
+     "iso": "FRA",
+     "skin": "flag",
+     "face": "smirk",
+     "r": 0.6,
+     "d": 0.6
+    },
+    {
+     "ll": [
+      -50,
+      -8
+     ],
+     "iso": "BRA",
+     "skin": "flag",
+     "face": "shock",
+     "r": 0.8,
+     "d": 2.4
+    }
+   ]
+  },
+  {
+   "say": "Because this piece of South America is France. French Guiana.",
+   "balls": [],
+   "cam": {
+    "c": [
+     -53,
+     3.6
+    ],
+    "s": 5
+   },
+   "hl": [
+    "FR-GF"
+   ],
+   "cards": [
+    {
+     "text": "French Guiana:",
+     "big": "part of France",
+     "iso": "FRA",
+     "d": 1.0
+    }
+   ]
+  },
+  {
+   "say": "Not a colony. A full part of the country, with French laws, French elections and the euro.",
+   "hl": [],
+   "cards": [
+    {
+     "text": "Currency:",
+     "big": "the euro",
+     "iso": "FRA",
+     "d": 1.8
+    }
+   ]
+  },
+  {
+   "say": "Its border with Brazil runs along the Oyapock river for about 730 kilometers.",
+   "cards": [
+    {
+     "text": "Border with Brazil:",
+     "big": "~730 km",
+     "iso": "BRA",
+     "d": 1.6
+    }
+   ],
+   "pins": [
+    {
+     "ll": [
+      -51.8,
+      3.85
+     ],
+     "label": "Oyapock river",
+     "d": 0.6
+    }
+   ]
+  },
+  {
+   "say": "Brazil and France even built a bridge over that river. That makes it a land border between Brazil and the European Union.",
+   "pins": [
+    {
+     "ll": [
+      -51.83,
+      3.88
+     ],
+     "label": "Oyapock bridge",
+     "d": 0.4
+    }
+   ],
+   "cards": []
+  },
+  {
+   "say": "And Europe launches its rockets from here, at Kourou, near the equator.",
+   "pins": [
+    {
+     "ll": [
+      -52.65,
+      5.16
+     ],
+     "label": "Kourou spaceport",
+     "left": true,
+     "d": 0.6
+    }
+   ],
+   "cam": {
+    "c": [
+     -52.8,
+     4.6
+    ],
+    "s": 10
+   }
+  },
+  {
+   "say": "Did you know France was Brazil's neighbor?",
+   "pins": [],
+   "cam": {
+    "c": [
+     -53,
+     3.6
+    ],
+    "s": 5
+   },
+   "balls": [
+    {
+     "ll": [
+      -53.1,
+      4.0
+     ],
+     "iso": "FRA",
+     "skin": "flag",
+     "face": "smirk",
+     "r": 0.7,
+     "d": 0.2
+    },
+    {
+     "ll": [
+      -51.5,
+      1.0
+     ],
+     "iso": "BRA",
+     "skin": "flag",
+     "face": "happy",
+     "r": 0.75,
+     "d": 0.6
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "FRANCE'S LONGEST|LAND BORDER IS|WITH BRAZIL",
+  "c": [
+   -52.5,
+   2.6
+  ],
+  "s": 4.4,
+  "y": 0.66,
+  "own": {
+   "FRA": "FRA",
+   "BRA": "BRA",
+   "FR-GF": "FRA"
+  },
+  "balls": [
+   {
+    "ll": [
+     -53.2,
+     4.3
+    ],
+    "iso": "FRA",
+    "skin": "flag",
+    "face": "smirk",
+    "r": 115
+   },
+   {
+    "ll": [
+     -51.0,
+     0.2
+    ],
+    "iso": "BRA",
+    "skin": "flag",
+    "face": "shock",
+    "r": 130
+   }
+  ]
+ },
+ "yt": {
+  "title": "France's Longest Land Border Isn't in Europe",
+  "description": "France's longest land border is with Brazil: about 730 km along the Oyapock river, because French Guiana is a full part of France (and of the EU, using the euro). Europe also launches rockets from Kourou.\n\nFollow for more history on the map.\n\n#history #maps #geography",
+  "tags": [
+   "history",
+   "map",
+   "history on a map",
+   "military history",
+   "geography",
+   "history shorts",
+   "maps",
+   "france",
+   "brazil",
+   "french guiana",
+   "borders",
+   "geography",
+   "european union",
+   "kourou"
+  ],
+  "lang": "en",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-26T17:00:00Z"
+ },
+ "style_prompt": "Read this in English as a documentary narrator for a fast history channel: confident, clear, slightly dramatic, brisk pace (about 165 words per minute), short pauses before dates and numbers. Never sound like an advert. Read the text exactly as written."
+}

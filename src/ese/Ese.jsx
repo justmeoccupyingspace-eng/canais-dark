@@ -13,7 +13,7 @@ const COUNTRIES = feature(world, world.objects.countries).features;
 const GEOMS = world.objects.countries.geometries;
 const NUM = {BRA: '076', ARG: '032', CHL: '152', URY: '858', PRY: '600', BOL: '068', PER: '604', COL: '170', VEN: '862', ECU: '218', GUY: '328', SUR: '740', GUF: '254',
   MEX: '484', USA: '840', CAN: '124', PRT: '620', ESP: '724', FRA: '250', GBR: '826', DEU: '276', ITA: '380', RUS: '643', CHN: '156', IND: '356', AUS: '036', JPN: '392',
-  PAN: '591', CRI: '188', NIC: '558', HND: '340', GTM: '320', SLV: '222', CUB: '192', DOM: '214', HTI: '332', BLZ: '084', AGO: '024', MOZ: '508', ZAF: '710', NGA: '566', EGY: '818', MAR: '504',
+  PAN: '591', CRI: '188', NIC: '558', HND: '340', GTM: '320', SLV: '222', CUB: '192', DOM: '214', HTI: '332', BLZ: '084', AGO: '024', MOZ: '508', ZAF: '710', LSO: '426', NGA: '566', EGY: '818', MAR: '504',
   NLD: '528', BEL: '056', CHE: '756', AUT: '040', POL: '616', UKR: '804', TUR: '792', SAU: '682', IRN: '364', KOR: '410', PRK: '408', IDN: '360', NZL: '554', GRL: '304', ISL: '352',
   NOR: '578', SWE: '752', FIN: '246', DNK: '208', IRL: '372', GRC: '300', CPV: '132', GNB: '624', STP: '678', TLS: '626',
   FLK: '238', MYS: '458', SGP: '702', THA: '764', BLR: '112', EST: '233', LVA: '428', LTU: '440', CZE: '203', SVK: '703', HUN: '348', ROU: '642', BGR: '100', SRB: '688', HRV: '191', KAZ: '398', MNG: '496', VNM: '704', PHL: '608', TWN: '158', ISR: '376', SYR: '760', IRQ: '368', AFG: '004', PAK: '586', CUB2: '192'};
@@ -89,6 +89,13 @@ const FlagArt = ({iso, x, y, w, h}) => {
       const st = Array.from({length: 10}, (_, i) => { const a = -Math.PI / 2 + i * Math.PI / 5, q = i % 2 ? r * 0.42 : r; return `${sx + q * Math.cos(a)},${sy + q * Math.sin(a)}`; }).join(' ');
       return <g>{R('#0d8a3e')}<polygon points={`${x},${y + h} ${x + w * 0.5},${y} ${x + w},${y} ${x + w},${y + h}`} fill="#1c3f94" /><polygon points={`${x - t},${y + h} ${x + w * 0.5 - t},${y} ${x + w * 0.5 + t},${y} ${x + t},${y + h}`} fill="#fff" /><polygon points={st} fill="#ffd200" /></g>; }
     case 'MAR': return <g>{R('#c1272d')}<path d={Array.from({length: 6}, (_, i) => { const a = -Math.PI / 2 + i * 4 * Math.PI / 5, r = Math.min(w, h) * 0.26; return `${i ? 'L' : 'M'}${x + w / 2 + r * Math.cos(a)},${y + h / 2 + r * Math.sin(a)}`; }).join(' ') + 'Z'} fill="none" stroke="#006233" strokeWidth={Math.min(w, h) * 0.045} /></g>;
+    case 'LSO': return <g>{Hs(['#00209f', '#fff', '#fff', '#009543'])}<path d={`M${x + w * 0.44} ${y + h * 0.62} q ${w * 0.06} ${-h * 0.2} ${w * 0.12} 0 z M${x + w * 0.47} ${y + h * 0.44} h ${w * 0.06} v ${h * 0.08} h ${-w * 0.06} z`} fill="#000" /></g>;
+    case 'ZAF': return <g>{R('#fff')}<rect x={x} y={y} width={w} height={h / 3} fill="#e03c31" /><rect x={x} y={y + (2 * h) / 3} width={w} height={h / 3} fill="#001489" /><polygon points={`${x},${y} ${x + w * 0.45},${y + h / 2} ${x},${y + h}`} fill="#007749" /><polygon points={`${x},${y + h * 0.17} ${x + w * 0.33},${y + h / 2} ${x},${y + h * 0.83}`} fill="#ffb81c" /><polygon points={`${x},${y + h * 0.27} ${x + w * 0.24},${y + h / 2} ${x},${y + h * 0.73}`} fill="#000" /></g>;
+    case 'PEX': { const cx = x + w / 2, top = y + h * 0.62, rr = Math.min(w, h * 1.6) * 0.22;
+      return <g>{R('#fff')}<rect x={x} y={y} width={w} height={top - y} fill="#1d4e9e" />
+        {[['#0b8a3e', 1], ['#ffd200', 0.86], ['#d52b1e', 0.72]].map(([c, k], i) => <path key={i} d={`M${cx - rr * k} ${top - h * 0.04} A ${rr * k} ${rr * k} 0 0 1 ${cx + rr * k} ${top - h * 0.04}`} fill="none" stroke={c} strokeWidth={rr * 0.13} />)}
+        {star(cx, top - h * 0.04 - rr * 1.25, rr * 0.28, '#ffd200')}<circle cx={cx} cy={top - h * 0.06} r={rr * 0.3} fill="#ffd200" />
+        <rect x={cx - w * 0.02} y={top + h * 0.04} width={w * 0.04} height={h * 0.3} fill="#d52b1e" /><rect x={cx - w * 0.08} y={top + h * 0.1} width={w * 0.16} height={h * 0.05} fill="#d52b1e" /></g>; }
     case 'LTU': return <g>{Hs(['#fdb913', '#006a44', '#c1272d'])}</g>;
     case 'BLR': return <g><rect x={x} y={y} width={w} height={h * 0.67} fill="#c8313e" /><rect x={x} y={y + h * 0.67} width={w} height={h * 0.33} fill="#4aa657" /><rect x={x} y={y} width={w * 0.11} height={h} fill="#fff" /></g>;
     case 'DEU': return <g>{Hs(['#000', '#dd0000', '#ffce00'])}</g>;

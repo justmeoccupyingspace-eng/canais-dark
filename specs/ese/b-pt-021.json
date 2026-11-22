@@ -1,0 +1,274 @@
+{
+ "id": "b-pt-021",
+ "channel": "B",
+ "lang": "pt",
+ "format": "short",
+ "hook": "A CAPITAL FOI|PRO MEIO DO NADA.|DE PROPÓSITO",
+ "hook_end": 2.8,
+ "badge": null,
+ "uf": true,
+ "voice": "Fenrir",
+ "music": {
+  "track": "Hidden Agenda",
+  "vol": 0.12,
+  "alt": [
+   "Investigations",
+   "Curiosity"
+  ]
+ },
+ "beats": [
+  {
+   "say": "Brasília foi construída no meio do nada. E de propósito. A ideia é mais velha que o próprio Brasil independente.",
+   "cam": {
+    "c": [
+     -47.9,
+     -15.8
+    ],
+    "s": 9
+   },
+   "own": {
+    "BRA": "BRA"
+   },
+   "pins": [
+    {
+     "ll": [
+      -47.88,
+      -15.79
+     ],
+     "label": "Brasília",
+     "d": 0.4
+    }
+   ]
+  },
+  {
+   "say": "Primeiro, a capital foi Salvador. Depois, o Rio de Janeiro. As duas no litoral.",
+   "cam": {
+    "c": [
+     -43,
+     -17
+    ],
+    "s": 2.6
+   },
+   "pins": [
+    {
+     "ll": [
+      -38.5,
+      -12.97
+     ],
+     "label": "Salvador · 1549",
+     "d": 0.6
+    },
+    {
+     "ll": [
+      -43.2,
+      -22.9
+     ],
+     "label": "Rio · 1763",
+     "left": true,
+     "d": 2.4
+    }
+   ]
+  },
+  {
+   "say": "Em mil oitocentos e vinte e três, José Bonifácio já propunha levar a capital pro centro do país. Pra ligar o interior e não deixar o Brasil se dividir.",
+   "date": "1823",
+   "pins": [],
+   "cards": [
+    {
+     "text": "1823:",
+     "big": "José Bonifácio",
+     "iso": "BRA",
+     "d": 1.2
+    }
+   ],
+   "arrows": [
+    {
+     "from": [
+      -43.2,
+      -22.9
+     ],
+     "to": [
+      -47.7,
+      -15.9
+     ],
+     "d": 4.6,
+     "color": "#ffcf40"
+    }
+   ]
+  },
+  {
+   "say": "A Constituição de mil oitocentos e noventa e um já mandava: a nova capital vai pro Planalto Central.",
+   "date": "1891",
+   "arrows": [],
+   "cards": [
+    {
+     "text": "Constituição de 1891:",
+     "big": "capital no Planalto Central",
+     "iso": "BRA",
+     "d": 1.2
+    }
+   ]
+  },
+  {
+   "say": "Em mil novecentos e vinte e dois, colocaram até a pedra fundamental. E ela ficou lá, sozinha, por décadas.",
+   "date": "1922",
+   "cards": [],
+   "cam": {
+    "c": [
+     -47.7,
+     -15.6
+    ],
+    "s": 16
+   },
+   "pins": [
+    {
+     "ll": [
+      -47.65,
+      -15.58
+     ],
+     "label": "pedra fundamental",
+     "d": 1.0
+    }
+   ]
+  },
+  {
+   "say": "Só Juscelino Kubitschek tirou do papel. Brasília foi inaugurada em vinte e um de abril de mil novecentos e sessenta.",
+   "date": "1960",
+   "pins": [
+    {
+     "ll": [
+      -47.88,
+      -15.79
+     ],
+     "label": "Brasília",
+     "d": 0.2
+    }
+   ],
+   "cards": [
+    {
+     "text": "21/04/1960:",
+     "big": "Brasília inaugurada",
+     "iso": "BRA",
+     "d": 2.6
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -47.5,
+      -16.1
+     ],
+     "iso": "BRA",
+     "face": "happy",
+     "r": 0.8,
+     "d": 2.8
+    }
+   ]
+  },
+  {
+   "say": "Quase cento e quarenta anos depois da ideia. Você mudaria a capital de volta pro Rio?",
+   "date": null,
+   "cards": [],
+   "cam": {
+    "c": [
+     -45,
+     -18
+    ],
+    "s": 2.4
+   },
+   "balls": [
+    {
+     "ll": [
+      -47.5,
+      -16.1
+     ],
+     "iso": "BRA",
+     "face": "cool",
+     "r": 0.8,
+     "d": 0.2
+    }
+   ],
+   "pins": [
+    {
+     "ll": [
+      -47.88,
+      -15.79
+     ],
+     "label": "Brasília",
+     "d": 0
+    },
+    {
+     "ll": [
+      -43.2,
+      -22.9
+     ],
+     "label": "Rio",
+     "left": true,
+     "d": 0.6
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "A CAPITAL FOI|PRO MEIO DO NADA.|DE PROPÓSITO",
+  "c": [
+   -46.5,
+   -17.0
+  ],
+  "s": 2.6,
+  "y": 0.68,
+  "own": {
+   "BRA": "BRA"
+  },
+  "balls": [
+   {
+    "ll": [
+     -47.9,
+     -15.8
+    ],
+    "iso": "BRA",
+    "face": "cool",
+    "r": 125
+   }
+  ],
+  "arrows": [
+   {
+    "from": [
+     -43.2,
+     -22.9
+    ],
+    "to": [
+     -47.6,
+     -16.2
+    ]
+   }
+  ]
+ },
+ "yt": {
+  "title": "Por que Brasília foi construída no meio do nada? #curiosidades #historia",
+  "description": "Antes de Brasília, a capital foi Salvador (desde 1549) e o Rio de Janeiro (desde 1763), ambas no litoral. José Bonifácio já propunha a capital no interior em 1823, a Constituição de 1891 mandou fazê-la no Planalto Central, a pedra fundamental foi posta em 1922 e Juscelino inaugurou Brasília em 21 de abril de 1960.\nVocê mudaria a capital de volta pro Rio?\n\nCenário imaginário: só um \"e se\" no mapa. Os fatos de apoio são reais.\nInscreva-se pra ver o próximo \"e se\".\n\n#curiosidades #brasil #mapas #geografia #historia",
+  "tags": [
+   "curiosidades",
+   "brasil",
+   "mapas",
+   "geografia",
+   "história",
+   "simulação",
+   "e se",
+   "hiperfoco",
+   "américa do sul",
+   "brasília",
+   "capital",
+   "juscelino kubitschek",
+   "rio de janeiro",
+   "salvador",
+   "planalto central",
+   "história do brasil"
+  ],
+  "lang": "pt-BR",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-25T18:00:00Z"
+ }
+}

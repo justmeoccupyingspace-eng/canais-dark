@@ -832,3 +832,85 @@ save(19, "O pedaço do Brasil que o Uruguai diz que é dele #curiosidades #histo
      dict(title="O URUGUAI|QUER ESSE PEDAÇO|DO BRASIL", c=[-55.88, -31.0], s=45, y=0.66, own={"BRA": "BRA", "URY": "URY"}, zones=[dict(coords=RINC, iso="URY", op=0.95)],
           balls=[dict(ll=[-55.72, -31.16], iso="URY", skin="flag", face="smirk", r=120), dict(ll=[-56.08, -30.84], iso="BRA", face="rage", skin="red", r=135)]),
      "2026-11-24T18:00:00Z", tags=["uruguai", "rio grande do sul", "santana do livramento", "rincão de artigas", "fronteira", "ilha brasileira", "disputa territorial"], uf=True, terr="color")
+
+# ---------------------------------------------------------------- 20. Noronha é de Pernambuco (~360 km de Natal, >540 km de Recife; ligada à capitania de PE em 1737; território federal 1942; volta a PE em 1988; distrito estadual sem prefeito)
+NOR = [-32.42, -3.85]
+save(20, "Por que Fernando de Noronha é de Pernambuco? #curiosidades #historia",
+     "NORONHA FICA MAIS|PERTO DO RN. MAS|É DE PERNAMBUCO",
+     [
+         dict(say="Fernando de Noronha fica a uns trezentos e sessenta quilômetros de Natal. E a mais de quinhentos e quarenta de Recife. Mesmo assim, é de Pernambuco.",
+              cam={"c": [-34.2, -5.6], "s": 6}, own={"BRA": "BRA"}, pins=[dict(ll=NOR, label="Noronha", d=0.4), dict(ll=[-35.2, -5.79], label="Natal", left=True, d=1.8), dict(ll=[-34.88, -8.05], label="Recife", left=True, d=4.4)],
+              arrows=[dict(from_=[-35.1, -5.75], to=[-32.6, -3.95], d=2.0, color="#7fd3ff"), dict(from_=[-34.8, -7.95], to=[-32.55, -4.0], d=4.6, color="#ffcf40")]),
+         dict(say="O motivo é antigo. Em mil setecentos e trinta e sete, ainda na colônia, Portugal ligou a ilha à capitania de Pernambuco.",
+              arrows=[], date="1737", cards=[dict(text="1737:", big="ilha ligada a Pernambuco", iso="PRT", d=1.6)], hl=["BR-PE"]),
+         dict(say="Na Segunda Guerra, o governo federal tomou a ilha e virou território federal. Por mais de quarenta anos, não era de estado nenhum.",
+              date="1942", hl=[], cards=[dict(text="1942:", big="território federal", iso="BRA", d=1.4)], cam={"c": [-32.42, -3.85], "s": 60},
+              balls=[dict(ll=[-32.36, -3.82], iso="BRA", face="cool", r=0.75, d=1.6)]),
+         dict(say="Em mil novecentos e oitenta e oito, a nova Constituição acabou com o território. E Noronha voltou pra Pernambuco.",
+              date="1988", cards=[dict(text="1988:", big="volta pra Pernambuco", iso="PEX", d=1.6)], balls=[dict(ll=[-32.36, -3.82], iso="PEX", skin="flag", face="happy", r=0.8, d=1.6)]),
+         dict(say="E hoje Noronha nem tem prefeito. Quem manda é um administrador escolhido pelo governador de Pernambuco.",
+              date=None, cards=[dict(text="Noronha hoje:", big="sem prefeito", iso="PEX", d=1.0)]),
+         dict(say="Você acha que Noronha devia ser do Rio Grande do Norte?",
+              cards=[], cam={"c": [-34.2, -5.6], "s": 6}, pins=[dict(ll=NOR, label="Noronha", d=0), dict(ll=[-35.2, -5.79], label="Natal", left=True, d=0), dict(ll=[-34.88, -8.05], label="Recife", left=True, d=0)],
+              balls=[dict(ll=[-36.6, -5.4], iso="BRA", face="angry", r=0.7, d=0.2), dict(ll=[-36.2, -8.4], iso="PEX", skin="flag", face="smirk", r=0.7, d=0.6)]),
+     ],
+     "Fernando de Noronha fica a ~360 km de Natal e a mais de 540 km de Recife, mas é de Pernambuco: foi ligada à capitania em 1737, virou território federal em 1942 e voltou a Pernambuco com a Constituição de 1988. Hoje não tem prefeito: um administrador nomeado pelo governador cuida da ilha.\nDevia ser do RN?",
+     dict(title="NORONHA FICA MAIS|PERTO DO RN. MAS|É DE PERNAMBUCO", c=[-34.0, -5.8], s=6, y=0.68, own={"BRA": "BRA"},
+          balls=[dict(ll=[-32.42, -3.85], iso="PEX", skin="flag", face="smirk", r=110), dict(ll=[-36.6, -5.4], iso="BRA", face="rage", skin="red", r=125)],
+          arrows=[dict(from_=[-35.1, -5.75], to=[-32.6, -3.95])]),
+     "2026-11-25T15:00:00Z", tags=["fernando de noronha", "pernambuco", "rio grande do norte", "natal", "recife", "ilha", "curiosidades"], uf=True, terr="color")
+
+# ---------------------------------------------------------------- 21. Por que Brasília no meio do nada (ideia desde 1808/1823; Constituição de 1891; pedra fundamental 1922; inaugurada 21/4/1960; Salvador 1549–1763, Rio 1763–1960)
+BSB = [-47.88, -15.79]
+save(21, "Por que Brasília foi construída no meio do nada? #curiosidades #historia",
+     "A CAPITAL FOI|PRO MEIO DO NADA.|DE PROPÓSITO",
+     [
+         dict(say="Brasília foi construída no meio do nada. E de propósito. A ideia é mais velha que o próprio Brasil independente.",
+              cam={"c": [-47.9, -15.8], "s": 9}, own={"BRA": "BRA"}, pins=[dict(ll=BSB, label="Brasília", d=0.4)]),
+         dict(say="Primeiro, a capital foi Salvador. Depois, o Rio de Janeiro. As duas no litoral.",
+              cam={"c": [-43, -17], "s": 2.6}, pins=[dict(ll=[-38.5, -12.97], label="Salvador · 1549", d=0.6), dict(ll=[-43.2, -22.9], label="Rio · 1763", left=True, d=2.4)]),
+         dict(say="Em mil oitocentos e vinte e três, José Bonifácio já propunha levar a capital pro centro do país. Pra ligar o interior e não deixar o Brasil se dividir.",
+              date="1823", pins=[], cards=[dict(text="1823:", big="José Bonifácio", iso="BRA", d=1.2)],
+              arrows=[dict(from_=[-43.2, -22.9], to=[-47.7, -15.9], d=4.6, color="#ffcf40")]),
+         dict(say="A Constituição de mil oitocentos e noventa e um já mandava: a nova capital vai pro Planalto Central.",
+              date="1891", arrows=[], cards=[dict(text="Constituição de 1891:", big="capital no Planalto Central", iso="BRA", d=1.2)]),
+         dict(say="Em mil novecentos e vinte e dois, colocaram até a pedra fundamental. E ela ficou lá, sozinha, por décadas.",
+              date="1922", cards=[], cam={"c": [-47.7, -15.6], "s": 16}, pins=[dict(ll=[-47.65, -15.58], label="pedra fundamental", d=1.0)]),
+         dict(say="Só Juscelino Kubitschek tirou do papel. Brasília foi inaugurada em vinte e um de abril de mil novecentos e sessenta.",
+              date="1960", pins=[dict(ll=BSB, label="Brasília", d=0.2)], cards=[dict(text="21/04/1960:", big="Brasília inaugurada", iso="BRA", d=2.6)],
+              balls=[dict(ll=[-47.5, -16.1], iso="BRA", face="happy", r=0.8, d=2.8)]),
+         dict(say="Quase cento e quarenta anos depois da ideia. Você mudaria a capital de volta pro Rio?",
+              date=None, cards=[], cam={"c": [-45, -18], "s": 2.4}, balls=[dict(ll=[-47.5, -16.1], iso="BRA", face="cool", r=0.8, d=0.2)],
+              pins=[dict(ll=BSB, label="Brasília", d=0), dict(ll=[-43.2, -22.9], label="Rio", left=True, d=0.6)]),
+     ],
+     "Antes de Brasília, a capital foi Salvador (desde 1549) e o Rio de Janeiro (desde 1763), ambas no litoral. José Bonifácio já propunha a capital no interior em 1823, a Constituição de 1891 mandou fazê-la no Planalto Central, a pedra fundamental foi posta em 1922 e Juscelino inaugurou Brasília em 21 de abril de 1960.\nVocê mudaria a capital de volta pro Rio?",
+     dict(title="A CAPITAL FOI|PRO MEIO DO NADA.|DE PROPÓSITO", c=[-46.5, -17.0], s=2.6, y=0.68, own={"BRA": "BRA"},
+          balls=[dict(ll=[-47.9, -15.8], iso="BRA", face="cool", r=125)], arrows=[dict(from_=[-43.2, -22.9], to=[-47.6, -16.2])]),
+     "2026-11-25T18:00:00Z", tags=["brasília", "capital", "juscelino kubitschek", "rio de janeiro", "salvador", "planalto central", "história do brasil"], uf=True)
+
+# ---------------------------------------------------------------- 22. Fronteira da Paz (Livramento × Rivera; ~169 mil pessoas; sem barreira; Praça Internacional, única praça binacional, inaugurada em 26/2/1943 por Vargas e Baldomir)
+LIV = [-55.53, -30.89]
+save(22, "A cidade brasileira que divide a rua com o Uruguai #curiosidades #historia",
+     "ATRAVESSA A RUA|E VOCÊ ESTÁ|EM OUTRO PAÍS",
+     [
+         dict(say="Nessa cidade, você atravessa a rua e já está em outro país. Sem muro, sem passaporte, sem fila.",
+              cam={"c": [-55.54, -30.9], "s": 70}, own={"BRA": "BRA", "URY": "URY"},
+              balls=[dict(ll=[-55.5, -30.86], iso="BRA", face="happy", r=0.75, d=1.0), dict(ll=[-55.58, -30.94], iso="URY", skin="flag", face="happy", r=0.75, d=1.6)]),
+         dict(say="De um lado, Santana do Livramento, no Rio Grande do Sul. Do outro, Rivera, no Uruguai.",
+              balls=[], pins=[dict(ll=LIV, label="Santana do Livramento", d=0.4), dict(ll=[-55.55, -30.91], label="Rivera", left=True, d=2.6)]),
+         dict(say="Juntas, são mais de cento e sessenta mil pessoas. E a fronteira é uma linha imaginária no meio das ruas.",
+              cards=[dict(text="As duas cidades:", big="~169 mil pessoas", d=2.0)]),
+         dict(say="Tem até uma praça dividida ao meio entre os dois países. Dizem que é a única praça binacional do mundo.",
+              cards=[dict(text="Praça Internacional:", big="metade de cada país", d=1.6)], pins=[dict(ll=[-55.54, -30.9], label="Praça Internacional", d=0.6)]),
+         dict(say="Ela foi inaugurada em mil novecentos e quarenta e três, pelos presidentes dos dois países, juntos.",
+              date="1943", cards=[dict(text="1943:", big="Vargas + Baldomir", d=1.6)]),
+         dict(say="Por isso o lugar ganhou um apelido: Fronteira da Paz.",
+              date=None, cards=[dict(text="Apelido:", big="Fronteira da Paz", d=0.6)],
+              balls=[dict(ll=[-55.5, -30.86], iso="BRA", face="love", r=0.75, d=0.4), dict(ll=[-55.58, -30.94], iso="URY", skin="flag", face="love", r=0.75, d=0.8)]),
+         dict(say="Você moraria do lado brasileiro ou do uruguaio?",
+              cards=[], pins=[]),
+     ],
+     "Santana do Livramento (RS) e Rivera (Uruguai) formam a Fronteira da Paz: ~169 mil pessoas, sem barreira física, com a fronteira passando no meio das ruas. A Praça Internacional, dividida entre os dois países, foi inaugurada em 1943 por Getúlio Vargas e Alfredo Baldomir.\nVocê moraria do lado brasileiro ou do uruguaio?",
+     dict(title="ATRAVESSA A RUA|E VOCÊ ESTÁ|EM OUTRO PAÍS", c=[-55.54, -30.92], s=55, y=0.68, own={"BRA": "BRA", "URY": "URY"},
+          balls=[dict(ll=[-55.49, -30.86], iso="BRA", face="happy", r=120), dict(ll=[-55.6, -30.97], iso="URY", skin="flag", face="happy", r=120)]),
+     "2026-11-25T22:00:00Z", tags=["santana do livramento", "rivera", "uruguai", "fronteira da paz", "rio grande do sul", "praça internacional", "fronteira"], uf=True, terr="color")
