@@ -24,6 +24,7 @@ Dono: Kauan. Regra dele: "A ÚNICA IMPORTÂNCIA É RESULTADO". Responder sempre 
 - Conferir em cada run: linha `notice]{...wpm...}` (Short: 150–195 ppm) e `enviado: <ID> agendado para ...`.
 
 ## 3. Fechar
+- TOM DO RELATÓRIO (ordem do Kauan, 21/11): BRUTO e honesto, todo dia. Sem suavizar, sem "ainda é cedo" como desculpa, sem elogio. Abrir com o veredito (está funcionando ou não, com o número), depois o que fracassou e por quê, o que foi CORTADO hoje, o que muda amanhã, e os erros do próprio Claude. Nunca repetir algo que não deu resultado só por inércia: todo dia tem que ter uma melhoria concreta no ar.
 - Linha nova no topo de specs/long/QUEUE.md: data/hora, números (views por vídeo novo, inscritos A e B), o que foi agendado (IDs e datas), problemas. Commit + push.
 - Mensagem final curta ao Kauan (PT-BR): só números + links (youtube.com/shorts/ID ou youtu.be/ID) + o que foi agendado e qualquer coisa feita sem ele saber.
 
