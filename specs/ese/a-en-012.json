@@ -1,0 +1,337 @@
+{
+ "id": "a-en-012",
+ "channel": "A",
+ "lang": "en",
+ "format": "short",
+ "style": "clean",
+ "hook": "SPAIN STILL OWNS|TWO CITIES|IN AFRICA",
+ "hook_end": 2.6,
+ "voice": "Charon",
+ "models": "gemini-3.8-flash-tts,gemini-3.1-flash-tts-preview",
+ "edge_voice": "en-US-AndrewMultilingualNeural",
+ "music": {
+  "track": "Volatile Reaction",
+  "vol": 0.11,
+  "alt": [
+   "Hidden Agenda",
+   "Investigations"
+  ]
+ },
+ "beats": [
+  {
+   "say": "Spain has two cities on the African continent. Surrounded by Morocco on land, and by the sea.",
+   "cam": {
+    "c": [
+     -4.2,
+     35.6
+    ],
+    "s": 9
+   },
+   "own": {
+    "ESP": "ESP",
+    "MAR": "MAR"
+   },
+   "pins": [
+    {
+     "ll": [
+      -5.32,
+      35.89
+     ],
+     "label": "Ceuta",
+     "left": true,
+     "d": 1.6
+    },
+    {
+     "ll": [
+      -2.94,
+      35.29
+     ],
+     "label": "Melilla",
+     "d": 2.2
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -4.6,
+      34.6
+     ],
+     "iso": "MAR",
+     "skin": "flag",
+     "face": "angry",
+     "r": 0.8,
+     "d": 3.0
+    }
+   ]
+  },
+  {
+   "say": "Melilla has been Spanish since 1497. Just five years after Columbus reached the Americas.",
+   "date": "1497",
+   "balls": [],
+   "cam": {
+    "c": [
+     -2.94,
+     35.29
+    ],
+    "s": 40
+   },
+   "pins": [
+    {
+     "ll": [
+      -2.94,
+      35.29
+     ],
+     "label": "Melilla",
+     "d": 0.2
+    }
+   ],
+   "cards": [
+    {
+     "text": "Spanish since:",
+     "big": "1497",
+     "iso": "ESP",
+     "d": 1.0
+    }
+   ]
+  },
+  {
+   "say": "Ceuta was taken by Portugal in 1415. Portugal handed it to Spain by treaty in 1668.",
+   "date": "1415",
+   "cam": {
+    "c": [
+     -5.32,
+     35.89
+    ],
+    "s": 40
+   },
+   "pins": [
+    {
+     "ll": [
+      -5.32,
+      35.89
+     ],
+     "label": "Ceuta",
+     "d": 0.2
+    }
+   ],
+   "cards": [],
+   "balls": [
+    {
+     "ll": [
+      -5.22,
+      35.96
+     ],
+     "iso": "PRT",
+     "skin": "flag",
+     "face": "cool",
+     "r": 0.65,
+     "d": 0.6
+    },
+    {
+     "ll": [
+      -5.42,
+      35.82
+     ],
+     "iso": "ESP",
+     "skin": "flag",
+     "face": "happy",
+     "r": 0.65,
+     "d": 3.6
+    }
+   ]
+  },
+  {
+   "say": "Both are tiny. Ceuta is about eighteen square kilometers, Melilla about twelve. Around 85,000 people each.",
+   "date": null,
+   "balls": [],
+   "cam": {
+    "c": [
+     -4.2,
+     35.6
+    ],
+    "s": 9
+   },
+   "pins": [
+    {
+     "ll": [
+      -5.32,
+      35.89
+     ],
+     "label": "Ceuta · 18.5 km²",
+     "left": true,
+     "d": 0.4
+    },
+    {
+     "ll": [
+      -2.94,
+      35.29
+     ],
+     "label": "Melilla · 12.3 km²",
+     "d": 1.4
+    }
+   ],
+   "cards": [
+    {
+     "text": "Population:",
+     "big": "~85,000 each",
+     "iso": "ESP",
+     "d": 3.4
+    }
+   ]
+  },
+  {
+   "say": "Morocco calls them occupied and wants them back. Spain says they've been Spain for centuries.",
+   "cards": [],
+   "balls": [
+    {
+     "ll": [
+      -4.6,
+      34.6
+     ],
+     "iso": "MAR",
+     "skin": "flag",
+     "face": "angry",
+     "r": 0.85,
+     "d": 0.2
+    },
+    {
+     "ll": [
+      -4.0,
+      36.9
+     ],
+     "iso": "ESP",
+     "skin": "flag",
+     "face": "smirk",
+     "r": 0.85,
+     "d": 2.0
+    }
+   ]
+  },
+  {
+   "say": "Melilla's border is a double fence about six meters tall. Since 2020, parts are being raised above ten.",
+   "balls": [],
+   "cam": {
+    "c": [
+     -2.94,
+     35.29
+    ],
+    "s": 40
+   },
+   "pins": [
+    {
+     "ll": [
+      -2.94,
+      35.29
+     ],
+     "label": "Melilla",
+     "d": 0.2
+    }
+   ],
+   "cards": [
+    {
+     "text": "Border fence:",
+     "big": "6 m → 10 m+",
+     "iso": "ESP",
+     "d": 2.0
+    }
+   ]
+  },
+  {
+   "say": "So yes: the European Union has a land border with Africa. Should Spain keep them?",
+   "cards": [],
+   "cam": {
+    "c": [
+     -4.2,
+     35.6
+    ],
+    "s": 9
+   },
+   "balls": [
+    {
+     "ll": [
+      -4.6,
+      34.6
+     ],
+     "iso": "MAR",
+     "skin": "flag",
+     "face": "smirk",
+     "r": 0.8,
+     "d": 0.3
+    },
+    {
+     "ll": [
+      -4.0,
+      36.9
+     ],
+     "iso": "ESP",
+     "skin": "flag",
+     "face": "smirk",
+     "r": 0.8,
+     "d": 0.6
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "SPAIN STILL OWNS|TWO CITIES|IN AFRICA",
+  "c": [
+   -4.2,
+   35.5
+  ],
+  "s": 8,
+  "y": 0.66,
+  "own": {
+   "ESP": "ESP",
+   "MAR": "MAR"
+  },
+  "balls": [
+   {
+    "ll": [
+     -4.8,
+     34.4
+    ],
+    "iso": "MAR",
+    "skin": "flag",
+    "face": "angry",
+    "r": 125
+   },
+   {
+    "ll": [
+     -3.6,
+     37.0
+    ],
+    "iso": "ESP",
+    "skin": "flag",
+    "face": "smirk",
+    "r": 120
+   }
+  ]
+ },
+ "yt": {
+  "title": "Why Does Spain Still Own Two Cities in Africa?",
+  "description": "Ceuta and Melilla: two Spanish cities on the north coast of Africa. Melilla has been Spanish since 1497; Ceuta was taken by Portugal in 1415 and passed to Spain by the Treaty of Lisbon in 1668. About 85,000 people each, and Morocco wants both back.\n\nFollow for more history on the map.\n\n#history #maps #geography",
+  "tags": [
+   "history",
+   "map",
+   "history on a map",
+   "military history",
+   "geography",
+   "history shorts",
+   "maps",
+   "ceuta",
+   "melilla",
+   "spain",
+   "morocco",
+   "africa",
+   "european union",
+   "geography",
+   "borders"
+  ],
+  "lang": "en",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-24T14:00:00Z"
+ },
+ "style_prompt": "Read this in English as a documentary narrator for a fast history channel: confident, clear, slightly dramatic, brisk pace (about 165 words per minute), short pauses before dates and numbers. Never sound like an advert. Read the text exactly as written."
+}

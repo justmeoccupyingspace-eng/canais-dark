@@ -8,7 +8,7 @@ old = es["beats"]
 if len(old) != len(spec["beats"]):
     sys.exit(f"::error::número de beats mudou ({len(old)} → {len(spec['beats'])}); precisa gerar a voz de novo")
 es["beats"] = [{**{k: v for k, v in b.items() if k != "say"}, "t0": o["t0"]} for b, o in zip(spec["beats"], old)]
-for k in ("hook", "tag", "badge", "uf", "skin", "basemap"):
+for k in ("hook", "tag", "badge", "uf", "skin", "basemap", "style", "terr", "punch"):
     if k in spec: es[k] = spec[k]
 es["hook_end"] = spec.get("hook_end", es.get("hook_end", 2.8)); es["thumb"] = spec.get("thumb", {})
 json.dump(es, open(f"{OUT}/es.json", "w"), ensure_ascii=False)

@@ -13,8 +13,9 @@ TAIL = ("\n\nCenário imaginário: só um \"e se\" no mapa. Os fatos de apoio s�
         "Inscreva-se pra ver o próximo \"e se\".\n\n#curiosidades #brasil #mapas #geografia #historia")
 
 
-def save(n, title, hook, beats, desc, thumb, at, tags=(), music="Hidden Agenda", uf=False):
-    spec = dict(id=f"b-pt-{n:03d}", channel="B", lang="pt", format="short", hook=hook, hook_end=2.8, badge="SÓ IMAGINAÇÃO", uf=uf,
+def save(n, title, hook, beats, desc, thumb, at, tags=(), music="Hidden Agenda", uf=False, badge=None, terr=None):
+    # v5 (≥017) é fato real: sem o selo "SÓ IMAGINAÇÃO" (só com badge= explícito)
+    spec = dict(id=f"b-pt-{n:03d}", channel="B", lang="pt", format="short", hook=hook, hook_end=2.8, badge=("SÓ IMAGINAÇÃO" if n < 17 else badge), uf=uf,
                 voice="Fenrir", music=dict(track=music, vol=0.12, alt=["Investigations", "Curiosity"]), beats=beats,
                 thumb=thumb, yt=dict(title=title, description=desc + TAIL, tags=TAGS + list(tags), lang="pt-BR", categoryId="27"),
                 publish=dict(at=at))
@@ -22,6 +23,7 @@ def save(n, title, hook, beats, desc, thumb, at, tags=(), music="Hidden Agenda",
         if isinstance(o, dict): return {("from" if k == "from_" else k): fix(v) for k, v in o.items()}
         if isinstance(o, list): return [fix(v) for v in o]
         return o
+    if terr: spec["terr"] = terr  # "color": territórios translúcidos (para zoom alto em áreas pequenas)
     spec = fix(spec)
     words = sum(len(b["say"].split()) for b in beats)
     # 22/11: retenção dos Shorts de 1:45–2:15 = 33–45% (saem aos 43–57 s) → a partir do 017, máx. 140 palavras (~50 s)
@@ -738,3 +740,95 @@ save(16, "E se essa parte da Guiana fosse do Brasil? #curiosidades #brasil",
           balls=[dict(ll=[-57.9, 4.3], iso="GBR", skin="flag", face="smirk", r=125), dict(ll=[-61.8, 1.6], iso="BRA", face="rage", skin="red", r=145)],
           arrows=[dict(from_=[-61.2, 2.3], to=[-59.4, 3.2])]),
      "2026-11-24T21:00:00Z", tags=["roraima", "guiana", "pirara", "joaquim nabuco", "inglaterra", "fronteira", "essequibo"], uf=True)
+
+# ================================================================ FORMATO v5 (22/11): fato real + "Por que…", ≤140 palavras, afirmação forte no 1º quadro, cena nova a cada 1–2 frases
+# ---------------------------------------------------------------- 17. Bolívia sem mar (Guerra do Pacífico 1879–1884; tratado 1904; Dia do Mar 23/3; Haia 2018; marinha no Titicaca)
+LITORAL = [[-70.15, -21.45], [-70.2, -22.4], [-70.35, -23.5], [-70.6, -24.6], [-70.5, -25.4], [-68.4, -25.4], [-67.6, -23.8], [-68.0, -22.4], [-68.2, -21.45]]
+save(17, "Por que a Bolívia não tem mar? #curiosidades #historia",
+     "A BOLÍVIA TEM|MARINHA. MAS|NÃO TEM MAR",
+     [
+         dict(say="A Bolívia tem marinha. Com navios, almirantes e tudo. Só que não tem mar.",
+              cam={"c": [-65, -17], "s": 3.0}, own={"BOL": "BOL", "CHL": "CHL", "PER": "PER", "BRA": "BRA", "ARG": "ARG"},
+              balls=[dict(ll=[-64.5, -16.5], iso="BOL", skin="flag", face="sad", r=0.9, d=0.3)]),
+         dict(say="Mas já teve. Até mil oitocentos e setenta e nove, esse pedaço do Pacífico era boliviano.",
+              balls=[], cam={"c": [-69.3, -23.4], "s": 7}, zones=[dict(coords=LITORAL, iso="BOL", op=0.95, d=0.6)],
+              cards=[dict(text="Litoral boliviano:", big="~400 km de costa", iso="BOL", d=2.6)]),
+         dict(say="Aí veio a Guerra do Pacífico. Chile contra Bolívia e Peru.",
+              cards=[], cam={"c": [-69.5, -20], "s": 4.4}, date="1879",
+              balls=[dict(ll=[-70.8, -27.5], iso="CHL", skin="flag", face="angry", r=0.8, d=0.3), dict(ll=[-66.5, -19], iso="BOL", skin="flag", face="shock", r=0.75, d=1.2), dict(ll=[-73.5, -14.5], iso="PER", skin="flag", face="shock", r=0.75, d=1.8)]),
+         dict(say="O Chile venceu e ficou com todo o litoral da Bolívia.",
+              zones=[dict(coords=LITORAL, iso="CHL", op=0.95, d=0.5)], date="1884",
+              balls=[dict(ll=[-71.2, -24.0], iso="CHL", skin="flag", face="cool", r=0.85, d=0.6)]),
+         dict(say="A Bolívia nunca aceitou. Todo vinte e três de março, o país para pro Dia do Mar.",
+              date=None, balls=[dict(ll=[-65.5, -17.5], iso="BOL", skin="flag", face="angry", r=0.85, d=0.2)], cam={"c": [-66, -19], "s": 3.6},
+              cards=[dict(text="23 de março:", big="Dia do Mar", iso="BOL", d=2.0)]),
+         dict(say="Em dois mil e dezoito, foi até a Corte de Haia pedir uma saída pro oceano. E perdeu.",
+              date="2018", cards=[dict(text="Corte de Haia:", big="Bolívia perde", iso="CHL", d=3.4)]),
+         dict(say="E a marinha? Navega no lago Titicaca, a quase quatro mil metros de altitude.",
+              date=None, cards=[dict(text="Lago Titicaca:", big="3.812 m de altitude", iso="BOL", d=1.6)], cam={"c": [-69.3, -15.9], "s": 14},
+              pins=[dict(ll=[-69.35, -15.85], label="Lago Titicaca", d=0.4)], balls=[dict(ll=[-68.9, -16.3], iso="BOL", skin="flag", face="cool", r=0.7, d=2.4)]),
+         dict(say="Você devolveria o mar pra Bolívia?",
+              pins=[], cards=[], cam={"c": [-67, -20], "s": 3.2}, balls=[dict(ll=[-65.5, -17.5], iso="BOL", skin="flag", face="sad", r=0.85, d=0.2), dict(ll=[-70.9, -26.5], iso="CHL", skin="flag", face="smirk", r=0.8, d=0.5)]),
+     ],
+     "Até 1879 a Bolívia tinha uns 400 km de litoral no Pacífico. Perdeu tudo para o Chile na Guerra do Pacífico (1879–1884), comemora o Dia do Mar todo 23 de março, perdeu na Corte de Haia em 2018 — e a marinha dela navega no lago Titicaca.\nVocê devolveria o mar pra Bolívia?",
+     dict(title="A BOLÍVIA TEM|MARINHA. MAS|NÃO TEM MAR", c=[-67.5, -19.5], s=3.6, y=0.68, own={"BOL": "BOL", "CHL": "CHL", "PER": "PER"}, zones=[dict(coords=LITORAL, iso="CHL", op=0.95)],
+          balls=[dict(ll=[-64.8, -17.0], iso="BOL", skin="flag", face="sad", r=135), dict(ll=[-71.0, -25.6], iso="CHL", skin="flag", face="smirk", r=120)]),
+     "2026-11-22T18:00:00Z", tags=["bolívia", "chile", "guerra do pacífico", "mar", "lago titicaca", "marinha", "américa do sul"])
+
+# ---------------------------------------------------------------- 18. Dois Mato Grosso (LC 31 de 11/10/1977, Geisel; MS instalado em 1979; Estado de Maracaju em 1932)
+save(18, "Por que existem dois Mato Grosso? #curiosidades #historia",
+     "POR QUE EXISTEM|DOIS MATO|GROSSO?",
+     [
+         dict(say="Por que o Brasil tem dois Mato Grosso? Porque até mil novecentos e setenta e sete, era um só. E gigante.",
+              cam={"c": [-55, -16], "s": 3.0}, own={"BRA": "BRA", "BR-MT": "BRA", "BR-MS": "BRA"}, hl=["BR-MT", "BR-MS"],
+              cards=[dict(text="Mato Grosso unido:", big="maior que a Bolívia", iso="BRA", d=3.4)]),
+         dict(say="E o sul, de Campo Grande, vivia reclamando: pagava imposto e as obras ficavam em Cuiabá.",
+              hl=[], cards=[], pins=[dict(ll=[-54.62, -20.45], label="Campo Grande", d=0.4), dict(ll=[-56.1, -15.6], label="Cuiabá", d=3.0)],
+              arrows=[dict(from_=[-54.62, -20.3], to=[-56.0, -15.8], d=3.4, color="#ffcf40")]),
+         dict(say="Em mil novecentos e trinta e dois, o sul apoiou São Paulo na revolução e chegou a proclamar um estado próprio: Maracaju. Acabou junto com a revolução.",
+              arrows=[], pins=[], date="1932", hl=["BR-MS"], cards=[dict(text="1932:", big="Estado de Maracaju", d=4.0)]),
+         dict(say="Em mil novecentos e setenta e sete, o presidente Geisel assinou a divisão. Nascia o Mato Grosso do Sul.",
+              hl=[], date="1977", own={"BR-MS": "MSX"}, od=2.4, cards=[dict(text="11/10/1977:", big="nasce o MS", iso="MSX", d=3.0)],
+              balls=[dict(ll=[-54.6, -20.6], iso="MSX", skin="flag", face="happy", r=0.85, d=3.2)]),
+         dict(say="E o nome quase foi outro: Estado de Campo Grande.",
+              date=None, cards=[dict(text="Quase se chamou:", big="Estado de Campo Grande", iso="MSX", d=0.8)]),
+         dict(say="Por isso, quem é de lá não gosta de ser chamado de mato-grossense. É sul-mato-grossense.",
+              cards=[], balls=[dict(ll=[-54.6, -20.6], iso="MSX", skin="flag", face="angry", r=0.85, d=0.2), dict(ll=[-55.8, -13.0], iso="BRA", face="smirk", r=0.8, d=1.6)]),
+         dict(say="Você sabia a diferença?",
+              balls=[dict(ll=[-54.6, -20.6], iso="MSX", skin="flag", face="smirk", r=0.85, d=0), dict(ll=[-55.8, -13.0], iso="BRA", face="smirk", r=0.8, d=0)]),
+     ],
+     "Até 1977 Mato Grosso era um estado só, maior que a Bolívia. Em 1932 o sul chegou a proclamar o Estado de Maracaju; em 11/10/1977 o presidente Geisel assinou a divisão e, em 1979, Campo Grande virou capital do Mato Grosso do Sul — que quase se chamou Estado de Campo Grande.\nVocê sabia a diferença?",
+     dict(title="POR QUE EXISTEM|DOIS MATO|GROSSO?", c=[-55.0, -17.0], s=3.4, y=0.68, own={"BRA": "BRA", "BR-MS": "MSX"},
+          balls=[dict(ll=[-54.4, -21.2], iso="MSX", skin="flag", face="angry", r=125), dict(ll=[-55.8, -12.6], iso="BRA", face="smirk", r=125)]),
+     "2026-11-23T18:00:00Z", tags=["mato grosso", "mato grosso do sul", "campo grande", "cuiabá", "geisel", "1977", "sul-mato-grossense"], uf=True)
+
+# ---------------------------------------------------------------- 19. Rincão de Artigas (~237 km², Sant'Ana do Livramento; tratado de 1851; arroio da Invernada; parque eólico Coxilha Negra 72 turbinas; nota do Uruguai jun/2025; Ilha Brasileira)
+RINC = [[-56.06, -30.93], [-55.86, -30.86], [-55.70, -30.97], [-55.78, -31.08], [-55.98, -31.08]]
+save(19, "O pedaço do Brasil que o Uruguai diz que é dele #curiosidades #historia",
+     "O URUGUAI|QUER ESSE PEDAÇO|DO BRASIL",
+     [
+         dict(say="O Uruguai diz que esse pedaço do Rio Grande do Sul é dele. E até hoje não desistiu.",
+              cam={"c": [-55.88, -30.98], "s": 60}, own={"BRA": "BRA", "URY": "URY"}, zones=[dict(coords=RINC, iso="URY", op=0.95, label="", d=0.4)],
+              balls=[dict(ll=[-55.74, -31.12], iso="URY", skin="flag", face="angry", r=0.8, d=1.2)]),
+         dict(say="Fica em Santana do Livramento. São uns duzentos e trinta e sete quilômetros quadrados. Maior que Recife.",
+              balls=[], cam={"c": [-55.6, -30.85], "s": 12}, pins=[dict(ll=[-55.53, -30.89], label="Santana do Livramento", d=0.4)],
+              cards=[dict(text="Rincão de Artigas:", big="~237 km²", iso="URY", d=3.2)]),
+         dict(say="Tudo por causa de um tratado de mil oitocentos e cinquenta e um, que dizia: a fronteira é o arroio da Invernada.",
+              pins=[], cards=[], date="1851", cam={"c": [-55.88, -30.98], "s": 60}),
+         dict(say="O problema: Brasil e Uruguai não concordam sobre qual riacho é esse.",
+              date=None, balls=[dict(ll=[-56.05, -30.86], iso="BRA", face="angry", r=0.75, d=0.2), dict(ll=[-55.72, -31.12], iso="URY", skin="flag", face="angry", r=0.75, d=0.6)]),
+         dict(say="Na prática, quem manda ali é o Brasil. Que construiu um parque eólico com setenta e duas turbinas.",
+              zones=[dict(coords=RINC, iso="BRA", op=0.95, d=0.4)], balls=[dict(ll=[-56.05, -30.86], iso="BRA", face="cool", r=0.8, d=0.2)],
+              cards=[dict(text="Parque eólico:", big="72 turbinas", iso="BRA", d=2.6)]),
+         dict(say="Em dois mil e vinte e cinco, o Uruguai mandou um recado oficial: o parque não muda nada. A terra continua sendo dele.",
+              date="2025", cards=[dict(text="Uruguai, 2025:", big="\"a terra é nossa\"", iso="URY", d=1.6)], balls=[dict(ll=[-55.72, -31.12], iso="URY", skin="flag", face="angry", r=0.8, d=0.2)]),
+         dict(say="E tem mais: o Uruguai também quer uma ilhota na fronteira com a Argentina. O nome dela? Ilha Brasileira.",
+              date=None, cards=[], balls=[], cam={"c": [-57.6, -30.2], "s": 14}, pins=[dict(ll=[-57.62, -30.19], label="Ilha Brasileira", d=4.2)]),
+         dict(say="De quem é: do Brasil ou do Uruguai?",
+              pins=[], cam={"c": [-55.88, -30.98], "s": 60}, zones=[dict(coords=RINC, iso="URY", op=0.6, d=0)],
+              balls=[dict(ll=[-56.05, -30.86], iso="BRA", face="smirk", r=0.75, d=0), dict(ll=[-55.72, -31.12], iso="URY", skin="flag", face="smirk", r=0.75, d=0.3)]),
+     ],
+     "O Uruguai reivindica o Rincão de Artigas, uns 237 km² em Sant'Ana do Livramento (RS): o tratado de 1851 fala do arroio da Invernada e os dois países não concordam sobre qual riacho é esse. O Brasil administra a área, onde fica o parque eólico Coxilha Negra (72 turbinas); em 2025 o Uruguai reafirmou a reivindicação. E ainda quer a Ilha Brasileira, na fronteira com a Argentina.\nDe quem é?",
+     dict(title="O URUGUAI|QUER ESSE PEDAÇO|DO BRASIL", c=[-55.88, -31.0], s=45, y=0.66, own={"BRA": "BRA", "URY": "URY"}, zones=[dict(coords=RINC, iso="URY", op=0.95)],
+          balls=[dict(ll=[-55.72, -31.16], iso="URY", skin="flag", face="smirk", r=120), dict(ll=[-56.08, -30.84], iso="BRA", face="rage", skin="red", r=135)]),
+     "2026-11-24T18:00:00Z", tags=["uruguai", "rio grande do sul", "santana do livramento", "rincão de artigas", "fronteira", "ilha brasileira", "disputa territorial"], uf=True, terr="color")

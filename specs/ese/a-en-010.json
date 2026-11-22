@@ -1,0 +1,341 @@
+{
+ "id": "a-en-010",
+ "channel": "A",
+ "lang": "en",
+ "format": "short",
+ "style": "clean",
+ "hook": "RUSSIA OWNS|A PIECE OF|THE EU",
+ "hook_end": 2.6,
+ "voice": "Charon",
+ "models": "gemini-3.8-flash-tts,gemini-3.1-flash-tts-preview",
+ "edge_voice": "en-US-AndrewMultilingualNeural",
+ "music": {
+  "track": "Volatile Reaction",
+  "vol": 0.11,
+  "alt": [
+   "Hidden Agenda",
+   "Investigations"
+  ]
+ },
+ "beats": [
+  {
+   "say": "This piece of land is surrounded by the European Union. But it belongs to Russia.",
+   "cam": {
+    "c": [
+     21.5,
+     54.6
+    ],
+    "s": 9
+   },
+   "own": {
+    "RU-KGD": "RUS",
+    "POL": "POL",
+    "LTU": "LTU",
+    "BLR": "BLR"
+   },
+   "hl": [
+    "RU-KGD"
+   ],
+   "balls": [
+    {
+     "ll": [
+      20.6,
+      54.75
+     ],
+     "iso": "RUS",
+     "skin": "flag",
+     "face": "smirk",
+     "r": 0.7,
+     "d": 1.4
+    }
+   ]
+  },
+  {
+   "say": "Kaliningrad. About a million people, squeezed between Poland and Lithuania.",
+   "hl": [],
+   "cards": [
+    {
+     "text": "Kaliningrad:",
+     "big": "~1 million people",
+     "iso": "RUS",
+     "d": 1.0
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      20.6,
+      54.75
+     ],
+     "iso": "RUS",
+     "skin": "flag",
+     "face": "cool",
+     "r": 0.7,
+     "d": 0
+    },
+    {
+     "ll": [
+      19.6,
+      53.4
+     ],
+     "iso": "POL",
+     "skin": "flag",
+     "face": "shock",
+     "r": 0.65,
+     "d": 2.6
+    },
+    {
+     "ll": [
+      23.6,
+      55.6
+     ],
+     "iso": "LTU",
+     "skin": "flag",
+     "face": "shock",
+     "r": 0.6,
+     "d": 3.0
+    }
+   ]
+  },
+  {
+   "say": "For almost 700 years, it was German. Founded in 1255 as Königsberg, in East Prussia.",
+   "date": "1255",
+   "cards": [],
+   "balls": [],
+   "own": {
+    "RU-KGD": "DEU"
+   },
+   "od": 0.3,
+   "cam": {
+    "c": [
+     20.5,
+     54.7
+    ],
+    "s": 16
+   },
+   "pins": [
+    {
+     "ll": [
+      20.51,
+      54.71
+     ],
+     "label": "Königsberg",
+     "d": 1.6
+    }
+   ]
+  },
+  {
+   "say": "Then Germany lost World War Two. In 1945, the Allies handed the city to the Soviet Union.",
+   "date": "1945",
+   "own": {
+    "RU-KGD": "SOV"
+   },
+   "od": 1.2,
+   "cam": {
+    "c": [
+     25,
+     54
+    ],
+    "s": 4.0
+   },
+   "pins": [],
+   "arrows": [
+    {
+     "from": [
+      37.6,
+      55.75
+     ],
+     "to": [
+      20.6,
+      54.7
+     ],
+     "color": "#ff5a3c",
+     "d": 1.0
+    }
+   ]
+  },
+  {
+   "say": "A year later, it was renamed Kaliningrad. The Germans were expelled, and Russians moved in.",
+   "date": "1946",
+   "arrows": [],
+   "cards": [
+    {
+     "text": "1946:",
+     "big": "Königsberg → Kaliningrad",
+     "iso": "SOV",
+     "d": 1.0
+    }
+   ]
+  },
+  {
+   "say": "It made sense when Lithuania was Soviet too. Then in 1991, the Soviet Union collapsed.",
+   "date": "1991",
+   "cards": [],
+   "own": {
+    "RU-KGD": "RUS",
+    "LTU": "LTU"
+   },
+   "od": 1.6,
+   "cam": {
+    "c": [
+     25,
+     55
+    ],
+    "s": 3.4
+   },
+   "balls": [
+    {
+     "ll": [
+      24.0,
+      55.4
+     ],
+     "iso": "LTU",
+     "skin": "flag",
+     "face": "happy",
+     "r": 0.7,
+     "d": 2.2
+    }
+   ]
+  },
+  {
+   "say": "Overnight, Kaliningrad was cut off from Russia. Today, every road to it from Russia crosses EU territory.",
+   "date": null,
+   "balls": [],
+   "hl": [
+    "RU-KGD"
+   ],
+   "arrows": [
+    {
+     "from": [
+      30.5,
+      55.5
+     ],
+     "to": [
+      21.2,
+      54.8
+     ],
+     "color": "#ffcf40",
+     "d": 2.0
+    }
+   ]
+  },
+  {
+   "say": "And its ice-free port is key for Russia's Baltic Fleet.",
+   "hl": [],
+   "arrows": [],
+   "cam": {
+    "c": [
+     20.2,
+     54.75
+    ],
+    "s": 18
+   },
+   "pins": [
+    {
+     "ll": [
+      19.9,
+      54.64
+     ],
+     "label": "Baltiysk",
+     "left": true,
+     "d": 0.6
+    }
+   ],
+   "cards": [
+    {
+     "text": "Ice-free port:",
+     "big": "key for the Baltic Fleet",
+     "iso": "RUS",
+     "d": 1.8
+    }
+   ]
+  },
+  {
+   "say": "Oh, and the philosopher Immanuel Kant? Born and buried right here, when it was still Königsberg.",
+   "pins": [
+    {
+     "ll": [
+      20.51,
+      54.71
+     ],
+     "label": "Kant's Königsberg",
+     "d": 1.0
+    }
+   ],
+   "cards": []
+  }
+ ],
+ "thumb": {
+  "title": "RUSSIA OWNS|A PIECE OF|THE EU",
+  "c": [
+   21.6,
+   54.4
+  ],
+  "s": 8,
+  "y": 0.66,
+  "own": {
+   "RU-KGD": "RUS",
+   "POL": "POL",
+   "LTU": "LTU"
+  },
+  "balls": [
+   {
+    "ll": [
+     20.4,
+     54.85
+    ],
+    "iso": "RUS",
+    "skin": "flag",
+    "face": "smirk",
+    "r": 120
+   },
+   {
+    "ll": [
+     20.2,
+     53.4
+    ],
+    "iso": "POL",
+    "skin": "flag",
+    "face": "shock",
+    "r": 115
+   },
+   {
+    "ll": [
+     23.8,
+     55.5
+    ],
+    "iso": "LTU",
+    "skin": "flag",
+    "face": "shock",
+    "r": 105
+   }
+  ]
+ },
+ "yt": {
+  "title": "Why Does Russia Own a Piece of Land Inside the EU?",
+  "description": "Kaliningrad: about 15,000 km² and a million people between Poland and Lithuania. German Königsberg for almost 700 years, handed to the USSR in 1945, renamed in 1946, and cut off from Russia when the Soviet Union collapsed in 1991.\n\nFollow for more history on the map.\n\n#history #maps #geography",
+  "tags": [
+   "history",
+   "map",
+   "history on a map",
+   "military history",
+   "geography",
+   "history shorts",
+   "maps",
+   "kaliningrad",
+   "russia",
+   "konigsberg",
+   "european union",
+   "poland",
+   "lithuania",
+   "baltic fleet",
+   "east prussia"
+  ],
+  "lang": "en",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-22T14:00:00Z"
+ },
+ "style_prompt": "Read this in English as a documentary narrator for a fast history channel: confident, clear, slightly dramatic, brisk pace (about 165 words per minute), short pauses before dates and numbers. Never sound like an advert. Read the text exactly as written."
+}

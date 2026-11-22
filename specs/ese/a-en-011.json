@@ -1,0 +1,329 @@
+{
+ "id": "a-en-011",
+ "channel": "A",
+ "lang": "en",
+ "format": "short",
+ "style": "clean",
+ "hook": "4,270 KM LONG.|177 KM WIDE.|HOW?",
+ "hook_end": 2.6,
+ "voice": "Charon",
+ "models": "gemini-3.8-flash-tts,gemini-3.1-flash-tts-preview",
+ "edge_voice": "en-US-AndrewMultilingualNeural",
+ "music": {
+  "track": "Volatile Reaction",
+  "vol": 0.11,
+  "alt": [
+   "Hidden Agenda",
+   "Investigations"
+  ]
+ },
+ "beats": [
+  {
+   "say": "Chile is about 4,270 kilometers long, but on average just 177 kilometers wide. How did a country end up shaped like this?",
+   "cam": {
+    "c": [
+     -70,
+     -37
+    ],
+    "s": 1.35
+   },
+   "own": {
+    "CHL": "CHL",
+    "ARG": "ARG",
+    "BOL": "BOL",
+    "PER": "PER"
+   },
+   "hl": [
+    "CHL"
+   ],
+   "cards": [
+    {
+     "text": "Length:",
+     "big": "~4,270 km",
+     "iso": "CHL",
+     "d": 3.0
+    },
+    {
+     "text": "Average width:",
+     "big": "~177 km",
+     "iso": "CHL",
+     "d": 5.0
+    }
+   ]
+  },
+  {
+   "say": "Blame the Andes. One of the highest mountain ranges on Earth runs down its entire east side.",
+   "hl": [],
+   "cards": [],
+   "cam": {
+    "c": [
+     -69.5,
+     -30
+    ],
+    "s": 3.0
+   },
+   "line": {
+    "lon": -69.8,
+    "color": "#ffffff",
+    "d": 0.6
+   }
+  },
+  {
+   "say": "The Spanish ran this strip between the mountains and the Pacific as its own colony. East of the mountains became Argentina.",
+   "line": null,
+   "balls": [
+    {
+     "ll": [
+      -71.5,
+      -33.5
+     ],
+     "iso": "CHL",
+     "skin": "flag",
+     "face": "cool",
+     "r": 0.7,
+     "d": 1.6
+    },
+    {
+     "ll": [
+      -64.5,
+      -34
+     ],
+     "iso": "ARG",
+     "skin": "flag",
+     "face": "smirk",
+     "r": 0.8,
+     "d": 3.6
+    }
+   ]
+  },
+  {
+   "say": "And the north? That wasn't even Chile's. The Atacama desert belonged to Bolivia and Peru.",
+   "balls": [],
+   "cam": {
+    "c": [
+     -69.5,
+     -22
+    ],
+    "s": 4.0
+   },
+   "own": {
+    "CHL": "CHL"
+   },
+   "zones": [
+    {
+     "coords": [
+      [
+       -70.15,
+       -21.45
+      ],
+      [
+       -70.2,
+       -22.4
+      ],
+      [
+       -70.35,
+       -23.5
+      ],
+      [
+       -70.6,
+       -24.6
+      ],
+      [
+       -70.5,
+       -25.4
+      ],
+      [
+       -68.4,
+       -25.4
+      ],
+      [
+       -67.6,
+       -23.8
+      ],
+      [
+       -68.0,
+       -22.4
+      ],
+      [
+       -68.2,
+       -21.45
+      ]
+     ],
+     "iso": "BOL",
+     "op": 0.95,
+     "d": 1.2
+    }
+   ]
+  },
+  {
+   "say": "Then came the War of the Pacific. Chile won, took the coast, and left Bolivia with no sea at all.",
+   "date": "1879",
+   "zones": [
+    {
+     "coords": [
+      [
+       -70.15,
+       -21.45
+      ],
+      [
+       -70.2,
+       -22.4
+      ],
+      [
+       -70.35,
+       -23.5
+      ],
+      [
+       -70.6,
+       -24.6
+      ],
+      [
+       -70.5,
+       -25.4
+      ],
+      [
+       -68.4,
+       -25.4
+      ],
+      [
+       -67.6,
+       -23.8
+      ],
+      [
+       -68.0,
+       -22.4
+      ],
+      [
+       -68.2,
+       -21.45
+      ]
+     ],
+     "iso": "CHL",
+     "op": 0.95,
+     "d": 1.0
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -71.3,
+      -24
+     ],
+     "iso": "CHL",
+     "skin": "flag",
+     "face": "cool",
+     "r": 0.75,
+     "d": 1.0
+    },
+    {
+     "ll": [
+      -65.8,
+      -18.2
+     ],
+     "iso": "BOL",
+     "skin": "flag",
+     "face": "sad",
+     "r": 0.7,
+     "d": 2.6
+    }
+   ]
+  },
+  {
+   "say": "That's why Chile has one of the driest places on Earth at one end, and glaciers at the other.",
+   "date": null,
+   "balls": [],
+   "zones": [],
+   "cam": {
+    "c": [
+     -70,
+     -37
+    ],
+    "s": 1.35
+   },
+   "pins": [
+    {
+     "ll": [
+      -69.5,
+      -23.8
+     ],
+     "label": "Atacama",
+     "d": 1.6
+    },
+    {
+     "ll": [
+      -73.3,
+      -50.5
+     ],
+     "label": "Patagonian ice fields",
+     "left": true,
+     "d": 3.2
+    }
+   ]
+  },
+  {
+   "say": "Laid across Europe, Chile would reach from Lisbon past Moscow. Which country is shaped weirder?",
+   "pins": [],
+   "cards": [
+    {
+     "text": "Laid across Europe:",
+     "big": "Lisbon → past Moscow",
+     "iso": "CHL",
+     "d": 1.4
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "4,270 KM LONG.|177 KM WIDE.|HOW?",
+  "c": [
+   -68.0,
+   -35.0
+  ],
+  "s": 1.45,
+  "y": 0.68,
+  "own": {
+   "CHL": "CHL",
+   "ARG": "ARG",
+   "BOL": "BOL",
+   "PER": "PER"
+  },
+  "balls": [
+   {
+    "ll": [
+     -63.5,
+     -33.0
+    ],
+    "iso": "CHL",
+    "skin": "flag",
+    "face": "shock",
+    "r": 130
+   }
+  ]
+ },
+ "yt": {
+  "title": "Why Is Chile So Long and Thin?",
+  "description": "Chile is about 4,270 km long and only 177 km wide on average: the Andes on one side, the Pacific on the other, and a northern desert it took from Bolivia and Peru in the War of the Pacific.\n\nFollow for more history on the map.\n\n#history #maps #geography",
+  "tags": [
+   "history",
+   "map",
+   "history on a map",
+   "military history",
+   "geography",
+   "history shorts",
+   "maps",
+   "chile",
+   "geography",
+   "andes",
+   "atacama",
+   "war of the pacific",
+   "south america",
+   "maps"
+  ],
+  "lang": "en",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-23T14:00:00Z"
+ },
+ "style_prompt": "Read this in English as a documentary narrator for a fast history channel: confident, clear, slightly dramatic, brisk pace (about 165 words per minute), short pauses before dates and numbers. Never sound like an advert. Read the text exactly as written."
+}

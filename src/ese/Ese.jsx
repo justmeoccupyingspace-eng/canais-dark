@@ -3,7 +3,7 @@
 // Vertical 1080x1920 (Shorts) ou 1920x1080.
 import React, {useEffect, useMemo, useState} from 'react';
 import {AbsoluteFill, Img, staticFile, useCurrentFrame, useVideoConfig, delayRender, continueRender} from 'remotion';
-import {geoMercator, geoPath, geoCentroid, geoInterpolate, geoGraticule10, geoArea} from 'd3-geo';
+import {geoMercator, geoPath, geoCentroid, geoInterpolate, geoDistance, geoGraticule10, geoArea} from 'd3-geo';
 import {feature, merge} from 'topojson-client';
 import world from 'world-atlas/countries-50m.json';
 import BRUF from './br_uf.json';
@@ -27,7 +27,9 @@ const BYKEY = Object.fromEntries(STATES.map((f) => [f.id, f]));
   const usa = COUNTRIES.find((c) => String(c.id) === '840');
   if (usa) BYKEY['US-AK'] = {type: 'Feature', id: 'US-AK', properties: {}, geometry: {type: 'MultiPolygon', coordinates: usa.geometry.coordinates.filter((p) => p[0].every(([x, y]) => (x < -129 || x > 170) && y > 50))}};
   const fra = COUNTRIES.find((c) => String(c.id) === '250');
-  if (fra) BYKEY['FR-GF'] = {type: 'Feature', id: 'FR-GF', properties: {}, geometry: {type: 'MultiPolygon', coordinates: fra.geometry.coordinates.filter((p) => p[0].every(([x, y]) => x < -50 && x > -56 && y > 1 && y < 7))}};
+  const rus = COUNTRIES.find((c) => String(c.id) === '643');
+if (rus) BYKEY['RU-KGD'] = {type: 'Feature', id: 'RU-KGD', properties: {}, geometry: {type: 'MultiPolygon', coordinates: (rus.geometry.type === 'MultiPolygon' ? rus.geometry.coordinates : [rus.geometry.coordinates]).filter((p) => p[0].every(([x, y]) => x > 19 && x < 23.2 && y > 54.2 && y < 55.6))}};
+if (fra) BYKEY['FR-GF'] = {type: 'Feature', id: 'FR-GF', properties: {}, geometry: {type: 'MultiPolygon', coordinates: fra.geometry.coordinates.filter((p) => p[0].every(([x, y]) => x < -50 && x > -56 && y > 1 && y < 7))}};
   if (usa) BYKEY['US-48'] = {type: 'Feature', id: 'US-48', properties: {}, geometry: {type: 'MultiPolygon', coordinates: usa.geometry.coordinates.filter((p) => !p[0].every(([x, y]) => (x < -129 || x > 170) && y > 50))}};
 }
 const featOf = (k) => BYKEY[k] || BYNUM[NUM[k]];
@@ -83,6 +85,12 @@ const FlagArt = ({iso, x, y, w, h}) => {
     case 'MEX': return <g>{Vs(['#006847', '#fff', '#ce1126'])}<circle cx={cx} cy={cy} r={m * 0.09} fill="#8a5a2b" /></g>;
     case 'FRA': case 'GUF': return <g>{Vs(['#0055a4', '#fff', '#ef4135'])}</g>;
     case 'ITA': return <g>{Vs(['#009246', '#fff', '#ce2b37'])}</g>;
+    case 'MSX': { const t = w * 0.09; const sx = x + w * 0.74, sy = y + h * 0.66, r = Math.min(w, h) * 0.12;
+      const st = Array.from({length: 10}, (_, i) => { const a = -Math.PI / 2 + i * Math.PI / 5, q = i % 2 ? r * 0.42 : r; return `${sx + q * Math.cos(a)},${sy + q * Math.sin(a)}`; }).join(' ');
+      return <g>{R('#0d8a3e')}<polygon points={`${x},${y + h} ${x + w * 0.5},${y} ${x + w},${y} ${x + w},${y + h}`} fill="#1c3f94" /><polygon points={`${x - t},${y + h} ${x + w * 0.5 - t},${y} ${x + w * 0.5 + t},${y} ${x + t},${y + h}`} fill="#fff" /><polygon points={st} fill="#ffd200" /></g>; }
+    case 'MAR': return <g>{R('#c1272d')}<path d={Array.from({length: 6}, (_, i) => { const a = -Math.PI / 2 + i * 4 * Math.PI / 5, r = Math.min(w, h) * 0.26; return `${i ? 'L' : 'M'}${x + w / 2 + r * Math.cos(a)},${y + h / 2 + r * Math.sin(a)}`; }).join(' ') + 'Z'} fill="none" stroke="#006233" strokeWidth={Math.min(w, h) * 0.045} /></g>;
+    case 'LTU': return <g>{Hs(['#fdb913', '#006a44', '#c1272d'])}</g>;
+    case 'BLR': return <g><rect x={x} y={y} width={w} height={h * 0.67} fill="#c8313e" /><rect x={x} y={y + h * 0.67} width={w} height={h * 0.33} fill="#4aa657" /><rect x={x} y={y} width={w * 0.11} height={h} fill="#fff" /></g>;
     case 'DEU': return <g>{Hs(['#000', '#dd0000', '#ffce00'])}</g>;
     case 'IDN': return <g>{Hs(['#ce1126', '#fff'])}</g>;
     case 'NLD': return <g>{Hs(['#ae1c28', '#fff', '#21468b'])}</g>;
@@ -185,7 +193,7 @@ const Arrow = ({a, b, t, color = '#b6ff3b', w = 16}) => {
 const stateAt = (beats, T) => {
   let cam = beats[0]?.cam || {c: [-58, -18], s: 1.0}, prevCam = cam, camT = 0;
   const own = {}, ownPrev = {}, ownAt = {};
-  let balls = [], arrows = [], cards = [], hl = [], pins = [], split = null, line = null, zones = [], date = null, dateAt = 0, focus = [];
+  let balls = [], arrows = [], cards = [], hl = [], pins = [], split = null, line = null, zones = [], date = null, dateAt = 0, focus = [], lastT0 = 0;
   for (const b of beats) {
     if (b.t0 > T) break;
     if (b.cam) { prevCam = cam; cam = b.cam; camT = b.t0; }
@@ -201,11 +209,16 @@ const stateAt = (beats, T) => {
     if (b.date !== undefined) { date = b.date; dateAt = b.t0; }
     if (b.focus !== undefined) focus = b.focus || [];
     hl = b.hl || [];
+    lastT0 = b.t0;
   }
-  const k = ease((T - camT) / 1.2);
+  // 22/11 "voo": em panorâmica longa com zoom alto, afasta no meio do caminho (antes passava por quadros de oceano vazio)
+  const span = geoDistance(prevCam.c, cam.c), sMin = Math.min(prevCam.s, cam.s), sFit = 0.55 / Math.max(span, 1e-6);
+  const fly = span > 0.02 && sFit < sMin;
+  const k = ease((T - camT) / (fly ? 1.7 : 1.2));
   const c = geoInterpolate(prevCam.c, cam.c)(k);
-  const s = prevCam.s + (cam.s - prevCam.s) * k;
-  return {c, s, own, ownPrev, ownAt, balls, arrows, cards, hl, pins, split, line, zones, date, dateAt, focus};
+  let s = Math.exp(Math.log(prevCam.s) + (Math.log(cam.s) - Math.log(prevCam.s)) * k);
+  if (fly) s = Math.exp(Math.log(s) - (Math.log(sMin) - Math.log(sFit)) * Math.sin(Math.PI * k));
+  return {c, s, own, ownPrev, ownAt, balls, arrows, cards, hl, pins, split, line, zones, date, dateAt, focus, beatT0: lastT0};
 };
 
 const mergedCache = new Map();
@@ -342,7 +355,9 @@ export const Ese = ({es}) => {
   const st = stateAt(es.beats || [], T);
   const base = (vert ? W * 0.95 : H * 1.0);
   const proj = useMemo(() => geoMercator(), []);
-  proj.center(st.c).scale(base * st.s).translate([W / 2, H * (vert ? 0.47 : 0.52)]);
+  // 22/11 ritmo: "soco" de zoom a cada troca de cena + leve aproximação contínua (os Shorts que bombam mexem a câmera a cada 1–2 s)
+  const dtb = T - (st.beatT0 || 0), punch = es.punch === false ? 1 : 1 + 0.045 * Math.exp(-Math.pow((dtb - 0.12) / 0.16, 2)) + 0.03 * Math.min(1, dtb / 4);
+  proj.center(st.c).scale(base * st.s * punch).translate([W / 2, H * (vert ? 0.47 : 0.52)]);
   const path = geoPath(proj);
   const pt = (v) => { if (!v) return null; if (Array.isArray(v)) return proj(v); const c = featOf(v); if (!c) return null; const fix = {USA: [-98, 39], FRA: [2.5, 46.5], CHL: [-71, -33], RUS: [95, 61], CAN: [-100, 57], PRT: [-8, 39.6], NOR: [9, 61], BRA: [-51, -10], ECU: [-78.4, -1.5]}[v]; return proj(fix || geoCentroid(c)); };
   const words = es.words || [];

@@ -1,0 +1,401 @@
+{
+ "id": "b-pt-019",
+ "channel": "B",
+ "lang": "pt",
+ "format": "short",
+ "hook": "O URUGUAI|QUER ESSE PEDAÇO|DO BRASIL",
+ "hook_end": 2.8,
+ "badge": null,
+ "uf": true,
+ "voice": "Fenrir",
+ "music": {
+  "track": "Hidden Agenda",
+  "vol": 0.12,
+  "alt": [
+   "Investigations",
+   "Curiosity"
+  ]
+ },
+ "beats": [
+  {
+   "say": "O Uruguai diz que esse pedaço do Rio Grande do Sul é dele. E até hoje não desistiu.",
+   "cam": {
+    "c": [
+     -55.88,
+     -30.98
+    ],
+    "s": 60
+   },
+   "own": {
+    "BRA": "BRA",
+    "URY": "URY"
+   },
+   "zones": [
+    {
+     "coords": [
+      [
+       -56.06,
+       -30.93
+      ],
+      [
+       -55.86,
+       -30.86
+      ],
+      [
+       -55.7,
+       -30.97
+      ],
+      [
+       -55.78,
+       -31.08
+      ],
+      [
+       -55.98,
+       -31.08
+      ]
+     ],
+     "iso": "URY",
+     "op": 0.95,
+     "label": "",
+     "d": 0.4
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -55.74,
+      -31.12
+     ],
+     "iso": "URY",
+     "skin": "flag",
+     "face": "angry",
+     "r": 0.8,
+     "d": 1.2
+    }
+   ]
+  },
+  {
+   "say": "Fica em Santana do Livramento. São uns duzentos e trinta e sete quilômetros quadrados. Maior que Recife.",
+   "balls": [],
+   "cam": {
+    "c": [
+     -55.6,
+     -30.85
+    ],
+    "s": 12
+   },
+   "pins": [
+    {
+     "ll": [
+      -55.53,
+      -30.89
+     ],
+     "label": "Santana do Livramento",
+     "d": 0.4
+    }
+   ],
+   "cards": [
+    {
+     "text": "Rincão de Artigas:",
+     "big": "~237 km²",
+     "iso": "URY",
+     "d": 3.2
+    }
+   ]
+  },
+  {
+   "say": "Tudo por causa de um tratado de mil oitocentos e cinquenta e um, que dizia: a fronteira é o arroio da Invernada.",
+   "pins": [],
+   "cards": [],
+   "date": "1851",
+   "cam": {
+    "c": [
+     -55.88,
+     -30.98
+    ],
+    "s": 60
+   }
+  },
+  {
+   "say": "O problema: Brasil e Uruguai não concordam sobre qual riacho é esse.",
+   "date": null,
+   "balls": [
+    {
+     "ll": [
+      -56.05,
+      -30.86
+     ],
+     "iso": "BRA",
+     "face": "angry",
+     "r": 0.75,
+     "d": 0.2
+    },
+    {
+     "ll": [
+      -55.72,
+      -31.12
+     ],
+     "iso": "URY",
+     "skin": "flag",
+     "face": "angry",
+     "r": 0.75,
+     "d": 0.6
+    }
+   ]
+  },
+  {
+   "say": "Na prática, quem manda ali é o Brasil. Que construiu um parque eólico com setenta e duas turbinas.",
+   "zones": [
+    {
+     "coords": [
+      [
+       -56.06,
+       -30.93
+      ],
+      [
+       -55.86,
+       -30.86
+      ],
+      [
+       -55.7,
+       -30.97
+      ],
+      [
+       -55.78,
+       -31.08
+      ],
+      [
+       -55.98,
+       -31.08
+      ]
+     ],
+     "iso": "BRA",
+     "op": 0.95,
+     "d": 0.4
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -56.05,
+      -30.86
+     ],
+     "iso": "BRA",
+     "face": "cool",
+     "r": 0.8,
+     "d": 0.2
+    }
+   ],
+   "cards": [
+    {
+     "text": "Parque eólico:",
+     "big": "72 turbinas",
+     "iso": "BRA",
+     "d": 2.6
+    }
+   ]
+  },
+  {
+   "say": "Em dois mil e vinte e cinco, o Uruguai mandou um recado oficial: o parque não muda nada. A terra continua sendo dele.",
+   "date": "2025",
+   "cards": [
+    {
+     "text": "Uruguai, 2025:",
+     "big": "\"a terra é nossa\"",
+     "iso": "URY",
+     "d": 1.6
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -55.72,
+      -31.12
+     ],
+     "iso": "URY",
+     "skin": "flag",
+     "face": "angry",
+     "r": 0.8,
+     "d": 0.2
+    }
+   ]
+  },
+  {
+   "say": "E tem mais: o Uruguai também quer uma ilhota na fronteira com a Argentina. O nome dela? Ilha Brasileira.",
+   "date": null,
+   "cards": [],
+   "balls": [],
+   "cam": {
+    "c": [
+     -57.6,
+     -30.2
+    ],
+    "s": 14
+   },
+   "pins": [
+    {
+     "ll": [
+      -57.62,
+      -30.19
+     ],
+     "label": "Ilha Brasileira",
+     "d": 4.2
+    }
+   ]
+  },
+  {
+   "say": "De quem é: do Brasil ou do Uruguai?",
+   "pins": [],
+   "cam": {
+    "c": [
+     -55.88,
+     -30.98
+    ],
+    "s": 60
+   },
+   "zones": [
+    {
+     "coords": [
+      [
+       -56.06,
+       -30.93
+      ],
+      [
+       -55.86,
+       -30.86
+      ],
+      [
+       -55.7,
+       -30.97
+      ],
+      [
+       -55.78,
+       -31.08
+      ],
+      [
+       -55.98,
+       -31.08
+      ]
+     ],
+     "iso": "URY",
+     "op": 0.6,
+     "d": 0
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -56.05,
+      -30.86
+     ],
+     "iso": "BRA",
+     "face": "smirk",
+     "r": 0.75,
+     "d": 0
+    },
+    {
+     "ll": [
+      -55.72,
+      -31.12
+     ],
+     "iso": "URY",
+     "skin": "flag",
+     "face": "smirk",
+     "r": 0.75,
+     "d": 0.3
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "O URUGUAI|QUER ESSE PEDAÇO|DO BRASIL",
+  "c": [
+   -55.88,
+   -31.0
+  ],
+  "s": 45,
+  "y": 0.66,
+  "own": {
+   "BRA": "BRA",
+   "URY": "URY"
+  },
+  "zones": [
+   {
+    "coords": [
+     [
+      -56.06,
+      -30.93
+     ],
+     [
+      -55.86,
+      -30.86
+     ],
+     [
+      -55.7,
+      -30.97
+     ],
+     [
+      -55.78,
+      -31.08
+     ],
+     [
+      -55.98,
+      -31.08
+     ]
+    ],
+    "iso": "URY",
+    "op": 0.95
+   }
+  ],
+  "balls": [
+   {
+    "ll": [
+     -55.72,
+     -31.16
+    ],
+    "iso": "URY",
+    "skin": "flag",
+    "face": "smirk",
+    "r": 120
+   },
+   {
+    "ll": [
+     -56.08,
+     -30.84
+    ],
+    "iso": "BRA",
+    "face": "rage",
+    "skin": "red",
+    "r": 135
+   }
+  ]
+ },
+ "yt": {
+  "title": "O pedaço do Brasil que o Uruguai diz que é dele #curiosidades #historia",
+  "description": "O Uruguai reivindica o Rincão de Artigas, uns 237 km² em Sant'Ana do Livramento (RS): o tratado de 1851 fala do arroio da Invernada e os dois países não concordam sobre qual riacho é esse. O Brasil administra a área, onde fica o parque eólico Coxilha Negra (72 turbinas); em 2025 o Uruguai reafirmou a reivindicação. E ainda quer a Ilha Brasileira, na fronteira com a Argentina.\nDe quem é?\n\nCenário imaginário: só um \"e se\" no mapa. Os fatos de apoio são reais.\nInscreva-se pra ver o próximo \"e se\".\n\n#curiosidades #brasil #mapas #geografia #historia",
+  "tags": [
+   "curiosidades",
+   "brasil",
+   "mapas",
+   "geografia",
+   "história",
+   "simulação",
+   "e se",
+   "hiperfoco",
+   "américa do sul",
+   "uruguai",
+   "rio grande do sul",
+   "santana do livramento",
+   "rincão de artigas",
+   "fronteira",
+   "ilha brasileira",
+   "disputa territorial"
+  ],
+  "lang": "pt-BR",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-24T18:00:00Z"
+ },
+ "terr": "color"
+}

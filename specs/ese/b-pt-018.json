@@ -1,0 +1,257 @@
+{
+ "id": "b-pt-018",
+ "channel": "B",
+ "lang": "pt",
+ "format": "short",
+ "hook": "POR QUE EXISTEM|DOIS MATO|GROSSO?",
+ "hook_end": 2.8,
+ "badge": null,
+ "uf": true,
+ "voice": "Fenrir",
+ "music": {
+  "track": "Hidden Agenda",
+  "vol": 0.12,
+  "alt": [
+   "Investigations",
+   "Curiosity"
+  ]
+ },
+ "beats": [
+  {
+   "say": "Por que o Brasil tem dois Mato Grosso? Porque até mil novecentos e setenta e sete, era um só. E gigante.",
+   "cam": {
+    "c": [
+     -55,
+     -16
+    ],
+    "s": 3.0
+   },
+   "own": {
+    "BRA": "BRA",
+    "BR-MT": "BRA",
+    "BR-MS": "BRA"
+   },
+   "hl": [
+    "BR-MT",
+    "BR-MS"
+   ],
+   "cards": [
+    {
+     "text": "Mato Grosso unido:",
+     "big": "maior que a Bolívia",
+     "iso": "BRA",
+     "d": 3.4
+    }
+   ]
+  },
+  {
+   "say": "E o sul, de Campo Grande, vivia reclamando: pagava imposto e as obras ficavam em Cuiabá.",
+   "hl": [],
+   "cards": [],
+   "pins": [
+    {
+     "ll": [
+      -54.62,
+      -20.45
+     ],
+     "label": "Campo Grande",
+     "d": 0.4
+    },
+    {
+     "ll": [
+      -56.1,
+      -15.6
+     ],
+     "label": "Cuiabá",
+     "d": 3.0
+    }
+   ],
+   "arrows": [
+    {
+     "from": [
+      -54.62,
+      -20.3
+     ],
+     "to": [
+      -56.0,
+      -15.8
+     ],
+     "d": 3.4,
+     "color": "#ffcf40"
+    }
+   ]
+  },
+  {
+   "say": "Em mil novecentos e trinta e dois, o sul apoiou São Paulo na revolução e chegou a proclamar um estado próprio: Maracaju. Acabou junto com a revolução.",
+   "arrows": [],
+   "pins": [],
+   "date": "1932",
+   "hl": [
+    "BR-MS"
+   ],
+   "cards": [
+    {
+     "text": "1932:",
+     "big": "Estado de Maracaju",
+     "d": 4.0
+    }
+   ]
+  },
+  {
+   "say": "Em mil novecentos e setenta e sete, o presidente Geisel assinou a divisão. Nascia o Mato Grosso do Sul.",
+   "hl": [],
+   "date": "1977",
+   "own": {
+    "BR-MS": "MSX"
+   },
+   "od": 2.4,
+   "cards": [
+    {
+     "text": "11/10/1977:",
+     "big": "nasce o MS",
+     "iso": "MSX",
+     "d": 3.0
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -54.6,
+      -20.6
+     ],
+     "iso": "MSX",
+     "skin": "flag",
+     "face": "happy",
+     "r": 0.85,
+     "d": 3.2
+    }
+   ]
+  },
+  {
+   "say": "E o nome quase foi outro: Estado de Campo Grande.",
+   "date": null,
+   "cards": [
+    {
+     "text": "Quase se chamou:",
+     "big": "Estado de Campo Grande",
+     "iso": "MSX",
+     "d": 0.8
+    }
+   ]
+  },
+  {
+   "say": "Por isso, quem é de lá não gosta de ser chamado de mato-grossense. É sul-mato-grossense.",
+   "cards": [],
+   "balls": [
+    {
+     "ll": [
+      -54.6,
+      -20.6
+     ],
+     "iso": "MSX",
+     "skin": "flag",
+     "face": "angry",
+     "r": 0.85,
+     "d": 0.2
+    },
+    {
+     "ll": [
+      -55.8,
+      -13.0
+     ],
+     "iso": "BRA",
+     "face": "smirk",
+     "r": 0.8,
+     "d": 1.6
+    }
+   ]
+  },
+  {
+   "say": "Você sabia a diferença?",
+   "balls": [
+    {
+     "ll": [
+      -54.6,
+      -20.6
+     ],
+     "iso": "MSX",
+     "skin": "flag",
+     "face": "smirk",
+     "r": 0.85,
+     "d": 0
+    },
+    {
+     "ll": [
+      -55.8,
+      -13.0
+     ],
+     "iso": "BRA",
+     "face": "smirk",
+     "r": 0.8,
+     "d": 0
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "POR QUE EXISTEM|DOIS MATO|GROSSO?",
+  "c": [
+   -55.0,
+   -17.0
+  ],
+  "s": 3.4,
+  "y": 0.68,
+  "own": {
+   "BRA": "BRA",
+   "BR-MS": "MSX"
+  },
+  "balls": [
+   {
+    "ll": [
+     -54.4,
+     -21.2
+    ],
+    "iso": "MSX",
+    "skin": "flag",
+    "face": "angry",
+    "r": 125
+   },
+   {
+    "ll": [
+     -55.8,
+     -12.6
+    ],
+    "iso": "BRA",
+    "face": "smirk",
+    "r": 125
+   }
+  ]
+ },
+ "yt": {
+  "title": "Por que existem dois Mato Grosso? #curiosidades #historia",
+  "description": "Até 1977 Mato Grosso era um estado só, maior que a Bolívia. Em 1932 o sul chegou a proclamar o Estado de Maracaju; em 11/10/1977 o presidente Geisel assinou a divisão e, em 1979, Campo Grande virou capital do Mato Grosso do Sul — que quase se chamou Estado de Campo Grande.\nVocê sabia a diferença?\n\nCenário imaginário: só um \"e se\" no mapa. Os fatos de apoio são reais.\nInscreva-se pra ver o próximo \"e se\".\n\n#curiosidades #brasil #mapas #geografia #historia",
+  "tags": [
+   "curiosidades",
+   "brasil",
+   "mapas",
+   "geografia",
+   "história",
+   "simulação",
+   "e se",
+   "hiperfoco",
+   "américa do sul",
+   "mato grosso",
+   "mato grosso do sul",
+   "campo grande",
+   "cuiabá",
+   "geisel",
+   "1977",
+   "sul-mato-grossense"
+  ],
+  "lang": "pt-BR",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-23T18:00:00Z"
+ }
+}

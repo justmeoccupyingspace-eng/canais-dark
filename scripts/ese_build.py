@@ -135,7 +135,7 @@ for i, b in enumerate(beats):
     d["t0"] = round(max(0.0, first.get(i, 0) - 0.12) if i else 0.0, 3)
     bs.append(d)
 es = {"w": 1080 if vert else 1920, "h": 1920 if vert else 1080, "total": total, "beats": bs, "words": words, "hook": spec.get("hook"), "hook_end": spec.get("hook_end", 2.8), "tag": spec.get("tag"), "thumb": spec.get("thumb", {}),
-      **{k: spec[k] for k in ("badge", "uf", "skin", "style", "basemap") if k in spec}}
+      **{k: spec[k] for k in ("badge", "uf", "skin", "style", "basemap", "terr", "punch") if k in spec}}
 json.dump(es, open(f"{OUT}/es.json", "w"), ensure_ascii=False)
 yt = dict(spec["yt"])
 cred = (f"\n\nMusic: \"{music}\" by Kevin MacLeod (incompetech.com), licensed under CC BY 4.0." if spec.get("lang", "pt").startswith("en")

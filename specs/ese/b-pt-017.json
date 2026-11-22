@@ -1,0 +1,453 @@
+{
+ "id": "b-pt-017",
+ "channel": "B",
+ "lang": "pt",
+ "format": "short",
+ "hook": "A BOLÍVIA TEM|MARINHA. MAS|NÃO TEM MAR",
+ "hook_end": 2.8,
+ "badge": null,
+ "uf": false,
+ "voice": "Fenrir",
+ "music": {
+  "track": "Hidden Agenda",
+  "vol": 0.12,
+  "alt": [
+   "Investigations",
+   "Curiosity"
+  ]
+ },
+ "beats": [
+  {
+   "say": "A Bolívia tem marinha. Com navios, almirantes e tudo. Só que não tem mar.",
+   "cam": {
+    "c": [
+     -65,
+     -17
+    ],
+    "s": 3.0
+   },
+   "own": {
+    "BOL": "BOL",
+    "CHL": "CHL",
+    "PER": "PER",
+    "BRA": "BRA",
+    "ARG": "ARG"
+   },
+   "balls": [
+    {
+     "ll": [
+      -64.5,
+      -16.5
+     ],
+     "iso": "BOL",
+     "skin": "flag",
+     "face": "sad",
+     "r": 0.9,
+     "d": 0.3
+    }
+   ]
+  },
+  {
+   "say": "Mas já teve. Até mil oitocentos e setenta e nove, esse pedaço do Pacífico era boliviano.",
+   "balls": [],
+   "cam": {
+    "c": [
+     -69.3,
+     -23.4
+    ],
+    "s": 7
+   },
+   "zones": [
+    {
+     "coords": [
+      [
+       -70.15,
+       -21.45
+      ],
+      [
+       -70.2,
+       -22.4
+      ],
+      [
+       -70.35,
+       -23.5
+      ],
+      [
+       -70.6,
+       -24.6
+      ],
+      [
+       -70.5,
+       -25.4
+      ],
+      [
+       -68.4,
+       -25.4
+      ],
+      [
+       -67.6,
+       -23.8
+      ],
+      [
+       -68.0,
+       -22.4
+      ],
+      [
+       -68.2,
+       -21.45
+      ]
+     ],
+     "iso": "BOL",
+     "op": 0.95,
+     "d": 0.6
+    }
+   ],
+   "cards": [
+    {
+     "text": "Litoral boliviano:",
+     "big": "~400 km de costa",
+     "iso": "BOL",
+     "d": 2.6
+    }
+   ]
+  },
+  {
+   "say": "Aí veio a Guerra do Pacífico. Chile contra Bolívia e Peru.",
+   "cards": [],
+   "cam": {
+    "c": [
+     -69.5,
+     -20
+    ],
+    "s": 4.4
+   },
+   "date": "1879",
+   "balls": [
+    {
+     "ll": [
+      -70.8,
+      -27.5
+     ],
+     "iso": "CHL",
+     "skin": "flag",
+     "face": "angry",
+     "r": 0.8,
+     "d": 0.3
+    },
+    {
+     "ll": [
+      -66.5,
+      -19
+     ],
+     "iso": "BOL",
+     "skin": "flag",
+     "face": "shock",
+     "r": 0.75,
+     "d": 1.2
+    },
+    {
+     "ll": [
+      -73.5,
+      -14.5
+     ],
+     "iso": "PER",
+     "skin": "flag",
+     "face": "shock",
+     "r": 0.75,
+     "d": 1.8
+    }
+   ]
+  },
+  {
+   "say": "O Chile venceu e ficou com todo o litoral da Bolívia.",
+   "zones": [
+    {
+     "coords": [
+      [
+       -70.15,
+       -21.45
+      ],
+      [
+       -70.2,
+       -22.4
+      ],
+      [
+       -70.35,
+       -23.5
+      ],
+      [
+       -70.6,
+       -24.6
+      ],
+      [
+       -70.5,
+       -25.4
+      ],
+      [
+       -68.4,
+       -25.4
+      ],
+      [
+       -67.6,
+       -23.8
+      ],
+      [
+       -68.0,
+       -22.4
+      ],
+      [
+       -68.2,
+       -21.45
+      ]
+     ],
+     "iso": "CHL",
+     "op": 0.95,
+     "d": 0.5
+    }
+   ],
+   "date": "1884",
+   "balls": [
+    {
+     "ll": [
+      -71.2,
+      -24.0
+     ],
+     "iso": "CHL",
+     "skin": "flag",
+     "face": "cool",
+     "r": 0.85,
+     "d": 0.6
+    }
+   ]
+  },
+  {
+   "say": "A Bolívia nunca aceitou. Todo vinte e três de março, o país para pro Dia do Mar.",
+   "date": null,
+   "balls": [
+    {
+     "ll": [
+      -65.5,
+      -17.5
+     ],
+     "iso": "BOL",
+     "skin": "flag",
+     "face": "angry",
+     "r": 0.85,
+     "d": 0.2
+    }
+   ],
+   "cam": {
+    "c": [
+     -66,
+     -19
+    ],
+    "s": 3.6
+   },
+   "cards": [
+    {
+     "text": "23 de março:",
+     "big": "Dia do Mar",
+     "iso": "BOL",
+     "d": 2.0
+    }
+   ]
+  },
+  {
+   "say": "Em dois mil e dezoito, foi até a Corte de Haia pedir uma saída pro oceano. E perdeu.",
+   "date": "2018",
+   "cards": [
+    {
+     "text": "Corte de Haia:",
+     "big": "Bolívia perde",
+     "iso": "CHL",
+     "d": 3.4
+    }
+   ]
+  },
+  {
+   "say": "E a marinha? Navega no lago Titicaca, a quase quatro mil metros de altitude.",
+   "date": null,
+   "cards": [
+    {
+     "text": "Lago Titicaca:",
+     "big": "3.812 m de altitude",
+     "iso": "BOL",
+     "d": 1.6
+    }
+   ],
+   "cam": {
+    "c": [
+     -69.3,
+     -15.9
+    ],
+    "s": 14
+   },
+   "pins": [
+    {
+     "ll": [
+      -69.35,
+      -15.85
+     ],
+     "label": "Lago Titicaca",
+     "d": 0.4
+    }
+   ],
+   "balls": [
+    {
+     "ll": [
+      -68.9,
+      -16.3
+     ],
+     "iso": "BOL",
+     "skin": "flag",
+     "face": "cool",
+     "r": 0.7,
+     "d": 2.4
+    }
+   ]
+  },
+  {
+   "say": "Você devolveria o mar pra Bolívia?",
+   "pins": [],
+   "cards": [],
+   "cam": {
+    "c": [
+     -67,
+     -20
+    ],
+    "s": 3.2
+   },
+   "balls": [
+    {
+     "ll": [
+      -65.5,
+      -17.5
+     ],
+     "iso": "BOL",
+     "skin": "flag",
+     "face": "sad",
+     "r": 0.85,
+     "d": 0.2
+    },
+    {
+     "ll": [
+      -70.9,
+      -26.5
+     ],
+     "iso": "CHL",
+     "skin": "flag",
+     "face": "smirk",
+     "r": 0.8,
+     "d": 0.5
+    }
+   ]
+  }
+ ],
+ "thumb": {
+  "title": "A BOLÍVIA TEM|MARINHA. MAS|NÃO TEM MAR",
+  "c": [
+   -67.5,
+   -19.5
+  ],
+  "s": 3.6,
+  "y": 0.68,
+  "own": {
+   "BOL": "BOL",
+   "CHL": "CHL",
+   "PER": "PER"
+  },
+  "zones": [
+   {
+    "coords": [
+     [
+      -70.15,
+      -21.45
+     ],
+     [
+      -70.2,
+      -22.4
+     ],
+     [
+      -70.35,
+      -23.5
+     ],
+     [
+      -70.6,
+      -24.6
+     ],
+     [
+      -70.5,
+      -25.4
+     ],
+     [
+      -68.4,
+      -25.4
+     ],
+     [
+      -67.6,
+      -23.8
+     ],
+     [
+      -68.0,
+      -22.4
+     ],
+     [
+      -68.2,
+      -21.45
+     ]
+    ],
+    "iso": "CHL",
+    "op": 0.95
+   }
+  ],
+  "balls": [
+   {
+    "ll": [
+     -64.8,
+     -17.0
+    ],
+    "iso": "BOL",
+    "skin": "flag",
+    "face": "sad",
+    "r": 135
+   },
+   {
+    "ll": [
+     -71.0,
+     -25.6
+    ],
+    "iso": "CHL",
+    "skin": "flag",
+    "face": "smirk",
+    "r": 120
+   }
+  ]
+ },
+ "yt": {
+  "title": "Por que a Bolívia não tem mar? #curiosidades #historia",
+  "description": "Até 1879 a Bolívia tinha uns 400 km de litoral no Pacífico. Perdeu tudo para o Chile na Guerra do Pacífico (1879–1884), comemora o Dia do Mar todo 23 de março, perdeu na Corte de Haia em 2018 — e a marinha dela navega no lago Titicaca.\nVocê devolveria o mar pra Bolívia?\n\nCenário imaginário: só um \"e se\" no mapa. Os fatos de apoio são reais.\nInscreva-se pra ver o próximo \"e se\".\n\n#curiosidades #brasil #mapas #geografia #historia",
+  "tags": [
+   "curiosidades",
+   "brasil",
+   "mapas",
+   "geografia",
+   "história",
+   "simulação",
+   "e se",
+   "hiperfoco",
+   "américa do sul",
+   "bolívia",
+   "chile",
+   "guerra do pacífico",
+   "mar",
+   "lago titicaca",
+   "marinha",
+   "américa do sul"
+  ],
+  "lang": "pt-BR",
+  "categoryId": "27"
+ },
+ "publish": {
+  "at": "2026-11-22T18:00:00Z"
+ }
+}
