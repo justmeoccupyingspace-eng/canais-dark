@@ -1,0 +1,148 @@
+{
+ "topics": [
+  {
+   "id": "pt_ese_brasil",
+   "q": "e se o brasil",
+   "order": "viewCount",
+   "after": "2026-10-20T00:00:00Z",
+   "lang": "pt",
+   "n": 25,
+   "dur": "short"
+  },
+  {
+   "id": "pt_ese_estado",
+   "q": "e se o estado virasse país",
+   "order": "viewCount",
+   "after": "2026-10-20T00:00:00Z",
+   "lang": "pt",
+   "n": 25,
+   "dur": "short"
+  },
+  {
+   "id": "pt_mapa_curios",
+   "q": "curiosidades mapa brasil",
+   "order": "viewCount",
+   "after": "2026-10-20T00:00:00Z",
+   "lang": "pt",
+   "n": 25,
+   "dur": "short"
+  },
+  {
+   "id": "pt_hist_br",
+   "q": "história do brasil curiosidade",
+   "order": "viewCount",
+   "after": "2026-10-20T00:00:00Z",
+   "lang": "pt",
+   "n": 25,
+   "dur": "short"
+  },
+  {
+   "id": "pt_quase",
+   "q": "quase aconteceu história",
+   "order": "viewCount",
+   "after": "2026-10-20T00:00:00Z",
+   "lang": "pt",
+   "n": 25,
+   "dur": "short"
+  },
+  {
+   "id": "pt_paises",
+   "q": "país que não existe mais",
+   "order": "viewCount",
+   "after": "2026-10-20T00:00:00Z",
+   "lang": "pt",
+   "n": 25,
+   "dur": "short"
+  },
+  {
+   "id": "pt_geo",
+   "q": "geografia curiosidades",
+   "order": "viewCount",
+   "after": "2026-10-20T00:00:00Z",
+   "lang": "pt",
+   "n": 25,
+   "dur": "short"
+  },
+  {
+   "id": "en_map_hist",
+   "q": "history map",
+   "order": "viewCount",
+   "after": "2026-10-20T00:00:00Z",
+   "lang": "en",
+   "n": 25,
+   "dur": "short"
+  },
+  {
+   "id": "en_sold",
+   "q": "sold territory history",
+   "order": "viewCount",
+   "after": "2026-10-20T00:00:00Z",
+   "lang": "en",
+   "n": 25,
+   "dur": "short"
+  },
+  {
+   "id": "en_geo",
+   "q": "geography facts",
+   "order": "viewCount",
+   "after": "2026-10-20T00:00:00Z",
+   "lang": "en",
+   "n": 25,
+   "dur": "short"
+  },
+  {
+   "id": "en_whyborder",
+   "q": "why is this border",
+   "order": "viewCount",
+   "after": "2026-10-20T00:00:00Z",
+   "lang": "en",
+   "n": 25,
+   "dur": "short"
+  },
+  {
+   "id": "en_whatif",
+   "q": "what if map",
+   "order": "viewCount",
+   "after": "2026-10-20T00:00:00Z",
+   "lang": "en",
+   "n": 25,
+   "dur": "short"
+  },
+  {
+   "id": "en_richer",
+   "q": "richer than poland",
+   "order": "viewCount",
+   "after": "2026-10-20T00:00:00Z",
+   "lang": "en",
+   "n": 25,
+   "dur": "any"
+  },
+  {
+   "id": "en_gdp",
+   "q": "gdp per capita comparison",
+   "order": "viewCount",
+   "after": "2026-10-20T00:00:00Z",
+   "lang": "en",
+   "n": 25,
+   "dur": "long"
+  },
+  {
+   "id": "en_econ_country",
+   "q": "economy explained country",
+   "order": "viewCount",
+   "after": "2026-10-20T00:00:00Z",
+   "lang": "en",
+   "n": 25,
+   "dur": "medium"
+  },
+  {
+   "id": "en_poland",
+   "q": "poland economy",
+   "order": "viewCount",
+   "after": "2026-10-20T00:00:00Z",
+   "lang": "en",
+   "n": 25,
+   "dur": "any"
+  }
+ ]
+}
