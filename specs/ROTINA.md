@@ -4,7 +4,7 @@ Dono: Kauan. Regra dele: "A ÚNICA IMPORTÂNCIA É RESULTADO". Responder sempre 
 
 ## 0. Preparar
 - Repo: `gh repo clone justmeoccupyingspace-eng/canais-dark /home/claude/canais-dark` (ou `git pull --rebase`). Commits terminam com as linhas de atribuição pedidas pelo sistema. Push: `GIT_TERMINAL_PROMPT=0 timeout 120 git push origin HEAD:main`.
-- Ler: topo de specs/PLANO.md (PLANO v4) e as 10 primeiras linhas de specs/long/QUEUE.md (log, mais novo em cima).
+- Ler: topo de specs/PLANO.md (v5.1 / v5) e as 10 primeiras linhas de specs/long/QUEUE.md (log, mais novo em cima).
 - Se o QUEUE já tem uma linha com a data de hoje e "manhã" → a produção de hoje já foi feita: só faça a parte 1 (números) e pare.
 - Cotas (renovam 08:00Z): Gemini TTS 10/dia por modelo (B usa gemini-3.1-flash-tts-preview: 1–2 req/Short; A Short usa gemini-3.8-flash-tts: 1 req; longo A usa 3.8: 7 req, um por ato). YouTube: ~6 envios/dia no total dos 2 canais.
 
@@ -15,7 +15,8 @@ Dono: Kauan. Regra dele: "A ÚNICA IMPORTÂNCIA É RESULTADO". Responder sempre 
 ## 2. Produção do dia (agendar sempre com 2–3 dias de folga; conferir no ytchan list o último agendado de cada fila)
 - REGRAS ATUAIS: PLANO v5 no topo de specs/PLANO.md (manda sobre o resto deste arquivo).
 - B "E Se no Mapa" (PT): 3 Shorts/dia, 15:00Z, 19:00Z e 22:00Z, máx. 140 palavras (≈50 s). Molde que funciona: pedaço do Brasil × vizinho/rival, ou estado vira país, com fato real "quase aconteceu" + 1 curiosidade surpresa + pergunta no fim. Gerador: acrescentar save(N, ...) em specs/ese_pt.py (copiar a estrutura dos últimos), `python3 specs/ese_pt.py`. Selo "SÓ IMAGINAÇÃO" vem do spec.
-- A "Chartbound" (EN): 2 Shorts/dia 14:00Z e 17:00Z (história no mapa; molde que funciona: "How X Sold Y for N Cents an Acre", acordos territoriais surpreendentes) em specs/map_en.py; e 1 LONGO/dia 23:00Z (specs/long/a-LNN.py, copiar a-L32.py/a-L30.py: dados do FMI em research/imf_*.json, `checks` têm que passar, ~550 palavras, 7 atos).
+- A "Chartbound" (EN): 3 Shorts/dia 14:00Z, 17:00Z e 20:00Z (v5.1, 22/11) em specs/map_en.py — fato real "Why/How" no mapa (fronteira/enclave/compra de território), ≤130 palavras. LONGOS PARADOS (série Polônia morta em 22/11: Hungria 27, Eslovênia 19); só voltam com tema provado pela pesquisa.
+- Cota de envio: 6/dia = A 3 + B 3. Agendar o mais cedo possível (buraco de hoje/amanhã primeiro), nunca empurrar para depois.
 - FATOS: todo número/data/nome checado na web (WebSearch/WebFetch) ou no JSON do FMI ANTES de escrever. Nada inventado. Se não confirmar, tira.
 - PRÉVIA obrigatória antes de enviar: gerar es.json sintético (165 ppm) e quadros: `CHROME_PATH=/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell node scripts/eserender.mjs <es.json> stills <prefixo> t1,t2,... 0.4` e `... thumb <saida.jpg>`; olhar os quadros (Read) e corrigir sobreposição, bandeira errada, câmera no vazio.
 - Enviar Short: `gh api -X POST .../actions/workflows/ese.yml/dispatches -f ref=main -f 'inputs[spec]=specs/ese/b-pt-NNN.json' -f 'inputs[upload]=B'` (A: a-en-NNN, upload=A). A data/hora vem do spec.
