@@ -92,7 +92,8 @@ jobs:
           python scripts/upload.py ${{ inputs.upload }} out/$ID.mp4 out/$ID/yt.json private
           VID=$(python -c "import json;print(json.load(open('uploaded.json'))['id'])")
           echo "::notice title=enviado::$VID $(python -c "import json;print(json.load(open('uploaded.json'))['privacy'])")"
-          [ -f out/thumb.jpg ] && python scripts/lyt.py thumb ${{ inputs.upload }} $VID out/thumb.jpg || echo "sem thumb"
+          # 22/11: 6 envios/dia no limite da cota (1.600 cada) → Short só ganha miniatura se o spec pedir ("thumb_set": true); a miniatura não aparece no feed de Shorts
+          if [ -f out/thumb.jpg ] && python -c "import json,sys;sys.exit(0 if json.load(open('${{ inputs.spec }}')).get('thumb_set') else 1)"; then python scripts/lyt.py thumb ${{ inputs.upload }} $VID out/thumb.jpg || echo "sem thumb"; else echo "thumb não aplicada (economia de cota)"; fi
       - name: prévia na branch fe-<run>
         run: |
           ID=${{ needs.prep.outputs.id }}

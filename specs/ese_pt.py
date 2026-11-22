@@ -24,6 +24,9 @@ def save(n, title, hook, beats, desc, thumb, at, tags=(), music="Hidden Agenda",
         return o
     spec = fix(spec)
     words = sum(len(b["say"].split()) for b in beats)
+    # 22/11: retenção dos Shorts de 1:45–2:15 = 33–45% (saem aos 43–57 s) → a partir do 017, máx. 140 palavras (~50 s)
+    if n >= 17 and words > 140:
+        raise SystemExit(f"b-pt-{n:03d}: {words} palavras — Short do B tem que ter no máximo 140 (≈50 s)")
     json.dump(spec, open(f"{OUT}/{spec['id']}.json", "w"), ensure_ascii=False, indent=1)
     print(spec["id"], words, "palavras", f"~{words / 2.75:.0f}s")
 

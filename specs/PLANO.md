@@ -1,3 +1,11 @@
+## PLANO v5 (22/11/2026) — regras duras (Kauan: "mais duro e honesto", "foco é resultado")
+Diagnóstico com dados (ytstats até 19/11): Shorts do B de 1:45–2:15 retêm 33–45% (o público sai aos 43–57 s) → o feed não empurra além de ~1–1,6 mil. Shorts do A de ~60 s retêm 78–93% (Alasca 2,8 mil). Longos do A retêm 20–27%; série Polônia decaindo (Hungria 23 views em 27 h).
+- B: todo Short novo ≤ 140 palavras (≈50 s; o gerador bloqueia acima disso). 3 Shorts/dia (15:00Z, 19:00Z e 22:00Z). Só "pedaço do Brasil × vizinho" e "estado/região vira país". CORTE 30/11: mediana dos Shorts curtos < 3 mil → trocar o tema do canal.
+- A Shorts: 2/dia (14:00Z e 17:00Z), só compra/venda/troca de território e "como um país pequeno aguentou/sobreviveu". ~60 s.
+- A longos: 1/dia só enquanto valer. CORTE 24/11: Hungria + Eslovênia + Croácia com mediana < 500 views em 48 h → fim da série Polônia (longos param até achar tema novo pela pesquisa).
+- Cota YouTube: 6 envios/dia (B 3 + A 2 + A longo 1). Shorts sem miniatura personalizada (só com "thumb_set": true).
+- Compilado longo do B: CORTADO (9 views). Temas abstratos no B: CORTADOS.
+
 # PLANO v4 — RESULTADO (17/11/2026 01:30 BRT). Kauan: "A ÚNICA IMPORTÂNCIA É RESULTADO". Não alavancou → dropa. Pesquisa → replica → mede → corta.
 
 ## Formatos ativos (escolhidos por dados de canais NOVOS que cresceram, research/q_probe*_2026-11-17.json)
