@@ -36,12 +36,13 @@ A. Carreira + teste T1 (venda escrita). B. Carreira + teste T2 (alguém filma). 
 - T2 — Afiliado TikTok Shop com produto na mão. Ativo: mãos e voz de uma pessoa real. Pré-teste: conferir no TikTok Studio/Academy BR a regra real (seguidores, vídeo sem rosto, amostras) e a elegibilidade das contas. Só começa se alguém aceitar filmar ~30 min/dia. Teste: 30 dias, até R$ 300 em produto. Corte: sem 1.000 seguidores ou sem 1ª comissão em 45 dias.
 
 - T3 — Anúncio pago (Meta Ads) no produto que já existe. Ativo: capital (R$ 300, teto duro). Produto: caderno do Escrevente TJSP a R$ 27 com 1 oferta extra no checkout; criativos: os vídeos de questão que já temos; público: interior de SP, interesse em concurso/TJSP; R$ 30/dia por até 10 dias. Métrica: custo por venda. Corte: R$ 150 gastos com 0–2 vendas → para. Continua só se o custo por venda ficar ≤ R$ 22 (o que sobra por venda), reinvestindo apenas a receita. Antes: auditar o PDF contra o Edital 02/2026. Depende do operador: conta Kiwify, conta de anúncios com o cartão dele e o "sim" explícito para gastar R$ 300. Sem taxa-base verificada para anunciante novo ("não encontrado"); estimativa minha de empatar nos primeiros R$ 300: 20–30%.
-- Hipótese em pesquisa (23/11 03:55Z, 2 agentes): software/automação vendido dentro de marketplace que já traz o comprador (Apify Store, lojas de apps de Nuvemshop/Bling/Tray, recompensas de código aberto). Sem número ainda.
+- Classe "software vendido dentro de marketplace" (pesquisada em 23/11 04:10Z, 2 agentes): NÃO sustenta R$ 10 mil em 12 meses, mas é a única via sem rosto, sem venda e sem capital com mediana acima de zero. Shopify: app novo tem mediana de ~US$ 190/mês (R$ 1.074) e o quintil mais antigo ~US$ 19.100/mês; os 16 maiores levam 40,6% da receita (Store Leads/Barn2). Apify: novato documentado ~US$ 200/mês após 3 meses; catálogo foi de ~6.000 para ~9.000 Actors depois do desafio de US$ 1 mi; alvos brasileiros já cobertos (Mercado Livre 17+, CNPJ 16+, PNCP 10+, OLX 8+). Nuvemshop: 180 mil+ lojas e 300+ apps, comissão não divulgada, 0 app com nome TikTok Shop e 1 calculadora de margem com 6 avaliações (fresta não validada). Recompensas de código aberto: 8–158 PRs por recompensa nova. É jogo de 2–3 anos (avaliações acumulam), não de 12 meses.
 
 ## CORTADO EM 23/11
 Shorts dos canais A e B, quiz do TikTok, expansão do TJSP (fica só a opção grátis de listar o PDF pronto na Kiwify, R$ 27), cortes pagos por view, alerta de licitação, afiliado de infoproduto, loja com anúncio, bets/suplementos/persona. Longos do canal A: pausados (ver PLANO v5.3).
 
 ## FILA (não executar; hipóteses sem pesquisa)
+- App na loja da Nuvemshop (fresta TikTok Shop / margem por canal): antes de construir, medir demanda (buscas, pedidos em fóruns de lojistas, instalações do concorrente).
 - Produto digital personalizado em marketplace com busca própria (Elo7 e semelhantes).
 - Freela remoto de rede/firewall em dólar (hora dele).
 - Amazon KDP para a apostila pronta.
