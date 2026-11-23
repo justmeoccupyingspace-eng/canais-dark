@@ -29,11 +29,14 @@ ABERTURA DE TODA SESSÃO: o que foi feito ontem aproximou de um pagamento? Se n�
 - Minhas estimativas da v1 estavam infladas (dei 10–15% para serviço e 5–15% para o TJSP). Corrigidas acima.
 
 ## O PEDÁGIO (decisão do operador; sem ela não há aposta paralela)
-A. Carreira + teste T1 (venda escrita). B. Carreira + teste T2 (alguém filma). C. Só carreira.
+A. Carreira + teste T1 (venda escrita). B. Carreira + teste T2 (alguém filma). C. Só carreira. D. Carreira + teste T3 (capital: R$ 300 de anúncio). Acrescentado em 23/11 03:55Z: eu tinha deixado o capital de fora por causa do veto antigo a tráfego pago e do teto de R$ 300; é o único pedágio que não pede rosto nem conversa.
 
 ## TESTES CANDIDATOS (um por vez)
 - T1 — Serviço de Power BI/SQL por proposta escrita. Ativo: habilidade dele + venda por texto. Pré-teste (sem custo e sem permissão): ler no navegador 30 listagens reais (Workana, 99Freelas, Upwork) e anotar orçamento, nº de propostas e idade. Segue só se houver ≥ 10 projetos/semana com ≤ 15 propostas e orçamento ≥ R$ 300. Teste: 20 propostas em 14 dias (ele envia; eu escrevo e entrego). Corte: 0 resposta em 20 propostas.
 - T2 — Afiliado TikTok Shop com produto na mão. Ativo: mãos e voz de uma pessoa real. Pré-teste: conferir no TikTok Studio/Academy BR a regra real (seguidores, vídeo sem rosto, amostras) e a elegibilidade das contas. Só começa se alguém aceitar filmar ~30 min/dia. Teste: 30 dias, até R$ 300 em produto. Corte: sem 1.000 seguidores ou sem 1ª comissão em 45 dias.
+
+- T3 — Anúncio pago (Meta Ads) no produto que já existe. Ativo: capital (R$ 300, teto duro). Produto: caderno do Escrevente TJSP a R$ 27 com 1 oferta extra no checkout; criativos: os vídeos de questão que já temos; público: interior de SP, interesse em concurso/TJSP; R$ 30/dia por até 10 dias. Métrica: custo por venda. Corte: R$ 150 gastos com 0–2 vendas → para. Continua só se o custo por venda ficar ≤ R$ 22 (o que sobra por venda), reinvestindo apenas a receita. Antes: auditar o PDF contra o Edital 02/2026. Depende do operador: conta Kiwify, conta de anúncios com o cartão dele e o "sim" explícito para gastar R$ 300. Sem taxa-base verificada para anunciante novo ("não encontrado"); estimativa minha de empatar nos primeiros R$ 300: 20–30%.
+- Hipótese em pesquisa (23/11 03:55Z, 2 agentes): software/automação vendido dentro de marketplace que já traz o comprador (Apify Store, lojas de apps de Nuvemshop/Bling/Tray, recompensas de código aberto). Sem número ainda.
 
 ## CORTADO EM 23/11
 Shorts dos canais A e B, quiz do TikTok, expansão do TJSP (fica só a opção grátis de listar o PDF pronto na Kiwify, R$ 27), cortes pagos por view, alerta de licitação, afiliado de infoproduto, loja com anúncio, bets/suplementos/persona. Longos do canal A: pausados (ver PLANO v5.3).
@@ -45,4 +48,5 @@ Shorts dos canais A e B, quiz do TikTok, expansão do TJSP (fica só a opção g
 
 ## LOG
 - 23/11 03:30Z: v1 (frente TJSP).
-- 23/11 05:30Z: pesquisa de 12 frentes; v2. Pré-testes T1 e T2 marcados para 14:30Z.
+- 23/11 03:45Z: pesquisa de 12 frentes; v2. Pré-testes T1 e T2 marcados para 14:30Z.
+- 23/11 03:55Z: operador perguntou se o veredito é final e citou "Claude + Meta Ads". Diagnóstico mantido; lista de opções reaberta em dois pontos (T3 capital; classe de marketplace de software em pesquisa).
