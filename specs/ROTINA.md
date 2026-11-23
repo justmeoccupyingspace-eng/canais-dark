@@ -4,6 +4,7 @@ Dono: Kauan. Regra dele: "A ÚNICA IMPORTÂNCIA É RESULTADO". Responder sempre 
 
 ## 0. Preparar
 - Repo: `gh repo clone justmeoccupyingspace-eng/canais-dark /home/claude/canais-dark` (ou `git pull --rebase`). Commits terminam com as linhas de atribuição pedidas pelo sistema. Push: `GIT_TERMINAL_PROMPT=0 timeout 120 git push origin HEAD:main`.
+- DINHEIRO PRIMEIRO: ler specs/DINHEIRO.md (frente única que paga; tem prioridade sobre volume dos canais quando faltar cota ou tempo).
 - Ler: topo de specs/PLANO.md (v5.1 / v5) e as 10 primeiras linhas de specs/long/QUEUE.md (log, mais novo em cima).
 - Se o QUEUE já tem uma linha com a data de hoje e "manhã" → a produção de hoje já foi feita: só faça a parte 1 (números) e pare.
 - Cotas (renovam 08:00Z): Gemini TTS 10/dia por modelo (B usa gemini-3.1-flash-tts-preview: 1–2 req/Short; A Short usa gemini-3.8-flash-tts: 1 req; longo A usa 3.8: 7 req, um por ato). YouTube: ~6 envios/dia no total dos 2 canais.
