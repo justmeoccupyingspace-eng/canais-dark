@@ -1,4 +1,5 @@
-# ROTINA DIÁRIA DOS CANAIS (executada por tarefa agendada, sessão nova a cada dia)
+# ROTINA DOS CANAIS — PRODUÇÃO DIÁRIA PAUSADA EM 23/11/2026 (PLANO v5.3). Vale agora: checagem semanal de números (segunda) e sessão diária de specs/DINHEIRO.md.
+# (texto antigo abaixo, só para quando a produção voltar) ROTINA DIÁRIA DOS CANAIS (executada por tarefa agendada, sessão nova a cada dia)
 
 Dono: Kauan. Regra dele: "A ÚNICA IMPORTÂNCIA É RESULTADO". Responder sempre em PT-BR, direto, com links clicáveis; dólar/euro sempre convertido em R$ (~R$ 5,65/US$).
 

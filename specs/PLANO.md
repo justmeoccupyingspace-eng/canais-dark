@@ -1,3 +1,9 @@
+## v5.3 (23/11 05:30Z) — PRODUÇÃO DE VÍDEO PAUSADA nos três canais
+- Motivo (pesquisa de 12 frentes, specs/DINHEIRO.md v2): em 01/02/2027 o YPP passa a exigir 1.000 inscritos + 8.000 h (ou 20 mi de views de Shorts em 90 dias); o canal A está em ~14% (136 inscritos, ~1.100 h) depois de 4 meses. A política de conteúdo inautêntico atinge canal de template com voz sintética. Chance de pagar em 12 meses: < 1% (estimativa).
+- Sai ainda o que já está pronto: A-L34 + b-pt-020..022 + a-en-013/014 em 23/11; a-en-015 em 24/11. Depois disso, nada novo.
+- Nada é apagado. Os agendados publicam. Os canais ficam no ar.
+- Volta: só se algum vídeo passar de 10 mil views em 48 h. Checagem semanal de números (segunda, 08:10Z).
+
 ## v5.2 (22/11 23:50Z) — CORREÇÃO: o corte da série Polônia foi precipitado
 - Eslovênia FbzDub5I2_8 foi de 19 (08:12Z) para 1.096 views (23:41Z) em 15 h — mesmo padrão da Estônia (263 → 2.081 numa noite). Longo só se julga com 48 h. Hungria (33) segue morta.
 - Molde que pega: "X Was N% Richer Than Poland" com N grande (Estônia 46% → 6,4 mil; Eslovênia 71% → 1,1 mil; Hungria 29% → 33). Próximo: A-L34 Tchéquia 87% (specs/long/a-L34.py, checks OK no CI run 45084991111), 23/11 23:00Z.
