@@ -52,3 +52,4 @@ Shorts dos canais A e B, quiz do TikTok, expansão do TJSP (fica só a opção g
 - 23/11 03:45Z: pesquisa de 12 frentes; v2. Pré-testes T1 e T2 marcados para 14:30Z.
 - 23/11 03:55Z: operador perguntou se o veredito é final e citou "Claude + Meta Ads". Diagnóstico mantido; lista de opções reaberta em dois pontos (T3 capital; classe de marketplace de software em pesquisa).
 - 23/11 14:40Z: pré-testes rodados no navegador (só leitura). T1 morto; T2 travado em 1.000 seguidores (conta com 219); T3 com sinal a favor (710 anúncios ativos no nicho) e contra (concorrente direto com produto maior a R$ 34–54). Operador ainda não respondeu ao pedágio.
+- 24/11 14:40Z: sem resposta do operador ao pedágio (C ou D). Nenhum teste aberto. Só saiu o último Short pronto (a-en-015). Próxima sessão: checagem semanal dos canais em 30/11.
