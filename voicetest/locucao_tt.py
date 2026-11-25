@@ -17,7 +17,8 @@ MARGIN = 0.04        # respiro nas pontas de cada arquivo de bloco
 LEAD = 0.05          # na timeline, a fala entra 50 ms depois do início do bloco
 GAP_UNICA = 0.30     # silêncio entre blocos no arquivo único
 LUFS, PEAK_DB = -16.0, -1.0
-RATE_MIN, RATE_MAX = 0.88, 1.30
+RATE_MIN, RATE_MAX = 0.88, float(os.environ.get("RATE_MAX", "1.30"))
+FOLGA, FOLGA_FIM = float(os.environ.get("FOLGA", "0.10")), float(os.environ.get("FOLGA_FIM", "0.25"))  # sobra no fim da janela
 TOL = 0.30
 FAKE = os.environ.get("FAKE") == "1"
 
@@ -27,7 +28,7 @@ BL = S["blocos"]
 PRON = S.get("pron", {})
 OUT = os.environ.get("OUT", "out_loc")
 os.makedirs(OUT, exist_ok=True)
-rep = {"script": SCRIPT, "regras": {"lufs": LUFS, "pico_db": PEAK_DB, "fator_min": RATE_MIN, "fator_max": RATE_MAX,
+rep = {"script": SCRIPT, "regras": {"lufs": LUFS, "pico_db": PEAK_DB, "fator_min": RATE_MIN, "fator_max": RATE_MAX, "folga": FOLGA, "folga_fim": FOLGA_FIM,
                                     "lead_s": LEAD, "margem_s": MARGIN}, "vozes": {}}
 
 
@@ -57,7 +58,9 @@ def expand(tok):
     from num2words import num2words
     digits = re.sub(r"\D", "", core)
     out = []
-    if "-" in core or (len(digits) >= 5 and "." not in core and "," not in core):
+    if "-" in core or (len(digits) >= 4 and "." not in core and "," not in core):  # telefone: DDD por extenso, resto dígito a dígito
+        if digits.startswith("11") and len(digits) >= 6:
+            out += ["onze"]; digits = digits[2:]
         for d in digits:
             out += num2words(int(d), lang="pt_BR").split()
     else:
@@ -193,7 +196,7 @@ def fit(x, bi):
     """ajusta a fala do bloco ao tempo-alvo: cabe na janela com ~0,1 s de folga; fator limitado a [RATE_MIN, RATE_MAX]."""
     b = BL[bi]
     w = b["fim"] - b["ini"]
-    alvo = w - LEAD - (0.25 if bi == len(BL) - 1 else 0.10)
+    alvo = w - LEAD - (FOLGA_FIM if bi == len(BL) - 1 else FOLGA)
     d = len(x) / SR
     if alvo - TOL <= d <= alvo:
         return x, 1.0, "nenhum", alvo

@@ -5,6 +5,9 @@ on:
       script: {description: "roteiro JSON com blocos ini/fim/texto", required: false, default: "voicetest/cronos_tiktok.json"}
       pares: {description: "modelo:voz separados por vírgula", required: false, default: "gemini-3.8-flash-tts:Algieba,gemini-3.8-flash-tts:Puck,gemini-3.8-flash-tts:Fenrir,gemini-3.8-flash-tts:Sadachbia,gemini-3.1-flash-tts-preview:Algieba"}
       raw_branch: {description: "branch locucao-tt-<run> para reaproveitar tomadas (sem novo TTS)", required: false, default: ""}
+      rate_max: {description: "fator máximo de aceleração por bloco", required: false, default: "1.30"}
+      folga: {description: "sobra (s) no fim de cada janela", required: false, default: "0.10"}
+      folga_fim: {description: "sobra (s) no fim da última janela", required: false, default: "0.25"}
 permissions:
   contents: write
 jobs:
@@ -27,6 +30,9 @@ jobs:
           SCRIPT: ${{ inputs.script }}
           PARES: ${{ inputs.pares }}
           RAW_DIR: ${{ inputs.raw_branch != '' && 'raw' || '' }}
+          RATE_MAX: ${{ inputs.rate_max }}
+          FOLGA: ${{ inputs.folga }}
+          FOLGA_FIM: ${{ inputs.folga_fim }}
       - if: always()
         run: |
           git config user.name producer; git config user.email producer@users.noreply.github.com
