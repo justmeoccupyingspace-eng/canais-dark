@@ -3,7 +3,7 @@ import json, os, re, subprocess, unicodedata, difflib
 import numpy as np, librosa
 from faster_whisper import WhisperModel
 S = json.load(open(os.environ.get("SCRIPT", "voicetest/cronos_locucao.json")))
-B = S["blocos"]
+B = [b["texto"] if isinstance(b, dict) else b for b in S["blocos"]]
 def norm(s):
     s = unicodedata.normalize("NFKD", s.lower()); s = "".join(c for c in s if not unicodedata.combining(c))
     return [w for w in re.sub(r"[^a-z0-9 ]", " ", s).split() if w]
@@ -14,6 +14,7 @@ for d in sorted(os.listdir("loc")):
     out[d] = []
     for i, ref in enumerate(B, 1):
         p = f"loc/{d}/bloco-{i:02d}.wav"
+        if not os.path.exists(p): p = f"loc/{d}/{i:02d}.wav"
         if not os.path.exists(p): continue
         y, _ = librosa.load(p, sr=16000)
         segs, _ = m.transcribe(y, language="pt", beam_size=5)
