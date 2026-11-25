@@ -1,0 +1,32 @@
+1
+00:00:00,100 --> 00:00:02,470
+Sua obra tem três números diferentes. Qual deles vai pra reunião?
+
+2
+00:00:02,650 --> 00:00:06,620
+Cronograma no Project, custo no Sienge, avanço na planilha. Cada um com uma data.
+
+3
+00:00:06,760 --> 00:00:08,930
+O Cronos junta tudo numa data de corte só.
+
+4
+00:00:09,070 --> 00:00:12,650
+Você importa o Project e a obra inteira aparece. Toda semana, a equipe aponta o avanço.
+
+5
+00:00:12,790 --> 00:00:16,720
+No dia do corte: vinte e cinco por cento feito, vinte e oito previsto. Três pontos de atraso.
+
+6
+00:00:16,860 --> 00:00:20,230
+E o custo vem direto do Sienge: hoje, seiscentos e quarenta mil acima do orçado.
+
+7
+00:00:20,370 --> 00:00:23,140
+Fechou o mês? Os números congelam. E vai um número só para a reunião.
+
+8
+00:00:23,280 --> 00:00:28,800
+Quer ver isso na sua obra? Fale com o André pelo WhatsApp: onze… nove, nove, cinco, um, quatro… nove, um, três, três.
+
