@@ -1,0 +1,19 @@
+{
+ "titulo": "Cronos — vídeo TikTok (~28 s), locução pt-BR, pedido de 25/11/2026",
+ "style": "Você é um criador de conteúdo brasileiro gravando a narração de um vídeo de TikTok sobre um software de gestão de obras. Voz masculina adulta, enérgica e confiante, em tom de conversa, como quem mostra uma descoberta para um colega de obra. Nada de locutor de rádio, nada de voz de comercial de varejo, nada de apresentador de TV. Ritmo de TikTok: rápido, por volta de 220 palavras por minuto, mas com cada palavra clara. Entre um parágrafo e outro, só uma pausa curta, de meio segundo. Parágrafo 1: gancho rápido e intrigante, a pergunta no fim sobe. Parágrafo 3: a virada, mais firme. Parágrafo 5: os números bem marcados. Parágrafo 7: pausa curta nas reticências, antes de 'um número só'. Parágrafo 8: a chamada final, um pouco mais lenta, com um sorriso na voz; o telefone é lido em grupos, com pausa nas reticências e ritmo nas vírgulas. Pronúncias: 'Crônos' com a sílaba forte em CRÔ; 'Siênji' lido si-ÊN-ji; 'Próject' é a palavra inglesa Project, com a sílaba forte em PRÓ; 'WhatsApp' como se fala no Brasil. Leia apenas o texto abaixo, palavra por palavra, sem acrescentar nem comentar nada.",
+ "pron": {
+  "Cronos": "Crônos",
+  "Sienge": "Siênji",
+  "Project": "Próject"
+ },
+ "blocos": [
+  {"ini": 0.0, "fim": 2.6, "texto": "Sua obra tem três números diferentes. Qual deles vai pra reunião?"},
+  {"ini": 2.6, "fim": 6.0, "texto": "Cronograma no Project, custo no Sienge, avanço na planilha. Cada um com uma data."},
+  {"ini": 6.0, "fim": 8.4, "texto": "O Cronos junta tudo numa data de corte só."},
+  {"ini": 8.4, "fim": 12.0, "texto": "Você importa o Project e a obra inteira aparece. Toda semana, a equipe aponta o avanço."},
+  {"ini": 12.0, "fim": 16.0, "texto": "No dia do corte: vinte e cinco por cento feito, vinte e oito previsto. Três pontos de atraso."},
+  {"ini": 16.0, "fim": 19.6, "texto": "E o custo vem direto do Sienge: hoje, seiscentos e quarenta mil acima do orçado."},
+  {"ini": 19.6, "fim": 22.6, "texto": "Fechou o mês? Os números congelam. E vai um número só pra reunião.", "tts": "Fechou o mês? Os números congelam. E vai… um número só pra reunião."},
+  {"ini": 22.6, "fim": 28.5, "texto": "Quer ver isso com a sua obra? Chama o André no WhatsApp: onze… nove, nove, cinco, um, quatro… nove, um, três, três."}
+ ]
+}

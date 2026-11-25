@@ -1,0 +1,36 @@
+name: locucao_tt
+on:
+  workflow_dispatch:
+    inputs:
+      script: {description: "roteiro JSON com blocos ini/fim/texto", required: false, default: "voicetest/cronos_tiktok.json"}
+      pares: {description: "modelo:voz separados por vírgula", required: false, default: "gemini-3.8-flash-tts:Algieba,gemini-3.8-flash-tts:Puck,gemini-3.8-flash-tts:Fenrir,gemini-3.8-flash-tts:Sadachbia,gemini-3.1-flash-tts-preview:Algieba"}
+      raw_branch: {description: "branch locucao-tt-<run> para reaproveitar tomadas (sem novo TTS)", required: false, default: ""}
+permissions:
+  contents: write
+jobs:
+  v:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: |
+          sudo apt-get install -y -qq ffmpeg >/dev/null
+          ffmpeg -hide_banner -filters 2>/dev/null | grep -i -E "rubberband|atempo" || true
+          pip install -q numpy scipy soundfile librosa num2words faster-whisper pyloudnorm
+      - name: tomadas anteriores
+        if: inputs.raw_branch != ''
+        run: mkdir -p raw && git fetch -q origin ${{ inputs.raw_branch }} && git archive FETCH_HEAD | tar -x -C raw
+      - run: python voicetest/locucao_tt.py
+        env:
+          GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
+          SCRIPT: ${{ inputs.script }}
+          PARES: ${{ inputs.pares }}
+          RAW_DIR: ${{ inputs.raw_branch != '' && 'raw' || '' }}
+      - if: always()
+        run: |
+          git config user.name producer; git config user.email producer@users.noreply.github.com
+          mkdir -p /tmp/loc && cp -r out_loc/* /tmp/loc/ 2>/dev/null || true
+          git checkout --orphan locucao-tt-${{ github.run_id }} && git rm -rf . -q
+          cp -r /tmp/loc/* . 2>/dev/null || true
+          git add -f . && git commit -qm locucao-tt && git push -f origin locucao-tt-${{ github.run_id }}
