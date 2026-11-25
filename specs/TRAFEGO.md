@@ -98,3 +98,15 @@ Depósito mínimo por Pix; se a Kiwify dispara a compra no Pix gerado ou no pago
 | Google Pesquisa | Manual/semiautomático | Captura quem já busca "apostila escrevente tjsp" (intenção maior); CPC não verificado | Candidato melhor que Meta para concurso; testar só depois, não dividir R$ 300 |
 | Ferramentas pagas de terceiros (Pipeboard etc.) | Alta | Redundante | Não |
 Sincero: automação total do trabalho é possível (eu faço pesquisa, produto, página, criativos, campanha pausada, relatório e regra de corte). Automação total do dinheiro não existe: conta, depósito e ativação são dele, e o resultado depende de oferta. Quanto mais a Meta automatiza, menos a ferramenta diferencia; só oferta e criativo diferenciam.
+
+## 10. Rodada ampla (25/11, 10:30Z) — o que mudou
+Mercado: Escrevente 2026 = cadastro de reserva, interior + RMSP (2ª–10ª RAJ), taxa R$ 81, inscrições até 10/12, prova 14/03/2027, Vunesp, salário R$ 6.782 (B, Estratégia). Inscritos: 103.554 em 2023 (A via Direção, Vunesp); ~132 mil em 2025 (B). Mercado grande; não é falta de comprador.
+Preço da concorrência (lido nas páginas): Opção digital R$ 42,53 (338 p.); Nova Concursos R$ 81 (454 p.); apostilatjsp R$ 34/54; Hotmart apostila 730 p. (preço não exibido); NEAF combo R$ 998; Qconcursos grátis com 10 questões. O nosso a R$ 27–37 é o mais barato: preço não é a barreira, confiança e marca são.
+Afiliado comparado: Nova Concursos paga 20% (R$ 16 por venda de R$ 81) e só cita divulgação grátis. Pior que produto próprio (R$ 31 líquido a R$ 37). Afiliado descartado.
+CPM revisado: infoproduto/educação R$ 8–35 (C, VT Group), R$ 18–32 no feed (C, Trafius), R$ 18–28 no 1º tri (C, Maximizy). Abaixo dos R$ 38 que usei. Sazonalidade (C, Trafius): Black Friday até +70%, dezembro +40–60%, fevereiro é o mais barato do ano.
+Conversão de página de infoproduto: 1,5–2% (C, VT); 2–5% low ticket (C, sem fonte).
+Conta refeita a CPM R$ 25 (dez cobra mais): R$ 263,55 → ~10.500 impressões → 105–210 cliques → 2–4 vendas → R$ 70–140 líquidos. Empate segue pedindo 8–9 vendas. Chance ~10–15%.
+Conta nova na Meta: limite inicial relatado de US$ 50–150/dia (R$ 280–850) e verificação de identidade para alguns objetivos (C, afiliados); não trava teste de R$ 26/dia.
+Conector oficial: exige permissões ads_mcp_management + ads_management; não há restrição de país documentada (A, Meta).
+MUDANÇA DE JANELA (decisão minha, conta acima): 01–10/12 pega CPM de dezembro (+40–60%). Inscrito confirmado continua comprando material até a prova. Janela melhor: 05/01–14/02/2027, com CPM mais baixo e comprador já inscrito (comprometido). Dezembro só se ele quiser velocidade.
+Google Pesquisa: maior intenção; volume e CPC não verificados (Planejador exige conta). Segundo teste, se o primeiro der sinal.
