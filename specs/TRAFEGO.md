@@ -88,3 +88,13 @@ Depósito mínimo por Pix; se a Kiwify dispara a compra no Pix gerado ou no pago
 - IA + anúncio: https://viniensina.com.br/gestor-de-trafego-com-ia-automatizar-meta-ads/ · https://portermetrics.com/pt/tutorial/claude/chat-meta-ads/ · https://dev.to/rupa_tiwari_dd308948d710f/how-to-automate-meta-ads-with-claude-ai-and-mcp-real-workflows-real-results-m9o
 - Honorários: https://www.freelasemcrise.com.br/quanto-cobrar/gestao-trafego-pago-meta · https://trafius.com.br/blog/preco-de-gestor-de-trafego-em-2026-tabela-por-porte
 - Ferramentas: https://www.ssdnodes.com/learn/lang/pt/claude-pro-in-brazil-what-you-pay · https://higgsfield.ai/blog/ai-video-api-pricing-vs-subscriptions · https://apify.com/curious_coder/facebook-ads-library-scraper/pricing · https://market.lobehub.com/s/plugins/pabloweyne-uazapi-mcp
+
+## 9. Comparação ampla e automação total (25/11, 10Z)
+| Caminho | Automação | Comparado ao nosso | Veredito |
+|---|---|---|---|
+| Stack do vídeo (Claude + APIs + navegador) | Alta na execução | Igual ao que temos | Nada a comprar |
+| IA nativa da Meta (Advantage+, Creative Studio, agente MAIBA) | Segmentação, criativo e verba já automáticos; criação conversacional "em breve" | Faz de graça parte do que o vídeo vende; ganho declarado ~5% mais conversões (A, Meta, out/2026) | Usar: Advantage+ de vendas como padrão do T3 |
+| Conector oficial (MCP) | Cria/edita, tudo pausado | Meta diz que mira grandes anunciantes e agências | Tentar; se não liberar, eu preparo e ele sobe pelo Gerenciador |
+| Google Pesquisa | Manual/semiautomático | Captura quem já busca "apostila escrevente tjsp" (intenção maior); CPC não verificado | Candidato melhor que Meta para concurso; testar só depois, não dividir R$ 300 |
+| Ferramentas pagas de terceiros (Pipeboard etc.) | Alta | Redundante | Não |
+Sincero: automação total do trabalho é possível (eu faço pesquisa, produto, página, criativos, campanha pausada, relatório e regra de corte). Automação total do dinheiro não existe: conta, depósito e ativação são dele, e o resultado depende de oferta. Quanto mais a Meta automatiza, menos a ferramenta diferencia; só oferta e criativo diferenciam.
