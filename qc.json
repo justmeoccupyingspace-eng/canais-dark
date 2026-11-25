@@ -1,0 +1,214 @@
+{
+ "gemini-3.1-flash-tts-preview_Algieba": [
+  {
+   "bloco": 1,
+   "ok": 0.87,
+   "ouvido": "Sua obra tem três números diferentes. Qual deles vai para a reunião?"
+  },
+  {
+   "bloco": 2,
+   "ok": 0.93,
+   "ouvido": "Cronograma no Project, custo no Cienge, avanço na planilha.  Cada um com uma data."
+  },
+  {
+   "bloco": 3,
+   "ok": 1.0,
+   "ouvido": "O Cronos junta tudo numa data de corte só."
+  },
+  {
+   "bloco": 4,
+   "ok": 1.0,
+   "ouvido": "Você importa o project e a obra inteira aparece.  Toda semana a equipe aponta o avanço."
+  },
+  {
+   "bloco": 5,
+   "ok": 0.6,
+   "ouvido": "No dia do corte, 25% feito, 28% previsto, 3 pontos de atraso."
+  },
+  {
+   "bloco": 6,
+   "ok": 0.79,
+   "ouvido": "E o custo vem direto do Cienge. Hoje, 640 mil acima do orçado."
+  },
+  {
+   "bloco": 7,
+   "ok": 1.0,
+   "ouvido": "Fechou o mês, os números congelam. E vai, um número só para a reunião."
+  },
+  {
+   "bloco": 8,
+   "ok": 0.65,
+   "ouvido": "Quer ver isso na sua obra? Fale com o André pelo WhatsApp 11 99514 9133."
+  }
+ ],
+ "gemini-3.8-flash-tts_Algieba": [
+  {
+   "bloco": 1,
+   "ok": 0.87,
+   "ouvido": "Sua obra tem três números diferentes. Qual deles vai para a reunião?"
+  },
+  {
+   "bloco": 2,
+   "ok": 0.93,
+   "ouvido": "Cronograma no Project, custo no Cienge, avanço na planilha, cada um com uma data."
+  },
+  {
+   "bloco": 3,
+   "ok": 1.0,
+   "ouvido": "O Cronos junta tudo numa data de corte só."
+  },
+  {
+   "bloco": 4,
+   "ok": 1.0,
+   "ouvido": "Você importa o project e a obra inteira aparece.  Toda semana, a equipe aponta o avanço."
+  },
+  {
+   "bloco": 5,
+   "ok": 0.67,
+   "ouvido": "No dia do corte, 25% feito, 28% previsto.  Três pontos de atraso."
+  },
+  {
+   "bloco": 6,
+   "ok": 0.79,
+   "ouvido": "E o custo vem direto do Cienge. Hoje, 640 mil acima do orçado."
+  },
+  {
+   "bloco": 7,
+   "ok": 1.0,
+   "ouvido": "Fechou o mês? Os números congelam.  E vai um número só para a reunião."
+  },
+  {
+   "bloco": 8,
+   "ok": 0.65,
+   "ouvido": "Quer ver isso na sua obra? Fale com o André pelo WhatsApp 11 99514 9133."
+  }
+ ],
+ "gemini-3.8-flash-tts_Fenrir": [
+  {
+   "bloco": 1,
+   "ok": 0.87,
+   "ouvido": "Sua obra tem três números diferentes.  Qual deles vai para a reunião?"
+  },
+  {
+   "bloco": 2,
+   "ok": 0.93,
+   "ouvido": "Cronograma no Project, Custo no Cienge, Avanço na planilha, cada um com uma data."
+  },
+  {
+   "bloco": 3,
+   "ok": 0.89,
+   "ouvido": "O Kronos junta tudo numa data de corte só."
+  },
+  {
+   "bloco": 4,
+   "ok": 1.0,
+   "ouvido": "Você importa o project e a obra inteira aparece.  Toda semana a equipe aponta o avanço."
+  },
+  {
+   "bloco": 5,
+   "ok": 0.6,
+   "ouvido": "No dia do corte, 25% feito, 28% previsto, 3 pontos de atraso."
+  },
+  {
+   "bloco": 6,
+   "ok": 0.79,
+   "ouvido": "E o custo vem direto do Cienge, hoje 640 mil acima do orçado."
+  },
+  {
+   "bloco": 7,
+   "ok": 1.0,
+   "ouvido": "Fechou o mês, os números congelam.  E vai um número só para a reunião."
+  },
+  {
+   "bloco": 8,
+   "ok": 0.65,
+   "ouvido": "Quer ver isso na sua obra? Fale com o André pelo WhatsApp 11 99514 9133."
+  }
+ ],
+ "gemini-3.8-flash-tts_Puck": [
+  {
+   "bloco": 1,
+   "ok": 0.87,
+   "ouvido": "Sua obra tem três números diferentes.  Qual deles vai para a reunião?"
+  },
+  {
+   "bloco": 2,
+   "ok": 0.93,
+   "ouvido": "Cronograma no Project, custo no Cienge, avanço na planilha.  Cada um com uma data."
+  },
+  {
+   "bloco": 3,
+   "ok": 0.89,
+   "ouvido": "O Kronos junta tudo numa data de corte só."
+  },
+  {
+   "bloco": 4,
+   "ok": 1.0,
+   "ouvido": "Você importa o project e a obra inteira aparece.  Toda semana a equipe aponta o avanço."
+  },
+  {
+   "bloco": 5,
+   "ok": 0.6,
+   "ouvido": "No dia do corte, 25% feito, 28% previsto.  3 pontos de atraso."
+  },
+  {
+   "bloco": 6,
+   "ok": 0.79,
+   "ouvido": "E o custo vem direto do Cienge. Hoje, 640 mil acima do orçado."
+  },
+  {
+   "bloco": 7,
+   "ok": 1.0,
+   "ouvido": "Fechou o mês, os números congelam e vai um número só para a reunião."
+  },
+  {
+   "bloco": 8,
+   "ok": 0.65,
+   "ouvido": "Quer ver isso na sua obra? Fale com o André pelo WhatsApp 11 99514 9133."
+  }
+ ],
+ "gemini-3.8-flash-tts_Sadachbia": [
+  {
+   "bloco": 1,
+   "ok": 0.87,
+   "ouvido": "Sua obra tem três números diferentes. Qual deles vai para a reunião?"
+  },
+  {
+   "bloco": 2,
+   "ok": 0.93,
+   "ouvido": "Cronograma no Project, custo no Cienge, avanço na planilha, cada um com uma data."
+  },
+  {
+   "bloco": 3,
+   "ok": 1.0,
+   "ouvido": "O Cronos junta tudo numa data de corte só."
+  },
+  {
+   "bloco": 4,
+   "ok": 0.69,
+   "ouvido": "Sem Port Project, Yalga inteira aparece.  Toda semana, a equipe aponta o avanço."
+  },
+  {
+   "bloco": 5,
+   "ok": 0.6,
+   "ouvido": "No dia do corte, 25% feito, 28% previsto, 3 pontos de atraso."
+  },
+  {
+   "bloco": 6,
+   "ok": 0.79,
+   "ouvido": "E o custo vem direto do Cienge. Hoje, 640 mil acima do orçado."
+  },
+  {
+   "bloco": 7,
+   "ok": 1.0,
+   "ouvido": "Fechou o mês? Os números congelam. E vai um número só para a reunião."
+  },
+  {
+   "bloco": 8,
+   "ok": 0.71,
+   "ouvido": "Quer ver isso na sua obra? Fale com o André pelo WhatsApp."
+  }
+ ],
+ "out_loc": [],
+ "raw": []
+}
