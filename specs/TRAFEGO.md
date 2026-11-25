@@ -110,3 +110,49 @@ Conta nova na Meta: limite inicial relatado de US$ 50–150/dia (R$ 280–850) e
 Conector oficial: exige permissões ads_mcp_management + ads_management; não há restrição de país documentada (A, Meta).
 MUDANÇA DE JANELA (decisão minha, conta acima): 01–10/12 pega CPM de dezembro (+40–60%). Inscrito confirmado continua comprando material até a prova. Janela melhor: 05/01–14/02/2027, com CPM mais baixo e comprador já inscrito (comprometido). Dezembro só se ele quiser velocidade.
 Google Pesquisa: maior intenção; volume e CPC não verificados (Planejador exige conta). Segundo teste, se o primeiro der sinal.
+
+## 11. O método completo do autor (25/11, 10:45Z): 10 posts lidos + site da agência + regras oficiais
+Quem ele é: dono de agência de tráfego com automação de WhatsApp e CRM. O site diz que cobra R$ 1.500–5.000/mês por cliente, pede verba mínima de R$ 1.500/mês, tem 94 clientes e R$ 1,25 mi em mídia gerida (números do próprio site, C). Vende também a mentoria "Método SVA" (preço não público). Os posts "Visão tropa" são topo de funil da mentoria e da agência. O dinheiro dele vem de cliente e de aluno.
+
+### O que cada linha dos posts quer dizer
+| Linha do post | O que é na prática | Nós |
+|---|---|---|
+| "Campanha 1-1-1 full adv" | 1 campanha, 1 conjunto, 1 anúncio, tudo Advantage+ (público e posicionamento automáticos). Vários 1-1-1 no orçamento mínimo para testar criativo sem a Meta concentrar a verba num só | Adotar |
+| "Não manja? começa com 10zão" / "200 por produto já brinca" | R$ 10/dia; R$ 200 por produto testado. Mínimo técnico da Meta: mensagens R$ 6/dia, conversão R$ 6–10/dia (C, Trafius) | Bate com o teto de R$ 300 |
+| "Criativo low ticket é imagem" / "imagem com preço qualifica melhor" / "vídeo: clique mais caro, lead melhor" | Começar por imagem estática com o preço escrito; vídeo depois | Adotar |
+| "Analisa os campeões na biblioteca; bota o Claude pra analisar os seus e dos concorrentes" | Biblioteca de Anúncios + análise dos que rodam há meses | Já fazemos |
+| "Tá duro é wpp" / "lead chegou? manda áudio, conversa" / "vendeu? reinveste" | Anúncio de clique para o WhatsApp e fechamento por conversa humana; receita volta para o anúncio | Nova forma do T3 (D1) |
+| "Tem caixa é site, VSL, funil interativo" | Página, vídeo de vendas e quiz com pixel; precisa de mais verba para a Meta aprender | Nossa forma antiga (Kiwify), fica para depois |
+| "Sem pixel você me quebra" / "instala Clarity e analytics" | Pixel + Microsoft Clarity (grátis: mapa de calor e gravação de sessão) | Adotar quando houver página |
+| "19,90 não paga nem os anúncios" / "Black tá osso" | Ticket baixo não paga o clique; CPM sobe até 70% na Black Friday | Confirma a nossa conta |
+| "Acertou? Leva pra outro país" | Repetir o vencedor em outro mercado. CPM mediano de e-commerce: Brasil US$ 2,63 (R$ 14,86), México US$ 3,92, Colômbia US$ 2,00 (Lebesgue via Pace, jul/2026) | Só produto universal; o caderno do TJSP não viaja |
+| "Oferta: Etsy + biblioteca de anúncios" | Produto digital que já vende lá fora (selo de mais vendido, avaliações) + conferir se já roda anúncio dele no Brasil | Fila |
+| "Conteúdo infinito... monetiza com view ou produto" / "Canal dark deixa rico mas demora" | Vídeo de IA em massa em 4 redes | Já testamos: ~500 vídeos em 4 meses, R$ 0. O YouTube desmonetiza conteúdo "inautêntico" feito em massa desde 15/07/2025 (B) |
+| "Vender serviço entregar com IA" / "pack pra empresa no zap" / "site com Lovable" / "arte com GPT" | Vender serviço | Exige vender; ver forma 4 |
+| "Claude é no opus low" | Modelo forte com pouco raciocínio para economizar limite | Para a rotina de anúncio, Sonnet basta |
+
+### O que fica de fora (regra 7 de DINHEIRO.md), com o motivo
+- Comprar conta Veo na G2G / abrir e-mails para ganhar crédito grátis: viola os termos do Google, e conta comprada pode ser roubada ou derrubada. Desnecessário: o Google AI Ultra dá 10.000–25.000 créditos/mês no Flow; no Ultra, o Veo 3.1 Fast custa 10 créditos, o que dá 1.000+ vídeos/mês (C, WaveSpeed resumindo o Google; o Fast e o Quality saem do Flow em 05/12/2026).
+- Chip virtual (HeroSMS, a partir de US$ 0,01) e vários WhatsApp em perfis de Android: número virtual vem de pool compartilhado; o WhatsApp bane, e o histórico some sem aviso. 6,8 milhões de contas banidas no 1º semestre de 2025; bloqueio maior a ferramentas não autorizadas desde 15/01/2026 (B, Estado de Minas, 02/2026).
+- Comprar BM verificada / "3 contas de anúncios" para fugir de bloqueio: a Meta notificou parceiros por "aluguel de acesso a contas confiáveis" que ajudavam a burlar a fiscalização (A, Meta, 02/2026). Um banimento derruba tudo o que está ligado ao perfil do operador.
+- Usar no anúncio o vídeo viral de outra pessoa: viola direito autoral e a política de anúncios da Meta (A).
+- Robô (Playwright) no Gerenciador de Anúncios: automação de interface é violação. Caso público de 2026: portfólio inteiro banido sem recurso cerca de 1 semana depois de um agente com permissão de escrita (B, Porter e Supermetrics). Limite da Meta desde maio/2026: 4 mudanças de orçamento por conjunto por hora e 10 mudanças de limite de gasto por dia (B). Playwright só para leitura (Biblioteca, TikTok), nunca no Gerenciador.
+- Uazapi: a documentação confirma conexão por QR Code ou código de pareamento e disparo de campanha com intervalo configurável (A, docs.uazapi.com). É API não oficial: fora do número de venda.
+- GGMAX/G2G (conta e item de jogo): viola os termos dos jogos; há queixas de saldo retido e de banimento no Reclame Aqui.
+
+### WhatsApp: regras oficiais e números
+- Oficial (A, Meta): conversa iniciada por anúncio de clique para o WhatsApp abre janela de 72 h em que toda mensagem é grátis; mensagem de atendimento (sem modelo) é grátis. O app WhatsApp Business, que é grátis, cria o anúncio em Ferramentas → Anunciar, com saudação, mensagem de ausência e catálogo.
+- IA no WhatsApp: IA de uso geral proibida na API desde 15/01/2026; IA do próprio negócio (qualificar, agendar, vender) é permitida (B, respond.io).
+- Custo por conversa (C, salvo indicação): educação R$ 5–15 (MessageCentral, sem fonte); clínicas mediana ~R$ 10, metade das contas entre R$ 8 e R$ 12, máximo R$ 25 (dezenas de contas, abr–jul/2026, B-, Eduardo Stopa); caso da agência do autor R$ 2,33.
+- Conversa → venda: educação 8–18% e beleza 25–40% (C, MessageCentral); 9% em média em 2021 (C, OmniChat, sem método). Velocidade de resposta decide: responder em 2 min converte muito mais que em 2 h (B-).
+
+### As formas de aplicação, por chance de se pagar (R$ 300 = R$ 263,55 de entrega)
+| Forma | Conta | Chance de se pagar | Quem paga o pedágio |
+|---|---|---|---|
+| D1. Caderno TJSP por WhatsApp: 3 × 1-1-1 de imagem com preço → conversa → Pix direto (sem taxa da Kiwify) | R$ 5–12 por conversa → 22–53 conversas → 8–18% fecham → 2–9 vendas a R$ 37 → R$ 65–350. No meio: ~4 vendas, R$ 146. Empatar pede 9 vendas | ~15% (10–20%), estimativa minha | Operador responde em minutos, 20–40 min/dia, com roteiro e áudios que eu escrevo |
+| D2. Negócio local de serviço que o operador possa usar como caso (agendamento por WhatsApp, raio de 3–5 km, imagem com preço) | R$ 3–8 por conversa → 33–88 conversas → 15–30% agendam → 5–26 clientes. Exemplo de ticket em beleza: alongamento em gel R$ 120–250, manutenção R$ 80–160 a cada 20–30 dias (Catraca Livre, valores de 2025) | Alta (~60%; entradas C) | Quem toca o negócio atende e precisa ter agenda livre |
+| D3. Página na Kiwify (forma antiga) | 2–4 vendas, R$ 70–140 | ~10–15% | Menos tempo do operador |
+| 4. Serviço de tráfego para negócio local (o que o autor vende) | Iniciante cobra R$ 500–1.500/mês por cliente (C). Agências: 44% fecham até 5 clientes recorrentes por ano e 14% nenhum; 28% dos clientes vêm de indicação e 20% de prospecção (RD Station 2026, n = 349/713) | Depende de ter caso | Vender; D2 gera o caso |
+
+Desenho do D1: 3 conjuntos 1-1-1 (Engajamento → WhatsApp → maximizar conversas) a R$ 8,70/dia cada; 3 imagens com preço (questões Vunesp comentadas; plano de 15 semanas até a prova; preço contra o concorrente); Advantage+ no estado de SP. WhatsApp Business num número próprio (chip real, usado normalmente por 1 semana antes); saudação + catálogo + respostas rápidas; 2–3 áudios gravados uma vez pelo operador; Pix direto; PDF entregue na conversa; planilha de conversas e vendas. Programação de horário só existe com orçamento total: usar orçamento total com veiculação nos horários em que ele responde. Regras: com R$ 80 de entrega, pausar conjunto com custo por conversa acima de R$ 15; com R$ 130 e até 2 vendas, parar tudo; continuar só se vendas × preço ≥ depósito usado. Janela: 05/01–14/02/2027.
+Veredito: o autor ganha com serviço e mentoria. A parte replicável do método é 1-1-1 + imagem com preço + WhatsApp com fechamento humano + reinvestir. D1 melhora a chance do caderno de ~10% para ~15%, mas ainda não deve pagar os primeiros R$ 300. D2 é a única forma com chance alta de se pagar, e gera o caso que a forma 4 exige.
