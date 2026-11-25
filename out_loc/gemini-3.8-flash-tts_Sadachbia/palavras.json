@@ -1,0 +1,838 @@
+{
+ "timeline_s": 28.58,
+ "palavras": [
+  {
+   "bloco": 1,
+   "palavra": "Sua",
+   "ini": 0.06,
+   "fim": 0.26,
+   "casada": true
+  },
+  {
+   "bloco": 1,
+   "palavra": "obra",
+   "ini": 0.26,
+   "fim": 0.34,
+   "casada": true
+  },
+  {
+   "bloco": 1,
+   "palavra": "tem",
+   "ini": 0.34,
+   "fim": 0.48,
+   "casada": true
+  },
+  {
+   "bloco": 1,
+   "palavra": "três",
+   "ini": 0.48,
+   "fim": 0.76,
+   "casada": true
+  },
+  {
+   "bloco": 1,
+   "palavra": "números",
+   "ini": 0.76,
+   "fim": 0.94,
+   "casada": true
+  },
+  {
+   "bloco": 1,
+   "palavra": "diferentes.",
+   "ini": 0.94,
+   "fim": 1.26,
+   "casada": true
+  },
+  {
+   "bloco": 1,
+   "palavra": "Qual",
+   "ini": 1.66,
+   "fim": 1.82,
+   "casada": true
+  },
+  {
+   "bloco": 1,
+   "palavra": "deles",
+   "ini": 1.82,
+   "fim": 2.02,
+   "casada": true
+  },
+  {
+   "bloco": 1,
+   "palavra": "vai",
+   "ini": 2.02,
+   "fim": 2.14,
+   "casada": true
+  },
+  {
+   "bloco": 1,
+   "palavra": "pra",
+   "ini": 2.14,
+   "fim": 2.24,
+   "casada": true
+  },
+  {
+   "bloco": 1,
+   "palavra": "reunião?",
+   "ini": 2.24,
+   "fim": 2.48,
+   "casada": true
+  },
+  {
+   "bloco": 2,
+   "palavra": "Cronograma",
+   "ini": 2.62,
+   "fim": 2.98,
+   "casada": true
+  },
+  {
+   "bloco": 2,
+   "palavra": "no",
+   "ini": 2.98,
+   "fim": 3.02,
+   "casada": true
+  },
+  {
+   "bloco": 2,
+   "palavra": "Project,",
+   "ini": 3.02,
+   "fim": 3.34,
+   "casada": true
+  },
+  {
+   "bloco": 2,
+   "palavra": "custo",
+   "ini": 3.56,
+   "fim": 3.84,
+   "casada": true
+  },
+  {
+   "bloco": 2,
+   "palavra": "no",
+   "ini": 3.84,
+   "fim": 3.88,
+   "casada": true
+  },
+  {
+   "bloco": 2,
+   "palavra": "Sienge,",
+   "ini": 3.88,
+   "fim": 4.52,
+   "casada": false
+  },
+  {
+   "bloco": 2,
+   "palavra": "avanço",
+   "ini": 4.52,
+   "fim": 4.7,
+   "casada": true
+  },
+  {
+   "bloco": 2,
+   "palavra": "na",
+   "ini": 4.7,
+   "fim": 4.8,
+   "casada": true
+  },
+  {
+   "bloco": 2,
+   "palavra": "planilha.",
+   "ini": 4.8,
+   "fim": 5.18,
+   "casada": true
+  },
+  {
+   "bloco": 2,
+   "palavra": "Cada",
+   "ini": 5.36,
+   "fim": 5.62,
+   "casada": true
+  },
+  {
+   "bloco": 2,
+   "palavra": "um",
+   "ini": 5.62,
+   "fim": 5.8,
+   "casada": true
+  },
+  {
+   "bloco": 2,
+   "palavra": "com",
+   "ini": 5.8,
+   "fim": 5.92,
+   "casada": true
+  },
+  {
+   "bloco": 2,
+   "palavra": "uma",
+   "ini": 5.92,
+   "fim": 6.02,
+   "casada": false
+  },
+  {
+   "bloco": 2,
+   "palavra": "data.",
+   "ini": 6.02,
+   "fim": 6.12,
+   "casada": true
+  },
+  {
+   "bloco": 3,
+   "palavra": "O",
+   "ini": 6.284,
+   "fim": 6.664,
+   "casada": true
+  },
+  {
+   "bloco": 3,
+   "palavra": "Cronos",
+   "ini": 6.664,
+   "fim": 7.084,
+   "casada": true
+  },
+  {
+   "bloco": 3,
+   "palavra": "junta",
+   "ini": 7.084,
+   "fim": 7.424,
+   "casada": true
+  },
+  {
+   "bloco": 3,
+   "palavra": "tudo",
+   "ini": 7.424,
+   "fim": 7.684,
+   "casada": true
+  },
+  {
+   "bloco": 3,
+   "palavra": "numa",
+   "ini": 7.684,
+   "fim": 7.884,
+   "casada": true
+  },
+  {
+   "bloco": 3,
+   "palavra": "data",
+   "ini": 7.884,
+   "fim": 8.044,
+   "casada": true
+  },
+  {
+   "bloco": 3,
+   "palavra": "de",
+   "ini": 8.044,
+   "fim": 8.184,
+   "casada": true
+  },
+  {
+   "bloco": 3,
+   "palavra": "corte",
+   "ini": 8.184,
+   "fim": 8.424,
+   "casada": true
+  },
+  {
+   "bloco": 3,
+   "palavra": "só.",
+   "ini": 8.424,
+   "fim": 8.484,
+   "casada": true
+  },
+  {
+   "bloco": 4,
+   "palavra": "Você",
+   "ini": 8.684,
+   "fim": 8.964,
+   "casada": false
+  },
+  {
+   "bloco": 4,
+   "palavra": "importa",
+   "ini": 8.964,
+   "fim": 9.164,
+   "casada": true
+  },
+  {
+   "bloco": 4,
+   "palavra": "o",
+   "ini": 9.164,
+   "fim": 9.264,
+   "casada": false
+  },
+  {
+   "bloco": 4,
+   "palavra": "Project",
+   "ini": 9.264,
+   "fim": 9.524,
+   "casada": true
+  },
+  {
+   "bloco": 4,
+   "palavra": "e",
+   "ini": 9.524,
+   "fim": 9.704,
+   "casada": true
+  },
+  {
+   "bloco": 4,
+   "palavra": "a",
+   "ini": 9.704,
+   "fim": 9.754,
+   "casada": false
+  },
+  {
+   "bloco": 4,
+   "palavra": "obra",
+   "ini": 9.704,
+   "fim": 9.864,
+   "casada": true
+  },
+  {
+   "bloco": 4,
+   "palavra": "inteira",
+   "ini": 9.864,
+   "fim": 10.264,
+   "casada": true
+  },
+  {
+   "bloco": 4,
+   "palavra": "aparece.",
+   "ini": 10.264,
+   "fim": 10.464,
+   "casada": true
+  },
+  {
+   "bloco": 4,
+   "palavra": "Toda",
+   "ini": 10.744,
+   "fim": 10.964,
+   "casada": true
+  },
+  {
+   "bloco": 4,
+   "palavra": "semana,",
+   "ini": 10.964,
+   "fim": 11.144,
+   "casada": true
+  },
+  {
+   "bloco": 4,
+   "palavra": "a",
+   "ini": 11.284,
+   "fim": 11.364,
+   "casada": true
+  },
+  {
+   "bloco": 4,
+   "palavra": "equipe",
+   "ini": 11.364,
+   "fim": 11.584,
+   "casada": true
+  },
+  {
+   "bloco": 4,
+   "palavra": "aponta",
+   "ini": 11.664,
+   "fim": 11.784,
+   "casada": true
+  },
+  {
+   "bloco": 4,
+   "palavra": "o",
+   "ini": 11.784,
+   "fim": 11.834,
+   "casada": false
+  },
+  {
+   "bloco": 4,
+   "palavra": "avanço.",
+   "ini": 11.784,
+   "fim": 12.124,
+   "casada": true
+  },
+  {
+   "bloco": 5,
+   "palavra": "No",
+   "ini": 12.205,
+   "fim": 12.305,
+   "casada": true
+  },
+  {
+   "bloco": 5,
+   "palavra": "dia",
+   "ini": 12.305,
+   "fim": 12.425,
+   "casada": true
+  },
+  {
+   "bloco": 5,
+   "palavra": "do",
+   "ini": 12.425,
+   "fim": 12.505,
+   "casada": true
+  },
+  {
+   "bloco": 5,
+   "palavra": "corte:",
+   "ini": 12.505,
+   "fim": 12.905,
+   "casada": true
+  },
+  {
+   "bloco": 5,
+   "palavra": "vinte",
+   "ini": 12.905,
+   "fim": 13.065,
+   "casada": true
+  },
+  {
+   "bloco": 5,
+   "palavra": "e",
+   "ini": 13.065,
+   "fim": 13.225,
+   "casada": true
+  },
+  {
+   "bloco": 5,
+   "palavra": "cinco",
+   "ini": 13.225,
+   "fim": 13.385,
+   "casada": true
+  },
+  {
+   "bloco": 5,
+   "palavra": "por",
+   "ini": 13.385,
+   "fim": 13.495,
+   "casada": false
+  },
+  {
+   "bloco": 5,
+   "palavra": "cento",
+   "ini": 13.495,
+   "fim": 13.605,
+   "casada": false
+  },
+  {
+   "bloco": 5,
+   "palavra": "feito,",
+   "ini": 13.605,
+   "fim": 13.865,
+   "casada": true
+  },
+  {
+   "bloco": 5,
+   "palavra": "vinte",
+   "ini": 14.105,
+   "fim": 14.251,
+   "casada": true
+  },
+  {
+   "bloco": 5,
+   "palavra": "e",
+   "ini": 14.251,
+   "fim": 14.398,
+   "casada": true
+  },
+  {
+   "bloco": 5,
+   "palavra": "oito",
+   "ini": 14.398,
+   "fim": 14.545,
+   "casada": true
+  },
+  {
+   "bloco": 5,
+   "palavra": "previsto.",
+   "ini": 14.545,
+   "fim": 14.925,
+   "casada": true
+  },
+  {
+   "bloco": 5,
+   "palavra": "Três",
+   "ini": 15.145,
+   "fim": 15.365,
+   "casada": true
+  },
+  {
+   "bloco": 5,
+   "palavra": "pontos",
+   "ini": 15.365,
+   "fim": 15.685,
+   "casada": true
+  },
+  {
+   "bloco": 5,
+   "palavra": "de",
+   "ini": 15.685,
+   "fim": 15.825,
+   "casada": true
+  },
+  {
+   "bloco": 5,
+   "palavra": "atraso.",
+   "ini": 15.825,
+   "fim": 16.065,
+   "casada": true
+  },
+  {
+   "bloco": 6,
+   "palavra": "E",
+   "ini": 16.164,
+   "fim": 16.304,
+   "casada": true
+  },
+  {
+   "bloco": 6,
+   "palavra": "o",
+   "ini": 16.304,
+   "fim": 16.364,
+   "casada": true
+  },
+  {
+   "bloco": 6,
+   "palavra": "custo",
+   "ini": 16.364,
+   "fim": 16.624,
+   "casada": true
+  },
+  {
+   "bloco": 6,
+   "palavra": "vem",
+   "ini": 16.624,
+   "fim": 16.704,
+   "casada": false
+  },
+  {
+   "bloco": 6,
+   "palavra": "direto",
+   "ini": 16.704,
+   "fim": 16.944,
+   "casada": true
+  },
+  {
+   "bloco": 6,
+   "palavra": "do",
+   "ini": 16.944,
+   "fim": 17.004,
+   "casada": true
+  },
+  {
+   "bloco": 6,
+   "palavra": "Sienge:",
+   "ini": 17.004,
+   "fim": 17.564,
+   "casada": false
+  },
+  {
+   "bloco": 6,
+   "palavra": "hoje,",
+   "ini": 17.564,
+   "fim": 17.784,
+   "casada": true
+  },
+  {
+   "bloco": 6,
+   "palavra": "seiscentos",
+   "ini": 17.984,
+   "fim": 18.211,
+   "casada": true
+  },
+  {
+   "bloco": 6,
+   "palavra": "e",
+   "ini": 18.211,
+   "fim": 18.438,
+   "casada": true
+  },
+  {
+   "bloco": 6,
+   "palavra": "quarenta",
+   "ini": 18.438,
+   "fim": 18.664,
+   "casada": true
+  },
+  {
+   "bloco": 6,
+   "palavra": "mil",
+   "ini": 18.664,
+   "fim": 18.864,
+   "casada": true
+  },
+  {
+   "bloco": 6,
+   "palavra": "acima",
+   "ini": 18.864,
+   "fim": 19.184,
+   "casada": true
+  },
+  {
+   "bloco": 6,
+   "palavra": "do",
+   "ini": 19.184,
+   "fim": 19.324,
+   "casada": true
+  },
+  {
+   "bloco": 6,
+   "palavra": "orçado.",
+   "ini": 19.324,
+   "fim": 19.624,
+   "casada": true
+  },
+  {
+   "bloco": 7,
+   "palavra": "Fechou",
+   "ini": 19.724,
+   "fim": 20.024,
+   "casada": true
+  },
+  {
+   "bloco": 7,
+   "palavra": "o",
+   "ini": 20.024,
+   "fim": 20.064,
+   "casada": true
+  },
+  {
+   "bloco": 7,
+   "palavra": "mês?",
+   "ini": 20.064,
+   "fim": 20.144,
+   "casada": true
+  },
+  {
+   "bloco": 7,
+   "palavra": "Os",
+   "ini": 20.484,
+   "fim": 20.604,
+   "casada": true
+  },
+  {
+   "bloco": 7,
+   "palavra": "números",
+   "ini": 20.604,
+   "fim": 20.764,
+   "casada": true
+  },
+  {
+   "bloco": 7,
+   "palavra": "congelam.",
+   "ini": 20.764,
+   "fim": 21.364,
+   "casada": true
+  },
+  {
+   "bloco": 7,
+   "palavra": "E",
+   "ini": 21.444,
+   "fim": 21.504,
+   "casada": true
+  },
+  {
+   "bloco": 7,
+   "palavra": "vai",
+   "ini": 21.504,
+   "fim": 21.624,
+   "casada": true
+  },
+  {
+   "bloco": 7,
+   "palavra": "um",
+   "ini": 21.624,
+   "fim": 21.884,
+   "casada": true
+  },
+  {
+   "bloco": 7,
+   "palavra": "número",
+   "ini": 21.884,
+   "fim": 22.064,
+   "casada": true
+  },
+  {
+   "bloco": 7,
+   "palavra": "só",
+   "ini": 22.064,
+   "fim": 22.224,
+   "casada": true
+  },
+  {
+   "bloco": 7,
+   "palavra": "para",
+   "ini": 22.224,
+   "fim": 22.304,
+   "casada": true
+  },
+  {
+   "bloco": 7,
+   "palavra": "a",
+   "ini": 22.304,
+   "fim": 22.354,
+   "casada": false
+  },
+  {
+   "bloco": 7,
+   "palavra": "reunião.",
+   "ini": 22.304,
+   "fim": 22.564,
+   "casada": true
+  },
+  {
+   "bloco": 8,
+   "palavra": "Quer",
+   "ini": 22.684,
+   "fim": 23.024,
+   "casada": true
+  },
+  {
+   "bloco": 8,
+   "palavra": "ver",
+   "ini": 23.024,
+   "fim": 23.144,
+   "casada": true
+  },
+  {
+   "bloco": 8,
+   "palavra": "isso",
+   "ini": 23.144,
+   "fim": 23.244,
+   "casada": true
+  },
+  {
+   "bloco": 8,
+   "palavra": "na",
+   "ini": 23.244,
+   "fim": 23.344,
+   "casada": true
+  },
+  {
+   "bloco": 8,
+   "palavra": "sua",
+   "ini": 23.344,
+   "fim": 23.394,
+   "casada": false
+  },
+  {
+   "bloco": 8,
+   "palavra": "obra?",
+   "ini": 23.344,
+   "fim": 23.684,
+   "casada": true
+  },
+  {
+   "bloco": 8,
+   "palavra": "Fale",
+   "ini": 23.944,
+   "fim": 24.144,
+   "casada": true
+  },
+  {
+   "bloco": 8,
+   "palavra": "com",
+   "ini": 24.144,
+   "fim": 24.284,
+   "casada": true
+  },
+  {
+   "bloco": 8,
+   "palavra": "o",
+   "ini": 24.284,
+   "fim": 24.304,
+   "casada": true
+  },
+  {
+   "bloco": 8,
+   "palavra": "André",
+   "ini": 24.304,
+   "fim": 24.524,
+   "casada": true
+  },
+  {
+   "bloco": 8,
+   "palavra": "pelo",
+   "ini": 24.524,
+   "fim": 24.664,
+   "casada": true
+  },
+  {
+   "bloco": 8,
+   "palavra": "WhatsApp:",
+   "ini": 24.664,
+   "fim": 24.924,
+   "casada": true
+  },
+  {
+   "bloco": 8,
+   "palavra": "onze…",
+   "ini": 24.924,
+   "fim": 25.701,
+   "casada": false
+  },
+  {
+   "bloco": 8,
+   "palavra": "nove,",
+   "ini": 25.701,
+   "fim": 25.895,
+   "casada": true
+  },
+  {
+   "bloco": 8,
+   "palavra": "nove,",
+   "ini": 26.089,
+   "fim": 26.283,
+   "casada": true
+  },
+  {
+   "bloco": 8,
+   "palavra": "cinco,",
+   "ini": 26.283,
+   "fim": 26.633,
+   "casada": false
+  },
+  {
+   "bloco": 8,
+   "palavra": "um,",
+   "ini": 26.633,
+   "fim": 26.982,
+   "casada": false
+  },
+  {
+   "bloco": 8,
+   "palavra": "quatro…",
+   "ini": 26.982,
+   "fim": 27.331,
+   "casada": false
+  },
+  {
+   "bloco": 8,
+   "palavra": "nove,",
+   "ini": 27.331,
+   "fim": 27.681,
+   "casada": false
+  },
+  {
+   "bloco": 8,
+   "palavra": "um,",
+   "ini": 27.681,
+   "fim": 28.03,
+   "casada": false
+  },
+  {
+   "bloco": 8,
+   "palavra": "três,",
+   "ini": 28.03,
+   "fim": 28.224,
+   "casada": true
+  },
+  {
+   "bloco": 8,
+   "palavra": "três.",
+   "ini": 28.224,
+   "fim": 28.345,
+   "casada": false
+  }
+ ]
+}

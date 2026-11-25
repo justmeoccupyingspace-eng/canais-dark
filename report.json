@@ -1,0 +1,796 @@
+{
+ "script": "voicetest/cronos_tiktok.json",
+ "regras": {
+  "lufs": -16.0,
+  "pico_db": -1.0,
+  "fator_min": 0.88,
+  "fator_max": 1.45,
+  "folga": 0.05,
+  "folga_fim": 0.15,
+  "lead_s": 0.05,
+  "margem_s": 0.04
+ },
+ "vozes": {
+  "gemini-3.8-flash-tts_Algieba": {
+   "modelo": "gemini-3.8-flash-tts",
+   "voz": "Algieba",
+   "tomada_s": 41.25,
+   "cobertura_alinhamento": 0.95,
+   "lufs_tomada": -18.4,
+   "ganho_db": -1.0,
+   "timeline_s": 28.57,
+   "qc_medio": 0.864,
+   "fora_da_janela": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "blocos": [
+    {
+     "natural_s": 3.37,
+     "alvo_fala_s": 2.5,
+     "fator": 1.348,
+     "metodo": "rubberband",
+     "bloco": 1,
+     "final_s": 2.5,
+     "fala_ini": 0.1,
+     "fala_fim": 2.52,
+     "janela": [
+      0.0,
+      2.6
+     ],
+     "fala_cabe_na_janela": true,
+     "qc": 0.762,
+     "ouvido": "Sobra tem três números diferentes. Qual deles vai para reunião?"
+    },
+    {
+     "natural_s": 5.2,
+     "alvo_fala_s": 3.3,
+     "fator": 1.45,
+     "metodo": "rubberband",
+     "bloco": 2,
+     "final_s": 3.59,
+     "fala_ini": 2.66,
+     "fala_fim": 6.17,
+     "janela": [
+      2.6,
+      6.0
+     ],
+     "fala_cabe_na_janela": false,
+     "qc": 0.857,
+     "ouvido": "Gramograma no Project, custo no Cringe, avanço na planilha, cada um com uma data."
+    },
+    {
+     "natural_s": 2.42,
+     "alvo_fala_s": 2.3,
+     "fator": 1.052,
+     "metodo": "rubberband",
+     "bloco": 3,
+     "final_s": 2.3,
+     "fala_ini": 6.31,
+     "fala_fim": 8.53,
+     "janela": [
+      6.0,
+      8.4
+     ],
+     "fala_cabe_na_janela": false,
+     "qc": 0.889,
+     "ouvido": "O crônus junta tudo numa data de corte só."
+    },
+    {
+     "natural_s": 4.93,
+     "alvo_fala_s": 3.5,
+     "fator": 1.409,
+     "metodo": "rubberband",
+     "bloco": 4,
+     "final_s": 3.5,
+     "fala_ini": 8.67,
+     "fala_fim": 12.09,
+     "janela": [
+      8.4,
+      12.0
+     ],
+     "fala_cabe_na_janela": false,
+     "qc": 1.0,
+     "ouvido": "Você importa o project e a obra inteira aparece.  Toda semana, a equipe aponta o avanço."
+    },
+    {
+     "natural_s": 5.28,
+     "alvo_fala_s": 3.9,
+     "fator": 1.354,
+     "metodo": "rubberband",
+     "bloco": 5,
+     "final_s": 3.9,
+     "fala_ini": 12.23,
+     "fala_fim": 16.05,
+     "janela": [
+      12.0,
+      16.0
+     ],
+     "fala_cabe_na_janela": false,
+     "qc": 1.0,
+     "ouvido": "No dia do corte, 25% feito, 28 previsto.  Três pontos de atraso."
+    },
+    {
+     "natural_s": 4.68,
+     "alvo_fala_s": 3.5,
+     "fator": 1.337,
+     "metodo": "rubberband",
+     "bloco": 6,
+     "final_s": 3.5,
+     "fala_ini": 16.19,
+     "fala_fim": 19.61,
+     "janela": [
+      16.0,
+      19.6
+     ],
+     "fala_cabe_na_janela": true,
+     "qc": 0.828,
+     "ouvido": "E o custo vem direto do ciência.  Hoje, 640 mil acima dorsado."
+    },
+    {
+     "natural_s": 4.03,
+     "alvo_fala_s": 2.9,
+     "fator": 1.39,
+     "metodo": "rubberband",
+     "bloco": 7,
+     "final_s": 2.9,
+     "fala_ini": 19.75,
+     "fala_fim": 22.57,
+     "janela": [
+      19.6,
+      22.6
+     ],
+     "fala_cabe_na_janela": true,
+     "qc": 0.643,
+     "ouvido": "Fecham o mês dos números com gelo, e vai um número só pra reunião."
+    },
+    {
+     "natural_s": 6.99,
+     "alvo_fala_s": 5.7,
+     "fator": 1.226,
+     "metodo": "rubberband",
+     "bloco": 8,
+     "final_s": 5.7,
+     "fala_ini": 22.71,
+     "fala_fim": 28.33,
+     "janela": [
+      22.6,
+      28.5
+     ],
+     "fala_cabe_na_janela": true,
+     "qc": 0.93,
+     "ouvido": "Revei isso na sua obra, fale com o André pelo WhatsApp 11-995-14-9133."
+    }
+   ],
+   "ouvido_tomada": "Sua obra tem três números diferentes. Qual deles vai pra reunião? Cronograma no Project,  custo no Sienge, avanço na planilha… cada um com uma data. O Cronos junta tudo numa data  de corte só. Você importa o Project e a obra inteira aparece. Toda semana, a equipe aponta  o avanço. No dia do corte, vinte e cinco por cento feito, vinte e oito previsto. Três  pontos de atraso. E o custo vem direto do Sienge. Hoje, seiscentos e quarenta mil  acima do orçado. Fechou o mês? Os números congelam. E vai um número só para a reunião.  Quer ver isso na sua obra? Fale com o André pelo WhatsApp 11 99514133."
+  },
+  "gemini-3.8-flash-tts_Puck": {
+   "modelo": "gemini-3.8-flash-tts",
+   "voz": "Puck",
+   "tomada_s": 41.24,
+   "cobertura_alinhamento": 1.0,
+   "lufs_tomada": -22.1,
+   "ganho_db": -0.2,
+   "timeline_s": 28.93,
+   "qc_medio": 0.887,
+   "fora_da_janela": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "blocos": [
+    {
+     "natural_s": 3.47,
+     "alvo_fala_s": 2.5,
+     "fator": 1.388,
+     "metodo": "rubberband",
+     "bloco": 1,
+     "final_s": 2.5,
+     "fala_ini": 0.1,
+     "fala_fim": 2.52,
+     "janela": [
+      0.0,
+      2.6
+     ],
+     "fala_cabe_na_janela": true,
+     "qc": 0.909,
+     "ouvido": "Sua obra tem três números diferentes. Qual deles vai para reunião?"
+    },
+    {
+     "natural_s": 5.22,
+     "alvo_fala_s": 3.3,
+     "fator": 1.45,
+     "metodo": "rubberband",
+     "bloco": 2,
+     "final_s": 3.6,
+     "fala_ini": 2.66,
+     "fala_fim": 6.18,
+     "janela": [
+      2.6,
+      6.0
+     ],
+     "fala_cabe_na_janela": false,
+     "qc": 0.929,
+     "ouvido": "Cronograma no Project, custo no ciência, avanço na planilha.  Cada um com uma data."
+    },
+    {
+     "natural_s": 2.97,
+     "alvo_fala_s": 2.3,
+     "fator": 1.291,
+     "metodo": "rubberband",
+     "bloco": 3,
+     "final_s": 2.3,
+     "fala_ini": 6.32,
+     "fala_fim": 8.54,
+     "janela": [
+      6.0,
+      8.4
+     ],
+     "fala_cabe_na_janela": false,
+     "qc": 1.0,
+     "ouvido": "O Cronos junta tudo numa data de corte só."
+    },
+    {
+     "natural_s": 5.53,
+     "alvo_fala_s": 3.5,
+     "fator": 1.45,
+     "metodo": "rubberband",
+     "bloco": 4,
+     "final_s": 3.81,
+     "fala_ini": 8.68,
+     "fala_fim": 12.41,
+     "janela": [
+      8.4,
+      12.0
+     ],
+     "fala_cabe_na_janela": false,
+     "qc": 1.0,
+     "ouvido": "Você importa o project e a obra inteira aparece.  Toda semana a equipe aponta o avanço."
+    },
+    {
+     "natural_s": 5.33,
+     "alvo_fala_s": 3.9,
+     "fator": 1.367,
+     "metodo": "rubberband",
+     "bloco": 5,
+     "final_s": 3.9,
+     "fala_ini": 12.55,
+     "fala_fim": 16.37,
+     "janela": [
+      12.0,
+      16.0
+     ],
+     "fala_cabe_na_janela": false,
+     "qc": 1.0,
+     "ouvido": "No dia do corte, 25% feito, 28 previsto, 3 pontos de atraso."
+    },
+    {
+     "natural_s": 4.58,
+     "alvo_fala_s": 3.5,
+     "fator": 1.309,
+     "metodo": "rubberband",
+     "bloco": 6,
+     "final_s": 3.5,
+     "fala_ini": 16.51,
+     "fala_fim": 19.93,
+     "janela": [
+      16.0,
+      19.6
+     ],
+     "fala_cabe_na_janela": false,
+     "qc": 0.733,
+     "ouvido": "e o custo vem direto do ciência. Hoje, 640 mil a cima dorsado."
+    },
+    {
+     "natural_s": 4.26,
+     "alvo_fala_s": 2.9,
+     "fator": 1.45,
+     "metodo": "rubberband",
+     "bloco": 7,
+     "final_s": 2.94,
+     "fala_ini": 20.07,
+     "fala_fim": 22.93,
+     "janela": [
+      19.6,
+      22.6
+     ],
+     "fala_cabe_na_janela": false,
+     "qc": 0.963,
+     "ouvido": "Fechou o mês, os números congelam e vai um número só para reunião."
+    },
+    {
+     "natural_s": 6.64,
+     "alvo_fala_s": 5.7,
+     "fator": 1.165,
+     "metodo": "rubberband",
+     "bloco": 8,
+     "final_s": 5.7,
+     "fala_ini": 23.07,
+     "fala_fim": 28.69,
+     "janela": [
+      22.6,
+      28.5
+     ],
+     "fala_cabe_na_janela": false,
+     "qc": 0.566,
+     "ouvido": "Quer ver isso na sua obra?  Fale com o André pelo WhatsApp 1199549133."
+    }
+   ],
+   "ouvido_tomada": "Sua obra tem três números diferentes. Qual deles vai pra reunião?  Cronograma no Project, custo no Sienge, avanço na planilha. Cada um com uma data.  O Cronos junta tudo numa data de corte só. Você importa o Project e a obra inteira aparece.  Toda semana, a equipe aponta o avanço. No dia do corte? Vinte e cinco por cento feito, vinte e oito previsto.  Três pontos de atraso. E o custo vem direto do Sienge. Hoje, seiscentos e quarenta mil acima do orçado.  Fechou o mês? Os números congelam. E vai um número só para a reunião. Quer ver isso na sua obra?  Fale com o André pelo WhatsApp. Onze, nove, nove, cinco, um, quatro, nove, um, três, três."
+  },
+  "gemini-3.8-flash-tts_Fenrir": {
+   "modelo": "gemini-3.8-flash-tts",
+   "voz": "Fenrir",
+   "tomada_s": 39.61,
+   "cobertura_alinhamento": 1.0,
+   "lufs_tomada": -22.3,
+   "ganho_db": -0.1,
+   "timeline_s": 28.55,
+   "qc_medio": 0.899,
+   "fora_da_janela": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "blocos": [
+    {
+     "natural_s": 3.39,
+     "alvo_fala_s": 2.5,
+     "fator": 1.356,
+     "metodo": "rubberband",
+     "bloco": 1,
+     "final_s": 2.5,
+     "fala_ini": 0.1,
+     "fala_fim": 2.52,
+     "janela": [
+      0.0,
+      2.6
+     ],
+     "fala_cabe_na_janela": true,
+     "qc": 0.909,
+     "ouvido": "Sua obra tem três números diferentes. Qual deles vai para reunião?"
+    },
+    {
+     "natural_s": 5.18,
+     "alvo_fala_s": 3.3,
+     "fator": 1.45,
+     "metodo": "rubberband",
+     "bloco": 2,
+     "final_s": 3.57,
+     "fala_ini": 2.66,
+     "fala_fim": 6.15,
+     "janela": [
+      2.6,
+      6.0
+     ],
+     "fala_cabe_na_janela": false,
+     "qc": 0.897,
+     "ouvido": "cronograma no project custo no cienji e avanço na planilha, cada um com uma data."
+    },
+    {
+     "natural_s": 2.39,
+     "alvo_fala_s": 2.3,
+     "fator": 1.039,
+     "metodo": "rubberband",
+     "bloco": 3,
+     "final_s": 2.3,
+     "fala_ini": 6.29,
+     "fala_fim": 8.51,
+     "janela": [
+      6.0,
+      8.4
+     ],
+     "fala_cabe_na_janela": false,
+     "qc": 1.0,
+     "ouvido": "O Cronos junta tudo numa data de corte só."
+    },
+    {
+     "natural_s": 4.97,
+     "alvo_fala_s": 3.5,
+     "fator": 1.42,
+     "metodo": "rubberband",
+     "bloco": 4,
+     "final_s": 3.5,
+     "fala_ini": 8.65,
+     "fala_fim": 12.07,
+     "janela": [
+      8.4,
+      12.0
+     ],
+     "fala_cabe_na_janela": false,
+     "qc": 0.938,
+     "ouvido": "você importa o projeto e a obra inteira aparece. Toda semana a equipe aponta o avanço."
+    },
+    {
+     "natural_s": 4.94,
+     "alvo_fala_s": 3.9,
+     "fator": 1.267,
+     "metodo": "rubberband",
+     "bloco": 5,
+     "final_s": 3.9,
+     "fala_ini": 12.21,
+     "fala_fim": 16.03,
+     "janela": [
+      12.0,
+      16.0
+     ],
+     "fala_cabe_na_janela": false,
+     "qc": 1.0,
+     "ouvido": "No dia do corte, 25% feito, 28 previsto, 3 pontos de atraso."
+    },
+    {
+     "natural_s": 4.03,
+     "alvo_fala_s": 3.5,
+     "fator": 1.151,
+     "metodo": "rubberband",
+     "bloco": 6,
+     "final_s": 3.5,
+     "fala_ini": 16.17,
+     "fala_fim": 19.59,
+     "janela": [
+      16.0,
+      19.6
+     ],
+     "fala_cabe_na_janela": true,
+     "qc": 0.933,
+     "ouvido": "E o custo vem direto do Cienji, hoje 640 mil acima do orçado."
+    },
+    {
+     "natural_s": 4.13,
+     "alvo_fala_s": 2.9,
+     "fator": 1.424,
+     "metodo": "rubberband",
+     "bloco": 7,
+     "final_s": 2.9,
+     "fala_ini": 19.73,
+     "fala_fim": 22.55,
+     "janela": [
+      19.6,
+      22.6
+     ],
+     "fala_cabe_na_janela": true,
+     "qc": 0.963,
+     "ouvido": "Fechou o mês, os números congelam e vai um número só para reunião."
+    },
+    {
+     "natural_s": 6.81,
+     "alvo_fala_s": 5.7,
+     "fator": 1.195,
+     "metodo": "rubberband",
+     "bloco": 8,
+     "final_s": 5.7,
+     "fala_ini": 22.69,
+     "fala_fim": 28.31,
+     "janela": [
+      22.6,
+      28.5
+     ],
+     "fala_cabe_na_janela": true,
+     "qc": 0.549,
+     "ouvido": "Quer ver isso na sua obra?  Fale com o André pelo WhatsApp 1199514133."
+    }
+   ],
+   "ouvido_tomada": "Sua obra tem três números diferentes. Qual deles vai pra reunião?  Cronograma no Project, custo no Sienge, avanço na planilha. Cada um com uma data.  O Cronos junta tudo numa data de corte só. Você importa o Project e a obra inteira aparece.  Toda semana, a equipe aponta o avanço. No dia do corte, vinte e cinco por cento feito,  vinte e oito previsto. Três pontos de atraso. E o custo vem direto do Sienge.  Hoje, seiscentos e quarenta mil acima do orçado. Fechou o mês? Os números congelam.  E vai um número só para a reunião. Quer ver isso na sua obra? Fale com o André pelo WhatsApp.  Onze, nove, nove, cinco, um, quatro… nove, um, três, três."
+  },
+  "gemini-3.8-flash-tts_Sadachbia": {
+   "modelo": "gemini-3.8-flash-tts",
+   "voz": "Sadachbia",
+   "tomada_s": 37.48,
+   "cobertura_alinhamento": 1.0,
+   "lufs_tomada": -21.2,
+   "ganho_db": 1.3,
+   "timeline_s": 28.58,
+   "qc_medio": 0.834,
+   "fora_da_janela": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "blocos": [
+    {
+     "natural_s": 3.17,
+     "alvo_fala_s": 2.5,
+     "fator": 1.268,
+     "metodo": "rubberband",
+     "bloco": 1,
+     "final_s": 2.5,
+     "fala_ini": 0.1,
+     "fala_fim": 2.52,
+     "janela": [
+      0.0,
+      2.6
+     ],
+     "fala_cabe_na_janela": true,
+     "qc": 0.909,
+     "ouvido": "Sua obra tem três números diferentes. Qual deles vai para reunião?"
+    },
+    {
+     "natural_s": 5.27,
+     "alvo_fala_s": 3.3,
+     "fator": 1.45,
+     "metodo": "rubberband",
+     "bloco": 2,
+     "final_s": 3.6,
+     "fala_ini": 2.66,
+     "fala_fim": 6.18,
+     "janela": [
+      2.6,
+      6.0
+     ],
+     "fala_cabe_na_janela": false,
+     "qc": 0.786,
+     "ouvido": "Cronograma no Project, custo no CNG, avança na planilha, cada um com a data."
+    },
+    {
+     "natural_s": 2.67,
+     "alvo_fala_s": 2.3,
+     "fator": 1.161,
+     "metodo": "rubberband",
+     "bloco": 3,
+     "final_s": 2.3,
+     "fala_ini": 6.32,
+     "fala_fim": 8.54,
+     "janela": [
+      6.0,
+      8.4
+     ],
+     "fala_cabe_na_janela": false,
+     "qc": 1.0,
+     "ouvido": "O Cronos junta tudo numa data de corte só."
+    },
+    {
+     "natural_s": 4.75,
+     "alvo_fala_s": 3.5,
+     "fator": 1.357,
+     "metodo": "rubberband",
+     "bloco": 4,
+     "final_s": 3.5,
+     "fala_ini": 8.68,
+     "fala_fim": 12.1,
+     "janela": [
+      8.4,
+      12.0
+     ],
+     "fala_cabe_na_janela": false,
+     "qc": 0.667,
+     "ouvido": "Sem porta, project e obra inteira aparece.  Toda semana, a equipe a ponto avanço."
+    },
+    {
+     "natural_s": 5.22,
+     "alvo_fala_s": 3.9,
+     "fator": 1.338,
+     "metodo": "rubberband",
+     "bloco": 5,
+     "final_s": 3.9,
+     "fala_ini": 12.24,
+     "fala_fim": 16.06,
+     "janela": [
+      12.0,
+      16.0
+     ],
+     "fala_cabe_na_janela": false,
+     "qc": 1.0,
+     "ouvido": "No dia do corte, 25% feito, 28 previsto, 3 pontos de atraso."
+    },
+    {
+     "natural_s": 4.28,
+     "alvo_fala_s": 3.5,
+     "fator": 1.223,
+     "metodo": "rubberband",
+     "bloco": 6,
+     "final_s": 3.5,
+     "fala_ini": 16.2,
+     "fala_fim": 19.62,
+     "janela": [
+      16.0,
+      19.6
+     ],
+     "fala_cabe_na_janela": false,
+     "qc": 0.867,
+     "ouvido": "e o custo bem direto do ciência.  Hoje, 640 mil acima do orçado."
+    },
+    {
+     "natural_s": 3.57,
+     "alvo_fala_s": 2.9,
+     "fator": 1.231,
+     "metodo": "rubberband",
+     "bloco": 7,
+     "final_s": 2.9,
+     "fala_ini": 19.76,
+     "fala_fim": 22.58,
+     "janela": [
+      19.6,
+      22.6
+     ],
+     "fala_cabe_na_janela": true,
+     "qc": 0.963,
+     "ouvido": "Fechou o mês? Os números congelam. E vai um número só para reunião."
+    },
+    {
+     "natural_s": 6.04,
+     "alvo_fala_s": 5.7,
+     "fator": 1.06,
+     "metodo": "rubberband",
+     "bloco": 8,
+     "final_s": 5.7,
+     "fala_ini": 22.72,
+     "fala_fim": 28.34,
+     "janela": [
+      22.6,
+      28.5
+     ],
+     "fala_cabe_na_janela": true,
+     "qc": 0.48,
+     "ouvido": "Quer ver isso na sobra? Fale com o André pelo WhatsApp 1199514133."
+    }
+   ],
+   "ouvido_tomada": "Sua obra tem três números diferentes. Qual deles vai pra reunião?  Cronograma no Project, custo no Sienge, avanço na planilha. Cada um com uma data.  O Cronos junta tudo numa data de corte só. Você importa o Project e a obra inteira aparece.  Toda semana, a equipe aponta o avanço. No dia do corte, vinte e cinco por cento feito,  vinte e oito previsto. Três pontos de atraso. E o custo vem direto do Sienge.  Hoje, seiscentos e quarenta mil acima do orçado.  Fechou o mês? Os números congelam. E vai um número só para a reunião.  Quer ver isso na sua obra? Fale com o André pelo WhatsApp.  Onze, nove, nove, cinco, um, quatro… nove, um, três, três."
+  },
+  "gemini-3.1-flash-tts-preview_Algieba": {
+   "modelo": "gemini-3.1-flash-tts-preview",
+   "voz": "Algieba",
+   "tomada_s": 41.28,
+   "cobertura_alinhamento": 0.983,
+   "lufs_tomada": -18.4,
+   "ganho_db": -1.0,
+   "timeline_s": 28.59,
+   "qc_medio": 0.911,
+   "fora_da_janela": [
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "blocos": [
+    {
+     "natural_s": 3.65,
+     "alvo_fala_s": 2.5,
+     "fator": 1.45,
+     "metodo": "rubberband",
+     "bloco": 1,
+     "final_s": 2.52,
+     "fala_ini": 0.1,
+     "fala_fim": 2.54,
+     "janela": [
+      0.0,
+      2.6
+     ],
+     "fala_cabe_na_janela": true,
+     "qc": 0.909,
+     "ouvido": "Sua obra tem três números diferentes. Qual deles vai para reunião?"
+    },
+    {
+     "natural_s": 5.18,
+     "alvo_fala_s": 3.3,
+     "fator": 1.45,
+     "metodo": "rubberband",
+     "bloco": 2,
+     "final_s": 3.57,
+     "fala_ini": 2.68,
+     "fala_fim": 6.17,
+     "janela": [
+      2.6,
+      6.0
+     ],
+     "fala_cabe_na_janela": false,
+     "qc": 0.828,
+     "ouvido": "Cronograma no Project, custo no ciência e avanço da planilha, cada um com uma data."
+    },
+    {
+     "natural_s": 2.81,
+     "alvo_fala_s": 2.3,
+     "fator": 1.222,
+     "metodo": "rubberband",
+     "bloco": 3,
+     "final_s": 2.3,
+     "fala_ini": 6.31,
+     "fala_fim": 8.53,
+     "janela": [
+      6.0,
+      8.4
+     ],
+     "fala_cabe_na_janela": false,
+     "qc": 0.889,
+     "ouvido": "O crônus junta tudo numa data de corte só."
+    },
+    {
+     "natural_s": 5.1,
+     "alvo_fala_s": 3.5,
+     "fator": 1.45,
+     "metodo": "rubberband",
+     "bloco": 4,
+     "final_s": 3.52,
+     "fala_ini": 8.67,
+     "fala_fim": 12.11,
+     "janela": [
+      8.4,
+      12.0
+     ],
+     "fala_cabe_na_janela": false,
+     "qc": 0.839,
+     "ouvido": "Você importa o project e a obra inteira aparece. Toda semana, equipe a ponto avanço."
+    },
+    {
+     "natural_s": 5.36,
+     "alvo_fala_s": 3.9,
+     "fator": 1.374,
+     "metodo": "rubberband",
+     "bloco": 5,
+     "final_s": 3.9,
+     "fala_ini": 12.25,
+     "fala_fim": 16.07,
+     "janela": [
+      12.0,
+      16.0
+     ],
+     "fala_cabe_na_janela": false,
+     "qc": 1.0,
+     "ouvido": "No dia do corte, 25% feito, 28 previsto, 3 pontos de atraso."
+    },
+    {
+     "natural_s": 5.01,
+     "alvo_fala_s": 3.5,
+     "fator": 1.431,
+     "metodo": "rubberband",
+     "bloco": 6,
+     "final_s": 3.5,
+     "fala_ini": 16.21,
+     "fala_fim": 19.63,
+     "janela": [
+      16.0,
+      19.6
+     ],
+     "fala_cabe_na_janela": false,
+     "qc": 0.933,
+     "ouvido": "E o custo vem direto do ciência. Hoje, 640 mil acima do orçado."
+    },
+    {
+     "natural_s": 4.21,
+     "alvo_fala_s": 2.9,
+     "fator": 1.45,
+     "metodo": "rubberband",
+     "bloco": 7,
+     "final_s": 2.9,
+     "fala_ini": 19.77,
+     "fala_fim": 22.59,
+     "janela": [
+      19.6,
+      22.6
+     ],
+     "fala_cabe_na_janela": true,
+     "qc": 0.889,
+     "ouvido": "Fechou o mês, os números congelam e vai um número só pra reunião."
+    },
+    {
+     "natural_s": 7.5,
+     "alvo_fala_s": 5.7,
+     "fator": 1.316,
+     "metodo": "rubberband",
+     "bloco": 8,
+     "final_s": 5.7,
+     "fala_ini": 22.73,
+     "fala_fim": 28.35,
+     "janela": [
+      22.6,
+      28.5
+     ],
+     "fala_cabe_na_janela": true,
+     "qc": 1.0,
+     "ouvido": "Quer ver isso na sua obra?  Fale com o André pelo WhatsApp 11 9 9 5 1 4 9 1 3 3"
+    }
+   ],
+   "ouvido_tomada": "Sua obra tem três números diferentes. Qual deles vai pra reunião?  Cronograma no Project, custo no Sienge, avanço na planilha. Cada um com uma data.  O Cronos junta tudo numa data de corte só. Você importa o Project e a obra inteira aparece.  Toda semana, a equipe aponta o avanço. No dia do corte, vinte e cinco por cento feito, vinte e oito previsto. Três pontos de atraso.  E o custo vem direto do Sienge. Hoje, seiscentos e quarenta mil acima do orçado.  Fechou o mês? Os números congelam. E vai um número só pra reunião.  Quer ver isso na sua obra? Fale com o André pelo WhatsApp 11… nove, nove, cinco, um, quatro… nove, um, três, três."
+  }
+ },
+ "texto_tts": "Sua obra tem três números diferentes. Qual deles vai pra reunião?\n\nCronograma no Próject, custo no Siênji, avanço na planilha. Cada um com uma data.\n\nO Crônos junta tudo numa data de corte só.\n\nVocê importa o Próject e a obra inteira aparece. Toda semana, a equipe aponta o avanço.\n\nNo dia do corte: vinte e cinco por cento feito, vinte e oito previsto. Três pontos de atraso.\n\nE o custo vem direto do Siênji: hoje, seiscentos e quarenta mil acima do orçado.\n\nFechou o mês? Os números congelam. E vai… um número só para a reunião.\n\nQuer ver isso na sua obra? Fale com o André pelo WhatsApp: onze… nove, nove, cinco, um, quatro… nove, um, três, três."
+}
